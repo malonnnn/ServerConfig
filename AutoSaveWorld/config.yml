@@ -1,0 +1,130 @@
+var:
+  debug: true
+  commandsonlyfromconsole: false
+save:
+  interval: 600
+  broadcast: true
+  disablestructuresaving: false
+  forceregioncachedump: true
+  onplugindisable: true
+backup:
+  enabled: true
+  interval: 86400
+  broadcast: true
+  savebefore: true
+  rateLimit: -1
+  localfs:
+    enabled: true
+    destinationfolders:
+    - /home/minecraft/backups/.
+    worlds:
+    - '*'
+    MaxNumberOfWorldsBackups: 1
+    pluginsfolder: false
+    MaxNumberOfPluginsBackups: 1
+    otherfolders: []
+    MaxNumberOfOtherFoldersBackups: 1
+    excludefolders: []
+    zip: true
+  ftp:
+    enabled: false
+    sftp: false
+    hostname: 127.0.0.1
+    port: 21
+    login: user
+    password: password
+    path: asw
+    worlds:
+    - '*'
+    pluginsfolder: false
+    otherfolders: []
+    excludefolders: []
+    maxNumberOfBackups: 4
+    zip: false
+  script:
+    enabled: false
+    scriptpaths: []
+  dropbox:
+    enabled: false
+    token: ''
+    path: asw
+    worlds:
+    - '*'
+    pluginsfolder: false
+    otherfolders: []
+    excludefolders: []
+    maxNumberOfBackups: 4
+    zip: false
+purge:
+  enabled: false
+  interval: 86400
+  awaytime: 2592000
+  ignorednicks: []
+  ignoreduuids: []
+  broadcast: true
+  wg:
+    enabled: true
+    regenpurgedregion: false
+    noregenoverlapregion: true
+  lwc:
+    enabled: true
+    deletepurgedblocks: false
+  residence:
+    regenpurgedresidence: false
+  permissions:
+    enabled: true
+    savecmd: mansave
+  mywarp:
+    enabled: true
+  essentials:
+    enabled: true
+  dat:
+    enabled: true
+restart:
+  juststop: false
+  oncrash:
+    enabled: false
+    scriptpath: ''
+    timeout: 60
+    checkerstartdelay: 20
+    runonnonpluginstop: false
+  auto:
+    enabled: false
+    broadcast: true
+    scriptpath: ''
+    time: []
+    countdown:
+      enabled: true
+      broadcastonsecond:
+      - 60
+      - 30
+      - 10
+      - 9
+      - 8
+      - 7
+      - 6
+      - 5
+      - 4
+      - 3
+      - 2
+      - 1
+    commands: []
+consolecommand:
+  timemode:
+    enabled: false
+    times: {}
+  intervalmode:
+    enabled: false
+    intervals: {}
+worldregen:
+  newseed: false
+  preserveradius: 0
+  savewg: true
+  savefactions: true
+  savegp: true
+  savetowny: true
+  savepstones: true
+networkwatcher:
+  mainthreadnetaccess:
+    warn: true
+    interrupt: false

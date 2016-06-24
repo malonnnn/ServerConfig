@@ -1,0 +1,44 @@
+Features: 
+  chat-enabled: 'false'
+  scoreboards-enabled: 'true'
+  equip-events-enabled: 'true'
+  durability-enabled: 'true'
+Settings: 
+  durability-message-enabled: 'false'
+  durability-message: '&6{current}&7/&6{max} &2Durability left on your &r{item}&r'
+  command-cooldown-message: '&4Please wait &6{time} seconds &4before using the command again.'
+Commands: 
+  Size: 
+    player-help-size: 10
+    console-help-size: 15
+  Colors: 
+    command: 'gold'
+    required-args: 'light purple'
+    optional-args: 'green'
+    description: 'gray'
+  Format: 
+    page: '&2(&6{page}&2/&6{max}&2)'
+    no-description: 'No description available'
+    no-commands: '&7No commands available'
+    prev-button: 'Previous'
+    next-button: 'Next'
+    prev-button-hover: 'Previous Page'
+    next-button-hover: 'Next Page'
+    help-button: 
+    - '&8-----------------------------------------------------'
+    - '&2{title} - Command Usage {page}'
+    - '{commands}'
+    - '&8-----------------------------------------------------'
+    - '{buttons}'
+    help-no-button: 
+    - '&8-----------------------------------------------------'
+    - '&2{title} - Command Usage {page}'
+    - '&8-----------------------------------------------------'
+    - '{commands}'
+    - '&8-----------------------------------------------------'
+    command-usage: 
+    - '&8-----------------------------------------------------'
+    - '&6{command}'
+    - '&8-----------------------------------------------------'
+    - '&7{description}'
+    - '&8-----------------------------------------------------'

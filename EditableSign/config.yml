@@ -1,0 +1,33 @@
+# This is a template config file
+# define your parameter and its value like:
+ErrorMessage : "&c [ES] : Some error occured."
+#
+# the use of WorldGuard,
+# player needs to have WorldGuard region flag USE = allow to edit the sign
+WorldGuard: true
+#
+#
+# Use specific WorldGuard Region name for allowing edit?
+UseRegionName: true
+Regions: []
+#
+#
+# number of seconds the newly edited sign will be non editable.
+#SignCoolDown: 1800
+SignCoolDown: 0
+#
+#
+# number of seconds, until next time you can edit a sign.
+#WriteCoolDown: 600
+WriteCoolDown: 0
+#
+# log .. if this is true, the author and changed content will be push to the log
+Logging: false
+
+#
+BlacklistReplacement: "**"
+Blacklist:
+  - "(?i)\\[buy\\]"
+  - "(?i)\\[sell\\]"
+
+

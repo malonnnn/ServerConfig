@@ -1,0 +1,344 @@
+# Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
+GriefPrevention:
+  SeaLevelOverrides:
+    '1_9': -1
+    1_9_nether: -1
+    1_9_the_end: -1
+    skeeter_nether: -1
+    pmc: -1
+    wooftywoo_the_end: -1
+    pornhub: -1
+    crapcakesandapplesauce_the_end: -1
+    survival_the_end: -1
+    elytralobby: -1
+    skywarslobby: -1
+    parkourmedium: -1
+    formuladrift: -1
+    flyingbattlelobby: -1
+    elytraeasy: -1
+    RabbitSeasonDuckSeason_the_end: -1
+    megaparkour: -1
+    hurdles: -1
+    godlyparkour: -1
+    chess: -1
+    marathon: -1
+    survival: -1
+    skyscraper: -1
+    anarchy: -1
+    longparkour: -1
+    spleef: -1
+    creative: -1
+    wooftywoo_nether: -1
+    crapcakesandapplesauce: -1
+    towerparkour: -1
+    parkourhub: -1
+    boatrace: -1
+    elytrahard: -1
+    lavahop: -1
+    kidnapped: -1
+    crapcakesandapplesauce_nether: -1
+    RabbitSeasonDuckSeason_nether: -1
+    skeeter_the_end: -1
+    checkers: -1
+    obstaclecourse: -1
+    deathdrop: -1
+    flappybirdparkour: -1
+    wooftywoo: -1
+    parkoureasy: -1
+    skywars: -1
+    survival_nether: -1
+    hilariousrace: -1
+    RabbitSeasonDuckSeason: -1
+    flat: -1
+    infiniteparkour: -1
+    turbotowers: -1
+    straightlineparkour: -1
+    colosseum: -1
+    greenfield: -1
+    spleeflobby: -1
+    wallenpole: -1
+    parkourhard: -1
+    colosseumlobby: -1
+    skeeter: -1
+    newspawn: -1
+    hogwarts: -1
+    elytramedium: -1
+    minigameworld: -1
+    shortparkour: -1
+    plots: -1
+    pornhub_nether: -1
+    pornhub_the_end: -1
+    torture: -1
+    spawn: -1
+    nascar: -1
+    flyingbattlearena: -1
+    tomorrowland: -1
+  Claims:
+    Mode:
+      survival_the_end: Disabled
+      parkourhub: Disabled
+      parkoureasy: Disabled
+      crapcakesandapplesauce: Disabled
+      checkers: Disabled
+      spleef: Disabled
+      survival_nether: Disabled
+      skywarslobby: Survival
+      flyingbattlearena: Disabled
+      tomorrowland: Survival
+      colosseumlobby: Disabled
+      skeeter_the_end: Survival
+      deathdrop: Disabled
+      elytralobby: Disabled
+      hogwarts: Survival
+      plots: Disabled
+      pornhub_the_end: Disabled
+      wooftywoo: Disabled
+      RabbitSeasonDuckSeason_the_end: Disabled
+      formuladrift: Disabled
+      megaparkour: Survival
+      RabbitSeasonDuckSeason_nether: Disabled
+      pornhub: Disabled
+      longparkour: Disabled
+      wallenpole: Disabled
+      godlyparkour: Disabled
+      straightlineparkour: Disabled
+      towerparkour: Disabled
+      flappybirdparkour: Disabled
+      spleeflobby: Disabled
+      wooftywoo_the_end: Disabled
+      pmc: Survival
+      marathon: Disabled
+      lavahop: Disabled
+      greenfield: Survival
+      chess: Disabled
+      crapcakesandapplesauce_nether: Disabled
+      nascar: Disabled
+      elytraeasy: Disabled
+      elytrahard: Disabled
+      pornhub_nether: Disabled
+      flat: Creative
+      spawn: Survival
+      obstaclecourse: Disabled
+      minigameworld: Disabled
+      1_9_the_end: Survival
+      parkourmedium: Disabled
+      RabbitSeasonDuckSeason: Disabled
+      1_9_nether: Survival
+      hurdles: Disabled
+      shortparkour: Disabled
+      parkourhard: Disabled
+      anarchy: Disabled
+      turbotowers: Disabled
+      survival: Disabled
+      elytramedium: Disabled
+      torture: Survival
+      flyingbattlelobby: Disabled
+      skeeter: Survival
+      crapcakesandapplesauce_the_end: Disabled
+      boatrace: Disabled
+      wooftywoo_nether: Disabled
+      kidnapped: Disabled
+      newspawn: Disabled
+      skyscraper: Disabled
+      hilariousrace: Disabled
+      '1_9': Survival
+      colosseum: Disabled
+      skywars: Disabled
+      skeeter_nether: Survival
+      creative: Creative
+      infiniteparkour: Disabled
+    PreventTheft: true
+    ProtectCreatures: true
+    PreventButtonsSwitches: true
+    LockWoodenDoors: false
+    LockTrapDoors: false
+    LockFenceGates: true
+    EnderPearlsRequireAccessTrust: true
+    ProtectHorses: true
+    InitialBlocks: 100
+    Claim Blocks Accrued Per Hour:
+      Default: 500
+      With 'fasteraccrual' Permission: 110
+      With 'fastestaccrual' Permission: 125
+    Max Accrued Claim Blocks:
+      Default: 500000
+      With 'moreaccrued' Permission: 5000
+      With 'mostaccrued' Permission: 10000
+    AbandonReturnRatio: 1.0
+    AutomaticNewPlayerClaimsRadius: 4
+    ExtendIntoGroundDistance: 5
+    MinimumWidth: 5
+    MinimumArea: 100
+    MaximumDepth: 0
+    InvestigationTool: STICK
+    ModificationTool: GOLD_SPADE
+    Expiration:
+      ChestClaimDays: 7
+      UnusedClaimDays: 14
+      AllClaims:
+        DaysInactive: 60
+        ExceptWhenOwnerHasTotalClaimBlocks: 10000
+        ExceptWhenOwnerHasBonusClaimBlocks: 5000
+      AutomaticNatureRestoration:
+        SurvivalWorlds: false
+    MaximumNumberOfClaimsPerPlayer: 0
+    CreationRequiresWorldGuardBuildPermission: true
+    PortalGenerationRequiresPermission: false
+    VillagerTradingRequiresPermission: true
+    CommandsRequiringAccessTrust: /sethome
+    DeliverManuals: true
+    ManualDeliveryDelaySeconds: 30
+  Spam:
+    Enabled: true
+    LoginCooldownSeconds: 60
+    ChatSlashCommands: /me;/tell;/global;/local;/w;/msg;/r;/t
+    WhisperSlashCommands: /tell;/pm;/r;/w;/whisper;/t;/msg
+    WarningMessage: Please reduce your noise level.  Spammers will be banned.
+    BanOffenders: false
+    BanMessage: Banned for spam.
+    AllowedIpAddresses: 1.2.3.4; 5.6.7.8
+    DeathMessageCooldownSeconds: 1
+  PvP:
+    RulesEnabledInWorld:
+      '1_9': true
+      1_9_nether: true
+      1_9_the_end: true
+      skeeter_nether: true
+      pmc: false
+      wooftywoo_the_end: false
+      pornhub: false
+      crapcakesandapplesauce_the_end: false
+      survival_the_end: false
+      elytralobby: true
+      skywarslobby: true
+      parkourmedium: true
+      formuladrift: true
+      flyingbattlelobby: true
+      elytraeasy: true
+      RabbitSeasonDuckSeason_the_end: false
+      megaparkour: false
+      hurdles: true
+      godlyparkour: true
+      chess: true
+      marathon: true
+      survival: false
+      skyscraper: true
+      anarchy: true
+      longparkour: true
+      spleef: true
+      creative: false
+      wooftywoo_nether: false
+      crapcakesandapplesauce: false
+      towerparkour: true
+      parkourhub: true
+      boatrace: true
+      elytrahard: true
+      lavahop: true
+      kidnapped: true
+      crapcakesandapplesauce_nether: false
+      RabbitSeasonDuckSeason_nether: false
+      skeeter_the_end: true
+      checkers: true
+      obstaclecourse: true
+      deathdrop: true
+      flappybirdparkour: true
+      wooftywoo: true
+      parkoureasy: true
+      skywars: true
+      survival_nether: false
+      hilariousrace: true
+      RabbitSeasonDuckSeason: false
+      flat: false
+      infiniteparkour: true
+      turbotowers: true
+      straightlineparkour: true
+      colosseum: true
+      greenfield: false
+      spleeflobby: true
+      wallenpole: true
+      parkourhard: true
+      colosseumlobby: true
+      skeeter: true
+      newspawn: true
+      hogwarts: false
+      elytramedium: true
+      minigameworld: true
+      shortparkour: true
+      plots: true
+      pornhub_nether: false
+      pornhub_the_end: false
+      torture: true
+      spawn: false
+      nascar: true
+      flyingbattlearena: true
+      tomorrowland: true
+    ProtectFreshSpawns: true
+    PunishLogout: true
+    CombatTimeoutSeconds: 15
+    AllowCombatItemDrop: false
+    BlockedSlashCommands: /home;/vanish;/spawn;/tpa;/warp;/tpa;/tp;
+    ProtectPlayersInLandClaims:
+      PlayerOwnedClaims: true
+      AdministrativeClaims: true
+      AdministrativeSubdivisions: true
+    AllowLavaDumpingNearOtherPlayers: true
+    AllowFlintAndSteelNearOtherPlayers: true
+    ProtectPetsOutsideLandClaims: false
+  Economy:
+    ClaimBlocksPurchaseCost: 0.0
+    ClaimBlocksSellValue: 0.0
+  ProtectItemsDroppedOnDeath:
+    PvPWorlds: false
+    NonPvPWorlds: true
+  BlockLandClaimExplosions: true
+  BlockSurfaceCreeperExplosions: true
+  BlockSurfaceOtherExplosions: false
+  LimitSkyTrees: true
+  LimitTreeGrowth: false
+  LimitPistonsToLandClaims: false
+  FireSpreads: true
+  FireDestroys: true
+  AdminsGetWhispers: true
+  AdminsGetSignNotifications: true
+  SmartBan: true
+  Mute New Players Using Banned Words: true
+  MaxPlayersPerIpAddress: 99
+  Siege:
+    Worlds: []
+    BreakableBlocks:
+    - DIRT
+    - GRASS
+    - LONG_GRASS
+    - COBBLESTONE
+    - GRAVEL
+    - SAND
+    - GLASS
+    - THIN_GLASS
+    - WOOD
+    - WOOL
+    - SNOW
+  EndermenMoveBlocks: false
+  SilverfishBreakBlocks: false
+  CreaturesTrampleCrops: false
+  RabbitsEatCrops: true
+  HardModeZombiesBreakDoors: false
+  Database:
+    URL: ''
+    UserName: ''
+    Password: ''
+  UseBanCommand: false
+  BanCommandPattern: ban %name% %reason%
+  Mods:
+    BlockIdsRequiringAccessTrust: []
+    BlockIdsRequiringContainerTrust:
+    - 99999:*:Example - ID 99999, all data values.
+    BlockIdsExplodable: []
+    PlayersIgnoringAllClaims: []
+  Abridged Logs:
+    Days To Keep: 7
+    Included Entry Types:
+      Social Activity: true
+      Suspicious Activity: true
+      Administrative Activity: false
+      Debug: false
+      Muted Chat Messages: false

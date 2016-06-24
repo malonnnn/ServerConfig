@@ -1,0 +1,52 @@
+# 
+#    vip:
+#      #you can remove this, the isDefault is by default set to false
+#      isDefault: false 
+#      maxJobs: -1
+#      cleanOnLogout: false
+#      #You can omit entries with that are same value as in the default group
+#      #defaultMode: on
+#      renderer:
+#        blocks: 20000
+#        time: -1
+awe:
+  version: 5
+  rendering:
+    interval: 15
+    talk-interval: 10
+    queue-max-size: 999999999999999999999999999999999999999
+  dispatcher:
+    max-jobs: 2000
+    max-idle-runs: 200
+    max-time: 20
+  forceFlushBlocks: 10000
+  checkVersion: true
+  physicsFreez: true
+  plotMeFixEnabled: true
+  strings: english.yml
+  debug: false
+  blocksHub:
+    logBlocks: true
+    access:
+      isEnabled: false
+      allowNull: false
+      allowUnknown: true
+      allowConsole: true
+      allowOffline: false
+  permissionGroups:
+    default:
+      isDefault: true
+      maxJobs: -1
+      cleanOnLogout: false
+      defaultMode: true
+      renderer:
+        blocks: 10000
+        time: 75
+      queue:
+        limit-hard: 500000
+        limit-soft: 250000
+      messages:
+        progress-bar: true
+        progress-chat: true
+        talkative: true
+  disabledOperations: []
