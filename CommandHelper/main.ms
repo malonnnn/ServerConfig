@@ -287,7 +287,7 @@ bind('player_chat', null, null, @e) {
     }
     
     assign(@msg, @e[message])
-#    assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
+    assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
 #    assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
 #    assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
 #    assign(@msg, reg_replace('(?i)x[. ,-]*3', 'x4', @msg))
@@ -309,6 +309,7 @@ bind('player_chat', null, null, @e) {
 #    assign(@msg, reg_replace('(?i)\\bwhy', 'where', @msg))
 #    assign(@msg, reg_replace('(?i)\\bwho', 'how', @msg))
 #    assign(@msg, reg_replace('(?i)\\bhow', 'what', @msg))
-    assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
+#    assign(@msg, reg_replace('~', '???', @msg))
+#    assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
     modify_event(message, @msg)
 }

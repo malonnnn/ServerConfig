@@ -161,14 +161,7 @@ groups:
     - essentials.balance
     - essentials.balancetop
     - essentials.baltop
-    - essentials.delhome
-    - essentials.home
-    - essentials.home.bed
-    - essentials.home.others
     - essentials.pay
-    - essentials.sethome
-    - essentials.sethome.bed
-    - essentials.sethome.multiple.unlimited
     - essentials.signs.use.warp
     - essentials.spawn
     - essentials.tpa
@@ -224,6 +217,13 @@ groups:
         - Signshop.Permit
         - Signshop.Signs.Buy
         - essentials.build.*
+        - essentials.delhome
+        - essentials.home
+        - essentials.home.bed
+        - essentials.home.others
+        - essentials.sethome
+        - essentials.sethome.bed
+        - essentials.sethome.multiple.unlimited
       1_9_nether:
         permissions:
         - auction.bid
@@ -234,6 +234,13 @@ groups:
         - Signshop.Permit
         - Signshop.Signs.Buy
         - essentials.build.*
+        - essentials.delhome
+        - essentials.home
+        - essentials.home.bed
+        - essentials.home.others
+        - essentials.sethome
+        - essentials.sethome.bed
+        - essentials.sethome.multiple.unlimited
       1_9_the_end:
         permissions:
         - auction.bid
@@ -244,6 +251,13 @@ groups:
         - Signshop.Permit
         - Signshop.Signs.Buy
         - essentials.build.*
+        - essentials.delhome
+        - essentials.home
+        - essentials.home.bed
+        - essentials.home.others
+        - essentials.sethome
+        - essentials.sethome.bed
+        - essentials.sethome.multiple.unlimited
       wooftywoo_the_end:
         permissions:
         - essentials.fly
@@ -335,6 +349,9 @@ groups:
         - essentials.build.break.46
       chess:
         permissions:
+        - ch.alias.flyoff
+        - ch.alias.flyon
+        - essentials.fly
         - essentials.build.*
       newspawn:
         permissions: []
@@ -343,7 +360,6 @@ groups:
         - plots.trust
         - plots.merge
         - plots.delete
-        - worldedit.*
         - plots.clear
         - plots.plot.4
         - plots.claim
@@ -358,7 +374,13 @@ groups:
         - -essentials.tpa
       godlyparkour:
         permissions:
+        - ch.alias.gc
+        - ch.alias.cp
         - -essentials.tpa
+      longparkour:
+        permissions:
+        - ch.alias.gc
+        - ch.alias.cp
     options:
       default: 'true'
   fakeadmin:
@@ -2462,6 +2484,11 @@ users:
       name: donabella09
       prefix: '&7{&4Admin&7} '
     permissions:
+    - essentials.tphere
+    - ch.alias.deathroll
+    - essentials.tp
+    - ch.alias.unjail
+    - ch.alias.jail
     - essentials.tempban
     - essentials.kick
     - essentials.gamemode.*
@@ -2541,7 +2568,7 @@ users:
       name: SuperSith89
   8662742f-a6b6-471a-8cd9-7798978fd7d7:
     group:
-    - deadpool
+    - zeus
     options:
       name: lil_penguin362
   7837b513-fdec-4fbe-b557-fc4f83d3cb8d:
@@ -2622,13 +2649,13 @@ users:
       name: TheChosenPug
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - superman
+    - martianmanhunter
     options:
       prefix: ''
       name: PickleTheWookie
   fbaf351c-e3fd-4491-bf8d-ab5e848c4c55:
     group:
-    - martianmanhunter
+    - artemis
     options:
       prefix: '&7{&aStaff&7} '
       name: WarrinPeace
@@ -2651,7 +2678,7 @@ users:
       name: HybridFlutist
   7d3ff356-7424-493f-957f-e492a6789dbd:
     group:
-    - mortal
+    - superman
     options:
       name: Steve84966
   d490b744-d0b3-4af9-bc1a-99dfbc72c28a:
@@ -2965,6 +2992,8 @@ users:
       prefix: ''
     group:
     - doctormanhattan
+    permissions:
+    - ch.alias.deathroll
   f267d1cb-66b0-4c56-b1ed-90fc945a98d4:
     options:
       name: Irrupter
@@ -3038,12 +3067,12 @@ users:
       name: legorobot93
   cc2d2734-e784-4250-886d-5c6c714bfb09:
     group:
-    - goku
+    - doctorstrange
     options:
       name: DiamondMaster03
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - ultron
+    - goku
     options:
       name: GOTeamLeoGO
   b3dd94fa-6262-4d19-806b-e0d7ca77513e:
@@ -3170,12 +3199,12 @@ users:
     options:
       name: alyoop0726
     group:
-    - zeus
+    - starfire
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
     group:
-    - hephaestus
+    - mortal
     options:
-      prefix: '&7{&dMas&fter &9Buil&fder&7} '
+      prefix: '&7{&4Donna''s &eM&4c&bD&da&bd&dd&by&7} '
       name: Donald_JTrump
     worlds:
       flat:
@@ -3250,7 +3279,7 @@ users:
       name: lossless
   eb7d94f3-64a7-43be-8774-9720c812bfb2:
     group:
-    - hulk
+    - supergirl
     options:
       name: sockmonkey120705
   eb3574c1-9db1-4ebf-9ea0-cf2595f51284:
@@ -3411,9 +3440,12 @@ users:
       name: uber_knight
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - mortal
+    - martianmanhunter
     options:
       name: xSpiderMan
+    worlds:
+      infiniteparkour:
+        permissions: []
   7cf39d90-afca-4e61-a03f-c7ca6db1c705:
     group:
     - spiderman
@@ -3474,7 +3506,7 @@ users:
       name: FlawlessPink
   6abdd48f-0afc-42c7-b819-5aa69a189a40:
     group:
-    - ironman
+    - zeus
     options:
       name: KragenClaw
   ba489d04-d4e2-4038-991b-3a55c098f4ef:
@@ -3514,7 +3546,7 @@ users:
       name: airforceboy
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - warmachine
+    - goku
     options:
       name: EmmettGaming
   f10a9c7a-4fe0-4889-a579-2c94828d2ab7:
@@ -3591,12 +3623,58 @@ users:
       name: Rhyl1th
   909214db-8fa9-49aa-b429-80dedd681c32:
     group:
-    - hulk
+    - ichigo
     options:
       name: ish19c
   0845b358-f034-4be4-acba-0898bbc782f7:
     group:
-    - hulk
+    - martianmanhunter
     options:
       name: diamondclaw06
+    worlds:
+      infiniteparkour:
+        permissions: []
+  63f98e85-f691-4521-bfa9-e80c16dc2bda:
+    group:
+    - batman
+    options:
+      name: Darkside_18
+  554f8afd-0894-46ff-ab34-9478e846a21d:
+    group:
+    - deadpool
+    options:
+      name: Zane_Tiger322
+  5aa90de2-8cda-44e1-b7fb-28c5261278c3:
+    group:
+    - aquaman
+    options:
+      name: Pandalol8813
+  a800eee6-bd24-4b88-824a-29d3eaf47ee1:
+    group:
+    - zoom
+    options:
+      name: grimreaper0202
+  fd528d6a-fb42-4d83-b5a4-885222640525:
+    group:
+    - ironman
+    options:
+      name: Ender_Guardian39
+  c87594fe-a00f-48ff-bddf-d66bd678f7ac:
+    group:
+    - supergirl
+    options:
+      name: Forrest_MC
+  25e0569f-d4ff-4a74-b955-b928cc180611:
+    group:
+    - superman
+    options:
+      name: SpeedForce44
+  f7cee6bf-be2e-4c9e-b9d1-22ab0a157253:
+    group:
+    - martianmanhunter
+    options:
+      name: spazzticx
+  leo:
+    group:
+    - jailed
 schema-version: 1

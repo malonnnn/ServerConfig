@@ -1364,6 +1364,55 @@ roll:/roll = >>>
     broadcast(@plr"§9just played the lottery and won§6"@items[@item[0]]"§9! You can roll too using §6/roll")
 <<<
 
+deathroll:/deathroll = >>>
+
+    assign(@plrs, all_players())
+    assign(@plr, array_rand(@plrs))
+    broadcast("§4§kk§7Who will §4die§7? Will it be §f" @plrs[@plr[0]] "§7?")
+    
+    set_timeout(2000, closure(
+    assign(@plr, array_rand(@plrs))
+    broadcast("§4§kk§7or §f" @plrs[@plr[0]] "§7?")
+    ))
+    
+    set_timeout(4000, closure(
+    assign(@plr, array_rand(@plrs))
+    broadcast("§4§kk§7or §f" @plrs[@plr[0]] "§7?")
+    ))
+    
+    set_timeout(6000, closure(
+    broadcast("§4§kk§7No! It")
+    ))
+    
+    set_timeout(8000, closure(
+    broadcast("§4§kk§7Will")
+    ))
+    
+    set_timeout(10000, closure(
+    broadcast("§4§kk§7Be")
+    ))
+    
+    set_timeout(12000, closure(
+    broadcast("§4§kk§7...")
+    ))
+    
+    set_timeout(15000, closure(
+    assign(@plr, array_rand(@plrs))
+    @name = @plrs[@plr[0]]
+    if(rand(1,3) == 1){
+        broadcast("§2§kk§7JK! §f@name §7wins 27 levels of xp!")
+        runas(~console,/xp 1000 @name)
+        die()
+    }
+    @mode = pmode(@name)
+    broadcast("§4§kk§4" @name)
+        set_timeout(500, closure(
+        runas(~console,/kill @name)
+        ))
+    ))
+    
+<<<
+
 marry:/marry $plr1 $plr2 = >>>
     @plr1 = $plr1
     @plr2 = $plr2
@@ -1385,4 +1434,86 @@ changehero:/changehero $plr $class $x $y $z = >>>
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
     sudo(/warp BasementLevel1TransformationPod @plr)
+<<<
+
+cp:/cp = >>>
+
+    @plr = player()
+
+    if(is_null(get_value(@plr.world)),
+        store_value(@plr.world,0)
+    )
+    if(is_null(get_value(@plr.coords)),
+        store_value(@plr.coords,0)
+    )
+    if(is_null(get_value(@plr.pitch)),
+        store_value(@plr.pitch,0)
+    )
+    if(is_null(get_value(@plr.yaw)),
+        store_value(@plr.yaw,0)
+    )
+    
+    
+    @pinfo = pinfo(@plr)
+    
+    @world = @pinfo[7]
+    @coords = @pinfo[1]
+    
+    @loc = ploc(@plr);
+    @yaw = @loc['yaw'];
+    @pitch = @loc['pitch'];
+    
+    store_value(@plr.world,@world)
+    store_value(@plr.coords,@coords)
+    store_value(@plr.pitch,@pitch)
+    store_value(@plr.yaw,@yaw)
+    
+    tmsg(player(),concat(color(light_gray),
+    'Saved your position!'))
+    
+
+<<<
+
+gc:/gc = >>>
+
+    @plr = player()
+    @pinfo = pinfo(@plr)
+
+    if(is_null(get_value(@plr.world))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.coords))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.pitch))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.yaw))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    
+    @world = get_value(@plr.world)
+    @coords = get_value(@plr.coords)
+    @pitch = get_value(@plr.pitch)
+    @yaw = get_value(@plr.yaw)
+    
+    if(@world != @pinfo[7])
+    {
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    
+    set_ploc(@plr,@coords)
+    pfacing(@plr,@yaw,@pitch)
+    tmsg(player(),concat(color(light_gray),
+    'Loaded your position!'))
 <<<
