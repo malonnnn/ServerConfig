@@ -168,7 +168,6 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
-    - essentials.tptoggle
     - essentials.warp
     - essentials.warps.*
     - essentials.worth
@@ -381,6 +380,9 @@ groups:
         permissions:
         - ch.alias.gc
         - ch.alias.cp
+      anarchy:
+        permissions:
+        - essentials.home.bed
     options:
       default: 'true'
   fakeadmin:
@@ -2556,6 +2558,7 @@ users:
     - martianmanhunter
     options:
       name: KCocco
+      prefix: '&7{&aDev&2⭑⭑⭒&7} '
   d45108c3-bd4a-4f8b-b7e8-c9eae347c84f:
     group:
     - hulk
@@ -2568,7 +2571,7 @@ users:
       name: SuperSith89
   8662742f-a6b6-471a-8cd9-7798978fd7d7:
     group:
-    - blackspiderman
+    - zeus
     options:
       name: lil_penguin362
   7837b513-fdec-4fbe-b557-fc4f83d3cb8d:
@@ -2666,7 +2669,7 @@ users:
       name: Mr_Baller
   ec5ae208-76f4-4e70-a5de-2683a0678497:
     group:
-    - superman
+    - anarchy
     options:
       name: calebjedimaster
       prefix: '&7{&cMax&eBuilder&6⭑⭑⭑&7} '
@@ -2842,7 +2845,7 @@ users:
       name: Jakemon64
   fd9666d4-454b-47eb-b268-e21042688768:
     group:
-    - deadpool
+    - mortal
     options:
       name: MissPunkyfry
     permissions:
@@ -2859,7 +2862,7 @@ users:
       name: TheGamingLakeYT
   4c95642b-a587-472c-98a2-12f01a2927c1:
     group:
-    - martianmanhunter
+    - jailed
     options:
       name: Nick_A_Naut
   1cdf5c9a-293c-47df-b43b-ac03600859e7:
@@ -2993,6 +2996,7 @@ users:
     group:
     - doctormanhattan
     permissions:
+    - multiverse.access.anarchy
     - ch.alias.deathroll
   f267d1cb-66b0-4c56-b1ed-90fc945a98d4:
     options:
@@ -3075,6 +3079,7 @@ users:
     - goku
     options:
       name: GOTeamLeoGO
+      prefix: '&7{&9Decorator&b⭑⭒⭒&7} '
   b3dd94fa-6262-4d19-806b-e0d7ca77513e:
     group:
     - opm
@@ -3082,9 +3087,10 @@ users:
       name: Cody123DaBOSS
   c46d7b46-68c0-45f8-8fa6-b3def4682703:
     group:
-    - ironman
+    - mortal
     options:
       name: NikeBeast505
+      prefix: '&7{&eMax&cBuilder&6⭑⭒⭒&7} '
   4d4c2419-a158-4a28-973d-8755f1f1c2ae:
     group:
     - deadpool
@@ -3146,7 +3152,7 @@ users:
       name: dpgammer_8
   918a17da-fb94-4383-b385-f34da4351af1:
     group:
-    - zeus
+    - doctorstrange
     options:
       name: LostInDimension
       prefix: '&7{&9Decorator&b⭑⭒⭒&7} '
@@ -3210,6 +3216,9 @@ users:
       flat:
         permissions:
         - worldedit.*
+      plots:
+        permissions:
+        - worldedit.*
     permissions:
     - -essentials.me
     - essentials.gamemode.*
@@ -3218,7 +3227,7 @@ users:
     - essentials.build.*
   e1ee8717-532a-44c1-9927-9248e802db90:
     group:
-    - goku
+    - mortal
     options:
       name: AllahueAkbar
       prefix: '&7{&cMax&eBuilder&6⭑⭒⭒&7} '
@@ -3239,7 +3248,7 @@ users:
       name: ninjastar567
   c99e2b2c-11ad-4866-adef-5f8b13176a0d:
     group:
-    - blackpanther
+    - goku
     options:
       name: EmeraldXXWarrior
   1e4bce43-d1fa-4e1e-8b48-2b3fcf91166e:
@@ -3266,7 +3275,7 @@ users:
     group:
     - goku
     options:
-      name: elise_chan
+      name: Warrior_Elise
     worlds:
       minigameworld:
         permissions:
@@ -3284,7 +3293,7 @@ users:
       name: sockmonkey120705
   eb3574c1-9db1-4ebf-9ea0-cf2595f51284:
     group:
-    - humantorch
+    - goku
     options:
       name: huss196
   5d776da1-d5f7-4175-9866-550661c3513f:
@@ -3356,7 +3365,7 @@ users:
     - greenlantern
     options:
       name: Sorlin
-      prefix: '&7{&9Decorator&b⭑⭒⭒&7} '
+      prefix: '&7{&9Decorator&b⭑⭑⭒&7} '
     worlds:
       plots:
         permissions:
@@ -3444,11 +3453,14 @@ users:
       name: uber_knight
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - mortal
+    - goku
     options:
-      name: xSpiderMan
+      name: Forlineo
+      prefix: ''
     worlds:
       infiniteparkour:
+        permissions: []
+      plots:
         permissions: []
   7cf39d90-afca-4e61-a03f-c7ca6db1c705:
     group:
@@ -3550,12 +3562,12 @@ users:
       name: airforceboy
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - goku
+    - wonderwoman
     options:
       name: EmmettGaming
   f10a9c7a-4fe0-4889-a579-2c94828d2ab7:
     group:
-    - ironman
+    - martianmanhunter
     options:
       name: crazycrazy
   fe748565-39d0-409c-a6b4-353e3eeb234d:
@@ -3632,7 +3644,7 @@ users:
       name: ish19c
   0845b358-f034-4be4-acba-0898bbc782f7:
     group:
-    - martianmanhunter
+    - batman
     options:
       name: diamondclaw06
     worlds:
@@ -3650,12 +3662,12 @@ users:
       name: Zane_Tiger322
   5aa90de2-8cda-44e1-b7fb-28c5261278c3:
     group:
-    - aquaman
+    - martianmanhunter
     options:
       name: Pandalol8813
   a800eee6-bd24-4b88-824a-29d3eaf47ee1:
     group:
-    - zoom
+    - flash
     options:
       name: grimreaper0202
   fd528d6a-fb42-4d83-b5a4-885222640525:
@@ -3686,4 +3698,32 @@ users:
   leo:
     group:
     - jailed
+  224919bc-84c0-4996-9ad2-7d26c2d762a9:
+    group:
+    - supergirl
+    options:
+      name: CourtneyBreanna
+  3078aff9-9e3f-4824-9724-a09d17794f50:
+    group:
+    - zeus
+    options:
+      name: AydenP2005
+  e43997ee-5226-4f2b-90b5-0d88119ec5f7:
+    group:
+    - captainamerica
+    options:
+      name: MangoTangoNickDJ
+  898a4e4f-c18e-4eca-8296-26548ee248b7:
+    group:
+    - zeus
+    options:
+      name: alesoccer
+  b15af090-68df-4582-b22e-6e06b5e73aaf:
+    group:
+    - superman
+    options:
+      name: StoleYourDiamond
+  0889f21e-b82c-49a0-ab3c-6e5b0232d093:
+    group:
+    - athena
 schema-version: 1

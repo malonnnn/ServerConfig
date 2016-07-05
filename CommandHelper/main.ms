@@ -311,5 +311,6 @@ bind('player_chat', null, null, @e) {
 #    assign(@msg, reg_replace('(?i)\\bhow', 'what', @msg))
 #    assign(@msg, reg_replace('~', '???', @msg))
 #    assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
+    assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
     modify_event(message, @msg)
 }
