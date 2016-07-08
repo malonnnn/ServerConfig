@@ -12,7 +12,8 @@
 regions:
     __global__:
         members: {}
-        flags: {build: deny, ice-melt: deny, leaf-decay: deny, chest-access: deny}
+        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, pistons: allow,
+            chest-access: deny}
         owners: {}
         type: global
         priority: 0

@@ -1429,20 +1429,16 @@ marry:/marry $plr1 $plr2 = >>>
 
 <<<
 
-changehero:/changehero $plr $class $x $y $z = >>>
+changehero:/changehero $plr $class = >>>
     @plr = $plr
     @class = $class
-    @x = $x
-    @y = $y
-    @z = $z
+    @exit = $exit
     
-    sudo(/sudo @plr undisguise)
     runas(~console, '/pex user' @plr 'group set' @class)
     sudo(/fly @plr off)
     sudo(/effect @plr clear)
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
-    sudo(/warp BasementLevel1TransformationPod @plr)
 <<<
 
 cp:/cp = >>>

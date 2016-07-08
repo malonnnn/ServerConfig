@@ -45,7 +45,6 @@ groups:
     - griefprevention.nopvpimmunity
     - ontime.other
     - ontime.track
-    - multiverse.access.spawnworld
     - essentials.build.use.*
     - essentials.build.interact.*
   anarchy:
@@ -58,6 +57,26 @@ groups:
     - default
   mortal:
     permissions:
+    - libsdisguises.seecmd.viewself
+    - libsdisguises.undisguise
+    - -essentials.warp.exitpod17
+    - -essentials.warp.exitpod16
+    - -essentials.warp.exitpod15
+    - -essentials.warp.exitpod14
+    - -essentials.warp.exitpod13
+    - -essentials.warp.exitpod12
+    - -essentials.warp.exitpod11
+    - -essentials.warp.exitpod10
+    - -essentials.warp.exitpod9
+    - -essentials.warp.exitpod8
+    - -essentials.warp.exitpod7
+    - -essentials.warp.exitpod6
+    - -essentials.warp.exitpod5
+    - -essentials.warp.exitpod4
+    - -essentials.warp.exitpod3
+    - -essentials.warp.exitpod2
+    - -essentials.warp.exitpod1
+    - -essentials.warps.GroundFloor
     - essentials.whois
     - multiverse.access.torture
     - -minecraft.command.me
@@ -86,7 +105,6 @@ groups:
     - multiverse.access.infiniteparkour
     - multiverse.access.parkourhard
     - multiverse.access.parkourmedium
-    - multiverse.access.newspawn
     - ch.alias.roll
     - multiverse.access.parkoureasy
     - multiverse.access.lavahop
@@ -158,6 +176,23 @@ groups:
     - -essentials.warps.skywars18
     - -essentials.warps.skywars19
     - -essentials.warps.skywars20
+    - -essentials.warps.BasementLevel1
+    - -essentials.warps.BasementLevel2
+    - -essentials.warps.BasementLevel3
+    - -essentials.warps.BasementLevel4
+    - -essentials.warps.BasementLevel5
+    - -essentials.warps.BasementLevel6
+    - -essentials.warps.BasementLevel7
+    - -essentials.warps.BasementLevel8
+    - -essentials.warps.BasementLevel9
+    - -essentials.warps.BasementLevel10
+    - -essentials.warps.BasementLevel11
+    - -essentials.warps.BasementLevel12
+    - -essentials.warps.BasementLevel13
+    - -essentials.warps.BasementLevel14
+    - -essentials.warps.BasementLevel15
+    - -essentials.warps.BasementLevel16
+    - -essentials.warps.BasementLevel17
     - essentials.balance
     - essentials.balancetop
     - essentials.baltop
@@ -325,8 +360,6 @@ groups:
         - -essentials.build.place.7:0
         - -essentials.build.break.7:0
         - essentials.clearinventory
-        - essentials.skull
-        - essentials.skull.*
         - essentials.build.*
       colosseum:
         permissions:
@@ -352,10 +385,10 @@ groups:
         - ch.alias.flyon
         - essentials.fly
         - essentials.build.*
-      newspawn:
-        permissions: []
       plots:
         permissions:
+        - essentials.skull
+        - essentials.skull.*
         - essentials.sethome
         - plots.home
         - plots.visit.owned
@@ -387,6 +420,8 @@ groups:
       anarchy:
         permissions:
         - essentials.home.bed
+      flat:
+        permissions: []
     options:
       default: 'true'
   fakeadmin:
@@ -454,22 +489,6 @@ groups:
     - essentials.protect.damage.*
     - tpjail.active
     - -'*'
-  youtube:
-    inheritance:
-    - member
-  builder:
-    inheritance:
-    - member
-    worlds:
-      creative:
-        permissions:
-        - essentials.build.*
-        - worldedit.*
-      spawnworld:
-        permissions:
-        - essentials.build.*
-        - worldedit.*
-        - voxelsniper.*
   aphrodite:
     worlds:
       '1_9':
@@ -2998,7 +3017,7 @@ users:
       name: Tektronic
       prefix: ''
     group:
-    - doctormanhattan
+    - apollo
     permissions:
     - multiverse.access.anarchy
     - ch.alias.deathroll
@@ -3047,11 +3066,6 @@ users:
     - ironman
     options:
       name: LittleKitteh
-    worlds:
-      newspawn:
-        permissions:
-        - essentials.build.*
-        - worldedit.*
   849d1496-b48a-42d8-a0dc-258deb38da91:
     group:
     - thor
@@ -3080,7 +3094,7 @@ users:
       name: DiamondMaster03
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - martianmanhunter
+    - goku
     options:
       name: GOTeamLeoGO
       prefix: '&7{&9Decorator&b⭑⭒⭒&7} '
@@ -3342,7 +3356,7 @@ users:
       name: EnforcingMuffins
   29da4697-2a65-4de5-8a40-c20e3f33f8ec:
     group:
-    - humantorch
+    - darthvader
     options:
       name: aLink2thePast
   c7f35ddb-e2a1-4665-97c0-5e89bcd68501:
@@ -3648,7 +3662,7 @@ users:
       name: ish19c
   0845b358-f034-4be4-acba-0898bbc782f7:
     group:
-    - batman
+    - doctorstrange
     options:
       name: diamondclaw06
     worlds:
@@ -3729,7 +3743,7 @@ users:
       name: StoleYourDiamond
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
-    - superman
+    - zeus
     options:
       name: Oranges_are_glad
   f9e10858-93d9-4ab5-a31f-177e14484137:
