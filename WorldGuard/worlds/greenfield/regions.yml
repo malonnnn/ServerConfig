@@ -10,10 +10,18 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    bookchest:
+        min: {x: -5.0, y: 123.0, z: -193.0}
+        max: {x: -5.0, y: 123.0, z: -193.0}
+        members: {}
+        flags: {chest-access: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
-        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, pistons: allow,
-            chest-access: deny}
+        flags: {use: allow, leaf-decay: deny, ice-melt: deny, interact: allow, pvp: allow,
+            pistons: allow, chest-access: deny, mob-spawning: allow}
         owners: {}
         type: global
         priority: 0

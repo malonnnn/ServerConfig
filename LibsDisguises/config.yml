@@ -8,7 +8,7 @@ DisguiseRadiusMax: 50
 UndisguiseRadiusMax: 50
 # Shall the players view their disguises?
 # Best used when viewing yourself in 3rd person
-ViewSelfDisguises: true
+ViewSelfDisguises: false
 # Shall I disguise the sounds?
 # This turns your damage sound into a MOOOO
 DisguiseSounds: true
@@ -41,7 +41,7 @@ DyeableWolf: false
 ShowNamesAboveDisguises: false
 # This supports the above option.
 # If this is true, then the name shown above the head appears regardless of if you are looking at the disguise directly or not.
-NameAboveHeadAlwaysVisible: true
+NameAboveHeadAlwaysVisible: false
 # This modifys the bounding box, This is stuff like can a arrow hit them.
 # If you turn this to true, arrows will act like they hit the disguise in the right place!
 # So someone disguised as a enderdragon will easily get shot down by arrows!
@@ -75,9 +75,9 @@ DisguiseCloneSize: 3
 # These disguises, as normal will not persist after a server restart.
 # There is also no EntityDeath option as entities do not revive after death.
 KeepDisguises:
-    EntityDespawn: false
-    PlayerDeath: false
-    PlayerLogout: false
+    EntityDespawn: true
+    PlayerDeath: true
+    PlayerLogout: true
   
 # This controls if a entitys max health is determined by the entity, or by the disguise.
 # Wither is 200, a player is 20. With this enabled, a player disguised as a wither will have the boss bar health accurate to the players health.

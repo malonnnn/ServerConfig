@@ -281,12 +281,25 @@ bind('player_chat', null, null, @e) {
     #        sudo(/kill player())
     #    ))
     #}
+    @plr = player()
+    assign(@msg, @e[message])
+    
+    if(@msg == '565')
+    {
+        set_timeout(1000, closure(
+            tmsg(player(), "§4§kk§7Retrieving classified image for your viewing...")
+            set_timeout(1000, closure(
+            tmsg(player(), "§4§kk§6http://i.imgur.com/tlypRN9.jpg")
+            ))
+        ))
+        cancel()
+        broadcast(§4§kk§9 player() §7said the secret password for superheroes!)
+    }
     
     if(equals_ic(player(), 'Tektronic')){
         die();
     }
     
-    assign(@msg, @e[message])
     assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
 #    assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
 #    assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))

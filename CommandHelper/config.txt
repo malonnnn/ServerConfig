@@ -1,6 +1,7 @@
 bootsofslow:/bootsofslow = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:0.1,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Baby Boots'}}")
 bootsofmedium:/bootsofmedium = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:0.5,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Teen Boots'}}")
 bootsofspeed:/bootsofspeed = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:1.0,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Man Boots'}}")
+bootsofcrash:/bootsofcrash = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:123456789123456894321654.0,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Boots of Crash'}}")
 
 #drown:/drown $player [$=''] = >>>
 #    sudo(/spawn $player)
@@ -63,7 +64,8 @@ workbench:/workbench = sudo(/give player() 58 1)
 flintsteel:/flintsteel = sudo(/give player() 259 1)
 wine:/wine = sudo(/give player() "373 1 16 {display:{Name:Wine},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:600}]}")
 beer:/beer = sudo(/give player() "373 1 16 {display:{Name:Beer},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
-bread:/bread = sudo(/give player() 297 1)
+redbull:/redbull = sudo(/give player() "373 1 16 {display:{Name:"RedBull"},CustomPotionEffects:[1:{Id:1,Amplifier:3,Duration:1200}]}")
+vodka:/vodka = sudo(/give player() "373 1 16 {display:{Name:Vodka},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
 
 goldcarrot:/goldcarrot = sudo(/give player() 396 1)
 seeds:/seeds = sudo(/give player() 295 1)
