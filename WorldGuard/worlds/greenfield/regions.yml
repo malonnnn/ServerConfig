@@ -18,10 +18,18 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    basements:
+        min: {x: -2127.0, y: -5.0, z: -81.0}
+        max: {x: -1915.0, y: 280.0, z: 4.0}
+        members: {}
+        flags: {mob-spawning: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
-        flags: {use: allow, leaf-decay: deny, ice-melt: deny, interact: allow, pvp: allow,
-            pistons: allow, chest-access: deny, mob-spawning: allow}
+        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, pistons: allow,
+            chest-access: deny, pvp: allow}
         owners: {}
         type: global
         priority: 0
