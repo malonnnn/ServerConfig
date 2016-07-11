@@ -1,0 +1,4 @@
+proc(_changeSkin, @pname, @uuid, @val, @sig,
+    sudo(/disguiseplayer @p[r=5] player @p[r=5] setskin {"id":"@uuid","name":"@pname","properties":[{  "signature":"@sig",  "name":"textures","value":"@val"}]})
+)
+

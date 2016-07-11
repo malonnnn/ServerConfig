@@ -242,6 +242,8 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - drugs.*
+        - ch.alias.powers
         - essentials.sell.hand
         - auction.bid
         - auction.start
@@ -424,6 +426,7 @@ groups:
         permissions: []
       greenfield:
         permissions:
+        - -essentials.tpaccept
         - -essentials.tpahere
         - -essentials.tpa
         - essentials.build.use.*
@@ -1242,6 +1245,112 @@ groups:
         - essentials.weather
         - essentials.back
         - essentials.back.*
+        - essentials.top
+  onslaught:
+    inheritance:
+    - mortal
+    worlds:
+      1_9_the_end:
+        permissions:
+        - -libsdisguises.*
+        - -essentials.tp.*
+        - essentials.tp
+        - ch.alias.intangible
+        - ch.alias.tangible
+      '1_9':
+        permissions:
+        - essentials.tp
+        - essentials.tp.*
+        - essentials.gamemode.survival
+        - essentials.gamemode.creative
+        - ch.alias.onslaughtphysical
+        - ch.alias.onslaughtmental
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
+        - ch.alias.jump9
+        - ch.alias.speak
+        - ch.alias.invis
+        - ch.alias.vis
+        - libsdisguises.seecmd.viewself
+        - libsdisguises.disguise
+        - libsdisguises.undisguise
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.cave_spider.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.elder_guardian.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.iron_golem.-setinvisible
+        - libsdisguises.disguise.magma_cube.-setinvisible
+        - libsdisguises.disguise.mule.-setinvisible
+        - libsdisguises.disguise.mushroom_cow.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.pig_zombie.-setinvisible
+        - libsdisguises.disguise.player.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.skeleton_horse.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.snowman.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.undead_horse.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.wither_skeleton.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.zombie_villager.-setinvisible
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+        - ch.alias.run9
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
+        - essentials.gamemode
+        - essentials.heal
+        - essentials.heal.*
+        - essentials.repair
+        - essentials.repair.*
+        - essentials.skull
+        - essentials.skull.*
+        - essentials.spawner
+        - essentials.spawner.*
         - essentials.top
   darthvader:
     inheritance:
@@ -2424,7 +2533,7 @@ users:
       name: aLink2thePast
   d0f9a8dd-4050-416a-a5f5-3750269f92f6:
     group:
-    - martianmanhunter
+    - jailed
     options:
       prefix: '&7{&4H&7} '
       name: KCocco
@@ -2456,12 +2565,12 @@ users:
       name: BabyPickle101
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - opm
+    - ares
     options:
       name: Chief_Sly_Fox
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
-    - superman
+    - goku
     options:
       name: Oranges_are_glad
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
@@ -2469,3 +2578,31 @@ users:
     - doctormanhattan
     options:
       name: Donald_JTrump
+      prefix: '&7{&4Admin&7} '
+    permissions:
+    - essentials.build.*
+    - worldguard.region.bypass.*
+    - essentials.gamemode
+    - essentials.gamemode.*
+    - essentials.kick
+    - essentials.tempban
+  6e2e79cd-1ced-469e-993e-e4f1912bf5dc:
+    group:
+    - ichigo
+    options:
+      name: Scarlet_Hunter
+  115defdd-929b-4c0e-8d71-8e0e20671d84:
+    group:
+    - superman
+    options:
+      name: GDMexperienceit
+  cc2d2734-e784-4250-886d-5c6c714bfb09:
+    group:
+    - superman
+    options:
+      name: DiamondMaster03
+  b03318bc-895d-4d3f-8710-c991a38980b5:
+    group:
+    - deadpool
+    options:
+      name: donabella09
