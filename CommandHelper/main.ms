@@ -7,14 +7,34 @@
 #    }
 #}
 
-#bind(player_join,null,null,@event){
-#    msg(colorize('&aUpdating Online List...'))
-#    shell_adv('/home/minecraft/lastonline.sh',
-#    array(subshell: true,
-#        workingDir: '/home/minecraft/'
-#        )
-#    )
-#}
+bind(item_held,null,null,@event){
+    assign(@pinfo, pinfo())
+    if(@pinfo[9][0] == 'jailed'){
+        runas(~console,"/minecraft:clear" player())
+        set_pheld_slot(player(), 5)
+    }
+}
+
+bind(item_drop,null,null,@event){
+    assign(@pinfo, pinfo())
+    if(@pinfo[9][0] == 'jailed'){
+        cancel()
+        runas(~console,"/minecraft:clear" player())
+        set_pheld_slot(player(), 5)
+    }
+}
+
+bind(item_pickup,null,null,@event){
+    assign(@pinfo, pinfo())
+    if(@pinfo[9][0] == 'jailed'){
+        cancel()
+        runas(~console,"/minecraft:clear" player())
+        set_pheld_slot(player(), 5)
+    }
+}
+
+
+
 
 #bind('player_chat', null, null, @e) {
     
@@ -281,6 +301,12 @@ bind('player_chat', null, null, @e) {
     #        sudo(/kill player())
     #    ))
     #}
+    
+    assign(@pinfo, pinfo())
+    if(pinfo(player(),9) == 'jailed'){
+        die()
+    }
+    
     @plr = player()
     assign(@msg, @e[message])
     
@@ -333,8 +359,6 @@ bind(player_join,null,null,@event){
     @uuid = puuid(@plr,true)
     @pinfo = pinfo(@plr)
     @playerRank = @pinfo[9][0]
-    
-    broadcast(@playerRank)
     
     proc(_changeSkin, @pname, @id, @uuid, @sig, @val,
         runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"'.@uuid.'","name":"'.@id.'","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
@@ -1437,6 +1461,24 @@ bind(player_join,null,null,@event){
         
         #value
         'eyJ0aW1lc3RhbXAiOjE0NjQ3NTQ0MTg4MzMsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzA0NTcxYWMxNjVjYmIyNjdlOTkxNzZmYzdlMjkzZDY4ZWEyYWQ4NzU0ZmFjNjI3MzlhZjFhODM3MTE3OCJ9fX0='
+        
+        )}
+    else if(@playerRank == 'kidflash'){_changeSkin(
+        
+        #currentPlayer
+        @plr,
+
+        #playername
+        'tektronic',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'lELtZMJ+SSeppXs+2Fk6aEaBT237vpJK+6nJ0qiYv2lFNvy+r+IDpr1G6jl7rxfL3xPrSs3EH+efZBStRg+3BT7z52v+qKzBJUAiWisz2d7YDDsYKITCvIlJWN02MAiTLl0qn9Ax6pkt5gne8Q5KY30YCyuL8o9W7pGX2gQuzKm8FS5NfWgT+JiT2pSYc6iDLUdn+eKF/eRd8y5+Q7LcCKhMA/L56NkIn2YpE4KwW+3y16PZwDh2k4ez4CN5OTBDe8A8eUO7DqkvebpUyyYpYIkqendRqNlm2C7iVCU1ZbUeJzAEwYLUNBWwL45ash51RppmLG7eofABD4YfTDPiiP0gR/7qdO8yIOWFm7DeNEzDOnoV76zSPLkK3mjWYX/XzSS+q6QU0e6USCA8ow1xCH8BfwOOawnt0Bbh3NpHaTgj9L7tAZ1MfhQuF3083acA7DwA5I4iQWqTZvBck82HQVBM/6hBEfTB/UyJKaDRJ6EbSQzadw4wiQJN1eOal2QPPUnfEs7PdANJRYlqSv3HdvakgCtbvqMnp/8pAFUPXEwANaEZNjk46vXWtJUDq3z21w4RlhbQlmz5a2jxwFbNbpZdVRjYhGjwVpkEZGzeh31SqRKXQ0EW6jDeYRNSYXkWQnoChrtRqJ1g5VtNovbzZ+yY6862xFjipeXr4uqP3i0=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0NjgyNzU2MDE1ODEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcyMTVhMWUyZDYxM2Q1MThlYTM1Y2Y5MjZkMjg2ZWRiNTQyZDk1YzczNTVhYTVlNzQ3MDNiNWZiZmU2YTc1NyJ9fX0='
         
         )}
     else if(@playerRank == 'onslaught'){_changeSkin(
