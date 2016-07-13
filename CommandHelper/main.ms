@@ -33,7 +33,20 @@ bind(item_pickup,null,null,@event){
     }
 }
 
-
+bind(entity_death, null, array('type': 'ZOMBIE'), @e)
+{
+    if(ponline(@e['cause']['damager'])){
+        if(pworld(@e['cause']['damager']) != 'greenfield'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['damager'] 5)
+    }else if(ponline(@e['cause']['shooter'])){
+        if(pworld(@e['cause']['shooter']) != 'greenfield'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['shooter'] 5)
+    }
+}
 
 
 #bind('player_chat', null, null, @e) {
@@ -100,7 +113,9 @@ bind(player_interact,null,array('item': 280,'button': 'RIGHT'),@event){
         die()
     )
     
-    if(not(equals(pworld(), '1_9')), die())
+    if(pworld() != '1_9' && pworld() != 'greenfield'){
+        die()
+    }
     
     if(is_null(get_value('lastshot')),
         store_value('lastshot',0)
@@ -129,7 +144,9 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
         die()
     }
     
-    if(not(equals(pworld(), '1_9')), die())
+    if(pworld() != '1_9' && pworld() != 'greenfield'){
+        die()
+    }
     
     @playerUUID = pinfo(player(),20)
     if(get_inventory(entity_id(@playerUUID),pheld_slot(player())) != null){
@@ -1479,6 +1496,42 @@ bind(player_join,null,null,@event){
         
         #value
         'eyJ0aW1lc3RhbXAiOjE0NjgyNzU2MDE1ODEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcyMTVhMWUyZDYxM2Q1MThlYTM1Y2Y5MjZkMjg2ZWRiNTQyZDk1YzczNTVhYTVlNzQ3MDNiNWZiZmU2YTc1NyJ9fX0='
+        
+        )}
+    else if(@playerRank == 'howardtheduck'){_changeSkin(
+        
+        #currentPlayer
+        @plr,
+
+        #playername
+        'tektronic',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'HmlUGgGGZQHLcZBLL2F6HeMzAXfjQyK0F8KQyhTOS6jpsvGWb3OuxY9wjkZDzEHXwBFRzLU7L0XJeVCB+UzvOxtm+01EsEMnm0Kdz6PRPSw9m/fDFwYKMphivWg0nQBi3Euu3kb4nanH25Ef9Pa55LrINPTYY9PQb+lsbAj8Ept8DixqIDudtfhv1BB+w9Wz3Js3VIj7rq56IkfX3lFDSdM0FkuXI5FyGBXN3s11iUvaA/socncmz+aoAOMrtzMDdqi1qXSPfD10kTQStRkFx43iQUAtq8PcGKFlwlDZj+L/I04OdftbOoUv1I37LYbe9dFr5RnEdSRnA6cC35v8gepHilaGHheYQlIjWEjfSM9wGAf6R+/MQjkB7ofjY+R7o02Y1bbDeL25bg5nxLLG9yf0TjQ5MSBwBANuRtM4OrpV5ou7Rdmp7m+HDXsA1PTy0wPmr3rochHmFucjARqfNUgk8yd6INaEWiAQUSa9r47M70fv4LpRtUNCAFPDnFhecF+WLP8rtpe0CwJ9DylVxE9ww2LWmmiGy1WSprGnJQc71ZQpsDY4y1sS1X2MSLTAeXKxyZVe2gRNDUlvnc98AffbzDlsFS+oDhDLebyLWyz7KgTVFpHKeKoXaLHIwuHioV3NbB6lvO1nCWMIcgAeKiz79SuQmybQq0UHeWdevyc=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0NjgyODExMTA0ODUsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQwYmMzMjYyODliNzkzOTEyMzllZGVjMTQ2MTIxMWEwMWU5MTM2Njk1MTgwN2FiN2JiYzdjZTg3NjJlNGE3NmIifX19'
+        
+        )}
+    else if(@playerRank == 'magneto'){_changeSkin(
+        
+        #currentPlayer
+        @plr,
+
+        #playername
+        'goteamleogo',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'uK6yrjF6fTCe/AWAI9Vnmh0U0ng2RewCb9OA9g+SQITHYkew4/wpO/Frvtb1sWnszBEAfHrXrl/vXtV3pTwOzzMN3YB7M34Qo2Z/KS9TassekOoAGGZTaJDK4JpOCdOOGnemJI1YI8X5Eh4ROPdR6DyvfnuK4MfMgJr/I8sCX1tReyv1JvuPVkeprsdGUSUmETdHLYL31fvOM/Zp97FkCiTB3AuKMawZWCE4s/dGBN+qqI6Iw8Qw+lhzT4OGssBUXET5gZ9eVV0HzPbko6P+R9kNYY9e1PRZVI4ZkkkCo13x5Sos8iic4Ei2D7rmDqg16dM9jYP/sHH/+n2kUavR6NieyRgb5dgYDSiQvgJR+F1iWsZ312ThnwVydgVFp+S/tBd4OjXJmGNFWtNAg2SU6XsRw5lQ9MZKwhihgp/MND9B4tRT/Iz2O83Qz5Iq92xRlBUHNdA4aJVA1Ndxo4RFn3w7bnTPzZgcG2xpxwS7Gg7MqvucDbqfRPd3hxckC5zsZGiR+Ju9zAi+gGe05Sn0uCxDHCbRnRyDqFnGAW18EXpSdRfJouN8NTm8LxB7V84EJrWjJU2UzdzDJgC7Vb4pXfIEZRpDtZiryI5zk56/C5i3U/En9sbsbASRbbCihhM2b7QS3uhlf/8s/w7TPYiazwlgZZ0PpENDZo82RBmrweo=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0NjgzNzYxNDk4ODQsInByb2ZpbGVJZCI6IjAxMzAyOTlhNDQ4OTQyOWRiNGViNjg2NDNhNGM2YWM4IiwicHJvZmlsZU5hbWUiOiJHT1RlYW1MZW9HTyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU2OTk5ZWFkYTliODgzYTkyOWZhZDdmMmU5NDcxZDQ1OGQ4OWM3ZmRjYjg0OTVjZmZhY2RlNjliMzYxZSJ9fX0='
         
         )}
     else if(@playerRank == 'onslaught'){_changeSkin(

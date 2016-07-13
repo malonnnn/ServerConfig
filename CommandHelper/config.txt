@@ -1,4 +1,4 @@
-magneto:/magneto = >>>
+ma:/ma = >>>
 
 @magnitude = 2; // speed of falling block
 @damage = 50; // amount of damage the block will do to other players
@@ -21,7 +21,7 @@ bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_ar
         @event, @id, @damage, @player = player()) {
             
             @loc = entity_loc(@id);
-            drop_item(@loc,42)
+            drop_item(@loc,array(type: 42, qty: 1))
             cancel()
             
 }
@@ -437,6 +437,7 @@ mortal:/mortal = >>>
     sudo(/speed player() 1)
     sudo(/effect player() clear)
     sudo(/fly player() off)
+    sudo(/undisguise)
     runas(~console,/pex user player() group set mortal)
     tmsg(player(),concat(color(light_gray),
     'You are stripped of your powers.'))
@@ -559,6 +560,13 @@ superman:/superman = >>>
     sudo(/shot give player() supermanslaservision)
     tmsg(player(),concat(color(blue),
     'Time to save the world once again!'))
+<<<
+
+#magneto
+magneto:/magneto = >>>
+    sudo(/effect player() 21 9999 4 true)
+    tmsg(player(),concat(color(dark_purple),
+    "Well let's just say I'm Frankenstein's monster..."))
 <<<
 
 #boros
@@ -1257,6 +1265,14 @@ blackwidow:/blackwidow = >>>
     "I've got red in my ledger, I'd like to wipe it out."))
 <<<
 
+#howardtheduck
+howardtheduck:/howardtheduck = >>>
+    sudo(/effect player() 5 9999 1 true)
+    sudo(/shot give player() howardtheduckbfg)
+    tmsg(player(),concat(color(yellow),
+    "I'm a duck! Quack!"))
+<<<
+
 #ultron
 ultron:/ultron = >>>
     sudo(/effect player() 5 9999 15 true)   
@@ -1893,6 +1909,10 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-2")
         tmsg(@playerName, "/undisguise")
     }
+    else if(@playerRank == "howardtheduck")
+    {
+        tmsg(@playerName, "/howardtheduck")
+    }
     else if(@playerRank == "darthvader")
     {
         tmsg(@playerName, "/darthvader")
@@ -2301,6 +2321,16 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-9")
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
+    }
+    else if(@playerRank == "magneto")
+    {
+        tmsg(@playerName, "/magneto")
+        tmsg(@playerName, "/ma (this is his iron attack)")
+        tmsg(@playerName, "/jump 0-1")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-1")
+        tmsg(@playerName, "/iron")
+        tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
 <<<

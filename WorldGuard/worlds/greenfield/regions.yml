@@ -10,12 +10,31 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    city:
+        min: {x: -10000.0, y: 0.0, z: -10000.0}
+        max: {x: 10000.0, y: 255.0, z: 10000.0}
+        members: {}
+        flags: {use: allow, interact: allow, chest-access: deny, pistons: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     bookchest:
+        parent: city
         min: {x: -5.0, y: 123.0, z: -193.0}
         max: {x: -5.0, y: 123.0, z: -193.0}
         members: {}
         flags: {chest-access: allow}
         owners: {}
+        type: cuboid
+        priority: 0
+    yeowltavern:
+        parent: city
+        min: {x: 320.0, y: 0.0, z: 470.0}
+        max: {x: 336.0, y: 255.0, z: 485.0}
+        members: {}
+        flags: {build: allow}
+        owners:
+            unique-ids: [841c5c33-2a11-430b-bb00-32b2c8868d3b]
         type: cuboid
         priority: 0
     basements:
@@ -28,8 +47,8 @@ regions:
         priority: 0
     __global__:
         members: {}
-        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, pistons: allow,
-            chest-access: deny, pvp: allow}
+        flags: {use: allow, leaf-decay: deny, ice-melt: deny, interact: allow, pvp: allow,
+            pistons: allow, chest-access: deny, ghast-fireball: deny}
         owners: {}
         type: global
         priority: 0

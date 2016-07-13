@@ -57,8 +57,8 @@ groups:
     - default
   mortal:
     permissions:
+    - essentials.protect.entitytarget.bypass
     - libsdisguises.seecmd.viewself
-    - libsdisguises.undisguise
     - -essentials.warp.exitpod17
     - -essentials.warp.exitpod16
     - -essentials.warp.exitpod15
@@ -244,10 +244,8 @@ groups:
         permissions:
         - drugs.*
         - ch.alias.powers
-        - essentials.sell.hand
         - auction.bid
         - auction.start
-        - essentials.sell
         - Signshop.ChangeOwner
         - Signshop.DenyUse.*
         - Signshop.Permit
@@ -264,7 +262,6 @@ groups:
         permissions:
         - auction.bid
         - auction.start
-        - essentials.sell
         - Signshop.ChangeOwner
         - Signshop.DenyUse.*
         - Signshop.Permit
@@ -281,7 +278,6 @@ groups:
         permissions:
         - auction.bid
         - auction.start
-        - essentials.sell
         - Signshop.ChangeOwner
         - Signshop.DenyUse.*
         - Signshop.Permit
@@ -431,7 +427,9 @@ groups:
         - -essentials.tpa
         - essentials.build.use.*
         - essentials.build.interact.*
-        - -essentials.build.*
+        - essentials.build.drop.*
+        - essentials.build.pickup.*
+        - essentials.build.*
         - -essentials.sethome
         - essentials.home
       infiniteparkour:
@@ -654,6 +652,7 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - -essentials.protect.entitytarget.bypass
         - ch.alias.hades
         - ch.alias.flyon
         - ch.alias.flyoff
@@ -880,6 +879,45 @@ groups:
         - ch.alias.haste7
         - ch.alias.haste8
         - ch.alias.haste9
+  magneto:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.magneto
+        - ch.alias.ma
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.haste0
+        - ch.alias.haste1
+      1_9_nether:
+        permissions:
+        - ch.alias.magneto
+        - -ch.alias.flyon
+        - -ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.haste0
+        - ch.alias.haste1
+      1_9_the_end:
+        permissions:
+        - ch.alias.magneto
+        - -ch.alias.flyon
+        - -ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.haste0
+        - ch.alias.haste1
   boros:
     inheritance:
     - mortal
@@ -1164,7 +1202,6 @@ groups:
         - ch.alias.vis
         - libsdisguises.seecmd.viewself
         - libsdisguises.disguise
-        - libsdisguises.undisguise
         - libsdisguises.disguise.bat.-setinvisible
         - libsdisguises.disguise.blaze.-setinvisible
         - libsdisguises.disguise.cave_spider.-setinvisible
@@ -1246,6 +1283,8 @@ groups:
         - essentials.back
         - essentials.back.*
         - essentials.top
+      greenfield:
+        permissions: []
   onslaught:
     inheritance:
     - mortal
@@ -1667,6 +1706,18 @@ groups:
         - ch.alias.haste3
         - ch.alias.haste4
     permissions: []
+  cosmicarmorsuperman:
+    inheritance:
+    - mortal
+    permissions:
+    - ch.alias.*
+  howardtheduck:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.howardtheduck
   kidflash:
     inheritance:
     - mortal
@@ -2539,7 +2590,7 @@ schema-version: 1
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - kidflash
+    - hades
     options:
       name: Tektronic
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
@@ -2549,7 +2600,7 @@ users:
       name: Tamper_Monkey
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - kidflash
+    - batman
     options:
       name: Forlineo
   29da4697-2a65-4de5-8a40-c20e3f33f8ec:
@@ -2576,9 +2627,12 @@ users:
       name: WolfeGaming
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - ironman
+    - magneto
     options:
       name: GOTeamLeoGO
+    worlds:
+      greenfield:
+        permissions: []
   6abdd48f-0afc-42c7-b819-5aa69a189a40:
     group:
     - deadpool
@@ -2586,7 +2640,7 @@ users:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - deadpool
+    - thor
     options:
       name: BabyPickle101
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
@@ -2596,22 +2650,27 @@ users:
       name: Chief_Sly_Fox
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
-    - batman
+    - ultron
     options:
       name: Oranges_are_glad
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
     group:
-    - flash
+    - doctormanhattan
     options:
       name: Donald_JTrump
       prefix: '&7{&4Admin&7} '
+    worlds:
+      greenfield:
+        permissions:
+        - -essentials.build.interact.383:*
     permissions:
+    - essentials.tempban
+    - essentials.kick
+    - essentials.gamemode.survival
+    - essentials.gamemode.creative
+    - essentials.gamemode
     - essentials.build.*
     - worldguard.region.bypass.*
-    - essentials.gamemode
-    - essentials.gamemode.*
-    - essentials.kick
-    - essentials.tempban
   6e2e79cd-1ced-469e-993e-e4f1912bf5dc:
     group:
     - ichigo
@@ -2624,12 +2683,12 @@ users:
       name: GDMexperienceit
   cc2d2734-e784-4250-886d-5c6c714bfb09:
     group:
-    - superman
+    - martianmanhunter
     options:
       name: DiamondMaster03
   b03318bc-895d-4d3f-8710-c991a38980b5:
     group:
-    - deadpool
+    - mortal
     options:
       name: donabella09
   0845b358-f034-4be4-acba-0898bbc782f7:
@@ -2650,5 +2709,23 @@ users:
   e1ee8717-532a-44c1-9927-9248e802db90:
     group:
     - goku
+  c6d0ebc6-2ab0-4580-8060-77e1622bb5c0:
+    group:
+    - greenlantern
     options:
-      name: AllahueAkbar
+      name: Sorlin
+  c46d7b46-68c0-45f8-8fa6-b3def4682703:
+    group:
+    - ironman
+    options:
+      name: NikeBeast505
+  474707f7-f8b4-43ea-8978-9cae17917e82:
+    group:
+    - martianmanhunter
+    options:
+      name: ThatCraftLife
+  e6fde745-5af3-4680-aceb-6231c7e472b8:
+    group:
+    - flash
+    options:
+      name: Time4Koala
