@@ -1,0 +1,79 @@
+# OnTime Messages Configuration File
+# Last Default YML Update: Sept 17, 2012
+# Author: Edge209
+
+##################################################
+# Version of this config file DO NOT CHANGE THIS #
+messagesVersion: 3
+##################################################
+
+# Output Configuration Syntax Rules
+# *** BE CAREFUL *** since this is a yml file the format is very important.  NEVER use TABs to create space, always use 'spaces'
+#
+# Every output string must be contained within single quote marks (')
+# Color codes can be used, but codes must begin with "&" and must followed by a space (' ')  e.g. '&a ' for green text
+# The number of lines output must be specified (lines: #), or set to zero if no output should be generated.
+# Each line must be labeled with 'line-#:' where # is the line order, and # should begin with 1
+# "Variables" must be enclosed in "[ ]" and must be proceeded and followed by a space (' ').
+#
+# The following 'variable' codes are supported for messages:
+#
+# [afk] - Player's Away from Keyboard (AFK) status. ("(AFK)" shown when AFK, otherwise nothing is displayed.)
+# [afktime] - How long a player has been AFK for the current login session
+# [current] - Player's OnTime for current session (login)
+# [daily] - Player's daily OnTime 
+# [daysAgo] - Number of calendar days since player's first login to the server
+# [daysOn] - The number of different days the player has been on the server
+# [lastLogin] - Day/Time stamp of the player's last login
+# [monthly] - Player's Monthly OnTime
+# [otherPlayer] - Another player's name (only valid for "loginAnnoucement")
+# [otherTotal] - Another player's total OnTime (only valid for "loginAnnoucement")
+# [player] - Player's in-game name
+# [serverName] - Name of your server
+# [total] - Player's total OnTime
+# [weekly] - Player's weekly OnTime
+#
+# Color Codes
+#  &0	Black
+#  &1	DarkBlue
+#  &2	DarkGreen
+#  &3	DarkAqua
+#  &4	DarkRed
+#  &5	DarkPurple
+#  &6	Gold
+#  &7	Gray
+#  &8	DarkGray
+#  &9	Blue
+#  &a	Green
+#  &b	Aqua
+#  &c	Red
+#  &d 	LightPurple
+#  &e	Yellow
+#  &f	White
+
+################################################
+# DO NOT CHANGE THE FOLLOWING adhocCount VALUE #
+adhocCount: 0
+################################################
+   
+# To disable this message set "lines:" to 0   
+playerLogin:
+   lines: 2
+   line-1: '[player] welcome to [serverName] !'
+   line-2: 'You currently have a total OnTime of [total]'
+
+# To disable this message set "lines:" to 0      
+loginAnnouncement:
+   lines: 2
+   line-1: 'Please welcome [otherPlayer] to [serverName] '
+   line-2: '[otherPlayer] has a total OnTime of [otherTotal]'
+
+message:
+   testmessage:
+      lines: 1
+      line-1: '[player] This is a test message'
+
+
+# endFile
+#
+ 
