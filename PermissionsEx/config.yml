@@ -1,0 +1,23 @@
+multiserver:
+  use-netevents: true
+permissions:
+  debug: false
+  allowOps: true
+  user-add-groups-last: false
+  log-players: false
+  createUserRecords: false
+  informplayers:
+    changes: false
+  basedir: plugins/PermissionsEx
+  backend: file
+  backends:
+    sql:
+      uri: mysql://localhost/minecraft
+      user: root
+      password: ''
+      type: sql
+    file:
+      type: file
+      file: permissions.yml
+updater: true
+alwaysUpdate: false
