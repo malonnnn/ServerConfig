@@ -1,0 +1,10 @@
+#thor
+thor:/thor = >>>
+    sudo(/effect player() 5 9999 20 true)
+    sudo(/effect player() 10 9999 1 true)
+    sudo(/effect player() 21 9999 14 true)
+    sudo(/shot give player() godblast)
+    sudo(/give player() "minecraft:iron_axe 1 0 {ench:[{id:20,lvl:2},{id:16,lvl:150}],display:{Name:§eT§4h§9o§fr's §7Hammer}}")
+    tmsg(player(),concat(color(red),
+    'The God of Thunder has arrived!'))
+<<<

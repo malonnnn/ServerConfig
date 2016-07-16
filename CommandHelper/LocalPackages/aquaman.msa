@@ -1,0 +1,12 @@
+#aquaman
+aquaman:/aquaman = >>>
+    sudo(/effect player() 5 9999 6 true)
+    sudo(/effect player() 13 9999 1 true)
+    sudo(/effect player() 21 9999 14 true)
+    sudo(/give player() "minecraft:fishing_rod 1 0 {ench:[{id:61,lvl:32767},{id:62,lvl:8}],display:{Name:§eA§6qua§2man's Perfect Fishing Rod}}")
+    sudo(/give player() "minecraft:leather_helmet 1 0 {ench:[{id:5,lvl:50},{id:6,lvl:1},{id:8,lvl:3}],display:{color:13291780},display:{Name:§eA§6qua§2man's Public §9Water Helmet}}")
+    tmsg(player(),
+    concat(color(dark_green),'You gain strength')
+    concat(color(gold),'and can')
+    concat(color(blue),'breathe under water!'))
+<<<
