@@ -28,7 +28,7 @@ regions:
         type: cuboid
         priority: 0
     bookchest:
-        parent: city
+        parent: cityspawn
         min: {x: -5.0, y: 123.0, z: -193.0}
         max: {x: -5.0, y: 123.0, z: -193.0}
         members: {}
@@ -56,7 +56,7 @@ regions:
         priority: 0
     __global__:
         members: {}
-        flags: {use: allow, leaf-decay: deny, ice-melt: deny, interact: allow, chest-access: deny,
+        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, chest-access: deny,
             pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: global
