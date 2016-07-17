@@ -53,7 +53,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-3")
         tmsg(@playerName, "/haste 0-2")
         tmsg(@playerName, "/disguise")
-        tmsg(@playername, "/undisguise")
+        tmsg(@playerName, "/disguiseviewself")
     }
     else if(@playerRank == "blackwidow")
     {
@@ -283,7 +283,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-3")
         tmsg(@playerName, "/web")
     }
-    else if(@playerRank == "humantorch")
+    else if(@playerRank == "thehumantorch")
     {
         tmsg(@playerName, "/humantorch")
         tmsg(@playerName, "/jump 0-3")
@@ -313,6 +313,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-1")
         tmsg(@playerName, "/push")
         tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
     else if(@playerRank == "darthmaul")
     {
@@ -322,6 +323,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-1")
         tmsg(@playerName, "/push")
         tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
         
     }
     else if(@playerRank == "darthsidious")
@@ -332,6 +334,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-1")
         tmsg(@playerName, "/push")
         tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
     else if(@playerRank == "cyborg")
     {
@@ -351,6 +354,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-3")
         tmsg(@playerName, "/fly on")
         tmsg(@playername, "/fly off")
+        tmsg(@playerName, "Shoots fireballs with bare hand")
     }
     else if(@playerRank == "apollo")
     {
@@ -381,7 +385,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playername, "/fly off")
     }
-    else if(@playerRank == "apollo")
+    else if(@playerRank == "artemis")
     {
         tmsg(@playerName, "/artemis")
         tmsg(@playerName, "/jump 0-3")
@@ -435,6 +439,15 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+    else if(@playerRank == "shazam")
+    {
+        tmsg(@playerName, "/shazam")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
     else if(@playerRank == "hulk")
     {
         tmsg(@playerName, "/hulk")
@@ -478,12 +491,11 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-2")
         tmsg(@playerName, "/run 0-3")
         tmsg(@playerName, "/haste 0-5")
-        tmsg(@playerName, "/ironmanscannon")
         tmsg(@playerName, "/hulkbuster")
         tmsg(@playerName, "/fly on")
-        tmsg(@playerName, "fly off")
+        tmsg(@playerName, "/fly off")
     }
-    else if(@playerRank == "ichigo")
+    else if(@playerRank == "ichigokurosaki")
     {
         tmsg(@playerName, "/ichigo")
         tmsg(@playerName, "/jump 0-4")
@@ -627,6 +639,8 @@ powers:/powers = >>>
         tmsg(@playerName, "/zombie")
         tmsg(@playerName, "/heal")
         tmsg(@playerName, "/lightning")
+        tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
+        tmsg(@playerName, "Mobs do not attack you when you're hades.")
     }
     else if(@playerRank == "poseidon")
     {
