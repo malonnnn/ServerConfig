@@ -1471,7 +1471,7 @@ bind(player_join,null,null,@event){
         'eyJ0aW1lc3RhbXAiOjE0NjQ3NjY2ODY0MzYsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFiYmQzZTk1OGZlNzU4ODdiMWJkZGNjMDI1MzQzNjQwZmU5NTc0ZjNiNDgzODlmMjU0NWU5NzZiYTQyOWIifX19'
         
         )}
-    else if(@pgroup[0] == 'opm'){_changeSkin(
+    else if(@pgroup[0] == 'onepunchman'){_changeSkin(
         
         #currentPlayer
         @plr,
