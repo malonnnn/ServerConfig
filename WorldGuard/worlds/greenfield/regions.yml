@@ -18,6 +18,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    cityspawn:
+        parent: city
+        min: {x: -18.0, y: 0.0, z: -208.0}
+        max: {x: 7.0, y: 255.0, z: -174.0}
+        members: {}
+        flags: {use: allow, interact: allow, pvp: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     bookchest:
         parent: city
         min: {x: -5.0, y: 123.0, z: -193.0}
