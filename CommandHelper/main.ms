@@ -394,7 +394,7 @@ bind(player_join,null,null,@event){
     if(@pgroup[0] == 'doctormanhattan'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -412,7 +412,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'deadpool'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -430,7 +430,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'greenarrow'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -448,7 +448,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'captainamerica'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -466,7 +466,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'mystique'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -484,7 +484,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'blackwidow'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -502,7 +502,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'speedy'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -520,7 +520,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'raven'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -538,7 +538,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'blackpanther'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -556,7 +556,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hawkeye'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -574,7 +574,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'robin'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -592,7 +592,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'aphrodite'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -610,7 +610,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'athena'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -628,7 +628,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'demeter'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -646,7 +646,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'dionysus'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -664,7 +664,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hera'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -682,7 +682,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hermes'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'hawkeye',
@@ -700,7 +700,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hestia'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -718,7 +718,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'blackcanary'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -736,7 +736,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hercules'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -754,7 +754,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'wolverine'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -772,7 +772,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'spiderman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -790,7 +790,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'thehumantorch'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -808,7 +808,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'antman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'antman',
@@ -826,7 +826,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'darthvader'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -844,7 +844,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'darthmaul'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -862,7 +862,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'darthsidious'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -880,7 +880,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'cyborg'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -898,7 +898,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'starfire'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -916,7 +916,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'apollo'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -934,7 +934,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'artemis'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -952,7 +952,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'blackspiderman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -970,7 +970,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'nightwing'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -988,7 +988,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'superman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1006,7 +1006,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hulk'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1024,7 +1024,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'wonderwoman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1042,7 +1042,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'flash'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1060,7 +1060,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'batman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1078,7 +1078,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'ironman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1096,7 +1096,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'ichigokurosaki'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1114,7 +1114,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'supergirl'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1132,7 +1132,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'storm'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1150,7 +1150,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'ultron'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1168,7 +1168,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'martianmanhunter'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1186,7 +1186,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'warmachine'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1204,7 +1204,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hephaestus'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1222,7 +1222,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'zoom'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1240,7 +1240,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'naruto'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1258,7 +1258,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'aquaman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1276,7 +1276,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'greenlantern'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'thor',
@@ -1294,7 +1294,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'lexluthor'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1312,7 +1312,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'thor'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'thor',
@@ -1330,7 +1330,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'ares'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'thor',
@@ -1348,7 +1348,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'hades'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1366,7 +1366,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'poseidon'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1384,7 +1384,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'goku'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1402,7 +1402,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'vegeta'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1420,7 +1420,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'zeus'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1438,7 +1438,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'doctorstrange'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1456,7 +1456,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'boros'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1474,7 +1474,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'onepunchman'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1492,7 +1492,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'kidflash'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1510,7 +1510,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'howardtheduck'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
@@ -1528,7 +1528,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'magneto'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'goteamleogo',
@@ -1546,7 +1546,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'daredevil'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'goteamleogo',
@@ -1564,7 +1564,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'reverseflash'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'diamondmaster03',
@@ -1582,7 +1582,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'shazam'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'diamondmaster03',
@@ -1600,7 +1600,7 @@ bind(player_join,null,null,@event){
     else if(@pgroup[0] == 'onslaught'){_changeSkin(
         
         #currentPlayer
-        @plr,
+        @pname,
 
         #playername
         'tektronic',
