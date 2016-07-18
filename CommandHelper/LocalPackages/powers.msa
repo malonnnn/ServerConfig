@@ -455,6 +455,13 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-1")
         tmsg(@playerName, "/haste 0-9")
     }
+    else if(@playerRank == "doomsday")
+    {
+        tmsg(@playerName, "/doomsday")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-9")
+    }
     else if(@playerRank == "wonderwoman")
     {
         tmsg(@playerName, "/wonderwoman")
@@ -749,5 +756,10 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-9")
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/haste 0-4")
+    }
+    else if(@playerRank == "niteowl")
+    {
+        tmsg(@playerName, "/niteowl")
+        tmsg(@playerName, "/haste 0-1")
     }
 <<<
