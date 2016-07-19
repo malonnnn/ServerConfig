@@ -5,7 +5,7 @@ doomsday:/doomsday = >>>
     sudo(/effect player() 12 9999 1 true)
     sudo(/effect player() 13 9999 1 true)
     sudo(/effect player() 21 9999 19 true)
-    sudo(/give player() "minecraft:elytra 1 {ench:[{id:70,lvl:1},{id:34,lvl:3}],display:{Name:§7D§foo§7msd§4a§7y's Glide Wings}}")
+    runas(~console,/give player() "minecraft:elytra 1 70:1 34:3 name:&7D&foo&7msd&4a&7y's_Glide_Wings")
     tmsg(player(),concat(color(gray),
     'ARGLE BLARGLE FLARG!'))
 <<<

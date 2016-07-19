@@ -1,10 +1,9 @@
-#wonderwoman
 wonderwoman:/wonderwoman = >>>
     sudo(/effect player() 5 9999 8 true)
     sudo(/effect player() 10 9999 2 true)
     sudo(/effect player() 11 9999 2 true)
     sudo(/effect player() 21 9999 14 true)
-    sudo(/give player() "420 1 0 {AttributeModifiers:[0:{AttributeName:generic.attackDamage,Name:generic.attackDamage,Amount:50,Operation:0,UUIDLeast:1,UUIDMost:1}],display:{Name:§4W§fon§eder §4W§fom§9an§f's §eLasso}}")
+    runas(~console,/give player() "420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso")
     tmsg(player(),concat(color(blue),
     'Justice shall prevail!'))
 <<<
