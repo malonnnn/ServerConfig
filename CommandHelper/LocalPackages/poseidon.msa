@@ -4,8 +4,8 @@ poseidon:/poseidon = >>>
     sudo(/effect player() 11 9999 4 true)
     sudo(/effect player() 13 9999 1 true)
     sudo(/effect player() 21 9999 19 true)
-    sudo(/give player() "minecraft:fishing_rod 1 0 {ench:[{id:61,lvl:32767},{id:62,lvl:8}],display:{Name:§3P§9o§3s§9e§3i§9d§3o§9n's §bPerfect §3Fishing Rod}}")
-    sudo(/give player() "minecraft:leather_helmet 1 0 {ench:[{id:5,lvl:50},{id:6,lvl:1},{id:8,lvl:3}],display:{color:13291780},display:{Name:§3P§9o§3s§9e§3i§9d§3o§9n's §bPublic §3Water Helmet}}")
+    runas(~console,/give player() "minecraft:fishing_rod 1 61:32767 62:8 name:&3P&9o&3s&9e&3i&9d&3o&9n's_&bPerfect_&3Fishing_Rod")
+    runas(~console,/give player() "minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3P&9o&3s&9e&3i&9d&3o&9n's_&bPublic_&3Water_Helmet")
     tmsg(player(),concat(color(aqua),
     'God of the Sea!'))
 <<<

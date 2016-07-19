@@ -3,7 +3,7 @@ reverseflash:/reverseflash = >>>
     sudo(/effect player() 10 9999 1 true)
     sudo(/effect player() 21 9999 4 true)
     sudo(/effect player() 23 9999 3 true)
-    sudo(/give player() "minecraft:iron_boots 1 0 {ench:[{id:9,lvl:1}],display:{Name:§4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots}}")
+    runas(~console,/give player() "minecraft:iron_boots 1 9:1 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots")
     tmsg(player(),concat(color(yellow),
     'I like to run.'))
 <<<
