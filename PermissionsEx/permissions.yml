@@ -1,6 +1,7 @@
 groups:
   default:
     permissions:
+    - ch.alias.bcc
     - -essentials.warps.anarchyspawn
     - ch.alias.afkoff
     - ch.alias.afkset
@@ -900,6 +901,46 @@ groups:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.shazam
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
+        - ch.alias.jump9
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+        - ch.alias.run9
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
+  blackadam:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.blackadam
         - ch.alias.flyon
         - ch.alias.flyoff
         - ch.alias.jump0
@@ -2713,6 +2754,9 @@ users:
     - cosmicarmorsuperman
     options:
       name: Tektronic
+    permissions:
+    - essentials.sethome.*
+    - essentials.sethome
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
     group:
     - martianmanhunter
@@ -2720,7 +2764,7 @@ users:
       name: Tamper_Monkey
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - greenlantern
+    - martianmanhunter
     options:
       name: Forlineo
   29da4697-2a65-4de5-8a40-c20e3f33f8ec:
@@ -2752,20 +2796,20 @@ users:
       name: WolfeGaming
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - ares
+    - shazam
     options:
-      name: GOTeamLeoGO
+      name: xLeoRealm
     worlds:
       greenfield:
         permissions: []
   6abdd48f-0afc-42c7-b819-5aa69a189a40:
     group:
-    - superman
+    - goku
     options:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - ares
+    - blackadam
     options:
       name: BabyPickle101
     worlds:
@@ -2779,7 +2823,7 @@ users:
       name: Chief_Sly_Fox
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
-    - ultron
+    - goku
     options:
       name: Oranges_are_glad
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
@@ -2863,7 +2907,7 @@ users:
       name: ThatCraftLife
   e6fde745-5af3-4680-aceb-6231c7e472b8:
     group:
-    - superman
+    - shazam
     options:
       name: Time4Koala
   5de25926-3417-4ab7-8906-8aa761240a46:
@@ -2873,15 +2917,15 @@ users:
       name: MamaBuff
   a4bbad16-050e-4e43-bdf3-5e2703050e53:
     group:
-    - vegeta
+    - goku
     options:
       name: rradt2001
   ec5ae208-76f4-4e70-a5de-2683a0678497:
     group:
-    - jailed
+    - mortal
     options:
       name: calebjedimaster
-      prefix: '&7{&4Hacker, given multiple chances&7} '
+      prefix: ''
   9c04477f-0be6-4085-979b-be3c92e4fa9b:
     group:
     - flash
@@ -2939,11 +2983,6 @@ users:
     options:
       name: AtlantisKittie
       prefix: '&7{&3Riot&bControl&7} '
-    worlds:
-      '1_9':
-        permissions:
-        - essentials.kill.*
-        - essentials.kill
   00edd535-3a1b-4d16-9bda-e2334f846c4d:
     group:
     - mortal
@@ -2959,3 +2998,23 @@ users:
     - goku
     options:
       name: AlchemySugar
+  98bb3172-ef8f-4a76-be30-c9f965d2658d:
+    group:
+    - goku
+    options:
+      name: Crayonix
+  228cf946-6a97-438b-9260-02e51ac9d981:
+    group:
+    - vegeta
+    options:
+      name: Xx_Chibeh_xX
+  09b03203-58f5-411b-a18a-0ba5ae6477cd:
+    group:
+    - zoom
+    options:
+      name: Appromattox
+  1380f670-09ec-4291-916e-0aa25f960bbb:
+    group:
+    - deadpool
+    options:
+      name: Infinix714

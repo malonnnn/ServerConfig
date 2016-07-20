@@ -27,12 +27,12 @@ bind(entity_death, null, array('type': 'ZOMBIE'), @e)
         if(pworld(@e['cause']['damager']) != 'greenfield'){
             die()
         }
-        runas(~console,/eco give @e['cause']['damager'] 5)
+        runas(~console,/eco give @e['cause']['damager'] 1)
     }else if(ponline(@e['cause']['shooter'])){
         if(pworld(@e['cause']['shooter']) != 'greenfield'){
             die()
         }
-        runas(~console,/eco give @e['cause']['shooter'] 5)
+        runas(~console,/eco give @e['cause']['shooter'] 1)
     }
 }
 
@@ -178,7 +178,7 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
     @pworld = pworld()
     @puuid = puuid()
     
-    if(@pgroup[0] != "zeus" && @pgroup[0] != "shazam")
+    if(@pgroup[0] != "zeus" && @pgroup[0] != "shazam" && @pgroup[0] != "blackadam")
     {
         die()
     }
@@ -239,6 +239,7 @@ bind(entity_damage,null,null,@event){
         
             if(
                 @pgroup[0] != 'shazam' &&
+                @pgroup[0] != 'blackadam' &&
                 @pgroup[0] != 'darthmaul' && 
                 @pgroup[0] != 'darthvader' &&
                 @pgroup[0] != 'darthsidious'
@@ -1577,6 +1578,24 @@ bind(player_join,null,null,@event){
         
         #value
         'eyJ0aW1lc3RhbXAiOjE0Njg3MDA4NDI5OTMsInByb2ZpbGVJZCI6ImNjMmQyNzM0ZTc4NDQyNTA4ODZkNWM2YzcxNGJmYjA5IiwicHJvZmlsZU5hbWUiOiJEaWFtb25kTWFzdGVyMDMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZDlhOWUwOTQ5ZDI1ZGJmODU0ODA2NjNiZmJmMWVlZjdkYWFmZmQ1MmE4ZGY3YWY0YTM5N2Y0ZjY4YTI2In19fQ=='
+        
+        )}
+    else if(@pgroup[0] == 'blackadam'){_changeSkin(
+        
+        #currentPlayer
+        @pname,
+
+        #playername
+        'diamondmaster03',
+
+        #uuid
+        'cc2d2734e7844250886d5c6c714bfb09',
+        
+        #signature
+        'Ichd3mbmOE1rOu9WH7c3HW7BiMQaPDIotJ3c6qyYsH5VaWUOnzIVXAX6kg1RhfklLw8ydpy5c2f/yDZyWw9EF5ByNvzCKxfjAX9HkmOWONb80T9m9Zq4LZ6KN1peS8pZsJVEI87Y971p4lXhe/4oEdTbu8z+BMZMlPbykW+dAW8K1em0xjfFRP5PXdkUk8Bv+KoqX61HZ4I0kaSJioFE6VQ2jFZjUZnOEHRIsDIDYQ/4ngtLwH0mcbPdIR/LWjfqK8cVPl46OFn4X6TpV1dYvlEkpxPJDjSRQGThoGvL6HTGujnhfoPRWVjNTEUIPLaN9mkxbr6hm+gKcbZIiyNAqCVe2B4nGMJpZ4Fl1g0cpdqGI7GdOQSstk4xodktjMKH2gGlMX9f0n1R7dzfiOqVivug1xGkEhgfkfHoVdlim12Dr/ObMH69/XL+/20cwu7wKdPl2Ym7uE19WObDnxmgL9b4hohoo2GqELcyjZNianPBEo96FvEmHkK0t4MnvapGPU/pqVq979OvRr/W8CpeGGMIWuHzPDcXibEafxagqfHAM9z6G/643TC3Iv0PCkCqtVwbx1NfawisjjxOc1vPSfGtmOn0NIWA2wzVBzDetZcTFmIuC9j7gXtDfDZ8j5+BkDIuMSYjdatZdc8Y749JXoJrc3DKM2294gv3ya9TzF0=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0NjkwMzg1ODAyMjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzViMTUwMzA1MzA5NTUzODdmZGFmYmQ5M2JiOTE3MjNhMDljODFiZTI4YzM5ZDk0NzExZTVjZGNiZmUxNyJ9fX0='
         
         )}
     else if(@pgroup[0] == 'shazam'){_changeSkin(
