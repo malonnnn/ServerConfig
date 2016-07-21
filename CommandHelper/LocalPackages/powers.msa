@@ -448,6 +448,15 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+    else if(@playerRank == "blackadam")
+    {
+        tmsg(@playerName, "/blackadam")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
     else if(@playerRank == "hulk")
     {
         tmsg(@playerName, "/hulk")
