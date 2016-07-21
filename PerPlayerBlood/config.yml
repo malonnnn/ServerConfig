@@ -1,0 +1,25 @@
+# PerPlayerBlood; Display blood per player
+# PPB.Blood-Material: Material of the blood.
+# PPB.All-Damage-Mode: If true, any damage cause will generate blood.
+# PPB.Entities: Entities that will generate the blood. (PLAYER is default)
+# Material List:  https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+# Entity Types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+# You can add per entity effect in Material list using ENTITY:ENTITY
+PPB:
+  Default-Material: REDSTONE_WIRE
+  All-Damage-Mode: 'true'
+  Max-View-Distance: '12.0'
+  Effect-Multiplier: '2'
+  EffectX: '0'
+  EffectY: '1'
+  EffectZ: '0'
+  Messages:
+    enabled: '&aBlood effect enabled!'
+    disabled: '&cBlood effect disabled!'
+    no-permission: '&cInsufficient permissions.'
+  Blood-MaterialList:
+  - PLAYER:REDSTONE_WIRE
+  Entities:
+  - SKELETON
+  - ZOMBIE
+  - CREEPER
