@@ -10,24 +10,49 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    babypickle101house:
+        parent: city
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [0a3f089a-dd4c-4066-8454-140837c14110]
+        type: poly2d
+        priority: 10
+        max-y: 71
+        min-y: 69
+        points:
+        - {x: 287, z: -1311}
+        - {x: 287, z: -1315}
+        - {x: 297, z: -1315}
+        - {x: 297, z: -1313}
+        - {x: 294, z: -1313}
+        - {x: 294, z: -1311}
+        - {x: 297, z: -1311}
+        - {x: 297, z: -1306}
+        - {x: 293, z: -1306}
+        - {x: 293, z: -1309}
+        - {x: 296, z: -1309}
+        - {x: 296, z: -1311}
+        - {x: 287, z: -1311}
     city:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {use: allow, interact: allow, chest-access: deny, pistons: allow}
+        flags: {chest-access-group: NON_MEMBERS, use: allow, interact: allow, pistons: allow,
+            chest-access: deny}
         owners: {}
         type: cuboid
-        priority: 0
+        priority: 1
     cityspawn:
         parent: city
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {use: allow, feed-amount: 1, feed-delay: 1, interact: allow, pvp: deny,
+        flags: {use: allow, feed-delay: 1, feed-amount: 1, interact: allow, pvp: deny,
             heal-amount: 100, heal-delay: 1}
         owners: {}
         type: cuboid
-        priority: 0
+        priority: 2
     bookchest:
         parent: cityspawn
         min: {x: -5.0, y: 123.0, z: -193.0}
@@ -36,7 +61,7 @@ regions:
         flags: {chest-access: allow}
         owners: {}
         type: cuboid
-        priority: 0
+        priority: 3
     yeowltavern:
         parent: city
         min: {x: 320.0, y: 0.0, z: 470.0}
@@ -57,8 +82,7 @@ regions:
         priority: 0
     __global__:
         members: {}
-        flags: {use: allow, ice-melt: deny, leaf-decay: deny, interact: allow, chest-access: deny,
-            pistons: allow, pvp: allow, ghast-fireball: deny}
+        flags: {}
         owners: {}
         type: global
         priority: 0
