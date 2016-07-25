@@ -15,8 +15,6 @@ bind(item_pickup,null,null,@event){
    
    if(@pgroup[0] == 'jailed'){
         cancel()
-        runas(~console,"/minecraft:clear" @pname)
-        set_pheld_slot(@pname, 5)
     }
 }
 
@@ -1232,7 +1230,7 @@ bind(player_join,null,null,@event){
         '87fb3c6c5ff64bf6b326992c6137ea12',
         
         #signature
-        '87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"RuP/oK2EqxOla6NrkgmCnPwXPF6C1f6xpegE8cUBM/hZsZzqztcRgupKiTFwcAKWcKbdan/C6iPiVzsv3pxRBXt1S3PjMVQcsF/KsG03UP43Au6SCge+vxvLuOpeCeYj8SdE7ZbzRTHsLdjnREdqnpt0ENSUHkww23bqI++uYqPXwiYV3S6a3KFrj1rDXzFOjC4FPEAfsyRogkAhImpeQpQxDlMT//HyYoIgEzZMIdSHyNEcORwJhoMdjzz99xD87FlDZ7HpkC6ovu6TRxQFtRrt6QLPERDJgXA/A+R1Zz76aLej5SuOIWmnUSH3joK1H5ykCaD1DLsLsBv9fuG4KYRfib6tutDux+se0CCMyrFl+m40hGXb1ssu7WkMcPjyR8gGERrkWCsaEA4+utvn0Vonys3t5hkjwDQJMg7foTWbgRH38pzBSghOXxvXGiOZtaA0QX+6hKjkRh5oJJISHbrAs2Tg35QrrSh+jJfiioOhyqNG+DBt7o7HPtg0ZGxfh7UWIR/h+DpN1tvqzV21+oi+nAa8aJAAZZ1T0VSVhfeMOXG1ies0zBMn0taaUL6jLGo4mCjnEnxDBZQbCL4iDtxUd2O0CoQP3Hwh0aeBytPE1WiDNBv7KleeoqSjzjHCH35oLngeeMnsItzRH5AY1fSP6zRjeEPbS2sL5rH941U=',
+        'RuP/oK2EqxOla6NrkgmCnPwXPF6C1f6xpegE8cUBM/hZsZzqztcRgupKiTFwcAKWcKbdan/C6iPiVzsv3pxRBXt1S3PjMVQcsF/KsG03UP43Au6SCge+vxvLuOpeCeYj8SdE7ZbzRTHsLdjnREdqnpt0ENSUHkww23bqI++uYqPXwiYV3S6a3KFrj1rDXzFOjC4FPEAfsyRogkAhImpeQpQxDlMT//HyYoIgEzZMIdSHyNEcORwJhoMdjzz99xD87FlDZ7HpkC6ovu6TRxQFtRrt6QLPERDJgXA/A+R1Zz76aLej5SuOIWmnUSH3joK1H5ykCaD1DLsLsBv9fuG4KYRfib6tutDux+se0CCMyrFl+m40hGXb1ssu7WkMcPjyR8gGERrkWCsaEA4+utvn0Vonys3t5hkjwDQJMg7foTWbgRH38pzBSghOXxvXGiOZtaA0QX+6hKjkRh5oJJISHbrAs2Tg35QrrSh+jJfiioOhyqNG+DBt7o7HPtg0ZGxfh7UWIR/h+DpN1tvqzV21+oi+nAa8aJAAZZ1T0VSVhfeMOXG1ies0zBMn0taaUL6jLGo4mCjnEnxDBZQbCL4iDtxUd2O0CoQP3Hwh0aeBytPE1WiDNBv7KleeoqSjzjHCH35oLngeeMnsItzRH5AY1fSP6zRjeEPbS2sL5rH941U=',
         
         #value
         'eyJ0aW1lc3RhbXAiOjE0NjQ3NjY0NDE0MzcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y0YTE3YTUxNzA0NjZjNTRkZDY5MTU2NTFmNDViNzY4YjBhZGQ3NDJmNDExODlmMGIzMWI3MDdjYmJkMmQ5YSJ9fX0='
@@ -1688,4 +1686,7 @@ bind(player_join,null,null,@event){
         'eyJ0aW1lc3RhbXAiOjE0NjkxMzQ3ODU0MTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUxZjY4OWJmNDM0NTk4NDRlYThjNzFiZDA1NDQxZWRjM2ZlOTQ4OWQ2MWNmZDc5MGU3OWJkMzhjZmJlNzUifX19'
         
         )}
+    else if(@pgroup[0] == 'jailed'){
+        runas(~console,"/minecraft:clear" @pname)
+    }
 ))}
