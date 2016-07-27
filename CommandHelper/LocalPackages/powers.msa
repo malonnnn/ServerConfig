@@ -778,4 +778,13 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on (simulates his hoverboard, he can't really fly)")
         tmsg(@playerName, "/fly off")
     }
+	else if(@playerRank == "wallywest")
+    {
+        tmsg(@playerName, "/wallywest")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/haste 0-7")
+		tmsg(@playerName, "tp")
+        tmsg(@playerName, "/thru (phases through walls)")
+    }
 <<<
