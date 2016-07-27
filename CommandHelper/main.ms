@@ -1,3 +1,42 @@
+set_interval(5000, closure(){
+    @plrs = all_players()
+    
+    foreach(@plr in @plrs)
+    {
+        if(
+        @plr == 'Tektronic' || 
+        @plr == 'Donald_JTrump' 
+        
+        ){
+            continue()
+        }
+        @pgroup = pgroup(@plr)
+            if(
+            @pgroup[0] == 'doctormanhattan' ||
+            @pgroup[0] == 'zeus' ||
+            @pgroup[0] == 'poseidon' ||
+            @pgroup[0] == 'hades' ||
+            @pgroup[0] == 'onepunchman' ||
+            @pgroup[0] == 'onslaught'
+            )
+            {
+                if(acc_balance(@plr) >= 5){
+                    acc_subtract(@plr,5)
+                }else{
+                    runas(~console,"/sudo ". @plr ." c:/mortal")
+                    tmsg(@plr,"you ran out of money and have turned mortal again!")
+                    
+                    if(pmode(@plr) == 'SPECTATOR'){
+                        broadcast(@plr "ran out of money and is being kicked in 5 seconds to reset his settings")
+                        set_timeout(5000, closure(
+                            runas(~console,/kick @plr "Please Relog. We are resetting your settings.")
+                        ))
+                    }
+                }
+            }
+    }
+});
+
 #main.ms
 #bind(player_toggle_sneak, null, array('sneaking': true), @event) {
 #    if(pmode() == 'SPECTATOR') {
@@ -31,6 +70,38 @@ bind(entity_death, null, array('type': 'ZOMBIE'), @e)
             die()
         }
         runas(~console,/eco give @e['cause']['shooter'] 1)
+    }
+}
+
+# Shot Enderman in Anarchy give money
+bind(entity_death, null, array('type': 'ENDERMAN'), @e)
+{
+    if(ponline(@e['cause']['damager'])){
+        if(pworld(@e['cause']['damager']) != 'anarchy'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['damager'] 30)
+    }else if(ponline(@e['cause']['shooter'])){
+        if(pworld(@e['cause']['shooter']) != 'anarchy'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['shooter'] 30)
+    }
+}
+
+# Shot Creepers in Anarchy give money
+bind(entity_death, null, array('type': 'CREEPER'), @e)
+{
+    if(ponline(@e['cause']['damager'])){
+        if(pworld(@e['cause']['damager']) != 'anarchy'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['damager'] 5)
+    }else if(ponline(@e['cause']['shooter'])){
+        if(pworld(@e['cause']['shooter']) != 'anarchy'){
+            die()
+        }
+        runas(~console,/eco give @e['cause']['shooter'] 5)
     }
 }
 

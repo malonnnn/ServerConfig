@@ -224,6 +224,8 @@ mortal:/mortal = >>>
     sudo(/effect player() clear)
     sudo(/fly player() off)
     sudo(/undisguise)
+    sudo(/god off)
+    sudo(/."minecraft:clear")
     runas(~console,/pex user player() group set mortal)
     tmsg(player(),concat(color(light_gray),
     'You are stripped of your powers.'))
@@ -550,12 +552,21 @@ roll:/roll = >>>
     broadcast(@plr"§9just played the lottery and won§6"@items[@item[0]]"§9! You can roll too using §6/roll")
 <<<
 
-deathroll:/deathroll = >>>
+deathroll:/deathroll $plr = >>>
 
-    @player = player()
+    @player = $plr
+    
+    if(acc_balance(@player) >= 1000){
+        acc_subtract(@player,1000)
+    }else{
+        tmsg(@player, "You need $1000 to use this machine!")
+        die()
+    }
+    
+    #@player = player()
     assign(@plrs, all_players())
     assign(@plr, array_rand(@plrs))
-    broadcast("§4§kk§9"@player"§7used §4DeathRoll§7! Who will §4die§7? Will it be §f"@plrs[@plr[0]]"§7?")
+    broadcast("§4§kk§9"@player"§7used §4DeathRoll§7! Who will §4§lDIE§7? Will it be §f"@plrs[@plr[0]]"§7?")
     
     set_timeout(2000, closure(
     assign(@plr, array_rand(@plrs))
@@ -703,5 +714,6 @@ gimme:/gimme = >>>
     @pname = player()
     acc_add(@pname, 10)
     tmsg(@pname, 'ur rich bch')
-
 <<<
+
+
