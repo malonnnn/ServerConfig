@@ -126,6 +126,24 @@ powers:/powers = >>>
         tmsg(@playerName, "/back")
         tmsg(@playerName, "/top")
     }
+    else if(@playerRank == "thanos")
+    {
+        tmsg(@playerName, "/thanos")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
+    else if(@playerRank == "galactus")
+    {
+        tmsg(@playerName, "/galactus")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
     else if(@playerRank == "blackpanther")
     {
         tmsg(@playerName, "/blackpanther")
@@ -784,7 +802,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-9")
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/haste 0-7")
-        tmsg(@playerName, "tp")
+        tmsg(@playerName, "/tp")
         tmsg(@playerName, "/thru (phases through walls)")
     }
 <<<
