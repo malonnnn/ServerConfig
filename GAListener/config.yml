@@ -58,12 +58,12 @@ services:
     broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}{service} {GOLD}and received {GREEN}5 Diamonds!'
     playermessage: '{GREEN}Thanks for voting at {AQUA}{service}!'
     commands: 
-    - '/give {username} 264 5'
+    - '/xp give {username} 60'
   MC-Index:
     broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}MC-Index.com {GOLD}and received {GREEN}10 Diamonds!'
     playermessage: '{GREEN}Thanks for voting at {AQUA}{service}!'
     commands: 
-    - '/give {username} 264 5'
+    - '/xp give {username} 60'
 
 #  luckyvotes section
 #  The example below would give a 1 in 10 chance of a voter receiving an extra $1000, and a 1 in 50 chance of an extra $1000 and 100XP.
@@ -73,12 +73,11 @@ luckyvotes:
     broadcast: '{GREEN}{username} {GOLD}was lucky and received an {GREEN}extra $1000!'
     playermessage: '{GREEN}You were lucky and received an extra $1000!'
     commands:
-    - '/eco give {username} 1000'
+    - '/eco give {username} 300'
   '50':
     broadcast: '{GREEN}{username} {GOLD}was super lucky and received an {GREEN}extra 100 XP and $1000!'
     playermessage: '{GREEN}You were super lucky and received an {GREEN}extra 100 XP and $1000!'
     commands:
-    - '/xp give {username} 100'
     - '/eco give {username} 1000'
 
 #  permission reward section
@@ -98,9 +97,8 @@ cumulative:
   '10':
     broadcast: '{GREEN}{username} {GOLD}has voted a total of {YELLOW}10 times {GOLD}and received {GREEN}20 Diamonds!'
     playermessage: '{GREEN}Thanks for voting {AQUA}10 times!'
-    rewardmessage: '20x Diamond'
     commands: 
-    - '/give {username} 264 20'
+    - '/eco give {username} 1000'
 
 #  blocked - a list of worlds where rewards should be disabled, they will remain queued until the player is in an allowed world.
 
@@ -121,19 +119,55 @@ blocked:
 
 votemessage:
 - '{GOLD}-----------------------------------------------------'
-- 'Vote for us every day for in game rewards and extras'
+- '{AQUA}Vote for us every day for in game rewards and extras'
+- 'http://minecraftservers.org/login'
+- 'http://minecraft-server-list.com/login/login.php'
+- 'http://topg.org/dashboard'
+- 'http://minecraftservers.net/login.php'
+- 'http://www.planetminecraft.com/account/sign_in/'
+- 'http://minecraft-mp.com/login/'
+- 'http://www.serverpact.com/inloggen.htm'
+- 'http://servers.minecraftforum.net/login'
+- 'https://www.minetrack.net/accounts/login/'
+- 'http://mc-serverlist.com/users/login.php'
+- 'https://mineservers.com/login'
+- 'http://minecraft-server.net/login'
 - '{GOLD}-----------------------------------------------------'
 - '{AQUA}You currently have {GREEN}{votes} Votes'
 
 remindmessage:
 - '{GOLD}-----------------------------------------------------'
-- 'You have not voted recently, please vote to support the server'
+- '{AQUA}You have not voted recently, please vote to support the server'
+- 'http://minecraftservers.org/login'
+- 'http://minecraft-server-list.com/login/login.php'
+- 'http://topg.org/dashboard'
+- 'http://minecraftservers.net/login.php'
+- 'http://www.planetminecraft.com/account/sign_in/'
+- 'http://minecraft-mp.com/login/'
+- 'http://www.serverpact.com/inloggen.htm'
+- 'http://servers.minecraftforum.net/login'
+- 'https://www.minetrack.net/accounts/login/'
+- 'http://mc-serverlist.com/users/login.php'
+- 'https://mineservers.com/login'
+- 'http://minecraft-server.net/login'
 - '{GOLD}-----------------------------------------------------'
 - '{AQUA}You currently have {GREEN}{votes} Votes'
 
 joinmessage:
 - '{GOLD}-----------------------------------------------------'
-- 'Vote for us every day for in game rewards and extras'
+- '{AQUA}Vote for us every day for in game rewards and extras'
+- 'http://minecraftservers.org/login'
+- 'http://minecraft-server-list.com/login/login.php'
+- 'http://topg.org/dashboard'
+- 'http://minecraftservers.net/login.php'
+- 'http://www.planetminecraft.com/account/sign_in/'
+- 'http://minecraft-mp.com/login/'
+- 'http://www.serverpact.com/inloggen.htm'
+- 'http://servers.minecraftforum.net/login'
+- 'https://www.minetrack.net/accounts/login/'
+- 'http://mc-serverlist.com/users/login.php'
+- 'https://mineservers.com/login'
+- 'http://minecraft-server.net/login'
 - '{GOLD}-----------------------------------------------------'
 - '{AQUA}You currently have {GREEN}{votes} Votes'
 
