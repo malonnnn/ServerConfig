@@ -18,7 +18,8 @@ set_interval(5000, closure(){
             @pgroup[0] == 'hades' ||
             @pgroup[0] == 'onepunchman' ||
             @pgroup[0] == 'wallywest' ||
-            @pgroup[0] == 'onslaught'
+            @pgroup[0] == 'onslaught' ||
+            @pgroup[0] == 'onslaughtreborn'
             )
             {
                 if(acc_balance(@plr) >= 5){
