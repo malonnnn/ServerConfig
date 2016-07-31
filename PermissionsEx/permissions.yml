@@ -502,6 +502,8 @@ groups:
     options:
       rank: '30'
     permissions:
+    - essentials.build.interact.*
+    - essentials.build.use.*
     - multiverse.access.torture
     - essentials.protect.damage.*
     - essentials.protect.entitytarget.bypass
@@ -709,9 +711,9 @@ groups:
         - ch.alias.flyoff
         - essentials.repair
         - essentials.repair.*
+        - -essentials.enchantments.allowunsafe
         - essentials.enchantments.*
         - essentials.enchant
-        - -essentials.enchantments.allowunsafe
         - commandhelper.alias.workbench
         - commandhelper.alias.flintsteel
         - essentials.burn
@@ -1386,6 +1388,88 @@ groups:
         - essentials.back
         - essentials.back.*
         - essentials.top
+      greenfield:
+        permissions: []
+  thanos:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.thanos
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
+        - ch.alias.jump9
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+        - ch.alias.run9
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
+      greenfield:
+        permissions: []
+  galactus:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.galactus
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
+        - ch.alias.jump9
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+        - ch.alias.run9
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
       greenfield:
         permissions: []
   onslaught:
@@ -2855,7 +2939,7 @@ users:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - martianmanhunter
+    - hephaestus
     options:
       name: BabyPickle101
       prefix: '&7{&9Station Guide&7} '
@@ -2866,9 +2950,9 @@ users:
     permissions: []
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - hephaestus
+    - ares
     options:
-      name: Chief_Sly_Fox
+      name: Hero_Of_Helix
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
     - goku
@@ -2876,7 +2960,7 @@ users:
       name: Oranges_are_glad
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
     group:
-    - doctormanhattan
+    - wallywest
     options:
       name: Donald_JTrump
       prefix: '&7{&4Admin&7} '
@@ -2910,7 +2994,7 @@ users:
       name: GDMexperienceit
   cc2d2734-e784-4250-886d-5c6c714bfb09:
     group:
-    - doctorstrange
+    - shazam
     options:
       name: DiamondMaster03
   b03318bc-895d-4d3f-8710-c991a38980b5:
@@ -3040,7 +3124,10 @@ users:
     - kidflash
     options:
       name: TheUpgraded
-      prefix: '{Bud} '
+      prefix: ''
+    worlds:
+      spawn:
+        permissions: []
   56d3b80b-482b-4d45-93eb-038a179b66bb:
     group:
     - starfire
@@ -3058,7 +3145,7 @@ users:
       name: Crayonix
   228cf946-6a97-438b-9260-02e51ac9d981:
     group:
-    - hephaestus
+    - martianmanhunter
     options:
       name: Xx_Chibeh_xX
       prefix: ''
@@ -3084,7 +3171,7 @@ users:
       name: HarrisonWellsCW
   127d5b95-016a-40b2-ac5e-330772023c39:
     group:
-    - zoom
+    - flash
     options:
       name: GreyJediOwen
   9fbfabfd-74bd-4c9c-a965-4433bf6c64ae:
@@ -3185,4 +3272,41 @@ users:
       name: Awesomeperson122
   2e87c4cb-6c55-44eb-a370-22e242ef3c78:
     group:
+    - shazam
+    options:
+      name: xOmaha
+  224919bc-84c0-4996-9ad2-7d26c2d762a9:
+    group:
+    - supergirl
+    options:
+      name: CourtneyBreanna
+  9dbffc4a-a3a0-4fa6-a69d-ceb81e5f54fb:
+    group:
+    - greenarrow
+    options:
+      name: BrendaBean2005
+  8c13c92a-8abf-4d37-b275-e91f4b4becd6:
+    group:
+    - ichigo
+    options:
+      name: Kagamine97
+  918a17da-fb94-4383-b385-f34da4351af1:
+    group:
+    - aquaman
+    options:
+      name: LostInDimension
+  eb3574c1-9db1-4ebf-9ea0-cf2595f51284:
+    group:
     - mortal
+    options:
+      name: huss196
+  4c95642b-a587-472c-98a2-12f01a2927c1:
+    group:
+    - martianmanhunter
+    options:
+      name: Nick_A_Naut
+  21e726fd-af17-4454-bb61-25e55d7300ef:
+    group:
+    - martianmanhunter
+    options:
+      name: Naterrss

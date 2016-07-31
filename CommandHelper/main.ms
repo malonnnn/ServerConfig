@@ -17,6 +17,7 @@ set_interval(5000, closure(){
             @pgroup[0] == 'poseidon' ||
             @pgroup[0] == 'hades' ||
             @pgroup[0] == 'onepunchman' ||
+            @pgroup[0] == 'wallywest' ||
             @pgroup[0] == 'onslaught'
             )
             {
@@ -60,6 +61,9 @@ bind(item_pickup,null,null,@event){
 # Shot Zombies give money
 bind(entity_death, null, array('type': 'ZOMBIE'), @e)
 {
+    if(!array_index_exists(@e['cause'],'damager')){
+        die()
+    }
     if(ponline(@e['cause']['damager'])){
         if(pworld(@e['cause']['damager']) != 'greenfield'){
             die()
@@ -1739,6 +1743,42 @@ bind(player_join,null,null,@event){
         'eyJ0aW1lc3RhbXAiOjE0Njg4MDczMzQxMzgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I4ZjE0ZjcyNzRlZDViMTY3NmFkZDNhMDZhYzYyMzMyMDVlODEzOWI5YTRlNWZkZWM4NzNjY2U2OGQzZDU0NiJ9fX0='
         
         )}
+    else if(@pgroup[0] == 'thanos'){_changeSkin(
+        
+        #currentPlayer
+        @pname,
+
+        #playername
+        'tektronic',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'WvQkfp/wV4xB3GUxakbRkTNN77rUzTRqq6bxV04zl8OSCPkkyeu7350xFRLnbeX0WhvRTy5854wklyMxec/3qKFw2aKC962CG3TB9M+xYTLjqN+dB+UfiOOXrmNgBnFeJBfNZYt6th3H3pJHAfkHOSxzmKOdM8D0ZS0MAefv0Z+5FMqCzsYXXdwi6893lZEv3O2GWXD4Syzn3FViLl0WvAEddrdF/WEnqcLbc0msFkRp+wb0CmhN9MxX/Cy/C04+HuaPg2LCLipkrbVqN5LizyWybWx8FYLXCz9MrRuZ9Gspb1ICzZP8F9qG2TZ3dc5Au55Gox7O2kj0J0ox3XzOfDXf5mBWwU33XJncZMuuRco+sEYwjK0INDAWIbkv2Sesp2ado/oNZltDQsJ8JcpLat9R+Tsf5mYmF3nF0GW4A/5wqBzwwQvH/b+bosXU9ddQepAzAYxhnoX6D1PpPGGTknS8LNW/d4suGrQmoBVs2+ydwPASheiQCCypeovZNBRC1wcImXTtgHsrzfMqHLt1ySmYPF43FYZiECyJF2UrYBJSFsuKsAnzCf2KqwJIhD6M4+Rr84AnmlkENfk+pj8qc10+rGGBWCfRoMs4sez1ml4MPp0SPcpZEygt2w4Zyd2Ooid7FFJ7d8Fqtm2FzUDkylM9VMPtWIkMcWk8VKB+ZOg=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0Njk4MTg0OTQ1MzksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVkMWE5MGE0ZTgzYWU1ZjAyNWJiNmZmN2Q4NTQxOWQ5MzU2N2M4N2M2NzVkMjgzMDg1OWJiNzQxYzBjOTMzYTkifX19'
+        
+        )}
+    else if(@pgroup[0] == 'galactus'){_changeSkin(
+        
+        #currentPlayer
+        @pname,
+
+        #playername
+        'tektronic',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'rxUFJqdFKw1Vbx/s/TQcm9tqB37Y80PtpPA8kIRS54hQ+WIwp3ZGTgDcIbXaGViUEh+bWWtmYgghuZnLzDybproRnc4LhtsnH5Ik8ka9EqLr3YGOVK7pKUcMk9lI78XJV1zGcW4pMKsQBctkyacKuMgJoo8pPfETWfxlDs7PJOh07TSazd9iJn72yg2MyfiMDYzNCm7F/eo+1zxSXP7ek80yM9VrG67YfbZVftdgaKQ/OtM5psKo0YdIsFp8/jo7CwHahcWDyXL039EMuKgPcVrZMOknS2NRKU5+6/etNZ9sZ/eygBIKbWgBdJ8ZVZSfE2fY6Zr7qpVRaaog3CePX4OFSaJR6T2b5Heo17myTzoiGtlYZSFCoLn1XPPtSwQvwREVddxgcoNORCRBzdpuI4At/qL0dcQ+rh/yAeSqOnnuKuJCRehEGQO/mx+MCAYVN1Kjg/td9cpCjM5vvB2AGytsvmSKH8QoYtMVZxNejSp61c0zOUiba/KINoYiHcliQy/eEEqsIoomh/nKxal50xC9qBpO+MSWDR5Ka8Tzow/Ftap/WbIdKdbDXr6iey05KwBptc6q+UGmN7CWpIXJYBCsrNjJGWRx9HeB8/lkWDiIZEcaLxjcBdss2jEpIxIpGJFSpNrcDAMn2EhSqhlUa7Bo9gT1t8pHDEQo+lc3v+Q=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0Njk4MjEyMzQyODYsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY5OTZlMmE1MmY5NjY2M2RmZTFjYjMzZTY3ZjY3Njc1NGY5YWY3OGMyNTBjMjVlZGM5NzBlNjM5NDljMyJ9fX0='
+        
+        )}
     else if(@pgroup[0] == 'greengoblin'){_changeSkin(
         
         #currentPlayer
@@ -1755,6 +1795,24 @@ bind(player_join,null,null,@event){
         
         #value
         'eyJ0aW1lc3RhbXAiOjE0NjkxMzQ3ODU0MTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUxZjY4OWJmNDM0NTk4NDRlYThjNzFiZDA1NDQxZWRjM2ZlOTQ4OWQ2MWNmZDc5MGU3OWJkMzhjZmJlNzUifX19'
+        
+        )}
+    else if(@pgroup[0] == 'wallywest'){_changeSkin(
+        
+        #currentPlayer
+        @pname,
+
+        #playername
+        'tektronic',
+
+        #uuid
+        '87fb3c6c5ff64bf6b326992c6137ea12',
+        
+        #signature
+        'VAdJJWGxmnXCqfLMszZa8l5fSKwhAjb5MUoBdCS7cgMKPaPYQjk7M0liP44o7XbZD0bKITW3zxuzywjDdhhKI3RNmcoKdDjsv20EnJaYQI3eWm51UJNuVns6SAIDxDNW4pSYnnr8rOABRw7whgcEHZMAFp7WGMhp5tdF8dRk9N7Kc4UsFixUzFfezGBs+ia+dJ2UoH3cfqaZxD/u7sJHZIYDT8Ksuz0v+r/4MhsdEutH6AOJuxcQhn9QF3TmXGZ+56BNZCqLfuNGJu0xjhjcuphZj+j68S6tmKQ52oWBS6g5pe3i3D0E9Rd6LmNBmQio8EVJ7SU1v5It0emOn7Mlbe/4JkuJYI5TQAacetSBnJbTnVr+N7dJrwDle9GhgquZ58w/f6/j4x6daMlIZR6MvhkuN8AAdUylIdeAOHy+u10H7BTqGSe2i0/gdtg6T0Hgl7DOJFTiSthhfavB84I0/b85b48YMWmXcR9jO3/Um++L/9vOOnPq4vLCdOQilLlzSIqhjmq5fHWlFJi8lVWBTkQV7ilHE9mwNTQeq6wXAwpCaGIvl2qIdz9h968mLot8yxvFEWseolFs1sEb/tkz/8KkRBkCEJtL9k86RAcEnS6xENDx21LiUW4+wV0SuugGOTXguamQ5Ne67eeWfVJ81/N3Kb+z8AkiLF8JGfydwLQ=',
+        
+        #value
+        'eyJ0aW1lc3RhbXAiOjE0Njk5OTQwMjM4MzQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YzYjk4MTZiZGU1MmRkYjNmOWQ5NzgxYTMyYzg3MzNmZDMzMmQ0YTZhN2FlYjU4YjA3ODE2MjNkNzY0NWVkZiJ9fX0='
         
         )}
     else if(@pgroup[0] == 'jailed'){
