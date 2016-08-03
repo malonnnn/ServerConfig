@@ -58,6 +58,7 @@ groups:
     - default
   mortal:
     permissions:
+    - multiverse.access.missions
     - multiverse.access.newspawn
     - multiverse.access.lasertag
     - essentials.protect.entitytarget.bypass
@@ -1380,7 +1381,6 @@ groups:
         - essentials.spawner
         - essentials.spawner.*
         - essentials.kill
-        - essentials.kill.*
         - essentials.lightning
         - essentials.lightning.others
         - essentials.thunder
@@ -1472,7 +1472,7 @@ groups:
         - ch.alias.haste9
       greenfield:
         permissions: []
-  onslaught:
+  onslaughtreborn:
     inheritance:
     - mortal
     worlds:
@@ -1489,8 +1489,8 @@ groups:
         - essentials.tp.*
         - essentials.gamemode.survival
         - essentials.gamemode.creative
-        - ch.alias.onslaughtphysical
-        - ch.alias.onslaughtmental
+        - ch.alias.onslaughtrebornphysical
+        - ch.alias.onslaughtrebornmental
         - ch.alias.flyon
         - ch.alias.flyoff
         - ch.alias.jump0
@@ -1924,6 +1924,31 @@ groups:
         - ch.alias.haste3
         - ch.alias.haste4
     permissions: []
+  sonicthehedgehog:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - -essentials.protect.damage.fall
+        - ch.alias.sonicthehedgehog
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+    permissions: []
   wallywest:
     inheritance:
     - mortal
@@ -1961,6 +1986,7 @@ groups:
     inheritance:
     - mortal
     permissions:
+    - essentials.kill.exempt
     - ch.alias.*
   howardtheduck:
     inheritance:
@@ -2134,6 +2160,8 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - ch.alias.flyoff
+        - ch.alias.flyon
         - -essentials.protect.damage.fall
         - ch.alias.raven
         - ch.alias.jump0
@@ -2884,6 +2912,7 @@ users:
     - cosmicarmorsuperman
     options:
       name: Tektronic
+      prefix: ''
     permissions:
     - essentials.sethome.*
     - essentials.sethome
@@ -2894,9 +2923,9 @@ users:
       name: Tamper_Monkey
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - doomsday
+    - greengoblin
     options:
-      name: Forlineo
+      name: SirCheerioz
   29da4697-2a65-4de5-8a40-c20e3f33f8ec:
     group:
     - supergirl
@@ -2939,7 +2968,7 @@ users:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - hephaestus
+    - goku
     options:
       name: BabyPickle101
       prefix: '&7{&9Station Guide&7} '
@@ -2953,6 +2982,12 @@ users:
     - ares
     options:
       name: Hero_Of_Helix
+    worlds:
+      missions:
+        permissions:
+        - worldguard.region.bypass.missions
+        - worldedit.*
+        - essentials.build.*
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     group:
     - goku
@@ -2967,6 +3002,7 @@ users:
     worlds:
       greenfield:
         permissions:
+        - worldedit.*
         - -essentials.build.interact.383:*
       minigameworld:
         permissions:
@@ -3091,7 +3127,7 @@ users:
     - owlman
   ecf2a3f8-a999-4272-a038-eb617c369c93:
     group:
-    - goku
+    - anarchy
     options:
       name: crusher31415
   7d01674f-7085-4047-924e-af4a10fa9c28:
@@ -3117,8 +3153,7 @@ users:
       prefix: ''
     worlds:
       plots:
-        permissions:
-        - worldedit.*
+        permissions: []
   00edd535-3a1b-4d16-9bda-e2334f846c4d:
     group:
     - kidflash
@@ -3186,12 +3221,12 @@ users:
       name: XIBatmanIX
   2928a722-16ca-473f-be3e-ff001b3dd8f9:
     group:
-    - ironman
+    - martianmanhunter
     options:
       name: Megladon826
   aadc7908-8f08-4941-8eb0-bb3bfb1bbc53:
     group:
-    - goku
+    - superman
     options:
       name: EndLordNate
   946fa516-5302-40bd-9464-27a8a9a150aa:
@@ -3292,12 +3327,12 @@ users:
       name: Kagamine97
   918a17da-fb94-4383-b385-f34da4351af1:
     group:
-    - vegeta
+    - deadpool
     options:
       name: LostInDimension
   eb3574c1-9db1-4ebf-9ea0-cf2595f51284:
     group:
-    - mortal
+    - spiderman
     options:
       name: huss196
   4c95642b-a587-472c-98a2-12f01a2927c1:
@@ -3307,7 +3342,7 @@ users:
       name: Nick_A_Naut
   21e726fd-af17-4454-bb61-25e55d7300ef:
     group:
-    - goku
+    - mortal
     options:
       name: Naterrss
   d741dd01-8fac-496e-adc6-f88e1087e57c:
@@ -3315,3 +3350,85 @@ users:
     - superman
     options:
       name: lissakitty
+  91876da7-6e07-4205-ae37-cf8a249dc4ea:
+    group:
+    - goku
+    options:
+      name: Stampyscool
+  45c2b9d0-b7f3-4f22-8da2-e84fe94715cf:
+    group:
+    - nightwing
+    options:
+      name: Chewstur
+  6f063a6f-2e83-43b7-8108-e0702adca10d:
+    group:
+    - jailed
+    options:
+      name: NonEdukated
+      prefix: '&7{Hacker, given multiple chances&7} '
+  e7dbf1fa-c1d0-4043-8adc-34377a08c7b8:
+    group:
+    - supergirl
+    options:
+      name: Jessieeeeeeeee
+  801d631a-abbe-4dfb-bf6f-2b35ca34f699:
+    group:
+    - jailed
+    options:
+      name: Finnrio_
+  af0c963d-dc02-441a-8e20-0f9385f15d0b:
+    group:
+    - mortal
+    options:
+      name: superman123
+  fa4df296-f8ed-4ee3-9e47-f47ae580ce7f:
+    group:
+    - howardtheduck
+    options:
+      name: Wizzard_Moogic
+  2c991dfb-ada7-4424-a1e4-05cda6f9e479:
+    group:
+    - goku
+    options:
+      name: evanarancibia
+  876ec88c-8bf3-49b4-b3d5-ad8a371d11b4:
+    group:
+    - raven
+    options:
+      name: Amoux_Fang
+  17b6832f-aae5-4636-a4d9-0e4100879597:
+    group:
+    - ironman
+    options:
+      name: rodrigo69dj
+  d040200e-c787-461d-ada0-2b5563842ad7:
+    group:
+    - mortal
+    options:
+      name: ItzGracie_64
+  47f9935f-b402-4ee8-963b-e803db83b8a8:
+    group:
+    - anarchy
+    options:
+      name: JackAttack806
+  f267d1cb-66b0-4c56-b1ed-90fc945a98d4:
+    group:
+    - martianmanhunter
+    options:
+      name: Irrupter
+  2551d7bf-6a51-4738-b029-7835c654133d:
+    group:
+    - goku
+    options:
+      prefix: ''
+      name: TwinCrafters29
+  b7239167-78ec-43f8-8d0f-eae67a5b9f33:
+    group:
+    - hulk
+    options:
+      name: TheMBros2
+  d59bfb4d-3b33-44f3-9ab1-1cdb846c467b:
+    group:
+    - blackspiderman
+    options:
+      name: bugglenick

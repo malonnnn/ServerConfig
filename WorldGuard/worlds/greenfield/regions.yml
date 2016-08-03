@@ -49,7 +49,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {use: allow, feed-amount: 1, feed-delay: 1, interact: allow, pvp: deny,
+        flags: {use: allow, feed-delay: 1, feed-amount: 1, interact: allow, pvp: deny,
             heal-amount: 100, heal-delay: 1}
         owners: {}
         type: cuboid
@@ -77,10 +77,10 @@ regions:
         min: {x: -2122.0, y: 0.0, z: -111.0}
         max: {x: -1916.0, y: 255.0, z: 9.0}
         members: {}
-        flags: {heal-amount: 100, mob-spawning: deny, heal-delay: 1}
+        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
         owners: {}
         type: cuboid
-        priority: 0
+        priority: 5
     __global__:
         members: {}
         flags: {}
