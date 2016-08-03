@@ -220,10 +220,10 @@ run9:/run 9 = >>>
 <<<
 
 mortal:/mortal = >>>
+    sudo(/undisguise)
     sudo(/speed player() 1)
     sudo(/effect player() clear)
     sudo(/fly player() off)
-    sudo(/undisguise)
     sudo(/god off)
     sudo(/."minecraft:clear")
     runas(~console,/pex user player() group set mortal)
