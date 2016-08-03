@@ -580,7 +580,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/tangible")
         tmsg(@playerName, "/intangible")
         tmsg(@playerName, "/disguise")
-        tmsg(@playerName, "/speak")
+        tmsg(@playerName, "/speak <player> <message>")
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
         tmsg(@playerName, "/disguiseviewself")
@@ -804,5 +804,11 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-7")
         tmsg(@playerName, "/tp")
         tmsg(@playerName, "/thru (phases through walls)")
+    }
+    else if(@playerRank == "sonicthehedgehog")
+    {
+        tmsg(@playerName, "/sonicthehedgehog")
+        tmsg(@playerName, "/run 0-8")
+        tmsg(@playerName, "/jump 0-6")
     }
 <<<

@@ -91,6 +91,31 @@ ironmanscannon:
     NoBlocksBetween: true
     Shooter: ''
     Victim: ''
+    
+sonicthehedgehogshomingattack:
+  Item_Information:
+    Item_Name: "&9S&fo&9n&4i&9c t&fh&9e H&fe&9dge&4h&fo&4g's &9Homing Attack"
+  Trails:
+    trailsEnabled: true
+    Trail: CRIT
+    trailsWeaponType: PROJECTILES
+  itemHoldEffects:
+    itemHoldEffectsEnable: true
+    hideAttributes: true
+    GunWeight: 0.0087
+  ActionBarReload:
+    ReloadMessage: '&a&l%weapon% RELOADING... %reloadbar% &a&l%timeleft%s'
+    ReloadCompleteMessage: '&a&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GREEN
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  homingProjectiles:
+    Radius: 32.0
+    CrosshairToLock: false
+    NoBlocksBetween: true
+    Shooter: ''
+    Victim: ''
   #CustomBreakBlocks:
   #  breakBlocks: true
   #  Blacklist: false
