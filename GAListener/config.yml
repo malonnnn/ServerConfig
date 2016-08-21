@@ -55,15 +55,15 @@ settings:
 
 services:
   default:
-    broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}{service} {GOLD}and received {GREEN}5 Diamonds!'
+    broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}{service} {GOLD}and received {GREEN}$120!'
     playermessage: '{GREEN}Thanks for voting at {AQUA}{service}!'
     commands: 
-    - '/xp give {username} 60'
+    - '/eco give {username} 120'
   MC-Index:
-    broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}MC-Index.com {GOLD}and received {GREEN}10 Diamonds!'
+    broadcast: '{GREEN}{username} {GOLD}has voted @ {GREEN}MC-Index.com {GOLD}and received {GREEN}$120!'
     playermessage: '{GREEN}Thanks for voting at {AQUA}{service}!'
     commands: 
-    - '/xp give {username} 60'
+    - '/eco give {username} 120'
 
 #  luckyvotes section
 #  The example below would give a 1 in 10 chance of a voter receiving an extra $1000, and a 1 in 50 chance of an extra $1000 and 100XP.

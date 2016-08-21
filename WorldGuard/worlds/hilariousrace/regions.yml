@@ -10,10 +10,17 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    hilariousrace:
+        min: {x: -32.0, y: 64.0, z: -51.0}
+        max: {x: 39.0, y: 97.0, z: 3018.0}
+        members: {}
+        flags: {invincible: allow, use: allow, interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 5
     __global__:
         members: {}
-        flags: {invincible: allow, use: allow, 
-            interact: allow}
+        flags: {}
         owners: {}
         type: global
         priority: 0

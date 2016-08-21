@@ -39,7 +39,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {other-explosion: deny, creeper-explosion: deny, chest-access-group: NON_MEMBERS,
-            use: allow, interact: allow, pistons: allow, pvp: allow, chest-access: deny,
+            use: allow, interact: allow, pvp: allow, pistons: allow, chest-access: deny,
             ghast-fireball: deny}
         owners: {}
         type: cuboid
@@ -49,8 +49,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {use: allow, feed-delay: 1, feed-amount: 1, interact: allow, pvp: deny,
-            heal-amount: 100, heal-delay: 1}
+        flags: {use: allow, feed-delay: 1, feed-amount: 1, interact: allow, pvp: deny}
         owners: {}
         type: cuboid
         priority: 2
@@ -69,8 +68,7 @@ regions:
         max: {x: 336.0, y: 255.0, z: 485.0}
         members: {}
         flags: {build: allow}
-        owners:
-            unique-ids: [841c5c33-2a11-430b-bb00-32b2c8868d3b]
+        owners: {}
         type: cuboid
         priority: 0
     basements:
