@@ -1,5 +1,5 @@
 awe:
-  version: 16
+  version: 17
   rendering:
     interval: 15
     talk-interval: 10
@@ -81,6 +81,9 @@ awe:
         - 81
         - 83
         historySize: 15
+        disallowedBlocksUsage:
+          patterns: true
+          blockSet: false
   disabledOperations: []
   permissions:
     opHasAll: true

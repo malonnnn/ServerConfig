@@ -9,7 +9,7 @@ worlds:
     scale: '8.0'
     respawnWorld: skeeter
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -47,102 +47,6 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
-  pmc:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&4newcity'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: ''
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: ADVENTURE
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: -10305.0
-      y: 121.0
-      z: 6779.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'true'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '0'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'true'
-  wooftywoo_the_end:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&01.8'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '16.0'
-    respawnWorld: wooftywoo
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: ADVENTURE
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.0
-      y: 63.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: THE_END
-    seed: '-1695579485'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'false'
   pornhub:
     ==: MVWorld
     hidden: 'false'
@@ -153,7 +57,7 @@ worlds:
     scale: '1.0'
     respawnWorld: pornhub
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -191,6 +95,102 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
+  wooftywoo_the_end:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&01.8'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '16.0'
+    respawnWorld: wooftywoo
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: ADVENTURE
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 63.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: THE_END
+    seed: '-1695579485'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'false'
+  pmc:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&4newcity'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: ADVENTURE
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -10305.0
+      y: 121.0
+      z: 6779.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '0'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   crapcakesandapplesauce_the_end:
     ==: MVWorld
     hidden: 'false'
@@ -201,7 +201,7 @@ worlds:
     scale: '16.0'
     respawnWorld: crapcakesandapplesauce
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -249,7 +249,7 @@ worlds:
     scale: '16.0'
     respawnWorld: survival
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -297,7 +297,7 @@ worlds:
     scale: '1.0'
     respawnWorld: elytralobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -345,7 +345,7 @@ worlds:
     scale: '1.0'
     respawnWorld: skywarslobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -393,7 +393,7 @@ worlds:
     scale: '1.0'
     respawnWorld: parkourmedium
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -441,7 +441,7 @@ worlds:
     scale: '1.0'
     respawnWorld: formuladrift
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -489,7 +489,7 @@ worlds:
     scale: '1.0'
     respawnWorld: flyingbattlelobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -537,7 +537,7 @@ worlds:
     scale: '1.0'
     respawnWorld: elytraeasy
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -585,7 +585,7 @@ worlds:
     scale: '16.0'
     respawnWorld: RabbitSeasonDuckSeason
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -633,7 +633,7 @@ worlds:
     scale: '1.0'
     respawnWorld: megaparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -681,7 +681,7 @@ worlds:
     scale: '1.0'
     respawnWorld: hurdles
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -729,7 +729,7 @@ worlds:
     scale: '1.0'
     respawnWorld: godlyparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -767,54 +767,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  chess:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&4Chess'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: chess
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.0
-      y: 64.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '5364979568235687981'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   1_9_the_end:
     ==: MVWorld
     hidden: 'false'
@@ -825,7 +777,7 @@ worlds:
     scale: '16.0'
     respawnWorld: '1_9'
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -863,6 +815,54 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
+  chess:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&4Chess'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: chess
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '5364979568235687981'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   marathon:
     ==: MVWorld
     hidden: 'false'
@@ -873,7 +873,7 @@ worlds:
     scale: '1.0'
     respawnWorld: marathon
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -921,7 +921,7 @@ worlds:
     scale: '1.0'
     respawnWorld: survival
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -969,7 +969,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1007,102 +1007,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  anarchy:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&4Anarchy'
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: anarchy
-    allowWeather: 'true'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 1.5
-      y: 72.20000004768372
-      z: 64.5
-      pitch: 3.749986
-      yaw: -2.550107
-    autoLoad: 'true'
-    bedRespawn: 'true'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-864173354'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'false'
-  '1_9':
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&21.9'
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: '1_9'
-    allowWeather: 'true'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 129.49683451067
-      y: 67.0
-      z: -317.550688110391
-      pitch: 2.9999967
-      yaw: 270.4503
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '50091'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'true'
   longparkour:
     ==: MVWorld
     hidden: 'false'
@@ -1113,7 +1017,7 @@ worlds:
     scale: '1.0'
     respawnWorld: longparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1151,6 +1055,102 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
+  '1_9':
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&21.9'
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: '1_9'
+    allowWeather: 'true'
+    difficulty: HARD
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -2664.4667541839463
+      y: 67.0
+      z: 1292.3893418016996
+      pitch: 2.7000084
+      yaw: -179.11108
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '50091'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'true'
+  anarchy:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&4Anarchy'
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: anarchy
+    allowWeather: 'true'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 1.5
+      y: 72.20000004768372
+      z: 64.5
+      pitch: 3.749986
+      yaw: -2.550107
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-864173354'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'false'
   spleef:
     ==: MVWorld
     hidden: 'false'
@@ -1161,7 +1161,7 @@ worlds:
     scale: '1.0'
     respawnWorld: spleeflobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1209,7 +1209,7 @@ worlds:
     scale: '1.0'
     respawnWorld: creative
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1257,7 +1257,7 @@ worlds:
     scale: '8.0'
     respawnWorld: wooftywoo
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1305,7 +1305,7 @@ worlds:
     scale: '1.0'
     respawnWorld: crapcakesandapplesauce
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1343,54 +1343,6 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
-  towerparkour:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&2Tower Parkour'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: towerparkour
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.5
-      y: 67.0
-      z: 0.5
-      pitch: 12.749981
-      yaw: 180.15025
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-1170726092799788763'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   parkourhub:
     ==: MVWorld
     hidden: 'false'
@@ -1401,7 +1353,7 @@ worlds:
     scale: '1.0'
     respawnWorld: parkourhub
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1439,17 +1391,17 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  boatrace:
+  towerparkour:
     ==: MVWorld
     hidden: 'false'
-    alias: '&9Boat Race'
+    alias: '&2Tower Parkour'
     color: WHITE
     style: NORMAL
     pvp: 'false'
     scale: '1.0'
-    respawnWorld: boatrace
+    respawnWorld: towerparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1474,16 +1426,16 @@ worlds:
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
-      y: 64.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
+      x: 0.5
+      y: 67.0
+      z: 0.5
+      pitch: 12.749981
+      yaw: 180.15025
     autoLoad: 'true'
     bedRespawn: 'false'
     worldBlacklist: []
     environment: NORMAL
-    seed: '4847986246842868041'
+    seed: '-1170726092799788763'
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
@@ -1497,7 +1449,7 @@ worlds:
     scale: '1.0'
     respawnWorld: elytrahard
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1532,6 +1484,54 @@ worlds:
     worldBlacklist: []
     environment: NORMAL
     seed: '-6445082027405603314'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
+  boatrace:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&9Boat Race'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: boatrace
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 64.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '4847986246842868041'
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
@@ -1593,7 +1593,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1641,7 +1641,7 @@ worlds:
     scale: '8.0'
     respawnWorld: crapcakesandapplesauce
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1689,7 +1689,7 @@ worlds:
     scale: '8.0'
     respawnWorld: RabbitSeasonDuckSeason
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1737,7 +1737,7 @@ worlds:
     scale: '16.0'
     respawnWorld: skeeter
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1785,7 +1785,7 @@ worlds:
     scale: '1.0'
     respawnWorld: checkers
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1833,7 +1833,7 @@ worlds:
     scale: '1.0'
     respawnWorld: obstaclecourse
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1871,54 +1871,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  deathdrop:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&4Death Drop'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: deathdrop
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.5
-      y: 253.0
-      z: 3.5
-      pitch: 6.750001
-      yaw: -179.84975
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '1599396386335295166'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   flappybirdparkour:
     ==: MVWorld
     hidden: 'false'
@@ -1929,7 +1881,7 @@ worlds:
     scale: '1.0'
     respawnWorld: flappybirdparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -1967,6 +1919,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
+  deathdrop:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&4Death Drop'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: deathdrop
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.5
+      y: 253.0
+      z: 3.5
+      pitch: 6.750001
+      yaw: -179.84975
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '1599396386335295166'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   wooftywoo:
     ==: MVWorld
     hidden: 'false'
@@ -1977,7 +1977,7 @@ worlds:
     scale: '1.0'
     respawnWorld: wooftywoo
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2025,7 +2025,7 @@ worlds:
     scale: '1.0'
     respawnWorld: parkoureasy
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2111,6 +2111,54 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
+  hilariousrace:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2Hilarious Race'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: hilariousrace
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 19.5
+      y: 85.0
+      z: -7.5
+      pitch: 4.649991
+      yaw: -359.69928
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-8547203203080114558'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   survival_nether:
     ==: MVWorld
     hidden: 'false'
@@ -2121,7 +2169,7 @@ worlds:
     scale: '8.0'
     respawnWorld: survival
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2159,54 +2207,6 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
-  hilariousrace:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&2Hilarious Race'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: hilariousrace
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.0
-      y: 64.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-8547203203080114558'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   lasertag:
     ==: MVWorld
     hidden: 'false'
@@ -2217,7 +2217,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2265,7 +2265,7 @@ worlds:
     scale: '1.0'
     respawnWorld: RabbitSeasonDuckSeason
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2313,7 +2313,7 @@ worlds:
     scale: '1.0'
     respawnWorld: flat
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2361,7 +2361,7 @@ worlds:
     scale: '1.0'
     respawnWorld: infiniteparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2409,7 +2409,7 @@ worlds:
     scale: '1.0'
     respawnWorld: turbotowers
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2447,54 +2447,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  straightlineparkour:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&2Straight Line Parkour'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: straightlineparkour
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.5
-      y: 4.0
-      z: 0.5
-      pitch: 2.0999985
-      yaw: 89.84997
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-8245007819402373621'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   colosseum:
     ==: MVWorld
     hidden: 'false'
@@ -2505,7 +2457,7 @@ worlds:
     scale: '1.0'
     respawnWorld: colosseumlobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2540,6 +2492,54 @@ worlds:
     worldBlacklist: []
     environment: NORMAL
     seed: '-6947373970582061031'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
+  straightlineparkour:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2Straight Line Parkour'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: straightlineparkour
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.5
+      y: 4.0
+      z: 0.5
+      pitch: 2.0999985
+      yaw: 89.84997
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-8245007819402373621'
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
@@ -2602,7 +2602,7 @@ worlds:
     scale: '1.0'
     respawnWorld: spleeflobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2640,54 +2640,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  wallenpole:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&2Wall & Pole Climb'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: wallenpole
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: ADVENTURE
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 4.5
-      y: 79.0
-      z: 11.5
-      pitch: 1.049991
-      yaw: -90.30205
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '273626683372343163'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   parkourhard:
     ==: MVWorld
     hidden: 'false'
@@ -2698,7 +2650,7 @@ worlds:
     scale: '1.0'
     respawnWorld: parkourhard
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2736,6 +2688,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
+  wallenpole:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2Wall & Pole Climb'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: wallenpole
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: ADVENTURE
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 4.5
+      y: 79.0
+      z: 11.5
+      pitch: 1.049991
+      yaw: -90.30205
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '273626683372343163'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   colosseumlobby:
     ==: MVWorld
     hidden: 'false'
@@ -2746,7 +2746,7 @@ worlds:
     scale: '1.0'
     respawnWorld: colosseumlobby
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2784,54 +2784,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  skeeter:
-    ==: MVWorld
-    hidden: 'false'
-    alias: skeeter
-    color: WHITE
-    style: NORMAL
-    pvp: 'true'
-    scale: '1.0'
-    respawnWorld: skeeter
-    allowWeather: 'true'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'true'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.0
-      y: 72.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '2143426601'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'false'
   newspawn:
     ==: MVWorld
     hidden: 'false'
@@ -2842,7 +2794,7 @@ worlds:
     scale: '1.0'
     respawnWorld: newspawn
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2880,6 +2832,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
+  skeeter:
+    ==: MVWorld
+    hidden: 'false'
+    alias: skeeter
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: skeeter
+    allowWeather: 'true'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 0.0
+      y: 72.0
+      z: 0.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '2143426601'
+    generator: 'null'
+    playerLimit: '-1'
+    allowFlight: 'false'
   hogwarts:
     ==: MVWorld
     hidden: 'false'
@@ -2890,7 +2890,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -2928,54 +2928,6 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
-  elytramedium:
-    ==: MVWorld
-    hidden: 'false'
-    alias: '&aElytra &4TEST'
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: elytramedium
-    allowWeather: 'false'
-    difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: ADVENTURE
-    keepSpawnInMemory: 'false'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 45.5
-      y: 84.0
-      z: 46.5
-      pitch: -0.30001637
-      yaw: -0.20050049
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-8610945045638472914'
-    generator: CleanroomGenerator:.
-    playerLimit: '-1'
-    allowFlight: 'false'
   1_9_nether:
     ==: MVWorld
     hidden: 'false'
@@ -2986,7 +2938,7 @@ worlds:
     scale: '8.0'
     respawnWorld: '1_9'
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3024,17 +2976,17 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'
-  minigameworld:
+  elytramedium:
     ==: MVWorld
     hidden: 'false'
-    alias: minigameworld
+    alias: '&aElytra &4TEST'
     color: WHITE
     style: NORMAL
-    pvp: 'true'
+    pvp: 'false'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: elytramedium
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3055,20 +3007,20 @@ worlds:
     autoHeal: 'true'
     adjustSpawn: 'true'
     portalForm: ALL
-    gameMode: CREATIVE
+    gameMode: ADVENTURE
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
-      y: 64.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
+      x: 45.5
+      y: 84.0
+      z: 46.5
+      pitch: -0.30001637
+      yaw: -0.20050049
     autoLoad: 'true'
     bedRespawn: 'false'
     worldBlacklist: []
     environment: NORMAL
-    seed: '4024814205727096145'
+    seed: '-8610945045638472914'
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
@@ -3082,7 +3034,7 @@ worlds:
     scale: '1.0'
     respawnWorld: shortparkour
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3120,17 +3072,17 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
-  plots:
+  minigameworld:
     ==: MVWorld
     hidden: 'false'
-    alias: '&6Plots'
+    alias: minigameworld
     color: WHITE
     style: NORMAL
-    pvp: 'false'
+    pvp: 'true'
     scale: '1.0'
-    respawnWorld: plots
+    respawnWorld: ''
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3150,22 +3102,22 @@ worlds:
     hunger: 'false'
     autoHeal: 'true'
     adjustSpawn: 'true'
-    portalForm: NONE
+    portalForm: ALL
     gameMode: CREATIVE
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 185.5
-      y: 65.0
-      z: 256.5
+      x: 0.0
+      y: 64.0
+      z: 0.0
       pitch: 0.0
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
     worldBlacklist: []
     environment: NORMAL
-    seed: '2818272918790537512'
-    generator: PlotSquared
+    seed: '4024814205727096145'
+    generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
   pornhub_nether:
@@ -3178,7 +3130,7 @@ worlds:
     scale: '8.0'
     respawnWorld: pornhub
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3216,6 +3168,54 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
+  plots:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&6Plots'
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: plots
+    allowWeather: 'false'
+    difficulty: PEACEFUL
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: NONE
+    gameMode: CREATIVE
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 125.0
+      y: 65.0
+      z: 123.0
+      pitch: 2.249989
+      yaw: 270.10422
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '2818272918790537512'
+    generator: PlotSquared
+    playerLimit: '-1'
+    allowFlight: 'false'
   pornhub_the_end:
     ==: MVWorld
     hidden: 'false'
@@ -3226,7 +3226,7 @@ worlds:
     scale: '16.0'
     respawnWorld: pornhub
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3322,7 +3322,7 @@ worlds:
     scale: '1.0'
     respawnWorld: spawn
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3370,7 +3370,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3418,7 +3418,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'true'
-    difficulty: EASY
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3466,7 +3466,7 @@ worlds:
     scale: '1.0'
     respawnWorld: flyingbattlearena
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:
@@ -3514,7 +3514,7 @@ worlds:
     scale: '1.0'
     respawnWorld: ''
     allowWeather: 'false'
-    difficulty: HARD
+    difficulty: PEACEFUL
     spawning:
       ==: MVSpawnSettings
       animals:

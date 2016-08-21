@@ -1,6 +1,6 @@
-supermanslaservision:
+kryptonianlaservision:
     Item_Information:
-        Item_Name: "&cS&9u&ep&9e&9rm&can's &4Laser Vision"
+        Item_Name: "&4Kryptonian Laser Vision"
         Item_Type: 417
     Shooting:
         Cancel_Right_Click_Interactions: true
@@ -177,6 +177,7 @@ finalflash:
     Item_Information:
         Item_Name: "&eV&fe&1ge&fta's &eFinal Flash"
         Item_Type: 417
+        Inventory_Control: finalflash
     Shooting:
         Cancel_Right_Click_Interactions: true
         Projectile_Amount: 1
@@ -206,6 +207,7 @@ warbeam:
     Item_Information:
         Item_Name: "&4&lAr&0&le&4&ls's War Beam"
         Item_Type: 417
+        Inventory_Control: warbeam
     Shooting:
         Cancel_Right_Click_Interactions: true
         Projectile_Amount: 1
@@ -231,39 +233,11 @@ warbeam:
         start_pos: 0
         start_y: 0
         color: 255-0-0
-supergirlslaservision:
-    Item_Information:
-        Item_Name: "&cS&9u&ep&9e&9rg&cirl's &4Laser Vision"
-        Item_Type: 417
-    Shooting:
-        Cancel_Right_Click_Interactions: true
-        Projectile_Amount: 1
-        Projectile_Type: energy
-        Projectile_Subtype: 40-0.1-NONE-0
-        Projectile_Damage: 20
-        Delay_Between_Shots: 5
-        Right_Click_To_Shoot: true
-    Reload:
-        Enable: false
-    Hit_Events:
-        Enable: true
-    Laser:
-        Enable: true
-        trigger: 1-0
-        aim: none
-        particle: 1-0
-        distance: 30
-        view-distance: 50
-        count: 10
-        ppb: true
-        hitstop: true
-        start_pos: 0
-        start_y: 0
-        color: 255-0-0
 godblast:
     Item_Information:
         Item_Name: "&eT&4h&9o&fr's &eGod Blast"
         Item_Type: 417
+        Inventory_Control: godblast
     Shooting:
         Cancel_Right_Click_Interactions: true
         Projectile_Amount: 1
@@ -293,6 +267,7 @@ magicblast:
     Item_Information:
         Item_Name: "&cD&9octo&cr &9S&ctrang&9e's &5Magic Blast"
         Item_Type: 417
+        Inventory_Control: magicblast
     Shooting:
         Cancel_Right_Click_Interactions: true
         Projectile_Amount: 1
@@ -322,6 +297,7 @@ greenbeam:
     Item_Information:
         Item_Name: "&2Gr&8e&2en Lant&8e&2rn's &2Green Beam"
         Item_Type: 388
+        Inventory_Control: greenbeam
     Shooting:
         Cancel_Right_Click_Interactions: true
         Projectile_Amount: 1
@@ -434,35 +410,6 @@ starbolt:
         start_pos: 0
         start_y: 0
         color: 100-255-100
-starbolt:
-    Item_Information:
-        Item_Name: "&dS&5ta&drf&5ir&de's &2Starbolt"
-        Item_Type: 417
-    Shooting:
-        Cancel_Right_Click_Interactions: true
-        Projectile_Amount: 1
-        Projectile_Type: energy
-        Projectile_Subtype: 40-0.1-NONE-0
-        Projectile_Damage: 60
-        Delay_Between_Shots: 5
-        Right_Click_To_Shoot: true
-    Reload:
-        Enable: false
-    Hit_Events:
-        Enable: true
-    Laser:
-        Enable: true
-        trigger: 1-0
-        aim: none
-        particle: 1-0
-        distance: 30
-        view-distance: 50
-        count: 10
-        ppb: true
-        hitstop: true
-        start_pos: 0
-        start_y: 0
-        color: 100-255-100
 lightning:
     Item_Information:
         Item_Name: "&eLightning"
@@ -492,6 +439,35 @@ lightning:
         start_pos: 0
         start_y: 0
         color: 255-255-100
+darkmagic:
+    Item_Information:
+        Item_Name: "&5R&0a&5v&0e&5n's &0Bl&5a&0ck &5M&0a&5gic"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 60
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 30
+        view-distance: 50
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 0-0-0
 forcelightning:
     Item_Information:
         Item_Name: "&bForce Lightning"

@@ -231,6 +231,18 @@ mortal:/mortal = >>>
     'You are stripped of your powers.'))
 <<<
 
+outofmoney:/outofmoney = >>>
+    sudo(/undisguise)
+    sudo(/speed player() 1)
+    sudo(/effect player() clear)
+    sudo(/fly player() off)
+    sudo(/god off)
+    sudo(/."minecraft:clear")
+    runas(~console,/pex user player() group set mortal)
+    sudo(/warp city)
+    runas(~console, /kick player() "auto-kicked because you ran out of money. Sorry but kicking is required in order to reset your gamemode")
+<<<
+
 push:/push $plr = >>>
     @plr = $plr
     @uuid = pinfo($plr,20)
@@ -651,8 +663,7 @@ changehero:/changehero $plr $class = >>>
                     tmsg(@plr, "$200 taken for use of OP")
                 }else{
                     acc_subtract(@plr,acc_balance(@plr))
-                    runas(~console,"/sudo ". @plr ." c:/mortal")
-                    tmsg(@plr, "Not enough money, returning you to mortal")
+                    runas(~console,"/sudo ". @plr ." c:/outofmoney")
                 }
             }
     
