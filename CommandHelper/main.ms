@@ -364,6 +364,16 @@ bind(entity_damage,null,null,@event){
     }
 }
 
+bind(player_login, null, null, @e) {
+    set_timeout(3000, closure(
+        broadcast(
+            concat(color(dark_red), 'REMINDER:')
+            concat(color(green), 'This server is now')
+            concat(color(gold), 'an RP server!')
+        )
+    ))
+}
+
 #bind(player_death, null, null, @e) {
 #    @plrs = all_players(pworld())
 #    foreach(@plr in @plrs){
