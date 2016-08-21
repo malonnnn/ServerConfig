@@ -640,6 +640,23 @@ changehero:/changehero $plr $class = >>>
     @class = $class
     @exit = $exit
     
+    @plrs = all_players()
+    foreach(@player in @plrs)
+    {
+        @otherPlayerGroup = pgroup(@player)
+        if(@otherPlayerGroup[0] == @class && @plr != @player){
+            broadcast(
+                concat(color(white),@plr)
+                concat(color(gray),"tried to turn into")
+                concat(color(gold),@class)
+                concat(color(gray),"but")
+                concat(color(white),@player)
+                concat(color(gray),"was already that class!")
+            )
+            die()
+        }
+    }
+    
     runas(~console, '/pex user' @plr 'group set' @class)
     sudo(/fly @plr off)
     sudo(/effect @plr clear)
@@ -655,6 +672,7 @@ changehero:/changehero $plr $class = >>>
             @pgroup[0] == 'onepunchman' ||
             @pgroup[0] == 'wallywest' ||
             @pgroup[0] == 'onslaught' ||
+            @pgroup[0] == 'doctorfate' ||
             @pgroup[0] == 'onslaughtreborn'
             )
             {
