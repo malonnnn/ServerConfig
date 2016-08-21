@@ -4,7 +4,6 @@ set_interval(5000, closure(){
     foreach(@plr in @plrs)
     {
         if(
-        @plr == 'Tektronic' || 
         @plr == 'Donald_JTrump' 
         
         ){
@@ -18,7 +17,7 @@ set_interval(5000, closure(){
             @pgroup[0] == 'hades' ||
             @pgroup[0] == 'onepunchman' ||
             @pgroup[0] == 'wallywest' ||
-            @pgroup[0] == 'onslaught' ||
+            @pgroup[0] == 'onslaughtreborn' ||
             @pgroup[0] == 'kentnelson' ||
             @pgroup[0] == 'onslaughtreborn'
             )
