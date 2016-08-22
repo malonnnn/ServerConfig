@@ -635,11 +635,14 @@ marry:/marry $plr1 $plr2 = >>>
 
 <<<
 
-changehero:/changehero $plr $class = >>>
+changehero:/changehero $plr $class $floor = >>>
     @plr = $plr
     @class = $class
     @exit = $exit
+    @floor = $floor
+    include('includes/friendlyheroname.ms')
     
+    #make sure no other players are currently using the class you want
     @plrs = all_players()
     foreach(@player in @plrs)
     {
@@ -648,7 +651,7 @@ changehero:/changehero $plr $class = >>>
             broadcast(
                 concat(color(white),@plr)
                 concat(color(gray),"tried to turn into")
-                concat(color(gold),@class)
+                _friendlyHeroName(@class)
                 concat(color(gray),"but")
                 concat(color(white),@player)
                 concat(color(gray),"was already that class!")
@@ -662,9 +665,22 @@ changehero:/changehero $plr $class = >>>
     sudo(/effect @plr clear)
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
-    
+    #change skin
+    include('includes/changeskin.ms')
     @pgroup = pgroup(@plr)
-            if(
+    _changeSkin(@plr,@pgroup[0])
+    #charge $200 if not staff
+    if(
+        @plr == 'Donald_JTrump' ||
+        @plr == 'Tektronic' ||
+        @plr == 'Hero_Of_Helix' ||
+        @plr == 'Naterrss' ||
+        @plr == 'Emerald_Break'
+        )
+    {
+        
+    }else{
+        if(
             @pgroup[0] == 'doctormanhattan' ||
             @pgroup[0] == 'zeus' ||
             @pgroup[0] == 'poseidon' ||
@@ -674,16 +690,29 @@ changehero:/changehero $plr $class = >>>
             @pgroup[0] == 'onslaughtreborn' ||
             @pgroup[0] == 'kentnelson' ||
             @pgroup[0] == 'onslaughtreborn'
-            )
-            {
-                if(acc_balance(@plr) >= 200){
-                    acc_subtract(@plr,200)
-                    tmsg(@plr, "$200 taken for use of OP")
-                }else{
-                    acc_subtract(@plr,acc_balance(@plr))
-                    runas(~console,"/sudo ". @plr ." c:/outofmoney")
-                }
+        )
+        {
+            if(acc_balance(@plr) >= 200){
+                acc_subtract(@plr,200)
+                tmsg(@plr, "$200 taken for use of OP")
+            }else{
+                acc_subtract(@plr,acc_balance(@plr))
+                runas(~console,"/sudo ". @plr ." c:/outofmoney")
             }
+        }
+    }
+    #print message
+    @fname = _friendlyHeroName(@class)
+    if(@fname != 'false'){
+        broadcast(
+            concat(color(blue),@plr)
+            concat(color(gray),"has transformed into")
+            concat(@fname,concat(color(gray),"!"))
+        )
+    }
+    
+    #warp to exit pod
+    runas(~console,"/warp exitpod". @floor @plr)
     
 <<<
 
