@@ -34,12 +34,21 @@ regions:
         - {x: 296, z: -1309}
         - {x: 296, z: -1311}
         - {x: 287, z: -1311}
+    modapplications:
+        parent: bookchest
+        min: {x: -8.0, y: 78.0, z: 244.0}
+        max: {x: -8.0, y: 78.0, z: 244.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 4
     city:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {other-explosion: deny, creeper-explosion: deny, chest-access-group: NON_MEMBERS,
-            use: allow, interact: allow, pvp: allow, pistons: allow, chest-access: deny,
+            use: allow, interact: allow, pistons: allow, chest-access: deny, pvp: allow,
             ghast-fireball: deny}
         owners: {}
         type: cuboid
@@ -75,7 +84,7 @@ regions:
         min: {x: -2122.0, y: 0.0, z: -111.0}
         max: {x: -1916.0, y: 255.0, z: 9.0}
         members: {}
-        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
+        flags: {pvp: deny, heal-amount: 100, heal-delay: 1, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 5
