@@ -324,16 +324,20 @@ proc(_changeSkin, @pname, @class,
         @val = 'eyJ0aW1lc3RhbXAiOjE0NzE3MzA1NDU3MDksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY0MmRmZjc3MTgyNWI0OWZlNjNlZDYzNjUxYmM0Zjc1YjY4ZWUzNWI2YjlhNDUxODAxN2FlZTU3NzZlODgifX19'
     }
     else if(@class == 'parallaxentity'){
-        @sig = 'Ichd3mbmOE1rOu9WH7c3HW7BiMQaPDIotJ3c6qyYsH5VaWUOnzIVXAX6kg1RhfklLw8ydpy5c2f/yDZyWw9EF5ByNvzCKxfjAX9HkmOWONb80T9m9Zq4LZ6KN1peS8pZsJVEI87Y971p4lXhe/4oEdTbu8z+BMZMlPbykW+dAW8K1em0xjfFRP5PXdkUk8Bv+KoqX61HZ4I0kaSJioFE6VQ2jFZjUZnOEHRIsDIDYQ/4ngtLwH0mcbPdIR/LWjfqK8cVPl46OFn4X6TpV1dYvlEkpxPJDjSRQGThoGvL6HTGujnhfoPRWVjNTEUIPLaN9mkxbr6hm+gKcbZIiyNAqCVe2B4nGMJpZ4Fl1g0cpdqGI7GdOQSstk4xodktjMKH2gGlMX9f0n1R7dzfiOqVivug1xGkEhgfkfHoVdlim12Dr/ObMH69/XL+/20cwu7wKdPl2Ym7uE19WObDnxmgL9b4hohoo2GqELcyjZNianPBEo96FvEmHkK0t4MnvapGPU/pqVq979OvRr/W8CpeGGMIWuHzPDcXibEafxagqfHAM9z6G/643TC3Iv0PCkCqtVwbx1NfawisjjxOc1vPSfGtmOn0NIWA2wzVBzDetZcTFmIuC9j7gXtDfDZ8j5+BkDIuMSYjdatZdc8Y749JXoJrc3DKM2294gv3ya9TzF0='
-        @val = 'eyJ0aW1lc3RhbXAiOjE0NjkwMzg1ODAyMjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzViMTUwMzA1MzA5NTUzODdmZGFmYmQ5M2JiOTE3MjNhMDljODFiZTI4YzM5ZDk0NzExZTVjZGNiZmUxNyJ9fX0='
+        runas(~console,/disguiseplayer @pname magmacube)
+        return()
     }
     else if(@class == 'barryallen'){
         @sig = 'Ichd3mbmOE1rOu9WH7c3HW7BiMQaPDIotJ3c6qyYsH5VaWUOnzIVXAX6kg1RhfklLw8ydpy5c2f/yDZyWw9EF5ByNvzCKxfjAX9HkmOWONb80T9m9Zq4LZ6KN1peS8pZsJVEI87Y971p4lXhe/4oEdTbu8z+BMZMlPbykW+dAW8K1em0xjfFRP5PXdkUk8Bv+KoqX61HZ4I0kaSJioFE6VQ2jFZjUZnOEHRIsDIDYQ/4ngtLwH0mcbPdIR/LWjfqK8cVPl46OFn4X6TpV1dYvlEkpxPJDjSRQGThoGvL6HTGujnhfoPRWVjNTEUIPLaN9mkxbr6hm+gKcbZIiyNAqCVe2B4nGMJpZ4Fl1g0cpdqGI7GdOQSstk4xodktjMKH2gGlMX9f0n1R7dzfiOqVivug1xGkEhgfkfHoVdlim12Dr/ObMH69/XL+/20cwu7wKdPl2Ym7uE19WObDnxmgL9b4hohoo2GqELcyjZNianPBEo96FvEmHkK0t4MnvapGPU/pqVq979OvRr/W8CpeGGMIWuHzPDcXibEafxagqfHAM9z6G/643TC3Iv0PCkCqtVwbx1NfawisjjxOc1vPSfGtmOn0NIWA2wzVBzDetZcTFmIuC9j7gXtDfDZ8j5+BkDIuMSYjdatZdc8Y749JXoJrc3DKM2294gv3ya9TzF0='
         @val = 'eyJ0aW1lc3RhbXAiOjE0NjkwMzg1ODAyMjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzViMTUwMzA1MzA5NTUzODdmZGFmYmQ5M2JiOTE3MjNhMDljODFiZTI4YzM5ZDk0NzExZTVjZGNiZmUxNyJ9fX0='
     }
-    else if(@pgroup[0] == 'jailed'){
+    else if(@class == 'mrmxyzptlk'){
+        runas(~console,/disguiseplayer @pname villager baby)
+        return()
+    }
+    else if(@class == 'jailed'){
         runas(~console,"/minecraft:clear" @pname)
-        die()
+        return()
     }
     runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
 )

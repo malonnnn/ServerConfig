@@ -8,6 +8,8 @@ set_interval(5000, closure(){
         @plr == 'Tektronic' ||
         @plr == 'Hero_Of_Helix' ||
         @plr == 'Naterrss' ||
+        @plr == 'ItzHarkomal' ||
+        @plr == 'TwinCrafters29' ||
         @plr == 'Emerald_Break'
         ){
             continue()
@@ -22,6 +24,7 @@ set_interval(5000, closure(){
             @pgroup[0] == 'wallywest' ||
             @pgroup[0] == 'onslaughtreborn' ||
             @pgroup[0] == 'kentnelson' ||
+            @pgroup[0] == 'mrmxyzptlk' ||
             @pgroup[0] == 'onslaughtreborn'
             )
             {
@@ -428,7 +431,7 @@ bind(player_login, null, null, @e) {
 #}
 
 bind('player_chat', null, null, @e) {
-#    @p ='Tektronic';
+    #@p ='Tektronic';
     #if(reg_count('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', @e['message']) > 0 && ponline(@p) && player() != @p) {
     #    runas(~console,"/bcc &f"player()" &7will be killed in &62&7 seconds for saying Tek's name.")
     #    set_timeout(2000, closure(
@@ -460,6 +463,16 @@ bind('player_chat', null, null, @e) {
         broadcast("§4§kk§9".@pname §7said the secret password for superheroes!)
     }
     
+    if(string_position(to_lower(@msg), 'kltpzyxm') != -1){
+        if(@pgroup[0] == 'mrmxyzptlk'){
+            set_timeout(1000, closure(
+                tmsg(@pname, 'You said your name backwards! Off to the other dimension you go!')
+                runas(~console,"/sudo ". @pname ." c:/mortal")
+                sudo(/warp onslaughtmental @pname)
+            ))
+        }
+    }
+    
     if(equals_ic(@pname, 'Tektronic')){
         die();
     }
@@ -488,8 +501,8 @@ bind('player_chat', null, null, @e) {
 #    assign(@msg, reg_replace('(?i)\\bhow', 'what', @msg))
 #    assign(@msg, reg_replace('~', '???', @msg))
 #    assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
-    assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
-    modify_event(message, @msg)
+#    assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
+#    modify_event(message, @msg)
 }
 
 bind(player_join,null,null,@event){

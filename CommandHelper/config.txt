@@ -675,11 +675,13 @@ changehero:/changehero $plr $class $floor = >>>
         @plr == 'Tektronic' ||
         @plr == 'Hero_Of_Helix' ||
         @plr == 'Naterrss' ||
+        @plr == 'ItzHarkomal' ||
+        @plr == 'TwinCrafters29' ||
         @plr == 'Emerald_Break'
         )
     {
-        
     }else{
+        
         if(
             @pgroup[0] == 'doctormanhattan' ||
             @pgroup[0] == 'zeus' ||
@@ -689,6 +691,7 @@ changehero:/changehero $plr $class $floor = >>>
             @pgroup[0] == 'wallywest' ||
             @pgroup[0] == 'onslaughtreborn' ||
             @pgroup[0] == 'kentnelson' ||
+            @pgroup[0] == 'mrmxyzptlk' ||
             @pgroup[0] == 'onslaughtreborn'
         )
         {
@@ -701,6 +704,7 @@ changehero:/changehero $plr $class $floor = >>>
             }
         }
     }
+    
     #print message
     @fname = _friendlyHeroName(@class)
     if(@fname != 'false'){
@@ -808,3 +812,18 @@ gimme:/gimme = >>>
 <<<
 
 
+magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
+    @player = $player
+    if(ponline(@player)){
+        @pgroup = pgroup(@player)
+        @class = @pgroup[0]
+        if(
+            @class == 'cosmicarmorsuperman' ||
+            @class == 'onepunchman'
+        ){}else
+        {
+            runas(~console,"/sudo ". @player ." c:/mortal")
+            tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!')
+        }
+    }
+<<<
