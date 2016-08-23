@@ -248,6 +248,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'barryallen'){
         @fname = '§4Fl§ea§4sh-BarryA'
     }
+    else if(@class == 'mrmxyzptlk'){
+        @fname = '§6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k'
+    }
     
     if(@fname != '')
     {
