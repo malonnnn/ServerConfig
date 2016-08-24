@@ -1,47 +1,22 @@
 set_interval(5000, closure(){
     @plrs = all_players()
+    include('includes/isplayermod.ms')
+    include('includes/isplayeropclass.ms')
     
     foreach(@plr in @plrs)
     {
-        if(
-        @plr == 'Donald_JTrump' ||
-        @plr == 'Tektronic' ||
-        @plr == 'Hero_Of_Helix' ||
-        @plr == 'Naterrss' ||
-        @plr == 'ItzHarkomal' ||
-        @plr == 'TwinCrafters29' ||
-        @plr == 'Emerald_Break'
-        ){
+        if(_isPlayerMod(@plr) == "true"){
             continue()
         }
-        @pgroup = pgroup(@plr)
-            if(
-            @pgroup[0] == 'doctormanhattan' ||
-            @pgroup[0] == 'zeus' ||
-            @pgroup[0] == 'poseidon' ||
-            @pgroup[0] == 'hades' ||
-            @pgroup[0] == 'onepunchman' ||
-            @pgroup[0] == 'wallywest' ||
-            @pgroup[0] == 'onslaughtreborn' ||
-            @pgroup[0] == 'kentnelson' ||
-            @pgroup[0] == 'mrmxyzptlk' ||
-            @pgroup[0] == 'onslaughtreborn'
-            )
-            {
-                if(acc_balance(@plr) >= 5){
-                    acc_subtract(@plr,5)
-                }else{
-                    runas(~console,"/sudo ". @plr ." c:/mortal")
-                    tmsg(@plr,"you ran out of money and have turned mortal again!")
-                    
-                    if(pmode(@plr) == 'SPECTATOR'){
-                        broadcast(@plr "ran out of money and is being kicked in 5 seconds to reset his settings")
-                        set_timeout(5000, closure(
-                            runas(~console,/kick @plr "Please Relog. We are resetting your settings.")
-                        ))
-                    }
-                }
+        
+        if(_isPlayerOpClass(@plr) == "true")
+        {
+            if(acc_balance(@plr) >= 5){
+                acc_subtract(@plr,5)
+            }else{
+                runas(~console,"/sudo ". @plr ." c:/outofmoney")
             }
+        }
     }
 });
 
@@ -515,7 +490,7 @@ bind(player_join,null,null,@event){
     foreach(@player in @plrs)
     {
         @otherPlayerGroup = pgroup(@player)
-        if(@otherPlayerGroup[0] == @class && @plr != @player){
+        if(@otherPlayerGroup[0] == @class && @plr != @player && @class != 'mortal'){
             broadcast(
                 concat(color(white),@plr)
                 concat(color(gray),"has been turned back into a MORTAL because")
