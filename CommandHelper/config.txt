@@ -665,43 +665,27 @@ changehero:/changehero $plr $class $floor = >>>
     sudo(/effect @plr clear)
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
-    #change skin
+    
+    #settrail
     include('includes/changeskin.ms')
-    @pgroup = pgroup(@plr)
-    _changeSkin(@plr,@pgroup[0])
+    _changeSkin(@plr,@class)
+    
+    #change skin
+    include('includes/changetrail.ms')
+    runas(~console,"/sudo ". @plr ." c:/trailsid none")
+    _changeTrail(@plr, @class)
+    
     #charge $200 if not staff
-    if(
-        @plr == 'Donald_JTrump' ||
-        @plr == 'Tektronic' ||
-        @plr == 'Hero_Of_Helix' ||
-        @plr == 'Naterrss' ||
-        @plr == 'ItzHarkomal' ||
-        @plr == 'TwinCrafters29' ||
-        @plr == 'Emerald_Break'
-        )
-    {
-    }else{
-        
-        if(
-            @pgroup[0] == 'doctormanhattan' ||
-            @pgroup[0] == 'zeus' ||
-            @pgroup[0] == 'poseidon' ||
-            @pgroup[0] == 'hades' ||
-            @pgroup[0] == 'onepunchman' ||
-            @pgroup[0] == 'wallywest' ||
-            @pgroup[0] == 'onslaughtreborn' ||
-            @pgroup[0] == 'kentnelson' ||
-            @pgroup[0] == 'mrmxyzptlk' ||
-            @pgroup[0] == 'onslaughtreborn'
-        )
-        {
-            if(acc_balance(@plr) >= 200){
-                acc_subtract(@plr,200)
-                tmsg(@plr, "$200 taken for use of OP")
-            }else{
-                acc_subtract(@plr,acc_balance(@plr))
-                runas(~console,"/sudo ". @plr ." c:/outofmoney")
-            }
+    include('includes/isplayermod.ms')
+    include('includes/isplayeropclass.ms')
+    if(_isPlayerMod(@plr) == "true"){
+    }else if(_isPlayerOpClass(@plr) == "true"){
+        if(acc_balance(@plr) >= 200){
+            acc_subtract(@plr,200)
+            tmsg(@plr, "$200 taken for use of OP")
+        }else{
+            acc_subtract(@plr,acc_balance(@plr))
+            runas(~console,"/sudo ". @plr ." c:/outofmoney")
         }
     }
     

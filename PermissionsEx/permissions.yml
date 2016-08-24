@@ -347,6 +347,22 @@ groups:
         - -essentials.build.interact.23:3
         - -essentials.build.interact.23:4
         - -essentials.build.interact.23:5
+        - -essentials.build.interact.154:0
+        - -essentials.build.interact.154:1
+        - -essentials.build.interact.154:2
+        - -essentials.build.interact.154:3
+        - -essentials.build.interact.154:4
+        - -essentials.build.interact.154:5
+        - -essentials.build.interact.154:6
+        - -essentials.build.interact.154:7
+        - -essentials.build.place.154:0
+        - -essentials.build.place.154:1
+        - -essentials.build.place.154:2
+        - -essentials.build.place.154:3
+        - -essentials.build.place.154:4
+        - -essentials.build.place.154:5
+        - -essentials.build.place.154:6
+        - -essentials.build.place.154:7
         - -essentials.build.place.29:0
         - -essentials.build.place.29:1
         - -essentials.build.place.29:2
@@ -1478,6 +1494,7 @@ groups:
         - ch.alias.vis
         - libsdisguises.seecmd.viewself
         - libsdisguises.disguise
+        - libsdisguises.undisguise
         - libsdisguises.disguise.bat.-setinvisible
         - libsdisguises.disguise.blaze.-setinvisible
         - libsdisguises.disguise.cave_spider.-setinvisible
@@ -2825,6 +2842,11 @@ groups:
         - ch.alias.haste3
     inheritance:
     - mortal
+    permissions:
+    - -trail.wings
+    - -trail.allow
+    - -trail.rain
+    - -trail.all
   antman:
     worlds:
       '1_9':
@@ -3096,8 +3118,13 @@ groups:
       '1_9':
         permissions:
         - ch.alias.mrmxyzptlk
+        - ch.alias.magicmrmxyzptlksmortal
         - ch.alias.flyon
         - ch.alias.flyoff
+        - essentials.gamemode
+        - essentials.gamemode.*
+        - essentials.tp
+        - essentials.tp.*
     inheritance:
     - mortal
   parallaxentity:
@@ -3241,7 +3268,7 @@ users:
       name: WolfeGaming
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - mortal
+    - doomsday
     options:
       name: xDcGamer
       prefix: ''
@@ -3255,7 +3282,7 @@ users:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - martianmanhunter
+    - alanscott
     options:
       name: xPickleRealm
       prefix: ''
@@ -3266,7 +3293,7 @@ users:
     permissions: []
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - mrmxyzptlk
+    - doctormanhattan
     options:
       name: Hero_Of_Helix
       suffix: ''
@@ -3278,6 +3305,7 @@ users:
         - worldedit.*
         - essentials.build.*
     permissions:
+    - essentials.mute
     - ch.alias.unjail
     - ch.alias.jail
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
@@ -3287,9 +3315,10 @@ users:
       name: Oranges_are_glad
   8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8:
     group:
-    - doctormanhattan
+    - wallywest
     options:
       name: Donald_JTrump
+      prefix: '&7{&4Admin&7} '
   6e2e79cd-1ced-469e-993e-e4f1912bf5dc:
     group:
     - ichigokurosaki
@@ -3405,7 +3434,7 @@ users:
       name: crusher31415
   7d01674f-7085-4047-924e-af4a10fa9c28:
     group:
-    - martianmanhunter
+    - galactus
     options:
       name: HeroAlex02
   3d85c47b-d5cd-42eb-b03b-2bcc22090481:
@@ -3415,7 +3444,7 @@ users:
       name: Double_S_Pro
   82962759-e518-46cc-9d49-1b560c6fe400:
     group:
-    - goku
+    - mortal
     options:
       name: crusher23435
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
@@ -3446,10 +3475,6 @@ users:
     - artemis
     options:
       name: DisSugarCookie
-      prefix: '&7{&9Mod&7} '
-    permissions:
-    - ch.alias.unjail
-    - ch.alias.jail
   98bb3172-ef8f-4a76-be30-c9f965d2658d:
     group:
     - goku
@@ -3473,7 +3498,7 @@ users:
       name: Infinix714
   fbaf351c-e3fd-4491-bf8d-ab5e848c4c55:
     group:
-    - mystique
+    - martianmanhunter
     options:
       name: WarrinPeace
   4ca95906-a8d8-43de-ab35-d5ce0d9a81c2:
@@ -3609,9 +3634,10 @@ users:
       name: LostInDimension
   eb3574c1-9db1-4ebf-9ea0-cf2595f51284:
     group:
-    - martianmanhunter
+    - mortal
     options:
       name: huss196
+      prefix: '&7{&4Hacker, 2nd chance&7} '
   4c95642b-a587-472c-98a2-12f01a2927c1:
     group:
     - martianmanhunter
@@ -3622,10 +3648,6 @@ users:
     - kentnelson
     options:
       name: Naterrss
-      prefix: '&7{&9Mod&7} '
-    permissions:
-    - ch.alias.unjail
-    - ch.alias.jail
   d741dd01-8fac-496e-adc6-f88e1087e57c:
     group:
     - superman
@@ -3683,7 +3705,7 @@ users:
         - worldedit.*
   17b6832f-aae5-4636-a4d9-0e4100879597:
     group:
-    - martianmanhunter
+    - goku
     options:
       name: rodrigo69dj
   d040200e-c787-461d-ada0-2b5563842ad7:
@@ -3703,13 +3725,9 @@ users:
       name: Irrupter
   2551d7bf-6a51-4738-b029-7835c654133d:
     group:
-    - doctormanhattan
+    - mortal
     options:
-      prefix: '&7{&9Mod&7} '
       name: TwinCrafters29
-    permissions:
-    - ch.alias.unjail
-    - ch.alias.jail
     worlds:
       plots:
         permissions:
@@ -3791,13 +3809,9 @@ users:
       name: nonomario2005
   e207f46f-ac40-4f49-8b7d-2317c67f1bd0:
     group:
-    - doctormanhattan
+    - mortal
     options:
       name: Emerald_Break
-      prefix: '&7{&9Mod&7} '
-    permissions:
-    - ch.alias.unjail
-    - ch.alias.jail
   f78f0cf4-372c-472e-865c-f1fc1cedadf4:
     group:
     - haljordan
@@ -3991,7 +4005,7 @@ users:
       name: Green__Dragon
   8c502134-39ea-4b64-851f-e0d5ef6f1c4a:
     group:
-    - captainamerica
+    - sonicthehedgehog
     options:
       name: SuperSD7
   28556dea-667d-409f-b2ff-fb4177a20ff2:
@@ -3999,14 +4013,6 @@ users:
     - starfire
     options:
       name: ItzHarkomal
-      prefix: '&7{&9Mod&7} '
-    permissions:
-    - ch.alias.unjail
-    - ch.alias.jail
-    worlds:
-      plots:
-        permissions:
-        - worldedit.*
   8662742f-a6b6-471a-8cd9-7798978fd7d7:
     group:
     - deadpool
@@ -4019,11 +4025,53 @@ users:
       name: braydenA9
   aa2484d4-ce5d-4aba-9604-1cd10f03cb32:
     group:
-    - greengoblin
+    - parallaxentity
     options:
       name: _Spaces_
+    permissions:
+    - ultracosmetics.gadgets.smashdown
   a4516f27-84bf-466e-ac9b-2186798caa87:
     group:
     - doctorstrange
     options:
       name: Vijuu
+  8c9c4ce1-27f6-48d3-a764-8755b790f351:
+    group:
+    - kentnelson
+    options:
+      name: Lavasyris
+      prefix: '&7{&9Mod&7} '
+    permissions:
+    - essentials.mute
+    - ch.alias.unjail
+    - ch.alias.jail
+  '-':
+    group:
+    - jailed
+  041ffec2-5df3-40e5-9f47-332824efa257:
+    group:
+    - jailed
+    options:
+      name: Dean_DS
+      prefix: '&7{&4Hacker&7} '
+  7d468398-9c17-419c-8c5c-7a27581874ed:
+    group:
+    - mortal
+    options:
+      name: Minedudeuk
+  cf1e0751-56a2-4c5f-8846-b02b3d3fec1e:
+    group:
+    - jailed
+    options:
+      name: proskillz190103
+      prefix: '&7{&4ForceOP attempt&7} '
+  8ea0281e-9228-4786-b8e0-6b79243b281d:
+    group:
+    - blackpanther
+    options:
+      name: SerpentjeJoey
+  92414c90-e014-4873-8bc6-7ea844847059:
+    group:
+    - doctorstrange
+    options:
+      name: turntechHuntsman

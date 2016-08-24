@@ -508,6 +508,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-4")
         tmsg(@playerName, "/thru (phases through walls)")
     }
+    else if(@playerRank == "barryallen")
+    {
+        tmsg(@playerName, "/ barryallen")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-4")
+        tmsg(@playerName, "/thru (phases through walls)")
+    }
     else if(@playerRank == "kidflash")
     {
         tmsg(@playerName, "/kidflash")
@@ -868,6 +876,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
         tmsg(@playerName, "/disguise")
+        tmsg(@playerName, "/undisguise")
         tmsg(@playerName, "/disguiseviewself")
         tmsg(@playerName, "/tp")
         tmsg(@playerName, "/heal")

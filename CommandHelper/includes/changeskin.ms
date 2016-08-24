@@ -164,8 +164,8 @@ proc(_changeSkin, @pname, @class,
         @val = 'eyJ0aW1lc3RhbXAiOjE0NjQ3NTU4NzQ1NTQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIxNmU5NjNjNGY5OWEyNWI2ZTlkNGI2ZTM2MDE5YzUzOGY3YTM5OGExNDlmZjIxZmM2NGU5NzkyN2M5MDllIn19fQ=='
     }
     else if(@class == 'supergirl'){
-        @sig = 'TaRns2lsGjFQsxTAvIzjUz0Nsh34VUTokC19ezKHFsNRfWUFmZ51Ab4Tox0kIfy1YDbc4fae0hn7twng6BWnUnYZh88oEwJp3QJbmQMt9DdkUwazruxKs04hRSgT426Es32glU4D2p35IdhQljQXcwtLU/iB+38ssOTTmWETM9WKm3mrgOoot0UuBCSMYXBXpp5phu3LnHk0cfBZqJkqEsDMKPrw0kryqxxRwy1mnCMHHQ2yNErylC8djZGoKGYMUD4EEsBHGwlch3jEGL+4s5gRLF0Qu3+vOqqHqGGhkP571OfHoUlvkGKOYzrX6LDUe+p7iqZxHtRKwQKb2cn8ZAEfux2ekdYUfecbrvaLS+/rX9jS+5L2Ohk0CVjDv4SE1B+npqnUMThlmpuNaBnum3amtM7l7LsyYtbENLpWo+keICkPJfRnLehrgG0KzTee8V18UX42tdn0w6dRZwN+jdmsujSdILw+RE6ctsCEA9ZNgjVdSmQInxA5OB/MQVW/Chp87JlMhdCn4HiK2W5f3Ow5DuSnlz7XOBVEvoqzy04HuAhE5YR0FOxCGFqYlzWOBouCmW899+8ppSo72lt9YnAoKOUGR9c0VYxo/RUKaRcgeZu/OWi8qwfYCjH7DseiNjVedCigBvyH8DD463wJ1ZSwUbw8t07FBWaBvmECDfo='
-        @val = 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjA2MzY3MjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hNjg1YzdkYWMxNWVmNmZmYjMyZGJiNjM1NjkxNGJhZTdhMzQ3YmUxY2VjNTk3ODI4MjkzN2VkNjA1N2VjZSJ9fX0='
+        @sig = 'ccxWzGt+poCGs/lNieBUMytCK2cQz0PYAbXz4i/xxIH9VSm/KOyJlsnXQLaCqMNPUCvEnLZKfz8L3wgGgZi3MmgddiQ1+8CGzYPEdfpTaSCSO4cbkG5FEp7eh6RRXHLzh3RdebYr9CNyPsn+ROufUFwJmKeIOE9TA1eAnc7iRZ5c++yk6+lyq90kCbk0yW9O5kNKgdvOTmQw3i6WbncGx4vX8FMIiZJgB0KMGKEbcllcaxUumJLD43FZVlkYl3iAb0T87XsifpuLpGqcsnZrjT0Lz/jdEEq9pzF4LgFTcNMUOlMhaIv1DsCyHNe0Re5c2Oo+ryZqoZQE/vxQ6t9RziiO+cX9SDSp2MKZTV67T3XNDIEcMOO4TpevK4jAZxul1g5/2AnVBHEtDkw5WVqFrl/Hjas70cHhL2kJpej1CsSaSnbLTalc5hrMOIruHlmR0Qe5Vc413jlA5gTcW8S2s3VIFhZEoVOgfYEfkYF9KVBZR+iNRXtQV65EAhsTiY1FkjGASYQWDkB+UXbgcx+bdfELmkHGZh+/3Wb0MohXT2Z8UXxmauWPGAG6/MsH1obWcSjszV6nfYi/ijZzyzcKCtyLzBKmujC4nQlrRrQnwUv0QlFf0mJJMrKGVynG00V4AyUikwH46zG6yDy2QDtRowgsr1K8+r2YpWkXXBYfgKk='
+        @val = 'eyJ0aW1lc3RhbXAiOjE0NzIwNjU4Nzk2NDAsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iYWRiN2IzNWUyZWU3MGRhMDQwODA2OTNlZGE3YjY0Njc3YTg0NTQzZDZlZTcxMDgzMzEyMjE2YTNkNmViNjEifX19'
     }
     else if(@class == 'storm'){
         @sig = 'O8tTjrilmyrr6SY8bgVxrV1NWQRz/QPe6qaKBvEaOyBmEg61QVQko9QKK8WxWd3ylcAhsm8jQ0MqV+9+BEly221o0SG8CnmPQAk12m6LPsSTygcEzaCqyyLstfO1yQP6SDo2QnJNHuMzqcrRKstOYkbwDBFbRRdUu9rOfO+Lcj6rflVfVQCyvyEKroPNHqSvHPg3c4UB4l9XiVIIgZ/qEBM1GdckjpdsYX/iW7w98OajGNk4t96eE8jCZNQqMcDuRA4NGz3YcoJ1PPKOnumo638zMsA/Cu1bfjPjHItUlzj7aaRAx5lvAiLG4MeOL/7o61ZexsZbjqRrZ+x25TfhSw45syP7ZJs/m8iigEFDh4H9M/StPDceKDzuBS3SpADLlAbYmtqN+/JowFN0FMXEn8IAA/Y2Xruxniqts4Ox7hqXxdWu6KgeJ5vtlx4CunEF17JZ819JRW0Q2vgbkELgyn6Pd7J6lCWvXHUw5megooA/skwYxBmfZO42giv+dB6wHeXnS1igA7DV3trD5V5NKH30xiQRV+wjh9rjeKQb15bqzYfDi1/LK7Gu+7O74FcZOZ1xGFf6TyWP0Zw88EyFDVwQUsbail7Ohq69up4yLKuRKk0+TwyqQ6G2rAHBIUdDW8PUOaUcz/vh+xPNaZ3epEwR1T1wC9ftevnliEGy8CM='
@@ -337,6 +337,10 @@ proc(_changeSkin, @pname, @class,
     }
     else if(@class == 'jailed'){
         runas(~console,"/minecraft:clear" @pname)
+        return()
+    }
+    else if(@class == 'mortal'){
+        runas(~console,/undisguise @pname)
         return()
     }
     runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
