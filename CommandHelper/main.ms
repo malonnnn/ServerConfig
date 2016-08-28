@@ -432,6 +432,7 @@ bind('player_chat', null, null, @e) {
             tmsg(@pname, "§4§kk§7Retrieving classified image for your viewing...")
             set_timeout(1000, closure(
             tmsg(@pname, "§4§kk§6http://i.imgur.com/tlypRN9.jpg")
+            #tmsg(@pname, "§4§kk§6http://i.imgur.com/0od9K1R.png")
             ))
         ))
         cancel()
@@ -446,6 +447,11 @@ bind('player_chat', null, null, @e) {
                 sudo(/warp onslaughtmental @pname)
             ))
         }
+    }
+    
+    if(@pgroup[0] == 'blackbolt'){
+        assign(@msg,"...")
+        modify_event(message, @msg)
     }
     
     if(equals_ic(@pname, 'Tektronic')){
