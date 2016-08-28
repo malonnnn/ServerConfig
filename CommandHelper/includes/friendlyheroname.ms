@@ -251,7 +251,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'mrmxyzptlk'){
         @fname = '§6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k'
     }
-    
+    else if(@class == 'blackbolt'){
+        @fname = '§8B§7l§0a§8ck B§0o§7l§8t'
+    }
     if(@fname != '')
     {
         return(@fname)

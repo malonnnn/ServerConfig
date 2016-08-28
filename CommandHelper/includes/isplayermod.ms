@@ -4,7 +4,7 @@ proc(_isPlayerMod, @player,
         @player == 'Donald_JTrump' ||
         @player == 'Tektronic' ||
         @player == 'Lavasyris' ||
-        @player == 'Hero_Of_Helix'
+        @player == 'Emerald_Break'
     ){
         return("true")
     }
