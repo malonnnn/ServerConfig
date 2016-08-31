@@ -258,6 +258,8 @@ proc(_friendlyHeroName, @class,
         @fname = '§8Death§6stroke'
     else if(@class == 'firefly'){
         @fname = '§eF§4i§ere§8f§el§8y'
+    else if(@class == 'Venom'){
+        @fname = '§8Ve§fn§8om'
     }
     if(@fname != '')
     {
