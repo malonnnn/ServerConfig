@@ -12,7 +12,36 @@ blackbolt:/blackbolt = >>>
 
 yell:/yell = >>>
     
-    @loc = ploc()
-    explosion(@loc, 15, false)
+    # player xyz pitch and yaw
+    @loc = ploc();
+    @start = @loc
+    
+    @length = 0
 
+    set_interval(40, closure(){
+        try {
+            @length++
+            @loc['x'] = @loc['x'] * length
+            @loc['y'] = @loc['y'] * length + 1.5
+            @loc['z'] = @loc['z'] * length
+            
+            @start['x'] = @start['x'] + @loc['x']
+            @start['y'] = @start['y'] + @loc['y']
+            @start['z'] = @start['z'] + @loc['z']
+            
+            explosion(@start,true)
+            
+            @start['x'] = @start['x'] - @loc['x']
+            @start['y'] = @start['y'] - @loc['y']
+            @start['z'] = @start['z'] - @loc['z']
+            
+            if(@length > 30) {
+                clear_task();
+                unbind('blackboltyell'.@id);     
+            }
+            
+        } catch(Exception @ex) {
+            clear_task();
+            unbind('blackboltyell'.@id);
+        }});
 <<<
