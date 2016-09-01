@@ -18,24 +18,24 @@ yell:/yell = >>>
     
     @length = 0
 
-    set_interval(40, closure(){
+    set_interval(50, closure(){
         try {
             @length++
-            @loc['x'] = @loc['x'] * length
-            @loc['y'] = @loc['y'] * length + 1.5
-            @loc['z'] = @loc['z'] * length
+            @x = @loc['x'] * length
+            @y = @loc['y'] * length + 1.5
+            @z = @loc['z'] * length
             
-            @start['x'] = @start['x'] + @loc['x']
-            @start['y'] = @start['y'] + @loc['y']
-            @start['z'] = @start['z'] + @loc['z']
+            @start['x'] = @start['x'] + @x
+            @start['y'] = @start['y'] + @y
+            @start['z'] = @start['z'] + @z
             
-            explosion(@start,@length/5,true)
+            explosion(@start,5,true)
             
-            @start['x'] = @start['x'] - @loc['x']
-            @start['y'] = @start['y'] - @loc['y']
-            @start['z'] = @start['z'] - @loc['z']
+            @start['x'] = @start['x'] - @x
+            @start['y'] = @start['y'] - @y
+            @start['z'] = @start['z'] - @z
             
-            if(@length > 30) {
+            if(@length > 6) {
                 clear_task();
             }
             
