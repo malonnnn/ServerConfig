@@ -29,7 +29,7 @@ yell:/yell = >>>
             @start['y'] = @start['y'] + @loc['y']
             @start['z'] = @start['z'] + @loc['z']
             
-            explosion(@start,true)
+            explosion(@start,@length/5,true)
             
             @start['x'] = @start['x'] - @loc['x']
             @start['y'] = @start['y'] - @loc['y']
@@ -37,11 +37,9 @@ yell:/yell = >>>
             
             if(@length > 30) {
                 clear_task();
-                unbind('blackboltyell'.@id);     
             }
             
         } catch(Exception @ex) {
             clear_task();
-            unbind('blackboltyell'.@id);
         }});
 <<<
