@@ -23,7 +23,7 @@ yell:/yell = >>>
     @vector['z'] = sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
     
     @length = 0
-
+    
     set_interval(50, closure(){
         try {
             @length++
@@ -31,13 +31,13 @@ yell:/yell = >>>
             @y = @vector['y'] * @length + 1.5
             @z = @vector['z'] * @length
             
-            broadcast('start' = @start['x']'-'@start['y']'-'@start['z'])
+            broadcast('start =' @start['x']'-'@start['y']'-'@start['z'])
             
             @start['x'] = @start['x'] + @x
             @start['y'] = @start['y'] + @y
             @start['z'] = @start['z'] + @z
             
-            broadcast('start' = @start['x']'-'@start['y']'-'@start['z'])
+            broadcast('start =' @start['x']'-'@start['y']'-'@start['z'])
             
             #explosion(@start,5,true)
             
@@ -45,7 +45,7 @@ yell:/yell = >>>
             @start['y'] = @start['y'] - @y
             @start['z'] = @start['z'] - @z
             
-            broadcast('start' = @start['x']'-'@start['y']'-'@start['z'])
+            broadcast('start =' @start['x']'-'@start['y']'-'@start['z'])
             
             clear_task();
             
