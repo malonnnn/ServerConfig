@@ -28,9 +28,9 @@ yell:/yell = >>>
     set_interval(50, closure(){
         try {
             @length++
-            @x = @vector['x'] * length
-            @y = @vector['y'] * length + 1.5
-            @z = @vector['z'] * length
+            @x = @vector['x'] * @length
+            @y = @vector['y'] * @length + 1.5
+            @z = @vector['z'] * @length
             
             @start['x'] = @start['x'] + @x
             @start['y'] = @start['y'] + @y
