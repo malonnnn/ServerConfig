@@ -13,12 +13,12 @@ blackbolt:/blackbolt = >>>
 yell:/yell = >>>
     
     # player xyz pitch and yaw
-    @loc = ploc();
-    @start = @loc
-    
-    @yaw = @loc['yaw'] + 90;
-    @pitch = neg(@loc['pitch']);
+    @start = ploc();
     @vector = associative_array();
+    
+    @yaw = @start['yaw'];
+    @pitch = @start['pitch'];
+    
     @vector['x'] = cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
     @vector['y'] = sin(to_radians(@pitch));
     @vector['z'] = sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
