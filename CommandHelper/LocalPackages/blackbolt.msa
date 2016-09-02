@@ -15,8 +15,8 @@ yell:/yell = >>>
     @start = ploc();
     @vector = associative_array();
     
-    @yaw = @start['yaw'];
-    @pitch = @start['pitch'];
+    @yaw = @start['yaw'] + 90;
+    @pitch = neg(@start['pitch']);
     
     @vector['x'] = cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
     @vector['y'] = sin(to_radians(@pitch));
@@ -24,8 +24,11 @@ yell:/yell = >>>
     
     @length = 0
     
+    export('length',@length)
+    
     set_interval(50, closure(){
         try {
+            @length = import('length')
             @length = @length + 1
             @x = @vector['x'] * @length
             @y = @vector['y'] * @length + 1.5
@@ -35,15 +38,15 @@ yell:/yell = >>>
             @start['y'] = @start['y'] + @y
             @start['z'] = @start['z'] + @z
             
-            explosion(@start,5,true)
+            explosion(@start,@length,true)
             
             @start['x'] = @start['x'] - @x
             @start['y'] = @start['y'] - @y
             @start['z'] = @start['z'] - @z
             
-            broadcast("length" @length)
+            export('length',@length)
             
-            if(@length > 6) {
+            if(@length > 30) {
                 clear_task();
             }
             
