@@ -19,9 +19,9 @@ yell:/yell = >>>
     @yaw = @loc['yaw'] + 90;
     @pitch = neg(@loc['pitch']);
     @vector = associative_array();
-    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch)));
-    @vector['y'] = @magnitude * sin(to_radians(@pitch));
-    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch)));
+    @vector['x'] = cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
+    @vector['y'] = sin(to_radians(@pitch));
+    @vector['z'] = sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
     
     @length = 0
 
