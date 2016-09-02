@@ -16,14 +16,21 @@ yell:/yell = >>>
     @loc = ploc();
     @start = @loc
     
+    @yaw = @loc['yaw'] + 90;
+    @pitch = neg(@loc['pitch']);
+    @vector = associative_array();
+    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch)));
+    @vector['y'] = @magnitude * sin(to_radians(@pitch));
+    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch)));
+    
     @length = 0
 
     set_interval(50, closure(){
         try {
             @length++
-            @x = @loc['x'] * length
-            @y = @loc['y'] * length + 1.5
-            @z = @loc['z'] * length
+            @x = @vector['x'] * length
+            @y = @vector['y'] * length + 1.5
+            @z = @vector['z'] * length
             
             @start['x'] = @start['x'] + @x
             @start['y'] = @start['y'] + @y
