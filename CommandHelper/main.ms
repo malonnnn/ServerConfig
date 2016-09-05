@@ -66,7 +66,7 @@ bind(item_pickup,null,null,@event){
 }
 
 # Shot Zombies give money
-bind(entity_death, null, array('type': 'ZOMBIE'), @e)
+bind(entity_death, null, array('type': 'SKELETON'), @e)
 {
     if(!array_index_exists(@e['cause'],'damager')){
         die()
