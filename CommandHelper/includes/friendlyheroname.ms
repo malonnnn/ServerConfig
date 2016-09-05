@@ -263,6 +263,13 @@ proc(_friendlyHeroName, @class,
 	else if(@class == 'venom'){
         @fname = '§8Ve§fn§8om'
     }
+    else if(@class == 'atom'){
+        @fname = '§4A§7t§8o§4m'
+    }
+    else if(@class == 'blacklightning'){
+        @fname = '§8Bl§ba§8ck L§fi§8ghtn§ei§8ng'
+    }
+    
     if(@fname != '')
     {
         return(@fname)
