@@ -213,7 +213,7 @@ proc(_friendlyHeroName, @class,
         @fname = '§8N§ci§8te O§7w§8l'
     }
     else if(@class == 'doomsday'){
-        @fname = '§D§foo§7msd§4a§7y'
+        @fname = '§7D§foo§7msd§4a§7y'
     }
     else if(@class == 'thanos'){
         @fname = '§7§5Th§ea§9n§eo§9s'
@@ -268,6 +268,12 @@ proc(_friendlyHeroName, @class,
     }
     else if(@class == 'blacklightning'){
         @fname = '§8Bl§ba§8ck L§fi§8ghtn§ei§8ng'
+    }
+    else if(@class == 'caroldanvers'){
+        @fname = '§cM§es§8. §eM§8a§crv§8e§el-CD'
+    }
+    else if(@class == 'batmanbatsuit'){
+        @fname = '§7B§ea§0t§7m§8a§7n-§8B§ba§8ts§7u§8it'
     }
     
     if(@fname != '')

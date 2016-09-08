@@ -940,4 +940,25 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-2")
         tmsg(@playerName, "/undisguise")
     }
+    else if(@playerRank == "blacklightning")
+    {
+        tmsg(@playerName, "/blacklightning")
+        tmsg(@playerName, "/jump 0-4")
+        tmsg(@playerName, "/run 0-6")
+        tmsg(@playerName, "/haste 0-3")
+    }
+    else if(@playerRank == "caroldanvers")
+    {
+        tmsg(@playerName, "/caroldanvers")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/jump 0-8")
+        tmsg(@playerName, "/run 0-8")
+        tmsg(@playerName, "/haste 0-8")
+    }
+    else if(@playerRank == "batmanbatsuit")
+    {
+        tmsg(@playerName, "/batmanbatsuit")
+        tmsg(@playerName, "/haste 0-5")
+    }
 <<<
