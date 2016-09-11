@@ -78,12 +78,17 @@ sugar:/sugar = sudo(/give player() 353 1)
 milk:/milk = sudo(/give player() 335 1)
 cocoabeans:/cocoabeans = sudo(/give player() cocoabeans 1)
 
-jail:/jail $plr = >>>
+punish:/punish $plr = >>>
     @plr = $plr
-    sudo(/pex user @plr group set jailed)
-    sudo(/mv tp @plr torture)
+    runas(~console,/undisguise @plr)
+    sudo(/warp survival @plr)
+    sudo(/pex user @plr group set mortal)
+    sudo (/effect @plr clear)
+    sudo("/minecraft:clear" @plr)
     sudo(/pex reload)
+    tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
 <<<
+
 unjail:/unjail $plr = >>>
     @plr = $plr
     sudo(/pex user @plr group set mortal)
@@ -495,6 +500,16 @@ afkoff:/afkmessageoff = >>>
     }
 <<<
 
+/resetcity = >>>
+
+    shell_adv('/home/minecraft/resetcity.sh',
+    array(subshell: true,
+        workingDir: '/home/minecraft/'
+        )
+    )
+
+<<<
+
 /resetskywars $plr = >>>
 
     # How many seconds they have to wait before being able
@@ -525,16 +540,6 @@ afkoff:/afkmessageoff = >>>
         workingDir: '/home/minecraft/'
         )
     )
-<<<
-
-/resetcity = >>>
-
-    shell_adv('/home/minecraft/resetcity.sh',
-    array(subshell: true,
-        workingDir: '/home/minecraft/'
-        )
-    )
-
 <<<
 
 /tpskywars = >>>
@@ -836,5 +841,31 @@ b:/b = >>>
 <<<
 
 bc:/bc = >>>
+
+<<<
+
+shrink:/shrink = >>>
+
+    sudo("/minecraft:tp" player() "~ ~-1 ~")
+
+<<<
+
+grow:/grow = >>>
+
+    sudo("/minecraft:tp" player() "~ ~1 ~")
+
+<<<
+
+husbandopicker:/husbandopicker = >>>
+
+    @num = rand(1,4)
+
+    if(@num == 1){
+        broadcast(player()."'s new husband is Tek!")
+    }else if(@num ==2 ){
+        broadcast(player()."'s new husband is Ace!")
+    }else if(@num == 3){
+        broadcast(player()."'s new husband is Trump!")
+    }
 
 <<<
