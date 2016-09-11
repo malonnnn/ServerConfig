@@ -14,6 +14,7 @@ yell:/yell = >>>
     
     @start = ploc();
     @vector = associative_array();
+    @pworld = pworld()
     
     @yaw = @start['yaw'] + 90;
     @pitch = neg(@start['pitch']);
@@ -25,10 +26,12 @@ yell:/yell = >>>
     @length = 0
     
     export('length',@length)
+    export('pworld',@pworld)
     
     set_interval(50, closure(){
         try {
             @length = import('length')
+            @pworld = import('pworld')
             @length = @length + 1
             @x = @vector['x'] * @length
             @y = @vector['y'] * @length + 1.5
@@ -38,7 +41,11 @@ yell:/yell = >>>
             @start['y'] = @start['y'] + @y
             @start['z'] = @start['z'] + @z
             
-            explosion(@start,@length,true)
+            if(@pworld != 'destructiblecity'){
+                explosion(@start,@length,true)
+            }else{
+                explosion(@start,@length,false)
+            }
             
             @start['x'] = @start['x'] - @x
             @start['y'] = @start['y'] - @y
