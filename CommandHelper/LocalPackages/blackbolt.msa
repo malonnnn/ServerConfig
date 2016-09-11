@@ -12,7 +12,52 @@ blackbolt:/blackbolt = >>>
 
 yell:/yell = >>>
     
-    @loc = ploc()
-    explosion(@loc, 15, false)
-
+    @start = ploc();
+    @vector = associative_array();
+    @pworld = pworld()
+    
+    @yaw = @start['yaw'] + 90;
+    @pitch = neg(@start['pitch']);
+    
+    @vector['x'] = cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
+    @vector['y'] = sin(to_radians(@pitch));
+    @vector['z'] = sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
+    
+    @length = 0
+    
+    export('length',@length)
+    export('pworld',@pworld)
+    
+    set_interval(50, closure(){
+        try {
+            @length = import('length')
+            @pworld = import('pworld')
+            @length = @length + 1
+            @x = @vector['x'] * @length
+            @y = @vector['y'] * @length + 1.5
+            @z = @vector['z'] * @length
+            
+            @start['x'] = @start['x'] + @x
+            @start['y'] = @start['y'] + @y
+            @start['z'] = @start['z'] + @z
+            
+            if(@pworld != 'destructiblecity'){
+                explosion(@start,@length,true)
+            }else{
+                explosion(@start,@length,false)
+            }
+            
+            @start['x'] = @start['x'] - @x
+            @start['y'] = @start['y'] - @y
+            @start['z'] = @start['z'] - @z
+            
+            export('length',@length)
+            
+            if(@length > 30) {
+                clear_task();
+            }
+            
+        } catch(Exception @ex) {
+            clear_task();
+        }});
 <<<

@@ -306,10 +306,11 @@ powers:/powers = >>>
     else if(@playerRank == "thehumantorch")
     {
         tmsg(@playerName, "/thehumantorch")
+        tmsg(@playerName, "Can throw fireballs by punching with an empty hand")
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/run 0-3")
         tmsg(@playerName, "/haste 0-3")
-        tmsg(@playerName, "/flame")
+        tmsg(@playerName, "/flame <playername>")
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
@@ -331,8 +332,8 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push")
-        tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
     else if(@playerRank == "darthmaul")
@@ -341,8 +342,8 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push")
-        tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
         
     }
@@ -352,8 +353,8 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push")
-        tmsg(@playerName, "/forcechoke")
+        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
     else if(@playerRank == "cyborg")
@@ -640,6 +641,7 @@ powers:/powers = >>>
     else if(@playerRank == "naruto")
     {
         tmsg(@playerName, "/naruto")
+        tmsg(@playerName, "/rasengan (very powerful punches for 10 seconds)")
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-3")
@@ -921,6 +923,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-2")
+    }
     else if(@playerRank == "venom")
     {
         tmsg(@playerName, "/venom")
@@ -928,5 +931,36 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-6")
         tmsg(@playerName, "/haste 0-5")
         tmsg(@playerName, "/web")
+    }
+    else if(@playerRank == "atom")
+    {
+        tmsg(@playerName, "/atom")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/jump 0-7")
+        tmsg(@playerName, "/run 0-4")
+        tmsg(@playerName, "/haste 0-2")
+        tmsg(@playerName, "/undisguise")
+    }
+    else if(@playerRank == "blacklightning")
+    {
+        tmsg(@playerName, "/blacklightning")
+        tmsg(@playerName, "/jump 0-4")
+        tmsg(@playerName, "/run 0-6")
+        tmsg(@playerName, "/haste 0-3")
+    }
+    else if(@playerRank == "caroldanvers")
+    {
+        tmsg(@playerName, "/caroldanvers")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/jump 0-8")
+        tmsg(@playerName, "/run 0-8")
+        tmsg(@playerName, "/haste 0-8")
+    }
+    else if(@playerRank == "batmanbatsuit")
+    {
+        tmsg(@playerName, "/batmanbatsuit")
+        tmsg(@playerName, "/haste 0-5")
     }
 <<<

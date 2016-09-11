@@ -410,7 +410,36 @@ starbolt:
         start_pos: 0
         start_y: 0
         color: 100-255-100
-lightning:
+whitelightning:
+    Item_Information:
+        Item_Name: "&bLightning"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 60
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 30
+        view-distance: 50
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 230-255-254
+yellowlightning:
     Item_Information:
         Item_Name: "&eLightning"
         Item_Type: 417
@@ -438,7 +467,36 @@ lightning:
         hitstop: true
         start_pos: 0
         start_y: 0
-        color: 255-255-100
+        color: 255-255-75
+plasmablast:
+    Item_Information:
+        Item_Name: "&bPlasma Blast"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 60
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 5
+        view-distance: 5
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 204-255-255
 darkmagic:
     Item_Information:
         Item_Name: "&5R&0a&5v&0e&5n's &0Bl&5a&0ck &5M&0a&5gic"

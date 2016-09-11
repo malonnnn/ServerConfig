@@ -1,3 +1,17 @@
+set_interval(50, closure(){
+    @plrs = all_players()
+    
+    foreach(@plr in @plrs)
+    {
+        @class = pgroup(@plr)
+        
+        if(@class[0] == "harleyquinn")
+        {
+            set_peffect(@plr, 19, 1, 0)
+        }
+    }
+});
+
 set_interval(5000, closure(){
     @plrs = all_players()
     include('includes/isplayermod.ms')
@@ -66,7 +80,7 @@ bind(item_pickup,null,null,@event){
 }
 
 # Shot Zombies give money
-bind(entity_death, null, array('type': 'ZOMBIE'), @e)
+bind(entity_death, null, array('type': 'SKELETON'), @e)
 {
     if(!array_index_exists(@e['cause'],'damager')){
         die()
@@ -186,7 +200,7 @@ bind(player_interact,null,array('item': 280,'button': 'LEFT'),@event){
         die()
     }
     
-    if(@pworld != '1_9' && @pworld != 'greenfield'){
+    if(@pworld != '1_9' && @pworld != 'greenfield' && @pworld != 'destructiblecity'){
         die()
     }
     
@@ -217,11 +231,11 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
     @pworld = pworld()
     @puuid = puuid()
         
-    if(@pgroup[0] != 'starfire' && @pgroup[0] != 'hades'){
+    if(@pgroup[0] != 'starfire' && @pgroup[0] != 'hades' && @pgroup[0] != 'thehumantorch'){
         die()
     }
     
-    if(pworld() != '1_9' && pworld() != 'greenfield'){
+    if(pworld() != '1_9' && pworld() != 'greenfield' && @pworld != 'destructiblecity'){
         die()
     }
     
@@ -263,7 +277,7 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
         die()
     }
     
-    if(@pworld != "1_9" && @pworld != "greenfield")
+    if(@pworld != "1_9" && @pworld != "greenfield" && @pworld != 'destructiblecity')
     {
         die()
     }
@@ -327,7 +341,7 @@ bind(entity_damage,null,null,@event){
                 die()
             }
             
-            if(@pworld != '1_9' && @pworld != 'greenfield'){
+            if(@pworld != '1_9' && @pworld != 'greenfield' && @pworld != 'destructiblecity'){
                 die()
             }
             

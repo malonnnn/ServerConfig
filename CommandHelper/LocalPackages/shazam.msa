@@ -1,12 +1,9 @@
 shazam:/shazam = >>>
     sudo(/effect player() 5 9999 20 true)
-    sudo(/effect player() 10 9999 1 true)
     sudo(/effect player() 11 9999 3 true)
-    sudo(/effect player() 12 9999 1 true)
-    sudo(/effect player() 13 9999 1 true)
     sudo(/effect player() 21 9999 19 true)
     runas(~console,/give player() "minecraft:iron_boots 1 9:1 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots")
-    sudo(/shot give player() lightning)
+    sudo(/shot give player() yellowlightning)
     tmsg(player(),concat(color(blue),
     'Shazam!'))
     runas(~console,"/sudo ". player() ." c:SHAZAM!")

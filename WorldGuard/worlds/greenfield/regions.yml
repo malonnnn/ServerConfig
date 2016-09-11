@@ -10,6 +10,16 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    bitshouse:
+        parent: city
+        min: {x: 1954.0, y: 0.0, z: -319.0}
+        max: {x: 1998.0, y: 255.0, z: -278.0}
+        members: {}
+        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
+        owners:
+            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
+        type: cuboid
+        priority: 2
     babypickle101house:
         parent: city
         members: {}
@@ -47,9 +57,8 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {other-explosion: deny, creeper-explosion: deny, chest-access-group: NON_MEMBERS,
-            use: allow, interact: allow, pistons: allow, chest-access: deny, pvp: allow,
-            ghast-fireball: deny}
+        flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
+            interact: allow, chest-access: deny, pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -58,7 +67,8 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {use: allow, feed-delay: 1, feed-amount: 1, interact: allow, pvp: deny}
+        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
+            interact: allow, pvp: deny}
         owners: {}
         type: cuboid
         priority: 2
@@ -80,11 +90,20 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    herosuggestions:
+        parent: modapplications
+        min: {x: 29.0, y: 77.0, z: 284.0}
+        max: {x: 30.0, y: 77.0, z: 284.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 5
     basements:
         min: {x: -2122.0, y: 0.0, z: -111.0}
         max: {x: -1916.0, y: 255.0, z: 9.0}
         members: {}
-        flags: {pvp: deny, heal-amount: 100, heal-delay: 1, mob-spawning: deny}
+        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
         owners: {}
         type: cuboid
         priority: 5

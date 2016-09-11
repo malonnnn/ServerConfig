@@ -1,10 +1,12 @@
 proc(_isPlayerMod, @player,
 
     if(
-        @player == 'Donald_JTrump' ||
         @player == 'Tektronic' ||
-        @player == 'Lavasyris' ||
-        @player == 'Emerald_Break'
+        @player == 'Bitslane' ||
+        @player == 'Pusheeen' ||
+        @player == 'HeyItsSteph' ||
+        @player == 'AddictedToSugar' ||
+        @player == 'missmandyy'
     ){
         return("true")
     }
