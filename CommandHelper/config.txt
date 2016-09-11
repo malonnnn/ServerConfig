@@ -78,12 +78,17 @@ sugar:/sugar = sudo(/give player() 353 1)
 milk:/milk = sudo(/give player() 335 1)
 cocoabeans:/cocoabeans = sudo(/give player() cocoabeans 1)
 
-jail:/jail $plr = >>>
+punish:/punish $plr = >>>
     @plr = $plr
-    sudo(/pex user @plr group set jailed)
-    sudo(/mv tp @plr torture)
+    runas(~console,/undisguise @plr)
+    sudo(/warp survival @plr)
+    sudo(/pex user @plr group set mortal)
+    sudo (/effect @plr clear)
+    sudo("/minecraft:clear" @plr)
     sudo(/pex reload)
+    tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
 <<<
+
 unjail:/unjail $plr = >>>
     @plr = $plr
     sudo(/pex user @plr group set mortal)
