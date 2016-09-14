@@ -675,6 +675,15 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+    else if(@playerRank == "sinestro")
+    {
+        tmsg(@playerName, "/sinestro")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/run 0-3")
+        tmsg(@playerName, "/haste 0-4")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
     else if(@playerRank == "alanscott")
     {
         tmsg(@playerName, "/alanscott")
@@ -749,10 +758,21 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
         tmsg(@playerName, "/lightning")
+        tmsg(@playerName, "/feed")
+        tmsg(@playerName, "/heal")
     }
     else if(@playerRank == "doctorstrange")
     {
         tmsg(@playerName, "/doctorstrange")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-1")
+        tmsg(@playerName, "/hover on")
+        tmsg(@playerName, "/hover off")
+    }
+    else if(@playerRank == "zatanna")
+    {
+        tmsg(@playerName, "/zatanna")
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/run 0-1")
         tmsg(@playerName, "/haste 0-1")
@@ -962,5 +982,9 @@ powers:/powers = >>>
     {
         tmsg(@playerName, "/batmanbatsuit")
         tmsg(@playerName, "/haste 0-5")
+    }
+    else if(@playerRank == "harleyquinn")
+    {
+        tmsg(@playerName, "/harleyquinn")
     }
 <<<

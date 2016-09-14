@@ -23,8 +23,8 @@ ma:/ma = >>>
 
 @id = spawn_falling_block(@loc, 42, @vector);
 
-@var = 0
-export('var',@var)
+#@var = 0
+#export('var',@var)
 
 bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_array('to': 42), 
         @event, @id, @damage, @player = player()) {
@@ -37,12 +37,12 @@ bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_ar
 
 set_interval(50, closure(){
     try {
-        @var = import('var')
-        if(@var < 3){
-            @var = @var +1
-            export('var',@var)
-            break()
-        }
+        #@var = import('var')
+        #if(@var < 3){
+        #    @var = @var +1
+        #    export('var',@var)
+        #    return()
+        #}
         @loc = entity_loc(@id);
         @loc['y'] -= 1; // so we detect if the block is at player chest height
         foreach(@p in entities_in_radius(@loc, 3)) {
