@@ -278,6 +278,12 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'harleyquinn'){
         @fname = '§4H§fa§0r§4l§fe§0y §4Q§fu§0i§4n§fn'
     }
+    else if(@class == 'zatanna'){
+        @fname = '§fZ§0a§ft§0a§fn§0n§fa'
+    }
+    else if(@class == 'sinestro'){
+        @fname = '§eSin§ce§0s§etr§0o'
+    }
     
     if(@fname != '')
     {

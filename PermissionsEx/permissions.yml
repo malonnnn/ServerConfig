@@ -701,6 +701,7 @@ groups:
         - essentials.burn
         - essentials.lightning
         - essentials.lightning.others
+        - essentials.feed
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -2850,11 +2851,35 @@ groups:
         - ch.alias.haste9
         - essentials.lightning
         - essentials.lightning.others
+        - essentials.feed
+        - essentials.feed.others
+        - essentials.heal
+        - essentials.heal.others
   doctorstrange:
     worlds:
       '1_9':
         permissions:
         - ch.alias.doctorstrange
+        - -essentials.enchantments.allowunsafe
+        - essentials.enchantments.*
+        - essentials.enchant
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.hoveron
+        - ch.alias.hoveroff
+    inheritance:
+    - mortal
+  zatanna:
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.zatanna
         - -essentials.enchantments.allowunsafe
         - essentials.enchantments.*
         - essentials.enchant
@@ -3151,6 +3176,28 @@ groups:
       '1_9':
         permissions:
         - ch.alias.haljordan
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+    inheritance:
+    - mortal
+  sinestro:
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.sinestro
         - ch.alias.flyon
         - ch.alias.flyoff
         - ch.alias.jump0
@@ -3480,13 +3527,17 @@ schema-version: 1
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - cosmicarmorsuperman
+    - sinestro
     options:
       name: Tektronic
-      prefix: '&7{&6Fanny''s Husbando&7} '
+      prefix: '&7{&6Dizzeh''s Husbando&7} '
     permissions:
     - essentials.sethome.*
     - essentials.sethome
+    worlds:
+      '&7{&6Sugar''s Husbando&7} ':
+        options:
+          prefix: set
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
     group:
     - martianmanhunter
@@ -3494,9 +3545,10 @@ users:
       name: Tamper_Monkey
   841c5c33-2a11-430b-bb00-32b2c8868d3b:
     group:
-    - caroldanvers
+    - hades
     options:
       name: SirCheerioz
+      prefix: '&7{&6Deeny''s Husbando&7} '
     worlds:
       hallofworlds:
         permissions:
@@ -3549,9 +3601,9 @@ users:
       name: KragenClaw
   0a3f089a-dd4c-4066-8454-140837c14110:
     group:
-    - deathstroke
+    - sinestro
     options:
-      name: xPickleRealm
+      name: _TechnoPickle_
       prefix: ''
     worlds:
       minigameworld:
@@ -3647,7 +3699,7 @@ users:
     group:
     - hercules
     options:
-      name: xXTyroneXx
+      name: JayGarrickDCU
   5de25926-3417-4ab7-8906-8aa761240a46:
     group:
     - mortal
@@ -3707,7 +3759,7 @@ users:
       name: HeroAlex02
   3d85c47b-d5cd-42eb-b03b-2bcc22090481:
     group:
-    - martianmanhunter
+    - mortal
     options:
       name: Double_S_Pro
   82962759-e518-46cc-9d49-1b560c6fe400:
@@ -3717,7 +3769,7 @@ users:
       name: crusher23435
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - doctormanhattan
+    - martianmanhunter
     options:
       name: Pusheeen
       prefix: ''
@@ -3743,7 +3795,7 @@ users:
       name: Unilluminaticorn
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
-    - kentnelson
+    - supergirl
     options:
       name: AddictedToSugar
       prefix: ''
@@ -3782,7 +3834,7 @@ users:
       name: HarrisonWellsCW
   127d5b95-016a-40b2-ac5e-330772023c39:
     group:
-    - superman
+    - mortal
     options:
       name: BarryAllenCW
   9fbfabfd-74bd-4c9c-a965-4433bf6c64ae:
@@ -3827,7 +3879,7 @@ users:
       name: Sekarn29
   a800eee6-bd24-4b88-824a-29d3eaf47ee1:
     group:
-    - superman
+    - shazam
     options:
       name: grimreaper0202
   970c13e0-682b-43e5-8950-b680b932bffa:
@@ -3919,7 +3971,7 @@ users:
       name: Nick_A_Naut
   21e726fd-af17-4454-bb61-25e55d7300ef:
     group:
-    - ares
+    - goku
     options:
       name: Naterrss
   d741dd01-8fac-496e-adc6-f88e1087e57c:
@@ -4170,10 +4222,10 @@ users:
       name: Steven_2008
   febb0bd1-73e6-4ade-81a3-e754719548da:
     group:
-    - martianmanhunter
+    - goku
     options:
       name: AceTrainerBailey
-      prefix: '&7{&6Sugar''s Husbando&7} '
+      prefix: '&7{&6Pushy''s Husbando&7} '
     worlds:
       '&7{&6Sugar''s Husbando&7} ':
         options:
@@ -4284,7 +4336,7 @@ users:
       name: JohnnyBlitz_
   31543ae5-b9b1-42d1-a6bb-aee765fc0e09:
     group:
-    - captainamerica
+    - blackpanther
     options:
       prefix: '{&4Hacker, on 2nd chance&7} '
       name: Lady_Mairon
@@ -4326,9 +4378,10 @@ users:
       name: Vijuu
   8c9c4ce1-27f6-48d3-a764-8755b790f351:
     group:
-    - martianmanhunter
+    - greenarrow
     options:
       name: Lavasyris
+      prefix: '&7{&6Hork''s Husbando&7} '
   '-':
     group:
     - jailed
@@ -4371,7 +4424,7 @@ users:
       name: EnchantressFreak
   182fa38f-b321-44cf-ba16-fe70847459c3:
     group:
-    - kentnelson
+    - parallaxentity
     options:
       name: HeyItsSteph
       prefix: ''
@@ -4431,7 +4484,7 @@ users:
     - jailed
   2db62a35-6065-4c2c-964d-efc5e0ace18a:
     group:
-    - mortal
+    - atom
     options:
       name: Andrei20677
     permissions: []
@@ -4470,7 +4523,7 @@ users:
       name: tonafish
   9ee4fc53-8262-4619-bfe9-ba9cfe9a40b2:
     group:
-    - mortal
+    - kentnelson
     options:
       name: missmandyy
       prefix: '&7{&5MR&9305&5DALE&7} '
@@ -4640,7 +4693,7 @@ users:
       name: Zane_Tiger322
   7dff91dd-96e6-4b73-9dfa-17992e055694:
     group:
-    - mortal
+    - martianmanhunter
     options:
       name: Supertre03
   784f0e4e-d5c9-4184-8d86-4fdbb0d5fb87:
@@ -4660,7 +4713,7 @@ users:
       name: FlameZelus
   2ec2d90a-7b77-4ac9-9d5f-e1e2f02bc6a7:
     group:
-    - reverseflash
+    - goku
     options:
       name: Doctor_ll
   b813d1f6-b432-4c9d-87a0-0e1abb45e8ac:
@@ -4678,25 +4731,26 @@ users:
       prefix: '&7{&5Master&4Admin&7} '
       name: Bitslane
     group:
-    - doctormanhattan
+    - mrmxyzptlk
     permissions:
     - essentials.mute
     - ch.alias.punish
   c3a4e4d3-b04a-48e7-ad9f-60cc59699af3:
     group:
-    - blackpanther
+    - goku
     options:
       prefix: '&7{&6Bitslane''s Husbando&7} '
       name: BaconboyX10
     permissions: []
   a7a2427c-0f6b-4236-ae72-2d60407626c0:
     group:
-    - martianmanhunter
+    - mortal
     options:
       name: Furious9898
+      prefix: '&7{&6Dizzeh''s Husbando&7} '
   a0c16fd7-6db9-44b0-aa27-22c5566c05cc:
     group:
-    - mortal
+    - ironman
     options:
       name: Tom_Beau
   ff86d038-3770-462a-9987-2af88cc21725:
@@ -4711,7 +4765,7 @@ users:
       name: OliverQueenCW
   cc800959-16eb-48af-a837-0af19499fe8d:
     group:
-    - martianmanhunter
+    - goku
     options:
       name: freerangechiken
   f5c00376-2b9b-4f32-b2e2-a50c66b000c3:
@@ -4726,7 +4780,7 @@ users:
       name: Born2BeABanana
   d497cc45-e08b-48eb-becd-ab8deab09fee:
     group:
-    - parallaxentity
+    - doctormanhattan
     options:
       name: HurricaneDizzeh
   279d5c9f-d4cc-4298-b8a5-5e5fe46c1ded:
@@ -4734,6 +4788,7 @@ users:
     - mortal
     options:
       name: Radiating
+      prefix: '&7{&6Dizzeh''s Husbando&7} '
   eef95af5-a8f5-4d55-a392-a482139d9893:
     group:
     - blackpanther
@@ -4746,9 +4801,29 @@ users:
       name: DiamondApples32
   5d34f7bb-2cb5-4405-80de-311b5a823c3c:
     group:
-    - barryallen
+    - blackbolt
     options:
       name: Fanawtik
   211ebce9-4e44-4b7b-991f-29239d8806d8:
     group:
     - vegeta
+    options:
+      name: _ShadowPlayz_
+  sircheerios:
+    group:
+    - mortal
+  ec4e9d01-ce2a-4ce0-9f3d-b5117c13a92b:
+    group:
+    - batman
+    options:
+      name: drooly
+  69a476f3-e3a7-4b4f-83ab-9e81c22539c8:
+    group:
+    - superman
+    options:
+      name: KrypticSpartan
+  d75213d6-2cee-4818-b1ad-0b39434d9ce4:
+    group:
+    - robin
+    options:
+      name: Scrabdusan

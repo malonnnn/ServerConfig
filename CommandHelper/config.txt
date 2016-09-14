@@ -80,12 +80,13 @@ cocoabeans:/cocoabeans = sudo(/give player() cocoabeans 1)
 
 punish:/punish $plr = >>>
     @plr = $plr
-    runas(~console,/undisguise @plr)
     sudo(/warp survival @plr)
-    sudo(/pex user @plr group set mortal)
+    runas(~console,/undisguise @plr)
     sudo (/effect @plr clear)
     sudo("/minecraft:clear" @plr)
+    sudo(/pex user @plr group set mortal)
     sudo(/pex reload)
+    sudo(/fly off @plr)
     tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
 <<<
 
