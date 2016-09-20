@@ -332,7 +332,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcepush <playername>")
         tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
@@ -342,7 +342,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcepush <playername>")
         tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
         
@@ -353,7 +353,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-7")
         tmsg(@playerName, "/run 0-4")
         tmsg(@playerName, "/haste 0-1")
-        tmsg(@playerName, "/push <playername>")
+        tmsg(@playerName, "/forcepush <playername>")
         tmsg(@playerName, "/forcechoke <playername>")
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
     }
@@ -986,5 +986,12 @@ powers:/powers = >>>
     else if(@playerRank == "harleyquinn")
     {
         tmsg(@playerName, "/harleyquinn")
+    }
+    else if(@playerRank == "catwoman")
+    {
+        tmsg(@playerName, "/catwoman")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-1")
     }
 <<<
