@@ -284,6 +284,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'sinestro'){
         @fname = '§eSin§ce§0s§etr§0o'
     }
+    else if(@class == 'catwoman'){
+        @fname = '§8C§0a§8twom§0a§8n'
+    }
     
     if(@fname != '')
     {

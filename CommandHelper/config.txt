@@ -1,61 +1,7 @@
-bootsofslow:/bootsofslow = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:0.1,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Baby Boots'}}")
-bootsofmedium:/bootsofmedium = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:0.5,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Teen Boots'}}")
-bootsofspeed:/bootsofspeed = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:1.0,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Hermes Man Boots'}}")
-bootsofcrash:/bootsofcrash = sudo(/give player() "minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:123456789123456894321654.0,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:'Boots of Crash'}}")
-
-#drown:/drown $player [$=''] = >>>
-#    sudo(/spawn $player)
-#    sudo("/minecraft:tp" $player "2107 73 -1063")
-#    broadcast("§9"player()" §bis drowning §9"$player"§b!")
-#<<<
-    
-
-#superkick:/superkick = sudo(/kick player() Relog to begin ANARCHY!)
-#grass:/grass = sudo(/give player() 2 1)
-#dirt:/dirt = sudo(/give player() 3 1)
-#mycelium:/mycelium = sudo(/give player() 110 1)
-#fire:/fire = sudo(/give player() 51 1)
-#sand:/sand = sudo(/give player() 12 1)
-#gravel:/gravel = sudo(/give player() 13 1)
-#sandstone:/sandstone = sudo(/give player() 24 1)
-#netherrack:/netherrack = sudo(/give player() 87 1)
-#soulsand:/soulsand = sudo(/give player() 88 1)
-#stone:/stone = sudo(/give player() 1 1)
-#podzol:/podzol = sudo(/give player() 3:2 1)
-#deaddirt:/deaddirt = sudo(/give player() 3:1 1)
-#redsand:/redsand = sudo(/give player() 12:1 1)
-#clay:/clay = sudo(/give player() 82 1)
-#water:/water = sudo(/give player() 326 1)
-#lava:/lava = sudo(/give player() 327 1)
-#ice:/ice = sudo(/give player() 79 1)
-#rod:/rod = sudo(/give player() 346 1)
-zombie:/zombie = sudo(/give player() 383 1 54)
+# Various Gods/Goddesses spawning access to spawning certain things
 pig:/pig = runas(~console, "/minecraft:give" player() "minecraft:spawn_egg 1 0 {EntityTag:{id:Pig}}")
 chicken:/chicken = runas(~console, "/minecraft:give" player() "minecraft:spawn_egg 1 0 {EntityTag:{id:Chicken}}")
 cow:/cow = runas(~console, "/minecraft:give" player() "minecraft:spawn_egg 1 0 {EntityTag:{id:Cow}}")
-
-flame:/flame $player = sudo(/burn $player 8)
-
-#strong:/strong = sudo(/effect player() 5 999 50 true)
-#weak:/weak = sudo(/effect player() 5 0 3)
-#tough:/tough = sudo(/effect player() 11 30 3)
-#speedon:/speedon = sudo(/effect player() 1 999 3 true)
-#speedoff:/speedoff = sudo(/effect player() 1 0 3)
-#nightvision:/nightvision = sudo(/effect player() 16 300)
-#ironswordkb2:/ironswordkb2 = sudo(/give player() "267 1 0 {ench:[{id:19,lvl:2}]}")
-#ironswordfire2:/ironswordfire2 = sudo(/give player() "267 1 0 {ench:[{id:20,lvl:2}]}")
-#infinitybow:/infinitybow = sudo(/give player() "261 1 0 {ench:[{id:51,lvl:1}]}")
-#ironhelmetprot1:/ironhelmetprot1 = sudo(/give player() "306 1 0 {ench:[{id:0,lvl:1}]}")
-#ironpantsprot1:/ironpantsprot1 = sudo(/give player() "308 1 0 {ench:[{id:0,lvl:1}]}")
-#ironchestprot1:/ironchestprot1 = sudo(/give player() "307 1 0 {ench:[{id:0,lvl:1}]}")
-#ironbootsprot1:/ironbootsprot1 = sudo(/give player() "309 1 0 {ench:[{id:0,lvl:1}]}")
-#plainbow:/plainbow = sudo(/give player() 261 1)
-#plainarrow:/plainarrow = sudo(/give player() 262 1)
-#ironhelmet:/ironhelmet = sudo(/give player() 306 1)
-#ironpants:/ironpants = sudo(/give player() 308 1)
-#ironchest:/ironchest = sudo(/give player() 307 1)
-#ironboots:/ironboots = sudo(/give player() 309 1)
-#ironsword:/ironsword = sudo(/give player() 267 1)
 wheat:/wheat = sudo(/give player() 296 1)
 carrot:/carrot = sudo(/give player() 391 1)
 potato:/potato = sudo(/give player() 392 1)
@@ -63,13 +9,6 @@ bonemeal:/bonemeal = sudo(/give player() bonemeal 1)
 workbench:/workbench = sudo(/give player() 58 1)
 flintsteel:/flintsteel = sudo(/give player() 259 1)
 wine:/wine = sudo(/give player() "373 1 16 {display:{Name:Wine},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:600}]}")
-beer:/beer = sudo(/give player() "373 1 16 {display:{Name:Beer},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
-redbull:/redbull = sudo(/give player() "373 1 16 {display:{Name:"RedBull"},CustomPotionEffects:[1:{Id:1,Amplifier:3,Duration:1200}]}")
-vodka:/vodka = sudo(/give player() "373 1 16 {display:{Name:Vodka},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
-
-goldcarrot:/goldcarrot = sudo(/give player() 396 1)
-seeds:/seeds = sudo(/give player() 295 1)
-
 meat:/meat = sudo(/give player() 363 1)
 fish:/fish = sudo(/give player() 349 1)
 pork:/pork = sudo(/give player() 319 1)
@@ -77,34 +16,41 @@ egg:/egg = sudo(/give player() 344 1)
 sugar:/sugar = sudo(/give player() 353 1)
 milk:/milk = sudo(/give player() 335 1)
 cocoabeans:/cocoabeans = sudo(/give player() cocoabeans 1)
+goldcarrot:/goldcarrot = sudo(/give player() 396 1)
+seeds:/seeds = sudo(/give player() 295 1)
 
+# Used by multiple fire based characters...human torch, hades, etc
+flame:/flame $player = sudo(/burn $player 8)
+
+# Various Alchol potions
+beer:/beer = sudo(/give player() "373 1 16 {display:{Name:Beer},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
+redbull:/redbull = sudo(/give player() "373 1 16 {display:{Name:"RedBull"},CustomPotionEffects:[1:{Id:1,Amplifier:3,Duration:1200}]}")
+vodka:/vodka = sudo(/give player() "373 1 16 {display:{Name:Vodka},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
+
+# Admin command for punishing people
 punish:/punish $plr = >>>
     @plr = $plr
     sudo(/warp survival @plr)
-    runas(~console,/undisguise @plr)
-    sudo (/effect @plr clear)
-    sudo("/minecraft:clear" @plr)
-    sudo(/pex user @plr group set mortal)
-    sudo(/pex reload)
-    sudo(/fly off @plr)
-    tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
+    set_timeout(2000, closure(
+        sudo(/pex user @plr group set mortal)
+        sudo(/undisguise)
+        sudo (/effect @plr clear)
+        sudo("/minecraft:clear" @plr)
+        sudo(/fly @plr off)
+        sudo(/pex reload)
+        tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
+    ))
 <<<
 
-unjail:/unjail $plr = >>>
-    @plr = $plr
-    sudo(/pex user @plr group set mortal)
-    sudo(/mv tp @plr spawn)
-    sudo(/pex reload)
-<<<
-
+# Hero flight
 flyon:/fly on = >>>
     sudo(/fly player() on)
 <<<
-
 flyoff:/fly off = >>>
     sudo(/fly player() off)
 <<<
 
+# Configurable Run, Jump, and Haste commands for each hero
 jump0:/jump 0 = >>>
     sudo(/effect player() 8 0)
 <<<
@@ -225,30 +171,30 @@ run9:/run 9 = >>>
     sudo(/effect player() 1 9999 254 true)
 <<<
 
+# Turns player into a mortal
 mortal:/mortal = >>>
-    sudo(/undisguise)
-    sudo(/speed player() 1)
-    sudo(/effect player() clear)
-    sudo(/fly player() off)
-    sudo(/god off)
-    sudo(/."minecraft:clear")
     runas(~console,/pex user player() group set mortal)
-    tmsg(player(),concat(color(light_gray),
-    'You are stripped of your powers.'))
-<<<
-
-outofmoney:/outofmoney = >>>
-    sudo(/undisguise)
-    sudo(/speed player() 1)
-    sudo(/effect player() clear)
-    sudo(/fly player() off)
-    sudo(/god off)
-    sudo(/."minecraft:clear")
-    runas(~console,/pex user player() group set mortal)
+    runas(~console,/pex reload)
     sudo(/warp city)
-    runas(~console, /kick player() "auto-kicked because you ran out of money. Sorry but kicking is required in order to reset your gamemode")
+    sudo(/."minecraft:clear")
+    sudo(/undisguise)
+    sudo(/effect player() clear)
+    sudo(/fly player() off)
+    sudo(/god off)
+    runas(~console,"/sudo ". player() ." c:/trailsid none")
+    
+    @mv = yml_decode(read('../Multiverse-Core/worlds.yml'));
+    @defaultMode = @mv['worlds'][pworld()]['gameMode'];
+    runas(~console,/gamemode @defaultMode player())
+    
+    set_timeout(1000, closure(
+        sudo(/effect player() clear)
+        sudo(/fly player() off)
+        sudo(/."minecraft:clear")
+    ))
 <<<
 
+# Black Canary's telepathic pushing ability
 push:/push $plr = >>>
     @plr = $plr
     @uuid = pinfo($plr,20)
@@ -257,12 +203,14 @@ push:/push $plr = >>>
     "Canary Cry!"))
 <<<
 
+# ForcePush for Force users
 forcepush:/forcepush $plr = >>>
     @plr = $plr
     @uuid = pinfo($plr,20)
     set_entity_velocity(@uuid, array(0,1.0,0))
 <<<
 
+# Ironman's Hulkbuster upgrade
 hulkbuster:/hulkbuster = >>>
     sudo(/effect player() clear)
     sudo(/effect player() 2 9999 2 true)
@@ -274,6 +222,7 @@ hulkbuster:/hulkbuster = >>>
     "It's Hulk Bustin' time!"))
 <<<
 
+# Bow & arrow characters various commands
 arrow:/arrow = >>>
     sudo(/give player() "minecraft:arrow 1 0 {display:{Name:§2Gre§0e§2n A§0r§2row's §fNormal Arrow}}")
     tmsg(player(),concat(color(white),
@@ -380,6 +329,7 @@ arrowluck:/arrow luck = >>>
     'Maybe I should visit the casino...'))
 <<<
 
+# Hover ability for those who can more hover than fly
 hoveron:/hover on = >>>
     sudo(/effect player() 25 9999 255 true)
     tmsg(player(),concat(color(gold),
@@ -391,10 +341,12 @@ hoveroff:/hover off = >>>
     'Your gravity returns.'))
 <<<
 
+# Telepathic ability to make other speak and control their mind
 speak:/speak $player $ = >>>
     sudo(/sudo $player "c:."$)
 <<<
 
+# Invisibility
 invis:/invis = >>>
     sudo(/effect player() 14 9999 1 true)
 <<<
@@ -402,6 +354,7 @@ vis:/vis = >>>
     sudo(/effect player() 14 0)
 <<<
 
+# Spectator mode
 intangible:/intangible = >>>
     sudo(/gm 3)
 <<<
@@ -409,87 +362,20 @@ tangible:/tangible = >>>
     sudo(/gms)
 <<<
 
+# Force Choke for Dark Force users
 forcechoke:/forcechoke $player = >>>
     sudo(/effect $player 20 5 6 true)
     sudo(/effect $player 19 5 6 true)
 <<<
 
+# Spiderman/black spiderman can summon webs
 web:/web = >>>
     sudo(/give player() "minecraft:web 64")
     tmsg(player(),concat(color(red),
     "Someone is going to be in a sticky situation real soon."))
 <<<
 
-spec:/spec [$player] = >>>
-    @sourcePlayer = player()
-    
-    # let's toggle based on their mode
-    if(pmode() == 'SPECTATOR') {
-        @activeTarget = pspectator_target(@sourcePlayer)
-        if(@activeTarget)
-        {
-            tmsg(@activeTarget,concat(color(dark_gray), @sourcePlayer 'is no longer spectating you.'))
-        }
-    
-        # teleports them back to spawn, but you can change this
-        set_ploc(get_spawn());
-        # if the default mode is ADVENTURE, you can change this too
-        set_pmode('SURVIVAL');
-    } else {
-        if($player) {
-            @targetPlayer = $player
-            if (pworld(@targetPlayer) == pworld(@sourcePlayer)) {
-                if(puuid(@targetPlayer) != puuid(@sourcePlayer)) {
-                    set_pmode('SPECTATOR');
-                    set_pspectator_target(puuid(@targetPlayer));
-                    tmsg(@targetPlayer,concat(color(dark_gray), @sourcePlayer 'is spectating you.'))
-                } else {
-                    tmsg(@sourcePlayer,concat(color(red), 'You are already spec\'ing yourself, dumb-dumb.'))
-                }
-            } else {
-                tmsg(@sourcePlayer,concat(color(red), 'You can only spec people in the same world as you.'))
-            }
-        } else {
-            # they didn't specify a player, so let's go to the first player in the world.
-            # this could also be changed, depending on the context.
-            # maybe you want to grab a player from a game's scoreboard or a custom list
-            @plrs = all_players(pworld())
-            if(array_size(@plrs) > 1) {
-                if(puuid(@sourcePlayer) != puuid(@plrs[0])) {
-                    set_pmode('SPECTATOR');
-                    set_pspectator_target(puuid(@plrs[0]));
-                    tmsg(@plrs[0],concat(color(dark_gray), @sourcePlayer 'is spectating you.'))
-                } else {
-                    set_pmode('SPECTATOR');
-                    set_pspectator_target(puuid(@plrs[1]));
-                    tmsg(@plrs[1],concat(color(dark_gray), @sourcePlayer 'is spectating you.'))
-                }
-            } else {
-                tmsg(@sourcePlayer,concat(color(red), 'No one in this world to spec.'))
-            }
-        }
-    }
-<<<
-
-afkset:/afkmessage $ = >>>
-    @message = $
-    @plr = to_lower(player())
-    assign(@key, concat('afk.', @plr))
-    store_value(@key,$)
-    tmsg(@plr,
-    concat(color(red), 'Your away message has been set to')
-    concat(color(gold), $)
-    )
-<<<
-
-afkoff:/afkmessageoff = >>>
-    @plr = to_lower(player())
-    assign(@key, concat('afk.', @plr))
-    clear_value(@key)
-    tmsg(@plr,
-    concat(color(red), 'Your away message has been removed'))
-<<<
-
+# Teleports players in the skywars lobby to various points in the skywars arena
 /distributeskywars = >>>
     @loc = array(6.0, 77.0, 20.0, 'skywarslobby')
     @plrs = players_in_radius(@loc,100)
@@ -501,6 +387,7 @@ afkoff:/afkmessageoff = >>>
     }
 <<<
 
+# Reset the destrucible city to new
 /resetcity = >>>
 
     shell_adv('/home/minecraft/resetcity.sh',
@@ -508,9 +395,9 @@ afkoff:/afkmessageoff = >>>
         workingDir: '/home/minecraft/'
         )
     )
-
 <<<
 
+# Reset actual skywars map
 /resetskywars $plr = >>>
 
     # How many seconds they have to wait before being able
@@ -543,17 +430,7 @@ afkoff:/afkmessageoff = >>>
     )
 <<<
 
-/tpskywars = >>>
-    
-
-    @loc = array(4073.0, 69.0, 4253.0, 'wooftywoo')
-    @plrs = players_in_radius(@loc,10)
-    
-    for(@i = 0, @i < array_size(@plrs), @i++){
-        runas(~console,/warp skywars @plrs[@i])
-    }
-<<<
-
+# Players may "/roll" which gives them a random item
 roll:/roll = >>>
     assign(@lottocooldown, 60)
     @plr = player()
@@ -580,6 +457,7 @@ roll:/roll = >>>
     broadcast(@plr"§9just played the lottery and won§6"@items[@item[0]]"§9! You can roll too using §6/roll")
 <<<
 
+# Randomly chooses 1 player on the server to die or be rewarded with XP
 deathroll:/deathroll $plr = >>>
 
     @player = $plr
@@ -634,6 +512,7 @@ deathroll:/deathroll $plr = >>>
     
 <<<
 
+# Stupid marriage message
 marry:/marry $plr1 $plr2 = >>>
     @plr1 = $plr1
     @plr2 = $plr2
@@ -641,6 +520,7 @@ marry:/marry $plr1 $plr2 = >>>
 
 <<<
 
+# The command which actually changes your hero, to be placed in a command block
 changehero:/changehero $plr $class $floor = >>>
     @plr = $plr
     @class = $class
@@ -648,7 +528,8 @@ changehero:/changehero $plr $class $floor = >>>
     @floor = $floor
     include('includes/friendlyheroname.ms')
     
-    #make sure no other players are currently using the class you want
+    # Make sure no other players are currently using the class you want
+    # Only one person may be a given hero at a time
     @plrs = all_players()
     foreach(@player in @plrs)
     {
@@ -672,16 +553,17 @@ changehero:/changehero $plr $class $floor = >>>
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
     
-    #settrail
+    # If hero has a trail, set it
     include('includes/changeskin.ms')
     _changeSkin(@plr,@class)
     
-    #change skin
+    # change player to hero skin
     include('includes/changetrail.ms')
     runas(~console,"/sudo ". @plr ." c:/trailsid none")
     _changeTrail(@plr, @class)
     
-    #charge $200 if not staff
+    # charge one-time fee of $200 if player is choosing an "OP" hero
+    # If player is a mod, don't charge
     include('includes/isplayermod.ms')
     include('includes/isplayeropclass.ms')
     if(_isPlayerMod(@plr) == "true"){
@@ -691,11 +573,12 @@ changehero:/changehero $plr $class $floor = >>>
             tmsg(@plr, "$200 taken for use of OP")
         }else{
             acc_subtract(@plr,acc_balance(@plr))
-            runas(~console,"/sudo ". @plr ." c:/outofmoney")
+            runas(~console,"/sudo ". @plr ." c:/mortal")
+            die()
         }
     }
     
-    #print message
+    # print chat message about successful transformation
     @fname = _friendlyHeroName(@class)
     if(@fname != 'false'){
         broadcast(
@@ -705,11 +588,12 @@ changehero:/changehero $plr $class $floor = >>>
         )
     }
     
-    #warp to exit pod
+    # warp player to exit pod
     runas(~console,"/warp exitpod". @floor @plr)
     
 <<<
 
+# checkpoint system for players in parkour
 cp:/cp = >>>
 
     @plr = player()
@@ -748,6 +632,7 @@ cp:/cp = >>>
 
 <<<
 
+# Go to checkpoint
 gc:/gc = >>>
 
     @plr = player()
@@ -792,16 +677,7 @@ gc:/gc = >>>
     'Loaded your position!'))
 <<<
 
-bcc:/bcc = >>>
-<<<
-
-gimme:/gimme = >>>
-    @pname = player()
-    acc_add(@pname, 10)
-    tmsg(@pname, 'ur rich bch')
-<<<
-
-
+# Mxyzptlk can turn other players into a mortal and strip them of their power
 magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
     @player = $player
     if(ponline(@player)){
@@ -818,55 +694,26 @@ magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
     }
 <<<
 
-annoy:/annoy $ = >>>
-    
-    @msg = "§a§l".$
-
-    tmsg("KilomPlaysMC",@msg)
-    tmsg("Pusheeen",@msg)
-
-<<<
-
-tektek:/tektek = >>>
-
-    broadcast(pinfo())
-
-<<<
-
+# For some reason the /broadcast plugin allows anyone to spam
+# this command with no permission checks. plugin defunct so no
+# fixes available. This prevents any usage of that command.
 broadcast:/broadcast = >>>
-
 <<<
-
-b:/b = >>>
-
+bcc:/bcc = >>>
 <<<
-
 bc:/bc = >>>
-
+<<<
+b:/b = >>>
 <<<
 
-shrink:/shrink = >>>
+# Random coin flip
+flip:/flip = >>>
 
-    sudo("/minecraft:tp" player() "~ ~-1 ~")
-
-<<<
-
-grow:/grow = >>>
-
-    sudo("/minecraft:tp" player() "~ ~1 ~")
-
-<<<
-
-husbandopicker:/husbandopicker = >>>
-
-    @num = rand(1,4)
+    @num = rand(1,3)
 
     if(@num == 1){
-        broadcast(player()."'s new husband is Tek!")
-    }else if(@num ==2 ){
-        broadcast(player()."'s new husband is Ace!")
-    }else if(@num == 3){
-        broadcast(player()."'s new husband is Trump!")
+        broadcast("heads")
+    }else if(@num == 2 ){
+        broadcast("tails")
     }
-
 <<<
