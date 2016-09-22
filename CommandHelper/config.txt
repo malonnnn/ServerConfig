@@ -717,3 +717,18 @@ flip:/flip = >>>
         broadcast("tails")
     }
 <<<
+
+# Darkseid's power
+apokolips:/apokolips = >>>
+    sudo(/mv tp 1_9_nether)
+<<<
+
+# grow into giant
+grow:/grow = >>>
+    sudo(/disguise giant)
+<<<
+
+shrink:/shrink = >>>
+   include('includes/changeskin.ms')
+   _changeSkin(player(),'darkseid') 
+<<<
