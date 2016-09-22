@@ -3,7 +3,6 @@ Gauss:
         Item_Name: "&eGauss Shotgun"
         Item_Type: 417
         Item_Lore: "&eAdvanced pump-action shotgun.|&eFires metal slugs that penetrate|&eall targets within 40 blocks.|&eDeals 200% damage to Zombies."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
@@ -11,13 +10,11 @@ Gauss:
         Projectile_Type: energy
         Projectile_Subtype: 40-1-NONE-0
         Projectile_Damage: 12
-        Sounds_Shoot: WITHER_SHOOT-1-2-0,EXPLODE-1-2-0
     Reload:
         Enable: true
         Reload_Amount: 8
         Reload_Bullets_Individually: true
         Reload_Duration: 10
-        Sounds_Reloading: IRONGOLEM_THROW-1-2-0
     Firearm_Action:
         Type: pump
         Open_Duration: 12
@@ -32,7 +29,6 @@ Gauss:
         Particle_Player_Shoot: BLOCK_BREAK-57
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
         
 throwingstar:
     Item_Information:
@@ -360,13 +356,11 @@ howardtheduckbfg:
         On_Impact_With_Anything: true
         Projectile_Activation_Time: 5
 
-
 Bazooka:
     Item_Information:
         Item_Name: "&eBazooka"
         Item_Type: 417
         Item_Lore: "&eRocket launcher.|&eFire down at your|&efeet to rocket-jump.|&eNegates fall damage."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
         Inventory_Control: Group_Bazookas
     Shooting:
         Cancel_Left_Click_Block_Damage: true
@@ -375,7 +369,6 @@ Bazooka:
         Projectile_Amount: 1
         Projectile_Type: fireball
         Projectile_Speed: 10
-        Sounds_Shoot: ZOMBIE_WOOD-1-0-0,FIZZ-1-1-0
     Sneak:
         Enable: true
         No_Recoil: true
@@ -385,7 +378,6 @@ Bazooka:
         Enable: true
         Reload_Amount: 1
         Reload_Duration: 55
-        Sounds_Reloading: SKELETON_IDLE-1-0-10,PISTON_EXTEND-1-0-28,SKELETON_WALK-1-0-48
     Particles:
         Enable: true
         Particle_Player_Shoot: BLOCK_BREAK-35
@@ -400,7 +392,7 @@ Bazooka:
         Damage_Multiplier: 10
         Explosion_No_Grief: true
         Explosion_Radius: 6
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
+
 
 Python:
     Item_Information:
@@ -408,7 +400,6 @@ Python:
         Item_Type: 417
         Item_Lore: "&eRevolver with high power.|&eLeft click to melee enemies|&ewith the tactical knife."
         Melee_Attachment: Tactical_Knife
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     Shooting:
         Right_Click_To_Shoot: true
         Cancel_Left_Click_Block_Damage: true
@@ -419,12 +410,10 @@ Python:
         Projectile_Speed: 40
         Projectile_Damage: 6
         Bullet_Spread: 0.5
-        Sounds_Shoot: IRONGOLEM_HIT-1-2-0,ZOMBIE_METAL-1-2-0
     Reload:
         Enable: true
         Reload_Amount: 6
         Reload_Duration: 35
-        Sounds_Reloading: LEVEL_UP-1-1-10,FIRE_IGNITE-1-2-28
     Firearm_Action:
         Type: revolver
         Open_Duration: 5
@@ -435,27 +424,22 @@ Python:
         Reset_Hit_Cooldown: true
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
 
 Riotshield:
     Item_Information:
         Item_Name: "&eRiot Shield"
         Item_Type: 267
         Item_Lore: "&eHold right-click to raise the shield.|&eBlocks all melee and ranged attacks.|&eIneffective against attacks from behind."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Riot_Shield:
         Enable: true
         Durability_Loss_Per_Hit: 10
-        Sounds_Blocked: GLASS-2-2-0
-        Sounds_Break: ITEM_BREAK-2-1-0
-
+        
 Olympia:
     Item_Information:
         Item_Name: "&eOlympia"
         Item_Type: 417
         Item_Lore: "&eDouble-barreled shotgun.|&eDeadly at close range.|&eIneffective at longer ranges.|&eFires incendiary ammo."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
@@ -472,7 +456,6 @@ Olympia:
             Duration: 80
         Bullet_Spread: 1
         Reset_Fall_Distance: true
-        Sounds_Shoot: ZOMBIE_WOOD-1-1-0,EXPLODE-1-2-0,GHAST_FIREBALL-1-1-0
     Sneak:
         Enable: true
         No_Recoil: true
@@ -482,7 +465,6 @@ Olympia:
         Reload_Amount: 2
         Reload_Bullets_Individually: true
         Reload_Duration: 15
-        Sounds_Reloading: NOTE_STICKS-1-1-0,NOTE_SNARE_DRUM-1-6-1
     Firearm_Action:
         Type: break
         Open_Duration: 10
@@ -494,7 +476,6 @@ Olympia:
         No_Fall_Damage: true
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
     Damage_Based_On_Flight_Time:
         Enable: true
         Bonus_Damage_Per_Tick: -1
@@ -509,7 +490,6 @@ Hunting:
         Item_Name: "&eHunting Rifle"
         Item_Type: 417
         Item_Lore: "&eBolt-action rifle with high accuracy.|&eEquipped with a night vision scope.|&eDeals double damage on headshots."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
@@ -517,7 +497,6 @@ Hunting:
         Projectile_Type: snowball
         Projectile_Speed: 1000
         Projectile_Damage: 12
-        Sounds_Shoot: BLAZE_HIT-1-1-0,EXPLODE-1-2-0
     Custom_Death_Message:
         Normal: "&e<victim> was sniped by <shooter>'s Hunting Rifle!"
     Reload:
@@ -526,19 +505,14 @@ Hunting:
         Reload_Amount: 5
         Reload_Bullets_Individually: true
         Reload_Duration: 10
-        Sounds_Reloading: NOTE_STICKS-1-1-0
     Firearm_Action:
         Type: bolt
         Open_Duration: 8
         Close_Duration: 7
         Close_Shoot_Delay: 6
-        Sound_Open: NOTE_STICKS-1-0-0,PISTON_RETRACT-1-2-2
-        Sound_Close: PISTON_EXTEND-1-2-0
     Headshot:
         Enable: true
         Bonus_Damage: 12
-        Sounds_Shooter: NOTE_PLING-1-2-0
-        Sounds_Victim: VILLAGER_DEATH-1-1-0
     Abilities:
         Reset_Hit_Cooldown: true
         Knockback: 3
@@ -553,17 +527,14 @@ Hunting:
         Enable: true
         Night_Vision: true
         Zoom_Amount: 5
-        Sounds_Toggle_Zoom: NOTE_STICKS-1-2-0
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
 
 Type95:
     Item_Information:
         Item_Name: "&eType 95"
         Item_Type: 417
         Item_Lore: "&eSemi-automatic with three round burst fire.|&eGhast Tears are required for reloads."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     SignShops:
         Enable: true
         Price: 266-10
@@ -578,7 +549,6 @@ Type95:
         Projectile_Speed: 40
         Projectile_Damage: 4
         Bullet_Spread: 2
-        Sounds_Shoot: ITEM_BREAK-1-2-2,NOTE_SNARE_DRUM-1-0-2
     Sneak:
         Enable: true
         No_Recoil: true
@@ -590,14 +560,11 @@ Type95:
     Ammo:
         Enable: true
         Ammo_Item_ID: 370
-        Sounds_Out_Of_Ammo: NOTE_PLING-1-2-0
-        Sounds_Shoot_With_No_Ammo: NOTE_STICKS-1-2-0
     Reload:
         Enable: true
         Reload_Amount: 30
         Take_Ammo_On_Reload: true
         Reload_Duration: 40
-        Sounds_Reloading: FIRE_IGNITE-1-1-4,DOOR_OPEN-1-2-6,FIRE_IGNITE-1-1-36,HURT_FLESH-1-0-37,DOOR_CLOSE-1-2-38
     Firearm_Action:
         Type: slide
         Close_Duration: 10
@@ -606,19 +573,16 @@ Type95:
         Enable: true
         Zoom_Amount: 5
         Zoom_Bullet_Spread: 0
-        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-1-2-0
     Abilities:
         Reset_Hit_Cooldown: true
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
 
 AK-47:
     Item_Information:
         Item_Name: "&eAK-47"
         Item_Type: 417
         Item_Lore: "&eFully automatic with high power.|&eEffective at medium range.|&eControls are inverted."
-        Sounds_Acquired: BAT_TAKEOFF-1-1-0
     Shooting:
         Right_Click_To_Shoot: true
         Cancel_Left_Click_Block_Damage: true
@@ -629,7 +593,6 @@ AK-47:
         Projectile_Speed: 40
         Projectile_Damage: 4
         Bullet_Spread: 2
-        Sounds_Shoot: IRONGOLEM_HIT-1-2-0,SKELETON_HURT-1-2-0,ZOMBIE_WOOD-1-2-0
     Sneak:
         Enable: true
         No_Recoil: true
@@ -641,8 +604,6 @@ AK-47:
         Enable: true
         Reload_Amount: 30
         Reload_Duration: 40
-        Sounds_Out_Of_Ammo: ITEM_BREAK-1-1-0
-        Sounds_Reloading: FIRE_IGNITE-1-1-4,DOOR_OPEN-1-2-6,FIRE_IGNITE-1-1-36,HURT_FLESH-1-0-37,DOOR_CLOSE-1-2-38
     Firearm_Action:
         Type: slide
         Close_Duration: 10
@@ -652,13 +613,11 @@ AK-47:
         Enable: true
         Zoom_Amount: 5
         Zoom_Bullet_Spread: 0
-        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-1-2-0
     Abilities:
         Reset_Hit_Cooldown: true
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-2-0
-        
+
 powercannon:
     Item_Information:
         Item_Name: "&2L&9e&2x Luth&9o&2r's Power Cannon"
@@ -691,7 +650,6 @@ powercannon:
         Explosion_Radius: 5
         On_Impact_With_Anything: true
         Projectile_Activation_Time: 5
-
 magicgun:
     Item_Information:
         Item_Name: "&2L&9e&2x Luth&9o&2r's Magic Gun"

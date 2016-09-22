@@ -107,6 +107,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'hulk'){
         @fname = '§a§lH§2§lULK'
     }
+    else if(@class == 'shehulk'){
+        @fname = '§aShe-§lH§2§lULK'
+    }
     else if(@class == 'wonderwoman'){
         @fname = '§4W§fon§eder §4W§fom§9an'
     }
@@ -286,6 +289,15 @@ proc(_friendlyHeroName, @class,
     }
     else if(@class == 'catwoman'){
         @fname = '§8C§0a§8twom§0a§8n'
+    }
+    else if(@class == 'johndoe'){
+        @fname = '§fJ§0o§4h§fn §4D§fo§4e'
+    }
+    else if(@class == 'wintersoldier'){
+        @fname = '§8Wint§7er §4Sol§cdier'
+    }
+    else if(@class == 'darkseid'){
+        @fname = '§9D§8a§9rk§7s§1e§7id'
     }
     
     if(@fname != '')
