@@ -10,3 +10,25 @@ darkseid:/darkseid = >>>
     tmsg(player(),concat(color(gray),
     'I am the Destroyer of Worlds!'))
 <<<
+
+# TPs Darkseid to the nether (aka Apokolips)
+apokolips:/apokolips = >>>
+    sudo(/mv tp 1_9_nether)
+<<<
+
+# grow into giant
+grow:/grow = >>>
+    sudo(/disguise giant)
+<<<
+shrink:/shrink = >>>
+   include('../includes/changeskin.ms')
+   _changeSkin(player(),'darkseid') 
+<<<
+
+# Gives player strength 10 for 5 minutes
+empower:/empower $plr = >>>
+    @plr = $plr
+    sudo(/effect @plr 5 300 10 true)
+    tmsg(player(), "You have empowered ".@plr."!")
+    tmsg(@plr, "You have been empowered by ". player() ."!")
+<<<

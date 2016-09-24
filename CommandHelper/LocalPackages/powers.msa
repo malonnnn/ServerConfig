@@ -128,6 +128,38 @@ powers:/powers = >>>
         tmsg(@playerName, "/back")
         tmsg(@playerName, "/top")
     }
+    else if(@playerRank == "supermanprimeonemillion")
+    {
+        tmsg(@playerName, "/supermanprimeonemillion")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/gmc")
+        tmsg(@playerName, "/gms")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/speak <playername>")
+        tmsg(@playerName, "/intangible")
+        tmsg(@playerName, "/tangible")
+        tmsg(@playerName, "/invis")
+        tmsg(@playerName, "/vis")
+        tmsg(@playerName, "/disguise")
+        tmsg(@playerName, "/disguiseviewself")
+        tmsg(@playerName, "/mindcontrol <playername>")
+        tmsg(@playerName, "/stopmindcontrol")
+        tmsg(@playerName, "/tp")
+        tmsg(@playerName, "/heal")
+        tmsg(@playerName, "/repair")
+        tmsg(@playerName, "/skull")
+        tmsg(@playerName, "/time")
+        tmsg(@playerName, "/spawner")
+        tmsg(@playerName, "/kill")
+        tmsg(@playerName, "/lightning")
+        tmsg(@playerName, "/thunder")
+        tmsg(@playerName, "/weather")
+        tmsg(@playerName, "/back")
+        tmsg(@playerName, "/top")
+    }
     else if(@playerRank == "thanos")
     {
         tmsg(@playerName, "/thanos")
@@ -539,6 +571,12 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-2")
     }
+    else if(@playerRank == "johncena")
+    {
+        tmsg(@playerName, "/johncena")
+        tmsg(@playerName, "/jump 0-1")
+        tmsg(@playerName, "/haste 0-2")
+    }
     else if(@playerRank == "fang")
     {
         tmsg(@playerName, "/fang")
@@ -609,6 +647,8 @@ powers:/powers = >>>
         tmsg(@playerName, "/thru (intangible)")
         tmsg(@playerName, "/disguise")
         tmsg(@playerName, "/speak <player> <message>")
+        tmsg(@playerName, "/mindcontrol <playername>")
+        tmsg(@playerName, "/stopmindcontrol")
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
         tmsg(@playerName, "/disguiseviewself")
@@ -1004,6 +1044,7 @@ powers:/powers = >>>
     else if(@playerRank == "johndoe")
     {
         tmsg(@playerName, "/run 0-4")
+        tmsg(@playerName, "/cat")
     }
     else if(@playerRank == "wintersoldier")
     {
@@ -1017,8 +1058,11 @@ powers:/powers = >>>
         tmsg(@playerName, "/darkseid")
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/mindcontrol <playername>")
+        tmsg(@playerName, "/stopmindcontrol")
         tmsg(@playerName, "/apokolips (travels to your homeworld of Apokolips)")
         tmsg(@playerName, "/tp")
+        tmsg(@playerName, "/empower <playername> (gives player strength 10)")
         tmsg(@playerName, "/speak <playername>")
         tmsg(@playerName, "/grow")
         tmsg(@playerName, "/shrink")

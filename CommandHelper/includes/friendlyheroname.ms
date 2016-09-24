@@ -299,6 +299,13 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'darkseid'){
         @fname = '§9D§8a§9rk§7s§1e§7id'
     }
+    else if(@class == 'johncena'){
+        @fname = '§fJohn Cena'
+    }
+    else if(@class == 'supermanprimeonemillion'){
+        @fname = '§eSuperman Prime One Million'
+    }
+    
     
     if(@fname != '')
     {

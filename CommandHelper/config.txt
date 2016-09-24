@@ -173,8 +173,9 @@ run9:/run 9 = >>>
 
 # Turns player into a mortal
 mortal:/mortal = >>>
-    runas(~console,/pex user player() group set mortal)
-    runas(~console,/pex reload)
+    @plr = player()
+    runas(~console,"/pex user ".@plr." group set mortal")
+    runas(~console,"/pex reload")
     sudo(/warp city)
     sudo(/."minecraft:clear")
     sudo(/undisguise)
@@ -718,17 +719,30 @@ flip:/flip = >>>
     }
 <<<
 
-# Darkseid's power
-apokolips:/apokolips = >>>
-    sudo(/mv tp 1_9_nether)
+# Mind Control
+mindcontrol:/mindcontrol $plr = >>>
+    
+    @plr = player()
+    @vic = $plr
+    runas(~console,"/icu control @plr @vic")
+    
+    @vicgroup = pgroup(@vic)[0]
+    include('includes/changeskin.ms')
+    _changeSkin(player(),@vicgroup)
+
+<<<
+stopmindcontrol:/stopmindcontrol = >>>
+    
+    @pgroup = pgroup()[0]
+    runas(~console,"/sudo ". player() ." c:/icu stop")
+    include('includes/changeskin.ms')
+    _changeSkin(player(),@pgroup)
+
 <<<
 
-# grow into giant
-grow:/grow = >>>
-    sudo(/disguise giant)
-<<<
-
-shrink:/shrink = >>>
-   include('includes/changeskin.ms')
-   _changeSkin(player(),'darkseid') 
+# fixSkin
+fixskin:/fixskin = >>>
+    @pgroup = pgroup()[0]
+    include('includes/changeskin.ms')
+    _changeSkin(player(),@pgroup)
 <<<

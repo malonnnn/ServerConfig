@@ -1,0 +1,28 @@
+#iControlU Configuration File
+#Developed by FireBreath15
+
+maxControlTime: 0
+#Maximum amount of time (in seconds) a player can be controlled in one session. Set to 0 for unlimited time.
+
+cooldown: 0
+#Amount of time (in seconds) a player must wait between controlling players. Set to 0 for no cooldown.
+
+showMessages: true
+#Notify the target player that they are being controlled [true/false]
+
+maxdistance: 50
+#The maximum distance (in blocks) the victim can be from the controller.
+#NOTE: This only works if "allowFreeCam" below is set to TRUE.
+#WARNING: High numbers may result in server lag.
+
+userecipes: false
+#Allow players to craft specialized helmets that alter player control [true/false].
+
+allowFreeCam: true
+#Allow victim players to move freely while they are being controlled [true/false].
+
+hideController: true
+#Hides the controller during Control Mode. Set to FALSE only if you're using a different vanish plugin.
+
+maxRadius: 50
+#The maximum distance (in blocks) to search for nearby players when using "/icu controlnearest"

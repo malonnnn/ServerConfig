@@ -58,7 +58,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pistons: allow, pvp: allow, chest-access: deny, ghast-fireball: deny}
+            interact: allow, pvp: allow, chest-access: deny, pistons: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -90,6 +90,16 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    hallofworlds:
+        parent: city
+        min: {x: 377.0, y: 0.0, z: 178.0}
+        max: {x: 426.0, y: 255.0, z: 274.0}
+        members: {}
+        flags: {}
+        owners:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+        type: cuboid
+        priority: 2
     herosuggestions:
         parent: modapplications
         min: {x: 29.0, y: 77.0, z: 284.0}

@@ -61,6 +61,7 @@ groups:
     - default
   mortal:
     permissions:
+    - icu.stop
     - essentials.me
     - griefprevention.spam
     - multiverse.access.hallofworlds
@@ -253,6 +254,7 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - ch.alias.fixskin
         - drugs.*
         - ch.alias.powers
         - auction.bid
@@ -894,6 +896,9 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - ch.alias.stopmindcontrol
+        - ch.alias.mindcontrol
+        - ch.alias.empower
         - ch.alias.speak
         - essentials.tp
         - ch.alias.shrink
@@ -1341,6 +1346,18 @@ groups:
         - ch.alias.haste0
         - ch.alias.haste1
         - ch.alias.haste2
+  johncena:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.johncena
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
   catwoman:
     inheritance:
     - mortal
@@ -1608,6 +1625,120 @@ groups:
         - essentials.gamemode.survival
         - essentials.gamemode.creative
         - ch.alias.doctormanhattan
+        - ch.alias.flyon
+        - ch.alias.flyoff
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
+        - ch.alias.jump9
+        - ch.alias.speak
+        - ch.alias.intangible
+        - ch.alias.tangible
+        - ch.alias.invis
+        - ch.alias.vis
+        - libsdisguises.seecmd.viewself
+        - libsdisguises.disguise
+        - libsdisguises.disguise.bat.-setinvisible
+        - libsdisguises.disguise.blaze.-setinvisible
+        - libsdisguises.disguise.cave_spider.-setinvisible
+        - libsdisguises.disguise.chicken.-setinvisible
+        - libsdisguises.disguise.cow.-setinvisible
+        - libsdisguises.disguise.creeper.-setinvisible
+        - libsdisguises.disguise.donkey.-setinvisible
+        - libsdisguises.disguise.elder_guardian.-setinvisible
+        - libsdisguises.disguise.enderman.-setinvisible
+        - libsdisguises.disguise.endermite.-setinvisible
+        - libsdisguises.disguise.ghast.-setinvisible
+        - libsdisguises.disguise.giant.-setinvisible
+        - libsdisguises.disguise.guardian.-setinvisible
+        - libsdisguises.disguise.horse.-setinvisible
+        - libsdisguises.disguise.iron_golem.-setinvisible
+        - libsdisguises.disguise.magma_cube.-setinvisible
+        - libsdisguises.disguise.mule.-setinvisible
+        - libsdisguises.disguise.mushroom_cow.-setinvisible
+        - libsdisguises.disguise.ocelot.-setinvisible
+        - libsdisguises.disguise.pig.-setinvisible
+        - libsdisguises.disguise.pig_zombie.-setinvisible
+        - libsdisguises.disguise.player.-setinvisible
+        - libsdisguises.disguise.rabbit.-setinvisible
+        - libsdisguises.disguise.sheep.-setinvisible
+        - libsdisguises.disguise.silverfish.-setinvisible
+        - libsdisguises.disguise.skeleton.-setinvisible
+        - libsdisguises.disguise.skeleton_horse.-setinvisible
+        - libsdisguises.disguise.slime.-setinvisible
+        - libsdisguises.disguise.snowman.-setinvisible
+        - libsdisguises.disguise.spider.-setinvisible
+        - libsdisguises.disguise.squid.-setinvisible
+        - libsdisguises.disguise.undead_horse.-setinvisible
+        - libsdisguises.disguise.villager.-setinvisible
+        - libsdisguises.disguise.witch.-setinvisible
+        - libsdisguises.disguise.wither.-setinvisible
+        - libsdisguises.disguise.wither_skeleton.-setinvisible
+        - libsdisguises.disguise.wolf.-setinvisible
+        - libsdisguises.disguise.zombie.-setinvisible
+        - libsdisguises.disguise.zombie_villager.-setinvisible
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
+        - ch.alias.run8
+        - ch.alias.run9
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
+        - essentials.gamemode
+        - essentials.tp
+        - essentials.tp.*
+        - essentials.heal
+        - essentials.heal.*
+        - essentials.repair
+        - essentials.repair.*
+        - essentials.skull
+        - essentials.skull.*
+        - essentials.time
+        - essentials.time.*
+        - essentials.spawner
+        - essentials.spawner.*
+        - essentials.kill
+        - essentials.lightning
+        - essentials.lightning.others
+        - essentials.thunder
+        - essentials.weather
+        - essentials.back
+        - essentials.back.*
+        - essentials.top
+      greenfield:
+        permissions: []
+    permissions:
+    - libsdisguises.undisguise
+  supermanprimeonemillion:
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.mindcontrol
+        - ch.alias.stopmindcontrol
+        - essentials.gamemode.survival
+        - essentials.gamemode.creative
+        - ch.alias.supermanprimeonemillion
         - ch.alias.flyon
         - ch.alias.flyoff
         - ch.alias.jump0
@@ -2163,6 +2294,7 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - ch.alias.cat
         - ch.alias.run0
         - ch.alias.run1
         - ch.alias.run2
@@ -3364,6 +3496,8 @@ groups:
     worlds:
       '1_9':
         permissions:
+        - ch.alias.stopmindcontrol
+        - ch.alias.mindcontrol
         - worldedit.navigation.thru.command
         - ch.alias.martianmanhunter
         - ch.alias.flyon
@@ -3655,6 +3789,7 @@ users:
       name: Tektronic
       prefix: '&7{&6Fanny''s Husbando&7} '
     permissions:
+    - icu.exempt
     - multiverse.access.anarchy
     - essentials.sethome.*
     - essentials.sethome
@@ -3740,7 +3875,7 @@ users:
     options:
       name: Hero_Of_Helix
       suffix: ''
-      prefix: ''
+      prefix: '&7{&6Fanny''s Husbando&7} '
     worlds:
       missions:
         permissions:
@@ -3821,7 +3956,7 @@ users:
       prefix: ''
   474707f7-f8b4-43ea-8978-9cae17917e82:
     group:
-    - mortal
+    - boros
     options:
       name: ThatCraftLife
   e6fde745-5af3-4680-aceb-6231c7e472b8:
@@ -3925,7 +4060,7 @@ users:
       name: Unilluminaticorn
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
-    - supergirl
+    - mortal
     options:
       name: AddictedToSugar
       prefix: ''
@@ -4010,7 +4145,7 @@ users:
       name: Sekarn29
   a800eee6-bd24-4b88-824a-29d3eaf47ee1:
     group:
-    - superman
+    - wintersoldier
     options:
       name: grimreaper0202
   970c13e0-682b-43e5-8950-b680b932bffa:
@@ -4030,7 +4165,7 @@ users:
       name: CrisPlaysStuffYT
   929db149-ec3b-4812-a8ff-b0c197c32052:
     group:
-    - mortal
+    - shazam
     options:
       name: Herobrine052909
   bbfcbc71-f1b0-409b-aa37-79792ac36d9e:
@@ -4270,7 +4405,7 @@ users:
       name: nonomario2005
   e207f46f-ac40-4f49-8b7d-2317c67f1bd0:
     group:
-    - hephaestus
+    - darkseid
     options:
       name: BenTheNerd
       prefix: '&7{&6Pushy''s Husbando&7} '
@@ -4353,10 +4488,10 @@ users:
       name: Steven_2008
   febb0bd1-73e6-4ade-81a3-e754719548da:
     group:
-    - doctormanhattan
+    - supermanprimeonemillion
     options:
       name: AceTrainerBailey
-      prefix: '&7{&6Dev&7} {&6Pushy''s Husbando&7} '
+      prefix: '&7{&6Dev&7} '
     worlds:
       '&7{&6Sugar''s Husbando&7} ':
         options:
@@ -4450,7 +4585,7 @@ users:
       name: nevsfam
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - blackadam
+    - mortal
     options:
       name: EmmettGaming
   9994c515-37da-4020-8769-76da2412b4b7:
@@ -4470,7 +4605,7 @@ users:
       name: JohnnyBlitz_
   31543ae5-b9b1-42d1-a6bb-aee765fc0e09:
     group:
-    - supergirl
+    - jailed
     options:
       prefix: '&7{&4Hacker&7} '
       name: Lady_Mairon
@@ -4513,7 +4648,7 @@ users:
       name: Vijuu
   8c9c4ce1-27f6-48d3-a764-8755b790f351:
     group:
-    - greenarrow
+    - mortal
     options:
       name: Lavasyris
       prefix: '&7{&6Hork''s Husbando&7} '
@@ -4658,7 +4793,7 @@ users:
       name: tonafish
   9ee4fc53-8262-4619-bfe9-ba9cfe9a40b2:
     group:
-    - mrmxyzptlk
+    - kentnelson
     options:
       name: missmandyy
       prefix: '&7{&5MR&9305&5DALE&7} '
@@ -4756,7 +4891,7 @@ users:
       name: _iTzCat_
   29ae4206-09c2-40ef-b286-69a549893656:
     group:
-    - captainamerica
+    - darkseid
     options:
       name: NoobyTv
       prefix: '&7{&4Hacker&7} '
@@ -4829,7 +4964,7 @@ users:
       name: Zane_Tiger322
   7dff91dd-96e6-4b73-9dfa-17992e055694:
     group:
-    - superman
+    - shazam
     options:
       name: Supertre03
       prefix: '&7{&aInformation Guide&7} '
@@ -4868,7 +5003,7 @@ users:
       prefix: '&7{&5Master&4Admin&7} '
       name: Bitslane
     group:
-    - mrmxyzptlk
+    - mortal
     permissions:
     - essentials.mute
     - ch.alias.punish
@@ -4887,7 +5022,7 @@ users:
       prefix: '&7{&6Dizzeh''s Husbando&7} '
   a0c16fd7-6db9-44b0-aa27-22c5566c05cc:
     group:
-    - martianmanhunter
+    - parallaxentity
     options:
       name: Tom_Beau
   ff86d038-3770-462a-9987-2af88cc21725:
@@ -4938,7 +5073,7 @@ users:
       name: DiamondApples32
   5d34f7bb-2cb5-4405-80de-311b5a823c3c:
     group:
-    - howardtheduck
+    - goku
     options:
       name: Fanawtik
     permissions:
@@ -4989,7 +5124,7 @@ users:
       name: Ethanmc16
   86b82221-e101-4b5e-aa72-badcea742434:
     group:
-    - superman
+    - goku
     options:
       name: Night_Wing_DC
   29222269-d4b0-424a-bf12-199e216bcf1f:
@@ -5081,6 +5216,34 @@ users:
       name: xxTerryxx
   5a92a6ee-1fc6-4bd5-bfde-c6ab3b0dd50a:
     group:
-    - shazam
+    - superman
     options:
       name: naner_man
+  0c449177-5904-421d-b764-1a80cbe25beb:
+    group:
+    - raven
+    options:
+      name: JunieS
+  a72ce525-61a0-40eb-a29b-92f64a9e9dbd:
+    group:
+    - barryallen
+    options:
+      name: STORM10002
+  7c174d40-b48e-4b59-956f-4faf397bdcf6:
+    group:
+    - blackspiderman
+    options:
+      name: Septiceyefan
+  ab457be4-5342-4f71-b60f-d8c57edec018:
+    group:
+    - darkseid
+    options:
+      name: triffs
+  045623c2-61b6-43b1-bf4e-aa02c32313ca:
+    group:
+    - apollo
+    options:
+      name: Hasan9347
+  110aa415-0c07-44f5-8d8e-0a174fab71c0:
+    group:
+    - captainamerica
