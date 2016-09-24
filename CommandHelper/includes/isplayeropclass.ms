@@ -10,6 +10,7 @@ proc(_isPlayerOpClass, @player,
         @pgroup[0] == 'onslaughtreborn' ||
         @pgroup[0] == 'kentnelson' ||
         @pgroup[0] == 'mrmxyzptlk' ||
+        @pgroup[0] == 'supermanprimeonemillion' ||
         @pgroup[0] == 'onslaughtreborn'
     ){
         return("true")
