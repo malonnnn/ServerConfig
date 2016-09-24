@@ -305,7 +305,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'supermanprimeonemillion'){
         @fname = '§eSuperman Prime One Million'
     }
-    
+	else if(@class == 'owlman'){
+        @fname = '§7Ow§bl§8m§0a§8n'
+    }
     
     if(@fname != '')
     {
