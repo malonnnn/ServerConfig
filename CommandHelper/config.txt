@@ -742,7 +742,14 @@ stopmindcontrol:/stopmindcontrol = >>>
 
 # fixSkin
 fixskin:/fixskin = >>>
+    @plr = player()
     @pgroup = pgroup()[0]
     include('includes/changeskin.ms')
-    _changeSkin(player(),@pgroup)
+    _changeSkin(@plr,@pgroup)
+<<<
+fixskin:/fixskin $plr = >>>
+    @plr = $plr
+    @pgroup = pgroup(@plr)[0]
+    include('includes/changeskin.ms')
+    _changeSkin(@plr,@pgroup)
 <<<
