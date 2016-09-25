@@ -734,10 +734,10 @@ mindcontrol:/mindcontrol $plr = >>>
 
 <<<
 stopmindcontrol:/stopmindcontrol = >>>
-    
+    @plr = player()
     @pgroup = pgroup()[0]
     runas(~console,"/sudo ". player() ." c:/icu stop")
-    broadcast("@plr has stopped mindcontrolling @vic")
+    broadcast("@plr has stopped mindcontrolling")
     include('includes/changeskin.ms')
     _changeSkin(player(),@pgroup)
 
