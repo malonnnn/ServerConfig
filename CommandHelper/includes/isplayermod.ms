@@ -1,7 +1,7 @@
 proc(_isPlayerMod, @player,
 
     if(
-        
+        @player == 'Tektronic' ||
         @player == 'Bitslane' ||
         @player == 'HeyItsSteph' ||
         @player == 'AceTrainerBailey' ||
