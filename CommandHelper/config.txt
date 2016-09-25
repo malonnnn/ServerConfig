@@ -721,10 +721,12 @@ flip:/flip = >>>
 
 # Mind Control
 mindcontrol:/mindcontrol $plr = >>>
+    broadcast(player() is )
     
     @plr = player()
     @vic = $plr
     runas(~console,"/icu control @plr @vic")
+    broadcast("@plr is now mindcontrolling @vic")
     
     @vicgroup = pgroup(@vic)[0]
     include('includes/changeskin.ms')
@@ -735,6 +737,7 @@ stopmindcontrol:/stopmindcontrol = >>>
     
     @pgroup = pgroup()[0]
     runas(~console,"/sudo ". player() ." c:/icu stop")
+    broadcast("@plr has stopped mindcontrolling @vic")
     include('includes/changeskin.ms')
     _changeSkin(player(),@pgroup)
 
