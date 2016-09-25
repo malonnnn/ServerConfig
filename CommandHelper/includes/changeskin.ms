@@ -411,6 +411,10 @@ proc(_changeSkin, @pname, @class,
         @sig = 'T5tvTqnMAe9u1g0N9QynZ5MnLocpjjmjjBpYU+LDl7I4kGsJ7Hfn+2xKy+8aCTAe5WsN3hVzXtonmOs4ji8NTzC2tilOPeoqdAL48+m0iGvjDEBmJRTT4JAlcQKwfDGIYYJ2I1mNVTV7y29HoH3EkV6Y1jyM0qOeq+iHGygRcWlkSWad8xHtMlFAzvLiz8qNTswMwLmLhmDyMELnysL01KCOOc94ye8aprnplAjrrrOmmixxIpzdD2tyQUqfhpkU/b9nKmCW9naQZvF9OIW8HHfCKnLAWQNXQmy9yROu9ru1mCZBv8R2fHfyfv4EIuZtj8ovLPJwVIKgjEaQvF3JksTcxkwSH72wnFfbMsvtFE+lAp7wjpzKiWxZ2NTQ8k6OrfGKp3ogma2jhTHhzUaZI5KRGvjw/EVlFfi3gP0JkbhKAinBD2D50/o6xk/90Z2a1YRW9cgT9fJdOTuOXMwQEjv3FwpbJ4l7o2yqwGhsZi6CZgbgKGkqVZZcGxEBxbzk07jXNhIgbqKu6mUR6Ywx4lVMzR62NwEwtLkEAeLXkSWzsnuV05Oms/rGYCAnd6HcjsOfFFXNzhMJ0RKmEMx8yaEfwk2n/X/q0Y6o0LKQ3oJvO6YqnxBUB8Fy7SRO2iPDGBQxIiQYLuQnPzrWWOTS/puVLB8bnDAlVn0RCVJsRXo='
         @tex = 'eyJ0aW1lc3RhbXAiOjE0NzQ3NzI0MTQxMjIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzcyMTM4NjI2MmM3Y2Q3MmY3MjUyYWY0MWE4MWVlY2NlNDExYWJmZmE1YmViMjVjY2IwZDA1NTE3MmQ3MmE4MCJ9fX0='
     }
+	else if(@class == 'gohan'){
+        @sig = ''
+        @tex = ''
+    }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
         return()
