@@ -176,6 +176,9 @@ proc(_friendlyHeroName, @class,
     else if(@class == 'vegeta'){
         @fname = '§eV§fe§1ge§fta'
     }
+	else if(@class == 'gohan'){
+        @fname = '§eG§1o§6han'
+    }
     else if(@class == 'zeus'){
         @fname = '§fZ§eeu§fs'
     }
