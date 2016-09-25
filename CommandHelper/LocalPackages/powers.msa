@@ -796,6 +796,16 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+	else if(@playerRank == "gohan")
+    {
+        tmsg(@playerName, "/gohan")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/tp")
+    }
     else if(@playerRank == "zeus")
     {
         tmsg(@playerName, "/zeus")
