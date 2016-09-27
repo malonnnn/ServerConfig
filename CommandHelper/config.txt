@@ -30,14 +30,8 @@ vodka:/vodka = sudo(/give player() "373 1 16 {display:{Name:Vodka},CustomPotionE
 # Admin command for punishing people
 punish:/punish $plr = >>>
     @plr = $plr
-    sudo(/warp survival @plr)
-    set_timeout(2000, closure(
-        sudo(/pex user @plr group set mortal)
-        sudo(/undisguise)
-        sudo (/effect @plr clear)
-        sudo("/minecraft:clear" @plr)
-        sudo(/fly @plr off)
-        sudo(/pex reload)
+    runas(~console,"/sudo @plr c:/mortal")
+    set_timeout(3000, closure(
         tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
     ))
 <<<
@@ -174,24 +168,18 @@ run9:/run 9 = >>>
 # Turns player into a mortal
 mortal:/mortal = >>>
     @plr = player()
-    runas(~console,"/pex user ".@plr." group set mortal")
-    runas(~console,"/pex reload")
-    sudo(/warp city)
-    sudo(/."minecraft:clear")
-    sudo(/undisguise)
-    sudo(/effect player() clear)
-    sudo(/fly player() off)
-    sudo(/god off)
-    runas(~console,"/sudo ". player() ." c:/trailsid none")
+    runas(~console,"/sudo @plr c:/trailsid none")
+    runas(~console,"/pex user @plr group set mortal")
+    runas(~console,"/warp city @plr")
     
-    @mv = yml_decode(read('../Multiverse-Core/worlds.yml'));
-    @defaultMode = @mv['worlds'][pworld()]['gameMode'];
-    runas(~console,/gamemode @defaultMode player())
-    
-    set_timeout(1000, closure(
-        sudo(/effect player() clear)
-        sudo(/fly player() off)
-        sudo(/."minecraft:clear")
+    set_timeout(2000, closure(
+        runas(~console,"/gamemode survival @plr")
+        runas(~console,"/minecraft:clear @plr")
+        runas(~console,"/effect @plr clear")
+        runas(~console,"/fly @plr off")
+        runas(~console,"/god @plr off")
+        runas(~console,"/pex reload")
+        runas(~console,"/undisguiseplayer @plr")
     ))
 <<<
 
