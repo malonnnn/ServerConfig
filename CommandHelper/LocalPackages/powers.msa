@@ -1102,4 +1102,19 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-1")
     }
+        else if(@playerRank == "apocalypse")
+    {
+        tmsg(@playerName, "/apocalypse")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+        tmsg(@playerName, "/mindcontrol <playername>")
+        tmsg(@playerName, "/stopmindcontrol")
+        tmsg(@playerName, "/underworld (travels to the UNDERWORLD!)")
+        tmsg(@playerName, "/empower <playername> (gives player strength 10)")
+        tmsg(@playerName, "/speak <playername>")
+        tmsg(@playerName, "/grow")
+        tmsg(@playerName, "/shrink")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-9")
 <<<

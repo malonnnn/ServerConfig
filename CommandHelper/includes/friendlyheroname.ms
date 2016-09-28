@@ -1,4 +1,4 @@
-proc(_friendlyHeroName, @class,
+﻿proc(_friendlyHeroName, @class,
     
     @fname = ''
 
@@ -314,10 +314,13 @@ proc(_friendlyHeroName, @class,
 	else if(@class == 'goldenfrieza'){
         @fname = '§5Gol§eden Frieza'
     }
-	else if(@class == 'joker'){
+        else if(@class == 'joker'){
         @fname = '§fJo§2k§5er'
     }
     
+	else if(@class == 'apocalypse'){
+        @fname = '§6Apo§0cal§4ypse'
+    }
     if(@fname != '')
     {
         return(@fname)
