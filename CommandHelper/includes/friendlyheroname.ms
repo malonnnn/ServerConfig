@@ -321,7 +321,10 @@
 	else if(@class == 'apocalypse'){
         @fname = '§6Apo§0cal§4ypse'
     }
-    if(@fname != '')
+        else if(@class == 'blast'){
+        @fname = '§bBl§5as§bt'
+   
+        if(@fname != '')
     {
         return(@fname)
     }
