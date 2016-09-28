@@ -317,9 +317,11 @@
         else if(@class == 'joker'){
         @fname = '§fJo§2k§5er'
     }
-    
-	else if(@class == 'apocalypse'){
+    else if(@class == 'apocalypse'){
         @fname = '§6Apo§0cal§4ypse'
+    }
+    else if(@class == 'gorillagrodd'){
+        @fname = '§8G§7o§8rilla Gr§7o§8dd'
     }
     if(@fname != '')
     {
