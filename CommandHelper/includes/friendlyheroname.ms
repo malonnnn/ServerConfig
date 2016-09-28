@@ -318,7 +318,7 @@
         @fname = '§fJo§2k§5er'
     }
     
-	else if(@class == 'apocolypse'){
+	else if(@class == 'apocalypse'){
         @fname = '§6Apo§0col§4ypse'
     }
     if(@fname != '')
