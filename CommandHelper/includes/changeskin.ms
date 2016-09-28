@@ -441,18 +441,3 @@ proc(_changeSkin, @pname, @class,
     }
     runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@tex.'"}]}')
 )
-
-        else if(@class == 'mrmxyzptlk'){
-        runas(~console,/disguiseplayer @pname villager baby)
-        return()
-    }
-    else if(@class == 'jailed'){
-        runas(~console,"/minecraft:clear" @pname)
-        return()
-    }
-    else if(@class == 'mortal'){
-        runas(~console,/undisguise @pname)
-        return()
-    }
-    runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@tex.'"}]}')
-)
