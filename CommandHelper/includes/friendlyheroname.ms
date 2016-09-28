@@ -319,7 +319,7 @@
     }
     
 	else if(@class == 'apocalypse'){
-        @fname = '§6Apo§0col§4ypse'
+        @fname = '§6Apo§0cal§4ypse'
     }
     if(@fname != '')
     {
