@@ -14,20 +14,3 @@ apocalypse:/apocalypse = >>>
 underworld:/underworld = >>>
     sudo(/mv tp 1_9_nether)
 <<<
-
-# grow into giant
-grow:/grow = >>>
-    sudo(/disguise giant)
-<<<
-shrink:/shrink = >>>
-   include('../includes/changeskin.ms')
-   _changeSkin(player(),'apocalypse') 
-<<<
-
-# Gives player strength 10 for 5 minutes
-empower:/empower $plr = >>>
-    @plr = $plr
-    sudo(/effect @plr 5 300 10 true)
-    tmsg(player(), "You have strengthened ".@plr."!")
-    tmsg(@plr, "You have been strengthened by ". player() ."!")
-<<<
