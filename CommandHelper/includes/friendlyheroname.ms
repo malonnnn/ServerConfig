@@ -329,7 +329,10 @@
     else if(@class == 'genos'){
         @fname = '§8G§6e§7n§eo§8s'
     }
-    if(@fname != '')
+    else if(@class == 'redhulk'){
+        @fname = '§4Red §cHulk'
+    }
+   if(@fname != '')
     {
         return(@fname)
     }
