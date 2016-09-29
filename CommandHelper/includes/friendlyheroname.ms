@@ -324,7 +324,7 @@
         @fname = '§6Apo§0cal§4ypse'
     }
     else if(@class == 'blast'){
-        @fname = '§bBl§5as§bt'
+        @fname = '§bBl§5a§bst'
     }
     else if(@class == 'genos'){
         @fname = '§8G§6e§7n§eo§8s'
