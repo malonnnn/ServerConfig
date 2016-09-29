@@ -325,7 +325,10 @@
     }
     else if(@class == 'blast'){
         @fname = '§bBl§5as§bt'
-    }
+    } 
+    else if(@class == 'genos'){
+        @fname = '§ege§6n§4os'
+    
 
     
     if(@fname != '')
