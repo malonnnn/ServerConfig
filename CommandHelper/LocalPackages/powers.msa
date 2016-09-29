@@ -1089,14 +1089,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-9")
         tmsg(@playerName, "/haste 0-9")
     }
-	    else if(@playerRank == "owlman")
+    else if(@playerRank == "owlman")
     {
         tmsg(@playerName, "/owlman")
         tmsg(@playerName, "/jump 0-3")
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-2")
     }
-	else if(@playerRank == "goldenfrieza")
+    else if(@playerRank == "goldenfrieza")
     {
         tmsg(@playerName, "/goldenfrieza")
         tmsg(@playerName, "/jump 0-9")
@@ -1105,14 +1105,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
-	else if(@playerRank == "joker")
+    else if(@playerRank == "joker")
     {
         tmsg(@playerName, "/joker")
         tmsg(@playerName, "/jump 0-1")
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-1")
     }
-        else if(@playerRank == "apocalypse")
+    else if(@playerRank == "apocalypse")
     {
         tmsg(@playerName, "/apocalypse")
         tmsg(@playerName, "/fly on")
@@ -1126,13 +1126,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-3")
         tmsg(@playerName, "/haste 0-4")
     } 
-        else if(@playerRank == "blast")
+    else if(@playerRank == "blast")
     {     
 	tmsg(@playerName, "/blast")
         tmsg(@playerName, "/jump 0-9")
         tmsg(@playerName, "/run 0-9")
+	tmsg(@playerName, "/haste 0-9")
     }
-       else if(@playerRank == "genos")
+    else if(@playerRank == "genos")
     {
         tmsg(@playerName, "/genos")
         tmsg(@playerName, "/jump 0-8")
