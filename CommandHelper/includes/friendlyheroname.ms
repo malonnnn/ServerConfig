@@ -328,7 +328,7 @@
     } 
     else if(@class == 'genos'){
         @fname = '§ege§6n§4os'
-    
+    }
     if(@fname != '')
     {
         return(@fname)
