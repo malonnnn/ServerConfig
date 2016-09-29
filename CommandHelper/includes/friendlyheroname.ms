@@ -321,7 +321,7 @@
         @fname = '§8G§7o§8rilla Gr§7o§8dd'
     }
 	else if(@class == 'apocalypse'){
-        @fname = '&3A&9p&3o&9ca&3lypse'
+        @fname = '§3A§9p§3o§9ca§3lypse'
     }
     else if(@class == 'blast'){
         @fname = '§bBl§5as§bt'
