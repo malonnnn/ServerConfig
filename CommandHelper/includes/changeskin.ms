@@ -434,7 +434,7 @@ proc(_changeSkin, @pname, @class,
         else if(@class == 'genos'){
         @sig = ''
         @tex = ''
-
+    }
         else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
         return()
