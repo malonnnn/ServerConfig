@@ -327,7 +327,7 @@
         @fname = '§bBl§5as§bt'
     } 
     else if(@class == 'genos'){
-        @fname = '§ege§6n§4os'
+        @fname = '§8G§6e§7n§eo§8s'
     }
     if(@fname != '')
     {
