@@ -1140,4 +1140,10 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-8")
         tmsg(@playerName, "/haste 0-9")
     }
+    else if(@playerRank == "redhulk")
+    {
+        tmsg(@playerName, "/redhulk")
+        tmsg(@playerName, "/jump 0-9")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-9")
 <<<
