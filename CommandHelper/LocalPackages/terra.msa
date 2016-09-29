@@ -28,11 +28,11 @@ earth:/earth = >>>
 #@var = 0
 #export('var',@var)
 
-bind(entity_change_block, associative_array('id': 'terra'.@id), associative_array('to': 3), 
+bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_array('to': 3), 
         @event, @id, @damage, @player = player()) {
             
             @loc = entity_loc(@id);
-            drop_item(@loc,array(type: 3, qty: 3))
+            drop_item(@loc,array(type: 3, qty: 1))
             cancel()
             
 }
@@ -57,7 +57,7 @@ set_interval(50, closure(){
         // entity no longer exists, clear the interval
         clear_task();
         // unbind the landing event
-        unbind('terra'.@id);
+        unbind('magneto'.@id);
     }});
 
 <<<
