@@ -10,16 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    bitshouse:
-        parent: city
-        min: {x: 1954.0, y: 0.0, z: -319.0}
-        max: {x: 1998.0, y: 255.0, z: -278.0}
-        members: {}
-        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
-        owners:
-            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
-        type: cuboid
-        priority: 2
     babypickle101house:
         parent: city
         members: {}
@@ -58,16 +48,35 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pvp: allow, chest-access: deny, pistons: allow, ghast-fireball: deny}
+            interact: allow, chest-access: deny, pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
+    herosuggestions:
+        parent: modapplications
+        min: {x: 29.0, y: 78.0, z: 284.0}
+        max: {x: 30.0, y: 78.0, z: 284.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 5
+    bitshouse:
+        parent: city
+        min: {x: 1954.0, y: 0.0, z: -319.0}
+        max: {x: 1998.0, y: 255.0, z: -278.0}
+        members: {}
+        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
+        owners:
+            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
+        type: cuboid
+        priority: 2
     cityspawn:
         parent: city
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
+        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -100,13 +109,15 @@ regions:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         type: cuboid
         priority: 2
-    herosuggestions:
+    herosuggestions2:
         parent: modapplications
-        min: {x: 29.0, y: 77.0, z: 284.0}
-        max: {x: 30.0, y: 78.0, z: 284.0}
+        min: {x: 28.0, y: 74.0, z: 284.0}
+        max: {x: 30.0, y: 74.0, z: 289.0}
         members: {}
-        flags: {}
-        owners: {}
+        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
+        owners:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 7dff91dd-96e6-4b73-9dfa-17992e055694,
+                febb0bd1-73e6-4ade-81a3-e754719548da]
         type: cuboid
         priority: 5
     basements:
