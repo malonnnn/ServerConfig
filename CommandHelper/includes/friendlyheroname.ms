@@ -330,7 +330,7 @@
         @fname = '§8G§6e§7n§eo§8s'
     }
     else if(@class == 'redhulk'){
-        @fname = '§4Red §eHulk'
+        @fname = '§4Red §lH§c§lU§4§lLK'
     } 
     
     if(@fname != '')
