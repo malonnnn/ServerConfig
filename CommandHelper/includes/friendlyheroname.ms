@@ -329,6 +329,9 @@
     else if(@class == 'genos'){
         @fname = '§8G§6e§7n§eo§8s'
     }
+    else if(@class == 'terra'){
+    	@fname = '§8T§ee§8rr§ea'
+    }
     else if(@class == 'redhulk'){
         @fname = '§4Red §lH§c§lU§4§lLK'
     } 
