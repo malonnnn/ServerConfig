@@ -348,7 +348,7 @@
         @fname = '§9Inv§bi§9s§1ible §9W§bo§9m§0a§9n'
     }
     else if(@class == 'carnage'){
-        @fname = '§4Carnage'
+        @fname = '§4C§0a§4rn§0a§4ge'
     }    
     if(@fname != '')
     {
