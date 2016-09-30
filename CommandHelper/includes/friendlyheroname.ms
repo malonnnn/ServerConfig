@@ -314,10 +314,10 @@
 	else if(@class == 'goldenfrieza'){
         @fname = '§5Gol§eden Frieza'
     }
-        else if(@class == 'joker'){
+    else if(@class == 'joker'){
         @fname = '§fJo§2k§5er'
     }
-        else if(@class == 'gorillagrodd'){
+    else if(@class == 'gorillagrodd'){
         @fname = '§8G§7o§8rilla Gr§7o§8dd'
     }
 	else if(@class == 'apocalypse'){
@@ -338,6 +338,11 @@
     else if(@class == 'nickfury'){
         @fname = '§bNick Fury'
     }
+    else if(@class == 'undyne'){
+        @fname = '§bUndyne'
+    }  
+
+    
     if(@fname != '')
     {
         return(@fname)
