@@ -342,13 +342,10 @@
         @fname = '§4U§9n§fd§0y§fn§0e'
     }
     else if(@class == 'whitecanary'){
-    	@fname = '§fWhite §7Canary'
+    	@fname = '§fWhite Canary'
     }
     else if(@class == 'invisiblewoman'){
-        @fname = '§1Invi§9sible§7-§bWoman'
-    }  
-     else if(@class == 'invisiblewoman'){
-     @fname = '§1Invi§9sible§7-§bWoman'
+        @fname = '§9Inv§bi§9s§1ible §9W§bo§9m§0a§9n'
     }
     
     if(@fname != '')
