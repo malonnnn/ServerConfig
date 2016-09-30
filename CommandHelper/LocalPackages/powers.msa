@@ -1147,4 +1147,12 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-1")
         tmsg(@playerName, "/haste 0-9")
     }
+    else if(@playerRank == "terra")
+    {
+    	tmsg(@playerName, "/terra")
+	tmsg(@playerName, "/jump 0-2")
+	tmsg(@playerName, "/run 0-1")
+	tmsg(@playerName, "/haste 0-2")
+	tmsg(@playerName, "/earth, Launches an dirt shot")
+    }
 <<<
