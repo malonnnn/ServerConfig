@@ -336,10 +336,10 @@
         @fname = '§4Red §lH§c§lU§4§lLK'
     } 
     else if(@class == 'nickfury'){
-        @fname = '§bNick Fury'
+        @fname = '§8Nick Fury'
     }
     else if(@class == 'undyne'){
-        @fname = '§bUndyne'
+        @fname = '§4U§9n§fd§0y§fn§0e'
     }  
 
     
