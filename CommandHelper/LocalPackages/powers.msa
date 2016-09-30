@@ -1169,10 +1169,19 @@ powers:/powers = >>>
     else if(@playerRank == "invisiblewoman")
     {
         tmsg(@playerName, "/invisiblewoman")
+	tmsg(@playerName, "/fly on (she can't really fly, but she has control over psionic forcefields that she can use to fly)")
+	tmsg(@playerName, "/fly off")
         tmsg(@playerName, "/jump 0-9")
         tmsg(@playerName, "/run 0-2")
         tmsg(@playerName, "/haste 0-2")
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
+    }
+    else if(@playerRank == "whitecanary")
+    {
+ 	tmsg(@playerName, "/whitecanary")
+	tmsg(@playerName, "/jump 0-2")
+	tmsg(@playerName, "/run 0-2")
+	tmsg(@playerName, "/haste 0-1")
     }
 <<<
