@@ -332,7 +332,7 @@
     else if(@class == 'redhulk'){
         @fname = '§4Red §eHulk'
     } 
-    else if(@class == 'redhulk'){
+    else if(@class == 'nickfury'){
         @fname = '§bNick Fury'
     }
     if(@fname != '')
