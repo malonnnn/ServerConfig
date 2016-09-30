@@ -346,6 +346,9 @@
     }
     else if(@class == 'invisiblewoman'){
         @fname = '§1Invi§9sible§7-§bWoman'
+    }  
+     else if(@class == 'invisiblewoman'){
+     @fname = '§1Invi§9sible§7-§bWoman'
     }
     
     if(@fname != '')
