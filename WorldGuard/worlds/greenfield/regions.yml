@@ -48,7 +48,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, chest-access: deny, pistons: allow, pvp: allow, ghast-fireball: deny}
+            interact: allow, pistons: allow, pvp: allow, chest-access: deny, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -112,7 +112,7 @@ regions:
     herosuggestions2:
         parent: modapplications
         min: {x: 28.0, y: 74.0, z: 284.0}
-        max: {x: 30.0, y: 74.0, z: 289.0}
+        max: {x: 30.0, y: 76.0, z: 289.0}
         members: {}
         flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
         owners:
@@ -124,7 +124,7 @@ regions:
         min: {x: -2122.0, y: 0.0, z: -111.0}
         max: {x: -1916.0, y: 255.0, z: 9.0}
         members: {}
-        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
+        flags: {pvp: deny, heal-amount: 100, heal-delay: 1, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 5
