@@ -341,7 +341,9 @@
     else if(@class == 'undyne'){
         @fname = '§4U§9n§fd§0y§fn§0e'
     }  
-
+    else if(@class == 'whitecanary'){
+    	@fname = '§fWhite §7Canary'
+    }
     
     if(@fname != '')
     {
