@@ -347,7 +347,9 @@
     else if(@class == 'invisiblewoman'){
         @fname = '§9Inv§bi§9s§1ible §9W§bo§9m§0a§9n'
     }
-    
+    else if(@class == 'carnage'){
+        @fname = '§4Carnage'
+    }    
     if(@fname != '')
     {
         return(@fname)
