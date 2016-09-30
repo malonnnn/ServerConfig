@@ -341,7 +341,7 @@
     else if(@class == 'undyne'){
         @fname = '§4U§9n§fd§0y§fn§0e'
     }  
-     else if(@class == 'undyne'){
+     else if(@class == 'invisiblewoman'){
      @fname = '§1Invi§9sible§7-§bWoman'
     
     if(@fname != '')
