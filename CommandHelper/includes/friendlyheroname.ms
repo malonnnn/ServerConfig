@@ -331,7 +331,10 @@
     }
     else if(@class == 'redhulk'){
         @fname = '§4Red §eHulk'
-    } 
+    }
+    else if(@class == 'undyne'){
+        @fname = '§bUndyne'
+    }  
     
     if(@fname != '')
     {
