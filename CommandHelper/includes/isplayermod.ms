@@ -7,6 +7,7 @@ proc(_isPlayerMod, @player,
         @player == 'AceTrainerBailey' ||
         @player == 'missmandyy' ||
         @player == 'Supertre03'
+        @player == 'Hero_Of_Helix' ||
     ){
         return("true")
     }
