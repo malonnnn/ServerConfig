@@ -349,7 +349,10 @@
     }
     else if(@class == 'carnage'){
         @fname = '§4C§0a§4rn§0a§4ge'
-    }    
+    } 
+    else if(@class == 'superboy'){
+        @fname = '§4Sup§eer§1boy'
+    }
     if(@fname != '')
     {
         return(@fname)
