@@ -467,6 +467,10 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
 	@val = ''
     }
+    else if(@class == 'batgirl'){
+        @sig = ''
+	@val = ''
+    }
     
     
     else if(@class == 'mrmxyzptlk'){
