@@ -356,6 +356,9 @@
     else if(@class == 'batgirl'){
         @fname = '§7B§ea§0t§7gi§8r§7l'
     }
+    else if(@class == 'clayface'){
+        @fname = '§6Clayface'
+    }
     if(@fname != '')
     {
         return(@fname)
