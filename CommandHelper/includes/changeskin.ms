@@ -471,6 +471,10 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
 	@val = ''
     }
+    else if(@class == 'clayface'){
+        @sig = ''
+	@val = ''
+    }
     
     
     else if(@class == 'mrmxyzptlk'){
