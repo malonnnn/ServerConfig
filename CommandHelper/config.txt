@@ -743,3 +743,11 @@ fixskin:/fixskin $plr = >>>
     include('includes/changeskin.ms')
     _changeSkin(@plr,@pgroup)
 <<<
+
+kill:/kill $plr = >>>
+    @plr = player()
+    @vic = $plr
+    broadcast("@plr exploded the body of @vic")
+    pkill(@vic)
+    die()
+<<<
