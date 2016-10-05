@@ -1,17 +1,15 @@
 # Harley Quinn immunity to poison
-set_interval(50, closure(){
-    @plrs = all_players()
+bind(entity_damage, null, array('cause': 'POISON'), @e) {
     
-    foreach(@plr in @plrs)
+    @plr = player()
+    @class = pgroup(@plr)[0]
+
+    if(@class == "harleyquinn")
     {
-        @class = pgroup(@plr)
-        
-        if(@class[0] == "harleyquinn")
-        {
-            set_peffect(@plr, 19, 1, 0)
-        }
+        set_peffect(@plr, 19, 1, 0)
+        cancel()
     }
-});
+}
 
 # Take money per second if the player is an "OP" hero
 set_interval(5000, closure(){
@@ -404,6 +402,35 @@ bind('player_chat', null, null, @e) {
         die()
     }
     store_value(@pname.'lastmessage', time() / 1000)
+    
+    
+        assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
+        assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
+        assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
+        assign(@msg, reg_replace('(?i)x[. ,-]*3', 'x4', @msg))
+        assign(@msg, reg_replace('(?i)x+[. ,-]*d+', 'dick', @msg))
+        assign(@msg, reg_replace('(?i):[. ,-]*3', ':4', @msg))
+        assign(@msg, reg_replace('o+[. ,-]*m+[. ,-]*f+[. ,-]*g+', 'om fudgee', @msg))
+        assign(@msg, reg_replace('>_+>', 'looky dis way', @msg))
+        assign(@msg, reg_replace('<_+<', 'looky dat way', @msg))
+        assign(@msg, reg_replace('[o0O]+[. ,-_]*[o0O]+', 'oo', @msg))
+        assign(@msg, reg_replace('(?i)c+[. ,-]*x+', 'cctv', @msg))
+        assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*g+', 'oh em jee', @msg))
+        assign(@msg, reg_replace('(?i)ha[. ,-]*ha', 'hoy hoy hoy', @msg))
+        assign(@msg, reg_replace('(?i)w+[. ,-]*t+[. ,-]*f+', 'teh funk', @msg))
+        assign(@msg, reg_replace('(?i)l+[. ,-]*m+[. ,-]*a+[. ,-]*o+', 'le mayo', @msg))
+        assign(@msg, reg_replace('(?i)\\bwat', 'twat', @msg))
+        assign(@msg, reg_replace('(?i)[T;][. ,-]*\\-[. ,-]*[T;]', 'sadface', @msg))
+        assign(@msg, reg_replace('(?i)\\bwhen', 'who', @msg))
+        assign(@msg, reg_replace('(?i)\\bwhere', 'when', @msg))
+        assign(@msg, reg_replace('(?i)\\bwhat', 'why', @msg))
+        assign(@msg, reg_replace('(?i)\\bwhy', 'where', @msg))
+        assign(@msg, reg_replace('(?i)\\bwho', 'how', @msg))
+        assign(@msg, reg_replace('(?i)\\bhow', 'what', @msg))
+        assign(@msg, reg_replace('~', '???', @msg))
+        assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
+        assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
+        modify_event(message, @msg)
 }
 
 # If PlayerA is superman and PlayerB was Superman on log out and is just logging back in, then
