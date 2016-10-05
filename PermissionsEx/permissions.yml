@@ -13,8 +13,6 @@ groups:
     - griefprevention.ignore
     - minecraft.command.banlist
     - essentials.banlist
-    - -essentials.kick.exempt
-    - ch.alias.superkick
     - essentials.mail.send
     - essentials.mail
     - BCC.cmd.ignore
@@ -52,6 +50,10 @@ groups:
     - essentials.build.use.*
     - essentials.build.interact.*
     - essentials.protect.entitytarget.bypass
+    - essentials.delhome
+    - essentials.home
+    - essentials.home.bed
+    - essentials.home.others
   anarchy:
     permissions:
     - essentials.warp
@@ -265,63 +267,14 @@ groups:
         - Signshop.Permit
         - Signshop.Signs.Buy
         - essentials.build.*
-        - essentials.delhome
-        - essentials.home
-        - essentials.home.bed
-        - essentials.home.others
         - essentials.sethome
         - essentials.sethome.bed
         - essentials.sethome.multiple.unlimited
-      1_9_nether:
-        permissions:
-        - drugs.*
-      1_9_the_end:
-        permissions:
-        - drugs.*
-      wooftywoo_the_end:
-        permissions:
-        - essentials.fly
-      wooftywoo_nether:
-        permissions:
-        - essentials.fly
-      survival:
-        permissions:
-        - essentials.fly
-      survival_nether:
-        permissions:
-        - essentials.fly
-      survival_the_end:
-        permissions:
-        - essentials.fly
-      RabbitSeasonDuckSeason:
-        permissions:
-        - essentials.fly
-      RabbitSeasonDuckSeason_nether:
-        permissions:
-        - essentials.fly
-      RabbitSeasonDuckSeason_the_end:
-        permissions:
-        - essentials.fly
-      crapcakesandapplesauce:
-        permissions:
-        - essentials.fly
-      crapcakesandapplesauce_nether:
-        permissions:
-        - essentials.fly
-      crapcakesandapplesauce_the_end:
-        permissions:
-        - essentials.fly
-      pornhub:
-        permissions:
-        - essentials.fly
-      pornhub_nether:
-        permissions:
-        - essentials.fly
-      pornhub_the_end:
-        permissions:
-        - essentials.fly
       creative:
         permissions:
+        - essentials.sethome
+        - essentials.sethome.bed
+        - essentials.sethome.multiple.unlimited
         - essentials.back
         - -essentials.build.interact.328:0
         - -essentials.build.interact.23:0
@@ -363,6 +316,9 @@ groups:
         - -essentials.build.break.7:0
         - essentials.clearinventory
         - essentials.build.*
+        - essentials.skull
+        - essentials.skull.*
+        - essentials.sethome
       colosseum:
         permissions:
         - -essentials.suicide
@@ -384,15 +340,10 @@ groups:
         - essentials.build.break.46
       chess:
         permissions:
-        - ch.alias.flyoff
-        - ch.alias.flyon
         - essentials.fly
         - essentials.build.*
       plots:
         permissions:
-        - essentials.skull
-        - essentials.skull.*
-        - essentials.sethome
         - plots.home
         - plots.visit.owned
         - plots.visit
@@ -405,26 +356,11 @@ groups:
       skywars:
         permissions:
         - essentials.build.*
-      checkers:
-        permissions:
-        - essentials.fly
-      flappybirdparkour:
-        permissions:
-        - -essentials.tpa
       godlyparkour:
         permissions:
         - ch.alias.gc
         - ch.alias.cp
         - -essentials.tpa
-      longparkour:
-        permissions:
-        - ch.alias.gc
-        - ch.alias.cp
-      anarchy:
-        permissions:
-        - essentials.home.bed
-      flat:
-        permissions: []
       greenfield:
         permissions:
         - -essentials.tpaccept
@@ -435,19 +371,12 @@ groups:
         - essentials.build.drop.*
         - essentials.build.pickup.*
         - essentials.build.*
-        - -essentials.sethome
-        - essentials.home
-      infiniteparkour:
-        permissions:
-        - ch.alias.gc
-        - ch.alias.cp
       destructiblecity:
         permissions:
         - essentials.sethome
         - essentials.tpaccept
         - essentials.tpahere
         - essentials.tpa
-        - essentials.build.*
     options:
       default: 'true'
   fakeadmin:
@@ -4281,11 +4210,20 @@ worlds:
   checkers:
     inheritance:
     - chess
+  longparkour:
+    inheritance:
+    - godlyparkour
+  infiniteparkour:
+    inheritance:
+    - godlyparkour
+  flappybirdparkour:
+    inheritance:
+    - godlyparkour
 schema-version: 1
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - batman
+    - harleyquinn
     options:
       name: Tektronic
     permissions:
@@ -5229,7 +5167,7 @@ users:
     - jailed
   2db62a35-6065-4c2c-964d-efc5e0ace18a:
     group:
-    - darkseid
+    - supermanprimeonemillion
     options:
       name: AndreiMCU
     permissions: []
@@ -5263,7 +5201,7 @@ users:
       name: skullmaster99
   07358009-35ed-4e96-8c0a-6d57ebcd1243:
     group:
-    - mortal
+    - goku
     options:
       name: tonafish
   9ee4fc53-8262-4619-bfe9-ba9cfe9a40b2:
@@ -5797,12 +5735,12 @@ users:
       name: SantiagoOne
   b896c003-0061-4c88-9c39-00f05b17957e:
     group:
-    - mortal
+    - sonicthehedgehog
     options:
       name: MCC_Baseball33
   19d19bb4-81cd-476a-b0ed-4ecb4879dec8:
     group:
-    - mortal
+    - martianmanhunter
     options:
       name: BudgieLord
   ca8ea8b6-612b-4a0f-ab6b-79a2c30afd0c:
