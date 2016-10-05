@@ -51,6 +51,7 @@ groups:
     - ontime.track
     - essentials.build.use.*
     - essentials.build.interact.*
+    - essentials.protect.entitytarget.bypass
   anarchy:
     permissions:
     - essentials.warp
@@ -71,7 +72,6 @@ groups:
     - multiverse.access.missions
     - multiverse.access.newspawn
     - multiverse.access.lasertag
-    - essentials.protect.entitytarget.bypass
     - libsdisguises.seecmd.viewself
     - -essentials.warps.exitpod17
     - -essentials.warps.exitpod16
@@ -273,37 +273,15 @@ groups:
         - essentials.sethome.bed
         - essentials.sethome.multiple.unlimited
       1_9_nether:
+        inheritance:
+        - '1_9'
         permissions:
-        - auction.bid
-        - auction.start
-        - Signshop.ChangeOwner
-        - Signshop.DenyUse.*
-        - Signshop.Permit
-        - Signshop.Signs.Buy
-        - essentials.build.*
-        - essentials.delhome
-        - essentials.home
-        - essentials.home.bed
-        - essentials.home.others
-        - essentials.sethome
-        - essentials.sethome.bed
-        - essentials.sethome.multiple.unlimited
+        - drugs.*
       1_9_the_end:
+        inheritance:
+        - '1_9'
         permissions:
-        - auction.bid
-        - auction.start
-        - Signshop.ChangeOwner
-        - Signshop.DenyUse.*
-        - Signshop.Permit
-        - Signshop.Signs.Buy
-        - essentials.build.*
-        - essentials.delhome
-        - essentials.home
-        - essentials.home.bed
-        - essentials.home.others
-        - essentials.sethome
-        - essentials.sethome.bed
-        - essentials.sethome.multiple.unlimited
+        - drugs.*
       wooftywoo_the_end:
         permissions:
         - essentials.fly
@@ -4311,7 +4289,7 @@ schema-version: 1
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - cosmicarmorsuperman
+    - batman
     options:
       name: Tektronic
     permissions:
@@ -4545,7 +4523,7 @@ users:
       name: crusher23435
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - anarchy
+    - athena
     options:
       name: Teddibearzz
     worlds:
@@ -4736,7 +4714,7 @@ users:
     - mortal
     options:
       name: huss196
-      prefix: '&7{&4Hacker, 2nd chance&7} '
+      prefix: '&7{&4Hacker&7} '
   4c95642b-a587-472c-98a2-12f01a2927c1:
     group:
     - martianmanhunter
