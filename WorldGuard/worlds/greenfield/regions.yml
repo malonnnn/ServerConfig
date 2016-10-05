@@ -48,7 +48,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pistons: allow, pvp: allow, chest-access: deny, ghast-fireball: deny}
+            interact: allow, chest-access: deny, pvp: allow, pistons: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -76,7 +76,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
+        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -124,7 +124,7 @@ regions:
         min: {x: -2122.0, y: 0.0, z: -111.0}
         max: {x: -1916.0, y: 255.0, z: 9.0}
         members: {}
-        flags: {pvp: deny, heal-amount: 100, heal-delay: 1, mob-spawning: deny}
+        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
         owners: {}
         type: cuboid
         priority: 5
@@ -134,3 +134,12 @@ regions:
         owners: {}
         type: global
         priority: 0
+    applications:
+        parent: modapplications
+        min: {x: 77.0, y: 137.0, z: -260.0}
+        max: {x: 79.0, y: 137.0, z: -260.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 5
