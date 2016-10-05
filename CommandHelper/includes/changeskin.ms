@@ -475,6 +475,10 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
 	@val = ''
     }
+    else if(@class == 'abomb'){
+        @sig = ''
+	@val = ''
+    }
     
     
     else if(@class == 'mrmxyzptlk'){
