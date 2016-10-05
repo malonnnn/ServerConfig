@@ -351,7 +351,7 @@
         @fname = '§4C§0a§4rn§0a§4ge'
     } 
     else if(@class == 'superboy'){
-        @fname = '§cS§9u§ep§9e§9rm§coy'
+        @fname = '§cS§9u§ep§9e§9rb§coy'
     }
     else if(@class == 'batgirl'){
         @fname = '§7B§ea§0t§7gi§8r§7l'
