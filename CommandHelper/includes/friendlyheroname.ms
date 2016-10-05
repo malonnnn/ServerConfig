@@ -360,7 +360,7 @@
         @fname = '§6Clayface'
     }
     else if(@class == 'abomb'){
-        @fname = '§1§lA§8-§1Bomb'
+        @fname = '§9§lA§8-§bB§1o§bmb'
     }
     if(@fname != '')
     {
