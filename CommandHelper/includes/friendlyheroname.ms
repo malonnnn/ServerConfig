@@ -359,6 +359,9 @@
     else if(@class == 'clayface'){
         @fname = '§6Clayface'
     }
+    else if(@class == 'abomb'){
+        @fname = '§1§lA§8-§1Bomb'
+    }
     if(@fname != '')
     {
         return(@fname)
