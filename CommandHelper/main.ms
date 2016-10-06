@@ -41,6 +41,17 @@ bind(entity_damage, null, array('cause': 'POISON'), @e) {
     }
 }
 
+#bind(item_pickup, null, array('player': 'Tektronic'), @e) {
+#    
+#    @itemMeta = @e['item']
+#    tmsg(player(),@itemMeta)
+#    @itemMetaArray = json_decode(@itemMeta)
+#    tmsg(player(),@itemMetaArray)
+#    @itemName = itemMetaArray[1]
+#    
+#    tmsg(player(),@itemName)
+#}
+
 # Fang can be invisible unless he's moving
 set_interval(1000, closure(){
     @plrs = all_players()
