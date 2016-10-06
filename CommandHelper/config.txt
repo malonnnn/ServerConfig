@@ -551,22 +551,6 @@ changehero:/changehero $plr $class $floor = >>>
     runas(~console,"/sudo ". @plr ." c:/trailsid none")
     _changeTrail(@plr, @class)
     
-    # charge one-time fee of $200 if player is choosing an "OP" hero
-    # If player is a mod, don't charge
-    include('includes/isplayermod.ms')
-    include('includes/isplayeropclass.ms')
-    if(_isPlayerMod(@plr) == "true"){
-    }else if(_isPlayerOpClass(@plr) == "true"){
-        if(acc_balance(@plr) >= 200){
-            acc_subtract(@plr,200)
-            tmsg(@plr, "$200 taken for use of OP")
-        }else{
-            acc_subtract(@plr,acc_balance(@plr))
-            runas(~console,"/sudo ". @plr ." c:/mortal")
-            die()
-        }
-    }
-    
     # print chat message about successful transformation
     @fname = _friendlyHeroName(@class)
     if(@fname != 'false'){

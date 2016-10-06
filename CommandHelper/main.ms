@@ -76,57 +76,6 @@ bind(item_pickup,null,null,@event){
     }
 }
 
-# Shot skeletons give money in certain worlds
-bind(entity_death, null, array('type': 'SKELETON'), @e)
-{
-    if(!array_index_exists(@e['cause'],'damager')){
-        die()
-    }
-    if(ponline(@e['cause']['damager'])){
-        if(pworld(@e['cause']['damager']) != 'greenfield'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['damager'] 1)
-    }else if(ponline(@e['cause']['shooter'])){
-        if(pworld(@e['cause']['shooter']) != 'greenfield'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['shooter'] 1)
-    }
-}
-
-# Shot Enderman in Anarchy give money in certain worlds
-bind(entity_death, null, array('type': 'ENDERMAN'), @e)
-{
-    if(ponline(@e['cause']['damager'])){
-        if(pworld(@e['cause']['damager']) != 'anarchy'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['damager'] 30)
-    }else if(ponline(@e['cause']['shooter'])){
-        if(pworld(@e['cause']['shooter']) != 'anarchy'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['shooter'] 30)
-    }
-}
-
-# Shot Creepers in Anarchy give money in certain worlds
-bind(entity_death, null, array('type': 'CREEPER'), @e)
-{
-    if(ponline(@e['cause']['damager'])){
-        if(pworld(@e['cause']['damager']) != 'anarchy'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['damager'] 5)
-    }else if(ponline(@e['cause']['shooter'])){
-        if(pworld(@e['cause']['shooter']) != 'anarchy'){
-            die()
-        }
-        runas(~console,/eco give @e['cause']['shooter'] 5)
-    }
-}    
-
 # Nightwing throws lightning with sticks
 bind(player_interact,null,array('item': 280,'button': 'LEFT'),@event){
 
