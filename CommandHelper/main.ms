@@ -1,21 +1,8 @@
-# Harley Quinn immunity to poison
-bind(entity_damage, null, array('cause': 'POISON'), @e) {
-    
-    @plr = player()
-    @class = pgroup(@plr)[0]
-
-    if(@class == "harleyquinn")
-    {
-        set_peffect(@plr, 19, 1, 0)
-        cancel()
-    }
-}
-
 # Take money per second if the player is an "OP" hero
 set_interval(5000, closure(){
     @plrs = all_players()
     include('includes/isplayermod.ms')
-    include('includes/isplayeropclass.ms')
+    include('includes/isopclass.ms')
     
     foreach(@plr in @plrs)
     {
@@ -23,7 +10,8 @@ set_interval(5000, closure(){
             continue()
         }
         
-        if(_isPlayerOpClass(@plr) == "true")
+        @class = pgroup(@plr)[0]
+        if(_isOpClass(@class) == "true")
         {
             if(acc_balance(@plr) >= 5){
                 acc_subtract(@plr,5)
@@ -38,6 +26,20 @@ set_interval(5000, closure(){
         }
     }
 });
+
+
+# Harley Quinn immunity to poison
+bind(entity_damage, null, array('cause': 'POISON'), @e) {
+    
+    @plr = player()
+    @class = pgroup(@plr)[0]
+
+    if(@class == "harleyquinn")
+    {
+        set_peffect(@plr, 19, 1, 0)
+        cancel()
+    }
+}
 
 # Fang can be invisible unless he's moving
 set_interval(1000, closure(){
@@ -264,17 +266,6 @@ bind(entity_damage,null,null,@event){
         lightning(entity_loc(@victimID))
         
     }
-}
-
-# RP Server Reminder
-bind(player_login, null, null, @e) {
-    set_timeout(3000, closure(
-        broadcast(
-            concat(color(dark_red), 'REMINDER:')
-            concat(color(green), 'This server is now')
-            concat(color(gold), 'an RP server!')
-        )
-    ))
 }
 
 # Player Chat 
