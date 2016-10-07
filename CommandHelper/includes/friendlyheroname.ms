@@ -362,6 +362,9 @@
     else if(@class == 'abomb'){
         @fname = '§9§lA§8-§bB§1o§bmb'
     }
+    else if(@class == 'kyra'){
+        @fname = '§4K§0y§6r§ca'
+    }
     if(@fname != '')
     {
         return(@fname)
