@@ -420,3 +420,69 @@ bind(player_join,null,null,@event){
         _changeTrail(@plr, @class)
     ))
 }
+
+bind(player_toggle_sneak,null,null,@event){
+    @player = player()
+    @class = pgroup()[0]
+    
+    if(
+        #@class == 'spiderman' || 
+        #@class == 'blackspiderman' || 
+        #@class == 'carnage' || 
+        #@class == 'venom' 
+        @class == 'cosmicarmorsuperman' 
+    ){
+        @eventID = associative_array('id': @player.'climbwalls')
+        @isSneaking = @event['sneaking']
+        
+        if(@isSneaking){
+        
+            @ploc = ploc()
+            @block = "106"
+            include('includes/spidermanvineplacement.ms')
+            _spidermanVinePlacement(@ploc,@block)
+        
+            @realID = bind(player_move, @eventID, associative_array('player': @player), @event,
+            @player, @eventID, @isSneaking){
+                
+                @ploc = ploc()
+                @ploc['y'] = @ploc['y'] + 2
+                if(get_block_at(@ploc) == "0:0"){
+                    if(@ploc['yaw'] >= 135.0 && @ploc['yaw'] <= 225.0){
+                        set_block_at(@ploc,"106:4")
+                    }else if(@ploc['yaw'] >= 225.0 && @ploc['yaw'] <= 315.0){
+                        set_block_at(@ploc,"106:8")
+                    }else if((@ploc['yaw'] >= 315.0 && @ploc['yaw'] <= 360.0) || 
+                    (@ploc['yaw'] >= 0.0 && @ploc['yaw'] <= 45.0)){
+                        set_block_at(@ploc,"106:1")
+                    }else{
+                        set_block_at(@ploc,"106:2")
+                    }
+                }
+                @ploc['y'] = @ploc['y'] + 1
+                if(get_block_at(@ploc) == "0:0"){
+                    if(@ploc['yaw'] >= 135.0 && @ploc['yaw'] <= 225.0){
+                        set_block_at(@ploc,"106:4")
+                    }else if(@ploc['yaw'] >= 225.0 && @ploc['yaw'] <= 315.0){
+                        set_block_at(@ploc,"106:8")
+                    }else if((@ploc['yaw'] >= 315.0 && @ploc['yaw'] <= 360.0) || 
+                    (@ploc['yaw'] >= 0.0 && @ploc['yaw'] <= 45.0)){
+                        set_block_at(@ploc,"106:1")
+                    }else{
+                        set_block_at(@ploc,"106:2")
+                    }
+                }
+                
+                set_timeout(1500, closure(
+                    set_block_at(@ploc,"0:0")
+                    @ploc['y'] = @ploc['y'] - 1
+                    set_block_at(@ploc,"0:0")
+                ));
+            }
+            export(@eventID['id'],@realID)
+        }else{
+            unbind(import(@eventID['id']))
+        }
+    
+    }
+}
