@@ -426,62 +426,38 @@ bind(player_toggle_sneak,null,null,@event){
     @class = pgroup()[0]
     
     if(
-        #@class == 'spiderman' || 
-        #@class == 'blackspiderman' || 
-        #@class == 'carnage' || 
-        #@class == 'venom' 
-        @class == 'cosmicarmorsuperman' 
+        @class == 'spiderman' || 
+        @class == 'blackspiderman' || 
+        @class == 'carnage' || 
+        @class == 'venom'
     ){
         @eventID = associative_array('id': @player.'climbwalls')
         @isSneaking = @event['sneaking']
         
         if(@isSneaking){
         
-            @ploc = ploc()
-            @block = "106"
             include('includes/spidermanvineplacement.ms')
-            _spidermanVinePlacement(@ploc,@block)
+            @blocksChanged = _spidermanVinePlacement(ploc(),"106",@player)
+            export(@player."blocksChanged",@blocksChanged)
         
             @realID = bind(player_move, @eventID, associative_array('player': @player), @event,
             @player, @eventID, @isSneaking){
                 
-                @ploc = ploc()
-                @ploc['y'] = @ploc['y'] + 2
-                if(get_block_at(@ploc) == "0:0"){
-                    if(@ploc['yaw'] >= 135.0 && @ploc['yaw'] <= 225.0){
-                        set_block_at(@ploc,"106:4")
-                    }else if(@ploc['yaw'] >= 225.0 && @ploc['yaw'] <= 315.0){
-                        set_block_at(@ploc,"106:8")
-                    }else if((@ploc['yaw'] >= 315.0 && @ploc['yaw'] <= 360.0) || 
-                    (@ploc['yaw'] >= 0.0 && @ploc['yaw'] <= 45.0)){
-                        set_block_at(@ploc,"106:1")
-                    }else{
-                        set_block_at(@ploc,"106:2")
-                    }
+                @blocksChanged = import(@player."blocksChanged")
+                foreach(@val in @blocksChanged){
+                    psend_block_change(@val,"0:0")
                 }
-                @ploc['y'] = @ploc['y'] + 1
-                if(get_block_at(@ploc) == "0:0"){
-                    if(@ploc['yaw'] >= 135.0 && @ploc['yaw'] <= 225.0){
-                        set_block_at(@ploc,"106:4")
-                    }else if(@ploc['yaw'] >= 225.0 && @ploc['yaw'] <= 315.0){
-                        set_block_at(@ploc,"106:8")
-                    }else if((@ploc['yaw'] >= 315.0 && @ploc['yaw'] <= 360.0) || 
-                    (@ploc['yaw'] >= 0.0 && @ploc['yaw'] <= 45.0)){
-                        set_block_at(@ploc,"106:1")
-                    }else{
-                        set_block_at(@ploc,"106:2")
-                    }
-                }
-                
-                set_timeout(1500, closure(
-                    set_block_at(@ploc,"0:0")
-                    @ploc['y'] = @ploc['y'] - 1
-                    set_block_at(@ploc,"0:0")
-                ));
+
+                @blocksChanged = _spidermanVinePlacement(ploc(),"106",@player)
+                export(@player."blocksChanged",@blocksChanged)
             }
             export(@eventID['id'],@realID)
         }else{
             unbind(import(@eventID['id']))
+            @blocksChanged = import(@player."blocksChanged")
+            foreach(@val in @blocksChanged){
+                psend_block_change(@val,"0:0")
+            }
         }
     
     }
