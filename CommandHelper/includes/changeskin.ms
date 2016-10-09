@@ -481,7 +481,7 @@ proc(_changeSkin, @pname, @class,
     }
     else if(@class == 'kyra'){
         @sig = ''
-	@val = ''
+        @val = ''
     }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
