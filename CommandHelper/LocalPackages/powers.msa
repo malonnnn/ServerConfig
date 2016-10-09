@@ -160,6 +160,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/back")
         tmsg(@playerName, "/top")
     }
+    else if(@playerRank == "kyra")
+    {
+        tmsg(@playerName, "/kyra")
+        tmsg(@playerName, "/jump 0-2")
+        tmsg(@playerName, "/run 0-4")
+        tmsg(@playerName, "/haste 0-2")
+        tmsg(@playerName, "/kill")
+    }
     else if(@playerRank == "thanos")
     {
         tmsg(@playerName, "/thanos")
