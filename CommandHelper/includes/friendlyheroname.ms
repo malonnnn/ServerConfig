@@ -365,6 +365,9 @@
     else if(@class == 'kyra'){
         @fname = '§4K§0y§6r§ca'
     }
+    else if(@class == 'redshehulk'){
+        @fname = '§4She-§l§4HULK'
+    }
     if(@fname != '')
     {
         return(@fname)
