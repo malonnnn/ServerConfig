@@ -365,6 +365,9 @@
     else if(@class == 'kyra'){
         @fname = '§4K§0y§6r§ca'
     }
+    else if(@class == 'batmansc'){
+        @fname = '§0B§ea§6t§0m§ea§6n §eSinestro§7-§6Corps'
+    }
     if(@fname != '')
     {
         return(@fname)
