@@ -548,6 +548,7 @@ changehero:/changehero $plr $class $floor = >>>
     
     runas(~console, '/pex user' @plr 'group set' @class)
     sudo(/fly @plr off)
+    sudo(/gamemode survival @plr)
     sudo(/effect @plr clear)
     sudo("/minecraft:clear" @plr)
     sudo(/god @plr off)
@@ -760,7 +761,13 @@ slingweb:/slingweb = >>>
         store_value('lastshot',0)
     )
 
-    if(not(equals(pworld(), '1_9')), die(concat(color(RED),'You need to be in the normal world to use this command!')))
+    @pworld = pworld()
+    if(
+        @pworld != '1_9' &&
+        @pworld != 'greenfield'
+    ){
+        die()
+    }
 
     assign(@lastshot, get_value('lastshot'))
     if(@lastshot + @cooldown > time() / 1000,
@@ -799,4 +806,32 @@ bind(projectile_hit, associative_array('id': 'webshot'.@arrow), null, @event,
         unbind()
 }
     
+<<<
+
+wr:/wr = >>>
+
+    @magnitude = 0.7; // speed of falling block
+
+    // get the starting location
+    @loc = ploc();
+
+    // get the vector from player yaw/pitch
+    @yaw = @loc['yaw'] + 90;
+    @pitch = neg(@loc['pitch']);
+    @vector = associative_array();
+    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+    @vector['y'] = @magnitude * sin(to_radians(@pitch));
+    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+    
+    set_pvelocity(player(), @vector)
+
+<<<
+
+blockcheck:/blockcheck = >>>
+    
+    @ploc = ploc()
+    @ploc['y'] = @ploc['y'] + 1
+    @ploc['z'] = @ploc['z'] - 2
+    broadcast(get_block_at(@ploc))
+
 <<<

@@ -6,12 +6,11 @@ set_interval(5000, closure(){
     
     foreach(@plr in @plrs)
     {
-        if(_isPlayerMod(@plr) == "true"){
-            continue()
+        if(!has_permission(@plr, "rank.mod")){
+            die()
         }
         
-        @class = pgroup(@plr)[0]
-        if(_isOpClass(@class) == "true")
+        if(has_permission(@plr, "hero.op"))
         {
             if(acc_balance(@plr) >= 5){
                 acc_subtract(@plr,5)
@@ -32,25 +31,13 @@ set_interval(5000, closure(){
 bind(entity_damage, null, array('cause': 'POISON'), @e) {
     
     @plr = player()
-    @class = pgroup(@plr)[0]
 
-    if(@class == "harleyquinn")
+    if(!has_permission(@plr, "power.immunity.poison"))
     {
         set_peffect(@plr, 19, 1, 0)
         cancel()
     }
 }
-
-#bind(item_pickup, null, array('player': 'Tektronic'), @e) {
-#    
-#    @itemMeta = @e['item']
-#    tmsg(player(),@itemMeta)
-#    @itemMetaArray = json_decode(@itemMeta)
-#    tmsg(player(),@itemMetaArray)
-#    @itemName = itemMetaArray[1]
-#    
-#    tmsg(player(),@itemName)
-#}
 
 # Fang can be invisible unless he's moving
 set_interval(1000, closure(){
@@ -58,12 +45,9 @@ set_interval(1000, closure(){
     
     foreach(@plr in @plrs)
     {
-        @pgroup = pgroup(@plr)
-        if(@pgroup[0] == 'fang')
+        if(has_permission(@plr, "power.visifmove"))
         {
-        
             @loc1 = ploc(@plr);
-        
             set_timeout(250, closure(
                 @loc2 = ploc(@plr);
                 if(@loc1[0] != @loc2[0] || @loc1[1] != @loc2[1] || @loc1[2] != @loc2[2]) {
@@ -425,12 +409,7 @@ bind(player_toggle_sneak,null,null,@event){
     @player = player()
     @class = pgroup()[0]
     
-    if(
-        @class == 'spiderman' || 
-        @class == 'blackspiderman' || 
-        @class == 'carnage' || 
-        @class == 'venom'
-    ){
+    if(has_permission(@player, "power.wallclimb")){
         @eventID = associative_array('id': @player.'climbwalls')
         @isSneaking = @event['sneaking']
         
@@ -458,6 +437,32 @@ bind(player_toggle_sneak,null,null,@event){
             foreach(@val in @blocksChanged){
                 psend_block_change(@val,"0:0")
             }
+        }
+    
+    }
+}
+
+bind(player_toggle_sneak,null,null,@event){
+    @player = player()
+    @class = pgroup()[0]
+    @hasPerm = has_permission(@player, "power.wallrun")
+    
+    if(@hasPerm = has_permission(@player, "power.wallrun")){
+        @eventID = associative_array('id': @player.'runwalls')
+        @isSneaking = @event['sneaking']
+        
+        if(@isSneaking){
+            include('includes/wallrun.ms')
+        
+            @realID = bind(player_move, @eventID, associative_array('player': @player), @event,
+            @player, @eventID, @isSneaking){
+                
+                _wallRun(@player)
+                
+            }
+            export(@eventID['id'],@realID)
+        }else{
+            unbind(import(@eventID['id']))
         }
     
     }
