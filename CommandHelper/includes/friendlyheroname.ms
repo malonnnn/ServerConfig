@@ -69,7 +69,7 @@
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n'
     }
     else if(@class == 'gwenstacy'){
-        @fname = '§5S§0p§fid§0e§fr-§5W§f§8o§fm§0a§fn§0-§fG§§'
+        @fname = '§5S§0p§fid§0e§fr-§5W§f§8o§fm§ba§fn§0-§fG§7S'
     }
     else if(@class == 'thehumantorch'){
         @fname = '§fThe §eHum§6an §cTor§4ch'
