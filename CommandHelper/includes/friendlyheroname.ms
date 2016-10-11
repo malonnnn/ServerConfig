@@ -68,6 +68,9 @@
     else if(@class == 'spiderman'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n'
     }
+    else if(@class == 'spidergirlgwenstacy'){
+        @fname = '§0Spi§fder§0girl §7(§fGwen §0Stacy§7)'
+    }
     else if(@class == 'thehumantorch'){
         @fname = '§fThe §eHum§6an §cTor§4ch'
     }
