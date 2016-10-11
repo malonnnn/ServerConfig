@@ -10,7 +10,8 @@ proc(_isOpClass, @class,
         @class == 'kentnelson' ||
         @class == 'mrmxyzptlk' ||
         @class == 'supermanprimeonemillion' ||
-        @class == 'onslaughtreborn'
+        @class == 'onslaughtreborn' ||
+        @class == 'captainuniverse'
     ){
         return("true")
     }
