@@ -529,10 +529,8 @@ bind(projectile_launch, null, associative_array(type: 'ARROW', shootertype: 'PLA
     } 
 }
 
-bind(player_interact, null, array('button': 'RIGHT'), @e) {
-    @player = @e['player']
-    broadcast("rightclicked")
-    if(@e['block'] == '0'){
-        
+bind(player_interact, null, null, @e) {
+    if(@e['action'] == 'right_clicked_air'){
+        broadcast("rightclicked")
     }
 }
