@@ -65,7 +65,7 @@
     else if(@class == 'wolverine'){
         @fname = '§eW§0o§elv§9er§eine'
     }
-    else if(@class == 'spiderman'){
+    else if(@class == 'peterparker'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n'
     }
     else if(@class == 'gwenstacy'){
@@ -370,6 +370,9 @@
     }
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
+    }
+    else if(@class == 'milesmorales'){
+        @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
     }
     if(@fname != '')
     {
