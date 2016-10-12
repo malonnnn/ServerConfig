@@ -365,8 +365,8 @@
     else if(@class == 'kyra'){
         @fname = '§4K§0y§6r§ca'
     }
-    else if(@class == 'spidermanmilesmorales'){
-        @fname = '§04S§0p§4i§0d§4e§0r §7(§4M§0i§4l§0e§4s §0M§4o§0r§4a§0l§4e§0s§7)'
+    else if(@class == 'milesmorales'){
+        @fname = '&4Sp&fi&4d&0e&4rm&0a&4n-MM'
     }
     if(@fname != '')
     {
