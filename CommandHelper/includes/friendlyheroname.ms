@@ -374,6 +374,9 @@
     else if(@class == 'milesmorales'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
     }
+    else if(@class == 'batmansinestrocorps'){
+        @fname = '§8B§ea§8tm§0a§8n-§6S§eC'
+    }
     if(@fname != '')
     {
         return(@fname)
