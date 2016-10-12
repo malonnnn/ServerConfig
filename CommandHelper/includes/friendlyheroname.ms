@@ -2,7 +2,7 @@
     
     @fname = ''
 
-    if(@class == 'doctormanhattan'){        
+    if(@class == 'doctormanhattan'){
         @fname = '§bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn'
     }
     else if(@class == 'deadpool'){
@@ -108,10 +108,10 @@
         @fname = '§cS§9u§ep§9e§9rm§can'
     }
     else if(@class == 'hulk'){
-        @fname = '§a§lH§2§lULK'
+        @fname = '§2§lH§a§lU§2§lLK'
     }
     else if(@class == 'shehulk'){
-        @fname = '§aShe-§lH§2§lULK'
+        @fname = '§2She-§lH§a§lU§2§lLK'
     }
     else if(@class == 'wonderwoman'){
         @fname = '§4W§fon§eder §4W§fom§9an'
@@ -376,6 +376,9 @@
     }
     else if(@class == 'batmansinestrocorps'){
         @fname = '§8B§ea§8tm§0a§8n-§6S§eC'
+    }
+    else if(@class == 'redshehulk'){
+        @fname = '§4Red She-§4§lH§c§lU§4§4§lLK'
     }
     if(@fname != '')
     {
