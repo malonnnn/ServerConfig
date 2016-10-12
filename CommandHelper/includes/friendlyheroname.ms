@@ -366,7 +366,7 @@
         @fname = '§4K§0y§6r§ca'
     }
     else if(@class == 'milesmorales'){
-        @fname = '&4Sp&fi&4d&0e&4rm&0a&4n-MM'
+        @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
     }
     if(@fname != '')
     {
