@@ -368,6 +368,9 @@
     else if(@class == 'kyra'){
         @fname = '§4K§0y§6r§ca'
     }
+    else if(@class == 'captainuniverse'){
+        @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
+    }
     if(@fname != '')
     {
         return(@fname)
