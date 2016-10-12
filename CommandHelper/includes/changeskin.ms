@@ -483,7 +483,7 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
         @val = ''
     }
-    else if(@class == 'batmansc'){
+    else if(@class == 'batmansinestrocorps'){
         @sig = ''
         @val = ''
     }
