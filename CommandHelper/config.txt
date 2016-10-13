@@ -518,10 +518,9 @@ changehero:/changehero $plr $class $floor = >>>
     
     include('includes/friendlyheroname.ms')
     # If player is trying to turn into OP hero and is not a mod, throw error
-    include('includes/isplayermod.ms')
-    include('includes/isopclass.ms')
-    if(_isOpClass(@class) == "true"){
-        if(_isPlayerMod(@plr) != "true"){
+    include('includes/isclassop.ms')
+    if(_isclassop(@class) == "true"){
+        if(!has_permission(@plr,"rank.mod")){
             tmsg(@plr,"You can only win "._friendlyHeroName(@class)." §fby becoming staff or in a server tournament")
             die()
         }
