@@ -1,4 +1,4 @@
-proc(_isOpClass, @class,
+proc(_isclassop, @class,
     if(
         @class == 'doctormanhattan' ||
         @class == 'zeus' ||

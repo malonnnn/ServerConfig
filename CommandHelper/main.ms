@@ -2,7 +2,7 @@
 set_interval(5000, closure(){
     @plrs = all_players()
     include('includes/isplayermod.ms')
-    include('includes/isopclass.ms')
+    include('includes/isclassop.ms')
     
     foreach(@plr in @plrs)
     {
@@ -47,7 +47,7 @@ set_interval(1000, closure(){
     {
         if(has_permission(@plr, "power.visifmove"))
         {
-            @loc1 = ploc(@plr);
+            @loc1 = ploc(@plr)
             set_timeout(250, closure(
                 @loc2 = ploc(@plr);
                 if(@loc1[0] != @loc2[0] || @loc1[1] != @loc2[1] || @loc1[2] != @loc2[2]) {
@@ -312,8 +312,7 @@ bind('player_chat', null, null, @e) {
     }
     
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
-    include('includes/isplayermod.ms')
-    if(_isPlayerMod(@pname) == "true"){
+    if(has_permission("rank.mod")){
         die()
     }
     
