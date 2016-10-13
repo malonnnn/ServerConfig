@@ -503,6 +503,10 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
         @val = ''
     }
+    else if(@class == 'stephencurry'){
+        @sig = ''
+        @val = ''
+    }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
         return()
