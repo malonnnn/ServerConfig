@@ -951,6 +951,20 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+     else if(@playerRank == "hybrid")
+    {
+        tmsg(@playerName, "/intangible (only works in The End)")
+        tmsg(@playerName, "/tangible (only works in The End)")
+        tmsg(@playerName, "/invis (only works in The End)")
+        tmsg(@playerName, "/vis (only works in The End")
+        tmsg(@playerName, "/tp (only works in the physical world)")
+        tmsg(@playerName, "/disguise (only works in the physical world)")
+        tmsg(@playerName, "/jump 0-8")
+        tmsg(@playerName, "/run 0-7")
+        tmsg(@playerName, "/haste 0-7")
+        tmsg(@playerName, "/fly on")
+        tmsg(@playerName, "/fly off")
+    }
     else if(@playerRank == "magneto")
     {
         tmsg(@playerName, "/magneto")
