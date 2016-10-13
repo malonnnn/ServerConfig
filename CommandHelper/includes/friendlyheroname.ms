@@ -380,6 +380,9 @@
     else if(@class == 'redshehulk'){
         @fname = '§4Red She-§4§lH§c§lU§4§4§lLK'
     }
+    else if(@class == 'godfallsuperman'){
+        @fname = '§4Go§7d§4f§7all §cS§8u§cper§8m§ca§8n'
+    }
     if(@fname != '')
     {
         return(@fname)
