@@ -2151,23 +2151,15 @@ groups:
         - essentials.spawner
         - essentials.spawner.*
         - essentials.top
-  hybrid:
+   hybrid:
     inheritance:
     - mortal
     worlds:
-      1_9_the_end:
-        permissions:
-        - -libsdisguises.*
-        - -essentials.tp.*
-        - -essentials.tp
-        - ch.alias.intangible
-        - ch.alias.tangible
-        - ch.alias.invis
-        - ch.alias.vis
       '1_9':
         permissions:
-        - essentials.tp
-        - essentials.tp.*
+        - essentials.gamemode.survival
+        - essentials.gamemode.creative
+        - ch.alias.hybrid
         - ch.alias.flyon
         - ch.alias.flyoff
         - ch.alias.jump0
@@ -2180,6 +2172,10 @@ groups:
         - ch.alias.jump7
         - ch.alias.jump8
         - ch.alias.speak
+        - ch.alias.intangible
+        - ch.alias.tangible
+        - ch.alias.invis
+        - ch.alias.vis
         - libsdisguises.seecmd.viewself
         - libsdisguises.disguise
         - libsdisguises.undisguise
@@ -2238,8 +2234,18 @@ groups:
         - ch.alias.haste5
         - ch.alias.haste6
         - ch.alias.haste7
+        - essentials.gamemode
+        - essentials.tp
+        - essentials.tp.*
         - essentials.heal
         - essentials.heal.*
+        - essentials.skull
+        - essentials.skull.*
+        - essentials.spawner
+        - essentials.spawner.*
+        - essentials.weather
+        - essentials.back
+        - essentials.back.*
   darthvader:
     inheritance:
     - mortal
