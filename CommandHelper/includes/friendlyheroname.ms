@@ -366,7 +366,7 @@
         @fname = '§4K§0y§6r§ca'
     }
     else if(@class == 'godfallsuperman'){
-        @fname = '§cGod§8fall §cSuper§8man'
+        @fname = '§4Go§7d§4f§7all §cS§8u§cper§8m§ca§8n'
     }
     if(@fname != '')
     {
