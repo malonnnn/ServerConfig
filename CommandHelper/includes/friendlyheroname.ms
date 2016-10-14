@@ -83,6 +83,9 @@
     else if(@class == 'darthmaul'){
         @fname = '§4D§0a§4r§0t§4h M§0au§4l'
     }
+    else if(@class == 'revan'){
+        @fname = '§4R§ce§4van'
+    }
     else if(@class == 'darthsidious'){
         @fname = '§0Darth Sidious'
     }
