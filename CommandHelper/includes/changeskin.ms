@@ -503,7 +503,7 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
         @val = ''
     }
-    else if(@class == 'invisibleboy'){
+    else if(@class == 'theinvisibleboy'){
         @sig = ''
         @val = ''
     }
