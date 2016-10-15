@@ -489,8 +489,8 @@ proc(_changeSkin, @pname, @class,
     }
     }
     else if(@class == 'atrocitus'){
-        @sig = 'qDo/7QMtJ2ye/ZW0kUJHFq9Mh/qgzrn5lqYCYo7DaZ4UVx/yNp7t5a9cup+ZCBZMCXK0Xw4yUGqgOqUs4DKS8Lda4tOgKJuVTBth/Bz4GEAY9RO7AISe1dxdrmQZNqJuAOxx58S+DAtPh58bzH1BsXZ2/3Fv5aFzewJC8619g0PvaTqLiPmVNWGkSmew3+bopUz9xceDmguvKk/mkLI+qurbbWghK7146/YWzWxVYvPIXDIPtoGAB0+N8gDIM+QReB3ywOo35rnN9ynl4mfgn1jJwFxtVwvwK/b97jnPU2GYiyv92nrkd8FqpwaYNIKpspD5SkHTgw9imP4KNgawReX1icsvx5k/laIqEPhKqUCQ84/ecD8wc37QGCHDd6jXkoukxHgZ+ekp8XLOvP08ND0Jiqziw65Zo5zkG54x/i8OSV+q1P9HEAnRUNchNSssEG4R4wmx1bdSYyWpAwlZj+CP/T85BiqBYJhzwnulqyn9uppUbQ+rApw5XSJBY4896xifNbbZhNvx+U19wEDTh4T9RBvcfWM2KsLBgOjutnZb+AnwiRuiaKLcbJn0KHRPpwCl2nXWiSGn+xrO1D5CxzyNb75PT8h79aGqZ2Vzsyq7t9BPhkX2O1tv00bgEkU6ocwI/Ws3FdBGjjzwp0qcaK6Oy7MxDIApdSH/jQZ5LaU='
-        @val = 'eyJ0aW1lc3RhbXAiOjE0NzY1Njg0ODA4NzEsInByb2ZpbGVJZCI6IjIyMmM3ZjliNmQ1ZjRlN2M5NzE1ZjE3ZGJhMjJhOGM3IiwicHJvZmlsZU5hbWUiOiJKZHJvcHBlcnQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzllYzkxZjQ1MGFhOGZiOTRjM2Q5MGFiOTM2OGZmZTNlOTJiMzUzZTNlNTRmZWZkNTI1NTNmN2ZiNzNiNjQyIn19fQ=='
+        @sig = ''
+        @val = ''
     }
     else if(@class == 'kyra'){
         @sig = ''
