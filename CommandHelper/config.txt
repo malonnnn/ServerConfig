@@ -752,7 +752,9 @@ rtp:/rtp = >>>
 
 <<<
 
-slingweb:/slingweb = >>>
+websling:/websling = >>>
+
+    if(!has_permission(player(),"powers.websling"))
   
     assign(@cooldown, 1)
   
@@ -805,34 +807,6 @@ bind(projectile_hit, associative_array('id': 'webshot'.@arrow), null, @event,
         unbind()
 }
     
-<<<
-
-wr:/wr = >>>
-
-    @magnitude = 0.7; // speed of falling block
-
-    // get the starting location
-    @loc = ploc();
-
-    // get the vector from player yaw/pitch
-    @yaw = @loc['yaw'] + 90;
-    @pitch = neg(@loc['pitch']);
-    @vector = associative_array();
-    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
-    @vector['y'] = @magnitude * sin(to_radians(@pitch));
-    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-    
-    set_pvelocity(player(), @vector)
-
-<<<
-
-blockcheck:/blockcheck = >>>
-    
-    @ploc = ploc()
-    @ploc['y'] = @ploc['y'] + 1
-    @ploc['z'] = @ploc['z'] - 2
-    broadcast(get_block_at(@ploc))
-
 <<<
 
 entomb:/entomb $plr = >>>
