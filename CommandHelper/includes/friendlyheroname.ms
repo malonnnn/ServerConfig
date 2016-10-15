@@ -288,7 +288,7 @@
         @fname = '§4H§fa§0r§4l§fe§0y §4Q§fu§0i§4n§fn'
     }
     else if(@class == 'poisonivy'){
-        @fname = '§2Po§ai§2son §aI§2vy'
+        @fname = '§aP§2o§ai§2s§ao§2n §aI§2vy'
     }
     else if(@class == 'zatanna'){
         @fname = '§fZ§0a§ft§0a§fn§0n§fa'
