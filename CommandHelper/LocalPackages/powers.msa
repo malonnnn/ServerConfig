@@ -1025,7 +1025,7 @@ powers:/powers = >>>
     }
     else if(@playerRank == "mrmxyzptlk") 
     {
-    tmsg(@playerName, "/mrmxyzptlk")
+        tmsg(@playerName, "/mrmxyzptlk")
         tmsg(@playerName, "/gmc")
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
@@ -1034,7 +1034,7 @@ powers:/powers = >>>
     }
     else if(@playerRank == "blackbolt") 
     {
-    tmsg(@playerName, "/blackbolt")
+        tmsg(@playerName, "/blackbolt")
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
         tmsg(@playerName, "/run 0-8")
@@ -1071,6 +1071,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/run 0-6")
         tmsg(@playerName, "/haste 0-5")
         tmsg(@playerName, "/web")
+        tmsg(@playerName, "/websling")
     }
     else if(@playerRank == "atom")
     {
@@ -1182,10 +1183,10 @@ powers:/powers = >>>
     } 
     else if(@playerRank == "blast")
     {     
-    tmsg(@playerName, "/blast")
+        tmsg(@playerName, "/blast")
         tmsg(@playerName, "/jump 0-9")
         tmsg(@playerName, "/run 0-9")
-    tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/haste 0-9")
     }
     else if(@playerRank == "genos")
     {
