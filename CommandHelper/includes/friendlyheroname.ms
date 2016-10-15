@@ -161,6 +161,9 @@
     else if(@class == 'haljordan'){
         @fname = '§2Gr§8e§2en Lant§8e§2rn-HJ'
     }
+    else if(@class == 'atrocitus'){
+        @fname = '&4R&0e&4d L&ca&4nt&0e&4rn-A'
+    }
     else if(@class == 'lexluthor'){
         @fname = '§2L§9e§2x Luth§9o§2r'
     }
