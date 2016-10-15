@@ -420,6 +420,17 @@ powers:/powers = >>>
         tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
         
     }
+    else if(@playerRank == "darthrevan")
+    {
+        tmsg(@playerName, "/darthrevan")
+        tmsg(@playerName, "/jump 0-7")
+        tmsg(@playerName, "/run 0-4")
+        tmsg(@playerName, "/haste 0-1")
+        tmsg(@playerName, "/forcepush <playername>")
+        tmsg(@playerName, "/forcechoke <playername>")
+        tmsg(@playerName, "When you punch a player empty handed, your victim is struck by lightning (force lightning)")
+        
+    }
     else if(@playerRank == "darthsidious")
     {
         tmsg(@playerName, "/darthsidious")
