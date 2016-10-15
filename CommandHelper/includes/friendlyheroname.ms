@@ -398,6 +398,12 @@
     else if(@class == 'theinvisibleboy'){
         @fname = '§7The Invisible Boy'
     }
+    else if(@class == 'nekron'){
+    	@fname = '§8N§7e§0kr§8o§0n'
+    }
+    
+    
+    
     if(@fname != '')
     {
         return(@fname)
