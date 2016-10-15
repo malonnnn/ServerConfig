@@ -323,6 +323,36 @@ greenbeam:
         start_pos: 0
         start_y: 0
         color: 0-255-0
+redbeam:
+    Item_Information:
+        Item_Name: "&4R&0e&4d L&ca&4nt&0e&4rn's Red Beam"
+        Item_Type: 331
+        Inventory_Control: redbeam
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 200
+        Delay_Between_Shots: 200
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 30
+        view-distance: 30
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-0-0
 yellowbeam:
     Item_Information:
         Item_Name: "&eSin&ce&0s&etr&0o&e's Yellow Beam"
@@ -645,7 +675,7 @@ goldenfriezaenergyblast:
         color: 255-82-82
 nekronlaser:
     Item_Information:
-        Item_Name: "&8Dark Lightning"
+        Item_Name: "&8Black Lightning"
         Item_Type: 417
     Shooting:
         Cancel_Right_Click_Interactions: true
