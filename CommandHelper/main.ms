@@ -318,7 +318,7 @@ bind('player_chat', null, null, @e) {
     
     # chat timeout settings (hark has a 5 minute chat timeout)
     if(@pname == 'HeyItzHark'){
-        @cooldown = 3
+        @cooldown = 20
     }else{
         @cooldown = 3
     }
