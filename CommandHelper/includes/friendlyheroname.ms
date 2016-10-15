@@ -392,6 +392,9 @@
     else if(@class == 'godfallsuperman'){
         @fname = '§4Go§7d§4f§7all §cS§8u§cper§8m§ca§8n'
     }
+    else if(@class == 'theinvisibleboy'){
+        @fname = '§7The Invisible Boy'
+    }
     if(@fname != '')
     {
         return(@fname)
