@@ -1125,6 +1125,13 @@ powers:/powers = >>>
     {
         tmsg(@playerName, "/harleyquinn")
     }
+    else if(@playerRank == "poisonivy")
+    {
+        tmsg(@playerName, "/poisonivy")
+	tmsg(@playerName, "/mindcontrol <playername>")
+	tmsg(@playerName, "/stopmindcontrol")
+	tmsg(@playerName, "/haste 0-4")
+    }
     else if(@playerRank == "catwoman")
     {
         tmsg(@playerName, "/catwoman")
