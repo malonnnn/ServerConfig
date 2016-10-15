@@ -11,6 +11,7 @@ proc(_isclassop, @class,
         @class == 'mrmxyzptlk' ||
         @class == 'supermanprimeonemillion' ||
         @class == 'onslaughtreborn'
+        @class == 'hybrid' ||
     ){
         return("true")
     }
