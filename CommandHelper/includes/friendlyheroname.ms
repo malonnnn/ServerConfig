@@ -278,6 +278,9 @@
     else if(@class == 'hybrid'){
         @fname = '§4H§cy§4b§cri§4d'
     }
+    else if(@class == 'lasher'){
+        @fname = '§2L§aa§2sh§ae§2r'
+    }
     else if(@class == 'atom'){
         @fname = '§4A§7t§8o§4m'
     }
