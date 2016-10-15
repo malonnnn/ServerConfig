@@ -269,8 +269,11 @@
     else if(@class == 'firefly'){
         @fname = '§eF§4i§ere§8f§el§8y'
 	}
-	else if(@class == 'venom'){
+    else if(@class == 'venom'){
         @fname = '§0V§8e§fn§8o§0m'
+    }
+    else if(@class == 'hybrid'){
+        @fname = '§4H§cy§4b§cri§4d'
     }
     else if(@class == 'atom'){
         @fname = '§4A§7t§8o§4m'
