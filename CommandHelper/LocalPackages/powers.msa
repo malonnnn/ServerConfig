@@ -951,6 +951,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly on")
         tmsg(@playerName, "/fly off")
     }
+    else if(@playerRank == "hybrid")
+    {
+        tmsg(@playerName, "/invis")
+        tmsg(@playerName, "/vis")
+        tmsg(@playerName, "/jump 0-4")
+        tmsg(@playerName, "/run 0-3")
+        tmsg(@playerName, "/haste 0-3")
+    }
     else if(@playerRank == "magneto")
     {
         tmsg(@playerName, "/magneto")
