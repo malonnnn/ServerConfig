@@ -273,7 +273,7 @@
         @fname = '§0V§8e§fn§8o§0m'
     }
     else if(@class == 'hybrid'){
-        @fname = '§4Hyb§crid'
+        @fname = '§4H§cy§4b§cri§4d'
     }
     else if(@class == 'atom'){
         @fname = '§4A§7t§8o§4m'
