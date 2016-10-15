@@ -1269,4 +1269,10 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-6")
         tmsg(@playerName, "/fly")
     }
+    else if(@playerRank == "nekron")
+    {
+        tmsg(@playerName, "/nekron")
+        tmsg(@playerName, "/fly")
+        tmsg(@playerName, "/nekronkill <playername>")
+    }
 <<<
