@@ -18,6 +18,23 @@ powers:/powers = >>>
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
     }
+    else if(@playerRank == "missmartian")
+    {
+        tmsg(@playerName, "/missmartian")
+        tmsg(@playerName, "/jump 0-8")
+        tmsg(@playerName, "/run 0-7")
+        tmsg(@playerName, "/haste 0-6")
+        tmsg(@playerName, "/fly")
+        tmsg(@playerName, "/thru (intangible)")
+        tmsg(@playerName, "/disguise")
+        tmsg(@playerName, "/speak <player> <message>")
+        tmsg(@playerName, "/mindcontrol <playername>")
+        tmsg(@playerName, "/stopmindcontrol")
+        tmsg(@playerName, "/invis")
+        tmsg(@playerName, "/vis")
+        tmsg(@playerName, "/disguiseviewself")
+        tmsg(@playerName, "/undisguise")
+    }
     if(@playerRank == "stephencurry")
     {
         tmsg(@playerName, "/stephencurry")
