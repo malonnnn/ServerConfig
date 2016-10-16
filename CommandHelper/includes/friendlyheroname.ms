@@ -384,7 +384,7 @@
         @fname = '§9§lA§8-§bB§1o§bmb'
     }
     else if(@class == 'kira'){
-        @fname = '§4K§0i§6r§ca'
+        @fname = '§fK§4i§6r§7a'
     }
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
