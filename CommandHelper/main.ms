@@ -5,7 +5,7 @@ set_interval(5000, closure(){
     
     foreach(@plr in @plrs)
     {
-        if(!has_permission(@plr, "rank.mod")){
+        if(has_permission(@plr, "rank.mod")){
             die()
         }
         
