@@ -143,7 +143,10 @@
     else if(@class == 'martianmanhunter'){
         @fname = '§2Mar§9t§2ian §9Man§2hunter'
     }
-    else if(@class == 'warmachine'){
+    else if(@class == 'martianmanhunter'){
+    @fname = '§2§lMiss §2Mar§9t§2ian'
+    }
+2    else if(@class == 'warmachine'){
         @fname = '§7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne'
     }
     else if(@class == 'hephaestus'){
