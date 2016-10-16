@@ -272,6 +272,9 @@
     else if(@class == 'deathstroke'){
         @fname = '§8Death§6stroke'
     }
+    else if(@class == 'deadshot'){
+        @fname = '§fDe§cad§8sh§co§8t'
+    }
     else if(@class == 'firefly'){
         @fname = '§eF§4i§ere§8f§el§8y'
 	}
