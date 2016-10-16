@@ -5,6 +5,9 @@
     if(@class == 'doctormanhattan'){
         @fname = '§bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn'
     }
+    if(@class == 'missmartian'){
+        @fname = '§2M§fi§2ss M§4a§2rt§9i§2an'
+    }
     else if(@class == 'deadpool'){
         @fname = '§4D§0ea§4dp§0oo§4l'
     }
