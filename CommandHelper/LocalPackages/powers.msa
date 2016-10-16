@@ -1055,14 +1055,11 @@ powers:/powers = >>>
         tmsg(@playerName, "/yell")
     }
     else if(@playerRank == "dovahkiin") 
-	{
-	tmsg(@playerName, "/dovahkiin")
-        tmsg(@playerName, "/run 0-3")
-        tmsg(@playerName, "/jump 0-3")
-        tmsg(@playerName, "/haste 0-2")
-        tmsg(@playerName, "/thu'um")
-	tmsg(@playerName, "/forcepush <playername>")
-	tmsg(@playerName, "/neither (travels to the dungeons of Tamriel)")
+    {
+        tmsg(@playerName, "/dovahkiin")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/jump 0-1")
+        tmsg(@playerName, "/haste 0-1")
     }
     else if(@playerRank == "deathstroke") 
     {
