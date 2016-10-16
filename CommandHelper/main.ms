@@ -408,7 +408,7 @@ bind(player_toggle_sneak,null,null,@event){
     @player = player()
     @class = pgroup()[0]
     
-    if(has_permission(@player, "power.wallclimb")){
+    if(has_permission(@player, "powers.wallclimb")){
         @eventID = associative_array('id': @player.'climbwalls')
         @isSneaking = @event['sneaking']
         
@@ -444,9 +444,8 @@ bind(player_toggle_sneak,null,null,@event){
 bind(player_toggle_sneak,null,null,@event){
     @player = player()
     @class = pgroup()[0]
-    @hasPerm = has_permission(@player, "power.wallrun")
     
-    if(@hasPerm = has_permission(@player, "power.wallrun")){
+    if(has_permission(@player, "powers.wallrun")){
         @eventID = associative_array('id': @player.'runwalls')
         @isSneaking = @event['sneaking']
         

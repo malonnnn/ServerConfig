@@ -753,10 +753,6 @@ rtp:/rtp = >>>
 <<<
 
 websling:/websling = >>>
-
-    if(!has_permission(player(),"powers.websling")){
-        die()
-    }
   
     assign(@cooldown, 1)
   
