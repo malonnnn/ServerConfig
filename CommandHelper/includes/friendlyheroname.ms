@@ -384,7 +384,7 @@
         @fname = '§4Go§7d§4f§7all §cS§8u§cper§8m§ca§8n'
     }
     else if(@class == 'stephencurry'){
-        @fname = '§bSte§ephen §fCur§9ry'
+        @fname = '§eS§1te§eph§1e&en §1C§furr§1y'
     }
     if(@fname != '')
     {
