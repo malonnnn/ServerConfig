@@ -383,8 +383,8 @@
     else if(@class == 'abomb'){
         @fname = '§9§lA§8-§bB§1o§bmb'
     }
-    else if(@class == 'kyra'){
-        @fname = '§4K§0y§6r§ca'
+    else if(@class == 'kira'){
+        @fname = '§4K§0i§6r§ca'
     }
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
