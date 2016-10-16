@@ -1,0 +1,68 @@
+dovahkiin:/dovahkiin = >>>
+    sudo(/effect player() 5 9999 5 true)
+    sudo(/effect player() 10 9999 1 true)
+    sudo(/effect player() 11 9999 2 true)
+    sudo(/effect player() 13 9999 1 true)
+    sudo(/effect player() 16 9999 1 true)
+    sudo(/effect player() 21 9999 10 true)
+    runas(~console,/give player() "minecraft:diamond_sword 1 16:10 name:&4D&0e&4a&0dr&4i&0c_Sword")
+    runas(~console,/give player() "minecraft:bow 1 name:&6Dwavern_Bow infinity:1")
+    runas(~console,/give player() "minecraft:diamond_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&4D&0ea&4d&0r&4i&0c_Helmet")
+    runas(~console,/give player() "minecraft:diamond_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&4D&0ea&4d&0r&4i&0c_Chestplate")
+    runas(~console,/give player() "minecraft:diamond_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&4D&0ea&4d&0r&4i&0c_Leggings")
+    runas(~console,/give player() "minecraft:diamond_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&4D&0ea&4d&0r&4i&0c_Boots")
+    tmsg(player(),concat(color(Grey),
+    "I am the Dragonborn!"))
+<<<
+
+thu'um:/thu'um = >>>
+    
+    @start = ploc();
+    @vector = associative_array();
+    @pworld = pworld()
+    
+    @yaw = @start['yaw'] + 90;
+    @pitch = neg(@start['pitch']);
+    
+    @vector['x'] = cos(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
+    @vector['y'] = sin(to_radians(@pitch));
+    @vector['z'] = sin(to_radians(@yaw)) * 2 * cos(to_radians(@pitch));
+    
+    @length = 0
+    
+    export('length',@length)
+    export('pworld',@pworld)
+    
+    set_interval(50, closure(){
+        try {
+            @length = import('length')
+            @pworld = import('pworld')
+            @length = @length + 1
+            @x = @vector['x'] * @length
+            @y = @vector['y'] * @length + 1.5
+            @z = @vector['z'] * @length
+            
+            @start['x'] = @start['x'] + @x
+            @start['y'] = @start['y'] + @y
+            @start['z'] = @start['z'] + @z
+            
+            if(@pworld != 'destructiblecity'){
+                explosion(@start,@length,true)
+            }else{
+                explosion(@start,@length,false)
+            }
+            
+            @start['x'] = @start['x'] - @x
+            @start['y'] = @start['y'] - @y
+            @start['z'] = @start['z'] - @z
+            
+            export('length',@length)
+            
+            if(@length > 30) {
+                clear_task();
+            }
+            
+        } catch(Exception @ex) {
+            clear_task();
+        }});
+<<<
