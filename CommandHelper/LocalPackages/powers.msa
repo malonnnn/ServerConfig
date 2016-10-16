@@ -9,7 +9,7 @@ powers:/powers = >>>
     {
         tmsg(@playerName, "/deadpool")
         tmsg(@playerName, "/jump 0-4")
-        tmsg(@playerName, "/run 0-3")
+        tmsg(@playerName, "/run 0-3")&4D&0ea&4d&0r&4i&0c
         tmsg(@playerName, "/haste 0-2")    }
     if(@playerRank == "theinvisibleboy")
     {
@@ -1053,6 +1053,16 @@ powers:/powers = >>>
         tmsg(@playerName, "/jump 0-8")
         tmsg(@playerName, "/haste 0-8")
         tmsg(@playerName, "/yell")
+    }
+    else if(@playerRank == "dovahkiin") 
+	{
+		tmsg(@playerName, "/dovahkiin")
+        tmsg(@playerName, "/run 0-2")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/haste 0-2")
+        tmsg(@playerName, "/yell")
+	tmsg(@playerName, "/forcepush <playername>")
+	tmsg(@playerName, "/neither (travels to the dungeons of Tamriel)")
     }
     else if(@playerRank == "deathstroke") 
     {
