@@ -889,3 +889,18 @@ bind:/bind $ = >>>
     sudo(/powertool $)
 
 <<<
+
+touchkill:/touchkill = >>>
+
+    @plrs = players_in_radius(ploc(),2)
+    
+    foreach(@plr in @plrs){
+        if(@plr != player()){
+            broadcast(player() touchkilled @plr)
+            pkill(@plr)
+            break()
+        }
+    }
+    
+
+<<<
