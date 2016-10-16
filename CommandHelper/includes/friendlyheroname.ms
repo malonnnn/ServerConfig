@@ -416,7 +416,9 @@
      else if(@class == 'dovahkiin'){
     	@fname = '§fDovahkiin'
     }
-    
+    else if(@class == 'stephencurry'){
+        @fname = '§eS§1te§eph§1e§en §1C§furr§1y'
+    }
     
     
     if(@fname != '')
