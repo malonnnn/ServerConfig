@@ -523,7 +523,6 @@ proc(_changeSkin, @pname, @class,
         @sig = ''
         @val = ''
     }
-    }
     else if(@class == 'finnthehuman'){
         @sig = ''
         @val = ''
