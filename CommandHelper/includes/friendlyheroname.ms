@@ -413,6 +413,9 @@
     else if(@class == 'finnthehuman'){
     	@fname = '§fFinn §9The §1Human'
     }
+     else if(@class == 'dovahkiin'){
+    	@fname = '§fDovahkiin'
+    }
     
     
     
