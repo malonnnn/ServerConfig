@@ -524,6 +524,51 @@ Hunting:
     Hit_Events:
         Enable: true
 
+Sniper:
+    Item_Information:
+        Item_Name: "&cSniper&8 Rifle"
+        Item_Type: 294
+        Item_Lore: "&7Bolt-action rifle with high accuracy.|&7Equipped with a night vision scope.|&7Deals double damage on headshots."
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: snowball
+        Projectile_Speed: 1000
+        Projectile_Damage: 12
+    Custom_Death_Message:
+        Normal: "&e<victim> was sniped by <shooter>'s &cSniper&8 Rifle!"
+    Reload:
+        Enable: true
+        Starting_Amount: 0
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Reload_Duration: 10
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Close_Shoot_Delay: 6
+    Headshot:
+        Enable: true
+        Bonus_Damage: 12
+    Abilities:
+        Reset_Hit_Cooldown: true
+        Knockback: 3
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-1
+        Particle_Terrain: true
+    Fireworks:
+        Enable: true
+        Firework_Headshot: STAR-TRUE-TRUE-250-0-0
+    Scope:
+        Enable: true
+        Night_Vision: true
+        Zoom_Amount: 5
+    Hit_Events:
+        Enable: true
+
 Type95:
     Item_Information:
         Item_Name: "&eType 95"
