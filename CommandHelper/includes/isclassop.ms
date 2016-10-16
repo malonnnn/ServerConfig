@@ -10,6 +10,7 @@ proc(_isclassop, @class,
         @class == 'kentnelson' ||
         @class == 'mrmxyzptlk' ||
         @class == 'supermanprimeonemillion' ||
+        @class == 'nekron' ||
         @class == 'onslaughtreborn'
     ){
         return("true")

@@ -337,10 +337,23 @@ speak:/speak $player $ = >>>
 
 # Invisibility
 invis:/invis = >>>
-    sudo(/effect player() 14 9999 1 true)
+    @player = player()
+    sudo(/effect @player 14 9999 1 true)
+    if(has_permission(@player, "powers.visifmove")){
+        @eventID = associative_array('id': @player.'visifmove')
+        bind(player_move, @eventID, associative_array('player': @player), @event, @eventID, @player, 
+            sudo(/effect @player 14 0)
+            unbind()
+        )
+    }
 <<<
 vis:/vis = >>>
-    sudo(/effect player() 14 0)
+    @player = player()
+    sudo(/effect @player 14 0)
+    if(has_permission(@player, "powers.visifmove")){
+        @eventID = associative_array('id': @player.'visifmove')
+        unbind(@eventID)
+    }
 <<<
 
 # Spectator mode
@@ -756,23 +769,24 @@ websling:/websling = >>>
   
     assign(@cooldown, 1)
   
-    if(is_null(get_value('lastshot')),
-        store_value('lastshot',0)
+    if(is_null(get_value('lastwebshot')),
+        store_value('lastwebshot',0)
     )
 
     @pworld = pworld()
     if(
         @pworld != '1_9' &&
-        @pworld != 'greenfield'
+        @pworld != 'greenfield' &&
+        @pworld != 'citybreak'
     ){
         die()
     }
 
-    assign(@lastshot, get_value('lastshot'))
+    assign(@lastshot, get_value('lastwebshot'))
     if(@lastshot + @cooldown > time() / 1000,
         die()
     )
-    store_value('lastshot', time() / 1000)
+    store_value('lastwebshot', time() / 1000)
   
     @multiplier = 0.5
     @arrow = shoot_projectile(player(), 'ARROW')
@@ -783,8 +797,14 @@ websling:/websling = >>>
     @ploc['y']  = @ploc['y'] + 1
     @pig = spawn_entity("CHICKEN", 1, @ploc)[0]
     
+    try(set_mob_effect(@pig, 14, 1, 9999, true, false),
+        tmsg(player(), "Sorry, you can't use websling in here")
+        entity_remove(@arrow)
+        die()
+    )
+    
     # set pig invisible
-    set_mob_effect(@pig, 14, 1, 9999, true, false)
+    
     set_mob_effect(@pig, 11, 254, 9999, true, false)
     
     # sit player on pig
