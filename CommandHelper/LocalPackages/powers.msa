@@ -18,6 +18,13 @@ powers:/powers = >>>
         tmsg(@playerName, "/invis")
         tmsg(@playerName, "/vis")
     }
+    if(@playerRank == "stephencurry")
+    {
+        tmsg(@playerName, "/stephencurry")
+        tmsg(@playerName, "/jump 0-2")
+        tmsg(@playerName, "/run 0-1")
+        tmsg(@playerName, "/haste 0-1")        
+    }
     else if(@playerRank == "greenarrow")
     {
         tmsg(@playerName, "/greenarrow")
