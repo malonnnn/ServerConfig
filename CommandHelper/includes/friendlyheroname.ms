@@ -404,6 +404,9 @@
     else if(@class == 'nekron'){
     	@fname = '§8N§7e§0kr§8o§0n'
     }
+    else if(@class == 'finnthehuman'){
+    	@fname = '§9Finn §eThe §fHuman'
+    }
     
     
     
