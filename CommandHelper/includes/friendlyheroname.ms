@@ -407,6 +407,9 @@
     else if(@class == 'nekron'){
     	@fname = '§8N§7e§0kr§8o§0n'
     }
+    else if(@class == 'redrobin'){
+    	@fname = '§4R§0e§4d R§6o§4b§0i§4n'
+    }
     
     
     
