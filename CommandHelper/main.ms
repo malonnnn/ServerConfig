@@ -1,7 +1,6 @@
 # Take money per second if the player is an "OP" hero
 set_interval(5000, closure(){
     @plrs = all_players()
-    include('includes/isplayermod.ms')
     include('includes/isclassop.ms')
     
     foreach(@plr in @plrs)
