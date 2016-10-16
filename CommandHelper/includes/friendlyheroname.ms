@@ -2,8 +2,11 @@
     
     @fname = ''
 
-    if(@class == 'doctormanhattan'){
+    else if(@class == 'doctormanhattan'){
         @fname = '§bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn'
+    }
+    else if(@class == 'missmartian'){
+        @fname = '§2M§fi§2ss M§4a§2rt§9i§2an'
     }
     else if(@class == 'deadpool'){
         @fname = '§4D§0ea§4dp§0oo§4l'
@@ -185,7 +188,7 @@
     else if(@class == 'vegeta'){
         @fname = '§eV§fe§1ge§fta'
     }
-	else if(@class == 'gohan'){
+    else if(@class == 'gohan'){
         @fname = '§eG§1o§6han'
     }
     else if(@class == 'zeus'){
@@ -329,10 +332,10 @@
     else if(@class == 'supermanprimeonemillion'){
         @fname = '§eSuperman Prime One Million'
     }
-	else if(@class == 'owlman'){
+    else if(@class == 'owlman'){
         @fname = '§7Ow§bl§8m§0a§8n'
     }
-	else if(@class == 'goldenfrieza'){
+    else if(@class == 'goldenfrieza'){
         @fname = '§5Gol§eden Frieza'
     }
     else if(@class == 'joker'){
@@ -341,7 +344,7 @@
     else if(@class == 'gorillagrodd'){
         @fname = '§8G§7o§8rilla Gr§7o§8dd'
     }
-	else if(@class == 'apocalypse'){
+    else if(@class == 'apocalypse'){
         @fname = '§3A§9p§3o§9ca§3lypse'
     }
     else if(@class == 'blast'){
