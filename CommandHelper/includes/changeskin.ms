@@ -525,8 +525,8 @@ proc(_changeSkin, @pname, @class,
     }
     }
     else if(@class == 'finnthehuman'){
-        @sig = ''
-        @val = ''
+        @sig = 'qMtaYAmW5IPVGBC1kOp9adHwiPMNnTunGWDS9qBD3wuLueYCQIdYLFv3C4CJntuL2kD1xRKl64Zi5jcvNIX7IT/FXVqXBEmeqzqergBseOp3ElaDnEsnbahVUR0/1adTR+MbomGBLxXr6tMdcrG+Rb+0qRbXFIQ4Cm9CfIm/6rbwCEUPOxlIlKVCyPepQRLz1dPX9a+KCm9NW/X9P7fgcqzY/0sDCe+hnrb4voeoU5EHZNNIfa8EERZmDRRybIqbc444HgfE+uNfxIZsLiYnzs32sMNlVbSL75GCnXUN40JqLstbJNyXBNnEHOr6Hs14SI2kPLm6AckBGKjLWLtucmSBue+toJLPjmdt1FM6V9ck6/bL8Ydh/lGpG9wbM/7IydkYD4KY3uM9DQYb3TgHiNsOcfSaNCL9XVkZLQ6igVNs8r5U8iviPs+SqNLU9rv9W2jNuO3/7ZS61qSXCKHo2sF0AbWLa+nQtlYAzXcEnv+0Jbowse5wP96Ft/YGs7XT/wMYAXpuV7qj6p8s+26UUYpmoKa9IYmFETCbR3LxnLIKNraTJ2kCu+MHTo6Rnldj8Za3xfawIgQrvT1X8Ab85rDeSvsMyPkSqeZX1EQ6Xkgwwyq17eWjvifQZl+zfxCNF1JugDgUDdwehZQbssihYzLMWJL/rNh9NxAQWqaMSk8='
+        @val = 'eyJ0aW1lc3RhbXAiOjE0NzY2MDAzODc3MzQsInByb2ZpbGVJZCI6IjdkZmY5MWRkOTZlNjRiNzM5ZGZhMTc5OTJlMDU1Njk0IiwicHJvZmlsZU5hbWUiOiJXaXR0bGVUaW1teSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRkZmRkMjNlODZiMjRiMjk1MmE3ODM2YWIxZDRhYTZlNGNjM2EyZGQ5N2ZkNDQxNGI1NGM4MmYyZjYxNiJ9fX0='
     }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
