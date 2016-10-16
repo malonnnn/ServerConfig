@@ -410,6 +410,9 @@
     else if(@class == 'redrobin'){
     	@fname = '§4R§0e§4d R§6o§4b§0i§4n'
     }
+    else if(@class == 'finnthehuman'){
+    	@fname = '§fFinn §9The §1Human'
+    }
     
     
     
