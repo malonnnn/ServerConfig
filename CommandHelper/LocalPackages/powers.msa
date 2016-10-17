@@ -1085,10 +1085,10 @@ powers:/powers = >>>
         tmsg(@playerName, "/fly")
         tmsg(@playerName, "/tp")
         tmsg(@playerName, "/magicmrmxyzptlksmortal <playerName>")
-	}
-	else if(@playerRank == "blackbolt") 
-	{
-		tmsg(@playerName, "/blackbolt")
+    }
+    else if(@playerRank == "blackbolt") 
+    {
+        tmsg(@playerName, "/blackbolt")
         tmsg(@playerName, "/fly")
         tmsg(@playerName, "/run 0-8")
         tmsg(@playerName, "/jump 0-8")
@@ -1322,8 +1322,7 @@ powers:/powers = >>>
         tmsg(@playerName, "/superboy")
         tmsg(@playerName, "/jump 0-8")
         tmsg(@playerName, "/run 0-8")
-        tmsg(@playerName, "/haste 0-9")
-        tmsg(@playerName, "/fly")
+        tmsg(@playerName, "/haste 0-8")
     }
     else if(@playerRank == "batgirl")
     {
@@ -1334,7 +1333,7 @@ powers:/powers = >>>
     }
     else if(@playerRank == "godfallsuperman")
     {
-    	tmsg(@playerName, "/godfallsuperman")
+        tmsg(@playerName, "/godfallsuperman")
         tmsg(@playerName, "/run 0-6")
         tmsg(@playerName, "/jump 0-6")
         tmsg(@playerName, "/haste 0-6")
