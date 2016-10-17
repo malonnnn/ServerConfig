@@ -374,8 +374,8 @@
     else if(@class == 'carnage'){
         @fname = '§4C§0a§4rn§0a§4ge'
     } 
-    else if(@class == 'superboy'){
-        @fname = '§4S§0u§8p§0er§1bo§0y-§8C'
+    else if(@class == 'connerkent'){
+        @fname = '§4S§0u§8p§0er§1bo§0y-§8ConnerK'
     }
     else if(@class == 'batgirl'){
         @fname = '§7B§ea§0t§7gi§8r§7l'
