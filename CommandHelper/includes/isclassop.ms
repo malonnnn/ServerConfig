@@ -5,9 +5,9 @@ proc(_isclassop, @class,
         @class == 'poseidon' ||
         @class == 'hades' ||
         @class == 'onepunchman' ||
-        @class == 'wallywest' ||
+        @class == 'flashwallywest' ||
         @class == 'onslaughtreborn' ||
-        @class == 'kentnelson' ||
+        @class == 'doctorfatekentnelson' ||
         @class == 'mrmxyzptlk' ||
         @class == 'supermanprimeonemillion' ||
         @class == 'nekron' ||
