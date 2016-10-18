@@ -68,10 +68,10 @@
     else if(@class == 'wolverine'){
         @fname = '§eW§0o§elv§9er§eine'
     }
-    else if(@class == 'peterparker'){
+    else if(@class == 'spidermanpeterparker'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n'
     }
-    else if(@class == 'gwenstacy'){
+    else if(@class == 'spidergirlgwenstacy'){
         @fname = '§5S§0p§fid§0e§fr-§5W§f§8o§fm§ba§fn§0-§fG§7S'
     }
     else if(@class == 'thehumantorch'){
@@ -122,7 +122,7 @@
     else if(@class == 'wonderwoman'){
         @fname = '§4W§fon§eder §4W§fom§9an'
     }
-    else if(@class == 'bartallen'){
+    else if(@class == 'flashbartallen'){
         @fname = '§4Fl§ea§4sh-BartA'
     }
     else if(@class == 'batman'){
@@ -161,7 +161,7 @@
     else if(@class == 'aquaman'){
         @fname = '§eA§6qua§2man'
     }
-    else if(@class == 'haljordan'){
+    else if(@class == 'greenlanternhaljordan'){
         @fname = '§2Gr§8e§2en Lant§8e§2rn-HJ'
     }
     else if(@class == 'atrocitus'){
@@ -242,7 +242,7 @@
     else if(@class == 'greengoblin'){
         @fname = '§2Gr§5ee§2n G§5o§2blin'
     }
-    else if(@class == 'wallywest'){
+    else if(@class == 'flashwallywest'){
         @fname = '§4Fl§ea§4sh-WW'
     }
     else if(@class == 'sonicthehedgehog'){
@@ -254,10 +254,10 @@
     else if(@class == 'fang'){
         @fname = '§8F§7a§8n§7g'
     }
-    else if(@class == 'alanscott'){
+    else if(@class == 'greenlanternalanscott'){
         @fname = '§2Gr§8e§2en Lant§8e§2rn-AS'
     }
-    else if(@class == 'kentnelson'){
+    else if(@class == 'doctorfatekentnelson'){
         @fname = '§6D§9o§6ct§9o§6r F§9a§6te-KN'
     }
     else if(@class == 'parallaxentity'){
@@ -296,7 +296,7 @@
     else if(@class == 'blacklightning'){
         @fname = '§8Bl§ba§8ck L§fi§8ghtn§ei§8ng'
     }
-    else if(@class == 'caroldanvers'){
+    else if(@class == 'msmarvelcaroldanvers'){
         @fname = '§cM§es§8. §eM§8a§crv§8e§el-CD'
     }
     else if(@class == 'batmanbatsuit'){
@@ -374,7 +374,7 @@
     else if(@class == 'carnage'){
         @fname = '§4C§0a§4rn§0a§4ge'
     } 
-    else if(@class == 'connerkent'){
+    else if(@class == 'superboyconnerkent'){
         @fname = '§4S§0u§8p§0er§1bo§0y-§8ConnerK'
     }
     else if(@class == 'batgirl'){
@@ -392,7 +392,7 @@
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
     }
-    else if(@class == 'milesmorales'){
+    else if(@class == 'spidermanmilesmorales'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
     }
     else if(@class == 'batmansinestrocorps'){
