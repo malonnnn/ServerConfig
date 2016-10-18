@@ -26,6 +26,9 @@
     else if(@class == 'speedy'){
         @fname = '§4Sp§eee§4dy'
     }
+    else if(@class == 'ashprime'){
+        @fname = '§eA§bs§eh §fP§er§bi§fm§ee'
+    }
     else if(@class == 'raven'){
         @fname = '§5R§0a§5v§0e§5n'
     }
