@@ -390,7 +390,7 @@
         @fname = '§fK§4i§6r§7a'
     }
     else if(@class == 'captainuniverse'){
-        @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
+        @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse §1(Wasp)'
     }
     else if(@class == 'milesmorales'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
