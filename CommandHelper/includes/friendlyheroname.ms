@@ -392,7 +392,14 @@
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
     }
+<<<<<<< HEAD
     else if(@class == 'spidermanmilesmorales'){
+=======
+    else if(@class == 'captainuniversepeterparker'){
+        @fname = ''
+    }
+    else if(@class == 'milesmorales'){
+>>>>>>> 2759463a403fa127f372f975025b114f48edb839
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
     }
     else if(@class == 'batmansinestrocorps'){
