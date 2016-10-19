@@ -87,8 +87,7 @@
         @fname = '§4D§0a§4r§0t§4h M§0au§4l'
     }
         else if(@class == 'redhood'){
-        @fname = '§4R§8e§4dH§8oo§4d'
-        
+        @fname = '§4R§8e§4d H§8oo§4d'
     }
     else if(@class == 'darthrevan'){
         @fname = '§8D§4a§8rth §4R§8ev§4a§8n'
