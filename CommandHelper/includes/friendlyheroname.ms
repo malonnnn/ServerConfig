@@ -392,8 +392,8 @@
     else if(@class == 'captainuniverse'){
         @fname = '§1C§fa§9p§ft§1a§f§1§fin §fUniverse'
     }
-    else if(@class == 'spidermancaptainuniverse'){
-        @fname = '§4Sp§fi§4d§0e§4rm§0a§4n §1C§fa§9p§ft§1a§f§1§fin §fUniverse'
+    else if(@class == 'captainuniversepeterparker'){
+        @fname = ''
     }
     else if(@class == 'milesmorales'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n-MM'
