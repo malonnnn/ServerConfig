@@ -71,7 +71,7 @@
     else if(@class == 'spidermanpeterparker'){
         @fname = '§4Sp§fi§4d§0e§4rm§0a§4n'
     }
-    else if(@class == 'spidergirlgwenstacy'){
+    else if(@class == 'spiderwomangwenstacy'){
         @fname = '§5S§0p§fid§0e§fr-§5W§f§8o§fm§ba§fn§0-§fG§7S'
     }
     else if(@class == 'thehumantorch'){
