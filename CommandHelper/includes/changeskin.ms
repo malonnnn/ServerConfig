@@ -552,8 +552,12 @@ proc(_changeSkin, @pname, @class,
         @val = 'eyJ0aW1lc3RhbXAiOjE0NzY3MzIwMTI2MjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xNzViYmUyNDI3Y2YxYWRhNjNkYTc4Yjc4ZmI1NGI1ZWEzY2RkM2Y1MTNkMzgxNmI4ZGQ2YmRjMmNhZGQ1ZiJ9fX0='
     }
     else if(@class == 'captainuniversepeterparker'){
-        @sig = 'CG01iQI69aH51Hmu7NkfURbrNBft93jyfKWc7+0CzM4VRlVXrkw98pFk2pVaQ3rNaRP5ELerC8svE/c4zB+xI639y+0JubawPQN4oTRB2sW8XvxgfJaKPEOUlCBZHojHxzjLvcy4QVZRrD3a5Czfg4HfyNRCGgd6QevFqoRDKQCHycJENG25K2iUxLb1m6twpzELA/T/BFt3tvEEvb9ZyXVMli40fBIlAPbqO8w/9E4RKyvmEXjy7LoE9JjdY9EaLzcKmMfblAQIm07I1z23VhqLX0FL9WT0Ac5OhYDEz3CJyLqHwvmdtLzt3YQ4z1emIsr13f3fY4rn8IN+d6mOtGrwABKy3evB7GuzpfZ0FgKr+Bk3xu+o7azIneC+vOskhaWyeICgxjWepeynP0n4qv8NmfknhrgN9YQT/fxn75Knk76xvOFiyDFlhmG9maOq7RpvMWiOA81788D1y4JHXyZn0n5om8U5FCCw7U1ZR7gOVxnrTPBndIDzDklCcxnx31MWzWdx65jZhgHY35k4lcrPSyIoX0J5BdwNvgv2KVDZxM+tTMEEy94CXMweSgWBLcM+O/V+1w95GCp2tN6mfacDIsIQDbG5PI1NIH+dTNlEOsTjRKUFSV8GPSICjKO3SIg+5w/0FneS27X+uOJkeXR25pZewhPpKQE9deeONjE='
-        @val = 'eyJ0aW1lc3RhbXAiOjE0NzY3NjQ2NTQ1OTQsInByb2ZpbGVJZCI6IjdkZmY5MWRkOTZlNjRiNzM5ZGZhMTc5OTJlMDU1Njk0IiwicHJvZmlsZU5hbWUiOiJXaXR0bGVUaW1teSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzMyNzRlYmE5ZDk4Y2E3MzI0Nzc3YTJlMzQ1OTZkMjFiOWVjZGZjOTJlMTBmMjM3ZDk4NjllNjg0MzNiMiJ9fX0='
+        @sig = ''
+        @val = ''
+    }
+    else if(@class == 'ashprime'){
+        @sig = ''
+        @val = ''
     }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
@@ -569,3 +573,4 @@ proc(_changeSkin, @pname, @class,
     }
     runas(~console,/disguiseplayer @pname player @pname 'setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
 )
+
