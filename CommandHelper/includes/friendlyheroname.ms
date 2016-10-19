@@ -128,7 +128,7 @@
     else if(@class == 'batman'){
         @fname = '§7B§ea§0t§7m§8a§7n'
     }
-    else if(@class == 'ironman'){
+    else if(@class == 'ironmanmarkxliii'){
         @fname = '§6I§4r§bo§4n M§6an'
     }
     else if(@class == 'ichigokurosaki'){
