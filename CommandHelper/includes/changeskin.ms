@@ -4,7 +4,7 @@ proc(_changeSkin, @pname, @class,
     @val = ''
     
     if(@class == 'doctormanhattan'){        
-        @sig = 'jvRQbVMc9Cgziqz7KywUxL0TeTV7/op88ZgfbywriuP56RscgaxCR6j1/Ewv2I5maP8rCEcA6UBEUjbeNpzbUdDmVZsN2fNDnVZ6YPdlbAwNT3Cco1X37rzBvC4n1RbYBDTyiRq6N3/J9hPDHFqBZslf2rWhypOgzQCQEo026HNivyntRHwqqkpkOcUv2sQgTOHPpeamKru+8F2i6OdndHiHS4qqJ1CVY3LsowmY7eDyCOXVRbkhtjzvmQ/7YiMKthVriKpLVk9pswAKi8yfRgd9ov+7UZQWP99lY23JDmkGsJkvwINdNOJxatgBoakOaMwUQ86AJMSeViIOFm0cQ2zDPy1eesDEHkPfiJtp5XVUfhvH9L+Bga3MJznSbe0QspT39J0hZ1VrfGALBf8rff7GXFY69Ge9KRFsptowc0OkMqeHh1IdEIjSP0RJXTlckGeIdIkF0GRw8VHM6mvn4jlcg06BLHnhc79Jx1saVQPQWapP8O27YIZVG2ZCgQIgw3gzfbdWqfqJPGuob7nWUhW1djVOFkP/kFp1t9MrG/phClEwNmybQwrpk0VpX61Ms8cUEw0L/owwqePuzB0Hkh+v6sTgMCAk8FaElYZ9e4IVbeCMqKesNMO6voI001N/dtX691FtByLnTMAqLKZsBAfn3k0gDIor5zVlNzS1q+I='
+        @sig = 'jvRQbVMc9Cgziqz7KywUxL0TeTV7/op88ZgfbywriuP56RscgaxCR6j1/Ewv2I5maP8rCEcA6UBEUjbeNpzbUdDmVZsN2fNDnVZ6YPdlbAwNT3Cco1X37rzBvC4n1RbYBDTyiRq6N3/J9hPDHFqBZslf2rWhypOgzQCQEo026HNivyntRHwqqkpkOcUv2sQgTOHPpeamKru+8F2i6OdndHiHS4qqJ1CVY3LsowmY7eDyCOXVRbkhtjzvmQ/7YiMKthVriKpLVk9pswAKi8yfRgd9ov+7UZQWP99lY23JDmkGsJkvwINdNOJxatgBoakOaMwUQ86AJMSeViIOFm0cQ2zDPy1eesDEHkPfiJtp5XVUfhvH9L+Bga3MJznSbe0QspT39J0hZ1VrfGALBf8rff7GXFY69Ge9KRFsptowc0OkMqeHh1IdEIjSP0RJXTlckGeIdIkF0GRw8VHM6mvn4jlcg06BLHnhc79Jx1saVQPQWapP8O27YIZVG2ZCgQIgw3gzfbdWqfgqJPGuob7nWUhW1djVOFkP/kFp1t9MrG/phClEwNmybQwrpk0VpX61Ms8cUEw0L/owwqePuzB0Hkh+v6sTgMCAk8FaElYZ9e4IVbeCMqKesNMO6voI001N/dtX691FtByLnTMAqLKZsBAfn3k0gDIor5zVlNzS1q+I='
         @val = 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjI5NzkxNjEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzViZDJiZmZiZTdmZGMxYmFhM2Y2YWY2MTM4MTc4NzZhOTdkNmE2OWE1MmM0MzMwMzZkZTEwOTI1MTI4YzFmZSJ9fX0='
     }
     else if(@class == 'deadpool'){
@@ -568,8 +568,8 @@ proc(_changeSkin, @pname, @class,
     }
     }
     else if(@class == 'god'){
-        @sig = ''
-        @val = ''
+        @sig = 'G7xbzNSBX63ZBUI7L8PtnhrGIs0cg3owOfDbSJBViVtmYgNrpYXeJQevQCtsWZf/acIW83dcWJqruHsmjcC6XwgoMvOE0cYo1jCqmFbzDeBZRMAwEF5sv4/CSIdzGJrwpG2A0JfQao2JAI6R/8sW0qNEMpjNS+U1eOvCaCJzA+vnrb1fwksoLvRGv2T++9gSF24XsikZnvG6ULYsp8bFZs16k2u+1CUnsaORKoib5uTCLjQP+NXkMCeaMpInH4OYfwyekxjVvaZbmOv7YrifhR29NFGsD9VJ2P+CGhMjF717xzctBL4pr9EK5lYX13r69tKBNkRVf8d2j7yOTFbgVMyVZSDUrBc5VtunMkPp4tzSM6H/Kg68tgPDZTKCGsHUIQ8fLvlOI+KMvyTqa0rm6Z3rvJ4g2rBjEgbYnKSl7TSVehxOLKyMWZMPkAnJ0N9oP/pBTMqLifP6GIbUyCDvU+Nw2NORMkQqWtCvGcOPV++6ICyWN2/gVa0c4vI4oi/hEX598zpwGkXN1Of0hVGbOJ0oWi6NOLbAcvE8pIR6rRNqowjt3jQgJBzKXhu779Y95iHK6eNH+ho7wTYu55KpJv1QLfRwXsBjOOlkdkaSHGRR0rfPUigqurxqnYO/JhE2HapFvRudxH2TRFUktBGtVOQm92o6aZPRgzWTMIqEI6o='
+        @val = 'eyJ0aW1lc3RhbXAiOjE0NzY5MzMyNzM2NTMsInByb2ZpbGVJZCI6IjdkZmY5MWRkOTZlNjRiNzM5ZGZhMTc5OTJlMDU1Njk0IiwicHJvZmlsZU5hbWUiOiJXaXR0bGVUaW1teSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY5NDgzZWZlY2FlMzE1YzJlNjQxZGJlMjE3YmE0Y2YxYjRkM2Y2OTBmMTQxNDljZjM0ZWRjMTU4N2U5ZTIifX19'
     }
     else if(@class == 'mrmxyzptlk'){
         runas(~console,/disguiseplayer @pname villager baby)
