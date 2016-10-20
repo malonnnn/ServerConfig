@@ -428,7 +428,9 @@
     else if(@class == 'stephencurry'){
         @fname = '§eS§1te§eph§1e§en §1C§furr§1y'
     }
-    
+    else if (@class == 'princessmononoke'){
+        @fma,e = '§fPr§7in§fce§8ss §fMo§8no§fno§7ke'
+    }
     
     if(@fname != '')
     {
