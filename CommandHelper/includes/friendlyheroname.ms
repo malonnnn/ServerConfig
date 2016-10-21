@@ -429,7 +429,7 @@
         @fname = '§eS§1te§eph§1e§en §1C§furr§1y'
     }
     else if(@class == 'cosmicarmorsuperman'){
-        @fname = '§cC§e§k§&9s§6mi§9c §4A§2r§9m§6o§4r §4S§9u§ep§9er§4man'
+        @fname = '§cC§e§kO§9s§6mi§9c §4A§2r§9m§6o§4r §4S§9u§ep§9er§4man'
     }
     
     if(@fname != '')
