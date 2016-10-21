@@ -28,11 +28,12 @@ redbull:/redbull = sudo(/give player() "373 1 16 {display:{Name:"RedBull"},Custo
 vodka:/vodka = sudo(/give player() "373 1 16 {display:{Name:Vodka},CustomPotionEffects:[1:{Id:9,Amplifier:2,Duration:1200}]}")
 
 # Admin command for punishing people
-punish:/punish $plr = >>>
+permajail:/permajail $plr = >>>
     @plr = $plr
-    runas(~console,"/sudo @plr c:/mortal")
+    runas(~console,/warp survival @plr)
+    runas(~console,/pex user @plr group set jailed)
     set_timeout(3000, closure(
-        tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD!")
+        tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD! §4You may be released after server owner reviews your case. Your case number is §a".rand(10000,99999))
     ))
 <<<
 
@@ -524,6 +525,26 @@ marry:/marry $plr1 $plr2 = >>>
 
 # The command which actually changes your hero, to be placed in a command block
 changehero:/changehero = >>>
+
+    assign(@cooldown, 10)
+  
+    if(is_null(get_value('lasttransform')),
+        store_value('lasttransform',0)
+    )
+    
+    assign(@lastshot, get_value('lasttransform'))
+    if(@lastshot + @cooldown > time() / 1000,
+        die()
+    )
+    store_value('lasttransform', time() / 1000)
+    
+    set_block_at("-1733","67","225","152:0","greenfield")
+    set_block_at("-1735","67","225","152:0","greenfield")
+    
+    set_timeout(2000, closure(){
+        set_block_at("-1733","67","225","0:0","greenfield")
+        set_block_at("-1735","67","225","0:0","greenfield")
+    });
     
     set_timeout(1500, closure(){
         assign(@locOfRedBlock, array('x': '-1735', 'y': '69', 'z': '214', 'world': 'greenfield', 'yaw': '0', 'pitch': '0'))
@@ -563,9 +584,17 @@ changehero:/changehero = >>>
                     @haveDNA = true
                     @numberOfVials++
                     if(@numberOfVials > 1){
-                        runas(~console,"/minecraft:clear @plr")
-                        broadcast("@plr mixed DNA samples and mutated.")
-                        pkill(@plr)
+                        set_pmode(@plr,"SURVIVAL")
+                        runas(~console,/pex user @plr group set mortal)
+                        set_peffect(@plr, 2, 3, 9999, true, false)
+                        set_peffect(@plr, 9, 1, 9999, true, false)
+                        set_peffect(@plr, 15, 1, 9999, true, false)
+                        set_peffect(@plr, 17, 3, 9999, true, false)
+                        set_peffect(@plr, 18, 3, 9999, true, false)
+                        set_peffect(@plr, 19, 3, 9999, true, false)
+                        include('includes/changeskin.ms')
+                        _changeSkin(@plr,'mutant')
+                        broadcast("§9@plr §amixed DNA samples and was turned into a deformed, freaky mutant!")
                         die()
                     }
                 }
@@ -609,13 +638,17 @@ changehero:/changehero = >>>
         @num = rand(1,21)
         
         if(@num == 1){
+            set_pmode(@plr,"SURVIVAL")
+            runas(~console,/pex user @plr group set mortal)
+            set_peffect(@plr, 2, 3, 9999, true, false)
+            set_peffect(@plr, 9, 1, 9999, true, false)
             set_peffect(@plr, 15, 1, 9999, true, false)
             set_peffect(@plr, 17, 3, 9999, true, false)
             set_peffect(@plr, 18, 3, 9999, true, false)
             set_peffect(@plr, 19, 3, 9999, true, false)
             include('includes/changeskin.ms')
             _changeSkin(@plr,'mutant')
-            broadcast("Something went wrong with the DNA mixer! @plr was turned into a deformed, freaky mutant!")
+            broadcast("§aSomething went wrong with the §e§lD§a§lN§4§lA §amixer! §9@plr §awas turned into a deformed, freaky mutant!")
             die()
         }
         
@@ -652,9 +685,6 @@ changehero:/changehero = >>>
                 concat(@fname,concat(color(gray),"!"))
             )
         }
-        
-        # warp player to exit pod
-        runas(~console,"/warp exitpod". @floor @plr)
     });
     
 <<<
@@ -865,7 +895,7 @@ websling:/websling = >>>
     # spawn pig
     @ploc = ploc()
     @ploc['y']  = @ploc['y'] + 1
-    @pig = spawn_entity("CHICKEN", 1, @ploc)[0]
+    @pig = spawn_entity("ENDER_PEARL", 1, @ploc)[0]
     
     try(set_mob_effect(@pig, 14, 1, 9999, true, false),
         tmsg(player(), "Sorry, you can't use websling in here")
@@ -1026,7 +1056,7 @@ givevial:/givevial $class $plr = >>>
     @vialName = replace(@vialName,' ','_')
     
     
-    runas(~console,/give @plr "minecraft:potion 1 0 20:2 16:30 name:@vialName lore:@class")
+    runas(~console,/give @plr "minecraft:potion 1 0 effect:nausea power:1 duration:1200 effect:poison power:1 duration:1200 name:@vialName lore:@class")
 
 <<<
 
