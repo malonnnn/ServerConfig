@@ -89,7 +89,7 @@
     else if(@class == 'darthmaul'){
         @fname = '§4D§0a§4r§0t§4h M§0au§4l'
     }
-        else if(@class == 'redhood'){
+    else if(@class == 'redhood'){
         @fname = '§4R§8e§4d H§8oo§4d'
     }
     else if(@class == 'darthrevan'){
@@ -269,7 +269,7 @@
     else if(@class == 'parallaxentity'){
         @fname = '§eParallax §6Entity'
     }
-    else if(@class == 'barryallen'){
+    else if(@class == 'flashbarryallen'){
         @fname = '§4Fl§ea§4sh-BarryA'
     }
     else if(@class == 'mrmxyzptlk'){
@@ -428,7 +428,9 @@
     else if(@class == 'stephencurry'){
         @fname = '§eS§1te§eph§1e§en §1C§furr§1y'
     }
-    
+    else if(@class == 'cosmicarmorsuperman'){
+        @fname = '§cC§e§k§&9s§6mi§9c §4A§2r§9m§6o§4r §4S§9u§ep§9er§4man'
+    }
     
     if(@fname != '')
     {

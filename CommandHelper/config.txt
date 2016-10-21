@@ -523,69 +523,139 @@ marry:/marry $plr1 $plr2 = >>>
 <<<
 
 # The command which actually changes your hero, to be placed in a command block
-changehero:/changehero $plr $class $floor = >>>
-    @plr = $plr
-    @class = $class
-    @exit = $exit
-    @floor = $floor
+changehero:/changehero = >>>
     
-    include('includes/friendlyheroname.ms')
-    # If player is trying to turn into OP hero and is not a mod, throw error
-    include('includes/isclassop.ms')
-    if(_isclassop(@class) == "true"){
-        if(!has_permission(@plr,"rank.mod")){
-            tmsg(@plr,"You can only win "._friendlyHeroName(@class)." §fby becoming staff or in a server tournament")
+    set_timeout(1500, closure(){
+        assign(@locOfRedBlock, array('x': '-1735', 'y': '69', 'z': '214', 'world': 'greenfield', 'yaw': '0', 'pitch': '0'))
+        @plrs = players_in_radius(@locOfRedBlock,1)
+        @count = array_size(@plrs)
+        
+        # Make sure only 1 player is in the machine.
+        # If more than 1 person, kill everyone.
+        if(@count == 0){
+            die()
+        }else if(@count > 1){
+            @names = ''
+            foreach(@player in @plrs){
+                pkill(@player)
+                @names += @player." and "
+            }
+            @names = substr(@names,0,length(@names) - 4)
+            broadcast(@names."had their DNA mixed together, mutated, then died.")
             die()
         }
-    }
-    
-    # Make sure no other players are currently using the class you want
-    # Only one person may be a given hero at a time
-    @plrs = all_players()
-    foreach(@player in @plrs)
-    {
-        @otherPlayerGroup = pgroup(@player)
-        if(@otherPlayerGroup[0] == @class && @plr != @player){
+        
+        # Get player name who is in the machine
+        @plr = @plrs[0]
+        
+        # Check player inventory for DNA
+        @inv = pinv(@plr)
+        @haveDNA = false
+        @class = ''
+        @numberOfVials = 0
+        foreach(@item in @inv)
+        {
+            if(@item != null && @item['meta'] != null && @item['meta']['display'] != null){
+                @itemName = @item['meta']['display']
+                @nameTest = substr(@itemName,length(@itemName) - 15,length(@itemName))
+                if(@nameTest == "§e§lD§a§lN§4§lA"){
+                    @class = @item['meta']['lore'][0]
+                    @haveDNA = true
+                    @numberOfVials++
+                    if(@numberOfVials > 1){
+                        runas(~console,"/minecraft:clear @plr")
+                        broadcast("@plr mixed DNA samples and mutated.")
+                        pkill(@plr)
+                        die()
+                    }
+                }
+            }
+        }
+        
+        if(!@haveDNA){
+            tmsg(@plr,"You need some DNA to use this machine.")
+            die()
+        }
+        
+        # If player is trying to turn into OP hero and is not a mod, throw error
+        include('includes/friendlyheroname.ms')
+        include('includes/isclassop.ms')
+        if(_isclassop(@class) == "true"){
+            if(!has_permission(@plr,"rank.mod")){
+                tmsg(@plr,"You can only win "._friendlyHeroName(@class)." §fby becoming staff or in a server tournament")
+                die()
+            }
+        }
+        
+        # Make sure no other players are currently using the class you want
+        # Only one person may be a given hero at a time
+        @plrs = all_players()
+        foreach(@player in @plrs)
+        {
+            @otherPlayerGroup = pgroup(@player)
+            if(@otherPlayerGroup[0] == @class && @plr != @player){
+                broadcast(
+                    concat(color(white),@plr)
+                    concat(color(gray),"tried to turn into")
+                    _friendlyHeroName(@class)
+                    concat(color(gray),"but")
+                    concat(color(white),@player)
+                    concat(color(gray),"was already that class!")
+                )
+                die()
+            }
+        }
+        
+        @num = rand(1,21)
+        
+        if(@num == 1){
+            set_peffect(@plr, 15, 1, 9999, true, false)
+            set_peffect(@plr, 17, 3, 9999, true, false)
+            set_peffect(@plr, 18, 3, 9999, true, false)
+            set_peffect(@plr, 19, 3, 9999, true, false)
+            include('includes/changeskin.ms')
+            _changeSkin(@plr,'mutant')
+            broadcast("Something went wrong with the DNA mixer! @plr was turned into a deformed, freaky mutant!")
+            die()
+        }
+        
+        if(@class == "cosmicarmorsuperman" && @plr != "Tektronic"){
+            runas(~console,"/minecraft:clear @plr")
+            @fname = _friendlyHeroName(@class)
+            broadcast("§9@plr §7tried to turn into @fname §7but couldn't handle it's immense power!")
+            pkill(@plr)
+            die()
+        }
+        
+        runas(~console, '/pex user' @plr 'group set' @class)
+        sudo(/fly @plr off)
+        sudo(/gamemode survival @plr)
+        sudo(/effect @plr clear)
+        sudo("/minecraft:clear" @plr)
+        sudo(/god @plr off)
+        
+        # If hero has a trail, set it
+        include('includes/changeskin.ms')
+        _changeSkin(@plr,@class)
+        
+        # change player to hero skin
+        include('includes/changetrail.ms')
+        runas(~console,"/sudo ". @plr ." c:/trailsid none")
+        _changeTrail(@plr, @class)
+        
+        # print chat message about successful transformation
+        @fname = _friendlyHeroName(@class)
+        if(@fname != 'false'){
             broadcast(
-                concat(color(white),@plr)
-                concat(color(gray),"tried to turn into")
-                _friendlyHeroName(@class)
-                concat(color(gray),"but")
-                concat(color(white),@player)
-                concat(color(gray),"was already that class!")
+                concat(color(blue),@plr)
+                concat(color(gray),"has transformed into")
+                concat(@fname,concat(color(gray),"!"))
             )
-            die()
         }
-    }
-    
-    runas(~console, '/pex user' @plr 'group set' @class)
-    sudo(/fly @plr off)
-    sudo(/gamemode survival @plr)
-    sudo(/effect @plr clear)
-    sudo("/minecraft:clear" @plr)
-    sudo(/god @plr off)
-    
-    # If hero has a trail, set it
-    include('includes/changeskin.ms')
-    _changeSkin(@plr,@class)
-    
-    # change player to hero skin
-    include('includes/changetrail.ms')
-    runas(~console,"/sudo ". @plr ." c:/trailsid none")
-    _changeTrail(@plr, @class)
-    
-    # print chat message about successful transformation
-    @fname = _friendlyHeroName(@class)
-    if(@fname != 'false'){
-        broadcast(
-            concat(color(blue),@plr)
-            concat(color(gray),"has transformed into")
-            concat(@fname,concat(color(gray),"!"))
-        )
-    }
-    
-    # warp player to exit pod
-    runas(~console,"/warp exitpod". @floor @plr)
+        
+        # warp player to exit pod
+        runas(~console,"/warp exitpod". @floor @plr)
+    });
     
 <<<
 
@@ -922,5 +992,50 @@ touchkill:/touchkill = >>>
         }
     }
     
+
+<<<
+
+center:/center = >>>
+
+    @ploc = ploc()
+    
+    if(@ploc['x'] < 0){
+        @ploc['x'] = integer(@ploc['x']) - 0.5
+    }else{
+        @ploc['x'] = integer(@ploc['x']) + 0.5
+    }
+    
+    if(@ploc['z'] < 0){
+        @ploc['z'] = integer(@ploc['z']) - 0.5
+    }else{
+        @ploc['z'] = integer(@ploc['z']) + 0.5
+    }
+    
+    set_ploc(@ploc)
+
+<<<
+
+givevial:/givevial $class $plr = >>>
+
+    @plr = $plr
+    @class = $class
+    
+    include('includes/friendlyheroname.ms')
+    @vialName = _friendlyHeroName(@class)." &e&lD&a&lN&4&lA"
+    
+    @vialName = replace(@vialName,' ','_')
+    
+    
+    runas(~console,/give @plr "minecraft:potion 1 0 20:2 16:30 name:@vialName lore:@class")
+
+<<<
+
+test:/test = >>>
+
+    @str = "one and two and"
+    
+    @str = substr(@str,0,length(@str) - 4)
+    
+    broadcast(@str)
 
 <<<
