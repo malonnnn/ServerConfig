@@ -654,10 +654,10 @@ changehero:/changehero = >>>
             die()
         }
         
-        if(@class == "cosmicarmorsuperman" && @plr != "Tektronic"){
+        if((@class == "cosmicarmorsuperman" || @class == "christianicgod") && @plr != "Tektronic"){
             runas(~console,"/minecraft:clear @plr")
             @fname = _friendlyHeroName(@class)
-            broadcast("§9@plr §7tried to turn into @fname §7but couldn't handle it's immense power!")
+            broadcast("§9@plr §7tried to turn into @fname §7but couldn't handle his §4§limmense power!")
             pkill(@plr)
             die()
         }
