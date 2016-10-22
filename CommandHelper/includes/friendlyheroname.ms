@@ -437,6 +437,9 @@
     else if(@class == 'cosmicarmorsuperman'){
         @fname = '§cC§e§kO§9s§6mi§9c §4A§2r§9m§6o§4r §4S§9u§ep§9er§4man'
     }
+    else if (@class == 'princessmononoke'){
+        @fma,e = '§fPr§7in§fce§8ss §fMo§8no§fno§7ke'
+    }
     
     if(@fname != '')
     {
