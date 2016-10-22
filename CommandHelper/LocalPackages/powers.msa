@@ -170,6 +170,15 @@ powers:/powers = >>>
         tmsg(@playerName, "/back")
         tmsg(@playerName, "/top")
     }
+    else if(@playerRank == "ironfist")
+    {
+        tmsg(@playerName, "/ironfist")
+        tmsg(@playerName, "/jump 0-4")
+        tmsg(@playerName, "/run 0-5")
+        tmsg(@playerName, "/haste 0-9")
+        tmsg(@playerName, "/heal")
+        tmsg(@playerName, "/heal <playername>")
+    }
     else if(@playerRank == "supermanprimeonemillion")
     {
         tmsg(@playerName, "/supermanprimeonemillion")
