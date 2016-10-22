@@ -27,16 +27,28 @@ set_interval(5000, closure(){
 
 
 # Harley Quinn immunity to poison
-bind(entity_damage, null, array('cause': 'POISON'), @e) {
+#bind(entity_damage, null, array('cause': 'POISON'), @e) {
     
-    @plr = player()
+#    @plr = player()
 
-    if(!has_permission(@plr, "powers.immunity.poison"))
-    {
-        set_peffect(@plr, 19, 1, 0)
-        cancel()
-    }
-}
+#    if(has_permission(@plr, "powers.immunity.poison"))
+#    {
+#        set_peffect(@plr, 19, 1, 0)
+#        cancel()
+#    }
+#}
+
+# Harley Quinn immunity to poison
+#bind(entity_damage, null, array('type': 'PLAYER', 'cause': 'FALL'), @e) {
+    
+#    @plr = player()
+
+#    if(has_permission(@plr, "powers.ow"))
+#    {
+#        broadcast("ow")
+#    }
+#}
+
 
 # Fang can be invisible unless he's moving
 set_interval(1000, closure(){

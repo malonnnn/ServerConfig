@@ -578,24 +578,26 @@ changehero:/changehero = >>>
         {
             if(@item != null && @item['meta'] != null && @item['meta']['display'] != null){
                 @itemName = @item['meta']['display']
-                @nameTest = substr(@itemName,length(@itemName) - 15,length(@itemName))
-                if(@nameTest == "§e§lD§a§lN§4§lA"){
-                    @class = @item['meta']['lore'][0]
-                    @haveDNA = true
-                    @numberOfVials++
-                    if(@numberOfVials > 1){
-                        set_pmode(@plr,"SURVIVAL")
-                        runas(~console,/pex user @plr group set mortal)
-                        set_peffect(@plr, 2, 3, 9999, true, false)
-                        set_peffect(@plr, 9, 1, 9999, true, false)
-                        set_peffect(@plr, 15, 1, 9999, true, false)
-                        set_peffect(@plr, 17, 3, 9999, true, false)
-                        set_peffect(@plr, 18, 3, 9999, true, false)
-                        set_peffect(@plr, 19, 3, 9999, true, false)
-                        include('includes/changeskin.ms')
-                        _changeSkin(@plr,'mutant')
-                        broadcast("§9@plr §amixed DNA samples and was turned into a deformed, freaky mutant!")
-                        die()
+                if(length(@itemName) > 15){
+                    @nameTest = substr(@itemName,length(@itemName) - 15,length(@itemName))
+                    if(@nameTest == "§e§lD§a§lN§4§lA"){
+                        @class = @item['meta']['lore'][0]
+                        @haveDNA = true
+                        @numberOfVials++
+                        if(@numberOfVials > 1){
+                            set_pmode(@plr,"SURVIVAL")
+                            runas(~console,/pex user @plr group set mortal)
+                            set_peffect(@plr, 2, 3, 9999, true, false)
+                            set_peffect(@plr, 9, 1, 9999, true, false)
+                            set_peffect(@plr, 15, 1, 9999, true, false)
+                            set_peffect(@plr, 17, 3, 9999, true, false)
+                            set_peffect(@plr, 18, 3, 9999, true, false)
+                            set_peffect(@plr, 19, 3, 9999, true, false)
+                            include('includes/changeskin.ms')
+                            _changeSkin(@plr,'mutant')
+                            broadcast("§9@plr §amixed DNA samples and was turned into a deformed, freaky mutant!")
+                            die()
+                        }
                     }
                 }
             }
