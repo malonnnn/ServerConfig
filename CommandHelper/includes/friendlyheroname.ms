@@ -9,7 +9,7 @@
         @fname = '§2M§fi§2ss M§4a§2rt§9i§2an'
     }
     else if(@class == 'ironfist'){
-        @fname = '§6T§fh§ce §fIm§6m§co§frt§6al §6I§cr§fo§6n §4F§ci§6s§et'
+        @fname = '§eI§fro§en §fFi§es§ft'
     }
     else if(@class == 'deadpool'){
         @fname = '§4D§0ea§4dp§0oo§4l'
