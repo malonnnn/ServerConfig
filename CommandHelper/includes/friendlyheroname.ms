@@ -8,6 +8,9 @@
     else if(@class == 'missmartian'){
         @fname = '§2M§fi§2ss M§4a§2rt§9i§2an'
     }
+    else if(@class == 'ironfist'){
+        @fname = '§eI§fro§en §fFi§es§ft'
+    }
     else if(@class == 'deadpool'){
         @fname = '§4D§0ea§4dp§0oo§4l'
     }
