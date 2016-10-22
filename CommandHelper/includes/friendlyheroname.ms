@@ -8,7 +8,7 @@
     else if(@class == 'missmartian'){
         @fname = '§2M§fi§2ss M§4a§2rt§9i§2an'
     }
-    else if(@class == 'god'){
+    else if(@class == 'christianicgod'){
         @fname = '§3G§fo§ad'
     }
     else if(@class == 'deadpool'){
