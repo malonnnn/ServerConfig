@@ -11,6 +11,9 @@
     else if(@class == 'ironfist'){
         @fname = '§eI§fro§en §fFi§es§ft'
     }
+    else if(@class == 'ultraboy'){
+        @fname = '§4U§2l§4t§2r§4a §4B§0o§2y'
+    }
     else if(@class == 'christianicgod'){
         @fname = '§f§lChristianic God'
     }
