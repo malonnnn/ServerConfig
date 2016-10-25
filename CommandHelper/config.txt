@@ -897,7 +897,7 @@ websling:/websling = >>>
     # spawn pig
     @ploc = ploc()
     @ploc['y']  = @ploc['y'] + 1
-    @pig = spawn_entity("ENDER_PEARL", 1, @ploc)[0]
+    @pig = spawn_entity("CHICKEN", 1, @ploc)[0]
     
     try(set_mob_effect(@pig, 14, 1, 9999, true, false),
         tmsg(player(), "Sorry, you can't use websling in here")
