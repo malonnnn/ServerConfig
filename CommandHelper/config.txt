@@ -339,12 +339,17 @@ speak:/speak $player $ = >>>
 # Invisibility
 invis:/invis = >>>
     @player = player()
-    sudo(/effect @player 14 9999 1 true)
     if(has_permission(@player, "powers.visifmove")){
         @eventID = associative_array('id': @player.'visifmove')
-        bind(player_move, @eventID, associative_array('player': @player), @event, @eventID, @player, 
-            sudo(/effect @player 14 0)
-            unbind()
+        @filter = associative_array('player': @player)
+        try(
+            bind(player_move, @eventID, @filter, @event, @player,
+                sudo(/effect @player 14 0)
+                unbind()
+            )
+            sudo(/effect @player 14 9999 1 true)
+        ,
+            tmsg(@player,"You're already invisible!")
         )
     }
 <<<
@@ -352,8 +357,7 @@ vis:/vis = >>>
     @player = player()
     sudo(/effect @player 14 0)
     if(has_permission(@player, "powers.visifmove")){
-        @eventID = associative_array('id': @player.'visifmove')
-        unbind(@eventID)
+        unbind(associative_array('id': @player.'visifmove'))
     }
 <<<
 
