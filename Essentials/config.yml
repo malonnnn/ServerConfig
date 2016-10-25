@@ -72,7 +72,7 @@ teleport-delay: 0
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
-teleport-invulnerability: 4
+teleport-invulnerability: 0
 
 # Whether to make all teleportations go to the center of the block; where the x and z coordinates decimal become .5
 teleport-to-center: true
@@ -377,7 +377,8 @@ debug: false
 # For example, to set language to English, set locale to en, to use the file "messages_en.properties".
 # Don't forget to remove the # in front of the line.
 # For more information, visit http://wiki.ess3.net/wiki/Locale
-#locale: en
+locale: messages_en.properties
+
 
 # Turn off god mode when people leave the server.
 remove-god-on-disconnect: true
@@ -602,7 +603,7 @@ max-money: 10000000000000
 
 # Set the minimum amount of money a player can have (must be above the negative of max-money).
 # Setting this to 0, will disable overdrafts/loans completely.  Users need 'essentials.eco.loan' perm to go below 0.
-min-money: -10000
+min-money: 0
 
 # Enable this to log all interactions with trade/buy/sell signs and sell command.
 economy-log-enabled: false
@@ -635,7 +636,7 @@ minimum-pay-amount: 0.001
 ############################################################
 
 # Show other plugins commands in help.
-non-ess-in-help: true
+non-ess-in-help: false
 
 # Hide plugins which do not give a permission.
 # You can override a true value here for a single plugin by adding a permission to a user/group.
@@ -841,7 +842,7 @@ protect:
     lava-flow: false
     water-flow: false
     water-bucket-flow: false
-    fire-spread: true
+    fire-spread: false
     lava-fire-spread: true
     flint-fire: false
     lightning-fire-spread: true
@@ -865,7 +866,7 @@ protect:
     villager-death: false
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
-    entitytarget: false
+    entitytarget: true
     # Prevent the spawning of creatures.
     spawn:
       creeper: false
@@ -918,19 +919,19 @@ protect:
     suffocate: true
 
     # Should damage via lava be disabled?  Items that fall into lava will still burn to a crisp. ;)
-    lavadmg: false
+    lavadmg: true
 
     # Should arrow damage be disabled?
     projectiles: true
 
     # This will disable damage from touching cacti.
-    contactdmg: false
+    contactdmg: true
 
     # Burn, baby, burn!  Should fire damage be disabled?
     firedmg: true
 
     # Should the damage after hit by a lightning be disabled?
-    lightning: false
+    lightning: true
 
     # Should Wither damage be disabled?
     wither: false
