@@ -441,7 +441,7 @@
         @fname = '§cC§e§kO§9s§6mi§9c §4A§2r§9m§6o§4r §4S§9u§ep§9er§4man'
     }
     else if (@class == 'princessmononoke'){
-        @fname = '§fPr§7in§fce§8ss §fMo§8no§fno§7ke'
+        @fname = '§4P§fr§7in§fce§8ss §fMo§8no§fn§4o§7ke'
     }
     
     if(@fname != '')
