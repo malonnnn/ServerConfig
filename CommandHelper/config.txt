@@ -599,6 +599,7 @@ changehero:/changehero = >>>
                             set_peffect(@plr, 19, 3, 9999, true, false)
                             include('includes/changeskin.ms')
                             _changeSkin(@plr,'mutant')
+                            sudo("/minecraft:clear" @plr)
                             broadcast("§9@plr §amixed DNA samples and was turned into a deformed, freaky mutant!")
                             die()
                         }
@@ -641,8 +642,8 @@ changehero:/changehero = >>>
             }
         }
         
-        @num = rand(1,21)
-        
+        # 1 in 20 chance of machine going wrong
+        @num = rand(1,21) 
         if(@num == 1){
             set_pmode(@plr,"SURVIVAL")
             runas(~console,/pex user @plr group set mortal)
@@ -654,15 +655,8 @@ changehero:/changehero = >>>
             set_peffect(@plr, 19, 3, 9999, true, false)
             include('includes/changeskin.ms')
             _changeSkin(@plr,'mutant')
-            broadcast("§aSomething went wrong with the §e§lD§a§lN§4§lA §amixer! §9@plr §awas turned into a deformed, freaky mutant!")
-            die()
-        }
-        
-        if((@class == "cosmicarmorsuperman" || @class == "christianicgod") && @plr != "Tektronic"){
-            runas(~console,"/minecraft:clear @plr")
-            @fname = _friendlyHeroName(@class)
-            broadcast("§9@plr §7tried to turn into @fname §7but couldn't handle his §4§limmense power!")
-            pkill(@plr)
+            sudo("/minecraft:clear" @plr)
+            broadcast("§aSomething randomly went wrong with the §e§lD§a§lN§4§lA §amixer! §9@plr §awas turned into a deformed, freaky mutant!")
             die()
         }
         
