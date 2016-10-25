@@ -2955,9 +2955,6 @@ groups:
   cosmicarmorsuperman:
     inheritance:
     - mortal
-    permissions:
-    - essentials.kill.exempt
-    - ch.alias.*
   howardtheduck:
     inheritance:
     - mortal
@@ -4824,13 +4821,14 @@ users:
     options:
       name: Tektronic
     permissions:
+    - essentials.kill.exempt
     - powers.ow
     - -powers.wallclimb
     - rank.mod
     - icu.exempt
     - multiverse.access.anarchy
     group:
-    - cosmicarmorsuperman
+    - stephencurry
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
     options:
       name: Tamper_Monkey
@@ -4984,7 +4982,6 @@ users:
       name: meech103
   6db70079-8ab5-4e7e-ac47-720b5322815a:
     options:
-      prefix: '&7{&6Dev&7} '
       name: Jobberz
   ecf2a3f8-a999-4272-a038-eb617c369c93:
     options:
@@ -5001,7 +4998,7 @@ users:
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     options:
       name: Teddibearzz
-      prefix: '&7{&e&lD&a&lN&4&lA &a&lC&b&lo&c&ls&d&lm&e&le&f&lt&5&li&6&lc&2&ls&7} '
+      prefix: '&e&lD&a&lN&4&lA &a&lC&b&lo&c&ls&d&lm&e&le&f&lt&5&li&6&lc&2&ls&a&l>&7'
     permissions:
     - rank.mod
     worlds:
@@ -5025,7 +5022,7 @@ users:
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     options:
       name: AlchemySugar
-      prefix: '&7{&a&lVR &b&lConstructor&7} '
+      prefix: '&a&lVR &b&lConstructor&a&l>&7'
     permissions:
     - rank.mod
     - multiverse.access.sugarandteksworld
@@ -5265,6 +5262,8 @@ users:
         permissions:
         - worldedit.*
         - essentials.build.*
+      plots:
+        permissions: []
     group:
     - redhood
   f78f0cf4-372c-472e-865c-f1fc1cedadf4:
@@ -5532,7 +5531,7 @@ users:
   222c7f9b-6d5f-4e7c-9715-f17dba22a8c7:
     options:
       name: Jdroppert
-      prefix: '&7{&e&lD&a&lN&4&lA &f&lEngineer&7} '
+      prefix: '&e&lD&a&lN&4&lA &f&lEngineer&a&l>&7'
     permissions:
     - rank.mod
     worlds:
@@ -5608,13 +5607,14 @@ users:
   7dff91dd-96e6-4b73-9dfa-17992e055694:
     options:
       name: WittleTimmy
-      prefix: '&d&lD&a&lN&4&lA &f&lEngineer&a&l>&7'
+      prefix: '&e&lD&a&lN&4&lA &f&lEngineer&a&l>&7'
     worlds:
       '1_9':
         permissions: []
-    permissions: []
+    permissions:
+    - rank.mod
     group:
-    - shazam
+    - supermanprimeonemillion
   784f0e4e-d5c9-4184-8d86-4fdbb0d5fb87:
     options:
       name: Archer4295
@@ -6001,7 +6001,7 @@ users:
     options:
       name: GoldenFoxMiner
     group:
-    - ironfist
+    - kidflash
   1209d482-8690-4496-bc14-0f0dc1f3514a:
     options:
       name: tartanboy
