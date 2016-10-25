@@ -1043,6 +1043,9 @@ center:/center = >>>
         @ploc['z'] = integer(@ploc['z']) + 0.5
     }
     
+    @ploc['pitch'] = 0.0
+    @ploc['yaw'] = -90.0
+    
     set_ploc(@ploc)
 
 <<<
