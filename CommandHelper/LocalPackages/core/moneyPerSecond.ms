@@ -1,6 +1,6 @@
 set_interval(5000, closure(){
     @plrs = all_players()
-    include('/home/minecraft/server/plugins/CommandHelper/includes/isclassop.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/isClassOP.ms')
     
     foreach(@plr in @plrs)
     {
