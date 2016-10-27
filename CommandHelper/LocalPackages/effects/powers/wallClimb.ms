@@ -2,7 +2,7 @@ bind(player_toggle_sneak,null,null,@event){
     @player = player()
     @class = pgroup()[0]
     
-    if(has_permission(@player, "powers.wallclimb")){
+    if(has_permission(@player, "powers.wallClimb")){
         @eventID = associative_array('id': @player.'climbwalls')
         @isSneaking = @event['sneaking']
         

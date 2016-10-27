@@ -86,7 +86,7 @@ changehero:/changehero = >>>
         # If player is trying to turn into OP hero and is not a mod, throw error
         include('/home/minecraft/server/plugins/CommandHelper/includes/friendlyHeroName.ms')
         include('/home/minecraft/server/plugins/CommandHelper/includes/isClassOP.ms')
-        if(_isclassop(@class) == "true"){
+        if(_isClassOP(@class) == "true"){
             if(!has_permission(@plr,"rank.mod")){
                 tmsg(@plr,"You can only win "._friendlyHeroName(@class)." §fby becoming staff or in a server tournament")
                 die()
