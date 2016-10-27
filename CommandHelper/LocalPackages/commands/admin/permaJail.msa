@@ -1,0 +1,8 @@
+permajail:/permajail $plr = >>>
+    @plr = $plr
+    runas(~console,/warp survival @plr)
+    runas(~console,/pex user @plr group set jailed)
+    set_timeout(3000, closure(
+        tmsg(@plr,"§4§lYOU HAVE BEEN PUNISHED BY A MOD! §4You may be released after server owner reviews your case. Your case number is §a".rand(10000,99999))
+    ))
+<<<

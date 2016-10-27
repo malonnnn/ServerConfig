@@ -1,0 +1,18 @@
+nextnumber:/nextnumber = >>>
+
+    # This function is relative to the command block running it
+    @loc = get_command_block()
+    @x = @loc['x'] + 1
+    @y = @loc['y'] + 1
+    @z = @loc['z']
+    @world = 'greenfield'
+    
+    @block = get_block_at(@x,@y,@z,@world)
+    @ar = split(':',@block)
+    @num = @ar[1] + 1
+    if(@num >= 10){
+        @num = 0
+    }
+    set_block_at(@x,@y,@z,"35:".@num,@world)
+
+<<<

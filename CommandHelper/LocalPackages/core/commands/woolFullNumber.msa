@@ -1,0 +1,39 @@
+getnumber:/getnumber = >>>
+
+    # This function is relative to the command block that placed it
+    @loc = get_command_block()
+    
+    @block1locy = @loc['y'] + 2
+    @block1locx = @loc['x'] + 1
+    @block1locz = @loc['z']
+    
+    @block2locy = @loc['y'] + 2
+    @block2locx = @loc['x'] + 1
+    @block2locz = @loc['z'] - 1
+    
+    @block3locy = @loc['y'] + 2
+    @block3locx = @loc['x'] + 1
+    @block3locz = @loc['z'] - 2
+    
+    @world = 'greenfield'
+    
+    @block1 = get_block_at(@block1locx,@block1locy,@block1locz,@world)
+    @ar = split(':',@block1)
+    @num1 = @ar[1]
+    
+    @block2 = get_block_at(@block2locx,@block2locy,@block2locz,@world)
+    @ar2 = split(':',@block2)
+    @num2 = @ar2[1]
+    
+    @block3 = get_block_at(@block3locx,@block3locy,@block3locz,@world)
+    @ar3 = split(':',@block3)
+    @num3 = @ar3[1]
+    
+    @fullNum = @num1.@num2.@num3
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getVial.ms')
+    _getVial(@fullNum)
+    
+    runas(~console,/give @plr "minecraft:potion 1 0 effect:nausea power:1 duration:1200 effect:poison power:1 duration:1200 name:@vialName lore:@class") 
+    
+<<<

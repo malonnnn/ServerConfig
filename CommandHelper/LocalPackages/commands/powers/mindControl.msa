@@ -1,0 +1,21 @@
+mindcontrol:/mindcontrol $plr = >>>
+    
+    @plr = player()
+    @vic = $plr
+    runas(~console,"/icu control @plr @vic")
+    broadcast("@plr is now mindcontrolling @vic")
+    
+    @vicgroup = pgroup(@vic)[0]
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    _changeSkin(player(),@vicgroup)
+
+<<<
+stopmindcontrol:/stopmindcontrol = >>>
+    @plr = player()
+    @pgroup = pgroup()[0]
+    runas(~console,"/sudo ". player() ." c:/icu stop")
+    broadcast("@plr has stopped mindcontrolling")
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    _changeSkin(player(),@pgroup)
+
+<<<
