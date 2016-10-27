@@ -1,0 +1,83 @@
+# checkpoint system for players in parkour
+cp:/cp = >>>
+
+    @plr = player()
+
+    if(is_null(get_value(@plr.world)),
+        store_value(@plr.world,0)
+    )
+    if(is_null(get_value(@plr.coords)),
+        store_value(@plr.coords,0)
+    )
+    if(is_null(get_value(@plr.pitch)),
+        store_value(@plr.pitch,0)
+    )
+    if(is_null(get_value(@plr.yaw)),
+        store_value(@plr.yaw,0)
+    )
+    
+    
+    @pinfo = pinfo(@plr)
+    
+    @world = @pinfo[7]
+    @coords = @pinfo[1]
+    
+    @loc = ploc(@plr);
+    @yaw = @loc['yaw'];
+    @pitch = @loc['pitch'];
+    
+    store_value(@plr.world,@world)
+    store_value(@plr.coords,@coords)
+    store_value(@plr.pitch,@pitch)
+    store_value(@plr.yaw,@yaw)
+    
+    tmsg(player(),concat(color(light_gray),
+    'Saved your position!'))
+    
+
+<<<
+
+# Go to checkpoint
+gc:/gc = >>>
+
+    @plr = player()
+    @pinfo = pinfo(@plr)
+
+    if(is_null(get_value(@plr.world))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.coords))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.pitch))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    if(is_null(get_value(@plr.yaw))){
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    
+    @world = get_value(@plr.world)
+    @coords = get_value(@plr.coords)
+    @pitch = get_value(@plr.pitch)
+    @yaw = get_value(@plr.yaw)
+    
+    if(@world != @pinfo[7])
+    {
+        tmsg(player(),concat(color(light_gray),
+        'You need to first use /cp.'))
+        die()
+    }
+    
+    set_ploc(@plr,@coords)
+    pfacing(@plr,@yaw,@pitch)
+    tmsg(player(),concat(color(light_gray),
+    'Loaded your position!'))
+<<<

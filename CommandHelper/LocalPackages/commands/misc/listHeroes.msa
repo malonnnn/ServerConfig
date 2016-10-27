@@ -1,0 +1,25 @@
+herolist:/herolist $pageNum = >>>
+
+    @pageNum = $pageNum - 1
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/listOfHeroes.ms')
+    array @heroes = _listOfHeroes()
+    
+    @numOfHeroes = array_size(@heroes)
+    
+    @remainderHeroes = (@numOfHeroes % 10)
+    @fullPages = @numOfHeroes - @remainderHeroes
+    @whereToStart = @pageNum * 10
+    
+    @endOfList = 10
+    if(@numOfHeroes - @whereToStart < 10)
+    {
+        @endOfList = @numOfHeroes - @whereToStart
+    }
+    
+    tmsg(player(),"Heroes Page " . (@pageNum + 1))
+    for(@i = @whereToStart, @i < @whereToStart + @endOfList, @i++){
+        tmsg(player(),"#". (@i + 1) . ". " .@heroes[@i])
+    }
+    tmsg(player(),"Heroes Page " . (@pageNum + 1))
+<<<

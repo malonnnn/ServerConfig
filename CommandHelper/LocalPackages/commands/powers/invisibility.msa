@@ -1,0 +1,23 @@
+invis:/invis = >>>
+    @player = player()
+    if(has_permission(@player, "powers.visifmove")){
+        @eventID = associative_array('id': @player.'visifmove')
+        @filter = associative_array('player': @player)
+        try(
+            bind(player_move, @eventID, @filter, @event, @player,
+                sudo(/effect @player 14 0)
+                unbind()
+            )
+            sudo(/effect @player 14 9999 1 true)
+        ,
+            tmsg(@player,"You're already invisible!")
+        )
+    }
+<<<
+vis:/vis = >>>
+    @player = player()
+    sudo(/effect @player 14 0)
+    if(has_permission(@player, "powers.visifmove")){
+        unbind(associative_array('id': @player.'visifmove'))
+    }
+<<<

@@ -1,0 +1,12 @@
+fixskin:/fixskin = >>>
+    @plr = player()
+    @pgroup = pgroup()[0]
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    _changeSkin(@plr,@pgroup)
+<<<
+fixskin:/fixskin $plr = >>>
+    @plr = $plr
+    @pgroup = pgroup(@plr)[0]
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    _changeSkin(@plr,@pgroup)
+<<<
