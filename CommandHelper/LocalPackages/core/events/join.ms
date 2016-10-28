@@ -12,7 +12,7 @@ bind(player_join,null,null,@event){
     {
         @otherPlayerGroup = pgroup(@player)
         if(@otherPlayerGroup[0] == @class && @plr != @player && @class != 'mortal'){
-            include('/home/minecraft/server/plugins/CommandHelper/includes/friendlyHeroName.ms')
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
             runas(~console,/pex user player() group set mortal)
             runas(~console,/pex reload)
             runas(~console,"/sudo ". @plr ." c:/mortal")
@@ -22,7 +22,7 @@ bind(player_join,null,null,@event){
                     concat(color(white),@plr)
                     concat(color(gray),"has been turned back into a MORTAL because")
                     concat(color(white),@player)
-                    concat(color(gray),"was already" _friendlyHeroName(@class))
+                    concat(color(gray),"was already" _getHeroInfo(@class,0)['name'])
                 )
             ))
             die()

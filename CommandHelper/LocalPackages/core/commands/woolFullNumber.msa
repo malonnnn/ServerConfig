@@ -3,17 +3,17 @@ getnumber:/getnumber = >>>
     # This function is relative to the command block that placed it
     @loc = get_command_block()
     
-    @block1locy = @loc['y'] + 2
+    @block1locy = @loc['y'] + 4
     @block1locx = @loc['x'] + 1
-    @block1locz = @loc['z']
+    @block1locz = @loc['z'] + 1
     
-    @block2locy = @loc['y'] + 2
+    @block2locy = @loc['y'] + 4
     @block2locx = @loc['x'] + 1
-    @block2locz = @loc['z'] - 1
+    @block2locz = @loc['z']
     
-    @block3locy = @loc['y'] + 2
+    @block3locy = @loc['y'] + 4
     @block3locx = @loc['x'] + 1
-    @block3locz = @loc['z'] - 2
+    @block3locz = @loc['z'] - 1
     
     @world = 'greenfield'
     
@@ -29,11 +29,50 @@ getnumber:/getnumber = >>>
     @ar3 = split(':',@block3)
     @num3 = @ar3[1]
     
-    @fullNum = @num1.@num2.@num3
+    @id = @num1.@num2.@num3
     
-    include('/home/minecraft/server/plugins/CommandHelper/includes/getVial.ms')
-    _getVial(@fullNum)
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    @hero = _getHeroInfo(0,@id)
     
-    runas(~console,/give @plr "minecraft:potion 1 0 effect:nausea power:1 duration:1200 effect:poison power:1 duration:1200 name:@vialName lore:@class") 
+    if(@hero['name'] == "<open slot>"){
+        die()
+    }
+    
+    @dnaName = @hero['name']." §e§lD§a§lN§4§lA §fSample"
+    @lore = @hero['class']
+    @dna = associative_array(
+        'type': 373,
+        'name': 'potion',
+        'data': 0,
+        'qty': 1,
+        'meta': associative_array(
+          'display': "@dnaName",
+          'lore': array(@lore),
+        'potions': array(
+          array(
+            'id': 9,
+            'strength': 1,
+            'seconds': 1200,
+            'ambient': true,
+          ),
+          array(
+            'id': 19,
+            'strength': 1,
+            'seconds': 1200,
+            'ambient': true,
+          ),
+         ),
+        ),
+       );
+    
+    assign(@dispenserLocation,@loc)
+    
+    @dispenserLocation['y'] = @dispenserLocation['y'] + 1
+    @dispenserLocation['z'] = @dispenserLocation['z'] + 1
+    
+    set_inventory_item(@dispenserLocation, 0, @dna)
+    
+    
+    #runas(~console,/give @plr "minecraft:potion 1 0 effect:nausea power:1 duration:1200 effect:poison power:1 duration:1200 name:@hero['name'] lore:@hero['class']") 
     
 <<<
