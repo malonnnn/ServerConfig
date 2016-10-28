@@ -1,25 +1,33 @@
-herolist:/herolist $pageNum = >>>
+listheroes:/listheroes $pageNum = >>>
 
-    @pageNum = $pageNum - 1
+    @pageNum = $pageNum
     
-    include('/home/minecraft/server/plugins/CommandHelper/includes/listOfHeroes.ms')
-    array @heroes = _listOfHeroes()
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
     
-    @numOfHeroes = array_size(@heroes)
+    @whereToStart = (@pageNum * 10) - 9
     
-    @remainderHeroes = (@numOfHeroes % 10)
-    @fullPages = @numOfHeroes - @remainderHeroes
-    @whereToStart = @pageNum * 10
+    @plr = player()
     
-    @endOfList = 10
-    if(@numOfHeroes - @whereToStart < 10)
-    {
-        @endOfList = @numOfHeroes - @whereToStart
+    for(@i = @whereToStart, @i < @whereToStart + 10, @i++){
+        @name = _getHeroInfo(0,@i)['name']
+        @id = _getHeroInfo(0,@i)['id']
+        tmsg(@plr,"#". (@id) . ". " .@name)
     }
+<<<
+
+listheroes:/listheroes = >>>
+
+    @pageNum = 1
     
-    tmsg(player(),"Heroes Page " . (@pageNum + 1))
-    for(@i = @whereToStart, @i < @whereToStart + @endOfList, @i++){
-        tmsg(player(),"#". (@i + 1) . ". " .@heroes[@i])
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    
+    @whereToStart = (@pageNum * 10) - 9
+    
+    @plr = player()
+    
+    for(@i = @whereToStart, @i < @whereToStart + 10, @i++){
+        @name = _getHeroInfo(0,@i)['name']
+        @id = _getHeroInfo(0,@i)['id']
+        tmsg(@plr,"#". (@id) . ". " .@name)
     }
-    tmsg(player(),"Heroes Page " . (@pageNum + 1))
 <<<

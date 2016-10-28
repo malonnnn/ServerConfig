@@ -1,0 +1,12 @@
+id:/id $class = >>>
+
+    @class = $class
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    @hero = _getHeroInfo(@class,0)
+    
+    if(@hero['name'] != "<open slot>"){
+        tmsg(player(),@hero['name'].concat(color(white),"'s ID is ").concat(color(green),@hero['id']))
+    }else{
+        tmsg(player(),"§4INVALID CLASS NAME")
+    }
+<<<

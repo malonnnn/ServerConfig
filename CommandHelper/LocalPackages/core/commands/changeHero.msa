@@ -52,9 +52,9 @@ changehero:/changehero = >>>
         {
             if(@item != null && @item['meta'] != null && @item['meta']['display'] != null){
                 @itemName = @item['meta']['display']
-                if(length(@itemName) > 15){
-                    @nameTest = substr(@itemName,length(@itemName) - 15,length(@itemName))
-                    if(@nameTest == "§e§lD§a§lN§4§lA"){
+                if(length(@itemName) > 6){
+                    @nameTest = substr(@itemName,length(@itemName) - 6,length(@itemName))
+                    if(@nameTest == 'Sample'){
                         @class = @item['meta']['lore'][0]
                         @haveDNA = true
                         @numberOfVials++
@@ -84,11 +84,11 @@ changehero:/changehero = >>>
         }
         
         # If player is trying to turn into OP hero and is not a mod, throw error
-        include('/home/minecraft/server/plugins/CommandHelper/includes/friendlyHeroName.ms')
+        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
         include('/home/minecraft/server/plugins/CommandHelper/includes/isClassOP.ms')
         if(_isClassOP(@class) == "true"){
             if(!has_permission(@plr,"rank.mod")){
-                tmsg(@plr,"You can only win "._friendlyHeroName(@class)." §fby becoming staff or in a server tournament")
+                tmsg(@plr,"You can only win "._getHeroInfo(@class,0)['name']." §fby becoming staff or in a server tournament")
                 die()
             }
         }
@@ -103,7 +103,7 @@ changehero:/changehero = >>>
                 broadcast(
                     concat(color(white),@plr)
                     concat(color(gray),"tried to turn into")
-                    _friendlyHeroName(@class)
+                    _getHeroInfo(@class,0)['name']
                     concat(color(gray),"but")
                     concat(color(white),@player)
                     concat(color(gray),"was already that class!")
@@ -147,7 +147,7 @@ changehero:/changehero = >>>
         _changeTrail(@plr, @class)
         
         # print chat message about successful transformation
-        @fname = _friendlyHeroName(@class)
+        @fname = _getHeroInfo(@class,0)['name']
         if(@fname != 'false'){
             broadcast(
                 concat(color(blue),@plr)
