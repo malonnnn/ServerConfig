@@ -1036,6 +1036,13 @@
             'class': 'princessmononoke'
         ))
     }
+    else if (@class == 'rival' || @id == '149'){
+        return(associative_array(
+            'id': '148',
+            'name': '§0Ri§4v§0al',
+            'class': 'rival'
+        ))
+    }
     
     return(associative_array(
         'id': '',
