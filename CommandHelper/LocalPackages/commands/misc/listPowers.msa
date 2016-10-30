@@ -720,6 +720,14 @@ powers:/powers = >>>
         tmsg(@playerName, "/haste 0-4")
         tmsg(@playerName, "/thru (phases through walls)")
     }
+    else if(@playerRank == "rival")
+    {
+        tmsg(@playerName, "/rival")
+        tmsg(@playerName, "/jump 0-3")
+        tmsg(@playerName, "/run 0-9")
+        tmsg(@playerName, "/haste 0-4")
+        tmsg(@playerName, "/thru (phases through walls)")
+    }
     else if(@playerRank == "batman")
     {
         tmsg(@playerName, "/batman")
