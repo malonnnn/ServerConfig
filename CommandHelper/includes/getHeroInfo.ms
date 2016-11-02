@@ -1036,6 +1036,13 @@
             'class': 'princessmononoke'
         ))
     }
+    else if (@class == 'kingpin' || @id == '149'){
+        return(associative_array(
+            'id': '149',
+            'name': '&fKi&bn&fg&7-&fP&bi&fn',
+            'class': 'kingpin'
+        ))
+    }
     
     return(associative_array(
         'id': '',
