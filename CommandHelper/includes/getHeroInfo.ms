@@ -2898,10 +2898,10 @@
                 "/".@class,
                 "/jump 0-9",
                 "/run 0-9",
-                "/haste 0-9",
+                "/haste 0-7",
                 "/fly"
             )
-             else if(@class == 'blackflash' || @id == '151'){
+     else if(@class == 'blackflash' || @id == '151'){
         return(associative_array(
             'id': '151',
             'name': '§0Black§e§lFlash',
@@ -2913,7 +2913,7 @@
             'powers': array(
                 "/".@class,
                 "/jump 0-3",
-                "/run 0-6",
+                "/run 0-9",
                 "/haste 0-4"
             )
         ))
