@@ -1,21 +1,33 @@
 mindcontrol:/mindcontrol $plr = >>>
     
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    
     @plr = player()
     @vic = $plr
+    
     runas(~console,"/icu control @plr @vic")
     broadcast("@plr is now mindcontrolling @vic")
     
-    @vicgroup = pgroup(@vic)[0]
-    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-    _changeSkin(player(),@vicgroup)
+    @vicGroup = pgroup(@vic)[0]
+    
+    @hero = _getHeroInfo(@vicGroup,0)
+    _changeSkin(player(),@hero['sig'],@hero['val'])
 
 <<<
+
 stopmindcontrol:/stopmindcontrol = >>>
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    
     @plr = player()
     @pgroup = pgroup()[0]
+    
     runas(~console,"/sudo ". player() ." c:/icu stop")
     broadcast("@plr has stopped mindcontrolling")
-    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-    _changeSkin(player(),@pgroup)
+    
+    @hero = _getHeroInfo(@pgroup,0)
+    _changeSkin(player(),@hero['sig'],@hero['val'])
 
 <<<

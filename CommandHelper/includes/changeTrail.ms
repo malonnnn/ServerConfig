@@ -1,7 +1,8 @@
-proc(_changeTrail, @plr, @class,
+proc(_changeTrail, @plr, @trail,
 
-    if(@class == "thehumantorch"){
-        runas(~console,"/sudo ". @plr ." c:/trailsid pop" @plr)
+    if(@trail != ''){
+        if(@class == "the   humantorch"){
+            runas(~console,"/sudo ". @plr ." c:/trailsid ".@trail." ".@plr)
+        }
     }
-    
 )

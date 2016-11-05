@@ -1,0 +1,41 @@
+worldwarp:/worldwarp $dir = >>>
+    
+    @dir = $dir
+    @loc = get_command_block()
+    @num = 0
+    
+    @loc['x'] = @loc['x']
+    @loc['z'] = @loc['z'] + 2
+    if(@dir == "up"){
+        @loc['y'] = @loc['y'] - 1
+    }else{
+        @loc['y'] = @loc['y'] + 1
+    }
+    
+    @result = get_metadata(@loc,"skullNum")
+    if(@result == "{}"){
+        set_metadata(@loc,"skullNum",@num)
+    }else{
+        @num = @result['CommandHelper']
+    }
+    
+    if(@dir == "up"){
+        @num = @num + 1
+    }else{
+        @num = @num - 1
+    }
+    
+    if(@num == 10){
+        @num = 0
+    } else if(@num == -1){
+        @num = 9
+    }
+    
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getSkullMeta.ms')
+    @meta = _getSkullMeta(@num,0)
+    
+    set_metadata(@loc,"skullNum",@num)
+    sudo('/minecraft:setblock '.@loc['x'].' '.@loc['y'].' '.@loc['z'].' minecraft:skull 3 replace '.@meta)
+
+<<<
