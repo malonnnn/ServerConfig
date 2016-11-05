@@ -1,0 +1,11 @@
+powers:/powers = >>>
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    @plr = player()
+    @hero = _getHeroInfo(pgroup()[0],0)
+    
+    foreach(@power in @hero['powers']){
+        tmsg(@plr,@power)
+    }
+    
+<<<
