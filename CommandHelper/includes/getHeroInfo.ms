@@ -2885,6 +2885,24 @@
             'op': 'false'
         ))
     }
+    else if(@class == 'beerus' || @id == '150'){
+        return(associative_array(
+            'id': '150',
+            'name': '§5B§6e§5e§9r§8u§9s',
+            'class': 'beerus',
+            'sig': 'Ff35UlAyzOvUZxnDXimmtcr2pYL3O9m8Z9M58T6s8DNCPQ7p/Rmc3AkRb1ELzWUObYU3o6FXogrfubxerilqXflzrf9yEIEwXxI9PYvvSmr1FhfIfwsfeSAS5YgazB7UPDcjI2y1nDUttuyEtbBbOnOHEju5SdaOLQIP/LWeNhR+MNdSjja4e5rXIEMrY1vEtBq5KJn3EtHUzcHfLgeItUIc3qbb6trtZ8465D0mbBcQEM+HAiXBHMBTjo08mvCSkcesbZFG+RtSuzGabouJCOG2TvlaerBOPKmN3ZQuU+ommBPI3LRJ4XVQWlu8EMUFn70eM4zo71lQBHAyrhmOYL9uMmW1NV62SUSZXKZw6PlPfWhmR7zthxPR8gtmUo2uJdIMQBYE4KTxBk1jneuBWXCe/qiPe4Ax2TUNloqYUcW5t86Bwtb05THCsYuBzdX/QqCmArjFlHBg79hdVTAAyBVBrLZSC/N9yCknQKhzdDXPvjiZd36F1nuBNOwGVeX76/pY3wu9aLh5EHz01UZn6+L8UTGrODtZbhyoHTi36P4m8kGqMrktKYuaJVcYc+1m21qtXupQTszx+zMpj0G+nibl/uRwT7b5CwEoo/d7usSlyG6m2VHutR+kY+hHIO8VvRjz1m6tg0Snpjp313qsnozmbk31TtQKc9bQLdgp4Rc=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0NzgzNTk1MjI2NTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y3OWY3YThiMWRmMjZkMzExODgxMzZmY2Y1ZDFlNWY5M2NiNmVhOTI0NWM1NDBlNzlmOGVjYTI2ZTJkMzg5MiJ9fX0=',
+            'trail': '',
+            'op': 'false',
+            'powers': array(
+                "/".@class,
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/fly"
+            )
+        ))
+    }
     
     return(associative_array(
         'id': '',
