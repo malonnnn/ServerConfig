@@ -4,5 +4,7 @@ grow:/grow = >>>
 <<<
 shrink:/shrink = >>>
    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-   _changeSkin(player(),'darkseid') 
+   include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+   @hero = _getHeroInfo('darkseid',0)
+   _changeSkin(player(),@hero['sig'],@hero['val'])
 <<<

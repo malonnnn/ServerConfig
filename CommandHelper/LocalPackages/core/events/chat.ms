@@ -49,34 +49,6 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
-    # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
-    # -------------------------------
-    if(has_permission("rank.mod"))
-    {
-        die()
-    }
-    
-    # -------------------------------
-    # chat timeout settings
-    # -------------------------------
-    @cooldown = 3
-    if(is_null(get_value(@pname.'lastmessage')))
-    {
-        store_value(@pname.'lastmessage',0)
-    }
-    @lastmessage = get_value(@pname.'lastmessage')
-    @time = time()
-    if(@lastmessage + @cooldown > @time / 1000)
-    {
-        @timeleft = subtract(add(@lastmessage, @cooldown), divide(@time,1000)) + 1
-        tmsg(@pname,"You can speak again in" round(@timeleft) "seconds")
-        cancel()
-        die()
-    }
-    store_value(@pname.'lastmessage', time() / 1000)
-    
-    
-    # -------------------------------
     # Chat replacements for fun
     # -------------------------------
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
@@ -105,5 +77,34 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('~', '???', @msg))
     #assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
     #assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
-    #modify_event(message, @msg)
+    assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
+    modify_event(message, @msg)
+    
+    # -------------------------------
+    # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
+    # -------------------------------
+    if(has_permission("rank.mod"))
+    {
+        die()
+    }
+    
+    # -------------------------------
+    # chat timeout settings
+    # -------------------------------
+    @cooldown = 3
+    if(is_null(get_value(@pname.'lastmessage')))
+    {
+        store_value(@pname.'lastmessage',0)
+    }
+    @lastmessage = get_value(@pname.'lastmessage')
+    @time = time()
+    if(@lastmessage + @cooldown > @time / 1000)
+    {
+        @timeleft = subtract(add(@lastmessage, @cooldown), divide(@time,1000)) + 1
+        tmsg(@pname,"You can speak again in" round(@timeleft) "seconds")
+        cancel()
+        die()
+    }
+    store_value(@pname.'lastmessage', time() / 1000)
+    
 }
