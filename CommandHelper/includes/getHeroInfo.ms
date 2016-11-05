@@ -2891,4 +2891,28 @@
         'name': '<open slot>',
         'class': ''
     ))
+    else if(@class == 'beerus' || @id == '150'){
+        return(associative_array(
+            'id': '150',
+            'name': '§5B§6e§5e&9r§8u§9s',
+            'class': 'beerus',
+            'sig': 'Rr9CGXBnsoi7Cb1+zuDMReJVVECnIYOAyQBe0QB2kf1B9MAWHx0j+OFHiRN+71PJ9NV7ulVPVcGCQPGLG6EfMZcng6vrH6ZMy3crzYdYimwqoYCjjeFkdRDMFS7C2S7hWGLDV0U3N4W7BrA2QA/QfQCqfE7vPFGYS9pZFXBnYJ0WkoyJzjudo9BQinR4pW9J6FWFuTubCKPuNkalbLR9MfWqxkSjCgy1OX17UGPqYwG4CeRuBVPPdslYDsXEg5CThVPwG55m/dHVb8+eTiJSbwmXSmkS0iKNEpoXLqITt7KGKPn0P7g1QcaZukf682oi9lQqGFi592bWdJenla5+539i+mmGoEJ/QUy3izto0fKCg4CSRNVsZ7/OD7BWZGG8GM/PxyQrHCg5LD2fTTlQkLUmVklSWnhWlKOF4hB1zJDKtuNM3FEoSKT6p9AJCTn/BRG+h5kBMG/3xGvm7APEy7DEZBC0YQRXihPfyW89Chmmoz6h0bbzzlBQL1iVCr9/GVaq3t027hHgBaBGH0B+zutAOZcWs1gjW+Wi0Mlrl7RHqm38QwqI5SZIv7YOk1RrYP5fSFvoNoKMTdu2Kwf2k33igTgweFp1kK1HOvvzKuMO23C0rQ1ECszTo0HM46pAFiS/JpdMAD9aaVhryYyhBsL9tdePGZ3MGWwVMhxtZs0=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0NzcwMTI0NjA4MjgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRmNzI1ZDI4NTY4OGUyN2QyYmMzNTcxMWRlNGY3MTNmYzUxOTQ0MjM5MzJlYmZlMDViMjhjZTljNzJmOWZiZCJ9fX0=',
+            'trail': '',
+            'op': 'false'
+            'powers': array(
+                "/".@class,
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/fly"
+            )
+        ))
+    }
+    
+    return(associative_array(
+        'id': '',
+        'name': '<open slot>',
+        'class': ''
+    ))
 )
