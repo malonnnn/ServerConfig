@@ -2913,7 +2913,7 @@
  else if(@class == 'mewtwo' || @id == '151'){
         return(associative_array(
             'id': '151',
-            'name': '§5Mew§8Two',
+            'name': '§5mew§8two',
             'class': 'mewtwo',
             'sig': 'NHVwkSK7THzMJNMuZcMWWdIQW1HqUGXlWnN15J8a4MD56Jk70HFo6KHuxpa2+XEKGbppGRlUIB/huSFkD/0S7bT++gIk2OGE300CtgVsE5yi+Llq8V6QbJgm3Qjizz1ZKZ93h7TsL+qHhB8TdfWud13u6aZ8pZxLWEqExYB2Ko2gsT05ref+0afxT/7zDeXp1tIxDgCxFXEcINammlhNDWLcjYTH6B3cqmpcN+C8ji1+4n/w1dAPvzYzRITkHZVyiaekfjLd92ulgwHiWnyuaETVVBw0weMpFOdszIVlj5BaNT981lvsc8ire8rgU/HuS/uULLUV07OtuFpbAk7zhgdH+EzzIhycufUwsueLQFP6QKBONsheEln6delo+JWWtyRYe4D0OBEOVQLWjHTVK6WRK2nJdaFiEyJBVap0943jS2EyFeKA1rpj6t7eqcsbj1LxpM6zMNUGr03C3rOOjT7HwFxk+vPfP0EtOVbYtiXjWAP3O0AegtueBx/UKDBqDC0EfXZZRiBFFyn11bnZkDLc0/mUpD9MhM0fxvk8izn2PHXT5ugZ7Pldwk3/vWCgQIFQue5/yhyMZ1GhnkUDWtb5NOs4FrvEraJkl9X0HFi0chX/SHHrQWYgSkNaGBp+n/C+euXb2k+T9EZaboQYU9u9IQsaOOmoc9z91Wsnzjk=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0Nzg0NDIxNTE0MjgsInByb2ZpbGVJZCI6IjRiZDYyYzJlNTZlMzRmZjQ4NDNmNGFmNTFlZGI4MzM5IiwicHJvZmlsZU5hbWUiOiJ0ZWFtR0JOaXNiZXRzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kNmJiMmQ0NjQzNTk4MmZkNWZlYzExNmRiMjQ5ZmVkNGRjMThjZDE0NDQ2NmRiZDZkYmQ5OTU5NzRjZTYxOCJ9fX0=',
