@@ -2903,6 +2903,12 @@
             )
         ))
     }
+    return(associative_array(
+ -        'id': '',
+ -        'name': '<open slot>',
+ -        'class': ''
+ -    ))
+ -)
  else if(@class == 'mewtwo' || @id == '151'){
         return(associative_array(
             'id': '151',
