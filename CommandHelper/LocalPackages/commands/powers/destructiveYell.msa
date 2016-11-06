@@ -29,11 +29,7 @@ yell:/yell = >>>
             @start['y'] = @start['y'] + @y
             @start['z'] = @start['z'] + @z
             
-            if(has_permission("powers.yell.destroy")){
-                explosion(@start,@length,true)
-            }else{
-                explosion(@start,@length,false)
-            }
+            explosion(@start,@length,true)
             
             @start['x'] = @start['x'] - @x
             @start['y'] = @start['y'] - @y
