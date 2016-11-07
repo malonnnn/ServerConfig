@@ -1,6 +1,25 @@
-parallaxentity:/parallaxentity = >>>
-    sudo(/effect player() 5 9999 1 true)
-    sudo(/effect player() 21 9999 9 true)
-    tmsg(player(),concat(color(dark_blue),
-    "I'm a mind reader!"))
-<<<
+
+
+associative_array(
+            'id': '93',
+            'name': '§eParallax §6Entity',
+            'class': 'parallaxentity',
+            'sig': 'magmacube',
+            'val': '',
+            'trail': '',
+            'op': 'false',
+            'speech': "I'm a mind reader!",
+            'powers': array(
+                "/".@class,
+                "/fly",
+                "/jump 0-3",
+                "/run 0-3",
+                "/haste 0-2",
+                "/disguise",
+                "/disguiseviewself"
+            ),
+            'buffs': array(
+                "/effect player() 5 9999 1 true",
+                "/effect player() 21 9999 9 true"                
+            )
+        )

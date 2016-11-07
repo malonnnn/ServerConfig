@@ -1,10 +1,23 @@
-hulkbuster:/hulkbuster = >>>
-    sudo(/effect player() clear)
-    sudo(/effect player() 2 9999 2 true)
-    sudo(/effect player() 5 9999 15 true)
-    sudo(/effect player() 11 9999 3 true)
-    sudo(/effect player() 16 9999 1 true)
-    sudo(/effect player() 21 9999 14 true)
-    tmsg(player(),concat(color(gold),
-    "It's Hulk Bustin' time!"))
-<<<
+
+
+associative_array(
+            'id': '',
+            'name': '',
+            'class': '',
+            'sig': '',
+            'val': '',
+            'trail': '',
+            'op': 'false',
+            'speech': "It's Hulk Bustin' time!",
+            'powers': array(
+                ""
+            ),
+            'buffs': array(
+                "/effect player() clear",
+                "/effect player() 2 9999 2 true",
+                "/effect player() 5 9999 15 true",
+                "/effect player() 11 9999 3 true",
+                "/effect player() 16 9999 1 true",
+                "/effect player() 21 9999 14 true"                
+            )
+        )
