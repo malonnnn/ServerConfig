@@ -1,15 +1,32 @@
-redhood:/redhood = >>>
-    sudo(/effect player() 5 9999 2 true)
-    sudo(/effect player() 21 9999 4 true)
-    runas(~console,/give player() "minecraft:elytra 1 70:1 34:3 name:&4R&8e&4d_H&8oo&4d's_Glide_Wings")
-    runas(~console,/give player() "minecraft:ender_pearl 10 name:&4R&8e&4d_H&8oo&4d's_Grappling_Hook")
-    sudo(/shot give player() pistol)
-    sudo(/shot give player() "AK-47")
-    sudo(/shot give player() Hunting)
-    sudo(/shot give player() Python)
-    sudo(/shot give player() Putty)
-    sudo(/shot give player() Grenade)
-    sudo(/shot give player() C4)
-    tmsg(player(),concat(color(red),
-    "The old Jason is dead."))
-<<<
+
+
+
+associative_array(
+            'id': '34',
+            'name': '§4R§8e§4d H§8oo§4d',
+            'class': 'redhood',
+            'sig': 'P0PRODVDuiPXCSouTUgLfL92DbKbNrhYiXD8yyuQPwUDgvAbU/z7wwMk481JWqiWhbNQpzXQE1O5F0mIaTcW+pqKSE4tXtBWda+yIPCtyh9pIf3RYFB2KeM1SRGM7s74//zc3tEDIPf2tpvg95O0BqM/1nKsu8AnP8nTYpjDPH6QfVwB2W76i+YIMYYIRmGhmK2W68s3b0RNPpyGHO78yzNgpPkGGB4vqhz/RTGq62jX66SubR0m3Eix40jJ2cEF9ua9gowZv5x7XhM3Qz9gxF4muEpRdlirPRMB+vyWZp2io3TzSJAZPhTU4ssRRVkbpyiYXd1YvIyYaCrlM33RcVrsQOc4ReVPuAbK7aLkryK9AshqH4QF2kSl7FXQlGMTutEvIYFI8YGYNsS1AKA/Gr982IkbjLp8KwmUsDUbMciz/IXmewcjJP3PbLQrk7cvwAaBNiOz6J5wuRFZSEMfvqUtS1KWCZGErL0PynVGc6CCy2tICuEn/Vil2eDrS8dwzsMWGYh/2XwLWF3der8LTf8ng7m7m3zQd6v/vzOqhTiRzEdw8xGkK22ueGDXZ3mm00nt/tXXThM3/S7greuMqpwnukZpQo4IttaG9dIf7dVfAtFFTpmDsSPyVrdOcvj0ipbU+yd1XNehJO2Uim5vDVHdjeLlFS90nbC1lphWwPs=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0NzczNTY3MDIzMjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0YmRhZDVhMzk1ZjY4NDBhYzM2MTExYzI1NWM3ZDg2NGQxOTAxNzVhZmJjYmVhYTNmYjIxYjhjZGYifX19',
+            'trail': '',
+            'op': 'false',
+            'speech': "The old Jason is dead.",
+            'powers': array(
+                "/".@class,
+                "/jump 0-2",
+                "/run 0-3",
+                "/haste 0-2"
+            ),
+            'buffs': array(
+                "/effect player() 5 9999 2 true",
+                "/effect player() 21 9999 4 true",
+                "/give player() "minecraft:elytra 1 70:1 34:3 name:&4R&8e&4d_H&8oo&4d's_Glide_Wings",
+                "/give player() "minecraft:ender_pearl 10 name:&4R&8e&4d_H&8oo&4d's_Grappling_Hook",
+                "/shot give player() pistol",
+                "/shot give player() AK-47",
+                "/shot give player() Hunting",
+                "/shot give player() Python",
+                "/shot give player() Putty",
+                "/shot give player() Grenade",
+                "/shot give player() C4"                
+            )
+        )
