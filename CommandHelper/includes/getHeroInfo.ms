@@ -2901,6 +2901,21 @@
                 "/haste 0-9",
                 "/fly"
             )
+     else if(@class == 'blackflash' || @id == '151'){
+        return(associative_array(
+            'id': '151',
+            'name': '§0Black§e§lFlash',
+            'class': 'blackflash',
+            'sig': 'WDq1+16FwuXEy8YfSN4pbESLiw28DMUG3JpwVaGfHCTS7q/OYBvigv36LBlnrX1LXwx9n+pyZ+fq6OoXmH2Wr5NIYqJsYp/9WSPpzlOewb5RgmAchgV7ezInuT5etCCpYIPXeiJrkHFLIvOsaGzVArP8rRpmXFlEtJZt1KTlnEGIbWj7nzydQq+qUImLroJAkLVqphqv+I+If2HTYDUr5L4qrJ/1NpcwH3Sss15u9f6pMOZm1kthl23bxe3CIaO3wAVZ9wDrTBDJjmQOyJO3alVCfpyGWxa0070POM8/PxstuRsWzXU1Hs0JbeR/aUgVb8A8q2DANG58Fl+xW95yrdePxugK3LRzbFelxpVoXgNfHE7qxYGhRsSHTSnbuEIcn1jpJjbHlscSJfAHoPWM3B8d1HGSYG1xquOfhxbdzb+A0q+3ZJ57FGp4AuhdOhj27hEAXrgNzMJfbGdb3uCgf/gWasmH+9X3q/CupxE9zfUq4VhtmstD2xZ79nNd+dVCTHq8m4T1TnTW1JjCF3aaxE1W9mF9tKJ/uZFhfnCJm3VKt8JG73RCaYZkev+u7vjFe2mDWoYNrSwiOBM8T/RG6DFBjxWfLe3xaA0X8koRDuvaY1OXNAGXN+6/oXT9YxcUB5GVEg96X2RO/mU1KQ2PGphkNSmKOfwHzBymOvb4BvI=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0NzgzNjU5MDkyMjEsInByb2ZpbGVJZCI6IjRiZDYyYzJlNTZlMzRmZjQ4NDNmNGFmNTFlZGI4MzM5IiwicHJvZmlsZU5hbWUiOiJ0ZWFtR0JOaXNiZXRzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81OWIyNDhiMTQ1N2VjNmVjOTRiMjc4ODFjNGI0ODRlNTY0N2NiOTY0ZmI3MjQyOTUyYzAyOTMzODQ3OTkzMzkifX19',
+            'trail': 'magic',
+            'op': 'false',
+            'powers': array(
+                "/".@class,
+                "/jump 0-3",
+                "/run 0-9",
+                "/haste 0-7"
+            )
         ))
     }
     
