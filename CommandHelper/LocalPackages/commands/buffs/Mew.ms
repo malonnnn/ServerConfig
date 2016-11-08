@@ -21,9 +21,9 @@
                 "/speak <playername>",
                 "/grow",
                 "/shrink",
-                "/jump 0-7",
-                "/run 0-9",
-                "/haste 0-7"
+                "/jump 0-2",
+                "/run 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
