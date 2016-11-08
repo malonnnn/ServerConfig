@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '51',
             'name': '§cS§9u§ep§9e§9rg§cirl',
             'class': 'supergirl',
             'sig': 'ccxWzGt+poCGs/lNieBUMytCK2cQz0PYAbXz4i/xxIH9VSm/KOyJlsnXQLaCqMNPUCvEnLZKfz8L3wgGgZi3MmgddiQ1+8CGzYPEdfpTaSCSO4cbkG5FEp7eh6RRXHLzh3RdebYr9CNyPsn+ROufUFwJmKeIOE9TA1eAnc7iRZ5c++yk6+lyq90kCbk0yW9O5kNKgdvOTmQw3i6WbncGx4vX8FMIiZJgB0KMGKEbcllcaxUumJLD43FZVlkYl3iAb0T87XsifpuLpGqcsnZrjT0Lz/jdEEq9pzF4LgFTcNMUOlMhaIv1DsCyHNe0Re5c2Oo+ryZqoZQE/vxQ6t9RziiO+cX9SDSp2MKZTV67T3XNDIEcMOO4TpevK4jAZxul1g5/2AnVBHEtDkw5WVqFrl/Hjas70cHhL2kJpej1CsSaSnbLTalc5hrMOIruHlmR0Qe5Vc413jlA5gTcW8S2s3VIFhZEoVOgfYEfkYF9KVBZR+iNRXtQV65EAhsTiY1FkjGASYQWDkB+UXbgcx+bdfELmkHGZh+/3Wb0MohXT2Z8UXxmauWPGAG6/MsH1obWcSjszV6nfYi/ijZzyzcKCtyLzBKmujC4nQlrRrQnwUv0QlFf0mJJMrKGVynG00V4AyUikwH46zG6yDy2QDtRowgsr1K8+r2YpWkXXBYfgKk=',

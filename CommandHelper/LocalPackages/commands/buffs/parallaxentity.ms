@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '93',
             'name': '§eParallax §6Entity',
             'class': 'parallaxentity',
             'sig': 'magmacube',

@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '37',
             'name': '§7C§by§8b§4o§7r§8g',
             'class': 'cyborg',
             'sig': 'PnkQsIiNFisp5RZj560gNnddjccb4zIZZijvl3iq1Rtr9mvvgRVaJbeKoazCbDmPmGHKbuP3U+QVQw75h56YYEf1mV1KOlkqB9+xILkQvJeaHe5D+4dSWoG0v6MpGjpmmLaC92Mvu1Wyu56Mark9JSY/JYHWqv4REAQ9jd4Zy0oYjAdc952mIQCe6k6vRwrradP9fe9zHrU/1zK/iIIsOtqPT6bBXzA5ALGZebJ6zK5WyIAxuF/m6ND7TYw/UvxTA/YvBGiLa5efvaohe2PPy6bHeyZB6nsr+RHOqr3gSSP2qC/W60tHf2XL9Jwz3T6JRckxg52AATg5yE58KNCMGZRu2ODKJP8sS7mbbhkqWb5tPeOke0m20cP1TuEXbcsax8I9z41BDBacVPfJAGKf0y41rbpdZWmZDkTQKmEtJqlkg7v2oa6oaVBbBPon+eloMU/nVvdnp/9ZePelrOBG4h2KXy4MbHAfRnjYLy+ZWIBLZpGlWj+PL4o5Xoqueu5FiGtu2OFOeh5sI8cLdRtuKf497m+eo4jEsk/fxj5IATqfgCojTnR0IpLH2ntzSIZL/6Lb/3xxU/YU/aiY/xq3aSZ4ke9vyLXv/e4SBe+FW2rK9ASfy63Ujx0GZVqgXkl5qOBP3Qe8sgI+Mkd5OgwNE8UOWfBCEfHS8THtmx12+r0=',

@@ -3,7 +3,6 @@
 
 
 @hero = associative_array(
-            'id': '29',
             'name': '§5S§0p§fid§0e§fr-§5W§f§8o§fm§ba§fn§0-§fG§7S',
             'class': 'spiderwomangwenstacy',
             'sig': 'Pa995mO81YY6e7N7FwyEoUjAwyRrtNwhLArTI/Jb1wS7ylfTNlEJ87VbX3zIzOe5NQr3uCyxPnqBsv8zPMWw/3qrZlBDo9YW9h4kR4ghdVE78ipyBvPeLMNhuCqq/cQzl3Nd+nAanL8AMSfVlwSpUaRDH07NC5OWwyCihaxViqBJ31feldc1N+WpfrL78pzU1O4vQwnm7Kk45kqA2C7GOcIHtuq9FooTViiZGMDw5froSuwueZ7VnfVJbBVVrUZXfWr3+bIWX9P/W6LQ99BHMQMe8FzRp+EnngCZr1Lfn+sPO3UZumMjrLhs+Bwn2nhB2sqcDnLupZHq18rXzwa+32BF5omM983h4SpbYXC7xBMVmFfZkHawanYQob078fGEgJJt/mix5EYXeKbfC0RjBPPH3lySRRcZBAEyITlK9Jtc9JAin8VSERdvTBERE2tlZgdHrWl3OxVBBaPWPbQSF4ot9OsAaSYRsTRLAA5v1bP5gOugmt4Ej7DIU+0ucztCHvMzsA3Mz6Cst4zkThnX5aqGoi0utYMEpUPuEnK0+O/EHbMp8sz3Sv0kycCsIUHIJIdRVRT2DCVEpYJUOQgK9kCDJh4w5Hrr8Bb2CEE+28C3Hv63h4RHo7HPF+EqboRkUdMsmX317+JD8hVi8oSDYq/Wi833Mv5sCFXJoIjNCSY=',

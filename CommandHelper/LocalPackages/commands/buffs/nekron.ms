@@ -4,7 +4,6 @@
 
 
 @hero = associative_array(
-            'id': '142',
             'name': '§8N§7e§0kr§8o§0n',
             'class': 'nekron',
             'sig': 'ffLTiWI8TkHBbac9KrnEZE0HA7jch63iLk4bp+3jzrfHdF90ibLJcaJfavIfvSvxPUAubRj5p4bsj6boib/VPy0gPxgN6cMYZCYEnNtgm6pOJOI9S74UwrHgArD82UxyXgEyShSUBL3gBqpc80ZN3uBRVEb5n72wYyq+35ipWx816gtWx3XiOEZBJMlNML+g9HaP9INkhcsztu5uQag+n3DePhkvh8tjqF/9iv4snj6LAI1vKkfzuaUYjs2B1fJFRqHSQ9OxdwpFntqNht+dHpZMjfaNpymYv7dgMfSrxb7HjqHZOSEa3EbbyGo2D357te6SntpKW62/QTmu1IjptxY0Tf1E3/HYW4hfZi+ZVoOhVyeFsMYegzr4lvPLrHQDmvoIy/KMflzdwMVemK7TxN4ccP9MSdPFeYOVCh94lhMGuch2mzZpx989mr8vDKcMdJI4lg+ivM2STg2aRsk4lOODRAMx0dIOEV96oYTZy8wP9jKbs92dyau5nR3zeYl4OUj0cva6jbDuannTYHebeVdfCapLnTL0zgIfwlg3omef8wy/RY5vQWgDmFEq4cY7mu2XU/HCluW7rWULNuHGTJX5+aDarJQdYyGwFPXp4NoS8j42reu5FpzGo0R9ZDAeCkvFIy6xf21ZHcwGlYjHG9Ml0CtQmAkDnrTBkN+faNU=',

@@ -4,7 +4,6 @@
 
     
 @hero = associative_array(
-            'id': '126',
             'name': '§8Nick Fury',
             'class': 'nickfury',
             'sig': 'nymD/M4zCIPgyWicEfJ+9bRU5eqmKpjixA8GAyN8sQPhu8/BWqkpjiwGC+NEEoRWbc6DwSiWD5X3ZXcH2r0YpdWbi+7cJifWeh7zBGVwn4LpQ75hMDE1OM+UcIKJ3jg2D96DOZU5OuFxrkpmGRqMXzV758fxsnB+kbWSIoKlqMqw0bodA6shrDXGi4h0NbnAVIaneVrDON7HgJZqUotzZHPDj198itSX/R4bomhUjVWYmb+Sg50zuzuVeD5A8a0bNfDKg4vIU+OuLKdtQPugGwY1bhNyxCt6l8bDEkwu64scjrISWlG7K2f073XWmEQcVZyPVKPWo3rf05KL2E7hdHVpoApy35qOCeRkPt8/fAmo6f1GpQ0tNa2kpRB20ejPU+KL6e/y4IE3K7n2uve6mN6xdtM/G/tC7I2MLGCVyZfDbjHZodiFQIZazslqbs1UyyR7iO5JztvJdixlZHZ8kFBBTsyr4+7xXXSmtf8tSvt3gyUMYRLx0fiOrV6zUooYELtKofF31c2KllRCrGAFOPaLtcNWym4vlalhNzFZIu464CR4nfhgkpuJjMVqnjUCwWnnl88pWTlS2AUICUaNyD0eQAaYtQ1bTim8pbkigdW27uS4pJ3nct4kI0CwaYx+C74Ag5hHhvQgBUbTs1FU4nHR8Ihp260cWXx7EQKDmes=',

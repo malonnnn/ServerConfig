@@ -4,7 +4,6 @@
 
 
 @hero = associative_array(
-            'id': '132',
             'name': '§7B§ea§0t§7gi§8r§7l',
             'class': 'batgirl',
             'sig': 'VY19i44SkdKND7sGNyjSZ7q8k6co3Oh4UcGMkL6MC0pbssGsFQ914PbfmskDoUdpSs8rHKYSARIIua/oWPy6mMRtNVTqpM87oEMVqiubcjjaEiS/rIcWkaASc/9RcUhTIDcX19gpJoII0Q9XjmEnmTBwIxrsLcolxiPUDLqAUFP9Bbc3aghB2TWkNza08JwEMcyKGDwWt8dXtbFDP7UARwiA2JUUaBPzw5jnxg35YL5agtt3J6vOUgpraRnIXVNWpgVG2o5N0cPLDU7yll1KS2VaP34ewCSRCNosKY69wUIsz66VcDVqkwDZVMW5eee3VKcp8d72jqtMGbBscqGCAXUO9a0wkGzAQjmHxzxBjvj6pv2Zo5cMUiQKPaHxJUMg1mFxdmENoqySdAUYjx5rykwbTq1A6RPfSOC2fzaCuSuI+ws4Coz+6avKyn/JuJKLgK4a7sebHs650e3BIfwSFhGUs1Y4a26z2PTqJXbB6F7e29CARrYYbIejm0/qyaDKKzMx7urjvf2AeRMwiyhRu89M/G1GAzmLIW/91QdgeBX+F4ztZgC9GCJOOPHy0Bfe+ZY/CayKo/jqHyVSAtLVb6VeBb6Yi1t7/4WmgCQKo5HtBCgLEhzh8RmzSZXqd7hRYObxmztvi93IZUfoINFc1Sq7+kg8UECjPeo+iy5iADI=',

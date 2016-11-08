@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '1',
             'name': '§bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn',
             'class': 'doctormanhattan',
             'sig': 'jvRQbVMc9Cgziqz7KywUxL0TeTV7/op88ZgfbywriuP56RscgaxCR6j1/Ewv2I5maP8rCEcA6UBEUjbeNpzbUdDmVZsN2fNDnVZ6YPdlbAwNT3Cco1X37rzBvC4n1RbYBDTyiRq6N3/J9hPDHFqBZslf2rWhypOgzQCQEo026HNivyntRHwqqkpkOcUv2sQgTOHPpeamKru+8F2i6OdndHiHS4qqJ1CVY3LsowmY7eDyCOXVRbkhtjzvmQ/7YiMKthVriKpLVk9pswAKi8yfRgd9ov+7UZQWP99lY23JDmkGsJkvwINdNOJxatgBoakOaMwUQ86AJMSeViIOFm0cQ2zDPy1eesDEHkPfiJtp5XVUfhvH9L+Bga3MJznSbe0QspT39J0hZ1VrfGALBf8rff7GXFY69Ge9KRFsptowc0OkMqeHh1IdEIjSP0RJXTlckGeIdIkF0GRw8VHM6mvn4jlcg06BLHnhc79Jx1saVQPQWapP8O27YIZVG2ZCgQIgw3gzfbdWqfqJPGuob7nWUhW1djVOFkP/kFp1t9MrG/phClEwNmybQwrpk0VpX61Ms8cUEw0L/owwqePuzB0Hkh+v6sTgMCAk8FaElYZ9e4IVbeCMqKesNMO6voI001N/dtX691FtByLnTMAqLKZsBAfn3k0gDIor5zVlNzS1q+I=',

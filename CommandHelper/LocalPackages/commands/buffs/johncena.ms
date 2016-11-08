@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '115',
             'name': '§fJohn Cena',
             'class': 'johncena',
             'sig': 'iPV77JY8R+xHYNdBDqLhDHRZ4aZjroPykErQ/ndNSS92YajtqVSAsgzKDK5sEarawcmgxj+clBf6GQ4LhS0Q3fu0ZvSd5FUMcNgCTPrnkqfBXdtfasls+r0DB+H5Dc+qEcPAYl9Q1T6JcJBMefn2D0DaUWQNDHrdRIROIBUQkPa4sn1WAHxEnhD2N5wf/wQlVzjkpocpp1szUW9zxFikCn2ALoMzPF6CNEWUljOzIYR+t1OHkHu1Hk179hsheTWifddGcZo0an94GDdphGSGm7RnvQYMOmEysPfIq1TGDLekPXhCUL7f+3xv3ja9eJg6B6NuscnJ4oMTnZ4HcdY3RMfOQPTW6I/G9coSc3BaDtH23fGfZMvmhNcX4GqTapEDqj9gEV3W2dwBbJSFZXAX0m3fRiZQBWdZU2tt4i5npNVjm9e7OahEsbu0MdH2Ord+lwMhYERvUjjbhjMCJZ4ktIqQQLCPLilDU9c0JCwwnJtoLQXfdLwktvXKGt0odnbbFyKcQIDDDUj+CaVZhRtcNMo69wpijvUSZIlKM1oXJ3ZD1VH2rB6Xjpkbp94WVGtklc3mPEZWWTsc9cudphx7MPs3PYwjv6U83Cqv80ni0iKPZuMnrsXMugQFhhPrx2ru+KwBuwzf8pjCc+DmNauIVerdTB1qofxrWZImb/0LcIo=',
