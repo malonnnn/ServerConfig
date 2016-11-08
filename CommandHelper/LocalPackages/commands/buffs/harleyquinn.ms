@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '107',
             'name': '§4H§fa§0r§4l§fe§0y_§4Q§fu§0i§4n§fn',
             'class': 'harleyquinn',
             'sig': '',

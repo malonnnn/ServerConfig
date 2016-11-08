@@ -1,6 +1,5 @@
 @plr = player()
 @hero = associative_array(
-            'id': '5',
             'name': '§4U§2l§4t§2r§4a §4B§0o§2y',
             'class': 'ultraboy',
             'sig': 'IPLtNogNaig04Om9991SvYRsp2/9jgwbCI4TDZviJOqqAIgo/FwJwEqsoDxW1dqSI+mp1z0mML7HajbPilISOax+8Bzc6cluaOrBKQwRWmKLuxoOUZukem+GCZcDXNGPQjI44V4rTPWHIS0WA2uk8nRy9s5HjyOyJQPyR5mO1PwpTOuqKtx20KqBtcLIvxfN4VCvyWHsBJHSZwXYPCPYNLnk65aeH3SY+4uTfaWXOrDgz93hMrRBuRKo5n4ahteWtovaUQgJIW73Y0ynV5JiVy678l41u7370Jgj3iJaEEzGlZOLhznlfea10U3/tBt4J1JxD61FWZCHLkbOvt3+i4VcrzoQdJcVXZLuOIbUZZ4GVNOR0PiwVo2nP4ZVPxBhRSG+fsqQQj0XYz7CqsNuRKWaaao6KTUwF/TqSvmDPNwnW+4QUlrZpFzF5FC+bRy6b6rnZpDAnG78rhPgN5QEEc21/7U5Qy4ONmhffrnLklQDKxYA5WcduEceGJde/ldXKXVNQcYUuLcA0X9mq9HyH+n2A1lKYyY5wmFo1eyluyXsSWxy8YZMwoT/sNkcvbkXxvnuHzxW7VMF3f4QDUK04CAgUjaVxPRWOUb7gP7JgAjPOWDxwR2/TRpWYkyby9R16W0BAMmE4rya5bmJzSlFuuCHlveT2Lp3Hd8Eog1HD5I=',

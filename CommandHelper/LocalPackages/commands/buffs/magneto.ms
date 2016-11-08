@@ -1,7 +1,6 @@
 @plr = player()
 
 @hero = associative_array(
-            'id': '76',
             'name': '§4M§5a§4g§5n§4e§5t§4o',
             'class': 'magneto',
             'sig': 'uK6yrjF6fTCe/AWAI9Vnmh0U0ng2RewCb9OA9g+SQITHYkew4/wpO/Frvtb1sWnszBEAfHrXrl/vXtV3pTwOzzMN3YB7M34Qo2Z/KS9TassekOoAGGZTaJDK4JpOCdOOGnemJI1YI8X5Eh4ROPdR6DyvfnuK4MfMgJr/I8sCX1tReyv1JvuPVkeprsdGUSUmETdHLYL31fvOM/Zp97FkCiTB3AuKMawZWCE4s/dGBN+qqI6Iw8Qw+lhzT4OGssBUXET5gZ9eVV0HzPbko6P+R9kNYY9e1PRZVI4ZkkkCo13x5Sos8iic4Ei2D7rmDqg16dM9jYP/sHH/+n2kUavR6NieyRgb5dgYDSiQvgJR+F1iWsZ312ThnwVydgVFp+S/tBd4OjXJmGNFWtNAg2SU6XsRw5lQ9MZKwhihgp/MND9B4tRT/Iz2O83Qz5Iq92xRlBUHNdA4aJVA1Ndxo4RFn3w7bnTPzZgcG2xpxwS7Gg7MqvucDbqfRPd3hxckC5zsZGiR+Ju9zAi+gGe05Sn0uCxDHCbRnRyDqFnGAW18EXpSdRfJouN8NTm8LxB7V84EJrWjJU2UzdzDJgC7Vb4pXfIEZRpDtZiryI5zk56/C5i3U/En9sbsbASRbbCihhM2b7QS3uhlf/8s/w7TPYiazwlgZZ0PpENDZo82RBmrweo=',

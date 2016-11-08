@@ -1,7 +1,6 @@
 @plr = player()
 
 @hero = associative_array(
-            'id': '119',
             'name': '§fJo§2k§5er',
             'class': 'joker',
             'sig': 'AwQXimwxx8rTzOYRYqOVy03JYdNhKcjcc9TpQj+CybBC1Nf/mKV5kPk5AMpxPxA+DPvf+bxt4vdC5tUn+mQ8hvRymcidxr8ST4Ztdy6EYsmo3seAzONko3tSq4v5ccoSwVTbnj/6Hp5XYJMkBEik7Szm7rnz55dvl/MHTnc6TQ2dto9siCUu1GX35AqsiQHBBQ6XlKPAdegEWL8783aSs542Inad0uvq2b3nG3cnP1PXES6qCLxPKciKf+lwasIIqFyU+3qXIDxw8CsXpISGhvj/JQv+Snn5sjvWK/vSlxm3W1FRAZJSYdHAK0HkF7gOnHuoKYQ7eEe6LVmelQ71h6t3PpvGBXaV6wnetnCN9zv86SbOhiotOT+7FW0KVext6uY7XfLYPQj+ggLsIhKzFPw6RiCH7Xj2J8b3Gwo9spUGcFvfzLUMIv37Nob1b1QQ2jU2MZFVvCJSh7TOrzdKFrge1rG49CULt8wtwPI6PfOEVi+iXOpGVQinu+ANBDuMbR9dI5bkuFQ42vn01e0bIgbPJb12GjBjiWRmaZEODlzt31/EgOJHzcaRi5dLaUz9TmLn4XeVkczqy1SVwNCAfn8G8b5HlPreGGCDEL2NaRE1BfHzQ1fbvhJ/NI41yuimbfOxidw4cnQuqmq42Vjxqry46lQK9b7/Nsx21k7MtYY=',

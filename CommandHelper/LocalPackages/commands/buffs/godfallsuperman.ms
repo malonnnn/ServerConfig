@@ -4,7 +4,6 @@
 
 
 @hero = associative_array(
-            'id': '140',
             'name': '§4Go§7d§4f§7all §cS§8u§cper§8m§ca§8n',
             'class': 'godfallsuperman',
             'sig': 'oQdv4swuIAOYhsQnK0HzmhPd2mnoarG6vHZHEbVZSQRK2ev2D8dBp8JqdDXkoeIJbNozDvOPIfhl8XdGJK0OtHvEtfbpT1No5E9dmbjxO/oRQjllw2YYlLhUC+YUt3QQEi9nk3ZbZIj1sLUO7imAG4tW1uLPy/9grsIzrpCRaV8ugqsFS06AykmZZ5aJOlv9RJnCQy51zPf3wR4TGdY47rtNPL/1gfgozkcOH8ejTX4RljcB37r+ecGDPrKCQ/xSYdSIOn5aFi8Zqh2KuMsbpbVOerMKelJYUiuO9YbSC6o64kctTvjt6V0iTwnqIf2Ve5WRfJ6fUM+3SCH75Ph8y2/quiD211XzFHCZmPO9giluh2uFki19tVSt2SNJPmv6DUGzJ8O16a1AkWPv+oHSeOArGzEEu2rMj585f+AgFpnDBHeNTxg0QKAde812AFF+OaQkXiYy41WmP3UW5lb3aWAV4JDlCvOKDZccaWkvvIK8POUM7U8hoQTtmGsW30ZyAS4ImaILzp2F/2CN3qibH1kgMZz8tNmxruit+EyB9oSdu/YlgvAvRKD3BoxWOUTZohd4k5npzHt4abTYZRbHJ0P9ZOb70UtcnRMI9JIHcKpvBHHh5nEHC4srOCqhKg0VQRYp1QA4RIYMgVkPDkLWp6rXIQ2JD3leDAtBFNEyiak=',

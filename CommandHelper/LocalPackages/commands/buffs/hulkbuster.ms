@@ -2,7 +2,6 @@
 
 
 @hero = associative_array(
-            'id': '',
             'name': '',
             'class': '',
             "/buff
