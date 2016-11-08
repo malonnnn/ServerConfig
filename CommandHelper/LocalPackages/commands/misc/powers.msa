@@ -1,0 +1,10 @@
+powers:/powers = >>>
+
+    @class = pgroup()[0]
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+    
+    foreach(@power in @hero['powers']){
+        tmsg(@plr,@power)
+    }
+    
+<<<
