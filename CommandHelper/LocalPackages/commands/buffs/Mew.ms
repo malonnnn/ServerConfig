@@ -17,7 +17,6 @@
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/tp",
-                "/empower <playername> (gives player strength 10)",
                 "/speak <playername>",
                 "/grow",
                 "/shrink",
