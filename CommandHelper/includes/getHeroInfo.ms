@@ -2903,6 +2903,31 @@
             )
         ))
     }
+    else if(@class == 'mewtwo' || @id == '151'){
+        return(associative_array(
+            'id': '151',
+            'name': '§dMew&5two',
+            'class': 'mewtwo',
+            'sig': 'XU2GaO9o5TqlLLFGl3jHuKAIf15vb/yl5qwy99UW1TUT5bwpRF5wAoMPokOWrVaoPfeCLhOAF3lHFaj+CGDM6wnC8TUMqT1ubW0FuOMD/YA9AMg8CDA1/AvhaxpQs7KPC9o6srG3PtuUSVigH6lWldHUiaQe4VJGFmuWZ5Mr9qAkyUReao6Xy+pUQwDZ3BKhFG0iFWBpMnkjAUtU0TFYwqfR1K20SoXgSxCx5+YgBFksBffzsa34yT9FMPnuKqCn9zkrEgnfSGz9UtCmYTqn2E022kVNEV32eppJ6yDYPzb9Q3olOkqjGAwa/AEbJhYK9Lffnm6fTai1+K7bctOJyLn9Mf3usGaa6IsQC5rO1NW7l5vv4Cxt9iG1rmfKc80T+wWBNjewiVHqV7LhvjdeO8UCPutTlSB2pCP+1CyNZRycro1MxpDYJjxqjV3z07JdxojlPlK9ZHNwFWNe3Rd6+amK7yV9pCMv7vQFZc5nxf/1VOOvp+8sN8y3uLCT1ZytaxykRhRxyLmy6HHQgx/R/vlKR7YzRM4ws/vZuHSIFTIggRyZX5/OEX7yNRLhIqezxiDtUUhddO8Yg9c5H1SS4F2pBETlnQG6+CPvYy4E4l9cNC9XkRdbjT7CnS0MYdDTIev7R++V4pSWm0PeCzyp7aKokVz6/2PKDbGGZsf76QU=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0Nzg0NTUwNzc5OTIsInByb2ZpbGVJZCI6IjRiZDYyYzJlNTZlMzRmZjQ4NDNmNGFmNTFlZGI4MzM5IiwicHJvZmlsZU5hbWUiOiJ0ZWFtR0JOaXNiZXRzIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kNmJiMmQ0NjQzNTk4MmZkNWZlYzExNmRiMjQ5ZmVkNGRjMThjZDE0NDQ2NmRiZDZkYmQ5OTU5NzRjZTYxOCJ9fX0=',
+            'trail': 'magic',
+            'op': 'false',
+            'powers': array(
+                "/".@class,
+                "/fly",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/tp",
+                "/empower <playername> (gives player strength 10)",
+                "/speak <playername>",
+                "/grow",
+                "/shrink",
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9"
+            )
+        ))
+    }
     
     return(associative_array(
         'id': '',
