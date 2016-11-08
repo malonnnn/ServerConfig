@@ -43,13 +43,22 @@ changeSkull:/changeskull $machineNumber $plr $dir = >>>
     include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
     @num = _getFullSkullNumber(@machineNumber)
     
-    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
-    @hero = _getHeroInfo(0,@num)
-    
+    @stdout = ''
+    @hero = ""
     include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram.ms')
-    if(@hero['name'] != "<open slot>"){
-        _updateHologram(@machineNumber, @hero['class'])
-    }else{
-        _updateHologram(@machineNumber, 'remove')
-    }
+    
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                _updateHologram(@machineNumber, @hero['class'])
+                
+            }else{
+                _updateHologram(@machineNumber, 'remove')
+            }
+        }
+    ))
 <<<

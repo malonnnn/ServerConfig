@@ -1,12 +1,13 @@
 bind(player_join,null,null,@event){
     
-    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+    @class = pgroup()[0]
+    @plr = player()
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
     
-    @plr = player()
+    
     @plrs = all_players()
-    @hero = _getHeroInfo(pgroup()[0],0)
     
     # -------------------------------
     # If joining player is jailed, undisguise and clear inventory
