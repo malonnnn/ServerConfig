@@ -2903,6 +2903,13 @@
             )
         ))
     }
+    else if (@class == 'quicksilver' || @id == '148'){
+        return(associative_array(
+            'id': '149',
+            'name': '§bQu§fi§bck§0-§fSi§bl§fver',
+            'class': 'quicksilver'
+        ))
+    }
     
     return(associative_array(
         'id': '',
