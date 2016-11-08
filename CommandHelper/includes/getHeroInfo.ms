@@ -2903,6 +2903,13 @@
             )
         ))
     }
+    else if (@class == 'kingpin' || @id == '149'){
+        return(associative_array(
+            'id': '149',
+            'name': '§fKi§5n§fg§7-§fP§5i§fn',
+            'class': 'kingpin'
+        ))
+    }
     
     return(associative_array(
         'id': '',
