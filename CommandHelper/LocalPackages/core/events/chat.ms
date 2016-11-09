@@ -12,14 +12,14 @@ bind('player_chat', null, null, @e) {
     if(@msg == '565')
     {
         set_timeout(1000, closure(
-            tmsg(@pname, "§4§kk§7Retrieving classified image for your viewing...")
+            tmsg(@pname, color(dark_red).color(random) ."k". color(gray) ."Retrieving classified image for your viewing...")
             set_timeout(1000, closure(
-                tmsg(@pname, "§4§kk§6http://i.imgur.com/tlypRN9.jpg")
-                #tmsg(@pname, "§4§kk§6http://i.imgur.com/0od9K1R.png")
+                tmsg(@pname, "dark_red).color(random) ."k". color(gold) ."http://i.imgur.com/tlypRN9.jpg")
+                #tmsg(@pname, "Â§4Â§kkÂ§6http://i.imgur.com/0od9K1R.png")
             ))
         ))
         cancel()
-        broadcast("§4§kk§9".@pname §7said the secret password for superheroes!)
+        broadcast(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
     }
     
     # -------------------------------
