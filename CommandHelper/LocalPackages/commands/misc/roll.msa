@@ -1,7 +1,7 @@
 roll:/roll = >>>
     assign(@lottocooldown, 60)
     @plr = player()
-    if(not(equals(pworld(@plr), '1_9'))){
+    if(!has_permission("command.roll")){
         tmsg(@plr, color(red) . "[ " . color(dark_red) . "Error" . color(red) . " ] " . color(gray) . "You don't have permission to use this command!")
         die()
     }
