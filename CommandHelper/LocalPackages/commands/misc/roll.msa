@@ -14,7 +14,7 @@ roll:/roll = >>>
     if(@lastlottery + @lottocooldown > time() / 1000)
     {
         assign(@timeleft, subtract(add(@lastlottery, @lottocooldown), divide(time(),1000)))
-        tmsg(@plr,color(red) . "[ " . color(dark_red) . "Error" . color(red) . " ] " . color(gray) . "You must wait another " . color(dark_red) . round(@timeleft) . color(gray) . " seconds before you can play the lottery again!"))
+        tmsg(@plr, color(red) . "[ " . color(dark_red) . "Error" . color(red) . " ] " . color(gray) . "You must wait another " . color(dark_red) . round(@timeleft) . color(gray) . " seconds before you can play the lottery again!"))
         die()
     }
     store_value(@plr.lottery, time() / 1000)
