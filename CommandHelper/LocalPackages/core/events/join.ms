@@ -38,13 +38,7 @@ bind(player_join,null,null,@event){
             runas(~console,/pex reload)
             runas(~console,"/sudo ". @plr ." c:/mortal")
             set_timeout(1500, closure(
-                broadcast
-                (
-                    concat(color(white),@plr)
-                    concat(color(gray),"has been turned back into a MORTAL because")
-                    concat(color(white),@player)
-                    concat(color(gray),"was already ".@hero['name'])
-                )
+                broadcast(color(white)  . @plr . color(gray) . " has been changed from " . @hero['name'] . color(gray) . " back into a " . color(white) . "MORTAL" . color(gray) . " because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))
             die()
         }
