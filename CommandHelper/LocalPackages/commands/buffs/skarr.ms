@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0Nzg3MjExNzYwMzcsInByb2ZpbGVJZCI6IjdkZmY5MWRkOTZlNjRiNzM5ZGZhMTc5OTJlMDU1Njk0IiwicHJvZmlsZU5hbWUiOiJXaXR0bGVUaW1teSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdiY2FhMzNjYWZhNjlmMWEyN2RiMzVmZGNkYjY4OGNiOWJhYmI1NDkzNWQ2ZmU1OWEzNTUyZTE5NzU2MWYifX19',
             'trail': '',
             'op': 'false',
-            'speech': "I am Skarr! Champion of my planet!",
+            'speech': "I am Skaar! Champion of my planet!",
             'powers': array(
                 "/buff",
                 "/jump 0-8",
