@@ -49,6 +49,15 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
+    # replace all messages by groot bold with "I am groot." because he is unable to speak
+    # -------------------------------
+    if(@pgroup[0] == 'groot')
+    {
+        assign(@msg,"I am Groot.")
+        modify_event(message, @msg)
+    }
+    
+    # -------------------------------
     # Chat replacements for fun
     # -------------------------------
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
