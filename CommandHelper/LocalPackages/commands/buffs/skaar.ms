@@ -13,7 +13,7 @@
                 "/buff",
                 "/jump 0-8",
                 "/run 0-3",
-                "/haste 0-9"
+                "/haste 0-9",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
@@ -22,6 +22,6 @@
                 "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
-                "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&2Sk&6a&2rr&6's_&4War_&6Axe",
+                "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&2Sk&6aa&2r&6's_&4War_&6Axe"
             )
         )
