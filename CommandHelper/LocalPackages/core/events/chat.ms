@@ -19,7 +19,7 @@ bind('player_chat', null, null, @e) {
             ))
         ))
         cancel()
-        broadcast(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
+        broadcast(color(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
     }
     
     # -------------------------------
