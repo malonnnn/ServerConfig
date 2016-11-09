@@ -12,9 +12,9 @@ bind('player_chat', null, null, @e) {
     if(@msg == '565')
     {
         set_timeout(1000, closure(
-            tmsg(@pname, color(dark_red).color(random) ."k". color(gray) ."Retrieving classified image for your viewing...")
+            tmsg(@pname, color(dark_red) . color(random) . "k" . color(gray) . "Retrieving classified image for your viewing...")
             set_timeout(1000, closure(
-                tmsg(@pname, "dark_red).color(random) ."k". color(gold) ."http://i.imgur.com/tlypRN9.jpg")
+                tmsg(@pname, color(dark_red) . color(random) . "k" . color(gold) . "http://i.imgur.com/tlypRN9.jpg")
                 #tmsg(@pname, "§4§kk§6http://i.imgur.com/0od9K1R.png")
             ))
         ))
