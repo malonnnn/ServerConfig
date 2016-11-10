@@ -48,6 +48,22 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
+    if(@pgroup[0] == 'martianmanhunter')
+    {
+        @words = split(' ',@msg)
+        @numWords = length(@words)
+        @newMsg = ''
+        for(@i = 0, @i < @numWords, @i++){
+            @randNum = rand(1,(@numWords + 1))
+            @newMsg = @newMsg . " " .@words[@randNum]
+            array_remove(@words, @randNum)
+        }
+        
+        
+        
+        modify_event(message, @newMsg)
+    }
+    
     # -------------------------------
     # replace all messages by pikachu with "Pika Pika Pikachu!" because he is unable to speak
     # -------------------------------
