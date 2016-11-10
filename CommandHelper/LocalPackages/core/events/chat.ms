@@ -48,18 +48,18 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
-    if(@pgroup[0] == 'cosmicarmorsuperman')
+    if(@pgroup[0] == 'christianicgod')
     {
         @words = split(' ',@msg)
-        @numWords = array_size(@words) * 2
+        @numWords = array_size(@words)
         broadcast(@numWords)
         @newMsg = ''
         for(@i = 0, @i <= @numWords, @i++){
-            @randNum = rand(0,@numWords)
-            broadcast(@words @randNum)
-            @newMsg = @words[@randNum] . " " . @newMsg
+            @randWord = rand(0,@numWords)
+            broadcast(@words @randWord)
+            @newMsg = @words[@randWord] . " " . @newMsg
             @numWords = @numWords - 1
-            array_remove(@words, @randNum)
+            array_remove(@words, @randWord)
         }
         
         
