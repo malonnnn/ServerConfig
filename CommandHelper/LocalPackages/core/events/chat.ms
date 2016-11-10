@@ -54,7 +54,7 @@ bind('player_chat', null, null, @e) {
         @numWords = length(@words)
         @newMsg = ''
         for(@i = 0, @i < @numWords, @i++){
-            @randNum = rand(1,(@numWords + 1))
+            @randNum = rand(0,(@numWords + 1))
             @newMsg = @newMsg . " " .@words[@randNum]
             array_remove(@words, @randNum)
         }
