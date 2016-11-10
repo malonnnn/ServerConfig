@@ -51,7 +51,7 @@ bind('player_chat', null, null, @e) {
     if(@pgroup[0] == 'cosmicarmorsuperman')
     {
         @words = split(' ',@msg)
-        @numWords = array_size(@words)
+        @numWords = array_size(@words) * 2
         broadcast(@numWords)
         @newMsg = ''
         for(@i = 0, @i <= @numWords, @i++){
