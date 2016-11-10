@@ -49,6 +49,32 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
+    # replace all messages by pikachu with "Pika Pika Pikachu!" because he is unable to speak
+    # -------------------------------
+    if(@pgroup[0] == 'pikachu')
+    {
+        @phrase = rand(1, 8)
+        
+        if(@phrase == 1){
+            assign(@msg,"Pika! Pika! PikAchu!")
+        } else if(@phrase == 2){
+            assign(@msg,"Pika Pika.")
+        } else if(@phrase == 3){
+            assign(@msg,"Pikachuuuuu!")
+        } else if(@phrase == 4){
+            assign(@msg,"PikAchu.")
+        } else if(@phrase == 5){
+            assign(@msg,"Pikachu!")
+        } else if(@phrase == 6){
+            assign(@msg,"Pika! Pika!")
+        } else if(@phrase == 7){
+            assign(@msg,"Pika Pi!")
+        }
+        
+        modify_event(message, @msg)
+    }
+    
+    # -------------------------------
     # replace all messages by groot bold with "I am groot." because he is unable to speak
     # -------------------------------
     if(@pgroup[0] == 'groot')
@@ -91,6 +117,7 @@ bind('player_chat', null, null, @e) {
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+[. ,-]*d+[. ,-]*i+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
+
     modify_event(message, @msg)
     
     # -------------------------------
