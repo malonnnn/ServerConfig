@@ -57,8 +57,8 @@ bind('player_chat', null, null, @e) {
             @randNum = rand(0,@numWords)
             broadcast(@words @randNum)
             @newMsg = @words[@randNum] . " " . @newMsg
+            @numWords = @numWords - 1
             array_remove(@words, @randNum)
-            @numWords--
         }
         
         
