@@ -55,6 +55,7 @@ bind('player_chat', null, null, @e) {
         @newNumOfWords = @numWords
         @newMsg = ''
         for(@i = 0, @i <= @numWords, @i++){
+            broadcast(@newNumOfWords)
             @randWord = rand(0,@newNumOfWords)
             @newMsg = @words[@randWord] . " " . @newMsg
             array_remove(@words, @randWord)
