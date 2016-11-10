@@ -48,7 +48,7 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
-    if(@pgroup[0] == 'martianmanhunter')
+    if(@pgroup[0] == 'cosmicarmorsuperman')
     {
         @words = split(' ',@msg)
         @numWords = length(@words)
