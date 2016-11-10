@@ -53,7 +53,24 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(@pgroup[0] == 'pikachu')
     {
-        assign(@msg,"Pika Pika Pikachu!")
+        @phrase = rand(1, 8)
+        
+        if(@phrase == 1){
+            assign(@msg,"Pika! Pika! PikAchu!")
+        } else if(@phrase == 2){
+            assign(@msg,"Pika Pika.")
+        } else if(@phrase == 3){
+            assign(@msg,"Pikachuuuuu!")
+        } else if(@phrase == 4){
+            assign(@msg,"PikAchu.")
+        } else if(@phrase == 5){
+            assign(@msg,"Pikachu!")
+        } else if(@phrase == 6){
+            assign(@msg,"Pika! Pika!")
+        } else if(@phrase == 7){
+            assign(@msg,"Pika Pi!")
+        }
+        
         modify_event(message, @msg)
     }
     
