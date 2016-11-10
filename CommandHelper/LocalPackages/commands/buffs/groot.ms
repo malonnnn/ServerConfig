@@ -11,9 +11,9 @@
             'speech': "I am GROOT!",
             'powers': array(
                 "/buff",
-                "/jump 0-7",
-                "/run 0-5",
-                "/haste 0-9"
+                "/jump 0-2",
+                "/run 0-2",
+                "/haste 0-4"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 7 true",
