@@ -49,6 +49,15 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
+    # replace all messages by pikachu with "Pika Pika Pikachu!" because he is unable to speak
+    # -------------------------------
+    if(@pgroup[0] == 'pikachu')
+    {
+        assign(@msg,"Pika Pika Pikachu!")
+        modify_event(message, @msg)
+    }
+    
+    # -------------------------------
     # replace all messages by groot bold with "I am groot." because he is unable to speak
     # -------------------------------
     if(@pgroup[0] == 'groot')
@@ -91,6 +100,10 @@ bind('player_chat', null, null, @e) {
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+[. ,-]*d+[. ,-]*i+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
+    assign(@msg, reg_replace('(?i)t+[. ,-]*i+[. ,-]*m+[. ,-]*m+',-]*y+', 'Trey', @msg))
+    assign(@msg, reg_replace('(?i)w+[. ,*i+[. ,*t+[. ,*t+[. ,*l+[. ,*e+[. ,*t+[. ,-]*i+[. ,-]*m+[. ,-]*m+',-]*y+', 'Trey', @msg))
+    assign(@msg, reg_replace('(?i)w+[. ,*i+[. ,*t+[. ,*t+[. ,*l+[. ,*e+[. , 'Trey', @msg))
+
     modify_event(message, @msg)
     
     # -------------------------------
