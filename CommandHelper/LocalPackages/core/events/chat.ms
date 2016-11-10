@@ -53,7 +53,7 @@ bind('player_chat', null, null, @e) {
         @words = split(' ',@msg)
         @numWords = length(@words)
         @newMsg = ''
-        for(@i = 0, @i < @numWords, @i++){
+        for(@i = 0, @i <= @numWords, @i++){
             @randNum = rand(0,@numWords)
             broadcast(@words @randNum)
             @newMsg = @words[@randNum] . " " . @newMsg
