@@ -1,4 +1,4 @@
-invis:/invis = >>>
+camo:/camo = >>>
     @player = player()
     @eventID = associative_array('id': @player.'invis')
     @filter = associative_array('player': @player)
@@ -11,6 +11,10 @@ invis:/invis = >>>
     ,
         tmsg(@player,"You're already invisible!")
     )
+<<<
+invis:/invis = >>>
+    @player = player()
+    sudo("/effect ". @player ." 14 9999 1 true")
 <<<
 vis:/vis = >>>
     @player = player()
