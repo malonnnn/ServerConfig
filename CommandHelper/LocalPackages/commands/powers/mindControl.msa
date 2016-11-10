@@ -5,7 +5,7 @@ mindcontrol:/mindcontrol $plr = >>>
     @plr = player()
     @vic = $plr
     
-    if(!ponline()){
+    if(!ponline(@plr)){
         broadcast(color(red) . "Sorry, but " . color(blue) . @vic . color(red) . " is not found.")
         die()
     }
