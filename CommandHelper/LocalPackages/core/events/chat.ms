@@ -100,9 +100,6 @@ bind('player_chat', null, null, @e) {
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+[. ,-]*d+[. ,-]*i+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+', 'chad', @msg))
     assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
-    assign(@msg, reg_replace('(?i)t+[. ,-]*i+[. ,-]*m+[. ,-]*m+',-]*y+', 'Trey', @msg))
-    assign(@msg, reg_replace('(?i)w+[. ,*i+[. ,*t+[. ,*t+[. ,*l+[. ,*e+[. ,*t+[. ,-]*i+[. ,-]*m+[. ,-]*m+',-]*y+', 'Trey', @msg))
-    assign(@msg, reg_replace('(?i)w+[. ,*i+[. ,*t+[. ,*t+[. ,*l+[. ,*e+[. , 'Trey', @msg))
 
     modify_event(message, @msg)
     
