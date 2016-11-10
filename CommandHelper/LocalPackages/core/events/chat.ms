@@ -51,7 +51,7 @@ bind('player_chat', null, null, @e) {
     if(@pgroup[0] == 'cosmicarmorsuperman')
     {
         @words = split(' ',@msg)
-        @numWords = length(@words)
+        @numWords = array_size(@words)
         @newMsg = ''
         for(@i = 0, @i <= @numWords, @i++){
             @randNum = rand(0,@numWords)
