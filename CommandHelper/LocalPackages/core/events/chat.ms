@@ -112,13 +112,10 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('~', '???', @msg))
     #assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
     #assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
-    assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
-    assign(@msg, reg_replace('(?i)e+[. ,-]*m+[. ,-]*i+[. ,-]*l+[. ,-]*y+', 'chad', @msg))
-    assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+[. ,-]*d+[. ,-]*i+', 'chad', @msg))
-    assign(@msg, reg_replace('(?i)t+[. ,-]*e+[. ,-]*d+', 'chad', @msg))
-    assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
+    #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
+    #assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
 
-    modify_event(message, @msg)
+    #modify_event(message, @msg)
     
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
