@@ -22,7 +22,6 @@
                 "/tangible",
                 "/invis",
                 "/vis",
-                "/disguise",
                 "/disguiseviewself",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
