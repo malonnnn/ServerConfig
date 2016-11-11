@@ -17,9 +17,9 @@
                 "/stopmindcontrol",
                 "/tp",
                 "/speak <playername>",
-                "/jump 0-9",
-                "/run 0-5",
-                "/haste 0-9"
+                "/jump 0-2",
+                "/run 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
