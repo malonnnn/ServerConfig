@@ -11,8 +11,6 @@
             'trail': '',
             'op': 'false',
             'speech': "I am the best actor!",
-            'powers': array(
-                "/buff"
-            ),
+            'powers': array(),
             'buffs': array()
         )
