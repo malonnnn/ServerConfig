@@ -14,10 +14,10 @@ npc:
     traits:
       location:
         world: spawn
-        x: '0.6135'
-        y: '9.0'
-        z: '-12.9996'
-        yaw: '179.13232421875'
+        x: '0.7'
+        y: '10.0'
+        z: '-7.2947'
+        yaw: '179.1318359375'
         pitch: '0.0'
       waypoints:
         linear:
@@ -69,13 +69,13 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: type,waypoints,location,inventory,gravity,owner,spawned
+    traitnames: owner,inventory,location,gravity,type,waypoints,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '380':
-    name: Lex Luthor
+    name: Blast
     uuid: e720814f-2548-4ec7-b911-67748ab0db7c
     traits:
       spawned: true
@@ -96,29 +96,29 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: type,slimesize,location,inventory,age,gravity,owner,spawned,poses
+    traitnames: inventory,owner,poses,gravity,slimesize,location,type,age,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NjM5ODkwODksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJiMmIwMzA3YWY4MWJhNGViZDFkMDVjNmFiNzViNTkyMWZiYzQwNDgxNTM2OTM4MTkxMWY2NmVhNDA4YiJ9fX0=
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzUxODg4MzgwODcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JhMjNlMzdkOTQxNjQ3ODllZjRhMzZkMmFkMDZhZTBiMTgyODcyMDlmZTY5MjI5NGVhOWU2YzU2ZTExN2E4NiJ9fX0=
       cached-skin-uuid-name: tektronic
       player-skin-use-latest: false
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
-      player-skin-signature: B2CnORq8pQz8ooyfLjkDKGro7+BkUWz8Yf+kKUvg05vR0a/vttMflWkTbPlUlOPxuA0Ni2jsXn24+VXXdAj3Qdc+J7jOk+RJqNEiC+RsMKiDbpdpfjFs21kikNpNEMO1NkWMbXDsjvikuRlQXEQt+9oIYOBk03c3gAW2+XsZVescwXFaii/c3OesiDL+jnCGUf81O2dddqWpE3fiR+w/GSrfOopoFIeQo5aDOapT9ERF17OHoveP3fJY1VholAMFzjQHHOfPEqPE0+3neSXbU8sDdmOjGNEHV5ic2MU1CBajTMTdr0glSqmLkfF6ZJBG6pDv3WLWSR4aZDOo7rryXNH+vbNDuiPNUSetjnH6Fg0Z6hhVxVigsysG6h3o03hbKRbnJMJTV34HHmvDurbSmeLFLtDGQvYHscnhOE6NH16SOXC90IwVggpA1pb5dp/AUx2VQNMNDGaTT+tFFAD8PRlOvtV2BEF3Yo9Xbg9WpoKM/q4OOWjZGBH/5BO0xNuF6nkPX1BYpjh5BSm8Qb2f1qtNrGXGhj18NUod59Qn8JrLvmmGZIl0GhF6Ejb4YE6XD7nLHvolC/D8Yj/rw7jg0vQjPhtiS3j8h4AsryZMfsShTvrVZ57vw1AXCF8V6+8PyU5jMyaYvr6Xm0quofQcoiNlwsjypLeXKNSagARB17I=
+      player-skin-signature: WOe8yjzMcQxBmGeQSBWg1HlzJaFMA+/VvUs+9yVETGBPzK99aPPKiRVXfXEp3fWeV/kgxYwPuZLw8KVRBd9dwXVvlyM8uBhALJtCSWJULJOvUhBsqmtx0YCCfwfnb+YtUGe+ZLpz4Y2oUg8ThjAsxFfZhmjnKGa92+z2XEm5pFJLzuL0PaoYv52+PA34zowTUTjk/JMPQ/LCRm9wTRKSFgZDmgI7A14C84LRr7M7QSN6Ti2jFqS+rfiww4diYjqNUl/tUG4nU6m4t0qev4FZXB6PJiA6DPUMTmcJJhTftSi1LgaFRAfmd6qdcIJ9ChRbW2dtrxhlsyAIYqmWKqGjMrdZNoof6MqMWlxEefwAviEF0+V9Z/ZfgBCUpLDt5VywG6KCeMHY0TwU0hZhQY4kZ/mawRcP3WCQRARDUGny5RZ8uftLzC65n5hjH6JjsWENYbbMGZ0nAOywPByPvCzp4fcC3vBBR4595uM9xQmJ+LiQwlHRQxPoT6DjOLyrNiOPyMNnjJ8HNuIcfBvZb6mZzGNEaC8ArbmWT69UiQCGE4r36tHlIyQn/Ppa5x1Z3Jk07K5XRADkT5ytYMg6SQlyropivoCdLUHm432dyMXN3KqrABsvJMfBYzBQnkflvyAGcK4EvclEeEjVcndHIloH1oZ1S+ZWozLK57AAjCY59vw=
       nameplate-visible: false
   '383':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzQ1Nzc5MTAyMjIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzczYzc1ZTlkYzM0YWUzZmVjNTg4NzY4NDdlODMwNWYxYzIyOGI3M2IwN2NhNGI0NWNkMDc5NTU3MGU5NWRhIn19fQ==
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NjIyMDkxNDQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhmYTkzNWRiYjg4YjQzM2YwYzlkNzgzMjhlMzcxOTYxODUyNGMwNjAzNGIzNGY1Y2E2ZWQ1OGRkNTZmZDZlIn19fQ==
       cached-skin-uuid-name: tektronic
       player-skin-use-latest: false
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
-      player-skin-signature: iPV77JY8R+xHYNdBDqLhDHRZ4aZjroPykErQ/ndNSS92YajtqVSAsgzKDK5sEarawcmgxj+clBf6GQ4LhS0Q3fu0ZvSd5FUMcNgCTPrnkqfBXdtfasls+r0DB+H5Dc+qEcPAYl9Q1T6JcJBMefn2D0DaUWQNDHrdRIROIBUQkPa4sn1WAHxEnhD2N5wf/wQlVzjkpocpp1szUW9zxFikCn2ALoMzPF6CNEWUljOzIYR+t1OHkHu1Hk179hsheTWifddGcZo0an94GDdphGSGm7RnvQYMOmEysPfIq1TGDLekPXhCUL7f+3xv3ja9eJg6B6NuscnJ4oMTnZ4HcdY3RMfOQPTW6I/G9coSc3BaDtH23fGfZMvmhNcX4GqTapEDqj9gEV3W2dwBbJSFZXAX0m3fRiZQBWdZU2tt4i5npNVjm9e7OahEsbu0MdH2Ord+lwMhYERvUjjbhjMCJZ4ktIqQQLCPLilDU9c0JCwwnJtoLQXfdLwktvXKGt0odnbbFyKcQIDDDUj+CaVZhRtcNMo69wpijvUSZIlKM1oXJ3ZD1VH2rB6Xjpkbp94WVGtklc3mPEZWWTsc9cudphx7MPs3PYwjv6U83Cqv80ni0iKPZuMnrsXMugQFhhPrx2ru+KwBuwzf8pjCc+DmNauIVerdTB1qofxrWZImb/0LcIo=
+      player-skin-signature: F6K95H3K+oi/1y076l2ewjcV2hZWewVj4lA6pFyuB4t2jgtv1gkuDMr2tOBeWZaO9sH3J5lV20wag/pp28CP6qyJjh7aXuS/llrz+K4CxHN9j4K8ZZXYkegLWEAfaxIcuQRBHD4GDEjuff7JLemqo9fqykouIUWthCAnDKctjpRdRGa9S02PZo4hPSJ090UM8sbS/Gw5sEWfspdA7eMbIoKAwK1XjCsOhfxJBczxKihVzyakGhBWn+8I8NclqIRHwx3/Yl2tyZeVd/tVF8BOlBljYxdvsE/YlcEhdgHHZKqQPXrn02UEbjtqAPMSpbmtT47YTW696jBKEd1FM5wptEy3YBC8LlKL1g6kslQmWQcl1a5DrLgv63vEm0GH4zThBKzSR7PbnYnfiXfp86zruMFRc/Nu7YrmQlW97YiVUIdfS0Y0mUaI/YgTbCxK6mEYXtjj3qsERMEaV0miPcYM0rK253CWxU9VlAF61B8qtvLNJjSDHAwMWB3WtAxBz8cFDYfdXWFGNJq38P1vUst8ihByOF/bG1XkKAJTo+pXImVUa77EoeQXsr09Js+mVkS0722S+Dpx77kirThO7eXxft3pwCw9FpWuYHrg0OUPFdHLHeEmyQrDneW3ahFpFyKX09OeZcYiE++tpjLp2ZlhXEV1EskbvF0lqXa2YmEnG8w=
       nameplate-visible: false
-    name: John Cena
+    name: Martian Manhunter
     uuid: 62df0f3d-839e-4c7a-96e4-cadb753aa9b6
     traits:
       spawned: true
@@ -139,21 +139,21 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: type,slimesize,location,inventory,age,gravity,owner,spawned,poses
+    traitnames: owner,inventory,poses,location,slimesize,gravity,type,spawned,age
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '382':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NDkwMTk4ODEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdiYTcxODkyNGZiM2E4YmE5ZDk2NzA0OTY4OGNkYjE2NWM5NTY3Mzk0OWIzMzYzMDNjMjcxY2UyNjhiNDEifX19
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjkxMzQ3ODU0MTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUxZjY4OWJmNDM0NTk4NDRlYThjNzFiZDA1NDQxZWRjM2ZlOTQ4OWQ2MWNmZDc5MGU3OWJkMzhjZmJlNzUifX19
       player-skin-use-latest: false
       cached-skin-uuid-name: tektronic
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
-      player-skin-signature: Qe/Zu/vAw0+yEwTvANY2rnQtktRy+Rvxit/j8tfTAkr76WXcyrqD6c+UEhfxt4q/AFidowyYvhjpCJrhQsN1awT0IJU/IgLNtQnbe2pfWYkyRmuZLJheu/JSDl64x4YZ2XLfMwwYCq7ZfJ/rCGiy+OP3aFVXYOG6dKvDNPDy0GiZWOFqWz7EKMnzVVO625ivoZoyOIhp5Q69N7mwbiBgoSc9Cx+hXFOjrHghxlNOkSBkmkHX+ByDtsbk/KowC6pwTpYoGC4Kvl6uGuGMLabnExcIERCFalXKk/Np0+6o6k9QfY0IJ4tjex19wzQBl6p4hda9F5jPeocAgqzTrCpqnbGWQfakXPGZMbEYl5bQ5bNRBw/9DmStpZLwAMbVyjfZfS15RVdkwHaNO0qZckKFXg/UOcOOa7FtrYhK/WMRlUb882drsIqOLvLC3Rewu6mhQuulLEz7BXFtXB9nPsIlL2fKAXcNAusE4Dm9gWKVXtHD9E5oHda5qKL033pN84zcbcFgCQMJKqcwc12AIN7W0NZ0UHdj/AoQRNHAFeweUwgAIrajCvBHkAscrmCA4BvE7q4voOaEialT0zxx663kR/d0Pxq/Wh7UgudQ/jbi3KQEl8bqbbrD8RYYH523acJWBBc7RfPj8K6+njoRZQ+jqUFP2zrIdJiKzKy3cyHnKZY=
+      player-skin-signature: b1IGHPwu2yNI2CL5lCagC4pz60tc8tqqIm3Z/AS+YcDf7dSXMWfklUvWR9Vl4FyvWGmgnIXZ5y+C94NwP8xn6EuPMsYbskbMBwkuLw8+1wOEmgkwYVqv5HNgvlUmb8PNhZaKsaWUbYkxqgEtENbeoB/DkDHSJxGOUe+/d66EC0XPdFTjYsKWAYnmxKL8UuYf31yL4StSILm5DmG9tXkd4ER49N2ZG9IAjnyPsFG5RyCZgmNCUQneqfkIgJzq0yGb9/0bEjRulxt/o8d0DDnGcSYvwpd/DJ9OFMp/MuD98pT9mRgoYl6XQxWaKcHpcQnAVCqCvLzN+PDDrnJaAyeHgZV9vWPTz9W+dS3c+BqUQbuX0uh+r9uB3NnKhYiD+2b/5kMIr8bRNVY6MjK8bwe+Cb991EBr39UeXsDdt4hzFotITRqKeCZuEPtxlUUA3fyvKO8BRF8n3nyp+fD73CcPiquU3lUHWqgbmUlGBAAHhR4mRg/QBqJkwrVFKnRwng4PvH/zOE+Y3/YH0zwwgvJ+2Bhj6q9k+cxsya2iT7mzsIQ9CA+V2hWhKEgqEn7d3D90HwTPgXfzGu6HUozMzP0am1ky1s2h8xD9P5b3+37RgqaqaTNx4yrnrnXWtYN8jSJ8pssGqd6fEVGjTygFLEto/s7fWucg8h5gl0z6Fp2P1XA=
       nameplate-visible: false
-    name: Deadpool
+    name: Green Goblin
     uuid: fe3ad521-6d55-47c1-8a40-fc5bfa4de9c6
     traits:
       spawned: true
@@ -174,21 +174,21 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: type,slimesize,location,inventory,age,gravity,owner,spawned,poses
+    traitnames: inventory,owner,poses,gravity,slimesize,location,type,spawned,age
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '381':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NjY0NDE0MzcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y0YTE3YTUxNzA0NjZjNTRkZDY5MTU2NTFmNDViNzY4YjBhZGQ3NDJmNDExODlmMGIzMWI3MDdjYmJkMmQ5YSJ9fX0=
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzY4NTE4OTM4ODEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk1N2VmYWJjYTE0MmExY2M4MTJmNDRjZTRjYzhjMTI5M2M5YTFiODY1Y2ZlOTdjZTNiZWJhMWE0YTkzZDgyIn19fQ==
       player-skin-use-latest: false
       cached-skin-uuid-name: tektronic
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
-      player-skin-signature: RuP/oK2EqxOla6NrkgmCnPwXPF6C1f6xpegE8cUBM/hZsZzqztcRgupKiTFwcAKWcKbdan/C6iPiVzsv3pxRBXt1S3PjMVQcsF/KsG03UP43Au6SCge+vxvLuOpeCeYj8SdE7ZbzRTHsLdjnREdqnpt0ENSUHkww23bqI++uYqPXwiYV3S6a3KFrj1rDXzFOjC4FPEAfsyRogkAhImpeQpQxDlMT//HyYoIgEzZMIdSHyNEcORwJhoMdjzz99xD87FlDZ7HpkC6ovu6TRxQFtRrt6QLPERDJgXA/A+R1Zz76aLej5SuOIWmnUSH3joK1H5ykCaD1DLsLsBv9fuG4KYRfib6tutDux+se0CCMyrFl+m40hGXb1ssu7WkMcPjyR8gGERrkWCsaEA4+utvn0Vonys3t5hkjwDQJMg7foTWbgRH38pzBSghOXxvXGiOZtaA0QX+6hKjkRh5oJJISHbrAs2Tg35QrrSh+jJfiioOhyqNG+DBt7o7HPtg0ZGxfh7UWIR/h+DpN1tvqzV21+oi+nAa8aJAAZZ1T0VSVhfeMOXG1ies0zBMn0taaUL6jLGo4mCjnEnxDBZQbCL4iDtxUd2O0CoQP3Hwh0aeBytPE1WiDNBv7KleeoqSjzjHCH35oLngeeMnsItzRH5AY1fSP6zRjeEPbS2sL5rH941U=
+      player-skin-signature: Hg3BHpAcbNMzhcHyvlkQdOCbTd3TI1qAwSaOeiwG5QEETpYLkgoVIOuWsv08pjK+/Vm7Lyx+o52thBwoglsHwAU/jw5xbpokwO6sVJNLxOadBMiu9Bu+nYRSS1eor9lTKkSe95W3JbovnDpDSDsB3Ms+74atAWGr076GGpR+h0scgOxhAmmtzN3ohzoqInt7cOIx5nEDSIF8fiZzoh7hDNo8ADKgtHr0K29Qpx+bGDAC/I111z7IjJBYFnSlVBewDHP0yLdzKmocsFZWpYkOIbeMxFaA4PfHBmEmCmmTYw/fE+p7FtPSY3gSbPxe+ZR66YWKnL/WxtF98P+s94lGocHjaah3BHRNszujPufYOEusJa3mdCpvOzhpSpukDY9XQFFt5JZkumGN/tPG61NfzZ9QJUvp3QARVM1W3HwoYEDfrzwXZuQxMjVZiRh1CgZXQWOGUtCqKBBTtgtrChoNjXV5Ov+8wLb7o6+X07wVq2SwLQfvFn6ANsMuHeoiY/q9Vy66gXWakoyRZrPYxvrd1wc24rLMbNnslCGhLOGX88Nnkx+0GrEcBqMUPkg6dweiOo1YOFb1PezZGZN/octZGqttHHtgNf5SSt0WWaiKdZ50sTu1GdGlAvdRBUoSqQx1Oj1msobEe2FsJD7S3pd5eDXpzEo1uZg6BIuMLBqkbYU=
       nameplate-visible: false
-    name: Zoom
+    name: Hybrid
     uuid: 3c2eed16-8f86-4135-8e94-b9415b4f8e51
     traits:
       spawned: false
@@ -209,7 +209,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: type,slimesize,location,inventory,age,gravity,owner,spawned,poses
+    traitnames: owner,inventory,poses,slimesize,gravity,location,type,age,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
