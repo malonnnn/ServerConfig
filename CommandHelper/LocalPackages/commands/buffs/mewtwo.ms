@@ -17,8 +17,6 @@
                 "/stopmindcontrol",
                 "/tp",
                 "/speak <playername>",
-                "/grow",
-                "/shrink",
                 "/jump 0-9",
                 "/run 0-5",
                 "/haste 0-9"
