@@ -48,7 +48,11 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
-    if(@pgroup[0] == 'christianicgod')
+    
+    # -------------------------------
+    # if player is "confused", mix up their words
+    # -------------------------------
+    if((!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
     {
         @words = split(' ',@msg)
         @numWords = array_size(@words)
@@ -132,6 +136,8 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
+    #assign(@msg, reg_replace('(\\w)y', 'k', @msg))
+    #assign(@msg, reg_replace('(\\w)Y', 'K', @msg))
 
     #modify_event(message, @msg)
     
