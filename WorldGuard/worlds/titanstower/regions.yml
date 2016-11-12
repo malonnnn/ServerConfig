@@ -10,9 +10,17 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    titantower:
+        min: {x: -50.0, y: 0.0, z: 63.0}
+        max: {x: 5.0, y: 255.0, z: 192.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
-        flags: {build: deny}
+        flags: {build: deny, use: allow, interact: allow}
         owners: {}
         type: global
         priority: 0
