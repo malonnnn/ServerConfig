@@ -24,6 +24,7 @@
                 "/effect ". @plr ." 10 9999 3 true",
                 "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:web 64",
-                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cHy&4br&cid's_&4Glide_Wings"                
+                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cHy&4br&cid's_&4Glide_Wings",
+                "/shot give ". @plr ." webshot"
             )
         )
