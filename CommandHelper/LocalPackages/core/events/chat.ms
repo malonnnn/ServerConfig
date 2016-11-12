@@ -52,7 +52,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if player is "confused", mix up their words
     # -------------------------------
-    if((!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
+    if(@pname == "Hero_Of_Helix" || (!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
     {
         @words = split(' ',@msg)
         @numWords = array_size(@words)
