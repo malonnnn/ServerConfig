@@ -23,8 +23,77 @@ changehero:/changehero = >>>
         set_block_at("-1735","67","225","0:0","greenfield")
     });
     
+    array @blocks = array(
+        array(-1736,70,215,"greenfield"),
+        array(-1736,69,215,"greenfield"),
+        array(-1734,70,215,"greenfield"),
+        array(-1734,69,215,"greenfield"),
+        array(-1736,70,213,"greenfield"),
+        array(-1736,69,213,"greenfield"),
+        array(-1734,70,213,"greenfield"),
+        array(-1734,69,213,"greenfield")
+    )
+    @intervalID = set_interval(400, closure(
+        foreach(@block in @blocks){
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+            make_effect(@block, 'SMOKE:'.rand(9))
+        }
+    ))
     set_timeout(1500, closure(){
         assign(@locOfRedBlock, array('x': '-1735', 'y': '69', 'z': '214', 'world': 'greenfield', 'yaw': '0', 'pitch': '0'))
+
+        set_timeout(2750,closure(
+        
+            clear_task(@intervalID)
+        
+        ))
+
         @plrs = players_in_radius(@locOfRedBlock,1)
         @count = array_size(@plrs)
         
@@ -36,10 +105,9 @@ changehero:/changehero = >>>
             @names = ''
             foreach(@player in @plrs){
                 pkill(@player)
-                @names += @player." and "
+                @names = @player." and ".@names
             }
-            @names = substr(@names,0,length(@names) - 4)
-            broadcast(@names."had their DNA mixed together, mutated, then died.")
+            broadcast(@names." had their DNA mixed together, mutated, then died.")
             die()
         }
         
