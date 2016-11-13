@@ -22,6 +22,6 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." yellowbeam",
                 "/give ". @plr ." 95:4 64",
-                "/give ". @plr ." minecraft:gold_nugget 1 20:2 16:155 name:&eSin&ce&0s&etr&0o&e's_Ring"                
+                "/give ". @plr ." minecraft:gold_nugget 1 20:2 16:155 name:&eYe&ell&6o&ew_&eL&6a&ent&fe&ern_Ring"
             )
         )

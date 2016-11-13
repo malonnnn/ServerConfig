@@ -22,6 +22,6 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." greenbeam",
                 "/give ". @plr ." 95:5 64",
-                "/give ". @plr ." minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn's_Ring"                
+                "/give ". @plr ." minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring"                
             )
         )

@@ -27,6 +27,6 @@
                 "/effect ". @plr ." 13 9999 1 true",
                 "/shot give ". @plr ." redbeam",
                 "/give ". @plr ." 95:14 64",
-                "/give ". @plr ." minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn's_Ring"                
+                "/give ". @plr ." minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring"                
             )
         )
