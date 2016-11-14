@@ -136,10 +136,14 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)h+[. ,-]*a+[. ,-]*r+[. ,-]*k+', 'horky parky', @msg))
-    #assign(@msg, reg_replace('(\\w)y', 'k', @msg))
-    #assign(@msg, reg_replace('(\\w)Y', 'K', @msg))
 
     #modify_event(message, @msg)
+    
+    @contains111 = reg_match('1.11',@msg)
+    
+    if(array_size(@contains111) != 0){
+        broadcast(color(green)."This is the plan for 1.11 ".color(gold)."https://www.spigotmc.org/threads/minecraft-1-11-roadmap.192111/")
+    }
     
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout

@@ -32,6 +32,7 @@ mindcontrol:/mindcontrol $plr = >>>
 stopmindcontrol:/stopmindcontrol = >>>
 
     @player = player()
+    @vic = $vic
 
     assign(@cooldown, 600)
     
@@ -45,7 +46,7 @@ stopmindcontrol:/stopmindcontrol = >>>
     
     @pgroup = pgroup()[0]
     
-    runas(~console,"/sudo ". player() ." c:/icu stop")
+    runas(~console,"/icu stop @player")
     broadcast("@player has stopped mindcontrolling")
     
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pgroup . '.ms')
