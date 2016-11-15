@@ -1,0 +1,16 @@
+mortal:/mortal $player = >>>
+    @player = $player
+    if(ponline(@player)){
+        @pgroup = pgroup(@player)
+        @class = @pgroup[0]
+        if(
+            @class == 'cosmicarmorsuperman' ||
+            @class == 'onepunchman'||
+            @class == 'supermanprimeonemillion'
+        ){}else
+        {
+            runas(~console,"/sudo ". @player ." c:/mortal")
+            tmsg(@player, 'You fill your powers leaving your body.')
+        }
+    }
+<<<
