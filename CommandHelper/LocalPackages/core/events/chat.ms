@@ -142,7 +142,9 @@ bind('player_chat', null, null, @e) {
     @contains111 = reg_match('1.11',@msg)
     
     if(array_size(@contains111) != 0){
-        broadcast(color(green)."This is the plan for 1.11 ".color(gold)."https://www.spigotmc.org/threads/minecraft-1-11-roadmap.192111/")
+        set_timeout(500,closure(
+            broadcast(color(green)."This is the plan for 1.11 ".color(gold)."https://www.spigotmc.org/threads/minecraft-1-11-roadmap.192111/")
+        ))
     }
     
     # -------------------------------
