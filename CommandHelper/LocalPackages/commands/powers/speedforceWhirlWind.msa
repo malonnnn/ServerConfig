@@ -1,0 +1,31 @@
+speedforcewhirlwind:/speedforcewhirlwind = >>>
+
+    @ploc = ploc()
+    @allPlayers = players_in_radius(@ploc,20)
+
+    foreach(@player in @allPlayers) {
+        
+        if(@player != player()){
+
+            @vicLoc = ploc(@player)
+
+            @x1 = @ploc['x']
+            @y1 = @ploc['y']
+            @z1 = @ploc['z']
+
+            @x2 = @vicLoc['x']
+            @y2 = @vicLoc['y']
+            @z2 = @vicLoc['z']
+
+            @x3 = pow(@x1 - @x2, 2)
+            @y3 = pow(@y1 - @y2, 2)
+            @z3 = pow(@z1 - @z2, 2)
+
+            @final = @x3 + @y3 + @z3
+
+            @final = sqrt(@final)
+
+            broadcast(@player . " is " . @final . " blocks away")
+        }
+    }
+<<<
