@@ -138,6 +138,9 @@ icemagic:
         Enable: true
     Abilities:
         Knockback: -1
+    Custom_Death_Message:
+        Normal: You suddenly feel cold....dangerously cold. 
+        H̶e̶a̶d̶s̶h̶o̶t̶:̶
     Laser:
         Enable: true
         trigger: 1-0
@@ -240,9 +243,9 @@ bluebeam:
         start_pos: 0
         start_y: 0
         color: 0-255-255  
-lightingmagic:
+lightningmagic:
     Item_Information:
-        Item_Name: "&bLighting Bolt"
+        Item_Name: "&bLightning Bolt"
         Item_Type: 351:4
         Inventory_Control: lightingbolt
     Shooting:
@@ -440,6 +443,9 @@ poisonmagic:
     Potion_Effects:
         Activation: hit
         Potion_Effect_Victim: POISON-300-200, SATURATION-300-200
+    Custom_Death_Message:
+        Normal: You feel sick, leading to pain and hunger.
+        H̶e̶a̶d̶s̶h̶o̶t̶:̶
     Laser:
         Enable: true
         trigger: 1-0
@@ -500,15 +506,12 @@ firemagic:
         Enable: false
     Hit_Events:
         Enable: true
-    Potion_Effects:
-        Activation: hit
-        Potion_Effect_Victim: FIRE_RESISTANCE-100-200
     Particles:
         Enable: true
-        Particle_Player_Shoot: flames-10,smoke
+        Particle_Player_Shoot: flames,smoke
         Particle_Terrain: true
     Custom_Death_Message:
-        Normal: You have been set a flame by @user!
+        Normal: You have been set a flame by @player!
         H̶e̶a̶d̶s̶h̶o̶t̶:̶
     Laser:
         Enable: true
