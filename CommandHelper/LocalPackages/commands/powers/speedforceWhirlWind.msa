@@ -24,8 +24,18 @@ speedforcewhirlwind:/speedforcewhirlwind = >>>
             @final = @x3 + @y3 + @z3
 
             @final = sqrt(@final)
+            
+            @maxDist = 30
+            @magnitude = (1 - @final / @maxDist) * 10 
 
-            broadcast(@player . " is " . @final . " blocks away")
+            @yaw = @ploc['yaw'] + 90;
+            @pitch = neg(@ploc['pitch']);
+            @vector = associative_array();
+            @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+            @vector['y'] = @magnitude * sin(to_radians(@pitch));
+            @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+
+           set_pvelocity(@player,@vector) 
         }
     }
 <<<
