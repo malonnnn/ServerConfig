@@ -20,6 +20,8 @@
                 "/speak <playername>",
                 "/intangible",
                 "/tangible",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
                 "/invis",
                 "/vis",
                 "/disguise",
