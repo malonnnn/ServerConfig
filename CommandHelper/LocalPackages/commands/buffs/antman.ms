@@ -8,18 +8,19 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NTExNTQ2NDksInByb2ZpbGVJZCI6ImI4NThjMDk4YzI5YzRhNGM4NzY0NjJhNmQ5NDJjOTE2IiwicHJvZmlsZU5hbWUiOiJBbnRNYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzliZGIzZjA1MjdhZjA4ZDhlOTQ2ZTQ5NzY4NTk0ODg2ZDNlYzJjZTJmZDJhOTg3MTliZTI0YTdiYTc0ZSJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Tiny but powerful!",
+            'speech': "Tiny, but powerful!",
             'powers': array(
                 "/buff",
                 "/jump 0-7",
                 "/run 0-4",
                 "/haste 0-2",
-                "/undisguise"
+                "/normalsize",
+                "/grow"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/disguise villager baby"                
+                "/disguiseplayer ". @plr ." villager baby"                
             )
         )
