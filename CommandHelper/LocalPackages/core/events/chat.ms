@@ -97,6 +97,24 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
+    # replace all messages by mew with "mew"
+    # -------------------------------
+    if(@pgroup[0] == 'mew')
+    {
+        @phrase = rand(1, 4)
+        
+        if(@phrase == 1){
+            assign(@msg,"Mew.")
+        } else if(@phrase == 2){
+            assign(@msg,"Meew.")
+        } else if(@phrase == 3){
+            assign(@msg,"Meww.")
+        }
+        
+        modify_event(message, @msg)
+    }
+    
+    # -------------------------------
     # replace all messages by groot bold with "I am groot." because he is unable to speak
     # -------------------------------
     if(@pgroup[0] == 'groot')
