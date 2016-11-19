@@ -48,7 +48,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pvp: allow, chest-access: deny, pistons: allow, ghast-fireball: deny}
+            interact: allow, pistons: allow, chest-access: deny, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -76,7 +76,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
+        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -123,8 +123,9 @@ regions:
         min: {x: -1770.0, y: 60.0, z: 193.0}
         max: {x: -1728.0, y: 79.0, z: 236.0}
         members: {}
-        flags: {feed-amount: 100, feed-delay: 100, pvp: deny, mob-spawning: deny}
-        owners: {}
+        flags: {feed-delay: 100, feed-amount: 100, pvp: deny, mob-spawning: deny}
+        owners:
+            unique-ids: [28556dea-667d-409f-b2ff-fb4177a20ff2]
         type: cuboid
         priority: 5
     secretaryarea:
