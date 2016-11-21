@@ -1,0 +1,338 @@
+AK-47_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Custom_Pre_Shoot_Sound: "shoot.ak-3-1"
+        Trails:
+            Trail: "Crit"
+        Custom_Bullet_Spread:
+            Maxium_Y_Spread_Lower: 0.4
+            Maxium_Y_Spread_Higher: 0.5
+            Minium_Starting_Y_Spread: 0.001
+            Maxium_Starting_Y_Spread: 0.003
+            Decrease_Spread_Back_to_Normal:
+                Minium_Milliseconds: 1200
+                Maxium_Milliseconds: 1800
+            While_Zooming:
+                ZX_Spread: 0.02
+                Increase_Y_Spread_Per_Shot: 0.004
+            While_Sneaking:
+                ZX_Spread: 0.04
+                Increase_Y_Spread_Per_Shot: 0.006
+            While_Standing_Or_Walking:
+                ZX_Spread: 0.06
+                Increase_Y_Spread_Per_Shot: 0.008
+            While_Sprinting:
+                ZX_Spread: 0.08
+                Increase_Y_Spread_Per_Shot: 0.01
+            While_Not_Touching_Ground:
+                ZX_Spread: 0.1
+                Increase_Y_Spread_Per_Shot: 0.012
+    Damage:
+        No_Knockback:
+            Affect_Players: true
+            Affect_Mobs_And_Animals: true
+    Hit_Block:
+        Block_Crack_Animation:
+            Minium_Crack: 3
+            Maxium_Crack: 5
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: -0.01
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Disable_Using_CS_Attachment_Without_CSP_Attachment: true
+        Unable_To_Change_To_CS_Attachment_Message: "&7You have to add grenade launcher attachment&c!"
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Extended_Clip,Lightweight,FMJ,Grenade_Launcher"
+        Maxium_Amount_Of_Attachments: 2
+
+Bazooka_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "PiercedCrit,PiercedSmoke"
+    Damage:
+        Spawn_Firework:
+            Shape: "BALL"
+            Color: "5-5-5"
+            Flicker: false
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: -0.03
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Lightweight,Flame_Gun"
+        Maxium_Amount_Of_Attachments: 2
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+
+Carbine_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "Crit"
+    Damage:
+        No_Knockback:
+            Affect_Players: true
+            Affect_Mobs_And_Animals: true
+    Hit_Block:
+        Block_Crack_Animation:
+            Minium_Crack: 5
+            Maxium_Crack: 8
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: -0.01
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Homing_Projectiles,High_Caliber_Rounds,Backstabber,FMJ,Flame_Gun,Bouncing_Gun"
+        Maxium_Amount_Of_Attachments: 2
+
+Gauss_CSP:
+    Shoot:
+        Trails:
+            Trail: "StraightRainbow,PiercedMagic"
+        Increasing_Fire_Rate:
+            Starting_Rate: 1
+            Add_Rate_Per_Shot: 1
+            Maxium_Rate_For_Shot: 3
+            Decrease_Back_to_Starting_Rate:
+                Minium_Milliseconds: 700
+                Maxium_Milliseconds: 1000
+    Damage:
+        No_Knockback:
+            Affect_Players: true
+            Affect_Mobs_And_Animals: true
+        Spawn_Firework:
+            Shape: "BALL"
+            Color: "235-0-156"
+            Flicker: false
+        Damage_Increase_Based_On_Armor:
+            Helmet:
+                LEATHER_HELMET: 1
+                IRON_HELMET: 2
+                CHAINMAIL_HELMET: 3
+                GOLD_HELMET: 4
+                DIAMOND_HELMET: 5
+            Chestplate:
+                LEATHER_CHESTPLATE: 1
+                IRON_CHESTPLATE: 2
+                CHAINMAIL_CHESTPLATE: 4
+                GOLD_CHESTPLATE: 5
+                DIAMOND_CHESTPLATE: 7
+            Leggings:
+                LEATHER_LEGGINGS: 1
+                IRON_LEGGINGS: 2
+                CHAINMAIL_LEGGINGS: 3
+                GOLD_LEGGINGS: 4
+                DIAMOND_LEGGINGS: 5
+            Boots:
+                LEATHER_BOOTS: 1
+                IRON_BOOTS: 2
+                CHAINMAIL_BOOTS: 3
+                GOLD_BOOTS: 4
+                DIAMOND_BOOTS: 5
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: 0.01
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Flame_Gun,FMJ"
+        Maxium_Amount_Of_Attachments: 2
+
+Olympia_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "PiercedFlame"
+    Damage:
+        Damage_Increase_Based_On_Armor:
+            Helmet:
+                LEATHER_HELMET: 1
+                IRON_HELMET: 2
+                CHAINMAIL_HELMET: 3
+                GOLD_HELMET: 4
+                DIAMOND_HELMET: 5
+            Chestplate:
+                LEATHER_CHESTPLATE: 1
+                IRON_CHESTPLATE: 2
+                CHAINMAIL_CHESTPLATE: 4
+                GOLD_CHESTPLATE: 5
+                DIAMOND_CHESTPLATE: 7
+            Leggings:
+                LEATHER_LEGGINGS: 1
+                IRON_LEGGINGS: 2
+                CHAINMAIL_LEGGINGS: 3
+                GOLD_LEGGINGS: 4
+                DIAMOND_LEGGINGS: 5
+            Boots:
+                LEATHER_BOOTS: 1
+                IRON_BOOTS: 2
+                CHAINMAIL_BOOTS: 3
+                GOLD_BOOTS: 4
+                DIAMOND_BOOTS: 5
+    Hit_Block:
+        Block_Crack_Animation:
+            Minium_Crack: 3
+            Maxium_Crack: 4
+        Block_Transform:
+            Transform_From_Block_To_Block:
+            - "3:0 -> 2"
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: 0.013
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Flame_Gun,Bouncing_Projectiles,Lightweight"
+        Maxium_Amount_Of_Attachments: 1
+
+Python_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "Crit"
+        Bouncing_Projectiles:
+            Decrese_Velocity_Per_Bounce: 0.8
+            Minium_Velocity: 0.6
+            Bounce_Amount: 1
+    Damage:
+        Damage_Hologram_Format: "&7- &c#DAMAGE# &7-"
+        Title_And_Subtitle:
+            Shooter:
+                Headshot:
+                    Title: "&7- &cHeadshot &7-"
+                    Subtitle: "&7#VICTIM#&c: &7#DAMAGE#"
+    Hit_Block:
+        Block_Crack_Animation:
+            Minium_Crack: 6
+            Maxium_Crack: 8
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Reload:
+        Visual_Reload:
+            Visual_Reload: "Gray_Reload"
+    Held:
+        Weapon_Weight: -0.013
+        Hide_Attributes: true
+    Kill:
+        Title_And_Subtitle:
+            Only_Player_Kill: true
+            Subtitle: "&7You killed&c: &7#KILLED#"
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+
+Type95_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "Crit"
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
