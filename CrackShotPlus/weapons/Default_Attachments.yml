@@ -1,0 +1,65 @@
+Grenade_Laucnher_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "Flame"
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: -0.01
+        Hide_Attributes: true
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Flame_Gun"
+        Maxium_Amount_Of_Attachments: 2
+
+Bouncing_Gun_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            Trail: "Flame"
+        Bouncing_Projectiles:
+            Decrese_Velocity_Per_Bounce: 0.3
+            Minium_Velocity: 1.0
+            Bounce_Amount: 1
+    Reload:
+        Visual_Reload:
+            GUI:
+                Use_GUI_To_Select_Visual_Reload: true
+                Default_Visual_Reload: "Gray_Reload"
+                GUI_Name: "&c- &7Visual Reload &c-"
+            Visual_Reload: "Blue_Reload,Green_Reload"
+    Held:
+        Weapon_Weight: -0.01
+        Hide_Attributes: true
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "StatTrak,Flame_Gun"
+        Maxium_Amount_Of_Attachments: 2

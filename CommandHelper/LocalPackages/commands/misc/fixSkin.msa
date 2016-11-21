@@ -12,13 +12,13 @@ fixskin:/fixskin = >>>
 <<<
 
 fixskin:/fixskin $plr = >>>
-    
+
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
-    @plr = $plr
-    @class = pgroup(@plr)[0]
+    @playr = $plr
+    @class = pgroup(@playr)[0]
     
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-    _changeSkin(@plr,@hero['sig'],@hero['val'])
+    _changeSkin(@playr,@hero['sig'],@hero['val'])
     
 <<<

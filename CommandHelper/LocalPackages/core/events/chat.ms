@@ -157,14 +157,6 @@ bind('player_chat', null, null, @e) {
 
     #modify_event(message, @msg)
     
-    @contains111 = reg_match('1.11',@msg)
-    
-    if(array_size(@contains111) != 0){
-        set_timeout(500,closure(
-            broadcast(color(green)."This is the plan for 1.11 ".color(gold)."https://www.spigotmc.org/threads/minecraft-1-11-roadmap.192111/")
-        ))
-    }
-    
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
     # -------------------------------
@@ -176,7 +168,12 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # chat timeout settings
     # -------------------------------
-    @cooldown = 3
+   
+    if(@pname == "Bigglesviking"){
+        @cooldown = 120
+    }else{
+        @cooldown = 3
+    }
     if(is_null(get_value(@pname.'lastmessage')))
     {
         store_value(@pname.'lastmessage',0)

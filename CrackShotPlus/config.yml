@@ -1,14 +1,26 @@
-#
-# Remeber to read CrackShotPlus's wiki while configuring CrackShotPlus.
-# https://www.spigotmc.org/wiki/crackshotplus-wiki/
-#
-# Set this to false if you don't want to generate default weapons on reload/restart.
-GenerateDefaultWeapons: true
-# Message which player gets when he has no permission for some command.
-Permissions: '&a&lYou do not have permission to do this.'
-# Message which player gets when he reloads config.
-Configuration: '&a&lConfiguration reloaded.'
-# Message which player gets when he does invalid command.
-UnknownCommand: '&a&lInvalid command.'
-# Message which player gets when he tries to zoom while in CREATIVE mode.
-NoCreativeZooming: '&a&lYou cant zoom in CREATIVE mode.'
+Configuration_Reloaded_Message: "&7Configuration reloaded."
+No_Permissions_Message: "&7Sorry, but you do not have permissions for this."
+Unknown_Command: "&7Invalid command."
+Check_For_Updates: true
+Check_Pre_Reload: true
+Shooting_Cooldown_On_Change_Held_Slot:
+    Enable: false
+    Cooldown: 60
+    Message: "&7You can not shoot yet!"
+Stats:
+    Stats_No_Gun_In_Hand_Message: "&7You have to be holding a gun to check stats."
+    No_Stats_For_Gun_Message: "&7This gun does not have any stats."
+    Stats_Messages:
+        Header:
+        - "&7Stats&c:"
+        Attachments:
+        - "&c- &7Attachments &c- &7#ATTACHMENTS#"
+        Skin:
+        - "&c- &7Skin &c- &7#SKIN#"
+        Trail:
+        - "&c- &7Trail &c- &7#TRAIL#"
+        Visual_Reload:
+        - "&c- &7Visual Reload &c- &7#VISUALRELOAD#"
+        StatTrak:
+        - "&c- &7StatTrak &c- &7#STATTRAK#"
+Break_Blocks_Update_Interval: 40
