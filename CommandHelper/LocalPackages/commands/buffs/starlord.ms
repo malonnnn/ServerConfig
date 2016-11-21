@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0Nzk3NzEwNzM2NDgsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJWaWNlVE9QIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS85ZTE3NjNiZjY0ODY1YzNmZGYxOTU0ODRjZWNkM2MzNWUzZDQ5OTE5YzFlMjdhZGY3NzY4ODMyZGM5YjVjMjEwIn19fQ=='
             'trail': '',
             'op': 'false',
-            'speech': "Star Lord, man... legendary outlaw?",
+            'speech': "Star-Lord, man... legendary outlaw?",
             'powers': array(
                 "/buff",
                 "/jump 0-6",
