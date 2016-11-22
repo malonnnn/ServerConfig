@@ -129,7 +129,7 @@ private_message:
   bungeecord: false
 private_message_formats:
   to_sender:
-    format: '&7you &e-> &7%recipient% &7:'
+    format: '&7you &e-> &7%recipient_player% &7:'
     tooltip:
     - '%player_server%'
     click_command: '/r '
@@ -144,7 +144,7 @@ private_message_formats:
 formats:
   default:
     priority: 2147483647
-    channel: '%player_world%&a&l/'
+    channel: '%multiverse_world_alias%&a&l/'
     prefix: '%vault_groupprefix%&a&l/'
     name_color: ''
     name: ''
