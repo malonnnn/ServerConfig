@@ -15,12 +15,10 @@ changehero:/changehero = >>>
     )
     store_value('lasttransform', time() / 1000)
     
-    set_block_at("-1733","67","225","152:0","greenfield")
-    set_block_at("-1735","67","225","152:0","greenfield")
+    set_block_at("-1731","65","216","152:0","greenfield")
     
-    set_timeout(2000, closure(){
-        set_block_at("-1733","67","225","0:0","greenfield")
-        set_block_at("-1735","67","225","0:0","greenfield")
+    set_timeout(4000, closure(){
+        set_block_at("-1731","65","216","1:0","greenfield")
     });
     
     array @locs = array(
