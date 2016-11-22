@@ -119,8 +119,20 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(@pgroup[0] == 'groot')
     {
+        @players = all_players()
+        @rocketMsg = @msg
+        
         assign(@msg,"I am Groot.")
         modify_event(message, @msg)
+
+        
+        foreach(@player in @players){
+            if(pgroup(@player)[0] == "rocketraccoon"){
+                set_timeout(500,closure(
+                    tmsg(@player,color(red)."Groot says: ".@rocketMsg)
+                ))
+            }
+        }
     }
     
     # -------------------------------
