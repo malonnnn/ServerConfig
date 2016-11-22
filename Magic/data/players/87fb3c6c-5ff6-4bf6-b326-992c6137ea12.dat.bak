@@ -1,6 +1,6 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Tektronic
-last_cast: 1479697451725
+last_cast: 1479833563881
 cooldown_expiration: 0
 last_death_location: -2561.044916949472,70.0,1231.300000011921,1_9,-177.40717,38.249725
 fall_protection_count: 0
@@ -340,6 +340,15 @@ undo:
   name: Curse
 - time_to_live: 0
   name: Curse
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- world: '1_9'
+  time_to_live: 0
+  name: Magic Missile
 spells:
   flare:
     cast_count: 3
@@ -411,6 +420,11 @@ spells:
     last_cast: 1479675691017
     last_earn: 0
     cooldown_expiration: 1479675701017
+  missile:
+    cast_count: 1
+    last_cast: 1479833563881
+    last_earn: 1479833563927
+    cooldown_expiration: 1479833564881
   fire:
     cast_count: 9
     last_cast: 1479675499982
@@ -794,6 +808,57 @@ wands:
       owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       name: Broomstick
       description: You can fly!
+  wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Magic Missile§f (§3Wand§f)
+        lore:
+        - §o§aBeginner Magic Wand
+        - '§eCooldown: §6A Moment'
+        - §o§3Bound to _Tkky4EverYT_
+        - '§d§oMana: 50'
+        - '§r§dMana Regeneration: 5/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAG1Sy27TQBS9ad3gpmkFRWIDi0hErOrKju3YZoEIJWqR2kaiqVBX1thzJxnFj2E8aWDHhm/gA9iy4AP4Bj6IFWOHVF3gxUj3js89554zHYAOGCtSUBMMKksB7enk9PR8bIKpMBcZUbi5P8hJQWLFc6wUyQXsO14Qha7rR3YQeRpQrgqUMafQDyhjkUOpFQ1xaHlJ4FoRZcRygigaoO37wxpg8LQsoLMqSxrPS3zpmPAEGcNUxYJIxdMMY0koX1awbR8PTNijWKWSC8U17mFfEDXvXZAZT3sf1hvUHTATnPFCSzHhUSNZ4gx1SRpYyzeh+48lLbNSwouABphokU7CyJHnpN7AG1B9uEehizSlYeC4YWhCJ0OmQRlPF2CcjK6mJux8XHJU0NLSt5rF/dDzGBtYjLqh5UV2ZBGX+VYy9GzPGfq2TbXO7rxUCZGaf1mswe1KYJZV8CDnVcUz1LsuizoPQZJMJ6DkUvd2GodhP54uFp+98S3Km2n8H9NKxiqtSpvmalOqFRHQPbk5OR/HZ5Ppm9F7PSnR1HQzd0/y2fxus8vJpY7/gBfabX2fKn5PQpfo+hbjRu89uUbtNBi+fWzrYoEoNgijILmGrxMym0By8gm2fBt24XCklOTJUuFFSTnjKKsOALQMMK+v3729KCv15/mrZ6MvZ2jAbt06R1Kpn09//f729cf3NrRHeW3i6z40n6a7ykpV8/Bi3lDu31Fc1kIeN2+Bp8dEKZIurgQi3Ybdidg8kPWU5t/DsY5X5Fio3kYewF96eNK8MwMAAA==
+    wand:
+      active_spell: missile
+      path: beginner
+      template: wand
+      mana: 50.0
+      mana_regeneration: 5.0
+      mana_max: 50.0
+      bound: true
+      indestructible: true
+      undroppable: true
+      effect_color: 7d7eb4b71bfa,41c4242d4243,83edcd871388
+      effect_particle_radius: 0.2
+      effect_particle_offset: 0.3
+      hotbar_count: 1.0
+      icon: wood_hoe:1
+      keep: true
+      quiet: 1.0
+      spells: missile
+      left_click: CAST
+      right_click: NONE
+      drop: TOGGLE
+      swap: CYCLE_HOTBAR
+      id: 75844ff2-fd38-4909-a3f5-b640416500dd
+      owner: _Tkky4EverYT_
+      owner_id: 7dff91dd-96e6-4b73-9dfa-17992e055694
+      name: Wand
+      description: $path Magic Wand
+      mana_timestamp: 1.479833590794E12
 open_wand: false
 gave_welcome_wand: false
 soul:
@@ -867,4 +932,4 @@ soul:
   icon: wood_hoe
   icon_inactive_delay: 0
 data:
-  sp: 15
+  sp: 22
