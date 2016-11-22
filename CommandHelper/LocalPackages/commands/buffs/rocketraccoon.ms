@@ -14,7 +14,6 @@
                 "/run 0-1"
             ),
             'buffs': array(
-                "/effect ". @plr ." 16 9999 1 true",
-                "/shot give ". @plr ." rocketblaster"               
+                "/effect ". @plr ." 16 9999 1 true"           
             )
         )
