@@ -22,8 +22,8 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
                 "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true"                
+                "/effect ". @plr ." 21 9999 9 true",
+                "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3P&9o&3s&9e&3i&9d&3o&9n's_&bPublic_&3Water_Helmet"
             )
         )
