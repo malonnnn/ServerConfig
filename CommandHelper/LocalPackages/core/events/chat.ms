@@ -122,7 +122,13 @@ bind('player_chat', null, null, @e) {
         @players = all_players()
         @rocketMsg = @msg
         
-        assign(@msg,"I am Groot.")
+        @phrase = rand(1, 51)
+        
+        if(@phrase < 50){  
+            assign(@msg,"I am Groot.")
+        } else {
+            assign(@msg,"We are Groot.")
+        }
         modify_event(message, @msg)
 
         
@@ -177,8 +183,8 @@ bind('player_chat', null, null, @e) {
         die()
     }
 
-    @msg = to_lower(@msg)
-    modify_event(message, @msg)
+    # @msg = to_lower(@msg)
+    # modify_event(message, @msg)
      
     # -------------------------------
     # chat timeout settings
