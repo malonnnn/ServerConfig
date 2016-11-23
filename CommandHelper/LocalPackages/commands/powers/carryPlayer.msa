@@ -38,3 +38,13 @@ carryplayer:/carryplayer $plr = >>>
     tmsg(@plr, "You grabbed ".@vic."!")
         
 <<<
+
+dismoutplayer:/dismountplayer = >>>
+   
+   @rider = get_entity_rider(puuid(player()))
+
+    if(@rider != null){
+        set_entity_rider(null,@rider)
+    }
+
+<<<
