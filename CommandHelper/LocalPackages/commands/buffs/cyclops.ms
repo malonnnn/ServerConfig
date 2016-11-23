@@ -20,23 +20,3 @@
                 "/effect " @plr " 21 9999 4 true",
              )                 
         )             
-cyclops:
-    options:
-      prefix: §9C§ey§9c§cl§eo§9ps','
-      suffix: '&8'
-    inheritance:
-    - mortal
-    worlds:
-      '1_9':
-        permissions:
-        - ch.alias.cyclops
-        - ch.alias.jump0
-        - ch.alias.jump1
-        - ch.alias.jump2
-        - ch.alias.jump3
-        - ch.alias.run0
-        - ch.alias.run1
-        - ch.alias.run2
-        - ch.alias.haste0
-        - ch.alias.haste1
-        - ch.alias.haste2
