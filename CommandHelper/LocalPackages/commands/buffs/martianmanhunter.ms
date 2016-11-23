@@ -23,6 +23,7 @@
                 "/invis",
                 "/vis",
                 "/disguiseviewself",
+                "/confuse <player>",
                 "/undisguise"
             ),
             'buffs': array(
