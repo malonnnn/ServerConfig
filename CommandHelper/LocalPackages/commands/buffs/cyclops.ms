@@ -29,7 +29,7 @@ cyclops:
     worlds:
       '1_9':
         permissions:
-        - ch.alias.Cyclops
+        - ch.alias.cyclops
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
