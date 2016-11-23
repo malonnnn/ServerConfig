@@ -11,6 +11,12 @@
             'speech': "I like to run.",
             'powers': array(
                 "/buff",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforceheal <playername>",
+                "/whirlwind",
+                "/carryplayer",
+                "/dismountplayer",
                 "/run 0-9",
                 "/jump 0-3",
                 "/haste 0-4",
