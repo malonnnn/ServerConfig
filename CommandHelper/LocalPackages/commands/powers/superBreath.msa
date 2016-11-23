@@ -1,4 +1,4 @@
-speedforcewhirlwind:/speedforcewhirlwind = >>>
+superbreath:/superbreath = >>>
 
     @ploc = ploc()
     @allPlayers = players_in_radius(@ploc,20)
@@ -26,7 +26,7 @@ speedforcewhirlwind:/speedforcewhirlwind = >>>
             @final = sqrt(@final)
             
             @maxDist = 30
-            @magnitude = (1 - @final / @maxDist) * 5 
+            @magnitude = (1 - @final / @maxDist) * 10 
 
             @yaw = @ploc['yaw'] + 90;
             @pitch = neg(@ploc['pitch']);
