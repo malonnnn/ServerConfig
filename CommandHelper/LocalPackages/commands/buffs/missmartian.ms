@@ -24,6 +24,7 @@
                 "/stopmindcontrol",
                 "/invis",
                 "/vis",
+                "/confuse <player>",
                 "/disguiseviewself",
                 "/undisguise"
             ),
