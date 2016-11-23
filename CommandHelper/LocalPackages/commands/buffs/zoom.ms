@@ -15,7 +15,7 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
-                "/speedforcewhirlwind",
+                "/whirlwind",
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-9",
