@@ -18,7 +18,7 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
-                "/speedforcewhirlwind",
+                "/whirlwind",
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-7",
