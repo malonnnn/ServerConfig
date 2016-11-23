@@ -20,7 +20,7 @@
                 "/effect " @plr " 21 9999 4 true",
              )                 
         )             
-batman:
+cyclops:
     options:
       prefix: §9C§ey§9c§cl§eo§9ps','
       suffix: '&8'
