@@ -16,6 +16,7 @@
                 "/underworld (travels to the UNDERWORLD!)",
                 "/disguise",
                 "/speak <playername>",
+                "/confuse <player>",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-4"
