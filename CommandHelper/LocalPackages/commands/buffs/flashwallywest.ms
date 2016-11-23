@@ -15,6 +15,12 @@
                 "/buff",
                 "/run 0-9",
                 "/jump 0-3",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforceheal <playername>",
+                "/whirlwind",
+                "/carryplayer",
+                "/dismountplayer",
                 "/haste 0-7",
                 "/tp",
                 "/thru (phases through walls)"
