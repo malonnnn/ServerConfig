@@ -21,6 +21,9 @@
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true"
+                "/effect ". @plr ." 21 9999 19 true",
+                "/give ". @plr ." minecraft:stick 1 16:10 name:&2G&ar&6o&ao&2t's_Damage_Attack",
+                "/give ". @plr ." minecraft:stick 1 19:10 name:&2G&ar&6o&ao&2t's_Knockback_Attack",
+                "/give ". @plr ." minecraft:stick 1 19:5 16:5 name:&2G&ar&6o&ao&2t's_Damage_&_Knockback__Attack"
             )
         )
