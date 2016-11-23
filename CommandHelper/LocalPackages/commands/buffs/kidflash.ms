@@ -12,6 +12,12 @@
             'powers': array(
                 "/buff",
                 "/jump 0-3",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforceheal <playername>",
+                "/whirlwind",
+                "/carryplayer",
+                "/dismountplayer",
                 "/run 0-8",
                 "/haste 0-4",
                 "/thru (phases through walls)"
