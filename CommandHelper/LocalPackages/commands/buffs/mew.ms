@@ -20,6 +20,7 @@
                 "/speak <playername>",
                 "/jump 0-2",
                 "/run 0-2",
+                "/confuse <player>",
                 "/haste 0-2"
             ),
             'buffs': array(
