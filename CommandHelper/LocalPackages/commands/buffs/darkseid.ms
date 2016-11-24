@@ -23,6 +23,7 @@
                 "/shrink",
                 "/jump 0-9",
                 "/run 0-9",
+                "/confuse <player>",
                 "/haste 0-9"
             ),
             'buffs': array(
