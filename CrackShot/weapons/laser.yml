@@ -114,6 +114,46 @@ quantumlaser:
         start_pos: 0
         start_y: 0
         color: 100-100-255
+icemagic:
+    Item_Information:
+        Item_Name: "&bIce Magic"
+        Item_Type: 351:6
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 35
+        Delay_Between_Shots: 10
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Potion_Effects:
+        Activation: hit
+        Potion_Effect_Victim: SLOW-100-55
+        Potion_Effect_Victim: SATURATION-100-20
+    Hit_Events:
+        Enable: true
+    Abilities:
+        Knockback: -1
+    Custom_Death_Message:
+        Normal: You suddenly feel cold....dangerously cold. 
+        Headshot: You scream in pain as your face freezes like Artic snow.
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 100-100-255
 destructionlaser:
     Item_Information:
         Item_Name: "&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne's &4Destruction Laser"
@@ -203,6 +243,36 @@ bluebeam:
         start_pos: 0
         start_y: 0
         color: 0-255-255  
+lightningmagic:
+    Item_Information:
+        Item_Name: "&bLightning Bolt"
+        Item_Type: 351:4
+        Inventory_Control: lightingbolt
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 250 
+        Delay_Between_Shots: 200
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 230-255-254
 finalflash:
     Item_Information:
         Item_Name: "&eV&fe&1ge&fta's &eFinal Flash"
@@ -353,6 +423,42 @@ greenbeam:
         start_pos: 0
         start_y: 0
         color: 0-255-0
+poisonmagic:
+    Item_Information:
+        Item_Name: "&2Poison Blast"
+        Item_Type: 388
+        Inventory_Control: poisonblast
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 200
+        Delay_Between_Shots: 200
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Potion_Effects:
+        Activation: hit
+        Potion_Effect_Victim: POISON-300-200, SATURATION-300-200
+    Custom_Death_Message:
+        Normal: You feel sick, leading to pain and hunger.
+        H̶eadshot: Your face becomes green, you begin to throw up, fainting.
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 0-255-0
 redbeam:
     Item_Information:
         Item_Name: "&4R&0e&4d L&ca&4nt&0e&4rn's Red Beam"
@@ -370,6 +476,43 @@ redbeam:
         Enable: false
     Hit_Events:
         Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-0-0
+firemagic:
+    Item_Information:
+        Item_Name: "&4Flame Bolt"
+        Item_Type: 51
+        Inventory_Control: flamebolt
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 50
+        Delay_Between_Shots: 15
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: flames,smoke
+        Particle_Terrain: true
+    Custom_Death_Message:
+        Normal: You have been set flame, burning to ashes.
+        Headshot: Your face burns, melting skin, until you see bone.
     Laser:
         Enable: true
         trigger: 1-0
