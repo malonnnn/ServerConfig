@@ -36,6 +36,7 @@
                 "/lightning",
                 "/weather",
                 "/back",
+                "/confuse <player>",
                 "/top"
             ),
             'buffs': array(
