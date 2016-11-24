@@ -1,4 +1,13 @@
-speedforcewhirlwind:/speedforcewhirlwind = >>>
+speedforcewhirlwind:/whirlwind = >>>
+
+    @player = player()
+    assign(@cooldown, 30)
+    
+    assign(@lastUsedMindControl, get_value(@player."lastUsedWhirlWind"))
+    if(@lastUsedMindControl + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can use whirl wind again!")
+    )
+    store_value(@player."lastUsedWhirlWind", time() / 1000)
 
     @ploc = ploc()
     @allPlayers = players_in_radius(@ploc,20)
