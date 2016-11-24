@@ -48,4 +48,20 @@ bind(player_join,null,null,@event){
         _changeSkin(@plr,@hero['sig'],@hero['val'])
         _changeTrail(@plr, @hero['trail'])
     ))
+    if(@plr == "Legend_Of_Helix" || @plr == "Tektronic"){
+        set_timeout(5000,closure(
+            runas(~console,"/warp creative ".@plr)
+        ))
+        set_timeout(6000,closure(
+            runas(~console,"/warp helix ".@plr)
+        ))
+    }
+    if(@plr == "missmandyy"){ 
+        set_timeout(5000,closure(
+            runas(~console,"/warp creative ".@plr)
+        ))
+        set_timeout(6000,closure(
+            runas(~console,"/warp mandy ".@plr)
+        ))
+    }
 }
