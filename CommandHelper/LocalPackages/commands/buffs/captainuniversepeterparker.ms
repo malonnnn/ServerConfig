@@ -23,6 +23,7 @@
                 "/speak <playername>",
                 "/disguiseviewself",
                 "/mindcontrol <playername>",
+                "/confuse <player>",
                 "/stopmindcontrol"
             ),
             'buffs': array(
