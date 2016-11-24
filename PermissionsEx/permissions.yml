@@ -914,7 +914,8 @@ groups:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - essentials.tp
         - -essentials.protect.damage.fall
         - ch.alias.mew
@@ -985,7 +986,8 @@ groups:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
         - ch.alias.empower
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.speak
         - essentials.tp
         - ch.alias.shrink
@@ -1037,7 +1039,8 @@ groups:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - essentials.tp
         - -essentials.protect.damage.fall
         - ch.alias.mewtwo
@@ -1481,7 +1484,8 @@ groups:
         - ch.alias.mindcontrol
         - ch.alias.stopmindcontrol
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -2218,7 +2222,8 @@ groups:
         - ch.alias.jump8
         - ch.alias.jump9
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.intangible
         - ch.alias.tangible
         - ch.alias.invis
@@ -2395,7 +2400,8 @@ groups:
         - ch.alias.jump8
         - ch.alias.jump9
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.intangible
         - ch.alias.tangible
         - ch.alias.invis
@@ -2565,7 +2571,8 @@ groups:
         - ch.alias.mindcontrol
         - ch.alias.stopmindcontrol
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.captainuniversepeterparker
         - essentials.gamemode
         - essentials.gamemode.creative
@@ -2662,7 +2669,8 @@ groups:
         - ch.alias.jump4
         - ch.alias.jump5
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.intangible
         - ch.alias.tangible
         - ch.alias.invis
@@ -2877,7 +2885,8 @@ groups:
         - ch.alias.jump8
         - ch.alias.jump9
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - libsdisguises.disguise
         - libsdisguises.undisguise
         - libsdisguises.disguise.bat.-setinvisible
@@ -3596,6 +3605,9 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
@@ -3604,6 +3616,7 @@ groups:
         - essentials.tppos
         - ch.alias.flashbartallen
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - ch.alias.speedforcewhirlwind
         - essentials.warps.speedforce
         - ch.alias.jump0
@@ -3636,11 +3649,15 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - worldedit.navigation.thru.command
         - essentials.tppos
         - essentials.warps.speedforce
@@ -3675,6 +3692,9 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
@@ -3683,6 +3703,7 @@ groups:
         - essentials.tppos
         - essentials.warps.speedforce
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - ch.alias.therival
         - ch.alias.speedforcewhirlwind
         - ch.alias.jump0
@@ -3744,6 +3765,9 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
@@ -3753,6 +3777,7 @@ groups:
         - essentials.tppos
         - ch.alias.speedforcewhirlwind
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - powers.thru.destabilize
         - essentials.warps.speedforce
         - ch.alias.flashwallywest
@@ -3807,6 +3832,9 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
@@ -3816,6 +3844,7 @@ groups:
         - powers.thru.destabilize
         - ch.alias.speedforcewhirlwind
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - essentials.tppos
         - essentials.warps.speedforce
         - ch.alias.kidflash
@@ -3847,13 +3876,20 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
         - powers.wallrun
         - worldedit.navigation.thru.command
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - ch.alias.speedforcewhirlwind
         - essentials.warps.speedforce
         - essentials.tppos
@@ -3887,11 +3923,15 @@ groups:
       speedforce:
         permissions:
         - ch.alias.speedforcebuffs
+        - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
         - ch.alias.speedforceheal
       '1_9':
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
+        - ch.alias.carryplayer
         - worldedit.navigation.thru.command
         - essentials.tppos
         - ch.alias.reverseflasheoabardthawne
@@ -5006,7 +5046,8 @@ groups:
         permissions:
         - powers.wallrun
         - ch.alias.stopmindcontrol
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.mindcontrol
         - worldedit.navigation.thru.command
         - ch.alias.martianmanhunter
@@ -5107,7 +5148,8 @@ groups:
         - ch.alias.jump7
         - ch.alias.jump8
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - ch.alias.invis
         - ch.alias.vis
         - libsdisguises.disguise
@@ -5326,7 +5368,8 @@ groups:
         - ch.alias.mrmxyzptlk
         - ch.alias.magicmrmxyzptlksmortal
         - essentials.fly
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - essentials.gamemode
         - essentials.gamemode.*
         - essentials.tp
@@ -5383,7 +5426,8 @@ groups:
         - libsdisguises.disguise.zombie_villager.-setinvisible
         - ch.alias.parallaxentity
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - essentials.fly
         - ch.alias.jump0
         - ch.alias.jump1
@@ -5480,7 +5524,8 @@ groups:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
         - ch.alias.speak
-        - powers.confuse
+        - ch.alias.confuse
+        - ch.alias.unconfuse
         - libsdisguises.disguise
         - libsdisguises.undisguise
         - libsdisguises.disguise.bat.-setinvisible
@@ -5977,7 +6022,9 @@ users:
     options:
       name: Legend_Of_Helix
     group:
-    - darkseid
+    - zoom
+    permissions:
+    - rank.mod
   0889f21e-b82c-49a0-ab3c-6e5b0232d093:
     options:
       name: Oranges_are_glad
@@ -6446,7 +6493,7 @@ users:
     options:
       name: EmmettGaming
     group:
-    - darkseid
+    - pikachu
     permissions:
     - -griefprevention.spam
   9994c515-37da-4020-8769-76da2412b4b7:
@@ -6698,7 +6745,7 @@ users:
     permissions:
     - rank.mod
     group:
-    - onepunchman
+    - supermanprimeonemillion
   784f0e4e-d5c9-4184-8d86-4fdbb0d5fb87:
     options:
       name: Archer4295
@@ -7077,12 +7124,12 @@ users:
     options:
       name: YrulyBlu
     group:
-    - kidflash
+    - groot
   d4204482-a067-40ed-87ba-b38b6494b101:
     options:
       name: ScottPlayzMC
     group:
-    - flashbartallen
+    - groot
   d6e27628-6164-4667-93df-df7d9e1ca2fe:
     options:
       name: ViceTOP
@@ -7118,10 +7165,6 @@ users:
     - flashwallywest
     permissions:
     - rank.mod
-    worlds:
-      speedforce:
-        permissions:
-        - essentials.build.*
   6abfd8c4-8c68-419f-9ca7-6dba6182c8f7:
     options:
       name: igudesman_jooish
@@ -7203,7 +7246,7 @@ users:
       name: AlwaysQuinten
   89dfe8bd-6d75-4a20-a23e-84259bfeccc8:
     group:
-    - greenlanternhaljordan
+    - zoom
     options:
       name: _Voiden_
   ea6dfa6b-9c96-4ca4-b886-b5ec161bb7b4:
@@ -7294,7 +7337,7 @@ users:
     permissions: []
   3a3bd0cb-e5b9-439f-8d98-ab263feb1b64:
     group:
-    - reverseflasheobardthawne
+    - flashbarryallen
     options:
       name: KrazySpears
   043ce470-0e00-4b34-978d-5bbd31c63965:
@@ -7636,7 +7679,7 @@ users:
     group:
     - antman
     options:
-      name: IIIDENNISIII
+      name: ReverseFlashCW
   6823f174-6db7-40f4-9575-10d9cefaafb0:
     group:
     - generalzod
@@ -7754,12 +7797,12 @@ users:
       name: Shady_Gonzales
   d9fd4ee5-ec5d-4786-baab-02894faf1000:
     group:
-    - parallaxentity
+    - hephaestus
     options:
       name: Savage2018
   9f23821d-ca1f-4562-acb4-541e287aa336:
     group:
-    - spidermanmilesmorales
+    - blackpanther
     options:
       name: simpsons4434
   03500781-1aa9-4579-8311-cced15fb8ed2:
@@ -7777,3 +7820,13 @@ users:
     - kidflash
     options:
       name: TheNeverDragon
+  e46917f0-277c-4a0f-bcec-d070fbec58fb:
+    group:
+    - mortal
+    options:
+      name: spiefie99
+  b4f8c43f-762e-4a14-bd37-4f00ed5f3932:
+    group:
+    - flashbarryallen
+    options:
+      name: Infamous4K

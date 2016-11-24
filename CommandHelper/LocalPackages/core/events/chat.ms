@@ -63,6 +63,7 @@ bind('player_chat', null, null, @e) {
             @newMsg = @words[@randWord] . " " . @newMsg
             array_remove(@words, @randWord)
             @newNumOfWords = @newNumOfWords - 1
+            @numWords = @numWords - 1
         }
         
         
