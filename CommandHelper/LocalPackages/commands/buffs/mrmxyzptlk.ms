@@ -15,6 +15,7 @@
                 "/gmc",
                 "/fly",
                 "/tp",
+                "/confuse <player>",
                 "/magicmrmxyzptlksmortal <playerName>"
             ),
             'buffs': array()
