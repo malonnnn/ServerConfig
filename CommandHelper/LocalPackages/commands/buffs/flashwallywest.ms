@@ -14,6 +14,7 @@
             'powers': array(
                 "/buff",
                 "/run 0-9",
+                "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
