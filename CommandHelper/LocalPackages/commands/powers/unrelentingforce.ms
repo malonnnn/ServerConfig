@@ -3,11 +3,11 @@ fusrodah:/fusrodah = >>>
     @player = player()
     assign(@cooldown,45)
     
-    assign(@lastUsedMindControl, get_value(@player."lastUsedThu'um"))
+    assign(@lastUsedMindControl, get_value(@player."lastUsedThuum"))
     if(@lastUsedMindControl + @cooldown > time() / 1000,
         die(color(gray)."Your Thu'um is too weak, you must wait for it to strengthen.")
     )
-    store_value(@player."lastUsedThu'um", time() / 1000)
+    store_value(@player."lastUsedThuum", time() / 1000)
 
     @ploc = ploc()
     @allPlayers = players_in_radius(@ploc,20)
