@@ -18,6 +18,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-9",
+                "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
                 "/haste 0-4",
                 "/thru (phases through walls)"
