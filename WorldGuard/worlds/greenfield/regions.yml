@@ -64,18 +64,16 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pistons: allow, pvp: allow, chest-access: deny, ghast-fireball: deny}
+        flags: {creeper-explosion: deny, use: allow, pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
     staffapps:
-        parent: basements
         min: {x: -1729.0, y: 68.0, z: 229.0}
         max: {x: -1729.0, y: 68.0, z: 229.0}
         members:
             unique-ids: [391762eb-24f6-4d95-84d6-bfac682d575a]
-        flags: {chest-access-group: NON_MEMBERS, block-break: deny, chest-access: deny}
+        flags: {}
         owners: {}
         type: cuboid
         priority: 6
@@ -145,7 +143,6 @@ regions:
         type: cuboid
         priority: 2
     basements:
-        parent: city
         min: {x: -1770.0, y: 0.0, z: 193.0}
         max: {x: -1726.0, y: 255.0, z: 239.0}
         members: {}
