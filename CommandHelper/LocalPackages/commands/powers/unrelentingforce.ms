@@ -1,4 +1,4 @@
-unrelentingforce:/fusrodah = >>>
+fusrodah:/fusrodah = >>>
 
     @player = player()
     assign(@cooldown,45)
