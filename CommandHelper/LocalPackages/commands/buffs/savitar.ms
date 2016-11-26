@@ -13,6 +13,7 @@
             'powers': array(
                 "/buff",
                 "/jump 0-3",
+                "/carryplayer <Player>",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
@@ -20,7 +21,7 @@
                 "/run 0-9",
                 "/haste 0-8",
                 "/thru (phases through walls)",
-                "/tp <player>",
+                "/tppos <X, Y, Z, Coords>",
                 "/invis -Makes you invisible",
                 "/vis -Makes you visible again"
             ),
