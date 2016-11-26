@@ -12,7 +12,6 @@
             'speech': "I am the God of speed!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
                 "/carryplayer <Player>",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
@@ -20,8 +19,9 @@
                 "/whirlwind",
                 "/run 0-9",
                 "/haste 0-8",
+                "/jump 0-3",
                 "/thru (phases through walls)",
-                "/tp <player>",
+                "/tppos <X, Y, Z Coordinates>",
                 "/invis (makes you invisible)",
                 "/vis (makes you visible again)"
             ),
