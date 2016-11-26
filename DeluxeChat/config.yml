@@ -143,9 +143,51 @@ private_message_formats:
   social_spy: '&8[&cspy&8] &f%player% &e-> &f%recipient%&7:'
 formats:
   default:
-    priority: 2147483647
+    priority: 1
     channel: '%player_world%&a&l/'
-    prefix: '%vault_groupprefix%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
+    name_color: ''
+    name: ''
+    suffix: '%vault_ranksuffix%'
+    chat_color: ''
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '%player%'
+    - '&bRank: %vault_group%'
+    name_tooltip:
+    - ''
+    suffix_tooltip:
+    - ''
+    channel_click_command: /ranks
+    prefix_click_command: /ranks
+    name_click_command: '/msg %player% '
+    suffix_click_command: ''
+  anarchy:
+    priority: 1000
+    channel: '%player_world%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
+    name_color: ''
+    name: ''
+    suffix: '%vault_ranksuffix%'
+    chat_color: ''
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '%player%'
+    - '&bRank: %vault_group%'
+    name_tooltip:
+    - ''
+    suffix_tooltip:
+    - ''
+    channel_click_command: /ranks
+    prefix_click_command: /ranks
+    name_click_command: '/msg %player% '
+    suffix_click_command: ''
+  mortal:
+    priority: 900
+    channel: '%player_world%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
     name_color: ''
     name: ''
     suffix: '%vault_ranksuffix%'
