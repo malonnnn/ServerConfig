@@ -191,11 +191,7 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
    
-    if(@pname == "Bigglesviking"){
-        @cooldown = 120
-    }else{
-        @cooldown = 3
-    }
+    @cooldown = 3
     if(is_null(get_value(@pname.'lastmessage')))
     {
         store_value(@pname.'lastmessage',0)

@@ -11,7 +11,6 @@
 #
 regions:
     suggestionchests:
-        parent: basements
         min: {x: -1749.0, y: 70.0, z: 198.0}
         max: {x: -1749.0, y: 70.0, z: 205.0}
         members: {}
@@ -44,12 +43,11 @@ regions:
         - {x: 296, z: -1311}
         - {x: 287, z: -1311}
     timmychest:
-        parent: basements
         min: {x: -1748.0, y: 68.0, z: 234.0}
         max: {x: -1748.0, y: 68.0, z: 234.0}
         members:
             unique-ids: [7dff91dd-96e6-4b73-9dfa-17992e055694, 391762eb-24f6-4d95-84d6-bfac682d575a]
-        flags: {chest-access-group: MEMBERS, build: deny, chest-access: allow}
+        flags: {build: deny, chest-access-group: MEMBERS, chest-access: allow}
         owners: {}
         type: cuboid
         priority: 6
@@ -66,17 +64,26 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {creeper-explosion: deny, use: allow, interact: allow, pistons: allow,
-            chest-access: deny, pvp: allow, ghast-fireball: deny}
+        flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
+            interact: allow, pistons: allow, pvp: allow, chest-access: deny, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
+    staffapps:
+        parent: city
+        min: {x: -1729.0, y: 68.0, z: 229.0}
+        max: {x: -1729.0, y: 68.0, z: 229.0}
+        members:
+            unique-ids: [391762eb-24f6-4d95-84d6-bfac682d575a]
+        flags: {build: deny, chest-access-group: NON_MEMBERS, chest-access: deny}
+        owners: {}
+        type: cuboid
+        priority: 6
     helixchest:
-        parent: basements
         min: {x: -1746.0, y: 68.0, z: 234.0}
         max: {x: -1746.0, y: 68.0, z: 234.0}
         members: {}
-        flags: {chest-access-group: MEMBERS, build: deny, chest-access: allow}
+        flags: {build: deny, chest-access-group: MEMBERS, chest-access: allow}
         owners:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         type: cuboid
@@ -92,7 +99,6 @@ regions:
         type: cuboid
         priority: 2
     applicationchests:
-        parent: basements
         min: {x: -1729.0, y: 70.0, z: 228.0}
         max: {x: -1729.0, y: 70.0, z: 229.0}
         members: {}
@@ -105,7 +111,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
+        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -138,14 +144,6 @@ regions:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         type: cuboid
         priority: 2
-    basements:
-        min: {x: -1770.0, y: 60.0, z: 193.0}
-        max: {x: -1728.0, y: 79.0, z: 236.0}
-        members: {}
-        flags: {feed-amount: 100, feed-delay: 100, pvp: deny, mob-spawning: deny}
-        owners: {}
-        type: cuboid
-        priority: 5
     __global__:
         members: {}
         flags: {}
