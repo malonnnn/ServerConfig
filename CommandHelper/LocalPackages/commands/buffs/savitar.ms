@@ -13,6 +13,7 @@
             'powers': array(
                 "/buff",
                 "/jump 0-3",
+                "/carryplayer <Player>",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
