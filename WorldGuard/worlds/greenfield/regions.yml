@@ -70,12 +70,12 @@ regions:
         type: cuboid
         priority: 1
     staffapps:
-        parent: city
+        parent: basements
         min: {x: -1729.0, y: 68.0, z: 229.0}
         max: {x: -1729.0, y: 68.0, z: 229.0}
         members:
             unique-ids: [391762eb-24f6-4d95-84d6-bfac682d575a]
-        flags: {build: deny, chest-access-group: NON_MEMBERS, chest-access: deny}
+        flags: {chest-access-group: NON_MEMBERS, block-break: deny, chest-access: deny}
         owners: {}
         type: cuboid
         priority: 6
@@ -144,6 +144,15 @@ regions:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         type: cuboid
         priority: 2
+    basements:
+        parent: city
+        min: {x: -1770.0, y: 0.0, z: 193.0}
+        max: {x: -1726.0, y: 255.0, z: 239.0}
+        members: {}
+        flags: {pvp: deny, mob-spawning: deny}
+        owners: {}
+        type: cuboid
+        priority: 5
     __global__:
         members: {}
         flags: {}
