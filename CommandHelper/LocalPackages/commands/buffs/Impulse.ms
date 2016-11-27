@@ -16,9 +16,10 @@
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
                 "/whirlwind",
-                "/carryplayer",
+                "/carryplayer <playername>",
                 "/dismountplayer",
                 "/run 0-9",
+                 "/run 0-1 (In speed force)",
                 "/haste 0-4",
                 "/thru (phases through walls)"
             ),
