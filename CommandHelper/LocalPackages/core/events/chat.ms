@@ -172,9 +172,9 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)g+[. ,-_]*u+[. ,-_]*c+[. ,-_]*i+', 'gay', @msg))
     #assign(@msg, reg_replace('(?i)\\bcx', 'cocks', @msg))
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
-    assign(@msg, reg_replace('(?i)t+[ .,-]*e+[ .,-]*k+[ .,-]*t+[ .,-]*r+[ .,-]*o+[ .,-]*n+[ .,-]*i+[ .,-]*c+', @pname, @msg))
-    assign(@msg, reg_replace('(?i)t+[ .,-]*r+[ .,-]*o+[ .,-]*n+[ .,-]*i+[ .,-]*c+', @pname, @msg))
-    assign(@msg, reg_replace('(?i)t+[ .,-]*e+[ .,-]*k+', @pname, @msg))
+    assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+[ .,-_]*t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
+    assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
+    assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+', @pname, @msg))
 
     modify_event(message, @msg)
     
