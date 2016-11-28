@@ -19,7 +19,7 @@
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
                 "/speedforcewhirlwind",
-                "/carryplayer",
+                "/carryplayer <playername>",
                 "/dismountplayer",
                 "/haste 0-7",
                 "/thru (phases through walls)"
