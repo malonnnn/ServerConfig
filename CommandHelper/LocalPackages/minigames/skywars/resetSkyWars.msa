@@ -1,0 +1,31 @@
+/resetskywars $plr = >>>
+
+    # How many seconds they have to wait before being able
+    # to re-run fixspleef
+    assign(@cooldown, 300)
+
+    # Ensure the persistent variable exists. If it doesn't, set it to 0.
+    if(is_null(get_value('skywars_lastreset')),
+        store_value('skywars_lastreset',0)
+    )
+    
+    # Get our persistent value
+    assign(@lastreset, get_value('skywars_lastreset'))
+
+    # Note that time is in msec, not sec. So we always divide it by 1000.
+    if(@lastreset + @cooldown > time() / 1000){
+        # then
+        assign(@timeleft, subtract(add(@lastreset, @cooldown), divide(time(),1000)))
+        tmsg($plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can reset §4Skywars §7again!'))
+        die()
+    }
+
+    # Save the current time() (in seconds) in spleef1_lastreset
+    store_value('skywars_lastreset', time() / 1000)
+
+    shell_adv('/home/minecraft/resetskywars.sh',
+    array(subshell: true,
+        workingDir: '/home/minecraft/'
+        )
+    )
+<<<

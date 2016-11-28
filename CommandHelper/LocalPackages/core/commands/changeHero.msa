@@ -1,0 +1,171 @@
+changehero:/changehero = >>>
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
+    
+    assign(@cooldown, 10)
+  
+    if(is_null(get_value('lasttransform')),
+        store_value('lasttransform',0)
+    )
+    
+    assign(@lastshot, get_value('lasttransform'))
+    if(@lastshot + @cooldown > time() / 1000,
+        die()
+    )
+    store_value('lasttransform', time() / 1000)
+    
+    set_block_at("-1731","65","216","152:0","greenfield")
+    
+    set_timeout(4000, closure(){
+        set_block_at("-1731","65","216","1:0","greenfield")
+    });
+    
+    array @locs = array(
+        array(-1736,69,215,"greenfield"),
+        array(-1734,69,215,"greenfield"),
+        array(-1736,69,213,"greenfield"),
+        array(-1734,69,213,"greenfield")
+    )
+    @intervalID = set_interval(100, closure(
+        foreach(@loc in @locs){
+            sudo("/particle totem ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
+        }
+    ))
+    set_timeout(1500, closure(){
+        assign(@locOfRedBlock, array('x': '-1735', 'y': '69', 'z': '214', 'world': 'greenfield', 'yaw': '0', 'pitch': '0'))
+
+        set_timeout(2750,closure(
+        
+            clear_task(@intervalID)
+        
+        ))
+
+        @plrs = players_in_radius(@locOfRedBlock,1)
+        @count = array_size(@plrs)
+        
+        # Make sure only 1 player is in the machine.
+        # If more than 1 person, kill everyone.
+        if(@count == 0){
+            die()
+        }else if(@count > 1){
+            @names = ''
+            foreach(@player in @plrs){
+                pkill(@player)
+                @names = @player." and ".@names
+            }
+            broadcast(@names." had their DNA mixed together, mutated, then died.")
+            die()
+        }
+        
+        # Get player name who is in the machine
+        @plrr = @plrs[0]
+        
+        # Check player inventory for DNA
+        @inv = pinv(@plrr)
+        @haveDNA = false
+        @class = ''
+        @numberOfVials = 0
+        foreach(@item in @inv)
+        {
+            if(@item != null && @item['meta'] != null && @item['meta']['display'] != null){
+                @itemName = @item['meta']['display']
+                if(length(@itemName) > 15){
+                    @nameTest = substr(@itemName,length(@itemName) - 15,length(@itemName))
+                    @dnaWord = color(yellow).color(bold).'D'.color(green).color(bold).'N'.color(dark_red).color(bold).'A'
+                    if(@nameTest == @dnaWord){
+                        @class = @item['meta']['lore'][0]
+                        @haveDNA = true
+                        @numberOfVials++
+                        if(@numberOfVials > 1){
+                            set_pmode(@plrr,"SURVIVAL")
+                            runas(~console,"/pex user ".@plrr." group set mortal")
+                            set_peffect(@plrr, 2, 3, 9999, true, false)
+                            set_peffect(@plrr, 9, 1, 9999, true, false)
+                            set_peffect(@plrr, 15, 1, 9999, true, false)
+                            set_peffect(@plrr, 17, 3, 9999, true, false)
+                            set_peffect(@plrr, 18, 3, 9999, true, false)
+                            set_peffect(@plrr, 19, 3, 9999, true, false)
+                            _changeSkin(@plrr,'qiXdnqmrX6a/mmN1vgjSM3hp7lKWCv59ZKvejEST003uj/0b+Pu2cMyHyy4QW2F7pCZrJnak85AP9bbdi1tw6QB+2AlP1SJsgrv3wLIsJNnm6q3eRRfzW6fZAkB13HZvj1no1EztAtrWKgzi2qrdDN4vf7E9+P1IFWI1+DMjC3IP8AVsz9UVg9LF8J+/K2nddFYXbv4ztiabFZIj2lTVRmrR5DD8MIBZ0KxqVd/PxH7qBu1MrxRK9HyeP2ueWjncyWf5m1jh6ssa8e2rTRoRi35dybP7+B0N9t/A3iK4EYv5qh92e5QQ5u779cya6kWTmslH8wn3WBCKtfeMfeKBy9wuSSOfTdMDIWU9BFt8UFkzaUxraj7bSEWJjgjUt4lSTDIb0gDm0tGO8951MaHUIeDSfQUyn/RMg5oOL1Ktom+OGlhD9Bpa7O/pHtYKIyOETICHeyvoEENT1gGWWynZjkMOsYwI/eaSPcA8mpdhRMt1ZA8E0SHCFMPZPu5rgaVTmrRXymEsVh/jT689f97I13HCcnRmascxrCANhVEKao1/OISNZ+VTcl7BWEz+Z3XFuWAFJv/47fojH03l+v5vU+jX1DFg/LIWtfO1Zv3QlSHWk9GOCBrUWn3X0gMInmLr3hlwAc2I7BQC/WVQdxcgTGumdcu+XidAyT7UJadyc5c=','eyJ0aW1lc3RhbXAiOjE0NzcwMTI0NjA4MjgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRmNzI1ZDI4NTY4OGUyN2QyYmMzNTcxMWRlNGY3MTNmYzUxOTQ0MjM5MzJlYmZlMDViMjhjZTljNzJmOWZiZCJ9fX0=')
+                            sudo("/minecraft:clear ".@plrr)
+                            broadcast(color(blue) . @plrr . color(green) . " mixed " . color(yellow).color(bold) . "D" . color(green).color(bold) . "N" . color(dark_red).color(bold) . "A" . color(green) . " samples and was turned into a deformed, freaky mutant!")
+                            die()
+                        }
+                    }
+                }
+            }
+        }
+        
+        if(!@haveDNA){
+            tmsg(@plrr,"You need some DNA to use this machine.")
+            die()
+        }
+        
+        # If player is trying to turn into OP hero and is not a mod, throw error
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+        if(@hero['op'] == "true"){
+            if(!has_permission(@plrr,"rank.mod")){
+                tmsg(@plrr,"You can only win ".@hero['name']." §fby becoming staff or in a server tournament")
+                die()
+            }
+        }
+        
+        # Make sure no other players are currently using the class you want
+        # Only one person may be a given hero at a time
+        @plrs = all_players()
+        foreach(@player in @plrs)
+        {
+            @otherPlayerGroup = pgroup(@player)
+            if(@otherPlayerGroup[0] == @hero['class'] && @plrr != @player){
+                broadcast(
+                    concat(color(white),@plrr)
+                    concat(color(gray),"tried to turn into")
+                    @hero['name']
+                    concat(color(gray),"but")
+                    concat(color(white),@player)
+                    concat(color(gray),"was already that!")
+                )
+                die()
+            }
+        }
+        
+        # 1 in 20 chance of machine going wrong
+        @num = rand(1,21) 
+        if(@num == 1){
+            set_pmode(@plrr,"SURVIVAL")
+            runas(~console,"/pex user ".@plrr." group set mortal")
+            set_peffect(@plrr, 2, 3, 9999, true, false)
+            set_peffect(@plrr, 9, 1, 9999, true, false)
+            set_peffect(@plrr, 15, 1, 9999, true, false)
+            set_peffect(@plrr, 17, 3, 9999, true, false)
+            set_peffect(@plrr, 18, 3, 9999, true, false)
+            set_peffect(@plrr, 19, 3, 9999, true, false)
+            
+            _changeSkin(@plrr,'qiXdnqmrX6a/mmN1vgjSM3hp7lKWCv59ZKvejEST003uj/0b+Pu2cMyHyy4QW2F7pCZrJnak85AP9bbdi1tw6QB+2AlP1SJsgrv3wLIsJNnm6q3eRRfzW6fZAkB13HZvj1no1EztAtrWKgzi2qrdDN4vf7E9+P1IFWI1+DMjC3IP8AVsz9UVg9LF8J+/K2nddFYXbv4ztiabFZIj2lTVRmrR5DD8MIBZ0KxqVd/PxH7qBu1MrxRK9HyeP2ueWjncyWf5m1jh6ssa8e2rTRoRi35dybP7+B0N9t/A3iK4EYv5qh92e5QQ5u779cya6kWTmslH8wn3WBCKtfeMfeKBy9wuSSOfTdMDIWU9BFt8UFkzaUxraj7bSEWJjgjUt4lSTDIb0gDm0tGO8951MaHUIeDSfQUyn/RMg5oOL1Ktom+OGlhD9Bpa7O/pHtYKIyOETICHeyvoEENT1gGWWynZjkMOsYwI/eaSPcA8mpdhRMt1ZA8E0SHCFMPZPu5rgaVTmrRXymEsVh/jT689f97I13HCcnRmascxrCANhVEKao1/OISNZ+VTcl7BWEz+Z3XFuWAFJv/47fojH03l+v5vU+jX1DFg/LIWtfO1Zv3QlSHWk9GOCBrUWn3X0gMInmLr3hlwAc2I7BQC/WVQdxcgTGumdcu+XidAyT7UJadyc5c=','eyJ0aW1lc3RhbXAiOjE0NzcwMTI0NjA4MjgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRmNzI1ZDI4NTY4OGUyN2QyYmMzNTcxMWRlNGY3MTNmYzUxOTQ0MjM5MzJlYmZlMDViMjhjZTljNzJmOWZiZCJ9fX0=')
+            sudo("/minecraft:clear ".@plrr)
+            broadcast(color(green)."Something randomly went wrong with the " . color(yellow).color(bold) . "D" . color(green).color(bold) . "N" . color(dark_red).color(bold) . "A" . color(green) . " mixer! " . color(blue) . @plrr . color(green) . " was turned into a deformed, freaky mutant!")
+            die()
+        }
+        
+        runas(~console, '/pex user '.@plrr.' group set '.@class)
+        sudo("/fly ".@plrr." off")
+        sudo("/gamemode survival ".@plrr)
+        sudo("/effect ".@plrr." clear")
+        sudo("/minecraft:clear" @plrr)
+        sudo("/god ".@plrr." off")
+        
+        _changeSkin(@plrr,@hero['sig'],@hero['val'])
+        runas(~console,"/sudo ". @plrr ." c:/trailsid none")
+        if(@hero['trail'] != ''){
+            _changeTrail(@plrr, @hero['trail'])
+        }
+        
+        # print chat message about successful transformation
+        broadcast(
+            concat(color(blue),@plrr)
+            concat(color(gray),"has transformed into")
+            concat(@hero['name'],concat(color(gray),"!"))
+        )
+    });
+    
+<<<

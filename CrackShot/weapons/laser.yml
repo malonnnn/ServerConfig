@@ -19,8 +19,8 @@ kryptonianlaservision:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -48,8 +48,8 @@ petawattlaser:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -58,7 +58,7 @@ petawattlaser:
         color: 255-0-0
 energybeam:
     Item_Information:
-        Item_Name: "&2Mar&9t&2ian &9Man&2hunter's &4Energy Beam"
+        Item_Name: "&4Energy Beam"
         Item_Type: 417
     Shooting:
         Cancel_Right_Click_Interactions: true
@@ -77,8 +77,8 @@ energybeam:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -106,8 +106,8 @@ quantumlaser:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -135,8 +135,8 @@ destructionlaser:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -153,8 +153,8 @@ kamehameha:
         Projectile_Amount: 1
         Projectile_Type: energy
         Projectile_Subtype: 40-0.1-NONE-0
-        Projectile_Damage: 100
-        Delay_Between_Shots: 100
+        Projectile_Damage: 475
+        Delay_Between_Shots: 500
         Right_Click_To_Shoot: true
     Reload:
         Enable: false
@@ -165,8 +165,38 @@ kamehameha:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 0-255-255  
+bluebeam:
+    Item_Information:
+        Item_Name: "&bSaint Walker's Blue Beam"
+        Item_Type: 351:4
+        Inventory_Control: bluebeam
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 200 
+        Delay_Between_Shots: 200
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -195,8 +225,8 @@ finalflash:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -225,8 +255,8 @@ warbeam:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -255,8 +285,8 @@ godblast:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -285,8 +315,8 @@ magicblast:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -315,17 +345,47 @@ greenbeam:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
         start_pos: 0
         start_y: 0
         color: 0-255-0
+redbeam:
+    Item_Information:
+        Item_Name: "&4R&0e&4d L&ca&4nt&0e&4rn's Red Beam"
+        Item_Type: 331
+        Inventory_Control: redbeam
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 200
+        Delay_Between_Shots: 200
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-0-0
 yellowbeam:
     Item_Information:
-        Item_Name: "&eSin&ce&0s&etr&0o&e's Yellow Beam"
+        Item_Name: "&eYe&ell&6o&ew &eL&6a&ent&fe&ern Yellow Beam"
         Item_Type: 371
         Inventory_Control: yellowbeam
     Shooting:
@@ -345,8 +405,8 @@ yellowbeam:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -374,8 +434,8 @@ exawattlaser:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -403,8 +463,8 @@ cyborgbeam:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -432,14 +492,49 @@ starbolt:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
         start_pos: 0
         start_y: 0
         color: 100-255-100
+webshot:
+    Item_Information:
+        Item_Name: "&fWeb-Shot"
+        Item_Type: 417
+        Inventory_Control: webshot
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 0
+        Delay_Between_Shots: 120
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Potion_Effects:
+        Activation: hit
+        Potion_Effect_Victim: SLOW-127-255
+    Hit_Events:
+        Enable: true
+    Abilities:
+        Knockback: -1
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-255-255
 whitelightning:
     Item_Information:
         Item_Name: "&bLightning"
@@ -461,8 +556,8 @@ whitelightning:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -490,8 +585,8 @@ yellowlightning:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -527,6 +622,35 @@ plasmablast:
         start_pos: 0
         start_y: 0
         color: 204-255-255
+phaseblast:
+    Item_Information:
+        Item_Name: "&1N&eo&4v&9a&e-&4S&8A &6Phase Blase"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 95
+        Delay_Between_Shots: 10
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-93-0
 darkmagic:
     Item_Information:
         Item_Name: "&5R&0a&5v&0e&5n's &0Bl&5a&0ck &5M&0a&5gic"
@@ -548,8 +672,8 @@ darkmagic:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -606,8 +730,8 @@ darkseidlaser:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
@@ -635,11 +759,129 @@ goldenfriezaenergyblast:
         trigger: 1-0
         aim: none
         particle: 1-0
-        distance: 30
-        view-distance: 50
+        distance: 35
+        view-distance: 35
         count: 10
         ppb: true
         hitstop: true
         start_pos: 0
         start_y: 0
         color: 255-82-82
+nekronlaser:
+    Item_Information:
+        Item_Name: "&8Black Lightning"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 60
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 0-0-0
+flashvision:
+    Item_Information:
+        Item_Name: "&bFlash Vision"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 20
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 204-255-255
+pikachuthunderwave:
+    Item_Information:
+        Item_Name: "&eThunder Wave"
+        Item_Type: 417
+        Inventory_Control: pikachuthunderwave
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 150
+        Delay_Between_Shots: 75
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-255-75
+pikachuthunderbolt:
+    Item_Information:
+        Item_Name: "&eThunder Bolt"
+        Item_Type: 417
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 20
+        Delay_Between_Shots: 2
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-255-75
+

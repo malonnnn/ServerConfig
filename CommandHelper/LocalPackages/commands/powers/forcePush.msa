@@ -1,0 +1,6 @@
+forcepush:/forcepush $plr = >>>
+    @plr = $plr
+    sudo("/push @plr 0 1 0")
+    tmsg(@plr,"You have been force pushed by ".player()."!")
+    tmsg(player(),"You have force pushed ".@plr."!")
+<<<

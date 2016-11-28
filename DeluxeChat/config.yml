@@ -1,0 +1,207 @@
+# DeluxeChat version 1.11.1 config file
+# Created by extended:clip
+# list as many format sections you want under formats:
+# each format section requires a default template that should be modified and
+# also requires a unique number for the priority higher number = lower priority
+# ex: guest-100, owner-1
+#   YOU MUST KEEP A default TEMPLATE! It is used when players have no other template assigned!
+#   
+# example format template:
+# formats: 
+#   default:
+#     priority: 2147483647
+#     channel: ''
+#     prefix: '&8[&7Guest&8] '
+#     name_color: '&7'
+#     name: '%player%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player% &bis a Guest'
+#     prefix_tooltip:
+#     - '&7%player% &bis a Guest'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player% 
+#     suffix_click_command: '
+#   Member:
+#     priority: 100
+#     channel: ''
+#     prefix: '&8[&aMember&8] '
+#     name_color: '&7'
+#     name: '%player%'
+#     suffix: '&7> '
+#     chat_color: '&f'
+#     channel_tooltip:
+#     - '&7%player% &bis a Member'
+#     prefix_tooltip:
+#     - '&7%player% &bis a Member'
+#     name_tooltip:
+#     - ''
+#     suffix_tooltip:
+#     - ''
+#     channel_click_command: '
+#     prefix_click_command: '/ranks
+#     name_click_command: '/msg %player% 
+#     suffix_click_command: '
+check_updates: true
+bungeecord:
+  enabled: false
+  servername: '&8[&cServer&8]'
+  join_global: true
+relation_placeholders_enabled: true
+timestamp_format: MM/dd/yy HH:mm:ss
+boolean:
+  'true': '&atrue'
+  'false': '&cfalse'
+ops_use_group_format: false
+hooks:
+  javascript_placeholders: false
+  minecraft_statistics: false
+  acidisland: false
+  askyblock: false
+  autorank: false
+  autosell: false
+  banmanager: false
+  battlelevels: false
+  chatcolor: false
+  chatreaction: false
+  checknamehistory: false
+  deluxetags: false
+  essentials: false
+  ezblocks: false
+  ezprestige: false
+  ezrankslite: false
+  ezrankspro: false
+  factions_mcore: false
+  factions_uuid: false
+  galistener: false
+  gangsplus: false
+  heroes: false
+  islandworld: false
+  jobs: false
+  killrewards: false
+  killstats: false
+  marriagemaster: false
+  mcinfected: false
+  mcinfected-ranks: false
+  mcmmo: false
+  mvdw_placeholderapi: false
+  nicky: false
+  placeholderapi: false
+  playerpoints: false
+  plotme: false
+  plotsquared: false
+  prisongangs: false
+  pvpstats: false
+  quicksell: false
+  royalcommands: false
+  simpleclans: false
+  simplecoinsapi: false
+  simpleprefix: false
+  simple_suffix: false
+  skywarsreloaded: false
+  sqlperms: false
+  sqltokens: false
+  survivalgames: false
+  teams: false
+  tokenenchant: false
+  towny: false
+  uskyblock: false
+  ultimatevotes: false
+  vanishnopacket: false
+  vault_perms: true
+  vault_eco: true
+  voteparty: false
+  werewolf: false
+  wickedskywars: false
+chat_filter:
+  enabled: false
+  list:
+  - '.; '
+  - fuck;fuck
+private_message:
+  enabled: true
+  bungeecord: false
+private_message_formats:
+  to_sender:
+    format: '&7you &e-> &7%recipient_player% &7:'
+    tooltip:
+    - '%player_server%'
+    click_command: '/r '
+    chat_color: '&f'
+  to_recipient:
+    format: '&7%player% &e-> &7you &7:'
+    tooltip:
+    - '%player_server%'
+    click_command: '/r '
+    chat_color: '&f'
+  social_spy: '&8[&cspy&8] &f%player% &e-> &f%recipient%&7:'
+formats:
+  default:
+    priority: 1
+    channel: '%player_world%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
+    name_color: ''
+    name: ''
+    suffix: '%vault_ranksuffix%'
+    chat_color: ''
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '%player%'
+    - '&bRank: %vault_group%'
+    name_tooltip:
+    - ''
+    suffix_tooltip:
+    - ''
+    channel_click_command: /ranks
+    prefix_click_command: /ranks
+    name_click_command: '/msg %player% '
+    suffix_click_command: ''
+  anarchy:
+    priority: 1000
+    channel: '%player_world%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
+    name_color: ''
+    name: ''
+    suffix: '%vault_ranksuffix%'
+    chat_color: ''
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '%player%'
+    - '&bRank: %vault_group%'
+    name_tooltip:
+    - ''
+    suffix_tooltip:
+    - ''
+    channel_click_command: /ranks
+    prefix_click_command: /ranks
+    name_click_command: '/msg %player% '
+    suffix_click_command: ''
+  mortal:
+    priority: 900
+    channel: '%player_world%&a&l/'
+    prefix: '%vault_groupprefix%&a&l/&f%player_name%&a&l/'
+    name_color: ''
+    name: ''
+    suffix: '%vault_ranksuffix%'
+    chat_color: ''
+    channel_tooltip:
+    - ''
+    prefix_tooltip:
+    - '%player%'
+    - '&bRank: %vault_group%'
+    name_tooltip:
+    - ''
+    suffix_tooltip:
+    - ''
+    channel_click_command: /ranks
+    prefix_click_command: /ranks
+    name_click_command: '/msg %player% '
+    suffix_click_command: ''

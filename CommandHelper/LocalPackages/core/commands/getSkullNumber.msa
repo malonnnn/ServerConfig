@@ -1,0 +1,87 @@
+getskullnumber:/getskullnumber $plr = >>>
+
+    @player = $plr
+
+    # This function is relative to the command block that placed it
+    @loc = get_command_block()
+    
+    @world = 'greenfield'
+
+    assign(@skull1, array('x': @loc['x'] + 2, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
+    assign(@skull2, array('x': @loc['x'] + 2, 'y': @loc['y'] + 4, 'z': @loc['z'], 'world': @world))
+    assign(@skull3, array('x': @loc['x'] + 2, 'y': @loc['y'] + 4, 'z': @loc['z'] - 1, 'world': @world))
+    
+    @block1 = get_metadata(@skull1,"skullNum")
+    @num1 = @block1['CommandHelper']
+    
+    @block2 = get_metadata(@skull2,"skullNum")
+    @num2 = @block2['CommandHelper']
+    
+    @block3 = get_metadata(@skull3,"skullNum")
+    @num3 = @block3['CommandHelper']
+    
+    @id = @num1.@num2.@num3
+    
+    @hero = ""
+    @stdout = ""
+    
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @id,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                if(@hero['op'] == "true"){
+                    if(!has_permission(@player,"rank.mod")){
+                        tmsg(@player,"You can only be ".@hero['name']." §fby becoming staff or winning free OP heroes in a server tournament. It takes just 4 people to be in a touranment! Ask the staff about it!")
+                        die()
+                    }
+                }
+
+                if(@hero['name'] == "empty"){
+                    die()
+                }
+                
+                @dnaWord = color(yellow).color(bold).'D'.color(green).color(bold).'N'.color(dark_red).color(bold).'A'
+                @dnaName = @hero['name'].' '.@dnaWord
+                
+                @lore = @hero['class']
+                @dna = associative_array(
+                    'type': 373,
+                    'name': 'potion',
+                    'data': 0,
+                    'qty': 1,
+                    'meta': associative_array(
+                      'display': "@dnaName",
+                      'lore': array(@lore),
+                    'potions': array(
+                      array(
+                        'id': 9,
+                        'strength': 1,
+                        'seconds': 1200,
+                        'ambient': true,
+                      ),
+                      array(
+                        'id': 19,
+                        'strength': 1,
+                        'seconds': 1200,
+                        'ambient': true,
+                      ),
+                     ),
+                    ),
+                   );
+                
+                assign(@dispenserLocation,@loc)
+                
+                @dispenserLocation['y'] = @dispenserLocation['y'] + 1
+                @dispenserLocation['z'] = @dispenserLocation['z'] + 1
+                
+                set_inventory_item(@dispenserLocation, 0, @dna)
+            }  
+        }
+    ))
+    
+
+    
+<<<

@@ -1,0 +1,11 @@
+thrudestabilize:/thrudestabilize = >>>
+
+    sudo("/thru")
+    
+    if(has_permission("powers.thru.destabilize")){
+        set_timeout(500,closure(
+            @ploc = ploc()
+            explosion(@ploc,null,true)
+        ))
+    }
+<<<

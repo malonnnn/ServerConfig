@@ -19,8 +19,6 @@ Gauss:
         Type: pump
         Open_Duration: 12
         Close_Duration: 3
-        Sound_Open: PISTON_EXTEND-1-2-0
-        Sound_Close: PISTON_EXTEND-1-2-0
     Abilities:
         Reset_Hit_Cooldown: true
         Super_Effective: ZOMBIE-2
@@ -161,6 +159,53 @@ greengoblinspumpkinbombs:
         Explosion_Radius: 5
         On_Impact_With_Anything: true
         Projectile_Activation_Time: 5
+ghostridershotgun:
+    Item_Information:
+        Item_Name: "&8Gh&0o&8st R&7i&8der's &fShotgun"
+        Item_Type: 417
+        Item_Lore: "&eOnly For The Ghost Rider.|&eDeadly at close range.|&eIneffective at longer ranges.|&eFires incendiary ammo."
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 5
+        Projectile_Amount: 25
+        Projectile_Type: egg
+        Removal_Or_Drag_Delay: 4-false
+        Projectile_Speed: 30
+        Projectile_Damage: 5
+        Projectile_Flames: true
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 80
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 2
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+        Maximum_Damage: -4
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
 
 ironmansmachinegun:
     Item_Information:
@@ -418,8 +463,6 @@ Python:
         Type: revolver
         Open_Duration: 5
         Close_Duration: 5
-        Sound_Open: DOOR_OPEN-1-2-0
-        Sound_Close: DOOR_CLOSE-1-2-0
     Abilities:
         Reset_Hit_Cooldown: true
     Hit_Events:
@@ -469,8 +512,6 @@ Olympia:
         Type: break
         Open_Duration: 10
         Close_Duration: 15
-        Sound_Open: DOOR_OPEN-1-2-0
-        Sound_Close: DOOR_CLOSE-1-2-0
     Abilities:
         Reset_Hit_Cooldown: true
         No_Fall_Damage: true
@@ -568,7 +609,6 @@ Type95:
     Firearm_Action:
         Type: slide
         Close_Duration: 10
-        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-2
     Scope:
         Enable: true
         Zoom_Amount: 5
@@ -608,7 +648,6 @@ AK-47:
         Type: slide
         Close_Duration: 10
         Close_Shoot_Delay: 12
-        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3
     Scope:
         Enable: true
         Zoom_Amount: 5
@@ -684,3 +723,41 @@ magicgun:
     Fully_Automatic:
         Enable: true
         Fire_Rate: 16
+        
+Flame:
+    Item_Information:
+        Item_Name: "&eFlame Thrower"
+        Item_Type: 294
+        Item_Lore: "&eFlame Thrower|&eCook bacon!." 
+    Shooting:
+        Right_Click_To_Shoot: true
+        Delay_Between_Shots: 0
+        Remove_Arrows_On_Impact: true
+        Projectile_Amount: 12
+        Bullet_Spread: 2
+        Projectile_Type: egg
+        Projectile_Flames: true
+        Projectile_Speed: 15
+        Projectile_Damage: 2
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 850
+        Reset_Fall_Distance: true
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+    Reload:
+        Enable: false
+        Reload_Amount: 100
+        Reload_Duration: 90
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: flames-1,BLOCK_BREAK-51
+        Particle_Player_Hit: flames-1,BLOCK_BREAK-51
+        Particle_Hit: BLOCK_BREAK-51
+        Particle_Impact_Anything: BLOCK_BREAK-51

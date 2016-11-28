@@ -1,0 +1,76 @@
+entomb:/entomb $plr = >>>
+
+    assign(@cooldown, 5)
+    assign(@lastshot, get_value('lastentomb'))
+
+    if(@lastshot + @cooldown > time() / 1000,
+        die("5 seconds between /entomb")
+    )
+    store_value('lastentomb', time() / 1000)
+    
+    @attacker = player()
+    @victim = $plr
+    
+    
+    @vicLoc = ploc(@victim)
+    @vicLoc['y'] += 1
+    @vicLoc['x'] = integer(@vicLoc['x']) + 0.5
+    @vicLoc['z'] = integer(@vicLoc['z']) + 0.5
+    set_ploc(@victim,@vicLoc)
+    
+    assign(@pointer, @vicLoc)
+    
+    @originalBlocks = array()
+    
+    @xStart = @pointer['x'] - 1
+    @yStart = @pointer['y']
+    @zStart = @pointer['z'] - 1
+    
+    @counter = 0
+    
+    for(@y = @yStart, @y < @yStart + 5, @y++){
+        @pointer['y'] = @y
+        for(@x = @xStart, @x < @xStart + 3, @x++){
+            @pointer['x'] = @x
+            for(@z = @zStart, @z < @zStart + 3, @z++){
+                @pointer['z'] = @z
+                
+                array_push(@originalBlocks,get_block_at(@pointer))
+                if(@counter != 22){
+                    set_block_at(@pointer,"95:3")
+                }
+                
+                @counter++
+                if(@counter > 200){
+                    die()
+                }
+            }
+        }
+    }
+    
+    broadcast(@victim "has been entombed by" @attacker)
+    
+    assign(@pointer, @vicLoc)
+    set_timeout(5000, closure(
+        @xStart = @pointer['x'] - 2
+        @yStart = @pointer['y'] - 4
+        @zStart = @pointer['z'] - 2
+        @counter = 0
+        for(@y = @yStart, @y < @yStart + 5, @y++){
+            @pointer['y'] = @y
+            for(@x = @xStart, @x < @xStart + 3, @x++){
+                @pointer['x'] = @x
+                for(@z = @zStart, @z < @zStart + 3, @z++){
+                    @pointer['z'] = @z
+                    set_block_at(@pointer,@originalBlocks[@counter])
+                    
+                    @counter++
+                    if(@counter > 100){
+                        die()
+                    }
+                }
+            }   
+        }
+    ))
+
+<<<

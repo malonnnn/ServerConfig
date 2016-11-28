@@ -1,0 +1,39 @@
+speedforceteleport:/speedforceteleport $plr = >>>
+    
+    @plr = player()
+    @vic = $plr
+
+    @ploc = ploc()
+    @vicLoc = ploc(@vic)
+    
+    if(@ploc['world'] != @vicLoc['world']){
+        die("Sorry, you have to be in the same world as your victim!")
+    }
+
+    @x1 = @ploc['x']
+    @y1 = @ploc['y']
+    @z1 = @ploc['z']
+
+    @x2 = @vicLoc['x']
+    @y2 = @vicLoc['y']
+    @z2 = @vicLoc['z']
+
+    @x3 = pow(@x1 - @x2, 2)
+    @y3 = pow(@y1 - @y2, 2)
+    @z3 = pow(@z1 - @z2, 2)
+
+    @final = @x3 + @y3 + @z3
+
+    @distance = sqrt(@final)
+   
+    if(@distance > 2){
+        tmsg(@plr, "Make sure you are close enough to grab your victim!")
+        die()
+    }
+
+    runas(~console, "/warp speedforce " . @vic)
+    runas(~console, "/warp speedforce " . @plr)
+    tmsg(@vic, @plr . " has brought you into the speedforce!")
+    tmsg(@plr, "You brought " . @vic . "  you into the speedforce!")
+        
+<<<

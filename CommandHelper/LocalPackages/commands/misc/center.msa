@@ -1,0 +1,22 @@
+center:/center = >>>
+
+    @ploc = ploc()
+    
+    if(@ploc['x'] < 0){
+        @ploc['x'] = integer(@ploc['x']) - 0.5
+    }else{
+        @ploc['x'] = integer(@ploc['x']) + 0.5
+    }
+    
+    if(@ploc['z'] < 0){
+        @ploc['z'] = integer(@ploc['z']) - 0.5
+    }else{
+        @ploc['z'] = integer(@ploc['z']) + 0.5
+    }
+    
+    @ploc['pitch'] = 0.0
+    @ploc['yaw'] = -90.0
+    
+    set_ploc(@ploc)
+
+<<<

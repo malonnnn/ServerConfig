@@ -1,0 +1,55 @@
+mindcontrol:/mindcontrol $plr = >>>
+
+    @player = player()
+    
+    assign(@cooldown, 600)
+    
+    assign(@lastUsedMindControl, get_value(@player."lastUsedMindControl"))
+    if(@lastUsedMindControl + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can mind control anyone again!")
+    )
+    store_value(@player."lastUsedMindControl", time() / 1000)
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+
+    @vic = $plr
+    
+    if(!ponline(@player)){
+        broadcast(color(red) . "Sorry, but " . color(blue) . @vic . color(red) . " is not found.")
+        die()
+    }
+    
+    runas(~console,"/icu control @player @vic")
+    broadcast("@player is now mindcontrolling @vic")
+    
+    @vicGroup = pgroup(@vic)[0]
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vicGroup . '.ms')
+    _changeSkin(player(),@hero['sig'],@hero['val'])
+
+<<<
+
+stopmindcontrol:/stopmindcontrol = >>>
+
+    @player = player()
+    @vic = $vic
+
+    assign(@cooldown, 600)
+    
+    assign(@lastUsedStopMindControl, get_value(@player."lastUsedStopMindControl"))
+    if(@lastUsedStopMindControl + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can use stop mind control again!")
+    )
+    store_value(@player."lastUsedStopMindControl", time() / 1000)
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @pgroup = pgroup()[0]
+    
+    runas(~console,"/icu stop @player")
+    broadcast("@player has stopped mindcontrolling")
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pgroup . '.ms')
+    _changeSkin(player(),@hero['sig'],@hero['val'])
+
+<<<

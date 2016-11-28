@@ -1,0 +1,20 @@
+# Placeholders.yml file
+# You can create unique placeholder layouts depending on if a placeholder has
+# a value, or if it does not have a value.
+# Use %value% to insert the original placeholder value into your format!
+# To create a placeholder layout, specify the placeholder with the following format:
+# 
+# 
+# example:
+# 
+# layouts:
+#   <placeholder without %>:
+#     has_value: '[%value%]'
+#     no_value: '%value%'
+#   'factions_faction':
+#     has_value: '&8[&f%value%&8]'
+#     no_value: '%value%'
+layouts:
+  placeholder_here:
+    has_value: '&8[%value%&8]'
+    no_value: '%value%'

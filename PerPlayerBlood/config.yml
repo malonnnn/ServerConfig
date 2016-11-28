@@ -5,6 +5,8 @@
 # Material List:  https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 # Entity Types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
 # You can add per entity effect in Material list using ENTITY:ENTITY
+# PPB.Enabled-On-First-Join: Will enable the blood if player never played before.
+# PPB.Enabled-On-Join: Ignore if player has blood disabled and enable on join.
 PPB:
   Default-Material: REDSTONE_WIRE
   All-Damage-Mode: 'true'
@@ -39,3 +41,12 @@ PPB:
   - SQUID
   - CHICKEN
   - SHEEP
+  Enabled-On-Join: 'false'
+  Enabled-On-First-Join: 'true'
+  MySQL:
+    Enabled: 'false'
+    Host: localhost
+    Database: database
+    Port: '3306'
+    User: user
+    Password: password

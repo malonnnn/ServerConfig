@@ -1,6 +1,6 @@
 ############################################################
 # +------------------------------------------------------+ #
-# |                       Nots                          | #
+# |                       Notes                          | #
 # +------------------------------------------------------+ #
 ############################################################
 
@@ -28,39 +28,65 @@ nickname-prefix: '~'
 # The maximum length allowed in nicknames. The nickname prefix is included in this.
 max-nick-length: 50
 
-# Disable this if you have any other plugin, that modifies the displayname of a user.
-change-displayname: true
+# When this option is enabled, nickname length checking will exclude color codes in player names.
+# ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
+ignore-colors-in-max-nick-length: false
+
+# Disable this if you have any other plugin, that modifies the displayname of a user. 
+change-displayname: false
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
-#change-playerlist: true
+change-playerlist: false
 
-# When essentialschat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
-# This setting is ignored if essentialschat.jar is used, and defaults to 'true'.
+# When EssentialsChat.jar isn't used, force essentials to add the prefix and suffix from permission plugins to displayname.
+# This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
 # The value of change-displayname (above) has to be true.
 # Do not edit this setting unless you know what you are doing!
 #add-prefix-suffix: false
+
+# When this option is enabled, player prefixes will be shown in the playerlist.
+# This feature only works for Minecraft version 1.8 and higher.
+# This value of change-playerlist has to be true
+add-prefix-in-playerlist: true
+
+# When this option is enabled, player suffixes will be shown in the playerlist.
+# This feature only works for Minecraft version 1.8 and higher. 
+# This value of change-playerlist has to be true
+#add-suffix-in-playerlist: true
 
 # If the teleport destination is unsafe, should players be teleported to the nearest safe location?
 # If this is set to true, Essentials will attempt to teleport players close to the intended destination.
 # If this is set to false, attempted teleports to unsafe locations will be cancelled with a warning.
 teleport-safety: true
 
+# This forcefully disables teleport safety checks without a warning if attempting to teleport to unsafe locations.
+# teleport-safety and this option need to be set to true to force teleportation to dangerous locations.
+force-disable-teleport-safety: false
+
 # The delay, in seconds, required between /home, /tp, etc.
 teleport-cooldown: 0
 
-# The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs.
+# The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
 teleport-delay: 0
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
 teleport-invulnerability: 0
 
+# Whether to make all teleportations go to the center of the block; where the x and z coordinates decimal become .5
+teleport-to-center: true
+
 # The delay, in seconds, required between /heal or /feed attempts.
 heal-cooldown: 60
 
-# What to prevent from /i /give.
-# e.g item-spawn-blacklist: 46,11,10
+# Near Radius
+# The default radius with /near
+# Used to use chat radius but we are going to make it separate.
+near-radius: 200
+
+# What to prevent from /item and /give.
+# e.g item-spawn-blacklist: 10,11,46
 item-spawn-blacklist:
 
 # Set this to true if you want permission based item spawn rules.
@@ -86,7 +112,14 @@ spawnmob-limit: 10
 # Shall we notify users when using /lightning?
 warn-on-smite: true
 
-# motd and rules are now configured in the files motd.txt and rules.txt.
+# Shall we drop items instead of adding to inventory if the target inventory is full?
+drop-items-if-full: false
+
+# Essentials Mail Notification
+# Should we notify players if they have no new mail?
+notify-no-new-mail: true
+
+# The motd and rules are now configured in the files motd.txt and rules.txt.
 
 # When a command conflicts with another plugin, by default, Essentials will try to force the OTHER plugin to take priority.
 # Commands in this list, will tell Essentials to 'not give up' the command to other plugins.
@@ -94,24 +127,23 @@ warn-on-smite: true
 #
 # If you have two plugin with the same command and you wish to force Essentials to take over, you need an alias.
 # To force essentials to take 'god' alias 'god' to 'egod'.
-# See http://wiki.bukkit.org/Bukkit.yml#aliases for more information
+# See http://wiki.bukkit.org/Commands.yml#aliases for more information.
 
 overridden-commands:
 #  - god
 #  - info
 
 # Disabling commands here will prevent Essentials handling the command, this will not affect command conflicts.
-# Commands should fallback to the vanilla versions if available.
 # You should not have to disable commands used in other plugins, they will automatically get priority.
+# See http://wiki.bukkit.org/Commands.yml#aliases to map commands to other plugins.
 disabled-commands:
-   - jail
-   - unjail
 #  - nick
 #  - clear
 
 # These commands will be shown to players with socialSpy enabled.
 # You can add commands from other plugins you may want to track or
 # remove commands that are used for something you dont want to spy on.
+# Set - '*' in order to listen on all possible commands.
 socialspy-commands:
   - msg
   - w
@@ -135,97 +167,112 @@ socialspy-commands:
   - ewhisper
   - pm
 
+# Mute Commands
+# These commands will be disabled when a player is muted.
+# Use '*' to disable every command.
+# Essentials already disabled Essentials messaging commands by default.
+# It only cares about the root command, not args after that (it sees /f chat the same as /f)
+mute-commands:
+  - f
+  - kittycannon
+ # - '*'
+
 # If you do not wish to use a permission system, you can define a list of 'player perms' below.
 # This list has no effect if you are using a supported permissions system.
 # If you are using an unsupported permissions system, simply delete this section.
 # Whitelist the commands and permissions you wish to give players by default (everything else is op only).
 # These are the permissions without the "essentials." part.
-#player-commands:
-  #- afk
-  #- afk.auto
-  #- back
-  #- back.ondeath
-  #- balance
-  #- balance.others
-  #- balancetop
-  #- build
-  #- chat.color
-  #- chat.format
-  #- chat.shout
-  #- chat.question
-  #- clearinventory
-  #- compass
-  #- depth
-  #- delhome
-  #- getpos
-  #- geoip.show
-  #- help
-  #- helpop
-  #- home
-  #- home.others
-  #- ignore
-  #- info
-  #- itemdb
-  #- kit
-  #- kits.tools
-  #- list
-  #- mail
-  #- mail.send
-  #- me
-  #- motd
-  #- msg
-  #- msg.color
-  #- nick
-  #- near
-  #- pay
-  #- ping
-  #- protect
-  #- r
-  #- rules
-  #- realname
-  #- seen
-  #- sell
-  #- sethome
-  #- setxmpp
-  #- signs.create.protection
-  #- signs.create.trade
-  #- signs.break.protection
-  #- signs.break.trade
-  #- signs.use.balance
-  #- signs.use.buy
-  #- signs.use.disposal
-  #- signs.use.enchant
-  #- signs.use.free
-  #- signs.use.gamemode
-  #- signs.use.heal
-  #- signs.use.info
-  #- signs.use.kit
-  #- signs.use.mail
-  #- signs.use.protection
-  #- signs.use.repair
-  #- signs.use.sell
-  #- signs.use.time
-  #- signs.use.trade
-  #- signs.use.warp
-  #- signs.use.weather
-  #- spawn
-  #- suicide
-  #- time
-  #- tpa
-  #- tpaccept
-  #- tpahere
-  #- tpdeny
-  #- warp
-  #- warp.list
-  #- world
-  #- worth
-  #- xmpp
+player-commands:
+  - afk
+  - afk.auto
+  - back
+  - back.ondeath
+  - balance
+  - balance.others
+  - balancetop
+  - build
+  - chat.color
+  - chat.format
+  - chat.shout
+  - chat.question
+  - clearinventory
+  - compass
+  - depth
+  - delhome
+  - getpos
+  - geoip.show
+  - help
+  - helpop
+  - home
+  - home.others
+  - ignore
+  - info
+  - itemdb
+  - kit
+  - kits.tools
+  - list
+  - mail
+  - mail.send
+  - me
+  - motd
+  - msg
+  - msg.color
+  - nick
+  - near
+  - pay
+  - ping
+  - protect
+  - r
+  - rules
+  - realname
+  - seen
+  - sell
+  - sethome
+  - setxmpp
+  - signs.create.protection
+  - signs.create.trade
+  - signs.break.protection
+  - signs.break.trade
+  - signs.use.balance
+  - signs.use.buy
+  - signs.use.disposal
+  - signs.use.enchant
+  - signs.use.free
+  - signs.use.gamemode
+  - signs.use.heal
+  - signs.use.info
+  - signs.use.kit
+  - signs.use.mail
+  - signs.use.protection
+  - signs.use.repair
+  - signs.use.sell
+  - signs.use.time
+  - signs.use.trade
+  - signs.use.warp
+  - signs.use.weather
+  - spawn
+  - suicide
+  - time
+  - tpa
+  - tpaccept
+  - tpahere
+  - tpdeny
+  - warp
+  - warp.list
+  - world
+  - worth
+  - xmpp
+
+# When this option is enabled, one-time use kits (ie. delay < 0) will be
+# removed from the /kit list when a player can no longer use it
+skip-used-one-time-kits-from-kit-list: false
 
 # Note: All items MUST be followed by a quantity!
 # All kit names should be lower case, and will be treated as lower in permissions/costs.
 # Syntax: - itemID[:DataValue/Durability] Amount [Enchantment:Level].. [itemmeta:value]...
-# For Item meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
 # 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
 # For more information, visit http://wiki.ess3.net/wiki/Kits
 kits:
   tools:
@@ -254,13 +301,13 @@ kits:
     delay: 6000
     items:
       - 401 1 name:Angry_Creeper color:red fade:green type:creeper power:1
-      - 401 1 name:StarryNight color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
-      - 401 2 name:SolarWind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
+      - 401 1 name:Starry_Night color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
+      - 401 2 name:Solar_Wind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
 
 # Essentials Sign Control
 # See http://wiki.ess3.net/wiki/Sign_Tutorial for instructions on how to use these.
 # To enable signs, remove # symbol. To disable all signs, comment/remove each sign.
-# Essentials Colored sign support will be enabled when any sign types are enabled.
+# Essentials colored sign support will be enabled when any sign types are enabled.
 # Color is not an actual sign, it's for enabling using color codes on signs, when the correct permissions are given.
 
 enabledSigns:
@@ -287,6 +334,15 @@ enabledSigns:
 # Values should be between 1-20, 20 being virtually no lag protection.
 # Lower numbers will reduce the possibility of lag, but may annoy players.
 sign-use-per-second: 4
+
+# List of sign names Essentials should not protect. This feature is especially useful when
+# another plugin provides a sign that EssentialsX provides, but Essentials overrides.
+# For example, if a plugin provides a [kit] sign, and you wish to use theirs instead of
+# Essentials's, then simply add kit below and Essentials will not protect it.
+#
+# See https://github.com/drtshock/Essentials/pull/699 for more information.
+unprotected-sign-names:
+  #- kit
 
 # Backup runs a batch/bash command while saving is disabled.
 backup:
@@ -323,11 +379,12 @@ debug: false
 # For more information, visit http://wiki.ess3.net/wiki/Locale
 locale: messages_en.properties
 
-# Turn off god mode when people exit.
+
+# Turn off god mode when people leave the server.
 remove-god-on-disconnect: true
 
 # Auto-AFK
-# After this timeout in seconds, the user will be set as afk.
+# After this timeout in seconds, the user will be set as AFK.
 # This feature requires the player to have essentials.afk.auto node.
 # Set to -1 for no timeout.
 auto-afk: 300
@@ -338,30 +395,36 @@ auto-afk: 300
 # Set to -1 for no timeout.
 auto-afk-kick: -1
 
-# Set this to true, if you want to freeze the player, if he is afk.
-# Other players or monsters can't push him out of afk mode then.
-# This will also enable temporary god mode for the afk player.
-# The player has to use the command /afk to leave the afk mode.
+# Set this to true, if you want to freeze the player, if the player is AFK.
+# Other players or monsters can't push the player out of AFK mode then.
+# This will also enable temporary god mode for the AFK player.
+# The player has to use the command /afk to leave the AFK mode.
 freeze-afk-players: false
 
-# When the player is afk, should he be able to pickup items?
+# When the player is AFK, should he be able to pickup items?
 # Enable this, when you don't want people idling in mob traps.
 disable-item-pickup-while-afk: false
 
 # This setting controls if a player is marked as active on interaction.
-# When this setting is false, you will need to manually un-AFK using the /afk command.
+# When this setting is false, the player would need to manually un-AFK using the /afk command.
 cancel-afk-on-interact: true
 
-# Should we automatically remove afk status when the player moves?
+# Should we automatically remove afk status when a player moves?
 # Player will be removed from AFK on chat/command regardless of this setting.
 # Disable this to reduce server lag.
 cancel-afk-on-move: true
 
+# Set the player's list name when they are AFK. This is none by default which specifies that Essentials 
+# should not interfere with the AFK player's list name.
+# You may use color codes, use {USERNAME} the player's name or {PLAYER} for the player's displayname.
+afk-list-name: none
+
 # You can disable the death messages of Minecraft here.
 death-messages: true
 
-# Should operators be able to join and part silently.
-# You can control this with permissions if it is enabled.
+# Should players with permissions be able to join and part silently?
+# You can control this with essentials.silentjoin and essentials.silentquit permissions if it is enabled.
+# In addition, people with essentials.silentjoin.vanish will be vanished on join.
 allow-silent-join-quit: false
 
 # You can set a custom join message here, set to "none" to disable.
@@ -401,7 +464,7 @@ repair-enchanted: true
 # Warning: Mixing and overleveling some enchantments can cause issues with clients, servers and plugins.
 unsafe-enchantments: true
 
-#Do you want essentials to keep track of previous location for /back in the teleport listener?
+#Do you want Essentials to keep track of previous location for /back in the teleport listener?
 #If you set this to true any plugin that uses teleport will have the previous location registered.
 register-back-in-listener: false
 
@@ -420,6 +483,59 @@ mails-per-minute: 1000
 # Set the maximum time /tempban can be used for in seconds.
 # Set to -1 to disable, and essentials.tempban.unlimited can be used to override.
 max-tempban-time: -1
+
+# Changes /reply functionality. If true, /r goes to the person you messaged last, otherwise the first person that messaged you. 
+# If false, /r goes to the last person that messaged you.
+last-message-reply-recipient: true
+
+# If last-message-reply-recipient is true, this specifies the duration, in seconds, that would need to elapse for the 
+# reply-recipient to update when receiving a message.
+# Default is 180 (3 minutes)
+last-message-reply-recipient-timeout: 180
+
+# Toggles whether or not right clicking mobs with a milk bucket turns them into a baby.
+milk-bucket-easter-egg: true
+
+# Toggles whether or not the fly status message should be sent to players on join
+send-fly-enable-on-join: true
+
+# Set to true to enable per-world permissions for setting time for individual worlds with essentials commands.
+# This applies to /time, /day, /eday, /night, /enight, /etime.
+# Give someone permission to teleport to a world with essentials.time.world.<worldname>.
+world-time-permissions: false
+
+# Specify cooldown for both Essentials commands and external commands as well.
+# All commands do not start with a Forward Slash (/). Instead of /msg, write msg
+#
+# Wildcards are supported. E.g.
+# - '*i*': 50
+# adds a 50 second cooldown to all commands that include the letter i
+#
+# EssentialsX supports regex by starting the command with a caret ^
+# For example, to target commands starting with ban and not banip the following would be used:
+#  '^ban([^ip])( .*)?': 60 # 60 seconds /ban cooldown.
+# Note: If you have a command that starts with ^, then you can escape it using backslash (\). e.g. \^command: 123
+command-cooldowns:
+#  feed: 100 # 100 second cooldown on /feed command
+#  '*': 5 # 5 Second cooldown on all commands
+
+# Whether command cooldowns should be persistent past server shutdowns
+command-cooldown-persistence: true
+
+# Whether NPC balances should be listed in balance ranking features such as /balancetop.
+# NPC balances can include features like factions from FactionsUUID plugin.
+npcs-in-balance-ranking: false
+
+# Determines the functionality of the /createkit command.
+# If this is true, /createkit will give the user a link with the kit code.
+# If this is false, /createkit will add the kit to this config file directly.
+#
+# WARNING: If this is false, the config comments WILL be removed and it won't look the same as it does now.
+pastebin-createkit: true
+
+# Allow bulk buying and selling signs when the player is sneaking.
+# This is useful when a sign sells or buys one item at a time and the player wants to sell a bunch at once.
+allow-bulk-buy-sell: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -448,20 +564,21 @@ sethome-multiple:
   staff: 10
 
 # In this example someone with 'essentials.sethome.multiple' and 'essentials.sethome.multiple.vip' will have 5 homes.
+# Remember, they MUST have both permission nodes in order to be able to set multiple homes.
 
-# Set timeout in seconds for players to accept tpa before request is cancelled.
+# Set the timeout, in seconds for players to accept a tpa before the request is cancelled.
 # Set to 0 for no timeout.
 tpa-accept-cancellation: 120
 
 ############################################################
 # +------------------------------------------------------+ #
-# |                   EssentialsEco                      | #
+# |                    EssentialsEco                     | #
 # +------------------------------------------------------+ #
 ############################################################
 
 # For more information, visit http://wiki.ess3.net/wiki/Essentials_Economy
 
-# Defines the balance with which new players begin.  Defaults to 0.
+# Defines the balance with which new players begin. Defaults to 0.
 starting-balance: 0
 
 # worth-# defines the value of an item when it is sold to the server via /sell.
@@ -476,6 +593,8 @@ command-costs:
   #kit-tools: 1500
 
 # Set this to a currency symbol you want to use.
+# Remember, if you want to use special characters in this document, 
+# such as accented letters, you MUST save the file as UTF-8, not ANSI.
 currency-symbol: '$'
 
 # Set the maximum amount of money a player can have.
@@ -488,6 +607,27 @@ min-money: 0
 
 # Enable this to log all interactions with trade/buy/sell signs and sell command.
 economy-log-enabled: false
+
+# Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
+# This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
+# Default is false. 
+use-bukkit-permissions: false
+
+# Minimum acceptable amount to be used in /pay.
+minimum-pay-amount: 0.001
+
+# The format of currency, excluding symbols. See currency-sumbol-format-locale for symbol configuration.
+#
+# "#,##0.00" is how the majority of countries display currency.
+#currency-format: "#,##0.00"
+
+# Format currency symbols. Some locales use , and . interchangeably.
+# Some formats do not display properly in-game due to faulty Minecraft font rendering.
+#
+# For 1.234,50 use de-DE
+# For 1,234.50 use en-US
+# For 1'234,50 use fr-ch
+#currency-symbol-format-locale: en-US
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -510,6 +650,8 @@ hide-permissionless-help: true
 # +------------------------------------------------------+ #
 ############################################################
 
+# This section requires the EssentialsChat.jar to work.
+
 chat:
 
   # If EssentialsChat is installed, this will define how far a player's voice travels, in blocks.  Set to 0 to make all chat global.
@@ -521,128 +663,188 @@ chat:
 
   # Chat formatting can be done in two ways, you can either define a standard format for all chat.
   # Or you can give a group specific chat format, to give some extra variation.
-  # If set to the default chat format which "should" be compatible with ichat.
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
 
-  format: '{DISPLAYNAME}&7:&f {MESSAGE}'
-  #format: '&7[{GROUP}]&r {factions_name|rp} {DISPLAYNAME}&7:&r {MESSAGE}'
+  format: '&a&l/&fMortal&a&l/&7{DISPLAYNAME}&a&l/&f{MESSAGE}'
+  #format: '&7[{GROUP}]&r {factions_name/&7rp} {{DISPLAYNAME}&7:&r {MESSAGE}'
 
   group-formats:
-  #  Default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
-    fakeadmin: '&7(&2Staff&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    builder: '&7(&2Bldr&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    secondchance: '&7(&42ndChance&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    admin: '&7(&4Admin&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    youtube: '&7(&4YT&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    superman: '&7(&cS&9u&ep&9e&9rm&can&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    boros: '&7(&dB&9oro&ds&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    supergirl: '&7(&cS&9u&ep&9e&9rg&cirl&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    batman: '&7(&7B&ea&0t&7m&8a&7n&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    batmanbatsuit: '&7(&7B&ea&0t&7m&8a&7n-&8B&ba&8ts&7u&8it&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    ironman: '&7(&6I&4r&bo&4n M&6an&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    deadpool: '&7(&4D&0ea&4dp&0oo&4l&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    goku: '&7(&eG&1o&6ku&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    vegeta: '&7(&eV&fe&1ge&fta&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    gohan: '&7(&eG&1o&6han&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    hulk: '&7(&a&lH&2&lULK&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    shehulk: '&7(&aShe-&lH&2&lULK&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    onepunchman: '&7(&6One &fPunch &4Man&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    wonderwoman: '&7(&4W&fon&eder &4W&fom&9an&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    aquaman: '&7(&eA&6qua&2man&7) {DISPLAYNAME}&7: &3{MESSAGE}'
-    greenarrow: '&7(&2Gre&0e&2n A&0r&2row&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    bartallen: '&7(&4Fl&ea&4sh-BartA&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    barryallen: '&7(&4Fl&ea&4sh-BarryA&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    wallywest: '&7(&4Fl&ea&4sh-WW&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    ichigokurosaki: '&7(&6Ichi&0go &fKuro&0saki&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    ares: '&7(&4&lAr&0&le&4&ls&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    wolverine: '&7(&eW&0o&elv&9er&eine&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    blackpanther: '&7(&0Black Panther&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    spiderman: '&7(&4Sp&fi&4d&0e&4rm&0a&4n&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    hercules: '&7(&6Herc&9ules&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    thor: '&7(&eT&4h&9o&fr&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    mystique: '&7(&1Mystique&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    storm: '&7(&8Storm&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    blackwidow: '&7(&5B&0lac&5k &5W&0ido&5w&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    thehumantorch: '&7(&fThe &eHum&6an &cTor&4ch&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    doctorstrange: '&7(&cD&9octo&cr &9S&ctrang&9e&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    ultron: '&7(&7Ul&8tr&4o&7n) {DISPLAYNAME}&7: &7{MESSAGE}'
-    speedy: '&7(&4Sp&eee&4dy&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    raven: '&7(&5R&0a&5v&0e&5n&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    blackcanary: '&7(&0Black Canary&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    warmachine: '&7(&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    darthmaul: '&7(&4D&0a&4r&0t&4h M&0au&4l&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    darthvader: '&7(&8D&0a&8r&0t&8h V&0ade&8r&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    darthsidious: '&7(&0Darth Sidious&7) {DISPLAYNAME}&7: &0{MESSAGE}'
-    antman: '&7(&4A&0n&4t-M&0a&4n&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    atom: '&7(&4A&7t&8o&4m&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    nightwing: '&7(&1N&0igh&1tw&0in&1g&7) {DISPLAYNAME}&7: &1{MESSAGE}'
-    martianmanhunter: '&7(&2Mar&9t&2ian &9Man&2hunter&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    doctormanhattan: '&7(&bD&3o&bct&3o&br &bM&3a&bnhatt&3a&bn&7) {DISPLAYNAME}&7: &b{MESSAGE}'
-    haljordan: '&7(&2Gr&8e&2en Lant&8e&2rn-HJ&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    alanscott: '&7(&2Gr&8e&2en Lant&8e&2rn-AS&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    hawkeye: '&7(&8H&0a&8w&0k&8e&0y&8e&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    lexluthor: '&7(&2L&9e&2x Luth&9o&2r&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    robin: '&7(&cR&eo&cbi&2n&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    cyborg: '&7(&7C&by&8b&4o&7r&8g&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    starfire: '&7(&dS&5t&4a&drf&5i&4r&de&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    captainamerica: '&7(&4C&9apt&fain &4A&9mer&4ica&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    apollo: '&7(&eA&fp&eo&fll&eo&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    zeus: '&7(&fZ&eeu&fs&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    aphrodite: '&7(&dAphrodite&7) {DISPLAYNAME}&7: &d{MESSAGE}'
-    artemis: '&7(&9A&2r&9t&2e&9m&2i&9s&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    athena: '&7(&fA&9then&fa&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    demeter: '&7(&aD&2e&am&2e&at&2e&ar&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    dionysus: '&7(&aDi&2on&ay&2sus&7) {DISPLAYNAME}&7: &a{MESSAGE}'
-    hades: '&7(&4Hades&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    hephaestus: '&7(&4H&0e&cph&0a&4est&cus&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    hera: '&7(&bH&3er&ba&7) {DISPLAYNAME}&7: &3{MESSAGE}'
-    hermes: '&7(&eH&6e&er&6m&ee&6s&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    hestia: '&7(&6Hes&4tia&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    poseidon: '&7(&3P&9o&3s&9e&3i&9d&3o&9n&7) {DISPLAYNAME}&7: &b{MESSAGE}'
-    zoom: '&7(&bZ&0oo&bm&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    blackspiderman: '&7(&8Bl&0a&8ck Sp&fi&8derm&0a&8n&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    dipshit: '&7(&2&kasdf&4_DIPSHIT_&2&kqwer&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    naruto: '&7(&eN&6aruto&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    onslaughtreborn: '&7(&4Onsl&9aug&4ht Reb&9orn&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    kidflash: '&7(&eK&4i&ed &4F&el&4a&es&4h&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    magneto: '&7(&4M&5a&4g&5n&4e&5t&4o&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    cosmicarmorsuperman: '&7(&cC&e&ko&9s&6mi&9c &4A&2r&9m&6o&4r &4S&9u&ep&9er&4man&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    howardtheduck: '&7(&eHoward &6the &fDuck&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    daredevil: '&7(&4D&care&4d&cevil&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    reverseflash: '&7(&eRe&4v&eerse Fl&4a&esh&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    shazam: '&7(&fS&ch&ea&fz&ca&em&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    niteowl: '&7(&8N&ci&8te O&7w&8l&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    doomsday: '&7(D&foo&7msd&4a&7y&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    blackadam: '&7(&8Bl&ea&8ck &8Ad&ea&8m&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    greengoblin: '&7(&2Gr&5ee&2n G&5o&2blin&7) {DISPLAYNAME}&7: &2{MESSAGE}'
-    thanos: '&7(&7&5Th&ea&9n&eo&9s&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    sonicthehedgehog: '&7(&9S&fo&9n&4i&9c t&fh&9e H&fe&9dge&4h&fo&4g&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    galactus: '&7(&5G&9a&0l&5a&9c&0t&5u&9s&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    generalzod: '&7(&8Gen&7e&8ral Z&7o&8d&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    fang: '&7(&8F&7a&8n&7g&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    parallaxentity: '&7(&eParallax &6Entity&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    kentnelson: '&7(&6D&9o&6ct&9o&6r F&9a&6te-KN&7) {DISPLAYNAME}&7: &9{MESSAGE}'
-    jailed: '&7(&aJailed&7) {DISPLAYNAME}: {MESSAGE}'
-    mrmxyzptlk: '&7(&6M&5r&6. &5M&6x&5y&6z&5p&6t&5l&6k&7) {DISPLAYNAME}&7: &6{MESSAGE}'
-    owlman: '&7(&7Ow&bl&8m&0a&8n&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    deathstroke: '&7(&8Death&6stroke&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    blackbolt: '&7(&8B&7l&0a&8ck &8B&0o&7l&8t&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    firefly: '&7(&eF&4i&ere&8f&el&8y&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    blacklightning: '&7(&8Bl&ba&8ck L&fi&8ghtn&ei&8ng&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    venom: '&7(&0V&8e&fn&8o&0m&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    caroldanvers: '&7(&cM&es&8. &eM&8a&crv&8e&el-CD&7) {DISPLAYNAME}&7: &c{MESSAGE}'
-    harleyquinn: '&7(&4H&fa&0r&4l&fe&0y &4Q&fu&0i&4n&fn&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    zatanna: '&7(&fZ&0a&ft&0a&fn&0n&fa&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    sinestro: '&7(&eSin&ce&0s&etr&0o&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    catwoman: '&7(&8C&0a&8twom&0a&8n&7) {DISPLAYNAME}&7: &8{MESSAGE}'
-    johndoe: '&7(&fJ&0o&4h&fn &4D&fo&4e&7) {DISPLAYNAME}&7: &4{MESSAGE}'
-    wintersoldier: '&7(&8Wint&7er &4Sol&cdier&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    darkseid: '&7(&9D&8a&9rk&7s&1e&7id&7) {DISPLAYNAME}&7: &7{MESSAGE}'
-    johncena: '&7(&fJohn Cena&7) {DISPLAYNAME}&7: &f{MESSAGE}'
-    supermanprimeonemillion: '&7(&eSuperman Prime One Million&7) {DISPLAYNAME}&7: &e{MESSAGE}'
-    goldenfrieza: '&7(&5Gol&eden Frieza&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    joker: '&7(&fJo&2k&5er&7) {DISPLAYNAME}&7: &5{MESSAGE}'
-    apocalypse: '&7(&3A&9p&3o&9ca&3lypse&7) {DISPLAYNAME}&7: &3{MESSAGE}'
+  #  Default: '{WORLDNAME} {{DISPLAYNAME}&7:&r {MESSAGE}'
+    fakeadmin: '&a&l/&2Staff&a&l/&f{MESSAGE}'
+    builder: '&a&l/&2Bldr&a&l/&f{MESSAGE}'
+    secondchance: '&a&l/&42ndChance&a&l/&f{MESSAGE}'
+    admin: '&a&l/&4Admin&a&l/&f{MESSAGE}'
+    youtube: '&a&l/&4YT&a&l/&f{MESSAGE}'
+    superman: '&a&l/&cS&9u&ep&9e&9rm&can&a&l/&9{MESSAGE}'
+    boros: '&a&l/&dB&9oro&ds&a&l/&9{MESSAGE}'
+    christianicgod: '&a&l/&f&lChristianic God&a&l/&f&l{MESSAGE}'
+    supergirl: '&a&l/&cS&9u&ep&9e&9rg&cirl&a&l/&9{MESSAGE}'
+    batman: '&a&l/&7B&ea&0t&7m&8a&7n&a&l/&8{MESSAGE}'
+    batmanbatsuit: '&a&l/&7B&ea&0t&7m&8a&7n-&8B&ba&8ts&7u&8it&a&l/&8{MESSAGE}'
+    ironmanmkxliii: '&a&l/&6I&4r&bo&4n M&6an &4MK &6X&4L&6III&a&l/&6{MESSAGE}'
+    deadpool: '&a&l/&4D&0ea&4dp&0oo&4l&a&l/&4{MESSAGE}'
+    goku: '&a&l/&bG&1o&6ku&a&l/&6{MESSAGE}'
+    ironfist: '&a&l/&eI&fro&en &fFi&es&ft&a&l/&f{MESSAGE}'
+    lukecage: '&a&l/&eL&7u&eke &9C&7a&9ge&a&l/&e{MESSAGE}'
+    vegeta: '&a&l/&eV&fe&1ge&fta&a&l/&9{MESSAGE}'
+    gohan: '&a&l/&eG&1o&6han&a&l/&6{MESSAGE}'
+    missmartian: '&a&l/&2M&fi&2ss M&4a&2rt&9i&2an&a&l/&2{MESSAGE}'
+    hulk: '&a&l/&2&lH&a&lU&2&lLK&a&l/&2{MESSAGE}'
+    nickcage: '&a&l/&fNick Cage&a&l/&f{MESSAGE}'
+    shehulk: '&a&l/&2She-&lH&a&lU&2&lLK&a&l/&2{MESSAGE}'
+    redshehulk: '&a&l/&4Red She-&4&lH&c&lU&4&4&lLK&a&l/&4{MESSAGE}'
+    onepunchman: '&a&l/&6One &fPunch &4Man&a&l/&f{MESSAGE}'
+    wonderwoman: '&a&l/&4W&fon&eder &4W&fom&9an&a&l/&9{MESSAGE}'
+    aquaman: '&a&l/&eA&6qua&2man&a&l/&3{MESSAGE}'
+    mewtwo: '&a&l/&fM&de&fwt&dw&fo&a&l/&d{MESSAGE}'
+    greenarrow: '&a&l/&2Gre&0e&2n A&0r&2row&a&l/&2{MESSAGE}'
+    flashbartallen: '&a&l/&4Fl&ea&4sh-BartA&a&l/&e{MESSAGE}'
+    flashbarryallen: '&a&l/&4Fl&ea&4sh-BarryA&a&l/&e{MESSAGE}'
+    flashwallywest: '&a&l/&4Fl&ea&4sh-WW&a&l/&e{MESSAGE}'
+    ichigokurosaki: '&a&l/&6Ichi&0go &fKuro&0saki&a&l/&6{MESSAGE}'
+    ares: '&a&l/&4&lAr&0&le&4&ls&a&l/&4{MESSAGE}'
+    wolverine: '&a&l/&eW&0o&elv&9er&eine&a&l/&e{MESSAGE}'
+    blackpanther: '&a&l/&0Black Panther&a&l/&8{MESSAGE}'
+    spidermanpeterparker: '&a&l/&4Sp&fi&4d&0e&4rm&0a&4n-PP&a&l/&4{MESSAGE}'
+    hercules: '&a&l/&6Herc&9ules&a&l/&6{MESSAGE}'
+    thor: '&a&l/&eT&4h&9o&fr&a&l/&7{MESSAGE}'
+    mystique: '&a&l/&1Mystique&a&l/&5{MESSAGE}'
+    storm: '&a&l/&8Storm&a&l/&8{MESSAGE}'
+    blackwidow: '&a&l/&5B&0lac&5k &5W&0ido&5w&a&l/&5{MESSAGE}'
+    thehumantorch: '&a&l/&fThe &eHum&6an &cTor&4ch&a&l/&c{MESSAGE}'
+    doctorstrange: '&a&l/&cD&9octo&cr &9S&ctrang&9e&a&l/&9{MESSAGE}'
+    ultron: '&a&l/&7Ul&8tr&4o&7n/&7&7{MESSAGE}'
+    speedy: '&a&l/&4Sp&eee&4dy&a&l/&4{MESSAGE}'
+    raven: '&a&l/&5R&0a&5v&0e&5n&a&l/&5{MESSAGE}'
+    blackcanary: '&a&l/&0Black Canary&a&l/&8{MESSAGE}'
+    warmachine: '&a&l/&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne&a&l/&7{MESSAGE}'
+    darthmaul: '&a&l/&4D&0a&4r&0t&4h M&0au&4l&a&l/&4{MESSAGE}'
+    darthrevan: '&a&l/&8D&4a&8rth &4R&8ev&4a&8n&a&l/&8{MESSAGE}'
+    darthvader: '&a&l/&8D&0a&8r&0t&8h V&0ade&8r&a&l/&8{MESSAGE}'
+    darthsidious: '&a&l/&0Darth Sidious&a&l/&0{MESSAGE}'
+    antman: '&a&l/&4A&0n&4t-M&0a&4n&a&l/&4{MESSAGE}'
+    atom: '&a&l/&4A&7t&8o&4m&a&l/&4{MESSAGE}'
+    nightwing: '&a&l/&1N&0igh&1tw&0in&1g&a&l/&1{MESSAGE}'
+    martianmanhunter: '&a&l/&2M&4a&2rt&9i&2an &9Man&2hunter&a&l/&2{MESSAGE}'
+    doctormanhattan: '&a&l/&bD&3o&bct&3o&br &bM&3a&bnhatt&3a&bn&a&l/&b{MESSAGE}'
+    greenlanternhaljordan: '&a&l/&2Gr&8e&2en Lant&8e&2rn-HJ&a&l/&2{MESSAGE}'
+    greenlanternalanscott: '&a&l/&2Gr&8e&2en Lant&8e&2rn-AS&a&l/&2{MESSAGE}'
+    hawkeye: '&a&l/&8H&0a&8w&0k&8e&0y&8e&a&l/&8{MESSAGE}'
+    lexluthor: '&a&l/&2L&9e&2x Luth&9o&2r&a&l/&f{MESSAGE}'
+    robin: '&a&l/&cR&eo&cbi&2n&a&l/&c{MESSAGE}'
+    rocketraccoon: '&a&l/&8R&7o&6ck&8&7e&8t &6Ra&8c&7c&6oo&8n&a&l/&7{MESSAGE}'
+    cyborg: '&a&l/&7C&by&8b&4o&7r&8g&a&l/&7{MESSAGE}'
+    starfire: '&a&l/&dS&5t&4a&drf&5i&4r&de&a&l/&5{MESSAGE}'
+    captainamerica: '&a&l/&4C&9apt&fain &4A&9mer&4ica&a&l/&f{MESSAGE}'
+    apollo: '&a&l/&eA&fp&eo&fll&eo&a&l/&f{MESSAGE}'
+    zeus: '&a&l/&fZ&eeu&fs&a&l/&e{MESSAGE}'
+    aphrodite: '&a&l/&dAphrodite&a&l/&d{MESSAGE}'
+    artemis: '&a&l/&9A&2r&9t&2e&9m&2i&9s&a&l/&2{MESSAGE}'
+    athena: '&a&l/&fA&9then&fa&a&l/&9{MESSAGE}'
+    demeter: '&a&l/&aD&2e&am&2e&at&2e&ar&a&l/&2{MESSAGE}'
+    dionysus: '&a&l/&aDi&2on&ay&2sus&a&l/&a{MESSAGE}'
+    hades: '&a&l/&4Hades&a&l/&4{MESSAGE}'
+    hephaestus: '&a&l/&4H&0e&cph&0a&4est&cus&a&l/&c{MESSAGE}'
+    hera: '&a&l/&bH&3er&ba&a&l/&3{MESSAGE}'
+    hermes: '&a&l/&eH&6e&er&6m&ee&6s&a&l/&e{MESSAGE}'
+    hestia: '&a&l/&6Hes&4tia&a&l/&c{MESSAGE}'
+    poseidon: '&a&l/&3P&9o&3s&9e&3i&9d&3o&9n&a&l/&b{MESSAGE}'
+    zoom: '&a&l/&bZ&0oo&bm&a&l/&9{MESSAGE}'
+    blackspiderman: '&a&l/&8Bl&0a&8ck Sp&fi&8derm&0a&8n&a&l/&8{MESSAGE}'
+    dipshit: '&a&l/&2&kasdf&4_DIPSHIT_&2&kqwer&a&l/&f{MESSAGE}'
+    naruto: '&a&l/&eN&6aruto&a&l/&6{MESSAGE}'
+    onslaughtreborn: '&a&l/&4Onsl&9aug&4ht Reb&9orn&a&l/&c{MESSAGE}'
+    kidflash: '&a&l/&eK&4i&ed &4F&el&4a&es&4h&a&l/&e{MESSAGE}'
+    magneto: '&a&l/&4M&5a&4g&5n&4e&5t&4o&a&l/&5{MESSAGE}'
+    cosmicarmorsuperman: '&a&l/&cC&e&ko&9s&6mi&9c &4A&2r&9m&6o&4r &4S&9u&ep&9er&4man&a&l/&c{MESSAGE}'
+    howardtheduck: '&a&l/&eHoward &6the &fDuck&a&l/&e{MESSAGE}'
+    daredevil: '&a&l/&4D&care&4d&cevil&a&l/&c{MESSAGE}'
+    reverseflasheobardthawne: '&a&l/&eRe&4v&eerse-Fl&4a&esh&8-&eE&4T&a&l/&e{MESSAGE}'
+    shazam: '&a&l/&fS&ch&ea&fz&ca&em&a&l/&c{MESSAGE}'
+    niteowl: '&a&l/&8N&ci&8te O&7w&8l&a&l/&c{MESSAGE}'
+    doomsday: '&a&l/D&foo&7msd&4a&7y&a&l/&7{MESSAGE}'
+    blackadam: '&a&l/&8Bl&ea&8ck &8Ad&ea&8m&a&l/&8{MESSAGE}'
+    greengoblin: '&a&l/&2Gr&5ee&2n G&5o&2blin&a&l/&2{MESSAGE}'
+    thanos: '&a&l/&7&5Th&ea&9n&eo&9s&a&l/&9{MESSAGE}'
+    sonicthehedgehog: '&a&l/&9S&fo&9n&4i&9c t&fh&9e H&fe&9dge&4h&fo&4g&a&l/&9{MESSAGE}'
+    galactus: '&a&l/&5G&9a&0l&5a&9c&0t&5u&9s&a&l/&5{MESSAGE}'
+    generalzod: '&a&l/&8Gen&7e&8ral Z&7o&8d&a&l/&7{MESSAGE}'
+    fang: '&a&l/&8F&7a&8n&7g&a&l/&7{MESSAGE}'
+    parallaxentity: '&a&l/&eParallax &6Entity&a&l/&e{MESSAGE}'
+    doctorfatekentnelson: '&a&l/&6D&9o&6ct&9o&6r F&9a&6te-KN&a&l/&9{MESSAGE}'
+    jailed: '&a&l/&aJailed&a&l/{DISPLAYNAME}: {MESSAGE}'
+    mrmxyzptlk: '&a&l/&6M&5r&6. &5M&6x&5y&6z&5p&6t&5l&6k&a&l/&6{MESSAGE}'
+    skaar: '&a&l/&2Sk&6aa&2r&a&l/&2{MESSAGE}'
+    owlman: '&a&l/&7Ow&bl&8m&0a&8n&a&l/&7{MESSAGE}'
+    deathstroke: '&a&l/&8Death&6stroke&a&l/&7{MESSAGE}'
+    deadshot: '&a&l/&fDe&cad&8sh&co&8t&a&l/&7{MESSAGE}'
+    blackbolt: '&a&l/&8B&7l&0a&8ck &8B&0o&7l&8t&a&l/&7{MESSAGE}'
+    firefly: '&a&l/&eF&4i&ere&8f&el&8y&a&l/&e{MESSAGE}'
+    blacklightning: '&a&l/&8Bl&ba&8ck L&fi&8ghtn&ei&8ng&a&l/&7{MESSAGE}'
+    venom: '&a&l/&0V&8e&fn&8o&0m&a&l/&8{MESSAGE}'
+    hybrid: '&a&l/&4H&cy&4b&cri&4d&a&l/&c{MESSAGE}'
+    lasher: '&a&l/&2L&aa&2sh&ae&2r&a&l/&a{MESSAGE}'
+    msmarvelcaroldanvers: '&a&l/&cM&es&8. &eM&8a&crv&8e&el-CD&a&l/&c{MESSAGE}'
+    harleyquinn: '&a&l/&4H&fa&0r&4l&fe&0y &4Q&fu&0i&4n&fn&a&l/&f{MESSAGE}'
+    poisonivy: '&a&l/&aP&2o&ai&2s&ao&2n &aI&2vy&a&l/&2{MESSAGE}'
+    zatanna: '&a&l/&fZ&0a&ft&0a&fn&0n&fa&a&l/&f{MESSAGE}'
+    yellowlanternsinestro: '&a&l/&eYe&ell&6o&ew &eL&6a&ent&fe&ern-&cS&a&l/&e{MESSAGE}'
+    catwoman: '&a&l/&8C&0a&8twom&0a&8n&a&l/&8{MESSAGE}'
+    johndoe: '&a&l/&fJ&0o&4h&fn &4D&fo&4e&a&l/&4{MESSAGE}'
+    wintersoldier: '&a&l/&8Wint&7er &4Sol&cdier&a&l/&7{MESSAGE}'
+    darkseid: '&a&l/&9D&8a&9rk&7s&1e&7id&a&l/&7{MESSAGE}'
+    johncena: '&a&l/&fJohn Cena&a&l/&f{MESSAGE}'
+    supermanprimeonemillion: '&a&l/&eSuperman Prime One Million&a&l/&e{MESSAGE}'
+    goldenfrieza: '&a&l/&5Gol&eden Frieza&a&l/&5{MESSAGE}'
+    joker: '&a&l/&fJo&2k&5er&a&l/&5{MESSAGE}'
+    apocalypse: '&a&l/&3A&9p&3o&9ca&3lypse&a&l/&3{MESSAGE}'
+    gorillagrodd: '&a&l/&8G&7o&8rilla Gr&7o&8dd&a&l/&7{MESSAGE}'
+    blast: '&a&l/&bBl&5a&bst&a&l/&b{MESSAGE}'
+    genos: '&a&l/&8G&6e&7n&eo&8s&a&l/&7{MESSAGE}'
+    redhulk: '&a&l/&4Red &lH&c&lU&4&lLK&a&l/&4{MESSAGE}'
+    nickfury: '&a&l/&8Nick Fury&a&l/&8{MESSAGE}'
+    terra: '&a&l/&eT&8e&6r&8r&7a&a&l/&6{MESSAGE}'
+    undyne: '&a&l/&4U&9n&0d&fy&0n&fe&a&l/&9{MESSAGE}'
+    whitecanary: '&a&l/&fWhite Canary&a&l/&f{MESSAGE}'
+    mew: '&a&l/&dMew&a&l/&d{MESSAGE}'
+    invisiblewoman: '&a&l/&9Inv&bi&9s&1ible &9W&bo&9m&0a&9n&a&l/&9{MESSAGE}'
+    carnage: '&a&l/&4C&0a&4rn&0a&4ge&a&l/&4{MESSAGE}'
+    superboyconnerkent: '&a&l/&4S&0u&8p&0er&1bo&0y-&8ConnerK&a&l/&7{MESSAGE}'
+    batgirl: '&a&l/&7B&ea&0t&7gi&8r&7l/&7&8{MESSAGE}'
+    clayface: '&a&l/&6Clayface&a&l/&6{MESSAGE}'
+    beastboy: '&a&l/&2B&8e&5a&8s&2t §aB§5o§ay&a&l/&2{MESSAGE}'
+    abomb: '&a&l/&9&lA&8-&bB&1o&bmb&a&l/&b{MESSAGE}'
+    kira: '&a&l/&fK&4i&6r&7a&a&l/&f{MESSAGE}'
+    spiderwomangwenstacy: '&a&l/&5S&0p&fid&0e&fr-&5W&f&8o&fm&ba&fn&0-&fG&7S&a&l/&7&f{MESSAGE}'
+    spidermanmilesmorales: '&a&l/&4Sp&fi&4d&0e&4rm&0a&4n-MM&a&l/&4{MESSAGE}'
+    captainuniversepeterparker: '&a&l/&4C&1a&9p&ft&1a&f&1&fin &fUniverse-PP&a&l/&f{MESSAGE}'
+    yellowlanternbatman: '&a&l/&eYe&ell&6o&ew &eL&6a&ent&fe&ern&8-7eB&a&l/&e{MESSAGE}'
+    godfallsuperman: '&a&l/&4Go&7d&4f&7all &cS&8u&cper&8m&ca&8n&a&l/&4{MESSAGE}'
+    theinvisibleboy: '&a&l/The Invisible Boy/&7&7{MESSAGE}'
+    nekron: '&a&l/&8N&7e&0kr&8o&0n&a&l/&8{MESSAGE}'
+    redlanternatrocitus: '&a&l/&4R&0e&4d L&ca&4nt&0e&4rn-A&a&l/&4{MESSAGE}'
+    redrobin: '&a&l/&4R&0e&4d R&6o&4b&0i&4n&a&l/&4{MESSAGE}'
+    finnthehuman: '&a&l/&fFinn &9The &1Human&a&l/&f{MESSAGE}'
+    dovahkiin: '&a&l/&fDovahkiin&a&l/&f{MESSAGE}'
+    beerus: '&a&l/&5B&6e&5e&9r&8u&9s&a&l/&5{MESSAGE}'
+    stephencurry: '&a&l/&eS&1te&eph&1e&en &1C&furr&1y&a&l/&f{MESSAGE}'
+    ironmanmkxv: '&a&l/&6I&4r&bo&4n M&6an &4MK &6X&4V&a&l/&8{MESSAGE}'
+    ashprime: '&a&l/&fA&es&bh &fP&er&bi&fm&ee&a&l/&7{MESSAGE}'
+    redhood: '&a&l/&4R&8e&4d H&8oo&4d&a&l/&4{MESSAGE}'
+    princessmononoke: '&a&l/&4P&fr&7in&fce&8ss &fMo&8no&fn&4o&7ke&a&l/&7&f{MESSAGE}'
+    ultraboy: '&a&l/&4U&2l&4t&2r&4a &4B&0o&2y&a&l/&2{MESSAGE}'
+    pikachu: '&a&l/&eP&ci&ek&0a&echu&a&l/&e{MESSAGE}'
+    groot: '&a&l/&2G&ar&6o&ao&2t&a&l/&6{MESSAGE}'
+    ironmanmkxvli: '&a&l/&6I&4r&bo&4n M&6an &4MK &6X&4V&6L&4I&a&l/&c{MESSAGE}'
+    silversurfer: '&a&l/&7Si&fl&7ver &7Su&fr&7fer&a&l/&f{MESSAGE}'
+    novasamalexander: '&a&l/&1N&eo&4v&9a&e-&4S&8A&a&l/&b{MESSAGE}'
+    kingpin: '&a&l/&fKi&5n&fgp&5i&fn&a&l/&f{MESSAGE}'
+    therival: '&a&l/&6T&8he &4R&8i&4v&8al&a&l/&1{MESSAGE}'
+    bluelanternsaintwalker: '&a&l/&1B&9l&bu&9e &1L&9a&bn&9ter&1n&f-&9S&8W&a&l/&b{MESSAGE}'
+    ghostriderjohnnyblaze: '&a&l/&8Gh&0o&8st R&7i&8der&f-&6J&cB&a&l/&8{MESSAGE}'
+
+
+
   # If you are using group formats make sure to remove the '#' to allow the setting to be read.
 
 ############################################################
@@ -650,6 +852,8 @@ chat:
 # |                 EssentialsProtect                    | #
 # +------------------------------------------------------+ #
 ############################################################
+
+# This section requires the EssentialsProtect.jar to work.
 
 protect:
 
@@ -732,22 +936,22 @@ protect:
     # Should drowning damage be disabled?
     # (Split into two behaviors; generally, you want both set to the same value.)
     drown: true
-    suffocate: false
+    suffocate: true
 
     # Should damage via lava be disabled?  Items that fall into lava will still burn to a crisp. ;)
     lavadmg: true
 
     # Should arrow damage be disabled?
-    projectiles: false
+    projectiles: true
 
     # This will disable damage from touching cacti.
-    contactdmg: false
+    contactdmg: true
 
     # Burn, baby, burn!  Should fire damage be disabled?
     firedmg: true
 
     # Should the damage after hit by a lightning be disabled?
-    lightning: false
+    lightning: true
 
     # Should Wither damage be disabled?
     wither: false
@@ -764,6 +968,8 @@ protect:
 # +------------------------------------------------------+ #
 ############################################################
 
+  # This section requires the EssentialsAntiBuild.jar to work.
+
   # Disable various default physics and behaviors
   # For more information, visit http://wiki.ess3.net/wiki/AntiBuild
 
@@ -774,7 +980,7 @@ protect:
 
     # Should people with build: false in permissions be allowed to use items?
     # Set true to disable using for those people.
-    # Setting to false means EssentialsAntiBuild will never prevent you from using.
+    # Setting to false means EssentialsAntiBuild will never prevent you from using items.
     use: true
 
     # Should we tell people they are not allowed to build?
@@ -811,9 +1017,11 @@ protect:
 # +------------------------------------------------------+ #
 ############################################################
 
+# This section requires essentialsspawn.jar to work.
+
 newbies:
   # Should we announce to the server when someone logs in for the first time?
-  # If so, use this format, replacing {factions_name|rp} {DISPLAYNAME} with the player name.
+  # If so, use this format, replacing {DISPLAYNAME} with the player name.
   # If not, set to ''
   #announce-format: ''
   announce-format: '&dWelcome {DISPLAYNAME}&d to the server!'
@@ -823,7 +1031,7 @@ newbies:
   spawnpoint: newbies
 
   # Do we want to give users anything on first join? Set to '' to disable
-  # This kit will be given regardless of cost, and permissions.
+  # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
   #kit: ''
   kit: tools
 
@@ -835,4 +1043,7 @@ respawn-listener-priority: lowest
 # When users die, should they respawn at their first home or bed, instead of the spawnpoint?
 respawn-at-home: true
 
-# End of File <-- No seriously, you're done with configuration.
+# Teleport all joining players to the spawnpoint
+spawn-on-join: false
+
+# End of file <-- No seriously, you're done with configuration.

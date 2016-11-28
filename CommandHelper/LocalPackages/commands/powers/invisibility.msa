@@ -1,0 +1,28 @@
+camo:/camo = >>>
+    @player = player()
+    @eventID = associative_array('id': @player.'invis')
+    @filter = associative_array('player': @player)
+    try(
+        bind(player_move, @eventID, @filter, @event, @player,
+            sudo("/effect ". @player ." 14 0")
+            unbind()
+        )
+        sudo("/effect ". @player ." 14 9999 1 true")
+    ,
+        tmsg(@player,"You're already invisible!")
+    )
+<<<
+invis:/invis = >>>
+    @player = player()
+    sudo("/effect ". @player ." 14 9999 1 true")
+    runas(~console,"/disguiseplayer ". @player ." Creeper setInvisible true")
+<<<
+vis:/vis = >>>
+    @player = player()
+    @class = pgroup()[0]
+    sudo("/effect ". @player ." 14 0")
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    _changeSkin(@player, @hero['sig'], @hero['val'])
+    unbind(associative_array('id': @player.'invis'))
+<<<

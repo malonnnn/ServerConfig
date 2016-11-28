@@ -1,0 +1,10 @@
+# grow into giant
+grow:/grow = >>>
+    sudo(/disguise giant)
+<<<
+shrink:/shrink = >>>
+   include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+   include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
+   @hero = _getHeroInfo('darkseid',0)
+   _changeSkin(player(),@hero['sig'],@hero['val'])
+<<<

@@ -73,13 +73,13 @@ teleport:
   on-login: false
   # Add a teleportation delay to all commands
   delay: 0
+  # The visit command is ordered by world instead of globally
+  per-world-visit: false
 
 # Switching from PlotMe?
 plotme:
   # Cache the uuids from the PlotMe database
   cache-uuds: false
-  # Have `/plotme` as a command alias
-  alias: false
 
 # Relating to how many plots someone can claim  
 limit:
@@ -110,7 +110,7 @@ web:
   # The ip that will show up in the interface
   server-ip: "your.ip.here"
 
-# Configure the paths PlotSquared will use
+# Configure the paths that will be used
 paths:
   schematics: "schematics"
   bo3: "BO3"
@@ -119,9 +119,9 @@ paths:
   translations: "translations"
 
 uuid:
-  # Force PlotSquared to use offline UUIDs (it usually detects the right mode)
+  # Force using offline UUIDs (it usually detects the right mode)
   offline: false
-  # Force PlotSquared to use lowercase UUIDs
+  # Force using lowercase UUIDs
   force-lowercase: false
   # Use a database to store UUID/name info
   use-sqluuidhandler: false

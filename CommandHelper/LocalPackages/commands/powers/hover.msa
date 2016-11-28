@@ -1,0 +1,10 @@
+hoveron:/hover on = >>>
+    sudo(/effect player() 25 9999 255 true)
+    tmsg(player(),concat(color(gold),
+    'You feel lighter than a feather..'))
+<<<
+hoveroff:/hover off = >>>
+    sudo(/effect player() 25 0)
+    tmsg(player(),concat(color(gold),
+    'Your gravity returns.'))
+<<<

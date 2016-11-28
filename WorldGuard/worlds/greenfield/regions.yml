@@ -10,16 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    bitshouse:
-        parent: city
-        min: {x: 1954.0, y: 0.0, z: -319.0}
-        max: {x: 1998.0, y: 255.0, z: -278.0}
+    suggestionchests:
+        min: {x: -1749.0, y: 70.0, z: 198.0}
+        max: {x: -1749.0, y: 70.0, z: 205.0}
         members: {}
-        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
-        owners:
-            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
+        flags: {chest-access: allow}
+        owners: {}
         type: cuboid
-        priority: 2
+        priority: 6
     babypickle101house:
         parent: city
         members: {}
@@ -57,17 +55,43 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {creeper-explosion: deny, chest-access-group: NON_MEMBERS, use: allow,
-            interact: allow, pvp: allow, chest-access: deny, pistons: allow, ghast-fireball: deny}
+        flags: {creeper-explosion: deny, use: allow, pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
+    staffapps:
+        min: {x: -1729.0, y: 68.0, z: 228.0}
+        max: {x: -1729.0, y: 68.0, z: 229.0}
+        members:
+            unique-ids: [391762eb-24f6-4d95-84d6-bfac682d575a, b6508323-94b4-48bd-b031-4cee732bf98d]
+        flags: {block-break: deny}
+        owners: {}
+        type: cuboid
+        priority: 6
+    bitshouse:
+        parent: city
+        min: {x: 1954.0, y: 0.0, z: -319.0}
+        max: {x: 1998.0, y: 255.0, z: -278.0}
+        members: {}
+        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
+        owners:
+            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
+        type: cuboid
+        priority: 2
+    applicationchests:
+        min: {x: -1729.0, y: 70.0, z: 228.0}
+        max: {x: -1729.0, y: 70.0, z: 229.0}
+        members: {}
+        flags: {chest-access: allow}
+        owners: {}
+        type: cuboid
+        priority: 6
     cityspawn:
         parent: city
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
+        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -100,20 +124,11 @@ regions:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         type: cuboid
         priority: 2
-    herosuggestions:
-        parent: modapplications
-        min: {x: 29.0, y: 77.0, z: 284.0}
-        max: {x: 30.0, y: 78.0, z: 284.0}
-        members: {}
-        flags: {}
-        owners: {}
-        type: cuboid
-        priority: 5
     basements:
-        min: {x: -2122.0, y: 0.0, z: -111.0}
-        max: {x: -1916.0, y: 255.0, z: 9.0}
+        min: {x: -1770.0, y: 0.0, z: 193.0}
+        max: {x: -1726.0, y: 255.0, z: 239.0}
         members: {}
-        flags: {pvp: deny, heal-amount: 100, mob-spawning: deny, heal-delay: 1}
+        flags: {pvp: deny, mob-spawning: deny}
         owners: {}
         type: cuboid
         priority: 5
@@ -123,3 +138,12 @@ regions:
         owners: {}
         type: global
         priority: 0
+    applications:
+        parent: modapplications
+        min: {x: 84.0, y: 69.0, z: -274.0}
+        max: {x: 84.0, y: 69.0, z: -274.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 5

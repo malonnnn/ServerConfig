@@ -221,9 +221,9 @@ errors:
   not_valid_world: $2That is not a valid world (case sensitive)
   not_valid_plot_world: $2That is not a valid plot area (case sensitive)
   no_plots: $2You don't have any plots
-  not_using_plotme: $2This server uses the far superior $1PlotSquared $2plot management system. Please use the $1/ps $2or $1/p2 $2or $1/plots $2instead
   wait_for_timer: $2A setblock timer is bound to either the current plot or you. Please wait for it to finish
   error: '$2An error occured: %s'
+  invalid_command_flag: '$2Invalid command flag: %s0'
 paste:
   debug_report_created: '$1Uploaded a full debug to: $1%url%'
 purge:
@@ -304,6 +304,7 @@ working:
   plot_not_claimed: $2Plot not claimed
   plot_is_claimed: $2This plot is already claimed
   claimed: $4You successfully claimed the plot
+  deleting_done: $4Delete completed! Took %sms.
 list:
   comment_list_header_paged: $2(Page $1%cur$2/$1%max$2) $1List of %amount% comments
   clickable: ' (interactive)'

@@ -1,0 +1,14 @@
+touchkill:/touchkill = >>>
+
+    @plrs = players_in_radius(ploc(),2)
+    
+    foreach(@plr in @plrs){
+        if(@plr != player()){
+            broadcast(player()." touched @plr and they died. R.I.P.")
+            pkill(@plr)
+            break()
+        }
+    }
+    
+
+<<<

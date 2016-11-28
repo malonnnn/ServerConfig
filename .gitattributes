@@ -1,0 +1,10 @@
+# Declare files that will always have CRLF line endings
+*.yml text eol=crlf
+*.ms text eol=crlf
+*.msa text eol=crlf
+
+*.yml  filter=tabstospaces
+*.ms  filter=tabstospaces
+*.msa  filter=tabstospaces
+Essentials/config.yml merge=union
+Citizens/templates.yml merge=union
