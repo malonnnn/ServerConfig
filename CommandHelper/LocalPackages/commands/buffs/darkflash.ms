@@ -22,6 +22,7 @@
                 "/carryplayer <playername>",
                 "/dismountplayer",
                 "/haste 0-7",
+                "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)"
             ),
             'buffs': array(
