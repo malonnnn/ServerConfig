@@ -19,6 +19,7 @@
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
                 "/speedforcewhirlwind",
+                "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",
                 "/touchkill"
             ),
