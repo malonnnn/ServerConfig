@@ -15,6 +15,10 @@
                 "/jump 0-3",
                 "/run 0-9",
                 "/haste 0-4",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforceheal <playername>",
+                "/speedforcewhirlwind",
                 "/thru (phases through walls)",
                 "/touchkill"
             ),
