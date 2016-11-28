@@ -4,13 +4,13 @@
 
 
 @hero = associative_array(
-            'name': '§7B§ea§0t§7gi§8r§7l',
-            'class': 'batgirl',
-            'sig': 'VY19i44SkdKND7sGNyjSZ7q8k6co3Oh4UcGMkL6MC0pbssGsFQ914PbfmskDoUdpSs8rHKYSARIIua/oWPy6mMRtNVTqpM87oEMVqiubcjjaEiS/rIcWkaASc/9RcUhTIDcX19gpJoII0Q9XjmEnmTBwIxrsLcolxiPUDLqAUFP9Bbc3aghB2TWkNza08JwEMcyKGDwWt8dXtbFDP7UARwiA2JUUaBPzw5jnxg35YL5agtt3J6vOUgpraRnIXVNWpgVG2o5N0cPLDU7yll1KS2VaP34ewCSRCNosKY69wUIsz66VcDVqkwDZVMW5eee3VKcp8d72jqtMGbBscqGCAXUO9a0wkGzAQjmHxzxBjvj6pv2Zo5cMUiQKPaHxJUMg1mFxdmENoqySdAUYjx5rykwbTq1A6RPfSOC2fzaCuSuI+ws4Coz+6avKyn/JuJKLgK4a7sebHs650e3BIfwSFhGUs1Y4a26z2PTqJXbB6F7e29CARrYYbIejm0/qyaDKKzMx7urjvf2AeRMwiyhRu89M/G1GAzmLIW/91QdgeBX+F4ztZgC9GCJOOPHy0Bfe+ZY/CayKo/jqHyVSAtLVb6VeBb6Yi1t7/4WmgCQKo5HtBCgLEhzh8RmzSZXqd7hRYObxmztvi93IZUfoINFc1Sq7+kg8UECjPeo+iy5iADI=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0NzU2OTY0MzY5OTIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84OGRlNGYzMTgwMWExMzc2ZTNlMDllYmZhODNhYjNjMjMxNWZiMDc2YTkwNzNjNjk0NmE5ZWI2Y2UwNmRhMyJ9fX0=',
+            'name': '§6squ§7irr§6el§7gi§6rl',
+            'class': 'squirrelgirl',
+            'sig': 'vZZaL/p4hjqQ1aDbutWC1njGpNzaOVMHTpbX1bl3nmLxsRF+jKvnDPf3Q9eUj2lgVbBuTXDqMdoNSLNaGMo0v/emyazyqpVeIcFoHhiSFosG4SJFz+NQEfYAqtT7L3rPbEr/9lVpYbU4GMXLeTfX+T7VmhCEM972IaiV0dTWpwJzEkwSmPG/8vj7nj3NqS3JFFBMtD1BdRDhKAftl3Q6Pl1ynRqfaeIwS7G1PRl/kMzyOXNnBxTyoYrceFeNqbFXxVIxXjTuM2+jeASEr6dE8eWkFAdVjK0j1xEn2JUKDfZGsgGdXOiTdxY5tg16SyemXwwCuiJlLAawgtTX6qy+IWGO1MRv+yv5lG0o6OUHWw0a1AJpt7ZW3S8CJF7TWV4OuP/8PnHT/Yk3axBOJjQo3F6fsp4P0NGc8oBfiDeEOyboC6erMTiCpynZ9ZToBaRB7kn7t8/bnYw2Rp2RUpLeyMvdGh1G2X8Drkus+2pwZH/YIjnMWh6OJpKEa1pZwL++lOXl+jh7B+hhU8IRtxgpM7JyCyzZ1cFJUaqbbMo6/KCFTQNQ0m4azHM3SnQ1vdJncVHZAB1ZLQxIGk1rzga/4HczKRWFKKX8blSi7VUcIe6QbmzHSRAm7B3gNpTl6MzVFlZ5gRTKnD94Wjc/Fn+y3lIS2OX8ETR1tMgcNLUm9xs=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0ODAzNzIwMjI1NDUsInByb2ZpbGVJZCI6IjI3NWFhNTQxMTg5NzQ1YzRiYWRiNzk1NTNmNjU0NTE5IiwicHJvZmlsZU5hbWUiOiJmbGFtaW5nd2FycmlvcjEwIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hNTFiYzNhYmRjZjFkYjVlYTViMjNhZTRkMjRhMjVlNWI5NTA3OWM4ZWJhM2RiN2E4ODJhYWNiZmQ0OGE1MCJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Trained by the best! My dad does not need to know though..",
+            'speech': "It's Squirrel Time!",
             'powers': array(
                 "/buff",
                 "/jump 0-2",
