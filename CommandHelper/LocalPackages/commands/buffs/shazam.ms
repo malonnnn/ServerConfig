@@ -15,8 +15,8 @@
                 "/run 0-9",
                 "/haste 0-9",
                 "/fly"
-                "/carryplayer"
-                /dismountplayer"
+                "/carryplayer <playername>"
+                /dismountplayer <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
