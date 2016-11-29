@@ -413,6 +413,36 @@ yellowbeam:
         start_pos: 0
         start_y: 0
         color: 255-255-75
+lightray:
+    Item_Information:
+        Item_Name: "&6D&9o&6ct&9o&6r F&9a&6te's &7Light Beam"
+        Item_Type: 371
+        Inventory_Control: lightray
+    Shooting:
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: energy
+        Projectile_Subtype: 40-0.1-NONE-0
+        Projectile_Damage: 25
+        Delay_Between_Shots: 5
+        Right_Click_To_Shoot: true
+    Reload:
+        Enable: false
+    Hit_Events:
+        Enable: true
+    Laser:
+        Enable: true
+        trigger: 1-0
+        aim: none
+        particle: 1-0
+        distance: 35
+        view-distance: 35
+        count: 10
+        ppb: true
+        hitstop: true
+        start_pos: 0
+        start_y: 0
+        color: 255-255-75
 exawattlaser:
     Item_Information:
         Item_Name: "&2L&9e&2x Luth&9o&2r's &4Exawatt Laser"
