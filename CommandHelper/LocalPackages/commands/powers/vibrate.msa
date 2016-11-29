@@ -1,0 +1,22 @@
+vibrate:/vibrate = >>>
+
+    @player = player()
+    
+    @eventID = set_interval(100,closure(
+        @ploc = ploc()
+        @ploc['x'] = @ploc['x'] + 0.1
+        set_timeout(50,closure(
+            @ploc['x'] = @ploc['x'] - 0.1
+        ))
+        
+    ))
+
+    export(@player."isVibrating",@eventID)
+
+<<<
+
+stopvibrating:/stopvibrating = >>>
+
+    
+
+<<<
