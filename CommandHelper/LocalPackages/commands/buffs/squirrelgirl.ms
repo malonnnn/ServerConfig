@@ -19,7 +19,9 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&6Squ&7irr&6el_&7Gi&6rl's_&6Glide"  
+                "/effect ". @plr ." 21 9999 4 true"
             )
-        )
+        )              
+                  
+            
+       
