@@ -21,7 +21,9 @@
                 "/run 0-9",
                  "/run 0-1 (In speedforce)",
                 "/haste 0-4",
-                "/thru (phases through walls)"
+                "/thru (phases through walls)",
+                "/vibrate",
+                "/stopvibrating"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
