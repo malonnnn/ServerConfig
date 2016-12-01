@@ -29,7 +29,7 @@ changehero:/changehero = >>>
     )
     @intervalID = set_interval(100, closure(
         foreach(@loc in @locs){
-            sudo("/particle totem ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
+            sudo("/particle largesmoke ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
         }
     ))
     set_timeout(1500, closure(){
