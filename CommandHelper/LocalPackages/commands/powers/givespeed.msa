@@ -1,0 +1,7 @@
+# Gives player speed 3 for 5 minutes
+givespeed:/givespeed $plr = >>>
+    @plr = $plr
+    sudo(/effect @plr 1 300 3 true)
+    tmsg(player(), "You have given speed to ".@plr."!")
+    tmsg(@plr, "You have been given speed by ". player() ."!")
+<<<
