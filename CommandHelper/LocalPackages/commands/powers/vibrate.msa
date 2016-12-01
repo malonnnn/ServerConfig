@@ -1,12 +1,14 @@
 vibrate:/vibrate = >>>
 
     @player = player()
-    
+    runas(~console,"/effect " . @player . " 11 9999 4 true")
     @eventID = set_interval(100,closure(
         @ploc = ploc()
         @ploc['x'] = @ploc['x'] + 0.1
+        set_ploc(@ploc)
         set_timeout(50,closure(
             @ploc['x'] = @ploc['x'] - 0.1
+            set_ploc(@ploc)
         ))
         
     ))
@@ -17,6 +19,9 @@ vibrate:/vibrate = >>>
 
 stopvibrating:/stopvibrating = >>>
 
-    
+    @player = player()
+    runas(~console,"/effect " . @player . " 11 0")
+    @eventID = import(@player."isVibrating")
+    clear_task(@eventID)
 
 <<<
