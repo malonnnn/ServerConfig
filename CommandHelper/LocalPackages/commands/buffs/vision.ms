@@ -16,16 +16,13 @@
                 "/haste 0-7",
                 "/fly",
                 "/thru (intangible)",
-                "/disguise",
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/invis",
                 "/vis",
-                "/disguiseviewself",
                 "/confuse <player>",
-                "/undisguise"
-            ),
+                ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 10 9999 1 true",
@@ -37,3 +34,6 @@
                 "/shot give ". @plr ." energybeam"                
             )
         )
+
+                
+            
