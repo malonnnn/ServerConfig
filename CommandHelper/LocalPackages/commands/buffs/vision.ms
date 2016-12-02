@@ -13,7 +13,7 @@
                 "/buff",
                 "/jump 0-9",
                 "/run 0-8",
-                "/haste 0-7",
+                "/haste 0-8",
                 "/fly",
                 "/thru (intangible)",
                 "/speak <player> <message>",
