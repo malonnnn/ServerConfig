@@ -23,7 +23,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-7",
-                "/tppos <x,y,z,world>",
+                "/tppos <x y z world>",
                 "/thru (phases through walls)"
             ),
             'buffs': array(
