@@ -22,7 +22,7 @@
                  "/run 0-1 (In speedforce)",
                 "/haste 0-4",
                 "/thru (phases through walls)",
-                "/tppos (x) (y) (z)"
+                "/tppos <x y z world>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
