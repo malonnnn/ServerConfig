@@ -12,6 +12,9 @@ vibrate:/vibrate = >>>
         ))
         
     ))
+    set_timeout(10000,closure(
+       clear_task(@eventID)
+    ))
 
     export(@player."isVibrating",@eventID)
 
