@@ -15,6 +15,7 @@
                 "/jump 0-3",
                 "/run 0-9",
                 "/haste 0-4",
+                "/back (In the speedforce),
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
