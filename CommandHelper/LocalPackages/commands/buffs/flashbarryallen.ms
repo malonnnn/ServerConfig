@@ -25,7 +25,8 @@
                 "/haste 0-4",
                 "/thru (phases through walls)",
                 "/vibrate",
-                "/stopvibrating"
+                "/stopvibrating",
+                "/lightning"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
