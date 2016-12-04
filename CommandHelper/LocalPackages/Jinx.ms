@@ -8,7 +8,7 @@
             'val': 'yJ0aW1lc3RhbXAiOjE0ODA4NTc5MTQ1MjQsInByb2ZpbGVJZCI6IjI3NWFhNTQxMTg5NzQ1YzRiYWRiNzk1NTNmNjU0NTE5IiwicHJvZmlsZU5hbWUiOiJmbGFtaW5nd2FycmlvcjEwIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ5OWMwNWQ4ODU4YmYwODA1YTg5ZTMzZmMxMjA5NmVhOGZlYWQxZDkwN2RiN2I0NzYzMDQyYjZjZjNmNTYifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Im bad luck... never had a choice for good.",
+            'speech': "Im bad luck... I never really got to choose.",
             'powers': array(
                 "/buff",
                 "/jump 0-5",
