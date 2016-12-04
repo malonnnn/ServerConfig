@@ -22,7 +22,9 @@
                 "/speedforcewhirlwind",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",
-                "/touchkill"
+                "/touchkill",
+                "/vibrate",
+                "/stopvibrating"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
