@@ -51,7 +51,7 @@ websling:/websling = >>>
 bind(projectile_hit, associative_array('id': 'webshot'.@arrow), null, @event, 
     @arrow, @pig, @player = player()) {
     
-        set_timeout(30000, closure(){
+        set_timeout(5000, closure(){
             entity_remove(@pig)
             entity_remove(@arrow)
         });
