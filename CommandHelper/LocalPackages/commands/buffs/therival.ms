@@ -23,7 +23,9 @@
                  "/dismountplayer",
                  "/run 0-9",
                  "/haste 0-4",
-                 "/thru (phases through walls)"
+                 "/thru (phases through walls)",
+                 "/vibrate",
+                 "/stopvibrating"
              ),
             'buffs': array(
                  "/effect ". @plr ." 5 9999 3 true",
