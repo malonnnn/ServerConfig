@@ -22,6 +22,6 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." bluebeam",
                 "/give ". @plr ." 95:11 64",
-                "/give ". @plr ." minecraft:lapis_lazuli 1 20:2 16:155 name:&fS&bai&9n&1t &bWa&fl&9ke&1r's_Ring"                
+                "/give ". @plr ." minecraft:lapis_lazuli 1 20:2 16:155 name:&fS&bai&9n&1t_&bWa&fl&9ke&1r's_Ring"                  
             )
         )
