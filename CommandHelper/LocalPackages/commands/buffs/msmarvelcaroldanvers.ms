@@ -14,7 +14,8 @@
                 "/fly",
                 "/jump 0-8",
                 "/run 0-8",
-                "/haste 0-8"
+                "/haste 0-8",
+                "/carryplayer <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
