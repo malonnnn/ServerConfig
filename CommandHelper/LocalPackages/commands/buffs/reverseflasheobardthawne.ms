@@ -11,6 +11,7 @@
             'speech': "I like to run.",
             'powers': array(
                 "/buff",
+                "/back (In the speedforce),
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
