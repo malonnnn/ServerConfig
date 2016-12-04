@@ -24,7 +24,9 @@
                 "/thru (phases through walls)",
                 "/tppos <X, Y, Z Coordinates>",
                 "/invis (makes you invisible)",
-                "/vis (makes you visible again)"
+                "/vis (makes you visible again)",
+                "/vibrate",
+                "/stopvibrating"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
