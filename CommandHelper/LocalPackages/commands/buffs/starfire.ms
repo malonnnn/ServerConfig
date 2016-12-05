@@ -11,6 +11,8 @@
             'speech': "There will always be people who say mean words because you are different.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-2",
                 "/haste 0-3",
