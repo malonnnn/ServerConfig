@@ -13,6 +13,8 @@
                 "/buff",
                 "/jump 0-5",
                 "/run 0-2",
+                "/carryplayer",
+                "/dismountplayer",
                 "/haste 0-2",
                 "/fly",
                 "/invis (automatically de-cloak if you move)",
