@@ -17,6 +17,8 @@
                 "/stopmindcontrol",
                 "/apokolips (travels to your homeworld of Apokolips)",
                 "/tp",
+                "/carryplayer",
+                "/dismountplayer",
                 "/empower <playername> (gives player strength 10)",
                 "/speak <playername>",
                 "/grow",
