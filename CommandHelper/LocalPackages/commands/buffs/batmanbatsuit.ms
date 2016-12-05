@@ -11,6 +11,8 @@
             'speech': "WHY DID YOU SAY MARTHA?!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/haste 0-5"
             ),
             'buffs': array(
