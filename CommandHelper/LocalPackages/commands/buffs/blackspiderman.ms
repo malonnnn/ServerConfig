@@ -13,6 +13,8 @@
                 "/buff",
                 "/jump 0-7",
                 "/run 0-5",
+                "/carryplayer",
+                "/dismountplayer",
                 "/haste 0-4",
                 "/web",
                 "/websling"

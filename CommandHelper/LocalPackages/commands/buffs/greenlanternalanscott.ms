@@ -12,6 +12,8 @@
             'speech': "In the brightest day, in the blackest night, no evil shall escape my sight.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-4",

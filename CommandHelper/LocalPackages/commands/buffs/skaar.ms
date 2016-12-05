@@ -11,6 +11,8 @@
             'speech': "I am Skaar! Champion of my planet!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-3",
                 "/haste 0-9"

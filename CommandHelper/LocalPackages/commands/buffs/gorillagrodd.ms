@@ -13,6 +13,8 @@
             'speech': "I am a telepathic gorilla!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-6",
                 "/haste 0-6",

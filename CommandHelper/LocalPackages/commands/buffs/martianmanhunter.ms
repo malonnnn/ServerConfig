@@ -11,6 +11,8 @@
             'speech': "The future is worth it. The pain. The tears. The future is worth the fight.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-9",
                 "/run 0-8",
                 "/haste 0-7",

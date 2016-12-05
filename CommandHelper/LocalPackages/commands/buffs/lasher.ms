@@ -13,6 +13,8 @@
             'speech': "I am Lasher!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-7",
                 "/run 0-5",
                 "/haste 0-4",

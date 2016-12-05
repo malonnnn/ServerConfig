@@ -12,6 +12,8 @@
             'speech': "It's time to suit up again!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-2",
                 "/run 0-3",
                 "/haste 0-5",

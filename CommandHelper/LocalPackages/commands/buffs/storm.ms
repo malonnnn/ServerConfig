@@ -11,6 +11,8 @@
             'speech': "We all have dark sides to our souls.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-4",
                 "/run 0-3",
                 "/haste 0-2",
