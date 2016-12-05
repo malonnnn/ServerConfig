@@ -12,6 +12,8 @@
             'speech': "With great power comes great responsibility.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-7",
                 "/run 0-4",
                 "/haste 0-3",
