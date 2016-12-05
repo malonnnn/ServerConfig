@@ -12,6 +12,8 @@
             'speech': "You cannot shake hands with a clenched fist.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-9",
