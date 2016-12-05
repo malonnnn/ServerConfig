@@ -15,7 +15,7 @@
                 "/haste 0-2"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 5 9999 2 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." potion 1 effect:invisibility power:1 duration:5 name:&fJohn_Cena's_Invisibility_Potion"                
             )
