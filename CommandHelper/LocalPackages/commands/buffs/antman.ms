@@ -14,6 +14,8 @@
                 "/jump 0-7",
                 "/run 0-4",
                 "/haste 0-2",
+                "/carryplayer",
+                "/dismountplayer",
                 "/normalsize",
                 "/grow"
             ),
