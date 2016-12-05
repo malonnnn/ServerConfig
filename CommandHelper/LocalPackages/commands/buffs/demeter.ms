@@ -18,6 +18,8 @@
                 "/carrot",
                 "/potato",
                 "/bonemeal",
+                "/carryplayer",
+                "/dismountplayer",
                 "/fly"
             ),
             'buffs': array(
