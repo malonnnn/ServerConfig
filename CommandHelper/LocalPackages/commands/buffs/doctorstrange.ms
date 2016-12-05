@@ -11,6 +11,8 @@
             'speech': "Let's get strange!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-1",
                 "/haste 0-1",
