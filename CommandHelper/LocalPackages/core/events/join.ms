@@ -20,6 +20,11 @@ bind(player_join,null,null,@event){
     }
     
     # -------------------------------
+    # reset confusion
+    # -------------------------------
+    store_value(@plr."isConfused","false")   
+
+    # -------------------------------
     # If joining player is mortal, undisguise
     # -------------------------------
     if(@hero['class'] == 'mortal'){

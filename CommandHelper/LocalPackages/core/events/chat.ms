@@ -52,10 +52,13 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if player is "confused", mix up their words
     # -------------------------------
-    if(@pname == "Hero_Of_Helix" || (!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
+    if((!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
     {
         @words = split(' ',@msg)
         @numWords = array_size(@words)
+        if(@numWords == 1){
+            cancel()
+        }
         @newNumOfWords = @numWords
         @newMsg = ''
         for(@i = 0, @i < @numWords, @i++){
@@ -65,9 +68,6 @@ bind('player_chat', null, null, @e) {
             @newNumOfWords = @newNumOfWords - 1
             @numWords = @numWords - 1
         }
-        
-        
-        
         modify_event(message, @newMsg)
     }
     
@@ -176,7 +176,7 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+', @pname, @msg))
 
-    modify_event(message, @msg)
+    #modify_event(message, @msg)
     
     @temp = to_lower(@msg)
     if(@temp == "tek" || @temp == "tektronic"){
