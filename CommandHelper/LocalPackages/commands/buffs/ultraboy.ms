@@ -9,6 +9,8 @@
             'speech': "I lead the Legions of Super-Heros twice..damn I'm great.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-8",
                 "/haste 0-8",
