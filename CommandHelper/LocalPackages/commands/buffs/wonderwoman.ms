@@ -11,6 +11,8 @@
             'speech': "Justice shall prevail!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-6",
                 "/run 0-7",
                 "/haste 0-7",
