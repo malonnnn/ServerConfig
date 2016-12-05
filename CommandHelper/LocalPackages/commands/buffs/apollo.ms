@@ -15,6 +15,8 @@
                 "/run 0-7",
                 "/haste 0-6",
                 "/arrow",
+                "/carryplayer",
+                "/dismountplayer",
                 "/arrow regen",
                 "/arrow regen long",
                 "/arrow swiftness",
