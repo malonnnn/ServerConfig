@@ -13,6 +13,8 @@
             'speech': "Beware your power.... time to beware mine!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-7",
                 "/haste 0-9"
