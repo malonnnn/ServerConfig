@@ -14,6 +14,8 @@
                 "/jump 0-5",
                 "/run 0-7",
                 "/haste 0-7",
+                "/carryplayer",
+                "/dismountplayer",
                 "/gmc",
                 "/gms",
                 "/fly",
