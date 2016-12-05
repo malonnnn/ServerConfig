@@ -15,6 +15,8 @@
                 "/run 0-3",
                 "/haste 0-3",
                 "/fly",
+                "/carryplayer",
+                "/dismountplayer",
                 "/heal",
                 "/goldcarrot",
                 "/seeds",
