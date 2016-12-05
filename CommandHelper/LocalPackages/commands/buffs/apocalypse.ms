@@ -17,6 +17,8 @@
                 "/disguise",
                 "/speak <playername>",
                 "/confuse <player>",
+                "/carryplayer",
+                "/dismountplayer",
                 "/tp <player>",
                 "/jump 0-3",
                 "/run 0-3",
