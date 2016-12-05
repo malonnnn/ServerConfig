@@ -11,6 +11,8 @@
             'speech': "I am the Cosmic Surfer! Traveling through time since... um idk.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-9",
                 "/run 0-9",
                 "/haste 0-9",
