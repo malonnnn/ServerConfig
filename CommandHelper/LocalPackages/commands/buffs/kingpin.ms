@@ -11,6 +11,8 @@
             'speech': "Wilson Fisk is my name.. On the streets the call me the KING-PIN!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-1",
                 "/run 0-1",
                 "/haste 0-1"
