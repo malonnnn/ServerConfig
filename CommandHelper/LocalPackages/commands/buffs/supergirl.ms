@@ -11,6 +11,8 @@
             'speech': "Time to save the world once again!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-8",
                 "/haste 0-8",
