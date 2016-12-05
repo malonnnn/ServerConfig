@@ -11,6 +11,8 @@
             'speech': "I'm the best at what I do, but what I do isn't very nice.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-2",
                 "/haste 0-3"
