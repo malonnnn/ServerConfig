@@ -12,6 +12,8 @@
             'speech': "Let's play a game.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/gmc",
                 "/fly",
                 "/tp",
