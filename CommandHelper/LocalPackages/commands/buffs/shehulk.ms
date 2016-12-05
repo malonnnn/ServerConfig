@@ -11,6 +11,8 @@
             'speech': "SHE-HULK SMASH!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-1",
                 "/haste 0-8"
