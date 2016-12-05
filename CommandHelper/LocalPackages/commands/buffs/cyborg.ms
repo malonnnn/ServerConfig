@@ -13,6 +13,8 @@
                 "/buff",
                 "/jump 0-3",
                 "/run 0-6",
+                "/carryplayer",
+                "/dismountplayer",
                 "/haste 0-7",
                 "/fly",
                 "/tp"
