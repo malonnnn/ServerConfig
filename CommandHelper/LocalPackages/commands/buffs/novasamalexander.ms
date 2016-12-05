@@ -11,6 +11,8 @@
             'speech': "Don't...call me...BUCKET-HEAD!!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-9",
                 "/run 0-9",
                 "/haste 0-9",

@@ -11,6 +11,8 @@
             'speech': "ARGLE BLARGLE FLARG!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-9",
                 "/run 0-1",
                 "/haste 0-9"

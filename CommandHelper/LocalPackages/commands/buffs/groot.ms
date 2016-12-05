@@ -11,6 +11,8 @@
             'speech': "I am GROOT!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-4"

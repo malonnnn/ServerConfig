@@ -13,6 +13,8 @@
             'speech': "I was forgotten within the crucible of fear!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/onslaughtrebornmental (brings you to The End)",
                 "/intangible (only works in The End)",
                 "/tangible (only works in The End)",

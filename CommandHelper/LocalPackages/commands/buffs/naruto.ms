@@ -13,6 +13,8 @@
             'altspeech': "Punch your opponent in the next 10 seconds for massive damage!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/rasengan (very powerful punches for 10 seconds)",
                 "/jump 0-7",
                 "/run 0-4",

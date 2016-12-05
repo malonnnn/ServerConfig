@@ -12,6 +12,8 @@
             'speech': "It's Hulk Bustin' Time!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-6"
