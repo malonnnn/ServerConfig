@@ -12,6 +12,8 @@
             'speech': "It's time to suit up again, this time in STEALTH!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-5",
                 "/run 0-6",
                 "/haste 0-8",
