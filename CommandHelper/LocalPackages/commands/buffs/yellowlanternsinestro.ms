@@ -11,6 +11,8 @@
             'speech': "I am Sinestro! I'm evil or some shit i dont fuckin know",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-4",
