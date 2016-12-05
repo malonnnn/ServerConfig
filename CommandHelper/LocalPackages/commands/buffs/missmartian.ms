@@ -13,6 +13,8 @@
             'speech': "Miss Martain is here to save the day!",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-8",
                 "/run 0-7",
                 "/haste 0-6",
