@@ -11,6 +11,8 @@
             'speech': "You're all puppets, tangled in strings",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/jump 0-6",
                 "/run 0-4",
                 "/haste 0-7",
