@@ -1,7 +1,7 @@
 AK-47_CSP:
     Item_Information:
         Item_Name: "&7AK-47 &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Attachments:
             Type: main
             Info: "Grenade_Laucnher_CSP"
@@ -45,7 +45,7 @@ AK-47_CSP:
 Bazooka_CSP:
     Item_Information:
         Item_Name: "&7Bazooka &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -85,7 +85,7 @@ Bazooka_CSP:
 Carbine_CSP:
     Item_Information:
         Item_Name: "&7Carbine &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
         Attachments:
@@ -129,7 +129,7 @@ Carbine_CSP:
 Gauss_CSP:
     Item_Information:
         Item_Name: "&7Gauss &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -157,7 +157,7 @@ Gauss_CSP:
 Olympia_CSP:
     Item_Information:
         Item_Name: "&7Olympia"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -208,7 +208,7 @@ Olympia_CSP:
 Python_CSP:
     Item_Information:
         Item_Name: "&7Python"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -248,7 +248,7 @@ Python_CSP:
 Type95_CSP:
     Item_Information:
         Item_Name: "&7Type95 &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -285,5 +285,54 @@ Type95_CSP:
     Abilities:
         Reset_Hit_Cooldown: true
         No_Vertical_Recoil: true
+    Extras:
+        Disable_Underwater: true
+
+Hunting_CSP:
+    Item_Information:
+        Item_Name: "&7Hunting"
+        Item_Type: 291
+        Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Projectile_Amount: 1
+        Projectile_Type: arrow
+        Remove_Arrows_On_Impact: true
+        Projectile_Speed: 100
+        Projectile_Damage: 12
+        Sounds_Shoot: ENTITY_BLAZE_HURT-1-1-0,ENTITY_GENERIC_EXPLODE-1-2-0
+        Bullet_Spread: 4
+    Reload:
+        Enable: true
+        Reload_Amount: 5
+        Reload_Bullets_Individually: true
+        Reload_Duration: 10
+        Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0
+    Firearm_Action:
+        Type: bolt
+        Open_Duration: 8
+        Close_Duration: 7
+        Close_Shoot_Delay: 6
+        Sound_Open: BLOCK_NOTE_HAT-1-0-0,BLOCK_PISTON_CONTRACT-1-2-2
+        Sound_Close: BLOCK_PISTON_EXTEND-1-2-0
+    Sneak:
+        Enable: true
+        Bullet_Spread: 1.5
+    Headshot:
+        Enable: true
+        Bonus_Damage: 12
+    Backstab:
+        Enable: true
+        Bonus_Damage: 6
+    Scope:
+        Enable: true
+        Zoom_Amount: 3
+        Zoom_Bullet_Spread: 0.0
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Vertical_Recoil: true
+        Knockback: 3
     Extras:
         Disable_Underwater: true

@@ -1,7 +1,7 @@
 CocoPops_CSP:
     Item_Information:
         Item_Name: "&7CocoPops"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -9,13 +9,13 @@ CocoPops_CSP:
         Cancel_Left_Click_Block_Damage: true
         Projectile_Amount: 1
         Projectile_Type: grenade
-        Projectile_Subtype: 293
+        Projectile_Subtype: 291
         Projectile_Speed: 12
         Sounds_Projectile: ENTITY_GENERIC_EAT-2-1-28,ENTITY_GENERIC_EAT-2-1-32,ENTITY_GENERIC_EAT-2-1-36
         Sounds_Shoot: ITEM_FLINTANDSTEEL_USE-2-0-0
     Cluster_Bombs:
         Enable: true
-        Bomblet_Type: 293
+        Bomblet_Type: 291
         Delay_Before_Split: 40
         Number_Of_Splits: 1
         Number_Of_Bomblets: 10
@@ -38,7 +38,7 @@ CocoPops_CSP:
 Putty_CSP:
     Item_Information:
         Item_Name: "&7Putty &c-&7"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -47,7 +47,7 @@ Putty_CSP:
     Explosive_Devices:
         Enable: true
         Device_Type: itembomb
-        Device_Info: 2,10,293,293
+        Device_Info: 2,10,291,291
         Sounds_Deploy: ENTITY_SKELETON_SHOOT-1-0-0
         Sounds_Alert_Placer: UI_BUTTON_CLICK-1-1-0
         Sounds_Trigger: ENTITY_SHEEP_SHEAR-1-2-0
@@ -66,7 +66,7 @@ Putty_CSP:
 Grenade_CSP:
     Item_Information:
         Item_Name: "&7Grenade"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -75,12 +75,12 @@ Grenade_CSP:
         Delay_Between_Shots: 10
         Projectile_Amount: 1
         Projectile_Type: grenade
-        Projectile_Subtype: 293
+        Projectile_Subtype: 291
         Projectile_Speed: 10
         Sounds_Shoot: ENTITY_SKELETON_SHOOT-2-0-0
     Explosions:
         Enable: true
-        Explosion_No_Grief: true
+        Explosion_No_Grief: false
         Explosion_Radius: 4
         Explosion_Delay: 60
     Extras:
@@ -91,7 +91,7 @@ Grenade_CSP:
 Flashbang_CSP:
     Item_Information:
         Item_Name: "&7Flashbang"
-        Item_Type: 293
+        Item_Type: 291
         Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
         Remove_Unused_Tag: true
     Shooting:
@@ -100,7 +100,7 @@ Flashbang_CSP:
         Delay_Between_Shots: 10
         Projectile_Amount: 1
         Projectile_Type: grenade
-        Projectile_Subtype: 293
+        Projectile_Subtype: 291
         Projectile_Speed: 10
         Sounds_Shoot: ENTITY_SKELETON_SHOOT-2-0-0
     Explosions:
@@ -116,4 +116,49 @@ Flashbang_CSP:
         Disable_Underwater: true
         One_Time_Use: true
     Abilities:
+        Reset_Hit_Cooldown: true
+
+Monkey_Bomb_CSP:
+    Item_Information:
+        Item_Name: "&7Monkey Bomb"
+        Item_Type: 291
+        Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Right_Click_To_Shoot: true
+        Cancel_Left_Click_Block_Damage: true
+        Delay_Between_Shots: 10
+        Projectile_Amount: 1
+        Projectile_Type: grenade
+        Projectile_Subtype: 291
+        Projectile_Speed: 10
+        Sounds_Shoot: ENTITY_ENDERPEARL_THROW-2-0-0,ENTITY_WOLF_HOWL-1-2-60,ENTITY_WOLF_HOWL-1-2-75,ENTITY_WOLF_HOWL-1-2-90,ENTITY_WOLF_HOWL-1-2-105,ENTITY_WOLF_HOWL-1-2-120,ENTITY_WOLF_HOWL-1-2-135,ENTITY_WOLF_HOWL-1-2-150
+    Explosions:
+        Enable: true
+        Explosion_No_Damage: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 1
+        Explosion_Delay: 60
+    Extras:
+        Disable_Underwater: true
+        One_Time_Use: true
+    Abilities:
+        Reset_Hit_Cooldown: true
+
+CSP_Monkey_Bomb_Explosion:
+    Item_Information:
+        Item_Name: "&7Monkey Bomb Explosion"
+        Item_Type: 291
+        Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+        Hidden_From_List: true
+    Explosions:
+        Enable: true
+        Ignite_Victims: 60
+        Damage_Multiplier: 110
+        Enable_Owner_Immunity: true
+        Explosion_No_Grief: true
+        Explosion_Radius: 6
+    Abilities:
+        Super_Effective: ZOMBIE-2,SKELETON-2,SPIDER-2
         Reset_Hit_Cooldown: true

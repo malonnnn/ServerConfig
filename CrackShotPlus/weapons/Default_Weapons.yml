@@ -44,6 +44,7 @@ AK-47_CSP:
             - "102"
             - "160"
     Reload:
+        Reload_Skin: true
         Visual_Reload:
             GUI:
                 Use_GUI_To_Select_Visual_Reload: true
@@ -53,6 +54,12 @@ AK-47_CSP:
     Held:
         Weapon_Weight: -0.01
         Hide_Attributes: true
+        Update_Lore:
+        - "&c- &7Skin &c- &7#SKIN#"
+        - "&c- &7Fire Rate &c- &7#FIRE_RATE#"
+        - "&c- &7Projectile Speed &c- &7#PROJECTILE_SPEED#"
+        - "&c- &7Reload Duration &c- &7#RELOAD_DURATION#"
+        - "&c- &7Reload Amount &c- &7#RELOAD_AMOUNT#"
     Skin:
         GUI_Name: "&c- &7Skin &c-"
         Default_Skin: "NoSkin"
@@ -62,7 +69,7 @@ AK-47_CSP:
         Unable_To_Change_To_CS_Attachment_Message: "&7You have to add grenade launcher attachment&c!"
         Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
         Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
-        Attachments: "StatTrak,Extended_Clip,Lightweight,FMJ,Grenade_Launcher"
+        Attachments: "Extended_Clip,Lightweight,FMJ,Grenade_Launcher,Rapid_Fire"
         Maxium_Amount_Of_Attachments: 2
 
 Bazooka_CSP:
@@ -92,7 +99,7 @@ Bazooka_CSP:
     Attachment:
         Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
         Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
-        Attachments: "StatTrak,Lightweight,Flame_Gun"
+        Attachments: "Lightweight,Flame_Gun"
         Maxium_Amount_Of_Attachments: 2
     Hit_Block:
         Break_Blocks:
@@ -136,6 +143,10 @@ Carbine_CSP:
     Held:
         Weapon_Weight: -0.01
         Hide_Attributes: true
+        Update_Lore:
+        - "&c- &7Skin &c- &7#SKIN#"
+        - "&c- &7Spread &c- &7#SPREAD#"
+        - "&c- &7Sneak Spread &c- &7#SNEAK_SPREAD#"
     Skin:
         GUI_Name: "&c- &7Skin &c-"
         Default_Skin: "NoSkin"
@@ -143,8 +154,10 @@ Carbine_CSP:
     Attachment:
         Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
         Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
-        Attachments: "StatTrak,Homing_Projectiles,High_Caliber_Rounds,Backstabber,FMJ,Flame_Gun,Bouncing_Gun"
-        Maxium_Amount_Of_Attachments: 2
+        Attachments: "Homing_Projectiles,Flame_Gun,Bouncing_Gun,Grip"
+    Variables:
+        Minium_Spread: 0.35
+        Minium_Sneak_Spread: 0.21
 
 Gauss_CSP:
     Shoot:
@@ -153,6 +166,7 @@ Gauss_CSP:
         Increasing_Fire_Rate:
             Starting_Rate: 1
             Add_Rate_Per_Shot: 1
+            Minium_Rate_For_Shot: 1
             Maxium_Rate_For_Shot: 3
             Decrease_Back_to_Starting_Rate:
                 Minium_Milliseconds: 700
@@ -207,7 +221,7 @@ Gauss_CSP:
     Attachment:
         Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
         Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
-        Attachments: "StatTrak,Flame_Gun,FMJ"
+        Attachments: "Flame_Gun,FMJ"
         Maxium_Amount_Of_Attachments: 2
 
 Olympia_CSP:
@@ -266,6 +280,13 @@ Olympia_CSP:
     Held:
         Weapon_Weight: 0.013
         Hide_Attributes: true
+        Update_Lore:
+        - "&c- &7Skin &c- &7#SKIN#"
+        - "&c- &7StatTrak &c- &7#STATTRAK#"
+        - "&c- &7Weight &c- &7#WEIGHT#"
+        - "&c- &7Hit &c- &7#DAMAGE#"
+        - "&c- &7Backstab &c- &7#BACKSTAB#"
+        - "&c- &7Headshot &c- &7#HEADSHOT#"
     Skin:
         GUI_Name: "&c- &7Skin &c-"
         Default_Skin: "NoSkin"
@@ -273,8 +294,13 @@ Olympia_CSP:
     Attachment:
         Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
         Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
-        Attachments: "StatTrak,Flame_Gun,Bouncing_Projectiles,Lightweight"
+        Attachments: "StatTrak,Flame_Gun,Lightweight,FMJ,Backstabber,High_Caliber_Rounds"
         Maxium_Amount_Of_Attachments: 1
+    Variables:
+        Maxium_Weapon_Weight: 0.023
+        Maxium_Hit: 7
+        Maxium_Backstab: 8
+        Maxium_Headshot: 8
 
 Python_CSP:
     Shoot:
@@ -324,6 +350,7 @@ Type95_CSP:
         Invisible_Projectiles: true
         Trails:
             Trail: "Crit"
+    Hit_Block:
         Break_Blocks:
             Blacklist: false
             Regen_Blocks_After_Milliseconds: 10000
@@ -332,6 +359,60 @@ Type95_CSP:
             - "95"
             - "102"
             - "160"
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+
+Hunting_CSP:
+    Shoot:
+        Invisible_Projectiles: true
+        Trails:
+            GUI:
+                Use_GUI_To_Select_Trails: true
+                Default_Trail: "Critical_Trails"
+                GUI_Name: "&c- &7Trail &c-"
+            Trail: "Flaming_Trails,Smoking_Trails,Heart_Trails,Rainbow_Trails"
+    Scope:
+        Scope_Skin: true
+        Custom_Scope_Sound: "scope.sniper-1-1"
+        Fog: true
+        Second_Zoom:
+            Amount: 5
+            Night_Vision: true
+    Damage:
+        Title_And_Subtitle:
+            Shooter:
+                Headshot:
+                    Title: "&7- &cHeadshot &7-"
+                    Subtitle: "&7#VICTIM#&c: &7#DAMAGE#"
+            Victim:
+                Headshot:
+                    Title: "&7- &cEwww, it hurts &7-"
+        Damage_Increase_Based_On_Armor:
+            Helmet:
+                DIAMOND_HELMET: 6
+            Chestplate:
+                DIAMOND_CHESTPLATE: 9
+            Leggings:
+                DIAMOND_LEGGINGS: 9
+            Boots:
+                DIAMOND_BOOTS: 7
+    Hit_Block:
+        Block_Crack_Animation:
+            Minium_Crack: 7
+            Maxium_Crack: 9
+        Break_Blocks:
+            Blacklist: false
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+    Held:
+        Weapon_Weight: -0.01
+        Hide_Attributes: true
     Skin:
         GUI_Name: "&c- &7Skin &c-"
         Default_Skin: "NoSkin"

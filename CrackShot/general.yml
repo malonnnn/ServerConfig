@@ -27,40 +27,10 @@ Disabled_Worlds: []
 #Enforce these limits using the Inventory_Control node in the weapon's Item_Information module.
 #The example below is used for the default weapon Bazooka.
 Inventory_Control:
-    finalflash:
+    Group_Bazookas:
         Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Final Flash &bin the hot bar!"
-    kamehameha:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Ka-me-ha-me-ha &bin the hot bar!"
-    warbeam:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one War Beam &bin the &bhot bar!"
-    godblast:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Thor's Hammer &bin the &bhot bar!"
-    magicblast:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Magic Blast &bin the &bhot bar!"
-    greenbeam:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Green Beam &bin the &bhot bar!"
-    bluebeam:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Blue Beam &bin the &bhot bar!"
-    yellowbeam:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Yellow Beam &bin the &bhot bar!"
-    redbeam:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Red Beam &bin the &bhot bar!"
-    pikachuthunderwave:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Thunder Wave &bin the &bhot bar!"
-    webshot:
-        Limit: 1
-        Message_Exceeded: "&e[IC] &bYou cannot have more than one Web Shot &bin the &bhot bar!"
-    
+        Message_Exceeded: "&e[IC] &bYou cannot have more than one Bazooka in the hot bar!"
+        Sounds_Exceeded: LAVA_POP-1-1-0
 
 #A merged reload refers to the act of reloading multiple weapons in the same slot.
 #Set "Disable" to true if you wish to prevent players from doing this.
