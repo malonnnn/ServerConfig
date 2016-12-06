@@ -1,9 +1,9 @@
 # Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
 GriefPrevention:
   SeaLevelOverrides:
-    '1_9': -1
-    1_9_nether: -1
-    1_9_the_end: -1
+    survival: -1
+    survival_nether: -1
+    survival_the_end: -1
     skeeter_nether: -1
     rollercoaster: -1
     elytralobby: -1
@@ -19,11 +19,13 @@ GriefPrevention:
     megaparkour: -1
     hurdles: -1
     godlyparkour: -1
+    1_9_the_end: -1
     chess: -1
     hallofjustice: -1
     marathon: -1
     metropolis: -1
     longparkour: -1
+    '1_9': -1
     anarchy: -1
     spleef: -1
     creative: -1
@@ -56,6 +58,7 @@ GriefPrevention:
     wallenpole: -1
     colosseumlobby: -1
     skeeter: -1
+    1_9_nether: -1
     elytramedium: -1
     shortparkour: -1
     plots: -1
@@ -77,6 +80,7 @@ GriefPrevention:
       colosseumlobby: Disabled
       skeeter_the_end: Survival
       deathdrop: Disabled
+      survival_the_end: Survival
       elytralobby: Disabled
       plots: Survival
       wooftywoo: Disabled
@@ -105,6 +109,7 @@ GriefPrevention:
       hallofjustice: Disabled
       spawn: Disabled
       obstaclecourse: Disabled
+      survival_nether: Survival
       1_9_the_end: Survival
       parkourmedium: Disabled
       1_9_nether: Survival
@@ -117,6 +122,7 @@ GriefPrevention:
       torture: Disabled
       flyingbattlelobby: Disabled
       skeeter: Survival
+      survival: Survival
       boatrace: Disabled
       rollercoaster: Survival
       metropolis: Disabled
@@ -178,9 +184,9 @@ GriefPrevention:
     Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
-      '1_9': true
-      1_9_nether: true
-      1_9_the_end: true
+      survival: false
+      survival_nether: false
+      survival_the_end: false
       skeeter_nether: true
       rollercoaster: true
       elytralobby: true
@@ -196,11 +202,13 @@ GriefPrevention:
       megaparkour: false
       hurdles: true
       godlyparkour: true
+      1_9_the_end: true
       chess: true
       hallofjustice: true
       marathon: true
       metropolis: true
       longparkour: true
+      '1_9': true
       anarchy: true
       spleef: true
       creative: false
@@ -233,6 +241,7 @@ GriefPrevention:
       wallenpole: true
       colosseumlobby: true
       skeeter: true
+      1_9_nether: true
       elytramedium: true
       shortparkour: true
       plots: false

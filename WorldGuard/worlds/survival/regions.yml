@@ -10,18 +10,17 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    olympus:
-        min: {x: -432.0, y: 0.0, z: -270.0}
-        max: {x: 419.0, y: 255.0, z: 614.0}
+    spawn:
+        min: {x: -8.0, y: 0.0, z: -10.0}
+        max: {x: 14.0, y: 255.0, z: 16.0}
         members: {}
-        flags: {greeting: §7Welcome to §9Mount Olympus§7!}
+        flags: {}
         owners: {}
         type: cuboid
         priority: 0
     __global__:
         members: {}
-        flags: {use: allow, greeting: §4WARNING! §cYou've wandered off the main path! §7This world is frozen in time and §6NOT MEANT FOR PLAYING!§7 Feel free to keep exploring (you can use §9/fly§7 here!) and when you're done use the command §9/warp survival§7 to play normally or use §9/spawn§7 for more choices.,
-            interact: allow}
+        flags: {}
         owners: {}
         type: global
         priority: 0
