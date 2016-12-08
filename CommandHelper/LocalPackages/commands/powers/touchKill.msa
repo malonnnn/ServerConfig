@@ -6,9 +6,11 @@ touchkill:/touchkill = >>>
         if(@plr != player()){
             broadcast(player()." touched @plr and they died. R.I.P.")
             pkill(@plr)
-            break()
+            die()
         }
     }
+
+    tmsg(player(),"You are not close enough to that person.")
     
 
 <<<
