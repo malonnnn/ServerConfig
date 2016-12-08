@@ -6,7 +6,9 @@ mindcontrol:/mindcontrol $plr = >>>
     
     assign(@lastUsedMindControl, get_value(@player."lastUsedMindControl"))
     if(@lastUsedMindControl + @cooldown > time() / 1000,
-        die(color(red)."You must cool down before you can mind control anyone again!")
+        assign(@timeleft, subtract(add(@lastUsedMindControl, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use mind control again!'))
+        die()
     )
     store_value(@player."lastUsedMindControl", time() / 1000)
     
@@ -34,11 +36,13 @@ stopmindcontrol:/stopmindcontrol = >>>
     @player = player()
     @vic = $vic
 
-    assign(@cooldown, 600)
+    assign(@cooldown, 30)
     
     assign(@lastUsedStopMindControl, get_value(@player."lastUsedStopMindControl"))
     if(@lastUsedStopMindControl + @cooldown > time() / 1000,
-        die(color(red)."You must cool down before you can use stop mind control again!")
+        assign(@timeleft, subtract(add(@lastUsedStopMindControl, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can stop mind control again!'))
+        die()
     )
     store_value(@player."lastUsedStopMindControl", time() / 1000)
 

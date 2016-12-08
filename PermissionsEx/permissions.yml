@@ -67,6 +67,7 @@ groups:
     - default
   mortal:
     permissions:
+    - griefprevention.unlockdrops
     - griefprevention.spam
     - multiverse.access.rollercoaster
     - chatformat.mortal
@@ -754,7 +755,7 @@ groups:
     worlds:
       survival:
         permissions:
-        - hero.op
+        - powers.fireballpunch
         - powers.wallrun
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -1143,6 +1144,7 @@ groups:
       survival:
         permissions:
         - powers.wallrun
+        - powers.fireballpunch
         - -essentials.protect.damage.fall
         - ch.alias.run0
         - ch.alias.run1
@@ -2009,6 +2011,7 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
         - essentials.fly
+        - powers.fireballpunch
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -3852,7 +3855,7 @@ groups:
         - worldedit.navigation.thru.command
         - essentials.tppos
         - ch.alias.flashbartallen
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.dismountplayer
@@ -3897,7 +3900,7 @@ groups:
       survival:
         permissions:
         - powers.wallrun
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - worldedit.navigation.thru.command
@@ -3945,7 +3948,7 @@ groups:
         permissions:
         - powers.pointandclicklightning
         - powers.wallrun
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.dismountplayer
@@ -3996,7 +3999,7 @@ groups:
         - worldedit.navigation.thru.command
         - essentials.tppos
         - essentials.warps.speedforce
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.carryplayer
@@ -4128,7 +4131,7 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.speedforcewhirlwind
         - ch.alias.dismountplayer
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - essentials.warps.speedforce
@@ -4181,7 +4184,7 @@ groups:
         - worldedit.navigation.thru.command
         - essentials.tppos
         - ch.alias.speedforcewhirlwind
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - essentials.warps.speedforce
@@ -4248,7 +4251,7 @@ groups:
         - worldedit.navigation.thru.command
         - powers.thru.destabilize
         - ch.alias.speedforcewhirlwind
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.carryplayer
@@ -4344,7 +4347,7 @@ groups:
         - powers.wallrun
         - worldedit.navigation.thru.command
         - ch.alias.speedforcewhirlwind
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - essentials.tppos
@@ -4389,7 +4392,7 @@ groups:
         - powers.wallrun
         - worldedit.navigation.thru.command
         - ch.alias.powers
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.carryplayer
@@ -4435,7 +4438,7 @@ groups:
       survival:
         permissions:
         - powers.wallrun
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.dismountplayer
         - ch.alias.stopvibrating
@@ -5323,6 +5326,7 @@ groups:
         - ch.alias.flame
         - ch.alias.thehumantorch
         - essentials.fly
+        - powers.fireballpunch
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -5513,7 +5517,7 @@ groups:
         - essentials.fly
         - powers.pointandclicklightning
         - powers.wallrun
-        - ch.alias.ch.alias.speedforceteleport
+        - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
         - ch.alias.carryplayer
@@ -6706,7 +6710,7 @@ schema-version: 1
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     options:
-      name: Tektronic
+      name: RoboCode
       prefix: ''
     permissions:
     - essentials.kill.exempt
@@ -6715,7 +6719,7 @@ users:
     - icu.exempt
     - multiverse.access.anarchy
     group:
-    - jinx
+    - cosmicarmorsuperman
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
     options:
       name: Tamper_Monkey
@@ -6949,6 +6953,8 @@ users:
   e05112e7-0f56-4c57-bc37-379e4eb3f37e:
     options:
       name: Sekarn29
+    group:
+    - darthrevan
   a800eee6-bd24-4b88-824a-29d3eaf47ee1:
     options:
       name: grimreaper0202
@@ -7142,7 +7148,7 @@ users:
       plots:
         permissions: []
     group:
-    - blackflash
+    - impulsebartallen
   f78f0cf4-372c-472e-865c-f1fc1cedadf4:
     options:
       name: Gullumking
@@ -7805,9 +7811,8 @@ users:
     options:
       name: Bigglesviking
     group:
-    - goku
-    permissions:
-    - -ch.alias.mortal
+    - theinvisibleboy
+    permissions: []
   a62588a5-1788-4893-bb80-8f99e774436f:
     options:
       prefix: '&7{&4Hacker&7} '
@@ -7923,7 +7928,7 @@ users:
     options:
       name: GoldenFoxMiner
     group:
-    - blackflash
+    - kidflashwallywest
   1209d482-8690-4496-bc14-0f0dc1f3514a:
     options:
       name: tartanboy
@@ -7968,7 +7973,7 @@ users:
     options:
       name: msbailey121212
     group:
-    - magneto
+    - apocalypse
   394af8db-e66e-4b21-840b-5db917b4d974:
     options:
       name: superbob464
@@ -8139,7 +8144,7 @@ users:
       name: epichippo941
   b341708c-7d8f-49bf-93f7-8d76550ed02b:
     group:
-    - pikachu
+    - blackflash
     options:
       name: _KidFlashCW_
   411b9b65-9696-4736-a258-fae0979e9dcd:
@@ -8159,7 +8164,7 @@ users:
       name: spaceship180
   695c4d78-22c5-40e4-b0d4-286ab17c02cf:
     group:
-    - superman
+    - savitar
     options:
       name: _ZoomCW_
   1798b7d2-1978-46bb-a798-3559d6eba2b0:
@@ -8287,7 +8292,7 @@ users:
       name: pacman5601
   e82ee842-e0c9-4d10-890d-078eb12dd010:
     group:
-    - zoom
+    - savitar
     options:
       name: themoldypotatoYT
   2e424bf8-8674-4546-8e73-9a317bf7ff0e:
@@ -8754,7 +8759,7 @@ users:
       name: Mr_DiamondGamer
   4087bc7f-c213-47df-bf2d-41650030be45:
     group:
-    - apollo
+    - apocalypse
     options:
       name: adambash
   3d82bca5-9766-4116-897a-b17df5762e44:
@@ -8784,7 +8789,7 @@ users:
       name: two_pack
   4785d58e-2ee5-4d80-ae33-01367dceddd2:
     group:
-    - pikachu
+    - superman
     options:
       name: RoninPlayzMC
   15356de5-5e27-4d1e-9562-5a0b42edf66d:
@@ -8794,7 +8799,7 @@ users:
       name: Aqua_Discharge
   450ead0f-1ce1-43a5-abb0-2fec917d5f54:
     group:
-    - onepunchman
+    - silversurfer
     options:
       name: Markon1212
     permissions:
@@ -8826,7 +8831,7 @@ users:
       name: BlackThunder2003
   713cae7a-ef6d-4a06-8922-4741459c12bc:
     group:
-    - galactus
+    - parallaxentity
     options:
       name: Zargon_King
   57b33343-6270-4042-99da-25e6353fca0f:
@@ -8836,6 +8841,21 @@ users:
       name: YuiVermont
   00ea9a24-dc72-47ca-8ec2-79ffb827b2ee:
     group:
-    - flashwallywest
+    - zoom
     options:
       name: TechMaster_246
+  efc72ed8-f91e-44fa-8e23-c09d6e6f5bdf:
+    group:
+    - spidermanpeterparker
+    options:
+      name: _woodbot_
+  96119f84-7761-44ff-8590-1af1c1d2500f:
+    group:
+    - bluelanternsaintwalker
+    options:
+      name: Zap_Gaming
+  6da42a0e-2e80-40e6-8035-86849ca691e5:
+    group:
+    - antman
+    options:
+      name: ShadowSlayer34
