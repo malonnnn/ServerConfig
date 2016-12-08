@@ -14,6 +14,7 @@
                 "/buff",
                 "/carryplayer <Player>",
                 "/back (in the speedforce)",
+                "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",

@@ -17,6 +17,7 @@
                 "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
                 "/back (In the speedforce)",
+                "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforceheal <playername>",
