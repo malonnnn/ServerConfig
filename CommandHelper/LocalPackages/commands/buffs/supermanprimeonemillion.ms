@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzQ1ODIyMDI2MzQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzAxMDM4YjYxNWRlZjBjMmVhOWNiZGQ3YzNjNTViYTMxOTJjOTZmNGVmNmY5MmNmNGRmZDA4MmZjMWEzY2EifX19',
             'trail': '',
             'op': 'true',
-            'speech': "I'm gold or yellow or some shit idk",
+            'speech': "Welcome to MY Universe.",
             'powers': array(
                 "/buff",
                 "/carryplayer",
