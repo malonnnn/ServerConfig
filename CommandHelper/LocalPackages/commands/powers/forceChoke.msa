@@ -1,4 +1,18 @@
 forcechoke:/forcechoke $player = >>>
-    sudo(/effect $player 20 5 6 true)
-    sudo(/effect $player 19 5 6 true)
+    @player = player()
+    @vic = $player
+    assign(@cooldown, 15)
+    
+    assign(@lastUsedForceChoke, get_value(@player."lastUsedForceChoke"))
+    if(@lastUsedForceChoke + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedForceChoke, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force choke again!'))
+        die()
+    )
+    store_value(@player."lastUsedForceChoke", time() / 1000)
+    
+    sudo(/effect @vic 20 5 6 true)
+    sudo(/effect @vic 19 5 6 true)
+
+    broadcast(@player . " is now force choking " . @vic)
 <<<

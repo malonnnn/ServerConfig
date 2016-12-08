@@ -1,7 +1,7 @@
 superbreath:/superbreath = >>>
 
     @ploc = ploc()
-    @allPlayers = players_in_radius(@ploc,20)
+    @allPlayers = players_in_radius(@ploc,30)
 
     foreach(@player in @allPlayers) {
         
@@ -26,7 +26,7 @@ superbreath:/superbreath = >>>
             @final = sqrt(@final)
             
             @maxDist = 30
-            @magnitude = (1 - @final / @maxDist) * 10 
+            @magnitude = (1 - @final / @maxDist) * 5 
 
             @yaw = @ploc['yaw'] + 90;
             @pitch = neg(@ploc['pitch']);

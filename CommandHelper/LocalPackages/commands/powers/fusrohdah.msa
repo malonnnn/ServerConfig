@@ -1,16 +1,17 @@
 fusrodah:/fusrodah = >>>
 
     @player = player()
-    assign(@cooldown,45)
+    assign(@cooldown, 10)
+
+    assign(@lastUsedThuum, get_value(@player."lastUsedThuum"))
     
-    assign(@lastUsedMindControl, get_value(@player."lastUsedThuum"))
-    if(@lastUsedMindControl + @cooldown > time() / 1000,
+    if(@lastUsedThuum + @cooldown > time() / 1000,
         die(color(gray)."Your Thu'um is too weak, you must wait for it to strengthen.")
     )
     store_value(@player."lastUsedThuum", time() / 1000)
 
     @ploc = ploc()
-    @allPlayers = players_in_radius(@ploc,20)
+    @allPlayers = players_in_radius(@ploc,30)
 
     foreach(@player in @allPlayers) {
         
@@ -43,8 +44,9 @@ fusrodah:/fusrodah = >>>
             @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
             @vector['y'] = @magnitude * sin(to_radians(@pitch));
             @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-
-           set_pvelocity(@player,@vector) 
+            #broadcast(@player)
+            #broadcast(@magnitude)
+            set_pvelocity(@player,@vector) 
         }
     }
 <<<

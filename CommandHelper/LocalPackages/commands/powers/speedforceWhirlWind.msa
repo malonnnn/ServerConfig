@@ -43,8 +43,8 @@ speedforcewhirlwind:/whirlwind = >>>
             @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
             @vector['y'] = @magnitude * sin(to_radians(@pitch));
             @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-
-           set_pvelocity(@player,@vector) 
+            #broadcast(@vector)
+            set_pvelocity(@player,@vector) 
         }
     }
 <<<
