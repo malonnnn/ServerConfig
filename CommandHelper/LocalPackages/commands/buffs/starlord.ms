@@ -22,5 +22,6 @@
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&cSt&9ar&7-&cLo&9rd's_&cHel&9met",
-            )   "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cSt&9ar&7-&cLo&9rd's_&cJet&9pack"
+                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cSt&9ar&7-&cLo&9rd's_&cJet&9pack"
         )
+)
