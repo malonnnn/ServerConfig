@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '§8D§fe§7a§8t§fh-§8D§7C',
+            'name': '§0D§8e§fa§0th§f-D§8C',
             'class': 'deathdc',
             'sig': 'gTr2MqHu8rGgkcePFcbl/+4rw0NnO5xVTlijdBKwaZ2I9TtyVetNTG7EGBEK+nH6SLqEii7vmQ/q5hE3H8wYDAwvard0NjeoYEh4jRSms0b1/9fDlks3Yo5TAOGf0szzU3ovzY50laUohuLEMEr0cN5sTqTHnswXEVB0Nd3Q8mBTz8PCnKFNB9tH2Dl8KWdFOYz90ulp97vNPqCps4oLJgPAY8mLkwFxCiigtHRcDV6AO8inMctGdVbUhS3cTyB6BU1n0LMhzlsXcwC3pAmEu2Vx7fGOUnm9lugLtYjvmbwN622gIBojcwbubtsewOXhNhlDmlqW3aOJW5rinRqM1d3lZFqOlFpHUnlBnVy4Vyp7QjxzLUCs1A1DlO7XBj5prCNxNhKXv4VdcCeJHHrAhVmgJJLtF3LzAxuERgIIRH8x+uIbfXAQ/n7MhvsNP3P8jUldhWLAooDPQm8+SsWr2f/YC0aiOfttOTjm4wx1XPNNGmGWlB6VUAP+6D7C4bSYMkxrKk+ckZNALxjg77bWAz0qxiVLSLOsMkyRVY4D5gfAGr3Mn65XbtXhqOX8SDVEk2aA/2K2C5G4cgA8Bn9YyTSAfjq4oIpwRsq2dZ7hflxIoITXbHZ+Ov9CeSewLGYOvHfZka41OeMGj0FxxqFA5osUyTBdUnFVdcOiy51xms0=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODEyOTI0MTAzMzcsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hNDdhZDhhOThkMjllMWI3YzhlMTYxYzhkOWExYTQzZGMzNDU2Njk0MWI3Y2JkYTdlZWI2NTM5MzU1MzcyODMifX19',
@@ -11,36 +11,12 @@
             'speech': "Your time has come little piece of life.",
             'powers': array(
                 "/buff",
-                "/jump 0-7",
-                "/run 0-7",
-                "/haste 0-8",
-                "/carryplayer (player)",
-                "/dismountplayer",
-                "/gmc",
-                "/gms",
-                "/fly",
-                "/speak <playername>",
-                "/intangible",
-                "/tangible",
-                "/invis",
-                "/vis",
-                "/disguise",
                 "/disguiseviewself",
                 "/tp",
-                "/heal",
-                "/skull",
-                "/kill",
-                "/confuse <player>",
-                "/top"
+                "/touchkill"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 27 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 4 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"                
+                "/effect ". @plr ." 4 9999 254 true"              
+                "/effect ". @plr ." 10 9999 4 true"              
             )
         )
