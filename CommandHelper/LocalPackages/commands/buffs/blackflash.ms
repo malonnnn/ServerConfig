@@ -19,7 +19,6 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/speedforceheal <playername>",
                 "/speedforcewhirlwind",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",

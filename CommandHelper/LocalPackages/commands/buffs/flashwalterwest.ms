@@ -19,7 +19,6 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/speedforceheal <playername>",
                 "/speedforcewhirlwind",
                 "/carryplayer <playername>",
                 "/dismountplayer",

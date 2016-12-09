@@ -13,13 +13,18 @@
             'speech': "I am a telepathic gorilla!",
             'powers': array(
                 "/buff",
-                "/carryplayer",
+                "/carryplayer <playername>",
                 "/dismountplayer",
                 "/jump 0-3",
-                "/run 0-6",
+                "/run 0-9",
                 "/haste 0-6",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
+                "/back (In the speedforce)",
+                "Access to all warps in the speedforce",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforcewhirlwind",
                 "/speak <playername>"
             ),
             'buffs': array(
