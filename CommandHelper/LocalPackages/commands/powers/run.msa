@@ -1,39 +1,79 @@
 run0:/run 0 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
 <<<
 run1:/run 1 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 1 true)
 <<<
 run2:/run 2 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 2 true)
 <<<
 run3:/run 3 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 3 true)
 <<<
 run4:/run 4 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 5 true)
 <<<
 run5:/run 5 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 8 true)
 <<<
 run6:/run 6 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 10 true)
 <<<
 run7:/run 7 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 50 true)
 <<<
 run8:/run 8 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 100 true)
 <<<
 run9:/run 9 = >>>
+    if(get_value(player()."speedEffects") == "true"){
+        tmsg(player(), color(red)."Your speed is currently locked")
+        die()
+    }
     sudo(/effect player() 1 0)
     sudo(/effect player() 1 9999 255 true)
 <<<
