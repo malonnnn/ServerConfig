@@ -17,6 +17,11 @@ fixskin:/fixskin $plr = >>>
     
     @playr = $plr
     @class = pgroup(@playr)[0]
+        
+    if(!ponline(@playr)){
+        tmsg(player(),color(red)."Sorry, that player is not online")
+        die()
+    }
     
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
     _changeSkin(@playr,@hero['sig'],@hero['val'])

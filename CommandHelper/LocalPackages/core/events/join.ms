@@ -22,7 +22,12 @@ bind(player_join,null,null,@event){
     # -------------------------------
     # reset confusion
     # -------------------------------
-    store_value(@plr."isConfused","false")   
+    store_value(@plr."isConfused","false")
+    
+    # -------------------------------
+    # reset speedEffects
+    # -------------------------------
+    store_value(@plr."speedEffects","false")
 
     # -------------------------------
     # If joining player is mortal, undisguise

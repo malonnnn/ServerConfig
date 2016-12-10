@@ -198,7 +198,7 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
    
-    @cooldown = 3
+    @cooldown = 5
     if(is_null(get_value(@pname.'lastmessage')))
     {
         store_value(@pname.'lastmessage',0)
