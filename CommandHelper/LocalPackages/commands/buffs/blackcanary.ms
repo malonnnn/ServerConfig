@@ -19,6 +19,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:stick 1 19:3 17:6 34:4 name:&0Ca&0na&0ry &0Ba&0to&0n"
+                "/give ". @plr ." minecraft:stick 1 19:3 17:6 34:4 name:&0Ca&0na&0ry_&0Ba&0to&0n"
             )
         )
