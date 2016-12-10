@@ -22,3 +22,4 @@
                 "/give ". @plr ." minecraft:stick 1 19:3 17:6 34:4 name:&0Ca&0na&0ry &0Ba&0to&0n"
             )
         )
+        )
