@@ -16,6 +16,7 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-3",
+                "/fly speed <number>",
                 "/fly",
                 "/pig",
                 "/cow",
