@@ -17,6 +17,7 @@
                 "/run 0-7",
                 "/haste 0-6",
                 "/fly",
+                "/fly speed <number>",
                 "/disguise",
                 "/disguiseviewself",
                 "/undisguise"
