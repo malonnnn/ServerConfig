@@ -18,6 +18,7 @@
                 "/jump 0-8",
                 "/run 0-7",
                 "/haste 0-6",
+                "/fly speed <number>",
                 "/fly",
                 "/thru (intangible)",
                 "/disguise",
