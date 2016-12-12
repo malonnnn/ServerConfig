@@ -11,6 +11,7 @@
             'powers': array(
                 "/buff",
                 "/fly",
+                "/fly speed <number>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/underworld (travels to the UNDERWORLD!)",
