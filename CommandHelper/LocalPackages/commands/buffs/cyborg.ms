@@ -16,6 +16,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-7",
+                "/fly speed <number>",
                 "/fly",
                 "/tp"
             ),
