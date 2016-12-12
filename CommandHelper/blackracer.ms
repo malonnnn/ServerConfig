@@ -18,9 +18,20 @@
                 "/jump 0-9",
                 "/run 0-9",
                 "/haste 0-9",
+                "/back (In the speedforce)",
+                "Access to all warps in the speedforce",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/speedforcewhirlwind",
+                "/run 0-1 (In the speedforce)",
+                "/thru (phases through walls)",
+                "/touchkill",
+                "/vibrate",
+                "/stopvibrating",
                 "/gmc",
                 "/gms",
                 "/fly",
+                "/fly speed <number>",
                 "/speak <playername>",
                 "/intangible",
                 "/wheat",
@@ -60,5 +71,6 @@
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true"
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"  
             )
         )
