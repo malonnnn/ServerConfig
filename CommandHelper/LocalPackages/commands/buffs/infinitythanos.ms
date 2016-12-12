@@ -18,6 +18,7 @@
                 "/haste 0-9",
                 "/gmc",
                 "/gms",
+                "/fly speed <number>",
                 "/fly",
                 "/speak <playername>",
                 "/intangible",
