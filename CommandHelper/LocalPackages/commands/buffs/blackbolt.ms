@@ -12,6 +12,7 @@
             'speech': "I'm a black man!",
             'powers': array(
                 "/buff",
+                "/fly speed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
