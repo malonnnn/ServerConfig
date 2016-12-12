@@ -11,6 +11,7 @@
             'speech': "My vibrator never runs out of power!",
             'powers': array(
                 "/buff",
+                "/fly speed <number>",
                 "/fly",
                 "/jump 0-8",
                 "/run 0-8",
