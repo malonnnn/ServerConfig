@@ -19,6 +19,7 @@
                 "/gmc",
                 "/gms",
                 "/fly",
+                "/fly speed <number>",
                 "/speak <playername>",
                 "/intangible",
                 "/tangible",
