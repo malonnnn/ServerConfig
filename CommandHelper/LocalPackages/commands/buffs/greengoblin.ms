@@ -11,6 +11,7 @@
             'speech': "My weird pumpkin bombs",
             'powers': array(
                 "/buff",
+                "/fly speed <number>",
                 "/fly (simulates his hoverboard, he can't really fly)"
             ),
             'buffs': array(
