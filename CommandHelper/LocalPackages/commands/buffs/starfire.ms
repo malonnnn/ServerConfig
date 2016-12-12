@@ -8,8 +8,8 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjQ4MDAxMTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mOTM2Y2NjM2I3ZDQ2ZDE4YTg2MGY1N2Y2ZmYxZmIzNjFmMzQxMzUyN2Y3YjcxODQ4NTIwNGQ2MWI5ZSJ9fX0=',
             'altskins': array(
                 array(
-                    'sig': 'one',
-                    'val': 'two'
+                    'sig': 'E88ui1ZPDkw6NrB4eKFuUsTNg0fVLJmncuoX7Txw15Mk62H1yRc+nu5aSjFA4XSUgvG+fdFiunjrgY1xSgNVdEt0cM0G2U36ySDq80dLIl7p8QydT0k6jyXluBZseKhlJecfz6prHyn9vbyVdf/NfzPqt1sdVC1Jd3CJYxAh98ukciRKKocEjnYx17cxpINeKgep43E6+mboH2sXQsbUgttow2hNeTGlpY3GHrGdyz63b59X1e6Pw9xG2rCs/DboW7KZWqoY6Q5pRvMYu3Ye3i5xlmZc9DpYfYvwJffz7PCfTn+rqSYYW5fqlJNwmdDezBEW62MRohf10igvBUUoWOLhGCgyroe1AKN8kyRVqIdn6hmK5+V53wCE78Exaq8fc1J9crkvbcvuBeSTAMCZ7wt3TrireitxeEV3ZyXkMpLacFqAR0+5p5ssO1k2H4mqVa+wY5tXjfSimfMnsIUoKFlYB1aLQCXiebfZznbjgtf36ha8EQjzpnNukBfWQl0tJ14eov93ouVe8TVnoNTFSNdA5UwzKH5eeUYAZda5P67y8+Q07TRJE4l1jMHlbH1sY0k5G+x9Ly/Esf10iGerpBwiZqzo0IV+4KnKYAmrvaYVwl8wGCk3l+2ZMAlNburgDlI3iMM4EpFiinUobuxqfWpGogmUouEnGjwojD8BUZI=',
+                    'val': 'eyJ0aW1lc3RhbXAiOjE0ODE0NzI0ODMwMjIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJSb2JvQ29kZSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QzOWEzODE1NjMyMjYyZDQzNmQ0ZDlmZmI0NjdiZGZjMGQ0OGFiODQyN2M3MzQyMDUwZjc0MDZhY2QzNjZhIn19fQ=='
                 )
             ),
             'trail': '',
