@@ -17,6 +17,7 @@
                 "/jump 0-5",
                 "/run 0-6",
                 "/haste 0-8",
+                "/fly speed <number>",
                 "/fly",
                 "/vis",
                 "/invis"
