@@ -27,6 +27,7 @@
                 "/jump 0-9",
                 "/run 0-9",
                 "/haste 0-9",
+                "/fly speed <number>",
                 "/fly",
                 "/confuse <player>"
             ),

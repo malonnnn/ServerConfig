@@ -16,6 +16,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-2",
+                "/fly speed <number>",
                 "/fly",
                 "/invis (automatically de-cloak if you move)",
                 "/vis"

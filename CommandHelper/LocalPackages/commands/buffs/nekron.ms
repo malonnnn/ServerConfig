@@ -13,6 +13,7 @@
             'speech': "I am the darkest force in the multiverse!",
             'powers': array(
                 "/buff",
+                "/fly speed <number>",
                 "/fly",
                 "/nekronkill <playername>"
             ),

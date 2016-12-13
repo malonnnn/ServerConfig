@@ -14,6 +14,7 @@
                 "/jump 0-5",
                 "/run 0-2",
                 "/haste 0-2",
+                "/fly speed <number>",
                 "/fly"                
             ),
             'buffs': array(
