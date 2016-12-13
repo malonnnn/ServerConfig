@@ -17,6 +17,7 @@
                 "/run 0-2",
                 "/haste 0-7",
                 "/burn",
+                "/fly speed <number>",
                 "/fly",
                 "/enchant",
                 "/repair",
