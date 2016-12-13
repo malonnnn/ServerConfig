@@ -27,6 +27,7 @@
                 "/vibrate",
                 "/stopvibrating",
                 "/lightning",
+                "/fly speed <number>",
                 "/fly"
             ),
             'buffs': array(
