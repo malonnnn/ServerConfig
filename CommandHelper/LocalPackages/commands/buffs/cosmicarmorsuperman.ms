@@ -53,7 +53,7 @@
                 "/back",
                 "/confuse <player>",
                 "/top",
-                "While you wield such power, your powers will still work in the Speed Force."
+                "While you wield such power, your powers will still work in the Speed Force.",
                 "While you wield such power, your powers also prevent mob attacks."
             ),
             'buffs': array(
