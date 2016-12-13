@@ -13,17 +13,17 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
         die();
     }
     
-    if(is_null(get_value('lastshot')),
-        store_value('lastshot',0)
+    if(is_null(get_value(@pname.'lastshot')),
+        store_value(@pname.'lastshot',0)
     )
     
     assign(@cooldown, 2)
     
-    assign(@lastshot, get_value('lastshot'))
+    assign(@lastshot, get_value(@pname.'lastshot'))
     if(@lastshot + @cooldown > time() / 1000,
         die()
     )
-    store_value('lastshot', time() / 1000)
+    store_value(@pname.'lastshot', time() / 1000)
     
     
     cancel()
