@@ -18,6 +18,7 @@
                 "/dismountplayer",
                 "/gmc",
                 "/gms",
+                "/fly speed <number>",
                 "/fly",
                 "/speak <playername>",
                 "/intangible",
