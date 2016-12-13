@@ -2,7 +2,7 @@ kill:/kill $plr = >>>
     @plr = player()
     @vic = $plr
     if(has_permission(@vic, "kill.immune")){
-        tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
+        tmsg(@plr, color(red). "The @vic you want to explode is more powerful than you, so you can't explode them.")
         die()
     }
     broadcast("@plr exploded the body of @vic")
