@@ -52,8 +52,8 @@
                 "/weather",
                 "/back",
                 "/confuse <player>",
-                "/top"
-                "While you wield such power, your powers will still work in the Speed-Force."
+                "/top",
+                "While you wield such power, your powers will still work in the SpeedForce."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
