@@ -39,15 +39,10 @@
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/tp",
-                "/heal",
-                "/skull",
                 "/kill",
                 "/touchkill",
-                "/lightning",
-                "/thunder",
                 "/back",
                 "/confuse <player>",
-                "/top"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
