@@ -197,8 +197,9 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # chat timeout settings
     # -------------------------------
-   
-    @cooldown = 5
+    @plrz = all_players()
+    @size = array_size(@plrz)
+    @cooldown = @size / 2
     if(is_null(get_value(@pname.'lastmessage')))
     {
         store_value(@pname.'lastmessage',0)
