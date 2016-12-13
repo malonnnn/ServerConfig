@@ -8,7 +8,7 @@ bannedcommand:/pm $plr $ = >>>
 
 bannedcommand:/w $plr $ = >>>
     @plr = $plr
-    @result = reg_match('(?i)robocode', @plr)
+    @plr = to_lower(@plr)
     if(@plr == 'r' || @plr == 'ro' || @plr == 'rob' || @plr == 'robo' || @plr == 'roboc' || @plr == 'roboco' || @plr == 'robocod' || @plr == 'robocode'){
         die()
     }
@@ -34,8 +34,10 @@ bannedcommand:/msg $plr $ = >>>
     @plr = $plr
     @plr = to_lower(@plr)
     if(@plr == 'r' || @plr == 'ro' || @plr == 'rob' || @plr == 'robo' || @plr == 'roboc' || @plr == 'roboco' || @plr == 'robocod' || @plr == 'robocode'){
-        die()
+        broadcast('death')
+        die(@plr)
     }
+    broadcast('death2')
 <<<
 
 bannedcommand:/tell $plr $ = >>>
