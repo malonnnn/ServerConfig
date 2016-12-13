@@ -53,7 +53,7 @@
                 "/back",
                 "/confuse <player>",
                 "/top",
-                "While holding the gauntlet you can travel to the Speed Force, and your powers will still be intact."
+                "While holding the gauntlet you can travel to the Speed Force, and your powers will still be intact.",
                 "As Thanos, mobs and most other creatures fear and don't attack you."
             ),
             'buffs': array(
