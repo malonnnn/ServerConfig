@@ -52,8 +52,8 @@
                 "/weather",
                 "/back",
                 "/confuse <player>",
-                "/top"
-                "While holding the gauntlet you can travel to the Speed-Force, and your powers will still be intact."
+                "/top",
+                "While holding the gauntlet you can travel to the SpeedForce, and your powers will still be intact."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 50 true",
