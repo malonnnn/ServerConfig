@@ -2598,7 +2598,7 @@ groups:
   christianicgod:
     options:
       prefix: '&f&lChristianic God'
-      suffix: '&f&l'
+      suffix: '&f'
     inheritance:
     - mortal
     worlds:
@@ -2613,7 +2613,6 @@ groups:
         - ch.alias.modifyspeed
         - essentials.gamemode.survival
         - -essentials.protect.entitytarget.bypass
-        - essentials.kill.exempt
         - essentials.gamemode.creative
         - ch.alias.chirstianicgod
         - essentials.feed
@@ -3238,7 +3237,7 @@ groups:
   infinitythanos:
     options:
       prefix: '&5I&4n&af&e&ki&9n&6i&5t&4y &5T&9h&ea&8n&9o&6s'
-      suffix: '&9&l'
+      suffix: '&9'
     inheritance:
     - mortal
     worlds:
@@ -3252,13 +3251,13 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.stopmindcontrol
         - essentials.gamemode.survival
-        - essentials.kill.exempt
-        - essentials.protect.entitytarget.bypass
+        - -essentials.protect.entitytarget.bypass
         - essentials.feed
         - essentials.feed.others
         - powers.pointandclicklightning
         - essentials.gamemode.creative
         - ch.alias.infinitythanos
+        - powers.pointandclicklightning
         - essentials.fly
         - essentials.speed.fly
         - ch.alias.jump0
@@ -4663,7 +4662,7 @@ groups:
   cosmicarmorsuperman:
     options:
       prefix: '&cC&e&ko&9s&6mi&9c &4A&2r&9m&6o&4r &4S&9u&ep&9er&4man'
-      suffix: '&c&l'
+      suffix: '&c'
     inheritance:
     - mortal
     worlds:
@@ -4680,8 +4679,8 @@ groups:
         - essentials.gamemode.creative
         - ch.alias.cosmicarmorsuperman
         - essentials.kill.exempt
-        - essentials.protect.entitytarget.bypass
         - essentials.feed
+        - -essentials.protect.entitytarget.bypass
         - essentials.feed.others
         - powers.pointandclicklightning
         - essentials.fly
