@@ -30,7 +30,6 @@
                 "/disguiseviewself",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
-                "/touchkill",
                 "/back",
                 "/confuse <player>",
             ),
