@@ -9,7 +9,6 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODE3MjMxODY0MTYsInByb2ZpbGVJZCI6IjcxM2NhZTdhZWY2ZDRhMDY4OTIyNDc0MTQ1OWMxMmJjIiwicHJvZmlsZU5hbWUiOiJaYXJnb25fS2luZyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQyYzYxMzc5MDEyZmI4MDVlNDQxZGM4ZDI2NjY3ODQ2MWM4MjcxY2E2MGEzM2QyNzI2ZjU4M2MwODJlOCJ9fX0=',
             'trail': '',
             'op': 'true',
-            'speech': '§o§b',
             'speech': "I hope you are capable of controlling these powers ".@plr.", you have Infinity in your hands",
             'powers': array(
                 "/buff",
