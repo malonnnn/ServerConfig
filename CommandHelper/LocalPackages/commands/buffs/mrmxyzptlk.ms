@@ -10,15 +10,6 @@
             'trail': '',
             'op': 'true',
             'speech': "Let's play a game.",
-            'powers': array(
-                "/buff",
-                "/carryplayer",
-                "/dismountplayer",
-                "/gmc",
-                "/fly",
-                "/tp",
-                "/confuse <player>",
-                "/magicmrmxyzptlksmortal <playerName>"
-            ),
+            'powers': array(),
             'buffs': array()
         )
