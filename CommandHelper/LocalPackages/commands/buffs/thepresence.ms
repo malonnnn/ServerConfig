@@ -73,16 +73,16 @@
                 "While in the Speed Force this powers are also avaliable."
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 255 true",
-                "/effect ". @plr ." 6 9999 255 true",
-                "/effect ". @plr ." 10 9999 255 true",
-                "/effect ". @plr ." 11 9999 255 true",
-                "/effect ". @plr ." 12 9999 255 true",
+                "/effect ". @plr ." 5 9999 254 true",
+                "/effect ". @plr ." 6 9999 254 true",
+                "/effect ". @plr ." 10 9999 254 true",
+                "/effect ". @plr ." 11 9999 254 true",
+                "/effect ". @plr ." 12 9999 254 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 255 true",
-                "/effect ". @plr ." 22 9999 255 true",
-                "/effect ". @plr ." 23 9999 255 true",
-                "/effect ". @plr ." 26 9999 255 true"
+                "/effect ". @plr ." 21 9999 254 true",
+                "/effect ". @plr ." 22 9999 254 true",
+                "/effect ". @plr ." 23 9999 254 true",
+                "/effect ". @plr ." 26 9999 254 true"
             )
         )
