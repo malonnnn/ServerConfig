@@ -9,28 +9,6 @@
             'trail': '',
             'op': 'true',
             'speech': "God of the Underworld!",
-            'powers': array(
-                "/buff",
-                "/jump 0-9",
-                "/run 0-9",
-                "/haste 0-9",
-                "/fly speed <number>",
-                "/fly",
-                "/carryplayer",
-                "/dismountplayer",
-                "/burn",
-                "/feed",
-                "/zombie",
-                "/heal",
-                "/lightning",
-                "When you punch a player empty handed, your victim is struck by lightning (force lightning)",
-                "Mobs do not attack you when you're hades."
-            ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 4 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 21 9999 14 true"                
-            )
+            'powers': array(),
+            'buffs': array()
         )

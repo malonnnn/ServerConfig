@@ -11,39 +11,6 @@
             'trail': '',
             'op': 'true',
             'speech': "I was forgotten within the crucible of fear!",
-            'powers': array(
-                "/buff",
-                "/carryplayer",
-                "/dismountplayer",
-                "/onslaughtrebornmental (brings you to The End)",
-                "/intangible (only works in The End)",
-                "/tangible (only works in The End)",
-                "/invis (only works in The End)",
-                "/vis (only works in The End)",
-                "/tp (only works in the physical world)",
-                "/disguise (only works in the physical world)",
-                "/gmc",
-                "/gms",
-                "/jump 0-9",
-                "/run 0-9",
-                "/haste 0-9",
-                "/fly speed <number>",
-                "/fly",
-                "/confuse <player>"
-            ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 21 9999 19 true",
-                "/warp survival player()"
-            ),
-            'altbuffss': array(
-                "/undisguise",
-                "/warp onslaughtmental player()",
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 21 9999 19 true"                
-            )
+            'powers': array(),
+            'buffs': array()
         )

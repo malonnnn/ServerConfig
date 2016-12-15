@@ -10,33 +10,6 @@
             'trail': '',
             'op': 'true',
             'speech': "With this amount of power comes greater responsibility.",
-            'powers': array(
-                "/buff",
-                "/jump 0-9",
-                "/run 0-9",
-                "/haste 0-9",
-                "/fly speed <number>",
-                "/fly",
-                "/carryplayer",
-                "/dismountplayer",
-                "/web",
-                "/websling",
-                "/gmc",
-                "/gms",
-                "/speak <playername>",
-                "/disguiseviewself",
-                "/mindcontrol <playername>",
-                "/confuse <player>",
-                "/stopmindcontrol"
-            ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
-                "/shot give ". @plr ." yellowlightning",
-                "/shot give ". @plr ." webshot"
-            )
+            'powers': array(),
+            'buffs': array()
         )
