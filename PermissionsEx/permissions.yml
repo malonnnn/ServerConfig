@@ -69,6 +69,7 @@ groups:
     - default
   mortal:
     permissions:
+    - multiverse.access.lasertag
     - multiverse.access.newcity
     - multiverse.access.garbageworld
     - ch.alias.skin
@@ -98,7 +99,6 @@ groups:
     - ch.alias.outofmoney
     - multiverse.access.missions
     - multiverse.access.newspawn
-    - multiverse.access.lasertag
     - libsdisguises.seecmd.viewself
     - -essentials.warps.exitpod17
     - -essentials.warps.exitpod16
@@ -3952,6 +3952,7 @@ groups:
         - powers.wallrun
         - worldedit.navigation.thru.command
         - essentials.fly
+        - essentials.speed.fly
         - powers.thru.destabilize
         - ch.alias.speedforcewhirlwind
         - ch.alias.speedforceteleport
@@ -6345,7 +6346,7 @@ users:
     - icu.exempt
     - multiverse.access.anarchy
     group:
-    - 3dmandelroygarrett
+    - thematrix
   c603baf5-eed9-4ca9-86a3-401c2e55bd58:
     options:
       name: Tamper_Monkey
@@ -6353,7 +6354,14 @@ users:
     options:
       name: DonaldTrumpeh
     group:
-    - daredevil
+    - thanos
+    worlds:
+      garbageworld:
+        permissions:
+        - essentials.build.*
+        - worldedit.*
+    permissions:
+    - rank.mod
   29da4697-2a65-4de5-8a40-c20e3f33f8ec:
     options:
       name: aLink2thePast
@@ -7456,7 +7464,7 @@ users:
     options:
       name: Bigglesviking
     group:
-    - godfallsuperman
+    - goku
     permissions: []
   a62588a5-1788-4893-bb80-8f99e774436f:
     options:
@@ -8673,7 +8681,7 @@ users:
       name: jackseptic9
   0286f57a-4c57-4be9-af73-ac76f88b23cd:
     group:
-    - deadpool
+    - blackflash
     options:
       name: devil_spike
   f9c3d3df-12f3-4024-b757-3da991613d5e:
@@ -8683,7 +8691,7 @@ users:
       name: gabgirl2003
   7d85a83e-aefe-424a-b8bd-f7ffcba02788:
     group:
-    - antman
+    - flashwallywest
     options:
       name: EatTheTacoXP
   6d75d374-6390-4eb9-b0c6-fd442616f3cd:
