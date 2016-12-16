@@ -36,6 +36,6 @@
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
                 "/shot give ". @plr ." blackbeam",
                 "/give ". @plr ." 95:7 64",
-                "/give ". @plr ." 263 1 20:2 16:155 name:&0B&8l&7a&fc&0k&8 &7L&fa&0nte&8r&7n's &8Ri&fn&0g"
+                "/give ". @plr ." 263 1 20:2 16:155 name:&0B&8l&7a&fc&0k&8_&7L&fa&0nte&8r&7n's_&8Ri&fn&0g"
             )
         )
