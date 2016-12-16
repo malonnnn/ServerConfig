@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '§4U§4l§4t§4r§4a§1man§3EarthThree',
+            'name': '§4U§4l§4t§4r§4a§1man§3(E3)',
             'class': 'ultramanearththree',
             'sig': 'NmhtrMKe+tRb8/EN5FSlZ2dBD2jpgG42H7aq0qz4x4AutxVTBbNMqbBm6A7eHwiuyRBf/iLBV1+59HB5p82/gEPuFYsZkl/whJ2I0WiuerGV3YVC1+Jzwsk5v7xBk/vCemLZT7o0qxDbuyOVxnXhl09gnNG6JTvkIAxrHawe+w0jiafqCyD92yKlnVAb13oHpbiGa8vZbOPMRXrJyHxR6HpDK7kesSZEgyp1LiLg2JN8IgfX6z4hJQETGaiHJkxJyF5YkH/o04Zo+ZDqE0FnlkJdfXFWTkYnC6I96i4SiejXae0kRanRkLlAapb/ralqJsDvgDdkidPI7beKSIe9h1oY014J6z4I6snlbUpiCM642aEdMzXsVu0JKLrs4C644yW3aH3rpiJ+8Bg9j9M4ev4y7QnyenJNXBpkftIEdg7IRmeY+6ayL1Ux3vfpmfhBsyn+iAMeshoCLVyBlDci3gKspb3roMUwkiUpCHWc5U1z0HRWuOZTWwSf5w1cB6z+Ci5pWbP6ScNLSwkPyCGPuBwOt22G0ug5MUznn9F0QvnS4xKY7hRgcCR6ebOztd4SGV0sslOYjSNN4K8hv5HxOazVF0q2HZbL/66B1+rLVcukCGs4YzZZyYdMC4Sw7Tyy+C3cAXer6HgsmR38JOkxgCJlseesARYhtIeMwJcJx6g=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODE0OTg3MjI4MzYsInByb2ZpbGVJZCI6IjQwODdiYzdmYzIxMzQ3ZGZiZjJkNDE2NTAwMzBiZTQ1IiwicHJvZmlsZU5hbWUiOiJhZGFtYmFzaCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZiN2FkYTRlZTRiZDhjZTU4NWRhZTMzZTkxOTI1ZjlkNmRkNGY2OWE1ZjUyNDFkOWI1MTE4NzUzNGU5OCJ9fX0=',
