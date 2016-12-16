@@ -18,7 +18,7 @@
                 "/haste 0-8"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 12 9999 1 true",
