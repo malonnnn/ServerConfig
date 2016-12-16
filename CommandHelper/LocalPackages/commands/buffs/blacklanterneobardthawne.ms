@@ -26,7 +26,6 @@
                 "/thru (phases through walls)",
                 "/vibrate",
                 "/stopvibrating",
-                "/lightning",
                 "/fly speed <number>",
                 "/fly"
             ),
