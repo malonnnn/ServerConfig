@@ -10,8 +10,7 @@
             'op': 'false',
             'speech': "SMOKE WEED EVERY DAY!",
             'powers': array(
-                "/buff",
-
+                "/buff"
             ),
             'buffs': array(
                 "/effect ". @plr ." 18 9999 1 true",
