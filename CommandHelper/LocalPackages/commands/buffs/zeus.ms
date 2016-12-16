@@ -9,6 +9,24 @@
             'trail': '',
             'op': 'true',
             'speech': "Zeus Almighty.",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/fly speed <number>",
+                "/fly",
+                "/lightning",
+                "/feed",
+                "/heal"
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 21 9999 14 true",
+                "/shot give ". @plr ." lightning"                
+            )
         )
