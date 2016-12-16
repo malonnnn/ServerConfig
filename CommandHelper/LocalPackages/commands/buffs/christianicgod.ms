@@ -1,4 +1,4 @@
-@plr = player()
+
 
 
 
@@ -11,6 +11,59 @@
             'op': 'true',
             'speech': '',
             'speech': "The soul can split the sky in two and let the face of God shine through",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/gmc",
+                "/gms",
+                "/fly",
+                "/speak <playername>",
+                "/intangible",
+                "/wheat",
+                "/carrot",
+                "/potato",
+                "/bonemeal",
+                "/goldcarrot",
+                "/seeds",
+                "/meat",
+                "/fish",
+                "/bread",
+                "/wine",
+                "/tangible",
+                "/invis",
+                "/vis",
+                "/disguise",
+                "/disguiseviewself",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/tp",
+                "/heal",
+                "/repair",
+                "/skull",
+                "/time",
+                "/spawner",
+                "/kill",
+                "/flame",
+                "/lightning",
+                "/thunder",
+                "/weather",
+                "/back",
+                "/confuse <player>",
+                "/top"
+                "When you punch with no item in hand, victims and/or the ground will be hit by God's Lightning",
+                "Since you control, and bend forces to your will as God, mobs do not attack you."
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 254 true",
+                "/effect ". @plr ." 10 9999 3 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 12 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 16 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true"
+            )
         )
