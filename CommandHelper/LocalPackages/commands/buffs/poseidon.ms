@@ -9,6 +9,25 @@
             'trail': '',
             'op': 'true',
             'speech': "God of the Sea!",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/fly",
+                "/feed",
+                "/lightning",
+                "/heal"               
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true",
+                "/give ". @plr ." minecraft:fishing_rod 1 61:32767 62:8 name:&3P&9o&3s&9e&3i&9d&3o&9n's_&bPerfect_&3Fishing_Rod",
+                "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3P&9o&3s&9e&3i&9d&3o&9n's_&bPublic_&3Water_Helmet"                
+            )
         )
