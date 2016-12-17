@@ -13,7 +13,7 @@
                 )
             ),
             'trail': '',
-            'op': 'false',
+            'op': 'true',
             'speech': "We are Ronnie Raymond and Martin Stein, together we're FIRESTORM.",
             'powers': array(
                 "/buff",
@@ -24,6 +24,7 @@
                 "/haste 0-6",
                 "/fly speed <number>",
                 "/fly",
+                "/gmc",
                 "/thru (phases through objects)",
                 "Shoots nuclear blasts with bare hand"
             ),
