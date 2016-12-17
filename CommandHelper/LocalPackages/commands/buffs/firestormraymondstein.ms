@@ -33,6 +33,6 @@
                 "/effect ". @plr ." 5 9999 12 true",
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/effect ". @plr ." 10 9999 4 true",               
+                "/effect ". @plr ." 10 9999 4 true"              
             )
 )
