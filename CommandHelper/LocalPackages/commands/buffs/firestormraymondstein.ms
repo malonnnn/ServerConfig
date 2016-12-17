@@ -25,6 +25,7 @@
                 "/fly speed <number>",
                 "/fly",
                 "/gmc",
+                "/gms",
                 "/thru (phases through objects)",
                 "Shoots nuclear blasts with bare hand"
             ),
