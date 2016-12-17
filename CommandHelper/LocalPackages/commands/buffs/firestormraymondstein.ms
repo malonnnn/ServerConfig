@@ -25,7 +25,6 @@
                 "/fly speed <number>",
                 "/fly",
                 "/thru (phases through objects)",
-                "//replace",
                 "Shoots nuclear blasts with bare hand"
             ),
             'buffs': array(
