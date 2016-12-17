@@ -21,7 +21,7 @@
                 "/gmc",
                 "/gms",
                 "/thru (phases through objects)",
-                "Shoots nuclear blasts with bare hand"
+                "Shoots nuclear blasts with bare hand",
                 "Protected by Nekron, mobs will fear you and wont attack you"
             ),
             'buffs': array(
