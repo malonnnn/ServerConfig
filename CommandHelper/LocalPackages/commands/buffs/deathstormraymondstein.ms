@@ -2,8 +2,8 @@
 
 
 @hero = associative_array(
-            'name': '§8Dea§bth§7st§8or§bm§7-§8R§bS',
-            'class': 'deathstormraymondstein',
+            'name': '§0Bl§ba§7ck§8-§bLa§7nt§0er§bn§8-§8R§bS',
+            'class': 'blacklanterndeathstormraymondstein',
             'sig': 'a5C3KN5UTGw5jJ7mffQlObmIbSagaRC82WReoLZqef23Nudx8+zxAbCQpMwx3AXGkOtlwBfFTlCsU+AqrHB8KScGm6eguEqRLYDjX5GeiJwuxNYRmcDT6DwY3n+GSiqK47wvyx6Opp61PmbhIVT/1iHqGuxTwvW4Xn69O13CAZCpt1Fl6G91KaxjOKbekYmPPAQ+cgobmeDXVY5DzTqZNahkYo1tc4q/5LNPeRUg63wOERkB5bEGNMvyFEZR4BpKZccHYE+Otj9fWJ+XpSyOmCttpJgDB+XQrfgVDtxbk26f7bYIsCYoGT/BDLma0XRGuU8Drj9D5awDWN+kcKMv7+GoQ0fKtSXW+0NWKmsMOMpUEci93NN9EWuKkAMMM6dNba9s6rhGT7yCxzNdF8djqFR3f9Us8HoapufJEqdzKHrYHXK4pS+d4kcxb+05RqVtn1uHPyHRnoq4/Q7+Loy08O+bWXWUmxS0qcAtxth1foL3jlPDdqmNhFDSYezJ3/a/SyFW8g9Qx0doEhnlIcSCgJ7YfhS5Vvs5GDnsCXN3JM0dj2rf5gl6puR6N4sThQFb5BzqpSI0W2rBbQiTfcUP8kmdZfBFLNXrw+afzQfAaSAbcdIWjVLZRMXqE+Ygl6do9x0ipVvWx/4Er9CB9IG2vonGOMhH1bcyKfCbmI416uk=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODIwMDIxNTAxMzUsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M2NmM2ZTI5YjZhZjQ4YjYxMmM3ZmM2OTg2OTM0MjhkMDI2ODE1YjE4YjM1ZTJiNmU2N2YxYjI4ODE4YWI1In19fQ==',
             'trail': '',
@@ -31,7 +31,6 @@
                 "/effect ". @plr ." 21 9999 14 true",
                 "/effect ". @plr ." 10 9999 4 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
-                "/shot give ". @plr ." blackbeam",
                 "/give ". @plr ." 95:7 64",
                 "/give ". @plr ." 263 1 20:2 16:155 name:&0B&8l&7a&fc&0k&8_&7L&fa&0nte&8r&7n's_&8Ri&fn&0g"
             )
