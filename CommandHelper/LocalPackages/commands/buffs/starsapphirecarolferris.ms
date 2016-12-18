@@ -24,7 +24,6 @@
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/shot give ". @plr ." magentabeam",
                 "/give ". @plr ." 95:2 64",
                 "/give ". @plr ." minecraft:dye:13 1 20:2 16:155 name:&dSta&5r&7_&dS&5a&dpp&5hir&de&7_&dRin&5g"                
             )
