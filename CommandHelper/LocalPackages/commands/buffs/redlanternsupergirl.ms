@@ -27,7 +27,7 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." kryptonianlaservision",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
-                "/shot give ". @plr ." redbeam",
+                "/shot give ". @plr ." redenergybeam",
                 "/give ". @plr ." 95:14 64",
                 "/give ". @plr ." minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring"
             )
