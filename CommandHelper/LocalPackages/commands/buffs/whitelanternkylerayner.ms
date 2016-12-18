@@ -25,6 +25,6 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." whiteenergybeam",
                 "/give ". @plr ." 95 64",
-                "/give ". @plr ." minecraft:quartz 1 20:2 16:155 name:&fWh&7it&fe&8_&fLan&7te&frn&8_&fRi&7ng"                
+                "/give ". @plr ." minecraft:quartz_block 1 20:2 16:155 name:&fWh&7it&fe&8_&fLan&7te&frn&8_&fRi&7ng"                
             )
         )
