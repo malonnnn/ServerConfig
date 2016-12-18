@@ -25,6 +25,6 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." purplebeam,
                 "/give ". @plr ." 95:10 64",
-                "/give ". @plr ." minecraft:dye:4 20:2 16:155 name:&5I&dnd&5ig&do&7_&5Rin&dg"                
+                "/give ". @plr ." minecraft:dye:4 20:2 16:155 name:&5I&dnd&5ig&do_&5Rin&dg"                
             )    
         )
