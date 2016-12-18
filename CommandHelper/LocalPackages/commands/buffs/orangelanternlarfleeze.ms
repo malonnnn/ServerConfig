@@ -23,7 +23,7 @@
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/shot give ". @plr ." bluebeam",
+                "/shot give ". @plr ." orangeenergybeam",
                 "/give ". @plr ." 95:1 64",
                 "/give ". @plr ." minecraft:dye:14 1 20:2 16:155 name:&6L&0a&6rfleeze's_Ring"                
             )
