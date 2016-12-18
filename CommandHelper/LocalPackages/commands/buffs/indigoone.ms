@@ -24,6 +24,6 @@
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/give ". @plr ." 95:10 64",
-                "/give ". @plr ." minecraft:dye:4 20:2 16:155 name:&5I&dnd&5ig&do_&5Rin&dg"                
+                "/give ". @plr ." minecraft:dye:4 20:2 16:155 name:&5I&dnd&5ig&do&7_&5Tr&dibe&7_&5Rin&dg"                
             )    
         )
