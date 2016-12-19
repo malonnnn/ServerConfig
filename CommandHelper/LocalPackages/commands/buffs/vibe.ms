@@ -17,8 +17,6 @@
                 "/haste 0-2",
                 "/carryplayer",
                 "/dismountplayer",
-                "/vibrate",
-                "/stopvibrating",
                 "/tppos <x y z world>"
             ),
             'buffs': array(
