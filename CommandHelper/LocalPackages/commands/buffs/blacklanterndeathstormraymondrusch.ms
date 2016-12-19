@@ -16,7 +16,7 @@
                 "/jump 0-4",
                 "/run 0-6",
                 "/haste 0-5",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/gmc",
                 "/gms",
