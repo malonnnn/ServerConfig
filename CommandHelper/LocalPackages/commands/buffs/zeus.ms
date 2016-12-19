@@ -16,7 +16,9 @@
                 "/fly",
                 "/kill,"
                 "/disguise",
-                "/disguiseviewself
+                "/disguiseviewself",
+                "/run 0-8",
+                "/jump 0-6" 
             ),
             'buffs': array()
                 "/effect ". @plr ." 5 9999 30 true",
