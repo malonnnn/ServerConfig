@@ -19,8 +19,5 @@
                 "/dismountplayer",
                 "/tppos <x y z world>"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 2 true",
-                "/effect ". @plr ." 21 9999 9 true",
-            )
+            'buffs': array()
         )
