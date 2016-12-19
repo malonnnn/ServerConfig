@@ -17,8 +17,6 @@
                 "/run 0-6",
                 "/haste 0-9",
                 "/fly",
-                "/lightning",
-                "/heal"               
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
