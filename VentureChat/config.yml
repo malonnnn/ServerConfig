@@ -10,30 +10,6 @@
 # Example filtered sentence: You are an asshole.  Will become: You are an donutshole.
 # Default filters by Jabelpeeps
 filters:
-- (\b.?anus),donuts
-- (\ba+r*(se+|ss+(?!(ass|um|oc|ign|ist)).*?|s*e*h+[o0]*[l1]+e*[sz]*)\b),donuts
-- (b[i1]a?tch(es)?),puppy
-- Carpet Muncher,cookie monster
-- (\bc((?!ook\b)[o0]+c*|aw)k\W?(sucker|s*|he[ea]*d)\b),rooster
-- (\b[ck]r+a+p+(er|s|z)?\b),poopoo
-- (\bcu+m+\b),go
-- (\b.?[ck](u*n+|[l1]+[i1]+)t+[sz]*\b),peach
-- (\b.?d[1i](c?k(head)?|[l1]+d[o0])e?[sz]?\b),rooster
-- f u c k( e r)?,nono
-- (\b.?fai*g+[oei1]*t*[sz]*\b),cigar
-- Fudge Packer,fine person
-- (\b(m[uo]+th[ae]r?)?(f|ph)uc*k*(e[rn]|ah*|ing?|)[sz]?\b),oh dear
-- (\b(j(ac|er|ur)k\W?(of+))|(ji[sz]+i*m*)\b),bake brownies
-- (\b(ma+s+te?rbai?te?[rs]?|wank(er)?[sz]?)\b),bake brownies
-- orafi(s|ce),rooster
-- (\bp+[e3]+[ai]*n+[i1!ua]+s+),rooster
-- (\bp[i1]s+(?!(ton))(flap|face|drop)?),peepee
-- (\b.?sh[i1!y]t+(er?|y|head)?[sz]*),poopoo
-- (\bva[1i]?[gj]+[i1]+na+\b),peach
-- vu[1l]+va,peach
-- planet.?minecraft,another dimension
-- pmc,another dimension
-- ((\d+\.){3}\d+),another dimension
 
 # command without the /
 blockablecommands:
@@ -44,13 +20,13 @@ blockablecommands:
 nicknames:
 - Notch
 
-nickname-in-tablist: true
+nickname-in-tablist: false
 
 commandspy:
   worldeditcommands: true
   
 antispam:
-  enabled: true
+  enabled: false
   
   # number of messages to be spam
   spamnumber: 5
@@ -96,10 +72,10 @@ unmuteinterval: 60
 tellcolor: white
 
 # Enables or disabled BungeeCord messaging
-bungeecordmessaging: true
+bungeecordmessaging: false
 
 # This will allow vanished players to be exempt from being sent private messages, and will act as if they aren't online
-vanishsupport: true
+vanishsupport: false
 
 # {playerto} : player receivings name
 # {playerfrom} : player sendings name
@@ -123,7 +99,7 @@ mailformat: Default
 partyformat: Default
 
 broadcastafk: false
-formatcleaner: true
+formatcleaner: false
 
 # If true, /ignore will block chat from the ignored player as well as PM's
 ignorechat: false
@@ -339,7 +315,7 @@ channels:
     color: None
     chatcolor: None
     mutable: true
-    filter: true
+    filter: false
     autojoin: true
     default: true
     distance: 0
