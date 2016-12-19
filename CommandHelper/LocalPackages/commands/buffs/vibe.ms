@@ -19,8 +19,7 @@
                 "/dismountplayer",
                 "/vibrate",
                 "/stopvibrating",
-                "/tp",
-                "/tppos <x y z world>",
+                "/tppos <x y z world>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
