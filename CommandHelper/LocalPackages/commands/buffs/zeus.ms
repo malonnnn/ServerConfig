@@ -9,6 +9,19 @@
             'trail': '',
             'op': 'true',
             'speech': "Zeus Almighty.",
-            'powers': array(),
+            'powers': array(
+                "/buff",
+                "/lightning",
+                "/gmc",
+                "/fly",
+                "/kill,"
+                "/disguise",
+                "/disguiseviewself
+            ),
             'buffs': array()
-        )
+                "/effect ". @plr ." 5 9999 30 true",
+                "/effect ". @plr ." 10 9999 3 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 16 9999 1 true",
+                "/effect ". @plr ." 21 9999 20 true"
+       
