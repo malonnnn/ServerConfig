@@ -26,8 +26,8 @@
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 14 true"
-                "/give ". @plr ." minecraft:fishing_rod 1 16:15 name:&3Maui's&1Fishing&4Rod"
+                "/effect ". @plr ." 21 9999 14 true",
+                "/give ". @plr ." minecraft:fishing_rod 1 16:15 name:&3Maui's_&1Fishing_&4Rod"
             )
         )
           
