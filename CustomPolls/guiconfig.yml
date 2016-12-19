@@ -1,0 +1,180 @@
+Panel:
+  BackButton:
+    type: 262
+    amount: 1
+    durability: 0
+    meta: true
+    name: '&7&lPrevious Page'
+    lore:
+    - ''
+    - '&7Return to the previous panel page.'
+Edit:
+  Home:
+    Title: '&8Editing Poll: &b%POLL%'
+    Component:
+      Choices:
+        type: 340
+        amount: 1
+        durability: 0
+        meta: true
+        name: '&a&lChoices'
+        lore:
+        - ''
+        - '&7Click to see / edit choices.'
+      Open:
+        Enabled:
+          type: 351
+          amount: 1
+          durability: 10
+          meta: true
+          name: '&a&lOpen'
+          lore:
+          - '&7Open: &atrue'
+          - ''
+          - '&7Whether the poll is open to'
+          - '&7be voted for.'
+          - ''
+          - '&7&o(Click: toggle)'
+        Disabled:
+          type: 351
+          amount: 1
+          durability: 8
+          meta: true
+          name: '&a&lOpen'
+          lore:
+          - '&7Open: &cfalse'
+          - ''
+          - '&7Whether the poll is open to'
+          - '&7be voted for.'
+          - ''
+          - '&7&o(Click: toggle)'
+        Loading:
+          type: 351
+          amount: 1
+          durability: 8
+          meta: true
+          name: '&a&lOpen'
+          lore:
+          - '&7Open: &6LOADING'
+          - ''
+          - '&7Whether the poll is open to'
+          - '&7be voted for.'
+          - ''
+          - '&7&o(Click: toggle)'
+      OnJoin:
+        Enabled:
+          type: 351
+          amount: 1
+          durability: 10
+          meta: true
+          name: '&a&lShow on Join'
+          lore:
+          - '&7Show on Join: &atrue'
+          - ''
+          - '&7When a player joins and hasn''t'
+          - '&7voted for this poll, it will be'
+          - '&7shown.'
+          - ''
+          - '&7&o(Click: toggle)'
+        Disabled:
+          type: 351
+          amount: 1
+          durability: 8
+          meta: true
+          name: '&a&lShow on Join'
+          lore:
+          - '&7Show on Join: &cfalse'
+          - ''
+          - '&7When a player joins and hasn''t'
+          - '&7voted for this poll, it will be'
+          - '&7shown.'
+          - ''
+          - '&7&o(Click: toggle)'
+      Remind:
+        Enabled:
+          type: 351
+          amount: 1
+          durability: 10
+          meta: true
+          name: '&a&lRemind to Vote'
+          lore:
+          - '&7Remind to Vote: &atrue'
+          - ''
+          - '&7Whether to remind a player to'
+          - '&7vote for this poll until they do.'
+          - ''
+          - '&7&o(Click: toggle)'
+        Disabled:
+          type: 351
+          amount: 1
+          durability: 8
+          meta: true
+          name: '&a&lRemind to Vote'
+          lore:
+          - '&7Remind to Vote: &cfalse'
+          - ''
+          - '&7Whether to remind a player to'
+          - '&7vote for this poll until they do.'
+          - ''
+          - '&7&o(Click: toggle)'
+      PollInformation:
+        type: 399
+        amount: 1
+        durability: 0
+        meta: true
+        name: '&a&lPoll Information'
+        lore:
+        - '&7On Join: %ONJOIN%'
+        - '&7Remind: %REMIND%'
+        - '&7Votes: &a%VOTES%'
+        BoolColor:
+          'True': '&a'
+          'False': '&c'
+      Filler:
+        type: 160
+        amount: 1
+        durability: 15
+        meta: true
+        name: '&0'
+  Choices:
+    Title: '&8Editing Poll: &b%POLL%'
+    Component:
+      Option:
+        type: 339
+        amount: 1
+        durability: 0
+        meta: true
+        name: '&a%TEXT%'
+        lore:
+        - ''
+        - '&7&o(Right click: remove)'
+        Removed: '&7The choice ''&a%CHOICE%&7'' was removed.'
+      Add:
+        type: 388
+        amount: 1
+        durability: 0
+        meta: true
+        name: '&a&lCreate a Choice'
+        Max: '&cYou have reached the max amount of choices for this poll.'
+        Informer: '&7Type the text of the choice as a chat message, or if you wish
+          to cancel type ''&c%CANCEL%&7''.'
+        Cancelled: '&cChoice adding cancelled.'
+        Success: '&7The choice ''&a%CHOICE%&7'' has been added.'
+      Filler:
+        type: 160
+        amount: 1
+        durability: 15
+        meta: true
+        name: '&0'
+Results:
+  Title: '&8Results of &b%POLL%'
+  Component:
+    Choice:
+      type: 339
+      amount: 1
+      durability: 0
+      meta: true
+      name: '&3&l» &f&l%CHOICE%'
+      lore:
+      - '&3-&7 Votes:&a %VOTES%'
+      ChangeAmount: true
