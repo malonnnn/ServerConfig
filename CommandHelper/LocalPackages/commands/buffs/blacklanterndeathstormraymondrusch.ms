@@ -13,25 +13,20 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/jump 0-6",
+                "/jump 0-4",
                 "/run 0-6",
-                "/haste 0-7",
+                "/haste 0-5",
                 "/fly speed <number>",
                 "/fly",
                 "/gmc",
                 "/gms",
-                "/thru (phases through objects)",
-                "Shoots nuclear blasts with bare hand",
                 "Protected by Nekron, mobs will fear you and wont attack you"
             ),
             'buffs': array(
-                "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 5 9999 16 true",
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 14 true",
-                "/effect ". @plr ." 10 9999 4 true",
                 "/shot give ". @plr ." blackenergybeam",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
                 "/give ". @plr ." 95:7 64",
                 "/give ". @plr ." 263 1 20:2 16:155 name:&0B&8l&7a&fc&0k&8_&7L&fa&0nte&8r&7n's_&8Ri&fn&0g"
             )
