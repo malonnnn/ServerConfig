@@ -16,7 +16,6 @@
                 "/jump 0-4",
                 "/run 0-6",
                 "/haste 0-5",
-                "/fly speed <number>",
                 "/fly",
                 "Protected by Nekron, mobs will fear you and wont attack you"
             ),
