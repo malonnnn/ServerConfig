@@ -1,0 +1,10 @@
+# Gives player a nekrotic boost
+nekronempower:/nekronempower $plr = >>>
+    @plr = $plr
+    sudo(/effect @plr 5 300 15 true)
+    sudo(/effect @plr 21 300 4 true)
+    sudo(/effect @plr 10 10 5 true)
+    sudo(/effect @plr 11 300 1 true)
+    tmsg(player(), "You share your nekrotic power with ".@plr."!")
+    tmsg(@plr, "You feel the power of ". player() ." inside you!")
+<<<
