@@ -15,7 +15,7 @@
                 "/buff",
                 "/flyspeed <number>",
                 "/fly",
-                "/nekronkill <playername>",
+                "/kill <playername>",
                 "/empower (You empower a player with your Nekrotic energy"
             ),
             'buffs': array(
