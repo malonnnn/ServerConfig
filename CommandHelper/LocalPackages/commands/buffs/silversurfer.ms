@@ -17,7 +17,6 @@
                 "/run 0-5",
                 "/haste 0-9",
                 "/fly",
-                "/speak <playername>",
                 "/thru",
                 "/disguiseviewself",
                 "/heal",
