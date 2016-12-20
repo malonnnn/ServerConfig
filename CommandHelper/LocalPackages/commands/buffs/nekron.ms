@@ -10,12 +10,13 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzY1ODE1MTE2MjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2RiYzBjMTI1M2NkMjg4MjU0ZjVmNTYwZTk0ZjMwMzVmMGZiNWQyZWM0NWI2YThmZWJjYmEzZGIxZmZjNGJjNCJ9fX0=',
             'trail': '',
             'op': 'true',
-            'speech': "I am the darkest force in the multiverse!",
+            'speech': "You owe me your life ".@plr.", you all do!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
-                "/nekronkill <playername>"
+                "/kill <playername>",
+                "/empower (You empower a player with your Nekrotic energy"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
@@ -25,6 +26,7 @@
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." nekronlaser",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"                
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
+                "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&8N&7e&0kr&8o&0n's&7_&8Sc&7y&0th&8e"
             )
         )
