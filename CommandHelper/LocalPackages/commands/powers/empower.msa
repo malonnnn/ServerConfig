@@ -1,7 +1,7 @@
 # Gives player strength 10 for 5 minutes
 empower:/empower $plr = >>>
     @plr = $plr
-    sudo(/effect @plr 5 300 10 true)
+    sudo("/effect 21 300 4 true",)
     tmsg(player(), "You have empowered ".@plr."!")
     tmsg(@plr, "You have been empowered by ". player() ."!")
 <<<
