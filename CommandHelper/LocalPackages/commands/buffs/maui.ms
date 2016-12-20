@@ -12,7 +12,7 @@
             'speech': "Maui, Demigod of the Wind and Sea! ",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
