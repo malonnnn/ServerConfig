@@ -5184,39 +5184,33 @@ groups:
     inheritance:
     - mortal
     worlds:
-      speedforce:
+       speedforce:
         permissions:
-        - kill.immune
+        - ch.alias.speedforcebuffs
+        - ch.alias.speedforceteleport
         - essentials.warps.*
-        - powers.wallrun
-        - essentials.back
-        - essentials.back.*
-        - ch.alias.touchkill
-        - ch.alias.run0
         - ch.alias.run1
+        - ch.alias.run0
+        - ch.alias.powers
+        - essentials.back
       survival:
         permissions:
-        - kill.immune
+        - essentials.lightning
         - powers.wallrun
-        - ch.alias.kill
-        - ch.alias.modifyspeed
-        - ch.alias.mindcontrol
-        - ch.alias.carryplayer
+        - ch.alias.speedforceteleport
+        - ch.alias.vibrate
+        - ch.alias.stopvibrating
         - ch.alias.dismountplayer
-        - ch.alias.stopmindcontrol
+        - ch.alias.carryplayer
+        - worldedit.navigation.thru.command
+        - essentials.tppos
+        - essentials.warps.speedforce
         - ch.alias.blackracerbarryallen
-        - powers.pointandclicklightning
-        - essentials.fly
-        - essentials.speed.fly
-        - ch.alias.touchkill
+        - ch.alias.speedforcewhirlwind
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
         - ch.alias.jump3
-        - ch.alias.jump4
-        - ch.alias.jump5
-        - ch.alias.confuse
-        - ch.alias.unconfuse
         - ch.alias.run0
         - ch.alias.run1
         - ch.alias.run2
@@ -5232,7 +5226,6 @@ groups:
         - ch.alias.haste2
         - ch.alias.haste3
         - ch.alias.haste4
-        - ch.alias.haste5
    mandrakk:
     options:
       prefix: '&cMandrakk'
