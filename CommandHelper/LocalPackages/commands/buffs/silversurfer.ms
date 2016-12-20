@@ -9,6 +9,22 @@
             'trail': '',
             'op': 'true',
             'speech': "I am the Cosmic Surfer! Traveling through time since... um idk.",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-7",
+                "/run 0-5",
+                "/haste 0-9",
+                "/fly",
+                "/thru",
+                "/disguiseviewself",
+                "/heal",
+           ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 11 9999 3 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true",
+            )
         )
