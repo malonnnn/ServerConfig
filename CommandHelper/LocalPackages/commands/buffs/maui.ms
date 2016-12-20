@@ -19,6 +19,9 @@
                 "/run 0-2",
                 "/jump 0-8",
                 "/haste 0-8"
+                "/disguise",
+                "/disguiseviewself",
+                "/undisguise"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
