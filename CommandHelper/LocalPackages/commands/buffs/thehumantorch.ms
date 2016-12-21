@@ -17,7 +17,7 @@
                 "/run 0-3",
                 "/haste 0-3",
                 "/flame <playername>",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
