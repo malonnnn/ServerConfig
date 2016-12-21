@@ -10,5 +10,18 @@
             'op': 'true',
             'speech': "The existence of life is a highly overrated phenonenon.",
             'powers': array(),
+                "/kill",
+                "/gmc",
+                "/gms",
+                "/tp",
+                "/disguise (Only as a player)",
+                "/undisguise",
+                "/fly"
+            ),
             'buffs': array()
-        )
+                "/effect ". @plr ." 5 9999 25 true",
+                "/effect ". @plr ." 10 9999 4 true",
+                "/effect ". @plr ." 11 9999 5 true",
+                "/effect ". @plr ." 21 9999 14 true"             
+            )
+       ) 
