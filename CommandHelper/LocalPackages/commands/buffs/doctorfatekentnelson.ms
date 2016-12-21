@@ -17,7 +17,10 @@
                 "/gms",
                 "/tp",
                 "/fly"
-                "/heal"
+                "/heal",
+                "/run 0-4",
+                "/jump 0-3"
+                
             ),    
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
