@@ -10,7 +10,7 @@
             'trail': '',
             'op': 'false',
             'speech': '',
-            'speech': "I rule i turn water into wine.",
+            'speech': "Fuck you, I am the way.",
             'powers': array(
                 "/buff",
                 "/watertowine"
