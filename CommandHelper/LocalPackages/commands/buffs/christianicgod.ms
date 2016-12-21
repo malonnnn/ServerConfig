@@ -12,7 +12,8 @@
             'speech': '',
             'speech': "I rule i turn water into wine.",
             'powers': array(),
-                "/wine"
+                "/buff",
+                "/watertowine"
             ),
             'buffs': array()
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&fWater_Walking_Boots"
