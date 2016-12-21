@@ -16,7 +16,7 @@
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/apokolips (travels to your homeworld of Apokolips)",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/tp",
                 "/carryplayer",
                 "/dismountplayer",
