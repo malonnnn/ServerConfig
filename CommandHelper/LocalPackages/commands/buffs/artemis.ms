@@ -34,7 +34,7 @@
                 "/arrow harming",
                 "/arrow waterbreathing",
                 "/arrow luck",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/feed"
             ),
