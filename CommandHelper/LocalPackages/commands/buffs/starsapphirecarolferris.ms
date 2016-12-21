@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODIwMjYwMjg4ODYsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jNjMyNWJhZGRmZTRhZGJjYjI3OTFmOTdhYzczMDI5ZGFlNzg5Y2RjYTU0OWM4MGYxYTcxMTM2OTk0NDEzZiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "For hearts long lost and full of fright, For those alone in Blackest Night.",
+            'speech': "For hearts long lost and full of fright, For those alone in the Blackest Night.",
             'powers': array(
                 "/buff",
                 "/carryplayer",
@@ -17,7 +17,7 @@
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-4",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
