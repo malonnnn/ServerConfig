@@ -13,7 +13,7 @@
             'powers': array(
                 "/buff",
                 "/fly",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/tp",
                 "/carryplayer",
                 "/dismountplayer",
