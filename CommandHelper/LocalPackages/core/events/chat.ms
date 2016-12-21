@@ -135,8 +135,23 @@ bind('player_chat', null, null, @e) {
         
         foreach(@player in @players){
             if(pgroup(@player)[0] == "rocketraccoon"){
+            if(pgroup(@player)[0] == "christianicgod"){
+            if(pgroup(@player)[0] == "infinitythanos"){
+            if(pgroup(@player)[0] == "cosmicarmorsuperman"){
                 set_timeout(500,closure(
                     tmsg(@player,color(red)."Groot says: ".@rocketMsg)
+                    tmsg(@player,color(white)."Groot says: ".@christianicgodMsg)
+                    tmsg(@player,color(blue)."Groot says: ".@infinitythanosMsg)
+                    tmsg(@player,color(yellow)."Groot says: ".@cosmicarmorsupermanMsg)
+                ))
+            }
+        }
+    }
+                set_timeout(500,closure(
+                    tmsg(@player,color(red)."Groot says: ".@rocketMsg)
+                    tmsg(@player,color(white)."Groot says: ".@christianicgodMsg)
+                    tmsg(@player,color(blue)."Groot says: ".@infinitythanosMsg)
+                    tmsg(@player,color(yellow)."Groot says: ".@cosmicarmorsupermanMsg)
                 ))
             }
         }
