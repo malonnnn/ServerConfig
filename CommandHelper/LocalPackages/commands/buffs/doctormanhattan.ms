@@ -25,4 +25,4 @@
                 "/effect ". @plr ." 11 9999 5 true",
                 "/effect ". @plr ." 21 9999 14 true"             
             )
-       ) 
+        ) 
