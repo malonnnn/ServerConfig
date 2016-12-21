@@ -9,10 +9,10 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzIyNTQwMTEyMjQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2EwMzkxYzhmMjhkY2I5ZTdjMGJlZDY0MWYyMDVjY2RmNDU0ODAyYTkzYjAxNTZlZjdlNWNjNWNhMjNmYzA2NiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "I'm a black man!",
+            'speech': "...!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
