@@ -14,8 +14,6 @@
                 "/gmc",
                 "/gms",
                 "/tp",
-                "/disguise (Only as a player)",
-                "/undisguise",
                 "/fly",
                 "/flyspeed <number>"
             ),
