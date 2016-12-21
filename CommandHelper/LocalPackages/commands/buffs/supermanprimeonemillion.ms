@@ -11,7 +11,6 @@
             'speech': "Welcome to MY Universe.",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
                 "/fly"
             ),
             'buffs': array(
