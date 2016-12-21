@@ -50,12 +50,20 @@ changehero:/changehero = >>>
             die()
         }else if(@count > 1){
             @names = ''
+            @isOneDead = false
             foreach(@player in @plrs){
-                pkill(@player)
+                if(pinfo(@player)[5] == 0){
+                    @isOneDead = true
+                }
                 @names = @player." and ".@names
             }
-            broadcast(@names." had their DNA mixed together, mutated, then died.")
-            die()
+            if(!@isOneDead){
+                foreach(@player in @plrs){
+                    pkill(@player)
+                }
+                broadcast(@names." had their DNA mixed together, mutated, then died.")
+                die()
+            }
         }
         
         # Get player name who is in the machine

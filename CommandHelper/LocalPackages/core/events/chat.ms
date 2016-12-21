@@ -178,9 +178,9 @@ bind('player_chat', null, null, @e) {
 
     #modify_event(message, @msg)
     
-    @temp = to_lower(@msg)
-    if(@temp == "tek" || @temp == "tektronic"){
-        die()
+    @temp = reg_match('[^ -~]',@msg)
+    if(array_size(@temp) > 0){
+        cancel()
     }
 
     # -------------------------------
