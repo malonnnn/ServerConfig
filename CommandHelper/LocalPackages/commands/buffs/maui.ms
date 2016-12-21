@@ -12,23 +12,20 @@
             'speech': "Maui, Demigod of the Wind and Sea! ",
             'powers': array(
                 "/buff",
-                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-2",
                 "/jump 0-9",
-                "/haste 0-8"
+                "/haste 0-9"
                 "/disguise",
                 "/disguiseviewself",
                 "/undisguise"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:fishing_rod 1 16:15 name:&3Maui's_&1Fishing_&4Rod"
             )
