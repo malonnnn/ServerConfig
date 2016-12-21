@@ -16,6 +16,7 @@
                 "/stopmindcontrol",
                 "/underworld (travels to the UNDERWORLD!)",
                 "/disguise",
+                "/undisguise",
                 "/speak <playername>",
                 "/confuse <player>",
                 "/carryplayer",
