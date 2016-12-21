@@ -22,6 +22,7 @@
             'buffs': array()
                 "/effect ". @plr ." 5 9999 12 true",
                 "/effect ". @plr ." 21 9999 19 true",
+                "/shot give ". @plr ." blackenergybeam",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:155 34:155 name:&8Ha&4de&8s_&8S&7c&8y&7t&8h&7e",
            
              )
