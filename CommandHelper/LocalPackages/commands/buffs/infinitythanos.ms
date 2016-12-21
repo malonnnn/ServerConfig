@@ -9,6 +9,21 @@
             'trail': '',
             'op': 'true',
             'speech': "I wield the power of the Infinity Gauntlet!.",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-4",
+                "/run 0-6",
+                "/haste 0-4",
+                "/fly",
+                "/disguiseviewself",
+           ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 254 true",
+                "/effect ". @plr ." 11 9999 254 true",
+                "/effect ". @plr ." 12 9999 254 true",
+                "/effect ". @plr ." 13 9999 254 true",
+                "/effect ". @plr ." 21 9999 19 true",
+            )
         )
