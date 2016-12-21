@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjYwMjA3MzQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83M2EwZjk2M2UzYmY5YTU1MTVlZGFiZjk4YjRmYjZkZmM5ZGEwNTg4ZTU2Yzk3MzkzMzVlZmE1M2VmYmMifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Wife of Zeus and Goddess of childbirth.",
+            'speech': "Wife of Zeus and Goddess of marriage.",
             'powers': array(
                 "/buff",
                 "/carryplayer",
@@ -16,7 +16,7 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-3",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/pig",
                 "/cow",
