@@ -29,7 +29,8 @@
                 "/confuse",
                 "/unconfuse",
                 "/disguiseviewself",
-                "/heal"
+                "/heal",
+                "/heal <playername>"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
