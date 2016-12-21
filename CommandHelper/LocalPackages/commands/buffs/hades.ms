@@ -8,7 +8,19 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjU3OTExMTgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzliODE0MzdiNDVhZjI0NjU5YzIzOTMyYzMyOWUyMjRjYWQ3YTFlMGEzOWVhZTE2M2UzYTk5ODVkYWUxMTIifX19',
             'trail': '',
             'op': 'true',
-            'speech': "God of the Underworld!",
+            'speech': "God of the Underworld!",            
             'powers': array(),
+                "/buff",
+                "/warp (Anywhere if in the nether)",
+                "/haste 0-5",
+                "/run 0-6",
+                "/jump 0-4",
+                "/fly" 
+            ),
             'buffs': array()
-        )
+                "/effect ". @plr ." 5 9999 12 true",
+                "/effect ". @plr ." 21 9999 19 true",
+                "/give ". @plr ." minecraft:golden_hoe 1 16:155 34:155 name:&8Ha&4de&8s_&8S&7c&8y&7t&8h&7e",
+           
+             )
+          )
