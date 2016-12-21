@@ -36,7 +36,7 @@
                 "/arrow harming",
                 "/arrow waterbreathing",
                 "/arrow luck",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
