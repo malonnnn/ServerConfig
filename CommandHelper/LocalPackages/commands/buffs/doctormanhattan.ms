@@ -9,7 +9,7 @@
             'trail': '',
             'op': 'true',
             'speech': "The existence of life is a highly overrated phenonenon.",
-            'powers': array(),
+            'powers': array(
                 "/kill",
                 "/gmc",
                 "/gms",
@@ -17,7 +17,7 @@
                 "/fly",
                 "/flyspeed <number>"
             ),
-            'buffs': array()
+            'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 4 true",
                 "/effect ". @plr ." 11 9999 4 true",
