@@ -17,7 +17,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-2",
-                "/jump 0-8",
+                "/jump 0-9",
                 "/haste 0-8"
                 "/disguise",
                 "/disguiseviewself",
