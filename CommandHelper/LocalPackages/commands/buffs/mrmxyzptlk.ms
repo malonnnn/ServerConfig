@@ -19,7 +19,10 @@
                 "/disguise",
                 "/undisguise",
                 "/disguiseviewself",
-                "/empower"
+                "/empower",
+                "/back",
+                "/tppos <x> <y> <z>",
+                "Access to all warps"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
