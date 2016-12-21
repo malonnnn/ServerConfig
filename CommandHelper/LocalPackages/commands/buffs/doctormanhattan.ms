@@ -16,7 +16,8 @@
                 "/tp",
                 "/disguise (Only as a player)",
                 "/undisguise",
-                "/fly"
+                "/fly",
+                "/flyspeed <number>"
             ),
             'buffs': array()
                 "/effect ". @plr ." 5 9999 25 true",
