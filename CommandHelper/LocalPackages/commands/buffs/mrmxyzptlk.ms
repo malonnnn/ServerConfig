@@ -10,6 +10,20 @@
             'trail': '',
             'op': 'true',
             'speech': "Let's play a game.",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/jump 0-4",
+                "/run 0-6",
+                "/haste 0-3",
+                "/fly",
+                "/disguise",
+                "/undisguise",
+                "/disguiseviewself"
+           ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 11 9999 3 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true",
+            )
         )
