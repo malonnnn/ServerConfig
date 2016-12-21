@@ -9,6 +9,12 @@
             'trail': '',
             'op': 'true',
             'speech': "Welcome to MY Universe.",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/fly"
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 12 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true"               
+            )
         )
