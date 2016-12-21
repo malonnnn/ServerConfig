@@ -18,7 +18,8 @@
                 "/fly",
                 "/disguise",
                 "/undisguise",
-                "/disguiseviewself"
+                "/disguiseviewself",
+                "/empower"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
