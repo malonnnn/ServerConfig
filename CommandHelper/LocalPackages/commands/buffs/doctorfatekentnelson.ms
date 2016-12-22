@@ -11,20 +11,17 @@
             'speech': "I am Kent Nelson, a.k.a. Doctor Fate.",
             'powers': array(
                 "/buff",
-                "/thru (intangible)",
-                "/invis",
                 "/gmc",
                 "/gms",
                 "/tp",
                 "/fly"
-                "/heal",
                 "/run 0-4",
                 "/jump 0-3"
                 
             ),    
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 5 true",
+                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 12 true",
             ) 
         )
