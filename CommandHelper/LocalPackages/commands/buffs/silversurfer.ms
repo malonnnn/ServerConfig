@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0Nzg4NzUxMTk5NTgsInByb2ZpbGVJZCI6IjdkZmY5MWRkOTZlNjRiNzM5ZGZhMTc5OTJlMDU1Njk0IiwicHJvZmlsZU5hbWUiOiJXaXR0bGVUaW1teSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDYyMzgxM2Q1M2UzMjVkMzkyZjRjNGY0NjI0YjU5YmEwMWQ5OGJmYjgyNDNkZTY2NTdhYzJkZWEyNDE2NGMifX19',
             'trail': '',
             'op': 'true',
-            'speech': "I am the Cosmic Surfer! Traveling through time since... um idk.",
+            'speech': "Surf's up, dude!",
             'powers': array(
                 "/buff",
                 "/carryplayer",
