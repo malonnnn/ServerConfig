@@ -9,6 +9,20 @@
             'trail': '',
             'op': 'true',
             'speech': "I am Kent Nelson, a.k.a. Doctor Fate.",
-            'powers': array(),
-            'buffs': array()
-        )
+            'powers': array(
+ +                "/buff",
+ +                "/fly",
+ +                "/carryplayer",
+ +                "/dismountplayer",
+ +                "/jump 0-5",
+ +                "/run 0-6",
+ +                "/haste 0-3",
+ +                "/grow",
+ +                "/shrink"
+ +            ),
+ +            'buffs': array(
+ +                "/effect ". @plr ." 5 9999 20 true",
+ +                "/effect ". @plr ." 11 9999 3 true",
+ +                "/effect ". @plr ." 21 9999 19 true"               
+ +            )
+          )
