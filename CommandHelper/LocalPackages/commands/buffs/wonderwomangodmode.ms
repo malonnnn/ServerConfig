@@ -22,7 +22,7 @@
                 "/haste 0-9"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 50 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/give ". @plr ." 420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso",
