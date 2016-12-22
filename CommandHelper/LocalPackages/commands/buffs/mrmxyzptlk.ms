@@ -23,6 +23,7 @@
                 "/empower",
                 "/back",
                 "/tppos <x> <y> <z>",
+                "/tp",
                 "Access to all warps"
            ),
             'buffs': array(
