@@ -18,11 +18,14 @@
                 "/fly",
                 "/magicmrmxyzptlksmortal <playername>",
                 "/disguise",
+                "/gmc",
+                "/gms",
                 "/undisguise",
                 "/disguiseviewself",
                 "/empower",
                 "/back",
                 "/tppos <x> <y> <z>",
+                "/tp",
                 "Access to all warps"
            ),
             'buffs': array(
