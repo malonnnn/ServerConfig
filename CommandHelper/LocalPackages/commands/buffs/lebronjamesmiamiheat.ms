@@ -13,7 +13,7 @@
             'speech': "I am the KING!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
+                "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-1"
             ),
