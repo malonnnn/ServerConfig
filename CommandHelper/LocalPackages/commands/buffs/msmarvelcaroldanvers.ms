@@ -8,10 +8,10 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzMyMDU4MjY5NTYsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mNzk4YTRjZTMzMjViMDJhY2Y1NWVhNDljNzgxZDViZDRjNjZiOGI2MmM2YmQwOGM4MWMyMTY3NmRmZDQzOGI3In19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "My vibrator never runs out of power!",
+            'speech': "MISS MARVEL, FUCK YOU SHAZAM YOU RUINED ME!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/jump 0-8",
                 "/run 0-8",
