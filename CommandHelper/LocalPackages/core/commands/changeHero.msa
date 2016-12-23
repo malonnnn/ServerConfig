@@ -88,9 +88,9 @@ changehero:/changehero = >>>
                         if(@numberOfVials > 1){
                             set_pmode(@plrr,"SURVIVAL")
                             runas(~console,"/pex user ".@plrr." group set mortal")
-                            runas(~console,"/effects ".@plr." clear")
-                            runas(~console,"/speed walk 1 ".@plr)
-                            runas(~console,"/speed fly 1 ".@plr)
+                            runas(~console,"/effects ".@plrr." clear")
+                            runas(~console,"/speed walk 1 ".@plrr)
+                            runas(~console,"/speed fly 1 ".@plrr)
                             set_peffect(@plrr, 2, 3, 9999, true, false)
                             set_peffect(@plrr, 9, 1, 9999, true, false)
                             set_peffect(@plrr, 15, 1, 9999, true, false)
