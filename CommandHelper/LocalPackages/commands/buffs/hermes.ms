@@ -8,13 +8,13 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjYwODU4ODgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVmYWQ4NzhhZTlkMTY2NTRhNjNmMWUzYTIyNjE0ZGEwYjY2NzcyZDU5NmQ5NjEwNGJlY2NhMzNkODE0NzAifX19',
             'trail': '',
             'op': 'false',
-            'speech': "I guess I'm kinda like the Flash!",
+            'speech': "Tonight im gonna have myselfff- wait im not Freddy Mercury!",
             'powers': array(
                 "/buff",
                 "/jump 0-9",
                 "/run 0-9",
                 "/haste 0-4",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
