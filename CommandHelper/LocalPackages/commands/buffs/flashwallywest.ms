@@ -26,7 +26,8 @@
                 "/dismountplayer",
                 "/haste 0-7",
                 "/tppos <x y z world>",
-                "/thru (phases through walls)"
+                "/thru (phases through walls)",
+                "/thrudestabilize"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
