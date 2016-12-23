@@ -16,7 +16,7 @@
                 "/run 0-6",
                 "/jump 0-6",
                 "/haste 0-6",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer <player>",
                 "/dismountplayer"
