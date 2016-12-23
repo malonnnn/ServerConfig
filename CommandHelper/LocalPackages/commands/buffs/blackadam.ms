@@ -16,7 +16,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-9",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
