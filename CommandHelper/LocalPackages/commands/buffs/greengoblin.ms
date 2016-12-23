@@ -8,10 +8,10 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjkxMzQ3ODU0MTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUxZjY4OWJmNDM0NTk4NDRlYThjNzFiZDA1NDQxZWRjM2ZlOTQ4OWQ2MWNmZDc5MGU3OWJkMzhjZmJlNzUifX19',
             'trail': '',
             'op': 'false',
-            'speech': "My weird pumpkin bombs",
+            'speech': "Itsy Bitsy Spidey, climb up on the web, the goblin came and cut of his web.",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly (simulates his hoverboard, he can't really fly)"
             ),
             'buffs': array(
