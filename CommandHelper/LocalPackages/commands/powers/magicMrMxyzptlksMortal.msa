@@ -1,15 +1,15 @@
-magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
-    @player = $player
-    if(ponline(@player)){
-        @pgroup = pgroup(@player)
+magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $plr = >>>
+    @plr = $plr
+    if(ponline(@plr)){
+        @pgroup = pgroup(@plr)
         @class = @pgroup[0]
         if(
             @class == 'cosmicarmorsuperman' ||
             @class == 'onepunchman'
         ){}else
         {
-            runas(~console,"/sudo ". @player ." c:/mortal")
-            tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!')
+            runas(~console,"/sudo ". @plr ." c:/mortal")
+            tmsg(@plr, 'Mr. Mxyzptlk has stripped you of your powers!')
         }
     }
 <<<
