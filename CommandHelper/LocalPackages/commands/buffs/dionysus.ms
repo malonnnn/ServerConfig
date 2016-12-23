@@ -18,7 +18,7 @@
                 "/dismountplayer",
                 "/bread",
                 "/wine",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
