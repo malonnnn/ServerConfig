@@ -22,7 +22,7 @@
                 "/jump 0-3",
                 "/run 0-2",
                 "/haste 0-3",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "Shoots fireballs with bare hand"
             ),
