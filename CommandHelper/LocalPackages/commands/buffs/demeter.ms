@@ -20,7 +20,7 @@
                 "/bonemeal",
                 "/carryplayer",
                 "/dismountplayer",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(
