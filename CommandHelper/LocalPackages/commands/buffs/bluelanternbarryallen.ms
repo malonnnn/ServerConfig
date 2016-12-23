@@ -26,7 +26,7 @@
                 "/thru (phases through walls)",
                 "/vibrate",
                 "/stopvibrating",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly"
             ),
             'buffs': array(

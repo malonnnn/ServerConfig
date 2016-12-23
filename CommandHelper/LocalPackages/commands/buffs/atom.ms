@@ -11,7 +11,7 @@
             'speech': "Oh shit I'm little!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
