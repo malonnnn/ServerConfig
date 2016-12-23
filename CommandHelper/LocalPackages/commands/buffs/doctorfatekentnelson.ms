@@ -21,6 +21,7 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 11 9999 1 true",
+                "/shot give ". @plr ." orderbeam",
                 "/effect ". @plr ." 21 9999 4 true"
             ) 
         )        
