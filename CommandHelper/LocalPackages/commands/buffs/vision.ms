@@ -15,7 +15,7 @@
                 "/run 0-8",
                 "/haste 0-7",
                 "/fly",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/thru (intangible)",
                 "/disguise",
                 "/speak <player> <message>",

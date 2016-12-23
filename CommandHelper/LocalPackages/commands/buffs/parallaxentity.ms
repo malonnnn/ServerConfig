@@ -11,7 +11,7 @@
             'speech': "I'm a mind reader!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/jump 0-3",
                 "/run 0-3",

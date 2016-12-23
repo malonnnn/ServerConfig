@@ -16,7 +16,7 @@
                 "/jump 0-4",
                 "/run 0-3",
                 "/haste 0-2",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/lightning",
                 "/weather"

@@ -12,7 +12,7 @@
             'speech': "I am the ALL POWERFUL!",
             'powers': array(
                 "/buff",
-                "/fly speed <number>",
+                "/flyspeed <number>",
                 "/fly",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
