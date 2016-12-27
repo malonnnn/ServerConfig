@@ -5,7 +5,7 @@ kill:/kill $plr = >>>
         tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
         die()
     }
-    broadcast("@plr exploded the body of @vic")
+    broadcast(@plr." exploded the body of ".@vic)
     pkill(@vic)
     die()
 <<<

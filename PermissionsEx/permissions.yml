@@ -4342,7 +4342,7 @@ groups:
     permissions:
     - multiverse.access.elytrapole
     - herochat.pm
-    - herochat.color.*
+    - herochat.force.join.Global
     - herochat.autojoin.Global
     - herochat.leave.*
     - herochat.speak.*
@@ -5904,6 +5904,18 @@ groups:
         - ch.alias.haste7
         - ch.alias.haste8
         - ch.alias.haste9
+  rcav:
+    inheritance:
+    - mortal
+    options:
+      prefix: '&a&lRC&4&lA&9&lV'
+      suffix: '&4&l'
+    permissions:
+    - ch.alias.quarantine
+    - essentials.tp
+    - essentials.tp.*
+    - kill.immune
+    - essentials.kill.immune
   snoopdogg:
     inheritance:
     - mortal
@@ -7467,7 +7479,7 @@ users:
       name: matthewhanover
   110ebbc4-e400-44d3-ae43-52d58198a188:
     group:
-    - mewtwo
+    - mortal
     options:
       name: zoethebest64
   115defdd-929b-4c0e-8d71-8e0e20671d84:
@@ -7541,6 +7553,8 @@ users:
     - artemis
     options:
       name: HeyItsSteph
+    permissions:
+    - is.antivirus
   1920b0b5-e589-4996-946d-7651aafd1cc0:
     group:
     - martianmanhunter
@@ -7708,7 +7722,9 @@ users:
     - missmartian
     options:
       name: IntoTheGalaxeh
-    permissions: []
+    permissions:
+    - ch.alias.fire
+    - ch.alias.hire
   290fa262-f514-4a2c-b71a-2f39e22b345b:
     group:
     - savitar
@@ -7890,7 +7906,7 @@ users:
       name: lion002
   4087bc7f-c213-47df-bf2d-41650030be45:
     group:
-    - bluelanternbarryallen
+    - apocalypse
     options:
       name: adambash
     worlds:
@@ -8236,7 +8252,7 @@ users:
       name: JustKas
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - mrmxyzptlk
+    - blackflash
     options:
       name: EmmettGaming
     permissions:
@@ -8371,7 +8387,7 @@ users:
       name: stock458
   713cae7a-ef6d-4a06-8922-4741459c12bc:
     group:
-    - mortal
+    - mrmxyzptlk
     options:
       name: Zargon_King
     permissions:
@@ -8443,7 +8459,7 @@ users:
       name: TheDoctor1213
   7b02decc-d614-4041-9c25-1d3d96440d72:
     group:
-    - godfallsuperman
+    - martianmanhunter
     options:
       name: Squishy225
   7b2b235a-b2e2-4e64-8fbf-a40003c6d194:
@@ -8733,7 +8749,7 @@ users:
       name: LeeianSwagWalker
   99d90276-7fc1-434d-ae37-61026532f5d9:
     group:
-    - redhood
+    - blackspiderman
     options:
       name: Rocket41
   9abb8f3b-2931-4c96-bcc5-8036a9ca8512:
@@ -9290,7 +9306,7 @@ users:
       name: sheashea42
   d6e27628-6164-4667-93df-df7d9e1ca2fe:
     group:
-    - mrmxyzptlk
+    - mortal
     options:
       name: LeHoodini
     permissions:
@@ -9762,7 +9778,7 @@ users:
       name: Shadow_Hero8
   fe057171-b22d-4319-b76d-47878608a64e:
     group:
-    - mortal
+    - martianmanhunter
     options:
       name: Bigglesviking
     permissions: []
@@ -9861,6 +9877,31 @@ users:
     - superman
     options:
       name: quaralblast
+  596b8517-6498-4442-930a-6917799a446c:
+    group:
+    - mortal
+    options:
+      name: Thai_Fighter
+  54192f56-7b78-4736-9de5-f2361a970d5d:
+    group:
+    - beastboy
+    options:
+      name: Scorrahz
+  7a572dea-fcb4-463a-a93b-2373eb57d792:
+    group:
+    - deadpool
+    options:
+      name: ScorrahZz
+  7e4ed43e-f4ff-440d-a6a1-d2b634f71cf1:
+    group:
+    - greenlanternhaljordan
+    options:
+      name: Green_Aura
+  fcfc17e2-8f32-4c17-ab87-1e0e9d7628da:
+    group:
+    - deathstroke
+    options:
+      name: SnoopMD
 worlds:
   checkers:
     inheritance:
