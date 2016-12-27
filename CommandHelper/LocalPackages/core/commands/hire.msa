@@ -1,12 +1,15 @@
 hire:/hire $player = >>>
     @player = $player
     runas(~console,"/pex user ".@player." add is.antivirus")
-    tmsg(player(),color(red)."You have hired ."@player)
+    runas(~console,"/pex user ".@player." add ch.alias.rcav")
+    tmsg(player(),color(red)."You have hired ".@player)
     tmsg(@player,color(red)."You have been hired as RoboCode AntiVirus")
 <<<
 fire:/fire $player = >>>
     @player = $player
     runas(~console,"/pex user ".@player." remove is.antivirus")
-    tmsg(player(),color(red)."You have fired ."@player)
+    runas(~console,"/pex user ".@player." remove ch.alias.rcav")
+    runas(~console,"/pex user ".@player." group set mortal")
     tmsg(@player,color(red)."You have been fired as RoboCode Antivirus")
+    tmsg(player(),color(red)."You have fired ."@player)
 <<<

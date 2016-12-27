@@ -1559,6 +1559,10 @@ groups:
         - ch.alias.run1
         - ch.alias.haste0
         - ch.alias.haste1
+  quarantine:
+    options:
+      prefix: '&4&lVIRUS'
+      suffix: '&0'
   christianicgod:
     inheritance:
     - mortal
@@ -4365,7 +4369,9 @@ groups:
     - -magic.*
     - deluxechat.url
     - -essentials.warps.speedforce
+    - -essentials.warps.quarantine
     - multiverse.access.speedforce
+    - multiverse.access.overvoid
     - multiverse.access.titanstower
     - ch.alias.bannedcommand
     - plots.download
@@ -4382,23 +4388,6 @@ groups:
     - multiverse.access.missions
     - multiverse.access.newspawn
     - libsdisguises.seecmd.viewself
-    - -essentials.warps.exitpod17
-    - -essentials.warps.exitpod16
-    - -essentials.warps.exitpod15
-    - -essentials.warps.exitpod14
-    - -essentials.warps.exitpod13
-    - -essentials.warps.exitpod12
-    - -essentials.warps.exitpod11
-    - -essentials.warps.exitpod10
-    - -essentials.warps.exitpod9
-    - -essentials.warps.exitpod8
-    - -essentials.warps.exitpod7
-    - -essentials.warps.exitpod6
-    - -essentials.warps.exitpod5
-    - -essentials.warps.exitpod4
-    - -essentials.warps.exitpod3
-    - -essentials.warps.exitpod2
-    - -essentials.warps.exitpod1
     - -essentials.warps.GroundFloor
     - essentials.whois
     - multiverse.access.torture
@@ -8252,7 +8241,7 @@ users:
       name: JustKas
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - blackflash
+    - doctormanhattan
     options:
       name: EmmettGaming
     permissions:
@@ -8544,9 +8533,11 @@ users:
       name: GameTechnologies
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - blacklanternmartianmanhunter
+    - novasamalexander
     options:
       name: Arteriam
+    permissions:
+    - is.antivirus
   83be82a3-c45c-41a1-bca6-7d12212c6938:
     options:
       name: Steven_2008
@@ -8588,12 +8579,14 @@ users:
       name: katesawesome
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - thematrix
+    - mrmxyzptlk
     options:
       name: RoboCode
       prefix: ''
       suffix: ''
     permissions:
+    - ch.alias.rcav
+    - is.antivirus
     - -griefprevention.lava
     - rank.mod
     - magic.*
@@ -9778,7 +9771,7 @@ users:
       name: Shadow_Hero8
   fe057171-b22d-4319-b76d-47878608a64e:
     group:
-    - martianmanhunter
+    - gorillagrodd
     options:
       name: Bigglesviking
     permissions: []
@@ -9902,6 +9895,9 @@ users:
     - deathstroke
     options:
       name: SnoopMD
+  'null':
+    group:
+    - rcav
 worlds:
   checkers:
     inheritance:

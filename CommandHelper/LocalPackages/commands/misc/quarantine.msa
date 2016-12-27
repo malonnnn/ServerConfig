@@ -1,0 +1,12 @@
+rantine:/quarantine $plr = >>>
+
+    @plr = $plr
+    runas(~console,"/pex user ".@plr." group set quarantine")
+    runas(~console,"/sudo ".@plr." c:/mortal")
+    set_timeout(3000,closure(
+        runas(~console,"/pex user ".@plr." group set quarantine")
+        runas(~console,"/tptoggle ".@plr." off")
+        runas(~console,"/warp quarantine ".@plr)
+    ))
+
+<<<
