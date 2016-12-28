@@ -1,9 +1,11 @@
 magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
     @player = $player
     if(ponline(@player)){
-        @command = "/essentials:sudo ". @player ." c:/mortal"
-        broadcast(@command)
-        runas(~console,@command)
-        tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!')
+        set_timeout(1000,closure(
+            @command = "/runalias /mortal";
+            broadcast(@command);
+            sudo(@command);
+            tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!');
+        ))
     }
 <<<
