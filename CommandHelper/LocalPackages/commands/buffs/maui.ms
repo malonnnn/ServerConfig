@@ -17,7 +17,7 @@
                 "/dismountplayer",
                 "/run 0-2",
                 "/jump 0-9",
-                "/haste 0-9"
+                "/haste 0-9",
                 "/disguise",
                 "/disguiseviewself"
             ),
