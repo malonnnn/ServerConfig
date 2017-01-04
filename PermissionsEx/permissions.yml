@@ -947,9 +947,7 @@ groups:
       survival:
         permissions:
         - -essentials.protect.entitytarget.bypass
-        - essentials.gamemode.survival
-        - essentials.gamemode.creative
-        - essentials.gamemode
+        - ch.alias.transmute
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
         - essentials.fly
@@ -2405,12 +2403,9 @@ groups:
     worlds:
       survival:
         permissions:
-        - hero.op
         - ch.alias.firestormraymondstein
         - worldedit.navigation.thru.command
-        - essentials.gamemode.creative
-        - essentials.gamemode.survival
-        - essentials.gamemode
+        - ch.alias.transmute
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
         - essentials.fly
@@ -4409,6 +4404,7 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - multiverse.access.deathrun
     - multiverse.access.rules
     - herochat.color.white.all
     - herochat.color.yellow.all
@@ -7540,15 +7536,20 @@ users:
       name: matthewhanover
   110ebbc4-e400-44d3-ae43-52d58198a188:
     group:
-    - missmartian
+    - beastboy
     options:
       name: zoethebest64
+    worlds:
+      newcity:
+        permissions:
+        - worldedit.*
+        - essentials.build.*
   115defdd-929b-4c0e-8d71-8e0e20671d84:
     options:
       name: GDMexperienceit
   1209d482-8690-4496-bc14-0f0dc1f3514a:
     group:
-    - generalzod
+    - goku
     options:
       name: tartanboy
   1211895a-fe8d-4246-8a1f-89b12e2086b6:
@@ -7557,6 +7558,8 @@ users:
   1238daf2-09d9-4ba0-96ea-2859f2514519:
     options:
       name: JordanWorks
+    group:
+    - ultron
   127d5b95-016a-40b2-ac5e-330772023c39:
     options:
       name: WalterWest
@@ -7613,7 +7616,7 @@ users:
     group:
     - artemis
     options:
-      name: HeyItsSteph
+      name: UHC_Steph
     permissions:
     - is.antivirus
   1920b0b5-e589-4996-946d-7651aafd1cc0:
@@ -7715,7 +7718,7 @@ users:
       name: Xx_Chibeh_xX
   2303235d-f23d-4555-910e-7603dee45cb7:
     group:
-    - superman
+    - flashbartallen
     options:
       name: Knight_Raptor
   232b9932-73b4-467c-b051-e90968d9355b:
@@ -7780,7 +7783,7 @@ users:
       name: Omegaglade23
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
-    - quarantine
+    - missmartian
     options:
       name: IntoTheGalaxeh
     permissions: []
@@ -7833,7 +7836,7 @@ users:
       name: WitheringShadows
   2db62a35-6065-4c2c-964d-efc5e0ace18a:
     group:
-    - martianmanhunter
+    - blacklanterneobardthawne
     options:
       name: AndreiMCU
   2dbd92d9-be13-40f6-8c4d-5d09f5c2564e:
@@ -7858,7 +7861,7 @@ users:
       name: Graybob
   2e7d3f96-bcd7-4ac4-b6a7-fc23f95d49a0:
     group:
-    - kidflashwallywest
+    - wonderwoman
     options:
       name: GoldenFoxMiner
   2e87c4cb-6c55-44eb-a370-22e242ef3c78:
@@ -7877,6 +7880,16 @@ users:
   3171ad72-84a2-4519-a3f4-77ea38085dc9:
     options:
       name: Hoomun
+    group:
+    - goku
+    worlds:
+      newcity:
+        permissions:
+        - worldedit.*
+        - essentials.build.*
+    permissions:
+    - ch.alias.rcav
+    - is.antivirus
   317f38b4-5956-4783-a013-e874ecc5ea86:
     options:
       name: Scatterboo
@@ -8033,7 +8046,7 @@ users:
       name: BluuMelon
   474707f7-f8b4-43ea-8978-9cae17917e82:
     group:
-    - vision
+    - lukecage
     options:
       name: ThatCraftLife
   475f54cd-419f-45f8-8f23-6bc2ac323dd7:
@@ -8128,7 +8141,7 @@ users:
       name: ItsaSteampunk_
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
-    - mortal
+    - supergirl
     options:
       name: AddictedToSugar
   504c6e4c-9751-4057-819d-ece10e9ce850:
@@ -8191,9 +8204,11 @@ users:
       name: dAnIeLnS
   59c423bf-2a7e-4fe2-8ac2-7393de01d583:
     group:
-    - flashbarryallen
+    - blacklanterndeathstormraymondrusch
     options:
       name: Boss90907
+    permissions:
+    - rank.mod
   5a157201-96e2-4c9d-ba9e-376a0b61289d:
     group:
     - deadpool
@@ -8257,7 +8272,7 @@ users:
       name: Batgirl362
   60309054-91b5-44cf-88b7-eec3a29d0419:
     group:
-    - deathstroke
+    - zoom
     options:
       name: SaberBattles
   60b8ea61-b653-4cc5-8c7f-06db0ec25507:
@@ -8312,11 +8327,10 @@ users:
       name: JustKas
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - mortal
+    - martianmanhunter
     options:
       name: EmmettGaming
     permissions:
-    - rank.mod
     - -griefprevention.spam
     worlds:
       newcity:
@@ -8354,11 +8368,9 @@ users:
       name: TheEvolvedShadow
   695c4d78-22c5-40e4-b0d4-286ab17c02cf:
     group:
-    - doctormanhattan
+    - superman
     options:
       name: _ZoomCW_
-    permissions:
-    - rank.mod
     worlds:
       garbageworld:
         permissions: []
@@ -8447,10 +8459,12 @@ users:
       name: stock458
   713cae7a-ef6d-4a06-8922-4741459c12bc:
     group:
-    - quarantine
+    - mrmxyzptlk
     options:
       name: Zargon_King
     permissions:
+    - ch.alias.rcav
+    - is.antivirus
     - rank.mod
   71e4dd69-fef7-4b0d-bc5c-affe1ac4887f:
     group:
@@ -8519,7 +8533,7 @@ users:
       name: TheDoctor1213
   7b02decc-d614-4041-9c25-1d3d96440d72:
     group:
-    - flashbarryallen
+    - martianmanhunter
     options:
       name: Squishy225
   7b2b235a-b2e2-4e64-8fbf-a40003c6d194:
@@ -8604,7 +8618,7 @@ users:
       name: GameTechnologies
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - blacklanternsuperman
+    - hybrid
     options:
       name: Arteriam
     permissions:
@@ -8684,7 +8698,7 @@ users:
       name: Green__Dragon
   89dfe8bd-6d75-4a20-a23e-84259bfeccc8:
     group:
-    - mortal
+    - shazam
     options:
       name: _Voiden_
   89fa7bbd-c426-4e68-95e2-a8859363705b:
@@ -8712,6 +8726,8 @@ users:
   8c502134-39ea-4b64-851f-e0d5ef6f1c4a:
     options:
       name: SuperSD7
+    group:
+    - martianmanhunter
   8c9c4ce1-27f6-48d3-a764-8755b790f351:
     group:
     - martianmanhunter
@@ -8746,6 +8762,8 @@ users:
   918a17da-fb94-4383-b385-f34da4351af1:
     options:
       name: LostInDimension
+    group:
+    - deadpool
   91ad3006-dc55-424b-a2d8-6c4dfac5ba9b:
     options:
       name: EnchantressFreak
@@ -8814,7 +8832,7 @@ users:
       name: LeeianSwagWalker
   99d90276-7fc1-434d-ae37-61026532f5d9:
     group:
-    - speedy
+    - martianmanhunter
     options:
       name: Rocket41
   9abb8f3b-2931-4c96-bcc5-8036a9ca8512:
@@ -9075,7 +9093,7 @@ users:
       name: RobbieReyesMCU
   b6412492-e7c2-417e-82b7-d0cb962b4f5b:
     group:
-    - wintersoldier
+    - mortal
     options:
       name: _DerwinFireWolf_
   b6508323-94b4-48bd-b031-4cee732bf98d:
@@ -9334,7 +9352,7 @@ users:
       name: Blockmaster2706
   d0f9a8dd-4050-416a-a5f5-3750269f92f6:
     group:
-    - ares
+    - quarantine
     options:
       name: KCocco
       prefix: '{&4Hacker&7} '
@@ -9383,9 +9401,9 @@ users:
       name: sheashea42
   d6e27628-6164-4667-93df-df7d9e1ca2fe:
     group:
-    - mortal
+    - doctormanhattan
     options:
-      name: LeHoodini
+      name: Stymiee
     permissions:
     - rank.mod
   d71ca07f-dffd-42cb-ad49-9034143f641a:
@@ -9403,6 +9421,11 @@ users:
     - redrobin
     options:
       name: Scrabdusan
+    worlds:
+      newcity:
+        permissions:
+        - worldedit.*
+        - essentials.build.*
   d7db5572-a51d-4e44-9538-b9d65f2f6016:
     group:
     - mortal
@@ -9433,7 +9456,7 @@ users:
       name: TBNRattata
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     group:
-    - maui
+    - squirrelgirl
     options:
       name: _SquirrelGirl_
       prefix: ''
@@ -9516,7 +9539,7 @@ users:
       name: BadLionBruh
   e207f46f-ac40-4f49-8b7d-2317c67f1bd0:
     group:
-    - mortal
+    - blacklanternmartianmanhunter
     options:
       name: BenTheNerd
     permissions:
@@ -9641,7 +9664,7 @@ users:
       name: joseph1231231234
   ec093b48-b454-4314-80e1-242e6c1c3086:
     group:
-    - darthvader
+    - vision
     options:
       name: DemonDaimond653
   ec4e9d01-ce2a-4ce0-9f3d-b5117c13a92b:
@@ -9818,9 +9841,9 @@ users:
       name: WarrinPeace
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - supergirl
+    - mortal
     options:
-      name: Terrabearzz
+      name: Suannaii
     permissions:
     - -griefprevention.spam
     worlds:
@@ -9855,10 +9878,12 @@ users:
       name: Shadow_Hero8
   fe057171-b22d-4319-b76d-47878608a64e:
     group:
-    - redhood
+    - genos
     options:
       name: Bigglesviking
-    permissions: []
+    permissions:
+    - ch.alias.rcav
+    - is.antivirus
   fe3dbbed-56e8-4306-898a-3940e0f1eab7:
     group:
     - mortal
@@ -9992,7 +10017,7 @@ users:
       name: glaniewski
   749cb576-020a-4350-852c-99e8185874f9:
     group:
-    - flashbarryallen
+    - mortal
     options:
       name: dibs1205
   mandark:
@@ -10016,12 +10041,12 @@ users:
       name: Alittlebitrandom
   64572c10-48af-4f46-a706-aef5a6248140:
     group:
-    - mortal
+    - gorillagrodd
     options:
       name: Legobuilder122
   336f1d11-3eb7-4fe0-ab0c-87c0bc2ad87d:
     group:
-    - mortal
+    - redlanternsupergirl
     options:
       name: Jasmine54
   041b45ce-8fba-40f5-b61d-37fa12205b84:
@@ -10051,9 +10076,104 @@ users:
       name: Blitz1002
   48c80e8d-c3c9-4220-aa49-99b1fd15ee60:
     group:
-    - goku
+    - mortal
     options:
       name: ssgssgoku12345
+  e67f0790-9bf4-4ba9-8faf-c4185dc5d8bd:
+    group:
+    - venom
+    options:
+      name: Godzilla99
+  3041cf7d-c04d-45d7-9ef1-1cc75130c2ff:
+    group:
+    - apollo
+    options:
+      name: Pyro5hadow
+  4b737f85-e2ed-425f-88c8-84244d1c4ec7:
+    group:
+    - martianmanhunter
+    options:
+      name: Predzel_
+  21b8341c-82e3-44c9-9675-0262704c5f7d:
+    group:
+    - blacklanternmartianmanhunter
+    options:
+      name: TotallyUneffable
+  4418fb64-556f-4901-bde5-2e3f77713506:
+    group:
+    - flashbarryallen
+    options:
+      name: ObiGamer
+  dd637f09-6793-401d-b36f-89363903e139:
+    group:
+    - blast
+    options:
+      name: Keelahy_Gaming
+  emmetgaming:
+    group:
+    - quarantine
+  ef83d04c-b10e-4387-9ecc-21fac1d1a570:
+    group:
+    - flashwalterwest
+    options:
+      name: BlackShadowGr
+  d0f16838-e884-4a88-b7ca-b00832dfeb69:
+    group:
+    - reverseflasheobardthawne
+    options:
+      name: SummerNikolas
+  db3da4fe-7709-495c-90b7-b71f1c213497:
+    group:
+    - flashwallywest
+    options:
+      name: _Henryjones123_
+  ef037de8-4495-4b54-b101-2b2bcc98ba52:
+    group:
+    - blackracerwilliewalker
+    options:
+      name: gigio5x
+    permissions:
+    - rank.mod
+    - ch.alias.rcav
+    - is.antivirus
+  520d738e-538e-4cf0-860d-33a1d4066c23:
+    group:
+    - deathstroke
+    options:
+      name: TheProGamer2501
+  8e5b211a-b3f0-48f3-820d-05dd2d281377:
+    group:
+    - bluelanternsaintwalker
+    options:
+      name: Mini_Miner137
+  kcocoo:
+    group:
+    - quarantine
+  45af1e5e-9551-4eca-a1a9-80fa5265a142:
+    group:
+    - flashwallywest
+    options:
+      name: fadiay08
+  916f7e9d-3953-4d11-8ac9-9d223d59afdd:
+    group:
+    - carnage
+    options:
+      name: MrSorrow
+  b6d281f4-6940-4f76-b683-00ff9b14a268:
+    group:
+    - mewtwo
+    options:
+      name: lillybear2009
+  61d9d7d0-8a73-4882-9840-2b57c33a3c07:
+    group:
+    - zoom
+    options:
+      name: hoverboardchamp
+  7ac9622c-87d2-4cc0-beee-e43f501b5dc8:
+    group:
+    - blackbolt
+    options:
+      name: Avatar42
 worlds:
   checkers:
     inheritance:
