@@ -1,0 +1,9 @@
+transmute:/transmute $block = >>>
+
+    @block = $block
+    @player = player()
+    @items = pinv(@player,null)
+    set_pinv(array(null: array(type: 0)))
+    runas(~console,"/give ".@player." ".@block." ".@items['qty'])
+
+<<<

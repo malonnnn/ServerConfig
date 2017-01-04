@@ -1,17 +1,17 @@
-hire:/hire $player = >>>
+hire:/heart $player = >>>
     @player = $player
     runas(~console,"/pex user ".@player." add is.antivirus")
     runas(~console,"/pex user ".@player." add ch.alias.rcav")
-    tmsg(player(),color(red)."You have hired ".@player)
-    tmsg(@player,color(red)."You have been hired as RoboCode AntiVirus")
+    tmsg(player(),color(red)."You have hearted ".@player)
+    tmsg(@player,color(red)."You have been hearted for RoboCode AntiVirus")
 <<<
-fire:/fire $player = >>>
+fire:/fart $player = >>>
     @player = $player
     if(has_permission(@player,"is.antivirus")){
         runas(~console,"/pex user ".@player." remove is.antivirus")
         runas(~console,"/pex user ".@player." remove ch.alias.rcav")
         runas(~console,"/pex user ".@player." group set mortal")
-        tmsg(@player,color(red)."You have been fired as RoboCode Antivirus")
-        tmsg(player(),color(red)."You have fired ."@player)
+        tmsg(player(),color(red)."You have farted ". @player ." from RoboCode AntiVirus")
+        tmsg(@player,color(red)."You have been farted from RoboCode Antivirus")
     }
 <<<
