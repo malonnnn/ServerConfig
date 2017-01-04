@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODE0MDQyMTE1OTEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJSb2JvQ29kZSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU3YWFiOTZiOTM0ZGU3N2M3OGEyMTIxZmVmMWIxNjFlNmU0ZjM2YjI5NGJlZTc4NmU1YTdjOTIyNWE1OGIifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Come to the dark side.",
+            'speech': "Im a new hope.",
             'powers': array(
                 "/buff",
                 "/jump 0-7",
@@ -19,7 +19,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 21 9999 19 true",
-                "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&8L&0u&8ke_&0S&8ky&0w&8a&al&8ker's_&aLightsaber",
-                "/shot give ". @plr ." forcelightning"                
+                "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&8L&0u&8ke_&0S&8ky&0w&8a&al&8ker's_&aLightsaber"               
             )
         )
