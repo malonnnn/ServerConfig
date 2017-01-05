@@ -15,7 +15,8 @@
                 "/gmc",
                 "/gms",
                 "/tp",
-                "/fly"
+                "/fly",
+                "/skull <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
