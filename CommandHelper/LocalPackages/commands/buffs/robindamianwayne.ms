@@ -12,12 +12,14 @@
             'powers': array(
                 "/buff",
                 "/jump 0-3",
-                "/run 0-3",
-                "/haste 0-1"
+                "/run 0-5",
+                "/haste 0-1",
+                "/fly"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 4 true",
-                "/effect ". @plr ." 21 9999 3 true",
+                "/effect ". @plr ." 5 9999 6 true",
+                "/effect ". @plr ." 21 9999 5 true",
+                "/effect ". @plr ." 13 9999 1 true",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cR&eo&cbi&2n's_&cGlide_Wings",
                 "/give ". @plr ." minecraft:ender_pearl 5 name:&cD&ea&2mi&can&e'&cs_&cGra&eppl&2in&cg_&2Ho&eok",
                 "/give ". @plr ." minecraft:iron_sword 1 0 20:2 16:10 name:&cD&ea&2mi&can&e'&cs_&2Sw&eor&cd",
