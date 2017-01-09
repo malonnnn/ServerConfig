@@ -1,0 +1,13 @@
+deathnote:/deathnote $victim $ = >>>
+
+    @victim = $victim
+    @msg = $
+    tmsg(player(),color(red)."In 5 minutes, ".@victim." is going to die by ".@msg)
+    set_timeout(300000,closure(
+        if(ponline(@victim) && has_permission(@victim,"powers.deathnote.immune") ==  false){
+            pkill(@victim)
+            broadcast(@victim." was killed by ".@msg)
+        }
+    ))
+
+<<<

@@ -11,15 +11,15 @@
             'speech': "My name is Damian Wayne, i was trained in the LOA by my mother Talia and my grampz, Ra's Al Ghul!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
-                "/run 0-3",
-                "/haste 0-1"
+                "/jump 0-7",
+                "/run 0-7",
+                "/haste 0-7",
+                "/fly"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 4 true",
-                "/effect ". @plr ." 21 9999 3 true",
-                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&cR&eo&cbi&2n's_&cGlide_Wings",
-                "/give ". @plr ." minecraft:ender_pearl 5 name:&cD&ea&2mi&can&e'&cs_&cGra&eppl&2in&cg_&2Ho&eok",
+                "/effect ". @plr ." 5 9999 10 true",
+                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:iron_sword 1 0 20:2 16:10 name:&cD&ea&2mi&can&e'&cs_&2Sw&eor&cd",
                 "/give ". @plr ." minecraft:iron_sword 1 0 20:2 16:10 name:&cD&ea&2mi&can&e'&cs_&2Sw&eor&cd"
             )

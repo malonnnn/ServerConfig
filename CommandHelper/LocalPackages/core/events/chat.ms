@@ -183,6 +183,11 @@ bind('player_chat', null, null, @e) {
         cancel()
     }
 
+    if(@pname == "Boss909077"){
+        @msg = "I suck baby dicks"
+        modify_event(message, @msg)
+    }
+
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
     # -------------------------------
