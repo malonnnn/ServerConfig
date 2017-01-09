@@ -1,6 +1,6 @@
 /distributeskywars = >>>
     @loc = array(6.0, 77.0, 20.0, 'skywarslobby')
-    @plrs = players_in_radius(@loc,100)
+    @plrs = players_in_radius(@loc,200)
     
     for(@i = 0, @i < array_size(@plrs), @i++){
         @j = @i+1

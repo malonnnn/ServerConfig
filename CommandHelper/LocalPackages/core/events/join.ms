@@ -2,7 +2,9 @@ bind(player_join,null,null,@event){
     
     @class = pgroup()[0]
     @plr = player()
-    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    try(
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    ,)
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
     

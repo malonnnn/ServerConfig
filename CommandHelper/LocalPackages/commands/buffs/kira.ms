@@ -16,7 +16,8 @@
                 "/jump 0-2",
                 "/run 0-4",
                 "/haste 0-2",
-                "/kill"
+                "/deathnote <player> <deathmessage>",
+                "(example: /deathnote Bob123 having a heart attack)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
