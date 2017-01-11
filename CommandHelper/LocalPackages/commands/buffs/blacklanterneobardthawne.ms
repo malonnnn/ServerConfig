@@ -3,7 +3,7 @@
 
 
 @hero = associative_array(
-            'name': '§0B§8l§7a§fc§0k§8-§7L§fa§0nte§8r§7n§8-§fE§8T',
+            'name': '§0B§8l§7a§fc§0k§8-§7L§fa§0nte§8r§7n§8(§fE§8T§8)',
             'class': 'blacklanterneobardthawne',
             'sig': 'p98fKB78BmqWjnok1gNqx+udMSqZiX+b9hXhJ8ZyMZDVh0BpzgzX5UnYBE6VOd2Eemj/IFoI7vqluyo7zYWIGM6LPYSLLPslUFkU80kEv8Pl4QeIm4+pyblF1XZdDLx7XqQs0bsmwqwBGoksCPMJWmK0BLykHyIbJhlOX4jKW9Rpm6wM+SaG34TBUI09PkeAdVrLIXbbqXOwt1ZRPFP/FUNjbj3FDiQsRJSbKlSIksylKHcNJmqYzU5Ygl8A9TpzdcBQpNBSTZmPNEeTAdyv0C9gpvD62li4MV1bDV0eIdUZy9Yb2g236zham1yq6QX8qbAvpZO4qiLXS5gljAilwzYhdIbmGiIRxUGZe46b9YfhrAV6XHmWrPnFs1kiD2lYfAgvt1dHnpz03f1gOiWSxotRC067IOoKA9Tb6lTlxAahgnqpMeNRxhqrOALV4btttGP8IPdSdtFdma3FdCiptbH9frVeROyha5p2poi8ZRe84w0ojsVN7TgNlAo2UUVUpXZY/K+uhGw0Zauyl8d+72ZHS7lXRabTc5MvfmRageoEMPRytS7bhAaA1mQ4GGRlWyQe8DLPf9zjc/B/P640c8sMW2JkxETbcIUSaQafpU5AQo2R+lBDBfQVRbwSit63f8iEM59rNsx62vOvvSi6DuCYRtKLBN3JiTsubKi8xXo=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODE4NjE2OTU5ODksInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzJkMWJmZTkzYWFkY2U0NjFkNWQ4OGY5ZjI5YzRhZWU2MGY4MjM2MjcwZWQ1ZDNiMjJkMjI1NDg0NmQ2NzEifX19',
