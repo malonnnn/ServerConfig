@@ -1,5 +1,15 @@
 deathnote:/deathnote $victim $ = >>>
 
+    @player = player()
+    assign(@cooldown, 400000)
+    assign(@lastUsedDeathNote, get_value(@player."lastUsedDeathNote"))
+    if(@lastUsedDeathNote + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedDeathNote, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use Death Note!'))
+        die()
+    )
+    store_value(@player."lastUsedDeathNote", time() / 1000)
+
     @victim = $victim
     @msg = $
     tmsg(player(),color(red)."In 5 minutes, ".@victim." is going to die by ".@msg)
