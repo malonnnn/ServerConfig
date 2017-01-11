@@ -11,17 +11,9 @@
             'speech': "Lets light it up!",
             'powers': array(
                 "/buff",
-                "/carryplayer",
-                "/dismountplayer",
-                "/jump 0-3",
-                "/run 0-3",
-                "/haste 0-4",
-                "/flyspeed <number>",
-                "/fly"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 15 true",
-                "/effect ". @plr ." 10 9999 3 true",
-                "/effect ". @plr ." 21 9999 9 true"             
+                "/shot give ". @plr ." whiteenergybeam",
+                "/shot give ". @plr ." lightbeam"
             )
         )
