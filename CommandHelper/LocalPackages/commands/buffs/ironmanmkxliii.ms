@@ -27,7 +27,9 @@
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true",
-                "/shot give ". @plr ." quantumlaser"                
+                "/effect ". @plr ." 21 9999 9 true",                
+                "/shot give ". @plr ." ironmansmachinegun",
+                "/shot give ". @plr ." ironmanshomingmissile",
+                "/shot give ". @plr ." quantumlaser"
             )
         )
