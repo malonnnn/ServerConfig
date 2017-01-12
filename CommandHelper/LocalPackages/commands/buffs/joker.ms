@@ -15,6 +15,9 @@
                 "/haste 0-1"
             ),
             'buffs': array(
-                "/shot give ". @plr ." cakebomb"                
+                "/give ". @plr ." minecraft:stick 1 16:2 name:&6Baseball_Bat",
+                "/give ". @plr ." minecraft:stick 1 16:2 name:&7Crow_Bar",
+                "/shot give ". @plr ." pistol",
+                "/shot give ". @plr ." cakebomb" 
             )
         )
