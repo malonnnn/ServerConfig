@@ -1,0 +1,37 @@
+flamethrower:
+    Item_Information:
+        Item_Name: "&eFlame Thrower"
+        Item_Type: 294
+        Item_Lore: "&eFlame Thrower|&eCook bacon!." 
+    Shooting:
+        Right_Click_To_Shoot: true
+        Delay_Between_Shots: 0
+        Remove_Arrows_On_Impact: true
+        Projectile_Amount: 12
+        Bullet_Spread: 2
+        Projectile_Type: egg
+        Projectile_Flames: true
+        Projectile_Speed: 15
+        Projectile_Damage: 2
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 850
+        Reset_Fall_Distance: true
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 2
+        Delay_Between_Shots_In_Burst: 3
+    Abilities:
+        Reset_Hit_Cooldown: true
+    Hit_Events:
+        Enable: true
+    Reload:
+        Enable: false
+        Reload_Amount: 100
+        Reload_Duration: 90
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: flames-1,BLOCK_BREAK-51
+        Particle_Player_Hit: flames-1,BLOCK_BREAK-51
+        Particle_Hit: BLOCK_BREAK-51
+        Particle_Impact_Anything: BLOCK_BREAK-51

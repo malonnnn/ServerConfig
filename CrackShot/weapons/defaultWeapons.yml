@@ -12,12 +12,9 @@ Gauss:
         Projectile_Subtype: 40-1-NONE-0
         Projectile_Damage: 12
         Sounds_Shoot: ENTITY_WITHER_SHOOT-1-2-0,ENTITY_GENERIC_EXPLODE-1-2-0
+        Delay_Between_Shots: 10
     Reload:
-        Enable: true
-        Reload_Amount: 8
-        Reload_Bullets_Individually: true
-        Reload_Duration: 10
-        Sounds_Reloading: ENTITY_IRONGOLEM_ATTACK-1-2-0
+        Enable: false
     Firearm_Action:
         Type: pump
         Open_Duration: 12
@@ -39,16 +36,10 @@ Carbine:
         Item_Name: "&eCarbine"
         Item_Type: 417
         Item_Lore: "&eDeals crits with a 10% chance.|&eSwitch to the grenade launcher|&ewith right click. Fired grenades|&earm themselves in 0.25 seconds."
-        Attachments:
-            Type: main
-            Info: "M320"
-            Toggle_Delay: 5
-            Sounds_Toggle: BLOCK_NOTE_HAT-1-2-0
-        Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 3
+        Delay_Between_Shots: 6
         Recoil_Amount: 1
         Projectile_Amount: 1
         Projectile_Type: snowball
@@ -61,10 +52,7 @@ Carbine:
         No_Recoil: true
         Bullet_Spread: 0.4
     Reload:
-        Enable: true
-        Reload_Amount: 8
-        Reload_Duration: 30
-        Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-0,ITEM_FLINTANDSTEEL_USE-1-1-14,BLOCK_WOODEN_DOOR_OPEN-1-2-16,ITEM_FLINTANDSTEEL_USE-1-1-26,ENTITY_PLAYER_HURT-1-0-27,BLOCK_WOODEN_DOOR_CLOSE-1-2-28
+        Enable: false
     Firearm_Action:
         Type: slide
         Close_Duration: 8
@@ -94,7 +82,7 @@ Deagle:
         Dual_Wield: true
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 2
+        Delay_Between_Shots: 8
         Recoil_Amount: 2
         Projectile_Amount: 1
         Projectile_Type: egg
@@ -107,15 +95,7 @@ Deagle:
         No_Recoil: true
         Bullet_Spread: 0.75
     Reload:
-        Enable: true
-        Reload_Amount: 7
-        Reload_Duration: 40
-        Sounds_Out_Of_Ammo: UI_BUTTON_CLICK-1-1-0
-        Sounds_Reloading: BLOCK_WOODEN_DOOR_OPEN-1-2-4,BLOCK_WOODEN_DOOR_OPEN-1-2-8,BLOCK_WOODEN_DOOR_CLOSE-1-2-23,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
-        Dual_Wield:
-            Single_Reload_Duration: 25
-            Sounds_Single_Reload: BLOCK_WOODEN_DOOR_OPEN-1-2-4,BLOCK_WOODEN_DOOR_CLOSE-1-2-23
-            Sounds_Shoot_With_No_Ammo: UI_BUTTON_CLICK-1-2-0
+        Enable: false
     Abilities:
         Reset_Hit_Cooldown: true
     Backstab:
@@ -143,17 +123,14 @@ Bazooka:
         Projectile_Amount: 1
         Projectile_Type: fireball
         Projectile_Speed: 10
-        Sounds_Shoot: ENTITY_ZOMBIE_ATTACK_DOOR_WOOD-1-0-0,BLOCK_FIRE_EXTINGUISH-1-1-0
+        Delay_Between_Shots: 30
     Sneak:
         Enable: true
         No_Recoil: true
     Abilities:
         No_Fall_Damage: true
     Reload:
-        Enable: true
-        Reload_Amount: 1
-        Reload_Duration: 55
-        Sounds_Reloading: ENTITY_SKELETON_AMBIENT-1-0-10,BLOCK_PISTON_EXTEND-1-0-28,ENTITY_SKELETON_STEP-1-0-48
+        Enable: false
     Particles:
         Enable: true
         Particle_Player_Shoot: BLOCK_BREAK-35
@@ -181,7 +158,7 @@ Python:
         Right_Click_To_Shoot: true
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 2
+        Delay_Between_Shots: 6
         Projectile_Amount: 1
         Projectile_Type: snowball
         Projectile_Speed: 40
@@ -189,10 +166,7 @@ Python:
         Bullet_Spread: 0.5
         Sounds_Shoot: ENTITY_IRONGOLEM_HURT-1-2-0,ENTITY_ZOMBIE_ATTACK_IRON_DOOR-1-2-0
     Reload:
-        Enable: true
-        Reload_Amount: 6
-        Reload_Duration: 35
-        Sounds_Reloading: ENTITY_PLAYER_LEVELUP-1-1-10,ITEM_FLINTANDSTEEL_USE-1-2-28
+        Enable: false
     Firearm_Action:
         Type: revolver
         Open_Duration: 5
@@ -227,7 +201,7 @@ Olympia:
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 3
+        Delay_Between_Shots: 5
         Recoil_Amount: 5
         Projectile_Amount: 8
         Projectile_Type: egg
@@ -246,11 +220,7 @@ Olympia:
         No_Recoil: true
         Bullet_Spread: 1
     Reload:
-        Enable: true
-        Reload_Amount: 2
-        Reload_Bullets_Individually: true
-        Reload_Duration: 15
-        Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0,BLOCK_NOTE_SNARE-1-6-1
+        Enable: false
     Firearm_Action:
         Type: break
         Open_Duration: 10
@@ -286,15 +256,11 @@ Hunting:
         Projectile_Speed: 1000
         Projectile_Damage: 12
         Sounds_Shoot: ENTITY_BLAZE_HURT-1-1-0,ENTITY_GENERIC_EXPLODE-1-2-0
+        Delay_Between_Shots: 20
     Custom_Death_Message:
         Normal: "&e<victim> was sniped by <shooter>'s Hunting Rifle!"
     Reload:
-        Enable: true
-        Starting_Amount: 0
-        Reload_Amount: 5
-        Reload_Bullets_Individually: true
-        Reload_Duration: 10
-        Sounds_Reloading: BLOCK_NOTE_HAT-1-1-0
+        Enable: false
     Firearm_Action:
         Type: bolt
         Open_Duration: 8
@@ -339,7 +305,7 @@ Type95:
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 7
+        Delay_Between_Shots: 12
         Recoil_Amount: 1
         Projectile_Amount: 1
         Projectile_Type: snowball
@@ -356,16 +322,12 @@ Type95:
         Shots_Per_Burst: 3
         Delay_Between_Shots_In_Burst: 1
     Ammo:
-        Enable: true
+        Enable: false
         Ammo_Item_ID: 370
         Sounds_Out_Of_Ammo: BLOCK_NOTE_HARP-1-2-0
         Sounds_Shoot_With_No_Ammo: BLOCK_NOTE_HAT-1-2-0
     Reload:
-        Enable: true
-        Reload_Amount: 30
-        Take_Ammo_On_Reload: true
-        Reload_Duration: 40
-        Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+        Enable: false
     Firearm_Action:
         Type: slide
         Close_Duration: 10
@@ -406,11 +368,7 @@ AK-47:
         Enable: true
         Fire_Rate: 6
     Reload:
-        Enable: true
-        Reload_Amount: 30
-        Reload_Duration: 40
-        Sounds_Out_Of_Ammo: ENTITY_ITEM_BREAK-1-1-0
-        Sounds_Reloading: ITEM_FLINTANDSTEEL_USE-1-1-4,BLOCK_WOODEN_DOOR_OPEN-1-2-6,ITEM_FLINTANDSTEEL_USE-1-1-36,ENTITY_PLAYER_HURT-1-0-37,BLOCK_WOODEN_DOOR_CLOSE-1-2-38
+        Enable: false
     Firearm_Action:
         Type: slide
         Close_Duration: 10

@@ -1,0 +1,47 @@
+ghostridershotgun:
+    Item_Information:
+        Item_Name: "&8Gh&0o&8st R&7i&8der's &fShotgun"
+        Item_Type: 417
+        Item_Lore: "&eOnly For The Ghost Rider.|&eDeadly at close range.|&eIneffective at longer ranges.|&eFires incendiary ammo."
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 3
+        Recoil_Amount: 5
+        Projectile_Amount: 25
+        Projectile_Type: egg
+        Removal_Or_Drag_Delay: 4-false
+        Projectile_Speed: 30
+        Projectile_Damage: 5
+        Projectile_Flames: true
+        Projectile_Incendiary:
+            Enable: true
+            Duration: 80
+        Bullet_Spread: 1
+        Reset_Fall_Distance: true
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 1
+    Reload:
+        Enable: true
+        Reload_Amount: 2
+        Reload_Bullets_Individually: true
+        Reload_Duration: 15
+    Firearm_Action:
+        Type: break
+        Open_Duration: 10
+        Close_Duration: 15
+    Abilities:
+        Reset_Hit_Cooldown: true
+        No_Fall_Damage: true
+    Hit_Events:
+        Enable: true
+    Damage_Based_On_Flight_Time:
+        Enable: true
+        Bonus_Damage_Per_Tick: -1
+        Maximum_Damage: -4
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: FLAMES-1
+        Particle_Impact_Anything: BLOCK_BREAK-51
