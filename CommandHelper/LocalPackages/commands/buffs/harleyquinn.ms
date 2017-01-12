@@ -13,8 +13,10 @@
                 "/buff"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:stick 1 19:5 16:2 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Baseball_Bat",
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer",
-                "/shot give ". @plr ." pistol"
+                "/give ". @plr ." minecraft:stick 1 16:2 name:&6Baseball_Bat",
+                "/give ". @plr ." minecraft:stick 1 16:2 name:&7Crow_Bar",
+                "/shot give ". @plr ." pistol",
+                "/shot give ". @plr ." cakebomb"
             )
         )

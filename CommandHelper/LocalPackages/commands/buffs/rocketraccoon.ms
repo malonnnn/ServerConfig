@@ -14,6 +14,15 @@
                 "/run 0-1"
             ),
             'buffs': array(
-                "/effect ". @plr ." 16 9999 1 true"           
+                "/effect ". @plr ." 16 9999 1 true",
+                "/shot give ". @plr ." pistol",
+                "/shot give ". @plr ." AK-47",
+                "/shot give ". @plr ." Type95",
+                "/shot give ". @plr ." Olympia",
+                "/shot give ". @plr ." Python",
+                "/shot give ". @plr ." Gauss",
+                "/shot give ". @plr ." Putty",
+                "/shot give ". @plr ." Grenade",
+                "/shot give ". @plr ." C4"                
             )
         )
