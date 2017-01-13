@@ -8,15 +8,15 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODQzMzkyNzQyMzIsInByb2ZpbGVJZCI6IjBlNDJlNDc0MTM0ODRmYTg5N2M2Y2IzOWE5YzA5ODhmIiwicHJvZmlsZU5hbWUiOiJjYXJkaGFkeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQxM2IwZDA4YzJiZTJmMTUxYjFhMzM2N2E4N2I4ZmY0YWU1MjIxMmIwYzU5MDNjMmE1YWFjMjVkN2FiNTVmIn19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "I am the fire ninja!!",
+            'speech': "I am the fire ninja!",
             'powers': array(
                 "/buff",
                 "/jump 0-2",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-5",
+                "/run 0-5"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:gold_sword 1 20:30 16:10 name:&6TheSwordOfFire!"                
+                "/give ". @plr ." minecraft:gold_sword 1 20:2 name:&6The_Sword_Of_Fire"                
             )
         )
