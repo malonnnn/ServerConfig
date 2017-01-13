@@ -10,16 +10,10 @@
              'op': 'false',
              'speech': "Mutants and Humans, together!",
              'powers': array(
-                 "/buff",
                  "/speak <player> <message>",
                  "/mindcontrol <playername>",
                  "/stopmindcontrol",
                  "/confuse <player>"
              ),
-             'buffs': array(
-                 "/effect ". @plr ." 5 9999 2 true",
-                 "/effect ". @plr ." 10 9999 1 true",
-                 "/effect ". @plr ." 11 9999 1 true",
-                 "/effect ". @plr ." 16 9999 1 true"              
-             )
+             'buffs': array()
          )
