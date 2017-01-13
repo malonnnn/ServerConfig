@@ -11,8 +11,7 @@
             'speech': "I am the fire ninja!!",
             'powers': array(
                 "/buff",
-                "/jump 0-5",,
-                "/whirlwind",
+                "/jump 0-5",
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-5",
