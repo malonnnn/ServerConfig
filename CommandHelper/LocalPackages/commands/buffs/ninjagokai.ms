@@ -14,9 +14,10 @@
                 "/jump 0-2",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-5"
+                "/run 0-5",
+                "/spinjutsu (gives strength 5 for 10 seconds)"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:gold_sword 1 20:2 name:&6The_Sword_Of_Fire"                
+                "/give ". @plr ." minecraft:golden_sword 1 20:2 name:&6The_Sword_Of_Fire"                
             )
         )

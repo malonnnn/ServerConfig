@@ -1361,7 +1361,7 @@ groups:
     inheritance:
     - mortal
     options:
-      prefix: '&fB&1l&9u&fe&8-&fL&1a&9nte&1r&fn&8-&9B&fA'
+      prefix: '&fB&1l&9u&fe&8-&fL&1a&9nte&1r&fn&8(&9B&fA&8)'
       suffix: '&b'
     permissions: []
     worlds:
@@ -1705,7 +1705,7 @@ groups:
         - ch.alias.haste5
   blacklanternsuperman:
     options:
-      prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&f-&0S&8M'
+      prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&8(&0S&8M&8)'
       suffix: '&7'
     inheritance:
     - mortal
@@ -4530,6 +4530,8 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - multiverse.access.deathmachine
+    - ch.alias.marry
     - multiverse.access.pvpparkourlobby
     - multiverse.access.pvpparkour
     - multiverse.access.verticalparkour
@@ -4845,6 +4847,7 @@ groups:
         - ch.alias.gc
         - ch.alias.cp
         - -essentials.tpa
+        - -essentials.tpahere
       greenfield:
         permissions:
         - -essentials.sethome
@@ -5191,6 +5194,7 @@ groups:
     worlds:
       survival:
         permissions:
+        - ch.alias.spinjutsu
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -5425,6 +5429,30 @@ groups:
         - ch.alias.haste0
         - ch.alias.haste1
         - ch.alias.haste2
+  terminatort800:
+    options:
+      prefix: '&8T&7er&7m&8i&7n&4a&8t&7o&8r(&4T&8-8&700&8)'
+      suffix: '&8'
+    inheritance:
+    - mortal
+    worlds:
+      survival:
+        permissions:
+        - ch.alias.jump0
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5    
   pikachu:
     inheritance:
     - mortal
@@ -8003,6 +8031,7 @@ users:
         permissions:
         - worldedit.*
         - essentials.build.*
+    permissions: []
   290fa262-f514-4a2c-b71a-2f39e22b345b:
     group:
     - savitar
@@ -8097,7 +8126,7 @@ users:
     options:
       name: Hoomun
     group:
-    - mortal
+    - doctormanhattan
     worlds:
       newcity:
         permissions:
@@ -8500,7 +8529,7 @@ users:
       name: Batgirl362
   60309054-91b5-44cf-88b7-eec3a29d0419:
     group:
-    - zoom
+    - goldenfrieza
     options:
       name: SaberBattles
   60b8ea61-b653-4cc5-8c7f-06db0ec25507:
@@ -10095,7 +10124,7 @@ users:
       name: WarrinPeace
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - wonderwomangodmode
+    - martianmanhunter
     options:
       name: Suannaii
     permissions:
@@ -10464,7 +10493,7 @@ users:
       name: Soggy_Wafer
   c8b88131-52d4-4af0-9593-ddcdb3d56058:
     group:
-    - mortal
+    - redlanternsupergirl
     options:
       name: _V_Anchovii_V_
     worlds:
@@ -10600,7 +10629,7 @@ users:
         - essentials.build.*
   485125a3-806d-4235-bbaf-50219af60b5a:
     group:
-    - mrmxyzptlk
+    - silversurfer
     options:
       name: TFB_CHELSEA
     permissions:
@@ -10642,7 +10671,19 @@ users:
       name: BlaBlaSillySheep
   78444f3c-9e14-4a04-b251-167c04db9b35:
     group:
-    - beastboy
+    - darkseid
+    options:
+      name: NinjagoMaster231
+  8202e615-3a91-45dc-b0f1-5d4a673501e2:
+    group:
+    - mortal
+    options:
+      name: monsterking500
+  d71eb121-ee84-4d8d-b3f2-3a25c89a65a7:
+    group:
+    - mortal
+    options:
+      name: FC_Lacazette
 worlds:
   checkers:
     inheritance:
@@ -10650,6 +10691,9 @@ worlds:
   destructiblecity:
     inheritance:
     - greenfield
+  deathmachine:
+    inheritance:
+    - godlyparkour
   quickparkour:
     inheritance:
     - godlyparkour
