@@ -9,24 +9,9 @@
              'op': 'false',
              'speech': "I can see, into your mind",
              'powers': array(
-                "/buff",
-                "/carryplayer",
-                "/dismountplayer",
-                "/jump 0-5",
-                "/run 0-3",
+                "/jump 0-3",
+                "/run 0-4",
                 "/haste 0-2",
-                 "/speak <player> <message>",
-                 "/mindcontrol <playername>",
-                 "/stopmindcontrol",
-                 "/confuse <player>",
-                  "/flyspeed <number>",
-                  "/fly" 
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/give ". @plr ." minecraft:gold_sword 1 20:30 16:20"
-            )
+            'buffs': array()
         )
