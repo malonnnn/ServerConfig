@@ -20,7 +20,7 @@
             'buffs': array(
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 24 9999 3 true",
-                "/shot give ". @plr ."icebeam",
+                "/shot give ". @plr ." icebeam",
                 "/give ". @plr ." minecraft:ice 5 16:10 17:10 name:&9I&1c&9e&9F&1i&9s&1t"                
             )
         )
