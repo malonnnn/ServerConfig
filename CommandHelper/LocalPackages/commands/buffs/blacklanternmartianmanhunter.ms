@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '§0B§8l§7a§fc§0k §7L§fa§0nte§8r§7n§8(§fM§7M&8)',
+            'name': '§0B§8l§7a§fc§0k §7L§fa§0nte§8r§7n§8(§fM§7M§8)',
             'class': 'blacklanternmartianmanhunter',
             'sig': 'lMli+xUvFgFAQBdXL/D+jHUUe/xLnfemN/YteT00TZt4zZ3C9MvXJ5RZ59r/O+6Rabh7/BKqjFkmjsaj01ogJqdUrVUAvV1EEZaFlWE6kmDgfMx0uE5ypuOZiCe8DW9lKB0aDFZyYKvKQ0qfNcyJv8dxUYhRNQJHLV+f6RBdevAtHJsW7rGwgkoux7alsLTNBErjRD89wMG91uB5GF4QemzeMBuwC3D58jVSebcEfFMhfefKFT+FgQJSVFHk6yHvnh5LYlsBOojNoFKtQfE1TPsgMcM/tm/qxarACxyWPVhbEplwXl3hRwNx278hFlCTZDDiG9bJ4odsVLTssIRF50I+a8lAxiin93hhLSXZh0MbIoGo2RKnPlmEVzKQbMri+1lUE2vaMLa4/9PATxmM7zquMWib5ND1d1/11pLQobgtwYtrtrc52dgyIX+0OYxg4z19vO/MTiPNt+l6N2QRaXjtxOdl/zJNHaTEljQ8qky/BxnKQZzrpaJ/6vLj7DEA364iONv5APtRWEfO61cfh/UpVNy/C2GepD1VuVAe0FN60NDAiif/fbrSCAqmWLCx7rXC3xI4AFWIJ4gckcOLYU7xJt8hLSLDOIbMRRhqTXlzg6vv6tSAwEL2kqVCyYi2F51m9gAlHGCPfjbL5XJ4b//sBoLKrRP/67xmwRDxyfA=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODIyMDA2OTAxMDgsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg0ZWI2MDVlOGJiYWM5MzdjNjMyYWE3NzcxMmMwMzM5NzlkNmJhM2FmZTI0MzFkMTdlZjZiNjcxMWU0OWFkIn19fQ==',
