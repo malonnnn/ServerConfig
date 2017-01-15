@@ -18,9 +18,7 @@
                 "Shoots rockets with bare hands"
             ),
             'buffs': array(
-                "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 21 9999 9 true",
-                "/effect ". @plr ." 10 9999 1 true"              
+                "/effect ". @plr ." 21 9999 4 true"
             )
 )
