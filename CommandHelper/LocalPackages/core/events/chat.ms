@@ -183,11 +183,6 @@ bind('player_chat', null, null, @e) {
         cancel()
     }
 
-    if(@pname == "Boss909077"){
-        @msg = "I suck baby dicks"
-        modify_event(message, @msg)
-    }
-
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
     # -------------------------------
@@ -205,6 +200,9 @@ bind('player_chat', null, null, @e) {
     @plrz = all_players()
     @size = array_size(@plrz)
     @cooldown = @size / 2
+    if(@pgroup[0] == "quarantine"){
+        @cooldown = 30
+    }
     if(is_null(get_value(@pname.'lastmessage')))
     {
         store_value(@pname.'lastmessage',0)
