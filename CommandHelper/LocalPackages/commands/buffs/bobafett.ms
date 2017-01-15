@@ -13,8 +13,6 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/jump 0-3",
-                "/run 0-3",
                 "/haste 0-2",
                 "/fly",
                 "Shoots rockets with bare hands"
