@@ -20,7 +20,7 @@
                 "/effect ". @plr ." 5 9999 4 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
-                "/shot give ". @plr ." watershot,
+                "/shot give ". @plr ." watershot ",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&9&1q&4ual&1a§9d's_&bWater_Bound_Sword",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&9&1q&4ual&1a§9d's_&bWater_Bound_Sword"
             )
