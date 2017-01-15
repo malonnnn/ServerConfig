@@ -13,7 +13,6 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/haste 0-2",
                 "/fly",
                 "Shoots rockets with bare hands"
             ),
