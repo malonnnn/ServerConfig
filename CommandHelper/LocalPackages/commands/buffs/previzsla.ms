@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODQ1MDYxNzU0ODcsInByb2ZpbGVJZCI6IjBlNDJlNDc0MTM0ODRmYTg5N2M2Y2IzOWE5YzA5ODhmIiwicHJvZmlsZU5hbWUiOiJjYXJkaGFkeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWU5MDVjMmEyZjE0ODQ1MWRhZjEzNDM2NzQ0YTI4MWIxNTllZTgzNTRjOTcyNzJkMjhiYzhmMWQ1ZThhN2YyZCJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': " Mandalore will be mine!"
+            'speech': " Mandalore will be mine!",
             'powers': array(
                 "/buff",
                  "/carryplayer",
