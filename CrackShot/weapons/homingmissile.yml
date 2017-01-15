@@ -1,0 +1,30 @@
+homingmissile:
+    Item_Information:
+        Item_Name: "&6Homing Missile"
+        Item_Type: 417
+        Inventory_Control: homingmissile
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Recoil_Amount: 2
+        Projectile_Amount: 1
+        Projectile_Type: fireball
+        Projectile_Speed: 10
+        Delay_Between_Shots: 40
+        Projectile_Damage: 15
+    Reload:
+        Enable: false
+    Particles:
+        Enable: true
+        Particle_Player_Shoot: BLOCK_BREAK-35
+    Shrapnel:
+        Enable: true
+        Block_Type: 77
+        Amount: 14
+        Speed: 7
+    Explosions:
+        Enable: true
+        Knockback: 5
+        Damage_Multiplier: 100
+        Explosion_No_Grief: true
+        Explosion_Radius: 6
