@@ -18,6 +18,9 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 21 9999 4 true"
+                "/effect ". @plr ." 21 9999 4 true",
+                "/shot give ". @plr ." homingmissile",
+                "/shot give ". @plr ." blasterrifle",
+                "/shot give ". @plr ." flamethrower"
             )
 )
