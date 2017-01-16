@@ -19,6 +19,10 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
+                "/shot give ". @plr ." icemagic",
+                "/shot give ". @plr ." firemagic",
+                "/shot give ". @plr ." lightningmagic",
+                "/shot give ". @plr ." posionmagic",
                 "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true"                
             )
