@@ -13,12 +13,11 @@
                 "/buff",
                 "/kill",
                 "/fly",
-                "/tp"   
+                "/tppos"   
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 11 9999 3 true",
                 "/shot give ". @plr ." energybeam" 
             )
         ) 
