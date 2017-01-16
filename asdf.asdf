@@ -1,0 +1,11 @@
+clone:/clone = >>>
+
+    @player = player()
+    @ploc = ploc()
+    @class = pgroup()[0]
+    runas(~console,"/summon wolf ".@ploc['x']." ".@ploc['y']." ".@ploc['z']." {Owner:".."}")
+    sudo("/disguiseradius"
+
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    _changeSkin(@playr,@hero['sig'],@hero['val'])
+<<<
