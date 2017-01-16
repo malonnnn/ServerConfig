@@ -12,12 +12,8 @@
             'powers': array(
                 "/buff",
                 "/kill",
-                "/skull <player>"
-                "/hover on",
-                "/hover off",
-                "/tp",   
-                "/gmc",
-                "/gms"
+                "/fly",
+                "/tp"   
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
