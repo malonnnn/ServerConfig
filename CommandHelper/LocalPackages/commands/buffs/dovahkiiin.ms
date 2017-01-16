@@ -13,9 +13,10 @@
             'speech': "I am the Dragonborn!",
             'powers': array(
                 "/buff",
-                "/run 0-1",
-                "/jump 0-1",
-                "/haste 0-1"
+                "/run 0-2",
+                "/jump 0-2",
+                "/fusrodah",
+                "/haste 0-2"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
