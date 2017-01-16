@@ -201,7 +201,7 @@ bind('player_chat', null, null, @e) {
     @size = array_size(@plrz)
     @cooldown = @size / 2
     if(@pgroup[0] == "quarantine"){
-        @cooldown = 30
+        @cooldown = 60
     }
     if(is_null(get_value(@pname.'lastmessage')))
     {
