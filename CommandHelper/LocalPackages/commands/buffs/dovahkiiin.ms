@@ -16,6 +16,7 @@
                 "/run 0-1",
                 "/jump 0-1",
                 "/haste 0-1"
+                "/unrelentingforce"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
