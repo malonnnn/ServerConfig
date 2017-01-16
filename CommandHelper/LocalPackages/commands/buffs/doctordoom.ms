@@ -12,7 +12,6 @@
             'powers': array(
                 "/buff",
                 "/kill",
-                "/fly",
                 "/skull <player>"
                 "/hover on",
                 "/hover off",
