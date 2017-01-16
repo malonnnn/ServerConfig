@@ -15,14 +15,14 @@
                 "/skull <player>"
                 "/hover on",
                 "/hover off",
-                "/empower",   
+                "/tp",   
                 "/gmc",
                 "/gms"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 15 true",
+                "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 11 9999 4 true"
+                "/effect ". @plr ." 11 9999 4 true",
                 "/shot give ". @plr ." energybeam" 
             )
         ) 
