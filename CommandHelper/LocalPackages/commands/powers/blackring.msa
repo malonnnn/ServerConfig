@@ -1,0 +1,31 @@
+blackring:/blackring $vic = >>>
+
+    @vic = $vic
+
+    if(ponline(@vic)){
+        @class = pgroup(@vic)[0]
+        @vicWorld = pworld(@vic)
+        
+        if(
+            @vicWorld == "survival" ||
+            @vicWorld == "survival_nether" ||
+            @vicWorld == "survival_the_end" ||
+            @vicWorld == "greenfield" ||
+            @vicWorld == "destructiblecity" ||
+            @vicWorld == "titanstower" ||
+            @vicWorld == "gotham" ||
+            @vicWorld == "metropolis"
+        ){}else{
+            die()
+        }
+
+        include('includes/transform.ms')
+
+        if(@class == "superman"){
+            _transform(@vic,"blacklanternsuperman")
+        }else if(@class == "martianmanhunter"){
+            _transform(@vic,"blacklanternmartianmanhunter")
+        }
+    }
+
+<<<

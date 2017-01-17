@@ -1,0 +1,22 @@
+startvampirez:/startvampirez = >>>
+
+    @player = player()
+    
+    if(is_null(get_value(@player."startedVampirez"))){
+        store_value(@player."startedVampirez", 0)
+    }
+    
+    assign(@cooldown, 600000)
+    
+    assign(@lastConfuse, get_value(@player."startedVampirez"))
+    if(@lastConfuse + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can confuse anyone again!")
+    )
+    store_value(@player."startedVampirez", time() / 1000)
+    
+    broadcast("§cVampirez §6has started!")
+    set_timeout(600000,closure(
+        broadcast("§cVampirez §6has ended!")
+    ))
+
+<<<
