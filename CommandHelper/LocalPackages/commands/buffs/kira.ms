@@ -12,17 +12,8 @@
             'op': 'false',
             'speech': "I was once being bullied... but with my Deathnote it will never happen again",
             'powers': array(
-                "/buff",
-                "/jump 0-2",
-                "/run 0-4",
-                "/haste 0-2",
                 "/deathnote <player> <deathmessage>",
                 "(example: /deathnote Bob123 having a heart attack)"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 1 true",
-                "/effect ". @plr ." 21 9999 10 true"                
-            )
+            'buffs': array()
         )
