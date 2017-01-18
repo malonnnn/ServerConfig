@@ -11,19 +11,9 @@
             'speech': "Feel my sting!",
             'powers': array(
                 "/buff",
-                "/jump 0-7",
-                "/run 0-4",
-                "/haste 0-2",
-                "/carryplayer",
-                "/dismountplayer",
-                "/normalsize",
-                "/grow",
                 "/fly",
-                "/flyspeed 0-8"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 10 true",
-                "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/disguiseplayer ". @plr ." villager baby"                
             )
