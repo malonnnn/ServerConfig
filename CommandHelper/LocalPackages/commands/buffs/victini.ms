@@ -19,7 +19,7 @@
                 "/stopmindcontrol",
                 "/tp",
                 "/speak <playername>",
-                "/jump 0-",
+                "/jump 0-7",
                 "/run 0-5",
                 "/confuse <player>",
                 "/haste 0-4"
