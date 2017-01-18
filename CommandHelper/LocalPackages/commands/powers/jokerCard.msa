@@ -20,7 +20,7 @@ jokercard:/jokercard = >>>
 #@var = 0
 #export('var',@var)
 
-bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_array('to': 339), 
+bind(entity_change_block, associative_array('id': 'jokercard'.@id), associative_array('to': 339), 
         @event, @id, @damage, @player = player()) {
             
             @loc = entity_loc(@id);
@@ -49,7 +49,7 @@ set_interval(50, closure(){
         // entity no longer exists, clear the interval
         clear_task();
         // unbind the landing event
-        unbind('magneto'.@id);
+        unbind('jokercard'.@id);
     }});
 
 <<<

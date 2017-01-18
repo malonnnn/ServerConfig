@@ -178,10 +178,10 @@ bind('player_chat', null, null, @e) {
 
     #modify_event(message, @msg)
     
-    @temp = reg_match('[^ -~]',@msg)
-    if(array_size(@temp) > 0){
-        cancel()
-    }
+    #@temp = reg_match('[^ -~]',@msg)
+    #if(array_size(@temp) > 0){
+    #    cancel()
+    #}
 
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
