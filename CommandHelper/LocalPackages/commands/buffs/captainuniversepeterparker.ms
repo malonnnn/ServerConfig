@@ -12,4 +12,5 @@
             'speech': "With this amount of power comes greater responsibility.",
             'powers': array(),
             'buffs': array()
+            "/shot give". @plr." webshot
         )
