@@ -9,6 +9,15 @@
             'trail': '',
             'op': 'false',
             'speech': '',
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/run 0-6",
+                "/jump 0-4",
+                "/haste 0-5"
+            ),
+            'buffs': array(
+                "/effect ".@plr." 5 9999 10 true"
+                "/effect ".@plr." 11 9999 3 true",
+                "/effect ".@plr." 21 9999 14 true"
+            )
         )

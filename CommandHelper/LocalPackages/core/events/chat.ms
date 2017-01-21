@@ -186,7 +186,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
     # -------------------------------
-    if(has_permission("rank.mod"))
+    if(has_permission("rank.mod") && has_permission("is.virus") ==  false)
     {
         die()
     }
@@ -197,11 +197,12 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # chat timeout settings
     # -------------------------------
-    @plrz = all_players()
-    @size = array_size(@plrz)
-    @cooldown = @size / 2
-    if(@pgroup[0] == "quarantine"){
+    if(has_permission("is.virus")){
         @cooldown = 60
+    }else{
+        @plrz = all_players()
+        @size = array_size(@plrz)
+        @cooldown = @size / 2
     }
     if(is_null(get_value(@pname.'lastmessage')))
     {
