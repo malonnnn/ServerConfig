@@ -27,7 +27,8 @@
                 "/vibrate",
                 "/stopvibrating",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "You are protected by Nekron so mobs will fear you and wont attack you"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
