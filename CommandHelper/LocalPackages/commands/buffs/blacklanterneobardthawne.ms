@@ -28,7 +28,7 @@
                 "/stopvibrating",
                 "/flyspeed <number>",
                 "/fly",
-                "You are portected by Nekron so mobs will fear you and wont attack you"
+                "You are protected by Nekron so mobs will fear you and wont attack you"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
