@@ -28,6 +28,6 @@
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." kamehameha",
-                "/shot give ". @plr ." kiblast
+                "/shot give ". @plr ." kiblast"
             )
         )

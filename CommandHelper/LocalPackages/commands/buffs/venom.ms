@@ -25,6 +25,6 @@
                 "/effect ". @plr ." 10 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/give ". @plr ." minecraft:web 64",
-                "/shot give". @plr." webshot
+                "/shot give". @plr." webshot"
             )
         )
