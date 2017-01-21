@@ -11,24 +11,16 @@
             'speech': "I wanna be the strongest in the UNIVERSE!!",
             'powers': array(
                 "/buff",
-                "/jump 0-9",
-                "/run 0-7",
-                "/haste 0-9",
-                "/flyspeed <number>",
+                "/jump 0-4",
+                "/run 0-6",
+                "/haste 0-4",
                 "/fly",
-                "/tp",
                 "/carryplayer <player>",
                 "/dismountplayer"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 18 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
-                "/shot give ". @plr ." kamehameha",
-                "/shot give ". @plr ." kiblast
+                "/effect ". @plr ." 5 9999 6 true",
+                "/effect ". @plr ." 11 9999 1 true",
+                "/effect ". @plr ." 21 9999 4 true"
             )
         )
