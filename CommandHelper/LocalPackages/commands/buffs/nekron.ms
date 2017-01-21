@@ -16,7 +16,8 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/kill <playername>",
-                "/empower (You empower a player with your Nekrotic energy"
+                "/empower (You empower a player with your Nekrotic energy",
+                "Skeletons will fear you and they wont attack you"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
