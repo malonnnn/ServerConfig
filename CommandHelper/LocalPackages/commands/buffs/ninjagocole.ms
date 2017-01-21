@@ -18,6 +18,7 @@
                 "/spinjutsu (gives strength 5 for 10 seconds)"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:stone_sword 1 16:10 name:&0The_Sword_Of_Earth"                
+                "/give ". @plr ." minecraft:stone_sword 1 16:10 name:&0The_Sword_Of_Earth",
+                "/give ". @plr ." minecraft:golden_hoe 1 16:10 name:&eEarth_scyte
             )
         )
