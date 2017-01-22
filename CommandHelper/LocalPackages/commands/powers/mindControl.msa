@@ -20,6 +20,11 @@ mindcontrol:/mindcontrol $plr = >>>
         broadcast(color(red) . "Sorry, but " . color(blue) . @vic . color(red) . " is not found.")
         die()
     }
+
+    if(has_permission(@vic,"is.virus")){
+        tmsg(@player,color(red)."Sorry, that player is a virus, you can't mind control a virus")
+        die()
+    }
     
     runas(~console,"/icu control @player @vic")
     broadcast("@player is now mindcontrolling @vic")
