@@ -26,6 +26,6 @@
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
-                "/shot give ". @plr ." energybeam",
+                "/shot give ". @plr ." energybeam"
             )
         )
