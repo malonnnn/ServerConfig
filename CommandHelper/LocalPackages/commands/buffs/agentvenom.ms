@@ -17,8 +17,7 @@
                 "/dismountplayer",
                 "/haste 0-4",
                 "/web",
-                "/websling",
-                "Shoots rockets with bare hands"
+                "/websling"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
