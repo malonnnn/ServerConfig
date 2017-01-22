@@ -4693,6 +4693,7 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - -essentials.warps.lab
     - ch.alias.mortal
     - editablesign.edit
     - essentials.getpos
@@ -5069,6 +5070,10 @@ groups:
       deathrun:
         permissions:
         - -essentials.warps.deathrun
+      garbageworld:
+        permissions:
+        - essentials.sethome.multiple
+        - essentials.sethome
   mrmxyzptlk:
     inheritance:
     - mortal
@@ -7693,12 +7698,30 @@ groups:
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.jump6
+        - ch.alias.jump7
+        - ch.alias.jump8
         - ch.alias.run0
         - ch.alias.run1
         - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - ch.alias.run5
+        - ch.alias.run6
+        - ch.alias.run7
         - ch.alias.haste0
         - ch.alias.haste1
         - ch.alias.haste2
+        - ch.alias.haste3
+        - ch.alias.haste4
+        - ch.alias.haste5
+        - ch.alias.haste6
+        - ch.alias.haste7
+        - ch.alias.haste8
+        - ch.alias.haste9
   yellowlanternsinestro:
     inheritance:
     - mortal
@@ -8198,7 +8221,10 @@ users:
     worlds:
       garbageworld:
         permissions:
+        - worldedit.*
         - essentials.build.*
+    permissions:
+    - rank.mod
   1eb16884-6f98-4d40-8ba9-18fd7927d3aa:
     options:
       name: AdamBrinee
@@ -8419,7 +8445,7 @@ users:
     options:
       name: Hoomun
     group:
-    - redhulk
+    - goku
     worlds:
       newcity:
         permissions:
@@ -8525,7 +8551,7 @@ users:
       name: lion002
   4087bc7f-c213-47df-bf2d-41650030be45:
     group:
-    - quarantine
+    - mrmxyzptlk
     options:
       name: UltraOwlDC
     worlds:
@@ -9083,7 +9109,7 @@ users:
       name: TheDoctor1213
   7b02decc-d614-4041-9c25-1d3d96440d72:
     group:
-    - martianmanhunter
+    - mortal
     options:
       name: Squishy225
   7b2b235a-b2e2-4e64-8fbf-a40003c6d194:
@@ -9138,8 +9164,6 @@ users:
     - mortal
     options:
       name: _TreyCode_
-    permissions:
-    - rank.mod
     worlds:
       survival:
         permissions: []
@@ -10665,7 +10689,7 @@ users:
       name: ssgssgoku12345
   e67f0790-9bf4-4ba9-8faf-c4185dc5d8bd:
     group:
-    - doctorstrange
+    - spidermanpeterparker
     options:
       name: Godzilla99
   3041cf7d-c04d-45d7-9ef1-1cc75130c2ff:
@@ -10942,7 +10966,7 @@ users:
       name: _Sethplays_
   7673749d-9598-4466-a255-444221041552:
     group:
-    - flashbarryallen
+    - kidflashwallywest
     options:
       name: ZakIsABoss08
     permissions: []
@@ -10957,7 +10981,7 @@ users:
       name: justwar12
   12a46460-1e40-43fa-9d2d-4919ca16725a:
     group:
-    - superman
+    - flashbarryallen
     options:
       name: MasterMike06101
   92293ec4-905f-4881-b896-23b54e8dff29:
@@ -11110,17 +11134,19 @@ users:
       name: lbh04
   cb871f86-94e5-4bf3-a78e-42f73c2215c4:
     group:
-    - rank.mod
+    - yellowlanternbatman
     options:
       name: xH4CKER
+    permissions:
+    - essentials.warps.lab
   38d8d82a-51db-49bb-90ad-fcf263e5d68d:
     group:
-    - impulsebartallen
+    - bluelanternbarryallen
     options:
       name: Basivic
   efe916ff-cae5-40b1-8878-3e55d776c2dc:
     group:
-    - bluelanternbarryallen
+    - gorillagrodd
     options:
       name: ShamBullGaming
     worlds:
@@ -11180,17 +11206,17 @@ users:
       name: Darwin1146
   822b9d9a-e6b1-42f5-8a99-9b52ac78e1b7:
     group:
-    - mewtwo
+    - goldenfrieza
     options:
       name: StellarParadox
   eb4c14a5-41f6-4246-ae72-2f2c372dbd9b:
     group:
-    - mewtwo
+    - batgirl
     options:
       name: ImLila
   22d125d1-76f0-4078-8b8d-8313d3851f5c:
     group:
-    - spidermanpeterparker
+    - batmanbatsuit
     options:
       name: superhard0902
   858bcdaf-9aed-4ea8-bbf8-e6ed85ecc5cc:
@@ -11212,7 +11238,7 @@ users:
       name: Palutena__
   7627595a-6d97-4369-85ec-5b07ff2cec4d:
     group:
-    - martianmanhunter
+    - ironmanmkxv
     options:
       name: _M4DM4N_
   b8a40884-e8ac-4f98-9327-3c913fe417a1:
@@ -11223,6 +11249,16 @@ users:
   animegirl:
     group:
     - mortal
+  8459b664-90f6-4cf6-82e7-9cc8f5f1ddea:
+    group:
+    - blackadam
+    options:
+      name: AdamGaming_
+  7437726e-d7c6-4861-9e9c-4127da9f5ac8:
+    group:
+    - zoom
+    options:
+      name: NathanGaming_
 worlds:
   checkers:
     inheritance:
