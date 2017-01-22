@@ -13,19 +13,13 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-5",
-                "/jump 0-3",
-                "/haste 0-4"
+                "/run 0-2",
+                "/jump 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 16 9999 4 true",
+                "/effect ". @plr ." 11 9999 5 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/shot give ". @plr ." C4",
-                "/shot give ". @plr ." blasterrifle",
-                "/shot give ". @plr ." pistol"
-                "/shot give ". @plr ." pistol"
-                "/shot give ". @plr ." Putty",
-                "/shot give ". @plr ." Grenade"
+                "/shot give ". @plr ." blasterrifle"
             )
 )
