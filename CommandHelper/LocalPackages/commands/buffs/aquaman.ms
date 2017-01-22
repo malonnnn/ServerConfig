@@ -21,7 +21,7 @@
                 "/effect ". @plr ." 5 9999 6 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
-                "/give ". @plr ." minecraft:fishing_rod 1 61:32767 62:8 name:&eA&6qua&2man's_Perfect_Fishing_Rod",
+                "/give ". @plr ." minecraft:fishing_rod 1 61:32767 62:5 name:&eA&6qua&2man's_Perfect_Fishing_Rod",
                 "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&eA&6qua&2man's_Public_&9Water_Helmet"                
             )
         )
