@@ -23,8 +23,7 @@
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
-                "/confuse <player>",
-                "/tp <player>"
+                "/confuse <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 24 true",
