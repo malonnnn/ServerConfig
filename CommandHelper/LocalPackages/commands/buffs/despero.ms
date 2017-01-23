@@ -23,7 +23,6 @@
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
-                "/disguiseviewself",
                 "/confuse <player>",
                 "/tp <player>"
             ),
