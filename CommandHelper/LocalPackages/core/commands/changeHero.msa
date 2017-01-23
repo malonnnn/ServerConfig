@@ -41,7 +41,7 @@ changehero:/changehero = >>>
         
         ))
 
-        @plrs = players_in_radius(@locOfRedBlock,1)
+        @plrs = players_in_radius(@locOfRedBlock,1.50)
         @count = array_size(@plrs)
         
         # Make sure only 1 player is in the machine.
@@ -68,6 +68,9 @@ changehero:/changehero = >>>
         
         # Get player name who is in the machine
         @plrr = @plrs[0]
+        
+        # teleport them to center of block
+        runas(~console,"/tp ".@plrr." ".@plrr)
         
         # Check player inventory for DNA
         @inv = pinv(@plrr)
