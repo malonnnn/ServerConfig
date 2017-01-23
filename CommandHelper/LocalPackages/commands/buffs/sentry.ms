@@ -27,7 +27,7 @@
                 "/lightning",
                 "/weather",
                 "/heal <playername>",
-                "kill",
+                "/kill",
                 "/gmc",
                 "/gms",
                 "/tp",
