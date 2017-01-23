@@ -39,6 +39,7 @@
                 "/effect ". @plr ." 10 9999 255 true",
                 "/effect ". @plr ." 11 9999 255 true",
                 "/effect ". @plr ." 12 9999 255 true",
+                "/effect ". @plr ." 13 9999 255 true",
                 "/effect ". @plr ." 16 9999 255 true",
                 "/shot give ". @plr ." kryptonianlaservision"
             )
