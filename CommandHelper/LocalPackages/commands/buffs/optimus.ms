@@ -1,4 +1,5 @@
- mi5plr = player()
+
+mi5plr = player()
 
 
 @hero = associative_array(
@@ -16,6 +17,7 @@
                 "/haste 0-2",
                 "/carryplayer <player>",
                 "/disguise minecart (turn into a truck)",
+                "/undisguise (turn back into optimus prime)",
                 "/dismountplayer"
             ),
             'buffs': array(
