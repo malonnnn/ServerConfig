@@ -11,9 +11,9 @@
             'speech': "that was... odd.",
             'powers': array(
                 "/buff",
-                "/jump 0-9",
-                "/run 0-8",
-                "/haste 0-7",
+                "/jump 0-4",
+                "/run 0-6",
+                "/haste 0-5",
                 "/fly",
                 "/flyspeed <number>",
                 "/thru (intangible)",
@@ -34,7 +34,6 @@
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
                 "/shot give ". @plr ." solarenergybeam"                
             )
         )
