@@ -11,17 +11,22 @@ skin:/skin $num = >>>
         die()
     }
     
-    @skinNum = @skinNum - 1
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
     
+    if(@skinNum == "1"){
+        @sig = @hero['sig']
+        @val = @hero['val']
+        _changeSkin(@player,@sig,@val)
+        die()
+    }
+    @skinNum = @skinNum - 2
     try(
         @altSig = @hero['altskins'][@skinNum]['sig']
         @altVal = @hero['altskins'][@skinNum]['val']
     ,
-        @skinNum = @skinNum + 1
-        tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
+        @skinNum = @skinNum + 2
+        broadcast("Sorry, this hero doesn't have a skin number ". @skinNum)
         die()
     )
-    
-    _changeSkin(@plr,@altSig,@altVal)
+    _changeSkin(@player,@altSig,@altVal)
 <<<
