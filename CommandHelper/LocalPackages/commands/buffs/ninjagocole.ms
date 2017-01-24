@@ -15,9 +15,11 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-5",
+                "/earth",
                 "/spinjutsu (gives strength 5 for 10 seconds)"
             ),
             'buffs': array(
+                "/effect ".@plr." 5 9999 5 true",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:10 name:&6Earth_Scythe"
             )
         )
