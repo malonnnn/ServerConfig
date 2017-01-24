@@ -28,8 +28,6 @@
                 "/weather",
                 "/heal <playername>",
                 "/kill",
-                "/gmc",
-                "/gms",
                 "/tp",
                 "/fly",
                 "/skull <player>"
