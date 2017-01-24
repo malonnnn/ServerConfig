@@ -18,7 +18,6 @@
                 "/fly",
                 "/gmc",
                 "/gms",
-                "/empower",
                 "/back",
                 "/tppos <x> <y> <z>",
                 "/tp",
