@@ -27,7 +27,6 @@
                 "/touchkill",
                 "/invis", 
                 "/vis",
-                "/mortal <playername>",
                 "Access to all warps"
            ),
             'buffs': array(
