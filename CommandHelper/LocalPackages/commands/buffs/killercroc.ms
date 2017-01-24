@@ -16,14 +16,13 @@
                 "/carryplayer <playername>",
                 "/dismountplayer",
                 "/jump 0-3",
-                "/run 0-6"
+                "/run 0-6",
+                "/haste 0-5"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 12 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/effect ".@plr  ." 13 9999 1 true",
-                "/effect ".@plr  ." 4 9999 1 true"
+                "/effect ".@plr  ." 13 9999 1 true"
             )
 )
