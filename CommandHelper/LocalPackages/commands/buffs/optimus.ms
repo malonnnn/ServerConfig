@@ -12,19 +12,17 @@ mi5plr = player()
             'speech': "I will defeat Megatron and the Decepticons.",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
-                "/run 0-5",
-                "/haste 0-2",
+                "/jump 0-4",
+                "/run 0-6",
+                "/haste 0-5",
                 "/carryplayer <player>",
-                "/disguise minecart (turn into a truck)",
-                "/undisguise (turn back into optimus prime)",
-                "/dismountplayer"
+                "/dismountplayer",
+                "/transform",
+                "/untransform"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 19 true",
+                "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 21 9999 14 true"            
+                "/effect ". @plr ." 21 9999 14 true"
             )
         )
-Contact GitHub API Training Shop Blog About 
-© 2017 GitHub, Inc. Terms Privacy Security Status Help 
