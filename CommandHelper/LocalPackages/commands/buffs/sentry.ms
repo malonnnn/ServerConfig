@@ -17,28 +17,13 @@
                 "/run 0-9",
                 "/haste 0-9",
                 "/flyspeed <number>",
-                "/disguise",
-                "/speak <player> <message>",
-                "/mindcontrol <playername>",
-                "/stopmindcontrol",
-                "/invis",
-                "/vis",
-                "/disguiseviewself",
-                "/lightning",
-                "/weather",
-                "/heal <playername>",
-                "/kill",
                 "/tp",
-                "/fly",
-                "/skull <player>"
+                "/fly"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 255 true",
-                "/effect ". @plr ." 10 9999 255 true",
-                "/effect ". @plr ." 11 9999 255 true",
-                "/effect ". @plr ." 12 9999 255 true",
-                "/effect ". @plr ." 13 9999 255 true",
-                "/effect ". @plr ." 16 9999 255 true",
-                "/shot give ". @plr ." kryptonianlaservision"
+                "/effect ". @plr ." 5 9999 40 true",
+                "/effect ". @plr ." 10 9999 10 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 13 9999 1 true"
             )
         ) 
