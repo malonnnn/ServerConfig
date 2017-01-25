@@ -13,7 +13,8 @@ vibrate:/vibrate = >>>
         
     ))
     set_timeout(10000,closure(
-       clear_task(@eventID)
+        clear_task(@eventID)
+        runas(~console,"/effect " . @player . " 11 0")
     ))
 
     export(@player."isVibrating",@eventID)
