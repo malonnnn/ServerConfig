@@ -1,6 +1,4 @@
 
-mi5plr = player()
-
 @hero = associative_array(
             'name': '§1O§8pti§1mus §1Pr§8ime,
             'class': 'optimusprime',
