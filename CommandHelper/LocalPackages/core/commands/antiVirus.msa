@@ -1,11 +1,11 @@
-rcav:/rcav = >>>
+av:/av = >>>
 
     @player = player()
-    runas(~console,"/pex user ".@player." group set rcav")
+    runas(~console,"/pex user ".@player." group set av")
     if(has_permission(@player,"is.antivirus")){
         sudo("/runalias /mortal")
         set_timeout(3000,closure(
-            runas(~console,"/pex user " . @player . " group set rcav")
+            runas(~console,"/pex user " . @player . " group set av")
             tmsg(@player,color(red)."You are now an active AV unit")
         ))
     }else{
