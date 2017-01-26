@@ -4,10 +4,10 @@
 @hero = associative_array(
             'name': '§eGolden §6Ninja',
             'class': 'goldenninja',
-            'sig': 'LOH9Tf47nOMQFh4m1stwV9EbafKboZBVyuU68sN3VmFycHzhhufCcrocYWCw0GMraQB+DhJzcKrmcgcjnANM4YcIXcoSm69B6/hk5ByO5h8Rp96N9OaMOmjpIlfN8k/u9DQVQDdjHbxO9+yI3xXAfPm+ccajk+fVWXiWvYHrj0tSi8JnqiceLZkLGXYL2sLQwvpSavsE2we8Rz76qOl9CSkalqbQUBrUdEuId+Ct3dgtqNZ2g2OgncP554XzB74OH2BFTtMx80qCSutmmh6LUio8kvlQkJ5GlznUVWxW/FDdM2LoZGxJfyPZ1ZxRpsaH0EDg/+WKxo6lQpKGAfLFtb+o2aIfNTZNZ685UKFFxDGAeDL5hvw1D7f0o3HcqmvrzxgiBn/2GJWE3NuEhc0PgDWftH7aMAK6/PHpXOn8qd4v9WtiWMU3FP9rp63FMQThxyxrA4291SAbKhLJtpD0J/LdgfCB9/zWI3N1gscSKNM6v31DrbJuXkhXHS5iSlrgSZ3Gdp1bCTij/HpXDdLEH3gewTFLOFMEskIUBrzp0nc5523v4xkkVI+J230/eXYuuzWVvKwU/Uu+mkMMeL+iiQcXBv6bIF2rkQRvqBdmha8mQysnAaiSSRBEgVYK4IsZvpU+sQyRWEtcQDAd4y+Aodolc8Pc4Txw15mkJpyWO/0=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0ODQzMzkyNzQyMzIsInByb2ZpbGVJZCI6IjBlNDJlNDc0MTM0ODRmYTg5N2M2Y2IzOWE5YzA5ODhmIiwicHJvZmlsZU5hbWUiOiJjYXJkaGFkeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjQxM2IwZDA4YzJiZTJmMTUxYjFhMzM2N2E4N2I4ZmY0YWU1MjIxMmIwYzU5MDNjMmE1YWFjMjVkN2FiNTVmIn19fQ==',
+            'sig': 'Ass9GteaEPvmvxkxkrBH94KAW85JgdXXVSj3kvZQNMIkAxMthAagP4YYlQ3higBPKvdxVALxZAZo+eeIij2vVn3SGFdOna4Dieu7Ejl8Bphjke2FMK0a1xxNZJHCrfTYmSlAQysltSNgzCfn5RBhITeecLe+Uq9Bsnnr/SjCOm6NluzsYLBwG8VAq2uta058JXH93VqRZjJrbYdYU8PTwypAidutEaqElD8NkNCQ03xDfiXjmHZCipkO9l9wmeHqUI+LRFOihwTo7NaYUCVIw3Y3Yf3d9+Dwi0wlwzFqMlox9SGfAj9m9gcMax9h34PW4ZlBAUgRAkBCt8Bxkg7gSJ+n2z7xOzifB5rhXcbNvlX//Sz/kV9HAMSbl8kwNBASWwwvh2S7JXeO5W4HaeaUF8r34A6U9gbAhEGKVMBOrj1FahX9TkICaJ5uKiJ/z3GRqXXffGf2E23y9TXoFGSR1Y+lnGDzsoPJ23VGj2/o2ZM/B/+hqrDveQmdMMkp66q5xakKJ88gz3ThJE/geCF3oTcGLYb7IV7876cLkeSaREY72fuWdQXctPpSYqQ5EwTYqSViwCJpXUkR0Rmz2fRsNg689Ae7hVxCq1356LxlWKLZ7senO4rtiVYGlShPWSrYZQzWlhzd8j+7FjhuBsePp9a9qyZNXQBjKab+aeq2UlQ=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0ODU0NDk4MDg1ODMsInByb2ZpbGVJZCI6IjI4YmM1NTllZjZiYzQxZDVhOWE4NGIxNzZiMGM2ZDBhIiwicHJvZmlsZU5hbWUiOiJNaXN0b2ZmZWxlczAxIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xODFjZDYxZGQyNWE1NmJiNTQ4ODE2MTI4OTVhMjc4ZGIwNzRkODRiZTczNDU4NTNhZDcxM2M4NzQ1ZDNkZiJ9fX0=',
             'trail': '',
-            'op': 'false',
+            'op': 'true',
             'speech': "I am the fire ninja!",
             'powers': array(
                 "/buff",
