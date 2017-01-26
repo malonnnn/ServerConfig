@@ -22,7 +22,14 @@
                 "/spinjutsu (gives strength 5 for 10 seconds)"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:golden_sword 1 20:2 name:&6Golden_Katana"                
+                "/effect ". @plr ." 5 9999 254 true",
+                "/effect ". @plr ." 10 9999 3 true",
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 12 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 16 9999 1 true",
+"/effect ". @plr ." 21 9999 19 true",
+                "/give ". @plr ." minecraft:golden_sword 1 20:2 name:&6Golden_Katana   
             )
         )
 
