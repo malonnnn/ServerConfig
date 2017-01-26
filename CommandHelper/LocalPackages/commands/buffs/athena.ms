@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3MzE1NzAzNzYsInByb2ZpbGVJZCI6Ijk5ZjQ5YzUyYzYxZTQyYWQ4MTFhMjBmZTU3ZGU5ODRlIiwicHJvZmlsZU5hbWUiOiJBdGhlbmEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hMGIzYTVmYzYwMjZlMGYzZTk5NGFhYzY1NWNmZTk2MWI1ZDk2YWI0ZTg3NDUxZDY4Y2E3MzQ3NTVkMzEzIn19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "Goddess of smarts n stuff.",
+            'speech': "Wisdom is the key to battle",
             'powers': array(
                 "/buff",
                 "/jump 0-3",

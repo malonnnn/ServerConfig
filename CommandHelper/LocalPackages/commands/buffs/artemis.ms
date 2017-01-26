@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NjUzOTcyODAsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yZTIyZmNkZGFjN2M5NjYyOTVhMjhhYzZmMGM4OTJjNmYxNDIyYzFmNmY4NDc2Mjg3N2I3MGZiYjY1In19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "Goddess of hunting and shit.",
+            'speech': "Let the hunt begin!",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
