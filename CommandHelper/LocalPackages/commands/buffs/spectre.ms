@@ -18,8 +18,8 @@
                 "/touchkill",
                 "/gmc",
                 "/gms",
-                "/invis",
-                "/vis"
+                "/vis",
+                "/invis"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 19 true",
