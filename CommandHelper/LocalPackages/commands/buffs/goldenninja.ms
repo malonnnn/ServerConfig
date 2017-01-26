@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODU0NDk4MDg1ODMsInByb2ZpbGVJZCI6IjI4YmM1NTllZjZiYzQxZDVhOWE4NGIxNzZiMGM2ZDBhIiwicHJvZmlsZU5hbWUiOiJNaXN0b2ZmZWxlczAxIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xODFjZDYxZGQyNWE1NmJiNTQ4ODE2MTI4OTVhMjc4ZGIwNzRkODRiZTczNDU4NTNhZDcxM2M4NzQ1ZDNkZiJ9fX0=',
             'trail': '',
             'op': 'true',
-            'speech': "I am the fire ninja!",
+            'speech': "I am the master of spinjitsu!",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
