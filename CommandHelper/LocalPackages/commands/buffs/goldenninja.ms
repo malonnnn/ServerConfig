@@ -20,6 +20,7 @@
                 "/dismountplayer",
                 "/run 0-5",
                 "/spinjutsu (gives strength 5 for 10 seconds)"
+                "/kill"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
