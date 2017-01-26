@@ -16,9 +16,9 @@
                 "/grow", 
                 "/shrink",
                 "/touchkill",
-                "/invis",
                 "/gmc",
                 "/gms",
+                "/invis",
                 "/vis"
            ),
             'buffs': array(
