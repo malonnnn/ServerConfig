@@ -22,7 +22,7 @@
                 "/invis"
            ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 19 true",
+                "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 11 9999 4 true",
                 "/effect ". @plr ." 13 9999 1 true"
             )

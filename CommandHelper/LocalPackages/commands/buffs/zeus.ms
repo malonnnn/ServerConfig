@@ -12,6 +12,7 @@
             'powers': array(
                 "/buff",
                 "/lightning",
+                "/fly",
                 "/run 0-6",
                 "/jump 0-4",
                 "/haste 0-5"

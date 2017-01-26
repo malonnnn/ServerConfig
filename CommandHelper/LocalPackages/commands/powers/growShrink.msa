@@ -3,8 +3,14 @@ grow:/grow = >>>
     sudo(/disguise giant)
 <<<
 shrink:/shrink = >>>
-   include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-   include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroInfo.ms')
-   @hero = _getHeroInfo('darkseid',0)
-   _changeSkin(player(),@hero['sig'],@hero['val'])
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @player = player()
+    @class = pgroup()[0]
+
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    
+    @sig = @hero['sig']
+    @val = @hero['val']
+    _changeSkin(@player,@sig,@val)
 <<<
