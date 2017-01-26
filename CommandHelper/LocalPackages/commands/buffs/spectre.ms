@@ -16,8 +16,10 @@
                 "/grow", 
                 "/shrink",
                 "/touchkill",
-                "/invis", 
-                "/vis"
+                "/gmc",
+                "/gms",
+                "/vis",
+                "/invis"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 19 true",
