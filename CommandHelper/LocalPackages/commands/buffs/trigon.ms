@@ -17,7 +17,6 @@
                 "/run 0-6",
                 "/haste 0-5",
                 "/fly",
-                "/tp <playername>
                 "/mindcontrol",
                 "/stopmindcontrol",
                 "/confuse",
