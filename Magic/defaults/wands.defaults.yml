@@ -383,7 +383,6 @@ base_sword:
     undroppable: true
     indestructible: true
 
-
 base_lightsaber:
     icon_inactive: wood_hoe:14
     icon_inactive_delay: 500
@@ -404,7 +403,7 @@ base_lightsaber:
     effects:
         open:
         -  class: EffectSingle
-           sound: magic.ignite
+           sound: magic.saberon
            sound_volume: 1
            location: origin
            effectlib:
@@ -414,7 +413,7 @@ base_lightsaber:
              particle: flame
         close:
         -  class: EffectSingle
-           sound: magic.zap
+           sound: magic.saberoff
            sound_volume: 1
            location: origin
            effectlib:
@@ -1450,6 +1449,26 @@ lightsaber_blue:
     inherit: base_lightsaber
     path: jedi
     icon: gold_sword:3
+    effect_color: '0000FF'
+    active_spell: push
+    spells:
+        - push
+        - pull
+        
+lightsaber_orange:
+    inherit: base_lightsaber
+    path: jedi
+    icon: gold_sword:4
+    effect_color: '0000FF'
+    active_spell: push
+    spells:
+        - push
+        - pull
+        
+lightsaber_purple:
+    inherit: base_lightsaber
+    path: jedi
+    icon: gold_sword:5
     effect_color: '0000FF'
     active_spell: push
     spells:

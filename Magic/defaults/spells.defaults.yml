@@ -447,7 +447,7 @@ arrow:
         mana: 20
 
 arrow|2:
-    upgrade_required_path: student
+    upgrade_required_path: beginner
     upgrade_required_casts: 30
     parameters:
       damage: 0.80
@@ -10413,7 +10413,7 @@ tornado:
         living_entity_speed: 0.2
         push: -1
         y_offset: 1
-        velocity: 5
+        velocity: 3
         cooldown: 10000
         lifetime: 3000
         interval: 4
@@ -11307,6 +11307,7 @@ workbench:
     icon_url: http://textures.minecraft.net/texture/a5bf87cdeeefecb473472dc7c858ffa2e3ec5bd48c3718df49e2798e4aeff
     category: engineering
     tags: noduel
+    quick_cast: true
     worth: 80
     actions:
         cast:
