@@ -34,8 +34,10 @@ getskullnumber:/getskullnumber $plr = >>>
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
                 if(@hero['op'] == "true"){
                     if(!has_permission(@player,"rank.mod")){
-                        tmsg(@player,"You can only be ".@hero['name']." §fby becoming staff or winning free OP heroes in a server tournament. It takes just 4 people to be in a touranment! Ask the staff about it!")
-                        die()
+                        if(acc_balance(@player) < 200){
+                            tmsg(@player,color(red)."You must have at least $200 to use this hero")
+                            die()
+                        }
                     }
                 }
 

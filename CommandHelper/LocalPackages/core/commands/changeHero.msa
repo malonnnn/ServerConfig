@@ -119,11 +119,16 @@ changehero:/changehero = >>>
         # If player is trying to turn into OP hero and is not a mod, throw error
         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
         if(@hero['op'] == "true"){
-            if(!has_permission(@plrr,"rank.mod")){
-                tmsg(@plrr,"You can only win ".@hero['name']." §fby becoming staff or in a server tournament")
-                die()
+            if(has_permission(@plrr,"rank.mod") == false){
+                if(acc_balance(@plrr) >= 200){
+                    acc_subtract(@plrr,200)
+                    tmsg(@plrr,color(green)."$200 taken for use of OP character")
+                }else{
+                    tmsg(@plrr,color(red)."You need at least $200 to use this character")
+                    die()
+                }
             }
-        }
+         }
         
         # Make sure no other players are currently using the class you want
         # Only one person may be a given hero at a time

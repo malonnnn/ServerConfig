@@ -59,5 +59,9 @@ bind(player_join,null,null,@event){
     set_timeout(5000, closure(
         _changeSkin(@plr,@hero['sig'],@hero['val'])
         _changeTrail(@plr, @hero['trail'])
+#        if(@plr == "GalaxehPanda" || @plr == "Angel__Boy"){
+#            runas(~console,"/runalias /sing asdf ".@plr)
+#        }
     ))
+
 }
