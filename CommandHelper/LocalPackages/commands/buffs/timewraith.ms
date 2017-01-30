@@ -21,7 +21,6 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                "/thru (phases through walls)",
                 "/touchkill",
                 "/fly",
                 "/fly speed <number>",
