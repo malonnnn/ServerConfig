@@ -23,8 +23,7 @@
                 "/run 0-1 (In the speedforce)",
                 "/wither",
                 "/fly",
-                "/fly speed <number>",
-                "/disguiseviewself",
+                "/fly speed <number>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
