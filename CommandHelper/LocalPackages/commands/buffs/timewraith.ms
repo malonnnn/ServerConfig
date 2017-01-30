@@ -28,7 +28,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 11 true",
                 "/effect ". @plr ." 11 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 10 true",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&8Time_&0Wraith_&8scyte",
