@@ -20,12 +20,9 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",
                 "/touchkill",
-                "/vibrate",
-                "/stopvibrating",
                 "/fly",
                 "/fly speed <number>",
                 "/speak <playername>",
@@ -34,7 +31,7 @@
                 "/stopmindcontrol",
                 "/touchkill",
                 "/back",
-                "/confuse <player>",
+                "/confuse <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",

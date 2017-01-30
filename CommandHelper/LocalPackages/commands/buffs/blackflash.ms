@@ -19,12 +19,9 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/speedforcewhirlwind",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",
-                "/touchkill",
-                "/vibrate",
-                "/stopvibrating"
+                "/touchkill"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 255 true",
