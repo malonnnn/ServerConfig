@@ -14,18 +14,14 @@
                 "/buff",
                 "/carryplayer <Player>",
                 "/back (in the speedforce)",
-                "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
                 "/run 0-9",
                 "/haste 0-6",
                 "/jump 0-3",
                 "/thru (phases through walls)",
                 "/tppos <X, Y, Z Coordinates>",
-                "/vibrate",
-                "/stopvibrating",
-                "/tp"
+                "Access to all warps in the speedforce"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
