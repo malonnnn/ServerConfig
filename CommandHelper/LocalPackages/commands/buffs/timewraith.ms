@@ -21,7 +21,7 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                "/touchkill",
+                "/wither",
                 "/fly",
                 "/fly speed <number>",
                 "/disguiseviewself",
