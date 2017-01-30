@@ -25,7 +25,6 @@
                 "/fly",
                 "/fly speed <number>",
                 "/disguiseviewself",
-                "/touchkill",
                 "/back"
             ),
             'buffs': array(
