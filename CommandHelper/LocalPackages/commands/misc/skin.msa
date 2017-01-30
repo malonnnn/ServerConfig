@@ -25,7 +25,7 @@ skin:/skin $num = >>>
         @altVal = @hero['altskins'][@skinNum]['val']
     ,
         @skinNum = @skinNum + 2
-        broadcast("Sorry, this hero doesn't have a skin number ". @skinNum)
+        tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
         die()
     )
     _changeSkin(@player,@altSig,@altVal)
