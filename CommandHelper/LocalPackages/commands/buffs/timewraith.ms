@@ -25,7 +25,6 @@
                 "/fly",
                 "/fly speed <number>",
                 "/disguiseviewself",
-                "/back"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
