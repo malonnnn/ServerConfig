@@ -13,9 +13,8 @@
             'speech': "graaaaaaaaaaa!",
             'powers': array(
                 "/buff",
-                "/jump 0-5",
                 "/run 0-9",
-                "/haste 0-5",
+                "/haste 0-2",
                 "/back (In the speedforce)",
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
@@ -23,11 +22,12 @@
                 "/run 0-1 (In the speedforce)",
                 "/wither",
                 "/fly",
-                "/fly speed <number>"
+                "/fly speed <number>",
+                "/tangible",
+                "/intangible"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 11 true",
-                "/effect ". @plr ." 11 9999 1 true",
+                "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"  
