@@ -24,7 +24,7 @@
                 "/fly",
                 "/fly speed <number>",
                 "/tangible",
-                "/intangible",
+                "/intangible"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
