@@ -12,9 +12,8 @@
             'speech': "I'm going ghost!",
             'powers': array(
                 "/buff",
-                "/jump 0-6",
-                "/run 0-5",
-                "/haste 0-2",
+                "/jump 0-1",
+                "/run 0-2",
                 "/thru (phases through walls)",
                 "/fly",
                 "/fly speed <number>",
