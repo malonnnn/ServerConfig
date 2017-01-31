@@ -17,7 +17,9 @@
                 "/run 0-1",
                 "/haste 0-1",
                 "/hover on",
-                "/hover off"
+                "/hover off",
+                "/iron",
+                "/empower (You empower a player with your Nekrotic energy"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
