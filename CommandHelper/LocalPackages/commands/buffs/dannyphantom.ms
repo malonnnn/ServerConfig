@@ -12,6 +12,8 @@
             'speech': "I'm going ghost!",
             'powers': array(
                 "/buff",
+                "/gmsp",
+                "/gms",
                 "/jump 0-1",
                 "/run 0-2",
                 "/thru (phases through walls)",
