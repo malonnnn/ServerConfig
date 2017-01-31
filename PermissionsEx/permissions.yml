@@ -1327,6 +1327,9 @@ groups:
         - essentials.fly
         - essentials.speed.fly
         - essentials.speed
+        - essentials.gamemode
+        - essentials.gamemode.spectator
+        - essentials.gamemode.survival
         - ch.alias.jump0
         - ch.alias.jump1
         - ch.alias.jump2
@@ -1539,32 +1542,6 @@ groups:
         - ch.alias.speak
         - ch.alias.confuse
         - ch.alias.unconfuse
-  dannyphantom:
-    inheritance:
-    - mortal
-    options:
-      prefix: '&2D&aa&0n&fn&ay &0P&ah&2a&0n&at&fo&2m'
-      suffix: '&2'
-    permissions: []
-    worlds:
-      survival:
-        permissions:
-        - -essentials.protect.entitytarget.bypass
-        - -essentials.protect.damage.fall
-        - worldedit.navigation.thru.command
-        - essentials.gamemode
-        - essentials.gamemode.survival
-        - essentials.gamemode.spectator
-        - ch.alias.jump0
-        - ch.alias.jump1
-        - ch.alias.run0
-        - ch.alias.run1
-        - ch.alias.run2
-        - ch.alias.mindcontrol
-        - ch.alias.stopmindcontrol
-        - essentials.fly
-        - essentials.speed.fly
-        - essentials.speed
   blackspiderman:
     inheritance:
     - mortal
@@ -4790,6 +4767,9 @@ groups:
     worlds:
       survival:
         permissions:
+        - essentials.gamemode
+        - essentials.gamemode.spectator
+        - essentials.gamemode.survival
         - powers.wallrun
         - ch.alias.stopmindcontrol
         - ch.alias.confuse
@@ -4950,6 +4930,9 @@ groups:
     worlds:
       survival:
         permissions:
+        - essentials.gamemode
+        - essentials.gamemode.spectator
+        - essentials.gamemode.survival
         - powers.wallrun
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
