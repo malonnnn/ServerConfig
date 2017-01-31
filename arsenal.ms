@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODU3MTIzNzQ4MjYsInByb2ZpbGVJZCI6IjU1MGIwM2NkZDllOTRjODliNGVhNDRlYWQ0ODljZTBlIiwicHJvZmlsZU5hbWUiOiJBbmltZWxHaXJsIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zNmE4MTdhZmMxMjNhODhkYTQyN2YzMmIyZGEzYzdhNDU2ZDYxYzFkZWMwNDI3YmU1ZWI4ODcyZDAzOCJ9fX0',
              'trail': '',
             'op': 'false',
-            'speech': "You have faild this City",
+            'speech': "You have failed this City",
             'powers': array(
                 "/buff",
                 "/run 0-4",
