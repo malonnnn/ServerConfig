@@ -33,12 +33,12 @@ getskullnumber:/getskullnumber $plr = >>>
             {
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
                 if(@hero['op'] == "true"){
-                    if(!has_permission(@player,"rank.mod")){
+                    #if(!has_permission(@player,"rank.mod")){
                         if(acc_balance(@player) == 0){
-                            tmsg(@player,color(red)."You must have at least $1 to use this hero")
+                            tmsg(@player,color(red)."You must have at least $1 to use this character.")
                             die()
                         }
-                    }
+                    #}
                 }
 
                 if(@hero['name'] == "empty"){
