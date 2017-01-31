@@ -21,6 +21,8 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/thru (intangible)",
+                "/gmsp (density shift)",
+                "/gms (normal density)",
                 "/disguise",
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
