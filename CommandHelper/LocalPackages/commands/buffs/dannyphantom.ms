@@ -23,10 +23,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 4 true",
                 "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&fS&0p&2e&ae&0d&8s&0t&fe&2r_&aBoots"  
+                "/effect ". @plr ." 21 9999 9 true"
             )
         )
