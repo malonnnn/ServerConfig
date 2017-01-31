@@ -17,7 +17,6 @@
                 "/thru (phases through walls)",
                 "/fly",
                 "/fly speed <number>",
-                "/disguiseviewself",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol"
             ),
