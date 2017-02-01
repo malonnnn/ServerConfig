@@ -15,7 +15,7 @@
                 "/effect ". @plr ." 21 9999 16 true",
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 1 9999 1 true",
-                "/effect ". @plr ." 3 9999 3 true:,
+                "/effect ". @plr ." 3 9999 3 true',
                 "/effect ". @plr ." 8 9999 8 true",
                 "/effect ". @plr ." 10 9999 10 true",
                 "/give ". @plr ." minecraft:iron_sword 1",name: &7Al-&8Sah-&7Him_&7Swo&8rd
