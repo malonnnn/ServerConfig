@@ -11,9 +11,9 @@
             'speech': "My grand grand grand father was a hero in the past!",
             'powers': array(
                 "/buff",
-                "/jump "0-3",
-                "/run "0-3",
-                "/haste "0-5",
+                "/jump 0-3",
+                "/run 0-3",
+                "/haste 0-5",
                 "/carryplayer <player>",
                 "/disguiseviewself"
             ),
