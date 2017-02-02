@@ -18,10 +18,10 @@
                 "/disguiseviewself"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 18 true",
+                "/effect ". @plr ." 21 9999 14 true",
                 "/effect ". @plr ." 1 9999 1 true"
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 3 9999 3 true",
-                "/effect ". @plr ." 10 9999 10 true"
+                "/effect ". @plr ." 10 9999 5 true"
             )
         )
