@@ -18,8 +18,7 @@
                 "/run 0-4",
                 "/haste 0-3",
                 "/web",
-                "/websling",
-                "/fly"
+                "/websling"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
