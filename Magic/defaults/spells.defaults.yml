@@ -2376,6 +2376,7 @@ cure|4:
     parameters:
         feed: 1
         cancel_on_damage: 0.5
+        cancel_on_cast_other: true
         delay: 500
         repeat: 10
 
@@ -4864,6 +4865,7 @@ heal:
              size: 3
     parameters:
         cancel_on_damage: 0.5
+        cancel_on_cast_other: true
         delay: 500
         repeat: 10
         total_duration: 5000
@@ -5730,7 +5732,7 @@ lift:
         range: 15
         check_destructible: true
         undo: 5000
-        target_breakables: 2
+        target_breakables: 1
         bypass_backfire: false
         cooldown: 1000
         offset: 0,5,0
@@ -6108,7 +6110,7 @@ meteor:
         y_offset: 1
         player_damage: 3
         entity_damage: 3
-        target_breakables: 2
+        target_breakables: 1
         range: 64
         allow_max_range: true
         hitbox: true
@@ -6290,7 +6292,7 @@ missile|2:
         range: 32
         player_damage: 3
         entity_damage: 6
-        target_breakables: 2
+        target_breakables: 1
     costs:
         mana: 20
 
@@ -6305,7 +6307,7 @@ missile|3:
         range: 48
         player_damage: 4
         entity_damage: 8
-        target_breakables: 3
+        target_breakables: 2
     costs:
         mana: 50
 
@@ -6317,7 +6319,7 @@ missile|4:
         range: 64
         player_damage: 4
         entity_damage: 10
-        target_breakables: 4
+        target_breakables: 3
     costs:
         mana: 80
 
@@ -7138,6 +7140,7 @@ phase:
     parameters:
         delay: 5000
         cancel_on_damage: 1
+        cancel_on_cast_other: true
         cooldown: 15000
         target: self
         vertical_range: 255
@@ -8107,6 +8110,7 @@ recall:
     parameters:
         delay: 5000
         cancel_on_damage: 1
+        cancel_on_cast_other: true
         allow_spawn: false
         allow_marker: false
         allow_death: false
@@ -8189,7 +8193,7 @@ reflect:
     category: light
     worth: 100
     earns_sp: 5
-    upgrade_required_path: student
+    upgrade_required_path: beginner
     upgrade_required_casts: 25
     actions:
         cast:
@@ -8222,7 +8226,7 @@ reflect:
         mana: 40
 
 reflect|2:
-    upgrade_required_path: apprentice
+    upgrade_required_path: student
     upgrade_required_casts: 50
     parameters:
         radius: 1
@@ -8233,7 +8237,7 @@ reflect|2:
         mana: 50
 
 reflect|3:
-    upgrade_required_path: master
+    upgrade_required_path: apprentice
     upgrade_required_casts: 50
     parameters:
         radius: 1.5
@@ -9162,17 +9166,23 @@ spshop:
           cost: 10000
           
 starshop:
+    icon: wood_hoe:14
     inherit: buyshop
     parameters:
+        show_active_icons: true
         items:
         - item: wand|blaster
+          cost: 1000
+        - item: lightsaber_blue
           cost: 10000
-        - item: wand|lightsaber_red
-          cost: 100000
-        - item: wand|lightsaber_green
-          cost: 100000
-        - item: wand|lightsaber_blue
-          cost: 100000
+        - item: lightsaber_green
+          cost: 10000
+        - item: lightsaber_purple
+          cost: 10000
+        - item: lightsaber_orange
+          cost: 10000
+        - item: lightsaber_red
+          cost: 15000
           
 stash:
     icon: diamond_axe:106
@@ -10501,7 +10511,7 @@ torture:
         gravity: 0.05
         range: 32
         target_type: Damageable
-        target_breakables: 3
+        target_breakables: 1
         target: other
         duration: 2000
         damage: 2
@@ -10518,12 +10528,14 @@ torture|2:
         duration: 3000
         effect_wither: 2
         damage: 3
+        target_breakables: 2
 
 torture|3:
     parameters:
         duration: 4000
         effect_wither: 3
         damage: 4
+        target_breakables: 3
 
 toss:
     icon: diamond_axe:30
@@ -11167,7 +11179,7 @@ whip:
         target_type: Damageable
         player_damage: 3
         entity_damage: 6
-        target_breakables: 2
+        target_breakables: 1
         cooldown: 5000
         target_self_timeout: 2000
         velocity: 10
@@ -11443,7 +11455,7 @@ wound:
         hitbox: false
         fov: 0.4
         damage: 6
-        target_breakables: 3
+        target_breakables: 1
         cooldown: 5000
         magic_damage: false
         instant_block_effects: true
@@ -11451,10 +11463,14 @@ wound:
         mana: 100
 
 wound|2:
+  upgrade_required_path: master
+  upgrade_required_casts: 50
   parameters:
     damage: 8
+    target_breakables: 2
 
 wound|3:
   parameters:
     damage: 10
+    target_breakables: 3
 

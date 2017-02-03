@@ -388,79 +388,125 @@ base_lightsaber:
     icon_inactive_delay: 500
     drop: toggle
     left_click: none
+    right_click: none
     swap: cycle_hotbar
     quick_cast: true
     mana_max: 50
     mana: 50
     mana_regeneration: 5
     protection_physical: 0.5
+    block_reflect_chance: 0.5
+    block_chance: 1
+    block_fov: 0.5
+    block_global_cooldown: 3000
     quiet: 1
     bound: true
     keep: true
     undroppable: true
     indestructible: true
     effect_bubbles: false
+    active_effects: true
+    effect_sound: magic.saberhum
+    effect_sound_interval: 700
+    attributes:
+      GENERIC_ATTACK_DAMAGE: 10
     effects:
         open:
         -  class: EffectSingle
            sound: magic.saberon
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: flame
+             particle: redstone
         close:
         -  class: EffectSingle
            sound: magic.saberoff
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: smoke_normal
+             particle: redstone
         swing:
         -  class: EffectSingle
-           sound: magic.ignite
+           sound: magic.saberswing
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: flame
+             particle: redstone
         hit_entity:
         -  class: EffectSingle
-           sound: magic.ignite
+           sound: magic.saberhit
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: smoke_large
+             particle: redstone
         hit_block:
         -  class: EffectSingle
-           sound: magic.ignite
+           sound: magic.saberhit
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: smoke_normal
+             particle: redstone
         hit_blocked:
         -  class: EffectSingle
-           sound: magic.ignite
+           sound: magic.saberhit
            sound_volume: 1
            location: origin
+           color_override: color
+           use_wand_location: true
            effectlib:
              class: HelixEffect
              iterations: 1
              radius: 0.3
-             particle: smoke_normal
+             particle: redstone
+        spell_blocked:
+        -  class: EffectSingle
+           sound: magic.saberhit
+           sound_volume: 1
+           location: origin
+           color_override: color
+           use_wand_location: true
+           effectlib:
+             class: HelixEffect
+             iterations: 1
+             radius: 0.3
+             particle: redstone
+        spell_reflected:
+        -  class: EffectSingle
+           sound: magic.saberhit
+           sound_volume: 1
+           location: origin
+           color_override: color
+           use_wand_location: true
+           effectlib:
+             class: HelixEffect
+             iterations: 1
+             radius: 0.3
+             particle: redstone
              
 #
 # A starter battle wand
@@ -1425,52 +1471,50 @@ rocketboots:
 
 # Lightsabers!
 
-lightsaber_red:
-    inherit: base_lightsaber
-    path: sith
-    icon: gold_sword:4
-    effect_color: 'FF0000'
-    active_spell: push
-    spells:
-        - push
-        - fire
+lightsaber_hilt:
+    icon: wood_hoe:14
 
 lightsaber_green:
     inherit: base_lightsaber
-    path: jedi
-    icon: gold_sword:2
+    path: youngling
+    icon: shield:2
     effect_color: '00FF00'
-    active_spell: push
     spells:
         - push
         - pull
 
 lightsaber_blue:
     inherit: base_lightsaber
-    path: jedi
-    icon: gold_sword:3
+    path: youngling
+    icon: shield:3
     effect_color: '0000FF'
-    active_spell: push
     spells:
         - push
         - pull
         
+lightsaber_red:
+    inherit: base_lightsaber
+    path: acolyte
+    icon: shield:4
+    effect_color: 'FF0000'
+    spells:
+        - push
+        - fire
+        
 lightsaber_orange:
     inherit: base_lightsaber
-    path: jedi
-    icon: gold_sword:4
-    effect_color: '0000FF'
-    active_spell: push
+    path: youngling
+    icon: shield:5
+    effect_color: 'FF00FF'
     spells:
         - push
         - pull
         
 lightsaber_purple:
     inherit: base_lightsaber
-    path: jedi
-    icon: gold_sword:5
-    effect_color: '0000FF'
-    active_spell: push
+    path: youngling
+    icon: shield:6
+    effect_color: 'FFFF00'
     spells:
         - push
         - pull
