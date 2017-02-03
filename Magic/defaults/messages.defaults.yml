@@ -284,12 +284,26 @@ paths:
     blaster:
         name: Blaster
         description: Blaster upgrades
-    jedi:
-        name: Jedi
-        description: Jedi force powers
+    youngling:
+        name: Youngling
+    padawan:
+        name: Padawan
+    knight:
+        name: Jedi Knight
+    jedi_master:
+        name: Jedi Master
+    acolyte:
+        name: Acolyte
+    apprentice:
+        name: Sith Apprentice
     sith:
         name: Sith
-        description: Sith force powers
+    marauder:
+        name: Sith Marauder
+    sith_master:
+        name: Sith Master
+    sith_lord:
+        name: Sith Lord
 spell:
     brush: Uses Material Brushes
     undoable: ""
@@ -665,6 +679,7 @@ spells:
         name: Phase
         description: Phase to another dimension
         usage: Has a 5-second warmup.
+        cancel: Recall interrupted!
         cast: ""
         teleport: You phase to $world_name
         teleport_failed: Can't phase to $world_name from here
@@ -1250,6 +1265,7 @@ spells:
         cast: You teleport back to safety
     recall:
         name: Recall
+        cancel: Recall interrupted!
         description: Teleport to different locations.
         usage: Has a 5-second warmup. Grants 5 seconds of protection on teleportation.
         teleport: ""
@@ -1787,6 +1803,8 @@ wand:
     mana_regeneration_boosted: "Mana Regeneration: $amount &f(&b$mana&f)&d/s"
     mana_boost: "Mana Boost: $amount%"
     mana_regeneration_boost: "Mana Regeneration Boost: $amount%"
+    block_chance: Blocking $roman
+    reflect_chance: Reflective $roman
     cost_reduction: Cost Reduction $roman
     consume_reduction: Manifestation
     cooldown_reduction: Cooldown Reduction $roman
@@ -2198,11 +2216,20 @@ wands:
       description: Right-click and use the hotbar buttons to play music
       spell_count: Has $count Notes
     lightsaber_red:
-        name: Lighsaber (Red)
+        name: Lighsaber
         description: Chosen weapon of the Sith
     lightsaber_green:
-        name: Lighsaber (Green)
+        name: Lighsaber
         description: Chosen weapon of the Jedi
     lightsaber_blue:
-        name: Lighsaber (Blue)
+        name: Lighsaber
         description: Chosen weapon of the Jedi
+    lightsaber_orange:
+        name: Lighsaber
+        description: Chosen weapon of the Jedi
+    lightsaber_purple:
+        name: Lighsaber
+        description: Chosen weapon of the Jedi
+    lightsaber_hilt:
+        name: Lighsaber Hilt
+        description: Used to construct a Lightsaber

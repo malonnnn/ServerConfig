@@ -1,0 +1,9 @@
+startsplegg:/startsplegg $player = >>>
+
+    @player = $player
+    @rand = rand(1,10)
+    runas(~console,"/shot give ".@player." splegggun")
+    runas(~console,"/effect ".@player." 16 60 1 true")
+    runas(~console,"/warp splegg".@rand." ".@player)
+
+<<<

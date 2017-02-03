@@ -12,6 +12,7 @@ set_interval(5000,closure(
                 @bal = acc_balance(@player)
                 if(@bal > 0){
                     acc_subtract(@player,1)
+                    console(@player." -1")
                 }else{
                     runas(~console,"/sudo ".@player." c:/mortal")
                     set_timeout(5000,closure(
