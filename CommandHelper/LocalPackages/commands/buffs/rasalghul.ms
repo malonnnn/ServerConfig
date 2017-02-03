@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODU4ODQ4MjE2NjcsInByb2ZpbGVJZCI6IjI4YmM1NTllZjZiYzQxZDVhOWE4NGIxNzZiMGM2ZDBhIiwicHJvZmlsZU5hbWUiOiJNaXN0b2ZmZWxlczAxIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80Yjk4MzhlNjdhYWU3MWZlZTkxYjY5NzYzOWIwZTE0YjY4NGY5OTRjYjExZWUzY2VkMTE1N2QwODMyZTI1In19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "@plr.", I am the master of fighting techniques",
+            'speech': @plr.", I am the master of fighting techniques",
             'powers': array(
                 "/buff",
                 "/jump 0-4",
