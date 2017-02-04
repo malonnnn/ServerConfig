@@ -15,6 +15,6 @@
                 "/run 0-1"
            ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 5 true"
+                "/effect ". @plr ." 11 9999 1 true"
             )
         )
