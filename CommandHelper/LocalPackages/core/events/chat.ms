@@ -202,7 +202,8 @@ bind('player_chat', null, null, @e) {
     }else{
         @plrz = all_players()
         @size = array_size(@plrz)
-        @cooldown = @size / 2
+       # @cooldown = @size / 2
+        @cooldown = 0
     }
     if(is_null(get_value(@pname.'lastmessage')))
     {
