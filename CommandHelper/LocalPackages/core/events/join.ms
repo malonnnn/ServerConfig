@@ -4,7 +4,9 @@ bind(player_join,null,null,@event){
     @plr = player()
     try(
         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-    ,)
+    ,
+        @hero = associative_array('class':'')
+    )
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
     
@@ -45,7 +47,7 @@ bind(player_join,null,null,@event){
     foreach(@player in @plrs)
     {
         @otherPlayerGroup = pgroup(@player)
-        if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
+        if(@hero['class'] != "timewraith" && @otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
             runas(~console,/pex user player() group set mortal)
             runas(~console,/pex reload)
             runas(~console,"/sudo ". @plr ." c:/mortal")

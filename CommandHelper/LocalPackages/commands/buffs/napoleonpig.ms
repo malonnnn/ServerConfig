@@ -3,8 +3,8 @@
 
 
 @hero = associative_array(
-            'name': '§8N§7a§dp§8o§7l§8e§7o§dn'
-            'class': 'napoleon',
+            'name': '§8N§7a§dp§8o§7l§8e§7o§dn',
+            'class': 'napoleonpig',
             'sig': 'pig',
             'val': '',
             'trail': '',
