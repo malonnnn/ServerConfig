@@ -12,7 +12,8 @@
             'speech': "All Animals Are Equal, But Some Animals Are More Equal Than Others.",
             'powers': array(
                 "/buff",
-                "/run 0-1"
+                "/run 0-1",
+                "/whiskey"
            ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 1 true"
