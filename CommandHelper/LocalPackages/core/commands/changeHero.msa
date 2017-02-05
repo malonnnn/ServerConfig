@@ -136,7 +136,7 @@ changehero:/changehero = >>>
         foreach(@player in @plrs)
         {
             @otherPlayerGroup = pgroup(@player)
-            if(@otherPlayerGroup[0] == @hero['class'] && @plrr != @player){
+            if(@hero['class'] != "timewraith" && @otherPlayerGroup[0] == @hero['class'] && @plrr != @player){
                 broadcast(
                     concat(color(white),@plrr)
                     concat(color(gray),"tried to turn into")
