@@ -16,7 +16,7 @@
                 "/haste 0-1",
                 "/carryplayer",
                 "/dismountplayer",
-                "/speak <player>"
+                "/empower <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 17 true",
