@@ -1,6 +1,6 @@
 set_interval(5000,closure(
     @players = all_players()
-
+    console("timerstart")
     foreach(@player in @players){
         @class = pgroup(@player)[0]
         try(
@@ -8,6 +8,7 @@ set_interval(5000,closure(
         ,continue())
         if(@hero['op'] == 'true')
         {
+                console(@player."isOP")
             #if(has_permission(@player,"rank.mod") == false){
                 @bal = acc_balance(@player)
                 if(@bal > 0){
