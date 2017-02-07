@@ -11,15 +11,12 @@
             'speech': "Tini! Tini!",
             'powers': array(
                 "/buff",
-                "/jump 0-5",
+                "/fly",
+                "/flyspeed",
                 "/run 0-3",
-                "/haste 0-1",
-                "/carryplayer",
-                "/dismountplayer",
                 "/empower <player>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 17 true",
                 "/effect ". @plr ." 5 9999 5 true"
             )
         )
