@@ -1,0 +1,7 @@
+# Gives player wither 2 for 10 seconds
+wither:/wither $plr = >>>
+    @plr = $plr
+    sudo(/effect @plr 20 10 2 true)
+    tmsg(player(), "You have withered ".@plr."!")
+    tmsg(@plr, "You have been withered by ". player() ."!")
+<<<
