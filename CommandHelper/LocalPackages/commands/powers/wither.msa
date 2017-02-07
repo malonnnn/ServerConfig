@@ -25,7 +25,7 @@ wither:/wither $vic = >>>
     
     if(@targetInRange ==  false){
         tmsg(@plr,color(red)."You are not close enough to that player")
-        die
+        die()
     }
     
     sudo("/effect ".@vic." 20 10 2 true")
