@@ -48,6 +48,31 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
+    # -------------------------------
+    # replace all messages by time wraith with screams
+    # -------------------------------
+    if(@pgroup[0] == 'timewraith')
+    {
+        @phrase = rand(1, 8)
+        
+        if(@phrase == 1){
+            assign(@msg,"GGRRAAA!")
+        } else if(@phrase == 2){
+            assign(@msg,"aaaaaAAAAAHHHhhhhh!")
+        } else if(@phrase == 3){
+            assign(@msg,'ooooRRRRAAAHH!')
+        } else if(@phrase == 4){
+            assign(@msg,"RRRRRRRAAAA!")
+        } else if(@phrase == 5){
+            assign(@msg,"EEEGGGRREERRAAA!")
+        } else if(@phrase == 6){
+            assign(@msg,"KKKKRRAAHHHHHH!")
+        } else if(@phrase == 7){
+            assign(@msg,"HHRRRRAAAHHH!")
+        }
+        
+        modify_event(message, @msg)
+    }
     
     # -------------------------------
     # if player is "confused", mix up their words
