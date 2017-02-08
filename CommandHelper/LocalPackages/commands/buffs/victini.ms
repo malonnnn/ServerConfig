@@ -14,6 +14,8 @@
                 "/heal <player>",
                 "/fly",
                 "/empower <player>"
+                "/invis",
+                "/vis"
                   ),
             'buffs': array(
                    )
