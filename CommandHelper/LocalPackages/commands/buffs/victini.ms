@@ -11,5 +11,10 @@
             'speech': "Tini! Tini!",
             'powers': array(
                 "/buff",
+                "/heal <player>",
                 "/fly",
                 "/empower <player>"
+                  ),
+            'buffs': array(
+                   )
+        )
