@@ -68,6 +68,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 6
+    skelespawner:
+        min: {x: -1727.0, y: 69.0, z: 212.0}
+        max: {x: -1717.0, y: 73.0, z: 222.0}
+        members: {}
+        flags: {use: allow, mob-spawning: allow}
+        owners: {}
+        type: cuboid
+        priority: 6
     bitshouse:
         parent: city
         min: {x: 1954.0, y: 0.0, z: -319.0}
@@ -128,7 +136,12 @@ regions:
         min: {x: -1749.0, y: 0.0, z: 195.0}
         max: {x: -1717.0, y: 255.0, z: 235.0}
         members: {}
-        flags: {invincible: allow, item-pickup: allow, pvp: deny, mob-spawning: deny}
+        flags:
+            invincible: allow
+            blocked-cmds: [/gmsp, /intangible, /thru]
+            item-pickup: allow
+            pvp: deny
+            mob-spawning: deny
         owners: {}
         type: cuboid
         priority: 5
