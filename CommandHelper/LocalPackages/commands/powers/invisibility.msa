@@ -21,8 +21,13 @@ vis:/vis = >>>
     @player = player()
     @class = pgroup()[0]
     sudo("/effect ". @player ." 14 0")
-    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
-    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-    _changeSkin(@player, @hero['sig'], @hero['val'])
-    unbind(associative_array('id': @player.'invis'))
+    try(
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+        include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+        _changeSkin(@player, @hero['sig'], @hero['val'])
+        unbind(associative_array('id': @player.'invis'))
+    ,
+        sudo("/undisguise")
+        unbind(associative_array('id': @player.'invis'))
+    )
 <<<

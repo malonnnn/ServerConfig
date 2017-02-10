@@ -5,17 +5,19 @@ guarddogs:/guarddogs = >>>
     if(!is_null(import(@player."guarddogs"))){
         @oldDogs = import(@player."guarddogs")
         foreach(@uuid in @oldDogs){
-            entity_remove(@uuid)
+            try(entity_remove(@uuid),
+            continue())
         }
     }
     
-    @dogUUIDs = spawn_mob("wolf:tamed",9)
+    @dogUUIDs = spawn_mob("wolf:angry",9)
     export(@player."guarddogs",@dogUUIDs)
     set_timeout(1000,closure(
         foreach(@uuid in @dogUUIDs)
         {
-            @colors = array("BLACK", "DARK_BLUE", "DARK_GREEN", "DARK_AQUA", "DARK_RED", "DARK_PURPLE", "GOLD ""GRAY", "DARK_GRAY", "BLUE", "GREEN", "AQUA", "RED", "LIGHT_PURPLE", "YELLOW", "WHITE")
-            set_entity_spec(@uuid,array(sitting:false))
+            @colors = array("WHITE", "ORANGE", "MAGENTA", "LIGHT_BLUE", "YELLOW", "LIME", "PINK", "GRAY", "SILVER", "CYAN", "PURPLE", "BLUE", "BROWN", "GREEN", "RED", "BLACK")
+            @num = rand(1,17)
+            set_entity_spec(@uuid,array(angry:true,color:@colors[@num],sitting:false))
             tame_mob(@player,@uuid)
         }
     ))

@@ -22,7 +22,7 @@
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." watershot",
-                "/give ". @plr ." minecraft:fishing_rod 1 61:32767 62:8 name:&3Pos&beid&3on's_Fishing_Rod",
+                "/give ". @plr ." minecraft:fishing_rod 1 61:32767 62:5 name:&3Pos&beid&3on's_Fishing_Rod",
                 "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3Pos&beid&3on's_&9Water_&3Helmet",
                 "/give ". @plr ." minecraft:diamond_hoe 1 16:10 name:&3Po&bseid&3on's&9_&3Tri&bdent"
             )
