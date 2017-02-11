@@ -13,7 +13,7 @@
                 "/buff",
                 "/heal <player>",
                 "/fly",
-                "/empower <player>"
+                "/empower <player>",
                 "/invis",
                 "/vis"
                   ),
