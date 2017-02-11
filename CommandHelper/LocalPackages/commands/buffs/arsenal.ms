@@ -13,7 +13,7 @@
                 "/buff",
                 "/jump 0-2",
                 "/run 0-3",
-                 "/arrow",
+                "/arrow",
                 "/arrow regen",
                 "/arrow regen long",
                 "/arrow swiftness",
@@ -36,8 +36,7 @@
             'buffs': array(
                 "/effect ". @plr ." 21 9999 17 true",
                 "/effect ". @plr ." 5 9999 2 true",
-                "/give ". @plr ." minecraft:bow 1 50:1 51:1 name: &4Ar&cse&4na&cl's_&4Bow
-                "/give ". @plr ." minecraft:ender_pearl 5 name: &4Ar&cse&4na&cl's's_&2Grappling_Arrow",
-                
+                "/give ". @plr ." minecraft:bow 1 50:1 51:1 name: &4Ar&cse&4na&cl's_&4Bow",
+                "/give ". @plr ." minecraft:ender_pearl 5 name: &4Ar&cse&4na&cl's's_&2Grappling_Arrow"
             )
         )
