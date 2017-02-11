@@ -31,8 +31,8 @@ proc(_updateHologram, @hologramID, @class,
     runas(~console,"/npc spawn")
     if(@class != "remove"){
         runas(~console,"/template apply @class")
-        runas(~console,"/npc despawn")
-        runas(~console,"/npc spawn")
+#        runas(~console,"/npc despawn")
+#        runas(~console,"/npc spawn")
         runas(~console,"/npc moveto --x @x --y @y --z @z")
     }else{
         runas(~console,"/npc despawn")
