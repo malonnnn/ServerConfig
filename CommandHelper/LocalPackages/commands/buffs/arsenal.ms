@@ -13,7 +13,6 @@
                 "/buff",
                 "/jump 0-2",
                 "/run 0-3",
-                "/carryplayer",
                  "/arrow",
                 "/arrow regen",
                 "/arrow regen long",
