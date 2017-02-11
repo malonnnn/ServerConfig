@@ -20,8 +20,7 @@
                 "/mindcontrol",
                 "/stopmindcontrol",
                 "/confuse",
-                "/unconfuse",
-                "/kill <playername>"
+                "/unconfuse"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 24 true",
