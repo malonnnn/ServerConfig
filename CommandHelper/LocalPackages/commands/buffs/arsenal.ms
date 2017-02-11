@@ -33,6 +33,7 @@
                 "/arrow harming",
                 "/arrow waterbreathing",
                 "/arrow luck"
+             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 17 true",
                 "/effect ". @plr ." 5 9999 2 true",
