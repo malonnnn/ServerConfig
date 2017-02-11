@@ -11,9 +11,12 @@ set_interval(5000,closure(
                 console(@player."isOP")
             #if(has_permission(@player,"rank.mod") == false){
                 @bal = acc_balance(@player)
-                if(@bal > 0){
-                    acc_subtract(@player,1)
-                    console(@player." -1")
+                if(@bal > 5){
+                    acc_subtract(@player,5)
+                    console(@player." -5")
+                }else if(@bal < 5 && @bal > 0){
+                    acc_subtract(@player,@bal)
+                    console(@player." -".@bal)
                 }else{
                     runas(~console,"/sudo ".@player." c:/mortal")
                     set_timeout(5000,closure(
