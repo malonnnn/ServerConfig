@@ -26,3 +26,4 @@
                 "/effect ". @plr ." 16 9999 16 true",
                 "/effect ". @plr ." 21 9999 4 true",         
             )
+        )
