@@ -1,17 +1,17 @@
 spank:/spank $plr $mins = >>>
 
     @plr = $plr
-    runas(~console,"/pex user ".@plr." group set quarantine")
+    @mins = $mins
     sudo("/runalias /mortal")
-    set_timeout(3000,closure(
+    @timeoutLength = @min * 1000
+    set_timeout(@timeoutLength,closure(
         runas(~console,"/pex user ".@plr." group set quarantine")
-        runas(~console,"/tptoggle ".@plr." on")
-        if ($mins <= 2){
+        runas(~console,"/tptoggle off ".@plr)
+        if (@mins <= 2){
           runas(~console,"/warp waterprison2 ".@plr)
         }else{
           runas(~console,"/warp waterprison5 ".@plr)
         }
-        runas(~console,"/tptoggle ".@plr." off")
     ))
 
 <<<
@@ -20,11 +20,7 @@ unspank:/unspank $plr = >>>
 
     @plr = $plr
     runas(~console,"/pex user ".@plr." group set mortal")
-    sudo("/runalias /mortal")
-    set_timeout(3000,closure(
-        runas(~console,"/pex user ".@plr." group set mortal")
-        runas(~console,"/tptoggle ".@plr." on")
-        runas(~console,"/warp city ".@plr)
-    ))
+    runas(~console,"/tptoggle on ".@plr)
+    runas(~console,"/warp city ".@plr)
 
 <<<
