@@ -15,14 +15,12 @@
                 "/jump 0-6",
                 "/run 0-6",
                 "/haste 0-3",
-                "/flyspeed <number>",
                 "/fly",
-                "/disguise",
-                "/undisguise"
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 16 9999 16 true",
-                "/effect ". @plr ." 21 9999 4 true",         
+                "/effect ". @plr ." 21 9999 4 true"        
             )
         )
