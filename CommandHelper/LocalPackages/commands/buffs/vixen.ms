@@ -11,11 +11,11 @@
             'speech': "The power of animals in my chain is a tradition in my family.",
             'powers': array(
                 "/buff",
-                "/carryplayer",
                 "/jump 0-6",
                 "/run 0-6",
                 "/haste 0-3",
                 "/fly",
+                "/carryplayer",
                 "/dismountplayer"
             ),
             'buffs': array(
