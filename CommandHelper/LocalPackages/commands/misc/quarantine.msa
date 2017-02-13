@@ -11,3 +11,17 @@ quarantine:/quarantine $plr = >>>
     ))
 
 <<<
+
+unquarantine:/unquarantine $plr = >>>
+
+    @plr = $plr
+    runas(~console,"/pex user ".@plr." group set mortal")
+    sudo("/runalias /mortal")
+    set_timeout(3000,closure(
+        runas(~console,"/pex user ".@plr." group set mortal")
+        runas(~console,"/tptoggle ".@plr." on")
+        runas(~console,"/warp city ".@plr)
+    ))
+
+<<<
+
