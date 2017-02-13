@@ -1,0 +1,17 @@
+spank:/spank $plr $mins = >>>
+
+    @plr = $plr
+    runas(~console,"/pex user ".@plr." group set quarantine")
+    sudo("/runalias /mortal")
+    set_timeout(3000,closure(
+        runas(~console,"/pex user ".@plr." group set quarantine")
+        runas(~console,"/tptoggle ".@plr." on")
+        if ($mins <= 2){
+          runas(~console,"/warp waterprison2 ".@plr)
+        }else{
+          runas(~console,"/warp waterprison5 ".@plr)
+        }
+        runas(~console,"/tptoggle ".@plr." off")
+    ))
+
+<<<
