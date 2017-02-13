@@ -12,11 +12,10 @@
             'speech': "I am the Destroyer of Worlds!",
             'powers': array(
                 "/buff",
-                "/fly",
+                "/levitate",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/apokolips (travels to your homeworld of Apokolips)",
-                "/flyspeed <number>",
                 "/tp",
                 "/carryplayer",
                 "/dismountplayer",
