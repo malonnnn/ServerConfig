@@ -6,6 +6,8 @@ bind(world_changed, null, null, @event,
     @from = @event['from']
     @class = pgroup()[0]
 
+    runas(~console,"/fly ".@player." off")
+
     if(@to == 'greenfield' && @class == 'mortal'){
         runas(~console,'/effect '.@player." clear")
         runas(~console,'/minecraft:clear '.@player)
