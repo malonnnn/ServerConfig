@@ -215,9 +215,11 @@ bind('player_chat', null, null, @e) {
     {
         die()
     }
-
-    # @msg = to_lower(@msg)
-    # modify_event(message, @msg)
+    
+    if(@pname == "EmmettGaming"){
+        @msg = to_lower(@msg)
+      modify_event(message, @msg)
+    }
      
     # -------------------------------
     # chat timeout settings
