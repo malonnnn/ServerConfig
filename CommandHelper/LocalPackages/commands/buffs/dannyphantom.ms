@@ -12,7 +12,7 @@
             'speech': "I'm going ghost!",
             'powers': array(
                 "/buff",
-                "/intagible",
+                "/intangible",
                 "/tangible",
                 "/jump 0-1",
                 "/run 0-2",
