@@ -24,6 +24,10 @@
                 "/back",
                 "/tppos <x> <y> <z>",
                 "/tp",
+                "/mindcontrol",
+                "/stopmindcontrol",
+                "/confuse",
+                "/unconfuse",
                 "Access to all warps"
            ),
             'buffs': array(
