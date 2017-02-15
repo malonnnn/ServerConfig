@@ -24,14 +24,10 @@
                 "/back",
                 "/tppos <x> <y> <z>",
                 "/tp",
-                "/mindcontrol",
-                "/stopmindcontrol",
-                "/confuse",
-                "/unconfuse",
                 "Access to all warps"
            ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 11 9999 4 true",
                 "/effect ". @plr ." 13 9999 1 true"
             )
