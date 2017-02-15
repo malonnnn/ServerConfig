@@ -9,7 +9,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if message is 565, display a link to a picture of the "superhero warehouse"
     # -------------------------------
-    if(@msg == '565')
+    if(@msg == '565' && @pgroup[0] != "quarantine")
     {
         set_timeout(1000, closure(
             tmsg(@pname, color(dark_red) . color(random) . "k" . color(gray) . "Retrieving classified image for your viewing...")
