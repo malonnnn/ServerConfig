@@ -3,7 +3,7 @@
 
 
 @hero = associative_array(
-            'name': '§aI§dm§2p§5o§as§ds§2i§5b§al§de §5Man ',
+            'name':'§aI§dm§2p§5o§as§ds§2i§5b§al§de §5Man ',
             'class': 'impossibleman',
             'sig': 'villager',
             'val': 'baby',
@@ -14,7 +14,7 @@
                 "/buff",
                 "/jump 0-4",
                 "/run 0-6",
-                "/haste 0-3",
+                "/haste 0-9",
                 "/fly",      
                 "/disguise",
                 "/gmc",
