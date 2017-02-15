@@ -5,7 +5,7 @@
 @hero = associative_array(
             'name':'§aI§dm§2p§5o§as§ds§2i§5b§al§de §5Man ',
             'class': 'impossibleman',
-            'sig': 'villager',
+            'sig': 'zombie',
             'val': 'baby',
             'trail': '',
             'op': 'true',
