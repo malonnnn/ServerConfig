@@ -23,8 +23,7 @@
                 "/disguiseviewself",
                 "/back",
                 "/tppos <x> <y> <z>",
-                "/tp",
-                "Access to all warps"
+                "/tp"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
