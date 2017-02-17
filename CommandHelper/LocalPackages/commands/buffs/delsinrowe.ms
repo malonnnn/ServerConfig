@@ -19,6 +19,5 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." solarenergybeam"   
-                "/give ". @plr ." elytra"
             )
         )
