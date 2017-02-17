@@ -13,7 +13,8 @@
                 "/buff",
                 "/jump 0-5",
                 "/run 0-9",
-                "/haste 0-5"
+                "/haste 0-5",
+                "/thru"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
