@@ -102,28 +102,28 @@ apprentice:
       - walls
 
 apprenticeboots:
-    icon: chainmail_boots
+    icon: leather_boots:#00AAFF
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticechestplate:
-    icon: chainmail_chestplate
+    icon: leather_chestplate:#00AAFF
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticehelmet:
-    icon: chainmail_helmet
+    icon: leather_helmet:#00AAFF
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticeleggings:
-    icon: chainmail_leggings
+    icon: leather_leggings:#00AAFF
     indestructible: false
     locked: true
     keep: true
@@ -615,7 +615,6 @@ broomstick:
     indestructible: true
     undroppable: true
     bound: true
-    locked: true
     keep: true
     effect_color: '880088'
     spells:
@@ -807,6 +806,19 @@ default:
 
 
 
+detonator:
+  icon: tnt
+  uses: 1
+  mode: cast
+  right_click: cast
+  left_click: none
+  locked: true
+  cost_reduction: 2
+  cooldown_reduction: 0.9
+  spells:
+  - grenade|2
+
+
 developer:
     inherit: conduit
     icon: wood_hoe:10
@@ -975,6 +987,9 @@ haloeffects:
     effect_particle_data: 0
     effect_particle_radius: 0.4
     effect_particle_offset: 0.5
+empty:
+    hidden: true
+    icon: stick
 #
 # A starter engineering wand
 #

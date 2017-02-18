@@ -1526,7 +1526,8 @@ broom:
     icon_url: http://textures.minecraft.net/texture/7f4f1b4c6661ab552b21df8ed841a221296512de46c86e8dee891efbd2fba6
     category: specialty
     worth: 600
-    quick_cast: true
+    upgrade_required_path: broom
+    upgrade_required_casts: 20
     actions:
         cast:
         - class: MountArmorStand
@@ -1575,7 +1576,7 @@ broom:
         bypass_confusion: false
         liftoff_duration: 600
         liftoff_thrust: 1
-        steer_speed: 0.05
+        steer_speed: 0.03
         duration: 60000
         duration_warning: 10000
         cooldown: 15000
@@ -1584,6 +1585,49 @@ broom:
           confusion: 120,3
         warning_effects:
           confusion: 5
+        cancel_on_no_permission: true
+        sound: magic.flying
+        sound_interval: 500
+        sound_max_volume: 4
+        sound_min_volume: 0.9
+        sound_max_pitch: 2
+        sound_min_pitch: 0.5
+
+broom|2:
+  upgrade_required_casts: 30
+  parameters:
+    steer_speed: 0.05
+    max_speed: 1.25
+    max_acceleration: 0.015
+    duration: 75000
+    cooldown: 13000
+
+broom|3:
+  upgrade_required_casts: 40
+  parameters:
+    steer_speed: 0.07
+    max_speed: 1.5
+    max_acceleration: 0.02
+    duration: 90000
+    cooldown: 10000
+
+broom|4:
+  upgrade_required_casts: 50
+  parameters:
+    steer_speed: 0.1
+    max_speed: 1.75
+    max_acceleration: 0.03
+    duration: 100000
+    cooldown: 9000
+
+broom|5:
+  upgrade_required_casts: 50
+  parameters:
+    steer_speed: 0.5
+    max_speed: 2
+    max_acceleration: 0.04
+    duration: 120000
+    cooldown: 8000
 
 broom_legacy:
     icon: diamond_axe:168
@@ -5655,6 +5699,8 @@ laser:
         target: block
         target_type: Damageable
         fov: 0.1
+        close_range: 4
+        close_fov: 0.4
         allow_max_range: true
         player_damage: 0.5
         entity_damage: 1
@@ -9452,6 +9498,8 @@ starshop:
     parameters:
         show_active_icons: true
         items:
+        - item: detonator
+          cost: 100
         - item: wand|blaster
           cost: 1000
         - item: lightsaber_blue
@@ -9872,6 +9920,7 @@ superbox:
 superbroom:
   inherit: broom
   hidden: true
+  quick_cast: true
   parameters:
     bypass_confusion: true
     steer_speed: 0
