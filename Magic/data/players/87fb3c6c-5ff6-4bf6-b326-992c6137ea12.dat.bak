@@ -795,45 +795,36 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §dBroomstick
+        display-name: §bBroomstick
         lore:
         - §o§aYou can fly!
+        - §o§2Tektronic's Wand
         - '§eCooldown: §615 seconds'
         - §7Lasts for 60 seconds
-        - §o§3Bound to Tektronic
         ItemFlags: !!set
           HIDE_PLACED_ON: null
           HIDE_UNBREAKABLE: null
           HIDE_POTION_EFFECTS: null
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAG1SPU/DMBA9QUChrRhZWEBiJFU+aNKyAWKFgS5Mke2cqVXXFzkOFf+eK6IBITxYOp3fvXfveQQwgmgrXBND1HhqIXp6fnqMIQ64aa0ICCPpiTZdMGodwxFtHXo4WeI6eHJGxXCGWqMKdSs8v7FYk9YdBjhMpwUP7bbiZ+gXujYNXM0rLQtVqmSmdZncSL5kkZfJYpGrMisqFFnOdJJ610AUfI88yyhyMN4SNfWK8DbL/mH3ojF9t2Nn/LjBTnnTBsPAySv1F0q4C20/Lrnnzdsq1MryYhA93L0sYzg1jhHMpoKRFvfEE8H1O9Zdi9ayqJ0hLGdDDe6RUSvCamhNvlUpsuThfD5Ph3OdXv8uGblGbPdMI4v6j6bIiQ2ncP8rhYOdg6kq2LVZnsg8E8lNlWeJ0NUimWM5W5RVWlUzyUpWFKTwrKR3nEk2ZcZjS2qNg63HX2t1g/gxW84/oRWDAwCfJDRY9SgCAAA=
+        internal: H4sIAAAAAAAAAE1Qy07DMBBcmhRCW/EDXIrEsZbyaOKEGyCu5UAvnCrbWVMrqTdyXSr+HhcQ6h5W2tfszEwAJhAfhW0TiFtHA8Sr19VLAonH3dALjzCRjmi390Z1CYzpaNHB9Ro778gaFTZ/WhvTwn3NtSxUpVipdcWWMiRZ5BVrmlxVWcFRZHkEY0kH2wLARfhpFFmYHonazZbwIcsSmLa4V84M3oTR7J0OcyXsXPdfd2HmzMfWb1Qf2ED8/Pi2juDG2HDh3UF5I3s8AUdw9YlufwIAGCUwQ61RhTvqycFtXaf/sUgX52UEcYc4/LGzYhcMeDozYHTSmaoiaCtzJvNMsCXPMyY0b1iNVdlUPOW8lBFc9qQ6bH/5TIPkYO8g/hgCfAMVRnSEewEAAA==
     wand:
-      active_spell: broom
-      path: broom
-      template: broomstick
-      bound: true
-      indestructible: true
-      undroppable: true
-      effect_color: 880000000000,0,880000000000
-      effect_particle_radius: 0.2
-      effect_particle_offset: 0.3
-      hotbar_count: 1.0
-      icon: wood_hoe:11
-      mode: CAST
-      keep: true
-      locked: true
-      spells: broom
-      left_click: CAST
-      right_click: CAST
       drop: NONE
-      swap: NONE
-      id: 0c3bf652-b21a-4721-af79-8e659670775b
+      template: broomstick
       owner: Tektronic
       owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      name: Broomstick
+      bound: 1
+      icon: wood_hoe:11
       description: You can fly!
+      right_click: CAST
+      indestructible: 1
+      version: 2
+      effect_color: 880000000000,0,880000000000
+      keep: 1
+      name: Broomstick
+      id: 0c3bf652-b21a-4721-af79-8e659670775b
+      locked: 1
+      undroppable: 1
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -842,11 +833,10 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6Magic Missile§f (§3Wand§f)
+        display-name: §6Magic Missile§f (§bWand§f)
         lore:
         - §o§aBeginner Magic Wand
-        - '§eCooldown: §6A Moment'
-        - §o§3Bound to _Tkky4EverYT_
+        - §o§2_Tkky4EverYT_'s Wand
         - '§d§oMana: 50'
         - '§r§dMana Regeneration: 5/s'
         ItemFlags: !!set
@@ -855,113 +845,23 @@ wands:
           HIDE_POTION_EFFECTS: null
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAG1SzW7TQBAeiBvcNK3aInGBQyUqTnVkx+vY5oAIIWqR2kaiqVBP1to7m6ziP9abBm5ceAYegCsHHoBn4IE4sXZI1QM+WNrZ/eb7mekAdMBY0ZyZYDBZlNCeTk5Pz8cmmAqzMqUKN/d7Gc1ppESGlaJZCQdOj/hh4LpeaPshGTt9DSpWOcpIMDj2Geehw5gVDnBgkdh3rZBxajl+GPbR9rxBSDSpSIocOquiYNG8wJeOCU+Qc0xUVFKpRJJiJCkTywpadk8z7DCsEilKJTRu/7ikan50QWciOfqwdlFXwIxxJnItxYSDRrbEGeojbWAtr2eb0P3HkxRpIeGFz3yMtUwn5vSEOAnpkz7TP/ckcJElLPAdNwhM6KTINSgVyQKM0fBqasLWx6VABS2nbvuwMe8FhHDetzhzA4uEdmhRl3tWPCA2cQaebTOttTsvVEylVrDMN/B2VWKaVvAoE1UlUtSOl3k9mZLGqZ6Fkktd22pyht1oulh8JuNblDfT6D/RFZxXtTK75+poqhUtoTu6GZ2Po7PJ9M3wve4Ua3K26bsjxWx+5+5ycqkXYU/kOnN9nyhxT0KX6vMtRo3ee3KNOm8wPLt2YywQyw3CyGmm4es5mc1YMvpp/RS24XColBTxUuFFwQQXKKsOADwwwLy+fvf2oqjUn+evng2/nKEB23XpHGmlfj799fvb1x/f29AeZnWQr4+h+TThVVqomknk84Z0947ispbyuNkJkfSoUjRZXJWIrAXbk3KzKOsuzdvDsR5ymWGujjbyAP4CWcq1RT8DAAA=
+        internal: H4sIAAAAAAAAAD2Rv27UQBDGh5xz+C4kikIJxUmcqGJ0Pq//USAOEYlIHBRJFFFZa+9sbnVn72KPOdHRIPEGtEi0FDwABU8A70PF2iRsscXMt9/85tsxwBicLa+ECy5haTac8Kawq7cV1rCfna/X79nJO6zfnGdDOCh5xTNSJTbES/Os/fT79OcXsAa9PlMCprGQMvWF8NIII4/lceClQnLPj9N0jrMwjFI2gN1ct5UAgFsuOKrQFYy3WotspfGx78KewKaolSFlO4dTw2k1WfIrVUwuLd8ADlRlFVS3Bal8g53PAG5bzKZ7ALDjwh2UEgvKCr3RNTyMRYy5pfFzyY+ZX7A5mwt7BcdJgKIQSewHSTIAZ41orrkqXtpELvtEdvrdwoQxKeeeFEHisXSWejyQoZdHbMb8KJzNhIXbs5vV2hh+TQYjOFoQ1SpvCZdaKKks6LhrOeBeXJw+X+qG/jx4cn/x4QU6MOpKL5E39P3ej1+fP377OoThorSB0dMp9MfCnW00gVtyVa16wP3/I1512Hev0P6IKh5xIl6szwyiRRu9Nlhz+hdS59Jrj07etsqUWNHkBg/gLz+sV7ggAgAA
     wand:
-      active_spell: missile
-      path: beginner
       template: wand
-      mana: 50.0
-      mana_regeneration: 5.0
-      mana_max: 50.0
-      bound: true
-      indestructible: true
-      undroppable: true
-      effect_color: 7d7eb4b71bfa,41c4242d4243,83edcd871388
-      effect_particle_radius: 0.2
-      effect_particle_offset: 0.3
-      hotbar_count: 1.0
-      icon: wood_hoe:1
-      keep: true
-      quiet: 1.0
-      spells: missile
-      left_click: CAST
-      right_click: NONE
-      drop: TOGGLE
-      swap: CYCLE_HOTBAR
-      id: 75844ff2-fd38-4909-a3f5-b640416500dd
       owner: _Tkky4EverYT_
-      owner_id: 7dff91dd-96e6-4b73-9dfa-17992e055694
-      name: Wand
-      description: $path Magic Wand
       mana_timestamp: 1.479833590794E12
+      owner_id: 7dff91dd-96e6-4b73-9dfa-17992e055694
+      bound: 1
+      icon: wood_hoe:1
+      description: $path Magic Wand
+      indestructible: 1
+      version: 2
+      effect_color: 7d7eb4b71bfa,41c4242d4243,83edcd871388
+      keep: 1
+      name: Wand
+      id: 75844ff2-fd38-4909-a3f5-b640416500dd
+      undroppable: 1
 open_wand: false
 gave_welcome_wand: false
-soul:
-  id: e92b0341-f44a-46b6-bc4a-b648cf31b813
-  materials: []
-  spells: []
-  hotbar_count: 1
-  hotbar: 0
-  active_spell: ''
-  active_material: ''
-  name: Wand
-  description: ''
-  owner: ''
-  owner_id: ''
-  cost_reduction: 0.0
-  consume_reduction: 0.0
-  cooldown_reduction: 0.0
-  power: 0.0
-  enchant_count: 0
-  max_enchant_count: 0
-  protection: 0.0
-  protection_physical: 0.0
-  protection_projectiles: 0.0
-  protection_falling: 0.0
-  protection_fire: 0.0
-  protection_explosions: 0.0
-  mana: 0.0
-  mana_regeneration: 0
-  mana_max: 0
-  mana_max_boost: 0.0
-  mana_regeneration_boost: 0.0
-  mana_timestamp: 0
-  mana_per_damage: 0.0
-  uses: 0
-  has_uses: false
-  locked: false
-  effect_color: none
-  effect_bubbles: false
-  effect_particle_data: '0.0'
-  effect_particle_count: 0
-  effect_particle_min_velocity: 0.0
-  effect_particle_interval: 0
-  effect_particle_radius: 0.2
-  effect_particle_offset: 0.3
-  effect_sound_interval: 0
-  active_effects: false
-  block_fov: 0.0
-  block_chance: 0.0
-  block_reflect_chance: 0.0
-  block_mage_cooldown: 0
-  block_cooldown: 0
-  cast_interval: 0
-  cast_min_velocity: 0.0
-  quiet: 0
-  passive: false
-  keep: false
-  randomize: false
-  rename: false
-  rename_description: false
-  bound: false
-  soul: false
-  force: false
-  indestructible: false
-  protected: false
-  powered: false
-  glow: false
-  undroppable: false
-  heroes: false
-  fill: false
-  upgrade: false
-  organize: false
-  alphabetize: false
-  left_click: CAST
-  right_click: TOGGLE
-  drop: CYCLE_HOTBAR
-  swap: NONE
-  icon: wood_hoe
-  icon_inactive_delay: 0
 data:
   sp: 22
