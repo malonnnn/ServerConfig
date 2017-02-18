@@ -10,17 +10,10 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    buttons:
-        min: {x: 3256.0, y: 91.0, z: 13394.0}
-        max: {x: 3258.0, y: 93.0, z: 13397.0}
-        members: {}
-        flags: {use: allow, interact: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
     __global__:
         members: {}
-        flags: {ice-form: deny, leaf-decay: deny, ice-melt: deny}
+        flags: {ice-form: deny, use: allow, leaf-decay: deny, ice-melt: deny, interact: allow,
+            pvp: deny}
         owners: {}
         type: global
         priority: 0
