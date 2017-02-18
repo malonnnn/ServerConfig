@@ -1,0 +1,19 @@
+gocastle:/gocastle $plr = >>>
+
+    @player = $plr
+
+    @bal = acc_balance(@player)
+
+    if(@bal < 15){
+        tmsg(@player,color(red)."Sorry! You need at least $15 to visit the king in his castle!")
+        die()
+    }else{
+        runas(~console,"/pex user ".@player." add multiverse.access.castle")
+        runas(~console,"/warp kingslanding ".@player)
+        acc_subtract(@player,15)
+        tmsg(@player,color(green)."$15 has been taken from your account for your visit to the king.")
+        runas(~console,"/pex user ".@player." remove multiverse.access.castle")
+    }
+
+
+<<<
