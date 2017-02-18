@@ -15,7 +15,8 @@
                 "/run 0-3,
                 "/haste 0-5",
                 "/pt jump (use on stick)",
-                "/jump"
+                "/jump",
+                "/thru"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 7 true",
