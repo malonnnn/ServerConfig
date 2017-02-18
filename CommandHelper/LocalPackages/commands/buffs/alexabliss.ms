@@ -4,11 +4,11 @@
 @hero = associative_array(
             'name': '§AAlexa§CBliss',
             'class': 'alexabliss',
-            'sig': 'iPV77JY8R+xHYNdBDqLhDHRZ4aZjroPykErQ/ndNSS92YajtqVSAsgzKDK5sEarawcmgxj+clBf6GQ4LhS0Q3fu0ZvSd5FUMcNgCTPrnkqfBXdtfasls+r0DB+H5Dc+qEcPAYl9Q1T6JcJBMefn2D0DaUWQNDHrdRIROIBUQkPa4sn1WAHxEnhD2N5wf/wQlVzjkpocpp1szUW9zxFikCn2ALoMzPF6CNEWUljOzIYR+t1OHkHu1Hk179hsheTWifddGcZo0an94GDdphGSGm7RnvQYMOmEysPfIq1TGDLekPXhCUL7f+3xv3ja9eJg6B6NuscnJ4oMTnZ4HcdY3RMfOQPTW6I/G9coSc3BaDtH23fGfZMvmhNcX4GqTapEDqj9gEV3W2dwBbJSFZXAX0m3fRiZQBWdZU2tt4i5npNVjm9e7OahEsbu0MdH2Ord+lwMhYERvUjjbhjMCJZ4ktIqQQLCPLilDU9c0JCwwnJtoLQXfdLwktvXKGt0odnbbFyKcQIDDDUj+CaVZhRtcNMo69wpijvUSZIlKM1oXJ3ZD1VH2rB6Xjpkbp94WVGtklc3mPEZWWTsc9cudphx7MPs3PYwjv6U83Cqv80ni0iKPZuMnrsXMugQFhhPrx2ru+KwBuwzf8pjCc+DmNauIVerdTB1qofxrWZImb/0LcIo=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0NzQ1Nzc5MTAyMjIsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzczYzc1ZTlkYzM0YWUzZmVjNTg4NzY4NDdlODMwNWYxYzIyOGI3M2IwN2NhNGI0NWNkMDc5NTU3MGU5NWRhIn19fQ==',
+            'sig': 'XimlhHXY80I0KB/5ovzv1Ed+VqcRsKSH5mSCi201uRbcAbqlZ4EzUEIdkupWQCJk7yxKOFm5/eRQvPVf8pZNjm7zIDnunmreMEq1cG/J+lhw9xG2KoXOP7W6oD0xtx41/pBfRZwVqKbHXdJAJjFrQKmsGxeZHB3nN8UYwpPKtHMi0XWAhLOOjo4JbTWG+swrJoqSK8tZ1B2qbdpZ6lZpj5AzkD0ST5k9gDq1FkjMP5vt8ebAenyWXXoiRWn5NktVmGYIuZ8NMoeW+fX2JXyf8LQXVaToju+MLSqtDcSUvEj4P9hiV0/lj0npy7BpETPfpx7m9tj5sL2F6Y8sjVOIxR2T5PFft6L8Pp4UzI5tz3XDNSqOlgkZ3fLmnThISMYoT1xHwwOHodt/6UgINsN56/Q3uONRNS8cFBksxDkNSJR3SRnonoexTb18+V7sZl0MhLjBN+3VEIBGkQjfxi7BFdyO9k7Uwv1snbTuY7DAXN6VaCX4qZvv7BEw+piYenGQAv/iczHkZruOIdJXq9jKBscSo2CBEiYMj6fBAOKWy8Q6o04RX0yc7ACRbS/OYMX7CARDwnnVMF5NoUcCcCW7iklXZwc/SBrNH5obkDvk51SGsF8PGi5UXTgz0LUXngjEcCljMZALNgL45Y46kCD6vVIxV2pllsN1hJ2vt2s345Y=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0ODc0NTgwMTUyODYsInByb2ZpbGVJZCI6ImRiYjQ3ODg3YmZiZDQwZTZiZmVjM2QxMDUzZWEzYWZmIiwicHJvZmlsZU5hbWUiOiJTX0hhcmxleVF1aW5uX1MiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jMTczM2E1MWEwOWU4NmNmYmZiNzNjYjBkNjg4NWU1MTU4MTYzYTYzZTJjYWQyNWUyYjJmNGRiNjIzZjY3OTJjIn19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "Try me",
+            'speech': "Don't Bliss me off!",
             'powers': array(
                 "/buff",
                 "/jump 0-1",
