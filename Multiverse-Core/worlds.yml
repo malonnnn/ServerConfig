@@ -55,7 +55,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: greenfield
     allowWeather: 'true'
     difficulty: EASY
     spawning:
@@ -1775,6 +1775,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
+  escaperoom:
+    ==: MVWorld
+    hidden: 'false'
+    alias: escaperoom
+    color: WHITE
+    style: NORMAL
+    pvp: 'false'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'true'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 1.0595032763835586
+      y: 66.0
+      z: 1.863144494556637
+      pitch: 22.950035
+      yaw: 1.3500366
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-5740136656964266929'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   verticalparkour:
     ==: MVWorld
     hidden: 'false'
