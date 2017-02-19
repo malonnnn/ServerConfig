@@ -13,7 +13,10 @@
                 "/buff",
                 "/kill",
                 "/vibrate",
-                "/stopvibrating"
+                "/stopvibrating",
+                "/run 0-5",
+                "/haste 0-4",
+                "/jump 0-3"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
