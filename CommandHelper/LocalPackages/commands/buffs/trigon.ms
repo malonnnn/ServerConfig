@@ -25,7 +25,7 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 24 true",
                 "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 10 9999 1 true
-                "/effect ". @plr ." 21 9999 19 true",
+                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true"
             )
         )
