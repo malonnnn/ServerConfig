@@ -9,20 +9,10 @@ gocastle:/gocastle $plr = >>>
 
     @kingAvailable = false
 
-    if(ponline("God_Doesnt_Exist")){
-        if(pworld("God_Doesnt_Exist") == "castle"){
-            @kingAvailable = true
-        }
+    if(pworld("God_Doesnt_Exist") == "castle" || pworld("xSp4rkz") == "castle"){
+        @kingAvailable = true
     }
-
-    if(!@kingAvailable){
-        if(ponline("xSp4kz")){
-            if(pworld("") == "xSp4kz"){
-                @kingAvailable = true
-            }
-        }
-    }
-
+   
     if(@kingAvailable){
         @bal = acc_balance(@player)
         if(@bal < 15){
