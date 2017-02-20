@@ -7,15 +7,21 @@ messages:
   packlisthead: 'Packs available to you:'
   nopacks: No packs found!
 packs:
+  razul:
+    url: http://mynecraft.servegame.com/razul.zip
+    hash: 00033cf1e575514b8bd0ee6c6deef745dc77b4d0
+    format: 0
+    restricted: false
+    permission: worldresourcepacks.pack.razul
   greenfield:
     url: http://mynecraft.servegame.com/superherocity.zip
-    hash: d0af045059ef75eb80b72a92c85af1e1036dd2c2
+    hash: 647338303690a328e11b3b0f0cf9f4f826727fe9
     format: 1
     restricted: false
     permission: worldresourcepacks.pack.greenfield
   survival:
     url: http://mynecraft.servegame.com/survivalresourcepack.zip
-    hash: 6bf8006ee58d6f40ea15d347cae514bd07a0e658
+    hash: 1a7224d90ec4346da17f55a900ee43aa8f5f93f2
     format: 3
     restricted: false
     permission: worldresourcepacks.pack.survival
@@ -25,11 +31,13 @@ packs:
     format: 0
     restricted: false
     permission: worldresourcepacks.pack.emptypack
-empty: emptypack
+empty: survival
 server:
-  pack: emptypack
+  pack: survival
 worlds:
   greenfield:
     pack: greenfield
   survival:
     pack: survival
+  razul:
+    pack: razul
