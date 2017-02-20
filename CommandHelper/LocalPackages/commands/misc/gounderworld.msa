@@ -1,0 +1,31 @@
+gounderworld:/gounderworld $plr = >>>
+
+    @player = $plr
+
+    if(has_permission(@player,"bypass.entrance")){
+        runas(~console,"/warp underworld ".@player)
+        die()
+    }
+
+    @godAvailable = false
+
+    if(pworld("God_Doesnt_Exist") == "underworld" || pworld("xSp4rkz") == "underworld"){
+        @godAvailable = true
+    }
+
+    if(@godAvailable){
+        @bal = acc_balance(@player)
+        if(@bal < 15){
+            tmsg(@player,color(red)."Sorry! You need at least $15 to visit the Underworld God")
+            die()
+        }else{
+            runas(~console,"/pex user ".@player." add multiverse.access.underworld")
+            runas(~console,"/warp underworld ".@player)
+            acc_subtract(@player,15)
+            tmsg(@player,color(green)."$15 has been taken from your account for your visit to the Underworld.")
+            runas(~console,"/pex user ".@player." remove multiverse.access.underworld")
+        }
+    }else{
+        tmsg(@player,color(red)."Sorry, there's currently no God available in the Underworld to answer your questions. Please come back later.")
+    }
+<<<
