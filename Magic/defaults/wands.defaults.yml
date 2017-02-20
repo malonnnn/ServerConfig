@@ -356,6 +356,7 @@ golemheart:
 #
 base_wand:
     hidden: true
+    mode: inventory
     drop: toggle
     left_click: cast
     right_click: none
@@ -372,6 +373,7 @@ base_wand:
   
 base_sword:
     hidden: true
+    mode: inventory
     drop: toggle
     left_click: none
     right_click: none
@@ -385,6 +387,7 @@ base_sword:
 
 base_lightsaber:
     hidde: true
+    mode: inventory
     icon_inactive: wood_hoe:14
     icon_inactive_delay: 500
     drop: toggle
@@ -1300,7 +1303,7 @@ mirrorshield:
     bound: true
     keep: true
     right_click: none
-    left_clicK: none
+    left_click: none
     drop: none
     block_reflect_chance: 0.75
     block_chance: 1
@@ -1764,7 +1767,6 @@ antihunger:
 wand:
     inherit: base_wand
     icon: wood_hoe:1
-    soul: false
     migrate_icon: wood_hoe
     effect_color: random
     path: beginner
