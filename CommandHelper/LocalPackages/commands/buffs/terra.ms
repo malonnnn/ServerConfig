@@ -14,7 +14,10 @@
                 "/jump 0-2",
                 "/run 0-1",
                 "/haste 0-2",
-                "/earth (launches an dirt shot)"
+                "/earth (launches an dirt shot)",
+                "/fly (uses telekinetic powers to fly)",
+                "/carryplayer <playername>",
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",
