@@ -14,12 +14,11 @@
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-5",
-                "/pt jump (use on stick)",
-                "/jump",
-                "/thru"
+                "/thru",
+                "/mrshiftytp"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 7 true",
+                "/effect ". @plr ." 5 9999 5 true",
                 "/give ". @plr ." minecraft:stick 1 name:&1M&Cr&7. &CS&1h&ci&ff&ct&1y&7'&cs_&1S&ct&1i&cc&1k"                
             )
         )
