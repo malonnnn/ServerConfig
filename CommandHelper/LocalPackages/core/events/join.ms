@@ -58,6 +58,12 @@ bind(player_join,null,null,@event){
         }
     }
 
+    if(@plr == "God_Doesnt_Exist" || @plr == "xSp4kz"){
+        foreach(@player in @plrs){
+            play_named_sound(ploc(), array('sound': 'xyz.theone', 'volume': 10000), @player)
+        }
+    }
+
     set_timeout(5000, closure(
         _changeSkin(@plr,@hero['sig'],@hero['val'])
         _changeTrail(@plr, @hero['trail'])

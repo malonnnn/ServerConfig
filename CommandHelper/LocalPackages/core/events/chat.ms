@@ -122,6 +122,23 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
+
+    # -------------------------------
+    # replace all messages by Greninja with Greninja stuff
+    # -------------------------------
+    if(@pgroup[0] == 'greninja')
+    {
+        @phrase = rand(1, 3)
+        
+        if(@phrase == 1){
+            assign(@msg,"Gre, Greninja!")
+        } else if(@phrase == 2){
+            assign(@msg,"Greninja!")
+        }
+        
+        modify_event(message, @msg)
+    }
+    
     # -------------------------------
     # replace all messages by mew with "mew"
     # -------------------------------
