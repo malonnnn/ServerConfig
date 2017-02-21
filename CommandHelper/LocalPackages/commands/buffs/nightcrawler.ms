@@ -21,6 +21,6 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
-                "/give ". @plr ." minecraft:lever 1 name:"&1Ni&4g&1ht&1Cr&4a&1wle&4r&7Claw"                
+                "/give ". @plr ." minecraft:lever 1 name:&1Ni&4g&1ht&1Cr&4a&1wle&4r&7Claw"                
             )
 )
