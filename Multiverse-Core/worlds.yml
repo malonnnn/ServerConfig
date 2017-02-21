@@ -50,7 +50,7 @@ worlds:
   castle:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: castle
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -1730,7 +1730,7 @@ worlds:
   underworld:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: underworld
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -3023,6 +3023,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
+  alpha:
+    ==: MVWorld
+    hidden: 'false'
+    alias: alpha
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'false'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -1404.387356156902
+      y: 4.0
+      z: 1144.0311511103748
+      pitch: -0.15002024
+      yaw: -0.29992676
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '1254457250693886230'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   pvpparkourlobby:
     ==: MVWorld
     hidden: 'false'
@@ -4276,7 +4324,7 @@ worlds:
   temple:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: temple
     color: WHITE
     style: NORMAL
     pvp: 'true'
