@@ -14,13 +14,14 @@
                 "/jump 0-4",
                 "/run 0-4",
                 "/haste 0-2",
-                "/pt jump",
+                "/powertool jumpto",
                 "/vis",
                 "/invis",
-                "/jump"
+                "/jumpto"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 21 9999 19 true",
+                "/effect ". @plr ." 5 9999 6 true",
                 "/give ". @plr ." minecraft:lever 1 name:&1Ni&4g&1ht&1cr&4a&1wle&4r_&7Claw"                
             )
 )
