@@ -17,6 +17,7 @@
                 "/powertool jumpto",
                 "/vis",
                 "/invis",
+                "/invis",
                 "/jumpto"
             ),
             'buffs': array(
