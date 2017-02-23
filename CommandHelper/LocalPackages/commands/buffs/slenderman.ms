@@ -19,7 +19,7 @@
                 "/jumpto"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 5 9999 7 true",
                 "/give ". @plr ." minecraft:paper 1 name:1"   
                 "/give ". @plr ." minecraft:paper 1 name:2"
                 "/give ". @plr ." minecraft:paper 1 name:3"
