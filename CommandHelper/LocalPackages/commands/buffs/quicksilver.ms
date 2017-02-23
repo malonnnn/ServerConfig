@@ -15,7 +15,7 @@
                 "/jump 0-3",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-9",
+                "/run 0-7",
                 "/haste 0-4"
             ),
             'buffs': array(
