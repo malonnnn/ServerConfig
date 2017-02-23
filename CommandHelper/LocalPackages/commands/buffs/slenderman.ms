@@ -14,8 +14,6 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/pt jumpto",
-                "/vis",
-                "/invis",
                 "/jumpto"
             ),
             'buffs': array(
