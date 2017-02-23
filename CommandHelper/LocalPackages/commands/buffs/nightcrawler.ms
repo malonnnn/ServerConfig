@@ -16,7 +16,7 @@
                 "/haste 0-2",
                 "/pt jump",
                 "/vis",
-                "/invis",
+                "/shadowhide",
                 "/jump"
             ),
             'buffs': array(
