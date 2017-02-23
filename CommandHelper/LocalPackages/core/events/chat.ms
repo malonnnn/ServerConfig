@@ -243,6 +243,8 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(has_permission("is.virus")){
         @cooldown = 60
+}else if(@pname == "Suannaii"){
+        @cooldown = 1
     }else{
         @plrz = all_players()
         @size = array_size(@plrz)

@@ -4,7 +4,7 @@ quarantine:/quarantine $plr = >>>
     sudo("/runalias /mortal")
     set_timeout(3000,closure(
         runas(~console,"/pex user ".@plr." group set quarantine")
-        runas(~console,"/tptoggle off ".@plr)
+        runas(~console,"/tptoggle ".@plr." off")
         runas(~console,"/warp quarantine ".@plr)
     ))
 
@@ -15,7 +15,7 @@ unquarantine:/unquarantine $plr = >>>
     @plr = $plr
     runas(~console,"/pex user ".@plr." group set mortal")
     runas(~console,"/warp city ".@plr)
-    runas(~console,"/tptoggle on ".@plr)
+    runas(~console,"/tptoggle ".@plr." on")
 
 <<<
 
