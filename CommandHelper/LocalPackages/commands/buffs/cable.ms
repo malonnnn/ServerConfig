@@ -15,11 +15,8 @@
                 "/run 0-3",
                 "/carryplayer",
                 "/dismountplayer",
-                "/haste 0-3",
-                "/confuse",
-                "/confuse <player>",                
-                "/tppos"
-                "/pt tppos"
+                "/haste 0-3",            
+                "/tppos",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 8 true",
