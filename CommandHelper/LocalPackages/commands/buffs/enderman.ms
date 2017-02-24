@@ -15,7 +15,6 @@
                 "/jumpto"
             ),
             'buffs': array(
-                "/effect ". @plr ." 2 9999 3 true",
-                "/give ". @plr ." minecraft:endstone 1 name:&0End_&fStone"
+                "/effect ". @plr ." 2 9999 3 true"
             )
 )
