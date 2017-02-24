@@ -38,5 +38,5 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/effect ". @plr ." 10 9999 20 true",
                 "/effect ". @plr ." 24 9999 1 true",           
-                )
+            )
         )
