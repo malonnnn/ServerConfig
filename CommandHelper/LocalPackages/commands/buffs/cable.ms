@@ -19,6 +19,7 @@
                 "/confuse",
                 "/confuse <player>",                
                 "/tppos"
+                "/pt tppos"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 8 true",
