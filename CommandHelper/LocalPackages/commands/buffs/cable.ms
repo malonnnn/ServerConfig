@@ -16,15 +16,13 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-3",
-                "/mindcontrol <playername>",
-                "/stopmindcontrol",
+                "/confuse",
                 "/confuse <player>",                
-                "/tp"
+                "/tppos"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 15 true",
-                "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 16 9999 1 true",
+                "/effect ". @plr ." 5 9999 8 true",
+                "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." energybeam"                
             )
