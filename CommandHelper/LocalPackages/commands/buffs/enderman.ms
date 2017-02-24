@@ -11,13 +11,11 @@
             'speech': "*Borp*",
             'powers': array(
                 "/buff",
-                "/jump 0-2",
-                "/run 0-2",
                 "/pt jumpto",
                 "/jumpto"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 6 true",
+                "/effect ". @plr ." 2 9999 3 true",
                 "/give ". @plr ." minecraft:endstone 1 name:&0End_&fStone"
             )
 )
