@@ -11,12 +11,10 @@
             'speech': "Super, rainbow, narwhail BLAST!",
             'powers': array(
                 "/buff",
-                "/jump 0-1",
-                "/run 0-1",
-                "/haste 0-2",
+                "/gmc",
+                "/mutate <playername>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 10 9999 1 true",
                 "/give ". @plr ." minecraft:stick 1 name:&6S&3t&5ar's_&5Wa&en&5d"
             )
 )
