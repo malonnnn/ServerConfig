@@ -6,9 +6,6 @@ default:
     earns_cooldown: 900000
     # Enable this to prevent spell casts outside the world border
     world_border_restricted: false
-    parameters:
-      bypass_confusion: true
-      bypass_weakness: true
     effects:
        target_selected:
        - class: EffectSingle
@@ -1894,6 +1891,7 @@ camera:
         cooldown: 5000
         allow_max_range: false
         range: 32
+        bypass_pvp: true
     costs:
         mana: 5
 
@@ -3802,28 +3800,58 @@ force:
     class: ForceSpell
     worth: 1000
     effects:
-        cast:
-        -  class: EffectSingle
-           sound: magic.zap_big
-           location: origin
-           effectlib:
-             class: DnaEffect
-             particlesBase: 0
-             particlesHelix: 7
-             particleHelix: spell_mob
-             particleBase1: spell_mob
-             particleBase2: spell_mob
-             iterations: 10
+      cast:
+      - class: EffectSingle
+        sound: magic.zap_big
+        location: origin
+        effectlib:
+           class: DnaEffect
+           particlesBase: 0
+           particlesHelix: 7
+           particleHelix: spell_mob
+           particleBase1: spell_mob
+           particleBase2: spell_mob
+           iterations: 10
+      target_selected:
+      - class: EffectSingle
+        location: origin
+        sound: magic.hit
+        sound_volume: 0.5
+      - class: EffectSingle
+        location: target
+        use_hit_location: false
+        effectlib:
+          class: StarEffect
+          iterations: 4
+          particle: redstone
+          color: "222222"
+          spikeHeight: 1.2
+          innerRadius: 0.2
+      - class: EffectSingle
+        location: target
+        use_hit_location: false
+        use_eye_location: true
+        color_override: color
+        effectlib:
+          class: IconEffect
+          iterations: 1000
+          particle: redstone
+          color: "222222"
+          period: 1
+          yOffset: 0
+          offset: 0,0.7,0
+      - class: EffectTrail
+        particle: spell_mob
     parameters:
         target_type: LivingEntity
         target_breakables: 1
         target: other_entity
-        range: 48
+        range: 24
         item_force: 1
         entity_force: 4
         bypass_backfire: true
     costs:
-        mana: 200
+        mana: 100
 
 forest:
     icon: diamond_axe:42
@@ -6772,7 +6800,6 @@ music:
 
 note:
     hidden: true
-    icon: skull_item
     category: music
     show_undoable: false
     actions:
@@ -9406,7 +9433,7 @@ spellshop:
         quiet: true
         confirm_filler: stained_glass:5
         auto_upgrade: true
-        upgrade_levels: 15
+        upgrade_levels: 1
         use_sp: true
 
 sphere:
