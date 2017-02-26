@@ -122,6 +122,21 @@ bind('player_chat', null, null, @e) {
         modify_event(message, @msg)
     }
     
+    # -------------------------------
+    # replace all messages by Greninja with Greninja stuff
+    # -------------------------------
+    if(@pgroup[0] == 'victini')
+    {
+        @phrase = rand(1, 3)
+        
+        if(@phrase == 1){
+            assign(@msg,"Vic, Victini!")
+        } else if(@phrase == 2){
+            assign(@msg,"Victini!")
+        }
+        
+        modify_event(message, @msg)
+    }
 
     # -------------------------------
     # replace all messages by Greninja with Greninja stuff
