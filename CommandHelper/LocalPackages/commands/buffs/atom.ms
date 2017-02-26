@@ -8,9 +8,10 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzI3ODAzMDkyMzUsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NiZDczOTcxMTY2MTM2YjEyNmZmN2U1Y2VmYzIyNTgzODYxYTczZjU3NjFiMTBmNTg4OGUzZDg5ZGE1ZTllMCJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Oh shit I'm little!",
+            'speech': "WTF I'm little!!",
             'powers': array(
                 "/buff",
+                "/thru",
                 "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
@@ -25,6 +26,6 @@
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." plasmablast",
-                "/disguise villager baby"                
+                "/disguise silverfish"                
             )
         )
