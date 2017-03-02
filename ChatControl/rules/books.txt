@@ -1,0 +1,9 @@
+# -------------------------------------------------------------------------------
+# This file manages rules in books and includes rules from rules.txt.
+#
+# For help, see the header in the rules.txt file.
+# -------------------------------------------------------------------------------
+
+# Prevent message containing 'Herobrine' in title or page in the book.
+match \bHerobrine\b
+then deny

@@ -1,0 +1,43 @@
+# -------------------------------------------------------------------------------
+# This file manages rules in commands (messages beginning with /)
+# and includes rules from rules.txt.
+#
+# For help, see the header in the rules.txt file.
+# -------------------------------------------------------------------------------
+
+# Prevent /op command but ignore other commands that start with /op like /openinv
+match ^/op\b
+ignore perm chatcontrol.bypass.rules
+id /op
+then warn &bYes, we are giving away OPs. Seriously, what did you expect?!
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then deny
+then log
+
+match ^/(gm|gamemode)
+ignore perm essentials.gamemode
+id /gm
+then warn &aThat would be nice, wouldn't it?
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then deny
+then log
+
+match ^/(heal)
+ignore perm essentials.heal
+then warn &dGame too hard for ya?
+then deny
+
+match ^/trade
+ignore gamemode survival
+then warn &cYou can only use this command in survival mode!
+then deny
+
+# Example usage of group match.
+# Regular expression will make multiple group matches, in this case
+# (prefix) is $1 (first) and (.*) is $2 (second)
+# You can refer to them in the messages.
+#match ^/(prefix) (.*)
+#require perm prefix.set.own &cInsufficient permission to change prefix. ({permission})
+#then console pex user {player} prefix $2
+#then warn Your prefix is now: $2
+#then deny

@@ -1,0 +1,182 @@
+# -----------------------------------------------------------------
+# This file controls creation of own chat formats.
+# -----------------------------------------------------------------
+#
+# You need to enable Variables (settings.yml -> Variables.Enabled)
+# to use custom placeholders here. 
+# See "variables/javascript.txt" for placeholder list.
+#
+# -----------------------------------------------------------------
+
+# -----------------------------------------------------------------
+# Interactive chat formats.
+# Used across the plugin to format the chat message.
+#
+# [TIP] It is possible to create as many formats as you want.
+# -----------------------------------------------------------------
+Formats:
+
+  # Name doesn't matter, but you can refer to it from other parts of the plugin.
+  Example_Format:
+    
+    # Create as many as you like.
+    # Hover actions are: SHOW_TEXT, SHOW_ACHIEVEMENT and SHOW_ITEM
+    # Click actions are: OPEN_URL, OPEN_FILE, RUN_COMMAND and SUGGEST_COMMAND
+    Parts:
+      
+      Staff:
+        Message: "&6[VIP] "
+        
+        # NB: This part of this format (Staff) will only be displayed if the player 
+        # that is sending the message has the permission below.
+        Permission: "chatcontrol.groups.vip"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values: 
+            - "&6This player is VIP"
+            - "&6Check out &e/web &6to obtain VIP"
+      
+      # The name of the part does not really matter.
+      Prefix:
+        Message: "{pl_prefix}"       
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "&8*-----* &f{player} &8*-----*"
+            - "&7Prefix&8: &7{pl_prefix}"
+            - "&7Group&8: &b{pl_group}"
+      
+      Player:
+        Message: "{player}:"                 
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "&7Message issued: &b{timestamp}"
+            - "&7Click to send a PM"
+        Click_Event:
+          Action: SUGGEST_COMMAND
+          Value: "/tell {player} "
+            
+      Suffix:
+        Message: "{pl_suffix} "
+        
+      Message:
+        Message: "{message}"
+
+  Private_Message_Sender:
+    Parts:
+
+      Everything:
+        Message: "&7✉ &2has been sent!"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "     &8~ &3Private Message &8~     "
+            - "&8&oSent {timestamp}"
+            - "&3Receiver: &f{player}"
+            - "&3Body: &f{message}"
+        Click_Event:
+          Action: SUGGEST_COMMAND
+          Value: "/tell {player} "
+
+  Private_Message_Receiver:
+    Parts:
+
+      Everything:
+        Message: "&7✉ &6from {player}: &f{message}"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "     &8~ &3Private Message &8~     "
+            - "&8&oReceived {timestamp}"
+            - "&3Sender: &f{player}"
+            - ""
+            - "&7Click for a reply."
+        Click_Event:
+          Action: SUGGEST_COMMAND
+          Value: "/r "
+      
+  Admin_Chat:
+    Parts:
+      Bracket_Start:
+        Message: "&8[&2A-Chat "
+      Player:
+        Message: "{player}"
+      Bracket_End:
+        Message: "&8] &2"
+      Message:
+        Message: "{message}"
+        
+  Bungee_Chat:
+    Parts:
+      Bracket:
+        Message: "&8[&fG&8] "
+      Player:
+        Message: "{player} &7>&f "
+      Message:
+        Message: "{message}"
+        
+  Global_Chat:
+    Parts:
+      Everything:
+        Message: "&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "{player}"
+        
+  Spy_Chat:
+    Parts:
+      Everything:
+        Message: "&8SPY: [{world}&8]&f {pl_prefix}{player}:{pl_suffix} {message}"
+
+# -----------------------------------------------------------------
+# Chat channels. 
+# You can remove or create them at your will.
+#
+# NB: The names of the keys are used as channel names.
+# -----------------------------------------------------------------
+Channels:
+
+  # This is an example of a channel using every function you can configure.
+  # [NOTICE] You only need to specify Format. Other values are not mandatory.
+  #example_channel:
+  #
+  #  # The format you have created above in this file.
+  #  Format: Some_Format
+  #
+  #  # Print following message to the console.
+  #  Log_Format: '{player} > {message}'
+  #
+  #  # Communication in the channel can be saved. Here you can specify the path and the format.
+  #  Save:
+  #
+  #    # The file path must be within the plugin folder!
+  #    File: 'logs/example-channel.log'
+  #    Format: '{player}: {message}'
+  #
+  #  # Permission required to see the messages inside the channel.
+  #  Permission: 'chatcontrol.channels.example-permission'
+  #
+  #  # Range within the world the players will receive the message (works like ranged chat).
+  #  Range: 200
+  #
+  #  # Send the message to BungeeCords? 
+  #  # [NOTICE] You MUST have the channel with the exact same name configured on every other server.
+  #  Bungee: true
+  #
+  #  # Integration with other plugins.
+  #  # Currently: town [Sends messages to players in the same town in Towny plugin.]
+  #  #            nation [Sends messages to players in the same nation in Towny plugin.]
+  #  #            faction [Sends messages to players in the same faction in Factions 2.x free version plugin.]
+  #  Party: town
+
+  global:
+    Format: Global_Chat
+    Bungee: true
+    Range: 100
+    Log_Format: '[GLOBAL] {player}: {message}'
+    Save:
+      File: 'logs/global-chat.txt'
+      Format: '{player}: {message}'
+    
