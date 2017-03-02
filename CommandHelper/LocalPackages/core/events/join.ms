@@ -47,7 +47,7 @@ bind(player_join,null,null,@event){
     foreach(@player in @plrs)
     {
         @otherPlayerGroup = pgroup(@player)
-        if(@hero['class'] != "timewraith" && @otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
+        if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
             runas(~console,/pex user player() group set mortal)
             runas(~console,/pex reload)
             runas(~console,"/sudo ". @plr ." c:/mortal")

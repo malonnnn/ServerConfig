@@ -1,0 +1,133 @@
+# ------------------------------------------------------------------------------
+# This file support creating handlers that are triggered by user-defined rules.
+#
+# The purpose of a handler is to collect multiple actions,
+# and use them when a message is caught by a rule.
+# This reduces repetitive code and makes things more human and future proof.
+#
+# The names are case sensitive.
+# ------------------------------------------------------------------------------
+
+# All possible values are commented out below as an example. 
+# [NOTICE] They are not mandatory to use. You only need to specify the keys that you have usage for.
+#
+# !! THIS IS JUST AN EXAMPLE, DO NOT UNCOMMENT IT, SCROLL DOWN FOR HANDLERS THAT ARE IN USE !!
+#Advertising_Example_Filter:
+  #
+  # If the player has the permission their message will no be checked/handled.
+  #Bypass_With_Permission: "chatcontrol.bypass.ad"
+  #
+  # A list of commands that will be excluded from the check. Start with a slash ('/')
+  #Ignored_In_Commands:
+  #  - /auction
+  #
+  # Shall we ignore the names of the players online?
+  # Can degrade performance slightly on extremely big servers.
+  #Ignore_Usernames: true
+  #
+  # If chat ignorer is enabled and a handler catches the message, players who ignore the specified set won't see the message.
+  #Ignore_Chatdisplay: swear
+  #
+  # Worlds on which this handler will be ineffective.
+  #Ignore_Worlds: [ignored_world, ignored_world_nether, another_world]
+  #
+  # A message displayed to the player. Set to 'none' to disable.
+  #Player_Warn_Message: "{prefix} &cSorry, {player}, advertising is prohibited!"
+  #
+  # A message broadcasted to everyone. Set to 'none' to disable.
+  #Broadcast_Message: "{server} &6{player} tried to &cadvertise&6, inform OP!"
+  #
+  # A message broadcasted to players with permission specified below.
+  # Players with the permission 'chatcontrol.notify.advertise' will recieve message specified after it.
+  # Notice to the {ruleID} variable: it is replaced only if the rule specifies an ID.
+  #Staff_Alert: "chatcontrol.notify.advertise {prefix} &c{player} violated rule &6ID {ruleID} &cwith: &f{message}"
+  #
+  # A message logged into console. Set to 'none' to disable.
+  # {handler} variable is the name of the handler, in this case "Advertising_Ban_Filter"
+  #Console_Message: "{player} violated rule ID {ruleID}, triggered {handler} filter with: {message}"
+  #
+  # A path to file where the message will be logged. Set to 'none' to disable.
+  #Write_To_File: log/advertisements.txt
+  #
+  # Should the message be blocked from appearing?
+  #Block_Message: true
+  #
+  # When plugin Vault is installed, you can take money from player
+  #Fine: 10
+  #
+  # Sound to play. Format: <bukkitSoundName>, <volume>, <pitch> 
+  #Sound: ENTITY_ARROW_HIT_PLAYER, 1.0, 0.1
+  #
+  # If points system is enabled (settings.yml), the amount of warning points to be given.
+  #Warn_Points: 5
+  # It is possible to specify the warning set name. NOTICE: If you have global warning set,
+  # and want to give points there, you do not need to specify the set name
+  #Warn_Points: swear 1
+  #
+  # A replacement that replaces only the part of the message that matched the rule
+  # If set, Block_Message must be false and "Rewrite_To" must not be set.
+  # Separate by | to choose randomly from several strings.
+  #Replace_Word: "[CENSORED]"
+  #
+  # A replacement that replaces the whole message.
+  # If set, Block_Message must be false and "Replace_Word" must not be set.
+  # Separate by | to choose randomly from several strings.
+  #Rewrite_To: I love this filter!|This server is amazing!|I can't take it!
+  #
+  # A list of commands to be executed. Notice: they are not handled by this plugin.
+  #Execute_Commands:
+  #  - eco take {player} 10
+  #  - kick {player} &cDo not advertise!
+  #  - tempban {player} 1d Advertising is prohibited! \n\nContact OP if you think this is in error. \n\nMessage caught: {message}
+  #
+  # A list of commands to be executed on Bungee. You need to have bungee support enabled in settings.yml and an additional plugin on bungee.
+  #Execute_Bungee_Commands:
+  #  - alert The {player} has violated a rule on {server}!
+  
+advertisement:
+  Bypass_With_Permission: "chatcontrol.bypass.ad"
+  Ignored_In_Commands:
+    - // # WorldEdit
+    - /auction
+    - /auc
+    - /register
+    - /reg
+    - /login
+    - /l
+  
+  Player_Warn_Message: "&7Please do not advertise other websites or IP adresses."
+  #Broadcast_Message: "&c{player} might have advertised, alert admins!"
+  # This is recommended if you have 'Verbose' set to false in 'settings.yml'
+  #Console_Message: "{player} violated rule ID {ruleID}, triggered {handler} filter with: {message}"
+  
+  Staff_Alert: "chatcontrol.notify.ad &8[&7Ad/ID {ruleID}&8] &7{player}: &f{message}"
+  
+  # Before commenting out check if you have Points enabled in settings.yml
+  #Warn_Points: 5
+  
+  Block_Message: true
+  Write_To_File: logs/advertisements.txt
+
+swear:
+  Bypass_With_Permission: "chatcontrol.bypass.swear"
+  Ignored_In_Commands:
+    - // # WorldEdit
+    - /auction
+    - /auc
+    - /register
+    - /reg
+    - /login
+    - /l
+
+  Player_Warn_Message: "&cSwearing is prohibited on this server."
+  # This is recommended if you have 'Verbose' set to false in 'settings.yml', because otherwise
+  # you won't get noticed when a message is caught by a rule that is assigned to this handler.
+  #Console_Message: "{player} violated rule ID {ruleID}, triggered {handler} filter with: {message}"
+  
+  Staff_Alert: "chatcontrol.notify.swear &8[&7Swear/ID {ruleID}&8] &7{player}: &f{message}"
+  
+  # Before commenting out check if you have Points enabled in settings.yml
+  #Warn_Points: swear 2
+
+  Replace_Word: "*****"
+  Write_To_File: logs/swears.txt

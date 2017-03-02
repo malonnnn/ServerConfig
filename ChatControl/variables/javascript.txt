@@ -1,0 +1,89 @@
+# -------------------------------------------------------------------------------
+#
+# Welcome to the variables file. The placeholders you create here can be used
+# across the plugin (see "Variables" section in settings.yml for configuration)
+#
+# Currently, this file stores all custom variables.
+#
+# NB: Coding here requires a basic JavaScript knowledge.
+#
+# -------------------------------------------------------------------------------
+#
+# Operators:
+# define <name> (Declare a variable. Enter the variable name, e.g: define {player_name})
+# script: (The actual script, which starts on a new line.)
+#
+# Scripts accept following variables directly from the game:
+# 'player' for getting the player instance, if available
+# 'event' for getting the event, if available
+#
+# -------------------------------------------------------------------------------
+#
+# [!] [!] IMPORTANT [!] [!]
+# -- FOLLOWING VARIABLES ARE ALREADY INCLUDED IN THE PLUGIN --
+#
+# ChatControl:      {prefix}, {server_name}, {nms_version} and {timestamp}
+# Bukkit:	 		{player}, {pl_address}, {tab_name}, {display_name}, {world} and {health}
+# Essentials:		{nick}
+# AuthMe Reloaded: 	{country_code} and {country_name} 
+# Vault: 			{pl_prefix}, {pl_suffix} and {pl_group}
+# Towny: 		    {town} and {nation}
+# SimpleClans: 		{clan}
+# Factions (free): 	{faction}
+# ... in addition, variables from plugin PlaceholderAPI are supported, too.
+# -------------------------------------------------------------------------------
+#
+# TIP: If Debug is enabled, you can use command "/chc inspect" to enumerate
+# all methods or fields in a class, which lets you to make new variables easier.
+#
+# [NOTICE] Adding too many variables might negatively affect server's performance.
+# -------------------------------------------------------------------------------
+
+######################################################################################
+## Example 1) This variable is commented out, just to show you an example of usage. ##
+######################################################################################
+# We start by defining the variable's name. For this case, this
+# variable will be available by simply writing "$chat" (without "").
+#define $chat
+# Following line starts the script (in JavaScript programming language)
+#script:
+#    var bukkit = Java.type("org.bukkit.Bukkit");
+#    var chat = Java.type("net.milkbowl.vault.chat.Chat").class;
+#
+#    # This will simply returns the Vault's chat provider (if Vault is installed)
+#    bukkit.getServicesManager().getRegistration(chat).getProvider()
+
+######################################################################################
+## Example 2) This variable is commented out, just to show you an example of usage. ##
+######################################################################################
+# Once again we start by giving the variable some name.
+#define {pl_prefix}
+# Following line starts the script. Here is an example of getting
+# player's prefix using Vault and the variable we defined above.
+#script:
+#    # Notice the "player" variable, this is inserted from ChatControl by default (if available).
+#    $chat.getPlayerPrefix(player.getWorld().getName(), player.getName())
+
+######################################################################################
+## Here follows actual working variables. You can change those at your will.        ##
+######################################################################################
+
+# Getting player's ping.
+define {ping}
+script:
+  player.getHandle().ping
+
+# Getting the color based off world's difficulty.
+define {difficulty_color}
+script:
+    var world = player.getWorld();
+    
+    # This line returns the value.
+    getColor() + world.getName() + "&8";
+    
+    # You can create methods inside the script, too.
+    function getColor() {
+        var diff = world.getDifficulty().getValue();
+        
+        return diff == 0 ? "&a" : diff == 1 ? "&2" : diff == 2 ? "&6" : "&c";
+    }
