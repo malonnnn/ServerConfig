@@ -236,7 +236,7 @@ airscooter:
         max_height_above_ground: 2
         liftoff_duration: 600
         liftoff_thrust: 0.6
-        pitch_offset: 0.5
+        direction_y: 0.5
     costs:
         mana: 20
     active_costs:
@@ -869,6 +869,7 @@ blessing:
         target_self: true
         cooldown: 30000
         bypass_friendly_fire: true
+        only_friendly: true
     costs:
         mana: 200
 
@@ -1370,6 +1371,7 @@ boon:
         target_type: Player
         effect_speed: 1
         bypass_friendly_fire: true
+        only_friendly: true
         bypass_pvp: true
         cooldown: 20000
     costs:
@@ -1883,7 +1885,7 @@ camera:
         cast:
         -  class: EffectSingle
            effect: smoke
-           sound: entity_tnt_primed
+           sound: entity_tnt_primed,0.5,3
            location: origin
     parameters:
         target_type: LivingEntity
@@ -2518,6 +2520,7 @@ cure:
         cooldown: 20000
         bypass_pvp: true
         bypass_friendly_fire: true
+        only_friendly: true
         remove_effects:
         - confusion
         - poison
@@ -4806,7 +4809,7 @@ glide:
     icon_disabled: diamond_hoe:202
     icon_url: http://textures.minecraft.net/texture/0da6cb9e9cd875794b8b9f3a4b77227a18adb963b42af21d52d58d2ef24e47
     category: utility
-    worth: 1000
+    worth: 750
     actions:
         cast:
         - class: Wear
@@ -5103,15 +5106,14 @@ heal:
     effects:
         cast:
         - class: EffectSingle
-          custom_sound: magic.rennervate
+          sound: magic.shimmer
           effectlib:
             class: ConeEffect
             iterations: 5
             lengthGrow: .12
             particle: heart
         - class: EffectSingle
-          sound: entity_player_levelup
-          custom_sound: magic.rennervate
+          sound: magic.shimmer
           location: target
           target_offset: 0,-2,0
           effectlib:
@@ -5122,10 +5124,17 @@ heal:
             particles: 7
             iterations: 40
             radius: 1
+        - class: EffectSingle
+          target_offset: 0,-1.5,0
+          effectlib:
+            class: LineEffect
+            particle: heart
+            duration: 5000
+            particles: 10
+            period: 5
         cast_self:
         - class: EffectSingle
-          sound: entity_player_levelup
-          custom_sound: magic.rennervate
+          sound: magic.shimmer
           location: target
           target_offset: 0,-2,0
           effectlib:
@@ -5138,10 +5147,9 @@ heal:
             radius: 1
         cast_finish:
         -  class: EffectSingle
-           custom_sound: magic.shimmer
+           custom_sound: magic.shimmer_quiet
            sound_pitch: 5
            location: origin
-        -  location: origin
            effectlib:
              class: AnimatedBall
              duration: 200
@@ -5160,6 +5168,7 @@ heal:
         cooldown: 20000
         bypass_pvp: true
         bypass_friendly_fire: true
+        only_friendly: true
         hitbox: true
         amount: 1
     costs:
@@ -5205,6 +5214,7 @@ healing:
         bypass_pvp: true
         bypass_undo: true
         bypass_friendly_fire: true
+        only_friendly: true
         bypass_undo: true
 
 homing:
@@ -6448,16 +6458,27 @@ mine:
     upgrade_required_casts: 50
     actions:
         cast:
+        # This delay is here so the brush can sample the block material for visual FX
+        # before we turn it to air.
+        - class: Delay
         - class: Recurse
           actions:
           - class: Drop
     effects:
         cast:
         -  class: EffectSingle
-           sound: entity_item_break
-        -  class: EffectTrail
-           particle: block_crack
-           material: diamond_ore
+           sound: vanish,1,0.5
+        -  class: EffectSingle
+           sound: entity_item_break,0.8
+           effectlib:
+              class: LineEffect
+              particle: block_crack
+              duration: 1000
+              particles: 15
+              period: 1
+        no_target:
+        -  class: EffectSingle
+           sound: vanish,1,0.5
     parameters:
         faces: all
         allow_max_range: false
@@ -6818,144 +6839,168 @@ note:
              iterations: 3
                      
 note01:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/c4c932901eaf61a741a8fa8a786fa9e509b13ba518f384c6c731086ffdc829e
     parameters:
       sound: flute.1C
       
 note02:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.2C#
       
 note03:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.3D
       
 note04:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.4D#
                
 note05:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.5E
                
 note06:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.6F
                
 note07:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
-      sound: flute.F7#
+      sound: flute.7F#
                
 note08:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
        sound: flute.8G
                
 note09:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.9G#
                
 note10:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.10A
         
 note11:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.11A#
                
 note12:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.12B
         
 note13:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/812a772ef923c597e12f41986d7bea9a9387055eb17eeebb1d8c6de3ca25f
     parameters:
       sound: flute.13Coctave
                
 note14:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.14C#
         
 note15:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.15D
                
 note16:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.16D#
         
 note17:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.17E
                
 note18:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.18F
                
 note19:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.19F#
                
 note20:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.20G
                
 note21:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.21G#
                
 note22:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
       sound: flute.22A
                
 note23:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/def3c2c36a1f9328061af375aaf22f7d1d7921e97e57ea5fb7a99fdcb12540
     parameters:
       sound: flute.23A#
                
 note24:
+    hidden: true
     inherit: note
     icon_url: http://textures.minecraft.net/texture/d0347fcef38a2fd59eefafb5e969f8536c7c13783b822a12d02f43a9a21d56
     parameters:
@@ -9354,6 +9399,20 @@ singularity:
     costs:
         mana: 50
 
+skills:
+    icon: diamond_axe:187
+    icon_disabled: diamond_hoe:187
+    icon_url: http://textures.minecraft.net/texture/ce6ed0a5f7e23bc3d34d73baa0b9c3f838e85014d2ff290801dc7486dd4da6
+    category: npc
+    hidden: true
+    quick_cast: true
+    show_undoable: false
+    parameters:
+      quiet: true
+    actions:
+        cast:
+        -  class: SkillSelector
+
 smite:
     icon: diamond_axe:40
     icon_disabled: diamond_hoe:40
@@ -11340,6 +11399,7 @@ wandshop:
 warpmenu:
   earns_sp: 0
   inherit: recall
+  hidden: true
   actions:
       cast:
       -  class: Recall
@@ -11356,6 +11416,7 @@ warpunlock:
   earns_sp: 20
   earns_cooldown: 30000
   inherit: recall
+  hidden: true
   actions:
       cast:
       -  class: Recall

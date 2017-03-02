@@ -302,6 +302,13 @@ enchant_click: spellshop
 enchant_sneak_click: upgrades
 enchant_block: enchantment_table
 
+# The default cast location if not holding a wand. Options are "mainhand", "offhand" and "eyes"
+default_cast_location: mainhand
+# This offsets left or right from the center of the body
+default_cast__location_offset: 0.5
+# This offsets from the eyes, the result should be around the main hand location
+default_cast__location_offset_vertical: -0.4
+
 # Control whether wands regenerate mana while they are not being held
 regenerate_while_inactive: true
 
@@ -334,6 +341,9 @@ particle_range: 48
 #
 # Special materials used to represent icons in the material brush system
 #
+
+# Default disabled icon url. Set to "" to turn off disbabled icons, or override on a per-spell basis.
+disabled_icon_url: http://textures.minecraft.net/texture/1c28376acb23cd93322c0a5d569b48b7cd631a6d65dd4f226adb9e9dd7e5c
 
 # Represents erase (fill with air)
 erase_item: diamond_axe:1
@@ -454,7 +464,7 @@ commit_on_quit: false
 
 # Enable this to persists Mage data on mobs.
 # This can generate quite a lot of save data if you have randomly spawning
-# Mages, but it would also let you undo their spells aftera restart.
+# Mages, but it would also let you undo their spells after a restart.
 save_non_player_mages: false
 
 # Force any pending scheduled undo tasks to run on world save
@@ -737,10 +747,24 @@ pvp_restricted: false
 # targeting each other with spells.
 use_scoreboard_teams: false
 
+# If not using scoreboard teams or Heroes parties, should players be "friends" by default?
+# This will affect being able to cast healing or other perk type spells on other players.
+default_friendly: true
+
 ### Heroes/Skills configuration
 
 # Show Heroes skills in the /mskills menu, if Heroes is present
 skills_use_heroes: true
+
+# Use Heroes mana, if Heroes is present
+use_heroes_mana: true
+
+# Spells that don't bypass friendly fire will check Heroes' parties
+use_heroes_parties: true
+
+# Use this to prefix skills added via the Magic skill pack
+# This can be used to avoid conflicts with public or other skills
+heroes_skill_prefix: ""
 
 # Show all Magic spells the player has permission to cast in the /mskills menu
 # This might make opening the skills menu lag if you have a lot of spells.
@@ -758,3 +782,8 @@ default_resource_pack: "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-
 # Set this to false to turn off the player skull-based spell icons
 # This may be needed if you have disabled the RP, spell icons are in the RP.
 url_icons_enabled: false
+
+# Set this to zero to turn off periodic RP update checks. The default is every five minutes.
+# This is done in a separate thread to avoid interfering with the main server thread.
+# Note that this value is in minutes!
+resource_pack_check_interval: 5

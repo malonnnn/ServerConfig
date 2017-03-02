@@ -1,0 +1,25 @@
+# -------------------------------------------------------------------------------
+# This file manages special rules that can overlaps messages sent by other
+# plugins or even the server, with the help of packets.
+#
+# You'll need ProtocolLib to enable this feature!
+#
+# [NOTICE] Following operators do not work on packet rules:
+# 'ignore usernames', 'ignore chatdisplay', 'ignore event' and 'handle as'
+#
+# For help, see the header in the rules.txt file.
+# -------------------------------------------------------------------------------
+
+# Hide unknown command message.
+#match ^Unknown command.*
+#then deny
+
+# Rewrite message from Bukkit or Essentials.
+match ^I'm sorry, but you do not have permission to perform this.*|^You do not have access to that command.
+dont verbose
+then rewrite &cInsufficient permission.
+#then rewritein hardcore &cThis command is not accessible in {world} world.
+
+# Replace the /plugins message. An example usage of regex groups.
+match ^Plugins \(([1-9])\): (.*)$
+then replace &2There are &6$1 &2plugins: &7$2
