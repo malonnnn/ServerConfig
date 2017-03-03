@@ -78,7 +78,8 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {creeper-explosion: deny, use: allow, pvp: allow, pistons: allow, ghast-fireball: deny}
+        flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, pistons: allow,
+            pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -197,9 +198,17 @@ regions:
         owners: {}
         type: cuboid
         priority: 5
+    minecartstart:
+        min: {x: -4.0, y: 69.0, z: -216.0}
+        max: {x: -4.0, y: 70.0, z: -216.0}
+        members: {}
+        flags: {vehicle-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 5
     __global__:
         members: {}
-        flags: {}
+        flags: {vehicle-place: deny}
         owners: {}
         type: global
         priority: 0
