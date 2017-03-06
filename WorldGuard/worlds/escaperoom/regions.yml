@@ -26,14 +26,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    room3:
-        min: {x: -68.0, y: 87.0, z: 62.0}
-        max: {x: -56.0, y: 90.0, z: 73.0}
-        members: {}
-        flags: {greeting: 'Escape Room #3'}
-        owners: {}
-        type: cuboid
-        priority: 0
     room5-hotspot9:
         parent: room5
         min: {x: -48.0, y: 84.0, z: 48.0}
@@ -43,6 +35,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    room3:
+        min: {x: -68.0, y: 87.0, z: 62.0}
+        max: {x: -56.0, y: 90.0, z: 73.0}
+        members: {}
+        flags: {greeting: 'Escape Room #3'}
+        owners: {}
+        type: cuboid
+        priority: 0
     room4:
         min: {x: -55.0, y: 87.0, z: 60.0}
         max: {x: -46.0, y: 90.0, z: 68.0}
@@ -112,14 +112,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room8:
-        min: {x: -62.0, y: 78.0, z: 26.0}
-        max: {x: -45.0, y: 83.0, z: 36.0}
-        members: {}
-        flags: {greeting: 'Escape Room #8'}
-        owners: {}
-        type: cuboid
-        priority: 0
     room5-hotspot4:
         parent: room5
         min: {x: -54.0, y: 84.0, z: 46.0}
@@ -129,6 +121,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    room8:
+        min: {x: -62.0, y: 78.0, z: 26.0}
+        max: {x: -45.0, y: 83.0, z: 36.0}
+        members: {}
+        flags: {build: deny, greeting: 'Escape Room #8', interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 1
     room5-hotspot3:
         parent: room5
         min: {x: -54.0, y: 84.0, z: 48.0}
