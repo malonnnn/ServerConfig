@@ -10,9 +10,17 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    minecartstart:
+        min: {x: 0.0, y: 249.0, z: -11.0}
+        max: {x: 0.0, y: 250.0, z: -10.0}
+        members: {}
+        flags: {vehicle-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 10
     __global__:
         members: {}
-        flags: {pvp: deny}
+        flags: {vehicle-place: deny, pvp: deny}
         owners: {}
         type: global
         priority: 0
