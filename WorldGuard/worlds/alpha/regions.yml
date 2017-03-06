@@ -19,10 +19,10 @@ regions:
         type: cuboid
         priority: 0
     alpha:
-        min: {x: -1983.0, y: 8.0, z: 1091.0}
+        min: {x: -1983.0, y: 0.0, z: 1091.0}
         max: {x: -785.0, y: 255.0, z: 2289.0}
         members: {}
-        flags: {invincible: allow, use: allow, interact: allow}
+        flags: {use: allow, invincible: allow, interact: allow}
         owners: {}
         type: cuboid
         priority: 0
@@ -36,7 +36,7 @@ regions:
         priority: 1
     __global__:
         members: {}
-        flags: {use: allow, feed-delay: 1, feed-amount: 1, pvp: deny, mob-spawning: deny}
+        flags: {use: allow, feed-amount: 1, feed-delay: 1, pvp: deny, mob-spawning: deny}
         owners: {}
         type: global
         priority: 0
