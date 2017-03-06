@@ -36,6 +36,7 @@ bind('player_chat', null, null, @e) {
                         unbind()
                     )
                     export(@player.'summonstuck',@bindID)
+                    export('summonstuckplayer',@player)
                 ,
                     broadcast('BIND FAILED')
                 )
@@ -52,19 +53,21 @@ bind('player_chat', null, null, @e) {
             set_timeout(6000,closure(
                 set_block_at(-1409,20,1816,155,'alpha')
             ))
-            @plrs = all_players('alpha')
-            set_timeout(1000,closure(
-                foreach(@plr in @plrs){
-                    if(@plr != 'God_Doesnt_Exist'){
-                        runas(~console,'/minecraft:clear '.@plr)
-                        @bindID = import(@plr.'summonstuck')
-                        try(
-                            unbind(@bindID)
-                        ,
-                        )
-                        runas(~console,"/warp city ".@plr)
-                    }
-                }    
+            
+            @plr = import('summonstuckplayer')
+            @bindID = export('summonstuckplayer','')
+            runas(~console,'/minecraft:clear '.@plr)
+
+            set_timeout(8000,closure(
+                
+                @bindID = import(@plr.'summonstuck')
+                try(
+                    unbind(@bindID)
+                ,
+                )
+                if(pworld(@plr) == 'alpha'){
+                    runas(~console,"/warp city ".@plr)
+                }
             ))
         }
 

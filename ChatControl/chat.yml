@@ -116,10 +116,19 @@ Formats:
       Message:
         Message: "{message}"
         
+  Local_Chat:
+    Parts:
+      Everything:
+        Message: "&a&lL&a&l/&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "{player}"
+
   Global_Chat:
     Parts:
       Everything:
-        Message: "&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
+        Message: "&b&lG&a&l/&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
         Hover_Event:
           Action: SHOW_TEXT
           Values:
@@ -174,9 +183,16 @@ Channels:
   global:
     Format: Global_Chat
     Bungee: true
-    Range: 100
     Log_Format: '[GLOBAL] {player}: {message}'
     Save:
       File: 'logs/global-chat.txt'
       Format: '{player}: {message}'
     
+  local:
+    Format: Local_Chat
+    Bungee: true
+    Range: 100
+    Log_Format: '[GLOBAL] {player}: {message}'
+    Save:
+      File: 'logs/local-chat.txt'
+      Format: '{player}: {message}'
