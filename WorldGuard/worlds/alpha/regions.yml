@@ -18,6 +18,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    alpha:
+        min: {x: -1983.0, y: 8.0, z: 1091.0}
+        max: {x: -785.0, y: 255.0, z: 2289.0}
+        members: {}
+        flags: {invincible: allow, use: allow, interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
     zombiespawn:
         min: {x: -1515.0, y: 46.0, z: 1901.0}
         max: {x: -1511.0, y: 51.0, z: 1905.0}
@@ -28,7 +36,7 @@ regions:
         priority: 1
     __global__:
         members: {}
-        flags: {use: allow, feed-amount: 1, feed-delay: 1, pvp: deny, mob-spawning: deny}
+        flags: {use: allow, feed-delay: 1, feed-amount: 1, pvp: deny, mob-spawning: deny}
         owners: {}
         type: global
         priority: 0
