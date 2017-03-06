@@ -16,13 +16,18 @@ bind('player_chat', null, null, @e) {
             if(phas_item(352) < 1 || phas_item(441) < 1 || phas_item(260) < 1){
                die()
             }
+            tmsg(@player,color(red).'The ground begins to shake...')
             set_timeout(2000,closure(
-                runas(~console,'/sudo God_Doesnt_Exist c:Greetings, mortal.')
                 set_block_at(-1408,40,1807,152,'alpha')
+                set_block_at(-1409,20,1816,169,'alpha')
                 set_timeout(50,closure(
                     set_block_at(-1408,40,1807,0,'alpha')
                 ))
         
+                set_timeout(7000,closure(
+                    runas(~console,'/sudo God_Doesnt_Exist c:Greetings, mortal.')
+                ))
+                
                 try(
                     @eventID = associative_array('id': @player.'summonstuck')
                     @filter = associative_array('player': @player)
@@ -43,6 +48,9 @@ bind('player_chat', null, null, @e) {
             set_block_at(-1409,40,1807,152,'alpha')
             set_timeout(50,closure(
                 set_block_at(-1409,40,1807,0,'alpha')
+            ))
+            set_timeout(6000,closure(
+                set_block_at(-1409,20,1816,155,'alpha')
             ))
             @plrs = all_players('alpha')
             set_timeout(1000,closure(

@@ -12,10 +12,7 @@
             'powers': array(
                 "/buff",
                 "/jump 0-1",
-                "/haste 0-2"
+                "/haste 0-1"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 2 true",
-                "/effect ". @plr ." 21 9999 1 true"
-            )
+            'buffs': array()
 )
