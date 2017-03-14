@@ -228,7 +228,7 @@ airscooter:
            - class: EffectSingle
              sound: enderdragon_wings
              location: origin
-             use_wand_location: false
+             source_location: eyes
              effectlib:
                  class: SphereEffect
                  particle: redstone
@@ -630,6 +630,7 @@ backup:
         obworld: ~-_backup
         brushtarget: true
         bypass_undo: true
+        cooldown: 10000
     costs:
         mana: 100
 
@@ -784,59 +785,6 @@ blast|4:
         radius: 3
         undo: 30000
 
-blaster:
-    icon: diamond_axe:159
-    icon_disabled: diamond_hoe:159
-    icon_url: http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac
-    category: specialty
-    hidden: true
-    worth: 150
-    actions:
-        cast:
-        - class: CustomProjectile
-          actions:
-          - class: Damage
-    effects:
-        cast:
-        -  class: EffectSingle
-           sound: magic.zap
-           sound_volume: .3
-        tick:
-        -  class: EffectSingle
-           location: target
-           effectlib:
-             class: LineEffect
-             type: instant
-             particle: redstone
-             length: 2
-        hit:
-        -  class: EffectSingle
-           location: target
-           color: FF8800
-           color2: FF0000
-           firework: burst
-        backfire:
-        -  class: EffectSingle
-           sound: magic.zap
-        -  class: EffectSingle
-           sound: magic.zap_crack
-           location: origin
-           entity_effect: hurt
-    parameters:
-        tick_size: 3
-        target: none
-        target_type: Damageable
-        player_damage: 2
-        entity_damage: 4
-        target_breakables: 1
-        bypass_backfire: false
-        cooldown: 1000
-        velocity: 80
-        interval: 250
-        reflective: iron_block
-    costs:
-        mana: 15
-
 blessing:
     icon: diamond_axe:10
     icon_disabled: diamond_hoe:10
@@ -985,7 +933,7 @@ blink:
            location: origin
            particle_override: particleNucleus
            color_override: colorOrbital
-           use_wand_location: false
+           source_location: eyes
            effectlib:
                class: AtomEffect
                particleNucleus: dragon_breath
@@ -1566,8 +1514,7 @@ broom:
            sound_pitch: 0.7
         -  class: EffectRing
            particle: block_crack
-           use_wand_location: false
-           use_eye_location: false
+           source_location: feet
            period: 4
            particle_count: 80
            radius: 4
@@ -1701,8 +1648,7 @@ broom_legacy:
            sound_pitch: 0.7
         -  class: EffectRing
            particle: block_crack
-           use_wand_location: false
-           use_eye_location: false
+           source_location: feet
            period: 4
            particle_count: 80
            radius: 4
@@ -3731,8 +3677,7 @@ fling:
            sound_pitch: 0.7
         -  class: EffectRing
            particle: block_crack
-           use_wand_location: false
-           use_eye_location: false
+           source_location: feet
            period: 4
            particle_count: 80
            radius: 4
@@ -3853,7 +3798,7 @@ force:
       - class: EffectSingle
         location: target
         use_hit_location: false
-        use_eye_location: true
+        source_location: eyes
         color_override: color
         effectlib:
           class: IconEffect
@@ -4790,7 +4735,7 @@ gills:
         -  class: EffectSingle
            sound: block_water_ambient
            location: origin
-           use_wand_location: false
+           source_location: eyes
            effectlib:
              class: SphereEffect
              iterations: 10
@@ -4844,7 +4789,7 @@ glide:
            sound_pitch: 1.5
            sound_volume: 0.7
            location: origin
-           use_wand_location: false
+           source_location: eyes
            effectlib:
              class: IconEffect
              duration: 30000
@@ -4973,6 +4918,7 @@ grenade|2:
     parameters:
         size: 3
         fire: true
+        undo_speed: 0.5
     costs:
         mana: 75
 
@@ -5617,6 +5563,9 @@ kill:
           ignore_result: true
         - class: CustomProjectile
           actions:
+          - class: Message
+          - class: Delay
+            delay: 1000
           - class: Damage
     effects:
         cast:
@@ -5671,6 +5620,9 @@ kill:
         velocity: 5
         interval: 250
         delay: 3000
+        message: "&aAvada Kedavra!"
+        message_type: title
+        message_target: true
     costs:
         mana: 150
 
@@ -5777,6 +5729,8 @@ laser:
         delay: 250
         repeat: 10
         undo_speed: 1
+        orient: true
+        axis: z
     costs:
         mana: 120
 
@@ -5868,8 +5822,7 @@ levitate:
              sound: entity_enderdragon_flap
              location: origin
              color_override: color
-             use_wand_location: false
-             use_eye_location: false
+             source_location: feet
              effectlib:
                  class: SphereEffect
                  particle: redstone
@@ -5884,8 +5837,7 @@ levitate:
            sound_pitch: 0.7
         -  class: EffectRing
            particle: block_crack
-           use_wand_location: false
-           use_eye_location: false
+           source_location: feet
            period: 4
            particle_count: 80
            particle_offset_x: 0.9
@@ -6300,7 +6252,8 @@ magicitemshop:
           cost: 1000
         - item: wand|magichat
           cost: 5000
-        - item: none
+        - item: wand|talisman
+          cost: 6000
         - item: none
         - item: none
         - item: none
@@ -7488,7 +7441,7 @@ phase:
            sound_volume: 0.5
            sound_pitch: 0.4
            location: source
-           use_wand_location: false
+           source_location: eyes
            effectlib:
              class: AnimatedBall
              particle: portal
@@ -7500,7 +7453,7 @@ phase:
              particleOffsetZ: 0.9
         phase:
         - class: EffectSingle
-          use_wand_location: false
+          source_location: eyes
           sound: magic.teleport
           location: source
           sound_volume: 0.8
@@ -7513,7 +7466,7 @@ phase:
           sound_volume: 0.8
           sound_pitch: 0.8
           location: target
-          use_wand_location: false
+          source_location: eyes
           color: FF00FF
           firework: star
           effectlib:
@@ -7838,6 +7791,7 @@ pollinate:
               -  class: Spread
                  actions:
                  -  class: ThrowItem
+           - class: Delay
         - class: Brush
           actions:
           - class: ThrowItem
@@ -7868,15 +7822,16 @@ pollinate:
         target: none
         radius: 3
         center_probability: 0.9
-        outer_probability: 0.1
+        outer_probability: 0.5
         vertical_range: 8
         cooldown: 20000
         age_items: 5940
         item_speed_min: 0.75
         item_speed_max: 1.1
         yaw_max: 30
-        pitch_max: 2
+        pitch_max: 4
         uses_brush: false
+        delay: 100
         brushes:
         - yellow_flower
         - red_rose
@@ -7912,7 +7867,6 @@ pollinate:
         - double_plant:5
     costs:
         mana: 100
-
 polymorph:
     icon: diamond_axe:176
     icon_disabled: diamond_hoe:176
@@ -8012,6 +7966,17 @@ projectile:
         -  class: EffectSingle
            sound: magic.zap_crack
            location: origin
+           color_override: color
+           effectlib:
+             color: 00FF00
+             class: ConeEffect
+             iterations: 500
+             particlesCone: 10000
+             particle: redstone
+             lengthGrow: 0.01
+             radiusGrow: 0.00003
+             updateLocations: false
+             updateDirections: false
         -  class: EffectSingle
            location: target
            effectlib:
@@ -8459,7 +8424,7 @@ recall:
            sound: magic.teleport
            sound_volume: 0.8
            sound_pitch: 0.3
-           use_wand_location: false
+           source_location: eyes
            color_override: color
            effectlib:
             class: WarpEffect
@@ -8472,7 +8437,7 @@ recall:
             radius: 1
             offset: 0,-1,0
         -  class: EffectSingle
-           use_wand_location: false
+           source_location: eyes
            effectlib:
             class: WarpEffect
             duration: $delay
@@ -8487,7 +8452,7 @@ recall:
         teleport:
         -  class: EffectSingle
            location: both
-           use_wand_location: false
+           source_location: eyes
            color_override: color
            effectlib:
              class: WarpEffect
@@ -8501,7 +8466,7 @@ recall:
            sound: magic.teleport
            sound_pitch: 1.2
            location: both
-           use_wand_location: false
+           source_location: eyes
            effectlib:
              class: WarpEffect
              period: 1
@@ -8714,6 +8679,7 @@ repair:
         otworld: ~-_backup
         obworld: ~_backup
         brushtarget: true
+        cooldown: 7000
     costs:
         mana: 200
 
@@ -9602,27 +9568,6 @@ spshop:
         - item: sp:1000
           cost: 10000
           
-starshop:
-    icon: wood_hoe:14
-    inherit: buyshop
-    parameters:
-        show_active_icons: true
-        items:
-        - item: detonator
-          cost: 100
-        - item: wand|blaster
-          cost: 1000
-        - item: lightsaber_blue
-          cost: 10000
-        - item: lightsaber_green
-          cost: 10000
-        - item: lightsaber_purple
-          cost: 10000
-        - item: lightsaber_orange
-          cost: 10000
-        - item: lightsaber_red
-          cost: 15000
-          
 stash:
     icon: diamond_axe:106
     icon_disabled: diamond_hoe:106
@@ -10379,6 +10324,92 @@ superkill:
     costs:
         mana: 300
 
+superlaser:
+    icon: diamond_axe:142
+    icon_disabled: diamond_hoe:142
+    icon_url: http://textures.minecraft.net/texture/ce5eef24e2cf406bcd9d2b44f418ac72e26731b9a7e7402490e473af8145e0ba
+    category: engineering
+    tags: noduel
+    worth: 450
+    earns_sp: 8
+    upgrade_required_path: architect
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: Line
+          ignore_result: true
+          actions:
+          - class: ModifyBlock
+        - class: Repeat
+          actions:
+          - class: Delay
+          - class: Retarget
+            actions:
+            - class: PlayEffects
+              effect: beam
+              ignore_result: true
+            - class: Line
+              ignore_result: true
+              actions:
+              - class: ModifyBlock
+    effects:
+        beam:
+        -  class: EffectSingle
+           sound: magic.zap
+           location: origin
+           sound_volume: 0.1
+           color_override: colorHelix
+           effectlib:
+             class: DnaEffect
+             particlesBase: 0
+             particlesHelix: 7
+             particleHelix: redstone
+             particleBase1: drip_lava
+             particleBase2: smoke_normal
+             iterations: 10
+             radius: 0.5
+             grow: 0.2
+             baseInterval: 5
+             length: 16
+             particlesBase: 5
+        cast:
+        -  class: EffectSingle
+           sound: magic.zap_crack
+           location: origin
+    parameters:
+        target: block
+        target_type: Damageable
+        allow_max_range: true
+        range: 32
+        size: 1
+        start_at_target: true
+        increment_data: false
+        check_destructible: true
+        destructible: destructible
+        transparent: air
+        brush: air
+        radius: 0
+        cooldown: 10000
+        delay: 250
+        repeat: 10
+        orient: true
+        axis: z
+    costs:
+        mana: 200
+
+superlaser|2:
+    upgrade_required_casts: 50
+    parameters:
+        destructible: destructible,destructible2,transparent
+        repeat: 11
+
+superlaser|3:
+    parameters:
+        destructible: destructible,destructible2,destructible3,transparent
+        player_damage: 1
+        entity_damage: 3
+        repeat: 12
+
 superphase:
     inherit: phase
     parameters:
@@ -10494,10 +10525,11 @@ superring:
         type: sphere
         orient_dimension_max: 0
         orient_dimension_min: 0
-        thickness: 1
-        orient: true
         transparent: transparent_to_construction
+        destructible: destructible_replace
+        orient: true
         consume: true
+        thickness: 1
     costs:
         mana: 200
 
@@ -11785,26 +11817,25 @@ wolfhouse:
         commands:
           wolf_generate: castp @p[r=7] wolfhouse type sphere cd true md 150 tx ~-6 ty ~22 tz ~11 obx 0 oby -46 obz -1 r 52 brushmod dirt
           wolf_underwater: castp @p[r=7] wolfhouse type sphere cd true md 150 tx ~-5 ty ~23 tz ~11 obx 0 oby -46 obz -1 r 52 id water,stationary_water
-          wolf_dome: castp @p[r=7] shell undo 0 type sphere brush stained_glass:15 cd true md 100 tx ~-5 ty ~16 tz ~12 r 35
-          wolf_shields: castp @p[r=7] shell undo 0 brush obsidian cd true md 100 tx ~-5 ty ~16 tz ~12 r 37
-          wolf_undo: castp @p[r=6] undo
+          wolf_dome: castp @p[r=7] supershell target none undo 0 type sphere brush stained_glass:15 cd true md 100 tx ~-5 ty ~16 tz ~12 r 35 free true
+          wolf_shields: castp @p[r=7] supershell target none undo 0 brush obsidian cd true md 100 tx ~-5 ty ~16 tz ~12 r 37 free true
+          wolf_undo: castp @p[r=6] rollback
           wolf_commit: castp @p[r=6] commit
           wolf_nothing: msg @p[r=6] Nothing here!
-          wolf_clear: castp @p[r=7] blob undo 0 type sphere brush erase cd true md 100 tx ~-5 ty ~15 tz ~12 r 36
-          wolf_destruct: castp @p[r=7] blob undo 0 brush erase cd false type sphere md 130 tx ~-5 ty ~24 tz ~11 r 60
-          wolf_convert: castp @p convert undo 0 radius 64 md 128 ty ~-1 obx -1 obz 2 brush copy
-          wolf_phase: castp @p[r=2] phase
+          wolf_clear: castp @p[r=7] superblob target self none 0 type sphere brush erase cd true md 100 tx ~-5 ty ~15 tz ~12 r 36
+          wolf_destruct: castp @p[r=7] superblob target self none 0 brush erase cd false type sphere md 130 tx ~-5 ty ~24 tz ~11 r 60
+          wolf_convert: castp @p superconvert target none undo 0 radius 64 md 128 ty ~-1 obx -1 obz 2 brush copy free true
+          wolf_phase: castp @p[r=2] phase delay 0
           wolf_tp_living: tp @p[r=4] ~7 ~15 ~-13
           wolf_tp_observation: tp @p[r=3] ~-17 ~62 ~0
           wolf_tp_hub: tp @p[r=4] ~-3 ~-2 ~24
           wolf_tp_booth: tp @p[r=4] ~9 ~2 ~-29
           wolf_tp_enchanting: tp @p[r=3] ~-5 ~35 ~-17
-          wolf_recall_wand: castp @p[r=2] recall type wand
-          wolf_recall_death: castp @p[r=2] recall type death
-          wolf_recall_spawn: castp @p[r=2] recall type spawn
+          wolf_recall_wand: castp @p[r=2] recall type wand delay 0
+          wolf_recall_death: castp @p[r=2] recall type death delay 0
+          wolf_recall_spawn: castp @p[r=2] recall type spawn delay 0
     costs:
         mana: 1000
-
 workbench:
     icon: diamond_axe:105
     icon_disabled: diamond_hoe:105
