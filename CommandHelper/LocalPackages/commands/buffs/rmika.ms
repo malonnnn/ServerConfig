@@ -1,4 +1,4 @@
-@plr = player()
+,@plr = player()
 
 
 @hero = associative_array(
@@ -13,7 +13,7 @@
                 "/buff",
                 "/jump 0-2",
                 "/run 0-2",
-                "/carryplayer"
+                "/carryplayer",
                 "/dismountplayer"
             ),
             'buffs': array(
