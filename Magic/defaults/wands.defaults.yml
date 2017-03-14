@@ -103,28 +103,28 @@ apprentice:
       - walls
 
 apprenticeboots:
-    icon: leather_boots:#00AAFF
+    icon: "leather_boots:#00AAFF"
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticechestplate:
-    icon: leather_chestplate:#00AAFF
+    icon: "leather_chestplate:#00AAFF"
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticehelmet:
-    icon: leather_helmet:#00AAFF
+    icon: "leather_helmet:#00AAFF"
     indestructible: false
     locked: true
     keep: true
     mana_max_boost: 0.05
 
 apprenticeleggings:
-    icon: leather_leggings:#00AAFF
+    icon: "leather_leggings:#00AAFF"
     indestructible: false
     locked: true
     keep: true
@@ -391,141 +391,6 @@ base_sword:
     quick_cast: true
     quiet: 1
 
-base_lightsaber:
-    hidden: true
-    inherit: base_bound
-    mode: inventory
-    icon_inactive: wood_hoe:14
-    icon_inactive_delay: 500
-    drop: toggle
-    left_click: none
-    right_click: none
-    swap: cycle_hotbar
-    quick_cast: true
-    mana_max: 50
-    mana: 50
-    mana_regeneration: 5
-    protection_physical: 0.5
-    block_reflect_chance: 0.5
-    block_chance: 1
-    block_fov: 0.5
-    block_mage_cooldown: 3000
-    block_cooldown: 5000
-    quiet: 1
-    effect_bubbles: false
-    active_effects: true
-    effect_sound: magic.saberhum
-    effect_sound_interval: 225
-    attributes:
-      GENERIC_ATTACK_DAMAGE: 10
-    effects:
-        open:
-        -  class: EffectSingle
-           sound: magic.saberon
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: VortexEffect
-             iterations: 10
-             grow: 0.06
-             radius: 0.2
-             offset: 0,-0.8,0
-             pitch: -60
-             particle: redstone
-        close:
-        -  class: EffectSingle
-           sound: magic.saberoff
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: VortexEffect
-             iterations: 10
-             grow: 0.06
-             radius: 0.2
-             offset: 0,0.5,0
-             pitch: 60
-             particle: redstone
-        swing:
-        -  class: EffectSingle
-           sound: magic.saberswing
-           sound_volume: 1
-           location: origin
-           use_wand_location: true
-           effectlib:
-             class: VortexEffect
-             iterations: 6
-             circles: 1
-             helixes: 2
-             grow: 0.1
-             radius: 0.1
-             offset: 0,0.5,0
-             pitch: 20
-             particle: fireworks_spark
-        hit_entity:
-        -  class: EffectSingle
-           sound: magic.saberhit
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 0.3
-             particle: redstone
-        hit_block:
-        -  class: EffectSingle
-           sound: magic.saberhit
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 0.3
-             particle: redstone
-        hit_blocked:
-        -  class: EffectSingle
-           sound: magic.saberhit
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 0.3
-             particle: redstone
-        spell_blocked:
-        -  class: EffectSingle
-           sound: magic.saberhit
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 0.3
-             particle: redstone
-        spell_reflected:
-        -  class: EffectSingle
-           sound: magic.saberhit
-           sound_volume: 1
-           location: origin
-           color_override: color
-           use_wand_location: true
-           effectlib:
-             class: HelixEffect
-             iterations: 1
-             radius: 0.3
-             particle: redstone
-             
 #
 # A starter battle wand
 #
@@ -565,21 +430,6 @@ battle:
 #
 beginner:
     inherit: wand
-
-blaster:
-    migrate_icon: monster_eggs:3
-    icon: wood_hoe:12
-    path: blaster
-    mode: cast
-    locked: true
-    quiet: 2
-    mana: 100
-    mana_max: 100
-    mana_regeneration: 10
-    active_spell: blaster
-    indestructible: true
-    spells:
-        - blaster
 
 borealis:
     inherit: master
@@ -817,19 +667,6 @@ cursedmeat:
 default:
   migrate_to: wand
 
-
-
-detonator:
-  icon: tnt
-  uses: 1
-  mode: cast
-  right_click: cast
-  left_click: none
-  locked: true
-  cost_reduction: 2
-  cooldown_reduction: 0.9
-  spells:
-  - grenade|2
 
 
 developer:
@@ -1516,55 +1353,6 @@ rocketboots:
     glow: true
     protection_falling: 1
 
-# Lightsabers!
-
-lightsaber_hilt:
-    icon: wood_hoe:14
-
-lightsaber_green:
-    inherit: base_lightsaber
-    path: youngling
-    icon: shield:2
-    effect_color: '00FF00'
-    spells:
-        - push
-        - pull
-
-lightsaber_blue:
-    inherit: base_lightsaber
-    path: youngling
-    icon: shield:3
-    effect_color: '0000FF'
-    spells:
-        - push
-        - pull
-        
-lightsaber_red:
-    inherit: base_lightsaber
-    path: acolyte
-    icon: shield:4
-    effect_color: 'FF0000'
-    spells:
-        - push
-        - fire
-        
-lightsaber_orange:
-    inherit: base_lightsaber
-    path: youngling
-    icon: shield:5
-    effect_color: 'FF00FF'
-    spells:
-        - push
-        - pull
-        
-lightsaber_purple:
-    inherit: base_lightsaber
-    path: youngling
-    icon: shield:6
-    effect_color: 'FFFF00'
-    spells:
-        - push
-        - pull
 skillbook:
     mode: cast
     active_spell: skills
@@ -1574,6 +1362,15 @@ skillbook:
     spells:
     - skills
 
+spellbook:
+    mode: skills
+    icon: wood_hoe:31
+    indestructible: true
+    drop: toggle
+    undroppable: true
+    keep: true
+    bound: true
+    path: beginner
 spleef:
     locked: true
     icon: stick
@@ -1663,10 +1460,11 @@ student:
       - shrink
 
 talisman:
-  icon: wood_hoe:23
+  icon: wood_hoe:30
   indestructible: true
-  mana_max_boost: 0.2
-  mana_regeneration_boost: 0.1
+  mana_max_boost: 0.3
+  mana_regeneration_boost: 0.2
+  sp_multiplier: 1.5
   color: random
   effect_bubbles: true
 quickcast_enable:
@@ -1938,7 +1736,7 @@ wolf:
     - place@9
     - portal@119
     - pull@25
-    - push@88
+    - push@24
     - recall@23
     - recurse@97
     - regenerate@98

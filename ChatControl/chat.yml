@@ -16,110 +16,29 @@
 # -----------------------------------------------------------------
 Formats:
 
-  # Name doesn't matter, but you can refer to it from other parts of the plugin.
-  Example_Format:
-    
-    # Create as many as you like.
-    # Hover actions are: SHOW_TEXT, SHOW_ACHIEVEMENT and SHOW_ITEM
-    # Click actions are: OPEN_URL, OPEN_FILE, RUN_COMMAND and SUGGEST_COMMAND
-    Parts:
-      
-      Staff:
-        Message: "&6[VIP] "
-        
-        # NB: This part of this format (Staff) will only be displayed if the player 
-        # that is sending the message has the permission below.
-        Permission: "chatcontrol.groups.vip"
-        Hover_Event:
-          Action: SHOW_TEXT
-          Values: 
-            - "&6This player is VIP"
-            - "&6Check out &e/web &6to obtain VIP"
-      
-      # The name of the part does not really matter.
-      Prefix:
-        Message: "{pl_prefix}"       
-        Hover_Event:
-          Action: SHOW_TEXT
-          Values:
-            - "&8*-----* &f{player} &8*-----*"
-            - "&7Prefix&8: &7{pl_prefix}"
-            - "&7Group&8: &b{pl_group}"
-      
-      Player:
-        Message: "{player}:"                 
-        Hover_Event:
-          Action: SHOW_TEXT
-          Values:
-            - "&7Message issued: &b{timestamp}"
-            - "&7Click to send a PM"
-        Click_Event:
-          Action: SUGGEST_COMMAND
-          Value: "/tell {player} "
-            
-      Suffix:
-        Message: "{pl_suffix} "
-        
-      Message:
-        Message: "{message}"
-
-  Private_Message_Sender:
-    Parts:
-
-      Everything:
-        Message: "&7✉ &2has been sent!"
-        Hover_Event:
-          Action: SHOW_TEXT
-          Values:
-            - "     &8~ &3Private Message &8~     "
-            - "&8&oSent {timestamp}"
-            - "&3Receiver: &f{player}"
-            - "&3Body: &f{message}"
-        Click_Event:
-          Action: SUGGEST_COMMAND
-          Value: "/tell {player} "
-
-  Private_Message_Receiver:
-    Parts:
-
-      Everything:
-        Message: "&7✉ &6from {player}: &f{message}"
-        Hover_Event:
-          Action: SHOW_TEXT
-          Values:
-            - "     &8~ &3Private Message &8~     "
-            - "&8&oReceived {timestamp}"
-            - "&3Sender: &f{player}"
-            - ""
-            - "&7Click for a reply."
-        Click_Event:
-          Action: SUGGEST_COMMAND
-          Value: "/r "
-      
-  Admin_Chat:
-    Parts:
-      Bracket_Start:
-        Message: "&8[&2A-Chat "
-      Player:
-        Message: "{player}"
-      Bracket_End:
-        Message: "&8] &2"
-      Message:
-        Message: "{message}"
-        
-  Bungee_Chat:
-    Parts:
-      Bracket:
-        Message: "&8[&fG&8] "
-      Player:
-        Message: "{player} &7>&f "
-      Message:
-        Message: "{message}"
-        
   Local_Chat:
     Parts:
-      Everything:
-        Message: "&a&lL&a&l/&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
+      Channel_Prefix:
+        Message: "&a&lL/&f{world}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      hero:
+        Message: "{pl_prefix}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      group:
+        Message: "&f{player}&a&l/"
+        Permission: format.group
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      Sent_Message:
+        Message: "{pl_suffix}{message}"
         Hover_Event:
           Action: SHOW_TEXT
           Values:
@@ -127,13 +46,32 @@ Formats:
 
   Global_Chat:
     Parts:
-      Everything:
-        Message: "&b&lG&a&l/&4{world}&a&l/{pl_prefix}&a&l/{pl_suffix}{message}"
+      Channel_Prefix:
+        Message: "&b&lG&a&l/{world}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      hero:
+        Message: "{pl_prefix}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      group:
+        Message: "&f{player}&a&l/"
+        Permission: format.group
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      Sent_Message:
+        Message: "{pl_suffix}{message}"
         Hover_Event:
           Action: SHOW_TEXT
           Values:
             - "{player}"
-        
+
   Spy_Chat:
     Parts:
       Everything:
