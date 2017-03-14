@@ -13,7 +13,7 @@ bind(player_toggle_sneak,null,null,@event){
             @player, @eventID, @isSneaking){
                 
                 _wallRun(@player)
-                
+               set_entity_fall_distance(puuid(),0.0) 
             }
             export(@eventID['id'],@realID)
         }else{

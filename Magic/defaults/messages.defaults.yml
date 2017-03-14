@@ -289,26 +289,6 @@ paths:
     staff:
         name: Staff
         description: Staff-only spells
-    youngling:
-        name: Youngling
-    padawan:
-        name: Padawan
-    jedi_knight:
-        name: Jedi Knight
-    jedi_master:
-        name: Jedi Master
-    acolyte:
-        name: Sith Acolyte
-    sith_apprentice:
-        name: Sith Apprentice
-    sith:
-        name: Sith
-    marauder:
-        name: Sith Marauder
-    sith_master:
-        name: Sith Master
-    sith_lord:
-        name: Sith Lord
 spell:
     brush: Uses Material Brushes
     undoable: ""
@@ -330,8 +310,8 @@ spells:
         backfire: Your spell backfired!
         fail: Your spell failed!
         insufficient_permission: You don't have permission to cast that here.
-        cast_player_message: "&d&o$player &r&5cast &3&o$spell &r&5on you!"
-        indirect_player_message: "&d&o$player &r&5cast &3&o$spell &r&5on you!"
+        cast_player_message: "a:&d&o$player &r&5cast &3&o$spell &r&5on you!"
+        indirect_player_message: "a:&d&o$player &r&5cast &3&o$spell &r&5on you!"
         insufficient_resources: Not enough $cost
         cooldown: You must wait $time.
         cancelled: Your spell was cancelled!
@@ -448,11 +428,11 @@ spells:
     flashbang:
         name: Flash Bang
         description: Toss a ball of light and fury
-        cast_player_message: "You were hit by $player's flash bang"
+        cast_player_message: "a:You were hit by $player's flash bang"
     singularity:
         name: Singularity
         description: Create a black hole
-        cast_player_message: "You got sucked into a black hole"
+        cast_player_message: "a:You got sucked into a black hole"
     arrow:
         name: Arrow
         description: Fire a magic arrow
@@ -545,7 +525,7 @@ spells:
         description: Teleport you to other players
         cast_to_player: Teleporting you to $target
         cast_entity: Teleporting $target to your target
-        cast_player_message: "&d&o$player &r&5folded space"
+        cast_player_message: "a:&d&o$player &r&5folded space"
         target_selected: You captured $target
         cancel: Released target
         upgrade_description: "&r&b&bull; &6Aim down and cast to gather players to you"
@@ -555,7 +535,7 @@ spells:
         usage: Aim down to cycle targets, up to teleport to them
         cast_to_player: Teleporting you to $target
         cast_entity: Teleporting $target to your target
-        cast_player_message: "&d&o$player &r&5folded space"
+        cast_player_message: "a:&d&o$player &r&5folded space"
         target_selected: You captured $target
         cancel: Released target
     icbm:
@@ -684,7 +664,7 @@ spells:
         name: Phase
         description: Phase to another dimension
         usage: Has a 5-second warmup.
-        cancel: Recall interrupted!
+        cancel: Phase interrupted!
         cast: ""
         teleport: You phase to $world_name
         teleport_failed: Can't phase to $world_name from here
@@ -812,7 +792,7 @@ spells:
         name: SuperConvert
         description: Convert a large sphere of blocks
         usage: Cast twice to convert
-        cancel: Convert cancelled
+        cancel: SuperConvert cancelled
         target_selected: Cast again to convert $target
         fail: Too large!
         cast_finish: Converted $count blocks to $material
@@ -820,7 +800,7 @@ spells:
         name: SuperCollapse
         description: Collapse a large sphere of blocks
         usage: Cast twice to collapse
-        cancel: Collapse cancelled
+        cancel: SuperCollapse cancelled
         target_selected: Cast again to collapse
         fail: Too large!
         cast_finish: Collapsed $count blocks
@@ -828,7 +808,7 @@ spells:
         name: SuperBlob
         description: Create a large solid sphere
         usage: Cast twice to construct
-        cancel: Blob cancelled
+        cancel: SuperBlob cancelled
         target_selected: Cast again to build sphere
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -836,7 +816,7 @@ spells:
         name: SuperHemisphere
         description: Create a large solid half-sphere
         usage: Cast twice to construct
-        cancel: Blob cancelled
+        cancel: SuperHemisphere cancelled
         target_selected: Cast again to build hemisphere
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -844,7 +824,7 @@ spells:
         name: SuperCylinder
         description: Create a large cylinder
         usage: Cast twice to construct
-        cancel: Cylinder cancelled
+        cancel: SuperCylinder cancelled
         target_selected: Cast again to build cylinder
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -852,7 +832,7 @@ spells:
         name: SuperRepair
         description: Repairs a large area saved with Backup
         usage: Cast twice to repair
-        cancel: Repair cancelled
+        cancel: SuperRepair cancelled
         target_selected: Cast again to repair
         fail: Too large!
         cast_finish: Repaired $count blocks
@@ -875,7 +855,7 @@ spells:
         name: SuperBackup
         description: Save a large target area for Repair
         usage: Cast twice to save
-        cancel: Backup cancelled
+        cancel: SuperBackup cancelled
         fail: Too large!
         cast_finish: Backed up the selected area
         target_selected: Cast again to backup
@@ -883,7 +863,7 @@ spells:
         name: SuperEMP
         description: Electrify a large area
         usage: Cast twice to electrify
-        cancel: EMP cancelled
+        cancel: SuperEMP cancelled
         fail: Too large!
         cast_finish: Electrified $count blocks
         target_selected: Cast again to electrify sphere
@@ -891,7 +871,7 @@ spells:
         name: SuperShell
         description: Create a large hollow sphere
         usage: Cast twice to construct
-        cancel: Shell cancelled
+        cancel: SuperShell cancelled
         target_selected: Cast again to build shell
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -899,7 +879,7 @@ spells:
         name: SuperDisc
         description: Create a large circular disc
         usage: Cast twice to construct
-        cancel: Disc cancelled
+        cancel: SuperDisc cancelled
         target_selected: Cast again to build disc
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -907,7 +887,7 @@ spells:
         name: SuperRing
         description: Create a large circular ring
         usage: Cast twice to construct
-        cancel: Ring cancelled
+        cancel: SuperRing cancelled
         target_selected: Cast again to build ring
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -915,7 +895,7 @@ spells:
         name: SuperDome
         description: Create a very large dome
         usage: Cast twice to construct
-        cancel: Dome cancelled
+        cancel: SuperDome cancelled
         target_selected: Cast again to build dome
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -923,7 +903,7 @@ spells:
         name: SuperPyramid
         description: Create a large hollow pyramid
         usage: Cast twice to construct
-        cancel: Pyramid cancelled
+        cancel: SuperPyramid cancelled
         target_selected: Cast again to build pyramid
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -931,7 +911,7 @@ spells:
         name: SuperBox
         description: Create a large hollow box
         usage: Cast twice to construct
-        cancel: Box cancelled
+        cancel: SuperBox cancelled
         target_selected: Cast again to build box
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -939,7 +919,7 @@ spells:
         name: SuperCube
         description: Create a large solid cube
         usage: Cast twice to construct
-        cancel: Cube cancelled
+        cancel: SuperCube cancelled
         target_selected: Cast again to build cube
         fail: Too large!
         cast_finish: Filled $count blocks with $material
@@ -983,7 +963,7 @@ spells:
         description: Counter target player's spell
         usage: Only works on recently cast spells
         cast: "&5You counter &d&o$target's&r&6 $spell &5cast"
-        cast_player_message: "&d&o$player &r&5countered your &3&o$spell &r&5cast!"
+        cast_player_message: "a:&d&o$player &r&5countered your &3&o$spell &r&5cast!"
         fail: Nothing to counter
     counterspell|2:
         upgrade_description: "&r&b&bull; &6No chance of fizzle"
@@ -1046,6 +1026,7 @@ spells:
         cast: Regenerating chunks
         target_selected: Cast again to regenerate chunks
         cast_finish: Regenerated $count blocks
+        cancel: SuperRegenerate cancelled
     regenerate:
         name: Regenerate
         description: Regenerate a selected area
@@ -1054,6 +1035,7 @@ spells:
         cast: Regenerating area
         target_selected: Cast again to regenerate area
         cast_finish: Regenerated $count blocks
+        cancel: Regenerate cancelled
     recurse:
         name: Recurse
         description: Recursively fill blocks
@@ -1159,7 +1141,7 @@ spells:
         upgrade_description: "&r&b&bull; &6Increased duration"
     wear:
         name: Wear
-        description: Wear the item in your hand
+        description: Right-click to wear
         cast: You put your item on your head
     magichat:
         name: Magic Hat
@@ -1212,6 +1194,11 @@ spells:
         name: Workbench
         description: Crafting on the go
         cast: Get to work!
+    superlaser:
+        name: SuperLaser
+        description: Permanently destroy a line of blocks
+        cast_finish: Lasered $count blocks
+        upgrade_description: "&r&b&bull; &6Longer beam duration, breaks more types of blocks"
     laser:
         name: Laser
         description: Destroy a line of blocks
@@ -1439,19 +1426,19 @@ spells:
         description: Shoot a bolt of energy that will track your target
         cast: You fire a homing missile at $target
         lock_on: "&d&o$player&r&5 has locked on to you!"
-        cast_player_message: "&d&o$player&r&5's $spell hit you"
+        cast_player_message: "a:&d&o$player&r&5's $spell hit you"
         upgrade_description: "&r&b&bull; &6Faster missile, more damage"
     fury:
         name: Fury
         description: Launch several homing missiles into the air
         cast: You launch of a fury of missiles
-        cast_player_message: "&d&o$player&r&5's $spell hit you"
+        cast_player_message: "a:&d&o$player&r&5's $spell hit you"
         upgrade_description: "&r&b&bull; &6More missiles"
     chainlightning:
         name: Chain Lightning
         description: Shoot a bolt of electricity that splits to hit multiple targets
         cast: You create some chain lightning
-        cast_player_message: "&d&o$player&r&5's $spell hit you"
+        cast_player_message: "a:&d&o$player&r&5's $spell hit you"
         upgrade_description: "&r&b&bull; &6Chains to more targets"
     blind:
         name: Blind
@@ -1471,6 +1458,7 @@ spells:
         name: Kill
         description: Deal lethal damage to your target
         usage: Has a warmup time.
+        cast_player_message: ""
         cast: DIE!
         upgrade_description: "&r&b&bull; &6Faster, larger projectile and shorter warmup"
     superkill:
@@ -1531,7 +1519,7 @@ spells:
     webbing:
         name: Web Attack
         description: An annoying spider attack
-        cast_player_message: "&r&5You got caught in &d&o$player&r&5's web"
+        cast_player_message: "a:&r&5You got caught in &d&o$player&r&5's web"
     lift:
         name: Lift
         description: Lift up your target
@@ -1586,7 +1574,7 @@ spells:
         name: Give Item
         description: Give an item to the player
         cast: "You received $item"
-        cast_player_message: "You received $item from $player"
+        cast_player_message: "a:You received $item from $player"
         fail: ""
     fillwand:
         name: Fill Wand
@@ -1823,6 +1811,7 @@ wand:
     mana_regeneration_boosted: "Mana Regeneration: $amount &f(&b$mana&f)&d/s"
     mana_boost: "Mana Boost: $amount%"
     mana_regeneration_boost: "Mana Regeneration Boost: $amount%"
+    sp_multiplier: "SP Earn Boost: $amount%"
     block_chance: Blocking $roman
     reflect_chance: Reflective $roman
     cost_reduction: Cost Reduction $roman
@@ -1896,6 +1885,7 @@ wand:
     unknown_template: Unknown wand name $name
     reconfigured: Wand reconfigured
     removed_property: Removed property $name
+    no_property: Wand has no property $name
     player_reconfigured: $name's wand reconfigured
     filled: Your $wand now contains all of your spells
     player_filled: $name's wand filled
@@ -1917,6 +1907,11 @@ wand:
     enchant_instructions: "&r&bUpgrade your $wand at an enchanting table to add spells and abilities."
     brush_instructions: "&r&eMaterial brushes have been added to your $wand. Shift+Right Click to select a brush."
     sp_instructions: "&r&6You have earned some Spell Points! SP's are displayed above your mana bar, and may be spent at an enchanting table to learn new spells. Repeat casts earn fewer SP's, try mixing it up once you have more spells!"
+    hotbar_changed: ""
+    # You can use this to show an action bar message whenever the player cycles their hobat
+    #hotbar_changed: "t:Switched hotbars"
+    # Messages can also be sent as simple titles with default fade in/out
+    #hotbar_changed: "t:Switched hotbars"
 wands:
     default:
         name: Wand
@@ -2212,9 +2207,6 @@ wands:
         description: You can fly!
         enchant_instructions: ""
         spell_instructions: "&r&bUse your broom to fly through the air. Dive to speed up, and don't fly too long!"
-    blaster:
-        name: Blaster
-        description: Pew-pew!
     crackedbroomstick:
         name: Cracked Broomstick
         description: Good while it lasts!
@@ -2237,35 +2229,18 @@ wands:
       name: Ocarina
       description: Right-click and use the hotbar buttons to play music
       spell_count: Has $count Notes
-    lightsaber_red:
-        name: Lighsaber
-        description: Weapon of a $path
-    lightsaber_green:
-        name: Lighsaber
-        description: Weapon of a $path
-    lightsaber_blue:
-        name: Lighsaber
-        description: Weapon of a $path
-    lightsaber_orange:
-        name: Lighsaber
-        description: Weapon of a $path
-    lightsaber_purple:
-        name: Lighsaber
-        description: Weapon of a $path
-    lightsaber_hilt:
-        name: Lighsaber Hilt
-        description: Used to construct a Lightsaber
     mirrorshield:
         name: Mirror Shield
         description: Can block and reflect spells
     empty:
         name: Empty
         description: For creating in-game items from scratch
-    detonator:
-        name: Thermal Detonator
     talisman:
         name: Mana Talisman
         description: Gives a mana bonus when held
     skillbook:
         name: Skill Book
         description: Right-click to view skills, drag skill to hotbar to use
+    spellbook:
+        name: Spell Book
+        description: Press Q to view spells, drag skill to hotbar to use

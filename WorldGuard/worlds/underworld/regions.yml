@@ -10,9 +10,144 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    __global__:
+    rooms:
+        min: {x: -43.0, y: 7.0, z: 47.0}
+        max: {x: 10.0, y: 8.0, z: 81.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8]
+        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
+            game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room3:
+        parent: rooms
+        min: {x: -43.0, y: 2.0, z: 72.0}
+        max: {x: -32.0, y: 6.0, z: 80.0}
+        members:
+            unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8]
+        flags: {build: allow, build-group: MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room4:
+        parent: rooms
+        min: {x: -31.0, y: 2.0, z: 72.0}
+        max: {x: -21.0, y: 6.0, z: 80.0}
         members: {}
-        flags: {}
+        flags: {build: allow, build-group: MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    underworld-throne:
+        min: {x: -11.0, y: 13.0, z: 26.0}
+        max: {x: 13.0, y: 38.0, z: 41.0}
+        members:
+            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6,
+                0130299a-4489-429d-b4eb-68643a4c6ac8, 869b4227-b51e-452e-adbd-48759a6848dd,
+                8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+        flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
+            interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room1:
+        parent: rooms
+        min: {x: -31.0, y: 2.0, z: 62.0}
+        max: {x: -21.0, y: 6.0, z: 70.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+        flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room2:
+        parent: rooms
+        min: {x: -43.0, y: 2.0, z: 62.0}
+        max: {x: -32.0, y: 6.0, z: 70.0}
+        members:
+            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd]
+        flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    commandroom:
+        min: {x: 3.0, y: 2.0, z: 92.0}
+        max: {x: 14.0, y: 7.0, z: 100.0}
+        members: {}
+        flags: {build: deny}
+        owners: {}
+        type: cuboid
+        priority: 3
+    underworld-bigroom:
+        min: {x: 21.0, y: 5.0, z: -26.0}
+        max: {x: 54.0, y: 26.0, z: 13.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+        flags: {build: allow, build-group: MEMBERS, interact: allow, interact-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
+    underworld-court:
+        min: {x: -63.0, y: 12.0, z: -25.0}
+        max: {x: -36.0, y: 26.0, z: 7.0}
+        members: {}
+        flags: {other-explosion: deny, build: deny, block-break: deny, interact: deny,
+            tnt: deny, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    underworld-office:
+        parent: underworld-court
+        min: {x: -63.0, y: 1.0, z: -11.0}
+        max: {x: -52.0, y: 16.0, z: -4.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
+            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
+            game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    __global__:
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 869b4227-b51e-452e-adbd-48759a6848dd,
+                42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6, 0130299a-4489-429d-b4eb-68643a4c6ac8]
+        flags:
+            time-lock: '14000'
+            invincible: allow
+            mob-damage-group: MEMBERS
+            interact: allow
+            pvp: allow
+            item-drop-group: MEMBERS
+            weather-lock: DOWNFALL
+            item-drop: allow
+            game-mode: CREATIVE
+            blocked-cmds: [/tpa, /tpaccept, /warp, /thru, /tp]
+            mob-damage: deny
+            passthrough: allow
+            invincible-group: MEMBERS
+            game-mode-group: MEMBERS
         owners: {}
         type: global
         priority: 0
+    underworld-office2:
+        parent: underworld-court
+        min: {x: -63.0, y: 2.0, z: -5.0}
+        max: {x: -52.0, y: 16.0, z: 6.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
+            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
+            game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 3
+    employeedoor:
+        min: {x: -5.0, y: 2.0, z: 46.0}
+        max: {x: 0.0, y: 8.0, z: 56.0}
+        members:
+            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8]
+        flags: {entry: deny, interact: allow, interact-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
