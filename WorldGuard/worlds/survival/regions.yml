@@ -20,6 +20,25 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    underworld-gateway-survival:
+        min: {x: 56.0, y: 11.0, z: -245.0}
+        max: {x: 75.0, y: 70.0, z: -221.0}
+        members: {}
+        flags: {other-explosion: deny, creeper-explosion: deny, build: deny, mob-damage: deny,
+            greeting: You are now Entering the Underworld Gateway, block-break: deny,
+            enderman-grief: deny, tnt: deny, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    underworld-gateway-survival-dirt:
+        parent: underworld-gateway-survival
+        min: {x: 62.0, y: 61.0, z: -242.0}
+        max: {x: 66.0, y: 61.0, z: -238.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     __global__:
         members: {}
         flags: {}
