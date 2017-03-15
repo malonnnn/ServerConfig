@@ -10,16 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    rooms:
-        min: {x: -43.0, y: 7.0, z: 47.0}
-        max: {x: 10.0, y: 8.0, z: 81.0}
-        members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8]
-        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
-            game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     room3:
         parent: rooms
         min: {x: -43.0, y: 2.0, z: 72.0}
@@ -30,6 +20,17 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    rooms:
+        min: {x: -43.0, y: 7.0, z: 47.0}
+        max: {x: 10.0, y: 8.0, z: 81.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8,
+                42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6]
+        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
+            game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     room4:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 72.0}
@@ -44,7 +45,7 @@ regions:
         max: {x: 13.0, y: 38.0, z: 41.0}
         members:
             unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6,
-                0130299a-4489-429d-b4eb-68643a4c6ac8, 869b4227-b51e-452e-adbd-48759a6848dd,
+                869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8,
                 8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
             interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
@@ -104,7 +105,7 @@ regions:
         members:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
+            interact: allow, block-place-group: MEMBERS, interact-group: MEMBERS,
             game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
@@ -115,19 +116,17 @@ regions:
                 42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6, 0130299a-4489-429d-b4eb-68643a4c6ac8]
         flags:
             time-lock: '14000'
-            invincible: allow
-            mob-damage-group: MEMBERS
-            interact: allow
-            pvp: allow
-            item-drop-group: MEMBERS
-            weather-lock: DOWNFALL
             item-drop: allow
-            game-mode: CREATIVE
+            invincible: allow
             blocked-cmds: [/tpa, /tpaccept, /warp, /thru, /tp]
             mob-damage: deny
             passthrough: allow
+            mob-damage-group: MEMBERS
+            interact: allow
             invincible-group: MEMBERS
-            game-mode-group: MEMBERS
+            pvp: allow
+            item-drop-group: MEMBERS
+            weather-lock: DOWNFALL
         owners: {}
         type: global
         priority: 0
@@ -137,7 +136,7 @@ regions:
         max: {x: -52.0, y: 16.0, z: 6.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
+            interact: allow, block-place-group: MEMBERS, interact-group: MEMBERS,
             game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
