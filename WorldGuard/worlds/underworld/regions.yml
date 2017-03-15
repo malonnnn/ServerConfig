@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    employeeroom:
+        min: {x: 1.0, y: 1.0, z: 92.0}
+        max: {x: 14.0, y: 7.0, z: 100.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     room3:
         parent: rooms
         min: {x: -43.0, y: 2.0, z: 72.0}
@@ -80,15 +88,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 3
-    underworld-bigroom:
-        min: {x: 21.0, y: 5.0, z: -26.0}
-        max: {x: 54.0, y: 26.0, z: 13.0}
-        members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
-        flags: {build: allow, build-group: MEMBERS, interact: allow, interact-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     underworld-court:
         min: {x: -63.0, y: 12.0, z: -25.0}
         max: {x: -36.0, y: 26.0, z: 7.0}
@@ -141,12 +140,3 @@ regions:
         owners: {}
         type: cuboid
         priority: 3
-    employeedoor:
-        min: {x: -5.0, y: 2.0, z: 46.0}
-        max: {x: 0.0, y: 8.0, z: 56.0}
-        members:
-            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8]
-        flags: {entry: deny, interact: allow, interact-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
