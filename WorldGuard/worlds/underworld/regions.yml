@@ -14,7 +14,7 @@ regions:
         min: {x: 1.0, y: 1.0, z: 92.0}
         max: {x: 14.0, y: 7.0, z: 100.0}
         members: {}
-        flags: {interact: deny, interact-group: NON_MEMBERS}
+        flags: {entry: deny, build: deny, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -60,6 +60,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    mainoffice:
+        min: {x: -7.0, y: 4.0, z: 208.0}
+        max: {x: 1.0, y: 7.0, z: 210.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     room1:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 62.0}
@@ -112,7 +120,7 @@ regions:
     __global__:
         members:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 869b4227-b51e-452e-adbd-48759a6848dd,
-                42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6, 0130299a-4489-429d-b4eb-68643a4c6ac8]
+                0130299a-4489-429d-b4eb-68643a4c6ac8]
         flags:
             time-lock: '14000'
             item-drop: allow
