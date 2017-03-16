@@ -12,7 +12,7 @@
                     'val': 'eyJ0aW1lc3RhbXAiOjE0ODk2OTYwMTk2NjAsInByb2ZpbGVJZCI6ImZiYjhjMDcyNGM0YjQ5Yzg5NDhiMjZlOGFkNzMwOTllIiwicHJvZmlsZU5hbWUiOiJTdGFyYmVhcnp6Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNhNDNmMzVkMmY4YTNlYzc4YjBmODkyNWFkYzNiY2QyMWQwZmQzMGI1ZWFiNzMwN2I1ZWZmOGJlOWMxNyJ9fX0='
                )
            ),
-           'trail': '',
+            'trail': '',
             'op': 'false',
             'speech': "GHAAAAA!",
             'powers': array(
