@@ -6,7 +6,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODc0OTg2Mjg2MDgsInByb2ZpbGVJZCI6IjU1MGIwM2NkZDllOTRjODliNGVhNDRlYWQ0ODljZTBlIiwicHJvZmlsZU5hbWUiOiJEX1N1cGVyR2lybF9DIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8wZGRmZDYzOWRhMTc0MTJiZDg4MTJlM2UxYmQ4ZWQ2YzIyZjZiYjk2NWFlYmExMjkxMWQwNThkZTI0YiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': There are no Decepticons in the area Optimus.",
+            'speech': "There are no Decepticons in the area Optimus.",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
