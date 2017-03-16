@@ -10,22 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    room5:
-        min: {x: -59.0, y: 76.0, z: 41.0}
-        max: {x: -46.0, y: 90.0, z: 59.0}
-        members: {}
-        flags: {build: deny, greeting: 'Escape Room #5', pistons: allow, block-place: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
-    room6:
-        min: {x: -66.0, y: 84.0, z: 27.0}
-        max: {x: -47.0, y: 88.0, z: 40.0}
-        members: {}
-        flags: {greeting: 'Escape Room #6', interact: allow}
-        owners: {}
-        type: cuboid
-        priority: 1
     room5-hotspot9:
         parent: room5
         min: {x: -48.0, y: 84.0, z: 48.0}
@@ -35,14 +19,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room3:
-        min: {x: -68.0, y: 87.0, z: 62.0}
-        max: {x: -56.0, y: 90.0, z: 73.0}
-        members: {}
-        flags: {greeting: 'Escape Room #3'}
-        owners: {}
-        type: cuboid
-        priority: 0
     room12-pistonblocks:
         parent: room12
         min: {x: 32.0, y: 115.0, z: 28.0}
@@ -61,37 +37,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room4:
-        min: {x: -55.0, y: 87.0, z: 60.0}
-        max: {x: -46.0, y: 90.0, z: 68.0}
-        members: {}
-        flags: {greeting: 'Escape Room #4'}
-        owners: {}
-        type: cuboid
-        priority: 0
-    room9:
-        min: {x: -44.0, y: 77.0, z: 26.0}
-        max: {x: -21.0, y: 88.0, z: 40.0}
-        members: {}
-        flags: {greeting: 'Escape Room #9', block-place: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
     room5-hotspot7:
         parent: room5
         min: {x: -49.0, y: 85.0, z: 44.0}
         max: {x: -49.0, y: 86.0, z: 44.0}
         members: {}
         flags: {block-break: allow, block-place: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
-    room7-breakables:
-        parent: room7
-        min: {x: -55.0, y: 89.0, z: 20.0}
-        max: {x: -55.0, y: 90.0, z: 20.0}
-        members: {}
-        flags: {block-break: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -104,15 +55,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room7:
-        min: {x: -60.0, y: 78.0, z: 15.0}
-        max: {x: -50.0, y: 98.0, z: 25.0}
-        members: {}
-        flags: {vine-growth: deny, greeting: 'Escape Room #7', block-break: deny,
-            pistons: allow, block-place: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
     room5-hotspot5:
         parent: room5
         min: {x: -53.0, y: 85.0, z: 44.0}
@@ -131,29 +73,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room8:
-        min: {x: -62.0, y: 78.0, z: 26.0}
-        max: {x: -45.0, y: 83.0, z: 36.0}
-        members: {}
-        flags: {build: deny, greeting: 'Escape Room #8', interact: allow, block-place: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
     room5-hotspot3:
         parent: room5
         min: {x: -54.0, y: 84.0, z: 48.0}
         max: {x: -54.0, y: 84.0, z: 49.0}
         members: {}
         flags: {block-break: allow, block-place: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
-    room11-breakable2:
-        parent: room11
-        min: {x: 9.0, y: 83.0, z: 28.0}
-        max: {x: 10.0, y: 83.0, z: 28.0}
-        members: {}
-        flags: {block-break: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -166,21 +91,233 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room11-breakable1:
-        parent: room11
-        min: {x: 10.0, y: 86.0, z: 28.0}
-        max: {x: 10.0, y: 86.0, z: 28.0}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     room5-hotspot1:
         parent: room5
         min: {x: -52.0, y: 83.0, z: 46.0}
         max: {x: -50.0, y: 83.0, z: 51.0}
         members: {}
         flags: {block-break: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room14-frames:
+        parent: room14
+        min: {x: 71.0, y: 114.0, z: 33.0}
+        max: {x: 73.0, y: 116.0, z: 33.0}
+        members: {}
+        flags: {build: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room8-mineablediamond:
+        parent: room8
+        min: {x: -61.0, y: 79.0, z: 30.0}
+        max: {x: -61.0, y: 80.0, z: 30.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room10-wool:
+        parent: room10
+        min: {x: -10.0, y: 84.0, z: 28.0}
+        max: {x: -10.0, y: 85.0, z: 28.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room7-piston:
+        parent: room7
+        min: {x: -55.0, y: 86.0, z: 20.0}
+        max: {x: -55.0, y: 87.0, z: 20.0}
+        members: {}
+        flags: {block-break: allow, pistons: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room11-pistons:
+        parent: room11
+        min: {x: 2.0, y: 82.0, z: 26.0}
+        max: {x: 6.0, y: 82.0, z: 30.0}
+        members: {}
+        flags: {block-break: allow, pistons: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room8-mineablestone:
+        parent: room8
+        min: {x: -52.0, y: 82.0, z: 34.0}
+        max: {x: -51.0, y: 83.0, z: 35.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room14-frame:
+        parent: room14
+        min: {x: 67.0, y: 116.0, z: 24.0}
+        max: {x: 67.0, y: 116.0, z: 24.0}
+        members: {}
+        flags: {build: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room5-redstonetorch:
+        parent: room5
+        min: {x: -52.0, y: 88.0, z: 57.0}
+        max: {x: -52.0, y: 88.0, z: 57.0}
+        members: {}
+        flags: {build: allow, block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room5-hotspot10:
+        parent: room5
+        min: {x: -48.0, y: 84.0, z: 51.0}
+        max: {x: -48.0, y: 84.0, z: 51.0}
+        members: {}
+        flags: {block-break: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room9-buttonblock:
+        parent: room9
+        min: {x: -24.0, y: 88.0, z: 33.0}
+        max: {x: -24.0, y: 88.0, z: 33.0}
+        members: {}
+        flags: {block-break: allow, interact: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room8-mineablewood:
+        parent: room8
+        min: {x: -51.0, y: 79.0, z: 28.0}
+        max: {x: -51.0, y: 79.0, z: 28.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room9-breakables:
+        parent: room9
+        min: {x: -23.0, y: 81.0, z: 39.0}
+        max: {x: -23.0, y: 87.0, z: 39.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room13-pistons:
+        parent: room13
+        min: {x: 54.0, y: 115.0, z: 26.0}
+        max: {x: 54.0, y: 116.0, z: 30.0}
+        members: {}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room6-jesus:
+        parent: room6
+        min: {x: -49.0, y: 85.0, z: 38.0}
+        max: {x: -49.0, y: 87.0, z: 38.0}
+        members: {}
+        flags: {build: allow, interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room14-piston1:
+        parent: room14
+        min: {x: 68.0, y: 113.0, z: 34.0}
+        max: {x: 68.0, y: 116.0, z: 34.0}
+        members: {}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room5:
+        min: {x: -59.0, y: 76.0, z: 41.0}
+        max: {x: -46.0, y: 90.0, z: 59.0}
+        members: {}
+        flags: {build: deny, greeting: 'Escape Room #5', pistons: allow, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room6:
+        min: {x: -66.0, y: 84.0, z: 27.0}
+        max: {x: -47.0, y: 88.0, z: 40.0}
+        members: {}
+        flags: {greeting: 'Escape Room #6', interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room3:
+        min: {x: -68.0, y: 87.0, z: 62.0}
+        max: {x: -56.0, y: 90.0, z: 73.0}
+        members: {}
+        flags: {greeting: 'Escape Room #3'}
+        owners: {}
+        type: cuboid
+        priority: 0
+    room4:
+        min: {x: -55.0, y: 87.0, z: 60.0}
+        max: {x: -46.0, y: 90.0, z: 68.0}
+        members: {}
+        flags: {greeting: 'Escape Room #4'}
+        owners: {}
+        type: cuboid
+        priority: 0
+    room9:
+        min: {x: -44.0, y: 77.0, z: 26.0}
+        max: {x: -21.0, y: 88.0, z: 40.0}
+        members: {}
+        flags: {greeting: 'Escape Room #9', block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room7-breakables:
+        parent: room7
+        min: {x: -55.0, y: 89.0, z: 20.0}
+        max: {x: -55.0, y: 90.0, z: 20.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room7:
+        min: {x: -60.0, y: 78.0, z: 15.0}
+        max: {x: -50.0, y: 98.0, z: 25.0}
+        members: {}
+        flags: {vine-growth: deny, greeting: 'Escape Room #7', block-break: deny,
+            pistons: allow, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room8:
+        min: {x: -62.0, y: 78.0, z: 26.0}
+        max: {x: -45.0, y: 83.0, z: 36.0}
+        members: {}
+        flags: {build: deny, greeting: 'Escape Room #8', interact: allow, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    room11-breakable2:
+        parent: room11
+        min: {x: 9.0, y: 83.0, z: 28.0}
+        max: {x: 10.0, y: 83.0, z: 28.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    room11-breakable1:
+        parent: room11
+        min: {x: 10.0, y: 86.0, z: 28.0}
+        max: {x: 10.0, y: 86.0, z: 28.0}
+        members: {}
+        flags: {block-break: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -193,15 +330,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    room8-mineablediamond:
-        parent: room8
-        min: {x: -61.0, y: 79.0, z: 30.0}
-        max: {x: -61.0, y: 80.0, z: 30.0}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     room2:
         min: {x: -71.0, y: 86.0, z: 52.0}
         max: {x: -63.0, y: 90.0, z: 61.0}
@@ -210,15 +338,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    room10-wool:
-        parent: room10
-        min: {x: -10.0, y: 84.0, z: 28.0}
-        max: {x: -10.0, y: 85.0, z: 28.0}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     room1-placeable:
         parent: room1
         min: {x: -67.0, y: 86.0, z: 49.0}
@@ -246,30 +365,22 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    room14-piston:
+        parent: room14
+        min: {x: 63.0, y: 113.0, z: 22.0}
+        max: {x: 63.0, y: 115.0, z: 22.0}
+        members: {}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
     room8-mineableobsidian:
         parent: room8
         min: {x: -49.0, y: 79.0, z: 33.0}
         max: {x: -49.0, y: 80.0, z: 33.0}
         members: {}
         flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
-    room7-piston:
-        parent: room7
-        min: {x: -55.0, y: 86.0, z: 20.0}
-        max: {x: -55.0, y: 87.0, z: 20.0}
-        members: {}
-        flags: {block-break: allow, pistons: allow, block-place: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
-    room11-pistons:
-        parent: room11
-        min: {x: 2.0, y: 82.0, z: 26.0}
-        max: {x: 6.0, y: 82.0, z: 30.0}
-        members: {}
-        flags: {block-break: allow, pistons: allow, block-place: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -300,15 +411,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    room8-mineablestone:
-        parent: room8
-        min: {x: -52.0, y: 82.0, z: 34.0}
-        max: {x: -51.0, y: 83.0, z: 35.0}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     room11:
         min: {x: -7.0, y: 76.0, z: 17.0}
         max: {x: 12.0, y: 91.0, z: 39.0}
@@ -326,48 +428,41 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    room5-redstonetorch:
-        parent: room5
-        min: {x: -52.0, y: 88.0, z: 57.0}
-        max: {x: -52.0, y: 88.0, z: 57.0}
+    room13:
+        min: {x: 37.0, y: 112.0, z: 23.0}
+        max: {x: 59.0, y: 119.0, z: 35.0}
         members: {}
-        flags: {build: allow, block-break: allow}
+        flags: {greeting: 'Escape Room #13'}
         owners: {}
         type: cuboid
-        priority: 2
-    room5-hotspot10:
-        parent: room5
-        min: {x: -48.0, y: 84.0, z: 51.0}
-        max: {x: -48.0, y: 84.0, z: 51.0}
+        priority: 1
+    room14:
+        min: {x: 60.0, y: 113.0, z: 13.0}
+        max: {x: 75.0, y: 117.0, z: 36.0}
         members: {}
-        flags: {block-break: allow, block-place: allow}
+        flags: {use: allow, item-pickup: allow, greeting: 'Escape Room #14', block-break: allow,
+            interact: allow, block-place: allow}
         owners: {}
         type: cuboid
-        priority: 2
-    room9-buttonblock:
-        parent: room9
-        min: {x: -24.0, y: 88.0, z: 33.0}
-        max: {x: -24.0, y: 88.0, z: 33.0}
+        priority: 1
+    room15:
+        min: {x: 79.0, y: 114.0, z: 19.0}
+        max: {x: 98.0, y: 126.0, z: 37.0}
         members: {}
-        flags: {block-break: allow, interact: allow, block-place: allow}
+        flags:
+            spawn: {world: escaperoom, x: 81.89891908884309, y: 114.0, z: 28.30194251513426,
+                pitch: 11.700037, yaw: 272.56534}
+            invincible: deny
+            spawn-group: NON_MEMBERS
         owners: {}
         type: cuboid
-        priority: 2
+        priority: 1
     room1-redstone:
         parent: room1
         min: {x: -66.0, y: 86.0, z: 48.0}
         max: {x: -66.0, y: 86.0, z: 48.0}
         members: {}
         flags: {block-break: allow, interact: allow, block-place: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
-    room8-mineablewood:
-        parent: room8
-        min: {x: -51.0, y: 79.0, z: 28.0}
-        max: {x: -51.0, y: 79.0, z: 28.0}
-        members: {}
-        flags: {block-break: allow}
         owners: {}
         type: cuboid
         priority: 2
@@ -379,36 +474,18 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    room9-breakables:
-        parent: room9
-        min: {x: -23.0, y: 81.0, z: 39.0}
-        max: {x: -23.0, y: 87.0, z: 39.0}
-        members: {}
-        flags: {block-break: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     __global__:
         members: {}
         flags:
             build: deny
+            invincible: allow
             game-mode: SURVIVAL
             blocked-cmds: [/tpa, /fly, /tpahere, /tpaccept, /thru, /tp]
-            invincible: allow
-            passthrough: allow
-            snow-fall: deny
             block-break: deny
+            snow-fall: deny
+            passthrough: allow
             interact: allow
             block-place: deny
         owners: {}
         type: global
         priority: 0
-    room6-jesus:
-        parent: room6
-        min: {x: -49.0, y: 85.0, z: 38.0}
-        max: {x: -49.0, y: 87.0, z: 38.0}
-        members: {}
-        flags: {build: allow, interact: allow}
-        owners: {}
-        type: cuboid
-        priority: 2

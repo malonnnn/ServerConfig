@@ -14,7 +14,6 @@
                 "/jump 0-4",
                 "/run 0-4",
                 "/haste 0-2",
-                "/pt jump",
                 "/vis",
                 "/shadowhide",
                 "/jump"
