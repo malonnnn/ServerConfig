@@ -15,12 +15,12 @@
                 "/run 0-3",
                 "/flyspeed <number>",
                 "/fly",
-                "/disguise",
+                "/disguise"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
                 "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 26 9999 6 true",
-                "/effect ". @plr ." 1 9999 1 true",
+                "/effect ". @plr ." 1 9999 1 true"
             )
 )
