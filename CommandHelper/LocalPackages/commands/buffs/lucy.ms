@@ -16,8 +16,6 @@
                 "/haste 0-6",
                 "/carryplayer",
                 "/dismountplayer",
-                "/flyspeed <number>",
-                "/fly",
                 "/touchkill",
                 "/invis",
                 "/vis"
