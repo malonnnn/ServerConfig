@@ -1,0 +1,16 @@
+additems:/additems $class = >>>
+
+        @player = player()
+        @class = $class
+        @inv = pinv(@player)
+
+        for(@i = 0, @i <= 8, @i++)
+        {
+            set_pheld_slot(@player,@i)
+            if(pinv(@player,@i) != null){
+                runas(~console,"/sudo ".@player." c:/preventshare add ".@class)
+            }
+            
+        }
+
+<<<

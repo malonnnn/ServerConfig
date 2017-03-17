@@ -9,4 +9,26 @@
 #
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
-regions: {}
+regions:
+    lobby:
+        min: {x: 27.0, y: 85.0, z: -12.0}
+        max: {x: 42.0, y: 106.0, z: -2.0}
+        members: {}
+        flags: {invincible: allow, use: allow}
+        owners: {}
+        type: cuboid
+        priority: 0
+    spectatorarea:
+        min: {x: -16.0, y: 94.0, z: -26.0}
+        max: {x: 24.0, y: 95.0, z: 36.0}
+        members: {}
+        flags: {invincible: allow, use: allow, pvp: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
+    __global__:
+        members: {}
+        flags: {item-drop: deny}
+        owners: {}
+        type: global
+        priority: 0

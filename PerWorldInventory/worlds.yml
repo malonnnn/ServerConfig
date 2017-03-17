@@ -11,17 +11,11 @@ groups:
     - wooftywoo_the_end
     - wooftywoo
     default-gamemode: ADVENTURE
-  '1_8':
+  'survival':
     worlds:
-    - survival_nether
-    - survival
     - survival_the_end
-    default-gamemode: ADVENTURE
-  '1_9':
-    worlds:
-    - 1_9_the_end
-    - '1_9'
-    - 1_9_nether
+    - 'survival'
+    - survival_nether
     - greenfield
     default-gamemode: SURVIVAL
   mamby:
@@ -34,6 +28,10 @@ groups:
     worlds:
     - obstaclecourse
     default-gamemode: ADVENTURE
+  garbageworld:
+    worlds:
+    - garbageworld
+    default-gamemode: CREATIVE
   hilariousrace:
     worlds:
     - hilariousrace
@@ -41,6 +39,8 @@ groups:
   anarchy:
     worlds:
     - anarchy
+    - anarchy_nether
+    - anarchy_the_end
     default-gamemode: ADVENTURE
   spleef:
     worlds:
@@ -170,3 +170,10 @@ groups:
     worlds:
     - plots
     default-gamemode: CREATIVE
+  pvpworldslobby:
+    worlds:
+    - pvpworldslobby
+    - pvpworldsforest
+    - pvpworldsundergroundarmory
+    - pvpworldsruins
+    default-gamemode: SURVIVAL

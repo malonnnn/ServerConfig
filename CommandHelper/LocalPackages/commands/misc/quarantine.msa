@@ -1,0 +1,24 @@
+quarantine:/quarantine $plr = >>>
+
+    @plr = $plr
+    runas(~console,'/sudo '.@plr.' c:/ch leave local')
+    runas(~console,'/sudo '.@plr.' c:/ch join global')
+    runas(~console,'/sudo '.@plr.' c:/mortal')
+    set_timeout(3000,closure(
+        
+        runas(~console,"/pex user ".@plr." group set quarantine")
+        runas(~console,"/tptoggle ".@plr." off")
+        runas(~console,"/warp quarantine ".@plr)
+    ))
+
+<<<
+
+unquarantine:/unquarantine $plr = >>>
+
+    @plr = $plr
+    runas(~console,"/pex user ".@plr." group set mortal")
+    runas(~console,"/warp city ".@plr)
+    runas(~console,"/tptoggle ".@plr." on")
+
+<<<
+

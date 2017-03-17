@@ -1,0 +1,59 @@
+confuse:/confuse $plr = >>>
+    
+    @player = player()
+    @victim = $plr
+    
+    if(is_null(get_value(@player."usedConfuse"))){
+        store_value(@player."usedConfuse", 0)
+    }
+    
+    assign(@cooldown, 30)
+    
+    assign(@lastConfuse, get_value(@player."usedConfuse"))
+    if(@lastConfuse + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can confuse anyone again!")
+    )
+    store_value(@player."usedConfuse", time() / 1000)
+    
+    
+    if(ponline(@victim)){
+        store_value(@victim."isConfused", "true")
+        broadcast(color(blue) . @player . color(gray) . " is using their mind control to confuse " . color(blue) . @victim . color(gray) . "!")
+    
+        set_timeout(30000, closure(
+    
+            broadcast(color(blue) . @victim . color(gray) . " is no longer confused.")
+            store_value(@victim."isConfused", "false")
+    
+        ))
+    }
+    
+
+<<<
+
+unconfuse:/unconfuse $plr = >>>
+    
+    @player = player()
+    @victim = $plr
+    
+    if(is_null(get_value(@player."usedUnConfuse"))){
+        store_value(@player."usedUnConfuse", 0)
+    }
+    
+    assign(@cooldown, 30)
+    
+    assign(@lastUnConfuse, get_value(@player."usedUnConfuse"))
+    if(@lastUnConfuse + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can unconfuse anyone again!")
+    )
+    store_value(@player."usedUnConfuse", time() / 1000)
+    
+    
+    if(ponline(@victim)){
+        store_value(@victim."isConfused", "false")
+        broadcast(color(blue) . @victim . color(gray) . " is no longer confused.")
+    }
+
+    
+
+<<<

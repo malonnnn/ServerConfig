@@ -28,7 +28,21 @@ backup:
     zip: true
   ftp:
     enabled: false
-    sftp: false
+    hostname: 127.0.0.1
+    port: 21
+    login: user
+    password: password
+    passive: false
+    path: asw
+    worlds:
+    - '*'
+    pluginsfolder: false
+    otherfolders: []
+    excludefolders: []
+    maxNumberOfBackups: 4
+    zip: false
+  sftp:
+    enabled: false
     hostname: 127.0.0.1
     port: 21
     login: user
@@ -55,6 +69,18 @@ backup:
     excludefolders: []
     maxNumberOfBackups: 4
     zip: false
+  googledrive:
+    enabled: false
+    authfilepath: ''
+    rootfolderid: ''
+    path: asw
+    worlds:
+    - '*'
+    pluginsfolder: false
+    otherfolders: []
+    excludefolders: []
+    maxNumberOfBackups: 4
+    zip: false
 purge:
   enabled: false
   interval: 86400
@@ -69,8 +95,6 @@ purge:
   lwc:
     enabled: true
     deletepurgedblocks: false
-  residence:
-    regenpurgedresidence: false
   permissions:
     enabled: true
     savecmd: mansave

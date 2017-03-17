@@ -1,0 +1,32 @@
+skin:/skin $num = >>>
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @player = player()
+    @class = pgroup()[0]
+    @skinNum = $num
+
+    if(@skinNum <= 0){
+        tmsg(@player,"Skin number has to be at least 1")
+        die()
+    }
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    
+    if(@skinNum == "1"){
+        @sig = @hero['sig']
+        @val = @hero['val']
+        _changeSkin(@player,@sig,@val)
+        die()
+    }
+    @skinNum = @skinNum - 2
+    try(
+        @altSig = @hero['altskins'][@skinNum]['sig']
+        @altVal = @hero['altskins'][@skinNum]['val']
+    ,
+        @skinNum = @skinNum + 2
+        tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
+        die()
+    )
+    _changeSkin(@player,@altSig,@altVal)
+<<<

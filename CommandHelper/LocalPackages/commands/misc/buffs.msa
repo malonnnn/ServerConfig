@@ -1,0 +1,13 @@
+buff:/buff = >>>
+    
+    @class = pgroup()[0]
+    @plr = player()
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+    
+    foreach(@power in @hero['buffs']){
+        runas(~console,@power)
+    }
+    
+    tmsg(@plr,@hero['speech'])
+
+<<<

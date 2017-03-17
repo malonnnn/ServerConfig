@@ -1,0 +1,285 @@
+# -----------------------------------------------------------------
+# This file holds configuration for join, quit, kick, death
+# messages and automatic message broadcaster.
+# -----------------------------------------------------------------
+#
+# To use placeholders, you'll need to enable custom
+# variables in settings.yml at Variables.Enabled.
+#
+# See "variables/javascript.txt" for list of precreated variables.
+#
+# -----------------------------------------------------------------
+
+# A major switch that will hide join, kick or quit messages completely.
+# May be useful if you have toggled 'broadcast-servers-switch' in your BungeeControlBridge..
+Hide_Join_Quit_Kick_Messages: false
+
+Join_Message:
+  
+  # Set to true to enable custom join messages.
+  Enabled: false
+  
+  # That's the default message if no condition is specified or hit.
+  # Use 'default' to leave unchanged, 'hide' to silence or simply write an own message, e.g. '&6{player} &7has joined the server!'
+  # Is it possible to specify multiple messages that will be picked up randomly.
+  Message: default
+  
+  # Rules for displaying custom different messages. 
+  # [NOTICE] They are processed in alphabetical order according to names.
+  Conditions: 
+  
+    # The name if the condition set does not matter.
+    hells_message: 
+    
+      # Either specify one gamemode or a list. Numbers and names are supported.
+      Gamemode: SURVIVAl
+      
+      # Either specify one world or a list like so:
+      World: [world_nether, hardcore_nether, another_nether]
+      
+      # Either specify one message or a list from which they'll randomly be picked up.
+      Message: '&8[&2+&8] &7Welcome to &chell &7{player}!'
+      
+    staff_message: 
+    
+      # Permission player must have for messages below when they join.
+      Permission: "chatcontrol.joinmessage.staff"
+      
+      Message:
+        - '&8[&2+&8] &7Welcome &b{player} &7to the server!'
+        - '&8[&2+&8] &7Bless &9{player} &7for joining!'
+        - '&8[&2+&8] &7All say hey to &e{player} &7for joining!'
+        - '&8[&2+&8] &7Watch out for &c{player} &7joining!'
+
+    jubileum_message: 
+    
+      # You can also specify a Javascript condition.
+      Condition: 'player.getStatistic(Java.type("org.bukkit.Statistic").LEAVE_GAME) == 99'
+      
+      # An example of only one message, but multi-lined.
+      Message: |- 
+               &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               &e&l{player} &ejoined the server 100th time!
+               &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Quit_Message:
+  # Set to true to enable custom quit messages.
+  Enabled: false
+
+  Message: default
+  Conditions: 
+    staff_message: 
+      Permission: "chatcontrol.joinmessage.staff"
+      
+      Message:
+        - '&8[&2+&8] &b{player} &7left the server'
+        - '&8[&2+&8] &9{player} &7just quit the game. Good bye!'
+        - '&8[&2+&8] &7Say goodbye to &e{player} &7for leaving!'
+  
+Kick_Message: 
+  # Set to true to enable custom kick messages.
+  Enabled: false
+
+  Message: default
+  # You don't need to specify conditions if you don't need to.
+
+Death_Messages: 
+  # Set to true to enable custom death messages.
+  Enabled: false
+  
+  # The prefix used in front of all messages.
+  Prefix: "&8[&4x&8] &c{player}&7 "
+  
+  # The default message if it's not recognized by any cause.
+  Default:
+    Message:
+      - '{player} has passed away'
+      - '{player} has been killed'
+      - '{player} has died'
+    
+    # Use 'hide' to not broadcast to bungee, 'default' to use the main message or specify a custom message like: &6{player} &7just joined on &c{server_name}&7!
+    # To use, you must have enabled bungeecords in settings.yml first!
+    Bungee_Message: hide
+    
+    # To whom the message should be displayed?
+    # If you don't specify it, it will be displayed to everyone.
+    # ALL -> display to all players
+    # BOTH -> only display to the killer (if exists) and the dead player
+    # VICTIM -> only display to the dead player
+    # KILLER -> only display to the killer, if exists
+    Display_To: ALL
+    
+    # Range controls how far in the world the message should spread.
+    # Set to -1 to send to the entire server, or set the range to limit for the player's world.
+    Range: -1
+      
+    # Rule for displaying different death messages.
+    Conditions:
+
+      # An example condition preventing sending messages when the player dies in creative.
+      # Conditions: Gamemode, Killer, Range, Permission, Condition (for JavaScript condition, see examples above in Join_Message)
+      silent_on_creative: 
+        Gamemode: CREATIVE
+        
+        Message: none
+
+  Contact: 
+    Message: 'has died of a contact'
+
+  Entity_Attack: 
+    Message: 'has been killed by {killer}'
+    
+    Conditions:
+      zombie: 
+        # Who killed the player? You will find all the values at:
+        # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+        Killer: ZOMBIE
+        
+        Message: 
+          - 'has been torn apart by an angry {killer}'
+          - 'thought zombies are friendly creatures'
+    
+      pvp:
+        Killer: PLAYER
+        
+        # You can also specify different messages per items used to kill the player.
+        # See the names at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+        #Killer_Item: DIAMOND_SWORD
+        
+        # Message for the killer, if available:
+        Killer_Message: 
+          - '<noprefix> &8[&4PvP&8] &6You just &cmurdered &6{player}!'
+          - '<noprefix> &8[&4PvP&8] &6You just &cslayed &6{player}!'
+        
+        Message: 
+          - '<noprefix> &8[&4PvP&8] &c{killer} &7just murdered {player} by {killer_item}'
+          - '<noprefix> &8[&4PvP&8] &c{killer} &7just killed {player} by {killer_item}'
+          - '<noprefix> &8[&4PvP&8] &c{player} &7has been slayed by {player} using {killer_item}'
+    
+  Projectile:
+    # You can insert the operators from above to each death cause.
+    Message: 'has died of a projectile'
+    
+  Suffocation:
+    Message: 'has died of suffocation'
+    
+  Fall:
+    Message: 'has died of fall'
+    
+  Fire:
+    Message: 'has died of fire'
+    
+  Fire_Tick:
+    Message: 'has died of a fire tick'
+    
+  Melting:
+    Message: 'has died of melting'
+    
+  Lava:
+    Message: 'has died of lava'
+    
+  Drowning:
+    Message: 'has died of drowning'
+    
+  Block_Explosion:
+    Message: 'has died of a block explosion'
+    
+  Entity_Explosion:
+    Message: 'has died of an entity explosion'
+    
+    Conditions:
+      creeper:
+        Killer: CREEPER
+        Message: 'has been blown up by creeper'
+    
+  Void:
+    Message: 'has died of void'
+    
+  Lightning:
+    Message: 'has died of lightning'
+    
+  Suicide:
+    Message: 'has died of suicide'
+    
+  Starvation:
+    Message: 'has died of starvation'
+    
+  Poison:
+    Message: 'has died of a poison'
+    
+  Magic:
+    Message: 'has died of magic'
+    
+  Wither:
+    Message: 'has died of a wither'
+    
+  Falling_Block:
+    Message: 'has died of a falling block'
+    
+  Thorns:
+    Message: 'has died of thorns'
+    
+  Dragon_Breath:
+    Message: 'has died of a dragon breath'
+    
+  Custom:
+    Message: 'has miraculously died'
+    
+  Fly_Into_Wall:
+    Message: 'has died of flying into a wall'
+    
+  Hot_Floor:
+    Message: 'has died of a hot floor'
+    
+  Cramming: 
+    Message: 'squished too much'
+    
+  Entity_Sweep_Attack: 
+    Message: 'squished too much'
+
+# Automatic message broadcaster.
+Broadcaster:
+  Enabled: false
+  
+  # Display styles.
+  # 0 - From first to the last message from the list.
+  # 1 - Randomly picks up from the list.
+  # 2 - Random, but messages won't repeat until every message has been broadcasted.
+  Mode: 0
+  
+  # Prefix and suffix supports variables {player} and {world}
+  Prefix: '&8[&2Tip&8]&2'
+    
+  Suffix: ''
+  Delay_Seconds: 180
+
+  # [TIP] It is possible to display different messages in worlds.
+  Messages: 
+      
+    # This is a special one, from which the messages are displayed in all worlds.
+    global: 
+      - Hey, {player}, did you know that we are running ChatControl?
+      - 'Check out &ahttps://spigotmc.org/resources/10258'
+      
+    # In this world will be displayed both global messages and these specified below.
+    hardcore: 
+      - Grief is not permitted what-so-ever and every griefer will be banned.
+      - Can you survive the night on {world} world?
+      
+      # In this world will be displayed messages included from the hardcore world.
+    hardcore_nether: 
+      - includeFrom hardcore
+      
+    # No messages will be broadcasted in this world.
+    ignored-world: 
+      - excludeGlobal
+      
+    # No global messages will be displayed here.
+    creative: 
+      - excludeGlobal
+      - 'Welcome on Creative world. Enjoy your gamemode :)'
+      - |-
+        This is an example of multi-line.
+        Use it if the new line character 
+        is not working for you.
+      - 'This is another message, this time only on one line!'

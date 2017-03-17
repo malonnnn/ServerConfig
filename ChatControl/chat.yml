@@ -1,0 +1,136 @@
+# -----------------------------------------------------------------
+# This file controls creation of own chat formats.
+# -----------------------------------------------------------------
+#
+# You need to enable Variables (settings.yml -> Variables.Enabled)
+# to use custom placeholders here. 
+# See "variables/javascript.txt" for placeholder list.
+#
+# -----------------------------------------------------------------
+
+# -----------------------------------------------------------------
+# Interactive chat formats.
+# Used across the plugin to format the chat message.
+#
+# [TIP] It is possible to create as many formats as you want.
+# -----------------------------------------------------------------
+Formats:
+
+  Local_Chat:
+    Parts:
+      Channel_Prefix:
+        Message: "&a&lL/&f{world}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      hero:
+        Message: "{pl_prefix}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      group:
+        Message: "&f{player}&a&l/"
+        Permission: format.group
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      Sent_Message:
+        Message: "{pl_suffix}{message}"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "{player}"
+
+  Global_Chat:
+    Parts:
+      Channel_Prefix:
+        Message: "&b&lG&a&l/{world}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      hero:
+        Message: "{pl_prefix}&a&l/"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      group:
+        Message: "&f{player}&a&l/"
+        Permission: format.group
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+          - "{player}"
+      Sent_Message:
+        Message: "{pl_suffix}{message}"
+        Hover_Event:
+          Action: SHOW_TEXT
+          Values:
+            - "{player}"
+
+  Spy_Chat:
+    Parts:
+      Everything:
+        Message: "&8SPY: [{world}&8]&f {pl_prefix}{player}:{pl_suffix} {message}"
+
+# -----------------------------------------------------------------
+# Chat channels. 
+# You can remove or create them at your will.
+#
+# NB: The names of the keys are used as channel names.
+# -----------------------------------------------------------------
+Channels:
+
+  # This is an example of a channel using every function you can configure.
+  # [NOTICE] You only need to specify Format. Other values are not mandatory.
+  #example_channel:
+  #
+  #  # The format you have created above in this file.
+  #  Format: Some_Format
+  #
+  #  # Print following message to the console.
+  #  Log_Format: '{player} > {message}'
+  #
+  #  # Communication in the channel can be saved. Here you can specify the path and the format.
+  #  Save:
+  #
+  #    # The file path must be within the plugin folder!
+  #    File: 'logs/example-channel.log'
+  #    Format: '{player}: {message}'
+  #
+  #  # Permission required to see the messages inside the channel.
+  #  Permission: 'chatcontrol.channels.example-permission'
+  #
+  #  # Range within the world the players will receive the message (works like ranged chat).
+  #  Range: 200
+  #
+  #  # Send the message to BungeeCords? 
+  #  # [NOTICE] You MUST have the channel with the exact same name configured on every other server.
+  #  Bungee: true
+  #
+  #  # Integration with other plugins.
+  #  # Currently: town [Sends messages to players in the same town in Towny plugin.]
+  #  #            nation [Sends messages to players in the same nation in Towny plugin.]
+  #  #            faction [Sends messages to players in the same faction in Factions 2.x free version plugin.]
+  #  Party: town
+
+  global:
+    Format: Global_Chat
+    Bungee: true
+    Log_Format: '[GLOBAL] {player}: {message}'
+    Save:
+      File: 'logs/global-chat.txt'
+      Format: '{player}: {message}'
+    
+  local:
+    Format: Local_Chat
+    Bungee: true
+    Range: 100
+    Log_Format: '[GLOBAL] {player}: {message}'
+    Save:
+      File: 'logs/local-chat.txt'
+      Format: '{player}: {message}'

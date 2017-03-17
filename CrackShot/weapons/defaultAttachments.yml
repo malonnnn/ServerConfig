@@ -3,6 +3,7 @@ M320:
         Attachments:
             Type: accessory
             Toggle_Delay: 5
+            Sounds_Toggle: BLOCK_NOTE_HAT-1-2-0
     Shooting:
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
@@ -10,15 +11,16 @@ M320:
         Projectile_Amount: 1
         Projectile_Type: egg
         Projectile_Speed: 20
-        Projectile_Damage: 30
-        Delay_Between_Shots: 45
+        Projectile_Damage: 1
+        Sounds_Shoot: ENTITY_GENERIC_EXPLODE-1-2-0
     Sneak:
         Enable: true
         No_Recoil: true
     Reload:
-        Enable: false
+        Enable: true
         Reload_Amount: 1
         Reload_Duration: 45
+        Sounds_Reloading: BLOCK_PISTON_EXTEND-1-1-10,ENTITY_SKELETON_STEP-1-0-20,BLOCK_PISTON_CONTRACT-1-1-35
     Particles:
         Enable: true
         Particle_Impact_Anything: BLOCK_BREAK-24
@@ -29,6 +31,7 @@ M320:
         Explosion_Radius: 5
         On_Impact_With_Anything: true
         Projectile_Activation_Time: 5
+        Sounds_Shooter: ENTITY_SKELETON_SHOOT-2-2-0
 
 Tactical_Knife:
     Item_Information:
@@ -36,7 +39,7 @@ Tactical_Knife:
         Item_Type: 288
         Item_Lore: "&eA melee attachment.|&eNot intended for standalone use."
         Melee_Mode: true
-        Sounds_Acquired: SHOOT_ARROW-1-0-0
+        Sounds_Acquired: ENTITY_SKELETON_SHOOT-1-0-0
         Hidden_From_List: true
     Shooting:
         Cancel_Left_Click_Block_Damage: true
@@ -48,4 +51,4 @@ Tactical_Knife:
         Particle_Hit: BLOCK_BREAK-55
     Hit_Events:
         Enable: true
-        Sounds_Shooter: SHOOT_ARROW-1-0-0,SLIME_WALK-1-1-1
+        Sounds_Shooter: ENTITY_SKELETON_SHOOT-1-0-0,ENTITY_SLIME_JUMP-1-1-1

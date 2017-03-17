@@ -1,0 +1,9 @@
+magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
+    @player = $player
+    if(ponline(@player)){
+        runas(~console,'/sudo '.@player.' c:/mortal')
+        set_timeout(3000,closure(
+            tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!');
+        ))
+    }
+<<<

@@ -1,0 +1,22 @@
+goalpha:/goalpha $plr = >>>
+    @player = $plr
+
+    if(has_permission(@player,"bypass.entrance")){
+        runas(~console,"/warp thealpha ".@player)
+        die()
+    }
+
+    @kingAvailable = false
+
+    if(pworld("God_Doesnt_Exist") == "alpha"){
+        @kingAvailable = true
+    }
+   
+    if(@kingAvailable){
+        runas(~console,"/pex user ".@player." add multiverse.access.alpha")
+        runas(~console,"/warp thealpha ".@player)
+        runas(~console,"/pex user ".@player." remove multiverse.access.alpha")
+    }else{
+        tmsg(@player,color(red)."Sorry! The Alpha isn't available right now")
+    }
+<<<

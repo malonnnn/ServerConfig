@@ -1,0 +1,15 @@
+coinflip:/coinflip = >>>
+    @plr = player()
+    @num = rand(1,3)
+    broadcast("@plr has flipped a coin! The result is...")
+    
+    set_timeout(2000,closure(
+        if(@num == 1)
+        {
+            broadcast("HEADS!")
+        }else
+        {
+            broadcast("TAILS!")
+        }
+    ))
+<<<

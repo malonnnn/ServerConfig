@@ -1,0 +1,29 @@
+deathnote:/deathnote $victim $ = >>>
+
+    @player = player()
+    assign(@cooldown, 400)
+    assign(@lastUsedDeathNote, get_value(@player."lastUsedDeathNote"))
+    if(@lastUsedDeathNote + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedDeathNote, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use Death Note!'))
+        die()
+    )
+    store_value(@player."lastUsedDeathNote", time() / 1000)
+
+    @victim = $victim
+    @msg = $
+
+    if(has_permission(@victim,"powers.deathnote.immune")){
+        tmsg(@player,color(red)."Sorry, they are immune to deathnote")
+        die()
+    }
+
+    tmsg(player(),color(red)."In 5 minutes, ".@victim." is going to die by ".@msg)
+    set_timeout(300000,closure(
+        if(ponline(@victim)){
+            pkill(@victim)
+            broadcast(@victim." was killed by ".@msg)
+        }
+    ))
+
+<<<

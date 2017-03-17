@@ -1,19 +1,20 @@
 # Default values are perfect for most servers.  If you want to customize and have a question, look for the answer here first: http://dev.bukkit.org/bukkit-plugins/grief-prevention/pages/setup-and-configuration/
 GriefPrevention:
   SeaLevelOverrides:
-    '1_9': -1
-    1_9_nether: -1
-    1_9_the_end: -1
+    survival: -1
+    survival_nether: -1
+    survival_the_end: -1
     skeeter_nether: -1
+    rollercoaster: -1
+    newcity: -1
     elytralobby: -1
     skywarslobby: -1
     parkourmedium: -1
     formuladrift: -1
-    titantower: -1
+    speedforce: -1
     fortressofsolitude: -1
     flyingbattlelobby: -1
     elytraeasy: -1
-    hallofworlds: -1
     gotham: -1
     megaparkour: -1
     hurdles: -1
@@ -25,7 +26,6 @@ GriefPrevention:
     longparkour: -1
     anarchy: -1
     spleef: -1
-    creative: -1
     parkourhub: -1
     towerparkour: -1
     elytrahard: -1
@@ -41,18 +41,22 @@ GriefPrevention:
     destructiblecity: -1
     skywars: -1
     hilariousrace: -1
-    flat: -1
+    lasertag: -1
+    titanstower: -1
     infiniteparkour: -1
     turbotowers: -1
     colosseum: -1
     straightlineparkour: -1
+    soccer: -1
     greenfield: -1
     spleeflobby: -1
     waynemanor: -1
     parkourhard: -1
     wallenpole: -1
     colosseumlobby: -1
+    anarchy_nether: -1
     skeeter: -1
+    garbageworld: -1
     elytramedium: -1
     shortparkour: -1
     plots: -1
@@ -66,10 +70,9 @@ GriefPrevention:
       parkoureasy: Disabled
       checkers: Disabled
       spleef: Disabled
-      hallofjustice: Disabled
       destructiblecity: Disabled
       skywarslobby: Disabled
-      hallofworlds: Disabled
+      survival_the_end: Survival
       flyingbattlearena: Disabled
       colosseumlobby: Disabled
       skeeter_the_end: Survival
@@ -77,9 +80,9 @@ GriefPrevention:
       elytralobby: Disabled
       plots: Disabled
       wooftywoo: Disabled
-      creative: Creative
       megaparkour: Disabled
       formuladrift: Disabled
+      lasertag: Disabled
       fortressofsolitude: Disabled
       longparkour: Disabled
       wallenpole: Disabled
@@ -87,22 +90,26 @@ GriefPrevention:
       straightlineparkour: Disabled
       towerparkour: Disabled
       flappybirdparkour: Disabled
-      flat: Creative
       spleeflobby: Disabled
+      garbageworld: Disabled
       marathon: Disabled
       lavahop: Disabled
       greenfield: Disabled
+      survival: Survival
       infinitycity: Disabled
       chess: Disabled
       waynemanor: Disabled
       gotham: Disabled
       elytraeasy: Disabled
       elytrahard: Disabled
+      newcity: Disabled
+      speedforce: Disabled
+      survival_nether: Survival
+      hallofjustice: Disabled
       spawn: Disabled
       obstaclecourse: Disabled
-      1_9_the_end: Survival
       parkourmedium: Disabled
-      1_9_nether: Survival
+      anarchy_nether: Disabled
       hurdles: Disabled
       shortparkour: Disabled
       parkourhard: Disabled
@@ -113,12 +120,13 @@ GriefPrevention:
       flyingbattlelobby: Disabled
       skeeter: Survival
       boatrace: Disabled
+      rollercoaster: Disabled
       metropolis: Disabled
+      soccer: Disabled
       hilariousrace: Disabled
-      '1_9': Survival
       colosseum: Disabled
-      titantower: Disabled
       skywars: Disabled
+      titanstower: Disabled
       skeeter_nether: Survival
       infiniteparkour: Disabled
     PreventTheft: true
@@ -132,12 +140,8 @@ GriefPrevention:
     InitialBlocks: 100
     Claim Blocks Accrued Per Hour:
       Default: 500
-      With 'fasteraccrual' Permission: 110
-      With 'fastestaccrual' Permission: 125
     Max Accrued Claim Blocks:
       Default: 500000
-      With 'moreaccrued' Permission: 5000
-      With 'mostaccrued' Permission: 10000
     AbandonReturnRatio: 1.0
     AutomaticNewPlayerClaimsRadius: 4
     ExtendIntoGroundDistance: 5
@@ -176,65 +180,69 @@ GriefPrevention:
     Logout Message Delay In Seconds: 0
   PvP:
     RulesEnabledInWorld:
-      '1_9': true
-      1_9_nether: true
-      1_9_the_end: true
-      skeeter_nether: true
-      elytralobby: true
-      skywarslobby: true
-      parkourmedium: true
-      formuladrift: true
-      titantower: true
-      fortressofsolitude: true
-      flyingbattlelobby: true
-      elytraeasy: true
-      hallofworlds: true
-      gotham: true
+      survival: true
+      survival_nether: true
+      survival_the_end: true
+      skeeter_nether: false
+      rollercoaster: false
+      newcity: false
+      elytralobby: false
+      skywarslobby: false
+      parkourmedium: false
+      formuladrift: false
+      speedforce: false
+      fortressofsolitude: false
+      flyingbattlelobby: false
+      elytraeasy: false
+      gotham: false
       megaparkour: false
-      hurdles: true
-      godlyparkour: true
-      chess: true
-      hallofjustice: true
-      marathon: true
-      metropolis: true
-      longparkour: true
-      anarchy: true
-      spleef: true
-      creative: false
-      parkourhub: true
-      towerparkour: true
-      elytrahard: true
-      boatrace: true
-      lavahop: true
-      skeeter_the_end: true
-      checkers: true
-      obstaclecourse: true
-      flappybirdparkour: true
-      deathdrop: true
-      wooftywoo: true
-      parkoureasy: true
-      destructiblecity: true
-      skywars: true
-      hilariousrace: true
-      flat: false
-      infiniteparkour: true
-      turbotowers: true
-      colosseum: true
-      straightlineparkour: true
-      greenfield: true
-      spleeflobby: true
-      waynemanor: true
-      parkourhard: true
-      wallenpole: true
-      colosseumlobby: true
-      skeeter: true
-      elytramedium: true
-      shortparkour: true
-      plots: true
-      torture: true
+      hurdles: false
+      godlyparkour: false
+      chess: false
+      hallofjustice: false
+      marathon: false
+      metropolis: false
+      longparkour: false
+      anarchy: false
+      spleef: false
+      parkourhub: false
+      towerparkour: false
+      elytrahard: false
+      boatrace: false
+      lavahop: false
+      skeeter_the_end: false
+      checkers: false
+      obstaclecourse: false
+      flappybirdparkour: false
+      deathdrop: false
+      wooftywoo: false
+      parkoureasy: false
+      destructiblecity: false
+      skywars: false
+      hilariousrace: false
+      lasertag: true
+      titanstower: false
+      infiniteparkour: false
+      turbotowers: false
+      colosseum: false
+      straightlineparkour: false
+      soccer: false
+      greenfield: false
+      spleeflobby: false
+      waynemanor: false
+      parkourhard: false
+      wallenpole: false
+      colosseumlobby: false
+      anarchy_nether: false
+      skeeter: false
+      garbageworld: false
+      elytramedium: false
+      shortparkour: false
+      plots: false
+      torture: false
       spawn: false
-      infinitycity: true
-      flyingbattlearena: true
+      infinitycity: false
+      flyingbattlearena: false
     ProtectFreshSpawns: true
     PunishLogout: true
     CombatTimeoutSeconds: 15

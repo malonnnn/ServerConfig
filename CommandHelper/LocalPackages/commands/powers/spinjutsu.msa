@@ -1,0 +1,17 @@
+spinjutsu:/spinjutsu = >>>
+
+    @player = player()
+    assign(@cooldown, 20)
+    
+    assign(@lastUsedSpinjutsu, get_value(@player."lastUsedSpinjutsu"))
+    if(@lastUsedSpinjutsu + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedSpinjutsu, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can modify speed again!'))
+        die()
+    )
+    
+    runas(~console,"/effect ".@player." minecraft:strength 10 5 true")
+
+    store_value(@player."lastUsedSpinjutsu", time() / 1000)
+    
+<<<

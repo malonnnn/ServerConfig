@@ -1,0 +1,73 @@
+# -------------------------------------------------------------------------------
+# This file manages rules in chat (not commands) and includes rules from rules.txt.
+#
+# For help, see the header in the rules.txt file.
+# -------------------------------------------------------------------------------
+
+# -------- Basic grammar corrections
+match \bdis\b
+then replace this
+
+match \bwanna\b
+then replace want to
+
+match \bgonna\b
+then replace going to
+
+# -------- Prevent asking for a rank
+match (can|may|would you like if) i (have|be|become|get|has) (op|admin|mod|builder)
+then warn &cCurrently, we are not looking for new staff.
+then deny
+
+match (do|are) you (need|wish|looking for) (any|some|one|good) (op|ops|operators|admins|mods|builders|new people|ateam)
+then warn &cCurrently, we are not looking for new staff.
+then deny
+
+# -------- Prevent people saying bad things about your server
+# Notice the id, it can be a string and can used multiple times.
+match this server (is (bad|crappy|shitty)|suck)
+id ServerHate
+then rewrite I love this filter!|I can't behave property due to brain damage!|My bad manners was corrected by server.
+then notify chatcontrol.notify.rulesalert &8[&7ID {ruleID}&8] &7{player}: &f{message}
+then console kick {player} &cYour rating will be processed by our staff soon. \nThanks and welcome back!
+
+match ((admin|op|ateam|server|owner) (is|are)) + *(dick|cock|duck|noob|kid)
+id ServerHate
+then console kick {player} &cI don't think so.
+then deny
+then log
+
+# Example of limiting repeating characters to four repeats maximum.
+#match (.)(?=([a-z])\1{3})
+#then replace
+
+# Example of preventing special, unicode characters. Those are misused to bypass filters.
+# Please keep in mind that non-english languages might use them as well.
+#match [^\u0000-\u007F]+
+#then warn Unicode is prohibited
+#then deny
+
+# -------- Example usage of unicode characters - making smileys
+match :\)
+then replace ☺
+
+match :-\)
+then replace ☺
+
+match :\(
+then replace ☹
+
+match :-\(
+then replace ☹
+
+match ;\)
+then replace ㋡
+
+match ;-\)
+then replace ㋡
+
+match \:star\:
+then replace ★
+
+match <3\b
+then replace ❤

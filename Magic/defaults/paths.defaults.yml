@@ -1,0 +1,616 @@
+#
+# !! IMPORTANT !!
+#
+# If you wish to customize this plugin, edit the "enchanting.yml" file instead.
+# 
+# This file is merged from the files in the following folder:
+#
+# https://github.com/elBukkit/MagicPlugin/tree/master/src/main/resources/defaults/enchanting
+#
+
+#
+# "Battle" Wand (sword-wands)
+# Have a separate enchanting path.
+#
+
+#
+# Wand progression
+# beginner -> student -> apprentice -> master
+#
+battle:
+    upgrade: squire
+    upgrade_item: squire_upgrade
+    follows: beginner
+    inherit: default
+    max_mana_regeneration: 10
+    max_mana: 100
+    mana_regeneration: 1
+    mana_max: 2
+    spell_count: 1
+    spells:
+      - missile
+      - arrow
+      - cure
+      - fireball
+      - push
+      - pull
+      - blind
+      - reflect
+      - stun
+      - poison
+      - fire
+      - frost
+
+squire:
+    upgrade: soldier
+    upgrade_item: soldier_upgrade
+    follows: student
+    inherit: battle
+    max_mana_regeneration: 30
+    max_mana: 150
+    mana_regeneration: 1
+    mana_max: 2
+    spells:
+      - arrowrain
+      - boom
+      - grenade
+      - heal
+      - lightning
+      - lava
+      - stream
+      - flamethrower
+      - wither
+      - shell
+      - blob
+      - entangle
+      - whip
+      - curse
+
+soldier:
+    upgrade: knight
+    upgrade_item: knight_upgrade
+    inherit: squire
+    follows: apprentice
+    max_mana_regeneration: 40
+    max_mana: 200
+    mana_regeneration: 1
+    mana_max: 2
+    spells:
+      - breach
+      - disintegrate
+      - sandblast
+      - counterspell
+      - wound
+      - flashbang
+      - gatling
+      - smite
+      - shuriken
+      - sticky
+      - homing
+      - lift
+      - disarm
+      - laser
+      - wave
+
+knight:
+    inherit: soldier
+    follows: master
+    max_mana_regeneration: 50
+    max_mana: 250
+    mana_regeneration: 1
+    mana_max: 2
+    spells:
+      - cluster
+      - bomb
+      - earthquake
+      - icbm
+      - nuke
+      - cage
+      - meteor
+      - kill
+      - torture
+      - petrify
+      - singularity
+      - tornado
+      - tendril
+      - force
+      - railgun
+
+#
+# Broom Enchanting
+#
+
+broom:
+    hidden: true
+    inherit: default
+#
+# The default path is a base path common to the others
+#
+
+default:
+  hidden: true
+  upgrade_commands:
+    - broadcast &6@pd &3has advanced to &b$path&3!
+  effects:
+      enchant:
+      -  class: EffectSingle
+         sound: entity_player_levelup
+         effectlib:
+           class: SphereEffect
+           iterations: 5
+           period: 2
+           particle: enchantment_table
+           radius: 3
+      upgrade:
+      -  class: EffectSingle
+         sound: entity_player_levelup
+      -  class: EffectRing
+         firework: star
+         radius: 4
+         size: 2
+      -  class: EffectRing
+         firework: ball_large
+         radius: 6
+         size: 3
+
+#
+# Wand progression
+# beginner -> student -> apprentice -> master
+#
+beginner:
+    icon: wood_hoe:1
+    migrate_icon: wood_hoe
+    upgrade: student
+    upgrade_item: student_upgrade
+    inherit: default
+    # A wand may gain a property (usually protection of some kind) when obtaining a new spell
+    # There is a 25% chance that they will get a property
+    # This is determined by the relative probabilities defined in the map below:
+    # 0 (no new property) = 75% of the time
+    # 1 (1 new property) = 25% of the time
+    property_count:
+      0: 75
+      1: 25
+    # If gaining a property, one of the following will be chosen, unless the wand is already at the specified limit
+    max_protection: 0.2
+    protection: 0.01
+    max_protection_falling: 0.4
+    protection_falling: 0.1
+    max_protection_physical: 0.4
+    protection_physical: 0.05
+    # The limit for mana progression on this path
+    max_mana: 100
+    max_mana_regeneration: 10
+    # For the old randomized enchanting system, a wand will gain 1 spell per enchant
+    spell_count: 1
+    # Wands have a chance of gaining 1 or 2 mana regen points per spell
+    # Note that relative probability don't need to sum to 100%. Bigger numbers just mean that option is more likely.
+    mana_regeneration:
+      1: 100
+      2: 20
+    # Wands gain some amount of max mana
+    mana_max:
+      1: 100
+      2: 80
+      3: 70
+      4: 50
+      5: 10
+    # These are spells that are optional, appear in the spell shop but are not required for progression.
+    extra_spells:
+      - flare
+      - stun
+      - gather
+      - workbench
+    # These spells appear in the spell shop and are required to progress to the next path.
+    spells:
+      - missile
+      - arrow
+      - blast
+      - boon
+      - cloak
+      - collapse
+      - cure
+      - bubble
+      - fireball
+      - torch
+      - push
+      - pull
+      - peek
+      - recall
+      - blind
+      - reflect
+      - poison
+      - fire
+      - frost
+
+student:
+    icon: wood_hoe:2
+    migrate_icon: wood_hoe
+    upgrade: apprentice
+    upgrade_item: apprentice_upgrade
+    inherit: beginner
+    property_count:
+      0: 100
+      1: 50
+      2: 10
+    max_protection: 0.4
+    protection: 0.01
+    max_protection_falling: 0.5
+    protection_falling: 0.1
+    max_protection_physical: 0.5
+    protection_physical: 0.05
+    max_protection_fire: 0.3
+    protection_fire: 0.05
+    max_protection_explosions: 0.3
+    protection_explosions: 0.05
+    max_mana_regeneration: 30
+    mana_regeneration:
+      1: 100
+      2: 30
+      3: 10
+    max_mana: 150
+    mana_max:
+      5: 100
+      7: 20
+      10: 5
+    extra_spells:
+      - familiar
+      - monster
+      - tracking
+      - rocket
+      - secure
+      - admission
+      - tag
+      - phase
+      - grow
+    spells:
+      - blink
+      - arrowrain
+      - boom
+      - fling
+      - grenade
+      - heal
+      - lightning
+      - lava
+      - stream
+      - flamethrower
+      - wither
+      - mine
+      - chop
+      - shell
+      - blob
+      - entangle
+      - whip
+      - curse
+
+apprentice:
+    icon: wood_hoe:3
+    migrate_icon: wood_hoe
+    upgrade: master
+    upgrade_item: master_upgrade
+    inherit: student
+    max_protection: 0.5
+    max_protection_falling: 0.75
+    max_protection_physical: 0.75
+    max_protection_fire: 0.5
+    max_protection_explosions: 0.5
+    max_mana_regeneration: 40
+    max_mana: 200
+    extra_spells:
+      - emp
+      - music
+      - disarm
+      - ghast
+      - glide
+    spells:
+      - breach
+      - disintegrate
+      - hat
+      - sandblast
+      - counterspell
+      - platform
+      - rubberize
+      - wound
+      - harden
+      - sponge
+      - flashbang
+      - gatling
+      - walls
+      - smite
+      - shuriken
+      - sticky
+      - homing
+      - lift
+      - laser
+      - wave
+      - chainlightning
+      - airscooter
+
+master:
+    icon: wood_hoe:4
+    migrate_icon: gold_axe
+    # These are spells that a player must obtain (outside of the normal spellshop progression) to proceed to the next
+    # path.
+    # This means that the engineer path is intentionally locked, server admins may allow players to progress to Engineer
+    # by giving them access to an engineershop.
+    required_spells:
+      - rollback
+    upgrade: engineer
+    upgrade_item: engineer_upgrade
+    inherit: apprentice
+    max_protection: 0.75
+    max_protection_falling: 1
+    max_protection_physical: 0.9
+    max_protection_fire: 0.75
+    max_protection_explosions: 0.75
+    max_mana_regeneration: 50
+    mana_regeneration:
+      1: 100
+      2: 60
+      3: 30
+      5: 10
+    max_mana: 250
+    mana_max:
+      5:  100
+      10: 60
+      15: 20
+      20: 5
+    extra_spells:
+      - mount
+      - cage
+      - silence
+      - tent
+      - tame
+    spells:
+      - fury
+      - blessing
+      - cluster
+      - bomb
+      - invincible
+      - earthquake
+      - icbm
+      - nuke
+      - meteor
+      - pollinate
+      - kill
+      - torture
+      - petrify
+      - singularity
+      - tornado
+      - tendril
+      - force
+      - stash
+      - railgun
+      - levitate
+      - shrink
+      - dragonball
+
+#
+# The move from "master" to engineer requires the player to aquire some basic
+# egineering spells first.
+#
+# In this way, it is up to the server owner whether or not players get access to
+# engineering magic.
+#
+# Similarly, the move to "Architect" requires that the player aquire a few high-level
+# engineering spells first.
+#
+
+engineer:
+    icon: wood_hoe:5
+    migrate_icon: gold_axe
+    # The architectshop is required to proceed to Architect
+    required_spells:
+      - absorb
+    upgrade: architect
+    upgrade_item: architect_upgrade
+    inherit: master
+    max_protection: 0.9
+    max_protection_falling: 1
+    max_protection_fire: 0.9
+    max_protection_explosions: 0.9
+    max_mana_regeneration: 55
+    max_mana: 300
+    mana_max:
+      5: 100
+      8: 50
+      10: 20
+      15: 10
+    spells:
+      - rollback
+      - alter
+      - bridge
+      - toss
+      - convert
+      - recurse
+      - paint
+      - pillar
+      - place
+      - tree
+      - supertorch
+      - brushselect
+    # Engineer wands can gain material brushes, they get some number of them per spell purchase as below
+    material_count:
+      2: 100
+      3: 50
+      4: 20
+      5: 10
+    materials:
+      - erase
+      - stone
+      - dirt
+      - sand
+      - grass
+      - gravel
+      - glass
+      - glowstone
+      - stained_clay
+      - stained_glass
+      - stained_glass_pane
+
+architect:
+    icon: wood_hoe:5
+    migrate_icon: gold_pickaxe
+    inherit: engineer
+    # The conduitshop is required for Conduit
+    # This is generally not recommended as a player-obtainable rank, except maybe on creative servers.
+    required_spells:
+      - backup
+    upgrade: conduit
+    upgrade_item: conduit_upgrade
+    max_protection: 1
+    max_protection_falling: 1
+    max_protection_fire: 1
+    max_protection_explosions: 1
+    max_mana_regeneration: 60
+    max_mana: 400
+    spells:
+      - absorb
+      - superalter
+      - supershell
+      - superblast
+      - superbox
+      - supercube
+      - superpyramid
+      - superblob
+      - fill
+      - superemp
+      - superdisc
+      - superlaser
+      - superring
+      - superconvert
+      - supercylinder
+      - superdome
+      - volley
+      - floodfill
+      - tunnel
+    material_count:
+      7:  100
+      10:  60
+      12:  30
+      15:  10
+    materials:
+      - copy
+      - map
+      - soul_sand
+      - wood
+      - log
+      - vine
+      - mycel
+      - quartz_block
+      - leaves
+      - ice
+      - packed_ice
+      - obsidian
+      - redstone_block
+      - schematic|rainbow_blocks
+      - schematic|creeper_rug
+      - wool|0
+      - wool|1
+      - wool|2
+      - wool|3
+      - wool|4
+      - wool|5
+      - wool|6
+      - wool|7
+      - wool|8
+      - wool|9
+      - wool|10
+      - wool|11
+      - wool|12
+      - wool|13
+      - wool|14
+      - wool|15
+      - stained_clay|0
+      - stained_clay|1
+      - stained_clay|2
+      - stained_clay|3
+      - stained_clay|4
+      - stained_clay|5
+      - stained_clay|6
+      - stained_clay|7
+      - stained_clay|8
+      - stained_clay|9
+      - stained_clay|10
+      - stained_clay|11
+      - stained_clay|12
+      - stained_clay|13
+      - stained_clay|14
+      - stained_clay|15
+      - stained_glass|0
+      - stained_glass|1
+      - stained_glass|2
+      - stained_glass|3
+      - stained_glass|4
+      - stained_glass|5
+      - stained_glass|6
+      - stained_glass|7
+      - stained_glass|8
+      - stained_glass|9
+      - stained_glass|10
+      - stained_glass|11
+      - stained_glass|12
+      - stained_glass|13
+      - stained_glass|14
+      - stained_glass_pane|15
+      - stained_glass_pane|0
+      - stained_glass_pane|1
+      - stained_glass_pane|2
+      - stained_glass_pane|3
+      - stained_glass_pane|4
+      - stained_glass_pane|5
+      - stained_glass_pane|6
+      - stained_glass_pane|7
+      - stained_glass_pane|8
+      - stained_glass_pane|9
+      - stained_glass_pane|10
+      - stained_glass_pane|11
+      - stained_glass_pane|12
+      - stained_glass_pane|13
+      - stained_glass_pane|14
+      - stained_glass_pane|15
+      - schematic|rainbow_blocks
+      - schematic|lantern
+      - schematic|creeper_rug
+      - schematic|elder_tree
+      - schematic|church
+      - schematic|blacksmith
+      - schematic|garden_house
+      - schematic|compact_house
+      - schematic|small_house
+      - schematic|nathanwolf
+
+conduit:
+    icon: wood_hoe:6
+    migrate_icon: gold_pickaxe
+    inherit: architect
+    spells:
+      - portal
+      - backup
+      - repair
+      - superrepair
+      - paste
+      - anvil
+      - day
+      - night
+      - weather
+      - capture
+    materials:
+      - commit
+      - clone
+      - replicate
+      - lava
+      - water
+      - schematic|rainbow_blocks
+      - schematic|lantern
+      - schematic|creeper_rug
+      - schematic|elder_tree
+      - schematic|church
+      - schematic|blacksmith
+      - schematic|garden_house
+      - schematic|compact_house
+      - schematic|small_house
+      - schematic|nathanwolf
+
+staff:
+  hidden: true

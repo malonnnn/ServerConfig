@@ -1,0 +1,12 @@
+normalsize:/normalsize = >>>
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @plr = player()
+    @class = pgroup()[0]
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+
+    _changeSkin(@plr,@hero['sig'],@hero['val'])
+    
+<<<

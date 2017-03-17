@@ -1,0 +1,53 @@
+deathroll:/deathroll $plr = >>>
+
+    @player = $plr
+    
+    if(acc_balance(@player) >= 1000){
+        acc_subtract(@player,1000)
+    }else{
+        tmsg(@player, "You need $1000 to use this machine!")
+        die()
+    }
+    
+    #@player = player()
+    assign(@plrs, all_players())
+    assign(@plr, array_rand(@plrs))
+    broadcast("§4§kk§9"@player"§7used §4DeathRoll§7! Who will §4§lDIE§7? Will it be §f"@plrs[@plr[0]]"§7?")
+    
+    set_timeout(2000, closure(
+    assign(@plr, array_rand(@plrs))
+    broadcast("§4§kk§7or §f"@plrs[@plr[0]]"§7?")
+    ))
+    
+    set_timeout(4000, closure(
+    broadcast("§4§kk§7No! It")
+    ))
+    
+    set_timeout(5000, closure(
+    broadcast("§4§kk§7Will")
+    ))
+    
+    set_timeout(6000, closure(
+    broadcast("§4§kk§7Be")
+    ))
+    
+    set_timeout(7000, closure(
+    broadcast("§4§kk§7...")
+    ))
+    
+    set_timeout(10000, closure(
+    assign(@plr, array_rand(@plrs))
+    @name = @plrs[@plr[0]]
+    if(rand(1,3) == 1){
+        broadcast("§2§kk§7JK! §f@name §7wins 27 levels of xp!")
+        runas(~console,/xp 1000 @name)
+        die()
+    }
+    @mode = pmode(@name)
+    broadcast("§4§kk§4" @name)
+        set_timeout(500, closure(
+        runas(~console,/kill @name)
+        ))
+    ))
+    
+<<<

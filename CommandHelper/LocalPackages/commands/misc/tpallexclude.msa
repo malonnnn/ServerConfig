@@ -1,0 +1,24 @@
+tpallexclude:/tpallexclude $ = >>>
+
+    @eP = $
+
+    @excludedPlayers = split(' ',@eP)
+    @allPlayers = all_players()
+    @playerFound = false
+    @ploc = ploc()
+    array_push(@excludedPlayers,player())
+
+    foreach(@player in @allPlayers){
+        foreach(@plr in @excludedPlayers){
+            if(@player == @plr){
+                @playerFound = true
+            }
+        }
+        if(@playerFound){
+            @playerFound = false
+        }else{
+            set_ploc(@player,@ploc)
+        }
+    }
+
+<<<

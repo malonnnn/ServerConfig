@@ -1,0 +1,50 @@
+carryplayer:/carryplayer $plr = >>>
+    
+    @plr = player()
+    @vic = $plr
+
+    @ploc = ploc()
+    @vicLoc = ploc(@vic)
+    
+    @players = players_in_radius(@ploc,2)
+    
+    if(@ploc['world'] != @vicLoc['world']){
+        die("Sorry, you have to be in the same world as that person!")
+    }
+
+    @x1 = @ploc['x']
+    @y1 = @ploc['y']
+    @z1 = @ploc['z']
+
+    @x2 = @vicLoc['x']
+    @y2 = @vicLoc['y']
+    @z2 = @vicLoc['z']
+
+    @x3 = pow(@x1 - @x2, 2)
+    @y3 = pow(@y1 - @y2, 2)
+    @z3 = pow(@z1 - @z2, 2)
+
+    @final = @x3 + @y3 + @z3
+
+    @distance = sqrt(@final)
+   
+    if(@distance > 2){
+        tmsg(@plr, "Make sure you are close enough to grab that person!")
+        die()
+    }
+
+    set_entity_rider(puuid(@plr,true),puuid(@vic,true))
+    tmsg(@vic, @plr." grabbed you")
+    tmsg(@plr, "You grabbed ".@vic."!")
+        
+<<<
+
+dismoutplayer:/dismountplayer = >>>
+   
+   @rider = get_entity_rider(puuid(player()))
+
+    if(@rider != null){
+        set_entity_rider(null,@rider)
+    }
+
+<<<

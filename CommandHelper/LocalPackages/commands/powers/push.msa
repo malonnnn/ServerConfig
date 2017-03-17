@@ -1,0 +1,8 @@
+push:/push $plr $x $y $z = >>>
+    @plr = $plr
+    @x = $x
+    @y = $y
+    @z = $z
+    @uuid = pinfo(@plr,20)
+    set_entity_velocity(@uuid, array(@x,@y,@z))
+<<<

@@ -1,0 +1,43 @@
+# 
+# Whether or not resourcepack file hashes should be generated on startup:
+debug: true
+autogeneratehashes: true
+messages:
+  usepack: You now use the pack %pack%!
+  packlisthead: 'Packs available to you:'
+  nopacks: No packs found!
+packs:
+  razul:
+    url: http://mynecraft.servegame.com/razul.zip
+    hash: 00033cf1e575514b8bd0ee6c6deef745dc77b4d0
+    format: 0
+    restricted: false
+    permission: worldresourcepacks.pack.razul
+  greenfield:
+    url: http://mynecraft.servegame.com/superherocity.zip
+    hash: 647338303690a328e11b3b0f0cf9f4f826727fe9
+    format: 1
+    restricted: false
+    permission: worldresourcepacks.pack.greenfield
+  survival:
+    url: http://mynecraft.servegame.com/survivalresourcepack.zip
+    hash: 1a7224d90ec4346da17f55a900ee43aa8f5f93f2
+    format: 3
+    restricted: false
+    permission: worldresourcepacks.pack.survival
+  emptypack:
+    url: http://cdn.moep.tv/files/Empty.zip
+    hash: 81ffbd1712afe8cdf138b570c0fc9934742c33c1
+    format: 0
+    restricted: false
+    permission: worldresourcepacks.pack.emptypack
+empty: survival
+server:
+  pack: survival
+worlds:
+  greenfield:
+    pack: greenfield
+  survival:
+    pack: survival
+  razul:
+    pack: razul

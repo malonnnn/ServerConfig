@@ -1,0 +1,29 @@
+fixskin:/fixskin = >>>
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @plr = player()
+    @class = pgroup()[0]
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+
+    _changeSkin(@plr,@hero['sig'],@hero['val'])
+    
+<<<
+
+fixskin:/fixskin $plr = >>>
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @playr = $plr
+    @class = pgroup(@playr)[0]
+        
+    if(!ponline(@playr)){
+        tmsg(player(),color(red)."Sorry, that player is not online")
+        die()
+    }
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    _changeSkin(@playr,@hero['sig'],@hero['val'])
+    
+<<<

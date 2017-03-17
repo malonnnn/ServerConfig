@@ -1,0 +1,42 @@
+Command:
+  Poll:
+    AlreadyExists: '&cThat poll already exists!'
+    DoesntExist: '&cThat poll doesn''t exist!'
+    Create:
+      Success: '&7The poll &a%POLL%&7 was created with the question &e%QUESTION%'
+    Delete:
+      Success: '&7The poll &a%POLL%&7 was deleted.'
+    Vote:
+      NoPolls: '&cThere are no polls to show.'
+      Prefix: '&7Polls (&b%AMOUNT%&7): '
+      PrimaryColor: '&7'
+      SecondaryColor: '&a'
+      Tooltip:
+        HeaderText: '&f&l%QUESTION%'
+        ChoiceText: '&3» &f%CHOICE%'
+      ChoiceNotFound: '&cThat choice couldn''t be found.'
+      AlreadyVoted: '&cYou have already voted on this poll.'
+    Results:
+      NoChoices: '&cThere are no choices to show, that anybody could have voted for.'
+    View:
+      Success:
+      - '&3&l» &7According to the DB, &a%PLAYER% &7has voted for:'
+      - '&2- &b%CHOICE%'
+    Broadcast:
+      Success:
+        Singular: '&a%POLL%&7 was shown to &b%AMOUNT%&7 player.'
+        Plural: '&a%POLL%&7 was shown to &b%AMOUNT%&7 players.'
+    Show:
+      Success: '&a%POLL%&7 was shown to &b%PLAYER%&7.'
+    Reload:
+      Success: '&aCustomPolls&7 was reloaded.'
+    Sync:
+      NoDatabase: '&aDatabase Sync&7 was started.'
+  Help:
+    Format: '&a%EXAMPLE% &8- &7%DESCRIPTION%'
+    Header: '&7&m---------------------&r &ePage &8(&a%PAGE%&8/&a%PAGES%&8) &7&m---------------------'
+Error:
+  NoPermission: '&c&lHey! &7You do not have the permission to access this!'
+  MustBeInGame: '&cYou must be ingame to use this!'
+  NoLongerExists: '&cThat poll no longer exists.'
+  PlayerNotFound: '&cThat player couldn''t be found.'

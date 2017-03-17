@@ -10,18 +10,38 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    olympus:
-        min: {x: -432.0, y: 0.0, z: -270.0}
-        max: {x: 419.0, y: 255.0, z: 614.0}
+    spawn:
+        min: {x: 48.0, y: 0.0, z: -220.0}
+        max: {x: 125.0, y: 255.0, z: -92.0}
         members: {}
-        flags: {greeting: §7Welcome to §9Mount Olympus§7!}
+        flags: {other-explosion: deny, creeper-explosion: deny, invincible: allow,
+            mob-damage: deny, greeting: §2Welcome to spawn!, leaf-decay: deny, snow-melt: deny,
+            ghast-fireball: deny, farewell: §4You are leaving spawn!}
         owners: {}
         type: cuboid
         priority: 0
+    underworld-gateway-survival:
+        min: {x: 56.0, y: 11.0, z: -245.0}
+        max: {x: 75.0, y: 70.0, z: -221.0}
+        members: {}
+        flags: {other-explosion: deny, creeper-explosion: deny, build: deny, mob-damage: deny,
+            greeting: You are now Entering the Underworld Gateway, block-break: deny,
+            enderman-grief: deny, tnt: deny, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    underworld-gateway-survival-dirt:
+        parent: underworld-gateway-survival
+        min: {x: 62.0, y: 61.0, z: -242.0}
+        max: {x: 66.0, y: 61.0, z: -238.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     __global__:
         members: {}
-        flags: {use: allow, greeting: §4WARNING! §cYou've wandered off the main path! §7This world is frozen in time and §6NOT MEANT FOR PLAYING!§7 Feel free to keep exploring (you can use §9/fly§7 here!) and when you're done use the command §9/warp survival§7 to play normally or use §9/spawn§7 for more choices.,
-            interact: allow}
+        flags: {}
         owners: {}
         type: global
         priority: 0

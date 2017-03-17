@@ -1,0 +1,17 @@
+id:/id $class = >>>
+
+    @class = $class
+
+    @stdout = ''
+        
+        shell_adv('/home/minecraft/getHeroIDByClass.sh '. @class,
+        array(subshell: true,
+            workingDir: '/home/minecraft/',
+            stdout: closure(@a = @stdout){
+                if(@a != "notfound")
+                {
+                    tmsg(player(), @class ."'s ID is ". @a)
+                }
+            }
+        ))
+<<<

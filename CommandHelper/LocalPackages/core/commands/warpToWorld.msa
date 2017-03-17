@@ -1,0 +1,17 @@
+warptoworld:/warptoworld $plr = >>>
+
+    @plr = $plr
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
+    @num = _getFullSkullNumber(0)
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/listOfWorlds.ms')
+    @world = _listOfWorlds(@num)
+    
+    if(@world != "invalid" && @plr == "Tektronic"){
+        runas(~console,"/warp @world @plr")
+    }else{
+        tmsg(@plr, "Sorry, invalid world!")
+    }
+
+<<<

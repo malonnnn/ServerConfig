@@ -14,8 +14,8 @@ proc(_3d_distance, @arr1, @arr2,
         floor(
             sqrt(				
                   ((@arr2[0] - @arr1[0]) ** 2)
-				+ ((@arr2[1] - @arr1[1]) ** 2)
-				+ ((@arr2[2] - @arr1[2]) ** 2)
+                + ((@arr2[1] - @arr1[1]) ** 2)
+                + ((@arr2[2] - @arr1[2]) ** 2)
             )
         )
     )

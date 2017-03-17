@@ -1,0 +1,11 @@
+helpchat:/helpchat = >>>
+tmsg(player(),color(red).'Please add a message to your helpchat! /helpchat <message>')
+<<<
+
+helpchat:/helpchat $ = >>>
+
+    @msg = $
+
+    broadcast(color(dark_red).'[/helpchat] '.color(red).player().': '.color(aqua).color(bold).@msg)
+
+<<<

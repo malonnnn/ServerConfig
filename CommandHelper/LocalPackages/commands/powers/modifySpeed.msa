@@ -1,0 +1,41 @@
+modifyspeed:/modifyspeed $vic $speed = >>>
+
+    @player = player()
+    assign(@cooldown, 30)
+    
+    assign(@lastUsedModifySpeed, get_value(@player."lastUsedModifySpeed"))
+    if(@lastUsedModifySpeed + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedModifySpeed, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can modify speed again!'))
+        die()
+    )
+    @vic = $vic
+    @speed = $speed
+    
+    @ploc = ploc(@player)
+    @vicLoc = ploc(@vic)
+
+    if(@ploc['world'] != @vicLoc['world']){
+        tmsg(@player, "You must be in the same world as them to modify their speed")
+        die()
+    }
+
+    if(@speed > 0 && @speed < 255){
+        runas(~console,"/effect ". @vic . " 1 15 ". @speed ." true")
+    }else if(@speed < 0 && @speed > -255){
+        @speed = abs(@speed)
+        runas(~console,"/effect ". @vic . " 2 15 ". integer(@speed) ." true")
+    }else{
+        tmsg(@player,"Please use a number between -254 and 254 and also isn't zero")
+        die()
+    }
+
+    store_value(@player."lastUsedModifySpeed", time() / 1000)
+    store_value(@vic."speedEffects","true")
+    broadcast(@player . " modified " . @vic . "'s speed")
+    
+    set_timeout(15000,closure(
+        store_value(@vic."speedEffects","false")
+        tmsg(@vic, color(green)."Your speed is now unlocked")
+    ))
+<<<

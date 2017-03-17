@@ -1,0 +1,787 @@
+# ---------------------------------------------------------------------------------------
+#           Welcome to the main configuration of ChatControl PRO
+# ---------------------------------------------------------------------------------------
+#
+# For support and updates, visit the official site:
+#    https://spigotmc.org/resources/10258
+# ---------------------------------------------------------------------------------------
+#
+# 1) COLOR CODES are supported with the '&' character, see
+#    http://minecraftwiki.net/wiki/Formatting_codes
+#    When you use them, omit the message with " " or ' '.
+#
+# 2) TO HIDE a message, set it to 'none'.
+#
+# 3) SPECIAL CHARACTERS (Unicode) require the file to be saved in UTF-8
+#    encoding. Tested on Notepad++ (UTF-8 without BOM). WordPad on Windows is broken!
+#
+# 4) JSON is supported. To use it, prepend the message with '[JSON]'.
+#    NB: Use either a) quotes, b) write the JSON on a new line
+#        or c) send a tellraw command in rules:
+#
+#    a) Warn_Message: '[JSON] {"text": "Hello World"}'
+#
+#    b) Example_Message: |-
+#       [JSON]
+#       {"text": "Hover Me","hoverEvent": {"action": "show_text","value": {"text": "Hey there!"}}}
+#
+#    c) then console tellraw {"text": "Hello world!"}
+#
+# 5) VARIABLES are described in 'variables/javascript.txt' file.
+#    We support PlaceholderAPI for a greater amount of variables.
+#
+# 6) SOUND NAMES had changed as per Minecraft 1.9, see:
+#    New names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#    Old names: https://goo.gl/ArzbZA
+#
+# PS: The information above applies for all plugin's files in ChatControl folder.
+#
+# !! Plugin messages (e.g. 'Please wait 2 seconds [...]') are stored in localization.
+#    To customize it, create a file 'localization/messages_LOCALE.yml' in plugin's folder.
+#    Replace LOCALE with your localization name found down in the 'Locale' key, and restart
+#    the server. The file will be filled with all messages and kept in sync on updates.
+#
+# ---------------------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------------------
+# Reduce impact of spamming bots
+# ---------------------------------------------------------------------------------------
+Anti_Bot:
+  
+  Cooldown: 
+  
+    # How many seconds the player needs to wait before logging in again?
+    Rejoin: 10
+    
+    # How many seconds must the player wait after login to chat?
+    Chat_After_Login: 0
+    
+    # How many seconds must the player wait after login to run commands?
+    Command_After_Login: 0
+  
+  # Block chat until the player moves? They can still execute commands.
+  Block_Chat_Until_Moved: false
+  
+  # A list of commands to block until the player moves.
+  # To disable, set to Block_Commands_Until_Moved: '[]'
+  Block_Commands_Until_Moved: []
+  
+  # If you have AuthMe, only display quit message if the player was logged in?
+  # [TIP] To disable join message, enable 'delayJoinMessage' in AuthMe's configuration.
+  Show_Quit_Message_Only_If_Logged: true
+  
+  # Player will be unable to place two signs with the same text.
+  Block_Signs_With_Same_Text: true
+  
+  # Prevent players with inappropriate names from entering the server.
+  # Supports regular expressions. See rules/rules.txt for examples.
+  Disallowed_Nicknames: []
+
+# ---------------------------------------------------------------------------------------
+# Prevent messages written in BIG LETTERS
+# ---------------------------------------------------------------------------------------
+Anti_Caps:
+  Enabled: false
+  Enabled_In_Commands: false
+  
+  # List of commands checked for capitalization. Requires 'Enabled_In_Commands' enabled.
+  # [TIP] To enable anti-caps everywhere, set the list to - '/'
+  Commands_To_Apply: []
+  
+  # How many warning points to give when the player triggers the filter?
+  # [NOTICE] Only works if Points are enabled. To disable, set "Amount" to 0.
+  Points: 
+    Warn_Set: spam
+    
+    # You can write a valid mathematical expression here. The result will be rounded to a whole number (without decimals).
+    Amount: 4 * ({capsPercentage} / 2)
+  
+  # Allow player names to be spelled in caps? Disable if having performance issues (especially on large servers).
+  Ignore_Usernames: false
+  
+  Min_Message_Length: 5
+  Min_Caps_Percentage: 50
+  Min_Caps_In_A_Row: 5
+  Whitelist: []
+
+# ---------------------------------------------------------------------------------------
+# Prevent flooding the chat with junk / repetitive messages
+# ---------------------------------------------------------------------------------------
+Anti_Spam:
+
+  # This section applies for both commands and messages.
+  #
+  # Similarity check compares player's message to their last one(s),
+  # and prevents sending the same or similar message(s) multiple times.
+  Similarity_Check:
+  
+    # If running a non-english server, disable to improve the check.
+    Ignore_Special_Characters: true
+    
+    Ignore_Duplicate_Characters: true
+    
+    # Ignore first and second argument in commands. Makes check less annoying in
+    # messages of type "/tell <player> message", where "/tell" and "<player>" are ignored.
+    Ignore_First_Arguments_In_Commands: false
+
+  # Anti-spam section for commands.
+  Commands:
+  
+    # How many seconds the player must wait till their next command? Set to 0 to disable.
+    Delay_Between_Commands: 0
+    
+    # Warning points.
+    # [NOTICE] Only works if Points are enabled. To disable, set "Amount" to 0.
+    Delay_Points:
+      Warn_Set: fastmessages
+      
+      # The {delay} is the delay between the current and last command in seconds.
+      Amount: 3 - {delay}
+    
+    # Block the command if it is similar to the previous one, in percent.
+    # Set to 0 or 100 to disable.
+    Similar_Percentage_Block: 0
+    
+    # Warning points.
+    # [NOTICE] Only works if Points are enabled. To disable, set "Amount" to 0.
+    Similarity_Points:
+      Warn_Set: spam
+      Amount: 4 * ({similarityPercentage} / 2)
+ 
+    # If enabled, *ONLY* the commands listed in the whitelist will be checked.
+    Whitelist_Works_Like_Blacklist: false
+ 
+    # Commands that the player can run them multiple times after each other.
+    Whitelist_Similarity: []
+ 
+    # Commands that the player is not forced to wait before executing them next time.
+    Whitelist_Delay: []
+    
+    # Commands to handle as chat. 
+    # Includes anti-spam, rules, writer, points, anti-caps, capitalizing and punctuation.
+    Handle_As_Chat:
+    - me
+
+  # Anti-spam section for messages.
+  Chat:
+    
+    # How many seconds must the player wait between their next message? Set to 0 to disable.
+    Delay_Between_Messages: 0
+
+    # Warning points.
+    # [NOTICE] Only works if Points are enabled. To disable, set "Amount" to 0.
+    Delay_Points:
+      Warn_Set: fastmessages
+      
+      # The {delay} is the delay between the current and last message (in seconds)
+      Amount: 3 - {delay}
+
+    # Block repetitive messages if they are similar to the previous one, in percent.
+    # Set to 0 or 100 to disable.
+    Similar_Percentage_Block: 0
+    
+    # Amount of previous messages to check. Increases effectiveness and preventing spam like so:
+    # <player> t
+    # <player> lol
+    # <player> t
+    # <player> lol
+    Similarity_Message_Check_Count: 0
+    
+    # Warning points.
+    # [NOTICE] Only works if Points are enabled. To disable, set "Amount" to 0.
+    Similarity_Points:
+      Warn_Set: spam
+      Amount: 4 * ({similarityPercentage} / 2)
+    
+    # A message that starts with the following will be ignored from the similarity check.
+    Whitelist_Similarity: []
+    
+    # A message that starts with the following will be ignored from the delay check.
+    Whitelist_Delay: []
+    
+# ---------------------------------------------------------------------------------------
+# Format the chat and correct player's grammar.
+# See chat.yml for creating chat and channel formats.
+# ---------------------------------------------------------------------------------------
+Chat:
+
+  # Alternative 1: The channel system. Channels are multiple 'chatting rooms', in which players 
+  #                can chat together, preventing all messages to appear on the main chat.
+  #
+  # [NOTICE] Enabling channels disables chat formatter.
+  #
+  # [TIP] To automatically put player into certain channel when they join, give them
+  #       'chatcontrol.channel.{channel}.autojoin' permission (replace {channel} with the channel name)
+  #       NB: Player can only join one channel at once! If you have multiple permissions,
+  #           the first found will be applied and the others ignored.
+  #
+  # [TIP 2] To automatically make player spy a channel when they join, give them
+  #         'chatcontrol.channel.{channel}.autospy' permission (replace {channel} with the channel name)
+  #         PS: You can specify multiple channels to spy.
+  Channels:
+    Enabled: true
+    
+    Notify_On_Join: true
+    
+    # [NOTICE] Advanced users only. If false, removes receivers from AsyncPlayerChatEvent.
+    # Otherwise, cancels the event. Used for compatibility reasons with third party plugins.
+    Cancel_Event: false
+    
+    # If Cancel_Event is false, then you can adjust the console message here:
+    # For performance's sake, only the following variables are accepted:
+    # {player}, {world}, {channel} and {message} for the message (which is already formatted)
+    Console_Format: '&8[{channel}] &7{message}'
+
+  # Alternative 2: The standard chat formatter.
+  Formatter:
+    Enabled: true
+      
+    # The default chat format applied over all worlds.
+    Format: Example_Format
+
+    # Only works when writing to global chat and ranged mode is enabled, more info below.
+    Global_Format: Global_Chat
+
+    # Format used in ranged mode when player with 'chatcontrol.chat.spy' permission receives
+    # a message that he normally shouldn't see (because it's outside their range).
+    # [TIP] To spy on private messages (e.g. /tell or /mail), use /spy feature.
+    Spy_Chat_Format: Spy_Format
+
+    # Used in "/chc ach" command which sends staff chat messages.
+    Admin_Chat_Format: Admin_Chat
+      
+    # [NOTICE] You must have BungeeCords support enabled to use this.
+    # Used in "/chc global" command which sends messages over bungee.
+    Bungee_Chat_Format: Bungee_Chat
+
+    # If enabled, player's message will only be sent to players within the specified distance below.
+    # [TIP] If you want per world chat, give everyone 'chatcontrol.chat.overrideranged' permission.
+    Range: 
+      Enabled: true
+      Distance: 100.0
+      
+      # Worlds that shares the same chat.
+      # [NOTICE] Other worlds ignore distance specified above, and every player in the other world will see sender's message.
+      Linked_Worlds: 
+        survival: []
+        greenfield: []
+
+  Grammar:
+
+    # Punctualize every sentence (insert a dot at the end).
+    Insert_Dot:
+      Enabled: false
+      Min_Message_Length: 5
+
+    # Capitalize sentences (make the first letter uppercased).
+    Capitalize:
+      Enabled: false
+      Min_Message_Length: 5
+
+# ---------------------------------------------------------------------------------------
+# Remove all messages from the chat with the "/chc clear" command.
+# ---------------------------------------------------------------------------------------
+Clear:
+  Broadcast: true
+  Do_Not_Clear_For_Staff: false
+
+  # Amount of blank lines to be printed to the console.
+  Console_Lines_To_Clear: 300
+
+# ---------------------------------------------------------------------------------------
+# Stop people from writing to chat with the "/chc mute" command.
+# ---------------------------------------------------------------------------------------
+Mute:
+  Broadcast: false
+  
+  # Deny following actions while the chat is muted.
+  Prevent:
+    Writing_Books: false
+    Placing_Signs: false
+
+  # Hide following messages while the chat is muted.
+  Silence:
+    Join_Messages: false
+    Quit_Messages: false
+    Death_Messages: false
+
+  Disabled_Commands_During_Mute: []
+
+# ---------------------------------------------------------------------------------------
+# Announce important messages with the "/chc announce" command.
+# You can customize the format in localization.
+# ---------------------------------------------------------------------------------------
+Announcer:
+  Log_To_Console: true
+  Ignore_Self: false
+  
+  # Broadcast also over BungeeCords? (if Bungee is enabled)
+  Bungee: true
+  
+  # Usage: <bukkitSoundName>, <volume>, <pitch> 
+  # For Minecraft 1.8.8 and older, it is recommended to use 'SUCCESSFUL_HIT'
+  Sound: ENTITY_ARROW_HIT_PLAYER, 1.0, 0.1
+
+# ---------------------------------------------------------------------------------------
+# Send messages to staff with the "/chc ach" command.
+# ---------------------------------------------------------------------------------------
+Admin_Chat:
+  Log_To_Console: true
+  
+  # Write to logs/admin-chat.txt ?
+  Write_To_File: true
+  
+# ---------------------------------------------------------------------------------------
+# Send messages over Bungee with the "/chc global" command.
+# ---------------------------------------------------------------------------------------
+Bungee_Chat:
+
+  # Enable bungee chat for players after login automatically. They can turn it off with '/chc g switch'
+  Enabled_By_Default: false
+
+  Log_To_Console: true
+  
+  # Write to logs/bungee-chat.txt ?
+  Write_To_File: true
+
+# -----------------------------------------------------------------------------------------------
+# Private messages allow you to secretly message another player without everyone else seeing.
+# There are currently following commands: /tell and /reply
+# [NOTICE] If disabled, you can still use commands with the same label from other plugins/server.
+# -----------------------------------------------------------------------------------------------
+Private_Messages:
+  Enabled: false
+  
+  Bungee: false
+  
+  Aliases:
+    Tell: [msg, t, whisper]
+    Reply: [r]
+  
+  # You can configure the formats in chat.yml file.
+  Format_Sender: Private_Message_Sender
+  
+  Format_Receiver: Private_Message_Receiver
+
+# ---------------------------------------------------------------------------------------
+# Features involving packets that require ProtocolLib.
+# ---------------------------------------------------------------------------------------
+Packets:
+
+  # Enable all features that require ProtocolLib
+  # e.g. packet rules, tab complete
+  Enabled: false
+
+  # Prevent using TAB to complete a message. Tab completing may reveal server information.
+  Tab_Complete:  
+    Disable: false
+    
+    # Allow completion in messages?
+    Disable_Only_In_Commands: true
+    
+    # Allow if the message/command contains space (' ') ?
+    Allow_When_Message_Has_Space: true
+    
+    # Allow when the message length is above specific number. 
+    # Not recommended as it might still reveal your server setup.
+    Allow_When_Length_Above: 0
+
+# ---------------------------------------------------------------------------------------
+# Most popular feature of ChatControl: Rules are user-defined filter that catch messages
+# based on regular expressions. See "rules/" folder for configuration and examples.
+# ---------------------------------------------------------------------------------------
+Rules:
+  Check_Chat: false
+  Check_Commands: false
+  
+  # Check chat against rules/packets.txt? Can catch messages from server itself, or even other plugins.
+  Check_Packets: false
+  
+  Signs:
+    Check: false
+
+    # Prevent the sign creation?
+    Block_On_Rule_Violation: false
+    
+    # Drop as an item?
+    Drop_Sign: false
+    
+  Books:
+    Check: false
+    
+    # Replace the title if a rule changes it? If false, denies creation.
+    Replace_Title: false
+    
+    # Replace pages if a rule changes them? If false, denies creation.
+    Replace_Pages: false
+  
+  Items:
+    Check_Anvil: false
+    
+    # Replace item name if a rule changes it? If false, denies creation.
+    Replace_Name: false
+  
+  # Let players choose which messages (caught be a rule) they want to see.
+  # This can for example be used to allow players toggle if they want to see swears.
+  # [TIP] Read ChatControl's Wiki for a better explanation: https://github.com/kangarko/ChatControl/wiki
+  Chat_Ignorer:
+    Enabled: false
+    
+    # You have to create a set here (just a section) to be able to ignore it. Create as many as you want. 
+    # You can limit sets that can be toggled by giving 'chatcontrol.ignoreset.<setName>' permission.
+    Sets:
+      
+      # This is an example set where all possible settings are used (currently just one).
+      # Only players with permission 'chatcontrol.ignoreset.exampleSet' will be able to toggle this set for themselves.
+      # You do not need to specify any parameters
+      #exampleSet:
+      #  # Do not ignore by default. Player has to use "/chc ignore exampleSet" to make it effective for them.
+      #  # Default value: false
+      #  Ignored_By_Default: false
+      
+      # This is an example of a *complete* ignore set. You do not need to specify more than that!
+      swear: 
+# ---------------------------------------------------------------------------------------
+# Remove unwanted messages from the console.
+# ---------------------------------------------------------------------------------------
+Console_Filter:
+  Enabled: false
+    
+  # Save messages that were caught and hidden to logs/console.txt?
+  Log: false
+    
+  # Remove certain messages from console.
+  # Does not need to be whole message, just a part of the message you want to block.
+  Filter_Console_Messages:
+  - Reached end of stream for
+  - Connection reset
+  # The following is commented out as it causes issues with Multicraft.
+  # If you don't use Multicraft you can comment them out to lower console spam.
+  #- UUID of player
+  #- lost connection
+
+# ---------------------------------------------------------------------------------------
+# Play a sound to a player that has been mentioned.
+# This is ignored if the player's name is in caps or other unnatural capitalisation.
+# ---------------------------------------------------------------------------------------
+Sound_Notify:
+  Enabled: true
+
+  # The time before a player receives the sound notify again.
+  Cooldown_Seconds: 10
+  
+  # [NOTICE] Requires Essentials.
+  Notify_Only_When_Afk: false
+
+  # Play a sound only when someone writes following character before player's name.
+  # Example: 'Hello @kangarko, are you there?'
+  # Set to 'none' to always mention.
+  Notify_Only_If_Prefixed_With: 'none'
+  
+  # Format: bukkit_sound_name, volume (float), pitch (float)
+  # If you are on MC 1.8.x or older, the default sound name was 'CHICKEN_EGG_POP'
+  Sound: ENTITY_ARROW_HIT_PLAYER, 1F, 1.5F
+  
+  # The name of the called player will be colored according to the following.
+  # Set to none to disable.
+  Color: '&a'
+  
+  Enabled_In_Commands:
+  - msg
+  - tell
+  - t
+  - w
+  - r
+
+# ---------------------------------------------------------------------------------------
+# Set different settings for people with certain permissions.
+# ---------------------------------------------------------------------------------------
+Groups:
+  Enabled: false
+  
+  Group_List:
+    
+    # Example usage with all keys listed. Here, give the player 'chatcontrol.group.example_group' to put him into the group. 
+    # If you do not specify a key, the default will be used (from this file globally).
+    # [NOTICE] If you are an OP, negate that permission for yourself, else it applies to you, too!
+    #example_group:
+    #  # How much time to wait before their next message in seconds?
+    #  Message_Delay: 0
+    #
+    #  # How much time to wait before their next command in seconds?
+    #  Command_Delay: 5
+    #
+    #  # How many seconds must the player wait to log in again after logging out?
+    #  Rejoin_Delay: 0
+    #
+    #  # How many seconds must the player wait to chat after logging in?
+    #  Chat_After_Login: 0
+    #
+    #  # How many seconds must the player wait to run commands after logging in?
+    #  Command_After_Login: 0
+    #
+    #  # Custom chat format for them.
+    #  Interactive_Format: Admin_Chat_Format
+    #
+    #  # Custom global chat format for them, if ranged chat is enabled.
+    #  Interactive_Global_Format: Admin_Global_Format
+    
+    vip: 
+      Message_Delay: 0
+      Command_Delay: 0
+      
+# ---------------------------------------------------------------------------------------
+# Give player warning points for violating rules/actions.
+# ---------------------------------------------------------------------------------------
+Points:
+  Enabled: false
+  
+  # Shall the last action be repeated until the reset task gets scheduled?
+  Repeat_Last_Action: true
+  
+  # Should player only get ONE warning (the one from warning set) and not both from rules and warning sets.
+  Smart_Warnings: true
+  
+  # Once upon a time, players' points are subtracted.
+  Reset_Task:
+    
+    # The delay between taking points in seconds. Set 0 to only reset points on plugin or server reload.
+    # [TIP] If this is disabled, enable Repeat_Last_Action
+    Repeat_Every_Seconds: 20
+    
+    # How much points to take from different sets
+    # If you do not specify, no points will be taken
+    Remove_Points_Amount:
+      global: 5
+      spam: 1
+  
+  # To punish the player in different ways for doing a specific thing, you can create multiple warning sets.
+  Warn_Sets:
+    
+    # [NOTICE] This is a special set. Unless removed, all points will go there if you do not specify the set name.
+    # example: you don't need to write "then points global 5", but just "then points 5" (in rules)
+    global:
+
+      # Specify the commands to execute if the player reaches a specific amount of points. Can be multiple commands.
+      # Use operator "warn" to send the message directly to the player.
+      5:
+        - "warn &7Please obey the &2rules &7otherwise you will be &4punished&7."        
+      15:
+        - "warn &c**** &lHey &c{player} ****\n &7-> &cThis is your &6final &cwarning!"
+        #- "mute {player} 5m Do not observing warnings" # Only works if you have a mute plugin        
+      30:
+        - "kick {player} &cKicked for breaking the rules"
+
+    swear:
+      4:
+        - "warn &cYou have received first warning for swearing."
+      6:
+        - "warn &cPlease do not swear, otherwise an action will be taken!"
+      8:
+        - "kick {player} &cInappropriate language (last warning)"
+      20:
+        - "tempban {player} 30m autoban for swearing" # This requires compatible third party plugin installed
+
+    spam:
+      6:
+        - "warn &cPlease do not act like spammer."
+      10:
+        - "warn &cPlease do not spam, otherwise you will be banned."
+      12:
+        - "kick {player} &cSpamming the chat (last warning)"
+      26:
+        - "tempban {player} 10m autoban for chat spam" # This requires compatible third party plugin installed
+
+    fastmessages:
+      6:
+        - "warn &cPlease slow down chat messages."
+      10:
+        - "warn &cSlow down chat, otherwise you will be banned."
+      14:
+        - "kick {player} &cSlow down chat (last warning)"
+      30:
+        - "tempban {player} 10m autoban for chat spam" # This requires compatible third party plugin installed
+
+# ---------------------------------------------------------------------------------------
+# A variable (placeholder) is a string in brackets {}, which is replaced by
+# the actual data. Example: {player} is replaced with the player name.
+#
+# [NOTICE] See global/variables.txt file for more information and variables.
+# ---------------------------------------------------------------------------------------
+Variables:
+
+  # Create own placeholders using JavaScript to get properties from any plugin and even server.
+  Custom_Enabled: false
+  
+  # If Vault is present, enforce player's prefix/suffix to contain them from each of their group.
+  # Limitation: Only displayed if the player has multiple groups, NO when a group inheritances multiple prefixes from other.
+  Vault:  
+    Multi_Prefix: false
+    Multi_Suffix: false
+
+# -----------------------------------------------------------------------------------------
+# Save chat communication to see what happened in chat while you were offline.
+# -----------------------------------------------------------------------------------------
+Writer:
+
+  # Write chat messages to logs/chat.txt?
+  Save_Chat_Communication: true
+
+  Ignore_Players:
+  - ignoredAdmin
+
+  # Commands that will be saved along with chat messages.
+  Write_Commands:
+  - me
+  - msg
+  - m
+  - tell
+  - t
+  - reply
+  - r
+  - mail
+
+# -----------------------------------------------------------------------------------------
+# Welcome players to the server with Message of The Day
+# -----------------------------------------------------------------------------------------
+Motd: 
+  Enabled: false
+  
+  # How long to wait before displaying after login? Used to avoid covering by other messages.
+  Delay_Ticks: 2
+  
+  # Sound to play. Format: <bukkitSoundName>, <volume>, <pitch> 
+  Sound: ENTITY_FIREWORK_LAUNCH, 1F, 0.1F
+  
+  Message:
+  - '&8*--------------------------------------------------*'
+  - '&fHello {player}, we kindly welcome you to &e{server_name}&f and wish you great experience :)'
+  - '\n'
+  - '&6Version: &f{nms_version} &7/&f 31.12.2016'
+  - '&6Changelog:'
+  - ' &7- &fAdded ChatControl Pro plugin'
+  - '\n'
+  - '&6Help &7- &f/help &6Settings &7- &f/menu &6Web &7- &f/web'
+  - '&8*--------------------------------------------------*'
+
+
+# -----------------------------------------------------------------------------------------
+# Spying allows to see others' commands, including content of private messages.
+# -----------------------------------------------------------------------------------------
+Spy:   
+  Prefix: '&8&o[&4&oSpying {player}&8&o] &7'
+  
+  # Notify users on other servers about others' commands?
+  Bungee: false
+  
+  # If true, ALL commands except for those listed below shall be monitored. NOT recommended.
+  # If false, ONLY commands below are to be monitored. 
+  Command_List_Works_Like_Blacklist: false
+  
+  Command_List: 
+    - /tell
+    - /msg
+    - /t
+    - /whisper
+    - /r
+    - /reply
+
+# -------------------------------------------------------------------------------------------
+# Integration with BungeeCords
+# You need BungeeControlBridge on your bungee network. (https://spigotmc.org/resources/13079)
+# -------------------------------------------------------------------------------------------
+BungeeCords:
+  Enabled: false
+  
+  Enabled_In:
+    Rule_Alerts: true
+    Handler_Alerts: true
+    Admin_Chat: true
+  
+  # The prefix used in front of all messages coming from other servers.
+  Prefix: "&5[Bungee/{server_name}] &7"
+  
+# -------------------------------------------------------------------------------------------
+# MySQL connection allows to store same information over multiple servers.
+# -------------------------------------------------------------------------------------------
+MySQL:
+  Enabled: false
+  
+  Enabled_In:
+  
+    # Store in which channel player was, when they logged out?
+    Channels: true
+    
+    # Store warning points for players.
+    Points: true
+
+  Connection:
+    Host: 'localhost'
+    Database: 'minecraft'
+    Port: '3306'
+    User: ''
+    Password: ''
+  
+# ----------------------------------------------------------------------------------------
+# Advanced: Affects the order in which we format and check the chat. No need to touch.
+# Read https://github.com/kangarko/ChatControl/wiki/Pro-Information#common-pro-issues
+# 
+# Known plugins which require changing priority of Formatter: FactionsChat, BanManager and WorldGuard.
+# You need to find the correct combination for your server yourself. Restart after each change.
+# ----------------------------------------------------------------------------------------
+Listener_Priority:
+
+  # Used for formatting or channels. Should have the last say, meaning highest priority.
+  Formatter: NORMAL
+  
+  # Used for checking a message against duplication, time or rules.
+  Checker: NORMAL
+
+# Handle characters with accents internally as without the accents (e.g. á goes to a)? 
+# Makes rules and anti-spam more effective on non-english servers.
+Translate_Diacritical_Marks: true
+
+# Prevent regular expressions freezing the server if they take more time than specified (in milliseconds).
+Regex_Timeout_Milis: 100
+
+# [TIP] Read the bottom of the header of this file for advice on customizing localizations.
+# Currently available: en (english), de (german), sk (slovak), cz (czech), es (spanish), pt (portugese), hu (hungarian), fr (french), nl (dutch) and cn (chinese)
+Locale: en
+
+# Time of some plugin's operations is measured. Set 0 to disable.
+# Print a message to the console if they take over the specified amount of time in milliseconds.
+Log_Lag_Over_Milis: 100
+
+# Print the 'Rule match' messages into the console?
+# You can hide rules from appearing individually with "dont verbose" operator.
+Verbose_Rules: true
+
+# Make the startup messages less intrusive. Disable if having issues.
+Silent_Startup: false
+
+# Remove colors from checked messages to prevent bypasses of rules.
+# Disable if you wish to retain colors in the message after it's replaced by a rule.
+Regex_Strip_Colors: true
+
+# Plugin saves player data, such as their last message or command for anti-spam to use.
+# Should the data be reset on player quit? Recommended in lobbies (on bungee), but not elsewhere.
+Reset_Cache_On_Quit: false
+
+# Set to true if the \n operator does not work for you.
+# Before that, please ensure you've saved the file in an encoding that supports new line operator.
+Enforce_New_Line: false
+
+# The server name used in {server_name} variable. By default, the 'server-name' property from server.properties is used.
+# It is mainly used for BungeeCords integration. Colors are supported.
+Server_Name: default
+
+# Notifies about new versions.
+Check_Updates: true
+
+# Prints info to the console about various events/configurations.
+# [TIP] Don't be afraid to enable it - it helps you understand how plugin sees what
+# you have configured, thus enabling you to solve issues by yourself with a glance.
+Debug: false
+
+# Do not change this value, otherwise it will corrupt your plugin installation!
+Version: 17

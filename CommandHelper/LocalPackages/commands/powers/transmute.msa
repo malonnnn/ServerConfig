@@ -1,0 +1,13 @@
+transmute:/transmute $block = >>>
+
+    @block = $block
+    @player = player()
+    @items = pinv(@player,null)
+    try(
+        set_pinv(array(null: array(type: 0)))
+        runas(~console,"/give ".@player." ".@block." ".@items['qty'])
+    ,
+        tmsg(@player,color(red)."Make sure to hold the item that you want to transmute")
+    )
+
+<<<

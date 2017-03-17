@@ -1,0 +1,64 @@
+changeSkull:/changeskull $machineNumber $plr $dir = >>>
+    
+    @dir = $dir
+    @plr = $plr
+    @loc = get_command_block()
+    @machineNumber = $machineNumber
+    @num = 0
+    
+    @loc['x'] = @loc['x'] + 2
+    @loc['z'] = @loc['z']
+    if(@dir == "up"){
+        @loc['y'] = @loc['y'] - 1
+    }else{
+        @loc['y'] = @loc['y'] + 1
+    }
+    
+    @result = get_metadata(@loc,"skullNum")
+    if(@result == "{}"){
+        set_metadata(@loc,"skullNum",@num)
+    }else{
+        @num = @result['CommandHelper']
+    }
+    
+    if(@dir == "up"){
+        @num = @num + 1
+    }else{
+        @num = @num - 1
+    }
+    
+    if(@num == 10){
+        @num = 0
+    } else if(@num == -1){
+        @num = 9
+    }
+    
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getSkullMeta.ms')
+    @meta = _getSkullMeta(@num, @machineNumber)
+    
+    set_metadata(@loc,"skullNum",@num)
+    sudo('/minecraft:setblock '.@loc['x'].' '.@loc['y'].' '.@loc['z'].' minecraft:skull 5 replace '.@meta)
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
+    @num = _getFullSkullNumber(@machineNumber)
+    
+    @stdout = ''
+    @hero = ""
+    include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram.ms')
+    
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                _updateHologram(@machineNumber, @hero['class'])
+                
+            }else{
+                _updateHologram(@machineNumber, 'remove')
+            }
+        }
+    ))
+<<<

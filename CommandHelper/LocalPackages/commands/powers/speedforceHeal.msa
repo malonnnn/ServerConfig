@@ -1,0 +1,38 @@
+speedforceheal:/speedforceheal $plr = >>>
+
+    @plr = player()
+    @vic = $plr
+
+    @ploc = ploc()
+    @vicLoc = ploc(@vic)
+
+
+    if(@ploc['world'] != @vicLoc['world']){
+        die("Sorry, that person has to be in the speedforce with you!")
+    }
+
+    @x1 = @ploc['x']
+    @y1 = @ploc['y']
+    @z1 = @ploc['z']
+
+    @x2 = @vicLoc['x']
+    @y2 = @vicLoc['y']
+    @z2 = @vicLoc['z']
+
+    @x3 = pow(@x1 - @x2, 2)
+    @y3 = pow(@y1 - @y2, 2)
+    @z3 = pow(@z1 - @z2, 2)
+
+    @final = @x3 + @y3 + @z3
+
+    @distance = sqrt(@final)
+   
+    if(@distance > 2){
+        tmsg(@plr, "Make sure you are close enough to grab your victim!")
+        die()
+    }
+
+    runas(~console,"/heal ".@vic)
+    tmsg(@vic, "You have been speedforce healed by ".@plr)
+
+<<<

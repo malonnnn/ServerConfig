@@ -1,0 +1,55 @@
+listheroes:/listheroes $pageNum = >>>
+
+        @pageNum = $pageNum
+        
+        if(@pageNum < 1){
+            die()
+        }
+        
+        @startSpot = @pageNum * 10 - 9
+        
+        @stdout = ""
+
+        shell_adv('/home/minecraft/paginateHeroes.sh '. @startSpot,
+        array(subshell: true,
+            workingDir: '/home/minecraft/',
+            stdout: closure(@a = @stdout){
+                if(@a != "")
+                {
+                    @returnVal = @a
+                    array @heroes = split('|',@returnVal)
+                    @i = @startSpot
+                    foreach(@her in @heroes){
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
+                        tmsg(player(),"#". @i . ". " . @hero['name'])
+                        @i = @i + 1
+                    }
+                }
+            }
+        ))  
+<<<
+
+listheroes:/listheroes = >>>
+
+        @stdout = ""
+        
+        shell_adv('/home/minecraft/paginateHeroes.sh 1',
+        array(subshell: true,
+            workingDir: '/home/minecraft/',
+            stdout: closure(@a = @stdout){
+                if(@a != "")
+                {
+                    @returnVal = @a
+                    array @heroes = split('|',@returnVal)
+                    @i = 1
+                    foreach(@her in @heroes){
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
+                        tmsg(player(),"#". @i . ". " . @hero['name'])
+                        @i = @i + 1
+                    }
+                }
+            }
+        ))   
+    
+
+<<<

@@ -1,0 +1,17 @@
+hire:/hire $player = >>>
+    @player = $player
+    runas(~console,"/pex user ".@player." add is.antivirus")
+    runas(~console,"/pex user ".@player." add ch.alias.av")
+    tmsg(player(),color(red)."You have hired ".@player. " for AntiVirus")
+    tmsg(@player,color(red)."You have been hired for AntiVirus")
+<<<
+fire:/fire $player = >>>
+    @player = $player
+    if(has_permission(@player,"is.antivirus")){
+        runas(~console,"/pex user ".@player." remove is.antivirus")
+        runas(~console,"/pex user ".@player." remove ch.alias.av")
+        runas(~console,"/pex user ".@player." group set mortal")
+        tmsg(player(),color(red)."You have fired ". @player ." from AntiVirus")
+        tmsg(@player,color(red)."You have been fired from Antivirus")
+    }
+<<<

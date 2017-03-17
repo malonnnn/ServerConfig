@@ -1,0 +1,10 @@
+gosound:/gosound $word = >>>
+
+    @word = $word
+    @players = all_players()
+    
+        foreach(@player in @players){
+            runas(~console,'/sudo '.@player.' c:'.@word)
+        }
+
+<<<
