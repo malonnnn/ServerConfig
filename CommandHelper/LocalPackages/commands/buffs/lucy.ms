@@ -20,7 +20,7 @@
                 "/fly",
                 "/touchkill",
                 "/invis",
-                "/vis",
+                "/vis"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 14 true"                
