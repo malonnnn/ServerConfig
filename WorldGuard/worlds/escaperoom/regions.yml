@@ -127,6 +127,20 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    room16:
+        min: {x: 115.0, y: 104.0, z: 20.0}
+        max: {x: 126.0, y: 127.0, z: 36.0}
+        members: {}
+        flags:
+            ice-form: deny
+            spawn: {world: escaperoom, x: 117.31811346827457, y: 107.0, z: 28.524933782201572,
+                pitch: 7.2000055, yaw: -88.63299}
+            invincible: deny
+            greeting: 'Escape Room #16'
+            spawn-group: NON_MEMBERS
+        owners: {}
+        type: cuboid
+        priority: 1
     room7-piston:
         parent: room7
         min: {x: -55.0, y: 86.0, z: 20.0}
@@ -138,10 +152,11 @@ regions:
         priority: 2
     room11-pistons:
         parent: room11
-        min: {x: 2.0, y: 82.0, z: 26.0}
-        max: {x: 6.0, y: 82.0, z: 30.0}
+        min: {x: 1.0, y: 82.0, z: 25.0}
+        max: {x: 7.0, y: 82.0, z: 31.0}
         members: {}
-        flags: {block-break: allow, pistons: allow, block-place: allow}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 2
@@ -261,6 +276,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    room15-glass:
+        parent: room15
+        min: {x: 88.0, y: 124.0, z: 23.0}
+        max: {x: 88.0, y: 124.0, z: 23.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     room4:
         min: {x: -55.0, y: 87.0, z: 60.0}
         max: {x: -46.0, y: 90.0, z: 68.0}
@@ -440,23 +464,45 @@ regions:
         min: {x: 60.0, y: 113.0, z: 13.0}
         max: {x: 75.0, y: 117.0, z: 36.0}
         members: {}
-        flags: {use: allow, item-pickup: allow, greeting: 'Escape Room #14', block-break: allow,
-            interact: allow, block-place: allow}
+        flags: {use: allow, item-pickup: allow, greeting: 'Escape Room #14', interact: allow}
         owners: {}
         type: cuboid
         priority: 1
+    room15-slab:
+        parent: room15
+        min: {x: 94.0, y: 119.0, z: 32.0}
+        max: {x: 94.0, y: 119.0, z: 32.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     room15:
-        min: {x: 79.0, y: 114.0, z: 19.0}
-        max: {x: 98.0, y: 126.0, z: 37.0}
+        min: {x: 79.0, y: 104.0, z: 19.0}
+        max: {x: 112.0, y: 126.0, z: 37.0}
         members: {}
         flags:
+            ice-form: deny
+            soil-dry: deny
             spawn: {world: escaperoom, x: 81.89891908884309, y: 114.0, z: 28.30194251513426,
                 pitch: 11.700037, yaw: 272.56534}
             invincible: deny
+            greeting: 'Escape Room #15'
+            leaf-decay: deny
+            interact: allow
             spawn-group: NON_MEMBERS
         owners: {}
         type: cuboid
         priority: 1
+    room15-leaves:
+        parent: room15
+        min: {x: 93.0, y: 118.0, z: 32.0}
+        max: {x: 93.0, y: 119.0, z: 32.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     room1-redstone:
         parent: room1
         min: {x: -66.0, y: 86.0, z: 48.0}
@@ -474,13 +520,24 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    room15-blackglass:
+        parent: room15
+        min: {x: 98.0, y: 115.0, z: 22.0}
+        max: {x: 98.0, y: 115.0, z: 22.0}
+        members: {}
+        flags: {block-break: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     __global__:
         members: {}
         flags:
+            time-lock: '4000'
             build: deny
             invincible: allow
             game-mode: SURVIVAL
-            blocked-cmds: [/tpa, /fly, /tpahere, /tpaccept, /thru, /tp]
+            blocked-cmds: [/tpa, /fly, /tpahere, /give, /teleport, /tphere, /tpaccept,
+                /thru, /tp]
             block-break: deny
             snow-fall: deny
             passthrough: allow
