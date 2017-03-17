@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODk3MTIyNDA3NTgsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJCcjBrZW5TMHVscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2E4NjY0OGNmZjNjNWUyNDc2N2ExZmU1ODE3OTJhOTU0ODExZjY0NjJkNThhOTE2NTk0YzYzMTIxYzcxYiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "I, Cheetah, want nothing more than to rule Super Hero High with an iron paw." ,
+            'speech': "I, Cheetah, want nothing more than to rule Super Hero High with an iron paw!" ,
             'powers': array(
                 "/buff",
                 "/carryplayer",
