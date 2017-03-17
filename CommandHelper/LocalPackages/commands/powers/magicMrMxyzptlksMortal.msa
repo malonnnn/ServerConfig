@@ -1,10 +1,8 @@
 magicmrmxyzptlksmortal:/magicmrmxyzptlksmortal $player = >>>
     @player = $player
     if(ponline(@player)){
-        set_timeout(1000,closure(
-            @command = "/runalias /mortal";
-            broadcast(@command);
-            sudo(@command);
+        runas(~console,'/sudo '.@player.' c:/mortal')
+        set_timeout(3000,closure(
             tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!');
         ))
     }

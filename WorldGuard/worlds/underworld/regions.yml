@@ -18,6 +18,16 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    rooms:
+        min: {x: -43.0, y: 7.0, z: 47.0}
+        max: {x: 10.0, y: 8.0, z: 81.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8]
+        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
+            game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     room3:
         parent: rooms
         min: {x: -43.0, y: 2.0, z: 72.0}
@@ -28,17 +38,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    rooms:
-        min: {x: -43.0, y: 7.0, z: 47.0}
-        max: {x: 10.0, y: 8.0, z: 81.0}
-        members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8,
-                42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6]
-        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
-            game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     room4:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 72.0}
@@ -52,9 +51,8 @@ regions:
         min: {x: -11.0, y: 13.0, z: 26.0}
         max: {x: 13.0, y: 38.0, z: 41.0}
         members:
-            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 42759fe9-4f32-43b9-bdbf-8f9dc8de8bc6,
-                869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8,
-                8354ed0d-09cb-4682-bf62-5df3f0e2b412]
+            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 869b4227-b51e-452e-adbd-48759a6848dd,
+                0130299a-4489-429d-b4eb-68643a4c6ac8, 8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
             interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
         owners: {}
@@ -127,8 +125,8 @@ regions:
             invincible: allow
             blocked-cmds: [/tpa, /tpaccept, /warp, /thru, /tp]
             mob-damage: deny
-            passthrough: allow
             mob-damage-group: MEMBERS
+            passthrough: allow
             interact: allow
             invincible-group: MEMBERS
             pvp: allow
