@@ -13,8 +13,6 @@
             'powers': array(
                 "/buff",
                 "/run 0-3",
-                "/flyspeed <number>",
-                "/fly",
                 "/disguise"
             ),
             'buffs': array(
