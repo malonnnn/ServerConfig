@@ -207,9 +207,17 @@ skull_apple:
       internal: H4sIAAAAAAAAABWNUU+DMBSFr0YT1vgzfCWhUNh43B4ImLlNMKh7MaW9zdB2Emgzx6+3Pp1830nOIQAEHppvp/Vh/FG9xgDudtwgLJ7L4nM9DP/mtpLwyHiyzBjGoZBsFTJKu5CrpUfBlIq5kHRFCRA/M+Boe5wWEFj8tW7EiQDATQD3LdcOQWNSayxrKkw778/2tYn03qfnS1aZUyTLdba95jOPtRPX1PK3VH8kT6fj+cV1po22ER18fglTGFnsRt/P3lW1zjei3EzHJr10RvTqneb+Gf4AAKwN3eYAAAA=
       skull-owner: MHF_Apple
 skull_aquarium:
-  item: "skull_item|http://textures.minecraft.net/texture/c2847cd5717e5f5a64e1ba9cb481dc9e22c78ca23f8516d553f55412fa113e0"
-  worth: 200
-  name: "&bAquarium"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bAquarium
+      internal: H4sIAAAAAAAAAE2PzU6DQBhFP01MkPgYbkmG38LChRFsh5RBaaEwO6BTYWaoTQsGeC4fUJYub845i6sCqPC0E4OUH9fvUyuZAvf4CM+OvfIcj5VaVXm6ZrHa0Fyr8rS6sq3SZAZya1cFdYku7Nq37PYISs/GfriymwoAdwo8ZKUcGPyyKUQ0b9AxD2U9YWfZ+x2SMeaXFT5nU/WGHdwtfPPqbCfvn2v35cGWhRk29Pw5VF2GtmYi2SbR6y79IV0i4nVgRzy1Il9MlGOD8mAkc6QTIx0Lnk5F987jdYEKIxPFnJrkgO3YDzuyD5vYzwTlpInmYCZcGNT/smgbeqccvSwP4A/gG1P2HAEAAA==
+      skull-owner: MHF_Question
 skull_arrowdown:
   worth: 200.0
   item:
@@ -271,9 +279,17 @@ skull_bentobox:
       internal: H4sIAAAAAAAAAD2Oz26CQBjEvzZtQomP0SvJImDLsY1VMe5aVMDdS8Ofz0jZ1UZBZZ+oj9k99TCZmWTyy9gANgzWTSfl5+m4qyVa8MByhTCgs8lX3OG5rY8HC+6jCp5LF8sq9FznNfcCxy9GxCn84YsTBmVO/ArRzX0bbEP6wVNb4/kJrBZvbXfCsw0AdxY8prnsEH7RW0mcrdxSpXp5aDdrIpfGTb+OIrUn1exttOhDIrYmb+ey7IM2zwLJvfleHOKuUClZ/DOSi1CJpuOk5zrRLEtubJwEbPhB6IZJrmnPv42yiRLTuF+Ouc+UaHgWDUWWNkzTK9XvkmZRwKbcM3tfKF7vtm5oXsMf+T3aAyUBAAA=
       skull-owner: MHF_Question
 skull_books:
-  item: "skull_item|http://textures.minecraft.net/texture/8d1b28f886ca3c8fc4301b785bf38c619ea66b68352a882bf8080e63034e0"
-  worth: 200
-  name: "&bBooks"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bBooks
+      internal: H4sIAAAAAAAAAA2L0U7CMBRAr0aS2fgZvi65HRu6Bx9QQ4DMoYxM5a1dbzO0nWS0ge3r7dPJyclhAAzuql9vzHv/pw+GIrheKbjXPOePKlFxkkoep4owFo0UcYbygUupUq0zBixMR+rdgU63EDm6ON/TiQHAVQSTWhhP0NJ0a2i55Y2tx03ndhWaTWDw82xlW1TL+awY8lEkxjdD5sRnZr6n63bffXhpayyQHwN/GruwalH2oY8Flru31/ml6J79fljn+gufACK4KYUlmLxUiBzgH/YCmXveAAAA
+      skull-owner: CS001
 skull_bread:
   worth: 200.0
   item:
@@ -347,9 +363,29 @@ skull_chocolatebar:
       internal: H4sIAAAAAAAAAD2OwW6CQBiE/zZtQomP0SvJArKVg4c2qGBkKYggXBqEtbLsYiOgyDP1Icupp5k5fF9GBpBhsq06zj8v52PJqQRPJBMUJq69/PI72rTluZbg0SngVUMGLmZ4plAdT5WpqWPlUKgzBb0VmmbirNCoKYM8mn7opS1p8wJSS/u2u9BGBoAHCZ6jjHcUfqkecGoHai6iwavbcIu4N+a4b9gRJ1TY73hzN1G6H/t+zfO70WaxwRN9fUprvzuICG3+HburZy2MlFXIW/k9GfLeWy2rJCacxEFFxO5Gwg9Gwm/NZY5B2G5IRSQI89XUyns3JKdkZFNroScsGbyYMGIlmlOr5tGfz8fn8AffXxVeKQEAAA==
       skull-owner: MHF_Question
 skull_clock:
-  item: "skull_item|http://textures.minecraft.net/texture/a82dc4c46d350d42d7372a2a118b9a6421f7eb2a38be3af6a7759259f6a17"
-  worth: 200
-  name: "&bClock"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bClock
+      internal: H4sIAAAAAAAAAA2L0UrDMBRAr6JSg5/hayFplpQ8ijA2KavbpHN7kbS5odVkjjZltl9vng6HwyEABJ72P6Nz7/2v7RwmcLs28JxjZmqeydRgnqcLwWWqWM5SptjCCiUbriUBEqcL9qHD4RGSgH9h7HEgAHCTwH2l3YjQIt85XO1Y46u5PIePPXVlZPSrXPuWmtWLLCY168yNzSSCPgh35G/t6bwda1/RgrJL5Hfjl94sN33sc0HVcDyc7HYS19o3nf1kCiCBu432CA+l0/brFeAfAZtDG98AAAA=
+      skull-owner: Olaf_C
+skull_companion:
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bCompanion Cube
+      internal: H4sIAAAAAAAAAA2LQU+DMBiGP40m2PgzvJJAC2UcdvAyh5nMbQajt9J+ZHNtJV0bhV+/np68z5uHABB4PJyD1u/udzhpTOC2UfBEGRM1DjyVw0KkRUEXaU25TPtCUdZzxauyJ0BiNKLzJ7w8QOLx3weHFwIANwncd0IHhBHZXuN6n0vTzVvrPw6Z3kbG/ccbc8zU+plvpnoWVAc5lV58lvqLvR6/7S70pss2WT5G/kizMmrVuvjP0Wlp2lzaM2tnGeRLaRub18NuuQRI4K4VBoG8oZPBTVVVAVwBpvDNx+sAAAA=
+      skull-owner: Mercury777
 skull_cookie:
   worth: 200.0
   item:
@@ -438,10 +474,30 @@ skull_furnace:
       display-name: §bFurnace
       internal: H4sIAAAAAAAAAE2OzW6CQBhFvzZtQomP0S3J8KssujBF60wcrIrosGlkGAI4o0bACE/VRyzLLm/OycnVAXQYbU+tlN+3S15KocFLeFQCRnQx/1m3om7Ky1mDZ5zB+8QWY25ayJj4uWU4rmUbE55lBndQ6vtjnqemp4M+lK7i1pSifgOtEY+mvYlaB4AnDV7jo2wF/IqOoORQoOxAJO+wN+xoi+QKV9cxPsdd+ok9rAa+mHrLzv/nus1x70pmkyI5r9tUxWhpb6RYbEyudvdVkFU04GgVUIuqncsi1ifR1Gb7WceqqcOqWIXW+kGDuQwj6ob7eUGrmUl7UoQBt8Ied8kXOSXByWE9UbQkfn5AH8N7+AOjeArkLQEAAA==
       skull-owner: MHF_Question
+skull_glados:
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bGLaDOS
+      internal: H4sIAAAAAAAAAA2LQU/CMBhAP4zE2fgzvC5pt3XQAwcSAsxMBpvM4K22HwFtJxltlP16e3p5eXkEgMBT8+2N2fY/x7PBCO4KDc96mqda0CyesATjLMmyWOQTEZRLqvlUMoUESJgu2LszXh8hcvjnfI9XAgCjCMatNB7BYFobXNdM2XaoOvfWUFMFBv/NC3uiej3Py5sYZGK8unEn37k5pC+nj27nP21LS8ougV/KLq1ebvrQh5Lq18O+3u6HwqsV74qOieNuNgOI4H4jLcLDqpSLqkkA/gF36Xnr5AAAAA==
+      skull-owner: GLaDOS2
 skull_globe:
-  item: "skull_item|http://textures.minecraft.net/texture/2e2cc42015e6678f8fd49ccc01fbf787f1ba2c32bcf559a015332fc5db50"
-  worth: 200
-  name: "&bGlobe"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bGlobe
+      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkkGKCALF400dkgH5CIw7LjMpMBMbVpQ6FP5iLJ0d76c7yRHBVDhKRkmIT4uX7wTTIF73MKz47Y2q12mOS91o224xbXKMnTN5IzXDeIIWY4K6jo6s8vYsesjKCObx+nCrioA3CnwkFViYvDLFh+VxRG1hS+aBdsrpwkSIe7PDj5lS/2GbSzXfr+1D4v7z7XGKrcENf1jeYqmWmboYMaC7WO9kZ/f1KCIeAMikt6CPpaBDDpqZLJcE0l3OkkbK+ijmXh4E8gdCt/xTPOso2ljkj66lSmeQ2+7rPZPmAcDSXyXF+h1fQ9/noYolhgBAAA=
+      skull-owner: MHF_Question
 skull_goldblock:
   worth: 200.0
   item:
@@ -466,6 +522,18 @@ skull_hamburger:
       display-name: §bHamburger
       internal: H4sIAAAAAAAAAD2OwU6DQBRFn0YTJP0MtyQMDLQsNdJS0hmkpVBmYyhMA8NMayio5Yv8TFm5OuduTq4OoMNs1w5SvneXUyO5Bg+0UBxmJFh+xAO/9s3lrMH9uoLnAnuYY7wwFgjNDWzbhVHMvYXhVhw5qHS9o4V10KfSJ+/6hl+fQOv5Tz90/KoDwJ0Gj2khBw6/3N5KHmxRqdIxOvfJzpTRxGl/u2tVm1Xw4m5unskOkx9CWd6cvsgcmdthzc7xcFSpuflv7L/yhEkmloKIVNHEt5gIJbXiiaVFRWkS8SrJSGu2oopYtGWiHaMVbchYqSjzTZL5OBcERW+5w8TeirJ1czogb3oNf/NvDO0lAQAA
       skull-owner: MHF_Question
+skull_ironman:
+  worth: 2000.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bIron Man
+      internal: H4sIAAAAAAAAAA2LQU/CMBhAP40mteFneF3Slg3cwYMeFiALKJiBXEy3fQ3Tr4OUNrr9ent6eXl5HIDDZPcTiN7c2XSEDG6XLTxKKYxp5ioRptVJipgnOhVPCWKGudIo55hy4HG6oPMdXh+AefzzweGVA8ANg/tKU0AgnG4JF1vZ2Grc9P5jJ2gTGf13trQn0S5eZuWQj1pRaIbM631Gn9PV6di/h9pWohTyEvnd2MK2xdrFPpaKhlplpt4Xoexfw3FY5eYgngEY3K21RWCdO/dfVvcA/2yJKVLlAAAA
+      skull-owner: iron_man
 skull_lantern:
   worth: 200.0
   item:
@@ -515,13 +583,29 @@ skull_lemon:
       internal: H4sIAAAAAAAAAD2Oy27CMBREb6tWSiM+o9tINsakWXZBCwg7BZznpgqJ0zxsqCChJF/Uz6xXXc2MdHQ0NoANk33bK/VxPpW1khY88ExLmLDl2+e2l5euPh0tuF8V8CxnU1IgmTnF1KXOjBbE8ZBbOi7OMSkPL3mOsQ22MX3Lc1fLyxNYnbx1/VlebAC4s+AxzFQv4VeSnZLLHc51OPrHTuyR8k2a/TNf6QoVy9f5ZvBQGpser1U+0C6LqErIukqP2/6gQ7T5dwRXXwQk1VvMNa+YCCgfvwgf25E1uzZtgpsvGObvqylvGE1E1frRumFiQZlmJBl5m4p24NHC8KpOolBzzeoyxp55DX/EQzebJQEAAA==
       skull-owner: MHF_Question
 skull_luigi:
-  item: "skull_item|http://textures.minecraft.net/texture/44e18fbde3cdb6699cfcccbeaca7857cd9166e9a783b3bccbb2b05d9f11c4ed"
-  worth: 200
-  name: "&bLuigi"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bLuigi
+      internal: H4sIAAAAAAAAAA2LQU/CMBhAP40ks/FneF3yldFGDh70QIA0oGCGcivtNzdt5zLayPbr6enl5eUxAAYP+9/o3Fv/VzWOMrhdWXiUVSF5hZhr/iTyGVmen4TFnIREY2bCGj5lwNLUUR8aOt9DFugSYk9nBgA3GUxK7SJBTcXO0XLHjS/HbRs+9ui2icn/5crXaJcvUg3zUU9dNIMI+iDcV7Guj+17PPkSFfIu8cf4hbeLTZ/6qPDC9cF2qn2Nx2E9rz7xGSCDu432BBMVm+8G4Apo+Jnv3gAAAA==
+      skull-owner: Luigi
 skull_mario:
-  item: "skull_item|http://textures.minecraft.net/texture/a0c2549a893726988f3428bef799875ba871688ae64eb0cfdc43f7d6e24c6c"
-  worth: 200
-  name: "&bMario"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bMario
+      internal: H4sIAAAAAAAAAA2Ly07DMBQFb1ErBaufwTaSUzspWbAoi6qtQp8oQHfGvlYCdlq5NpB8PV6NzhwNASAwPX0HY/buoluDCdytFTxIzR85Z3maU6FSLrN5KkrUKVezQohyrhkrCJAYXdH5Fm/3kHj888HhjQDAKIFJLUxAaJAdDa6OmbT1sOv864maXWTcv8XaNlStFkXVl4OYmSD73Iu33HywTXPuDuHT1rSi2TXyS9qlVcuti/8QXSOt+am653DuN6V+p08ACYy3wiJMXoRrLwD/R+QR1d4AAAA=
+      skull-owner: Mario
 skull_moneybag:
   worth: 200.0
   item:
@@ -547,21 +631,53 @@ skull_pancakes:
       internal: H4sIAAAAAAAAAD2Oz26CQBjEvzZtQomP0SvJyiLCoYemtSpxl6KIsJcG4aO4Ltoo+O+Z+pDdU08zk8z8MiaACb3FtlPq87CvNgoNeOB5g9Bjk4+vqMNju9nvDLiflvC8Lm10165vlXZBLSf3fMsrysrySVW4ZIiYe0MTTE36wUO7weMTGC1e2u6ARxMA7gx4THLVIfwinSuczPtFk9zCXRsviAq16nx2p01NysmrO7v6RKTap4EqroM2Xw1URoNa7KJu3SRk9s9YntgtokLOG74aUT5mNpfbC5Pf58yOHDZeUhZHTiajQSYDKeIRFWPecN0X78s+u2UOl1O9T7ZhHNRhXNhZLOrwLfCrlLzo5/AHwDpBYikBAAA=
       skull-owner: MHF_Question
 skull_pokeball:
-  item: "skull_item|http://textures.minecraft.net/texture/d4422d2362662b3c61fb401aead919425a9a92ad9336d7a220147a14a1e"
-  worth: 200
-  name: "&bPokeball"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bPokeball
+      internal: H4sIAAAAAAAAAA2LXU+DMBRAr0YjNv4MX0nKkAIPezAmcxjCZDP48da1lzC9ZaRro+PX26eTk5PDABjc7X480as99gfCCC4rDfeJynUvRR4rsdfxQ16UccG5jEudy7QQC5ViwYCFaULrDni6hcjhn/MWTwwALiK47iR5BMJ0S7jeJsp082Z0bztOm8Dgv6IyA9frR1Gfy1kuyKtz5uR7Rp/py/A1tn5vOl7zZAr8VmZl9Kqxoc81b476YxqUab16zsZqTMq+XS4BIrhqpEG4eRr8LK0G+AcZgoi05AAAAA==
+      skull-owner: Chuzard
 skull_popcorn:
-  item: "skull_item|http://textures.minecraft.net/texture/7444c78cf6ba309a89e27cbab9338ae2c072bce455df4babbfa8ecd3ae7baf53"
-  worth: 200
-  name: "&bPopcorn"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bPopcorn
+      internal: H4sIAAAAAAAAAA2L0WqDMBRA78YGTvoZfRWSamx9LBtFRdrNDqu+JfGKbomT1NDVr69Ph8PhuAAurM6/VqlP89f2Ch14ThpYC98PIsoiT4REeAHF1tuRrfTIlgke7PyIEnTBXaYRzdTj9Q2cCf8na/DqAsCTA68FVxZhRD9XGOdU6mI+DdP3majTwsVvYaI70sT7MLtHM98oK+9s4hemKj/t6uHLCl2QjNBx4Y/UB90cjmbpc0bHrtp0ZVWmti7TJH9nN6Fl35Y0AnDg5cg1wqrmsrtwM6CJPwAeVcQWFu0AAAA=
+      skull-owner: ZachWarnerHD
 skull_present_green:
-  item: "skull_item|http://textures.minecraft.net/texture/64abe81e6f4961e0f6bd82f2d4135b6b5fc845739e71cfe3b8943531d921e"
-  worth: 200
-  name: "&bPresent"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bPresent
+      internal: H4sIAAAAAAAAABVOyU7DMBR8IJCC1c/gGslZnMZHLlFSdU1QCr0g23lVQ+0SpbZK8/WY02hmNAsBIDBrzk7r7fhz7DUG8Fh18IpZLpHnIpRd3oUpY/OQz9MkTDMlY8xVnFJBgPjQgKPt8foCgcVf60a8EgB4COC5FdohDJjUGss6UqadNhf73lC98ej5LavMiXblW7a880nE2qk7s2LP9GeyOB0uOydNS5c0Gjx+K1OYrliP3p+8VtWa7/47D3tGVw27SaP640fEAQJ4WguDMFuVxdfWP0I/B/AHZlPFPe0AAAA=
+      skull-owner: MHF_Present1
 skull_present_red:
-  item: "skull_item|http://textures.minecraft.net/texture/bd7a9f6ed08dd217fdf09f4652bf6b7af621e1d5f8963605349da73998a443"
-  worth: 200
-  name: "&bPresent"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bPresent
+      internal: H4sIAAAAAAAAABWOy07DMBRELwikYPUz2EaynTpplmyiBPWZohS6Qa59owbsEKW2SvP1mNXRzGhGQwAIzPbf3pjt+NN2BiO4rzQ8z1MhNW1pzBjP4rlc6HihuIgTmXGhUWQiYwRIKA04ug4vTxA5/HV+xAsBgLsIHhtpPMKASW2wrJmyzbTp3duemk1g0Ne0smeqy5d0ecsnyY1XN+HkQZiP5PV87Hf+ZBu6pGwI/FK2sLpYjyGfglfVJt/9bx4Pgq46cT1Z1bXvLAeI4GEtLcJsVRaf2/AIe8cB/gAVZTp77QAAAA==
+      skull-owner: MHF_Present2
 skull_soupcan:
   creator_id: 4cb358ae-719c-4423-93c7-8769ce46e9c3
   creator: NathanWolf
@@ -673,9 +789,17 @@ skull_wildboar:
       internal: H4sIAAAAAAAAAE2PwW6CQBRFX5s2ocTP6JYEBoGwcGFqW4coVBzAYdMADhWYQSNgHL6rH1iWXd6ck5NcFUCF2b4ZOP+6nsuKMwWe/EwwmG3XH9+7gXV9dW4VeMRHeHVNyy1KZGuoKHVt7qJMy53c0GzTdYyCGQ7L5iqoU+nCrn3FuhdQenbvhyvrVAB4UOA5zvjA4JdJT08PJ/148HghsT1tstd5gOuLg9tY5m/YxmLi66W9ke4/1+qzxOLU9E5puxtyEesbM+RsHRqFiG4UvSMfeYIm4Wlbp1UqQhF8YpOSSFKBZUA8kSYhD8jPmK6oRetQbElh0HFpBgRLf2zu/qrRfRTNKYlFsPIEbg233C0W0wP4AyErOwIxAQAA
       skull-owner: MHF_Question
 skull_yoshi:
-  item: "skull_item|http://textures.minecraft.net/texture/5fc8b863995fb84685c273c859548c75d94f9b82cce41b1efff454fe03cc123"
-  worth: 200
-  name: "&bYoshi"
+  worth: 200.0
+  item:
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §bYoshi
+      internal: H4sIAAAAAAAAAA2Ly26DMBBFp1UiUSuf0S2SDQXCoot2ESURyrMijx3Bg0w7JgjstvD18eYcHV1dBsBgdvyxRLvuXtWEHjyvJLxGsRSpjOe+A/pvIqn8m5ChzxNMRIBRgnPBgLlTi52psX8Bz+C/sR32DACePJjmBVkEheGBcHkQpc7HbWO+jpy2zq7/4pVWXC4/4mxIxyIgWw6RKU4RXcK1ujZ7e9M5z7honb9LvdBysencPmaCfstAtVnzaa/DOq3O/B3Ag8mm0AjTy71XNcADeG5TVd4AAAA=
+      skull-owner: Yoshi
 # Spawn eggs
 philbertegg:
   worth: 500.0
