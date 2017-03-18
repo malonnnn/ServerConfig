@@ -11,9 +11,6 @@
             'speech': "You know who isn't human? You know who isn't human?... PEOPLE LIKE YOU!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
-                "/run 0-1",
-                "/haste 0-6",
                 "/carryplayer",
                 "/dismountplayer",
                 "/touchkill"
