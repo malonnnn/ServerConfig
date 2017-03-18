@@ -162,6 +162,13 @@ item:
     skull: Your book has been turned into a skull
     skull_no_book: You must hold a written book with skull data in it
     skull_invalid_book: "That book does not have skull data in it! Paste in just the text in 'Textures.Value', it is a long string of random characters normally ending in =="
+mage:
+    removed_property: Removed property $name
+    no_property: Mage has no property $name
+    player_reconfigured: $name mage data reconfigured
+    player_not_reconfigured: $name mage data not reconfigured
+    reconfigured: Mage reconfigured
+    not_reconfigured: Mage not reconfigured
 general:
     no_spells: You don't know any spells
     no_spells_in_category: You don't know any spells in the $category category
@@ -1766,6 +1773,9 @@ spells:
     disposal:
       name: Disposal
       description: Permanently destroy unwanted items
+    projector:
+      name: Projector
+      description: It's-a Me!
 wand:
     default_name: Wand
     upgrade_default_description: Will upgrade your wand.
@@ -1884,9 +1894,11 @@ wand:
     player_unlocked: $name's wand has been unlocked
     unknown_template: Unknown wand name $name
     reconfigured: Wand reconfigured
+    not_reconfigured: Wand not reconfigured
     removed_property: Removed property $name
     no_property: Wand has no property $name
     player_reconfigured: $name's wand reconfigured
+    player_not_reconfigured: $name's wand not reconfigured
     filled: Your $wand now contains all of your spells
     player_filled: $name's wand filled
     renamed: Your wand has been renamed

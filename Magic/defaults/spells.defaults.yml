@@ -5737,7 +5737,7 @@ laser|2:
     upgrade_required_path: master
     upgrade_required_casts: 50
     parameters:
-        radius: 0.5
+        radius: 1
         size: 1
         destructible: destructible,destructible2,transparent
         player_damage: 1
@@ -5747,7 +5747,7 @@ laser|2:
 laser|3:
     parameters:
         destructible: destructible,destructible2,destructible3,transparent
-        radius: 0.5
+        radius: 1
         size: 2
         player_damage: 1
         entity_damage: 3
@@ -8063,6 +8063,42 @@ projectile:
         transparent: air
         undo: 5000
 
+projector:
+  icon: diamond_axe:169
+  icon_disabled: diamond_hoe:169
+  icon_url: http://textures.minecraft.net/texture/6eb68dc909b12ef5fb397c23fdecbc416d9a76825170c106b1faeb97b4749
+  category: engineering
+  effects:
+      cast:
+      -  class: EffectSingle
+         sound: entity_player_levelup
+      -  class: EffectTrail
+         particle: block_crack
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: Brush
+        actions:
+        - class: Plane
+          actions:
+          - class: ModifyBlock
+      - class: Delay
+  parameters:
+    target: block
+    range: 32
+    radius: 32
+    cooldown: 60000
+    undo: 100
+    delay: 1000
+    repeat: 30
+    axis: z
+    reorient: false
+    orient: true
+    orient_snap: 90
+    destructible: air,stained_clay
+    allow_max_range: true
+    brush: "map:64:http://media.giphy.com/media/jHI82Yz48dVjG/giphy.gif"
 pull:
     icon: diamond_axe:33
     icon_disabled: diamond_hoe:33
@@ -8582,6 +8618,7 @@ reflect:
         axis: z
         brush: stained_glass
         orient: true
+        orient_snap: 45
         transparent: transparent_to_construction
         destructible: destructible_replace
         check_destructible: true
@@ -10332,7 +10369,7 @@ superlaser:
     worth: 450
     earns_sp: 8
     upgrade_required_path: architect
-    upgrade_required_casts: 50
+    upgrade_required_casts: 20
     actions:
         cast:
         - class: Line
@@ -10366,7 +10403,7 @@ superlaser:
              particleBase1: drip_lava
              particleBase2: smoke_normal
              iterations: 10
-             radius: 0.5
+             radius: 1.5
              grow: 0.2
              baseInterval: 5
              length: 16
@@ -10387,7 +10424,7 @@ superlaser:
         destructible: destructible
         transparent: air
         brush: air
-        radius: 0
+        radius: 1.5
         cooldown: 10000
         delay: 250
         repeat: 10
@@ -10397,7 +10434,7 @@ superlaser:
         mana: 200
 
 superlaser|2:
-    upgrade_required_casts: 50
+    upgrade_required_casts: 20
     parameters:
         destructible: destructible,destructible2,transparent
         repeat: 11
@@ -10705,6 +10742,7 @@ tendril:
         delay: 50
         volume_type: yxz
         center_z: false
+        reorient: false
     costs:
         mana: 100
 
@@ -11180,6 +11218,7 @@ trinketshop:
         - skull_cheese
         - skull_chocolatebar
         - skull_clock
+        - skull_companion
         - skull_cookie
         - skull_crate
         - skull_creeperstone
@@ -11188,8 +11227,10 @@ trinketshop:
         - skull_emeraldblock
         - skull_fries
         - skull_furnace
+        - skull_glados
         - skull_globe
         - skull_goldblock
+        - skull_ironman
         - skull_lantern
         - skull_lavabucket
         - skull_lavamonster
