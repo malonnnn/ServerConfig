@@ -1,4 +1,4 @@
-,@plr = player()
+@plr = player()
 
 
 
