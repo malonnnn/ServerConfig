@@ -16,9 +16,7 @@
                 "/haste 0-6",
                 "/carryplayer",
                 "/dismountplayer",
-                "/kill",
-                "/invis",
-                "/vis"
+                "/kill"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 14 true"                
