@@ -17,9 +17,13 @@
             ),
             'trail': '',
             'op': 'false',
-            'speech': '',
+            'speech': 'Oh that's cute',
             'powers': array(
-                "/buff"
+                "/buff",
+                "/jump 0-3",
+                "/run 0-3",
+                "/haste 0-3"
+                "/hyenas",
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:10 name:&4H&fa&0r&4l&fe&0y_&4Q&fu&0i&4n&fn's_Hammer",
