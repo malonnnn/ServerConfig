@@ -1,5 +1,9 @@
 bind(player_teleport, null, null, @event,
 
+    if(has_permission('escaperoom.bpass')){
+        die()
+    }
+
     @to = @event['to']
 
     if(@to['world'] == 'escaperoom'){
