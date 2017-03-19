@@ -1,0 +1,25 @@
+hyenas:/hyenas = >>>
+
+    @player = player()
+
+    if(!is_null(import(@player."hyenas"))){
+        @oldDogs = import(@player."Hyenas")
+        foreach(@uuid in @oldDogs){
+            try(entity_remove(@uuid),
+            continue())
+        }
+    }
+    
+    @dogUUIDs = spawn_mob("wolf:tamed",2)
+    export(@player."Hyenas",@dogUUIDs)
+    set_timeout(1000,closure(
+        foreach(@uuid in @dogUUIDs)
+        {
+            @colors = array("WHITE", "ORANGE", "MAGENTA", "LIGHT_BLUE", "YELLOW", "LIME", "PINK", "GRAY", "SILVER", "CYAN", "PURPLE", "BLUE", "BROWN", "GREEN", "RED", "BLACK")
+            @num = rand(1,17)
+            set_entity_spec(@uuid,array(angry:true,color:@colors[@num],sitting:false))
+            tame_mob(@player,@uuid)
+        }
+    ))
+
+<<<
