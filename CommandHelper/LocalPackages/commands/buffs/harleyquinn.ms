@@ -17,7 +17,7 @@
             ),
             'trail': '',
             'op': 'false',
-            'speech': 'Oh that's cute',
+            'speech': 'Oh that's cute...',
             'powers': array(
                 "/buff",
                 "/jump 0-3",
