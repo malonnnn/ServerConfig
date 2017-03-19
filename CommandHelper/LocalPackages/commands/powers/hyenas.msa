@@ -2,7 +2,7 @@ Hyenas:/hyenas = >>>
 
     @player = player()
 
-    if(!is_null(import(@player."Hyenas"))){
+    if(!is_null(import(@player."hyenas"))){
         @oldDogs = import(@player."Hyenas")
         foreach(@uuid in @oldDogs){
             try(entity_remove(@uuid),
