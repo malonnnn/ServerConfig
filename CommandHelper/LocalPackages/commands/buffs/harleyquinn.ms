@@ -20,9 +20,6 @@
             'speech': 'Oh that's cute...',
             'powers': array(
                 "/buff",
-                "/jump 0-3",
-                "/run 0-3",
-                "/haste 0-3"
                 "/hyenas",
             ),
             'buffs': array(
