@@ -13,8 +13,20 @@ regions:
     employeeroom:
         min: {x: 1.0, y: 1.0, z: 92.0}
         max: {x: 14.0, y: 7.0, z: 100.0}
-        members: {}
+        members:
+            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8]
         flags: {entry: deny, build: deny, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
+    rooms:
+        min: {x: -43.0, y: 7.0, z: 47.0}
+        max: {x: 10.0, y: 8.0, z: 81.0}
+        members:
+            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8,
+                cb871f86-94e5-4bf3-a78e-42f73c2215c4, 323c42e2-abb0-4a25-a818-1cb14f8a53f8]
+        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
+            game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -28,21 +40,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    rooms:
-        min: {x: -43.0, y: 7.0, z: 47.0}
-        max: {x: 10.0, y: 8.0, z: 81.0}
-        members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8]
-        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
-            game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     room4:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 72.0}
         max: {x: -21.0, y: 6.0, z: 80.0}
-        members: {}
+        members:
+            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8]
         flags: {build: allow, build-group: MEMBERS, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
@@ -66,6 +69,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    darklordoffice:
+        min: {x: -6.0, y: 4.0, z: 201.0}
+        max: {x: 1.0, y: 7.0, z: 210.0}
+        members: {}
+        flags: {interact: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
     room1:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 62.0}
@@ -86,14 +97,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    commandroom:
-        min: {x: 3.0, y: 2.0, z: 92.0}
-        max: {x: 14.0, y: 7.0, z: 100.0}
-        members: {}
-        flags: {build: deny}
-        owners: {}
-        type: cuboid
-        priority: 3
     underworld-court:
         min: {x: -63.0, y: 12.0, z: -25.0}
         max: {x: -36.0, y: 26.0, z: 7.0}
@@ -110,7 +113,7 @@ regions:
         members:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, block-place-group: MEMBERS, interact-group: MEMBERS,
+            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
             game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
@@ -118,12 +121,13 @@ regions:
     __global__:
         members:
             unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 869b4227-b51e-452e-adbd-48759a6848dd,
-                0130299a-4489-429d-b4eb-68643a4c6ac8]
+                0130299a-4489-429d-b4eb-68643a4c6ac8, cb871f86-94e5-4bf3-a78e-42f73c2215c4,
+                323c42e2-abb0-4a25-a818-1cb14f8a53f8]
         flags:
             time-lock: '14000'
             item-drop: allow
-            blocked-cmds: [/tpa, /tpaccept, /warp, /thru, /tp]
             invincible: allow
+            blocked-cmds: [/tpa, /tpaccept, /warp, /thru, /tp]
             mob-damage: deny
             mob-damage-group: MEMBERS
             interact: allow
@@ -140,7 +144,7 @@ regions:
         max: {x: -52.0, y: 16.0, z: 6.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, block-place-group: MEMBERS, interact-group: MEMBERS,
+            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
             game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
