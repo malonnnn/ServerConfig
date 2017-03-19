@@ -15,9 +15,6 @@
                 "/dismountplayer",
                 "/jump 0-4",
                 "/run 0-8",
-                "/disguise",
-                "/disguiseviewself",
-                "/undisguise"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
