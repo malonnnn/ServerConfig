@@ -14,6 +14,5 @@ bind(world_changed, null, null, @event,
     } else if(@to == 'anarchy' && @class != 'anarchy'){
         runas(~console,'/pex user '.@player.' group set anarchy')
     }
-    
 
 )
