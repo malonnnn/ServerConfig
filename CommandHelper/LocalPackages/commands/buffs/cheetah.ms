@@ -14,7 +14,6 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/jump 0-4",
-                "/run 0-8",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
