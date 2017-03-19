@@ -11,7 +11,6 @@
             'speech': "WTF I'm little!!",
             'powers': array(
                 "/buff",
-                "/thru",
                 "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
