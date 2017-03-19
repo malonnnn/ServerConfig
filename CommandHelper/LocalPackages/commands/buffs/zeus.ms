@@ -10,17 +10,18 @@
             'op': 'false',
             'speech': "Zeus Almighty.",
             'powers': array(
-                "/buff",
-                "/lightning",
+        
                 "/fly",
                 "/run 0-6",
                 "/jump 0-4",
                 "/haste 0-5"
+                "When you punch a player empty handed, your victim is struck by lightning (lightning)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 19 true"
+                "/shot give ". @plr ." forcelightning" 
             )
         )
        
