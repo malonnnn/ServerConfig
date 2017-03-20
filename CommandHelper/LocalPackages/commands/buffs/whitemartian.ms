@@ -10,18 +10,13 @@
             'op': 'false',
             'speech': "Some on my planet do not see the whites as equals.",
             'powers': array(
-                "/buff",
                 "/carryplayer",
                 "/dismountplayer",
                 "/jump 0-4",
                 "/flyspeed <number>",
                 "/fly",
-                "/intangible",
-                "/tangible",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
-                "/disguiseviewself",
-                "/undisguise",
                 "/mindlock <playername>",
                 "/msg <playername>"
             ),
