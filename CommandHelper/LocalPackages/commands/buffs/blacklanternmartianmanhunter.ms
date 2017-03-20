@@ -29,7 +29,9 @@
                 "/disguiseviewself",
                 "/confuse <player>",
                 "/undisguise",
-                "You are protected by Nekron so mobs will fear you and wont attack you"
+                "You are protected by Nekron so mobs will fear you and wont attack you",
+                "/mindlock <playername>",
+                "/msg <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
