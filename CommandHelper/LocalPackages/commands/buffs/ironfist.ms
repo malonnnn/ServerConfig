@@ -16,12 +16,12 @@
                 "/dismountplayer",
                 "/jump 0-3",
                 "/run 0-3",
-                "/haste 0-9",
+                "/haste 0-5",
                 "/heal",
                 "/heal <playername>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 2 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 15 true"                
