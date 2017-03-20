@@ -1,4 +1,4 @@
-av:/av = >>>
+av:/onduty = >>>
 
     @player = player()
     runas(~console,"/pex user ".@player." group set av")
@@ -6,10 +6,10 @@ av:/av = >>>
         runas(~console,"/sudo ".@player." c:/mortal")
         set_timeout(3000,closure(
             runas(~console,"/pex user " . @player . " group set av")
-            tmsg(@player,color(red)."You are now an active AV unit")
+            tmsg(@player,color(red)."You are now on duty!")
         ))
     }else{
-        tmsg(@player,color(red)."You are not part of the AV program")
+        tmsg(@player,color(red)."You are not part of the &9&lB&8&lI&9&lG B&8&lOO&9&lTY CR&8&lE&9&lW")
     }
 
 <<<
