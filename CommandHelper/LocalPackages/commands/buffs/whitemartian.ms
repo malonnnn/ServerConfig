@@ -14,7 +14,10 @@
                 "/dismountplayer",
                 "/jump 0-4",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "/disguise",
+                "/disguiseviewself",
+                "/undisguise"
             ),
             'buffs': array(             
             )
