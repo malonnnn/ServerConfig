@@ -15,10 +15,6 @@
                 "/jump 0-4",
                 "/flyspeed <number>",
                 "/fly",
-                "/mindcontrol <playername>",
-                "/stopmindcontrol",
-                "/mindlock <playername>",
-                "/msg <playername>"
             ),
             'buffs': array(             
             )
