@@ -13,7 +13,9 @@
                  "/speak <player> <message>",
                  "/mindcontrol <playername>",
                  "/stopmindcontrol",
-                 "/confuse <player>"
+                 "/confuse <player>",
+                 "/mindlock <playername>",
+                 "/msg <playername>"
              ),
              'buffs': array()
          )

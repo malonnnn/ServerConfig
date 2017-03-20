@@ -28,7 +28,9 @@
                 "/vis",
                 "/disguiseviewself",
                 "/confuse <player>",
-                "/undisguise"
+                "/undisguise",
+                "/mindlock <playername>",
+                "/msg <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",

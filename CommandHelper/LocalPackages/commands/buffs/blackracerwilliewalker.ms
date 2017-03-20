@@ -21,17 +21,9 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                "/thru (phases through walls)",
                 "/touchkill",
                 "/fly",
-                "/fly speed <number>",
-                "/speak <playername>",
-                "/disguiseviewself",
-                "/mindcontrol <playername>",
-                "/stopmindcontrol",
-                "/touchkill",
-                "/back",
-                "/confuse <player>"
+                "/fly speed <number>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",
