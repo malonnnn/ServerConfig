@@ -5,7 +5,21 @@ bind('player_chat', null, null, @e) {
     @pworld = pworld()
     @puuid = puuid()
     assign(@msg, @e[message])
-    
+
+    # -------------------------------
+    # if message is 565, display a link to a picture of the "superhero warehouse"
+    # -------------------------------
+    @isMindLocked = import(player().'isMindLocked')
+    if(@isMindLocked){
+        @mindLocker = import(player().'mindLockedBy')
+        if(@mindLocker != ''){
+            tmsg(@mindLocker,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
+            tmsg(@pname,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
+            assign(@msg,'')
+            cancel()    
+        }
+    }
+
     # -------------------------------
     # if message is 565, display a link to a picture of the "superhero warehouse"
     # -------------------------------
