@@ -1,6 +1,5 @@
 set_interval(5000,closure(
     @players = all_players()
-    console("timerstart")
     foreach(@player in @players){
         @class = pgroup(@player)[0]
         try(

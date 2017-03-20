@@ -2,7 +2,7 @@ mindcontrol:/mindcontrol $plr = >>>
 
     @player = player()
     
-    assign(@cooldown, 600)
+    assign(@cooldown, 10)
     
     assign(@lastUsedMindControl, get_value(@player."lastUsedMindControl"))
     if(@lastUsedMindControl + @cooldown > time() / 1000,
@@ -55,7 +55,7 @@ stopmindcontrol:/stopmindcontrol = >>>
     
     @pgroup = pgroup()[0]
     
-    runas(~console,"/icu stop @player")
+    runas(~console,'/icu stop '.@player)
     broadcast("@player has stopped mindcontrolling")
     
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pgroup . '.ms')

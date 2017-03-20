@@ -14,7 +14,8 @@ regions:
         min: {x: 1.0, y: 1.0, z: 92.0}
         max: {x: 14.0, y: 7.0, z: 100.0}
         members:
-            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
+            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8,
+                0130299a-4489-429d-b4eb-68643a4c6ac8]
         flags: {entry: deny, build: deny, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
@@ -23,9 +24,8 @@ regions:
         min: {x: -43.0, y: 7.0, z: 47.0}
         max: {x: 10.0, y: 8.0, z: 81.0}
         members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 0130299a-4489-429d-b4eb-68643a4c6ac8,
-                cb871f86-94e5-4bf3-a78e-42f73c2215c4, 323c42e2-abb0-4a25-a818-1cb14f8a53f8,
-                8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
+            unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, cb871f86-94e5-4bf3-a78e-42f73c2215c4,
+                323c42e2-abb0-4a25-a818-1cb14f8a53f8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
         flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
             game-mode-group: MEMBERS}
         owners: {}
@@ -56,23 +56,14 @@ regions:
         max: {x: 13.0, y: 38.0, z: 41.0}
         members:
             unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 869b4227-b51e-452e-adbd-48759a6848dd,
-                0130299a-4489-429d-b4eb-68643a4c6ac8, 8354ed0d-09cb-4682-bf62-5df3f0e2b412,
-                8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
+                0130299a-4489-429d-b4eb-68643a4c6ac8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
         flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
             interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
         owners: {}
         type: cuboid
         priority: 1
-    mainoffice:
-        min: {x: -7.0, y: 4.0, z: 208.0}
-        max: {x: 1.0, y: 7.0, z: 210.0}
-        members: {}
-        flags: {}
-        owners: {}
-        type: cuboid
-        priority: 0
     darklordoffice:
-        min: {x: -6.0, y: 4.0, z: 201.0}
+        min: {x: -7.0, y: 4.0, z: 202.0}
         max: {x: 1.0, y: 7.0, z: 210.0}
         members: {}
         flags: {interact: deny}
@@ -84,7 +75,7 @@ regions:
         min: {x: -31.0, y: 2.0, z: 62.0}
         max: {x: -21.0, y: 6.0, z: 70.0}
         members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
+            unique-ids: [8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
         flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
@@ -99,6 +90,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    officeplate:
+        min: {x: -3.0, y: 4.0, z: 186.0}
+        max: {x: -3.0, y: 4.0, z: 188.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     underworld-court:
         min: {x: -63.0, y: 12.0, z: -25.0}
         max: {x: -36.0, y: 26.0, z: 7.0}
@@ -122,9 +121,9 @@ regions:
         priority: 2
     __global__:
         members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412, 869b4227-b51e-452e-adbd-48759a6848dd,
-                0130299a-4489-429d-b4eb-68643a4c6ac8, cb871f86-94e5-4bf3-a78e-42f73c2215c4,
-                323c42e2-abb0-4a25-a818-1cb14f8a53f8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
+            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8,
+                cb871f86-94e5-4bf3-a78e-42f73c2215c4, 323c42e2-abb0-4a25-a818-1cb14f8a53f8,
+                8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
         flags:
             time-lock: '14000'
             item-drop: allow
