@@ -1,6 +1,12 @@
 forcechoke:/forcechoke $player = >>>
     @player = player()
     @vic = $player
+
+    if(has_permission(@vic,'is.virus')){
+        tmsg(@plr,color(red).'You cannot force choke a virus')
+        die()
+    }
+
     assign(@cooldown, 15)
     
     assign(@lastUsedForceChoke, get_value(@player."lastUsedForceChoke"))
