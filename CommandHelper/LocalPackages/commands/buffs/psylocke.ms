@@ -12,6 +12,13 @@
                 "/jump 0-3",
                 "/run 0-4",
                 "/haste 0-2",
+                "/psypush <playername>"
             ),
-            'buffs': array()
+            'buffs': array(
+                "/shot give ". @plr ." psybeam",
+                "/give ". @plr ." minecraft:iron_sword 1 16:20 name:&dPsy_Sword",
+                "/give ". @plr ." minecraft:bow 1 51:1 name:&dPsy_Bow",
+                "/give ". @plr ." minecraft:arrow 1 name:&dPsy_Arrow",
+                "/give ". @plr ." minecraft:lead 1 16:5 name:&dPsy_Whip"
+            )
         )
