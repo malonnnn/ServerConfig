@@ -1,0 +1,42 @@
+psypush:/psypush $plr = >>>
+    @player = player()
+    assign(@cooldown, 30)
+    
+    assign(@lastUsedPsyPush, get_value(@player."lastUsedPsyPush"))
+    if(@lastUsedPsyPush + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can use psy push again!")
+    )
+    store_value(@player."lastUsedPsyPush", time() / 1000)
+
+    @ploc = ploc()
+    @vic = $plr
+
+    @vicLoc = ploc(@vic)
+
+    @x1 = @ploc['x']
+    @y1 = @ploc['y']
+    @z1 = @ploc['z']
+
+    @x2 = @vicLoc['x']
+    @y2 = @vicLoc['y']
+    @z2 = @vicLoc['z']
+
+    @x3 = pow(@x1 - @x2, 2)
+    @y3 = pow(@y1 - @y2, 2)
+    @z3 = pow(@z1 - @z2, 2)
+
+    @final = @x3 + @y3 + @z3
+
+    @final = sqrt(@final)
+    
+    @maxDist = 30
+    @magnitude = (1 - @final / @maxDist) * 5 
+
+    @yaw = @ploc['yaw'] + 90;
+    @pitch = neg(@ploc['pitch']);
+    @vector = associative_array();
+    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+    @vector['y'] = @magnitude * sin(to_radians(@pitch));
+    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+    set_pvelocity(@vic,@vector) 
+<<<
