@@ -12,7 +12,12 @@
                 "/jump 0-3",
                 "/run 0-4",
                 "/haste 0-2",
-                "/psypush <playername>"
+                "/psypush <playername>",
+                "/confuse <playername>",
+                "/unconfuse <playername",
+                "/msg <playername>",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol"
             ),
             'buffs': array(
                 "/shot give ". @plr ." psybeam",
