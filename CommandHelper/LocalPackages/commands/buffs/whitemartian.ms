@@ -16,7 +16,6 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/disguise",
-                "/disguiseviewself",
                 "/undisguise"
             ),
             'buffs': array(             
