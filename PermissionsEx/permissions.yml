@@ -3144,8 +3144,7 @@ groups:
       survival:
         permissions:
         - ch.alias.kill
-        - essentials.tppos
-  doctorstrange:
+        - essentials.tppos  doctorstrange:
     inheritance:
     - commonherotraits
     options:
@@ -3155,8 +3154,7 @@ groups:
       survival:
         permissions:
         - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - ch.alias.doctorstrange
+        - ch.alias.dismountplayer        - ch.alias.doctorstrange
         - -essentials.enchantments.allowunsafe
         - essentials.enchantments.*
         - essentials.enchant
@@ -3170,6 +3168,38 @@ groups:
         - ch.alias.haste1
         - ch.alias.hoveron
         - ch.alias.hoveroff
+        
+        baronmordo:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&2B&0a&2r&0o&2n &0M&2o&0r&2d&0o'
+      suffix: '&2'
+    worlds:
+      survival:
+        permissions:
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - ch.alias.baronmordo
+        - -essentials.enchantments.allowunsafe
+        - essentials.enchantments.*
+        - essentials.enchant
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
+        - ch.alias.jump4
+        - ch.alias.jump5
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.haste0
+        - ch.alias.haste1
+        - ch.alias.fly
+        - ch.alias.mindcontrol
+        - ch.alias.stopmindcontrol
+       
   doomsday:
     inheritance:
     - commonherotraits
