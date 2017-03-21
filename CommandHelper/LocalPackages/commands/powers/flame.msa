@@ -1,0 +1,19 @@
+flame:/flame $plr = >>>
+
+    @plr = player()
+    @vic = $plr
+    @vic = player(@vic)
+
+    assign(@cooldown, 10)
+    
+    assign(@lastUsedFlame, get_value(@plr."lastUsedFlame"))
+    if(@lastUsedFlame + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedFlame, @cooldown), divide(time(),1000)))
+        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use flame again!'))
+        die()
+    )
+    store_value(@plr."lastUsedFlame", time() / 1000)
+    
+    runas(~console,'/burn '.@vic.' 5')
+
+<<<

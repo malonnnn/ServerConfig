@@ -15,6 +15,7 @@ mindcontrol:/mindcontrol $plr = >>>
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
 
     @vic = $plr
+    @vic = player(@vic)
     
     if(!ponline(@player)){
         broadcast(color(red) . "Sorry, but " . color(blue) . @vic . color(red) . " is not found.")
@@ -39,7 +40,6 @@ mindcontrol:/mindcontrol $plr = >>>
 stopmindcontrol:/stopmindcontrol = >>>
 
     @player = player()
-    @vic = $vic
 
     assign(@cooldown, 30)
     
