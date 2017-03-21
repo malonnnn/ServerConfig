@@ -2,17 +2,6 @@ mutate:/mutate $vic = >>>
 
     @plr = player()
 
-    assign(@cooldown, 60)
-    
-    assign(@lastUsedMutate, get_value(@plr."lastUsedMutate"))
-    if(@lastUsedMutate + @cooldown > time() / 1000,
-        assign(@timeleft, subtract(add(@lastUsedMutate, @cooldown), divide(time(),1000)))
-        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use flame again!'))
-        die()
-    )
-    store_value(@plr."lastUsedMutate", time() / 1000)
-    
-
     @vic = $vic
     @vic = player(@vic)
     @ploc = ploc()
@@ -38,6 +27,16 @@ mutate:/mutate $vic = >>>
         tmsg(@plr,color(red).'Sorry, that player is not close enough.')
         die()
     }
+
+    assign(@cooldown, 60)
+    
+    assign(@lastUsedMutate, get_value(@plr."lastUsedMutate"))
+    if(@lastUsedMutate + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedMutate, @cooldown), divide(time(),1000)))
+        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use flame again!'))
+        die()
+    )
+    store_value(@plr."lastUsedMutate", time() / 1000)
 
     runas(~console,'/sudo '.@vic.' c:/mortal')
 
