@@ -24,7 +24,6 @@
                 "/speak <playername>",
                 "/confuse",
                 "/unconfuse",
-                "/tppos",
                 "/mindlock"
             ),
             'buffs': array(
