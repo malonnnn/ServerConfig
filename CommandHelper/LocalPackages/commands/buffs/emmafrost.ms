@@ -22,5 +22,6 @@
                 "/confuse <player>",
                 "/mindlock <playername>",
                 "/msg <playername>"
-            )
+            ),
+            'buffs': array()
         )
