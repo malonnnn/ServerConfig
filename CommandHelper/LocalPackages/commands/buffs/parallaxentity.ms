@@ -18,7 +18,10 @@
                 "/haste 0-2",
                 "/confuse <player>",
                 "/disguise",
-                "/disguiseviewself"
+                "/msg",
+                "/mindlock <playername>",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
