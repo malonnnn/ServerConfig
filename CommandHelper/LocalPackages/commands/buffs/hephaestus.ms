@@ -16,7 +16,7 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-7",
-                "/burn",
+                "/flame <playername>",
                 "/flyspeed <number>",
                 "/fly",
                 "/enchant",

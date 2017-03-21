@@ -1,6 +1,11 @@
 mindlock:/mindlock $vic = >>>
 
     @vic = $vic
+    @vic = player(@vic)
+    if(!ponline(@vic)){
+        broadcast('fuck')
+        die()
+    }
     @plr = player()
     
     @isMindLocked = import(@vic.'isMindLocked')
