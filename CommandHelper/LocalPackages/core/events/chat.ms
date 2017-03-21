@@ -9,14 +9,15 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if message is 565, display a link to a picture of the "superhero warehouse"
     # -------------------------------
-    @isMindLocked = import(player().'isMindLocked')
+    @isMindLocked = import(@pname.'isMindLocked')
     if(@isMindLocked){
-        @mindLocker = import(player().'mindLockedBy')
+        @mindLocker = import(@pname.'mindLockedBy')
         if(@mindLocker != ''){
             tmsg(@mindLocker,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
             tmsg(@pname,color(dark_red).'['.color(red).'mindlock'.color(dark_red).'] '.color(red).@pname.color(dark_red).': '.color(gray).@msg)
             assign(@msg,'')
-            cancel()    
+            cancel()
+            return()
         }
     }
 
