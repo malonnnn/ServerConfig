@@ -13,7 +13,9 @@
              'op': 'false', 
              'speech': "My Strength comes from the Dark Dimension!", 
              'powers': array( 
-                 "/buff"
+                 "/buff",
+                 "/intangible",
+                 "/tangible"
              ), 
              'buffs': array( 
                  "/shot give ". @plr ." darkmagic"                 
