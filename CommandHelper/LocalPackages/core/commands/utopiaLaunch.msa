@@ -1,7 +1,7 @@
 utopialaunch:/utopialaunch $plr = >>>
 
     @vic = $plr
-    
+    runas(~console,'/pex user '.@vic.' add multiverse.access.alpha')    
     @id = set_interval(500,closure(
         set_pvelocity(@vic,0,10,0) 
     ))
@@ -11,6 +11,7 @@ utopialaunch:/utopialaunch $plr = >>>
         @id = import(@vic.'utopiaLaunch')
         clear_task(@id)
         runas(~console,'/warp thealpha '.@vic)
+        runas(~console,'/pex user '.@vic.' remove multiverse.access.alpha')    
     ))
 
 <<<
