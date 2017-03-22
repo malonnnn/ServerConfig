@@ -20,6 +20,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    officeplate:
+        min: {x: -3.0, y: 4.0, z: 186.0}
+        max: {x: -3.0, y: 4.0, z: 188.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     rooms:
         min: {x: -43.0, y: 7.0, z: 47.0}
         max: {x: 10.0, y: 8.0, z: 81.0}
@@ -70,6 +78,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    pistons:
+        min: {x: -38.0, y: 12.0, z: -10.0}
+        max: {x: -38.0, y: 14.0, z: -2.0}
+        members: {}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     room1:
         parent: rooms
         min: {x: -31.0, y: 2.0, z: 62.0}
@@ -87,35 +104,6 @@ regions:
         members:
             unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd]
         flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 2
-    officeplate:
-        min: {x: -3.0, y: 4.0, z: 186.0}
-        max: {x: -3.0, y: 4.0, z: 188.0}
-        members: {}
-        flags: {interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
-    underworld-court:
-        min: {x: -63.0, y: 12.0, z: -25.0}
-        max: {x: -36.0, y: 26.0, z: 7.0}
-        members: {}
-        flags: {other-explosion: deny, build: deny, block-break: deny, interact: deny,
-            tnt: deny, block-place: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
-    underworld-office:
-        parent: underworld-court
-        min: {x: -63.0, y: 1.0, z: -11.0}
-        max: {x: -52.0, y: 16.0, z: -4.0}
-        members:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
-            game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 2
@@ -141,14 +129,3 @@ regions:
         owners: {}
         type: global
         priority: 0
-    underworld-office2:
-        parent: underworld-court
-        min: {x: -63.0, y: 2.0, z: -5.0}
-        max: {x: -52.0, y: 16.0, z: 6.0}
-        members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, block-break: allow,
-            interact: allow, interact-group: MEMBERS, block-place-group: MEMBERS,
-            game-mode-group: MEMBERS, block-place: allow, block-break-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 3
