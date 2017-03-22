@@ -19,9 +19,7 @@
                  "/jump 0-5", 
                  "/run 0-3", 
                  "/haste 0-1", 
-                 "/fly", 
-                 "/mindcontrol <playername>",
-                 "/stopmindcontrol"
+                 "/fly"
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 5 9999 2 true", 
