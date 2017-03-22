@@ -2,7 +2,7 @@ mindcontrol:/mindcontrol $plr = >>>
 
     @player = player()
     
-    assign(@cooldown, 10)
+    assign(@cooldown, 60)
     
     assign(@lastUsedMindControl, get_value(@player."lastUsedMindControl"))
     if(@lastUsedMindControl + @cooldown > time() / 1000,
