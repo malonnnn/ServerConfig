@@ -22,7 +22,7 @@ regions:
         priority: 1
     room4-buttons:
         parent: room4
-        min: {x: -26.0, y: 21.0, z: -30.0}
+        min: {x: -27.0, y: 21.0, z: -30.0}
         max: {x: -25.0, y: 21.0, z: -29.0}
         members: {}
         flags: {}
@@ -54,6 +54,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    room3-buttons:
+        parent: room3
+        min: {x: -47.0, y: 21.0, z: -42.0}
+        max: {x: -47.0, y: 22.0, z: -41.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     underworld-throne:
         min: {x: -11.0, y: 13.0, z: 26.0}
         max: {x: 13.0, y: 38.0, z: 41.0}
@@ -72,14 +81,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    constructionzone:
-        min: {x: -63.0, y: 12.0, z: -19.0}
-        max: {x: -23.0, y: 30.0, z: 21.0}
+    room2-buttons:
+        parent: room2
+        min: {x: -47.0, y: 21.0, z: 27.0}
+        max: {x: -47.0, y: 22.0, z: 28.0}
         members: {}
-        flags: {entry: deny, entry-deny-message: Entry Prohibited - Construction Zone}
+        flags: {}
         owners: {}
         type: cuboid
-        priority: 1
+        priority: 0
     pistons:
         min: {x: -38.0, y: 12.0, z: -10.0}
         max: {x: -38.0, y: 14.0, z: -2.0}
@@ -109,7 +119,7 @@ regions:
         priority: 2
     room1-buttons:
         parent: room1
-        min: {x: -26.0, y: 21.0, z: 15.0}
+        min: {x: -27.0, y: 21.0, z: 15.0}
         max: {x: -25.0, y: 21.0, z: 16.0}
         members: {}
         flags: {}
