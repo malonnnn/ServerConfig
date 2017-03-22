@@ -14,7 +14,8 @@
                 "/jump 0-7",
                 "/run 0-4",
                 "/haste 0-1",
-                "/forcepush <playername>"
+                "/forcepush <playername>",
+                "/forcechoke <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
