@@ -5629,10 +5629,10 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - multiverse.access.underworld
     - chatcontrol.commands.channels.players
     - chatcontrol.chat.format.color
     - format.group
-    - multiverse.access.underworld
     - multiverse.access.techcombatknockbackgame
     - multiverse.access.escaperoom
     - multiverse.access.parksideprisonescape
@@ -6126,6 +6126,9 @@ groups:
         - essentials.build.*
       underworld:
         permissions:
+        - -essentials.sethome
+        - -essentials.home
+        - -essentials.warp
         - essentials.gamemode
         - essentials.fly
         - essentials.build.*
@@ -9300,6 +9303,13 @@ groups:
     worlds:
       survival:
         permissions: []
+  underworld-omega:
+    options:
+      prefix: '&4&mO&8me&4&mg&8a'
+      suffix: '&c&l&o'
+    permissions:
+    - essentials.*
+    - essentials.home
 schema-version: 1
 users:
   001b0b15-2f00-4ce1-acff-577e465cb175:
@@ -9307,7 +9317,7 @@ users:
       name: gwwins
   00ea9a24-dc72-47ca-8ec2-79ffb827b2ee:
     group:
-    - martianmanhunter
+    - blackracerwilliewalker
     options:
       name: TechMaster_246
   00edd535-3a1b-4d16-9bda-e2334f846c4d:
@@ -9790,7 +9800,7 @@ users:
       name: Omegaglade23
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
-    - mortal
+    - missmartian
     options:
       name: Br0kenS0uls
     worlds:
@@ -10108,6 +10118,7 @@ users:
     - mortal
     options:
       name: VestaKarberg
+    permissions: []
   4ad6ac92-d45e-42f1-849b-31fd2d049f0c:
     group:
     - goku
@@ -10363,7 +10374,7 @@ users:
       name: JustKas
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - blackracerwilliewalker
+    - flashbarryallen
     options:
       name: EmmettGaming
     worlds:
@@ -10462,7 +10473,7 @@ users:
       name: HunterWC
   6da42a0e-2e80-40e6-8035-86849ca691e5:
     group:
-    - zoom
+    - blackracerwilliewalker
     options:
       name: ShadowSlayer34
   6db256b3-c55b-4cd0-86e9-759aaabcd1f7:
@@ -11616,7 +11627,7 @@ users:
     group:
     - flashwallywest
     options:
-      name: BaconBladeSon
+      name: Sinister_Slayer
   e1ee8717-532a-44c1-9927-9248e802db90:
     options:
       name: Dino5188
@@ -11938,7 +11949,7 @@ users:
       name: WarrinPeace
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - psylocke
+    - wondergirl
     options:
       name: Starbearzz
     permissions:
@@ -12538,7 +12549,7 @@ users:
     group:
     - supergirl
     options:
-      name: XShadowDemonX
+      name: _iiTzMeShadow_
   4568598f-2153-429c-b982-8e3dab271da7:
     group:
     - darthvader
@@ -12630,11 +12641,12 @@ users:
       name: lbh04
   cb871f86-94e5-4bf3-a78e-42f73c2215c4:
     group:
-    - thematrix
+    - underworld-omega
     - mortal
     options:
       name: xSp4rkz
     permissions:
+    - perworldinventory.bypass.world
     - -chatcontrol.channel.*.bypass.range
     - -chatcontrol.channel.*.bypass.world
     - -format.group
@@ -13559,7 +13571,7 @@ users:
       name: ccv3
   8cb964f5-d345-4a65-8811-cb3b0c11b51b:
     group:
-    - apocalypse
+    - mortal
     options:
       name: Vengeance007
     permissions: []
@@ -14412,7 +14424,7 @@ users:
       name: firedragon200YT
   748c7d68-79e5-4194-9bc8-e446d948ee8a:
     group:
-    - flashbartallen
+    - ironmanmkxv
     options:
       name: alex363
   c66dc63b-3977-4bf7-8e7b-f23a74940317:
@@ -14570,7 +14582,7 @@ users:
       name: StrikerZ_5000
   08239f79-b930-4893-b723-44f38d003500:
     group:
-    - mortal
+    - artemis
     options:
       name: Brettconk
     permissions: []
@@ -14707,7 +14719,7 @@ users:
       name: EpicProGamingTv
   75dfb9b4-e7dd-4f3e-8832-61d5f6ccb0ca:
     group:
-    - flashjaygarrick
+    - vision
     options:
       name: Hammy304
   28bfb98b-5e9b-4bb8-bd43-a2025c37585f:
@@ -15028,7 +15040,7 @@ users:
       name: TNT123456
   93a56570-0d6c-4e4b-997c-8a9232242347:
     group:
-    - blacklanternmartianmanhunter
+    - supergirl
     permissions:
     - -sank.sounds
     options:
@@ -15049,7 +15061,7 @@ users:
       name: Wyndfall_
   45bcb3ec-1dcb-41fe-ac6e-dac3c41f3ea7:
     group:
-    - mortal
+    - timewraith
     options:
       name: BlueWolf4Life
   950a3113-378a-4078-aaed-40556a5cbd76:
@@ -15067,6 +15079,21 @@ users:
     - hawkeye
     options:
       name: Darwinfluff
+  2ca29cf6-770b-41d4-a513-57718e596c05:
+    group:
+    - mortal
+    options:
+      name: BenjaminM248
+  47e65665-0737-47cd-bc90-cbbcf9758266:
+    group:
+    - mortal
+    options:
+      name: Trixio10
+  2c2de5e0-bf4e-4def-a7bb-507648fb9d66:
+    group:
+    - mortal
+    options:
+      name: VipeGamingYT
 worlds:
   checkers:
     inheritance:
