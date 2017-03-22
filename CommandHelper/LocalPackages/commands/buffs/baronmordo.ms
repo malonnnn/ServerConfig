@@ -15,17 +15,9 @@
              'powers': array( 
                  "/buff", 
                  "/carryplayer", 
-                 "/dismountplayer", 
-                 "/jump 0-5", 
-                 "/run 0-3", 
-                 "/haste 0-1", 
-                 "/fly"
+                 "/dismountplayer"
              ), 
              'buffs': array( 
-                 "/effect ". @plr ." 5 9999 2 true", 
-                 "/effect ". @plr ." 21 9999 9 true", 
-                   "/effect ". @plr ." 10 9999 2 true", 
-                   "/effect ". @plr ." 16 9999 1 true", 
                  "/shot give ". @plr ." darkmagic"                 
              ) 
          ) 
