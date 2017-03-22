@@ -534,13 +534,12 @@ regions:
         flags:
             time-lock: '4000'
             build: deny
-            invincible: allow
             game-mode: SURVIVAL
-            blocked-cmds: [/tpa, /fly, /tpahere, /give, /teleport, /tphere, /tpaccept,
-                /thru, /tp]
+            blocked-cmds: [/thru]
+            invincible: allow
+            passthrough: allow
             block-break: deny
             snow-fall: deny
-            passthrough: allow
             interact: allow
             block-place: deny
         owners: {}

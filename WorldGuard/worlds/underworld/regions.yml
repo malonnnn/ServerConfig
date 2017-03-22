@@ -20,46 +20,40 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    rooms:
-        min: {x: -43.0, y: 7.0, z: 47.0}
-        max: {x: 10.0, y: 8.0, z: 81.0}
-        members:
-            unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, cb871f86-94e5-4bf3-a78e-42f73c2215c4,
-                323c42e2-abb0-4a25-a818-1cb14f8a53f8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8,
-                a8185de3-b053-4aca-9eb6-d98728e476ad]
-        flags: {game-mode: CREATIVE, interact: deny, interact-group: NON_MEMBERS,
-            game-mode-group: MEMBERS}
+    room4-buttons:
+        parent: room4
+        min: {x: -26.0, y: 21.0, z: -30.0}
+        max: {x: -25.0, y: 21.0, z: -29.0}
+        members: {}
+        flags: {}
         owners: {}
         type: cuboid
+        priority: 0
+    rooms:
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: deny,
+            interact-group: NON_MEMBERS, game-mode-group: MEMBERS}
+        owners: {}
+        type: global
         priority: 1
     room3:
         parent: rooms
-        min: {x: -43.0, y: 2.0, z: 72.0}
-        max: {x: -32.0, y: 6.0, z: 80.0}
-        members:
-            unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8]
-        flags: {build: allow, build-group: MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        min: {x: -51.0, y: 20.0, z: -40.0}
+        max: {x: -43.0, y: 22.0, z: -28.0}
+        members: {}
+        flags: {}
         owners: {}
         type: cuboid
         priority: 2
     room4:
         parent: rooms
-        min: {x: -31.0, y: 2.0, z: 72.0}
-        max: {x: -21.0, y: 6.0, z: 80.0}
-        members:
-            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8]
-        flags: {build: allow, build-group: MEMBERS, interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 2
-    waitingarea:
-        min: {x: -7.0, y: 12.0, z: 16.0}
-        max: {x: -1.0, y: 14.0, z: 20.0}
+        min: {x: -37.0, y: 20.0, z: -40.0}
+        max: {x: -29.0, y: 22.0, z: -28.0}
         members: {}
         flags: {}
         owners: {}
         type: cuboid
-        priority: 1
+        priority: 2
     underworld-throne:
         min: {x: -11.0, y: 13.0, z: 26.0}
         max: {x: 13.0, y: 38.0, z: 41.0}
@@ -70,19 +64,19 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    backdoor:
-        min: {x: -38.0, y: 12.0, z: -4.0}
-        max: {x: -33.0, y: 13.0, z: -1.0}
+    mainoffice:
+        min: {x: -57.0, y: 15.0, z: -10.0}
+        max: {x: -55.0, y: 15.0, z: -4.0}
         members: {}
-        flags: {entry: deny, interact: deny}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
-        priority: 1
-    darklordoffice:
-        min: {x: -7.0, y: 4.0, z: 202.0}
-        max: {x: 1.0, y: 7.0, z: 210.0}
+        priority: 2
+    constructionzone:
+        min: {x: -63.0, y: 12.0, z: -19.0}
+        max: {x: -23.0, y: 30.0, z: 21.0}
         members: {}
-        flags: {interact: deny}
+        flags: {entry: deny, entry-deny-message: Entry Prohibited - Construction Zone}
         owners: {}
         type: cuboid
         priority: 1
@@ -95,42 +89,51 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    lever:
-        min: {x: -63.0, y: 14.0, z: 2.0}
-        max: {x: -63.0, y: 14.0, z: 2.0}
-        members: {}
-        flags: {interact: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
-    innerdoor:
-        min: {x: -49.0, y: 13.0, z: 6.0}
-        max: {x: -49.0, y: 13.0, z: 6.0}
-        members: {}
-        flags: {interact: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
     room1:
         parent: rooms
-        min: {x: -31.0, y: 2.0, z: 62.0}
-        max: {x: -21.0, y: 6.0, z: 70.0}
-        members:
-            unique-ids: [8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
-        flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        min: {x: -37.0, y: 20.0, z: 14.0}
+        max: {x: -29.0, y: 22.0, z: 26.0}
+        members: {}
+        flags: {}
         owners: {}
         type: cuboid
         priority: 2
     room2:
         parent: rooms
-        min: {x: -43.0, y: 2.0, z: 62.0}
-        max: {x: -32.0, y: 6.0, z: 70.0}
-        members:
-            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd]
-        flags: {build: deny, build-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        min: {x: -51.0, y: 20.0, z: 14.0}
+        max: {x: -43.0, y: 22.0, z: 26.0}
+        members: {}
+        flags: {}
         owners: {}
         type: cuboid
         priority: 2
+    room1-buttons:
+        parent: room1
+        min: {x: -26.0, y: 21.0, z: 15.0}
+        max: {x: -25.0, y: 21.0, z: 16.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    paintings:
+        min: {x: -56.0, y: 16.0, z: -16.0}
+        max: {x: -54.0, y: 21.0, z: 1.0}
+        members: {}
+        flags: {build: deny, interact: deny, entity-item-frame-destroy: deny}
+        owners: {}
+        type: cuboid
+        priority: 2
+    banned:
+        min: {x: -60.0, y: 0.0, z: -101.0}
+        max: {x: 77.0, y: 203.0, z: 57.0}
+        members:
+            unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e]
+        flags: {entry: deny, entry-deny-message-group: MEMBERS, entry-group: MEMBERS,
+            entry-deny-message: You have been Banished from Entering the Dark Lords Castle. Be Gone Mortal!}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members:
             unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd, 0130299a-4489-429d-b4eb-68643a4c6ac8,
@@ -138,10 +141,11 @@ regions:
                 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8, a8185de3-b053-4aca-9eb6-d98728e476ad]
         flags:
             item-drop: allow
-            blocked-cmds: [/tpa, /sethome, /tpaccept, /home, /tphere, /thru, /tp,
-                /gamemode, /tptoggle, /fly, /tpo, /gmc, /warp]
             allowed-cmds-group: MEMBERS
             invincible: allow
+            blocked-cmds: [/tpa, /tppos, /sethome, /tpask, /tp2p, /tpaall, /gms, /tpaccept,
+                /home, /tphere, /thru, /tp, /gamemode, /tptoggle, /fly, /tpo, /tpl,
+                /tpahere, /tpyes, /gmc, /warp, /tpall, /tps]
             mob-damage: deny
             mob-damage-group: MEMBERS
             interact: allow
