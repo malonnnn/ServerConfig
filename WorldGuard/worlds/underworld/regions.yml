@@ -20,14 +20,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    officeplate:
-        min: {x: -3.0, y: 4.0, z: 186.0}
-        max: {x: -3.0, y: 4.0, z: 188.0}
-        members: {}
-        flags: {interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     rooms:
         min: {x: -43.0, y: 7.0, z: 47.0}
         max: {x: 10.0, y: 8.0, z: 81.0}
@@ -67,6 +59,14 @@ regions:
             unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4]
         flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
             interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
+        owners: {}
+        type: cuboid
+        priority: 1
+    backdoor:
+        min: {x: -38.0, y: 12.0, z: -4.0}
+        max: {x: -33.0, y: 13.0, z: -1.0}
+        members: {}
+        flags: {entry: deny, interact: deny}
         owners: {}
         type: cuboid
         priority: 1

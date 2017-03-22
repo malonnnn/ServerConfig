@@ -13,9 +13,7 @@
              'op': 'false', 
              'speech': "My Strength comes from the Dark Dimension!", 
              'powers': array( 
-                 "/buff", 
-                 "/carryplayer", 
-                 "/dismountplayer"
+                 "/buff"
              ), 
              'buffs': array( 
                  "/shot give ". @plr ." darkmagic"                 
