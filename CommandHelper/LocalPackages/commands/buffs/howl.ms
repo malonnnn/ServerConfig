@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0OTAyMzk0NDczMTIsInByb2ZpbGVJZCI6IjVkY2Y0NTcyNmNiYTQ3N2U5MjgxN2JkZGQ3ZWM1Njc2IiwicHJvZmlsZU5hbWUiOiJXeW5kZmFsbF8iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84OGY3NjRjNDM3ODM3NDM2ODdkOTYzMjkxYWUwNDllNDU3NjA2NDBkZTM4ODMxMTc4Yzk5NWNiN2Q1YTViNGIifX19',
             'trail': '',
             'op': 'false',
-            'speech': "All this is just sorcery to keep the Witch of the West away.",
+            'speech': "All this is just sorcery to keep the Witch of the Waste away.",
             'powers': array(
                 "/buff",
                 "/jump 0-5",
@@ -20,11 +20,9 @@
                 "/disguise"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 5 9999 7 true",
                 "/effect ". @plr ." 11 9999 5 true",
                 "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true"           
+                "/effect ". @plr ." 21 9999 3 true"           
             )
         )
