@@ -49,7 +49,8 @@ regions:
         parent: rooms
         min: {x: -37.0, y: 20.0, z: -40.0}
         max: {x: -29.0, y: 22.0, z: -28.0}
-        members: {}
+        members:
+            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8, a8185de3-b053-4aca-9eb6-d98728e476ad]
         flags: {}
         owners: {}
         type: cuboid
@@ -81,6 +82,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    mainoffice-door:
+        min: {x: -37.0, y: 13.0, z: 0.0}
+        max: {x: -37.0, y: 13.0, z: 0.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     room2-buttons:
         parent: room2
         min: {x: -47.0, y: 21.0, z: 27.0}
@@ -103,7 +112,8 @@ regions:
         parent: rooms
         min: {x: -37.0, y: 20.0, z: 14.0}
         max: {x: -29.0, y: 22.0, z: 26.0}
-        members: {}
+        members:
+            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd]
         flags: {}
         owners: {}
         type: cuboid
@@ -138,7 +148,7 @@ regions:
         min: {x: -60.0, y: 0.0, z: -101.0}
         max: {x: 77.0, y: 203.0, z: 57.0}
         members:
-            unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e, 625ea51d-6106-40e3-b296-ffd16767472d]
+            unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e]
         flags: {entry: deny, entry-deny-message-group: MEMBERS, entry-group: MEMBERS,
             entry-deny-message: You have been Banished from Entering the Dark Lords Castle. Be Gone Mortal!}
         owners: {}
