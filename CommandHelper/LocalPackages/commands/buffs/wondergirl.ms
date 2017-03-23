@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '§4W§fon§eder §4G§fir§9l',
+            'name': '§eW§4on§ed§4er §9Gi§8rl',
             'class': 'wondergirl',
             'sig': 'hbv6fkTfz9EwylBbDOgrf3nFlIPc9NeheZafShLbN4/+4aJGxXu9zdUV1fdCSoFMZ36+aSo/hsUFB0QO8TMdOA1bO76JuoDlZDrHx4X2nytxd5DuCHtL4erOAZ+hHzFV3KzhBzVtv+AY5mDAiyzgF9qHm0LMJ89yYcIuKOtqcHHmWVRlp0s0q/dk/1a3d2KzTrguk4OvUCUSxxqNoND3TDJS3j+5LlUK2e8o/3E0e1/xyz7TjomR45AVqkyu4enNlewuLJKfOkEkaPDGRNT2J5p8ljT3bKbxdxv5D1Dbe1l2X3Rwttugb7/B3rqIkciZuQpNtIw1nx7/f5ETBuNJncAFq5ZXq6wwUy1ua1Y9w8PEfbqVxB+oTH2JJSQxY9T53od69lkVm9g6AaTVMg2JXarOF4+Xwb8ZKvKdWxem00L6iiWthLGUKmuptSzF1Fh6XTEHnCfhWfD2CQ0PU98Wh9FsZ9H2VDFFJCtar5TsAv6lB6I+XNkaT3jRMX5jEQgCfmhG7alx0pgEidpFBAoYQk2j0eCCXS7cgKqpZZer/qVeBi+ZF/Z+ME2+2r1z7+DXEjctmx2+NjqZ0BNc2Jy9wBS41sY0WPNBFygpUx6ugjg2Ws0rXUH3N93wtouKH96Hj326qzm3oHCkZPjcJE+cSzWOQsvC3pYduKdcPjpvYuc=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0OTAyMTc3OTYxMTEsInByb2ZpbGVJZCI6ImZiYjhjMDcyNGM0YjQ5Yzg5NDhiMjZlOGFkNzMwOTllIiwicHJvZmlsZU5hbWUiOiJTdGFyYmVhcnp6Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzIzNDdlNzExMzc4NzliZDY5NzVlZDY0NzM5NjI3YTBkMDhiZjM2NjA5MTkxOWY1N2JjNjcyZTM4OGM5N2YifX19',
