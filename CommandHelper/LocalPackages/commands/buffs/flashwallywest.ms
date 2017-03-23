@@ -27,7 +27,8 @@
                 "/haste 0-7",
                 "/tppos <x y z world>",
                 "/thru (phases through walls)",
-                "/thrudestabilize"
+                "/thrudestabilize",
+                "/modifyspeed <playername> <number>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
