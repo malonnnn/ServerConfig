@@ -1,0 +1,31 @@
+utopiaLaunc2:/utopialaunch2 $plr = >>>
+
+    set_block_at(-1408,15,1806,0,'alpha')
+    set_block_at(-1410,15,1806,0,'alpha')
+    set_block_at(-1408,16,1806,0,'alpha')
+    set_block_at(-1410,16,1806,0,'alpha')
+    set_block_at(-1408,17,1806,0,'alpha')
+    set_block_at(-1409,17,1806,0,'alpha')
+    set_block_at(-1410,17,1806,0,'alpha')
+    set_block_at(-1409,15,1806,166,'alpha')
+
+    set_block_at(-1409,40,1807,152,'alpha')
+    set_timeout(50,closure(
+        set_block_at(-1409,40,1807,0,'alpha')
+    ))
+
+    @vic = $plr
+    set_pmode(@vic,'SPECTATOR')
+    set_pvelocity(@vic,0,10,0) 
+    @id = set_interval(50,closure(
+        set_pvelocity(@vic,0,10,0) 
+    ))
+    export(@vic.'utopiaLaunch2',@id)
+
+    set_timeout(3950,closure(
+        @id = import(@vic.'utopiaLaunch2')
+        clear_task(@id)
+        runas(~console,'/warp thealpha2 '.@vic)
+        set_pmode(@vic,'SURVIVAL')
+    ))
+<<<
