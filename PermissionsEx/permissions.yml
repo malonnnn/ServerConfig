@@ -3582,6 +3582,7 @@ groups:
         - worldedit.navigation.thru.command
         - essentials.tppos
         - ch.alias.speedforcewhirlwind
+        - ch.alias.modifyspeed
         - ch.alias.speedforceteleport
         - ch.alias.vibrate
         - ch.alias.stopvibrating
@@ -5280,30 +5281,6 @@ groups:
         - ch.alias.run1
         - ch.alias.haste0
         - ch.alias.haste1
-      survival_nether:
-        permissions:
-        - ch.alias.magneto
-        - essentials.fly
-        - essentials.speed.fly
-        - essentials.speed
-        - ch.alias.jump0
-        - ch.alias.jump1
-        - ch.alias.run0
-        - ch.alias.run1
-        - ch.alias.haste0
-        - ch.alias.haste1
-      survival_the_end:
-        permissions:
-        - ch.alias.magneto
-        - essentials.fly
-        - ch.alias.jump0
-        - essentials.speed.fly
-        - essentials.speed
-        - ch.alias.jump1
-        - ch.alias.run0
-        - ch.alias.run1
-        - ch.alias.haste0
-        - ch.alias.haste1
   mandrakk:
     inheritance:
     - commonherotraits
@@ -5634,7 +5611,8 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
-    - multiverse.access.underworld
+    - essentials.warp
+    - -essentials.warps.thealpha2
     - chatcontrol.commands.channels.players
     - chatcontrol.chat.format.color
     - format.group
@@ -5889,7 +5867,6 @@ groups:
     - essentials.tpaccept
     - essentials.tpahere
     - essentials.tpdeny
-    - essentials.warp
     - essentials.warps.*
     - essentials.worth
     - griefprevention.claims.give
@@ -6089,6 +6066,7 @@ groups:
         - essentials.build.interact.*
       alpha:
         permissions:
+        - essentials.build.interact.77
         - -essentials.suicide
         - essentials.build.interact.72
         - essentials.build.interact.64:*
@@ -6131,9 +6109,6 @@ groups:
         - essentials.build.*
       underworld:
         permissions:
-        - -essentials.sethome
-        - -essentials.home
-        - -essentials.warp
         - essentials.gamemode
         - essentials.fly
         - essentials.build.*
@@ -8450,7 +8425,7 @@ groups:
     - commonherotraits
     options:
       prefix: '&e&l&kA&f&llph&e&la'
-      suffix: '&f&l&o'
+      suffix: '&e&l&o'
   thepresence:
     inheritance:
     - commonherotraits
@@ -9296,6 +9271,7 @@ groups:
       suffix: '&c&l&o'
       prefix: '&4&l&mO&8me&4&lg&8a'
     permissions:
+    - essentials.*
     - essentials.warps.*
     - essentials.warps.underworld
     worlds:
@@ -9943,6 +9919,7 @@ users:
   391762eb-24f6-4d95-84d6-bfac682d575a:
     options:
       name: Mamby101
+    permissions: []
   391d1bda-f3b3-4660-baf3-11193e84419d:
     group:
     - mortal
@@ -10010,7 +9987,7 @@ users:
       name: lion002
   4087bc7f-c213-47df-bf2d-41650030be45:
     group:
-    - quarantine
+    - redhood
     options:
       name: UltraOwlDC
     worlds:
@@ -10373,7 +10350,7 @@ users:
       name: JustKas
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - flashbarryallen
+    - blacklanternmartianmanhunter
     options:
       name: EmmettGaming
     worlds:
@@ -10472,7 +10449,7 @@ users:
       name: HunterWC
   6da42a0e-2e80-40e6-8035-86849ca691e5:
     group:
-    - bluelanternbarryallen
+    - blackracerwilliewalker
     options:
       name: ShadowSlayer34
   6db256b3-c55b-4cd0-86e9-759aaabcd1f7:
@@ -11962,6 +11939,8 @@ users:
       rollercoaster:
         permissions:
         - essentials.build.*
+      underworld:
+        permissions: []
   fc04e24a-2990-48ab-bbf1-9d0064203a0b:
     group:
     - starfire
@@ -13474,7 +13453,7 @@ users:
       name: Captin_Awesome
   a8185de3-b053-4aca-9eb6-d98728e476ad:
     group:
-    - flashbarryallen
+    - flashwallywest
     options:
       name: nightghost2
     permissions: []
@@ -13571,7 +13550,7 @@ users:
       name: ccv3
   8cb964f5-d345-4a65-8811-cb3b0c11b51b:
     group:
-    - superman
+    - mortal
     options:
       name: Vengeance007
     permissions: []
@@ -13930,7 +13909,7 @@ users:
       name: The_Legend_Zz
   25096e3b-3798-41e6-b1a6-1f257ebe6471:
     group:
-    - kidflashwallywest
+    - martianmanhunter
     options:
       name: Darkkoward
   funcaptainrex:
@@ -14047,7 +14026,7 @@ users:
       name: KINGThunder4459
   625ea51d-6106-40e3-b296-ffd16767472d:
     group:
-    - blackracerwilliewalker
+    - mortal
     options:
       name: zap4th
     permissions: []
@@ -14216,7 +14195,7 @@ users:
     permissions: []
   002b10b9-d275-422c-ba68-255853e98caa:
     group:
-    - mortal
+    - vision
     options:
       name: Huligan73
     permissions: []
@@ -14535,7 +14514,7 @@ users:
       name: Khitzu
   286a6fb4-46f6-4d97-be53-eb89cc2ff65a:
     group:
-    - mortal
+    - savitar
     options:
       name: surferboy2004
     permissions: []
@@ -14582,7 +14561,7 @@ users:
       name: StrikerZ_5000
   08239f79-b930-4893-b723-44f38d003500:
     group:
-    - blacklanternmartianmanhunter
+    - artemis
     options:
       name: Brettconk
     permissions: []
@@ -14608,7 +14587,7 @@ users:
       name: SirRicardo
   69a9802f-3ccf-4a91-b2b7-2fc8b9cf86ba:
     group:
-    - blacklanternmartianmanhunter
+    - blacklanterndeathstormraymondrusch
     options:
       name: joshaftel
     permissions: []
@@ -14719,7 +14698,7 @@ users:
       name: EpicProGamingTv
   75dfb9b4-e7dd-4f3e-8832-61d5f6ccb0ca:
     group:
-    - missmartian
+    - mortal
     options:
       name: Hammy304
   28bfb98b-5e9b-4bb8-bd43-a2025c37585f:
@@ -15061,7 +15040,7 @@ users:
       name: Wyndfall_
   45bcb3ec-1dcb-41fe-ac6e-dac3c41f3ea7:
     group:
-    - timewraith
+    - blackflash
     options:
       name: BlueWolf4Life
   950a3113-378a-4078-aaed-40556a5cbd76:
@@ -15091,7 +15070,7 @@ users:
       name: Trixio10
   2c2de5e0-bf4e-4def-a7bb-507648fb9d66:
     group:
-    - mortal
+    - flashbarryallen
     options:
       name: VipeGamingYT
   c888ee0d-b75c-4b8b-bb7f-5698222b786f:
@@ -15106,7 +15085,7 @@ users:
       name: jeditony7
   d30e937c-c916-4d85-9bf1-03ae0a837f48:
     group:
-    - professorx
+    - timewraith
     options:
       name: _AquaStorm_
   0e88e52e-2945-464e-b4ba-e1e162c6786d:
@@ -15118,6 +15097,16 @@ users:
     - rasalghul
     options:
       name: Asriel_Playz
+  fad8db44-888f-44dd-8752-247eade09590:
+    group:
+    - mortal
+    options:
+      name: MinecraftNerdHD
+  mortal:
+    worlds:
+      underworld:
+        permissions: []
+    permissions: []
 worlds:
   checkers:
     inheritance:
