@@ -17,10 +17,14 @@
                  "/intangible",
                  "/tangible",
                  "/mindcontrol <playername>",
-                 "/stopmindcontrol"
+                 "/stopmindcontrol",
+                 "/hover on",
+                 "/hover off",
+                 "/jump 0-4"
              ), 
              'buffs': array( 
-                 "/shot give ". @plr ." darkmagic"                 
+                 "/shot give ". @plr ." darkmagic", 
+                 "/effect ". @plr ." 21 9999 9 true"                
              ) 
          ) 
 
