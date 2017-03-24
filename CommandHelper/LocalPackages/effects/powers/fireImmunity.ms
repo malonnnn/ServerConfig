@@ -1,7 +1,7 @@
 bind(entity_damage, null, array('cause': 'FIRE'), @e) {
    
     @plr = player()
-    if(has_permission(@plr, "powers.immunity.fire"))
+    if(@plr != '~console' && has_permission(@plr, "powers.immunity.fire"))
     {
         cancel()
     }
@@ -9,7 +9,7 @@ bind(entity_damage, null, array('cause': 'FIRE'), @e) {
 bind(entity_damage, null, array('cause': 'FIRE_TICK'), @e) {
    
     @plr = player()
-    if(has_permission(@plr, "powers.immunity.fire"))
+    if(@plr != '~console' && has_permission(@plr, "powers.immunity.fire"))
     {
         cancel()
     }
