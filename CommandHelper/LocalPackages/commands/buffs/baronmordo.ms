@@ -15,7 +15,9 @@
              'powers': array( 
                  "/buff",
                  "/intangible",
-                 "/tangible"
+                 "/tangible",
+                 "/mindcontrol <playername>",
+                 "/stopmindcontrol"
              ), 
              'buffs': array( 
                  "/shot give ". @plr ." darkmagic"                 
