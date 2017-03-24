@@ -2,13 +2,18 @@
 
 
 @hero = associative_array(
-            'name': '§4A§7t§8o§4m',
+            'name': '§8At§1o§4m',
             'class': 'atom',
-            'sig': 'DfoZzdQtG3Kmg03kSwJQsFemeJBcDBnXy1niKB+WHs1WlsmOWfzkIMvwv8OSjragAYxBCwQdyuosaAmAXDP4hec54aV2wZ9/SmexQOwO+wfQE0fmVK0Qimm16mjDdCZOckKncgzHIfsE242uvinKx7SgosoBFXR/NMxt/PuiZKka+O09a/IYGzdGgJlT7S5sAwuorfoCxfwLoGNDpMv/pOmdS6r0MFIS69A8ShQIhVG83GeLrgzvjHIhtKQ4iAntIvIi2mo+xDrSoQfX75mFVEyEb6p5abRW16k2wAmS5B+lVc86VFjmskZ2EjOp8M5hFpheFTusvXQwY4tD759GKDJsl8OLZ5vBzSaW/2nuvMBsgUwPOc32y64J4AHdVMbj4yuI7gqg+9275aavbOCLteZ4Hkoo72O1ir8eWiyS2Hofb8UBGTNiGDqcyZKQLfWMMhQU1MCAwGBpD+AMLBeAu8joNOKh3ZcZ7Ngq4vM8q1Tj08qvBq1Tj5N9ktejhsHtYc/HUVzt4q7gWXLWFdi4BEZ3DXjgBQxQWY4WrEupArrJfqL2rerGg7bzfHAhAqztZ0AoPQsMWXn0QskVxZOPRfZ85QdfXUqwmuLnZp0kUXS0GXwWcg7XngtL+1U7gc7sRDE7hq1BYS/nMQ0YWW0kd+A5nVw4ZSbNIaib/4GZt5c=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0NzI3ODAzMDkyMzUsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NiZDczOTcxMTY2MTM2YjEyNmZmN2U1Y2VmYzIyNTgzODYxYTczZjU3NjFiMTBmNTg4OGUzZDg5ZGE1ZTllMCJ9fX0=',
+            'sig': 'EEtNke//lUbjur7+jmMGTzl0N/TtJPTGDtbd37U//MOx7S7pqvpTDQnjhS1xJyPNDrSNC2sGgMGfoDdSBjS1VSBq0SxE/+t+ohVH65bIU+QebRerRws6LrU3HwujVwhDeAGOzSxyAtHP/qKYdx03vWD2Jf88LwTGsmJf0xq7RGATAG2MShHuArYlo9WOLFGePPV+c/SEqUTdUrrQh8i5U+xtsXhRLEZMW2f7GCj2uSeWMww8fSUJcfBA6H3d0Frc8MF10nDnAxu//4Q0oC3weGSSehH8OmY+pI6tDPyfcTua/HVcEwY1+GSohcZuy7vn3m9lzEx4Q6+zACB+jula5K6Cbr41zulUks3CHLx+DtEaszZXc6439YdiQGhlvnWEOdQUPZ6t3LfYDEixSbG38N2Wria9RJlyqi1bpA/g3BKURHza0bLumjXqu7g217R1jX31xs6x6i1IVtIznQa8FQdljf8AcOdu+WW+j3743DPAP/72uPE09q9Y0VcrwVpI4vyyn0Q2KTXawqtNh5VQnxHn9Rl9pTlRLPwKL69whrlHWpr3iTOuvk5tGfnwVj394rvgO0VFX3OaO6F2KYu1RXGnyC511tX3M16tjqVsWN/14znNBf7OwGv9v3Wpz35BhcBxBdrx5Soan+fU3kW1nQ1PNWdY3fkMLsl3YTtsj8s=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0OTAzMjAyMDU1MjEsInByb2ZpbGVJZCI6IjJkYjYyYTM1NjA2NTRjMmM5NjRkZWZjNWUwYWNlMThhIiwicHJvZmlsZU5hbWUiOiJBbmRyZWlNQ1UiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NiZDczOTcxMTY2MTM2YjEyNmZmN2U1Y2VmYzIyNTgzODYxYTczZjU3NjFiMTBmNTg4OGUzZDg5ZGE1ZTllMCJ9fX0=',
+            'altskins': array(
+                array(
+                    'sig': 'Nqw/8KSpjDasvNXh/4igYzRqCBo17ILVIu1n4El+tYdRGly31tWJ7qM7UwV5vvQeKwxIG0A4OtOQoBwkhYRXPlZxQI2zHqVIRSlNquiZBOik6ED8W0eu64DdYjZttaH7yAlbWsjMN4+MhHD761vk6R+Co50AmKJDN2yyEFKNyQFOIAPmTXlyr95IeLD4RvVhZ9QB1CszybUa6aRd0OpVZNDXSAqkHiLZULNeqGjYCI+wetT88GWk2S7hCEHRAZInwPBEs03OfkVa3MD+HfWCSs8SKVX8KhuW2+mxV/vDw12H1O/GTr1GgT9j+p7msLxuPiAkP1PsJcobrdrfb2vVLYYAI2DdLdYrIn5zA88nAik65FWQ80H2Y381sxqTHxwjIVrJzRr4TlFUi0YmtY//SkM+a3ST/4sCTWzxFO8DKXFWfHc+VwkK5NCtA/0xv5AmQPgjBlo4NtuCP7TLaGL3H2ehj7s8bS0qJS48mlC48rRDzChbM+jUjVs/SzMwcXFnzYe8Pw+FqlAJjjXXi0DpBCUFAlgBspPltfVq1Gp2kX8plz/Cg4hWUzzNdRDarJgTGjT815Eovajjf1OcehgHM2UCg1YJUapeCBuohtOmsdCbpInR1ZefrUaSgg3JAr3xNpAHpjV9qx5M+FZMZ0OvErzKuIO0Dw8hBY0ddlNja3E=',
+                    'val': 'eyJ0aW1lc3RhbXAiOjE0ODk5Njg1NTE5MzYsInByb2ZpbGVJZCI6IjJkYjYyYTM1NjA2NTRjMmM5NjRkZWZjNWUwYWNlMThhIiwicHJvZmlsZU5hbWUiOiJBbmRyZWlNQ1UiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU5ZjNhZWNlNzUxNWQ1YjVhNzk4ODM1ODkzMWI2OGIyNmJhMjVlOTVlZTdhOWE0NWVmYzMzNzUyYTFmIn19fQ==',   
+                ),            
             'trail': '',
             'op': 'false',
-            'speech': "Oh shit I'm little!",
+            'speech': "WTF I'm little!!",
             'powers': array(
                 "/buff",
                 "/flyspeed <number>",
