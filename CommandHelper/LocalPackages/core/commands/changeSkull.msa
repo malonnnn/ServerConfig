@@ -54,7 +54,7 @@ changeSkull:/changeskull $machineNumber $plr $dir = >>>
             if(@a != "empty")
             {
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
-                _updateHologram(@machineNumber, @hero['class'])
+                _updateHologram(@machineNumber, @hero['class'],@hero['op'])
                 
             }else{
                 _updateHologram(@machineNumber, 'remove')
