@@ -263,7 +263,7 @@ bind('player_chat', null, null, @e) {
         die()
     }
     
-    if(@pname == "EmmettGaming"){
+    if(has_permission(@pname,'case.tolower')){
         @msg = to_lower(@msg)
       modify_event(message, @msg)
     }
