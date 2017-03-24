@@ -6,3 +6,11 @@ bind(entity_damage, null, array('cause': 'FIRE'), @e) {
         cancel()
     }
 }
+bind(entity_damage, null, array('cause': 'FIRE_TICK'), @e) {
+   
+    @plr = player()
+    if(has_permission(@plr, "powers.immunity.fire"))
+    {
+        cancel()
+    }
+}
