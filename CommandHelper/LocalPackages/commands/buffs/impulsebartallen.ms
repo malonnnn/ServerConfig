@@ -11,24 +11,18 @@
             'speech': "Dude! That is so crash!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
                 "/back (In the speedforce)",
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
                 "/carryplayer <playername>",
                 "/dismountplayer",
                 "/run 0-9",
                  "/run 0-1 (In speedforce)",
                 "/haste 0-4",
-                "/thru (phases through walls)",
                 "/tppos <x y z world>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 10 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"                
             )
         )
