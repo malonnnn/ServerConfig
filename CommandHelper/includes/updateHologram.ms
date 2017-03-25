@@ -41,7 +41,7 @@ proc(_updateHologram, @hologramID, @class, @isOp,
         }
     }else{
         runas(~console,"/npc despawn")
-        set_block_at(@x,@y,@z,'35:5','greenfield')
+        set_block_at(@x,@y - 1,@z,'35:5','greenfield')
     }
     
 )
