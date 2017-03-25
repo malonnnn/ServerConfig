@@ -18,14 +18,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 6
-    stoves:
-        min: {x: 407.0, y: 77.0, z: 28.0}
-        max: {x: 408.0, y: 77.0, z: 28.0}
-        members: {}
-        flags: {interact: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     babypickle101house:
         parent: city
         members: {}
@@ -50,6 +42,14 @@ regions:
         - {x: 296, z: -1309}
         - {x: 296, z: -1311}
         - {x: 287, z: -1311}
+    stoves:
+        min: {x: 407.0, y: 77.0, z: 28.0}
+        max: {x: 408.0, y: 77.0, z: 28.0}
+        members: {}
+        flags: {interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     modapplications:
         parent: bookchest
         min: {x: -13.0, y: 78.0, z: 240.0}
@@ -78,8 +78,8 @@ regions:
         min: {x: -10000.0, y: 0.0, z: -10000.0}
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
-        flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, pvp: allow,
-            pistons: allow, ghast-fireball: deny}
+        flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, damage-animals: allow,
+            pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
