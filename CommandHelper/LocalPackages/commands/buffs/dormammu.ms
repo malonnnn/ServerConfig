@@ -13,16 +13,12 @@
               'speech': "The Dark Dimension is my own Domain!",  
               'powers': array(  
                   "/buff", 
-                  "/mindcontrol <playername>",
-                  "/stopmindcontrol",
                   "/intangible",
                   "/tangible",
                   "/disguise",
                   "/tp pos",
                   "/fly",
-                  "/flyspeed",
-                  "/jump 0-8",
-                  "/run 0-8"
+                  "/run 0-3"
               ),  
               'buffs': array(  
                   "/shot give ". @plr ." elementalblast",  
