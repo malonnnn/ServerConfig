@@ -24,7 +24,7 @@
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
                 "/thru (phases through walls)",
-            ),
+            )
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
