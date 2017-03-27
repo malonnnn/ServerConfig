@@ -1633,7 +1633,8 @@ groups:
         - ch.alias.haste0
         - ch.alias.haste1
         - ch.alias.haste2
-  boros:
+
+boros:
     options:
       prefix: '&dB&9oro&ds'
       suffix: '&9'
@@ -1643,7 +1644,8 @@ groups:
       '1_9':
         permissions:
         - powers.wallrun
-        - -essentials.protect.damage.fall
+
+- -essentials.protect.damage.fall
         - ch.alias.boros
         - essentials.fly
         - ch.alias.jump0
@@ -1653,7 +1655,8 @@ groups:
         - ch.alias.jump4
         - ch.alias.jump5
         - ch.alias.jump6
-        - ch.alias.jump7
+
+- ch.alias.jump7
         - ch.alias.jump8
         - ch.alias.jump9
         - ch.alias.run0
@@ -1751,6 +1754,22 @@ groups:
         - ch.alias.haste0
         - ch.alias.haste1
         - ch.alias.haste2
+  hawkgirl:
+    options:
+      prefix: '&4H&caw&7k&6gi&er&7l'
+      suffix: '&7'
+    inheritance:
+    - mortal
+    worlds:
+      '1_9':
+        permissions:
+        - ch.alias.hawkgirl
+        - ch.alias.jump0
+        - -essentials.protect.damage.fall
+        - essentials.fly
+        - ch.alias.jump1
+        - ch.alias.jump2
+        - ch.alias.jump3
   batgirl:
     options:
       prefix: '&7B&ea&0t&7gi&8r&7l'
