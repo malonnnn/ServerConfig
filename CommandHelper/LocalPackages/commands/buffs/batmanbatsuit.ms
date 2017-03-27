@@ -21,6 +21,7 @@
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/give ". @plr ." minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook"                
+                "/give ". @plr ." minecraft:diamond_shovel 1 name:&aKr&2y&apt&2o&anite_&7Sp&8ea&7r",
+                "/give ". @plr ." minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook"
             )
         )

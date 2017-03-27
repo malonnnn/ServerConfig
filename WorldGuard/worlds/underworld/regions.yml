@@ -68,9 +68,7 @@ regions:
         min: {x: -11.0, y: 13.0, z: 26.0}
         max: {x: 13.0, y: 38.0, z: 41.0}
         members:
-            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4, 323c42e2-abb0-4a25-a818-1cb14f8a53f8,
-                0130299a-4489-429d-b4eb-68643a4c6ac8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8,
-                869b4227-b51e-452e-adbd-48759a6848dd]
+            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4]
         flags: {other-explosion: deny, build: deny, build-group: NON_MEMBERS, block-break: deny,
             interact: deny, interact-group: NON_MEMBERS, tnt: deny, block-place: deny}
         owners: {}
@@ -146,6 +144,16 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    construction:
+        min: {x: -20.0, y: 12.0, z: -50.0}
+        max: {x: 10.0, y: 49.0, z: 25.0}
+        members:
+            unique-ids: [a8185de3-b053-4aca-9eb6-d98728e476ad]
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
+            interact-group: MEMBERS, game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
     banned:
         min: {x: -60.0, y: 0.0, z: -101.0}
         max: {x: 77.0, y: 203.0, z: 57.0}
@@ -161,10 +169,10 @@ regions:
         flags:
             item-drop: allow
             allowed-cmds-group: MEMBERS
-            invincible: allow
             blocked-cmds: [/tpa, /tppos, /sethome, /tpask, /tp2p, /tpaall, /gms, /tpaccept,
                 /home, /tphere, /thru, /tp, /gamemode, /tptoggle, /fly, /tpo, /tpl,
                 /tpahere, /tpyes, /gmc, /warp, /tpall, /tps]
+            invincible: allow
             mob-damage: deny
             mob-damage-group: MEMBERS
             interact: allow

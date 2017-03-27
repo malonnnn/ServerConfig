@@ -13,6 +13,8 @@ bind(world_changed, null, null, @event,
         runas(~console,'/minecraft:clear '.@player)
     } else if(@to == 'anarchy' && @class != 'anarchy'){
         runas(~console,'/pex user '.@player.' group set anarchy')
+    } else if(@to == 'alpha'){
+        runas(~console,'/effect '.@player.' clear')
     }
 
 )
