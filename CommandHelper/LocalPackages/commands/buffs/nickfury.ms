@@ -13,9 +13,9 @@
             'speech': "Director Of Sheild here.",
             'powers': array(
                 "/buff",
-                "/jump 0-5",
-                "/run 0-4",
-                "/haste 0-4"
+                "/jump 0-2",
+                "/run 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 8 true",
