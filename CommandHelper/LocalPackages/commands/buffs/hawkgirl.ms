@@ -2,12 +2,6 @@
 
 
 
-
-
-
-
-
-
 @hero = associative_array(
 
             'name': '§cHa§4wk§egi§6rl',
