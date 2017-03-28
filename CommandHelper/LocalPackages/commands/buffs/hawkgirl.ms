@@ -1,4 +1,4 @@
-@plr = player()
+minecraft:fireworks@plr = player()
 
 
 
@@ -21,6 +21,7 @@
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/give ". @plr ." minecraft:iron_shovel 1 16:5 name:&4H&ea&cwk&6gi&er&7l's_&8Mace",
+                "/give ". @plr ." minecraft:fireworks 64 name:&4H&ea&cwk&6gi&er&7l's_&7Propelled_Flight",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:5 name:&4H&ea&cwk&6gi&er&7l's_&6Glide_Wings"                
             )
         )
