@@ -16,7 +16,7 @@
                   "/intangible",
                   "/tangible",
                   "/disguise",
-                  "/tppos",
+                  "/tppos <x> <y> <z>",
                   "/fly",
                   "/run 0-3"
               ),  
