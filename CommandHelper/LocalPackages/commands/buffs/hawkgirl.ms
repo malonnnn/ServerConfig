@@ -14,7 +14,9 @@
             'powers': array(
                 "/buff",
                 "/jump 0-3",
-                "/fly"
+                "/fly",
+                "/carryplayer <player>",
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",
