@@ -45,13 +45,13 @@
                 "/effect ". @plr ." 5 9999 2 true",
                 "/effect ". @plr ." 10 9999 4 true",
                 "/shot give ". @plr ." pistol",
-                "/shot give ". @plr ." bow",
                 "/shot give ". @plr ." Type95",
                 "/shot give ". @plr ." Olympia",
-                "/shot give ". @plr ." Smokebomb",
+                "/give ". @plr ." Smokebomb",
                 "/shot give ". @plr ." Gauss",
                 "/shot give ". @plr ." Putty",
                 "/shot give ". @plr ." Grenade",
-                "/shot give ". @plr ." C4"                
-            )
+                "/shot give ". @plr ." C4" 
+                "/give ". @plr ." minecraft:iron_sword 1 16:20 name:&2Ch&8es&7hi&4re's_&2S&8a&7i")
+                "/give ". @plr ." minecraft:bow 1 51:1 name:&2Th&8ro&7w"
         )
