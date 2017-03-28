@@ -22,6 +22,10 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers"
+                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers",
+                "/give ". @plr ." minecraft:diamond_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&1Blue_&1Ranger's_&1Helmet",
+                "/give ". @plr ." minecraft:diamond_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&1Blue_&1Ranger's_&1Chestplate",
+                "/give ". @plr ." minecraft:diamond_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&1Blue_&1Ranger's_&1Leggings",
+                "/give ". @plr ." minecraft:diamond_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&1Blue_&1Ranger's_&1Boots" 
             )
         )
