@@ -1,4 +1,4 @@
-minecraft:fireworks@plr = player()
+@plr = player()
 
 
 
