@@ -435,6 +435,27 @@ anvil:
     costs:
         mana: 100
 
+appearanceshop:
+    icon: wood_hoe
+    inherit: buyshop
+    parameters:
+        auto_close: true
+        confirm: true
+        confirm_filler: stained_glass:3
+        require_wand: true
+        items:
+        - item: wand|appearance_beginner
+          cost: 100
+        - item: wand|appearance_student
+          cost: 1000
+        - item: wand|appearance_apprentice
+          cost: 5000
+        - item: wand|appearance_master
+          cost: 10000
+        - item: wand|appearance_engineer
+          cost: 100000
+        - item: wand|appearance_conduit
+          cost: 1000000
 architectshop:
     icon: gold_axe
     category: npc
@@ -10274,7 +10295,7 @@ sponge:
       allow_max_range: false
       range: 32
       check_destructible: true
-      destructible: water
+      destructible: all_water
       brush: erase
       radius: 3
       transparent: transparent_to_construction
