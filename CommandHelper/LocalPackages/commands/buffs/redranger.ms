@@ -17,7 +17,9 @@
                 "/run 0-2",
                 "/jump 0-4",
                 "/haste 0-5",
-                "(Shoots fireballs with bare hands)"
+                "(Shoots fireballs with bare hands)",
+                "/zord",
+                "/unzord"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
