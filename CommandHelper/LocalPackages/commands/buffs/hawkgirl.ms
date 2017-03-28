@@ -18,7 +18,6 @@
                 "/flyspeed <speed>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 8 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&4H&ea&cwk&6gi&er&7l's_&6Glide_Wings"                
             )
