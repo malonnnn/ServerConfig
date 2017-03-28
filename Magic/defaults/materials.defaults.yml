@@ -7,6 +7,14 @@
 #
 # https://github.com/elBukkit/MagicPlugin/tree/master/src/main/resources/defaults/materials
 #
+all_lava:
+- lava
+- stationary_lava
+
+all_water:
+- water
+- stationary_water
+
 # Materials that must attach to another material when cloning or replicating
 # These are done in a second pass so they attach properly after whatever they've
 # attached to has copied over.
@@ -584,10 +592,6 @@ interactible:
 - trap_door
 - iron_trap_door
 
-lava:
-- lava
-- stationary_lava
-
 melee:
 - diamond_sword
 - wood_sword
@@ -1003,10 +1007,6 @@ unlocked_doors:
 unsafe:
 - lava
 - stationary_lava
-water:
-- water
-- stationary_water
-
 wearable:
 - skull_item
 - gold_helmet
