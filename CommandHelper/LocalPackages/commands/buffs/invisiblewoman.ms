@@ -14,7 +14,7 @@
             'powers': array(
                 "/buff",
                 "/fly (she can't really fly, but she has control over psionic forcefields that she can use to fly)",
-                "/jump 0-9",
+                "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-2",
                 "/invis",

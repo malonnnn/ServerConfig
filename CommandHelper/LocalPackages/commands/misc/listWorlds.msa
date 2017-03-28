@@ -1,0 +1,28 @@
+listheroes:/listworlds $pageNum = >>>
+
+    @pageNum = $pageNum
+    
+    if(@pageNum < 1){
+        die()
+    }
+    
+    @startSpot = @pageNum * 10 - 9
+    include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms') 
+    @i = @startSpot
+    foreach(@world in @worldList){
+        tmsg(player(),"#". @i . ". " . @world[1])
+        @i = @i + 1
+    }
+<<<
+
+listworlds:/listworlds = >>>
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms') 
+    @i = 1
+    @plr = player()
+    foreach(@world in @worldList){
+        tmsg(@plr,'#'.@i.'. '.@world[1])
+        @i = @i + 1
+    }
+
+<<<
