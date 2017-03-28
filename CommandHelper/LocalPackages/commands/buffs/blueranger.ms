@@ -14,7 +14,7 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-8",
+                "/run 0-3",
                 "/jump 0-8",
                 "/haste 0-8",
                 "/lightning",
