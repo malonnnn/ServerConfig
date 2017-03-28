@@ -15,28 +15,13 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-2",
-                "/jump 0-8",
-                "/haste 0-8",
-                "/lightning",
-                "/transform",
-                "/untransform",
-                "/disguise",
-                "/undisguise",
-                "/transmute",
-                "/arrow"
+                "/jump 0-4",
+                "/haste 0-5"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true"
-                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers",
-                "/give ". @plr ." minecraft:bow 1 51:1 50:1 name:&1Blue_Ranger's_Bow",
-                "/give ". @plr ." minecraft:iron_bars 1 16:15 name:&9Blue_Ranger's_Claws",
-                "/shot give ". @plr ." energybeam"
-                "/shot give ". @plr ." pistol"
+                "/effect ". @plr ." 21 9999 4 true",
+                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers"
             )
         )
