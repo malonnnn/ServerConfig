@@ -16,7 +16,9 @@
                 "/dismountplayer",
                 "/run 0-2",
                 "/jump 0-4",
-                "/haste 0-5"
+                "/haste 0-5",
+                "/arrow",
+                "/zord"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
