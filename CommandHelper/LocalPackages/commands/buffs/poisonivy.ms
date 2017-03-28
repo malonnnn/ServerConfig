@@ -15,11 +15,14 @@
                 "/buff",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
-                "/haste 0-4"
+                "/haste 0-4",
+                "/jump 0-4"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true"                
+                "/effect ". @plr ." 21 9999 4 true",
+                "/shot give ".@plr." ivywhip",
+                "/give ". @plr ." minecraft:beetroot 1 name:&aI&2vy_&aS&2eed"
             )
         )

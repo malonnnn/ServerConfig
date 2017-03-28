@@ -1,6 +1,44 @@
 goworld:/goworld $plr = >>>
 
-    :wq!
+    
+    @player = $plr
 
+    # This function is relative to the command block that placed it
+    @loc = get_command_block()
+    
+    @world = 'greenfield'
 
+    assign(@skull1, array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
+    assign(@skull2, array('x': @loc['x'], 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
+    assign(@skull3, array('x': @loc['x'] + 1, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
+    
+    @block1 = get_metadata(@skull1,"skullNum")
+    @num1 = @block1['CommandHelper']
+    
+    @block2 = get_metadata(@skull2,"skullNum")
+    @num2 = @block2['CommandHelper']
+    
+    @block3 = get_metadata(@skull3,"skullNum")
+    @num3 = @block3['CommandHelper']
+    
+    @id = @num1.@num2.@num3
+    @id = @id - 1
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms')
+
+    if(array_index_exists(@worldList,@id)){
+        @pushedOnce = import(@player.'pushedOnce')
+        @firstID = import(@player.'firstID')
+        if(@pushedOnce && @id == @firstID){
+            runas(~console,'/warp '.@worldList[@id][0].' '.@player)
+            export(@player.'pushedOnce',false)
+            export(@player.'firstID','')
+        }else{
+            export(@player.'pushedOnce',true)
+            export(@player.'firstID',@id)
+            tmsg(@player,color(red).'Please push the button again to confirm your warp to '.@worldList[@id][1])
+        }
+    }else{
+        tmsg(@player,color(red).'Sorry, that world does not exist.')
+    }
 <<<
