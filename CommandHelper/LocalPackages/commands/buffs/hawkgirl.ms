@@ -1,4 +1,4 @@
-@plr = player()
+5@plr = player()
 
 
 
@@ -19,6 +19,6 @@
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:iron_shovel 1 16:5 name:&4H&ea&cwk&6gi&er&7l's_&8Mace",
-                "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&4H&ea&cwk&6gi&er&7l's_&6Glide_Wings"                
+                "/give ". @plr ." minecraft:elytra 1 70:1 34:5 name:&4H&ea&cwk&6gi&er&7l's_&6Glide_Wings"                
             )
         )
