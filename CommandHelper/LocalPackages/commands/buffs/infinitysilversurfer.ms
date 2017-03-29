@@ -10,9 +10,7 @@
             'op': 'true',
             'speech': "Surf's up, dude!",
             'powers': array(
-                "/buff",
-                "/carryplayer",
-                "/dismountplayer"
+                "/buff"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
