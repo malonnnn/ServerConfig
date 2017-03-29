@@ -15,43 +15,9 @@
                 "/run 0-3",
                 "/jump 0-4",
                 "/haste 0-2"
-                "/c poison",
-                "/c smokebomb",
-                "/c leap,"
-                "/c flashbomb",
-                "/thru",
-                "/arrow",
-                "/arrow regen",
-                "/arrow regen long",
-                "/arrow swiftness",
-                "/arrow swiftness long",
-                "/arrow fireresist",
-                "/arrow healing",
-                "/arrow nightvision",
-                "/arrow strength",
-                "/arrow strength long",
-                "/arrow leaping",
-                "/arrow leaping long",
-                "/arrow invisibility",
-                "/arrow poison",
-                "/arrow poison long",
-                "/arrow weakness",
-                "/arrow slowness",
-                "/arrow harming",
-                "/arrow waterbreathing",
-                "/arrow luck"     
             ),  
-                'buffs': array(
+            'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/shot give ". @plr ." pistol",
-                "/shot give ". @plr ." Type95",
-                "/shot give ". @plr ." Olympia",
-                "/give ". @plr ." Smokebomb",
-                "/shot give ". @plr ." Gauss",
-                "/shot give ". @plr ." Putty",
-                "/shot give ". @plr ." Grenade",
-                "/shot give ". @plr ." C4" 
-                "/give ". @plr ." minecraft:iron_sword 1 16:20 name:&2Ch&8es&7hi&4re's_&2S&8a&7i")
-                "/give ". @plr ." minecraft:bow 1 51:1 name:&2Th&8ro&7w"
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&2Ch&8es&7hi&4re's_&2S&8a&7i"
+            )
         )
