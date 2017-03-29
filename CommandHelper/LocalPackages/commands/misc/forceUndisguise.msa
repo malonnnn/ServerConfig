@@ -1,0 +1,12 @@
+forceundisguise:/forceundisguise $plr = >>>
+
+    @vic = $plr
+    @vic = player(@vic)
+
+    runas(~console,'/pex user '.@vic.' add libsdisguises.undisguise')
+
+    set_timeout(300,closure(
+        runas(~console,'/sudo '.@vic.' c:/undisguise')
+        runas(~console,'/pex user '.@vic.' remove libsdisguises.undisguise')
+    ))
+<<<
