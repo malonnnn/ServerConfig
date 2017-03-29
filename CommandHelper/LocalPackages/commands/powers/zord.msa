@@ -1,0 +1,22 @@
+# grow into giant
+zord:/zord = >>>
+    @plr = player()
+    sudo(/disguise enderdragon)
+    set_pflight(@plr,true)
+    set_pflying(@plr,true)
+<<<
+unzord:/unzord = >>>
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    
+    @player = player()
+    @class = pgroup()[0]
+
+    set_pflight(@player,true)
+    set_pflying(@player,true)
+    
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    
+    @sig = @hero['sig']
+    @val = @hero['val']
+    _changeSkin(@player,@sig,@val)
+<<<

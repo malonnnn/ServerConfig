@@ -18,6 +18,7 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
                 "/give ". @plr ." minecraft:iron_bars 1 16:10 name:&8C&0a&8twom&0a&8n's_Claws",
-                "/give ". @plr ." 420 1 16:10 name:&8C&0a&8twom&0a&8n's_Whip"                
+                "/give ". @plr ." minecraft:ender_pearl 5 name:&8C&0a&8twom&0a&8n's_Grapple",
+                "/shot give ". @plr ." catwomanwhip"
             )
         )
