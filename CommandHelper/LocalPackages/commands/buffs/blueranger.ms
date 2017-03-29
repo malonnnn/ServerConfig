@@ -16,12 +16,16 @@
                 "/dismountplayer",
                 "/run 0-2",
                 "/jump 0-4",
-                "/haste 0-5"
+                "/haste 0-5",
+                "/arrow",
+                "/zord",
+                "/unzord"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers"
+                "/give ". @plr ." minecraft:diamond_sword 2 20:2 16:155 name:&1B&9l&7u&8e_&1R&9a&7n&8g&1e&9r's_&1Daggers",
+                "/shot give ".@plr." hydrobow"
             )
         )
