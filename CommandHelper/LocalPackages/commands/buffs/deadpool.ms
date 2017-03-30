@@ -18,8 +18,9 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 10 9999 8 true",
+                "/effect ". @plr ." 21 9999 5 true",
+                "/effect ". @plr ." 11 9999 5 true",
                 "/shot give ". @plr ." pistol",
                 "/shot give ". @plr ." pistol",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana",
