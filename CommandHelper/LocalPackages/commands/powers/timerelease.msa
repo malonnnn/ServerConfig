@@ -1,0 +1,8 @@
+timerelease:/timerelease $plr = >>>
+
+    @victim = $plr
+    runas(~console,"/effect " . @victim . " 2 0")
+    @eventID = import(@victim."isVibrating")
+    clear_task(@eventID)
+
+<<<
