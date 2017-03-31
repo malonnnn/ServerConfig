@@ -25,5 +25,6 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true"
+                "/give ". @plr ." minecraft:goldsword 20:2 16:155 name:&4R&ce&7d_&4R&ca&7n&8g&4e&cr's_&4Sword
             )
         )
