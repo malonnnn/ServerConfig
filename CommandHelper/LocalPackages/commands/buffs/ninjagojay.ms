@@ -15,10 +15,11 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-5",
-                "/lightning",
                 "/spinjutsu (gives strength 5 for 10 seconds)"
             ),
             'buffs': array(
-                "/effect ".@plr." 5 9999 5 true"
+                "/effect ".@plr." 5 9999 5 true",
+                "/shot give ".@plr." yellowlightning",
+                "give ".@plr." minecraft:blaze_rod 1 name:§&Ninjago_&1Jay's_&eNunchucks"
             )
         )
