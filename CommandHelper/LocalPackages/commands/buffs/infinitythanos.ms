@@ -13,16 +13,20 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/jump 0-4",
-                "/run 0-6",
-                "/haste 0-4",
-                "/fly",
-                "/disguiseviewself"
+                "/jump 0-9",
+                "/run 0-9",
+                "/haste 0-9",
+                "/flyspeed <number>",
+                "/fly"
            ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 100 true",
+                "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true"
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 21 9999 19 true",
+                "/shot give ". @plr ." greenenergybeam",
+                "/shot give ". @plr ." yellowenergybeam"
             )
         )
