@@ -17,7 +17,7 @@
                 "/run 0-2",
                 "/jump 0-4",
                 "/haste 0-5",
-                "(Shoots fireballs with bare hands)",
+                "/thru",
                 "/zord",
                 "/unzord"
             ),
