@@ -464,7 +464,7 @@ regions:
         min: {x: 60.0, y: 113.0, z: 13.0}
         max: {x: 75.0, y: 117.0, z: 36.0}
         members: {}
-        flags: {use: allow, item-pickup: allow, greeting: 'Escape Room #14', interact: allow}
+        flags: {use: allow, greeting: 'Escape Room #14', item-pickup: allow, interact: allow}
         owners: {}
         type: cuboid
         priority: 1
@@ -535,11 +535,11 @@ regions:
             time-lock: '4000'
             build: deny
             game-mode: SURVIVAL
-            blocked-cmds: [/thru]
             invincible: allow
+            blocked-cmds: [/thru]
             passthrough: allow
-            block-break: deny
             snow-fall: deny
+            block-break: deny
             interact: allow
             block-place: deny
         owners: {}
