@@ -5,13 +5,16 @@
 @hero = associative_array(
             'name': '§6The §7D§co§ec§7t§7§5o§6r§8(§f4th§8)',
             'class': 'thefourthdoctor',
-            'sig': 'swO/rhFZJD71LaUCf4RUcHdiDeopkff2mP/n+MZQuSFRrzy3XaqH7n85m+OTyIg+6KapHzOEb47pK1iIKO7nAaUEYGpF+MZmLZ7wrhjVC0gCcYe//on0Dgsm9K5qPBdI6+jVA6V8hQOUcnWmsOt8KZog3qglMVjEfd9PbYV8dVDuEwKPc+XptA1OGK/y4QyetGj2oUi417u81uFgk8VYy/p/kz/9bTqEzboRc5i82JkZj7xFoxASF9TuLWdIHZ7I3xG99+hsyewYXXWjW0Cl6RLeYOBglhypCw4MBjPB47Jqy5BQZgIG7kGo0afW8zoX+drAj6xRfkGKrvMqaAEvS0suN89P+XVjPN0ZzR0Y3sl6cJwqpIjLeFL6s8ri3T7V3Cl+fS1u2Y8k349HcB2UOw1gB5HdA6SGhY/LIEbWw43d6zjXYYgQQvmDy2Z7s8DzJSbHUJcd+rRiQu/ca4Ect+tDWkNtscGpXHM8HfbG4D1VqW1Hm5mrk3TSexKiqbe0DGh/hYA8tclUa9/Yx3CDsmeWDi1IqbT0HzRfIKwSsOu9VPWtWqRRjFd6iPb9zfoCK8p1BDy8mCDtV54xVhR4X1mQLgC8GIgAzwgOmaWR9iudXCl9wTHheIWScCa7WzJfKFveMGkvzFSnFBo9KQYwxE2rA+70zJ25N7XjHDYWD1c=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0ODA3NjYzMjE4MjksInByb2ZpbGVJZCI6ImUxN2Q4ZGU0OWZhODQ3NGFhNmMxNTRkMjhjOWE1NTkxIiwicHJvZmlsZU5hbWUiOiJuZXZzZmFtIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYmVlNjdjNDE3ZDI3ZDY3NWFmNzY0ODRlOTI3ZWQ0OTlhMjQ3MDlhOTg2MDUwNDc4MzQxYThlNTM1MzEyNyJ9fX0=',
+            'sig': 'oCXdQutbTLgkNl0FU4oKwdA7Q5ucMeT06yJKvr0U48AnfUWncWQq1SILoVYoEPqbt9SirKvzav0gA1K+wzo1P7rXqw9RsZKw1jkzY4UKXbxjUmZLQMlC8O03CREHXMsBmKzqCzmLr5Z1mvvZERC1sZO7ddjOU7ISxy+yExAqkI/bhJr0fKDYKPgL7870luFBUh7hk88w/I7cJQ5E1I4dVq8qBxxXVOIBmIKFvJ4YkOfTSYJAka7dLfWyIqO93Vw3fO6SksEItqSlGRbvxabOBXcZO7Q8zFo5mWfnocuhiBFOhKXhNvTUTqg8sqBoD/BSlG7Qzzfav2GolquZ2BG3jDRJaEGXIFk1TCpWH+AE8+WCrSwCWR/dlm/47Qh8kaTrqijcJFEW59y4p9uW9gtu3WJpfkMonkPdHZNhfe4j856nFCz4gVets5ezlUH/w7dC2cJBpoajDiQBL+25VKt2XCsipJsOZmi8/ZQ+cmdXvKF6aj16o/+oyPySxDgJKdXnz/oOeL4LEBDsbOWt1WjSPcHBMj5IRmy12avylV5/mUiER1PIQ/DzlWGdfP9rqDpgkEqda8BWrRa97KOT0ifF7tZRG5+o9BapUaXMs4hs+2vFOeTriyTRMKFk7v2KfzUSoYWW8NHA6xBeJy0wNCrhXGcPhbtpMd4IQw7VRM1tTqs=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0OTEwMTY4ODI0NTAsInByb2ZpbGVJZCI6ImM2Y2I0YjgxZjFlNzQ0NmRiOTY2ZTRlZDdiNDU5MDlkIiwicHJvZmlsZU5hbWUiOiJMb3JkT2ZHYWxsaWZyZXkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M4MWIyYTFjOTI2NjNlZGEwNDhjYWFkNjllYjUyNDI0OWJhYmNiNWZmZjJhZmIzMjhhMWRlZTBkMzk4NmRlYyJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Run, you clever boy",
+            'speech': "Would you like a jelly baby?",
             'powers': array(
                 "/buff"
+                "/mindcontrol <playername>"
+                "/stopmindcontrol"
+                "/mindlock <playername>"
             ),
             'buffs': array(
                 "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver"
