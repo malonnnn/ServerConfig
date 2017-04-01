@@ -50,7 +50,7 @@ regions:
         min: {x: -37.0, y: 20.0, z: -40.0}
         max: {x: -29.0, y: 22.0, z: -28.0}
         members:
-            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8, a8185de3-b053-4aca-9eb6-d98728e476ad]
+            unique-ids: [323c42e2-abb0-4a25-a818-1cb14f8a53f8]
         flags: {}
         owners: {}
         type: cuboid
@@ -144,22 +144,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    construction:
-        min: {x: -20.0, y: 12.0, z: -50.0}
-        max: {x: 10.0, y: 49.0, z: 25.0}
-        members:
-            unique-ids: [a8185de3-b053-4aca-9eb6-d98728e476ad]
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 2
     banned:
         min: {x: -60.0, y: 0.0, z: -101.0}
         max: {x: 77.0, y: 203.0, z: 57.0}
         members: {}
-        flags: {entry: deny, entry-deny-message-group: MEMBERS, entry-group: MEMBERS,
-            entry-deny-message: You have been Banished from Entering the Dark Lords Castle. Be Gone Mortal!}
+        flags: {entry: deny, entry-deny-message-group: MEMBERS, entry-deny-message: You have been Banished from Entering the Dark Lords Castle. Be Gone Mortal!,
+            entry-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 0
@@ -168,11 +158,8 @@ regions:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, 8a4aa588-fb1b-47a7-a1cf-7f866dcc4bf8]
         flags:
             item-drop: allow
-            allowed-cmds-group: MEMBERS
-            blocked-cmds: [/tpa, /tppos, /sethome, /tpask, /tp2p, /tpaall, /gms, /tpaccept,
-                /home, /tphere, /thru, /tp, /gamemode, /tptoggle, /fly, /tpo, /tpl,
-                /tpahere, /tpyes, /gmc, /warp, /tpall, /tps]
             invincible: allow
+            allowed-cmds-group: MEMBERS
             mob-damage: deny
             mob-damage-group: MEMBERS
             interact: allow
