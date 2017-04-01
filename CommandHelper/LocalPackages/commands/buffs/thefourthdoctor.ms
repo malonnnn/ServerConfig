@@ -12,8 +12,17 @@
             'speech': "Would you like a jelly baby?",
             'powers': array(
                 "/buff"
+                "/mindcontrol <playername>"
+                "/stopmindcontrol"
+                "/confuse <playername>"
+                "/mindlock <playername>"
+                "/msg <playername> [message]"
+                "You have access to all warps with your TARDIS"
             ),
             'buffs': array(
-                "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver"
+                "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver",
+                "/effect ". @plr ." 21 9999 5 true",
+                "/effect ". @plr ." 10 9999 4 true",
+                "/effect ". @plr ." 11 9999 2 true"
             )
         )
