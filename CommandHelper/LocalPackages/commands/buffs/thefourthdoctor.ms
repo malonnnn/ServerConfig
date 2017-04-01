@@ -12,9 +12,6 @@
             'speech': "Would you like a jelly baby?",
             'powers': array(
                 "/buff"
-                "/mindcontrol <playername>"
-                "/stopmindcontrol"
-                "/mindlock <playername>"
             ),
             'buffs': array(
                 "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver"
