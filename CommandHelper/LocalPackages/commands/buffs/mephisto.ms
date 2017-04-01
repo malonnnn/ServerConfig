@@ -13,7 +13,8 @@
              'speech': "Now I will take your Astral Energy!", 
              'powers': array( 
                  "/buff", 
-                 "/confuse", 
+                 "/confuse",
+                 "/unconfuse",
                  "/tppos <x> <y> <z>",  
                  "/forcechoke <playername>" 
              ), 
