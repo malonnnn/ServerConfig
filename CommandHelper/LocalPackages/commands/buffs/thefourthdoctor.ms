@@ -14,6 +14,6 @@
                 "/buff"
             ),
             'buffs': array(
-                "/give ".@plr." minecraft:redstone_torch 1 name:Sonic_Screwdriver"
+                "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver"
             )
         )
