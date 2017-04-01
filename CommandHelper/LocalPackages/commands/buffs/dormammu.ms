@@ -24,7 +24,7 @@
                   "/shot give ". @plr ." elementalblast",  
                   "/effect ". @plr ." 5 9999 4 true",
                   "/shot give ". @plr ." cosmicenergyblast",
-                  "/give minecraft:spawn_egg 1 0 {EntityTag:{id:"Zombie"}},
+                  "/minecraft:give ".@plr." spawn_egg 1 0 {EntityTag:{id:\"Zombie\",CustomName:\"§eD§6o§cr§4m§7a§8m§8m§0u's §6Minions\"}}",
                   "/effect ". @plr ." 11 9999 2 true",
                   "/effect ". @plr ." 21 9999 9 true"
               )  
