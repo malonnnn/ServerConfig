@@ -10,7 +10,5 @@ stoptime:/stoptime = >>>
         )
         store_value(@player."lastUsedStopTime", time() / 1000)
 
-        set_timeout(60000,closure(
-            runas(~console,'/effect '.@player.' 1 0')
-        ))
+        runas(~console,'/effect '.@player.' 1 60 255 true')
 <<<
