@@ -23,6 +23,6 @@
                   "/effect ". @plr ." 21 9999 9 true",  
                   "/give ". @plr ." minecraft:golden_hoe 1 16:40 name:&6Loki's_&bScepter",  
                   "/shot give ". @plr ." frostbreath",
-                  "/minecraft:give ".@plr." spawn_egg 10 0 {EntityTag:{id:\"Zombie\",CustomName:\"§6L§2o§8k§bi's §aCopies\"}}"
+                  "/minecraft:give ".@plr." spawn_egg 1 0 {EntityTag:{id:\"Zombie\",CustomName:\"§6L§2o§8k§bi's §aCopies\"}}"
               )  
           )  
