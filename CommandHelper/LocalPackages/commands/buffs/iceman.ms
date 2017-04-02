@@ -13,8 +13,7 @@
              'speech': "Chill out!", 
              'powers': array( 
                  "/buff",  
-                 "/run 0-2",  
-                 "/freeze <playername>" 
+                 "/run 0-2" 
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 5 9999 2 true", 
