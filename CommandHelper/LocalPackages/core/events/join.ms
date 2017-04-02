@@ -64,6 +64,10 @@ bind(player_join,null,null,@event){
         }
     }
 
+    if(@plr == "Genie_Crafter" || @plr == 'PlatypiSpy'){
+        runas(~console,'/runalias /quarantine '.@plr)
+    }
+
     set_timeout(5000, closure(
         _changeSkin(@plr,@hero['sig'],@hero['val'])
         _changeTrail(@plr, @hero['trail'])

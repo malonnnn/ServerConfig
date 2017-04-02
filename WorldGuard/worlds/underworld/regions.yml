@@ -10,18 +10,43 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    public:
+        members: {}
+        flags: {interact: allow}
+        owners: {}
+        type: global
+        priority: 1
+    purchaseplate:
+        parent: public
+        min: {x: -4.0, y: 13.0, z: 11.0}
+        max: {x: -4.0, y: 13.0, z: 11.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    summoncancel:
+        parent: public
+        min: {x: -4.0, y: 13.0, z: 17.0}
+        max: {x: -4.0, y: 13.0, z: 19.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members:
-            unique-ids: [87fb3c6c-5ff6-4bf6-b326-992c6137ea12]
+            unique-ids: [87fb3c6c-5ff6-4bf6-b326-992c6137ea12, cb871f86-94e5-4bf3-a78e-42f73c2215c4]
         flags:
             other-explosion: deny
             blocked-cmds-group: NON_MEMBERS
-            build-group: NON_MEMBERS
+            build-group: MEMBERS
             interact: deny
             pistons: allow
+            pvp: allow
             block-place: deny
             pistons-group: MEMBERS
-            build: deny
+            build: allow
             blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /sethome, /tpask, /tp2p,
                 /tpaall, /tpdeny, /tpaccept, /tphere, /home, /thru, /tp, /tptoggle,
                 /fly, /back, /tpo, /tpahere, /tpl, /tpyes, /warp, /tpall, /tps]
@@ -33,3 +58,12 @@ regions:
         owners: {}
         type: global
         priority: 0
+    summonarea:
+        parent: public
+        min: {x: -4.0, y: 13.0, z: 21.0}
+        max: {x: -4.0, y: 13.0, z: 21.0}
+        members: {}
+        flags: {block-break: allow, interact: allow, block-place: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
