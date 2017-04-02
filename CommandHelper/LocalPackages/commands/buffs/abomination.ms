@@ -13,13 +13,12 @@
              'speech': "I am the Abomination!", 
              'powers': array( 
                  "/buff", 
-                 "/jump 0-7", 
-                 "/run 0-4",  
+                 "/jump 0-2",
                  "/carryplayer <player>", 
                  "/dismountplayer"
              ), 
              'buffs': array( 
-                 "/effect ". @plr ." 5 9999 20 true",  
-                 "/effect ". @plr ." 21 9999 19 true"                
+                 "/effect ". @plr ." 5 9999 10 true",
+                 "/effect ". @plr ." 21 9999 14 true"                
              ) 
          ) 
