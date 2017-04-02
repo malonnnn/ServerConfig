@@ -13,7 +13,7 @@
              'speech': "Why the fuck is there an egg in this story?", 
              'powers': array( 
                  "/buff", 
-                 "/run 0-9" 
+                 "/stoptime" 
              ), 
              'buffs': array(  
                  "/shot give ". @plr ." pistol"                 
