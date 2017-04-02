@@ -10,6 +10,14 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    waitingarea:
+        min: {x: -7.0, y: 13.0, z: 14.0}
+        max: {x: -1.0, y: 15.0, z: 17.0}
+        members: {}
+        flags: {invincible: allow}
+        owners: {}
+        type: cuboid
+        priority: 1
     public:
         members: {}
         flags: {interact: allow}
@@ -57,7 +65,8 @@ regions:
             block-place-group: NON_MEMBERS
             tnt: deny
             block-break-group: NON_MEMBERS
-        owners: {}
+        owners:
+            unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4]
         type: global
         priority: 0
     summonarea:
