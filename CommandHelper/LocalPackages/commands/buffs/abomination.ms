@@ -13,7 +13,7 @@
              'speech': "I am the Abomination!", 
              'powers': array( 
                  "/buff", 
-                 "/jump 0-2",
+                 "/jump 0-7",
                  "/carryplayer <player>", 
                  "/dismountplayer"
              ), 
