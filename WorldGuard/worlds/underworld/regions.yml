@@ -11,8 +11,25 @@
 #
 regions:
     __global__:
-        members: {}
-        flags: {other-explosion: allow, block-break: allow, tnt: allow}
+        members:
+            unique-ids: [87fb3c6c-5ff6-4bf6-b326-992c6137ea12]
+        flags:
+            other-explosion: deny
+            blocked-cmds-group: NON_MEMBERS
+            build-group: NON_MEMBERS
+            interact: deny
+            pistons: allow
+            block-place: deny
+            pistons-group: MEMBERS
+            build: deny
+            blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /sethome, /tpask, /tp2p,
+                /tpaall, /tpdeny, /tpaccept, /tphere, /home, /thru, /tp, /tptoggle,
+                /fly, /back, /tpo, /tpahere, /tpl, /tpyes, /warp, /tpall, /tps]
+            block-break: deny
+            interact-group: NON_MEMBERS
+            block-place-group: NON_MEMBERS
+            tnt: deny
+            block-break-group: NON_MEMBERS
         owners: {}
         type: global
         priority: 0
