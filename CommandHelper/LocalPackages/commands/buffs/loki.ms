@@ -1,4 +1,4 @@
-@plr = player()  
+ @plr = player()  
    
    
    
@@ -13,7 +13,7 @@
               'speech': "Bow down to the God of Mischief!",  
               'powers': array(  
                   "/buff",  
-                  "/mindcontrol", 
+                  "/mindcontrol <playername>", 
                   "/stopmindcontrol", 
                   "/run 0-2",   
                   "/disguise",
