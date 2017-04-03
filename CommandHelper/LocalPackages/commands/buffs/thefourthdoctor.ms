@@ -20,6 +20,6 @@
                 "You have access to all warps with your TARDIS"
             ),
             'buffs': array(
-                "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver",
+                "/give ".@plr." minecraft:redstone_torch 1 name:&4S&7onic_&0S&7crewdr&8i&7ver"
             )
         )
