@@ -1,12 +1,12 @@
 entomb:/entomb $plr = >>>
 
     assign(@cooldown, 5)
-    assign(@lastshot, get_value('lastentomb'))
+    assign(@lastshot, import('lastentomb'))
 
     if(@lastshot + @cooldown > time() / 1000,
         die("5 seconds between /entomb")
     )
-    store_value('lastentomb', time() / 1000)
+    export('lastentomb', time() / 1000)
     
     @attacker = player()
     @victim = $plr

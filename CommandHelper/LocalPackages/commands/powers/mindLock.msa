@@ -16,13 +16,13 @@ mindlock:/mindlock $vic = >>>
 
     assign(@cooldown, 120)
     
-    assign(@lastUsedMindLock, get_value(@plr."lastUsedMindLock"))
+    assign(@lastUsedMindLock, import(@plr."lastUsedMindLock"))
     if(@lastUsedMindLock + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedMindLock, @cooldown), divide(time(),1000)))
         tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force push again!'))
         die()
     )
-    store_value(@plr."lastUsedMindLock", time() / 1000)
+    export(@plr."lastUsedMindLock", time() / 1000)
     
     export(@vic.'isMindLocked',true)
     export(@vic.'mindLockedBy',@plr)

@@ -1,36 +1,26 @@
 bind(player_interact,null,array('button': 'RIGHT'),@event){
     
-    @pname = player()
-    @pgroup = pgroup()
-    @pworld = pworld()
-    @puuid = puuid()
+    @player = player()
     
-    if(!has_permission(@pname,"powers.sonicscrewdriver")){
+    if(!has_permission(@player,"powers.sonicscrewdriver")){
         die()
     }
-    @item = get_inventory(entity_id(@puuid),pheld_slot(@pname))
-    if(@item == null){
-        die()
-    }
-    if(@item['type'] != 76){
+    @item = pinv(@player,null)
+    if(@item == null || @item['type'] != 76){
         die()
     }
     
-    if(is_null(get_value(@pname.'lastSonicScrewdriver')),
-        store_value(@pname.'lastSonicScrewdriver',0)
-    )
     if(@item['meta'] == null || @item['meta']['display'] == null || @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver'){
         die()
     }
     
     assign(@cooldown, 10)
-    
-    assign(@lastSonicScrewdriver, get_value(@pname.'lastSonicScrewdriver'))
+    assign(@lastSonicScrewdriver, import(@player.'lastSonicScrewdriver'))
     if(@lastSonicScrewdriver + @cooldown > time() / 1000,
-        tmsg(@pname,color(red).'Sonic Screwdriver has a 10 second cooldown!')
+        tmsg(@player,color(red).'Sonic Screwdriver has a 10 second cooldown!')
         die()
     )
-    store_value(@pname.'lastSonicScrewdriver', time() / 1000)
+    export(@player.'lastSonicScrewdriver', time() / 1000)
     
     try(
         @face = @event['facing']
