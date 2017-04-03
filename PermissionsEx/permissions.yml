@@ -114,16 +114,6 @@ groups:
         - ch.alias.confuse
         - ch.alias.unconfuse
         - ch.alias.mindcontrol
-  thefirstdoctor:
-    options:
-      prefix: '&7T&1h&7e &0Do&7ct&0or &8(&f1st&8)'
-      suffix: '&1'
-    inheritance:
-    - commonherotraits
-    worlds:
-      survival:
-        permissions:
-        - powers.sonicscrewdriver
   redranger:
     inheritance:
     - commonherotraits
@@ -9861,6 +9851,24 @@ groups:
     worlds:
       survival:
         permissions: []
+  thefirstdoctor:
+    options:
+      prefix: '&7T&1h&7e &0Do&7ct&0or &8(&f1st&8)'
+      suffix: '&1'
+    inheritance:
+    - commonherotraits
+    worlds:
+      survival:
+        permissions:
+        - powers.sonicscrewdriver
+        - essentials.msg
+        - essentials.warps.*
+        - ch.alias.mindlock
+        - ch.alias.stopmindcontrol
+        - ch.alias.speak
+        - ch.alias.confuse
+        - ch.alias.unconfuse
+        - ch.alias.mindcontrol
   quarntine:
     worlds:
       waterprison:
