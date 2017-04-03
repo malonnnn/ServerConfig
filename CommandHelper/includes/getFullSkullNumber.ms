@@ -30,13 +30,25 @@ proc(_getFullSkullNumber, @machineNumber,
     }
     
     @block1 = get_metadata(@skull1,"skullNum")
-    @num1 = @block1['CommandHelper']
+    if(array_index_exists(@block1,'CommandHelper')){
+        @num1 = @block1['CommandHelper']
+    }else{
+        @num1 = 0
+    }
     
     @block2 = get_metadata(@skull2,"skullNum")
-    @num2 = @block2['CommandHelper']
+    if(array_index_exists(@block1,'CommandHelper')){
+        @num2 = @block2['CommandHelper']
+    }else{
+        @num2 = 0
+    }
     
     @block3 = get_metadata(@skull3,"skullNum")
-    @num3 = @block3['CommandHelper']
+    if(array_index_exists(@block1,'CommandHelper')){
+        @num3 = @block3['CommandHelper']
+    }else{
+        @num3 = 0
+    }
 
     return(@num1.@num2.@num3)
 
