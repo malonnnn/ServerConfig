@@ -11,7 +11,7 @@
             'op': 'false',
             'speech': "One day I shall come back.",
             'powers': array(
-                "/buff"
+                "/buff",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/confuse <playername>",
