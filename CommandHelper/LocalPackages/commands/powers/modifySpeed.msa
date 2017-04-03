@@ -20,7 +20,7 @@ modifyspeed:/modifyspeed $vic $speed = >>>
 
     assign(@cooldown, 30)
     
-    assign(@lastUsedModifySpeed, get_value(@player."lastUsedModifySpeed"))
+    assign(@lastUsedModifySpeed, import(@player."lastUsedModifySpeed"))
     if(@lastUsedModifySpeed + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedModifySpeed, @cooldown), divide(time(),1000)))
         tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can modify speed again!'))
@@ -34,12 +34,12 @@ modifyspeed:/modifyspeed $vic $speed = >>>
         runas(~console,"/effect ". @vic . " 2 15 ". integer(@speed) ." true")
     }
 
-    store_value(@player."lastUsedModifySpeed", time() / 1000)
-    store_value(@vic."speedEffects","true")
+    export(@player."lastUsedModifySpeed", time() / 1000)
+    export(@vic."speedEffects","true")
     broadcast(@player . " modified " . @vic . "'s speed")
     
     set_timeout(15000,closure(
-        store_value(@vic."speedEffects","false")
+        export(@vic."speedEffects","false")
         tmsg(@vic, color(green)."Your speed is now unlocked")
     ))
 <<<

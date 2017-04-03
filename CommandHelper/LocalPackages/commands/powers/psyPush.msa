@@ -2,11 +2,11 @@ psypush:/psypush $plr = >>>
     @player = player()
     assign(@cooldown, 30)
     
-    assign(@lastUsedPsyPush, get_value(@player."lastUsedPsyPush"))
+    assign(@lastUsedPsyPush, import(@player."lastUsedPsyPush"))
     if(@lastUsedPsyPush + @cooldown > time() / 1000,
         die(color(red)."You must cool down before you can use psy push again!")
     )
-    store_value(@player."lastUsedPsyPush", time() / 1000)
+    export(@player."lastUsedPsyPush", time() / 1000)
 
     @ploc = ploc()
     @vic = $plr
