@@ -4,7 +4,7 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
     @numDir = $numDir
     @numPos = $numPos
     @machineID = $machineID
-    @ptrStart = giet_command_block()
+    @ptrStart = get_command_block()
     @ptr[1] = @ptrStart
     @ptr[2] = @ptrStart
     @ptr[3] = @ptrStart
@@ -90,13 +90,13 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
     store_value(@machineID.3,@number[3])
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/getNumBlockMeta.ms')
-    @number[1]['meta'] = _getNumBlockMeta(@number[1],@facingDir)
-    @number[2]['meta'] = _getNumBlockMeta(@number[2],@facingDir)
-    @number[3]['meta'] = _getNumBlockMeta(@number[3],@facingDir)
+    @number[1]['meta'] = _getNumBlockMeta(@number[1])
+    @number[2]['meta'] = _getNumBlockMeta(@number[2])
+    @number[3]['meta'] = _getNumBlockMeta(@number[3])
     
-#    for(@i = 1, @i <= 3, @i++){
-#        sudo('/minecraft:setblock '.@['x'].' '.@loc['y'].' '.@loc['z'].' minecraft:skull '.@skullDir.' replace '.@meta)
-#    }
+    for(@i = 1, @i <= 3, @i++){
+        sudo('/minecraft:setblock '.@ptr[@i]['x'].' '.@ptr[@i]['y'].' '.@ptr[@i]['z'].' minecraft:skull '.@skullDir.' replace '.@number[@i]['meta'])
+    }
 #    
 #    include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
 #    @num = _getFullSkullNumber(@machineNumber)
