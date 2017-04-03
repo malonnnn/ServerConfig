@@ -4,7 +4,9 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
     @numDir = $numDir
     @numPos = $numPos
     @machineID = $machineID
+    @number = associative_array()
     @ptrStart = get_command_block()
+    @ptr = array()
     @ptr[1] = @ptrStart
     @ptr[2] = @ptrStart
     @ptr[3] = @ptrStart
@@ -14,7 +16,9 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
     # get number block location
     if(@facingDir == 'north'){
         @skullDir = '2'
-        @blockPointer['z'] -= 2
+        @ptr[1]['z'] -= 2
+        @ptr[2]['z'] -= 2
+        @ptr[3]['z'] -= 2
         if(@numPos == '1'){
             @ptr[2]['x'] += 1    
             @ptr[3]['x'] += 2    
@@ -27,7 +31,9 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
         }
     }else if(@facingDir == 'east'){
         @skullDir = '5'
-        @blockPointer['x'] += 2
+        @ptr[1]['x'] += 2
+        @ptr[2]['x'] += 2
+        @ptr[3]['x'] += 2
         if(@numPos == '1'){
             @ptr[2]['z'] += 1    
             @ptr[3]['z'] += 2    
@@ -40,7 +46,9 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
         }
     }else if(@facingDir == 'west'){
         @skullDir = '4'
-        @bloclPointer['x'] -= 2
+        @ptr[1]['x'] -= 2
+        @ptr[2]['x'] -= 2
+        @ptr[3]['x'] -= 2
         if(@numPos == '1'){
             @ptr[2]['z'] -= 1    
             @ptr[3]['z'] -= 2    
@@ -53,7 +61,9 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
         }
     }else if(@facingDir == 'south'){
         @skullDir = '3'
-        @blockPointer['z'] += 2
+        @ptr[1]['z'] += 2
+        @ptr[2]['z'] += 2
+        @ptr[3]['z'] += 2
         if(@numPos == '1'){
             @ptr[2]['x'] -= 1    
             @ptr[3]['x'] -= 2    
@@ -66,34 +76,43 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
         }
     }
     if(@numDir == 'up'){
-        @blockPointer['y'] -= 1
+        @ptr[1]['y'] -= 1
+        @ptr[2]['y'] -= 1
+        @ptr[3]['y'] -= 1
     }else if(@numDir == 'down'){
-        @blockPointer['y'] += 1
+        @ptr[1]['y'] += 1
+        @ptr[2]['y'] += 1
+        @ptr[3]['y'] += 1
     }
 
     # at this point the blockPointer is pointing to the most significant digit
 
-    @block[1] = get_value(@machineID.1)
-    if(@number[1] == null){
-        @number[1] = 0
+    @number[1] = associative_array('num':get_value(@machineID.'1'))
+    if(@number[1]['num'] == null){
+        @number[1]['num'] = 0
     }
-    store_value(@machineID.1,@number[1])
-    @block[2] = get_value(@machineID.2)
-    if(@number[2] == null){
-        @number[2] = 0
+    store_value(@machineID.'1',@number[1]['num'])
+    @number[2] = associative_array('num':get_value(@machineID.'2'))
+    if(@number[2]['num'] == null){
+        @number[2]['num'] = 0
     }
-    store_value(@machineID.2,@number[2])
-    @block[3] = get_value(@machineID.3)
-    if(@number[3] == null){
-        @number[3] = 0
+    store_value(@machineID.'2',@number[2]['num'])
+    @number[3]['num'] = associative_array('num':get_value(@machineID.'3'))
+    if(@number[3]['num'] == null){
+        @number[3]['num'] = 0
     }
-    store_value(@machineID.3,@number[3])
+    store_value(@machineID.'3',@number[3]['num'])
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/getNumBlockMeta.ms')
-    @number[1]['meta'] = _getNumBlockMeta(@number[1])
-    @number[2]['meta'] = _getNumBlockMeta(@number[2])
-    @number[3]['meta'] = _getNumBlockMeta(@number[3])
-    
+    #@number[1] = associative_array('meta',_getNumBlockMeta(@number[1]['num']))
+    @number[1]['meta'] = _getNumBlockMeta(@number[2]['num'])
+    @number[2]['meta'] = _getNumBlockMeta(@number[2]['num'])
+    @number[3]['meta'] = _getNumBlockMeta(@number[3]['num'])
+   
+    broadcast(@number[1]['num'])
+    broadcast(@ptr[1])
+    broadcast(@number[1]['meta'])
+ 
     for(@i = 1, @i <= 3, @i++){
         sudo('/minecraft:setblock '.@ptr[@i]['x'].' '.@ptr[@i]['y'].' '.@ptr[@i]['z'].' minecraft:skull '.@skullDir.' replace '.@number[@i]['meta'])
     }
