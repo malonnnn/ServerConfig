@@ -30,13 +30,13 @@ swarm:/swarm $vic = >>>
 
     assign(@cooldown, 60)
     
-    assign(@lastUsedSwarm, get_value(@player."lastUsedSwarm"))
+    assign(@lastUsedSwarm, import(@player."lastUsedSwarm"))
     if(@lastUsedSwarm + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedSwarm, @cooldown), divide(time(),1000)))
         tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use swarm again!'))
         die()
     )
-    store_value(@player."lastUsedSwarm", time() / 1000)
+    export(@player."lastUsedSwarm", time() / 1000)
     
     tmsg(@player,color(red).'You have summoned a mosquito swarm upon '.color(white).@vic.color(red).'!')
     tmsg(@vic,color(red).'Oh no! '.color(white).'Mosquito Girl '.color(red).'has summoned her mosquitos on you!')

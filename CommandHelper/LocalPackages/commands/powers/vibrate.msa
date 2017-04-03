@@ -1,5 +1,15 @@
 vibrate:/vibrate = >>>
 
+    assign(@cooldown, 60)
+    
+    assign(@lastUsedVibrate, import(@plr."lastUsedVibrate"))
+    if(@lastUsedVibrate + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedVibrate, @cooldown), divide(time(),1000)))
+        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use vibrate again!'))
+        die()
+    )
+    export(@plr."lastUsedVibrate", time() / 1000)
+
     @player = player()
     runas(~console,"/effect " . @player . " 11 9999 4 true")
     @eventID = set_interval(100,closure(

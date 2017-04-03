@@ -2,13 +2,13 @@ deathnote:/deathnote $victim $ = >>>
 
     @player = player()
     assign(@cooldown, 400)
-    assign(@lastUsedDeathNote, get_value(@player."lastUsedDeathNote"))
+    assign(@lastUsedDeathNote, import(@player."lastUsedDeathNote"))
     if(@lastUsedDeathNote + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedDeathNote, @cooldown), divide(time(),1000)))
         tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use Death Note!'))
         die()
     )
-    store_value(@player."lastUsedDeathNote", time() / 1000)
+    export(@player."lastUsedDeathNote", time() / 1000)
 
     @victim = $victim
     @msg = $

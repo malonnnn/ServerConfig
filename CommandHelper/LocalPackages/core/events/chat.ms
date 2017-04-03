@@ -273,19 +273,17 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(has_permission("is.virus")){
         @cooldown = 60
-}else if(@pname == "Suannaii"){
-        @cooldown = 1
-    }else{
-        @plrz = all_players()
-        @size = array_size(@plrz)
-       # @cooldown = @size / 2
+    }
+#}else if(@pname == "Suannaii"){
+#        @cooldown = 1
+#    }else{
+#        @plrz = all_players()
+#        @size = array_size(@plrz)
+#        @cooldown = @size / 2
         @cooldown = 0
-    }
-    if(is_null(get_value(@pname.'lastmessage')))
-    {
-        store_value(@pname.'lastmessage',0)
-    }
-    @lastmessage = get_value(@pname.'lastmessage')
+#    }
+    
+    @lastmessage = import(@pname.'lastmessage')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
     {
@@ -294,6 +292,6 @@ bind('player_chat', null, null, @e) {
         cancel()
         die()
     }
-    store_value(@pname.'lastmessage', time() / 1000)
+    export(@pname.'lastmessage', time() / 1000)
     
 }
