@@ -14,8 +14,7 @@
                 "/jump 0-3",
                 "/run 0-1",
                 "/haste 0-1",
-                "/hover on",
-                "/hover off"
+                "/fly"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true",
