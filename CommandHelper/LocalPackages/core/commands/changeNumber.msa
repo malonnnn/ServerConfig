@@ -1,0 +1,100 @@
+changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
+
+    @facingDir = $facingDir
+    @numDir = $numDir
+    @numPos = $numPos
+    @machineID = $machineID
+    @blockPointer = get_command_block()
+    @block[@numPos] = ''
+    @skullDir = ''
+
+
+    # get number block location
+    if(@facingDir == 'north'){
+        @skullDir = '2'
+        @blockPointer['z'] -= 2
+        if(@numPos == '1'){
+            @blockPointer['x'] += 2    
+        }else if(@numPos == '2'){
+            @blockPointer['x'] += 1
+        }
+    }else if(@facingDir == 'east'){
+        @skullDir = '5'
+        @blockPointer['x'] += 2
+        if(@numPos == '1'){
+            @blockPointer['z'] += 2    
+        }else if(@numPos == '2'){
+            @blockPointer['z'] += 1
+        }
+    }else if(@facingDir == 'west'){
+        @skullDir = '4'
+        @bloclPointer['x'] -= 2
+        if(@numPos == '1'){
+            @blockPointer['z'] -= 2    
+        }else if(@numPos == '2'){
+            @blockPointer['z'] -= 1
+        }
+    }else if(@facingDir == 'south'){
+        @skullDir = '3'
+        @blockPointer['z'] += 2
+        if(@numPos == '1'){
+            @blockPointer['x'] -= 2    
+        }else if(@numPos == '2'){
+            @blockPointer['x'] -= 1
+        }
+    }
+    if(@numDir == 'up'){
+        @blockPointer['y'] -= 1
+    }else if(@numDir == 'down'){
+        @blockPointer['y'] += 1
+    }
+
+    # at this point the blockPointer is pointing to the most significant digit
+
+    @block[1] = get_value(@machineID.1)
+    if(@number[1] == null){
+        @number[1] = 0
+    }
+    store_value(@machineID.1,@number[1])
+    @block[2] = get_value(@machineID.2)
+    if(@number[2] == null){
+        @number[2] = 0
+    }
+    store_value(@machineID.2,@number[2])
+    @block[3] = get_value(@machineID.3)
+    if(@number[3] == null){
+        @number[3] = 0
+    }
+    store_value(@machineID.3,@number[3])
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getNumBlockMeta.ms')
+    @number[1]['meta'] = _getNumBlockMeta(@number[1],@facingDir)
+    @number[2]['meta'] = _getNumBlockMeta(@number[2],@facingDir)
+    @number[3]['meta'] = _getNumBlockMeta(@number[3],@facingDir)
+    
+    for(@i = 1, @i <= 3, @i++){
+        sudo('/minecraft:setblock '.@['x'].' '.@loc['y'].' '.@loc['z'].' minecraft:skull '.@skullDir.' replace '.@meta)
+    }
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
+    @num = _getFullSkullNumber(@machineNumber)
+    
+    @stdout = ''
+    @hero = ""
+    include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram.ms')
+    
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                _updateHologram(@machineNumber, @hero['class'],@hero['op'])
+                
+            }else{
+                _updateHologram(@machineNumber, 'remove')
+            }
+        }
+    ))
+<<<
