@@ -1,18 +1,12 @@
 startdeathrun:/startdeathrun = >>>
-    assign(@cooldown, 10)
-  
-    if(is_null(get_value('lastdeathrun')),
-        store_value('lastdeathrun',0)
-    )
-    
-    assign(@lastshot, get_value('lastdeathrun'))
+    assign(@cooldown, 10)    
+    assign(@lastshot, import('lastdeathrun'))
     if(@lastshot + @cooldown > time() / 1000,
         die()
     )
-    store_value('lastdeathrun', time() / 1000)
+    export('lastdeathrun', time() / 1000)
     
     set_block_at("-15","86","7","152:0","deathrun")
-    
     set_timeout(1000, closure(){
         set_block_at("-15","86","7","1:0","deathrun")
     });

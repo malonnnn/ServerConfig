@@ -15,12 +15,14 @@ changeSkull:/changeskull $machineNumber $plr $dir = >>>
     }
     
     @result = get_metadata(@loc,"skullNum")
-    if(@result == "{}"){
+    console(@result)   
+    if(@result == "{}" || @result == null){
         set_metadata(@loc,"skullNum",@num)
     }else{
         @num = @result['CommandHelper']
     }
-    
+
+ 
     if(@dir == "up"){
         @num = @num + 1
     }else{

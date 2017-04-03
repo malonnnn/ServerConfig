@@ -66,8 +66,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by time wraith with screams
     # -------------------------------
-    if(@pgroup[0] == 'timewraith')
-    {
+    if(@pgroup[0] == 'timewraith'){
         @phrase = rand(1, 8)
         
         if(@phrase == 1){
@@ -92,8 +91,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if player is "confused", mix up their words
     # -------------------------------
-    if((!is_null(get_value(@pname."isConfused"))) && (get_value(@pname."isConfused") == "true"))
-    {
+    if(import(@pname."isConfused") == "true"){
         @words = split(' ',@msg)
         @numWords = array_size(@words)
         if(@numWords == 1){
