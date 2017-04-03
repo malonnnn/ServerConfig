@@ -4,13 +4,13 @@ bloodregen:/bloodregen = >>>
     
     assign(@cooldown, 60)
     
-    assign(@lastUsedBloodRegen, get_value(@player."lastUsedBloodRegen"))
+    assign(@lastUsedBloodRegen, import(@player."lastUsedBloodRegen"))
     if(@lastUsedBloodRegen + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedBloodRegen, @cooldown), divide(time(),1000)))
         tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use blood regen again!'))
         die()
     )
-    store_value(@player."lastUsedBloodRegen", time() / 1000)
+    export(@player."lastUsedBloodRegen", time() / 1000)
     
     runas(~console,'/effect '.@player.' minecraft:regeneration 9999 1 true')
     runas(~console,'/effect '.@player.' minecraft:saturation 9999 1 true')

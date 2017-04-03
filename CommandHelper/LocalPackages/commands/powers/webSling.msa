@@ -2,10 +2,6 @@ websling:/websling = >>>
   
     assign(@cooldown, 1)
   
-    if(is_null(get_value('lastwebshot')),
-        store_value('lastwebshot',0)
-    )
-
     @pworld = pworld()
     if(
         @pworld != '1_9' &&
@@ -15,11 +11,11 @@ websling:/websling = >>>
         die()
     }
 
-    assign(@lastshot, get_value('lastwebshot'))
+    assign(@lastshot, import('lastwebshot'))
     if(@lastshot + @cooldown > time() / 1000,
         die()
     )
-    store_value('lastwebshot', time() / 1000)
+    export('lastwebshot', time() / 1000)
   
     @multiplier = 0.5
     @arrow = shoot_projectile(player(), 'ARROW')
