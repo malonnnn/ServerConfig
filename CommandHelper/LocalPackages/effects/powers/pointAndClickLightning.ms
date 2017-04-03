@@ -2,7 +2,7 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
     
     @player = player()
     
-    if(!has_permission("powers.pointandclicklightning" || pinv(null) != null)){
+    if(!has_permission("powers.pointandclicklightning") || pinv(@player,null) != null){
         die()
     }
     
