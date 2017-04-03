@@ -12,17 +12,14 @@
             'speech': "One day I shall come back.",
             'powers': array(
                 "/buff"
-                "/mindcontrol <playername>"
-                "/stopmindcontrol"
-                "/confuse <playername>"
-                "/mindlock <playername>"
-                "/msg <playername> [message]"
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/confuse <playername>",
+                "/mindlock <playername>",
+                "/msg <playername> [message]",
                 "You have access to all warps with your TARDIS"
             ),
             'buffs': array(
                 "/give @p dye 1 6 {display:{Name:"Signet Ring",Lore:["Can be used to hypnotize","Mobs will not detect you while holding this item"]},AttributeModifiers:[{AttributeName:"generic.followRange",Name:"generic.followRange",Amount:0,Operation:0,UUIDMost:84304,UUIDLeast:369829}],HideFlags:2}",
-                "/effect ". @plr ." 21 9999 5 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 11 9999 2 true"
             )
         )
