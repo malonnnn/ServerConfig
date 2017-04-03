@@ -4,16 +4,12 @@ changehero:/changehero = >>>
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
     
     assign(@cooldown, 10)
-  
-    if(is_null(get_value('lasttransform')),
-        store_value('lasttransform',0)
-    )
     
-    assign(@lastshot, get_value('lasttransform'))
+    assign(@lastshot, import('lasttransform'))
     if(@lastshot + @cooldown > time() / 1000,
         die()
     )
-    store_value('lasttransform', time() / 1000)
+    export('lasttransform', time() / 1000)
     
     set_block_at("-1731","65","216","152:0","greenfield")
     

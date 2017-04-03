@@ -5,16 +5,11 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
     if(has_permission(@player,'ch.alias.websling')){
 
         assign(@cooldown, 1)
-      
-        if(is_null(get_value(@player.'lastwebshot')),
-            store_value(@player.'lastwebshot',0)
-        )
-
-        assign(@lastshot, get_value(@player.'lastwebshot'))
+        assign(@lastshot, import(@player.'lastwebshot'))
         if(@lastshot + @cooldown > time() / 1000,
             die()
         )
-        store_value(@player.'lastwebshot', time() / 1000)
+        export(@player.'lastwebshot', time() / 1000)
       
         @multiplier = 0.5
         @arrow = shoot_projectile(player(), 'ARROW')
