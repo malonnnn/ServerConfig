@@ -11,8 +11,7 @@
             'speech': "Rage.",
             'powers': array(
                 "/buff",
-                "/fly",
-                "/flyspeed <number>"
+                "/fly"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:red_flower 1 20:2 16:155 name:&4R&0e&4d_L&ca&4nt&0e&4rn_Ring"
