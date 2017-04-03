@@ -11,12 +11,12 @@
             'op': 'false',
             'speech': "Would you like a jelly baby?",
             'powers': array(
-                "/buff"
-                "/mindcontrol <playername>"
-                "/stopmindcontrol"
-                "/confuse <playername>"
-                "/mindlock <playername>"
-                "/msg <playername> [message]"
+                "/buff",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/confuse <playername>",
+                "/mindlock <playername>",
+                "/msg <playername> [message]",
                 "You have access to all warps with your TARDIS"
             ),
             'buffs': array(
