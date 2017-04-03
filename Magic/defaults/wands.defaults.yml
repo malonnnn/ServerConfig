@@ -932,6 +932,14 @@ engineer:
       - schematic|rainbow_blocks
       - schematic|creeper_rug
 
+extinguisher:
+    mode: cast
+    icon: wood_hoe:32
+    indestructible: true
+    undroppable: true
+    spells: extinguish
+    uses: 10
+    cost_reduction: 2
 flashboots:
     icon: chainmail_boots
     indestructible: true
@@ -947,6 +955,24 @@ flashboots:
     effect_particle_min_velocity: 5
     effect_particle_offset: -1.5
 
+gamemode:
+  drop: toggle
+  quick_cast: true
+  icon: diamond_axe:79
+  indestructible: true
+  right_click: toggle
+  version: 2
+  spell_inventory:
+    tosurvival: 1
+    tocreative: 0
+  mode: chest 
+  keep: true
+  name: AJ Mode
+  left_click: none
+  spells:
+  - tocreative
+  - tosurvival
+  undroppable: true
 goggles:
     mode: cast
     icon: wood_hoe:16
@@ -1595,17 +1621,17 @@ loud:
     icon: diamond_axe:218
     upgrade: true
     indestructible: false
-    quiet: -1
+    quiet: 0
 quiet:
     icon: diamond_axe:219
     upgrade: true
     indestructible: false
-    quiet: -2
+    quiet: 1
 silent:
     icon: diamond_axe:220
     upgrade: true
     indestructible: false
-    quiet: -3
+    quiet: 2
 uberwand:
   inherit: conduit
   path: staff
