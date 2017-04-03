@@ -19,6 +19,6 @@
                  "/effect ". @plr ." 5 9999 2 true", 
                  "/effect ". @plr ." 21 9999 9 true",  
                  "/shot give ". @plr ." icespike",
-                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&b&lIce_Glide"
+                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&bIce_Glide"
              ) 
          ) 
