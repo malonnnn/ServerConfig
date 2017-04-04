@@ -9,12 +9,12 @@ sendtounderworld:/sendtounderworld = >>>
     foreach(@plr in @plrs)
     {
         set_pmode(@plr,'SPECTATOR')
-        runas(~console,"/fly ".@plr." off")
+        set_pflight(@plr,false)
     }
 <<<
 sendtounderworld:/sendtounderworld $vic = >>>
         @vic = $vic
         @vic = player(@vic)
         set_pmode(@vic,'SPECTATOR')
-        runas(~console,"/fly ".@vic." off")
+        set_pflight(@vic,false)
 <<<
