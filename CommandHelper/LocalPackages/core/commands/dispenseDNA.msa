@@ -1,0 +1,80 @@
+dispensedna:/dispensedna $dispenserx $dispensery $dispenserz $dispenserworld $machineid $player = >>>
+
+    @player = $player
+    @dispenserLocation = array($dispenserx,$dispensery,$dispenserz,$dispenserworld)
+    @number = array()
+    @machineID = $machineid
+
+    @number[1] = associative_array('num':get_value(@machineID.'1'))
+    if(@number[1]['num'] == null){
+        @number[1]['num'] = 0
+    }
+    @number[2] = associative_array('num':get_value(@machineID.'2'))
+    if(@number[2]['num'] == null){
+        @number[2]['num'] = 0
+    }
+    @number[3] = associative_array('num':get_value(@machineID.'3'))
+    if(@number[3]['num'] == null){
+        @number[3]['num'] = 0
+    }
+    
+    @num = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']    
+    
+    @hero = ""
+    @stdout = ""
+    
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                if(@hero['op'] == "true"){
+                    if(acc_balance(@player) == 0){
+                        tmsg(@player,color(red)."You must have at least $1 to use this character.")
+                        die()
+                    }
+                }
+
+                if(@hero['name'] == "empty"){
+                    die()
+                }
+                
+                @dnaWord = color(yellow).color(bold).'D'.color(green).color(bold).'N'.color(dark_red).color(bold).'A'
+                @dnaName = @hero['name'].' '.@dnaWord
+                
+                @lore = @hero['class']
+                @dna = associative_array(
+                    'type': 373,
+                    'name': 'potion',
+                    'data': 0,
+                    'qty': 1,
+                    'meta': associative_array(
+                      'display': "@dnaName",
+                      'lore': array(@lore),
+                    'potions': array(
+                      array(
+                        'id': 9,
+                        'strength': 1,
+                        'seconds': 1200,
+                        'ambient': true,
+                      ),
+                      array(
+                        'id': 19,
+                        'strength': 1,
+                        'seconds': 1200,
+                        'ambient': true,
+                      ),
+                     ),
+                    ),
+                   );
+                
+                set_inventory_item(@dispenserLocation, 0, @dna)
+            }  
+        }
+    ))
+    
+
+    
+<<<

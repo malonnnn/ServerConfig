@@ -14,7 +14,7 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
     export(@player.'lastshot', time() / 1000)
     
     @multiplier = 5
-    @arrow = shoot_projectile(@pname, 'FIREBALL')
+    @arrow = shoot_projectile(@player, 'FIREBALL')
     @velocity = entity_velocity(@arrow)
     set_entity_velocity(@arrow, array(@velocity['x'] * @multiplier, @velocity['y'] * @multiplier, @velocity['z'] * @multiplier))
 }

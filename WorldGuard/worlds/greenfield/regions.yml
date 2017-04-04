@@ -18,14 +18,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 6
-    stoves:
-        min: {x: 407.0, y: 77.0, z: 28.0}
-        max: {x: 408.0, y: 77.0, z: 28.0}
-        members: {}
-        flags: {interact: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
     babypickle101house:
         parent: city
         members: {}
@@ -50,6 +42,14 @@ regions:
         - {x: 296, z: -1309}
         - {x: 296, z: -1311}
         - {x: 287, z: -1311}
+    stoves:
+        min: {x: 407.0, y: 77.0, z: 28.0}
+        max: {x: 408.0, y: 77.0, z: 28.0}
+        members: {}
+        flags: {interact: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
     modapplications:
         parent: bookchest
         min: {x: -13.0, y: 78.0, z: 240.0}
@@ -64,7 +64,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, damage-animals: allow,
-            pistons: allow, pvp: allow, ghast-fireball: deny}
+            pvp: allow, pistons: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -171,8 +171,8 @@ regions:
         type: cuboid
         priority: 2
     basements:
-        min: {x: -1749.0, y: 0.0, z: 195.0}
-        max: {x: -1717.0, y: 255.0, z: 235.0}
+        min: {x: -1776.0, y: 0.0, z: 117.0}
+        max: {x: -1674.0, y: 255.0, z: 242.0}
         members: {}
         flags:
             blocked-cmds: [/gmsp, /intangible, /thru]
