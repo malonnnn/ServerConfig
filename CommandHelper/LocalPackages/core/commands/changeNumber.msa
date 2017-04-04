@@ -1,4 +1,4 @@
-changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
+changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $holoz $npcid = >>>
 
     @facingDir = $facingDir
     @numDir = $numDir
@@ -11,6 +11,8 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID = >>>
     @ptr[2] = @ptrStart[]
     @ptr[3] = @ptrStart[]
     @skullDir = ''
+    @npcID = $npcid
+    @holoLoc = array($holox,$holoy,$holoz,@ptrStart['world'])
 
     @number[1] = associative_array('num':get_value(@machineID.'1'))
     if(@number[1]['num'] == null){
@@ -115,26 +117,25 @@ if(@facingDir == 'north'){
     store_value(@machineID.'1',@number[1]['num'])
     store_value(@machineID.'2',@number[2]['num'])
     store_value(@machineID.'3',@number[3]['num'])
-#    
-#    include('/home/minecraft/server/plugins/CommandHelper/includes/getFullSkullNumber.ms')
-#    @num = _getFullSkullNumber(@machineNumber)
-#    
-#    @stdout = ''
-#    @hero = ""
-#    include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram.ms')
-#    
-#    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
-#    array(subshell: true,
-#        workingDir: '/home/minecraft/',
-#        stdout: closure(@a = @stdout){
-#            if(@a != "empty")
-#            {
-#                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
-#                _updateHologram(@machineNumber, @hero['class'],@hero['op'])
-#                
-#            }else{
-#                _updateHologram(@machineNumber, 'remove')
-#            }
-#        }
-#    ))
+    
+    @stdout = ''
+    @hero = ""
+    include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram2.ms')
+
+    @num = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']    
+
+    shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
+    array(subshell: true,
+        workingDir: '/home/minecraft/',
+        stdout: closure(@a = @stdout){
+            if(@a != "empty")
+            {
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                _updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
+                
+            }else{
+                _updateHologram2('remove','',@npcID,@holoLoc)
+            }
+        }
+    ))
 <<<
