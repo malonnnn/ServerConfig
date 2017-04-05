@@ -22,9 +22,9 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
     
     if(@redStone[0] != 'x'){
         # Redstone Triggers for closing people in the machine
-        set_block_at("-1731","65","216","152:0","greenfield")
-        set_timeout(4000, closure(){
-            set_block_at("-1731","65","216","1:0","greenfield")
+        set_block_at(@redStone[0],@redStone[1],@redStone[2],"152:0",@redStone[3])
+        set_timeout(6000, closure(){
+            set_block_at(@redStone[0],@redStone[1],@redStone[2],"1:0",@redStone[3])
         })
     }
 
@@ -73,6 +73,11 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         
         # Get player name who is in the machine
         @plrr = @plrs[0]
+
+        if(has_permission(@plrr,'machine.mortal')){
+            runas(~console,'/sudo '.@plrr.' c:/mortal')
+            die()
+        }
         
         # teleport them to center of block
         runas(~console,"/tp ".@plrr." ".@plrr)
