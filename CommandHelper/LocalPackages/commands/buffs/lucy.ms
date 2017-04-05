@@ -13,7 +13,7 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/touchkill"
+                "/invishandsattack <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 3 true"                
