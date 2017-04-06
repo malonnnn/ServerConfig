@@ -27,7 +27,7 @@
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)",
-                "/touchkill"
+                "Anything you attack, dies"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 255 true",
