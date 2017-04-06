@@ -15,7 +15,7 @@
                 "/fly",
                 "/grow", 
                 "/shrink",
-                "/touchkill",
+                "Anything you attack, dies",
                 "/gmc",
                 "/gms",
                 "/vis",

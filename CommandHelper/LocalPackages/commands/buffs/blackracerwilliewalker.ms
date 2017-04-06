@@ -21,18 +21,13 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                "/touchkill",
+                "Anything you attack, dies",
                 "/fly",
                 "/fly speed <number>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 254 true",
-                "/effect ". @plr ." 10 9999 3 true",
                 "/effect ". @plr ." 11 9999 4 true",
                 "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&6R&8a&6c&8e&6r's_&8S&6c&8y&6t&8h&6e",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"  
             )

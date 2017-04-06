@@ -6,6 +6,7 @@ proc(_updateHologram2, @class, @isOp, @npcID, @holoLoc,
     @world = @holoLoc[3]
 
     runas(~console,'/npc select '.@npcID)
+    console('/npc select '.@npcID)
     runas(~console,"/npc spawn")
     if(@class != "remove"){
         runas(~console,"/template apply @class")
