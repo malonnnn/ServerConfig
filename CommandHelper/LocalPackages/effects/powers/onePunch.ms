@@ -7,16 +7,26 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
     @attacker = @e['damager']
 
     @vicID = @e['id']
-    @vicLoc = entity_loc(@vicID)
+    @vicName = ''
+    if(@e['type'] == 'PLAYER'){
+        @vicName = @e['player']
+        @ploc = ploc(@vicName)
+    }
 
-    if(
-        sk_region_check_flag(@vicLoc,'invincible') == true ||
-        sk_region_check_flag(@vicLoc,'pvp') == false
-    ){
-        die()
+    if(@vicName != ''){
+        if(sk_region_check_flag(@ploc,'invincible',@vicName) == true){
+            die()
+        }
+        if(sk_region_check_flag(@ploc,'pvp',@vicName) == false){
+            die()
+        }
     }
 
     if(has_permission(@attacker,'powers.onepunch')){
-       modify_event('amount', 9999)
+        console(@vicName)
+        if(@vicName != ''){
+            set_peffect(@vicName,11,1,0)
+        }
+        modify_event('amount', 9999)
     }
 }

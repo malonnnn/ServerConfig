@@ -11,12 +11,9 @@
             'speech': "Your time has come little piece of life.",
             'powers': array(
                 "/buff",
-                "/disguiseviewself",
-                "/tp",
-                "/touchkill"
+                "/tp <playername>",
+                "/tp <playername> <playername>",
+                "Anything you attack, dies"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 4 9999 254 true"              
-                "/effect ". @plr ." 10 9999 4 true"              
-            )
+            'buffs': array()
         )
