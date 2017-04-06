@@ -11,9 +11,13 @@
                  array(  
                      'sig': 'JMWrQKgm6bUzwJOn+9fGESYMaGFn3aBOabRgxgT8MfMTydwN3XYtPmmoXdZhYFZDIVm22/4xXAoCmrhTKaHis8Hk0U9wwXeHwFmSIhThGxcg0k7h08T4o3FyTpsBKINTte0rOrMANNg1NJcC8EppsWebEKn0E5M+EHp/C7L4lZ9XqkVixfBMOc3tAmv71qxKtaLr/8kIMw4ETs2v55CInOTKn/CzTaFZepNGA9bZvKTIcoM8HftMmyiaWjiif2NrbZxvgrH0XodF44b3Rgp6le/z57HJyGuDWhkUKZlbQX2KHOwUYplXmXRtHUTYt2MCjIbvt/u3sWV7GvT+3zOi4ghoo7/wm520N9zVC0DyazNkkm3LGWYr6DFuMpZFEgwQv7pZdq5vBxHWutU717uiGdBVsNVK1exMJCr7hXh13w7wSWcasVTfG/JtaUX5u17U1aBk9sPfvNboHbR3+ZCbO2AXL7PtMG9aZDmPzbhYkA9CRnN97GwBbOUQFBYebqQZMjwGuaP8WRbN6kuNGaHkyVkc+pYC90puAl6NwmsTBhCXw2eBagp6FwMplME8F3MM2cK4dCkGCOtaGLls3F2u8tSFudOXIT12kQvDPO9qxYEhv426RkgfJSVUqfNGX+Sj7tYkmJhJIOmC60OBshev9XeBiOX9alsN16eCB0r5M7M=',
                      'val': 'eyJ0aW1lc3RhbXAiOjE0ODg3NjUzMzMwNjUsInByb2ZpbGVJZCI6IjQ3NDcwN2Y3ZjhiNDQzZWE4OTc4OWNhZTE3OTE3ZTgyIiwicHJvZmlsZU5hbWUiOiJNaWxlc01vcmFsZXM4ODgiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2UxMzhiYjUxMmQ5YWIxOWNiYzEwNjljNWE2ZmZjMzdiZTkxNGJmOGYxYzljYTk2NjU3ZGZjYzNjNjQ4NjNlYzIifX19'              
-                )
             ),
-            'trail': '',
+                 array(
+                    'sig':'rvGOskKCNoXJ/XbFt2tgnhW/lMd4mJlnkLc4JMlRvFjLq5C+cmW8b+K8rcpVVplEDz5pDB1ldzgszkFZq5aRGPjs0Q5jd6b2zhsGN6bn0WoPHmUJ21jd/T3gbn59uq32ScN6n5iMgku5zRoL+FswnzKjcdYXPvDxwGT/wi8AZ8B85uyHx4n+i/P8wIwYOIUnnmzM3AXVXPWrm90pxWh0Vdu/OpGvhNjrg7lRAwv0I9bWBpPJc0O1soUHSovBBUIeE5qHlf5vWuM1tSEguLOY75zIUd4Aw4QYeCAHSFZLCemNZZuWTjn9+RJ7o0OtoOMswJaOk0ufMs+vsWqdSEkDiGEZl2sWpE7i+tq4XJTLJ30CyEaVdgi7/GqM85P77P0i1R32ifIbahCokKSO5jcuSUOeTbnj4VhHNwVep1rMJir8PrQd9GWzBB1/8xcwhNET6kTp6yQIe5eGNuW1q1vq1hna0+ht0CAmSE5BTq6it6RE9Hgvh7YSI07giDqsJmN/NdmSX0OnsRMUi6iY09t80MTv+YhYikcjMBRNgk5Gvb4ffBTXg/D9tpEH/IT11//6eDssLP0kN4FHDbdNhqYoKMQWs1sqpsZh5r8cgJWeOAj4XvD7lqvgjogTGNLF2hJfpJ+l029iFdPLz3RSV838U+78f66EqeCU1K+0rpPnVLM=',
+                    'val':'eyJ0aW1lc3RhbXAiOjE0OTE1MDc0NjcyMDcsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJCcjBrZW5TMHVscyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjk3YmQyYTVmN2Y2MTAzMjQ0ZTA0ZTZjN2M3MzljZDZmZjMyYjJhYjE1NGI3NWMwMmU5YjkxMmJmNzc2NTI3In19fQ=='
+                 )
+              ),            
+              'trail': '',
             'op': 'false',
             'speech': "With great power comes great responsibility.",
             'powers': array(
