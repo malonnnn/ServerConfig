@@ -21,7 +21,7 @@
                 "/fly",
                 "/carryplayer <player>",
                 "/dismountplayer",
-                "/touchkill"
+                "Anything you attack, dies"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",

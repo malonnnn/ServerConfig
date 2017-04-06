@@ -1,11 +1,12 @@
 vibrate:/vibrate = >>>
 
+    @player = player()
     assign(@cooldown, 60)
     
-    assign(@lastUsedVibrate, import(@plr."lastUsedVibrate"))
+    assign(@lastUsedVibrate, import(@player."lastUsedVibrate"))
     if(@lastUsedVibrate + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedVibrate, @cooldown), divide(time(),1000)))
-        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use vibrate again!'))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use vibrate again!'))
         die()
     )
     export(@plr."lastUsedVibrate", time() / 1000)
