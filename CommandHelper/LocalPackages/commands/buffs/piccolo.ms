@@ -14,7 +14,8 @@
                )
             ),            'trail': '',
             'op': 'false',
-            'speech': "I'm Piccolo!!",
+            'speech': "Now I'm going to get serious!" 
+,
             'powers': array(
                 "/buff",
                 "/jump 0-8",
