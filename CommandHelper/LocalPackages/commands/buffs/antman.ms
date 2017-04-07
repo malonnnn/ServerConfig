@@ -18,7 +18,9 @@
                 "/dismountplayer",
                 "/normalsize",
                 "/grow"
+                "/shrink",          
             ),
+            
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
