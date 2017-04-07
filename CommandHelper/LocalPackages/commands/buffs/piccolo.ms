@@ -14,7 +14,7 @@
                )
             ),            'trail': '',
             'op': 'false',
-            'speech': "Now I'm going to get serious!" 
+            'speech': "Now I'm going to get serious!", 
 ,
             'powers': array(
                 "/buff",
