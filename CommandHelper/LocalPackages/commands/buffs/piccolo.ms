@@ -17,13 +17,13 @@
                 "/haste 0-8",
                 "/fly",
                 "/carryplayer <player>",
-                "/dismountplayer",
-                "/tp"
+                "/dismountplayer"
+                
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 18 true",
                 "/effect ". @plr ." 10 9999 2 true",
-                "/effect ". @plr ." 11 9999 3 true",
+                "/effect ". @plr ." 11 9999 5 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." kiblast",
                 "/shot give ". @plr ." specialbeamcannon"            
