@@ -2400,6 +2400,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
+  office:
+    ==: MVWorld
+    hidden: 'false'
+    alias: office
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: greenfield
+    allowWeather: 'false'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 9.5
+      y: 104.0
+      z: -18.5
+      pitch: -5.590366
+      yaw: 0.88516235
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-104159593230716661'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   pvpworldsruins:
     ==: MVWorld
     hidden: 'false'
