@@ -61,3 +61,254 @@
 # kill:
 #    costs:
 #       health: 10 
+
+rictusempra: 
+     icon: diamond_axe:32 
+     icon_disabled: diamond_hoe:32 
+     icon_url: http://textures.minecraft.net/texture/44a760e06345bd9edd2475d6469dfb952278ca3ec7634aa334e1d7bfcc8644f 
+     category: elemental 
+     worth: 50 
+     earns_sp: 3 
+     upgrade_required_path: beginner 
+     upgrade_required_casts: 40 
+     actions: 
+         cast: 
+         - class: VelocityAction 
+           y_offset: 1 
+         - class: Repeat 
+           actions: 
+           - class: Delay 
+           - class: PlayEffects 
+             effects: iterate 
+           - class: ConeOfEffectAction 
+             actions: 
+             - class: VelocityAction 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: block_fire_extinguish 
+            sound_volume: 1 
+            sound_pitch: -0.1 
+            location: origin 
+            effectlib: 
+              class: DnaEffect 
+              particlesBase: 0 
+              particlesHelix: 7 
+              particleHelix: spell 
+              particleBase1: spell 
+              particleBase2: spell 
+              iterations: 10 
+         iterate: 
+         -  class: EffectSingle 
+            location: origin 
+            effectlib: 
+              class: DnaEffect 
+              particlesBase: 0 
+              particlesHelix: 7 
+              particleHelix: spell 
+              particleBase1: spell 
+              particleBase2: spell 
+              iterations: 4 
+     parameters: 
+         target_type: Entity 
+         range: 8 
+         fov: 1 
+         target_count: 2 
+         item_speed: 0.1 
+         living_entity_speed: 0.5 
+         repeat: 3 
+         delay: 250 
+         y_offset: 0.75 
+         cooldown: 5000 
+     costs: 
+         mana: 20 
+
+expelliarmus: 
+     icon: diamond_axe:43 
+     icon_disabled: diamond_hoe:43 
+     icon_url: http://textures.minecraft.net/texture/ff418f5c02c74f8e54645d05897b954c568f22753eea5fb559b898322aa79 
+     category: light 
+     worth: 200 
+     earns_sp: 7 
+     upgrade_required_path: student 
+     upgrade_required_casts: 50 
+     actions: 
+         cast: 
+         - class: CustomProjectile 
+           actions: 
+           - class: Disarm 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: entity_endermen_teleport 
+            sound: magic.crack 
+            sound_pitch: 0.3 
+            sound_volume: 0.5 
+         tick: 
+         -  class: EffectSingle 
+            location: target 
+            effectlib: 
+              class: ConeEffect 
+              iterations: 10 
+              particle: redstone 
+              color: FF0000 
+              lengthGrow: 0.05 
+         hit: 
+         -  class: EffectSingle 
+            location: target 
+            color: DF0101 
+            firework: star 
+         backfire: 
+         -  class: EffectSingle 
+            sound: entity_player_hurt 
+         -  class: EffectRing 
+            particle: spell_mob 
+            color: FF0000 
+            location: self 
+         fizzle: 
+         -  class: EffectSingle 
+            sound: entity_generic_explode 
+         -  class: EffectRing 
+            particle: redstone 
+            color: FF0000 
+            location: self 
+     parameters: 
+         target: other 
+         velocity: 50 
+         tick_size: 2 
+         min_slot: 0 
+         max_slot: 8 
+         target_type: LivingEntity 
+         allow_max_range: false 
+         range: 30 
+         hitbox: true 
+         fizzle_chance: 0.4 
+         backfire_chance: 0.2 
+         keep_in_inventory: true 
+         target_breakables: 0 
+         cooldown: 10000 
+         undo: 5000 
+     costs: 
+         mana: 60 
+
+avadakadavra: 
+     icon: diamond_axe:171 
+     icon_disabled: diamond_hoe:171 
+     icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c 
+     category: staff 
+     worth: 50000 
+     actions: 
+       cast: 
+       - class: Kill 
+     effects: 
+         cast: 
+         - class: EffectSingle 
+           sound: magic.electrify 
+           sound_volume: 5 
+           sound_pitch: -0.25 
+           location: origin 
+           effectlib: 
+              class: AtomEffect 
+              particleNucleus: spell_mob 
+              colorNucleus: "00FF00" 
+              particleOrbital: redstone 
+              colorOrbital: "00FF00" 
+              iterations: 16 
+              radius: 5 
+         - class: EffectSingle 
+           sound: magic.zap_big 
+           sound_volume: 1 
+           location: origin 
+           effectlib: 
+              class: ConeEffect 
+              iterations: 16 
+              particle: spell_mob 
+              color: 00FF00 
+              lengthGrow: 0.4 
+         - class: EffectSingle 
+           location: targets 
+           color: "00FF00" 
+           firework: ball_large 
+     parameters: 
+         target: other 
+         target_type: Damageable 
+         cooldown: 500 
+         target_breakables: 5 
+         bypass_backfire: true 
+         bypass_pvp: true 
+         range: 64 
+     costs: 
+         mana: 300 
+
+crucio: 
+     icon: diamond_axe:172 
+     icon_disabled: diamond_hoe:172 
+     upgrade_required_path: master 
+     upgrade_required_casts: 50 
+     icon_url: http://textures.minecraft.net/texture/df19b39e565b16cbdabe364b91e35894d1e9bac0ad3fa4b0905ec4f366627 
+     category: master 
+     worth: 3000 
+     earns_sp: 7 
+     actions: 
+         cast: 
+         - class: CustomProjectile 
+           actions: 
+           - class: AreaOfEffect 
+             actions: 
+             - class: PotionEffect 
+               duration: 1000 
+               effect_wither: 1 
+           - class: PotionEffect 
+           - class: Damage 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.electrify 
+            sound_volume: .5 
+         -  class: EffectSingle 
+            effectlib: 
+              class: ConeEffect 
+              iterations: 15 
+              particle: spell_mob 
+              lengthGrow: 0.001 
+              radiusGrow: 0.001 
+         projectile: 
+         - location: origin 
+           effectlib: 
+             class: SphereEffect 
+             iterations: 15 
+             particle: drip_lava 
+             radius: 0.3 
+         tick: 
+         -  location: target 
+            particle: spell_mob 
+         hit: 
+         -  class: EffectSingle 
+            sound: entity_irongolem_death 
+            sound_volume: 1 
+            location: target 
+            color: 19070B 
+            firework: ball 
+         -  class: EffectSingle 
+            requires_entity_target: true 
+            particle: town_aura 
+            location: target 
+            effectlib: 
+              class: BleedEffect 
+              duration: 500 
+     costs: 
+         mana: 100 
+     parameters: 
+         velocity: 20 
+         gravity: 0.05 
+         range: 32 
+         target_type: Damageable 
+         target_breakables: 1 
+         target: other 
+         duration: 2000 
+         damage: 2 
+         effect_slow: 20 
+         effect_wither: 1 
+         effect_confusion: 5 
+         cooldown: 30000 
+         hitbox: true 
