@@ -29,8 +29,8 @@
                 "/give ". @plr ." minecraft:iron_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita's_&4W&0a&4r_Helmet",
                 "/give ". @plr ." minecraft:iron_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita's_&4W&0a&4r_Chestplate",
                 "/give ". @plr ." minecraft:iron_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita's&4_&4W&0a&4r_Leggings",
-                "/give ". @plr ." minecraft:iron_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita's&_&4W&0a&4r_Boots"                
-                "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&6ama&fzon&6ian_&fBow",         
+                "/give ". @plr ." minecraft:iron_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita's&_&4W&0a&4r_Boots",                
+                "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&6ama&fzon&6ian_&fBow"         
          )
       )
             
