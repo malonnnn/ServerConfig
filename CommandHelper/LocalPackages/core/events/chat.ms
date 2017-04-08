@@ -215,7 +215,10 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # Chat replacements for fun
     # -------------------------------
-    assign(@msg, reg_replace('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+','God Doesn\'t Exist',@msg))
+    if(has_permission(@pname,'change.chat')){
+        assign(@msg, reg_replace('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+','God Doesn\'t Exist',@msg))
+        modify_event(message, @msg)
+    }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
     #assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
@@ -247,7 +250,6 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+', @pname, @msg))
 
-    modify_event(message, @msg)
     
     #@temp = reg_match('[^ -~]',@msg)
     #if(array_size(@temp) > 0){
