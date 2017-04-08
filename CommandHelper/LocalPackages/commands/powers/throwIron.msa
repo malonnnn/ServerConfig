@@ -23,8 +23,8 @@ ma:/ma = >>>
 bind(entity_change_block, associative_array('id': 'magneto'.@id), associative_array('to': 42), 
         @event, @id, @damage, @player = player()) {
             
-            @loc = entity_loc(@id);
-            drop_item(@loc,array(type: 42, qty: 1))
+#            @loc = entity_loc(@id);
+#            drop_item(@loc,array(type: 42, qty: 1))
             cancel()
             
 }
