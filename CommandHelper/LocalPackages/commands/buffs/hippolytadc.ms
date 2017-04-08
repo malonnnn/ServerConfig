@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0OTE1OTU0MTgyNDAsInByb2ZpbGVJZCI6ImM4Yjg4MTMxNTJkNDRhZjA5NTkzZGRjZGIzZDU2MDU4IiwicHJvZmlsZU5hbWUiOiJfV29uZGVyQmF0XyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkYTI2ODk1NGVhNjI2NDc1ZGIxZWU4MmVjZjg1ZDEyZWM2NTZlOWYxNGQxNmM5ZDhlYTE1ZDEzMmUxZSJ9fX0=',
             'trail': ','
             'op': 'false',
-            'speech': "THE WORLD OF MEN IS A BAD PLACE TO BE IN.",
+            'speech': "The World Of Men Is A Horrible Place To Live In.",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
@@ -20,7 +20,7 @@
                 
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 8 true",
                 "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
                 "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
