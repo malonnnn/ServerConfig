@@ -1,0 +1,9 @@
+nextperson:/nextperson = >>>
+
+    @loc = array(14,104,-8,'office')
+    @plrs = players_in_radius(@loc,1)
+
+    broadcast(color(green).@plrs[0].color(red).' is now being served')
+    runas(~console,'/warp desk '.@plrs[0])
+
+<<<

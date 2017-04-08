@@ -12,6 +12,7 @@ bell:/bell $plr = >>>
                 runas(~console,'/playsound entity.experience_orb.pickup master '.@activator.' ~ ~ ~ 1.0 1.0 1.0')
             ))
             @secretaryOnline = true
+            tmsg(@player,color(red).@activator.' is ringing the bell.')
             set_timeout(500,closure(
                 clear_task(@eventID)
             ))
