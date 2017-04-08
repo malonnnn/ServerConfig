@@ -217,6 +217,8 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(has_permission(@pname,'change.chat')){
         assign(@msg, reg_replace('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+','God Doesn\'t Exist',@msg))
+        assign(@msg, reg_replace('(?i)o+',rand(1,11),@msg))
+        assign(@msg, reg_replace('(?i)y+',rand(1,11),@msg))
         modify_event(message, @msg)
     }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
