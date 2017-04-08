@@ -15,6 +15,12 @@
                 "/run 0-3",
                 "/jump 0-4",
                 "/haste 0-2"
+intangible:/intangible = >>>
+    sudo(/gm 3)
+<<<
+tangible:/tangible = >>>
+    sudo(/gms)
+<<<
             ),  
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
