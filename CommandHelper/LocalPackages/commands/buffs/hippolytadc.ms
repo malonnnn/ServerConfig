@@ -25,7 +25,7 @@
                 "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
                 "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
-                "/give ". @plr ." minecraft:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'sshield 1 name:_&4Shield",
+                "/give ". @plr ." minecraft:shield 1 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)",
                 "/give ". @plr ." minecraft:iron_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4W&0a&4r_Helmet",
                 "/give ". @plr ." minecraft:iron_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4W&0a&4r_Chestplate",
                 "/give ". @plr ." minecraft:iron_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s&4_&4W&0a&4r_Leggings",
