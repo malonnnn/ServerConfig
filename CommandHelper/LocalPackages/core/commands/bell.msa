@@ -1,0 +1,24 @@
+bell:/bell $plr = >>>
+
+    @activator = $plr
+    @secretaryOnline = false
+    @players = all_players()
+
+    foreach(@player in @players){
+
+        if(has_permission(@player,'is.secretary')){
+            @eventID = set_interval(50,closure(
+                runas(~console,'/playsound entity.experience_orb.pickup master '.@player.' ~ ~ ~ 1.0 1.0 1.0')
+                runas(~console,'/playsound entity.experience_orb.pickup master '.@activator.' ~ ~ ~ 1.0 1.0 1.0')
+            ))
+            @secretaryOnline = true
+            set_timeout(500,closure(
+                clear_task(@eventID)
+            ))
+        }
+    }
+    if(!@secretaryOnline){
+        tmsg(@activator,color(red).'Sorry, the secretary isn\'t online right now, please try again later.')
+    }
+
+<<<
