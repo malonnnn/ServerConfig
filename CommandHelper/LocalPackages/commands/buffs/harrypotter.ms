@@ -12,9 +12,11 @@
               'op': 'false',  
               'speech': "I am the boy who lived!",  
               'powers': array(  
-                  "/buff"
+                  "/buff",
+                  "/invis",
+                  "/vis"
               ),  
               'buffs': array(  
-                  "/mgive ". @plr ." wand"            
+                  "/mgive ". @plr ." harryswand"            
               )  
           )  
