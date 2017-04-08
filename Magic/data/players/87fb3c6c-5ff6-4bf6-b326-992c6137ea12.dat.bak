@@ -1,8 +1,8 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: God_Doesnt_Exist
-last_cast: 1491609642352
+last_cast: 1491680920913
 cooldown_expiration: 0
-last_death_location: 801.3349135230268,85.0,-799.326553498162,survival,-89.620865,-4.2505293
+last_death_location: 13.689538571218698,104.0,-13.529491603640391,office,-339.7103,12.875303
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -405,12 +405,35 @@ undo:
   name: Magic Missile
 - time_to_live: 0
   name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Avadakadavra
+- time_to_live: 0
+  name: Avadakadavra
+- time_to_live: 0
+  name: Petrificus Totalus
+- time_to_live: 0
+  name: Petrificus Totalus
+- time_to_live: 0
+  name: Rictusempra
+- time_to_live: 0
+  name: Avadakadavra
+- time_to_live: 0
+  name: Accio
+- time_to_live: 0
+  name: Periculum
+- time_to_live: 5000
+  name: Levicorpus
+- world: office
+  time_to_live: 0
+  name: Ascendio
 spells:
   flare:
-    cast_count: 3
-    last_cast: 1479675721520
-    last_earn: 0
-    cooldown_expiration: 1479675723520
+    cast_count: 4
+    last_cast: 1491680915001
+    last_earn: 1491680914999
+    cooldown_expiration: 0
   cluster:
     cast_count: 0
     last_cast: 1479697028056
@@ -466,6 +489,11 @@ spells:
     last_cast: 1479696734080
     last_earn: 1479696734275
     cooldown_expiration: 1479696764080
+  fling|4:
+    cast_count: 1
+    last_cast: 1491680920913
+    last_earn: 1491680920912
+    cooldown_expiration: 0
   flare|2:
     cast_count: 2
     last_cast: 1479675732311
@@ -478,14 +506,24 @@ spells:
     cooldown_expiration: 1479675701017
   missile:
     cast_count: 1
-    last_cast: 1491609642353
+    last_cast: 1491680666076
     last_earn: 1479833563927
-    cooldown_expiration: 1491609643353
+    cooldown_expiration: 1491680667076
   fire:
     cast_count: 9
     last_cast: 1479675499982
     last_earn: 0
     cooldown_expiration: 1479675502982
+  fireball|4:
+    cast_count: 0
+    last_cast: 1491680907638
+    last_earn: 0
+    cooldown_expiration: 0
+  wound|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   day:
     cast_count: 1
     last_cast: 1479674962090
@@ -501,6 +539,11 @@ spells:
     last_cast: 1479675638167
     last_earn: 0
     cooldown_expiration: 1479675648167
+  reflect|4:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   broom:
     cast_count: 6
     last_cast: 1479696680178
@@ -511,6 +554,11 @@ spells:
     last_cast: 1479674965841
     last_earn: 0
     cooldown_expiration: 1479676765841
+  stun|3:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   chop:
     cast_count: 0
     last_cast: 1479696998428
@@ -536,6 +584,11 @@ spells:
     last_cast: 1479695997187
     last_earn: 0
     cooldown_expiration: 0
+  push:
+    cast_count: 1
+    last_cast: 1491680902415
+    last_earn: 1491680903216
+    cooldown_expiration: 0
   pillar:
     cast_count: 10
     last_cast: 1479673703032
@@ -551,6 +604,11 @@ spells:
     last_cast: 1479697294878
     last_earn: 0
     cooldown_expiration: 1479697300878
+  lift:
+    cast_count: 0
+    last_cast: 1491680918407
+    last_earn: 0
+    cooldown_expiration: 0
   bridge:
     cast_count: 2
     last_cast: 1479696540676
@@ -741,6 +799,11 @@ spells:
     last_cast: 1479696471827
     last_earn: 0
     cooldown_expiration: 1479696478827
+  superkill:
+    cast_count: 0
+    last_cast: 1491680905188
+    last_earn: 0
+    cooldown_expiration: 0
   familiar:
     cast_count: 1
     last_cast: 1479675442083
@@ -756,6 +819,16 @@ spells:
     last_cast: 1479696035228
     last_earn: 0
     cooldown_expiration: 1479696040228
+  pull:
+    cast_count: 0
+    last_cast: 1491680913300
+    last_earn: 0
+    cooldown_expiration: 0
+  torture:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   blob|2:
     cast_count: 2
     last_cast: 1479674542538
@@ -786,6 +859,11 @@ spells:
     last_cast: 1479696341807
     last_earn: 0
     cooldown_expiration: 1479696348807
+  petrify|3:
+    cast_count: 0
+    last_cast: 1491680899216
+    last_earn: 0
+    cooldown_expiration: 0
   arrowrain:
     cast_count: 0
     last_cast: 1479674184898
@@ -838,7 +916,7 @@ wands:
         display-name: §bBroomstick
         lore:
         - §o§aYou can fly!
-        - §o§2Tektronic's Wand
+        - §2§oTektronic's Wand
         - '§eCooldown: §615 seconds'
         - §7Lasts for 60 seconds
         ItemFlags: !!set
@@ -848,7 +926,7 @@ wands:
           HIDE_POTION_EFFECTS: null
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
-        internal: H4sIAAAAAAAAAE2QPU/DMBCGD+JCSCv+AEuRGGspH02cjIBYy0AXpsp2zmAlsSPXpeLf41CEesNJ9/0+lwAkQI7ctDGQ1tkRyOZ18xJD7HEYe+4REuGsHfZeyy6GmT0adHCzxc47a7QMnb+pnW7hoWZKFLKStFSqomsRnCjyijZNLqusYMizPIKZsAfTAsBFDPMW99Lp0WtrYPFuD0vJzVL13/eh5vTHp9/JPlwG8vz4to3gVpsw4d1Bei16nJZEcP2Fbj8tACAxLFAplGHO9tbBXV2n/7ZKV+dhBKRDHE9KiOFDgH06g72cmFJZBI4ypyLPOF2zPKNcsYbWWJVNxVLGShHBVW9lh+1JzzzghVeO/E8hwA/+0lcBZwEAAA==
+        internal: H4sIAAAAAAAAAE2Qu07DMBSGf0gKoa14AZYiMdZSLk2cjIBYy0AXpsp2bLCS2pHrUvH2OBShnuFI5/5/ZwpMER+ZaRPErbMD4vXr+iVB4uVu6JmXmHJn7W7vtegSTOzRSIebjey8s0aL0Pmb2uoWDzVVvBCVIKVSFVnx4HiRV6RpclFlBZUsyyNMuD2YFsBFglkr98LpwWtrMH+3h4VgZqH67/tQc/rj029FHy4jfn5820S41SZMeHcQXvNejksiXH9Jtx8XAJMEc6mUFGHO9tbhrq7Tf1umy/MwQtxJOZyUxIbtAuzTGezlyJSKInCUOeF5xsiK5hlhijakllXZVDSltOQRrnorOtme9MwCXnjlwP4UAj/x8p+YZwEAAA==
     wand:
       drop: NONE
       template: broomstick
@@ -858,7 +936,7 @@ wands:
       description: You can fly!
       right_click: CAST
       indestructible: 1
-      version: 4
+      version: 5
       effect_color: 880000000000,0,880000000000
       keep: 1
       name: Broomstick
@@ -876,9 +954,9 @@ wands:
         display-name: §6Magic Missile§f (§3Wand§f)
         lore:
         - §o§aBeginner Magic Wand
-        - §o§3Bound to God_Doesnt_Exist
+        - §3§oBound to God_Doesnt_Exist
         - '§d§oMana: 50'
-        - '§r§dMana Regeneration: 5/s'
+        - '§d§oMana Regeneration: 5/s'
         ItemFlags: !!set
           HIDE_PLACED_ON: null
           HIDE_ENCHANTS: null
@@ -887,18 +965,67 @@ wands:
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2QQU7CUBCGh1CxEDUGl7owkbgCk7bQlo2BBKIY0QVh5aJ5fZ2nL9L3ajuISzeewQO4dcEBPINX8AYewJWlRGcxycz/Z+abqQHUwFgwFZlgEsbJjBH+NTb0QmEKu2c6CgYaM0XB8ElmVAEjZor1RlCEATurMiAZY0YsTgBKNxdf30sTtlAI5BRwPdMpHNuuJXx0252w6zUt3+V+xGwW8rBpOZYlWId7YcfNSYrFgYyg4XsidLjLWx0h3FY7zFPo2G6r27W5azkeMssuw+YjppnUqqCpQr1PlMpwTjjWkRQyF2u5VDLAnE5Hg7HO6Ofo9KD/fI65fdW6RJbRcv/j8/Xl/a0ClX6s54p6jfWFJhiTmSYwYybVXfGb7f8VVyxG2LvFnFjyE0bE+P0kQYzKUL1OMGW0BltNKbz14cNcJjEqOvzDA/gFLwp8CIkBAAA=
+        internal: H4sIAAAAAAAAAD2QzU7CUBCFh1CwEDUGNya6MJG4AmNb+rcxYiBiIrIgrFw0995O9UbaW9tBXLrxGXwAty58AJ/BnS/jwkgxOIvJ5JzJnC9TB6iDNmdJqINOGKdTRrgSKmqeYAZb5yoMegrzhIL+o8ypAlrMEnY2ANBgsxgDkjHmxOIUoHQ92vn50mEdowgFBUJNVQaHaPuuHVk85MfYCrnLBReO7Tm8ZTA0PNOzO75RUCxDAxlC03MjbglHtO0octodvmjcMp2275vCMSwXmWGWYe0Bs1yqBAAqUINGlyiTfEY4VKGM5MKsL6ySBvpkctEbqpy+D072uk8D1KBWSJfIcnrf/fh8eX57rUK1G6tZQqdNWJYO2niqCPSYyeR2+ZeN/4grFiNs3+CCWIojRsTE3ThFDMtQG6WYMfoDK64sdxv9+5lMY0xof4UH8AtvhJy7hQEAAA==
     wand:
       template: wand
       owner: God_Doesnt_Exist
       mana: 50.0
-      mana_timestamp: 1491609841328
-      effect_color: 261f8e645b97,186c8da2abcb,1311fa5c7b56
+      mana_timestamp: 1491680689877
+      effect_color: e5975f3bdb0e,db7bcbc6586b,1ae18285491d
       owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      version: 4
+      version: 5
+  harryswand1:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Ascendio§f (§3Harry's Wand§f)
+        lore:
+        - §3§oBound to God_Doesnt_Exist
+        - Knows 16 Spells
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1SPY/TQBCdw07ihE8dEs0FOOBEdUEXJ7FJg4h0J0DiuOJ0FYW1tmcvq9hesztOiERBw2/gB9BS8AP4DfwUCkoqxovAhfVm5+1788YeAAzA34gqDyAgLOtCEMLVpTBma9vjcQAdvanQwK0XOk+ONdqKkpP3ylIA10RGao2JrbEooCcLVV1+mHbAL0Ulju8A+HCjhQmpEi2JsgbYeXs2/PmL3ZxqonI4eBrLdJJF2WgmZTSapvxKJ2E0ms/DLBpPYhTjkM1QSswoyXShDTwO4xl34mkUx3g4y+cizbKZOIrwMI/n0UxG4zAcH3nQW6OxSlcA0BnATTdqoqo1VqTN1oOOLITBtsvcGskoueUKPOjbpkazUhwN4AozU863Ynzf3eKsjHsedHNlhSm5GHrgW2parwcM68YuGe446FR89mBbapzjPa4MyoJTcXWXVTe6qXLG+9wplbWqaHl7LFAo2ZK6DKVytx96ELQwFU7aA+jD7oI4QNoQnupcScXRB+0EPgQXF6+OT7Wl34+eDRcfX6IP/fboNQpL3/a+//j86euXLnQXJY9Azw/APQH454UmCEqhqqX7S67/t3gjSoTbl8ifUWVPBJHIVuc1Ys6rO+PNCfq79lbFcXdP3jWqLnnz+//GA/gD8KDco4ICAAA=
+    wand:
+      template: harryswand1
+      owner: God_Doesnt_Exist
+      active_spell: fling|4
+      mana: 600.0
+      mana_timestamp: 1491680947954
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      effect_color: 27537e74677e,5d9abcc5a06e,d7965f612210
+      version: 5
+      spell_inventory:
+        flare: 5
+        petrify: 0
+        superkill: 2
+        blink: 31
+        fling: 7
+        disarm: 28
+        stun: 33
+        push: 1
+        pull: 4
+        torture: 30
+        reflect: 29
+        wound: 32
+        missile: 27
+        lift: 6
+        fire: 34
+        fireball: 3
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 22
+  sp: 28
 properties: {}
 classes: {}

@@ -215,6 +215,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # Chat replacements for fun
     # -------------------------------
+    assign(@msg, reg_replace('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+','God Doesn\'t Exist',@msg))
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
     #assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
@@ -246,7 +247,7 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+', @pname, @msg))
 
-    #modify_event(message, @msg)
+    modify_event(message, @msg)
     
     #@temp = reg_match('[^ -~]',@msg)
     #if(array_size(@temp) > 0){
@@ -269,6 +270,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # chat timeout settings
     # -------------------------------
+        @cooldown = 0
     if(has_permission("is.virus")){
         @cooldown = 60
     }
@@ -278,7 +280,6 @@ bind('player_chat', null, null, @e) {
 #        @plrz = all_players()
 #        @size = array_size(@plrz)
 #        @cooldown = @size / 2
-        @cooldown = 0
 #    }
     
     @lastmessage = import(@pname.'lastmessage')
