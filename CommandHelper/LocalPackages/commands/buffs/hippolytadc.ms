@@ -23,13 +23,13 @@
                 "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
-                "/give ". @plr ." minecraft:iron_axe 1 20:2 16:30 name:&6hi&4pp&fol&6ita's_&4War_Axe",
-                "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&6hi&4pp&fol&6ita's_&4War_Axe",
+                "/give ". @plr ." minecraft:iron_axe 1 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
+                "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4War_Axe",
                 "/give ". @plr ." minecraft:shield 1 name:_&4Shield",
-                "/give ". @plr ." minecraft:iron_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita&8(&6d&4c&8)'s_&4W&0a&4r_Helmet",
-                "/give ". @plr ." minecraft:iron_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita&8(&6d&4c&8)'s_&4W&0a&4r_Chestplate",
-                "/give ". @plr ." minecraft:iron_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita&8(&6d&4c&8)'s&4_&4W&0a&4r_Leggings",
-                "/give ". @plr ." minecraft:iron_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&6hi&4pp&fol&6ita&8(&6d&4c&8)'s&_&4W&0a&4r_Boots",                
+                "/give ". @plr ." minecraft:iron_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4W&0a&4r_Helmet",
+                "/give ". @plr ." minecraft:iron_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s_&4W&0a&4r_Chestplate",
+                "/give ". @plr ." minecraft:iron_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s&4_&4W&0a&4r_Leggings",
+                "/give ". @plr ." minecraft:iron_boots 1 0 0:10 1:10 3:10 4:10 7:10 name:&6Hi&4pp&fol&6ita&8(&6D&4C&8)'s&_&4W&0a&4r_Boots",                
                 "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&6ama&fzon&6ian_&fBow"         
          )
       )
