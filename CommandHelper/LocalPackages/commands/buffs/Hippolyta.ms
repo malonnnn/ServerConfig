@@ -14,7 +14,7 @@
                 "/buff",
                 "/jump 0-3",
                 "/run 0-4",
-                "/carryplayer",
+                "/carryplayer <playername>",
                 "/dismountplayer",
                 "/haste 0-4"
                 
