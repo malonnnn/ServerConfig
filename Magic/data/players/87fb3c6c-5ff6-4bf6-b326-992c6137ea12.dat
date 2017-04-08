@@ -1,14 +1,14 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: God_Doesnt_Exist
-last_cast: 1490746955599
+last_cast: 1491609642352
 cooldown_expiration: 0
-last_death_location: -1697.0751909732533,70.0,142.26620341462598,greenfield,44.35589,21.37647
+last_death_location: 801.3349135230268,85.0,-799.326553498162,survival,-89.620865,-4.2505293
 fall_protection_count: 0
 fall_protection: 0
 brush:
   map_id: 450
   material: dirt
-  data: 0
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
@@ -395,6 +395,16 @@ undo:
 - world: survival
   time_to_live: 0
   name: Fling
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
+- time_to_live: 0
+  name: Magic Missile
 spells:
   flare:
     cast_count: 3
@@ -468,9 +478,9 @@ spells:
     cooldown_expiration: 1479675701017
   missile:
     cast_count: 1
-    last_cast: 1479833563881
+    last_cast: 1491609642353
     last_earn: 1479833563927
-    cooldown_expiration: 1479833564881
+    cooldown_expiration: 1491609643353
   fire:
     cast_count: 9
     last_cast: 1479675499982
@@ -863,10 +873,10 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6Magic Missile§f (§bWand§f)
+        display-name: §6Magic Missile§f (§3Wand§f)
         lore:
         - §o§aBeginner Magic Wand
-        - §o§2_Tkky4EverYT_'s Wand
+        - §o§3Bound to God_Doesnt_Exist
         - '§d§oMana: 50'
         - '§r§dMana Regeneration: 5/s'
         ItemFlags: !!set
@@ -876,21 +886,15 @@ wands:
           HIDE_POTION_EFFECTS: null
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
-        internal: H4sIAAAAAAAAAD2Qv27UQBDGB845fBcSRaGE4iROVDGyz+t/TcQhIhGJgyKJIipr7Z1NVndeL/aYKB0NEm9Ai0RLwQNQ8ATwPlSsHcIWW8x8M/P7vinAFJwrroULLmFlNpzwtrBVX2lsYCc/Xa+v2dF7bN6e5mPYrbjmOakKW+KVed59+n388wvYBYM+VwLmiZAyC4TwshhjjxVJ6GVCci9IsmyBfhTFGRvBVlF3WgDAHRe2BbZlowypWsPe3HC6nK34hSpn5xZmBLtKWwU1XUmq2GA/NIJ7lqntBwAcF+6jlFhSXtabuoEniUiwsKeDQvIDFpRswRbCfuFBGqIoRZoEYZqOwFkjmhsIR/PK2j8f7N8djEQpY1IuPCnC1GOZn3k8lJFXxMxnQRz5vrBw29ZGUxvD/5HBBPaXRI0qOsJVLZRUFnTatxxwz86OX6zqlv48Pny0/PASHZj0pVfIW/r+8Mevzx+/fR3DeFnZdOjZHIZn4U42NYFbcaUvB8Cd/yde99gPLtDGr8qnnIiX6xODaNEmbww2nG5C6rcM2v2jd50yFWqa3eIB/AUARcD1DQIAAA==
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2QPU7DQBCFJ4oJTgQIhRIKJCKqBMl2/JMGESkRPyJQRKkorPV6FlbEu8aeEEoaSmoOQEuBqDkDJ+AkVDhGYYop3nua92kaAA0w5kzFJpiESTplhEthRc8VZrB5rONwoDFXFA4fZE4GbCRMsZBkgjmxJAWoXJ19fzybsIZCIKeQ66nOYN/2LBGg13Wjnt+2Ao8HMbNZxKO25ViWYC73I9crqsumUMbQCnwROdzjHVcIr9ONihU5ttfp9WzuWY6PzLKrsHqPWS61AgAD6tDsE2UymhGOdCyFLMxGYVUMMCeT08FI5/Szd7jTfzzBIr6QzpHl9L79+fXy9PZag1o/0TNFRy0oxwRjPNUEZsKkuimfsf5fccEShK1rLIglP2BEjN+OU8S4CvXLFDNGf2CLK2W2ObybyTRBRbtLPIBfzC31NXoBAAA=
     wand:
       template: wand
-      owner: _Tkky4EverYT_
-      mana_timestamp: 1.479833590794E12
-      owner_id: 7dff91dd-96e6-4b73-9dfa-17992e055694
-      bound: 1
-      description: $path Magic Wand
-      indestructible: 1
+      owner: God_Doesnt_Exist
+      mana_timestamp: 1491609629325
+      effect_color: 261f8e645b97,186c8da2abcb,1311fa5c7b56
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       version: 4
-      effect_color: 7d7eb4b71bfa,41c4242d4243,83edcd871388
-      keep: 1
-      name: Wand
-      id: 75844ff2-fd38-4909-a3f5-b640416500dd
-      undroppable: 1
 open_wand: false
 gave_welcome_wand: false
 data:
