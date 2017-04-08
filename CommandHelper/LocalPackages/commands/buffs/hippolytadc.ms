@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0OTE1OTU0MTgyNDAsInByb2ZpbGVJZCI6ImM4Yjg4MTMxNTJkNDRhZjA5NTkzZGRjZGIzZDU2MDU4IiwicHJvZmlsZU5hbWUiOiJfV29uZGVyQmF0XyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBkYTI2ODk1NGVhNjI2NDc1ZGIxZWU4MmVjZjg1ZDEyZWM2NTZlOWYxNGQxNmM5ZDhlYTE1ZDEzMmUxZSJ9fX0=',
             'trail': ','
             'op': 'false',
-            'speech': "The World Of Men Is A Horrible Place To Live In.",
+            'speech': "The world of men is a horrible place to live in.",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
