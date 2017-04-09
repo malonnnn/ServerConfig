@@ -1,6 +1,6 @@
 id: e9a61dbb-3a32-43aa-876f-c11fd78b69de
 name: Mailsemaj
-last_cast: 0
+last_cast: 1491699944327
 cooldown_expiration: 0
 last_death_location: -1048.4613367586237,69.0,-0.5402031876946825,greenfield,-118.596115,90.0
 fall_protection_count: 0
@@ -8,14 +8,57 @@ fall_protection: 0
 brush:
   map_id: 338
   material: dirt
-  data: 0
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
-undo: []
-spells: {}
+undo:
+- time_to_live: 0
+  name: Avadakedavra
+- time_to_live: 0
+  name: Avadakedavra
+- world: greenfield
+  time_to_live: 0
+  name: Avadakedavra
+spells:
+  kill:
+    cast_count: 1
+    last_cast: 1491699918478
+    last_earn: 1491699922781
+    cooldown_expiration: 1491699948478
+wands:
+  harryswand2:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Avadakedavra§f (§3Harry's Wand§f)
+        lore:
+        - §3§oBound to Mailsemaj
+        - Knows 14 Spells
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2PvU4CURSEh7DgLkYLLLUwkXZNAMNPQyDRRBNRE0JlQc5yD3KVe3e9e5DY2fgMPoCthY2dz+ADWbms0VPOTOZ8UwEq8FZklQ9f2CQLEsbmnJx7TNdyw0cpXll2CIakFykbuvWwbcjSRLThVMgkQOH6qvfhso48O9EKNe5Sq66iKGxSsxEeNYnCTrs1C6f1+ky1O1Grq7iIjQd2qY4tgBICVAciTkdL4WGs9ExnZiWzCh788fjseBin8n3Q2xs8nbKHYC2dM6Xyvvv59fL89lpGeWDipZV+Dfn58EaLWOAb0naez9z6f3FBhrFzwxmxnh6SCE3vRgmzKiK4TNiR/IKtW/Js9eR+qRPDVvb/8IAf4AxzhUMBAAA=
+    wand:
+      template: harryswand2
+      owner: Mailsemaj
+      mana_timestamp: 1491699938674
+      owner_id: e9a61dbb-3a32-43aa-876f-c11fd78b69de
+      version: 5
 open_wand: false
 gave_welcome_wand: false
-data: {}
+data:
+  sp: 13
 properties: {}
 classes: {}
