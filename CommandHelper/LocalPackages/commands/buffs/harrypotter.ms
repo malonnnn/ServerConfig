@@ -17,6 +17,6 @@
                   "/vis"
               ),  
               'buffs': array(  
-                  "/mgive ". @plr ." harryswand1"            
+                  "/mgive ". @plr ." harryswand2"            
               )  
           )  
