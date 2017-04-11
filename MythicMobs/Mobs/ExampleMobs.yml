@@ -1,6 +1,46 @@
 # 
 # These example files show you some of the basic attributes and
 # skills MythicMobs can use. Far more is possible!
+SuperSkeleton:
+  Type: SKELETON
+  Display: '&2Super Skeleton'
+  Health: 1000
+  Damage: 150
+  Equipment:
+    - bow:0
+  Options:
+    MovementSpeed: 0.8
+    AttackSpeed: 5.0
+    Collidable: false
+    Glowing: true
+    NoDamageTicks: 20
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  DamageModifiers:
+    - PROJECTILE 10.0
+    - ENTITY_ATTACK 10.0
+  Modules:
+    ThreatTable: true
+SuperWither:
+  Type: WITHER
+  Display: '&2Super Wither'
+  Health: 1000
+  Damage: 150
+  Options:
+    MovementSpeed: 1.0
+    AttackSpeed: 3.0
+    Collidable: false
+    Glowing: true
+    NoDamageTicks: 20
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+  DamageModifiers:
+    - PROJECTILE 2.0
+    - ENTITY_ATTACK 2.0
+  Modules:
+    ThreatTable: true
 SuperZombie:
   Type: ZOMBIE
   Display: '&2Super Zombie'
