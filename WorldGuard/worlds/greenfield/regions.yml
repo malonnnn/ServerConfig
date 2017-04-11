@@ -64,7 +64,7 @@ regions:
         max: {x: 10000.0, y: 255.0, z: 10000.0}
         members: {}
         flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, damage-animals: allow,
-            pvp: allow, pistons: allow, ghast-fireball: deny}
+            pistons: allow, pvp: allow, ghast-fireball: deny}
         owners: {}
         type: cuboid
         priority: 1
@@ -146,7 +146,7 @@ regions:
         min: {x: -18.0, y: 0.0, z: -208.0}
         max: {x: 7.0, y: 255.0, z: -174.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-delay: 1, feed-amount: 1,
+        flags: {other-explosion: deny, use: allow, feed-amount: 1, feed-delay: 1,
             interact: allow, pvp: deny}
         owners: {}
         type: cuboid
@@ -195,6 +195,7 @@ regions:
             invincible: allow
             blocked-cmds: [/gmsp, /intangible, /thru]
             item-pickup: allow
+            invincible-group: MEMBERS
             pvp: deny
             mob-spawning: deny
         owners: {}
@@ -210,7 +211,7 @@ regions:
         priority: 5
     __global__:
         members: {}
-        flags: {vehicle-place: deny}
+        flags: {sleep: deny, vehicle-place: deny}
         owners: {}
         type: global
         priority: 0

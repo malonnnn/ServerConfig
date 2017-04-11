@@ -1,21 +1,59 @@
 id: fbb8c072-4c4b-49c8-948b-26e8ad73099e
 name: Camulll
-last_cast: 0
-cooldown_expiration: 0
-last_death_location: -22.8107420802777,69.0,-214.2317379178379,greenfield,-32.670307,-40.477898
+last_cast: 1491775795502
+cooldown_expiration: 1491775805503
+last_death_location: -29.620722244846768,69.0,-209.7504530417243,greenfield,89.63239,15.3000965
 fall_protection_count: 0
 fall_protection: 0
 brush:
-  map_id: 199
+  map_id: 463
   material: dirt
-  data: 0
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
 undo: []
-spells: {}
+spells:
+  kill:
+    cast_count: 3
+    last_cast: 1491775795503
+    last_earn: 1491775698477
+    cooldown_expiration: 1491775825503
+wands:
+  harryswand2:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Avadakedavra§f (§3Harry's Wand§f)
+        lore:
+        - §3§oBound to Camulll
+        - Knows 14 Spells
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1Qu07DQBDcKE7ihEcRSiiQiKhiFBzH9jUoESAFiUARUlFE57s1OeGzjX0mokNIfAMfQEvBB1BQUPMxlFTYRrDdzuzOzmwLoAXakoZcB12hjAOqEFYWNEnu0gI2dahFyxATaBxSmQVBUAdN0pAOH96hKA3Wi3auhMRUURkDVC4vPsZfuWC5OBccOr7nuaznmIbFLM+wCHMNYrmeYdroUu70e4SgDqvo+8jUnEVBlMCu6VjERuJw3+LdAXdNRqi/7zq8y52B37dt4vjErULjFpNURGHupgZNaI+USoSXKZxEXPgiJ1s5VdFAn81OjiZRqr53DrZG92PUoFlAp0hT9br59vn0+PJch/pIRlmohp0yIOigTYNIgS6pCBflq9b+T5xRibBxhXlQwfaoUpRdT2NEXoXmeYwJVb/GCpVytn18k4lYYqi2/+wB/ABn1kV/hwEAAA==
+    wand:
+      template: harryswand2
+      owner: Camulll
+      mana: 600.0
+      mana_timestamp: 1491775801586
+      owner_id: fbb8c072-4c4b-49c8-948b-26e8ad73099e
+      effect_color: 27496e97df4d,5d82c9af187d,d75f36697f98
+      version: 5
 open_wand: false
 gave_welcome_wand: false
-data: {}
+data:
+  sp: 15
 properties: {}
 classes: {}

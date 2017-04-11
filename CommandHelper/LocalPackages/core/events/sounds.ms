@@ -8,12 +8,18 @@ bind('player_chat', null, null, @e) {
     if(@msg == "haha" || @msg == "ha ha"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.haha', 'volume': 10000), @player)
         }
     }else if(@msg == "woohoo"){
         @players = all_players()
         @snd = rand(1,3)
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             if(@snd == 1){
                 play_named_sound(ploc(), array('sound': 'xyz.woohoo', 'volume': 10000), @player)
             }else{
@@ -24,6 +30,9 @@ bind('player_chat', null, null, @e) {
         @players = all_players()
         @snd = rand(1,4)
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             if(@snd == 1){
                 play_named_sound(ploc(), array('sound': 'xyz.awwcrap', 'volume': 10000), @player)
             }else if(@snd == 2){
@@ -36,6 +45,9 @@ bind('player_chat', null, null, @e) {
         @players = all_players()
         @snd = rand(1,9)
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             if(@snd == 1){
                 play_named_sound(ploc(), array('sound': 'xyz.doh', 'volume': 10000), @player)
             }else if(@snd == 2){
@@ -69,11 +81,17 @@ bind('player_chat', null, null, @e) {
     }else if(@msg == "ouch"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.ow', 'volume': 10000), @player)
         }
     }else if(@msg == "we're doomed"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.doomed', 'volume': 10000), @player)
         }
 #    }else if(@msg == "run mr. taliban" || @msg == "osama bin laden" || @msg == "airforce is coming"){
@@ -99,6 +117,9 @@ bind('player_chat', null, null, @e) {
     }else if(@msg == "brb"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.beback', 'volume': 10000), @player)
         }
 #    }else if(@msg == "beer"){
@@ -109,33 +130,51 @@ bind('player_chat', null, null, @e) {
     }else if(@msg == "bye"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.bye_love', 'volume': 10000), @player)
         }
     }else if(@msg == "come again"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.comeagain', 'volume': 10000), @player)
         }
     }else if(@msg == "force"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.force', 'volume': 10000), @player)
         
     }
     }else if(@msg == "goodbye"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.goodbye', 'volume': 10000), @player)
         }
     }else if(@msg == "gtg"){
         @players = all_players()
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             play_named_sound(ploc(), array('sound': 'xyz.gtg', 'volume': 10000), @player)
         }
     }else if(@msg == "hi" || @msg == "hello" || @msg == "wb"){
         @players = all_players()
         @rand = rand(1,4)
         foreach(@player in @players){
+            if(import(@player.'chatsounds') == 'off'){
+                continue()
+            }
             if(@rand == 1){
                 play_named_sound(ploc(), array('sound': 'xyz.hi', 'volume': 10000), @player)
             }else if(@rand == 2){
