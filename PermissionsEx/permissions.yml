@@ -34,9 +34,11 @@ groups:
     worlds:
       survival:
         permissions:
-        - Magic.wand.use
-        - Magic.cast
-        - -Magic.bypass_pvp
+        - -magic.cast.spellshop
+        - magic.wand.use
+        - magic.cast
+        - magic.cast.*
+        - magic.use.harryswand2
   piccolo:
     inheritance:
     - commonherotraits
@@ -6153,6 +6155,8 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - -magic.*
+    - -essentials.warps.surprisekill
     - ch.alias.chatsounds
     - -essentials.warps.officeadmin
     - -essentials.warps.desk
@@ -6271,8 +6275,6 @@ groups:
     - multiverse.access.rollercoaster
     - chatformat.mortal
     - deluxechat.color
-    - -magic.wand.craft
-    - -magic.create.*
     - deluxechat.url
     - -essentials.warps.speedforce
     - multiverse.access.speedforce
@@ -10485,12 +10487,16 @@ users:
         permissions:
         - ch.alias.officekill
         - essentials.fly
+      greenfield:
+        permissions: []
     permissions:
+    - is.secretary
+    - essentials.warps.office
+    - essentials.warps.officeadmin
+    - multiverse.access.office
     - ch.alias.firesecretary
     - ch.alias.hiresecretary
-    - essentials.warps.officeadmin
     - change.chat
-    - is.secretary
     - -ch.alias.gc
   290fa262-f514-4a2c-b71a-2f39e22b345b:
     group:
@@ -10605,6 +10611,8 @@ users:
     - bluelanternbarryallen
     options:
       name: ENDER_AngeI
+    permissions:
+    - multiverse.access.underworld
   34071b22-c558-4a68-ab1e-b9c13c9b9ced:
     options:
       name: gamerklug
@@ -10628,7 +10636,7 @@ users:
       name: Mamby101
     permissions: []
     group:
-    - superman
+    - harrypotter
   391d1bda-f3b3-4660-baf3-11193e84419d:
     group:
     - mortal
@@ -11415,6 +11423,9 @@ users:
       prefix: ''
       suffix: ''
     permissions:
+    - magic.*
+    - essentials.warps.surprisekill
+    - essentials.warps.officeadmin
     - -change.chat
     - is.married
     - -is.secretary
@@ -11437,7 +11448,6 @@ users:
     - -powers.websling
     - -is.virus
     - -griefprevention.lava
-    - magic.*
     - essentials.kill.exempt
     - powers.ow
     - icu.exempt
@@ -12337,7 +12347,7 @@ users:
       name: BadLionBruh
   e207f46f-ac40-4f49-8b7d-2317c67f1bd0:
     group:
-    - blacklanternmartianmanhunter
+    - shazam
     options:
       name: Natoryn
     permissions:
@@ -12651,7 +12661,7 @@ users:
       name: WarrinPeace
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - xtwothree
+    - supergirl
     options:
       name: Camulll
     permissions:
@@ -13017,7 +13027,7 @@ users:
       name: Soggy_Wafer
   c8b88131-52d4-4af0-9593-ddcdb3d56058:
     group:
-    - godfallsuperman
+    - xtwothree
     options:
       name: _WonderBat_
     worlds:
@@ -13033,18 +13043,20 @@ users:
         - essentials.build.*
       office:
         permissions:
+        - ch.alias.officekill
         - essentials.build.*
         - ch.alias.hiresecretary
         - ch.alias.firesecretary
         - essentials.gamemode.survival
         - essentials.gamemode.creative
         - essentials.gamemode
-        - ch.alias.officekill
         - essentials.fly
     permissions:
-    - essentials.warps.officeadmin
-    - is.married
     - is.secretary
+    - essentials.warps.office
+    - essentials.warps.officeadmin
+    - multiverse.access.office
+    - is.married
     - multiverse.access.underworld
   e9b5b064-1d37-41e9-88a7-7acd3ccea100:
     group:
@@ -13387,7 +13399,6 @@ users:
     - -is.virus
     - -griefprevention.lava
     - rank.mod
-    - magic.*
     - essentials.kill.exempt
     - powers.ow
     - icu.exempt
@@ -14301,7 +14312,7 @@ users:
       name: ccv3
   8cb964f5-d345-4a65-8811-cb3b0c11b51b:
     group:
-    - goku
+    - flashbarryallen
     options:
       name: Vengeance007
     permissions: []
@@ -15066,7 +15077,7 @@ users:
       name: Fluff106
   d67305a9-1ff9-4357-bd10-1b5fd8856d78:
     group:
-    - missmartian
+    - joker
     options:
       name: EagleSniper10
     permissions: []
@@ -15341,11 +15352,16 @@ users:
       name: SirRicardo
     permissions:
     - is.secretary
+    - essentials.warps.office
+    - essentials.warps.officeadmin
+    - multiverse.access.office
     - multiverse.access.underworld
     worlds:
       office:
         permissions:
         - ch.alias.officekill
+      greenfield:
+        permissions: []
   69a9802f-3ccf-4a91-b2b7-2fc8b9cf86ba:
     group:
     - blacklanterndeathstormraymondrusch
@@ -15601,15 +15617,14 @@ users:
       name: DerpyPlayzYT
   f621586e-8ef8-448d-9264-86b61375052e:
     group:
-    - dormammu
+    - harrypotter
     options:
       name: mythguy1226
     permissions:
     - multiverse.access.underworld
     worlds:
-      garbageworld:
-        permissions:
-        - magic.*
+      greenfield:
+        permissions: []
   98163bdb-968d-4a0e-96fd-10714ae78950:
     group:
     - mortal
@@ -16035,10 +16050,13 @@ users:
       name: AnotherWon
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     group:
-    - flashbarryallen
+    - blacklanternmartianmanhunter
     options:
       name: LordOfGallifrey
     permissions: []
+    worlds:
+      greenfield:
+        permissions: []
   4ccbce1a-bc8f-4b0a-9072-9185b7b54e8d:
     group:
     - beastboy
@@ -16555,9 +16573,12 @@ users:
       name: AnkkaVoima
   3fc71cd8-0ec5-479c-acea-9da256367e7e:
     group:
-    - superman
+    - firestormraymondstein
     options:
       name: Lukeiscreative
+    worlds:
+      greenfield:
+        permissions: []
   30fb8200-07e2-44af-ad27-f21fcfa9d7b1:
     group:
     - deadpool
@@ -16671,9 +16692,10 @@ users:
       name: IronRolay
   0a5357e9-2f1e-4fc6-87cc-dc03d592bd20:
     group:
-    - ghostriderjohnnyblaze
+    - beastboy
     options:
       name: adrie_le_zarbi
+    permissions: []
   077d6696-918b-4d39-a02d-726c5173ade1:
     group:
     - blackflash
@@ -16796,12 +16818,14 @@ users:
       name: definder
   cd29099f-c620-4fc4-95df-c48ba865b73e:
     group:
-    - deadpool
+    - ninjagojay
     options:
       name: LangstonBubbles
+    permissions:
+    - multiverse.access.underworld
   1e88dc97-cd47-47d5-bd94-dbe83f57b1f9:
     group:
-    - darthsidious
+    - dannyphantom
     options:
       name: Dexeol
   9108eaec-8af4-45e1-a965-da340245e405:
@@ -16835,7 +16859,7 @@ users:
     permissions: []
   f7d6afc0-cf4e-462d-8131-f98dd0e4df59:
     group:
-    - thefourthdoctor
+    - infinitysilversurfer
     options:
       name: half_face
 worlds:
