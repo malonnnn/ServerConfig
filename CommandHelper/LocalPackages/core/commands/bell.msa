@@ -13,6 +13,7 @@ bell:/bell $plr = >>>
             ))
             @secretaryOnline = true
             tmsg(@player,color(red).@activator.' is ringing the bell.')
+            tmsg(@activator,color(red).@player.' is a secretary and has been alerted.')
             set_timeout(500,closure(
                 clear_task(@eventID)
             ))
