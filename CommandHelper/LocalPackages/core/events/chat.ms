@@ -222,6 +222,12 @@ bind('player_chat', null, null, @e) {
             modify_event(message, @msg)
             @cooldown = 10
         }
+
+        if(to_lower(@msg) == 'o' || to_lower(@msg) == 'y'){
+            assign(@msg,'Uh oh! I\'m a goober!')
+            modify_event(message, @msg)
+            @cooldown = 10
+        }
     }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
