@@ -283,7 +283,7 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
     if(has_permission("is.virus")){
-        @cooldown = 60
+        @cooldown = 0
     }
 #}else if(@pname == "Suannaii"){
 #        @cooldown = 1
