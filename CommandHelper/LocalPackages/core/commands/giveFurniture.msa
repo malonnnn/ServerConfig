@@ -1,0 +1,16 @@
+givefurniture:/givefurniture $furn = >>>
+
+    @plr = player()
+    @furn = $furn
+    @money = 1000
+
+    @bal = acc_balance(@plr)
+
+    if(@bal >= 1000){
+        runas(~console,'/furniture give '.@furn.' '.@plr)
+        tmsg(@plr,color(light_aqua).'You have been charged $'.@money.' for your furniture.')
+    }else{
+        tmsg(@plr,color(red).'You need $'.@money.' to buy a piece of furniture.')
+    }
+
+<<<
