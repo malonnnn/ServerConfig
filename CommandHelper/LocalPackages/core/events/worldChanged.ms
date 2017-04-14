@@ -15,6 +15,12 @@ bind(world_changed, null, null, @event,
         runas(~console,'/pex user '.@player.' group set anarchy')
     } else if(@to == 'alpha'){
         runas(~console,'/effect '.@player.' clear')
+    } else if(@from == 'fightclub'){
+        @winner = import(@player.'fcvs')
+        if(@winner != '' && @winner != null){
+            include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+            _fightClubReset(@winner,@player)
+        }
     }
 
 )
