@@ -6,6 +6,12 @@ bind(player_quit,null,null,@event){
     @eventID = import(@player."isVibrating")
     clear_task(@eventID)
 
+    @winner = import(@player.,'fcvs')
+    if(@winner != '' && @winner != null){
+        include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+        _fightClubReset(@winner,@player)
+    }
+
     @isMindLocked = import(@player.'isMindLocked')
     if(@isMindLocked){
         @vic = import(@player.'mindLockedBy')

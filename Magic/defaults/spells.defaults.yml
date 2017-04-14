@@ -2718,6 +2718,7 @@ debugger:
         cooldown: 1000
 
 defender:
+    hidden: true
     icon: diamond_axe:18
     icon_disabled: diamond_hoe:18
     icon_url: http://textures.minecraft.net/texture/744e11fddeff88dd749ae5ff8fe80f46b9f659817d43d673e4af3759d59ae0
@@ -4897,6 +4898,7 @@ glide:
         mana: 100
                      
 glider:
+    hidden: true
     icon: diamond_axe:14
     icon_disabled: diamond_hoe:14
     icon_url: http://textures.minecraft.net/texture/7ee091dbd831daca4385f481d3a0c5bf6513e47db9a0926e567e10997cfd6ce2
@@ -5419,6 +5421,7 @@ horse:
         mana: 50
 
 hunter:
+    hidden: true
     icon: diamond_axe:17
     icon_disabled: diamond_hoe:17
     icon_url: http://textures.minecraft.net/texture/744e11fddeff88dd749ae5ff8fe80f46b9f659817d43d673e4af3759d59ae0
@@ -7076,7 +7079,7 @@ neutron:
         cast:
         -  class: Projectile
            actions:
-           - class: SpawnEntity
+           - class: AreaOfEffectCloud
     effects:
         cast:
         -  class: EffectSingle
@@ -7093,7 +7096,6 @@ neutron:
         projectile: Snowball
         radius: 5
         cooldown: 30000
-        type: area_effect_cloud
         color: "00AAFF"
         particle: redstone
         duration: 10000
@@ -12036,6 +12038,7 @@ upgradeshop:
           cost: 1000
 
 virus:
+    hidden: true
     icon: diamond_axe:15
     icon_disabled: diamond_hoe:15
     icon_url: http://textures.minecraft.net/texture/744e11fddeff88dd749ae5ff8fe80f46b9f659817d43d673e4af3759d59ae0
@@ -12592,6 +12595,7 @@ workbench:
         mana: 30
 
 worm:
+    hidden: true
     icon: diamond_axe:16
     icon_disabled: diamond_hoe:16
     icon_url: http://textures.minecraft.net/texture/744e11fddeff88dd749ae5ff8fe80f46b9f659817d43d673e4af3759d59ae0
