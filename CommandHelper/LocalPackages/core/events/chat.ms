@@ -223,7 +223,11 @@ bind('player_chat', null, null, @e) {
             @cooldown = 10
         }
 
-        if(to_lower(@msg) == 'o' || to_lower(@msg) == 'y'){
+        if(
+            to_lower(@msg) == 'o' || 
+            to_lower(@msg) == 'y' || 
+            reg_match('(?i)(o|0)+[. ,-_]*y+',@msg)
+        ){
             assign(@msg,'Uh oh! I\'m a goober!')
             modify_event(message, @msg)
             @cooldown = 10
@@ -283,10 +287,10 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
     if(has_permission("is.virus")){
-        @cooldown = 0
+        @cooldown = 60
+    }else if(has_permission('chat.cooldown')){
+        @cooldown = 5
     }
-#}else if(@pname == "Suannaii"){
-#        @cooldown = 1
 #    }else{
 #        @plrz = all_players()
 #        @size = array_size(@plrz)
