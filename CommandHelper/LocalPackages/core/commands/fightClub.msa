@@ -36,23 +36,65 @@ fightclub:/fightclub = >>>
 
             if(@alreadyRegistered == 'true' && @plr != @player){
                 export('fightClubStatus','closed')
-                @otherRegisteredPlayers = true
-
-                broadcast(color(dark_red).@player.color(red).' and '.color(dark_red).@plr.color(red).' are beginning Fight Club in 10 seconds!')
+                export('fightClubFighter1',@player)
+                export('fightClubFighter2',@plr)
                 export(@player.'fcvs',@plr)
                 export(@plr.'fcvs',@player)
+                @plrWins = get_value(@plr.'fightClubWins')
+                @plrLosses = get_value(@plr.'fightClubLosses')
+                @playerWins = get_value(@player.'fightClubWins')
+                @playerLosses = get_value(@player.'fightClubLosses')
+                @otherRegisteredPlayers = true
+                
+                if(@plrWins == null){
+                    @plrWins = 0
+                }
+                if(@plrLosses == null){
+                    @plrLosses = 0
+                }
+                if(@playerWins == null){
+                    @playerWins = 0
+                }
+                if(@playerLosses == null){
+                    @playerLosses = 0
+                }
 
-                set_timeout(7000,closure(
+                broadcast(
+                    color(white).@player.
+                    color(red).' ('.color(green).@playerWins.' wins '.
+                    color(dark_red).@playerLosses.' losses'.color(red).') '.
+                    'and '.
+                    color(white).@plr.
+                    color(red).' ('.color(green).@plrWins.' wins '.
+                    color(dark_red).@plrLosses.' losses'.color(red).') '.
+                    'will starting Fight Club! Use '.
+                    color(gold).'/fightclubbet <player> <amount> '.
+                    color(red).'and if you win, you will get 2x your money back! '.
+                    'This only works if a referee delcares the match as offical '.
+                    'otherwise the bet is invalid.'
+                )
+
+
+                set_timeout(10000,closure(
+                    broadcast(color(red).'Fight Club begins in 20 secs...')
+                ))
+                set_timeout(20000,closure(
+                    broadcast(color(red).'Fight Club begins in 10 secs...')
+                ))
+                set_timeout(27000,closure(
                     broadcast(color(red).'Fight Club begins in 3...')
                 ))
-                set_timeout(8000,closure(
+                set_timeout(28000,closure(
                     broadcast(color(red).'Fight Club begins in 2...')
                 ))
-                set_timeout(9000,closure(
+                set_timeout(29000,closure(
                     broadcast(color(red).'Fight Club begins in 1...')
                 ))
-                set_timeout(10000,closure(
+                set_timeout(30000,closure(
+                    runas(~console,'/heal '.@player)
+                    runas(~console,'/heal '.@plr)
                     broadcast(color(red).'Fight!')
+                    export('fightClubActive','true')
                     runas(~console,'/pex user '.@player.' add essentials.protect.pvp fightclub')
                     runas(~console,'/pex user '.@plr.' add essentials.protect.pvp fightclub')
 

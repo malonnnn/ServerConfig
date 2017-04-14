@@ -11,11 +11,16 @@ bind(world_changed, null, null, @event,
     if(@to == 'greenfield' && @class == 'mortal'){
         runas(~console,'/effect '.@player." clear")
         runas(~console,'/minecraft:clear '.@player)
-    } else if(@to == 'anarchy' && @class != 'anarchy'){
+    }
+    if(@to == 'anarchy' && @class != 'anarchy'){
         runas(~console,'/pex user '.@player.' group set anarchy')
-    } else if(@to == 'alpha'){
+    }
+    if(@to == 'alpha'){
         runas(~console,'/effect '.@player.' clear')
-    } else if(@from == 'fightclub'){
+    }
+    
+    if(@from == 'fightclub'){
+        export(@player.'fightClub','')
         @winner = import(@player.'fcvs')
         if(@winner != '' && @winner != null){
             include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')

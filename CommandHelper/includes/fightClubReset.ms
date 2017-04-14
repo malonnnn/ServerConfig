@@ -18,5 +18,8 @@ proc(_fightClubReset,@p1,@p2){
     export('fightClubStatus','')
     
     broadcast(color(dark_red).@p1.color(red).' beat '.color(dark_red).@p2.color(red).' in Fight Club!')
-    runas(~console,'/heal '.@p1)
+
+    export('fightClubLastWinner',@p1)
+    export('fightClubLastLoser',@p2)
+    export('fightClubActive','')
 }
