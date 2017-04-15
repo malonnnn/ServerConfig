@@ -45,6 +45,7 @@ fightclub:/fightclub = >>>
                 @playerWins = get_value(@player.'fightClubWins')
                 @playerLosses = get_value(@player.'fightClubLosses')
                 @otherRegisteredPlayers = true
+                @playerBetPercent = 100
                 
                 if(@plrWins == null){
                     @plrWins = 0
@@ -58,19 +59,26 @@ fightclub:/fightclub = >>>
                 if(@playerLosses == null){
                     @playerLosses = 0
                 }
+                if((@plrWins + @plrLosses) > 0){
+                    @plrBetPercent = integer(100 - ((@plrWins / (@plrWins + @plrLosses)) * 100))
+                }
+                if((@playerWins + @playerLosses) > 0){
+                    @playerBetPercent = integer(100 - ((@playerWins / (@playerWins + @playerLosses)) * 100))
+                }
 
                 broadcast(
                     color(white).@player.
                     color(red).' ('.color(green).@playerWins.' wins '.
                     color(dark_red).@playerLosses.' losses'.color(red).') '.
+                    color(green).'('.@playerBetPercent.'% payout)'
                     'and '.
                     color(white).@plr.
                     color(red).' ('.color(green).@plrWins.' wins '.
                     color(dark_red).@plrLosses.' losses'.color(red).') '.
+                    color(green).'('.@plrBetPercent.'% payout)'
                     'will starting Fight Club! Use '.
                     color(gold).'/fightclubbet <player> <amount> '.
-                    color(red).'and if you win, you will get 2x your money back! '.
-                    'This only works if a referee delcares the match as offical '.
+                    color(red).'This only works if a referee delcares the match as offical '.
                     'otherwise the bet is invalid.'
                 )
 
