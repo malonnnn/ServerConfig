@@ -1,15 +1,6 @@
 fightclubbet:/fightclubbet $person $amt = >>>
 
     @plr = player()
-    assign(@cooldown, 10)
-    
-    assign(@lastUsedFightClubBet, import(@plr."lastUsedFightClubBet"))
-    if(@lastUsedFightClubBet + @cooldown > time() / 1000,
-        assign(@timeleft, subtract(add(@lastUsedFightClubBet, @cooldown), divide(time(),1000)))
-        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can change your bet!'))
-        die()
-    )
-    export(@plr."lastUsedFightClubBet", time() / 1000)
 
     @pendingFight = import('fightClubStatus')
     @activeFight = import('fightClubActive')
@@ -46,6 +37,15 @@ fightclubbet:/fightclubbet $person $amt = >>>
                 die()
             }
 
+            assign(@cooldown, 10)
+            
+            assign(@lastUsedFightClubBet, import(@plr."lastUsedFightClubBet"))
+            if(@lastUsedFightClubBet + @cooldown > time() / 1000,
+                assign(@timeleft, subtract(add(@lastUsedFightClubBet, @cooldown), divide(time(),1000)))
+                tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can change your bet!'))
+                die()
+            )
+            export(@plr."lastUsedFightClubBet", time() / 1000)
             export(@plr.'fightClubBetPerson',@personBetOn)
             export(@plr.'fightClubBetAmt',@amt)
 
@@ -69,30 +69,39 @@ officialfight:/officialfight = >>>
         @plrs = all_players()
 
         @winnerWins = get_value(@winner.'fightClubWins')
+        @winnerLosses = get_value(@winner.'fightClubLosses')
         @loserLosses = get_value(@loser.'fightClubLosses')
 
         if(@winnerWins == null || @winnerWins == ''){
             @winnerWins = 0
         }
+        if(@winnerLosses == null || @winnerLosses == ''){
+            @winnerLosses = 0
+        }
         if(@loserLosses == null || @loserLosses == ''){
             @loserLosses = 0
         }
 
+        @winnerBetPercent = 2
+        if((@winnerWins + @winnerLosses) > 0){
+            @winnerPercent = (@winnerWins / (@winnerWins + @winnerLosses))
+        }
+        
         @winnerWins += 1
         @loserLosses += 1
 
         store_value(@winner.'fightClubWins',@winnerWins)
         store_value(@loser.'fightClubLosses',@loserLosses)
-
-
+        
         foreach(@plr in @plrs){
             @personBetOn = import(@plr.'fightClubBetPerson')
             @amt = import(@plr.'fightClubBetAmt')
 
             if(@personBetOn != null && @personBetOn != '' && @amt != null && @amt != ''){
                 if(@personBetOn == @winner){
-                    acc_add(@plr,@amt)
-                    broadcast(@plr.color(green).' won $'.@amt.' from betting at Fight Club!')
+                    @winAmt = @amt + (@winnerBetPercent * @amt)
+                    acc_add(@plr,@winAmt)
+                    broadcast(@plr.color(green).' won $'.@winAmt.' from betting at Fight Club!')
                 }else if(@personBetOn == @loser){
                     @bal = acc_balance(@plr)
                     if(@amt > @bal){
@@ -109,7 +118,7 @@ officialfight:/officialfight = >>>
         export('fightClubLastWinner','')
         export('fightClubLastLoser','')
 
-        broadcast(color(red).'It was an official fight!'.color(green).' +1 wins '.color(red).'for '.color(white).@winner.color(red).' and '.color(dark_red).'+1 losses '.color(red).' for '.color(white).@loser)
+        broadcast(color(red).'It was an official fight!'.color(green).' +1 wins '.color(red).'for '.color(white).@winner.color(red).' and '.color(dark_red).'+1 losses '.color(red).'for '.color(white).@loser)
     }else{
         tmsg(@ref,color(red).'The previous fight was either already paid out or hasn\'t started yet!')
     }
