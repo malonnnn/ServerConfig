@@ -15,6 +15,7 @@ proc(_fightClubReset,@p1,@p2){
     export('fightClubLastLoser',@p2)
     export('fightClubActive','')
 
+    acc_add(@p1,100)
     acc_add(@p1,50)
-    broadcast(color(dark_red).@p1.color(red).' beat '.color(dark_red).@p2.color(red).' in Fight Club and won $50!')
+    broadcast(color(dark_red).@p1.color(red).' beat '.color(dark_red).@p2.color(red).'!')
 }
