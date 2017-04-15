@@ -70,28 +70,21 @@ officialfight:/officialfight = >>>
 
         @winnerWins = get_value(@winner.'fightClubWins')
         @winnerLosses = get_value(@winner.'fightClubLosses')
+        @loserWins = get_value(@loser.'fightClubWins')
         @loserLosses = get_value(@loser.'fightClubLosses')
 
         if(@winnerWins == null || @winnerWins == ''){
-            @winnerWins = 0
+            @winnerWins = 1
         }
         if(@winnerLosses == null || @winnerLosses == ''){
             @winnerLosses = 0
         }
+        if(@loserWins == null || @loserWins == ''){
+            @loserWins = 0
+        }
         if(@loserLosses == null || @loserLosses == ''){
-            @loserLosses = 0
+            @loserLosses = 1
         }
-
-        @winnerBetPercent = 2
-        if((@winnerWins + @winnerLosses) > 0){
-            @winnerPercent = (@winnerWins / (@winnerWins + @winnerLosses))
-        }
-        
-        @winnerWins += 1
-        @loserLosses += 1
-
-        store_value(@winner.'fightClubWins',@winnerWins)
-        store_value(@loser.'fightClubLosses',@loserLosses)
         
         foreach(@plr in @plrs){
             @personBetOn = import(@plr.'fightClubBetPerson')
@@ -99,7 +92,19 @@ officialfight:/officialfight = >>>
 
             if(@personBetOn != null && @personBetOn != '' && @amt != null && @amt != ''){
                 if(@personBetOn == @winner){
-                    @winAmt = @amt + (@winnerBetPercent * @amt)
+                    if(@winnerLosses == 0){
+                        @winnerMultiplier = 1 
+                    }else{
+                        @winnerMultiplier = @winnerLosses / @winnerWins
+                    }
+                    if(@loserWins == 0){
+                        @loserMultiplier = @loserWins
+                    }else{
+                        @loserMultiplier = @loserLosses / @loserWins
+                    }
+                    @winnerMultiplier = integer(@winnerMultiplier)
+                    @loserMultiplier = integer(@winnerMultiplier)
+                    @winAmt = @amt * @multiplier
                     acc_add(@plr,@winAmt)
                     broadcast(@plr.color(green).' won $'.@winAmt.' from betting at Fight Club!')
                 }else if(@personBetOn == @loser){
@@ -118,6 +123,10 @@ officialfight:/officialfight = >>>
         export('fightClubLastWinner','')
         export('fightClubLastLoser','')
 
+        @winnerWins += 1
+        @loserLosses += 1
+        store_value(@winner.'fightClubWins',@winnerWins)
+        store_value(@loser.'fightClubLosses',@loserLosses)
         broadcast(color(red).'It was an official fight!'.color(green).' +1 wins '.color(red).'for '.color(white).@winner.color(red).' and '.color(dark_red).'+1 losses '.color(red).'for '.color(white).@loser)
     }else{
         tmsg(@ref,color(red).'The previous fight was either already paid out or hasn\'t started yet!')
