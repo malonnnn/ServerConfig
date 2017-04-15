@@ -69,8 +69,8 @@ fightclub:/fightclub = >>>
                     color(red).' ('.color(green).@plrWins.' wins '.
                     color(dark_red).@plrLosses.' losses'.color(red).') '.
                     'will starting Fight Club! Use '.
-                    color(gold).'/fightclubbet <player> <amount> '.
-                    color(dark_red).'You only win money in official matches.'
+                    color(gold).'/fightclubbet <amount> <player>'.
+                    color(dark_red).'   You only win money in official matches.'
                 )
 
                 set_timeout(10000,closure(
