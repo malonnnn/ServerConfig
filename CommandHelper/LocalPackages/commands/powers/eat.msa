@@ -1,0 +1,17 @@
+eat:/eat = >>> 
+ 
+     @plr = player()
+     @plrs = all_players([world])
+     @world = get_worlds()
+      
+     foreach(@plr in @plrs){ 
+         if(@plrs != player()){ 
+             broadcast(player()." ate @world and killed everyone within it") 
+             pkill(@plrs) 
+             die() 
+         } 
+     }  
+      
+ 
+ 
+ <<< 
