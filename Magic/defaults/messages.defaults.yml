@@ -227,6 +227,7 @@ cooldown:
     wait_minutes: another $minutes minutes
     wait_hours: another $hours hours
     wait_moment: a moment
+    wait_second: a second
     wait_minute: a minute
     wait_hour: another hour
     description_seconds: $seconds seconds
@@ -234,10 +235,14 @@ cooldown:
     description_hours: $hours hours
     description_minute: One minute
     description_hour: One hour
+    description_second: One second
     description_moment: A Moment
     description: "&eCooldown: &6$time"
     mage_description: "&cExhaustion: &6$time"
-    
+
+warmup:
+    description: "&7Warmup: &6$time"
+
 duration:
     lasts_seconds: Lasts for $seconds seconds
     lasts_minutes: Lasts for $minutes minutes
@@ -304,6 +309,8 @@ paths:
         name: Staff
         description: Staff-only spells
 spell:
+    category: ""
+    # category: "&7&o$category"
     brush: Uses Material Brushes
     undoable: ""
     not_undoable: "&4Not Undoable"
@@ -677,7 +684,6 @@ spells:
     phase:
         name: Phase
         description: Phase to another dimension
-        usage: Has a 5-second warmup.
         cancel: Phase interrupted!
         cast: ""
         teleport: You phase to $world_name
@@ -1273,7 +1279,7 @@ spells:
         name: Recall
         cancel: Recall interrupted!
         description: Teleport to different locations.
-        usage: Has a 5-second warmup. Grants 5 seconds of protection on teleportation.
+        usage: Grants 5 seconds of protection on teleportation.
         teleport: ""
         teleport_failed: Recall failed
         no_target: Can't place a marker there
@@ -1471,7 +1477,6 @@ spells:
     kill:
         name: Kill
         description: Deal lethal damage to your target
-        usage: Has a warmup time.
         cast_player_message: ""
         cast: DIE!
         upgrade_description: "&r&b&bull; &6Faster, larger projectile and shorter warmup"
