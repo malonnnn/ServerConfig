@@ -1,10 +1,10 @@
 nextperson:/nextperson = >>>
 
-    @loc = array(14,105,-8,'office')
+    @loc = array(-4,137,-4,'office')
     @plrs = players_in_radius(@loc,1)
 
     if(array_index_exists(@plrs,0)){
-        broadcast(color(green).@plrs[0].color(red).' is now being served')
+        broadcast(color(green).@plrs[0].color(red).' is now being served in '.color(white).'The Office. '.color(red).'Visit '.color(gold).'/warp city'.color(red).' for access.')
         runas(~console,'/warp desk '.@plrs[0])
     }
 
