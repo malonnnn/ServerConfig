@@ -5,6 +5,8 @@ tooffice:/tooffice $plr = >>>
     runas(~console,'/pex user '.@plr.' add multiverse.access.office greenfield')
     if(has_permission(@plr,'is.secretary')){
         runas(~console,'/warp officeadmin '.@plr)
+    }else if(has_permission(@plr,'is.engineer')){
+        runas(~console,'/warp dnaengineering '.@plr)
     }else{
         runas(~console,'/warp office '.@plr)
     }

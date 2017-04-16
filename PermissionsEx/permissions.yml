@@ -6155,11 +6155,12 @@ groups:
       prefix: Mortal
       suffix: '&f'
     permissions:
+    - -essentials.warps.officeadmin
+    - -essentials.warps.dnaengineering
     - multiverse.access.fightclub
     - -magic.*
     - -essentials.warps.surprisekill
     - ch.alias.chatsounds
-    - -essentials.warps.officeadmin
     - -essentials.warps.desk
     - ch.alias.marry
     - -esssentials.warps.torture
@@ -6707,6 +6708,9 @@ groups:
         - ch.alias.fightclubbet
         - ch.alias.fightclub
         - ch.alias.fightclubstats
+        - essentials.build.interact.*
+      elytralobby:
+        permissions:
         - essentials.build.interact.*
   commonherotraits:
     inheritance:
@@ -10508,20 +10512,25 @@ users:
         - essentials.build.*
       office:
         permissions:
-        - ch.alias.officekill
         - essentials.fly
+        - essentials.build.*
+        - essentials.gamemode.survival
+        - essentials.gamemode.creative
+        - essentials.gamemode
+        - ch.alias.hiresecretary
+        - ch.alias.firesecretary
+        - ch.alias.officekill
       greenfield:
         permissions: []
       fightclub:
         permissions: []
     permissions:
+    - -ch.alias.gc
     - -chatcontrol.chat.format.color
     - is.secretary
     - essentials.warps.office
     - essentials.warps.officeadmin
     - multiverse.access.office
-    - ch.alias.firesecretary
-    - ch.alias.hiresecretary
     - change.chat
   290fa262-f514-4a2c-b71a-2f39e22b345b:
     group:
@@ -10710,7 +10719,7 @@ users:
     options:
       name: SajiFilms
     group:
-    - martianmanhunter
+    - blackracerwilliewalker
     worlds:
       garbageworld:
         permissions:
@@ -10915,7 +10924,7 @@ users:
       name: ItsaSteampunk_
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
-    - missmartian
+    - psylocke
     options:
       name: Rozuu
     permissions:
@@ -11028,7 +11037,7 @@ users:
       name: noahdude60
   5bfa6299-b245-454e-a31c-22090f6fc812:
     group:
-    - doctorstrange
+    - antman
     options:
       name: MZBgamer
   5c51f45c-2794-46ae-8c92-0f14c1b2ab91:
@@ -11130,6 +11139,8 @@ users:
         permissions:
         - essentials.build.*
       greenfield:
+        permissions: []
+      fightclub:
         permissions: []
     permissions: []
   6731741a-bfbd-4159-9005-664c5dc9fdb2:
@@ -11439,9 +11450,12 @@ users:
       name: GameTechnologies
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - sentry
+    - blackracerwilliewalker
     options:
       name: _Vigilance_
+    worlds:
+      greenfield:
+        permissions: []
   83be82a3-c45c-41a1-bca6-7d12212c6938:
     options:
       name: Steven_2008
@@ -11482,6 +11496,7 @@ users:
       prefix: ''
       suffix: ''
     permissions:
+    - -quarantine.onjoin
     - is.married
     - magic.*
     - essentials.warps.surprisekill
@@ -11517,6 +11532,8 @@ users:
       fightclub:
         permissions:
         - -essentials.protect.pvp
+      greenfield:
+        permissions: []
   88e901d2-ec28-4cc8-bad0-1de00d303fc1:
     group:
     - lukecage
@@ -12334,6 +12351,7 @@ users:
       name: SS_HarleyQuinn
       prefix: ''
     permissions:
+    - mortal.machine
     - machine.mortal
     - chat.cooldown
     - is.married
@@ -12575,7 +12593,7 @@ users:
     options:
       name: crusher31415
     group:
-    - onepunchman
+    - blacklanternmartianmanhunter
     worlds:
       fightclub:
         permissions: []
@@ -12658,7 +12676,7 @@ users:
       name: Xiedo
   f267d1cb-66b0-4c56-b1ed-90fc945a98d4:
     group:
-    - bluelanternbarryallen
+    - thefourthdoctor
     options:
       name: Irrupter
     permissions: []
@@ -12761,7 +12779,7 @@ users:
       name: WarrinPeace
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     group:
-    - supergirl
+    - xtwothree
     options:
       name: Camulll
     permissions:
@@ -13018,7 +13036,7 @@ users:
       name: ssgssgoku12345
   e67f0790-9bf4-4ba9-8faf-c4185dc5d8bd:
     group:
-    - venom
+    - starlord
     options:
       name: Predamorph1519
     permissions:
@@ -13143,7 +13161,7 @@ users:
       name: Soggy_Wafer
   c8b88131-52d4-4af0-9593-ddcdb3d56058:
     group:
-    - xtwothree
+    - redlanternsupergirl
     options:
       name: _WonderBat_
     worlds:
@@ -13160,22 +13178,13 @@ users:
       office:
         permissions:
         - ch.alias.officekill
-        - essentials.build.*
-        - ch.alias.hiresecretary
-        - ch.alias.firesecretary
-        - essentials.gamemode.survival
-        - essentials.gamemode.creative
-        - essentials.gamemode
-        - essentials.fly
       fightclub:
         permissions: []
     permissions:
-    - multiverse.access.fightclub
     - is.secretary
     - essentials.warps.office
     - essentials.warps.officeadmin
     - multiverse.access.office
-    - multiverse.access.underworld
   e9b5b064-1d37-41e9-88a7-7acd3ccea100:
     group:
     - flashbarryallen
@@ -13502,7 +13511,7 @@ users:
   cb871f86-94e5-4bf3-a78e-42f73c2215c4:
     group:
     - omega
-    - mortal
+    - quarantine
     options:
       name: xSp4rkz
     permissions:
@@ -13529,6 +13538,10 @@ users:
     - powers.ow
     - icu.exempt
     - multiverse.access.anarchy
+    worlds:
+      fightclub:
+        permissions:
+        - -essentials.protect.pvp
   38d8d82a-51db-49bb-90ad-fcf263e5d68d:
     group:
     - quarantine
@@ -13802,6 +13815,8 @@ users:
     worlds:
       fightclub:
         permissions: []
+      greenfield:
+        permissions: []
   8804c5af-7861-4d3b-ae26-750b4cf93f25:
     group:
     - onepunchman
@@ -13892,10 +13907,13 @@ users:
     - multiverse.access.underworld
   b09b6618-e035-4e1f-be4e-f01ec6888001:
     group:
-    - beerus
+    - deadpool
     options:
       name: Bcrulez
     permissions: []
+    worlds:
+      greenfield:
+        permissions: []
   b2443860-8897-425e-a98c-f318a1bc1749:
     group:
     - blackbolt
@@ -14244,13 +14262,15 @@ users:
       name: ii_Ashura
   ae107f34-4831-49c2-bfe8-0974342077e0:
     group:
-    - infinitysilversurfer
+    - darthrevan
     options:
       name: FunCaptianrex
     permissions:
     - multiverse.access.underworld
     worlds:
       fightclub:
+        permissions: []
+      greenfield:
         permissions: []
   fb36b726-00ff-4391-889e-d32a31d62169:
     group:
@@ -14359,7 +14379,7 @@ users:
       name: Captin_Awesome
   a8185de3-b053-4aca-9eb6-d98728e476ad:
     group:
-    - flashwallywest
+    - spidermanpeterparker
     options:
       name: nightghost2
     permissions:
@@ -14382,12 +14402,15 @@ users:
       name: MichaelPotter02
   9cb07b82-4d2f-446f-b194-4f83dee1e02f:
     group:
-    - lukecage
+    - doctormanhattan
     options:
       name: TooFluffy
-    permissions: []
+    permissions:
+    - -ch.alias.gc
     worlds:
       fightclub:
+        permissions: []
+      greenfield:
         permissions: []
   05a43d17-2abf-46d0-a1dd-99527325eb00:
     group:
@@ -14469,7 +14492,7 @@ users:
       name: ccv3
   8cb964f5-d345-4a65-8811-cb3b0c11b51b:
     group:
-    - flashbarryallen
+    - ninjagocoleghost
     options:
       name: Vengeance007
     permissions: []
@@ -15143,6 +15166,8 @@ users:
     worlds:
       fightclub:
         permissions: []
+      greenfield:
+        permissions: []
   1b616299-60ce-4c17-a9d0-7206d79fa538:
     group:
     - wolverine
@@ -15322,7 +15347,7 @@ users:
       name: Chromedist
   67a6d658-fe55-41e6-89d2-78e5ace804e9:
     group:
-    - onepunchman
+    - greenarrow
     options:
       name: KennyKenshiKoala
   f0d32a45-3a55-451f-8502-8bbcff907507:
@@ -15815,12 +15840,22 @@ users:
     options:
       name: mythguy1226
     permissions:
+    - -ch.alias.gc
+    - is.secretary
+    - is.engineer
     - multiverse.access.underworld
     worlds:
       greenfield:
         permissions: []
       fightclub:
         permissions: []
+      office:
+        permissions:
+        - essentials.fly
+        - essentials.build.*
+        - essentials.gamemode
+        - essentials.gamemode.survival
+        - essentials.gamemode.creative
   98163bdb-968d-4a0e-96fd-10714ae78950:
     group:
     - mortal
@@ -15944,21 +15979,23 @@ users:
       name: AustinBossBoy
   4f9ba6ae-950b-43ed-8de6-5fb7315ef8a6:
     group:
-    - onepunchman
+    - beastboy
     options:
       name: CookieGod21
   1ab35d18-25a8-423a-ad54-c4d973a8fc00:
     group:
-    - cyborg
+    - blackadam
     options:
-      name: Greninja25
+      name: MegaGreninja25
   8985f847-87f0-4d98-868e-e7a56f168697:
     group:
-    - optimusprime
+    - mosquitogirl
     options:
       name: Gamer_Jesse
     worlds:
       fightclub:
+        permissions: []
+      greenfield:
         permissions: []
   0162c2a3-5058-4f6f-8ca9-f0063a7d1fab:
     group:
@@ -16017,10 +16054,13 @@ users:
     permissions: []
   45bcb3ec-1dcb-41fe-ac6e-dac3c41f3ea7:
     group:
-    - mrmxyzptlk
+    - mewtwo
     options:
       name: BlueWolf4Life
     permissions: []
+    worlds:
+      fightclub:
+        permissions: []
   950a3113-378a-4078-aaed-40556a5cbd76:
     group:
     - mortal
@@ -16184,6 +16224,9 @@ users:
     - bluelanternbarryallen
     options:
       name: TheMVP56
+    worlds:
+      greenfield:
+        permissions: []
   4361fda2-e3c5-46d9-bcc1-10f96804511f:
     group:
     - mortal
@@ -16282,11 +16325,13 @@ users:
       name: NoFearKing
   d39ddc52-5fdb-484e-8e0c-f538e7982bee:
     group:
-    - terra
+    - artemisyoungjustice
     options:
       name: Eyemakid
     worlds:
       fightclub:
+        permissions: []
+      greenfield:
         permissions: []
   b23253de-b89d-4ea4-8f9d-f8eaee9e2c37:
     group:
@@ -16398,7 +16443,7 @@ users:
       name: DrHERO1
   ab873698-78fa-4776-a17b-1a8702d32955:
     group:
-    - bluelanternbarryallen
+    - deathstroke
     options:
       name: ruzster
   5fc25ef5-78fd-4824-a70a-2c9f6ec678d1:
@@ -16483,7 +16528,7 @@ users:
       name: SepticPanda45
   87bb4f34-8ea7-4e22-a9a6-8c157cf33b1e:
     group:
-    - savitar
+    - ironfist
     options:
       name: MrGold4
     worlds:
@@ -16886,7 +16931,7 @@ users:
       name: AT77
   ca7e8de8-30f0-43c5-9701-982c10ea9459:
     group:
-    - parallaxentity
+    - spidermanpeterparker
     options:
       name: HerpaDerp10000
     permissions:
@@ -16929,7 +16974,7 @@ users:
       name: J9IB
   caea0768-0a9a-4aa2-8662-9e2e63b2e0ca:
     group:
-    - reverseflasheobardthawne
+    - generalzod
     options:
       name: Darkest_Warrior_
     permissions:
@@ -17015,6 +17060,7 @@ users:
     worlds:
       fightclub:
         permissions: []
+    permissions: []
   a87c83fd-f7c4-4dd6-9027-611511cd5a9b:
     group:
     - flashbarryallen
@@ -17107,15 +17153,17 @@ users:
     permissions: []
   b6a9ea16-f2d9-40c9-9274-5d32fce62400:
     group:
-    - redhood
+    - yellowlanternsinestro
     options:
       name: madman21804
     worlds:
       fightclub:
         permissions: []
+      greenfield:
+        permissions: []
   e68eeab6-09df-4979-aa3f-13ee786a0a10:
     group:
-    - 3dmandelroygarrett
+    - zoom
     options:
       name: GuildedHero46
     worlds:
@@ -17256,7 +17304,7 @@ users:
       name: Freja15k
   3a3ba1c8-7fa6-4e4c-832b-e46a7cda2da6:
     group:
-    - ironmanmkxlvi
+    - superman
     worlds:
       greenfield:
         permissions: []
@@ -17297,7 +17345,7 @@ users:
       name: Gingastries
   04843c72-62ef-4a65-8d09-152cd3b42fcb:
     group:
-    - vision
+    - beerus
     worlds:
       greenfield:
         permissions: []
@@ -17317,7 +17365,7 @@ users:
         permissions: []
   0e0762f9-f266-4545-89a9-019e41f92e5a:
     group:
-    - goku
+    - ghostriderjohnnyblaze
     worlds:
       fightclub:
         permissions: []
@@ -17325,11 +17373,13 @@ users:
       name: Son_Daiko
   0e20268d-ad1a-4a5a-b867-1bd57a24468f:
     group:
-    - goku
+    - cosmicarmorsuperman
     options:
       name: Destro717
     worlds:
       greenfield:
+        permissions: []
+      fightclub:
         permissions: []
   8e947705-440e-4b30-a05c-010e4da817a4:
     group:
@@ -17346,7 +17396,7 @@ users:
       name: DerpIndustries
   b2b36588-6097-4489-b27d-16904b55ec34:
     group:
-    - spidermanpeterparker
+    - spiderman2099
     options:
       name: Grizwald200
     worlds:
@@ -17359,7 +17409,7 @@ users:
       name: SacabooCDE
   dccc293a-5cb1-45e8-a895-a6301ca2960e:
     group:
-    - ichigokurosaki
+    - harrypotter
     worlds:
       fightclub:
         permissions: []
@@ -17367,6 +17417,118 @@ users:
         permissions: []
     options:
       name: aldrin524
+  6bb16267-016b-49f7-858d-b28ec860eaf1:
+    group:
+    - lukeskywalker
+    options:
+      name: xCandyAddictedX
+  1e83c3b0-b3fd-4bed-b0dd-a0853d76f2bd:
+    group:
+    - ashprime
+    options:
+      name: ZomboViolin
+  3712728a-b870-4d4a-b61f-2e4626d8bf00:
+    group:
+    - mewtwo
+    permissions:
+    - multiverse.access.underworld
+    options:
+      name: lukaalves
+  de40ddae-14b6-415b-93fb-a3a309128661:
+    group:
+    - enderman
+    permissions:
+    - multiverse.access.underworld
+    options:
+      name: NoahAl
+    worlds:
+      fightclub:
+        permissions: []
+  7f513768-1d21-45f8-bb54-9d0c9a8b7664:
+    group:
+    - flashwalterwest
+    options:
+      name: NLMatiman
+    worlds:
+      fightclub:
+        permissions: []
+      greenfield:
+        permissions: []
+  95887941-697b-4e2c-a3af-51f0340af46b:
+    group:
+    - ironmanmkxv
+    options:
+      name: toyngn007
+  c7f35ddb-e2a1-4665-97c0-5e89bcd68501:
+    group:
+    - blackracerwilliewalker
+    options:
+      name: luluismybestfrie
+  a913250d-8b67-4d1e-9e77-d74405c76872:
+    group:
+    - ultron
+    worlds:
+      greenfield:
+        permissions: []
+      fightclub:
+        permissions: []
+    options:
+      name: diamondvortex123
+  b89ba791-a0b4-4497-9d70-0622023ece2c:
+    group:
+    - thor
+    worlds:
+      fightclub:
+        permissions: []
+    options:
+      name: Trilon_Shadows
+  c7975bbb-5ba2-4ec3-b2e5-48b1ffa6419c:
+    permissions: []
+    options:
+      name: ronsampaul
+  c02f1113-9534-4b7c-bc31-2928d2aebe47:
+    group:
+    - novasamalexander
+    options:
+      name: Wakanda
+    worlds:
+      fightclub:
+        permissions: []
+  06bcee96-8e3c-4add-aed0-a27bbddf0f5d:
+    group:
+    - infinitythanos
+    options:
+      name: Furnace_
+    worlds:
+      fightclub:
+        permissions: []
+  7e2fdeb2-81a6-4125-9d02-a4e16db98f2d:
+    group:
+    - quarantine
+    options:
+      name: JumpmanC
+  xsp4kz:
+    permissions:
+    - -quarantine.onjoin
+  e607734b-815e-4313-ae9c-141d2269fe07:
+    group:
+    - blackwidow
+    worlds:
+      fightclub:
+        permissions: []
+      greenfield:
+        permissions: []
+    options:
+      name: Its__Bee
+  b4b48d04-e8ac-4764-91ad-bc1d326cf9d8:
+    permissions: []
+    group:
+    - ironmanmkxv
+    options:
+      name: _Tony_Stark__YT
+  94a0bf05-fdef-4eb0-9277-d20a95068d15:
+    group:
+    - flashbarryallen
 worlds:
   checkers:
     inheritance:

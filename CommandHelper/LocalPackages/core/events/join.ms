@@ -64,7 +64,7 @@ bind(player_join,null,null,@event){
         }
     }
 
-    if(@plr == "Genie_Crafter" || @plr == 'PlatypiSpy'){
+    if(has_permission(@plr,'quarantine.onjoin')){
         runas(~console,'/runalias /quarantine '.@plr)
     }
 
