@@ -1,8 +1,8 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: God_Doesnt_Exist
-last_cast: 1491942746646
+last_cast: 1492311224212
 cooldown_expiration: 0
-last_death_location: -14.30826734762457,32.0,-7.623696968893796,fightclub,209.4072,6.2928963
+last_death_location: -11.657417847311603,32.0,-11.10570898346734,fightclub,-155.46417,7.8656473
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -12,7 +12,92 @@ brush:
   schematic: ''
   scale: 1.0
   erase: true
-undo: []
+undo:
+- world: greenfield
+  blocks:
+  - -47,69,-128,greenfield|0:0
+  time_to_live: 0
+  name: Pillar
+  consumed: true
+- world: greenfield
+  blocks:
+  - -55,74,-127,greenfield|0:0
+  time_to_live: 0
+  name: Pillar
+  consumed: true
+- world: survival
+  blocks:
+  - 350,72,-270,survival|0:0
+  time_to_live: 0
+  name: Column
+  consumed: true
+- world: survival
+  blocks:
+  - 352,72,-269,survival|31:1
+  - 351,73,-270,survival|0:0
+  - 352,73,-270,survival|0:0
+  - 353,73,-269,survival|0:0
+  - 353,72,-268,survival|0:0
+  - 351,72,-270,survival|0:0
+  - 351,74,-271,survival|0:0
+  - 352,74,-271,survival|0:0
+  - 353,74,-270,survival|0:0
+  - 354,74,-270,survival|0:0
+  - 354,74,-269,survival|0:0
+  - 354,73,-268,survival|0:0
+  - 354,72,-268,survival|0:0
+  - 351,73,-271,survival|0:0
+  - 353,74,-271,survival|0:0
+  - 355,73,-268,survival|0:0
+  - 355,72,-267,survival|0:0
+  - 349,72,-271,survival|0:0
+  - 350,73,-271,survival|0:0
+  - 353,72,-269,survival|0:0
+  - 351,75,-272,survival|0:0
+  - 352,75,-272,survival|0:0
+  - 353,75,-271,survival|0:0
+  - 354,75,-271,survival|0:0
+  - 354,75,-270,survival|0:0
+  - 354,73,-269,survival|0:0
+  - 350,72,-271,survival|0:0
+  - 351,74,-272,survival|0:0
+  - 353,75,-272,survival|0:0
+  - 355,74,-269,survival|0:0
+  - 349,73,-272,survival|0:0
+  - 350,74,-272,survival|0:0
+  - 353,73,-270,survival|0:0
+  - 351,76,-273,survival|0:0
+  - 352,76,-273,survival|0:0
+  - 353,76,-272,survival|0:0
+  - 354,76,-272,survival|0:0
+  - 354,76,-271,survival|0:0
+  - 350,73,-272,survival|0:0
+  - 351,75,-273,survival|0:0
+  - 353,76,-273,survival|0:0
+  - 355,75,-270,survival|0:0
+  - 351,72,-269,survival|0:0
+  - 349,74,-273,survival|0:0
+  - 350,75,-273,survival|0:0
+  - 352,76,-272,survival|0:0
+  - 352,77,-273,survival|0:0
+  - 353,77,-273,survival|0:0
+  - 354,77,-272,survival|0:0
+  - 355,77,-272,survival|0:0
+  - 355,77,-271,survival|0:0
+  - 355,76,-270,survival|0:0
+  - 354,77,-273,survival|0:0
+  - 356,76,-270,survival|0:0
+  - 356,75,-269,survival|0:0
+  - 352,73,-269,survival|0:0
+  time_to_live: 0
+  name: Column
+  consumed: true
+- world: survival
+  blocks:
+  - 359,72,-263,survival|0:0
+  time_to_live: 0
+  name: Pillar
+  consumed: true
 spells:
   flare:
     cast_count: 29
@@ -44,6 +129,11 @@ spells:
     last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
+  projector:
+    cast_count: 0
+    last_cast: 1492310520904
+    last_earn: 0
+    cooldown_expiration: 1492310580904
   flare|2:
     cast_count: 2
     last_cast: 1479675732311
@@ -64,6 +154,11 @@ spells:
     last_cast: 1491694660005
     last_earn: 1491694650567
     cooldown_expiration: 0
+  portal:
+    cast_count: 2
+    last_cast: 1492310415155
+    last_earn: 0
+    cooldown_expiration: 1492310420155
   fireball|2:
     cast_count: 0
     last_cast: 1479675638167
@@ -85,8 +180,8 @@ spells:
     last_earn: 1491694073215
     cooldown_expiration: 0
   pillar:
-    cast_count: 10
-    last_cast: 1479673703032
+    cast_count: 13
+    last_cast: 1492311211009
     last_earn: 0
     cooldown_expiration: 0
   curse:
@@ -98,6 +193,11 @@ spells:
     cast_count: 1
     last_cast: 1491693930905
     last_earn: 1491693930904
+    cooldown_expiration: 0
+  force:
+    cast_count: 0
+    last_cast: 1492313988840
+    last_earn: 0
     cooldown_expiration: 0
   bridge:
     cast_count: 2
@@ -119,11 +219,21 @@ spells:
     last_cast: 1479673994423
     last_earn: 0
     cooldown_expiration: 1479673996423
+  supershell:
+    cast_count: 0
+    last_cast: 1492313988840
+    last_earn: 0
+    cooldown_expiration: 0
   arrow|3:
     cast_count: 0
     last_cast: 1479673989370
     last_earn: 0
     cooldown_expiration: 1479673991370
+  petrify:
+    cast_count: 4
+    last_cast: 1492310394739
+    last_earn: 0
+    cooldown_expiration: 1492310404739
   boomstown:
     cast_count: 0
     last_cast: 1479696484400
@@ -135,10 +245,15 @@ spells:
     last_earn: 0
     cooldown_expiration: 1479675392531
   bubble:
-    cast_count: 4
-    last_cast: 1479696719893
+    cast_count: 5
+    last_cast: 1492310156736
     last_earn: 1479696708520
-    cooldown_expiration: 1479696721893
+    cooldown_expiration: 1492310158736
+  sphere:
+    cast_count: 1
+    last_cast: 1492310580665
+    last_earn: 0
+    cooldown_expiration: 1492310610665
   chainlightning|2:
     cast_count: 3
     last_cast: 1479696950814
@@ -194,6 +309,11 @@ spells:
     last_cast: 1479697196512
     last_earn: 0
     cooldown_expiration: 1479697201512
+  column:
+    cast_count: 2
+    last_cast: 1492311201591
+    last_earn: 0
+    cooldown_expiration: 0
   superkill:
     cast_count: 38
     last_cast: 1491697829260
@@ -250,10 +370,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
   entangle:
-    cast_count: 8
-    last_cast: 1479675429215
+    cast_count: 12
+    last_cast: 1492310284512
     last_earn: 0
-    cooldown_expiration: 1479675437215
+    cooldown_expiration: 1492310292512
   flashbang:
     cast_count: 2
     last_cast: 1490746955601
@@ -269,11 +389,16 @@ spells:
     last_cast: 1479696402733
     last_earn: 0
     cooldown_expiration: 1479696414733
+  whip:
+    cast_count: 3
+    last_cast: 1492310774252
+    last_earn: 0
+    cooldown_expiration: 1492310779252
   cage:
-    cast_count: 1
-    last_cast: 1479696734080
+    cast_count: 2
+    last_cast: 1492310174898
     last_earn: 1479696734275
-    cooldown_expiration: 1479696764080
+    cooldown_expiration: 1492310204898
   spellshop:
     cast_count: 0
     last_cast: 1491941999236
@@ -325,10 +450,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
   earthquake:
-    cast_count: 7
-    last_cast: 1479697146889
+    cast_count: 10
+    last_cast: 1492311132192
     last_earn: 0
-    cooldown_expiration: 1479697166889
+    cooldown_expiration: 1492311152192
   disarm:
     cast_count: 1
     last_cast: 1479675053687
@@ -344,6 +469,16 @@ spells:
     last_cast: 1479696362710
     last_earn: 0
     cooldown_expiration: 1479696366710
+  shell:
+    cast_count: 2
+    last_cast: 1492310535313
+    last_earn: 0
+    cooldown_expiration: 1492310540313
+  superblob:
+    cast_count: 1
+    last_cast: 1492313988840
+    last_earn: 0
+    cooldown_expiration: 0
   collapse|2:
     cast_count: 1
     last_cast: 1479697052342
@@ -359,6 +494,11 @@ spells:
     last_cast: 1479673984969
     last_earn: 0
     cooldown_expiration: 1479673986969
+  tent:
+    cast_count: 1
+    last_cast: 1492310694977
+    last_earn: 0
+    cooldown_expiration: 1492310814977
   blind:
     cast_count: 0
     last_cast: 1479696313442
@@ -389,6 +529,16 @@ spells:
     last_cast: 1479696270226
     last_earn: 0
     cooldown_expiration: 1479696275226
+  sandblast:
+    cast_count: 1
+    last_cast: 1492310961383
+    last_earn: 0
+    cooldown_expiration: 1492310991383
+  platform:
+    cast_count: 1
+    last_cast: 1492310990163
+    last_earn: 0
+    cooldown_expiration: 1492310995163
   breach|3:
     cast_count: 1
     last_cast: 1479696517433
@@ -460,8 +610,8 @@ spells:
     last_earn: 0
     cooldown_expiration: 1479674536829
   earth:
-    cast_count: 10
-    last_cast: 1479675301134
+    cast_count: 14
+    last_cast: 1492311224213
     last_earn: 0
     cooldown_expiration: 0
   blink|3:

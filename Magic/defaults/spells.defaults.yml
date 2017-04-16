@@ -942,14 +942,22 @@ blink:
           ignore_result: true
           actions:
           - class: FallProtectionAction
-        - class: Delay
         - class: Teleport
     effects:
         teleport:
         - class: EffectSingle
           sound: magic.teleport
           location: target
-        cast:
+          particle_override: particleNucleus
+          color_override: colorOrbital
+          source_location: eyes
+          effectlib:
+             class: AtomEffect
+             particleNucleus: dragon_breath
+             particleOrbital: redstone
+             iterations: 8
+             offset: 0,-1,0
+        precast:
          - class: EffectSingle
            sound: magic.teleport
            location: origin
@@ -958,6 +966,7 @@ blink:
            source_location: eyes
            effectlib:
                class: AtomEffect
+               updateLocations: false
                particleNucleus: dragon_breath
                particleOrbital: redstone
                iterations: 8
@@ -967,6 +976,7 @@ blink:
            effectlib:
                class: LineEffect
                particle: redstone
+               updateLocations: false
     parameters:
         target: block
         allow_max_range: true
@@ -5706,7 +5716,7 @@ kill:
         hitbox_size: 1
         velocity: 5
         interval: 250
-        delay: 3000
+        warmup: 3000
         message: "&aAvada Kedavra!"
         message_type: title
         message_target: true
@@ -5722,7 +5732,7 @@ kill|2:
         entity_damage: 35
         hitbox_size: 1.5
         velocity: 7
-        delay: 2000
+        warmup: 2000
 
 kill|3:
     parameters:
@@ -5731,7 +5741,7 @@ kill|3:
         entity_damage: 40
         hitbox_size: 2
         velocity: 10
-        delay: 1500
+        warmup: 1500
 
 laser:
     icon: diamond_axe:145
@@ -7565,7 +7575,7 @@ phase:
              particleOffsetY: 2
              particleOffsetZ: 0.9
     parameters:
-        delay: 5000
+        warmup: 5000
         cancel_on_damage: 1
         cancel_on_cast_other: true
         cooldown: 15000
@@ -8599,7 +8609,7 @@ recall:
              particleOffsetZ: 0.9
              offset: 0,-1,0
     parameters:
-        delay: 5000
+        warmup: 5000
         cancel_on_damage: 1
         cancel_on_cast_other: true
         allow_spawn: false
