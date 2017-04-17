@@ -325,6 +325,8 @@ spell:
     progress_description: "&6Progress: &b$level&6/&3$max_level"
     quick_cast: "&2Quick Cast"
     earns: "&2Earns up to &6$earns &eSP"
+    description_lore: "&b$description"
+    level_lore: "&6$level"
 spells:
     default:
         fizzle: Your spell fizzled!
@@ -1223,7 +1225,7 @@ spells:
         name: Laser
         description: Destroy a line of blocks
         cast_finish: Lasered $count blocks
-        upgrade_description: "&r&b&bull; &6Larger radius, breaks more block types, increased damage"
+        upgrade_description: "&r&b&bull; &6Larger radius, increased damage"
     stream:
         name: Stream
         description: Spray a stream of water
@@ -1929,6 +1931,10 @@ wand:
     randomized_lore: What kind of wand will you get?
     randomized_name: Wand Box
     upgrade_name: $name Upgrade
+    randomized_description: "&o&2$description"
+    description_lore: "&o&a$description"
+    path_lore: ""
+    #path_lore: "&o$path"
     inventory_instructions: "&r&eYour $wand now has more than one spell. Use the drop (Q) button to open/close the spell inventory. Use the hotbar buttons to select a spell."
     page_instructions: "&r&eYour $wand now has more than one page of spells. Click outside the spell inventory to change pages."
     bound_instructions: "&r&3Your $wand is bound to you, and is undroppable."
