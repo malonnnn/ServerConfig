@@ -13,13 +13,9 @@
              'speech': "Do or do not there is no try!", 
              'powers': array( 
                  "/buff", 
-                 "/jump 0-7", 
-                 "/run 0-4", 
-                 "/haste 0-1" 
+                 "/jump 0-4"
              ), 
              'buffs': array( 
-                 "/effect ". @plr ." 5 9999 5 true", 
-                 "/effect ". @plr ." 21 9999 19 true", 
                  "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&2Y&ao&2d&aa's &2Lig&ahts&2aber",
                  "/mgive ". @plr ." yodaforce"
              ) 
