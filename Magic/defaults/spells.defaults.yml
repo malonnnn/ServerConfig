@@ -737,9 +737,13 @@ blast:
     upgrade_required_casts: 50
     actions:
         cast:
-        -  class: Sphere
-           actions:
-           -  class: ModifyBlock
+        - class: AreaOfEffect
+          actions:
+          - class: Damage
+          - class: Velocity
+        - class: Sphere
+          actions:
+          - class: ModifyBlock
     effects:
         cast:
         -  class: EffectSingle
@@ -770,10 +774,12 @@ blast:
         allow_max_range: false
         range: 32
         speed: 0.9
+        living_entity_speed: 0.7
         direction: 0,0.8,0
         falling: true
         brush: air
         radius: 1
+        damage_max_distance: 2
         undo: 15000
         cooldown: 5000
         destructible: solid
@@ -782,6 +788,7 @@ blast:
         select_self: false
         physics_blocks: true
         undo_speed: 0.5
+        damage: 6
     costs:
         mana: 45
 
@@ -791,7 +798,10 @@ blast|2:
     parameters:
         destructible_durability: 50
         radius: 2
+        damage_max_distance: 3
         speed: 1.2
+        damage: 8
+        living_entity_speed: 0.8
 
 blast|3:
     upgrade_required_path: master
@@ -800,12 +810,15 @@ blast|3:
         destructible_durability: 100
         radius: 2
         undo: 20000
+        damage: 10
 
 blast|4:
     parameters:
         destructible_durability: 1000
         radius: 3
+        damage_max_distance: 4
         undo: 30000
+        damage: 12
 
 blessing:
     icon: diamond_axe:10
@@ -5753,6 +5766,7 @@ laser:
     upgrade_required_path: apprentice
     upgrade_required_casts: 50
     pvp_restricted: true
+    require_break: false
     actions:
         cast:
         -  class: Line
@@ -5760,7 +5774,7 @@ laser:
            actions:
            -  class: Disc
               actions:
-              -  class: ModifyBlock
+              -  class: BreakBlock
         -  class: Repeat
            actions:
            - class: Delay
@@ -5774,7 +5788,7 @@ laser:
                 actions:
                 -  class: Disc
                    actions:
-                   -  class: ModifyBlock
+                   -  class: BreakBlock
               - class: ConeOfEffect
                 actions:
                 -  class: Damage
@@ -5817,9 +5831,11 @@ laser:
         start_at_target: true
         increment_data: false
         check_destructible: true
-        destructible: destructible_mining,transparent
+        destructible: solid
+        destructible_durability: 100
+        break_durability: 4
+        undo: 30000
         transparent: air
-        brush: air
         radius: 0
         undo: 15000
         cooldown: 10000
@@ -5841,6 +5857,7 @@ laser|2:
         player_damage: 1
         entity_damage: 2
         repeat: 11
+        break_durability: 6
 
 laser|3:
     parameters:
@@ -5850,6 +5867,7 @@ laser|3:
         player_damage: 1
         entity_damage: 3
         repeat: 12
+        break_durability: 8
 
 lava:
     icon: diamond_axe:139
@@ -6588,11 +6606,14 @@ missile:
     worth: 150
     earns_sp: 7
     earns_cooldown: 10000
+    require_break: false
     actions:
         cast:
         - class: CustomProjectile
           actions:
           - class: Damage
+          - class: BreakBlock
+            ignore_result: true
     effects:
         cast:
         -  class: EffectSingle
@@ -6677,6 +6698,10 @@ missile:
         target_breakables: 1
         cooldown: 1000
         reorient: false
+        destructible: solid
+        destructible_durability: 50
+        break_durability: 2
+        undo: 10000
     costs:
         mana: 15
 
@@ -6692,6 +6717,7 @@ missile|2:
         player_damage: 3
         entity_damage: 6
         target_breakables: 1
+        break_durability: 3
     costs:
         mana: 20
 
@@ -6707,6 +6733,7 @@ missile|3:
         player_damage: 4
         entity_damage: 8
         target_breakables: 2
+        break_durability: 4
     costs:
         mana: 50
 
@@ -6719,6 +6746,7 @@ missile|4:
         player_damage: 4
         entity_damage: 10
         target_breakables: 3
+        break_durability: 5
     costs:
         mana: 80
 
@@ -8362,6 +8390,8 @@ railgun:
     worth: 1000
     earns_sp: 10
     brush_effects: false
+    require_break: false
+    require_build: false
     actions:
         cast:
         - class: CustomProjectile
