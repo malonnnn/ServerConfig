@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: mythguy1226
-last_cast: 1492367327458
+last_cast: 1492465493575
 cooldown_expiration: 0
 last_death_location: -4.595458984375,-161.4357931365535,4.5,rollercoaster,7.0497136,-45.600025
 fall_protection_count: 0
@@ -48,7 +48,7 @@ spells:
     cast_count: 45
     last_cast: 1492364958666
     last_earn: 1492364959464
-    cooldown_expiration: 1492364963666
+    cooldown_expiration: 0
   pull:
     cast_count: 2
     last_cast: 1492224039376
@@ -103,7 +103,7 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6Apparate§f (§3Harry's Wand§f)
+        display-name: §6Petrificus Totalus§f (§3Harry's Wand§f)
         lore:
         - §3§oBound to mythguy1226
         - Knows 14 Spells
@@ -117,56 +117,73 @@ wands:
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
         Unbreakable: true
-        internal: H4sIAAAAAAAAAF2Sy24TMRSGT5nJZJKWIpUlt0IrVg1KnMlkukGNBBJIFBZVVywiZ+Y4seK5YHsSskNIPAMPwJYFD8CCJ0A8Dys8l1zKrPz7ePyf/ztuA7TBXtIkcsHVGGeCaoT9GZVypYpt4kIjXSYoYT9e6dk0X/UI8V04oKHmCxyrDIWAxkTwZN6Gg1KOBS5QKAuaGWrJ2QoALKMkMoGhNsq2oLFM8ySqKzFXigs06pYFNuMSq0J1r1k7FjgRV1TGVcHOcjUrjoMDdkwTevH5FxSfDYeFHGseo9I0zgD23n88kX9MvjLHmEdwynzSGwQ+dgJkQcfzgqhzTnyvE/gTv9cfDroDgiYjMmb6HYepSCU8JcOu5w1JdN4l3bNBGCFhUdgLSP8sGqDXm9C+5/dZC5wSgnJNN4fbaFXHTZ1KnctSFtyYoIUQnOlC8GRax9+gW8fe0KuZ1PzsORfCEFygVDxNjGejDXeqMfBkgYkxXFlrI1O9MRXYQWxb6w4Amru4DfvSxSwf7pC36gwAj6xtrv8n/WBn0sc3Jr1n1bkBHm+H/gSgBUcjbTqc5Bov04gzbrK1iz9scK+vX7+4TJX+e/L8/ujTK7ShVWy9Qar0j3s/f3/98v2bA84oNp764rR8E+CCfSVSDW5MeTIrH/vtjcVbGiPcnaJ5Gzx8RrWm4fwqQ4wsaL3LUFJdcS1uKc8evfyQ8yw2aI/X7QH8A+WQp65JAwAA
+        internal: H4sIAAAAAAAAAD2QsU7CYBSFD6GFAuqAiYsOJLrWSIVaFyMJJpqIDoTJgfzQW/hj/7a2t5AOJi4+gw/g6uAD+Aw+g8/hZFujd7o55+acL7cJNKGtReAaMJhU5AsmtJYijrOkkC0DergOKEZLZbxcpFnXsmwDG2LOckXTJCLfRz0ijqWX6dCUCMRwB9CwVaxTlooSFioCKnePXx09LyoDp9LFgWdb3b5jk+mQ55i9nuOap5bdMx17ZnePT/pHfYuqqK8oTmQYANDRQHvAedssZRqFrvRkbjZzq6LBmEyuhqMw4e/9s73B0yVpaBTSNYmE33c/Pl+e315rqA1UmAZ8foByDGhjP2QYSshgWf5i87/iRijC9oJyYjk/FMxifj+OiNwqGrcRxYJ/wYqU8rZ98ZDKSFHAnT884AeKIH3PaAEAAA==
     wand:
       template: harryswand2
       owner: mythguy1226
-      active_spell: blink
-      spell_levels:
-        petrify: 3
-        reflect: 4
-        wound: 3
-        missile: 2
-        fire: 3
-        blink: 6
-        disarm: 3
-        push: 2
+      active_spell: petrify
       mana: 600.0
-      mana_timestamp: 1492369240784
+      mana_timestamp: 1492465491973
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: 2704472d9020,5cde2fdc1823,d5e41ba3463f
-      spells:
-      - missile
-      - push
-      - torture
-      - pull
-      - flare
-      - lift
-      - fling
-      - fire
-      - petrify
-      - disarm
-      - reflect
-      - blink
-      - wound
-      - kill
       version: 5
-      spell_inventory:
-        flare: 5
-        petrify: 0
-        blink: 4
-        fling: 7
-        disarm: 6
-        kill: 30
-        push: 2
-        pull: 31
-        torture: 3
-        reflect: 29
-        wound: 32
-        missile: 1
-        lift: 33
-        fire: 34
-open_wand: false
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  type: WOOD_HOE
+  damage: 1
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §6Avadakedavra§f (§3Harry's Wand§f)
+    lore:
+    - §3§oBound to mythguy1226
+    - Knows 14 Spells
+    - '§d§oMana: 600'
+    - '§d§oMana Regeneration: 50/s'
+    ItemFlags: !!set
+      HIDE_PLACED_ON: null
+      HIDE_ENCHANTS: null
+      HIDE_UNBREAKABLE: null
+      HIDE_POTION_EFFECTS: null
+      HIDE_ATTRIBUTES: null
+      HIDE_DESTROYS: null
+    Unbreakable: true
+    internal: H4sIAAAAAAAAAD2PsU7CYBSFD6FggeiAow4mstZIbWtdjE000UR0IEwO5Ife0j/y/63trYTBxMVn8AFYHXwAn8FX8D2cLDV6x3NOzv1OG2jDWAgdmjCZVDoXTOjEIsuW+Vq2TTSShaYMHbXkeFYs+7btGdhSQosxS0U5C5UCtbunL2NVtlTpsQzRizy77/oeWT5FvuU4fmid2J5j+d7E6x8du4euTXVsPFKWy0QDaKCFbsCcyUnBNEhCGcnSbJdWzYA5Gl2dD5Kcv/dPd4PnSzLQWkvXJHJ+3/n4fH15WzXRDFRSaD7roToTxnCeMEwlpI6roZv/L26EImzPqCSW0wPBLKb3w5QorKN1m1Im+Bds3VJluxcPhUwVad77wwN+ACcFGQJFAQAA
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
 gave_welcome_wand: false
 data:
   sp: 1085
