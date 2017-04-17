@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0OTIzMjM3NjQ2NDMsInByb2ZpbGVJZCI6ImE4ZjhjZTVmNjRlZTQ2OWQ5YjNmN2Q3MDY5ODk4Njk0IiwicHJvZmlsZU5hbWUiOiJLYXp1dG9LaXJpZ2lhIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80ZDQzMTI5ZGM2NjQwZWE5NjY2OGUxYTY0ZDgzZDMyN2U3N2EwNTI4M2ZiMjE3ZjcwMWY3OTQxNWMyZWQzZDYifX19',
             'trail': '',
             'op': 'false',
-            'speech': "I am the black swordsman...",
+            'speech': "Link Start!!!",
             'powers': array(
                 "/buff",
                 "/jump 0-4",
@@ -21,6 +21,7 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/effect ". @plr ." 11 9999 20 true",
                 "/give ". @plr ." minecraft:iron_sword 1 16:155 name:&0E&8l&7u&0c&8i&7d&0a&8t&7o&0r",
-                "/give ". @plr ." minecraft:diamond_sword 1 16:155 name:&bD&3a&br&3k&bR&3e&bp&3u&bl&3s&be&3r"             
+                "/give ". @plr ." minecraft:diamond_sword 1 16:155 name:&bD&3a&br&3k&bR&3e&bp&3u&bl&3s&be&3r",
+                "/give ". @plr ." minecraft:gold_sword 1 16:155 34:255 name:&6E&ex&6c&ea&6l&ei&6b&eu&6r"
             )
         )
