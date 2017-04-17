@@ -75,9 +75,11 @@ officialfight:/officialfight = >>>
         @winnerLosses = get_value(@winner.'fightClubLosses')
         @loserWins = get_value(@loser.'fightClubWins')
         @loserLosses = get_value(@loser.'fightClubLosses')
+        @winnerMultiplier = 1
+        @loserMultiplier = 1
 
-        if(@winnerWins == null || @winnerWins == '' || @winnerWins == 0){
-            @winnerWins = 1
+        if(@winnerWins == null || @winnerWins == ''){
+            @winnerWins = 0
         }
         if(@winnerLosses == null || @winnerLosses == ''){
             @winnerLosses = 0
@@ -85,9 +87,46 @@ officialfight:/officialfight = >>>
         if(@loserWins == null || @loserWins == ''){
             @loserWins = 0
         }
-        if(@loserLosses == null || @loserLosses == '' || @loserLosses == 0){
-            @loserLosses = 1
+        if(@loserLosses == null || @loserLosses == ''){
+            @loserLosses = 0
         }
+
+        if(@winnerWins == 0){
+            if(@winnerLosses == 0){
+               #if first fight
+               @winnerMultiplier = 1 
+            }else{
+                #if some losses and 1st win
+                @winnerMultiplier = @winnerLosses
+            }
+        }else{
+            if(@winnerLosses == 0){
+                #if some wins and no losses
+                @winnerMultiplier = 1 / @winnerWins
+            }else{
+                #if some wins and some losses
+                @winnerMultiplier = @winnerLosses / @winnerWins
+            }
+        }
+
+        if(@loserLosses == 0){
+            if(@loserWins == 0){
+               #if first fight
+               @loserMultiplier = 1 
+            }else{
+                #if undefeated and 1st loss
+                @loserMultipiler = 1 / @loserWins
+            }
+        }else{
+            if(@loserWins == 0){
+                #if no wins some losses
+                @loserMultiplier = @loserLosses
+            }else{
+                #if some wins and some losses
+                @loserMultiplier = @loserLosses / @loserWins
+            }
+        }
+        @multiplier = @winnerMultiplier / @loserMultiplier
 
         foreach(@plr in @plrs){
             @personBetOn = import(@plr.'fightClubBetPerson')
@@ -95,20 +134,6 @@ officialfight:/officialfight = >>>
 
             if(@personBetOn != null && @personBetOn != '' && @amt != null && @amt != ''){
                 if(@personBetOn == @winner){
-                    if(@winnerLosses == 0){
-                        @winnerMultiplier = 1 
-                    }else{
-                        @winnerMultiplier = @winnerLosses / @winnerWins
-                    }
-                    if(@loserWins == 0){
-                        @loserMultiplier = @loserLosses
-                    }else{
-                        if(@loserLosses == 0){
-                            @loserLosses = 1
-                        }
-                        @loserMultiplier = @loserLosses / @loserWins
-                    }
-                    @multiplier = @winnerMultiplier / @loserMultiplier
                     @winAmt = round(@amt * @multiplier,2)
                     acc_add(@plr,@winAmt)
                     broadcast(@plr.color(green).' won $'.@winAmt.' from betting at Fight Club!')
@@ -126,12 +151,8 @@ officialfight:/officialfight = >>>
             export(@plr.'fightClubBetAmt','')
         }
 
-        if(@winnerWins != 1){
-            @winnerWins += 1
-        }
-        if(@loserLosses != 1){
-            @loserLosses += 1
-        }
+        @winnerWins += 1
+        @loserLosses += 1
         export('fightClubLastWinner','')
         export('fightClubLastLoser','')
 

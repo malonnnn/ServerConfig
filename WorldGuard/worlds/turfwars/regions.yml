@@ -30,7 +30,13 @@ regions:
         min: {x: -18.0, y: 86.0, z: -16.0}
         max: {x: 17.0, y: 136.0, z: 17.0}
         members: {}
-        flags: {use: allow, invincible: allow}
+        flags: {use: allow, invincible: allow, interact: allow}
         owners: {}
         type: cuboid
+        priority: 0
+    __global__:
+        members: {}
+        flags: {use: allow, interact: allow}
+        owners: {}
+        type: global
         priority: 0
