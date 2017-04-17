@@ -34,10 +34,10 @@ groups:
     worlds:
       survival:
         permissions:
-        - -magic.cast.spellshop
         - magic.wand.use
-        - magic.cast
-        - magic.cast.*
+        - magic.cast.rictusempra
+        - magic.cast.expelliarmus
+        - magic.cast.crucio
         - magic.use.harryswand2
   piccolo:
     inheritance:
@@ -6691,6 +6691,7 @@ groups:
         - essentials.build.interact.*
       office:
         permissions:
+        - -essentials.build.interact.64:*
         - -essentials.tpahere
         - -essentials.tpaccept
         - essentials.build.interact.*
@@ -10520,6 +10521,7 @@ users:
         - essentials.build.*
       office:
         permissions:
+        - essentials.build.interact.64:*
         - essentials.fly
         - essentials.build.*
         - essentials.gamemode.survival
@@ -10940,6 +10942,10 @@ users:
     options:
       name: Rozuu
     permissions:
+    - is.secretary
+    - essentials.warps.office
+    - essentials.warps.officeadmin
+    - multiverse.access.office
     - -deluxechat.pm
     worlds:
       garbageworld:
@@ -10949,6 +10955,9 @@ users:
         permissions: []
       fightclub:
         permissions: []
+      office:
+        permissions:
+        - ch.alias.officekill
   504c6e4c-9751-4057-819d-ece10e9ce850:
     group:
     - goku
@@ -11058,6 +11067,8 @@ users:
     worlds:
       greenfield:
         permissions: []
+    permissions:
+    - multiverse.access.alpha
   5c51f45c-2794-46ae-8c92-0f14c1b2ab91:
     options:
       name: NerdSwag
@@ -12322,6 +12333,8 @@ users:
     - -is.virus
     worlds:
       fightclub:
+        permissions: []
+      greenfield:
         permissions: []
   d75213d6-2cee-4818-b1ad-0b39434d9ce4:
     group:
@@ -14397,7 +14410,7 @@ users:
       name: Captin_Awesome
   a8185de3-b053-4aca-9eb6-d98728e476ad:
     group:
-    - flashwallywest
+    - kidflashwallywest
     options:
       name: nightghost2
     permissions:
@@ -14423,12 +14436,19 @@ users:
     - lukecage
     options:
       name: TooFluffy
-    permissions: []
+    permissions:
+    - is.secretary
+    - essentials.warps.office
+    - essentials.warps.officeadmin
+    - multiverse.access.office
     worlds:
       fightclub:
         permissions: []
       greenfield:
         permissions: []
+      office:
+        permissions:
+        - ch.alias.officekill
   05a43d17-2abf-46d0-a1dd-99527325eb00:
     group:
     - mortal
@@ -15437,7 +15457,7 @@ users:
       name: cman5
   24d4ccf6-91f0-4d37-b132-66dbc89228e1:
     group:
-    - supergirl
+    - jessequick
     options:
       name: Peyton84206
     permissions:
@@ -15581,7 +15601,7 @@ users:
       name: DarthMathias
   bfc9e44d-4e70-4544-8628-df9ce9be1bfe:
     group:
-    - martianmanhunter
+    - zion
     options:
       name: SirRicardo
     permissions:
@@ -15880,6 +15900,7 @@ users:
         permissions: []
       office:
         permissions:
+        - essentials.build.interact.64:*
         - essentials.fly
         - essentials.build.*
         - essentials.gamemode
@@ -17644,7 +17665,12 @@ users:
       name: ApolloWolf14
   77274feb-ee74-4b41-be1e-097c2afd9213:
     group:
-    - genos
+    - onepunchman
+    options:
+      name: Enderboy1025
+    worlds:
+      greenfield:
+        permissions: []
 worlds:
   checkers:
     inheritance:
