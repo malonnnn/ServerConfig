@@ -762,4 +762,114 @@ disarm:
          backfire_chance: 0 
          cooldown: 6000 
          target_breakables: 2 
-
+firestorm: 
+     icon: diamond_axe:144 
+     icon_disabled: diamond_hoe:144 
+     icon_url: http://textures.minecraft.net/texture/92d331289b5e527c540652d61561a2e90f52a8755c1c7d0cd1a1a98f49de450 
+     category: combat 
+     worth: 250 
+     earns_sp: 4 
+     actions: 
+         cast: 
+         -  class: Line 
+            actions: 
+            - class: Cover 
+              actions: 
+              - class: Burn 
+            - class: Delay 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.burn 
+            effectlib: 
+              class: DragonEffect 
+              iterations: 20 
+              length: 16 
+              stepsPerIteration: 1 
+     parameters: 
+         target_type: LivingEntity 
+         transparent: transparent_to_construction 
+         allow_max_range: true 
+         range: 32 
+         size: 8 
+         reverse: false 
+         require_blocks: true 
+         undo: 5000 
+         cooldown: 2000 
+         destructible: destructible_replace 
+         delay: 100 
+     costs: 
+         mana: 100 
+protego: 
+     icon: diamond_axe:23 
+     icon_disabled: diamond_hoe:23 
+     icon_url: http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc 
+     category: light 
+     worth: 100 
+     earns_sp: 5 
+     upgrade_required_path: beginner 
+     upgrade_required_casts: 25 
+     actions: 
+         cast: 
+         -  class: Disc 
+            actions: 
+            -  class: ModifyBlock 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.shield_boom 
+            location: origin 
+     parameters: 
+         allow_max_range: true 
+         range: 3 
+         radius: 0 
+         axis: z 
+         brush: stained_glass 
+         orient: true 
+         orient_snap: 45 
+         transparent: transparent_to_construction 
+         destructible: destructible_replace 
+         check_destructible: true 
+         brushcolor: true 
+         undo: 800 
+         cooldown: 3000 
+         breakable: 3 
+         reflect_chance: 0.25 
+         bypass_confusion: true 
+         bypass_backfire: true 
+     costs: 
+         mana: 40 
+ 
+ 
+ protego|2: 
+     upgrade_required_path: student 
+     upgrade_required_casts: 50 
+     parameters: 
+         radius: 1 
+         undo: 900 
+         reflect_chance: 0.5 
+         breakable: 2 
+     costs: 
+         mana: 50 
+ 
+ 
+ protego|3: 
+     upgrade_required_path: apprentice 
+     upgrade_required_casts: 50 
+     parameters: 
+         radius: 1.5 
+         undo: 1000 
+         reflect_chance: 0.75 
+         breakable: 1 
+     costs: 
+         mana: 55 
+ 
+ 
+ protego|4: 
+     parameters: 
+         radius: 2 
+         undo: 1100 
+         reflect_chance: 1 
+         breakable: 1 
+     costs: 
+         mana: 60 
