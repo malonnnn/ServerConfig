@@ -12,7 +12,8 @@
                     'sig': 'jArbqvt2Qsgh1GS2s70PQKhKQChtPK2zTY12K0w4ePJxBZPvkJD+mg1Mv7hI0DCkwaQ+mu/iSKMtCswlzLUDdw6hrJn39wGFbdwp7sSZzF2HibLRoijsfIoHAYVCczg43bs0Q8VLNr5Cm5Kz6smtwklhPLsc5zr45/sYA35PUA1RS28ceqYBMThxBeWYzDcC8vjk7pDcDiApQNaoImF8HhJN2dKVP5uApiqVtZgPL6vK9Kcl/8X5925T9excN3NHegoC4XbpzSC1Ep5flUzcOxal9vhzl4gIMp+2JrwPifTXwrKZ2Uo6Us/BZLTBnIYIoy7LMVidQpFBh3m4AvyxHCNYq/jPAe3SqIbDHRDMxpWVAT4AlgIBKVi491q3kfKmaKzsipaQDOXu2q/jQcUgods8phmPqcRPKYCqX5H3bGgiQbEsk4E9emCLx3s0sc4Cr4qzsSYXOWYcEEPlBIfDMdX1tjooxNW+M3Ntdmuvj0+1peBSSC5iM9Xpi0Y0nEFAaWyJ5cNnyrov7F9bxA98ucMyRTqRa8p0qwSXfwbPvxQvGppNThxLSudQ+wMzRrMR4wfSXblak8ya1ybpC659Kz7DvUGkrxS/qwskaet1qxUQVTi1hfWtnxqvAvIxFO+NxJXijWlUAJpEQU2v8nLLg4DrEicMwHG11xdEWJrj2UQ=',                    
                     'val': 'eyJ0aW1lc3RhbXAiOjE0OTE1MjgzNzEzODYsInByb2ZpbGVJZCI6IjQ3NDcwN2Y3ZjhiNDQzZWE4OTc4OWNhZTE3OTE3ZTgyIiwicHJvZmlsZU5hbWUiOiJUaGF0Q3JhZnRMaWZlIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83YWEwMmZkZWQ5MTNmZjRlZjFlYmI4MTdjOTgzZjM0OTNmMmZkZWMyMWMzNzM2NDI0ZDQ0ZDQyZTU3YWYyOTYifX19'              
                )
-            ),            'trail': '',
+            ),            
+            'trail': '',
             'op': 'false',
             'speech': "Now I'm going to get serious!", 
             'powers': array(
