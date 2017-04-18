@@ -15,12 +15,8 @@
                 "/flyspeed <number>",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-3",,
                 "/mindcontrol <player>",
-                "/mindlock",
-                "intangible",
-                "/tangible",
-                "/disguise"
+                "/mindlock"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 7 true"
