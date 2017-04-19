@@ -1,4 +1,21 @@
 groups:
+  dumbledore: 
+     inheritance: 
+     - commonherotraits 
+     options: 
+       prefix: '&5Dum&dbl&5edo&dre' 
+       suffix: '&d' 
+     worlds: 
+       survival: 
+         permissions: 
+         - magic.cast 
+         - magic.wand.use 
+         - magic.cast.expelliarmus
+         - magic.cast.protego
+         - magic.cast.apparate
+         - magic.cast.firestorm
+         - magic.use.elderwand 
+
   yoda:
     inheritance:
     - commonherotraits
@@ -13,8 +30,15 @@ groups:
         - ch.alias.jump2
         - ch.alias.jump3
         - ch.alias.jump4
-        - magic.wand.use
-        - magic.cast.yodaforce
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - ch.alias.run3
+        - ch.alias.run4
+        - magic.use.yodaforce
+        - magic.cast.forcepush
+        - magic.cast.forcepull
+        - magic.cast.forcegrip
   hippolytadc:
     inheritance:
     - commonherotraits
