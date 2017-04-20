@@ -13,16 +13,16 @@
              'speech': "This is a test", 
              'powers': array( 
                  "/buff", 
-                  "/jump 0-7", 
+                 "/jump 0-7", 
                  "/run 0-4", 
                  "/haste 0-1", 
                  "/forcepush <playername>", 
                  "/forcechoke <playername>", 
-                 "When you punch a player empty handed, your victim is struck by lightning (force lightning)", 
+                 "When you punch a player empty handed, your victim is struck by lightning (force lightning)" 
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 5 9999 15 true", 
-                    "/effect ". @plr ." 21 9999 9 true", 
+                 "/effect ". @plr ." 21 9999 9 true", 
                  "/shot give ". @plr ." forcelightning",                 
              ) 
          ) 
