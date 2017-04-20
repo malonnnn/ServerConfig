@@ -23,7 +23,6 @@
              'buffs': array( 
                  "/effect ". @plr ." 5 9999 15 true", 
                     "/effect ". @plr ." 21 9999 9 true", 
-                
                  "/shot give ". @plr ." forcelightning",                 
              ) 
          ) 
