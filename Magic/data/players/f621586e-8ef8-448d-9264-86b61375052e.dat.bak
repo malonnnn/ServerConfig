@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: mythguy1226
-last_cast: 1492465493575
+last_cast: 1492469120988
 cooldown_expiration: 0
-last_death_location: -4.595458984375,-161.4357931365535,4.5,rollercoaster,7.0497136,-45.600025
+last_death_location: -13.165639496728685,69.0,-218.65814547635995,greenfield,87.0694,6.1499653
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -49,6 +49,11 @@ spells:
     last_cast: 1492364958666
     last_earn: 1492364959464
     cooldown_expiration: 0
+  crucio:
+    cast_count: 0
+    last_cast: 1492469099952
+    last_earn: 0
+    cooldown_expiration: 0
   pull:
     cast_count: 2
     last_cast: 1492224039376
@@ -84,108 +89,29 @@ spells:
     last_cast: 1492367168457
     last_earn: 1492367058328
     cooldown_expiration: 0
+  expelliarmus:
+    cast_count: 0
+    last_cast: 1492469118632
+    last_earn: 0
+    cooldown_expiration: 0
   missile|2:
     cast_count: 43
     last_cast: 1492367174142
     last_earn: 1492367174194
+    cooldown_expiration: 0
+  rictusempra:
+    cast_count: 4
+    last_cast: 1492469120989
+    last_earn: 1492469064351
     cooldown_expiration: 0
   blink|6:
     cast_count: 678
     last_cast: 1492367327458
     last_earn: 1492367002638
     cooldown_expiration: 0
-wands:
-  harryswand2:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6Petrificus Totalus§f (§3Harry's Wand§f)
-        lore:
-        - §3§oBound to mythguy1226
-        - Knows 14 Spells
-        - '§d§oMana: 600'
-        - '§d§oMana Regeneration: 50/s'
-        ItemFlags: !!set
-          HIDE_PLACED_ON: null
-          HIDE_ENCHANTS: null
-          HIDE_UNBREAKABLE: null
-          HIDE_POTION_EFFECTS: null
-          HIDE_ATTRIBUTES: null
-          HIDE_DESTROYS: null
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD2QsU7CYBSFD6GFAuqAiYsOJLrWSIVaFyMJJpqIDoTJgfzQW/hj/7a2t5AOJi4+gw/g6uAD+Aw+g8/hZFujd7o55+acL7cJNKGtReAaMJhU5AsmtJYijrOkkC0DergOKEZLZbxcpFnXsmwDG2LOckXTJCLfRz0ijqWX6dCUCMRwB9CwVaxTlooSFioCKnePXx09LyoDp9LFgWdb3b5jk+mQ55i9nuOap5bdMx17ZnePT/pHfYuqqK8oTmQYANDRQHvAedssZRqFrvRkbjZzq6LBmEyuhqMw4e/9s73B0yVpaBTSNYmE33c/Pl+e315rqA1UmAZ8foByDGhjP2QYSshgWf5i87/iRijC9oJyYjk/FMxifj+OiNwqGrcRxYJ/wYqU8rZ98ZDKSFHAnT884AeKIH3PaAEAAA==
-    wand:
-      template: harryswand2
-      owner: mythguy1226
-      active_spell: petrify
-      mana: 600.0
-      mana_timestamp: 1492465491973
-      owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      version: 5
-inventory:
-- ==: org.bukkit.inventory.ItemStack
-  type: WOOD_HOE
-  damage: 1
-  meta:
-    ==: ItemMeta
-    meta-type: UNSPECIFIC
-    display-name: §6Avadakedavra§f (§3Harry's Wand§f)
-    lore:
-    - §3§oBound to mythguy1226
-    - Knows 14 Spells
-    - '§d§oMana: 600'
-    - '§d§oMana Regeneration: 50/s'
-    ItemFlags: !!set
-      HIDE_PLACED_ON: null
-      HIDE_ENCHANTS: null
-      HIDE_UNBREAKABLE: null
-      HIDE_POTION_EFFECTS: null
-      HIDE_ATTRIBUTES: null
-      HIDE_DESTROYS: null
-    Unbreakable: true
-    internal: H4sIAAAAAAAAAD2PsU7CYBSFD6FggeiAow4mstZIbWtdjE000UR0IEwO5Ife0j/y/63trYTBxMVn8AFYHXwAn8FX8D2cLDV6x3NOzv1OG2jDWAgdmjCZVDoXTOjEIsuW+Vq2TTSShaYMHbXkeFYs+7btGdhSQosxS0U5C5UCtbunL2NVtlTpsQzRizy77/oeWT5FvuU4fmid2J5j+d7E6x8du4euTXVsPFKWy0QDaKCFbsCcyUnBNEhCGcnSbJdWzYA5Gl2dD5Kcv/dPd4PnSzLQWkvXJHJ+3/n4fH15WzXRDFRSaD7roToTxnCeMEwlpI6roZv/L26EImzPqCSW0wPBLKb3w5QorKN1m1Im+Bds3VJluxcPhUwVad77wwN+ACcFGQJFAQAA
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-- null
-open_wand: true
+open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1085
+  sp: 1088
 properties: {}
 classes: {}
