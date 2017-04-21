@@ -1,28 +1,71 @@
-#iControlU Configuration File
-#Developed by FireBreath15
+####  ######   #######  ##    ## ######## ########   #######  ##       ##     ## 
+ ##  ##    ## ##     ## ###   ##    ##    ##     ## ##     ## ##       ##     ## 
+ ##  ##       ##     ## ####  ##    ##    ##     ## ##     ## ##       ##     ## 
+ ##  ##       ##     ## ## ## ##    ##    ########  ##     ## ##       ##     ## 
+ ##  ##       ##     ## ##  ####    ##    ##   ##   ##     ## ##       ##     ## 
+ ##  ##    ## ##     ## ##   ###    ##    ##    ##  ##     ## ##       ##     ## 
+####  ######   #######  ##    ##    ##    ##     ##  #######  ########  #######  
 
-maxControlTime: 60
-#Maximum amount of time (in seconds) a player can be controlled in one session. Set to 0 for unlimited time.
+#################################################################################
+# Developed by FireBreath15                                                     #
+#                                                                               #
+# This is iControlU's configuration file. Keep in mind that when making changes #
+# you will need to save the file and reload the plugin. For best results, a     #
+# server restart is recommended. If you encounter any bugs, please post their   #
+# relevant logs in the plugin's Discussion forum on SpigotMC.org.               #
+#################################################################################
 
-cooldown: 10
-#Amount of time (in seconds) a player must wait between controlling players. Set to 0 for no cooldown.
+######################
+# Control Time Limit #
+######################
+# The amount of time (in seconds) a player can be controlled in one session. Set to 0 for unlimited time.
+time_controlLimit: 30
 
+############
+# Cooldown #
+############
+# The amount of time (in seconds) a player must wait between controlling players.
+time_cooldown: 60
+
+###########################
+# Invisibility Time Limit #
+###########################
+# The amount of time (in seconds) the controller is invisible for after trolling
+time_invisible: 15
+
+#################
+# Show Messages #
+#################
+# Notify the target player that they are being controlled.
 showMessages: true
-#Notify the target player that they are being controlled [true/false]
 
-maxdistance: 50
-#The maximum distance (in blocks) the victim can be from the controller.
-#NOTE: This only works if "allowFreeCam" below is set to TRUE.
-#WARNING: High numbers may result in server lag.
+###############
+# Use Recipes #
+###############
+# Allow players to craft specialized helmets that alter Control Mode
+useRecipes: false
 
-userecipes: false
-#Allow players to craft specialized helmets that alter player control [true/false].
+#################
+# Allow Freecam #
+#################
+# Allow victims to move freely during Control Mode
+allowFreecam: true
 
-allowFreeCam: false
-#Allow victim players to move freely while they are being controlled [true/false].
-
-hideController: true
-#Hides the controller during Control Mode. Set to FALSE only if you're using a different vanish plugin.
-
+##########################
+# Control Nearest Radius #
+##########################
+# The radius to search in when using "/icu controlnearest"
 maxRadius: 50
-#The maximum distance (in blocks) to search for nearby players when using "/icu controlnearest"
+
+################
+# Max Distance #
+################
+# The maximum distance (in blocks) the victim can be from the controller
+# NOTE: This only works if "allowFreeCam" above is set to TRUE.
+maxDistance: 15
+
+#################
+# Control Sound #
+#################
+# Play a sound to players within 30 blocks when Control Mode begins. Valid sounds can be found at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+playSound: BLOCK_NOTE_PLING
