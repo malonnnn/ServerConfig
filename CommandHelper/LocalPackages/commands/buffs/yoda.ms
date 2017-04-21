@@ -14,7 +14,7 @@
              'powers': array( 
                  "/buff", 
                  "/jump 0-4",
-                 "/run 0-4"
+                 "/forcespeed"
              ), 
              'buffs': array( 
                  "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&2Y&ao&2d&aa's_&2Lig&ahts&2aber",
