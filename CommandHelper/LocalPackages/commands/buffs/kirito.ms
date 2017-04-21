@@ -21,6 +21,6 @@
                 "/effect ". @plr ." 21 9999 14 true",
                 "/give ". @plr ." minecraft:iron_sword 1 16:20 name:&0E&8l&7u&0c&8i&7d&0a&8t&7o&0r",
                 "/give ". @plr ." minecraft:diamond_sword 1 16:20 name:&bD&3a&br&3k_&bR&3e&bp&3u&bl&3s&be&3r",
-                "/give ". @plr ." minecraft:gold_sword 1 16:20 name:&6E&ex&6c&ea&6l&ei&6b&eu&6r"
+                "/give ". @plr ." minecraft:golden_sword 1 16:20 name:&6E&ex&6c&ea&6l&ei&6b&eu&6r"
             )
         )
