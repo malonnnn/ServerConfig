@@ -5,7 +5,8 @@ bind(world_changed, null, null, @event,
     @to = @event['to']
     @from = @event['from']
     @class = pgroup()[0]
-
+    
+    set_entity_fall_distance(puuid(@player),0.0)
     runas(~console,"/fly ".@player." off")
 
     if(@to == 'greenfield' && @class == 'mortal'){
