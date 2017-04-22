@@ -35,6 +35,11 @@ fightclub:/fightclub = >>>
             @alreadyRegistered = import(@player.'fightClub')
 
             if(@alreadyRegistered == 'true' && @plr != @player){
+                @playaz = all_players()
+                foreach(@pl in @playaz){
+                    export(@plr.'fightClubBetPerson','')
+                    export(@plr.'fightClubBetAmt','')
+                }
                 export('fightClubStatus','closed')
                 export('fightClubFighter1',@player)
                 export('fightClubFighter2',@plr)
