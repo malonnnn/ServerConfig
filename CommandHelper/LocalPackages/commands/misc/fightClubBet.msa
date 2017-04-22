@@ -64,6 +64,15 @@ fightclubbet:/fightclubbet $amt $person = >>>
 <<<
 
 officialfight:/officialfight = >>>
+
+    @pendingFight = import('fightClubStatus')
+
+    @ref = player()
+    if(@pendingFight == 'closed'){
+        tmsg(@ref,color(red).'Whoops! Too late!')
+        die()
+    }
+
     @ref = player()
     @winner = import('fightClubLastWinner')
     @loser = import('fightClubLastLoser')
@@ -155,7 +164,8 @@ officialfight:/officialfight = >>>
         @loserLosses += 1
         export('fightClubLastWinner','')
         export('fightClubLastLoser','')
-
+        acc_add(@winner,100)
+        acc_add(@loser,50)
         store_value(@winner.'fightClubWins',@winnerWins)
         store_value(@loser.'fightClubLosses',@loserLosses)
         broadcast(color(dark_red).'Official Fight!'.color(green).' $100 '.color(red).'for '.color(white).@winner.color(red).' and '.color(green).'$50 '.color(red).'for '.color(white).@loser)

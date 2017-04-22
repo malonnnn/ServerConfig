@@ -15,5 +15,7 @@
                 "/tp <playername> <playername>",
                 "Anything you attack, dies"
             ),
-            'buffs': array()
+            'buffs': array(
+                "/effect ". @plr ." 11 9999 5 true",
+            )
         )
