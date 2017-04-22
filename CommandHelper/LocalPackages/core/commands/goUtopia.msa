@@ -1,0 +1,12 @@
+goutopia:/goutopia $plr = >>>
+
+    @player = $plr
+    if(has_permission(@player,'is.secretary')){
+        runas(~console,'/pex user '.@player.' add multiverse.access.utopia')
+        runas(~console,'/warp utopia '.@player)
+        runas(~console,'/pex user '.@player.' remove multiverse.access.utopia')
+    }else{
+        tmsg(@player,color(red).'Sorry, this is for secretaries only!')
+    }
+
+<<<
