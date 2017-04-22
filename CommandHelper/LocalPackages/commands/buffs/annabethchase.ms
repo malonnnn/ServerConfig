@@ -12,12 +12,12 @@
             'powers': array(
                 "/buff",
                 "/carryplayer",
-                "/dismountplayer",
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 14 true",
-                "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&bA&6nn&ba&6eth Ch&ba&6s&be's_&bKnife"
-                "/give ". @plr ." minecraft:bow 1 19:2 name:&bA&6nn&ba&6eth Ch&ba&6s&be's_&bBow"
+                "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&bA&6nn&ba&6eth Ch&ba&6s&be's_&bKnife",
+                "/give ". @plr ." minecraft:bow 1 19:2 name:&bA&6nn&ba&6eth Ch&ba&6s&be's_&bBow",
                 "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&bA&6nn&ba&6eth Ch&ba&6s&be's_&bSword"
             )
         )
