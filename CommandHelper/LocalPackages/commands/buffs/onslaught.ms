@@ -12,11 +12,12 @@
             'powers': array(
                 "/buff",
                 "/fly",
-                "/flyspeed <number>",
                 "/carryplayer",
                 "/dismountplayer",
                 "/mindcontrol <player>",
-                "/mindlock"
+                "/mindlock",
+                "/speak <player>",
+                "/msg <player> <message>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 7 true"
