@@ -20,12 +20,7 @@
                 "Mobs won't attack you"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 254 true",
-                "/effect ". @plr ." 11 9999 4 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
+                "/effect ". @plr ." 11 9999 5 true",
                 "/shot give ". @plr ." nekronlaser",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&8N&7e&0kr&8o&0n's&7_&8Sc&7y&0th&8e"
