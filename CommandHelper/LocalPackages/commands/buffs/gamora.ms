@@ -10,11 +10,11 @@
             'op': 'false',
             'speech': "I have spent most of my life surrounded by my enemies. I will be grateful to die among my friends.",
             'powers': array(
-                "/buff",
+                "/buff"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 5 true",                
-                /give ". @plr ." minecraft:iron_sword 1 19:5 16:5 name:&0G&1a&am&1o&0r&aa's_Sword"
+                "/give ". @plr ." minecraft:iron_sword 1 19:5 16:5 name:&0G&1a&am&1o&0r&aa's_Sword"
             )
         )
