@@ -20,7 +20,9 @@
                 "/dismountplayer",
                 "/jump 0-2",
                 "/run 0-2",
-                "/haste 0-4"
+                "/haste 0-4",
+                "/normalsize",
+                "/grow"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 7 true",
@@ -31,6 +33,7 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/give ". @plr ." minecraft:stick 1 16:10 name:&2G&ar&6o&ao&2t's_Damage_Attack",
                 "/give ". @plr ." minecraft:stick 1 19:10 name:&2G&ar&6o&ao&2t's_Knockback_Attack",
-                "/give ". @plr ." minecraft:stick 1 19:5 16:5 name:&2G&ar&6o&ao&2t's_Damage_&_Knockback__Attack"
+                "/give ". @plr ." minecraft:stick 1 19:5 16:5 name:&2G&ar&6o&ao&2t's_Damage_&_Knockback__Attack",
+                "/disguiseplayer ". @plr ." villager baby"
             )
         )
