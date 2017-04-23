@@ -1,6 +1,6 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: God_Doesnt_Exist
-last_cast: 1492895757757
+last_cast: 1492987168583
 cooldown_expiration: 0
 last_death_location: -9.5,69.0,-4.5,torture,-270.00122,14.549996
 fall_protection_count: 0
@@ -364,6 +364,11 @@ spells:
     last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
+  avadakadavra:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   arrow:
     cast_count: 0
     last_cast: 1479674018253
@@ -435,9 +440,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1479695994074
   rictusempra:
-    cast_count: 0
-    last_cast: 0
-    last_earn: 0
+    cast_count: 1
+    last_cast: 1492987168584
+    last_earn: 1492987169429
     cooldown_expiration: 0
   reflect|4:
     cast_count: 6
@@ -708,6 +713,41 @@ wands:
       id: 0c3bf652-b21a-4721-af79-8e659670775b
       locked: 1
       undroppable: 1
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6rictusempra§f (§3Wand§f)
+        lore:
+        - §3§oBound to God_Doesnt_Exist
+        - Knows 4 Spells
+        - §6Manifestation
+        - §6Cost Reduction X
+        - §6Cooldown Reduction X
+        - §3Invulnerability
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1QzU7CQBAebcFSNRo86sFErpgAWuRiJIGoiT8HwrnZtlPZ0O7W3WmBmxefwQfw6sEH8Bl8IE9uS3SSmUy++b75cwFcsBdMRA44hGmWMEJwZ0yplV7DNbkQqGD/Wkb+SKIW5I+XXJMRVBWfR9C66MdBL/TC9nkce+2zwISg1/Xag0E39Dq9PrJO14KtApXmUgBAzYU9nWGS+FwUKEiqlQU7rGARmxsvFDOkTQPhsmRxptJcG2jDgm3FQ8q1WbYigQX1UOUhl1UODWgOiRQPcsJ7GfGYm6FuKbXBmU5vR/dS08/J5dHw5QZtaJTQHTJNn4df32+vH+91qA9TmQu6akFlDtiTRBI4KeNiVj1l93/EA0sRDp7QfIKHp4yIhfNJhhhZ0HjMUDFaH1x2qbjN8XPOs9TcfPy3HsAvynQuvYgBAAA=
+    wand:
+      template: harryswand
+      owner: God_Doesnt_Exist
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      version: 5
+      spell_inventory:
+        avadakadavra: 2
+        expelliarmus: 1
+        rictusempra: 0
+        crucio: 3
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -814,6 +854,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 171
+  sp: 174
 properties: {}
 classes: {}
