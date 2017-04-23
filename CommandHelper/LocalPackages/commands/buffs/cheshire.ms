@@ -14,7 +14,9 @@
                 "/buff",
                 "/run 0-3",
                 "/jump 0-4",
-                "/haste 0-2"
+                "/haste 0-2",
+                "/intangible",
+                "/tangible"
             ),  
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
