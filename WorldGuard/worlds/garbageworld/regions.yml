@@ -12,7 +12,9 @@
 regions:
     __global__:
         members: {}
-        flags: {creeper-explosion: deny, enderman-grief: deny}
+        flags: {creeper-explosion: deny, pistons-group: MEMBERS, block-break: allow,
+            block-place-group: MEMBERS, enderman-grief: deny, pistons: allow, block-place: allow,
+            block-break-group: MEMBERS}
         owners: {}
         type: global
         priority: 0
