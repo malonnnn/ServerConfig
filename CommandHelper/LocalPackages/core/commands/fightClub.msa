@@ -96,6 +96,8 @@ fightclub:/fightclub = >>>
                 set_timeout(30000,closure(
                     runas(~console,'/heal '.@player)
                     runas(~console,'/heal '.@plr)
+                    runas(~console,'/effect '.@player.' saturation 0')
+                    runas(~console,'/effect '.@plr.' saturation 0')
                     broadcast(color(red).'Fight!')
                     export('fightClubActive','true')
                     runas(~console,'/pex user '.@player.' add essentials.protect.pvp fightclub')
