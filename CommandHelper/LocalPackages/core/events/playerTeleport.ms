@@ -14,7 +14,7 @@ bind(player_teleport, null, null, @event,
                 array_remove_values(@plrs, @plr)
             }
         }
-        if(array_size(@plrs) >= 1){
+        if(array_size(@plrs) > 1){
             tmsg(player(),'someones already playing escape room!')
             console(player().' too many plrs '.@plrs)
             cancel()
