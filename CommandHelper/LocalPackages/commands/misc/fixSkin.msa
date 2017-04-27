@@ -5,7 +5,11 @@ fixskin:/fixskin = >>>
     @plr = player()
     @class = pgroup()[0]
     
-    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    try(
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+    ,
+        die()
+    )
 
     _changeSkin(@plr,@hero['sig'],@hero['val'])
     

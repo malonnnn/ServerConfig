@@ -1,12 +1,25 @@
 goutopia:/goutopia $plr = >>>
 
-    @player = $plr
-    if(has_permission(@player,'is.secretary')){
-        runas(~console,'/pex user '.@player.' add multiverse.access.utopia')
-        runas(~console,'/warp utopia '.@player)
-        runas(~console,'/pex user '.@player.' remove multiverse.access.utopia')
-    }else{
-        tmsg(@player,color(red).'Sorry, this is for secretaries only!')
+    @plr = $plr
+    @item = pinv(@plr,null)
+    if(@item != null && @item['meta'] != null && @item['meta']['display'] != null){
+        @itemName = @item['meta']['display']
+        if(@itemName == color(gold).'Meeting Voucher'){
+            runas(~console,'/pex user '.@plr.' add multiverse.access.utopia')
+            runas(~console,'/warp meeting '.@plr)
+            runas(~console,'/pex user '.@plr.' remove multiverse.access.utopia')
+            set_pinv(@plr,array(null: array(type: 0)))
+            die()
+        }
     }
+   
+    if(has_permission(@plr,'is.secretary')){
+        runas(~console,'/pex user '.@plr.' add multiverse.access.utopia')
+        runas(~console,'/warp utopia '.@plr)
+        runas(~console,'/pex user '.@plr.' remove multiverse.access.utopia')
+        die()
+    }
+
+    tmsg(@plr,color(red).'Sorry, this is for secretaries only!')
 
 <<<
