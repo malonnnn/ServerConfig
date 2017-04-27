@@ -1,0 +1,23 @@
+meetingvoucher:/meetingvoucher $plr = >>>
+
+    @plr = $plr
+    @plr = player(@plr)
+
+    @date = simple_date('EEE, MMM d yyyy')
+    @date1 = simple_date('hh:mm aaa z',time(),'CST')
+
+    @name = color(gold).'Meeting Voucher'
+    @lore = array(
+                color(red).'Meeting Voucher created on ',
+                color(yellow).@date.color(red).' at '.color(yellow).@date1,
+                color(red).' for '.color(yellow).@plr
+            )
+    
+    @meta = array()
+    @meta['display'] = @name
+    @meta['lore'] = @lore
+    pgive_item(@plr,339,1,@meta)
+    
+    tmsg(player(),color(red).'You have give '.@plr.' a Meeting Voucher.')
+    tmsg(@plr,color(red).'You have been approved of a meeting with Alpha! Please give the secretary your Meeting Voucher')
+<<<

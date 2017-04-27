@@ -10,7 +10,12 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
     @vicName = ''
     if(@e['type'] == 'PLAYER'){
         @vicName = @e['player']
-        @ploc = ploc(@vicName)
+        try(
+            @ploc = ploc(@vicName)
+        ,
+            cancel()
+            die()
+        )
     }
 
     if(@vicName != ''){
