@@ -8,6 +8,8 @@ bind(world_changed, null, null, @event,
     
     set_entity_fall_distance(puuid(@player),0.0)
     runas(~console,"/fly ".@player." off")
+    runas(~console,"/effect ".@player." invisibility 0")
+    runas(~console,"/sudo ".@player." c:/fixskin")
 
     if(@to == 'greenfield' && @class == 'mortal'){
         runas(~console,'/effect '.@player." clear")

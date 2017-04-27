@@ -24,7 +24,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,slimesize,age,spawned,poses,gravity
+    traitnames: inventory,mounttrait,slimesize,gravity,owner,location,poses,age,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -74,7 +74,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 28556dea-667d-409f-b2ff-fb4177a20ff2
-    traitnames: mounttrait,location,inventory,owner,type,slimesize,spawned,age,poses,gravity
+    traitnames: inventory,mounttrait,slimesize,gravity,owner,location,poses,spawned,age,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -113,7 +113,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,slimesize,spawned,age,poses,gravity
+    traitnames: inventory,mounttrait,slimesize,gravity,owner,location,poses,spawned,age,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -152,7 +152,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,slimesize,age,spawned,poses,gravity
+    traitnames: inventory,mounttrait,slimesize,owner,gravity,location,poses,age,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -184,7 +184,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,lookclose,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -216,7 +216,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,lookclose,gravity
+    traitnames: inventory,mounttrait,gravity,owner,location,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -244,103 +244,7 @@ npc:
       owner:
         owner: RoboCode
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
-  '424':
-    metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODE4MzE1MTE0OTksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJSb2JvQ29kZSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU1MzQ4YjAzNzhjMTc1NTFlODMzZjRjMTBjY2E3ODdmNmY4YTEyZTQyMzJhYWIzYThhZjlmMTlkMzhmMWMifX19
-      cached-skin-uuid-name: robocode
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-signature: EnOaLxNMLRbJaib+rH+0fPSRuZjqy5IEQ6eXhUyOSQ7G3E+02FnfkytBlq06UunbtoDNWTM4x26gIFeIMFAxxmy3PsGJKd22h7T8sZk1MsVhKxKfuzxZpnEqwyaYO7nOk6oaSKz894gtEV8gdqP3f4+Y5sWG0FJx9iahnbF0FksXZabz/Qcz+dXanB+KXEznUY/4O4bORX9l5aft8unOCiL7aDVtyqijKhO2Z9w5lI5r1+c4fK765v0v3bcmMdK2YN00OgB82loACZLJPTNGvtjecUwqyRnSVWI4vAdg93sNAhD46m6xXurovuoDu940C0sMJaZifkmg+wFmr/gGVdE0kc5uPY75tTTBD9JZgsg/JV8uP+HdkePbcjlsYjThvLHqC2GhR/FMv9zm1Y2svIPwzCvFK2MlNl+F5LH59NyyEcl4PHcUlG+kaxgo2mJi8V21fMWBt8KHitZqPv2X8fxzdE3fbnFZn/7ls3AWeHELR5Xz7qdPfUkCyLWvDBs8C0YCbSH8HS9Wt6DU9ZPENr1pMiHJWPZ7v/fZR1vOVU19D6zZsrSurDFpjPE2ScUPPuKhFm3jz5yuTXULdBXbXQCjdGqkLxfObk/NhJAaSxz/76dbPdLr1ZB2Mc1K+AqX5T9VzMz6UfxNW05J6m66/aU3O8bWNPZyq75mMgeTij4=
-    name: RoboCode
-    uuid: 2bdfab31-9ae8-4049-abb9-7db72f8eff5f
-    traits:
-      gravity:
-        enabled: true
-      lookclose:
-        enabled: true
-        range: '5.0'
-        realisticlooking: false
-      location:
-        world: survival
-        x: '890.022'
-        y: '85.5'
-        z: '-298.3'
-        yaw: '61.70355224609375'
-        pitch: '0.0'
-      type: PLAYER
-      spawned: true
-      owner:
-        owner: RoboCode
-        uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,lookclose,gravity
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
-  '423':
-    metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODE4MzE1MTE0OTksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJSb2JvQ29kZSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU1MzQ4YjAzNzhjMTc1NTFlODMzZjRjMTBjY2E3ODdmNmY4YTEyZTQyMzJhYWIzYThhZjlmMTlkMzhmMWMifX19
-      cached-skin-uuid-name: robocode
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-signature: EnOaLxNMLRbJaib+rH+0fPSRuZjqy5IEQ6eXhUyOSQ7G3E+02FnfkytBlq06UunbtoDNWTM4x26gIFeIMFAxxmy3PsGJKd22h7T8sZk1MsVhKxKfuzxZpnEqwyaYO7nOk6oaSKz894gtEV8gdqP3f4+Y5sWG0FJx9iahnbF0FksXZabz/Qcz+dXanB+KXEznUY/4O4bORX9l5aft8unOCiL7aDVtyqijKhO2Z9w5lI5r1+c4fK765v0v3bcmMdK2YN00OgB82loACZLJPTNGvtjecUwqyRnSVWI4vAdg93sNAhD46m6xXurovuoDu940C0sMJaZifkmg+wFmr/gGVdE0kc5uPY75tTTBD9JZgsg/JV8uP+HdkePbcjlsYjThvLHqC2GhR/FMv9zm1Y2svIPwzCvFK2MlNl+F5LH59NyyEcl4PHcUlG+kaxgo2mJi8V21fMWBt8KHitZqPv2X8fxzdE3fbnFZn/7ls3AWeHELR5Xz7qdPfUkCyLWvDBs8C0YCbSH8HS9Wt6DU9ZPENr1pMiHJWPZ7v/fZR1vOVU19D6zZsrSurDFpjPE2ScUPPuKhFm3jz5yuTXULdBXbXQCjdGqkLxfObk/NhJAaSxz/76dbPdLr1ZB2Mc1K+AqX5T9VzMz6UfxNW05J6m66/aU3O8bWNPZyq75mMgeTij4=
-    name: RoboCode
-    uuid: b8840350-7c54-4fc6-8826-b8984f94bc0b
-    traits:
-      gravity:
-        enabled: true
-      lookclose:
-        enabled: true
-        range: '5.0'
-        realisticlooking: false
-      location:
-        world: survival
-        x: '892.9094'
-        y: '85.5'
-        z: '-298.3002'
-        yaw: '68.10807800292969'
-        pitch: '0.0'
-      type: PLAYER
-      spawned: true
-      owner:
-        owner: RoboCode
-        uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,lookclose,gravity
-    navigator:
-      speedmodifier: '1.0'
-      avoidwater: false
-      usedefaultstuckaction: true
-  '425':
-    metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODE4MzE1MTE0OTksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJSb2JvQ29kZSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWU1MzQ4YjAzNzhjMTc1NTFlODMzZjRjMTBjY2E3ODdmNmY4YTEyZTQyMzJhYWIzYThhZjlmMTlkMzhmMWMifX19
-      cached-skin-uuid-name: robocode
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-signature: EnOaLxNMLRbJaib+rH+0fPSRuZjqy5IEQ6eXhUyOSQ7G3E+02FnfkytBlq06UunbtoDNWTM4x26gIFeIMFAxxmy3PsGJKd22h7T8sZk1MsVhKxKfuzxZpnEqwyaYO7nOk6oaSKz894gtEV8gdqP3f4+Y5sWG0FJx9iahnbF0FksXZabz/Qcz+dXanB+KXEznUY/4O4bORX9l5aft8unOCiL7aDVtyqijKhO2Z9w5lI5r1+c4fK765v0v3bcmMdK2YN00OgB82loACZLJPTNGvtjecUwqyRnSVWI4vAdg93sNAhD46m6xXurovuoDu940C0sMJaZifkmg+wFmr/gGVdE0kc5uPY75tTTBD9JZgsg/JV8uP+HdkePbcjlsYjThvLHqC2GhR/FMv9zm1Y2svIPwzCvFK2MlNl+F5LH59NyyEcl4PHcUlG+kaxgo2mJi8V21fMWBt8KHitZqPv2X8fxzdE3fbnFZn/7ls3AWeHELR5Xz7qdPfUkCyLWvDBs8C0YCbSH8HS9Wt6DU9ZPENr1pMiHJWPZ7v/fZR1vOVU19D6zZsrSurDFpjPE2ScUPPuKhFm3jz5yuTXULdBXbXQCjdGqkLxfObk/NhJAaSxz/76dbPdLr1ZB2Mc1K+AqX5T9VzMz6UfxNW05J6m66/aU3O8bWNPZyq75mMgeTij4=
-    name: RoboCode
-    uuid: 06221774-e47b-4e81-a03a-6f715ab5fe6d
-    traits:
-      gravity:
-        enabled: true
-      lookclose:
-        enabled: true
-        range: '5.0'
-        realisticlooking: false
-      location:
-        world: survival
-        x: '896.0158'
-        y: '85.5'
-        z: '-298.3'
-        yaw: '58.56553649902344'
-        pitch: '0.0'
-      type: PLAYER
-      spawned: true
-      owner:
-        owner: RoboCode
-        uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,lookclose,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -396,7 +300,7 @@ npc:
       owner:
         owner: God_Doesnt_Exist
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,equipment,owner,type,spawned,lookclose
+    traitnames: inventory,mounttrait,owner,location,equipment,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -453,7 +357,7 @@ npc:
       owner:
         owner: God_Doesnt_Exist
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,equipment,owner,type,spawned,lookclose
+    traitnames: inventory,mounttrait,owner,location,equipment,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -476,7 +380,7 @@ npc:
       location:
         world: newminigamehub
         x: '1.3'
-        y: '-3.586492379257E8'
+        y: '-3.736111751889E8'
         z: '23.4359'
         yaw: '-270.14984130859375'
         pitch: '0.0'
@@ -488,7 +392,7 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,wolfmodifiers,location,owner,type,age,spawned,lookclose
+    traitnames: wolfmodifiers,mounttrait,owner,location,age,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -508,14 +412,14 @@ npc:
       location:
         world: newminigamehub
         x: '1.4536'
-        y: '-3.573690137144E8'
+        y: '-3.723309509776E8'
         z: '20.0746'
         yaw: '-273.7496337890625'
         pitch: '0.0'
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,location,owner,type,spawned,lookclose
+    traitnames: mounttrait,owner,location,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -533,7 +437,7 @@ npc:
       location:
         world: newminigamehub
         x: '71.4505'
-        y: '-3.573690077144E8'
+        y: '-3.723309449776E8'
         z: '10.5934'
         yaw: '268.80029296875'
         pitch: '0.0'
@@ -546,7 +450,7 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,location,owner,type,spawned
+    traitnames: mounttrait,owner,location,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -577,7 +481,7 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,location,owner,type,spawned,lookclose
+    traitnames: mounttrait,owner,location,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -616,7 +520,7 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,wolfmodifiers,location,owner,type,age,spawned,lookclose
+    traitnames: wolfmodifiers,mounttrait,owner,location,age,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -647,7 +551,7 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,location,owner,type,spawned,lookclose
+    traitnames: mounttrait,owner,location,spawned,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -676,24 +580,24 @@ npc:
       owner:
         owner: xSp4rkz
         uuid: cb871f86-94e5-4bf3-a78e-42f73c2215c4
-    traitnames: mounttrait,location,profession,owner,type,spawned,age,lookclose
+    traitnames: profession,mounttrait,owner,location,spawned,age,type,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '440':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjY0ODA5NTY0ODgsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I0OWFjNmU1YzgxNTNkODRiNDhmYjYyOWJmM2U3M2JjY2JlZDhjNmQ0ZGJjOTViNjk0MTRjNmY5ZmI3YWRkIn19fQ==
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzY2NDM5NjUxOTcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81ZWQ2ZDA4NTNmYjVjYzY1YmYyM2YwOTdhOWM4NmJhNzExMWUxMWQyZDc3MDY1MzE5ZWQzNWVlODk2ZGQ1YyJ9fX0=
       cached-skin-uuid-name: tektronic
       player-skin-use-latest: false
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
       nameplate-visible: false
-      player-skin-signature: sKLXddFVzgq1IhsWXfuDllDcJAVcWkDaDIrTV4aEQTXRnM52SpAezE5uI7fzLxU0RLSF81HCkzAhQUhsd521HEv+YAdmh7xcATT9JTLWB8VNx1tjwcPatmiSmVzhZ3JZ0GxkZOXYkhnc/6nGN9JdKlLrD7w4wgxOZofEZ9I/KDgyIq39bP15MBcTcLtzw844ukGBkdadgNFtkZnlwqSfjcOUN0Csremu45qDc7lsvAa4ArQeNi5+zSjV+/k6uGuN2MWDZBsTeQvf/RIQGxJdmBcPWgTpPX3RYaC9EKQc8OOetW0PUrOoCKlTv3iI7FZfyvGpBeLzC4l5W7RlFbAhM8SSGHTW85p1zUMhLd/RsrNbY5Eh8wKCS0nyeoVxVr44pMa0Tj2T2LqNVR8RT4snaMXl6ZsxL6hKJw4Cv4FDbK3lFB0iVzCb9oXniq9585vabKqZcHeKzE6RbT41uGk/1y9e6k8WsqJ4prqwMCTKbvMF7tcaGMg4A/tK/jluaho103uRiiOOPbQCk19gCNSxXISC33I3N9MO3v8DODoclAmwttEUgIlW10t+aMtmWr3r9GLN0TlnhE2iuSrExtTeXN3W3bBKjZUDpWkrqYO9TvkbAfz0uzK/SjJ/3OhxyX8VS4Hz1sXqp+8M1O84iNKrLGJaRyQ+lDCM/yCRxWY8op4=
+      player-skin-signature: BKhFFoIFYWQM7Rb5XYorbQjHM6O236UC3gXpLGza3ZyB0IlUBIlsHYSdfqlWs99hz9rWkP4dktk1T6G31faWrqNxVOmugOv0mBpJ//wgDzK+qCE7uMCqcegVF23h/wtm2u/+j97RyeHY4tGUYHF+SmJu3m5PSp1dKm9cVJC+e0IWcpSC/EimaZBJBwMHGXexRZVsvTpOpS1DLM16vEepOrVFeUiKUdMwcpkzJ3rXmXcV5s67ghW0MI7//43aFZK9Y70dKy+Aeub7cYH9QO3lp0u27X7QRaNEMiKbQDZ9baJzGWDR419UKECsfZRk+pQIO1upkvO0ybtdCLkKqMKtTWYRRhCTmLmlnk0mT6srBzO6Rvt/at55kDHvj92li6mUFsyPsDGQECyF8v7oFImujIxHkpP23xgXDKXJi6yiZBR7U4jFpqUm2dusxFh+uaEaMYKfU+MXq0KgBlGFDolQ1pvkY6ezhS3sIjWk+8EpSiwMUZw+Uz+Hzm3hGwxhhEdTrSlylEQ3mHmFz+XoD0yPk0c7Q1OUa0X1DzaloaVxuvx0Qy/vTnJwMmWk+teuI0E8VGUFayPMmGNfeh5bMf4kdT2HGPbWZPes/sv5WGPeztZb5EPDRPy53E+sRj/YjGzm83w0t5D97kj1MuougYBEDK7FPu79DvURQc7gKpLR7lk=
       avoidwater: false
       usedefaultstuckaction: true
       speedmodifier: 1.0
-    name: Doctor Strange
+    name: Gwen Stacy
     uuid: c5de3597-a8b9-4680-a993-43f978524fd4
     traits:
       gravity:
@@ -705,28 +609,28 @@ npc:
         z: '144.5'
         yaw: '-90.0'
         pitch: '0.0'
-      spawned: false
+      spawned: true
       type: PLAYER
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '445':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NjUxNDY4ODYsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzhjZjNmZjEyMTM0ZGQzYjNkY2QxY2UzNmY0OTI0ZWNhNGMxNjhlOTU3OWYzZWIzMjJiNjYzMmI2ODU4OTIwMjUifX19
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODA4MTMyNzExOTYsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81YmU1MTE2NmU1NzE2ODQyNDQ5MzM0MWExZGRjZDAxMTdmNzYwMmM0N2E1OWE3NjcyMmE5YmE3ODgyOGY3YiJ9fX0=
       player-skin-use-latest: false
-      cached-skin-uuid-name: tektronic
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-name: tektronic
-      player-skin-signature: RBSeUkE0yh4MALgfnwOeDzCzyaw37UsawF4rDwKziTO7fURV/NbmKtFPBW2dkn7dcgGswb0mQb+AEGB5YH3V30S0hgPLd6O6Bs4CiH6s58zxnUeqiVbdTLv/GD6dxQ/COV15hKR6yYADcTcvXd72bYhVJ+bLWiDZqtZpjJ+UZQiuQEfN7wGjgvBBQG/zxSs6Zbzk519ZBR9Gpq9B4zyYHxTLD3jemjrGaMJrUoS9XaljEj8cZydgZ15dckWMn78S/Jygt3Ync2BprP9rGdk2TFUcacx1pRynSP7EntBBIBRnrS+walaMbaxhDRZiV8CDqOhxHmVhnrFWd8j1YmydWxDUlRgxr7LzIXPYuyEljtkIKaEkXb31ytHnSAAYXcRoh4uakle8ItHTs/00TwYbYthJHJ3Pz9e6FaXmoO4us34yiBgE1iBLW1fyjPa25U2Oye4RNXBVsRP3rT3cX9V48+hyJT7MjfsfXyaaQq5iaeltpkyQXzYgG+dCtEzO9QNy7+xDT6h5dUS4cLR9qNyI8qhNujYF42bZnBrZ2urLtltuBiGJr2HnV63LdfnJGjTdkN63ZYT3JaVp2+faZncrKDS4W4ONF3D0Uho1XHTEijnR4AeX21TR4zEaKMS+NoltjUOriL0F0/Fh7tXXncUHszyRZbzQhmAExvb2da6VS5M=
+      cached-skin-uuid-name: lehoodini
+      cached-skin-uuid: d6e27628-6164-4667-93df-df7d9e1ca2fe
+      player-skin-name: lehoodini
+      player-skin-signature: jsR0nV+HMefvyhXbEpPwgQymJZYwy8WUGDAdo2HcHXVZkva/Abyiyum7LHjuHksQ3jlZFJH/rLtVM5a+q1DT2O29XnE95h07IfPoycPeodyIS0ZjlWo0jxQuHv3bUaUL7nfUCe1/yCf8hdtAKyoY+c6Zudu4N46joMtbIX4Rp1es0/csoT5X0ruQYEYz8NondEt1EgSCHJ8DFSmpO2Gn2H3uEnBKxGpLGdU1JBkcSyAKZN3vyjt74qZvvTJ53TKqjhJ4wLXQPFNBYr2ygwuX70DC9uQhoBt5DGCOQE9V/gEJAGCFmkGLugbi1HkNw9F5DXvgSaXWcXh9NOE6rF2I96ra6zO/4i287w7qVwofn1gE8x2V5w5OP+54uN43DppyOSOtcatjcoJCtlxrOOfyR1cEwmEg8TOBQWrjO0TQ7awcEyDXT7HNCW02GfmK4GVnFpXHW0SiVJwiNE+qnoUXkoZkbygq1CxHgzzO5/U3GadiIaPsyIYxxRtuMoUrhdLcz8eV0fkfekbzkNnzcbVonQnrharBEruNymUS1KiMB+RyAvzkg4dKxBGaxZTNgxFJIEGn5peM7c/mtbfAE9gJVUGUymfnmMlovEUC3l40NrkBVRam+PGmp/jcnFDQU9EMxT4W7i6NpaSVAZsSosvc67w4kB8qfoAKq+YCI9DSHKs=
       nameplate-visible: false
       avoidwater: false
       usedefaultstuckaction: true
-    name: Zeus
+    name: jessequick
     uuid: 3cd80a20-a3e4-4d31-80f9-0a4db47ba5a9
     traits:
       gravity:
@@ -743,24 +647,24 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,gravity,owner,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '444':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NTcyMzI3MjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI1NmM5ODk2Y2UzZGRkNTlhODI0ZTNiMzZlZDhlOTUwZGM0OWE2NzJiM2QzZTY1MjAyZGUyNTc3YmY2MyJ9fX0=
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODIyNzAxNDQzMDcsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzViOTJlY2U5MmJiZGI5MjViMzNhN2Y1YjJhZGY1YmZjM2E4ZDNmODI3NjFkMmU1NGVkZTg5ZWIwMWFjZiJ9fX0=
       player-skin-use-latest: false
-      cached-skin-uuid-name: tektronic
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-name: tektronic
+      cached-skin-uuid-name: lehoodini
+      cached-skin-uuid: d6e27628-6164-4667-93df-df7d9e1ca2fe
+      player-skin-name: lehoodini
       nameplate-visible: false
-      player-skin-signature: lLK1RWt4hqSaA4rjPZVurxuAldWTuz9jMsnwcaGXfV/XbqHqr2EFqwzGKobVNI14FT0r1vG2LORmXJhkZgIcWhgg3DepoJeJgKr7/oxGJe0El8F/n4rZUYPxNC9Fr5sfk2MTYey5wzOL6QN6vViVp0nJ7hcSOntB5oyLaE7o0YVxOy2z3aKoq/RYvCUX+QVLQrQfhILJxkAfnZF6WCuCbp0wknZ/gxYHPk5vyr+Kqep1LjMyM8JtoLRWaSEThtelJYhEC7QsjYLOuDMTWHW197EFf0+UTiJY7OTl3KDoN8dv0JnxvhSNCXU5DShG3YlVoooxUUENRlmGWw0+X4NZq67X2KM4LbMKcTmAgTgcUVGD9MZBMbx+6VZflaW1VN+V57jB3/JgrZf5lmEn00wTI3+3tIE1NADQqkoRsPqDDLH6pNjykZoAB/dayB4P0xdCVHxkugr7hmu3jMyA2l77YNrmZFYhEd/WQ90P4JRsJEo3U1X2/BbwStAwUO2vaizluiyEk+2w6Ax4E9Hh5WAunCUSdfTus2wHg36ovNslFpixJ2KLGwWxP7lT9UFMqUveCf+kAn/LiIqxMNJ4ksNj538DSDu+pq7mchkR2v0Sb8F/oL2Jnfv0OlRsKnX6pSC9JDO5ODqW1W2+6rX0pzZayrMQdQUpUHyZqwrmKVzN3sU=
+      player-skin-signature: CNw1fk3jt0bCp8L/nV+zuQ6wlDWYg57BiqOYmBGrBj08H24Uxt/DvZqVbQtYGTN/yV/9H/pgnN0SoJMHEsTRIo2MD6U1j0erlXVV9v4tZN6OS3EvvTVrE6kfxo3Dv+qfAv+RXEYp9+8qLv90l5g95hSu5BcpG/eTrORzqL0sc8RWu4PM0SC+6kCiFTbrkt+Yp3daa4kWrGif3Fjnf3fsZEEjwquM94ZdUdRn5ymHNc4FD+2zCHoUpHEEjc1XB64WwRClowz8tj7XVdRwykp8z5QqQZ5fsUvWQi5VQaUQA3DC9fy5Tgork5rUJEeYqTsPnSlWdEDfn/gU8rhzQRZ6ojSItrOCXBpYkzHs/8uFGcq0K7tw/4YpZGUtyv+OXEbWvQDygNoPOyw+ugm7jjjalrQHHvUu3u5pO1d8imwnPRXGSi6DZpDHIsv8+rea2bwgSE72DMHboqrEixkOAINQMYjdQ2ksyM0yuX96eT932Vof+zzJtcrfn6RMnDvEsMIqgdu/rag4+XeHpbJIbt1BLdo4mAB8Qf1I2jBYR+VHqI7JuYKxPfLXrGOMN3ogdLL0OaluL1gmIm8Zfyki14TpT/KrN4rz5YQYIZvZ2aGZa9ykakkju0XXN6F0Au5LfX27jOZ0c6iPMf7GA7Py30NCtX2KILKGRMeJ1zQcyi5E1Sw=
       avoidwater: false
       usedefaultstuckaction: true
       speedmodifier: 1.0
-    name: Ares
+    name: blacklanternsuperman
     uuid: 9bdab89f-7d4a-43ba-a6c8-e9b913cff97f
     traits:
       gravity:
@@ -777,24 +681,24 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '442':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzEyOTEzNTg1ODcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q1ZDhlNTdjZmNkOTY4NjIxOThmZmVhMGQzOTdiNDM0OWUyYmY3M2ZiYWMyN2VlZDMzYmU1Y2Y4ODcyNzJhMiJ9fX0=
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NTQ0MTg4MzMsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzA0NTcxYWMxNjVjYmIyNjdlOTkxNzZmYzdlMjkzZDY4ZWEyYWQ4NzU0ZmFjNjI3MzlhZjFhODM3MTE3OCJ9fX0=
       cached-skin-uuid-name: tektronic
       cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       player-skin-name: tektronic
       nameplate-visible: false
-      player-skin-signature: pi0vnfI6JcdHBoYnOeu+uHqKEjuFPemDdvDOgU4iqEagTtCriJco596OeTvezWTT54QmsJjPso/qLRKZsuSgCfSwpEmYjGDxr3FsYSYgtzzbq1MNynN3kvuZ854lAD4oRhvXrWWzKDZxDmdu2w03OhAHk/io8K//hj2zXKlu1ClGy6qkmfBmU+ZqTbOXqscgPuVbTcIfVpaVV8wVlyAl8wdr5UnHcR2fJ9CsgZ+5TrPPXdLkNfvulM9pOk3IYm1W1miRnnrtROjYlcusbtdeAglbuDd6Mhph3UAhododtk0MZ54iG22NUkiS1aSaeyQeqjZzibq62Dcctjsc2oT/yjegDXZ3VOtQGZnPKR5lMig+4dO+LG8VlHM0FD6mhafuqTWLhc4z4Rs46hluoodyowfxKGvhpAOkOuxz59HGjaXL1kntk83se1ukkPf3zByDHnOvFCMh6n+/8BZfvPlAH+mvxI+sky4i/TA36UPLBFXqppuBTHXBLlNwnvosffro8dvp9UjE89Yfp+ffopBiWiqb56IO7BW8zxvnTL/MxZSzxAGUZONogO91SqCRc+U3mrkz+c4hS6klnGKBGEGy/Srfd9aHbSrZojlQcOhMOLLAmrfUMLL99K0iwLHlcmgDiFhl48Yet4ormJUVE0WF2gJqYW9CzHcWn4GTVp6TfK0=
+      player-skin-signature: YqEfqse4aHeaQYupLBrg85bAlPWQiWNyHoGBsO4D2uzxbfi6U/bUc2UeMNl3F83szuglKi21t8bgiUM6MT4KG/0vL5KAWKS/JeEm2sAWhTEJ8r5MPJ07sL7K0ShCwHOY/w1sDzwPI2wntdBRL3PF/fRUhH6yIUg64yvG7aBTBcrGv0z7Gz7k7WqAGUcu4iv4WW2WC3QRn7Qk6JhFVJ2YAeAkHZG3NDIgCtcUlUWruedeezwnZ8cEhIJm61SZ+06PooDC756CS8igtNQX5JDfOjNEmjPPoDjSGFExr0kQTUWDOuPOgwBY2NroyPhw/94vGmQos/qjCKLzZwLhX9ILGnecOCWIos0uTMmBZxMQ8HTfXv8Uw6xTQs/xJxqxt5cL3zddJB09cw7fy7y0WcTjcqw/itPvmxmOUqwGe+yDAbjV2A11yi8Ca1d3ptLFAN/qkDC8mxELwlZBMFdout7Dp6+6ovBXdv5PfUsqDzFgRpPH3UbDQeOf6cYG7MkVr2MUYJjr/ZnQPoaJ6hfpTA7GesLUjJTD23P867PoBzIJh09R48YdXc/A/C5okqi1t8LEgBiTI20yTFoMBH7TJ0bUdAu+Crc7vvbz1MHZZ0JRhtkvm/rue6THa+6jZ9x5NhAypXJx9vODCq2l3WEdJAoQjgCN9Y+JxE3fjRFD8MNQDE8=
       player-skin-use-latest: false
       avoidwater: false
       usedefaultstuckaction: true
       speedmodifier: 1.0
-    name: General Zod
+    name: One Punch Man
     uuid: 4f6feb13-c38b-48ae-a6de-dd7627cb7d77
     traits:
       gravity:
@@ -811,24 +715,24 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '441':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODIxMzE1MTMwMDYsInByb2ZpbGVJZCI6IjcxM2NhZTdhZWY2ZDRhMDY4OTIyNDc0MTQ1OWMxMmJjIiwicHJvZmlsZU5hbWUiOiJaYXJnb25fS2luZyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJmNzc5OGM0YjczZmVjZmFmYzJjZDMwMWJiYzg3NjliODRmYzJjY2VlZDc2YzVlZTdjY2VkZDVlZmJlNzAifX19
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NzU2OTYwODUxNDEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS84OGRlNGYzMTgwMWExMzc2ZTNlMDllYmZhODNhYjNjMjMxNWZiMDc2YTkwNzNjNjk0NmE5ZWI2Y2UwNmRhMyJ9fX0=
       player-skin-use-latest: false
-      cached-skin-uuid-name: zargon_king
-      cached-skin-uuid: 713cae7a-ef6d-4a06-8922-4741459c12bc
-      player-skin-name: zargon_king
-      player-skin-signature: ZMLjSfMIUCkLK8wqJXJLaayfBAgGnBE1yFERsqSry8W5ln2+2ArZD63SiBvfI8ZNOjYwtOLqny0OOAdIqdC8t77X7gUKEYAdyG6j9qW2iroiG7g9g6H+jc+bZb5zHG51cIrC2Lmq0XTa8V4GlVjxVi221YhLYiouMTJpPmlr2Tutwg7sh5eFuynwdsKxFRR/WT2dI9cWyT383uWWkBNtkBgbb9sTM/lgOcR6fLYBWMsDgGb9QuLoel3ocDp7zcFgFiDHUOEv/RfamienJbRRUdXc5JK3ku+Zvq9CqsrqvUb5eyUlc51jqBt3BDbZn/dPxZgv0iFuvAjmr7tSB/8/5zrncB8dyelQK3zt3U0f1FmX/UdbAKhMUfPfr/nxz7hr+nMZAqHudUjBSsefMFy4zbPOtNKLzMox++MASNSwLd0NDvFCrDFlk65o1kONQFr4/gOkUbryuTTK5oJb49vDnrYX7mqAJBD20mCyS3eDhRPLNc9dhc+sdiaDd+oLwDf8ODv/lCZ2VqcbT3dTbH66JDvqdUO3AAAOBXMUvZSckEsXjADcTPlqrnayXc/XZy6j1EB5R0rypg431FYZFFtUgtOrXcYXmfPT7J6yFBd724R84MK4imr7J6Xz1QNokxyWpWfqpJZPFgS0ceuOikSviBpRl3UqfVO+7lB4/c7O2Aw=
+      cached-skin-uuid-name: tektronic
+      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      player-skin-name: tektronic
+      player-skin-signature: t0iDG6A+HkxqBWr5zgbZbslJ+ykQV3QWR3lLvZtsnq0W8kyJYgL931lIUS4y9e8KMgnOp0f86YC5386oc2pr/4dn1/m8HpQdHOo7DT5YgN7kavcsJ8FILNbYu3CPBAb8SLTbAIQM8kFBWuZN+SJFuAHctpBaV1zFT4+rLC4UlxTVQfcRTV9/0Dr10G2h0/Qv7emHiTwZTG4P8IuPJC/v9nMQbHrfRJl+Q2M6D1+PzT0hAOmuyXxntjLgMZQXNFU+7cFE3zoUh4jF/pWLsJ1xaKEhNahJLb77GySdA0aINT+5uL19ve5rGkdm7ISBl+xTh1jykDhNsrijcgiYkmxWF5hawURbxDKnOLfcrTzZ3QaDMwJrWqPKTH4/LYMFInCHZ5E9mRITTa5m0X36AQff9js/Au68wi9GRdUJZsTPfe4A77DcL6M1qP++H6tjogW7mf36UbxMDlPtnluPUiTu4XH9rwvLTTJhs33HeCxKIRsY3kU4HwByrXp/yCLuAPlHbqNY7SfgSL5BzL7Xl5p7wA93ltMB35SqYp0Sv1eUDhuC46wIkVPw6tb1cILFBUM0PzEEb/AnpHYjyYLR4EoBcuQ3lJjBgl24BjWggcJll3N6l7JCn3r0nHUYiys9EG/GnxIlOA5UmydEG/IY5Htbg25lNGWJGtBBAjIH1KctlRA=
       nameplate-visible: false
       avoidwater: false
       usedefaultstuckaction: true
       speedmodifier: 1.0
-    name: blacklanternsolomongrundy
+    name: Batgirl
     uuid: 8e7fd662-c681-46df-b1b6-7b1f713ab0c7
     traits:
       gravity:
@@ -845,24 +749,24 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,gravity,owner,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
       usedefaultstuckaction: true
   '446':
     metadata:
-      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0NjQ3NjI4NTA5NjcsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkxNTc5MGU3MThmN2VmYjA5YTk1Yzc3ZjNiMTkyYjVlN2ZlMzMxMjFlMjhkMmM3MTJiOWZjYWRiMzc2ZmNhMyJ9fX0=
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE0ODIwMDIxNTAxMzUsInByb2ZpbGVJZCI6ImQ2ZTI3NjI4NjE2NDQ2Njc5M2RmZGY3ZDllMWNhMmZlIiwicHJvZmlsZU5hbWUiOiJMZUhvb2RpbmkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M2NmM2ZTI5YjZhZjQ4YjYxMmM3ZmM2OTg2OTM0MjhkMDI2ODE1YjE4YjM1ZTJiNmU2N2YxYjI4ODE4YWI1In19fQ==
       player-skin-use-latest: false
-      cached-skin-uuid-name: tektronic
-      cached-skin-uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      player-skin-name: tektronic
+      cached-skin-uuid-name: lehoodini
+      cached-skin-uuid: d6e27628-6164-4667-93df-df7d9e1ca2fe
+      player-skin-name: lehoodini
       nameplate-visible: false
-      player-skin-signature: k7KDaV9M5Z6tuMdYUBG/+73lGln8mSk4spJwSTTtlGHYPbiY/+tJRvOK0DiduPM8wMDKqiwfc0XOnzIxPA3llCWDRkC1yNl355DCjWHeeR1L94H4jv1A0rkJBILEVMviN6qwpNpJXo7nGMAASuq2gHDbbUjnpfQ8u7347iQFucGWLMaPeRBgs9wGfaN61p1jEtIfFS/jir+SQEiAg5Un079zDN8gB4/9hsK4r/hCW0+9W0SsClC0VtF/+5NF0YzSOyk99wYLCIBlQzkQYPk5Dy4oPw7i16+hQ9+w8crowuq74IsEt4o1aRD6WfvhGLY5FzAi0zV0ReM1+M4HyTQIa3FbrvYOkvkLpljh3yK0MY+EvFdj3iz63AC9v6Ig8ozraXlekOuiFhCIHvsBWOw7zmMCSyDWjrLTtJiKfmh7S5mPrXG8X0fnzodz0LGn9j4j4EpVhoVXQfeJSL11reEXzOWNxCXv5O+OJiRH0F/tx37wHd3ac3LjXyyeijCyuVhQL5Gh/sWwQB3Pv2cXiVRznU/FNU6q69NoYVvJaf7EwbNECevkbFmkUQYD0Nfu56eoLVUOwB7QI3aHv4W6Qkf4WEde6W/KgipWCWGPZCAQfTN/fiV5STCxvz+Cbfs0uwyfno3QFOxU7LDr0MpsO26a6/LQMpeZu9ptxT7Wt8sKFIQ=
+      player-skin-signature: a5C3KN5UTGw5jJ7mffQlObmIbSagaRC82WReoLZqef23Nudx8+zxAbCQpMwx3AXGkOtlwBfFTlCsU+AqrHB8KScGm6eguEqRLYDjX5GeiJwuxNYRmcDT6DwY3n+GSiqK47wvyx6Opp61PmbhIVT/1iHqGuxTwvW4Xn69O13CAZCpt1Fl6G91KaxjOKbekYmPPAQ+cgobmeDXVY5DzTqZNahkYo1tc4q/5LNPeRUg63wOERkB5bEGNMvyFEZR4BpKZccHYE+Otj9fWJ+XpSyOmCttpJgDB+XQrfgVDtxbk26f7bYIsCYoGT/BDLma0XRGuU8Drj9D5awDWN+kcKMv7+GoQ0fKtSXW+0NWKmsMOMpUEci93NN9EWuKkAMMM6dNba9s6rhGT7yCxzNdF8djqFR3f9Us8HoapufJEqdzKHrYHXK4pS+d4kcxb+05RqVtn1uHPyHRnoq4/Q7+Loy08O+bWXWUmxS0qcAtxth1foL3jlPDdqmNhFDSYezJ3/a/SyFW8g9Qx0doEhnlIcSCgJ7YfhS5Vvs5GDnsCXN3JM0dj2rf5gl6puR6N4sThQFb5BzqpSI0W2rBbQiTfcUP8kmdZfBFLNXrw+afzQfAaSAbcdIWjVLZRMXqE+Ygl6do9x0ipVvWx/4Er9CB9IG2vonGOMhH1bcyKfCbmI416uk=
       avoidwater: false
       usedefaultstuckaction: true
       speedmodifier: 1.0
-    name: Darth Sidious
+    name: blacklanterndeathstormraymondrusch
     uuid: a86055e0-ada4-4754-8e8c-7a01b8d10813
     traits:
       gravity:
@@ -879,7 +783,7 @@ npc:
       owner:
         owner: Tektronic
         uuid: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-    traitnames: mounttrait,location,inventory,owner,type,spawned,poses,gravity
+    traitnames: inventory,mounttrait,owner,gravity,location,poses,spawned,type
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
