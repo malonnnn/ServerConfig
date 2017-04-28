@@ -325,7 +325,8 @@ crucio:
          effect_wither: 1 
          effect_confusion: 5 
          cooldown: 30000 
-         hitbox: true 
+         hitbox: true
+         
 forcepush: 
      icon: diamond_axe:32 
      icon_disabled: diamond_hoe:32 
@@ -508,7 +509,8 @@ forcegrip:
          effect_levitation: 1 
          duration: 5000 
      costs: 
-         mana: 40 
+         mana: 40
+         
 apparate: 
      icon: diamond_axe:134 
      icon_disabled: diamond_hoe:134 
@@ -566,7 +568,7 @@ apparate:
          target: block 
          allow_max_range: true 
          allow_passthrough: false 
-         range: 12 
+         range: 48 
          cooldown: 10000 
          prevent_passthrough: nopassthrough 
          bypass_confusion: true 
@@ -574,61 +576,6 @@ apparate:
      costs: 
          mana: 50 
  
- 
- apparate|2: 
-     upgrade_required_path: student 
-     upgrade_required_casts: 50 
-     parameters: 
-         range: 16 
-     costs: 
-         mana: 60 
- 
- 
- apparate|3: 
-     upgrade_required_path: apprentice 
-     upgrade_required_casts: 50 
-     actions: 
-         alternate_up: 
-         - class: Ascend 
-           vertical_range: 255 
-     parameters: 
-         range: 24 
-         cooldown: 7000 
-     costs: 
-         mana: 75 
- 
- 
- apparate|4: 
-     upgrade_required_path: apprentice 
-     upgrade_required_casts: 75 
-     actions: 
-         alternate_down: 
-         - class: Descend 
-           vertical_range: 255 
-     parameters: 
-         range: 32 
-         cooldown: 5000 
-     costs: 
-         mana: 150 
- 
- 
- apparate|5: 
-   upgrade_required_path: master 
-   upgrade_required_casts: 100 
-   parameters: 
-       allow_passthrough: true 
-       passthrough_range: 8 
-       range: 48 
-   costs: 
-       mana: 150 
- 
- 
- apparate|6: 
-   parameters: 
-       safe: false 
-       cooldown: 2000 
-   costs: 
-       mana: 200  
 firestorm: 
      icon: diamond_axe:144 
      icon_disabled: diamond_hoe:144 
@@ -689,7 +636,7 @@ protego:
      parameters: 
          allow_max_range: true 
          range: 3 
-         radius: 0 
+         radius: 2 
          axis: z 
          brush: stained_glass 
          orient: true 
@@ -698,45 +645,11 @@ protego:
          destructible: destructible_replace 
          check_destructible: true 
          brushcolor: true 
-         undo: 800 
+         undo: 1100 
          cooldown: 3000 
-         breakable: 3 
-         reflect_chance: 0.25 
+         breakable: 1 
+         reflect_chance: 1 
          bypass_confusion: true 
          bypass_backfire: true 
      costs: 
          mana: 40 
- 
- 
- protego|2: 
-     upgrade_required_path: student 
-     upgrade_required_casts: 50 
-     parameters: 
-         radius: 1 
-         undo: 900 
-         reflect_chance: 0.5 
-         breakable: 2 
-     costs: 
-         mana: 50 
- 
- 
- protego|3: 
-     upgrade_required_path: apprentice 
-     upgrade_required_casts: 50 
-     parameters: 
-         radius: 1.5 
-         undo: 1000 
-         reflect_chance: 0.75 
-         breakable: 1 
-     costs: 
-         mana: 55 
- 
- 
- protego|4: 
-     parameters: 
-         radius: 2 
-         undo: 1100 
-         reflect_chance: 1 
-         breakable: 1 
-     costs: 
-         mana: 60 
