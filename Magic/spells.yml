@@ -376,65 +376,18 @@ forcepush:
               iterations: 4 
      parameters: 
          target_type: Entity 
-         range: 8 
+         range: 16 
          fov: 1 
-         target_count: 2 
+         target_count: 8 
          item_speed: 0.1 
-         living_entity_speed: 0.5 
-         repeat: 3 
+         living_entity_speed: 0.75 
+         repeat: 4 
          delay: 250 
          y_offset: 0.75 
          cooldown: 5000 
      costs: 
          mana: 20 
  
- 
- forcepush|2: 
-     upgrade_required_path: student 
-     upgrade_required_casts: 40 
-     parameters: 
-       range: 10 
-       target_count: 4 
-       living_entity_speed: 0.6 
- 
- 
- forcepush|3: 
-     upgrade_required_path: master 
-     upgrade_required_casts: 50 
-     parameters: 
-       range: 12 
-       target_count: 6 
-       living_entity_speed: 0.7 
- 
- 
- forcepush|4: 
-     actions: 
-         alternate_down: 
-         - class: ChangeContext 
-           target_caster: true 
-           actions: 
-           - class: AreaOfEffect 
-             radius: 8 
-             actions: 
-             - class: Velocity 
-               push: 1 
-     effects: 
-         alternate_down: 
-         -  class: EffectSingle 
-            sound: block_fire_extinguish 
-            sound_volume: 1 
-            sound_pitch: -0.1 
-            location: origin 
-            effectlib: 
-              class: HelixEffect 
-              iterations: 1 
-              particle: spell 
-     parameters: 
-         living_entity_speed: 0.75 
-         range: 16 
-         target_count: 8 
-         repeat: 4 
-
 forcepull: 
      icon: diamond_axe:33 
      icon_disabled: diamond_hoe:33 
