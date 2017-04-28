@@ -1,0 +1,63 @@
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WEB
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 2
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4R§8e§4d H§8oo§4d §e§lD§a§lN§4§lA
+      lore:
+      - redhood
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+health: 60.0
+hunger: 17
+exp: 0.0
+exp-level: 0
+remainingAir: 300
+fireTicks: -20
+saturation: 0.0
+exhaustion: 0.49999964
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 198935
+  '1':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 198935
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 198935
+  '3':
+    type: JUMP
+    level: 5
+    duration: 198981

@@ -11,10 +11,12 @@
 #
 regions:
     spawn:
+        min: {x: -51.0, y: 72.0, z: -31.0}
+        max: {x: -43.0, y: 75.0, z: -22.0}
         members: {}
         flags: {invincible: allow, pvp: deny}
         owners: {}
-        type: global
+        type: cuboid
         priority: 1
     start:
         parent: spawn
@@ -37,7 +39,7 @@ regions:
     __global__:
         members: {}
         flags: {item-drop: deny, pistons-group: MEMBERS, build: deny, block-break: allow,
-            interact: allow, block-place-group: MEMBERS, pistons: allow, pvp: allow,
+            interact: allow, block-place-group: MEMBERS, pvp: allow, pistons: allow,
             block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: global
