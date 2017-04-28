@@ -5,14 +5,18 @@ marry:/marry $vic = >>>
 
     if(has_permission(@player,'is.married')){
         @spouse = get_value(@player.'spouse')
-        tmsg(@player,color(red).'Sorry, you are already married to '.@spouse.'!')
-        die()
+        if(@spouse != null){
+            tmsg(@player,color(red).'Sorry, you are already married to '.@spouse.'!')
+            die()
+        }
     }
 
     if(has_permission(@vic,'is.married')){
         @spouse = get_value(@vic.'spouse')
-        tmsg(@player,color(red).'Sorry, they are already married to '.@spouse.'!')
-        die()
+        if(@spouse != null){
+            tmsg(@player,color(red).'Sorry, they are already married to '.@spouse.'!')
+            die()
+        }
     }
 
     @vic = player(@vic)
