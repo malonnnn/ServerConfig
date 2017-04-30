@@ -4,9 +4,73 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.52013284
-inventory:
-  '6':
+saturation: 5.0
+exhaustion: 0.0
+inventory: {}
+ender_chest:
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: END_ROD
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: ' §e§lD§a§lN§4§lA'
+      lore:
+      - fanfic
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: ' §e§lD§a§lN§4§lA'
+      lore:
+      - fanfic
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: ' §e§lD§a§lN§4§lA'
+      lore:
+      - fanfic
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
