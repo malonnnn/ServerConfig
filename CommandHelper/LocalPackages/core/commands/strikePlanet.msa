@@ -1,0 +1,25 @@
+strikeplanet:/strikeplanet = >>>
+
+    @rand = rand(0,16)
+
+    if(@rand > 4){
+        die()
+    }
+
+    if(@rand == 0){
+        @array = array(27 + rand(-3,4),126,34 + rand(-3,4),'utopia')
+        lightning(@array)
+    }else if(@rand == 1){
+        @array = array(56 + rand(-3,4),115,-45 + rand(-3,4),'utopia')
+        lightning(@array)
+    }else if(@rand == 2){
+        @array = array(-40 + rand(-3,4),171,-62 + rand(-3,4),'utopia')
+        lightning(@array)
+    }else if(@rand == 3){
+        @array = array(-75 + rand(-3,4),203,12 + rand(-3,4),'utopia')
+        lightning(@array)
+    }else if(@rand == 4){
+        @array = array(-17 + rand(-3,4),164,43 + rand(-3,4),'utopia')
+        lightning(@array)
+    }
+<<<
