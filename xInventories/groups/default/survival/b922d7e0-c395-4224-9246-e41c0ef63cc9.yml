@@ -4,7 +4,18 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.78100395
+saturation: 4.0
+exhaustion: 3.2059996
 inventory: {}
 armor_contents: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:slowness
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
