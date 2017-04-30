@@ -1,60 +1,19 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: COOKED_CHICKEN
+    amount: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_SPADE
-    damage: 98
+    damage: 54
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §cHa§4wk§egi§6rl's §8Mace
       enchants:
         DAMAGE_ALL: 5
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: PRISMARINE_CRYSTALS
-    amount: 9
   '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 221
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_CHICKEN
-    amount: 5
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_AXE
-    damage: 5
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
-    amount: 54
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 3
-    amount: 60
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    amount: 6
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 5
-    amount: 10
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DARK_OAK_DOOR_ITEM
-    amount: 2
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 2
-  '28':
     ==: org.bukkit.inventory.ItemStack
     type: FIREWORK
     amount: 64
@@ -62,25 +21,32 @@ inventory:
       ==: ItemMeta
       meta-type: FIREWORK
       display-name: §cHa§4wk§egi§6rl's §7Propelled Flight
-  '32':
+  '3':
     ==: org.bukkit.inventory.ItemStack
-    type: RAW_CHICKEN
-  '33':
+    type: SULPHUR
+    amount: 2
+  '4':
     ==: org.bukkit.inventory.ItemStack
-    type: GRILLED_PORK
-  '34':
+    type: YELLOW_FLOWER
+    amount: 9
+  '8':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 3
-    amount: 64
-  '35':
+    type: CARPET
+    damage: 1
+    amount: 2
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 3
+    type: RED_ROSE
+    damage: 8
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 1
+    amount: 15
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 29
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -88,11 +54,15 @@ inventory:
       enchants:
         DURABILITY: 5
         MENDING: 1
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+    amount: 22
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 29
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -100,24 +70,20 @@ armor_contents:
       enchants:
         DURABILITY: 5
         MENDING: 1
+health: 25.833274841308594
+hunger: 17
+exp: 0.13793096
+exp-level: 11
+remainingAir: 300
+fireTicks: -20
+saturation: 0.0
+exhaustion: 0.9187897
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 4
-    duration: 110648
+    duration: 159173
   '1':
     type: INCREASE_DAMAGE
     level: 15
-    duration: 110648
-  '2':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 110648
-health: 34.10862350463867
-hunger: 11
-exp: 0.11111101
-exp-level: 10
-remainingAir: 300
-fireTicks: -20
-saturation: 0.0
-exhaustion: 2.2235312
+    duration: 159173
