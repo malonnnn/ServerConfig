@@ -17,7 +17,8 @@
                   "/stopmindcontrol", 
                   "/run 0-2",   
                   "/disguise",
-                  "/tppos <x> <y> <z>"
+                  "/tppos <x> <y> <z>",
+                  "/illusion <playername>"
               ),  
               'buffs': array(    
                   "/effect ". @plr ." 21 9999 9 true",  
