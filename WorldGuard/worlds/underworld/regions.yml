@@ -55,26 +55,10 @@ regions:
         members:
             unique-ids: [87fb3c6c-5ff6-4bf6-b326-992c6137ea12, cb871f86-94e5-4bf3-a78e-42f73c2215c4,
                 0130299a-4489-429d-b4eb-68643a4c6ac8, c46d7b46-68c0-45f8-8fa6-b3def4682703]
-        flags:
-            other-explosion: deny
-            blocked-cmds-group: NON_MEMBERS
-            invincible: allow
-            build-group: MEMBERS
-            interact: deny
-            pvp: allow
-            pistons: allow
-            block-place: deny
-            pistons-group: MEMBERS
-            build: allow
-            blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /sethome, /tpask, /tp2p,
-                /tpaall, /tpdeny, /tpaccept, /tphere, /home, /thru, /tp, /tptoggle,
-                /fly, /back, /tpo, /tpahere, /tpl, /tpyes, /warp, /tpall, /tps]
-            block-break: deny
-            interact-group: NON_MEMBERS
-            block-place-group: NON_MEMBERS
-            invincible-group: MEMBERS
-            tnt: deny
-            block-break-group: NON_MEMBERS
+        flags: {other-explosion: deny, invincible: allow, build-group: MEMBERS, interact: deny,
+            pvp: allow, pistons: allow, block-place: deny, pistons-group: MEMBERS,
+            build: allow, block-break: deny, interact-group: NON_MEMBERS, block-place-group: NON_MEMBERS,
+            invincible-group: MEMBERS, tnt: deny, block-break-group: NON_MEMBERS}
         owners:
             unique-ids: [cb871f86-94e5-4bf3-a78e-42f73c2215c4]
         type: global
