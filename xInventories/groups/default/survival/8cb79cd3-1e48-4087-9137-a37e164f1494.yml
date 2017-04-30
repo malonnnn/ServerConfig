@@ -5,46 +5,63 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §8Gh§0o§8st R§7i§8der's §fShotgun§f ▫ «1»
-      lore:
-      - §eOnly For The Ghost Rider.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
+      display-name: §4Kryptonian Laser Vision§4 «×»
       Unbreakable: true
-  '1':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eFlame Thrower§e «×»
-      lore:
-      - §eFlame Thrower
-      - §eCook bacon!.
-      Unbreakable: true
-health: 60.0
-hunger: 20
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 16
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: -20
+fireTicks: 0
 saturation: 0.0
-exhaustion: 1.8540308
+exhaustion: 2.5004365
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 155786
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 193175
   '1':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 155786
+    duration: 193175
   '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 155786
+    type: WATER_BREATHING
+    level: 1
+    duration: 193175
   '3':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 193175
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 193175
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 193175
+  '6':
     type: REGENERATION
-    level: 4
-    duration: 155786
+    level: 1
+    duration: 193175

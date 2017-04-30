@@ -1,20 +1,25 @@
 inventory:
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: FEATHER
-    amount: 3
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: LIGHT_BLUE_SHULKER_BOX
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
-      Unbreakable: true
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAM2WzW7aQBSFLwYCmBYIIU2bSlUeoFWpQhVoNxUti2y6SbNGY3swFuMZ5Jmk4knyCF70Ebqbvlhn6g4/8cgSVRcsMHNtHd3vnHuNcAFcaI0J8xcTKiKx+obCBlSvBY65CwAvS1C5IUxAHZwogPM4othP0Ex8iBJGp3OWcDxFScySElQ/szsqSi6UBQpL0LylXoLRAnkEq5u1IOJLglZ1qHxFMYaBTN9f00CmQRSqI7tQlwnFibqh65Wux1hVKFaXC/nj14P8CeDA0RcUoxAruL9spYztbMPGBVLnYBoSxLkB+7SR1ozU2ddW3sdIpv0xkekV8mU6XCjs/oTKdKadXCknQ+1kNlYHjNQzZaZfZKacEfUeEXmMCf6IpQEVTP25HpPjQJncE3jl/FFXYLeuQ577jUwHNzLFS/WtYvbVB6tpDLkCFDIdqfpdotAHY916m7VnWCv/fSneytTTYV7eYdXa00GOdJCXoU5xpPfB0/vgFUVYPfwIPxrWo713t2mktcO32TGs9cNnvTWsjYy1u2FdsmThz9nSkJYtS+dmqvb2IBnFlgGWjaSZSVobSRAlwqJYN3mSKTrbaAIJto7Qonm6P1grB/adMWIUbUuTdqY43VLMMRJTjnHAi+g6uVYc0aAog+P9/XRzsRGM7rHt7XKM5qS4TXUjqRpJL5Oc7HrZkdkiOC1cA9uuPcuvAUF0sfbTtfg5+4cMnhcO57WF7EVxaq5lOOe5X8AgQjGjwdTT/0qsqwDwG1Cvjgi4CAAA
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Emergency Supply Crate:Owners
+      internal: H4sIAAAAAAAAAM2US2/TQBSFrx95mZJWNEkfohCxRwKVRamEQA0V6gYkwt6a2BNn5MdY40kr/yL/D/8yxkwmTmLLQWHDIoqOrG98fM7cawFY0L8LqOPfR5zw9BfyumBNlgmn4XcUYri6DzHzcOSk4+kyjoN0PGGI49sfTxFmSQ9aDxyHiQUA5xqY04By6IJOXDgJSYQdhub81kEsxlyD1oQuI36kQ/srCpGH4RhWjCaZ45JB0SMJFKKVCChEl8hZiTwxwtEswPaMUr8JNSR6UaIuYr5NkW8nHBGWNMGmhAclTEQC9pyJtBRn1nAtyQ03YqEz4VYkHeGmF7Yl+HLDLUEhjVzbWQg6DkQda94CgyOvB6ZobFG0YuhgBI8BCEvFKQArbUjd2dFvwADrJ45FChOa8OIAqPHUqfkY6mPXnmE8V2a+1IDdyuVIFgQHblMAPclclgynReR0bi8jNyWR10RbFavIQQ5BtkspU+Cwklt7lYsmc7FUTi2pT5TWpT7d0YOdXEewfd63Ss6fLei4JBF1pl0w/8xe7yFeiMsxvr6GuhKe/c2X1UVydPjoPP+nLvqSvirpmJEkRExo22GpmL6gcfheyANG5QEeDVwcFb55HTlV5Gl1bBnd5Sq3QF+19kq2ZsK2FquyUtrbPPswzTMci3+cZ474YTfPbpI8e8fz7KPQ79lYPLwrXr1Z7Eh5HUiv/Y1+KF0vQ6Nmfw4r+zPhxPFrkHWUo8olUGtlTyat7Y2iwbbW92yY7t6N83ojkxtl9+z/2YKflKfzw+fo4nD08gAU4DfnZDQ26gcAAA==
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 47
+    damage: 12
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -22,18 +27,114 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 8
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Emergency Supply Crate:Owners
+      internal: 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
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Emergency Supply Crate:Owners
+      internal: H4sIAAAAAAAAAL2Vz27TQBDGx3bcpIamhSb9B4jAhSMFDpQeEGooEhICqeUebeKJY3W9G623jXLiyBmJC+IB8h55MrbdbJx4jUsuHD+vft5vvhmPA4AA6ieU9y5OmYzl+CuJahC0L1PJk88kQXh0mqCIkPXGrfPL4ZCOW21BJB5/GTEU6Tr4HyUmaQAADxyonFMuoQZuHMJWEjPsCdKXx0jHUhAH/Da/ZNJxYe09SUiECpoxjmb2MiaMScJZ2BkgTVDO2QA8SaJ1qChHg+tbfRc8ekWh4t68wYOZ9rT2jXa0XsudV3P6qXpDcIZDEos2T6W6YBMyvz+NX1f73cz8EiH4yNh8V1CiZyEqY4YGcTPEN0hFIwd2KhSjKGZR+vdcvOVcYOW6vYW6vxtHvnZUX3QkZFnZaysTVWt+IkGukJbNT00zGxnTzbphh1OdFe/r4g9NGK7WL3JD8zKnX+X0ByvMZd20wv22EG5gilhfOarAIlLCQkM8KSDurHzHXYvocTJvhldAbJQSdjfcWVq/dVpbuW40VELVME6HlIxrULnZSm+nk8OT6eSITievyXTS7yl9oXRL6U9Kq2eHTKJ6ItQT9ixVB0dnsTph6iQCKLBdt2x3EftlU7epie2MYFxi93qbluWzpbFGhgkMO33KRygKrvMMd8/6MCiqD2O+BOoZ4xrmvmZ27RXS5VyW7I/cXnVgWbu37JParfvl8UIPfhi729puc3F0ul2KS6vyeUGmjZXnumldNRogkZ0UMZznUikAd0qv2i8gdjXx0G5Cb6BKU4Mt8T9t8l/G0572tLOwZTkNkXWI+snP3bzJSMeQ+9ZIjZGq4c1NsF8QxME/XbrULYA/CK8QMaQIAAA=
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAM2VzW7TQBSFr+20TRORlJL0T/x01xUC1AZRJAQKdMGGTUEsrbE9SSyPZ8LMpBBehEfwgkdgN7wYNxhn0tiKiBBSF0k8ir45956ce9MAaECrz0SYXHAd6+l7MtyGjbeapqoBAIcO1C6Z0FAHN46gk8achpIM9PNYCu4HQmjlwMZrMeHaaYCnZ3iN8nA0o10XPHbF4L77m67B9XMdtbeiWI0Zmdah9o6kFB6a7OzSZHSMn9RkIb5oZLJnymSPtcnO8fxEHuOX/Zk0SsDmG5KSIYUz+FOrk9e6b2tVmuBz5A8ZUfNyX1m0WaBujrYsOojVqCBeWAIKwsuJHUtgNzyxpljGLZhazhwtmTkSUlGfyFTIJUsdaH7ggaQkIQGjTtm1RyYL+sxkpxOK3gQXfOaUxPNwiufzProWkBTfjs33n9/Mj0Xf5q1s5mUd2LI+CxFR7o/jMCFfaEVLdwt262a2VM/LelCOwohIbA0fQtSsiIRXXLGdX9FeuCKZMLYKafxdAF9WBLBZVtPo/pJ5Zbfumewpjs0pjkiPyBOFFvU+EpwdtK0XVXpzK5fas1KfJkTqr34w2war8tvKyV1LShopLXhVROZ67XX15uTOzV8+naLW2+sOwn9K/m4pSFrIcL7KvArkTglh9IrKVb9M59/nq1uKhRRa49YZMGpXr1shvlcasyKGPiPpeFXd+znatWgoAtxD10LcrQAPSn8QivCoINoVxGGJiGKpC6JVQRytZ2pz0VSAX3YhSubSBwAA
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: PRISMARINE_CRYSTALS
+    type: SULPHUR
+    amount: 2
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: PRISMARINE_SHARD
-    amount: 2
+    type: BONE
+    amount: 11
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 7
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        SILK_TOUCH: 1
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Emergency Supply Crate:Owners
+      internal: H4sIAAAAAAAAANWUT0+DQBDFB2gtRe0fa21jYmz8GD0YI/bgRRPrnWxhSjdddsmy2PDtxWIFW8QETx5fwm/m8eZlLQALOvdMuOsZV1Qlr8Q3wbLjSIngiQQIV7MApY/cTSbzOAxZMrElUTh93nCUURuajwqDyAKAgQaNORPKMEGnHowCytGVZKmmHiWB4J6zEEJFGjRtEXOlWWAo4rehkQ5ffQxo6mCwNwYNfTtAg+9a32kj0609be7pGzDAesGQUGmLSKULrtMvjh5IQHxM1afdo8xuP7e7QE+mgeyM3pVArQwa51AUoqskYQ6RUmyqWDNjewV2RZF5X8GUMO2MucwZJdLcHbF0Yu4llPtVtPUn+rhOQCcZ1ClAgmMVcfrbmjJv3Qwa5pArxBrTqiEuq7b1DsAwDsI15U5IK232f243K5i9LUHPMrRbOLwqD8XYIYO6/3deo2TDg1JL9LYWHSWku6rad1GnJKP/9VKMq++nFe8H8A7eOWAgWwUAAA==
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 12
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 3
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 3
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 15
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 47
+    damage: 12
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -41,36 +142,66 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 15
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 3
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 12
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        THORNS: 3
+        DURABILITY: 3
+      repair-cost: 3
 health: 20.0
-hunger: 14
-exp: 0.76923084
-exp-level: 3
+hunger: 19
+exp: 0.31578958
+exp-level: 6
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.2920713
+exhaustion: 0.5614151
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 127
-    duration: 176265
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 196106
   '1':
     type: SPEED
     level: 10
-    duration: 170456
+    duration: 197392
   '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 179493
-  '3':
     type: WATER_BREATHING
     level: 1
-    duration: 179493
-  '4':
+    duration: 196106
+  '3':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 179493
-  '5':
-    type: JUMP
-    level: 5
-    duration: 175879
+    duration: 196106
