@@ -1,0 +1,15 @@
+fanficlaser:/fanficlaser $color = >>>
+
+    @plr = player()
+    @color = $color
+
+    if(@color == 'red'){
+        runas(~console,'/shot give '.@plr.' basic'.@color.'laser')
+    }else if(@color == 'blue'){
+        runas(~console,'/shot give '.@plr.' basic'.@color.'laser')
+    }else if(@color == 'yellow'){
+        runas(~console,'/shot give '.@plr.' basic'.@color.'laser')
+    }else{
+        tmsg(@plr,color(red).'Sorry, that laser color not found!')
+    }
+<<<
