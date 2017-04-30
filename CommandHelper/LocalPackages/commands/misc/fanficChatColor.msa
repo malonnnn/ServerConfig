@@ -1,0 +1,20 @@
+fanficchatcolor:/fanficchatcolor $color = >>>
+
+    @player = player()
+    @name = $color
+
+    if(reg_match('(i?)&[l|o|k|m]',@name)){
+        tmsg(@player,color(red).'Sorry! Bold, italic, underline, magic, and strikethrough not allowed!')
+        die()
+    }
+
+    if(reg_match('(i?)&[l|o|k|m]',@name)){
+        tmsg(@player,color(red).'Sorry! Bold, italic, underline, magic, and strikethrough not allowed!')
+        die()
+    }
+
+    @group = pgroup(@player)[0]
+
+    runas(~console,'/pex group '.@group.' suffix '.@name)
+
+<<<

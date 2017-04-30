@@ -1,0 +1,32 @@
+health: 20.0
+hunger: 20
+exp: 0.0
+exp-level: 0
+remainingAir: 300
+fireTicks: -20
+saturation: 4.0
+exhaustion: 2.2140038
+inventory: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4A§0n§4t-M§0a§4n §e§lD§a§lN§4§lA
+      lore:
+      - antman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
