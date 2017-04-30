@@ -80,7 +80,9 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         }
         
         # teleport them to center of block
-        runas(~console,"/tp ".@plrr." ".@plrr)
+        @ploc = ploc(@plrr)
+        set_ploc(@plrr,integer(@ploc['x']).'.5',@ploc['y'],integer(@ploc['z']).'.5')
+        #runas(~console,"/tp ".@plrr." ".@plrr)
         
         # Check player inventory for DNA
         @inv = pinv(@plrr)
