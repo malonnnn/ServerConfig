@@ -6,7 +6,6 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -18,7 +17,6 @@ inventory:
       - §eFully automatic with high power.
       - §eEffective at medium range.
       - §eControls are inverted.
-      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -64,7 +62,6 @@ inventory:
       - §eFires metal slugs that penetrate
       - §eall targets within 40 blocks.
       - §eDeals 200% damage to Zombies.
-      Unbreakable: true
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: REDSTONE_COMPARATOR
@@ -89,17 +86,25 @@ inventory:
       - §eRemote explosives.
       - §eRight click to place.
       - §eLeft click to detonate.
-      Unbreakable: true
-potion_effect:
-  '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 195926
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK_CHARGE
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.8960106
+saturation: 5.0
+exhaustion: 2.824
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 198335

@@ -1,0 +1,15 @@
+proc:/proc $type = >>>
+
+    @type = $type
+    @plr = player()
+    if(@type == 'hero'){
+        tmsg(@plr,color(red).'https://docs.google.com/drawings/d/1e17T57bpLOozgQ1u46JnBqqtDg3Hz1i_jlDDMk9K5S8/edit')
+    }else if(@type == 'feature'){
+        tmsg(@plr,color(red).'https://docs.google.com/drawings/d/1e17T57bpLOozgQ1u46JnBqqtDg3Hz1i_jlDDMk9K5S8/edit')
+    }else if(@type == 'bugs'){
+        tmsg(@plr,color(red).'https://docs.google.com/drawings/d/1472fzcqPPMypP9LIs2jeXnkBq4N_WcCTVSymNaEzGZQ/edit')
+    }else{
+        tmsg(@plr,color(red).'Sorry, that\'s not a recognized type')
+    }
+
+<<<
