@@ -4,5 +4,13 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.89
+saturation: 5.0
+exhaustion: 0.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    damage: 7
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: FLINT_AND_STEEL
