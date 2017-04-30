@@ -1,12 +1,25 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-potion_effect:
-  '0':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 142242
+    type: WOOD
+    damage: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_STEP
+    damage: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BIRCH_WOOD_STAIRS
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 15
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL_BLOCK
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
 health: 60.0
 hunger: 20
 exp: 0.0
@@ -15,3 +28,8 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 0.50585926
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 62966

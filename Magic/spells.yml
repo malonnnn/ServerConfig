@@ -432,3 +432,274 @@ forcepush:
      costs: 
          mana: 20 
 
+
+fireball:
+  parameters:
+     break_blocks: false
+
+forcepull: 
+     icon: diamond_axe:33 
+     icon_disabled: diamond_hoe:33 
+     icon_url: http://textures.minecraft.net/texture/e13e9af0957a9dd4995811ef3e869b4ad8fbb59ca7474e4c84ce7f6019b079 
+     category: elemental 
+     worth: 20 
+     earns_sp: 4 
+     actions: 
+         cast: 
+         -  class: Velocity 
+         -  class: FallProtection 
+         alternate_down: 
+         - class: Velocity 
+           fov: 3 
+           range: 16 
+           count: 16 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: block_fire_extinguish 
+         -  class: EffectTrail 
+            particle: spell 
+            reverse: true 
+            length: 16 
+            particle_count: 6 
+         alternate_down: 
+         -  class: EffectSingle 
+            sound: block_fire_extinguish 
+            effectlib: 
+              class: HelixEffect 
+              particle: spell 
+              iterations: 2 
+     parameters: 
+         target_type: Entity 
+         range: 48 
+         item_speed: 2 
+         living_entity_speed: 1 
+         push: -1 
+         duration: 10000 
+         cooldown: 2000 
+     costs: 
+         mana: 10 
+
+forcegrip: 
+     icon: diamond_axe:181 
+     icon_disabled: diamond_hoe:181 
+     icon_url: http://textures.minecraft.net/texture/111de372969a39e34c3af5e6d2392e7876a1f13cf7a37d7513ad60c168bfd7b9 
+     category: utility 
+     worth: 150 
+     earns_sp: 5 
+     actions: 
+         cast: 
+         -  class: Velocity 
+            requires_entity_target: true 
+            item_speed: 2 
+            living_entity_speed: 3 
+         -  class: PotionEffect 
+         -  class: MoveBlock 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            location: origin 
+            sound: magic.zap_up 
+            sound_pitch: 2 
+            effectlib: 
+              class: ConeEffect 
+              iterations: 8 
+              particles: 2 
+              particle: spell 
+              lengthGrow: 0.4 
+         -  class: EffectSingle 
+            target_offset: 0.5,5.5,0.5 
+            location: target 
+            use_block_location: true 
+            effectlib: 
+              class: SphereEffect 
+              iterations: 48 
+              period: 2 
+              particle: spell 
+              radius: 0.8 
+         -  class: EffectSingle 
+            location: target 
+            effectlib: 
+              class: ConeEffect 
+              iterations: 8 
+              particle: spell 
+              autoOrient: false 
+         no_target: 
+         -  class: EffectSingle 
+            location: origin 
+            sound: entity_enderdragon_flap 
+            sound_pitch: 2 
+            effectlib: 
+              class: ConeEffect 
+              iterations: 8 
+              particles: 2 
+              particle: spell 
+              lengthGrow: 0.4 
+     parameters: 
+         hitbox: true 
+         target: other 
+         target_type: LivingEntity 
+         allow_max_range: false 
+         range: 15 
+         check_destructible: true 
+         undo: 5000 
+         target_breakables: 1 
+         bypass_backfire: false 
+         cooldown: 1000 
+         offset: 0,5,0 
+         delay: 100 
+         direction: 0,1,0 
+         living_entity_speed: 0.1 
+         item_speed: 0.05 
+         repeat: 50 
+         instant_block_effects: true 
+         cooldown: 2000 
+         cancel_on_damage: 0.5 
+         effect_levitation: 1 
+         duration: 5000 
+     costs: 
+         mana: 40
+         
+apparate: 
+     icon: diamond_axe:134 
+     icon_disabled: diamond_hoe:134 
+     icon_url: http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2 
+     alias: tesseract 
+     category: utility 
+     tags: nojail 
+     worth: 500 
+     earns_sp: 2 
+     upgrade_required_path: student 
+     upgrade_required_casts: 40 
+     actions: 
+         cast: 
+         - class: ChangeContext 
+           target_caster: true 
+           ignore_result: true 
+           actions: 
+           - class: FallProtectionAction 
+         - class: Teleport 
+     effects: 
+         teleport: 
+         - class: EffectSingle 
+           sound: magic.teleport 
+           location: target 
+           particle_override: particleNucleus 
+           color_override: colorOrbital 
+           source_location: eyes 
+           effectlib: 
+              class: AtomEffect 
+              particleNucleus: dragon_breath 
+              particleOrbital: redstone 
+              iterations: 8 
+              offset: 0,-1,0 
+         precast: 
+          - class: EffectSingle 
+            sound: magic.teleport 
+            location: origin 
+            particle_override: particleNucleus 
+            color_override: colorOrbital 
+            source_location: eyes 
+            effectlib: 
+                class: AtomEffect 
+                updateLocations: false 
+                particleNucleus: dragon_breath 
+                particleOrbital: redstone 
+                iterations: 8 
+                offset: 0,-1,0 
+          - class: EffectSingle 
+            color_override: color 
+            effectlib: 
+                class: LineEffect 
+                particle: redstone 
+                updateLocations: false 
+     parameters: 
+         target: block 
+         allow_max_range: true 
+         allow_passthrough: false 
+         range: 48 
+         cooldown: 10000 
+         prevent_passthrough: nopassthrough 
+         bypass_confusion: true 
+         vertical_range: 8 
+     costs: 
+         mana: 50 
+ 
+firestorm: 
+     icon: diamond_axe:144 
+     icon_disabled: diamond_hoe:144 
+     icon_url: http://textures.minecraft.net/texture/92d331289b5e527c540652d61561a2e90f52a8755c1c7d0cd1a1a98f49de450 
+     category: combat 
+     worth: 250 
+     earns_sp: 4 
+     actions: 
+         cast: 
+         -  class: Line 
+            actions: 
+            - class: Cover 
+              actions: 
+              - class: Burn 
+            - class: Delay 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.burn 
+            effectlib: 
+              class: DragonEffect 
+              iterations: 20 
+              length: 16 
+              stepsPerIteration: 1 
+     parameters: 
+         target_type: LivingEntity 
+         transparent: transparent_to_construction 
+         allow_max_range: true 
+         range: 32 
+         size: 8 
+         reverse: false 
+         require_blocks: true 
+         undo: 5000 
+         cooldown: 2000 
+         destructible: destructible_replace 
+         delay: 100 
+     costs: 
+         mana: 100 
+protego: 
+     icon: diamond_axe:23 
+     icon_disabled: diamond_hoe:23 
+     icon_url: http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc 
+     category: light 
+     worth: 100 
+     earns_sp: 5 
+     upgrade_required_path: beginner 
+     upgrade_required_casts: 25 
+     actions: 
+         cast: 
+         -  class: Disc 
+            actions: 
+            -  class: ModifyBlock 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.shield_boom 
+            location: origin 
+     parameters: 
+         allow_max_range: true 
+         range: 3 
+         radius: 2 
+         axis: z 
+         brush: stained_glass 
+         orient: true 
+         orient_snap: 45 
+         transparent: transparent_to_construction 
+         destructible: destructible_replace 
+         check_destructible: true 
+         brushcolor: true 
+         undo: 1100 
+         cooldown: 3000 
+         breakable: 1 
+         reflect_chance: 1 
+         bypass_confusion: true 
+         bypass_backfire: true 
+     costs: 
+         mana: 40 
+

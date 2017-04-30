@@ -1,9 +1,40 @@
-inventory: {}
-health: 20.0
-hunger: 17
-exp: 0.88888884
-exp-level: 1
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_FENCE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fX§0-§f2§03's Claws
+      enchants:
+        DAMAGE_ALL: 10
+health: 40.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.7164563
+exhaustion: 0.8610055
+armor_contents: {}
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 191521
+  '1':
+    type: SPEED
+    level: 2
+    duration: 191599
+  '2':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 191521
+  '3':
+    type: REGENERATION
+    level: 4
+    duration: 191521
+  '4':
+    type: JUMP
+    level: 5
+    duration: 191574
