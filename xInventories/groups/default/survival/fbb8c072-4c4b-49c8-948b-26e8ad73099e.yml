@@ -1,12 +1,30 @@
-inventory: {}
-health: 20.0
-hunger: 20
+inventory:
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 3
+    amount: 34
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 3
+    amount: 64
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 61
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    amount: 61
+health: 13.0
+hunger: 13
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.7610135
+exhaustion: 3.985012
 armor_contents: {}
 ender_chest:
   '0':
@@ -31,3 +49,12 @@ ender_chest:
         amplifier: 1
         ambient: true
         has-particles: true
+potion_effect:
+  '0':
+    type: SPEED
+    level: 2
+    duration: 189044
+  '1':
+    type: JUMP
+    level: 3
+    duration: 189017
