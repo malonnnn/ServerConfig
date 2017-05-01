@@ -17,7 +17,8 @@
                 "/run 0-9",
                 "/haste 0-9",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "/break (breaks 1 block of whatever you're looking at, including bedrock)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
