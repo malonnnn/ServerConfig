@@ -103,13 +103,11 @@ fightclub:/fightclub = >>>
                     runas(~console,'/pex user '.@player.' add essentials.protect.pvp fightclub')
                     runas(~console,'/pex user '.@plr.' add essentials.protect.pvp fightclub')
 
-                    @p1 = bind(player_death,null,associative_array('player':@player),@e,@plr = @plr, @player = @player){
-                        @winner = @plr
-                        @loser = @player
+                    @p1 = bind(player_death,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
                         include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
                         _fightClubReset(@winner,@loser)
                     }
-                    @p2 = bind(player_death,null,associative_array('player':@plr),@e,@plr = @plr, @player = @player){
+                    @p2 = bind(player_death,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
                         @winner = @player
                         @loser = @plr
                         include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
