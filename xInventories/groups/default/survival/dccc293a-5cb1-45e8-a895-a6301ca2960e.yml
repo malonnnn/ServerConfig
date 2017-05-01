@@ -1,18 +1,12 @@
 inventory:
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+    type: BONE
+    amount: 2
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 19
+    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -92,16 +86,6 @@ inventory:
       - §eall targets within 40 blocks.
       - §eDeals 200% damage to Zombies.
       Unbreakable: true
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK_CHARGE
-    amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK_EFFECT
-      display-name: §eFrag Grenade§e
-      lore:
-      - §eExplodes three seconds after launch.
   '30':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -181,11 +165,33 @@ inventory:
       - §eEquipped with a night vision scope.
       - §eDeals double damage on headshots.
       Unbreakable: true
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 19
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    damage: 73
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+    damage: 92
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 3
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 19
+    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -193,36 +199,50 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+    damage: 92
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 3
+        DURABILITY: 3
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    damage: 73
 health: 20.0
-hunger: 20
-exp: 0.38095242
-exp-level: 7
+hunger: 18
+exp: 0.14814812
+exp-level: 10
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 1.5380169
+saturation: 0.0
+exhaustion: 1.926184
 potion_effect:
   '0':
     type: FAST_DIGGING
     level: 127
-    duration: 179442
+    duration: 156207
   '1':
     type: SPEED
     level: 8
-    duration: 179868
+    duration: 156633
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 188380
+    duration: 181920
   '3':
     type: WATER_BREATHING
     level: 1
-    duration: 188380
+    duration: 181920
   '4':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 188380
+    duration: 181920
   '5':
     type: JUMP
     level: 10
-    duration: 165243
+    duration: 142008

@@ -1,56 +1,33 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 100.0
+inventory: {}
+health: 20.0
 hunger: 20
-exp: 0.6923078
-exp-level: 3
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.47993034
+exhaustion: 2.7610135
 armor_contents: {}
-potion_effect:
+ender_chest:
   '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 193156
-  '1':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 193156
-  '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 193156
-  '3':
-    type: WATER_BREATHING
-    level: 1
-    duration: 193156
-  '4':
-    type: INCREASE_DAMAGE
-    level: 19
-    duration: 193156
-  '5':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 193156
-  '6':
-    type: REGENERATION
-    level: 1
-    duration: 193156
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6St§da§3r §3Butte§5rfly §e§lD§a§lN§4§lA
+      lore:
+      - starbutterfly
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
