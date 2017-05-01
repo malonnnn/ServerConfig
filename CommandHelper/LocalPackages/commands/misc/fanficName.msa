@@ -1,12 +1,7 @@
-fanficname:/fanficname $name = >>>
+fanficname:/fanficname $ = >>>
 
     @player = player()
-    @name = $name
-
-    if(reg_match('(i?)&[l|o|k|m]',@name)){
-        tmsg(@player,color(red).'Sorry! Bold, italic, underline, magic, and strikethrough not allowed!')
-        die()
-    }
+    @name = $
 
     if(reg_match('(i?)&[l|o|k|m]',@name)){
         tmsg(@player,color(red).'Sorry! Bold, italic, underline, magic, and strikethrough not allowed!')
@@ -15,6 +10,6 @@ fanficname:/fanficname $name = >>>
 
     @group = pgroup(@player)[0]
 
-    runas(~console,'/pex group '.@group.' prefix '.@name)
+    runas(~console,'/pex group '.@group.' prefix "'.@name.'"')
 
 <<<

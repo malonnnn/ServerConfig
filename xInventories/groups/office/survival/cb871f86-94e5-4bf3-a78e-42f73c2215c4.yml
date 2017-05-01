@@ -1,19 +1,20 @@
 inventory:
-  '7':
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: BANNER
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: STEP
-    damage: 5
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS_PANE
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: PR's
+      author: ThatCraftLife
+      pages:
+      - Can you accept my GRoot and Piccolo PR's
+      generation: 0
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 3.5500202
+saturation: 12.0
+exhaustion: 2.5020242
