@@ -5,15 +5,66 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.15
+exhaustion: 0.50000006
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOL
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of pepe
+      internal: H4sIAAAAAAAAAONiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1lYClILUhlYAAALRl3tCEAAAA=
+      skull-owner: pepe
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: MUTTON
-    amount: 2
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k §e§lD§a§lN§4§lA
+      lore:
+      - mrmxyzptlk
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn §e§lD§a§lN§4§lA
+      lore:
+      - doctormanhattan
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 3
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack

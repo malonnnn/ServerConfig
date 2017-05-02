@@ -8004,6 +8004,7 @@ polymorph:
       - class: CustomProjectile
         actions:
         - class: Disguise
+        - class: PotionEffect
     effects:
         cast:
         -  class: EffectSingle
@@ -8042,7 +8043,9 @@ polymorph:
         target_type: LivingEntity
         target_breakables: 1
         target: other
+        undo: 20000
         duration: 20000
+        effect_slow: 2
         hitbox: true
         cooldown: 30000
 
@@ -10237,6 +10240,7 @@ smite:
         allow_max_range: true
         range: 32
         radius: 3
+        damage_max_distance: 4
         cooldown: 15000
         effect_only: true
         damage: 4
@@ -12521,7 +12525,11 @@ wither:
     earns_sp: 10
     actions:
         cast:
-        -  class: Projectile
+        - class: Projectile
+          actions:
+          - class: AreaOfEffect
+            actions:
+            - class: PotionEffect
     effects:
         cast:
         -  class: EffectSingle
@@ -12588,7 +12596,7 @@ wolfhouse:
     icon_disabled: diamond_hoe:158
     hidden: true
     icon_url: http://textures.minecraft.net/texture/98abd2beac47ec40be793f4ceacf32eac91322557aedf19a81f43ad28355f8b
-    category: master
+    category: engineering
     class: ConstructSpell
     worth: 1000
     cancellable: false

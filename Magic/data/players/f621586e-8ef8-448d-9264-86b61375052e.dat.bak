@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: mythguy1226
-last_cast: 1493531629244
+last_cast: 1493683941236
 cooldown_expiration: 0
-last_death_location: -1698.862500011921,70.0,143.69999998807907,greenfield,97.114746,26.991547
+last_death_location: -16.270342878906987,86.0,-194.38883417392861,greenfield,-75.63989,26.250017
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -24,6 +24,16 @@ spells:
     last_cast: 1492367312601
     last_earn: 1492367040071
     cooldown_expiration: 0
+  forcegrip:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  forcepush:
+    cast_count: 16
+    last_cast: 1493683941237
+    last_earn: 1493683882748
+    cooldown_expiration: 1493683946237
   fire|3:
     cast_count: 4
     last_cast: 1492222532980
@@ -52,6 +62,11 @@ spells:
   crucio:
     cast_count: 0
     last_cast: 1492469099952
+    last_earn: 0
+    cooldown_expiration: 0
+  forcepull:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
   pull:
@@ -109,9 +124,45 @@ spells:
     last_cast: 1492367327458
     last_earn: 1492367002638
     cooldown_expiration: 0
+wands:
+  yodaforce:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6forcepush§f (§3Yoda's Forcepowers§f)
+        lore:
+        - §3§oBound to mythguy1226
+        - Knows 3 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAE2QvU7DMBRGLzSFJPxJZYQBia5BNLQhLIgKkECiMFSdGCI3uWkt6jgkNy3ZYOAV4AFYGXgAFhZGHogJJ1UrPNnW9XfOZxPABG3CokAHnVDEI0YIRi4DFsrERx2qchJhAisip+Egyxu27eiwynziY/TSGEcjMMrROEuHVdAEi9jpC4AG68XWIy4wJSZigIXb76eHLwUqIz0eQD107EbLddByMXStZtMNrCPbaVqu03caB4et/ZaNFVgeY5JyGQFA1YSNkurxaIwRySSvzAWUi6LMzoOEKygsVv4JQrkMqLWJEt7PCDsy4CFX+WbxVgO917s868iUfnePt9uPF6iBUVxdIUvpY+vz5/X5/W0JltpCZhGd1KeJOmjdkSTQBePRsPzOtTnimgmEzQGq0tzfY0TMv+vGiIEyu4kxYTTtVqSUs7Xz+4zHQtXbmekB/AFdq24ZqwEAAA==
+    wand:
+      template: yodaforce
+      owner: mythguy1226
+      active_spell: forcepush
+      mana: 300.0
+      mana_timestamp: 1493684025537
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      version: 5
+      spell_inventory:
+        forcepull: 1
+        forcegrip: 2
+        forcepush: 0
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1088
+  sp: 1098
 properties: {}
 classes: {}

@@ -1,5 +1,14 @@
 mortal:/mortal = >>>
     @plr = player()
+    assign(@cooldown, 10)
+    
+    assign(@lastUsedMindLock, import(@plr."lastUsedMortal"))
+    if(@lastUsedMindLock + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedMindLock, @cooldown), divide(time(),1000)))
+        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force push again!'))
+        die()
+    )
+    export(@plr."lastUsedMortal", time() / 1000)
     if(@plr != "~console"){
         runas(~console,"/sudo @plr c:/trailsid none")
         runas(~console,"/pex user @plr group set mortal")
