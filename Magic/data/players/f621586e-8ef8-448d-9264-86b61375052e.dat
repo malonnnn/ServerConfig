@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: mythguy1226
-last_cast: 1493531629244
+last_cast: 1493683941236
 cooldown_expiration: 0
-last_death_location: -1698.862500011921,70.0,143.69999998807907,greenfield,97.114746,26.991547
+last_death_location: -16.270342878906987,86.0,-194.38883417392861,greenfield,-75.63989,26.250017
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -24,6 +24,16 @@ spells:
     last_cast: 1492367312601
     last_earn: 1492367040071
     cooldown_expiration: 0
+  forcegrip:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  forcepush:
+    cast_count: 16
+    last_cast: 1493683941237
+    last_earn: 1493683882748
+    cooldown_expiration: 1493683946237
   fire|3:
     cast_count: 4
     last_cast: 1492222532980
@@ -52,6 +62,11 @@ spells:
   crucio:
     cast_count: 0
     last_cast: 1492469099952
+    last_earn: 0
+    cooldown_expiration: 0
+  forcepull:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
   pull:
@@ -109,9 +124,34 @@ spells:
     last_cast: 1492367327458
     last_earn: 1492367002638
     cooldown_expiration: 0
+wands:
+  yodaforce:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: 1
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6forcepush§f (§3Yoda's Forcepowers§f)
+        lore:
+        - §3§oBound to mythguy1226
+        - Knows 3 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAE2QvU7DMBRGLzSFJPxJZYQBiYotiIY2hAVRARJIFIaqE0PkJjetRW2H5KZVNhh4BXgAVgZWJGZGHoiJJFUrPNnW9XfOZxPABG3CZKCDTiiiESMEI1MBC1Xsow5VNZEYw4rIaDhIs4ZtOzqsMp/4GL0kwtEIjHI0SpNhFTTBJDt7AdBgvdh6xAUmxEQEsHD3/fS5l4PKSI8HUA8du9FyHbRcDF2r2XQD69h2mpbr9J3G4VHroGVjBZbHGCdcSQComrBRUj0uxyhJxVllLpC75JTZeRDzHAqLlX+CUC4Dam2imPdTwo4KeMjzfLN4q4He612dd1RCv7sn2+3HS9TAKK6ukSX0sfX18/r8/rYES22hUkmn9WmiDlp3pAh0wbgclt+5NkfcMIGwOcC8NPf3GRHz77sRYpCb3UYYM5p2K1LK2drFQ8ojkdfbmekB/AE9YXn4qwEAAA==
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1088
+  sp: 1098
 properties: {}
 classes: {}
