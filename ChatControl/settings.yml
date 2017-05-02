@@ -1,6 +1,6 @@
 # !---------------------------------------------------------!
-# ! File automatically updated at 05.04.2017 21:45:50
-# ! to plugin version v7.2.11
+# ! File automatically updated at 02.05.2017 13:13:08
+# ! to plugin version v7.3.6
 # !---------------------------------------------------------!
 # ! Unfortunatelly due to how Bukkit handles YAML
 # ! configurations, all comments (#) were wiped. 
@@ -288,6 +288,7 @@ MySQL:
     Port: '3306'
     User: ''
     Password: ''
+    Connector_Advanced: jdbc:mysql://{host}:{port}/{database}?autoReconnect=true
 Listener_Priority:
   Formatter: NORMAL
   Checker: NORMAL

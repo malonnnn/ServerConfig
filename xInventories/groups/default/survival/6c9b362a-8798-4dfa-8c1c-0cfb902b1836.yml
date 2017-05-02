@@ -19,6 +19,30 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+      Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Beerus §dBall§d «×»
+      Unbreakable: true
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -30,28 +54,28 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
-  '0':
-    type: SPEED
-    level: 2
-    duration: 192543
-  '1':
-    type: FAST_DIGGING
-    level: 20
-    duration: 192234
-  '2':
-    type: DAMAGE_RESISTANCE
-    level: 5
-    duration: 195314
-  '3':
-    type: JUMP
-    level: 5
-    duration: 192649
 health: 20.0
 hunger: 20
-exp: 0.5714286
+exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 3.9629974
+saturation: 0.0
+exhaustion: 3.7690392
+potion_effect:
+  '0':
+    type: SPEED
+    level: 8
+    duration: 196848
+  '1':
+    type: FAST_DIGGING
+    level: 20
+    duration: 195563
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 196553
+  '3':
+    type: JUMP
+    level: 3
+    duration: 197774

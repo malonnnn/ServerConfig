@@ -17,8 +17,8 @@
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-5",
-                "/heal",
-                "/heal <playername>"
+                "/healing",
+                "/healing <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
