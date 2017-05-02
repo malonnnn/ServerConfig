@@ -1,0 +1,32 @@
+heal:/healing = >>>
+    
+    @plr = player()
+    assign(@cooldown, 60)
+    
+    assign(@lastUsedHealing, import(@player."lastUsedHealing"))
+    if(@lastUsedHealing + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedHealing, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use healing again!'))
+        die()
+    )
+    export(@player."lastUsedHealing", time() / 1000)
+    runas(~console,'/effect '.@plr.' regeneration 5 10 true')
+
+<<<
+heal:/healing $vic = >>>
+    
+    @player = player()
+    assign(@cooldown, 60)
+    
+    assign(@lastUsedHealing, import(@player."lastUsedHealing"))
+    if(@lastUsedHealing + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedHealing, @cooldown), divide(time(),1000)))
+        tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use healing again!'))
+        die()
+    )
+    export(@player."lastUsedHealing", time() / 1000)
+    @plr = $vic
+    @plr = player(@plr)
+    runas(~console,'/effect '.@plr.' regeneration 5 10 true')
+
+<<<

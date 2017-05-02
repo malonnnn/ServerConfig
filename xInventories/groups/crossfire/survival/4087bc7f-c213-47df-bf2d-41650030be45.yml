@@ -5,17 +5,38 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Carbine §c-§7§7 «7 ◀▷ 1»
-health: 22.0
+      display-name: §7Carbine §c-§7§7 «8 ◀▷ 1»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 38
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Hunting§7 ▪ «4»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NzwoBURjFj0y6Q1LiNaxtJ0rKnwWz1jXz4au59+rOh2LrWSw9As/iTZhJls7u/Dr9Th1QUDM6Lb3mDK2BZ+FEZ6uy5yHakYjn9UFo6lLeMPm8DqASQMXxeDh1uaBMox8gLNCE9Jc1b48aapFxByvP6/k1uncuCsEicwJlNNudtqlC83cx04bQ3ZIlz0nPuCMZsrLYE6VVhPM9eS3sbOH+eP6sgTdMqU5M2QAAAA==
+health: 32.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.7930002
+exhaustion: 2.2080197
 potion_effect:
   '0':
+    type: SPEED
+    level: -3
+    duration: 2344
+  '1':
     type: HEALTH_BOOST
     level: 2
-    duration: 199794
+    duration: 198324

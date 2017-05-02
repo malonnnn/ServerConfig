@@ -2,6 +2,24 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 26
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOAT_BIRCH
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POWERED_RAIL
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -13,6 +31,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 26
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -27,7 +46,7 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.6373994
+exhaustion: 3.1035914
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -43,38 +62,38 @@ ender_chest:
     amount: 64
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 10
-    duration: 197035
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 189979
   '1':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 196718
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 189979
   '2':
     type: SPEED
     level: 3
-    duration: 196866
+    duration: 189426
   '3':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 196718
+    type: FAST_DIGGING
+    level: 5
+    duration: 189302
   '4':
     type: WATER_BREATHING
     level: 1
-    duration: 196718
+    duration: 189979
   '5':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 196718
-  '6':
     type: DAMAGE_RESISTANCE
     level: 1
-    duration: 196718
+    duration: 189979
+  '6':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 189979
   '7':
-    type: REGENERATION
-    level: 3
-    duration: 196718
-  '8':
     type: JUMP
     level: 5
-    duration: 197133
+    duration: 189610
+  '8':
+    type: REGENERATION
+    level: 3
+    duration: 189979
