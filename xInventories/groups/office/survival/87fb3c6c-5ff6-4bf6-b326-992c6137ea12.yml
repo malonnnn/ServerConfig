@@ -1,11 +1,15 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: SMOOTH_STAIRS
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Toothless
+      author: LostInGalaxeh_
+      pages:
+      - ' Check pull requests for Toothless.'
+      generation: 0
 health: 20.0
 hunger: 20
 exp: 0.076923005

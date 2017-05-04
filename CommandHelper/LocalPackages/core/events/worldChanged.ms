@@ -6,7 +6,6 @@ bind(world_changed, null, null, @event,
     @from = @event['from']
     @class = pgroup()[0]
     
-    set_entity_fall_distance(puuid(@player),0.0)
     runas(~console,"/fly ".@player." off")
     runas(~console,"/effect ".@player." invisibility 0")
     runas(~console,"/sudo ".@player." c:/fixskin")
