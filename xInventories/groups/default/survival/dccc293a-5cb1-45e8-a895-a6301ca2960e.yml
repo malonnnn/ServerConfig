@@ -2,7 +2,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 21
+    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -12,36 +12,44 @@ inventory:
         DEPTH_STRIDER: 30
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 6
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SPADE
-    damage: 123
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        DIG_SPEED: 3
-        SILK_TOUCH: 1
-        DURABILITY: 3
-  '4':
+    type: LEASH
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
+      meta-type: POTION
+      display-name: §0Bl§ba§7ck§8 §8La§7nt§0er§bn§8(§bD§0S§8R§bR§8) §e§lD§a§lN§4§lA
       lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-      Unbreakable: true
+      - blacklanterndeathstormraymondrusch
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 21
+    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -51,34 +59,26 @@ armor_contents:
         DEPTH_STRIDER: 30
 health: 20.0
 hunger: 20
-exp: 0.33333343
-exp-level: 4
+exp: 0.04000021
+exp-level: 9
 remainingAir: 300
 fireTicks: -20
-saturation: 16.0
-exhaustion: 1.905899
+saturation: 0.0
+exhaustion: 0.24290341
 potion_effect:
   '0':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 188171
+    type: FAST_DIGGING
+    level: 20
+    duration: 161352
   '1':
     type: SPEED
-    level: 8
-    duration: 188579
+    level: 5
+    duration: 161276
   '2':
-    type: FAST_DIGGING
-    level: 127
-    duration: 188283
-  '3':
-    type: WATER_BREATHING
-    level: 1
-    duration: 188171
-  '4':
     type: DAMAGE_RESISTANCE
-    level: 4
-    duration: 188171
-  '5':
+    level: 5
+    duration: 194048
+  '3':
     type: JUMP
-    level: 10
-    duration: 188323
+    level: 20
+    duration: 161232

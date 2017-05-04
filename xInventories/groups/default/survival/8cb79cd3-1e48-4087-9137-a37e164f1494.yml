@@ -5,17 +5,64 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
+      display-name: §0Omega Beam§0 «×»
       Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 12
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 27
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 44
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_LEGGINGS
+    damage: 97
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 100.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+hunger: 6
+exp: 0.38095233
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.8770302
-armor_contents: {}
+exhaustion: 2.6981077
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -41,28 +88,138 @@ ender_chest:
       - §eIneffective at longer ranges.
       - §eFires incendiary ammo.
       Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEDROCK
+    amount: 13
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BIRCH_WOOD_STAIRS
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 2
+    amount: 53
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE_STAIRS
+    amount: 64
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE_STAIRS
+    amount: 64
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE_STAIRS
+    amount: 39
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+    amount: 8
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: DRAGON_EGG
+    amount: 3
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+    amount: 30
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 64
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 64
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 64
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 13
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 126000
-  '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 126000
-  '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 126000
-  '3':
-    type: NIGHT_VISION
-    level: 1
-    duration: 126000
-  '4':
     type: HEALTH_BOOST
     level: 19
-    duration: 126000
+    duration: 185170
+  '1':
+    type: SPEED
+    level: 1
+    duration: 188195
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 185170
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 185170
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 185170
   '5':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 185170
+  '6':
     type: REGENERATION
     level: 1
-    duration: 126000
+    duration: 185170

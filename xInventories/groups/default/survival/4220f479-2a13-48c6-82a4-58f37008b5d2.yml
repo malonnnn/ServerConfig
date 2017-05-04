@@ -1,12 +1,4 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Dark §0Magic §5Blast§5 «×»
-      Unbreakable: true
+inventory: {}
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -261,36 +253,36 @@ ender_chest:
         DAMAGE_ALL: 5
         KNOCKBACK: 5
 armor_contents: {}
-health: 80.0
+health: 37.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.7929993
+exhaustion: 3.8969898
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 197418
+    type: FAST_DIGGING
+    level: 3
+    duration: 198376
   '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 198581
+  '2':
     type: SPEED
     level: 2
-    duration: 198493
-  '2':
+    duration: 198304
+  '3':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 198581
+  '4':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 197418
-  '3':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 197418
-  '4':
-    type: JUMP
-    level: 20
-    duration: 198441
+    duration: 198581
   '5':
-    type: REGENERATION
-    level: 1
-    duration: 197418
+    type: JUMP
+    level: 3
+    duration: 198495

@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: mythguy1226
-last_cast: 1493683941236
+last_cast: 1493864401803
 cooldown_expiration: 0
-last_death_location: -16.270342878906987,86.0,-194.38883417392861,greenfield,-75.63989,26.250017
+last_death_location: -7.86086895001092,-229.86825804780554,-4.668116238298265,spleef,331.49118,53.249973
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -25,15 +25,15 @@ spells:
     last_earn: 1492367040071
     cooldown_expiration: 0
   forcegrip:
-    cast_count: 0
-    last_cast: 0
+    cast_count: 3
+    last_cast: 1493864258721
     last_earn: 0
-    cooldown_expiration: 0
+    cooldown_expiration: 1493864260721
   forcepush:
-    cast_count: 16
-    last_cast: 1493683941237
-    last_earn: 1493683882748
-    cooldown_expiration: 1493683946237
+    cast_count: 32
+    last_cast: 1493864401804
+    last_earn: 1493768217578
+    cooldown_expiration: 1493864406804
   fire|3:
     cast_count: 4
     last_cast: 1492222532980
@@ -66,9 +66,9 @@ spells:
     cooldown_expiration: 0
   forcepull:
     cast_count: 0
-    last_cast: 0
+    last_cast: 1493864306678
     last_earn: 0
-    cooldown_expiration: 0
+    cooldown_expiration: 1493864308678
   pull:
     cast_count: 2
     last_cast: 1492224039376
@@ -106,9 +106,9 @@ spells:
     cooldown_expiration: 0
   expelliarmus:
     cast_count: 0
-    last_cast: 1493531627115
+    last_cast: 1493763456701
     last_earn: 0
-    cooldown_expiration: 1493531637115
+    cooldown_expiration: 1493763466701
   missile|2:
     cast_count: 43
     last_cast: 1492367174142
@@ -133,11 +133,40 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6forcepush§f (§3Yoda's Forcepowers§f)
+        display-name: §bWand
+        lore:
+        - §2§omythguy1226's Wand
+        ItemFlags: !!set
+          HIDE_PLACED_ON: null
+          HIDE_ENCHANTS: null
+          HIDE_UNBREAKABLE: null
+          HIDE_POTION_EFFECTS: null
+          HIDE_ATTRIBUTES: null
+          HIDE_DESTROYS: null
+        internal: H4sIAAAAAAAAAEWQv07CUBTGD1KwrVETHHUwkRUDFWpdDCSaaCI6ECYHcqGncGPvvfX2FNLNRV/BwdHVwQdwcDfxgZxsS9CznX+/833HBrDBWDDpm2ASiihkhGClymeB0hM0oaIWEjVsiJRm0yRtOY5bBUMwybr6E/IwYCtPR8QFxsREBFC6/XpqvmTIYnnEfagHrtPqeC42PAy8Rrvt+Y0Tx203PHfsto6OO82Og2VYn6OOuZIZtmLDdhxhGI64nKMkpdMyWIWqKAnDbKK0yqeaZ0dh7b8fzwppYEGtR6T5OCHsK58HPOPb+a4B5nB4edZXMf0cnO71Hi7QACsvXSGL6X334/v58e21CtWeUImkbn1JNMEYhIrAFIzLWfG4zb8T10wg7EwxM80nh4yITe4GEaKfKbuJUDNaesspxWzt/D7hkcjs7a/kAfwCooWgUJUBAAA=
+    wand:
+      template: yodaforce
+      owner: mythguy1226
+      mana: 300.0
+      mana_timestamp: 1493768220827
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      version: 5
+      spell_inventory:
+        forcepull: 1
+        forcegrip: 2
+        forcepush: 0
+  elderwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6expelliarmus§f (§3Elder Wand§f)
         lore:
         - §3§oBound to mythguy1226
-        - Knows 3 Spells
-        - '§d§oMana: 300'
+        - '§d§oMana: 600'
         - '§d§oMana Regeneration: 50/s'
         ItemFlags: !!set
           HIDE_PLACED_ON: null
@@ -147,22 +176,18 @@ wands:
           HIDE_ATTRIBUTES: null
           HIDE_DESTROYS: null
         Unbreakable: true
-        internal: H4sIAAAAAAAAAE2QvU7DMBRGLzSFJPxJZYQBia5BNLQhLIgKkECiMFSdGCI3uWkt6jgkNy3ZYOAV4AFYGXgAFhZGHogJJ1UrPNnW9XfOZxPABG3CokAHnVDEI0YIRi4DFsrERx2qchJhAisip+Egyxu27eiwynziY/TSGEcjMMrROEuHVdAEi9jpC4AG68XWIy4wJSZigIXb76eHLwUqIz0eQD107EbLddByMXStZtMNrCPbaVqu03caB4et/ZaNFVgeY5JyGQFA1YSNkurxaIwRySSvzAWUi6LMzoOEKygsVv4JQrkMqLWJEt7PCDsy4CFX+WbxVgO917s868iUfnePt9uPF6iBUVxdIUvpY+vz5/X5/W0JltpCZhGd1KeJOmjdkSTQBePRsPzOtTnimgmEzQGq0tzfY0TMv+vGiIEyu4kxYTTtVqSUs7Xz+4zHQtXbmekB/AFdq24ZqwEAAA==
+        internal: H4sIAAAAAAAAAD1Qu07DQBDcCCfY4VGEEgokIqoE2eb8SAFKJJBAIlBEqSiii2+dnPDZxtkQpUNIfAMfgERFwQdQ0CPxD/wGFY4j2G5ndmdntgpQBW3GY6GDTqjSiBOCgZHAbImWk1mMGaypOY1H07ll224FNMVj3n74gEVpsLloByQVToirFKB0/Xn08p1LFssDKaAeurbl+C42fQz9JmO+aLZslzV9d+hah55jOjbqsI5hiAENgiRKMti3PcY90zKZFfCGI/x8xmcOQ7shPJcNWyJsITNXYPUOs4lM4txNGQyodYgyOZwSdhMhQ5mT1ZwqaaD3++cn3WRCP3vHO537M9TAWEAXyCf0tv3+9fT4+lyBSkcl05ja9SIg6KD1ooRAV1zG4+ItG/8nLrlC2BphHlQGB5yIBze9FFGsgHGVYsZpaWyhUszWTm+nMlUY0+6fPYBfI64LXYkBAAA=
     wand:
-      template: yodaforce
+      template: elderwand
       owner: mythguy1226
-      active_spell: forcepush
-      mana: 300.0
-      mana_timestamp: 1493684025537
+      mana: 600.0
+      mana_timestamp: 1493763466977
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: 274a701041ca,5d852e8454e2,d764b9df9e40
       version: 5
-      spell_inventory:
-        forcepull: 1
-        forcegrip: 2
-        forcepush: 0
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1098
+  sp: 1103
 properties: {}
 classes: {}

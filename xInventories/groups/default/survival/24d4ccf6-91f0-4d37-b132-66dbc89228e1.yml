@@ -4,8 +4,8 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
-exhaustion: 0.64740896
+saturation: 5.0
+exhaustion: 2.2510173
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -23,46 +23,37 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-      Unbreakable: true
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
       display-name: §4En§cerg§4y §cBe§4am§4 «×»
       Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 177548
-  '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 177548
-  '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 177548
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 177548
-  '4':
     type: NIGHT_VISION
     level: 1
-    duration: 177548
-  '5':
+    duration: 182080
+  '1':
     type: HEALTH_BOOST
     level: 9
-    duration: 177548
+    duration: 182080
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 182080
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 182080
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 182080
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 182080
   '6':
     type: REGENERATION
     level: 1
-    duration: 177548
+    duration: 182080
