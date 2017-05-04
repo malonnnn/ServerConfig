@@ -10,17 +10,10 @@
             'op': 'false',
             'speech': "Roarrrrrrrr!",
             'powers': array(
-                "/buff",
                 "/fly",
-                "/flyspeed <number>",
-                "/disguise",
-                "/undisguise",
                 "/carryplayer",
-                "/dismountplayer",
-                "/run 0-6",
+                "/dismountplayer"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 15 true",
-                "/shot give ". @plr ." purpleenergybeam",            
+            'buffs': array(      
             )
         )
