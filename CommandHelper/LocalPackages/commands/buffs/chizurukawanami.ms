@@ -9,7 +9,9 @@
             'trail': '',
             'op': 'false',
             'speech': "Bang!",
-            'powers': array(
-            ),    
+            'powers': array(    
+             ),
+            'buffs': array(
+
             ) 
         )        
