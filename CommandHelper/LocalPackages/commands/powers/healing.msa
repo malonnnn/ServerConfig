@@ -1,6 +1,6 @@
-heal:/healing = >>>
+healing:/healing = >>>
     
-    @plr = player()
+    @player = player()
     assign(@cooldown, 60)
     
     assign(@lastUsedHealing, import(@player."lastUsedHealing"))
@@ -10,7 +10,8 @@ heal:/healing = >>>
         die()
     )
     export(@player."lastUsedHealing", time() / 1000)
-    runas(~console,'/effect '.@plr.' regeneration 5 10 true')
+    runas(~console,'/effect '.@player.' regeneration 5 10 true')
+    tmsg(@player,color(red).'You have healed!')
 
 <<<
 heal:/healing $vic = >>>
@@ -28,5 +29,7 @@ heal:/healing $vic = >>>
     @plr = $vic
     @plr = player(@plr)
     runas(~console,'/effect '.@plr.' regeneration 5 10 true')
+    tmsg(@player,color(red).'You have healed '.@plr.'!')
+    tmsg(@plr,color(red).'You were healed by '.@player.'!')
 
 <<<

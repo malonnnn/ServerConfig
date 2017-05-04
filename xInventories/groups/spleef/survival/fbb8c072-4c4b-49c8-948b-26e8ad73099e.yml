@@ -7,3 +7,26 @@ fireTicks: 0
 saturation: 5.0
 exhaustion: 0.0
 inventory: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6St§da§3r §3Butte§5rfly §e§lD§a§lN§4§lA
+      lore:
+      - starbutterfly
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true

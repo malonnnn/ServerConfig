@@ -108,8 +108,6 @@ fightclub:/fightclub = >>>
                         _fightClubReset(@winner,@loser)
                     }
                     @p2 = bind(player_death,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
-                        @winner = @player
-                        @loser = @plr
                         include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
                         _fightClubReset(@winner,@loser)
                     }
