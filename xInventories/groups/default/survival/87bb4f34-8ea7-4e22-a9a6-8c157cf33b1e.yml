@@ -1,19 +1,45 @@
-inventory: {}
-health: 20.0
+inventory:
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 60.0
 hunger: 20
-exp: 1.0331472E-7
-exp-level: 4
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 2.8372948
+saturation: 0.0
+exhaustion: 2.6078076
 armor_contents: {}
 potion_effect:
   '0':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 195084
+  '1':
     type: SPEED
     level: 50
-    duration: 199529
-  '1':
+    duration: 194927
+  '2':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 195084
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 195084
+  '4':
+    type: REGENERATION
+    level: 4
+    duration: 195084
+  '5':
     type: JUMP
     level: 5
-    duration: 199599
+    duration: 195054

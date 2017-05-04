@@ -4,8 +4,8 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 2.2899995
+saturation: 4.0
+exhaustion: 1.1220032
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -21,3 +21,13 @@ inventory:
     ==: org.bukkit.inventory.ItemStack
     type: WOOL
     damage: 14
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAFWOPWvDMBCGT20hxjX9Debm4NppJk+lpls/hmQLHhRZtMKWZKwTSRrS3145DoFycDe83PM+MUAMDy+dFe2rIUWHNf9ikAhrGkXKmndJjMEd92RZBHHlHVn9wbUE9sxg1tudHGQDEcwqqzU3DRSPfccPznrTpIqkzsiO2zuZbseadL/ql0P7k/6ep8jzCG5UA8kFcHa5hWTlhZDOVQFEADC2v3FHn556T2CPKPc0cCw3RwzXuI6TxBLFRHHZ1SJzEwnnuFP0HT7wv1cILk5Yn+o5UiAH0iZflHlRLp/qFE8M7tcDF+1UzwD+ANzMp545AQAA
+      blockMaterial: COMMAND_CHAIN

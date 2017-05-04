@@ -18,9 +18,26 @@ regions:
         owners: {}
         type: cuboid
         priority: 10
+    police-employee-door:
+        parent: pistons
+        min: {x: -26.0, y: 137.0, z: 22.0}
+        max: {x: -21.0, y: 138.0, z: 22.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    pistons:
+        members: {}
+        flags: {pistons-group: MEMBERS, block-break: allow, block-place-group: MEMBERS,
+            pistons: allow, block-place: allow, block-break-group: MEMBERS}
+        owners: {}
+        type: global
+        priority: 1
     __global__:
         members: {}
-        flags: {feed-amount: 1, feed-delay: 1, pvp: deny}
+        flags: {pistons-group: MEMBERS, feed-amount: 1, feed-delay: 1, pvp: deny,
+            pistons: allow}
         owners: {}
         type: global
         priority: 0

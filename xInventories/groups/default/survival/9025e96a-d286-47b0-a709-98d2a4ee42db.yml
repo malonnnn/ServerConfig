@@ -1,50 +1,52 @@
 inventory:
-  '0':
+  '29':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: DIAMOND_PICKAXE
+    damage: 580
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §3I§1c§be §bSp§3i§1ke§1 «×»
-      Unbreakable: true
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eSol§6a§er §eEne§6rg§ey §eB§eea§6m§6 «×»
+      enchants:
+        LOOT_BONUS_MOBS: 3
+        DIG_SPEED: 5
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
 armor_contents: {}
 health: 100.0
 hunger: 20
-exp: 0.80596983
-exp-level: 21
+exp: 0.56756735
+exp-level: 15
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.489544
+saturation: 2.2000008
+exhaustion: 0.5539117
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 191270
-  '1':
-    type: WATER_BREATHING
-    level: 1
-    duration: 191270
-  '2':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 191270
-  '3':
     type: NIGHT_VISION
     level: 1
-    duration: 191270
-  '4':
+    duration: 86896
+  '1':
+    type: FAST_DIGGING
+    level: 20
+    duration: 121639
+  '2':
     type: HEALTH_BOOST
     level: 19
-    duration: 191270
+    duration: 86896
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 86896
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 86896
   '5':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 86896
+  '6':
     type: REGENERATION
     level: 1
-    duration: 191270
+    duration: 86896
