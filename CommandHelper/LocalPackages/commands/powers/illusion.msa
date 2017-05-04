@@ -1,22 +1,30 @@
-illusion:/illusion $player = >>>
+illusion:/illusion $player $num = >>>
 
     @player = player()
+    @num = $num
 
     @disguiseName = $player
 
     @cooldown = 1
-    assign(@lastUsedHyenas, import(@player."lastUsedHyenas"))
+    assign(@lastUsedHyenas, import(@player."lastUsedIllusion"))
     if(@lastUsedHyenas + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedHyenas, @cooldown), divide(time(),1000)))
         tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can summon Lou and Bud again!'))
         die()
     )
-    export(@player."lastUsedHyenas", time() / 1000)
+    export(@player."lastUsedIllusion", time() / 1000)
 
-    @illusionUUID = spawn_mob("villager",1)
-    set_timeout(50,closure(
-       sudo('/disguiseradius 1 player '.@disguiseName) 
-    ))
+    if(!is_null(import(@player."illusion"))){
+        @oldMobs = import(@player."illusion")
+        foreach(@uuid in @oldMobs){
+            try(entity_remove(@uuid),
+            continue())
+        }
+    }
     
-
+    @mobUUIDs = spawn_mob("villager",@num)
+    export(@player."illusion",@mobUUIDs)
+    set_timeout(50,closure(
+        sudo('/disguiseradius 1 player '.@disguiseName) 
+    ))
 <<<
