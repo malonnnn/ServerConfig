@@ -1,59 +1,5 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
-      enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
-      Unbreakable: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §5Beerus §dBall§d «×»
-      Unbreakable: true
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+inventory: {}
+armor_contents: {}
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -61,21 +7,106 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.7690392
-potion_effect:
+exhaustion: 2.1360285
+ender_chest:
   '0':
-    type: SPEED
-    level: 8
-    duration: 196848
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 427
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 1
   '1':
-    type: FAST_DIGGING
-    level: 20
-    duration: 195563
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    damage: 45
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52TgCEgsKUktyivmYmBgYOJgYIfyGZjTi0qZGVid83Pyi4BSfAzIcrn5WUhy3AzMDCxOicWpDCArGACt52LeaQAAAA==
+      blockMaterial: SHIELD
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+      Unbreakable: true
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: DRAGON_EGG
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 5
-    duration: 196553
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 26
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        LOOT_BONUS_MOBS: 3
+        DIG_SPEED: 5
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
   '3':
-    type: JUMP
-    level: 3
-    duration: 197774
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHITE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElMZ2AAAIvj76AWAAAA
+      blockMaterial: WHITE_SHULKER_BOX
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 51
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        LOOT_BONUS_MOBS: 3
+        DIG_SPEED: 5
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        THORNS: 3
+        DAMAGE_ALL: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        SWEEPING: 3
+      repair-cost: 31
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_BASE
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true

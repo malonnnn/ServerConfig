@@ -1,0 +1,49 @@
+annoy:/annoy $plr $loopDelayInMiliSeconds = >>>
+    @me = player()
+    @them = $plr
+    @delay = $loopDelayInMiliSeconds
+    try(
+        @them = player(@them)
+    ,
+        tmsg(@me,color(red).'They aren\'t online')
+        die()
+    )
+    @id = import('annoying')
+    try(
+        clear_task(@id)
+    ,
+        continue()
+    )
+    @id = set_interval(@delay,closure(
+        @ploc = ploc(@them)
+        set_ploc(@me,@ploc)
+        set_timeout(50,closure(
+            set_pmode(@me,'CREATIVE')
+            set_pflight(@me, true)
+            set_pflying(@me, true)
+        ))
+    ))
+    export('annoying',@id)
+    @ploc = ploc(@them)
+    set_ploc(@me,@ploc)
+    set_timeout(50,closure(
+        set_pmode(@me,'CREATIVE')
+        set_pflight(@me, true)
+        set_pflying(@me, true)
+    ))
+<<<
+annoy:/annoy $plr = >>>
+    tmsg(player(),color(red).'/annoyplayer <plr> <speed>')
+<<<
+annoy:/annoy = >>>
+    tmsg(player(),color(red).'/annoyplayer <plr> <speed>')
+<<<
+
+annoy:/stopannoy = >>>
+    @id = import('annoying')
+    try(
+        clear_task(@id)
+    ,
+        continue()
+    )
+<<<
