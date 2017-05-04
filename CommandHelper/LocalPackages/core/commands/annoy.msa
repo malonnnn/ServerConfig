@@ -2,36 +2,54 @@ annoy:/annoy $plr $loopDelayInMiliSeconds = >>>
     @me = player()
     @them = $plr
     @delay = $loopDelayInMiliSeconds
+
+    # If player isn't online
     try(
         @them = player(@them)
     ,
         tmsg(@me,color(red).'They aren\'t online')
         die()
     )
+
+    # if we are already annoying someone, cancel their loop
     @id = import('annoying')
     try(
         clear_task(@id)
     ,
         continue()
     )
+
+    # Teleport me to them immediately
+    @ploc = ploc(@them)
+    set_ploc(@me,@ploc)
+
+    # 1 tick later, set me to flying and creative so they dont kill me
+    set_timeout(50,closure(
+        set_pmode(@me,'CREATIVE')
+        set_pflight(@me, true)
+        set_pflying(@me, true)
+    ))
+
+    # begin main loop
     @id = set_interval(@delay,closure(
+        
+        # Teleport me to them
+        # ploc() returns xyz and pitch/yaw values
         @ploc = ploc(@them)
         set_ploc(@me,@ploc)
+        
+        # 1 tick later, set me to flying and creative so they dont kill me
         set_timeout(50,closure(
             set_pmode(@me,'CREATIVE')
             set_pflight(@me, true)
             set_pflying(@me, true)
         ))
     ))
+    # save the loops unique ID to a global register so we can cancel it at any arbitrary time
     export('annoying',@id)
-    @ploc = ploc(@them)
-    set_ploc(@me,@ploc)
-    set_timeout(50,closure(
-        set_pmode(@me,'CREATIVE')
-        set_pflight(@me, true)
-        set_pflying(@me, true)
-    ))
 <<<
+
+# if i dont fully type the command, it corrects me
 annoy:/annoy $plr = >>>
     tmsg(player(),color(red).'/annoyplayer <plr> <speed>')
 <<<
@@ -39,8 +57,16 @@ annoy:/annoy = >>>
     tmsg(player(),color(red).'/annoyplayer <plr> <speed>')
 <<<
 
+# stop annoying someone
 annoy:/stopannoy = >>>
+
+    # import annoying unique ID task from global register
+    # null if it's unset
+    # if cancel_task() fails
+    # then continue script as if nothing happened
     @id = import('annoying')
+
+    # try to cancel the annoyance task
     try(
         clear_task(@id)
     ,
