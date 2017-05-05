@@ -7,6 +7,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -42,6 +43,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -55,22 +57,26 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 13.0
-exhaustion: 2.3463984
+saturation: 0.0
+exhaustion: 2.7543757
 potion_effect:
   '0':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 191080
-  '1':
-    type: SPEED
-    level: 8
-    duration: 195391
-  '2':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 191080
+    duration: 174250
+  '1':
+    type: SPEED
+    level: 10
+    duration: 195852
+  '2':
+    type: FAST_DIGGING
+    level: 3
+    duration: 189540
   '3':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 174250
+  '4':
     type: REGENERATION
     level: 1
-    duration: 191080
+    duration: 174250
