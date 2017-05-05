@@ -38,7 +38,8 @@ mutate:/mutate $vic = >>>
     )
     export(@plr."lastUsedMutate", time() / 1000)
 
-    runas(~console,'/sudo '.@vic.' c:/mortal')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+    _mortal(@player)
 
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     set_timeout(5000,closure(

@@ -1,0 +1,25 @@
+arrest:/arrest $plr = >>>
+
+    @plr = $plr
+    @plr = player(@plr)
+    sudo('/sudo '.@plr.' c:/ch leave local')
+    sudo('/sudo '.@plr.' c:/ch join global')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+    _mortal(@plr)
+    set_timeout(3000,closure(
+        sudo("/pex user ".@plr." group set criminal")
+        sudo("/tptoggle ".@plr." off")
+        sudo("/warp quarantine ".@plr)
+    ))
+
+<<<
+
+release:/release $plr = >>>
+
+    @plr = $plr
+    @plr = player(@plr)
+    sudo("/pex user ".@plr." group set mortal")
+    sudo("/warp city ".@plr)
+    sudo("/tptoggle ".@plr." on")
+
+<<<
