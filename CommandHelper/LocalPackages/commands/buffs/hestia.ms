@@ -23,7 +23,7 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/pork",
-                "/eggs",
+                "/egg",
                 "/sugar",
                 "/milk",
                 "/wheat",
