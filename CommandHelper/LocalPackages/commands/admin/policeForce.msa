@@ -1,0 +1,21 @@
+onduty:/onduty = >>>
+
+    @player = player()
+    if(has_permission(@player,"is.sergeant")){
+        include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+        _mortal(@player)
+        set_timeout(3000,closure(
+            sudo("/pex user " . @player . " group set sergeant")
+            tmsg(@player,color(red)."You are now on duty!")
+        ))
+    }else if(has_permission(@player,'is.officer')){
+        include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+        _mortal(@player)
+        set_timeout(3000,closure(
+            sudo("/pex user " . @player . " group set officer")
+            tmsg(@player,color(red)."You are now on duty!")
+        ))
+    }else{
+        tmsg(@player,color(red)."You are not part of the Police Force!")
+    }
+<<<

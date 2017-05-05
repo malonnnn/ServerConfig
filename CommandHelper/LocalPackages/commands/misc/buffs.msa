@@ -5,7 +5,7 @@ buff:/buff = >>>
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
     
     foreach(@power in @hero['buffs']){
-        runas(~console,@power)
+        sudo(@power)
     }
     
     tmsg(@plr,@hero['speech'])

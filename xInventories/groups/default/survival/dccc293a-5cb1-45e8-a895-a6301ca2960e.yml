@@ -2,7 +2,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -20,36 +19,10 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEASH
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §0Bl§ba§7ck§8 §8La§7nt§0er§bn§8(§bD§0S§8R§bR§8) §e§lD§a§lN§4§lA
-      lore:
-      - blacklanterndeathstormraymondrusch
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 20
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -59,26 +32,22 @@ armor_contents:
         DEPTH_STRIDER: 30
 health: 20.0
 hunger: 20
-exp: 0.04000021
-exp-level: 9
+exp: 0.6296298
+exp-level: 10
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.24290341
+saturation: 19.0
+exhaustion: 3.1952832
 potion_effect:
   '0':
+    type: SPEED
+    level: 8
+    duration: 175602
+  '1':
     type: FAST_DIGGING
     level: 20
-    duration: 161352
-  '1':
-    type: SPEED
-    level: 5
-    duration: 161276
+    duration: 175662
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 5
-    duration: 194048
-  '3':
     type: JUMP
-    level: 20
-    duration: 161232
+    level: 10
+    duration: 175567

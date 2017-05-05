@@ -37,7 +37,7 @@ bind(player_join,null,null,@event){
     # If joining player is mortal, undisguise
     # -------------------------------
     if(@hero['class'] == 'mortal'){
-        runas(~console,/undisguise @plr)
+        runas(~console,"/undisguiseplayer ".@plr)
         die()
     }
     
@@ -50,7 +50,8 @@ bind(player_join,null,null,@event){
         if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
             runas(~console,/pex user player() group set mortal)
             runas(~console,/pex reload)
-            runas(~console,"/sudo ". @plr ." c:/mortal")
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            _mortal(@player)
             set_timeout(1500, closure(
                 broadcast(color(white)  . @plr . color(gray) . " has been changed from " . @hero['name'] . color(gray) . " back into a " . color(white) . "MORTAL" . color(gray) . " because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))

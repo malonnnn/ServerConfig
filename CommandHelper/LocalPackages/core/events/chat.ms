@@ -45,8 +45,8 @@ bind('player_chat', null, null, @e) {
         if(@pgroup[0] == 'mrmxyzptlk')
         {
             set_timeout(1000, closure(
-                runas(~console,"/sudo ". @pname ." c:/mortal")
-                sudo(/warp onslaughtmental @pname)
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+                _mortal(@player)
                 set_timeout(1500, closure(
                     tmsg(@pname, 'You said your name backwards! Off to the other dimension you go!')
                 ))
