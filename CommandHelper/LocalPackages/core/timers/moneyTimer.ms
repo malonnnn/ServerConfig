@@ -14,7 +14,8 @@ set_interval(5000,closure(
                 }else if(@bal < 5 && @bal > 0){
                     acc_subtract(@player,@bal)
                 }else{
-                    runas(~console,"/sudo ".@player." c:/mortal")
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+                    _mortal(@player)
                     set_timeout(5000,closure(
                         tmsg(@player,color(red).color(bold)."You have been returned to a mortal because you were an OP character and ran out of money,")
                     ))

@@ -10,6 +10,16 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    police-evidenceroom:
+        parent: police
+        min: {x: -48.0, y: 137.0, z: -12.0}
+        max: {x: -44.0, y: 137.0, z: -5.0}
+        members: {}
+        flags: {block-break: allow, block-place-group: MEMBERS, pistons: allow, block-place: allow,
+            block-break-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 2
     glass:
         min: {x: 17.0, y: 104.0, z: -7.0}
         max: {x: 17.0, y: 104.0, z: -7.0}
@@ -18,10 +28,19 @@ regions:
         owners: {}
         type: cuboid
         priority: 10
-    police-employee-door:
-        parent: pistons
-        min: {x: -26.0, y: 137.0, z: 22.0}
-        max: {x: -21.0, y: 138.0, z: 22.0}
+    omegas-door:
+        parent: sergeants
+        min: {x: -25.0, y: 136.0, z: -6.0}
+        max: {x: -25.0, y: 139.0, z: -6.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    sergeants-door:
+        parent: sergeants
+        min: {x: -38.0, y: 136.0, z: -15.0}
+        max: {x: -38.0, y: 139.0, z: -15.0}
         members: {}
         flags: {}
         owners: {}
@@ -33,6 +52,55 @@ regions:
             pistons: allow, block-place: allow, block-break-group: MEMBERS}
         owners: {}
         type: global
+        priority: 1
+    police-vault:
+        parent: sergeants
+        min: {x: -42.0, y: 137.0, z: -5.0}
+        max: {x: -42.0, y: 138.0, z: -2.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 2
+    sergeants:
+        parent: police
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: global
+        priority: 2
+    police:
+        members: {}
+        flags: {}
+        owners: {}
+        type: global
+        priority: 1
+    police-employee-door:
+        parent: pistons
+        min: {x: -26.0, y: 137.0, z: 22.0}
+        max: {x: -21.0, y: 138.0, z: 22.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 2
+    police-locker:
+        parent: sergeants
+        min: {x: -56.0, y: 128.0, z: -15.0}
+        max: {x: -48.0, y: 131.0, z: 0.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    police-station:
+        parent: police
+        min: {x: -33.0, y: 137.0, z: -6.0}
+        max: {x: -24.0, y: 139.0, z: 24.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
         priority: 1
     __global__:
         members: {}

@@ -1,0 +1,41 @@
+securityscan:/securityscan $player $x $y $z = >>>
+
+    @player = $player
+
+    assign(@cooldown,6)
+    
+    assign(@lastUsedMindControl, import(@player."lastUsedSecurityDoor"))
+    if(@lastUsedMindControl + @cooldown > time() / 1000,
+        assign(@timeleft, subtract(add(@lastUsedMindControl, @cooldown), divide(time(),1000)))
+        die()
+    )
+    export(@player."lastUsedSecurityDoor", time() / 1000)
+
+    @redstoneBlockLoc = array($x,$y,$z,pworld(@player))
+
+    tmsg(@player,color(red).'Bioscan in progress...please remain still.')
+
+    @scanApproved = set_timeout(3000,closure(
+        if(has_permission(@player,'is.officer')){
+            set_block_at(@redstoneBlockLoc,152)
+            tmsg(@player,color(green).'Access granted.')
+            set_timeout(2000,closure(
+                set_block_at(@redstoneBlockLoc,0)
+            ))
+        }else{
+            tmsg(@player,color(dark_red).'Access denied.')
+        }
+        @moveCancel = import('securityDoorCheckID')
+        unbind(@moveCancel)
+    ))
+
+    @moveBind = bind(player_move,null,associative_array('player':@player),@e,@scanApproved,@player){
+        clear_task(@scanApproved)
+        unbind()
+        tmsg(@player,color(dark_red).'Error: Subject Moved.')
+    }
+    export('securityDoorCheckID',@moveBind)
+
+     
+
+<<<

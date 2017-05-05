@@ -1,80 +1,4 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    damage: 1
-    amount: 2
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eOlympia§e ▪ «×»
-      lore:
-      - §eDouble-barreled shotgun.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
-      Unbreakable: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: CHEST
-    amount: 3
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-      Unbreakable: true
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER
-    amount: 2
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    amount: 2
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eType 95§e ▪ «×»
-      lore:
-      - §eSemi-automatic with three round burst fire.
-      - §eGhast Tears are required for reloads.
-      Unbreakable: true
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+inventory: {}
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -160,48 +84,12 @@ ender_chest:
   '14':
     ==: org.bukkit.inventory.ItemStack
     type: DRAGON_EGG
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
-hunger: 4
-exp: 0.33333337
-exp-level: 1
+armor_contents: {}
+health: 20.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 1.4000001
-exhaustion: 1.3439968
-potion_effect:
-  '0':
-    type: FAST_DIGGING
-    level: 5
-    duration: 177921
-  '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 177605
-  '2':
-    type: SPEED
-    level: 2
-    duration: 197480
-  '3':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 177605
-  '4':
-    type: REGENERATION
-    level: 1
-    duration: 177605
-  '5':
-    type: JUMP
-    level: 5
-    duration: 181073
+saturation: 0.0
+exhaustion: 3.163053

@@ -5,25 +5,11 @@ mortal:/mortal = >>>
     assign(@lastUsedMindLock, import(@plr."lastUsedMortal"))
     if(@lastUsedMindLock + @cooldown > time() / 1000,
         assign(@timeleft, subtract(add(@lastUsedMindLock, @cooldown), divide(time(),1000)))
-        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force push again!'))
+        tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use /mortal again!'))
         die()
     )
-    export(@plr."lastUsedMortal", time() / 1000)
-    if(@plr != "~console"){
-        runas(~console,"/sudo @plr c:/trailsid none")
-        runas(~console,"/pex user @plr group set mortal")
-        runas(~console,"/warp city @plr")
-        
-        set_timeout(2000, closure(
-            runas(~console,"/gamemode survival @plr")
-            runas(~console,"/minecraft:clear @plr")
-            runas(~console,"/effect @plr clear")
-            runas(~console,"/fly @plr off")
-            runas(~console,"/god @plr off")
-            runas(~console,"/pex reload")
-            runas(~console,"/undisguiseplayer @plr")
-            sudo("/undisguiseplayer @plr")
-            sudo("/undisguiseplayer")
-        ))
-    }
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+    _mortal(@plr)
+
 <<<

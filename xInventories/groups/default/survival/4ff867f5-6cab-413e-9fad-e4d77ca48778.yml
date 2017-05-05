@@ -1,13 +1,27 @@
 health: 20.0
-hunger: 17
-exp: 0.0
-exp-level: 0
+hunger: 20
+exp: 0.7234044
+exp-level: 17
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.39500317
-potion_effect:
+saturation: 1.0
+exhaustion: 0.115005106
+inventory:
   '0':
-    type: FAST_DIGGING
-    level: 50
-    duration: 194013
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
