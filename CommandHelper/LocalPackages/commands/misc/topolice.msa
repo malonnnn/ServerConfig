@@ -1,0 +1,9 @@
+topolice:/topolice $plr = >>>
+
+    @plr = $plr
+
+    runas(~console,'/pex user '.@plr.' add multiverse.access.office greenfield')
+    runas(~console,'/warp policeoffice '.@plr)
+    runas(~console,'/pex user '.@plr.' remove multiverse.access.office greenfield')
+
+<<<
