@@ -5,7 +5,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
+      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
       Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
@@ -13,74 +13,43 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
       Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    damage: 44
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4D§0ea§4dP§0oo§4l's Katana
-      enchants:
-        DAMAGE_ALL: 10
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    damage: 8
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: GLASS_BOTTLE
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4D§0ea§4dP§0oo§4l's Katana
-      enchants:
-        DAMAGE_ALL: 10
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: BEACON
-armor_contents:
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: BEACON
-potion_effect:
-  '0':
-    type: POISON
-    level: 1
-    duration: 14939
-  '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 185599
-  '2':
-    type: INCREASE_DAMAGE
-    level: 2
-    duration: 185599
-  '3':
-    type: CONFUSION
-    level: 1
-    duration: 14939
-  '4':
-    type: REGENERATION
-    level: 4
-    duration: 185599
-health: 39.0
+      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+      Unbreakable: true
+armor_contents: {}
+health: 35.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4680637
+exhaustion: 0.6170521
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 198765
+  '1':
+    type: INCREASE_DAMAGE
+    level: 6
+    duration: 198765
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198765
+  '3':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 198765
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 198765

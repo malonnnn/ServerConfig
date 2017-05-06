@@ -2,6 +2,7 @@ inventory:
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    amount: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -9,37 +10,84 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_MUTTON
+    amount: 18
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_CHICKEN
+    amount: 8
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_RABBIT
+    amount: 4
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 5
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 10
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
 health: 60.0
 hunger: 20
 exp: 0.0
-exp-level: 0
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.6078076
+saturation: 6.0
+exhaustion: 1.1948004
 armor_contents: {}
 potion_effect:
   '0':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 195084
-  '1':
-    type: SPEED
-    level: 50
-    duration: 194927
-  '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 195084
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 195084
-  '4':
     type: REGENERATION
     level: 4
-    duration: 195084
-  '5':
+    duration: 197823
+  '1':
+    type: FAST_DIGGING
+    level: 5
+    duration: 197973
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 197823
+  '3':
     type: JUMP
     level: 5
-    duration: 195054
+    duration: 197792
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 197823
+  '5':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 197823
+  '6':
+    type: SPEED
+    level: 50
+    duration: 197735
