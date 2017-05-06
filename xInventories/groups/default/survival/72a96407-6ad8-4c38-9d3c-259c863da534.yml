@@ -6,7 +6,6 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -18,7 +17,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -26,55 +24,10 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
-    amount: 16
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        LOOT_BONUS_MOBS: 3
-        DIG_SPEED: 5
-        DURABILITY: 3
-        MENDING: 1
-      repair-cost: 15
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 12
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 1
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 12
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_PROJECTILE: 1
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 1
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -82,74 +35,36 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 1
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 12
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_PROJECTILE: 1
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 12
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 1
 health: 100.0
-hunger: 19
+hunger: 20
 exp: 0.35687783
 exp-level: 20
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.9529436
+exhaustion: 1.9139591
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 154694
+    duration: 198145
   '1':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 154694
+    duration: 198145
   '2':
-    type: SPEED
-    level: 2
-    duration: 157855
-  '3':
-    type: FAST_DIGGING
-    level: 30
-    duration: 123
-  '4':
     type: WATER_BREATHING
     level: 1
-    duration: 154694
-  '5':
+    duration: 198145
+  '3':
     type: DAMAGE_RESISTANCE
     level: 3
-    duration: 154694
-  '6':
+    duration: 198145
+  '4':
     type: HEALTH_BOOST
     level: 19
-    duration: 154694
-  '7':
-    type: JUMP
-    level: 1
-    duration: 184841
-  '8':
+    duration: 198145
+  '5':
     type: REGENERATION
     level: 1
-    duration: 154694
+    duration: 198145

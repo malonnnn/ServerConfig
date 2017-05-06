@@ -30,7 +30,7 @@ regions:
         priority: 10
     omegas-door:
         parent: sergeants
-        min: {x: -25.0, y: 136.0, z: -6.0}
+        min: {x: -25.0, y: 137.0, z: -6.0}
         max: {x: -25.0, y: 139.0, z: -6.0}
         members: {}
         flags: {}
@@ -41,6 +41,15 @@ regions:
         parent: sergeants
         min: {x: -38.0, y: 136.0, z: -15.0}
         max: {x: -38.0, y: 139.0, z: -15.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    police-training-door:
+        parent: pistons
+        min: {x: -33.0, y: 137.0, z: 1.0}
+        max: {x: -33.0, y: 138.0, z: 6.0}
         members: {}
         flags: {}
         owners: {}
@@ -62,16 +71,28 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    police-interviewroom-backdoor:
+        parent: police
+        min: {x: -33.0, y: 136.0, z: 10.0}
+        max: {x: -32.0, y: 139.0, z: 12.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     sergeants:
         parent: police
-        members: {}
+        members:
+            unique-ids: [ca7e8de8-30f0-43c5-9701-982c10ea9459, c8b88131-52d4-4af0-9593-ddcdb3d56058]
         flags: {interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: global
         priority: 2
     police:
-        members: {}
-        flags: {}
+        members:
+            unique-ids: [ca7e8de8-30f0-43c5-9701-982c10ea9459, 66edaf7d-94e7-44cf-9d99-34d3ad90594e,
+                c8b88131-52d4-4af0-9593-ddcdb3d56058]
+        flags: {interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: global
         priority: 1
@@ -104,8 +125,8 @@ regions:
         priority: 1
     __global__:
         members: {}
-        flags: {pistons-group: MEMBERS, feed-amount: 1, feed-delay: 1, pvp: deny,
-            pistons: allow}
+        flags: {pistons-group: MEMBERS, feed-amount: 1, feed-delay: 1, pistons: allow,
+            pvp: deny}
         owners: {}
         type: global
         priority: 0
