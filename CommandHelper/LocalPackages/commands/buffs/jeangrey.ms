@@ -20,7 +20,7 @@
                   "/cast telekinisis",
                   "/hover on",
                   "/hover off,
-                  "/msg <player>"
+                  "/msg <playername>"
                   
                   
               ),  
