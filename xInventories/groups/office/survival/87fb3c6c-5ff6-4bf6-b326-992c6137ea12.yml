@@ -1,59 +1,15 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: WRITTEN_BOOK
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      display-name: Complaint
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Complaint
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      lore:
-      - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFhMKhWAtJFiUpW0dVKJUCmkpVScWpZapECHCjVxurApJRqoTqNGTSw6FRQAOvFqsOIQRurDgUcmpgyUxj4cjPzUpOLEtNKrIoz0/OgJhkyaOFzNapBDAwARSIUwgABAAA=
-      blockMaterial: SIGN
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Complaint
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: DOUBLE_PLANT
-    damage: 3
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: TRAP_DOOR
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 11
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Complaint
+      meta-type: BOOK_SIGNED
+      title: Kitana!
+      author: LostInGalaxeh_
+      pages:
+      - ' Please check my pull request for Kitana.'
+      generation: 0
 health: 20.0
 hunger: 20
 exp: 0.076923005
