@@ -20,9 +20,7 @@
                   "/cast telekinisis",
                   "/hover on",
                   "/hover off,
-                  "/msg <playername>"
-                  
-                  
+                  "/msg <playername>"                 
               ),  
               'buffs': array(  
                   "/shot give ". @plr ." psychicblast"                 
