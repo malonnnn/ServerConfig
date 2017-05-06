@@ -1,36 +1,35 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §8D§0a§8r§0t§8h V§0ade§8r's §4Lightsaber
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DAMAGE_ALL: 100
-        FIRE_ASPECT: 2
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bFo§7rce §7Lig§bhtni§7ng§7 «×»
-      Unbreakable: true
-health: 37.0
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 9.023033
+exhaustion: 0.47008833
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 15
-    duration: 198620
-  '1':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 198620
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 193842
