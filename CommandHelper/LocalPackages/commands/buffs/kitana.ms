@@ -12,10 +12,7 @@
             'powers': array(
                 "/buff",
                 "/carryplayer",
-                "/dismountplayer",
-                "/flyspeed <number>",
-                "/fly",
-                "/tp"
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:cyan_carpet 2 0 16:10 name:&9K&bi&1ta&9na&b's_&bBla&1ded_Fa&9ns"                
