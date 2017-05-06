@@ -6,8 +6,32 @@ remainingAir: 300
 fireTicks: -20
 saturation: 4.0
 exhaustion: 1.8050063
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAGWOQUvDQBCFZ1VIiMHfEMZrqE29aEAoBhGh6qG9hSDLZmpDk92QnbWVkj/hLzY1vTkwDAzvve8FAAFcPdZGbZ80V/y9kp8CQmV0WXFl9CuxEHAhHRvhQ5A5y6Z5kw2BmAvwWrOjjkrwwctM00hdwvUNrdekOJrLvHtIptMisi1RGd0PEyURd458OKtKCE+WP/o5hEunFFmbGacZALyBt5CW3x23juHngLTnTmKaH3C42taSCVNUY4qdjNyJHWMwxl3Fm3/yk6oxX7Q89sI+xgTHXRjLL/pZ1nJPm4/hceyMRV/EyAN8cOezJJ3dpdPbIsJewOWqk2o7NhQAv9ePNA5OAQAA
+      blockMaterial: COMMAND_CHAIN
 potion_effect:
   '0':
+    type: SPEED
+    level: 1
+    duration: 124276
+  '1':
     type: NIGHT_VISION
     level: 1
-    duration: 6011
+    duration: 124276

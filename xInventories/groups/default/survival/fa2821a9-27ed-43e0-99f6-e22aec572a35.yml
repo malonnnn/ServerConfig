@@ -1,269 +1,135 @@
 inventory:
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 9
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DURABILITY: 3
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        KNOCKBACK: 2
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DURABILITY: 3
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 9
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 9
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ▪ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+      Unbreakable: true
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
+      meta-type: UNSPECIFIC
+      display-name: §eOlympia§e ▪ «×»
+      lore:
+      - §eDouble-barreled shotgun.
+      - §eDeadly at close range.
+      - §eIneffective at longer ranges.
+      - §eFires incendiary ammo.
+      Unbreakable: true
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
+      meta-type: UNSPECIFIC
+      display-name: §ePython §l/§e Knife§e ▪ «×»
+      lore:
+      - §eRevolver with high power.
+      - §eLeft click to melee enemies
+      - §ewith the tactical knife.
+      Unbreakable: true
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: REDSTONE_COMPARATOR
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      Unbreakable: true
+      blockMaterial: REDSTONE_COMPARATOR
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: FIREWORK_CHARGE
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
+      Unbreakable: true
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: FLINT_AND_STEEL
+    type: LEVER
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+      Unbreakable: true
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SPADE
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_AXE
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: SHIELD
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: LEVER
+    amount: 3
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '22':
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+      Unbreakable: true
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DURABILITY: 3
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HOE
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        LOOT_BONUS_BLOCKS: 3
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DURABILITY: 3
-  '30':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
+    type: EGG
   '32':
     ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        MENDING: 1
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        VANISHING_CURSE: 1
-  '40':
-    ==: org.bukkit.inventory.ItemStack
-    type: TOTEM
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 9
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 9
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 9
-health: 20.0
+      meta-type: UNSPECIFIC
+      display-name: §eGauss Shotgun§e ▪ «×»
+      lore:
+      - §eAdvanced pump-action shotgun.
+      - §eFires metal slugs that penetrate
+      - §eall targets within 40 blocks.
+      - §eDeals 200% damage to Zombies.
+      Unbreakable: true
+armor_contents: {}
+health: 40.0
 hunger: 20
-exp: 0.14942566
-exp-level: 25
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 15.0
-exhaustion: 1.4685932
+saturation: 0.0
+exhaustion: 3.7721252
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -327,14 +193,10 @@ ender_chest:
     type: STONE_BUTTON
 potion_effect:
   '0':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 196265
+    type: INCREASE_DAMAGE
+    level: 8
+    duration: 185463
   '1':
-    type: WATER_BREATHING
-    level: 1
-    duration: 196265
-  '2':
-    type: DAMAGE_RESISTANCE
+    type: HEALTH_BOOST
     level: 4
-    duration: 196265
+    duration: 185463

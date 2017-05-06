@@ -45,8 +45,7 @@ bind('player_chat', null, null, @e) {
         if(@pgroup[0] == 'mrmxyzptlk')
         {
             set_timeout(1000, closure(
-                include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-                _mortal(@player)
+                call_alias('/mortal')
                 set_timeout(1500, closure(
                     tmsg(@pname, 'You said your name backwards! Off to the other dimension you go!')
                 ))

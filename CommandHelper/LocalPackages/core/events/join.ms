@@ -18,8 +18,8 @@ bind(player_join,null,null,@event){
     # -------------------------------
     if(@hero['class'] == 'jailed')
     {
-        runas(~console,"/undisguise ".@plr)
-        runas(~console,"/minecraft:clear ".@plr)
+        sudo("/undisguise ".@plr)
+        sudo("/minecraft:clear ".@plr)
         die()
     }
     
@@ -48,10 +48,8 @@ bind(player_join,null,null,@event){
     {
         @otherPlayerGroup = pgroup(@player)
         if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
-            runas(~console,/pex user player() group set mortal)
-            runas(~console,/pex reload)
-            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-            _mortal(@player)
+            sudo('/pex user '.@plr.' group set mortal')
+            call_alias('/mortal')
             set_timeout(1500, closure(
                 broadcast(color(white)  . @plr . color(gray) . " has been changed from " . @hero['name'] . color(gray) . " back into a " . color(white) . "MORTAL" . color(gray) . " because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))
