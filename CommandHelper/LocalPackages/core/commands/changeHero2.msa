@@ -76,7 +76,7 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
 
         if(has_permission(@plrr,'machine.mortal')){
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-            _mortal(@player)
+            _mortal(@plrr)
             die()
         }
         
