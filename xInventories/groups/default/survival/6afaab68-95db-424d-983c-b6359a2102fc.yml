@@ -1,33 +1,62 @@
-potion_effect:
-  '0':
-    type: BLINDNESS
-    level: 1
-    duration: 186886
-  '1':
-    type: HUNGER
-    level: 3
-    duration: 186886
-  '2':
-    type: CONFUSION
-    level: 1
-    duration: 186886
-  '3':
-    type: POISON
-    level: 3
-    duration: 186886
-  '4':
-    type: SLOW
-    level: 3
-    duration: 186886
-  '5':
-    type: WEAKNESS
-    level: 3
-    duration: 186886
-health: 0.16666603088378906
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.2797928
+exhaustion: 1.2190037
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2G§ar§6o§ao§2t's Damage Attack
+      enchants:
+        DAMAGE_ALL: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2G§ar§6o§ao§2t's Knockback Attack
+      enchants:
+        KNOCKBACK: 10
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2G§ar§6o§ao§2t's Damage & Knockback  Attack
+      enchants:
+        DAMAGE_ALL: 5
+        KNOCKBACK: 5
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 4
+    duration: 198288
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 198288
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 198288
+  '3':
+    type: INCREASE_DAMAGE
+    level: 7
+    duration: 198288
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198288
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 198288

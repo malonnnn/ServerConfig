@@ -4,9 +4,145 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 13.0
-exhaustion: 2.3680751
+saturation: 18.0
+exhaustion: 0.37402964
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      lore:
+      - Outlines the duties, authorities, and commands of a Police Sergeant.
+      title: Sergeant Duties
+      author: Chief of Police
+      pages:
+      - |-
+        §nDuties of a Sergeant§r
+
+        1. Assistant to the Chief
+
+        2. Management of Evidence
+
+        3. Management of Officers
+      - |-
+        4. Check the Front Desk for Complaints
+
+        5. Determine if the Complaint can be Handled
+
+        6. Advise the Chief of any complaints regarding other Officers
+      - |-
+        7. Arrest and Jail Players for Offence's
+
+        8. Submit a Notebook upon Arresting a Player with the details and Evidence
+
+        9. Ensure compliance of Rules
+      - |-
+        10. Check over Officer's Notes if they Jail someone and review the proof
+
+        11. If there is a lack of Proof bring it to the attention of the Chief and release the detainee
+      - |-
+        12. Address the issue Regarding the Lack of Proof. Educate the Officer if Possible
+
+        13. Review Server Rules and offer Suggestions if you Have Any
+
+        14. Organize the vault and store Evidence in a clean manner
+      - |-
+        15. Develop, Implement, and Enforce rules regarding other Officer's
+
+        16. Review Applications for the Position of Officer
+
+        17. Conduct Interviews for new Officer's
+
+        18. Train new Officer's
+      - |-
+        19. Suggest new Hires to the Chief of Police
+
+        20. Meet with the Chief at Random times to discuss Policing Matters
+
+        21. Maintain a positive image and helpful attitude
+      - |-
+        §nAuthorities§r
+
+        1. You may Enforce Server Rules and Jail Players
+
+        2. You may Create and Enforce Rules for Officer's. Must advise the Chief of any Changes
+      - |-
+        3. You may Change the Server Rules without Notice. Must Advise the Chief of Changes to have them made Permanent
+
+        4. You may Punish an Officer for misconduct including Jailing them or suggesting to the Chief a Fine
+      - |-
+        5. You have the Power to fire Officer's on the Spot.
+
+        6. You have the power to conduct your own version of interview for new applicants
+
+        7. You have the power to over-ride the decision of another Officer
+      - |-
+        8. You have access to Restricted Area's and the Evidence Vault
+
+        9. You have Access to an Office that you can use. Comes with a Mail Box for Officer's to leave you notes or Complaints
+
+        10. You are exempt from the rules
+      - |-
+        §nCommands§r
+
+        1. /onduty
+        2. /arrest
+        3. /release
+        4. /fireofficer
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      lore:
+      - Outlines the duties, authorities, and commands of a Police Officer.
+      title: Officer Duties
+      author: Chief of Police
+      pages:
+      - |-
+        §nDuties of an Officer§r
+
+        1. Follow Chain of Command
+
+        2. Report to the Sergeant(s)
+
+        3. Follow the Direction of the Sergeant(s)
+      - |-
+        4. Check the Front Desk for Complaints
+
+        5. Determine if the Complaint can be Handled
+
+        6. Advise the Sergeant of any complaints
+      - |-
+        7. Arrest and Jail Players for Offence's
+
+        8. Submit a Notebook upon Arresting a Player with the details and Evidence
+
+        9. Ensure compliance of Rules
+
+        10. Follow the Rules as Well
+      - |-
+        11. Provide Applications to Interested Players
+
+        12. Receive Applications at the Front Desk and drop them off in the Sergeants Mail Box
+
+        13. Educate players about the rules and recommend them to /warp rules if they are misbehaving
+      - |-
+        §nAuthorities§r
+
+        1. You may Enforce Server Rules and Jail Players
+
+        2. You may take Statements from other Players regarding Behavior that Occurred in the Past
+      - |-
+        3. You may Arrest and Jail a player for past behavior if it is (a) recent, and (b) there is sufficient proof provided
+
+        4. You may make decisions that require Sergeant Approval without Approval if no Sergeants are online
+      - |-
+        §nCommands§r
+
+        1. /onduty
+        2. /arrest
+        3. /release
