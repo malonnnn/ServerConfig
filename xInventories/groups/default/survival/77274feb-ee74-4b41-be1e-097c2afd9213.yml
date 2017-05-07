@@ -1,33 +1,57 @@
-potion_effect:
-  '0':
-    type: CONFUSION
-    level: 1
-    duration: 199638
-  '1':
-    type: BLINDNESS
-    level: 1
-    duration: 199638
-  '2':
-    type: SLOW
-    level: 3
-    duration: 199638
-  '3':
-    type: WEAKNESS
-    level: 3
-    duration: 199638
-  '4':
-    type: HUNGER
-    level: 3
-    duration: 199638
-  '5':
-    type: POISON
-    level: 3
-    duration: 199638
-health: 0.16666603088378906
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.8179674
+exhaustion: 2.654046
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 43
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 43
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+potion_effect:
+  '0':
+    type: FAST_DIGGING
+    level: 127
+    duration: 161236
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 162004
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 162004
+  '3':
+    type: JUMP
+    level: 3
+    duration: 198702
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 162004
+  '5':
+    type: SPEED
+    level: 8
+    duration: 199808

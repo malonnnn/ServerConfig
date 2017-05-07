@@ -1,27 +1,55 @@
 # 
 # These example files show you some of the basic attributes and
 # skills MythicMobs can use. Far more is possible!
-SuperSkeleton:
-  Type: SKELETON
-  Display: '&2Super Skeleton'
-  Health: 1000
-  Damage: 150
-  Equipment:
-    - bow:0
+Laser:
+  Type: CREEPER
+  Display: 'Laser'
+  Health: 10000
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - skill{s=Laser;} @target
+WitherLotto:
+  Type: WITHER
+  Display: '&2Wither Lotto'
   Options:
-    MovementSpeed: 0.8
-    AttackSpeed: 5.0
     Collidable: false
-    Glowing: true
+    MovementSpeed: 0.3
+    AttackSpeed: 0.1
     NoDamageTicks: 20
     PreventMobKillDrops: true
     PreventOtherDrops: true
     PreventRandomEquipment: true
-  DamageModifiers:
-    - PROJECTILE 10.0
-    - ENTITY_ATTACK 10.0
+    KnockbackResistance: 1
+    FollowRange: 50
   Modules:
     ThreatTable: true
+  Skills:
+  - skill{s=LottoReset;} ~onTimer:100
+SkeleLotto:
+  Type: SKELETON
+  Display: '&2Skele Lotto'
+  Health: 9999
+  Damage: 1
+  Equipment:
+    - stone_button:4
+  Options:
+    MovementSpeed: 0.4
+    AttackSpeed: 5.0
+    Collidable: false
+    NoDamageTicks: 0
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    FollowRange: 50
+  Modules:
+    ThreatTable: true
+  Skills:
+      #  - shoot{type=ARROW,velocity=5,pav=false} @nearestPlayer{r=50} ~onSpawn 1
+      #  - shoot{type=ARROW,velocity=5,pav=false} @nearestPlayer{r=50} ~onAttack 1
+  - skill{s=LottoReset;} ~onTimer:100
 SuperWither:
   Type: WITHER
   Display: '&2Super Wither'

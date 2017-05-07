@@ -1,0 +1,22 @@
+lottoreset:/lottoreset = >>>
+
+    @plrs = all_players()
+
+    @activeAmt = 0
+    @plrName = ''
+    foreach(@plr in @plrs){
+        if(import(@plr.'activeInMobLottery') ==  true){
+            @activeAmt++
+            @plrName = @plr
+        }
+    }
+    if(@activeAmt == 1){
+        foreach(@plr in @plrs){
+           export(@plr.'activeInMobLottery',false) 
+        }
+        broadcast(color(green).@plrName.' wins Mob Lottery!')
+        runas(~console,'/mm mob killall')
+    }
+    
+
+<<<

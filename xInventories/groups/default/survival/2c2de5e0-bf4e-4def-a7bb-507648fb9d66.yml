@@ -2,7 +2,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 7
+    damage: 59
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -32,7 +32,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
       Unbreakable: true
   '4':
     ==: org.bukkit.inventory.ItemStack
@@ -40,21 +40,42 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
+      display-name: §4Kryptonian Laser Vision§4 «×»
       Unbreakable: true
-health: 40.0
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+health: 100.0
 hunger: 20
-exp: 0.85714287
-exp-level: 0
+exp: 0.79310346
+exp-level: 11
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.950028
+saturation: 19.0
+exhaustion: 0.1906885
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 7
+    damage: 59
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -66,20 +87,40 @@ potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 183874
+    duration: 32363
   '1':
-    type: JUMP
-    level: 5
-    duration: 185911
-  '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 183874
-  '3':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 183874
-  '4':
-    type: SPEED
+    type: FAST_DIGGING
     level: 50
-    duration: 199674
+    duration: 50393
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 32363
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 32363
+  '4':
+    type: JUMP
+    level: 10
+    duration: 199766
+  '5':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 32363
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 32363
+  '7':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 32363
+  '8':
+    type: SPEED
+    level: 3
+    duration: 199211
+  '9':
+    type: NIGHT_VISION
+    level: 1
+    duration: 32363

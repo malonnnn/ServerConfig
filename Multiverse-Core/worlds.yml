@@ -1,4 +1,52 @@
 worlds:
+  moblottery:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2Mob L&e$&2ttery'
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: moblottery
+    allowWeather: 'false'
+    difficulty: HARD
+    spawning: &id035
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee: &id036
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'false'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -1.5
+      y: 87.0
+      z: 1.5
+      pitch: 2.1570663
+      yaw: -269.28955
+    autoLoad: 'true'
+    bedRespawn: 'false'
+    worldBlacklist: &id037 []
+    environment: NORMAL
+    seed: '-6947373970582061031'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'false'
   skeeter_nether:
     ==: MVWorld
     hidden: 'false'
@@ -1487,6 +1535,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'false'
+  policeoffice:
+    ==: MVWorld
+    hidden: 'false'
+    alias: policeoffice
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'true'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'false'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'false'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -0.5006777331024519
+      y: 75.0
+      z: 60.28801192341384
+      pitch: 12.44997
+      yaw: -178.049
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '2831019609875475807'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   wooftywoo:
     ==: MVWorld
     hidden: 'false'
@@ -4283,22 +4379,8 @@ worlds:
     respawnWorld: colosseumlobby
     allowWeather: 'false'
     difficulty: HARD
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'false'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-      currency: '-1'
+    spawning: *id035
+    entryfee: *id036
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -4314,7 +4396,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: []
+    worldBlacklist: *id037
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.

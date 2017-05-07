@@ -1,50 +1,94 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
+      display-name: §4Kryptonian Laser Vision§4 «×»
       Unbreakable: true
-health: 60.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 21
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of EmmettGaming
+      internal: H4sIAAAAAAAAAE2SyY6jWBREqVK3lJWqz+idlTI2k1n0wgaDH6PBDH5vxzwPZoZvqo9s5663cSIU90rxiWGf2O9HMZblvWvirIw+sJ8gxP6h6Sj0Yib8YsmI+SLJIP5iQ5b9IsiQ8EIWp976J/b5DrVRN2RR/wv7GKJlGLuo/8Qw7McH9uuRJbX3rfz8I95aqso3TxBlN50SSu7LSQ8CEn8ZbBlwOD14M0eac06eHvF6rAkQ7Kj7vTjrJKRv7HI359pASC2u/eSZKtqgrLyTJKGyOxk1MnNCuwUPocik/tmIx9OjpANm6dHpGWbg3ASj5dwlR8Dl07KD7rzBMo5LeFZ4py2ipwP3nsUvU9AE28jWJhS5wSMow3HLgyTVNtdcOfaK1zEIlotvsXXbJiLpPEthWg0ri+micKkkxDXUUWtYGrazf50rKMvFw4led32iRQAamPM0ehm63r0KZfRzEzaMyHsWwfs+R03NnAaPfSi0BiR4rlFNUVmLOONfwVrJXYfr47NAUBvUvIyhCcAGNHnOEqpnbC06PlZpWDuFtCctXY6RFnXuRPCi0c3tTvba0t2LzuTMF8Nj8r4x3Ql0tnOkD444Xc6pz76sG0Dzxunbgj/NaecY+L5pCeH+egYXg4Eue9BzV4s835nXcJ2Mmnh1wUiqcmYJVEEWrkJbOnlq9e6ahpKGHJKGYWPkSjtMr8t9052WWWwNZ3puZtiED/cuKJJqILZCuhCzCToF3UPe5biDnVCNehuShGZiU5lCTxGeIU4qSDDNNLXSPOiLljSQzCerVDUnNJJpf2FkeO5NQd6zWtuncTz2SilDTSeipDLFtL5H3Q6ZAbv1hJIytHa7KsOeIPXjQ6YDSc5w/8I0nv3vB/a345Vj9OMUrRLuuYcyIMzUf54zPb/iuqVSugVx1bIP6gZ6UF9W/4haX3QkxAEa5PCIXDNFeVjolllqm4HDI6QQX1DqZhbqUXjr58M3A9mcBTdpQlXZI5tKfdfO9EwS/HdneDNv0D20fhVkCifh6Jni4VMqgxXQ77usB17qIG8ZUDur/91bvfntTCsr+z8vNXguVUJCSlFtjH7l4AphltHNPATVeymuQakixBEPVuSqi+qqm8anJRIhoYo2oVXXReOFTOPDSvv28FoGN3XRea1SXanQLC1/Z+Y3z9UjIN4/ZvHzwGLYB/aX5lUR9vtaVdEwiF6V1QmG/QeUiIb3bwQAAA==
+      skull-owner: EmmettGaming
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DRAGON_EGG
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPLE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAM2VXW/TMBSGT5P0K0C7b8rgAi4QN/wCxAVqN2mVJoSA+8hLXMeaY0fx6ar++zlN3UZNQFO2Sr2KbOvN+xy/9rEP4MNgLFR4fy2R4/IvYX1oT5Em2geAUQu8P0Ih9MDhEbxNuKRhRmb4TaeC6DhIFXIlW9CeqLnElg8uEtaDzq/VPLzfCoSSLODygWt+x4WxAgc6VyQhjBqjtU+r6hPPxT3NAh1TIazP9xqp0xDxXUmAWQ5pPlQyjOsA3YYuo52N0As+Q0m1rjPxKiYRJ4mSUXCnFOodkz54VIZxHpfjgCseBHjO6gdmohi7xbgLLvi/aUp4NlEazbrrQzfieQnLHng/SUJhMJWJypCIj+PcDEqAtxawXQBebgFRmSMTqFkwl9GSS7ZhrCmv8yx194WOouQsxiA/jmaxxqdX+IyqIZiTmFDcbwrDTQo3K7dyDBOL2H/abflRU51fSD9UqwtjqtGgIN1vhafTZF3hZONYrvKrRX1VoJ5vUZkSUSDnjG1TqKvxdVPhm6bCQVPh8ADikP+N48aiHlVur0UVlDFzeffcn443oLdrvzLm2GIePyWKbk0UJwfafL9YwNPmt/7sYHvaZ4t4XiBelB4HnqY0CkiWqYUFdHa7+0lpN4Ra/OtlvXjW03NZqIdldRbGVvKpLAF4BPxeDmdcCQAA
+      blockMaterial: PURPLE_SHULKER_BOX
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 4
+exp: 0.52380955
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5000277
+exhaustion: 2.2300167
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 197928
+    duration: 192190
   '1':
-    type: FAST_DIGGING
-    level: 5
-    duration: 198976
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 192190
   '2':
-    type: JUMP
-    level: 40
-    duration: 197333
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 192190
   '3':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 197928
+    level: 19
+    duration: 192190
   '4':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 197928
+    type: WATER_BREATHING
+    level: 1
+    duration: 192190
   '5':
-    type: SPEED
-    level: 5
-    duration: 198939
+    type: HEALTH_BOOST
+    level: 19
+    duration: 192190
   '6':
     type: NIGHT_VISION
     level: 1
-    duration: 197928
+    duration: 192190
