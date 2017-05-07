@@ -1,98 +1,120 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BIRCH_WOOD_STAIRS
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 13
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: SNOW_BALL
+    amount: 16
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §4En§cerg§4y §cBe§4am§4 «×»
       Unbreakable: true
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 4
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_PICKAXE
-    damage: 79
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_PICKAXE
-    damage: 7
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_ORE
-    amount: 26
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: BONE
-    amount: 5
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-    amount: 7
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 3
-    amount: 3
+    type: GOLD_NUGGET
+    amount: 64
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 5
-    amount: 3
+    type: GOLD_INGOT
+    amount: 64
   '11':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_ORE
-    amount: 4
+    type: GOLD_INGOT
+    amount: 64
   '12':
     ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    amount: 17
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8Blaster Rifle§8 «×»
+      Unbreakable: true
   '13':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_INGOT
-    amount: 18
+    type: GOLD_INGOT
+    amount: 64
   '14':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 4
+    type: IRON_BLOCK
+    amount: 51
   '15':
     ==: org.bukkit.inventory.ItemStack
-    type: WORKBENCH
+    type: GOLD_NUGGET
+    amount: 64
   '16':
     ==: org.bukkit.inventory.ItemStack
-    type: FURNACE
+    type: GOLD_NUGGET
+    amount: 64
   '19':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD
+    type: GOLD_NUGGET
+    amount: 64
   '21':
     ==: org.bukkit.inventory.ItemStack
-    type: LOG
-    amount: 4
+    type: GOLD_NUGGET
+    amount: 64
   '23':
     ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    amount: 2
+    type: DIAMOND_PICKAXE
+    damage: 17
   '29':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_PICKAXE
-    damage: 12
+    type: IRON_BLOCK
+    amount: 64
   '33':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 4
-  '36':
+    type: GOLD_NUGGET
+    amount: 64
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    damage: 734
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    amount: 64
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 63
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 7
+    amount: 60
+  '24':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -100,11 +122,21 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-armor_contents:
-  boots:
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    amount: 64
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 62
+  '28':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 1
+    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -112,40 +144,54 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: RABBIT_FOOT
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: RABBIT_HIDE
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+    amount: 64
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+    amount: 61
+armor_contents: {}
 health: 100.0
-hunger: 15
-exp: 0.46666664
-exp-level: 4
+hunger: 16
+exp: 0.71428573
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.1730087
+exhaustion: 0.79479593
 potion_effect:
   '0':
-    type: NIGHT_VISION
+    type: REGENERATION
     level: 1
-    duration: 186228
+    duration: 195985
   '1':
-    type: FAST_DIGGING
-    level: 5
-    duration: 189980
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 195985
   '2':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 186228
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 195985
   '3':
     type: WATER_BREATHING
     level: 1
-    duration: 186228
+    duration: 195985
   '4':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 186228
+    type: HEALTH_BOOST
+    level: 19
+    duration: 195985
   '5':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 186228
-  '6':
-    type: REGENERATION
+    type: NIGHT_VISION
     level: 1
-    duration: 186228
+    duration: 195985

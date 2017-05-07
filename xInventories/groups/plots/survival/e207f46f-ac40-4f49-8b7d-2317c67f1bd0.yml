@@ -1,12 +1,4 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -18,6 +10,17 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -30,15 +33,9 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
-  '0':
-    type: SPEED
-    level: 10
-    duration: 162567
-  '1':
-    type: JUMP
-    level: 5
-    duration: 162636
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
 health: 13.0
 hunger: 6
 exp: 0.20000003
@@ -47,3 +44,12 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 0.6726886
+potion_effect:
+  '0':
+    type: JUMP
+    level: 5
+    duration: 109104
+  '1':
+    type: SPEED
+    level: 10
+    duration: 109035

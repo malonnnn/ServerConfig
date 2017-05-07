@@ -1,4 +1,8 @@
 inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 12
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -10,7 +14,6 @@ inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: COAL
-    amount: 4
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -18,73 +21,196 @@ inventory:
       enchants:
         DAMAGE_ALL: 155
         FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §bG§1o§6ku §e§lD§a§lN§4§lA
+      lore:
+      - goku
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
-    amount: 64
+    amount: 42
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: TORCH
-    amount: 5
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 31
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
   '11':
     ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 83
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
   '19':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 15
-  '36':
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '20':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 74
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:healing
   '37':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_LEGGINGS
-    damage: 74
+    damage: 12
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_CHESTPLATE
-    damage: 74
+    damage: 12
   '39':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
-    damage: 49
+    damage: 12
 armor_contents:
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 49
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 74
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 74
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_BOOTS
-    damage: 74
+    damage: 12
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 12
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 12
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 12
 health: 80.0
 hunger: 20
-exp: 0.516887
-exp-level: 7
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.7730572
+exhaustion: 3.0579987
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -181,13 +307,14 @@ ender_chest:
     type: STAINED_GLASS
     damage: 7
     amount: 64
-  '20':
+  '19':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_SWORD
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: Black Lantern Sword
+      display-name: Banana Sword
       enchants:
         DAMAGE_ALL: 5
         KNOCKBACK: 2
@@ -197,24 +324,24 @@ potion_effect:
   '0':
     type: FAST_DIGGING
     level: 20
-    duration: 194961
+    duration: 174874
   '1':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 177753
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 171166
   '2':
-    type: SPEED
+    type: JUMP
     level: 10
-    duration: 110531
+    duration: 174806
   '3':
     type: INCREASE_DAMAGE
     level: 16
-    duration: 177753
+    duration: 171166
   '4':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 177753
+    type: HEALTH_BOOST
+    level: 14
+    duration: 171166
   '5':
-    type: JUMP
-    level: 5
-    duration: 126173
+    type: SPEED
+    level: 1
+    duration: 189185
