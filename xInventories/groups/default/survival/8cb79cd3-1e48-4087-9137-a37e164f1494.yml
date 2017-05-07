@@ -1,141 +1,54 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Omega Beam§0 «×»
+      Unbreakable: true
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 43.135990142822266
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.3550646
-armor_contents: {}
-ender_chest:
+exhaustion: 1.1640062
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+ender_chest: {}
+potion_effect:
   '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eFlame Thrower§e «×»
-      lore:
-      - §eFlame Thrower
-      - §eCook bacon!.
-      Unbreakable: true
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 196051
   '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §8Gh§0o§8st R§7i§8der's §fShotgun§f ▫ «0»
-      lore:
-      - §eOnly For The Ghost Rider.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
-      Unbreakable: true
+    type: WATER_BREATHING
+    level: 1
+    duration: 196051
   '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BEDROCK
-    amount: 13
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: BIRCH_WOOD_STAIRS
-    amount: 64
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 2
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 2
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 2
-    amount: 53
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE_STAIRS
-    amount: 64
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE_STAIRS
-    amount: 64
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE_STAIRS
-    amount: 39
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: BEACON
-    amount: 8
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: DRAGON_EGG
-    amount: 3
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
-    amount: 30
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 13
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 64
+    type: HEALTH_BOOST
+    level: 19
+    duration: 196051

@@ -1,0 +1,20 @@
+addchatcooldown:/addchatcooldown $plr = >>>
+
+    @plr = $plr
+    @plr player(@plr)
+    @player = player()
+    sudo("/pex user ".@plr." add chat.cooldown")
+    tmsg(@plr,color(red).'You have been given a chat cooldown by '.@layer.' for spamming!')
+    tmsg(@player,color(red).'You have been given '.@layer.' a chat cooldown!')
+
+<<<
+remchatcooldown:/remchatcooldown $plr = >>>
+
+    @plr = $plr
+    @plr player(@plr)
+    @player = player()
+    sudo("/pex user ".@plr." remove chat.cooldown")
+    tmsg(@plr,color(red).'Your chat cooldown has been removed by '.@plr.'!')
+    tmsg(@player,color(red).'You have remove the chat cooldown for '.@layer.'!')
+
+<<<
