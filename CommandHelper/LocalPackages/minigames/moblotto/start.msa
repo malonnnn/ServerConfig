@@ -1,0 +1,65 @@
+moblottostart:/moblottostart $x $y $z $world $plr = >>>
+
+    @player = $plr
+    @loc = array($x,$y,$z,$world)
+    @plrs = all_players(@loc[3])
+
+    foreach(@plr in @plrs){
+        if(import(@plr.'activeInMobLottery') ==  true){
+            tmsg(@player,color(red).@plr.' is still alive in Mob Lotto!')
+            die()
+        }
+    }
+    runas(~console,'/mm mob killall')
+    set_block_at(@loc,152)
+    set_timeout(50,closure(
+        set_block_at(@loc,0)
+    ))
+    foreach(@plr in @plrs){
+        sudo('/heal '.@plr)
+        sudo('/warp moblotterystart '.@plr)
+    }
+
+<<<
+
+moblottostart:/moblottostartpart2 $type $amt $x $y $z $world = >>>
+
+    @type = $type
+    @amt = $amt
+    @x = $x
+    @y = $y
+    @z = $z
+    @world = $world
+    @plrs = all_players(@world)
+
+    foreach(@plr in @plrs){
+        export(@plr.'activeInMobLottery',true)
+        try(
+        bind(player_death,array(id: @plr.'moblottodeath'),associative_array('player':@plr),@e,@plr){
+            export(@plr.'activeInMobLottery',false)
+            unbind()
+            unbind(@plr.'moblottoworldchanged')
+            unbind(@plr.'moblottoquit')
+        }
+        bind(world_changed,array(id: @plr.'moblottoworldchanged'),associative_array('player':@plr),@e,@plr){
+            export(@plr.'activeInMobLottery',false)
+            unbind()
+            unbind(@plr.'moblottodeath')
+            unbind(@plr.'moblottoquit')
+        }
+        bind(player_quit,array(id: @plr.'moblottoquit'),associative_array('player':@plr),@e,@plr){
+            export(@plr.'activeInMobLottery',false)
+            unbind()
+            unbind(@plr.'moblottodeath')
+            unbind(@plr.'moblottoworldchanged')
+        },)
+    }
+
+    runas(~console,'/mm mob killall')
+    for(@i = 0,@i < @amt, @i++){
+        @x1 = rand(-2,3) + @x
+        #@y1 = rand(-3,4) + @y
+        @z1 = rand(-2,3) + @z
+        sudo('/mm mobs spawn '.@type.' 1 '.@world.','.@x1.','.@y.','.@z1)
+    }
+<<<

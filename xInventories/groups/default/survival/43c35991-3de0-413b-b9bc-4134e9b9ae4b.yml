@@ -18,7 +18,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 29
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -30,7 +29,6 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 29
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -44,26 +42,145 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 1.4278164
+saturation: 0.0
+exhaustion: 0.83000565
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Fork
+      repair-cost: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+    amount: 4
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 11
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DRAGON_EGG
+    amount: 63
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTMENT_TABLE
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 14
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        LOOT_BONUS_MOBS: 3
+        SWEEPING: 3
+      repair-cost: 31
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: TNT
+    amount: 56
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 2
+    amount: 64
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: PRISMARINE_CRYSTALS
+    amount: 3
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: LAPIS_BLOCK
+    amount: 61
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    amount: 4
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOKSHELF
+    amount: 62
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_STAR
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 182632
-  '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 182632
-  '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 182632
-  '3':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 182632
-  '4':
     type: REGENERATION
     level: 1
-    duration: 182632
+    duration: 194708
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 194708
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 194708
+  '3':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 194708
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 194708
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 194708

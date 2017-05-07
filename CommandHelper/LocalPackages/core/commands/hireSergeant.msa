@@ -5,6 +5,8 @@ hiresergeant:/hiresergeant $player = >>>
     sudo("/pex user ".@player." add is.sergeant")
     sudo("/pex user ".@player." add ch.alias.fireofficer")
     sudo("/pex user ".@player." add ch.alias.onduty")
+    sudo("/pex user ".@player." add ch.alias.addchatcooldown")
+    sudo("/pex user ".@player." add ch.alias.remchatcooldown")
     tmsg(player(),color(red)."You have hired ".@player. " as on Officer for the Police Force!")
     tmsg(@player,color(red)."You have been hired as an Officer for the Police Force!")
 <<<
@@ -16,6 +18,8 @@ firesergeant:/firesergeant $player = >>>
         sudo("/pex user ".@player." remove ch.alias.fireofficer")
         sudo("/pex user ".@player." remove ch.alias.onduty")
         sudo("/pex user ".@player." group set mortal")
+        sudo("/pex user ".@player." remove ch.alias.addchatcooldown")
+        sudo("/pex user ".@player." remove ch.alias.remchatcooldown")
         tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
         tmsg(@player,color(red)."You have been fired from the Police Force :(")
     }
