@@ -1,4 +1,35 @@
-inventory: {}
+inventory:
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      Unbreakable: true
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -6,4 +37,23 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.6626775
+exhaustion: 2.6760197
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPECTRAL_ARROW
+    amount: 64

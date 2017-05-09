@@ -9,16 +9,6 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
-      enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -32,22 +22,34 @@ armor_contents:
         DEPTH_STRIDER: 30
 health: 20.0
 hunger: 20
-exp: 0.6296298
-exp-level: 10
+exp: 0.45714292
+exp-level: 14
 remainingAir: 300
 fireTicks: -20
-saturation: 18.0
-exhaustion: 0.5452824
+saturation: 6.0
+exhaustion: 2.3882158
 potion_effect:
   '0':
     type: FAST_DIGGING
-    level: 20
-    duration: 171257
+    level: 127
+    duration: 199696
   '1':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 199581
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199581
+  '3':
     type: JUMP
     level: 10
-    duration: 171162
-  '2':
+    duration: 199756
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 199581
+  '5':
     type: SPEED
     level: 8
-    duration: 171197
+    duration: 199789
