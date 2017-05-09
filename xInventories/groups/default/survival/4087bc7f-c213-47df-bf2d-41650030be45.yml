@@ -1,9 +1,44 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 5
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§8e§2en Lant§8e§2rn Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+health: 37.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.549
+saturation: 0.0
+exhaustion: 1.2200012
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 1
+    duration: 199654
+  '1':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 199654
+  '2':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 199654

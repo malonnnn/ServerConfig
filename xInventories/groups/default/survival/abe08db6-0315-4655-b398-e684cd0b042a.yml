@@ -1,14 +1,43 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WEB
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+      Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 2
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.2750082
+exhaustion: 0.33500576
 armor_contents: {}
 ender_chest:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_BLOCK
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 2
+    duration: 198873
+  '1':
+    type: INCREASE_DAMAGE
+    level: 6
+    duration: 198873
+  '2':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 198873

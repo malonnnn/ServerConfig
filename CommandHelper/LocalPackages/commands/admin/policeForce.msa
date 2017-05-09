@@ -2,28 +2,24 @@ onduty:/onduty = >>>
 
     @player = player()
     if(has_permission(@player,"is.sergeant")){
-        include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-        _mortal(@player)
         set_timeout(3000,closure(
             sudo("/pex user " . @player . " group set sergeant")
             tmsg(@player,color(red)."You are now on duty!")
         ))
 
-        if(pworld(@player) != 'policeoffice'){
+        if(pworld(@player) != 'policeoffice' && !has_permission(@player,'police.chief')){
             set_timeout(120000,closure(
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
             ))
         }
     }else if(has_permission(@player,'is.officer')){
-        include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-        _mortal(@player)
         set_timeout(3000,closure(
             sudo("/pex user " . @player . " group set officer")
             tmsg(@player,color(red)."You are now on duty!")
         ))
 
-        if(pworld(@player) != 'policeoffice'){
+        if(pworld(@player) != 'policeoffice' && !has_permission(@player,'police.chief')){
             set_timeout(120000,closure(
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
