@@ -215,23 +215,23 @@ bind('player_chat', null, null, @e) {
     # Chat replacements for fun
     # -------------------------------
     @cooldown = 0
-#    if(has_permission(@pname,'change.chat')){
-#        if(reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
-#            assign(@msg,'Uh oh! I\'m a goober!')
-#            modify_event(message, @msg)
-#            @cooldown = 10
-#        }
-#
-#        if(
-#            to_lower(@msg) == 'o' || 
-#            to_lower(@msg) == 'y' || 
-#            reg_match('(?i)(o|0)+[. ,-_]*y+',@msg)
-#        ){
-#            assign(@msg,'Uh oh! I\'m a goober!')
-#            modify_event(message, @msg)
-#            @cooldown = 10
-#        }
-#    }
+    if(has_permission(@pname,'change.chat')){
+        if(reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
+            assign(@msg,'Uh oh! I\'m a goober!')
+            modify_event(message, @msg)
+            @cooldown = 10
+        }
+
+        if(
+            to_lower(@msg) == 'o' || 
+            to_lower(@msg) == 'y' || 
+            reg_match('(?i)(o|0)+[. ,-_]*y+',@msg)
+        ){
+            assign(@msg,'Uh oh! I\'m a goober!')
+            modify_event(message, @msg)
+            @cooldown = 10
+        }
+    }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
     #assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
@@ -272,7 +272,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
     # -------------------------------
-    if(has_permission("rank.mod") && has_permission("is.virus") ==  false)
+    if(has_permission("rank.mod") && has_permission("is.criminal") ==  false)
     {
         die()
     }
@@ -285,7 +285,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # chat timeout settings
     # -------------------------------
-    if(has_permission("is.virus")){
+    if(has_permission("is.criminal")){
         @cooldown = 60
     }else if(has_permission('chat.cooldown')){
         @cooldown = 5

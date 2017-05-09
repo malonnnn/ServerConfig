@@ -6,6 +6,7 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -17,6 +18,7 @@ inventory:
       - §eFully automatic with high power.
       - §eEffective at medium range.
       - §eControls are inverted.
+      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -64,19 +66,11 @@ inventory:
       - §eRemote explosives.
       - §eRight click to throw.
       - §eLeft click to detonate.
-      Unbreakable: true
       blockMaterial: REDSTONE_COMPARATOR
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eC4§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to place.
-      - §eLeft click to detonate.
+    type: COMMAND
+    amount: 5
   '7':
     ==: org.bukkit.inventory.ItemStack
     type: FIREWORK_CHARGE
@@ -87,51 +81,11 @@ inventory:
       lore:
       - §eExplodes three seconds after launch.
       Unbreakable: true
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §2G§ar§6o§ao§2t §e§lD§a§lN§4§lA
-      lore:
-      - groot
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §2G§ar§6o§ao§2t §e§lD§a§lN§4§lA
-      lore:
-      - groot
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '32':
+    type: COOKED_RABBIT
+    amount: 5
+  '5':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
@@ -143,21 +97,27 @@ inventory:
       - §eFires metal slugs that penetrate
       - §eall targets within 40 blocks.
       - §eDeals 200% damage to Zombies.
-      Unbreakable: true
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
 health: 20.0
 hunger: 20
-exp: 0.0
+exp: 0.2857143
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.1440308
+saturation: 9.0
+exhaustion: 3.4082253
 potion_effect:
   '0':
-    type: SPEED
-    level: 1
-    duration: 198343
-  '1':
     type: NIGHT_VISION
     level: 1
-    duration: 176958
+    duration: 185284

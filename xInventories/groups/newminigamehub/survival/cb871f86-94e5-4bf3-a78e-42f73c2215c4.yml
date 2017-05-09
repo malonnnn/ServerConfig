@@ -1,8 +1,7 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: COMMAND
-    amount: 64
+    type: BRICK
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: SKULL_ITEM
@@ -10,8 +9,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: Emoticon (Yellow)
-      internal: H4sIAAAAAAAAAE2PzW6CQBhFvzZpQkkfo1uSARx+Fi6aUnWIDGUUEHagY2WcoUahis/VByzLLm/OOYurA+jwsjr2Un6ev/eN5Bo8kh28Is83vdqyDceuK2PieY5RI29vYL+yXLP2TexiHfQxOvFz1/DLM2gdv3X9mV90AHjQ4CmrZM/hlw8hKjcHtNuEcjsQZ9zrFZIxESeXtNlQvxOHqJEv3pzl4P9zcVflWBZ2eCjbpK9VhpY2k3zBzK1Kf2iQTqhI71QxFa+jK1VURPlMUFWgeP2FacAaGmQqnn9cC5UOUcBUdN9OqEpwOZ819E5uUZ6YRc5EYYWSiuNAWtPfJ9Pp+AD+AG2GqgkcAQAA
+      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkmGSyksG4l2SAcspVxmV5jh1pnaUNDCU/mIsnRxFl/Od5KjAqjwcjiPQnz2X1UruAKPmMErKxzGSsvRHIutNatyHa0ouamhqjCYZZbMYkwFdRldeT+0/PYMysDvw9jzmwoADwo8JScxcvjlk49o1iCW+aKcsL1wfEAixN11jS/JVLxhG8ul327s3eT+c1fDKV2J3PQbetmPhUzQzowE30Z6KY/feeqLMK5nmhIUzPUP6SKRz1RSb4MCSTv6QZvAqxHpcjPoznMYH3WS4sUlOvH2KDCIueROjHdJ4kYEMm+rTHeX9/AH2ZnCPBgBAAA=
   '5':
     ==: org.bukkit.inventory.ItemStack
     type: SKULL_ITEM
@@ -19,7 +17,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkmGSyksG4l2SAcspVxmV5jh1pnaUNDCU/mIsnRxFl/Od5KjAqjwcjiPQnz2X1UruAKPmMErKxzGSsvRHIutNatyHa0ouamhqjCYZZbMYkwFdRldeT+0/PYMysDvw9jzmwoADwo8JScxcvjlk49o1iCW+aKcsL1wfEAixN11jS/JVLxhG8ul327s3eT+c1fDKV2J3PQbetmPhUzQzowE30Z6KY/feeqLMK5nmhIUzPUP6SKRz1RSb4MCSTv6QZvAqxHpcjPoznMYH3WS4sUlOvH2KDCIueROjHdJ4kYEMm+rTHeX9/AH2ZnCPBgBAAA=
+      internal: H4sIAAAAAAAAAE2Oy06DQBhGf01MkPgYbkmA4VKWKpoO6YBtuc5uKINchtpQqMBT+YiydHnynS85MoAMT8d2FOKz/y5rwSW4xwU86yzXTWRulIIzphhWbis5MjWlcGykM8PYlKUmg7yeLrwfan59BGng0zD2/CoDwJ0EDzETI4dfPnsqTSu1SD1xmrG1cnhURYCbi43P8Zy/YQt36759sXaz8881B5aYIkNeRc/7Me9idYcOgm8P2qmLbr6bTf5SVdSNJtrtNdLhKUj2P1lIjMD9QiR8ranbzsTNDBq2C1nw6nxU2UJrEvqNv1Dh65FOk3eNumQmTVaXqeas9fAH+BKZSRgBAAA=
   '7':
     ==: org.bukkit.inventory.ItemStack
     type: SKULL_ITEM
@@ -27,13 +25,23 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkmG25hZGmvaIaW0lAFmdlyGwDjUpgUtPJWPKO5cnvN9JzkmgAlPx49R6/3ls+m0NOCe1vBMPJ8gXHoWburK8kpCLFI42HLRXy2bEruFCeYyOsvL0MnrIxiDvA3jRV5NALgz4CEt9CjhR04BEnmL6jzQ1UTxkpMj0hFV5xd6SqfyjWLaL3zzircT+ef6Q5H5mrtBK06HsexTtHVjLTexXfXsa6dCj89sFgl3hKIed/jE57rn6t0O1U5FGbPFmt14xr4XhsSqbsNMtEIxO3SYu0soipK4jdYHR6wCHc60a3KbLO/hF19U2VcYAQAA
+      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkm4DS2LLoxoOqQMQoEWdlyGwDBg00Lr9Kl8RGfp4ixOvu8kRwVQ4WU/LJx/nb/bnlMFHnEDr6jR3bVpWRqqzZVm03WplZbTai5ya5daSLeNSgVVjk70PPf08gzKTH/m5UwvKgA8KPCUlXyh8EuFrxfHTm+OPq8FdmRP9joPMTut8JSJ6h07eJR8++bshPvPRXN5QDy3/K6YoqUaM31nxZxuY6Me02vOPuzA9Lucpbc8CUTAopuMHXrFGLBUkORzCFjckzHuw4QM5E6Y5HfJjPBQjMTjnHgpylnMCq/o8GS4bbTZyPfwB6Bk/MsYAQAA
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE2Oy06DQBhGf01MKvEx3JIMw00WLsRLO6SMllJkZkdhCExnakOhCk/lI8rS5ZdzTvIZAAbcbQ+DUh/dV90qsYBrUsF94ImiLOzCRDXGpvPg1Oa+qHzT8SzXdgNfWIFlgDFHJ9H1rTjfwqIXP/3QibMBAFcLuMkKNQj4FWOEeN6gKo9UORJv3ukWqXciTz45ZuP+mXhEz3z15K3H4J/r9sWnq5gdNfy4GfY6Q2s7UWKVWKXeXfgyamNZThRnkmnmxmmouN5NTBJMcdJSvEFMxiPFbKIybJiO7XiKJJ2qlr+Eii4zzeXbgaav3wwnirdRUOfocX4Pf+z7wBsYAQAA
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_PLATE
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkkGClQWLoxUOqQU5c7suMyUwlAbCg30qXxEx527c3K+LzkygAxPYTdx/jl8syOnEtzjGp51WulGxZBSWtpa0XW9VF4MVirMsFRUsoJqlimDLKQzHcYjvTyCNNJ5nAZ6kQHgToKHpOAThR+6uIhkDaozl1cLNkWPQsR93J7X+JQs5Ts2cS/27Zu5W6x/rDEWqcHzlduQ09dU9gnarQJOt4Fa9fGV2JuZOPGcax9d3grGiTUv2iA/jVXiJJ2Xup1vH1SSBr3nBP2+xaofYXWf4puniWzXjR+R3o8Otz/fC12LZehVvIdfV+c97hgBAAA=
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: STEP
@@ -48,7 +56,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Py06DQBiFf01MkPgYbkmGq7DoQsXQIR2wlEuZHZehLQzYtFAKz+UDytLdOfnOtzgigAgvu2bg/PvyU504E+ARl/CKmIVUw9Als0KapMmskjLTLCVZr6pSsYo8MwsRxEU6s0t/YtdnEHp274cLu4oA8CDAU5zxgcEvm1xE90dU7l1eTNhYerhD3Mf1+Q138ZR/YgO3C1+/G5vJ+rfV+yzReaq6R9pth7yN0UYNOFsHctFGN9+J7sQmIwk/mrSNJurgKU2+RjIXMw3TMQ0PM3UC7iVukypY9cID8h2i0Jao3hxpZMZLjmtaF7NnR7pnxxx3slVtV6vlAfwBzVtJYRwBAAA=
+      internal: H4sIAAAAAAAAAE2OTW6DMBgFv1aqRFGP0S0SAQP1IouqqYhRbEpCSOJdgo34sWlEICqcqkcsyy6fZkZ6JoAJL7tmUOqr+y4qJQ14JAJekYsLJII3S0ghLOQEhYVx4Fq5i20/R6LwHGyCOUdX2fWVvD2D0cuffujkzQSABwOesrMaJPzKMbL5sbTFMVL5SPx5pztbxaS+BqTNxssH8Yme+frd34z4n+v154OnTm5U8jYZLjqzN+5WyfV2kev9nU5ZFYdk4quyZpNouCaI66ihdeKxA0VsFanTgXos5JrrT4fXe486kaZpVtJ677IwQSzdzt1pilOCSLvARbJczu/hD32v82gYAQAA
   '11':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
@@ -91,6 +99,22 @@ inventory:
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_CLAY
     damage: 3
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE2OwU6DQBiEf01MkPgYXkkWFhCORlK7pIC0C2X3RmGxwG5tWjDSp/IR3aOHmeTLzCRjApjwtBtnKT8uX10vhQH3pIVnFDQo6DpshZ42120aK2hrbLVI2BjbTef6oQmmHp3FZerF9RGMSfxM80VcTQC4M+ChrOUs4FcsMeLVEbVVLJuF+JrpDsmMDOcXciqXwxvxidL5+tXfLOG/rjfVe08yHB/5KZ8PqkQbvJVivbUbVXwntHASVbjsthrTgffJsJJpVHhMaVGCOC2HJCKY0QTxiDjZPh6ZUyCuYslprNIbw9l7vvAo1ZzjhH72XWWH+j38Abe1HYcYAQAA
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE1OSU+DQBj9NDFB4s/wSsKuHF2QDikglLLMjWUIy0xtWqgOv8kf6fTm5b28LXkygAwPu2mh9PP01Q2USHCLWnhsNFNv69ZQBHSK2Zm2UpmOpmi6ZuutURnkmcggi9GRnOaBnO9BmsnPvJzIWQaAGwnusoouBH4J91Vc9Gpb+LThyBY63ak0QuPxCR0yXr8hGzGRb17sLXf+da25yi1aGn6PD/FSs0zdGgklm0Rr2P4SrK4V6MkYeLFarhmN3l8ZHmkfee53mMccs5DhFOlRul+jPByCdeLhdeP5fSkYe+61Q8PxYxL+0BWaI57DH/qNseEUAQAA
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -98,9 +122,9 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.448
+exhaustion: 3.498
 potion_effect:
   '0':
     type: SPEED
     level: 0
-    duration: 275
+    duration: 337

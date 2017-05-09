@@ -2,11 +2,11 @@ inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_HOE
-    damage: 29
+    damage: 21
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Python§7 ▪ «6»
+      display-name: §7Gauss §c-§7§7 «16»
       ItemFlags: !!set
         HIDE_PLACED_ON: null
         HIDE_ENCHANTS: null
@@ -15,15 +15,7 @@ inventory:
         HIDE_ATTRIBUTES: null
         HIDE_DESTROYS: null
       Unbreakable: true
-      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      pages:
-      - 'Notes                                                                                                               '
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
@@ -33,18 +25,9 @@ inventory:
       display-name: Message Book
       pages:
       - ' '
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      pages:
-      - ' a'
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 2
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -55,20 +38,10 @@ inventory:
         RED: 0
         BLUE: 255
         GREEN: 8
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 2
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -85,5 +58,5 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.2250214
+saturation: 2.0
+exhaustion: 0.12000704
