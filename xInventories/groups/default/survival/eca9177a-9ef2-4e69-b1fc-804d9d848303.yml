@@ -1,14 +1,14 @@
 inventory:
-  '0':
+  '28':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -37,13 +37,21 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.453019
+exhaustion: 2.692073
 potion_effect:
   '0':
+    type: FAST_DIGGING
+    level: 3
+    duration: 197567
+  '1':
     type: DAMAGE_RESISTANCE
     level: 5
-    duration: 199457
-  '1':
+    duration: 197955
+  '2':
+    type: JUMP
+    level: 5
+    duration: 197709
+  '3':
     type: SPEED
-    level: 3
-    duration: 199823
+    level: 8
+    duration: 197824

@@ -38,6 +38,14 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    lightswitch:
+        min: {x: 10.0, y: 76.0, z: 50.0}
+        max: {x: 11.0, y: 76.0, z: 50.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     evidenceroom:
         parent: police
         min: {x: -14.0, y: 75.0, z: 22.0}
@@ -74,8 +82,8 @@ regions:
     police:
         members:
             unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e, 0130299a-4489-429d-b4eb-68643a4c6ac8,
-                869b4227-b51e-452e-adbd-48759a6848dd, c8b88131-52d4-4af0-9593-ddcdb3d56058,
-                ca7e8de8-30f0-43c5-9701-982c10ea9459, a8185de3-b053-4aca-9eb6-d98728e476ad]
+                c8b88131-52d4-4af0-9593-ddcdb3d56058, ca7e8de8-30f0-43c5-9701-982c10ea9459,
+                a8185de3-b053-4aca-9eb6-d98728e476ad, 869b4227-b51e-452e-adbd-48759a6848dd]
         flags: {}
         owners: {}
         type: global
@@ -85,7 +93,7 @@ regions:
         min: {x: 5.0, y: 75.0, z: 55.0}
         max: {x: 10.0, y: 76.0, z: 55.0}
         members: {}
-        flags: {greeting: '"Welcome to the Server Defence Force"'}
+        flags: {greeting: Server Defence Force}
         owners: {}
         type: cuboid
         priority: 1
@@ -133,6 +141,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
+    gym:
+        parent: sergeants
+        min: {x: -12.0, y: 63.0, z: -50.0}
+        max: {x: 2.0, y: 70.0, z: 20.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     restricteddoors:
         parent: sergeants
         members: {}

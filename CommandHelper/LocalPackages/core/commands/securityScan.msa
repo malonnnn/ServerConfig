@@ -1,6 +1,7 @@
-securityscan:/securityscan $player $x $y $z = >>>
+securityscan:/securityscan $player $warpname = >>>
 
     @player = $player
+    @warpName = $warpname
 
     assign(@cooldown,6)
     
@@ -11,17 +12,12 @@ securityscan:/securityscan $player $x $y $z = >>>
     )
     export(@player."lastUsedSecurityDoor", time() / 1000)
 
-    @redstoneBlockLoc = array($x,$y,$z,pworld(@player))
-
     tmsg(@player,color(red).'Bioscan in progress...please remain still.')
 
     @scanApproved = set_timeout(3000,closure(
         if(has_permission(@player,'is.officer')){
-            set_block_at(@redstoneBlockLoc,152)
             tmsg(@player,color(green).'Access granted.')
-            set_timeout(2000,closure(
-                set_block_at(@redstoneBlockLoc,0)
-            ))
+            sudo('/warp '.@warpName.' '.@player)
         }else{
             tmsg(@player,color(dark_red).'Access denied.')
         }

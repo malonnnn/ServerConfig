@@ -4,40 +4,44 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.6346402
+saturation: 4.0
+exhaustion: 0.26200756
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_PLATE
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Y§ao§2d§aa's §2Lig§ahts§2aber
-      enchants:
-        DAMAGE_ALL: 100
-        FIRE_ASPECT: 2
+    type: ARROW
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_HOE
-    damage: 1
+    type: DIAMOND_SPADE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bWand
-      lore:
-      - §2§oGod_Doesnt_Exist's Wand
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
-      internal: H4sIAAAAAAAAAD2PQU7CUBCGf0LBlkRjcKkLE9nWBNAiGyMRoiYiC8LKRfPaTvVF3nulHQR3bryCHsCtCw/gDUw8kCtLjc5iMpl/5p9vakAN1kLoyIbNpJKpYILzYCIRmzQkGxWz0JRi88xEft9QptkfLGXGFVhKaHH6DFjYWJU+S0UZC5UApevPZXeUexbbvozQOOrEQTv0Qvcwjj33IMhT0G55brfbCr1mu0Oi2Spj7Z7STBoNoAIH9R5zKoM509BEMpa5WMulkgV7MrnoD03G33vHO73Hc7LgrFqXJDJ+3/74enl6e62i2lNmrvmkgSJsWOOpYdhKSH1bvL3+f+JKKMLWDeXEMtwXzCK8GydEURnOKKFU8C/YyqWYrQ9mc5ko0rz7hwf8AM3gU6NTAQAA
+      display-name: Spleef Shovel
+      enchants:
+        DIG_SPEED: 5
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
+    type: WOOD
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 152784

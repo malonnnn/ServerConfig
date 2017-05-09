@@ -1,0 +1,14 @@
+killnear:/killnear $radius = >>>
+
+    @radius = $radius
+    @ploc = get_command_block()
+    @plrs = players_in_radius(@ploc,@radius)
+
+    foreach(@plr in @plrs){
+        if(!has_permission(@plr,'is.officer')){
+            pkill(@plr)
+            broadcast(@plr.color(red).' was standing too cloose to the BioScan door!')
+        }
+    }
+
+<<<

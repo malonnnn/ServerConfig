@@ -1,45 +1,204 @@
-inventory:
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Python§7 ▪ «6»
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_LEGGINGS
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      color:
-        ==: Color
-        RED: 25
-        BLUE: 25
-        GREEN: 25
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      display-name: Bullet Proof Vest (Sergeant)
-      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
-      color:
-        ==: Color
-        RED: 0
-        BLUE: 0
-        GREEN: 0
+inventory: {}
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 1.0
-exhaustion: 2.0210056
-armor_contents:
-  chestplate:
+saturation: 0.0
+exhaustion: 1.2810372
+armor_contents: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Leggings
+      enchants:
+        PROTECTION_PROJECTILE: 4
+      repair-cost: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Chestplate
+      enchants:
+        PROTECTION_FIRE: 4
+      repair-cost: 1
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+      repair-cost: 3
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ANVIL
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Crown
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+      repair-cost: 1
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Sword
+      enchants:
+        BINDING_CURSE: 1
+        DAMAGE_ARTHROPODS: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        SWEEPING: 3
+        DURABILITY: 3
+      repair-cost: 63
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        DAMAGE_ALL: 5
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Complaint
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        PROTECTION_PROJECTILE: 4
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: END_CRYSTAL
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    amount: 16
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: READ ME *Notice*
+      author: xSp4rkz
+      pages:
+      - |-
+        NOTICE§0
+        §0======§0
+        §0
+        §0ATTN: Sergeants, Officers§0
+        §0
+        §0RE: Complaints§0
+        §0
+        §0I received a complaint from GDE about last night (May 5) regarding Officers jailing a lot of people.
+      - "I take responsibility for not being clear as to how I want you to perform\
+        \ your duties. Im not singling anyone out. §0\n§0\n§0I just want the following\
+        \ to take place moving forward.§0\n§0\n§0(1) You MUST provide proof. When\
+        \ you arrest someone go to the "
+      - |
+        supply cabinet, grab a notebook, and fill it out. I want to know why you arrested someone, what they did wrong, what rule they broke, how many warnings they were given and I want proof as to what they did.§0
+        §0
+        §0What is proof?:§0
+      - |-
+        So we are clear: proof is anything I can verify. Screenshots are great and can be uploaded online. Copy the URL of the photo and paste it into your notes so I can see it.§0
+        §0
+        §0If something can't be screenshotted like hacking or what not. Then I need witn
+      - |-
+        Make sure to include a list of players that witnessed the event. 1 is fine, more is better.§0
+        §0
+        §0Have them attend the Police Office and give them a notebook in the interview room.§0
+        §0
+        §0Have them write a quick statement verifying your accusation.
+      - |-
+        Have them sign and close it. Submit it with your evidence. §0
+        §0
+        §0So next time GDE asks me why a bunch of people were jailed I can go to him with proof and tell him why.§0
+        §0
+        §0(2) Sergeants are no longer excempt from the rules and they cannot make up rul
+      - "anymore. Right now there are only 3 rules. It is every officers duty to know\
+        \ what they are. Don't know? Then visit the rules room outside the Police\
+        \ Office.§0\n§0\n§0Only rules found here can be enforced. If you have a suggestion\
+        \ for a rule then submit tell "
+      - "Remember when you jail someone they are out of the game for 30 minutes, probably\
+        \ longer because they are stupid and will prolong their jail visit unneccassarily.§\
+        0\n§0\n§0(3) If GDE tells you to Jail someone then go ahead and Arrest them.\
+        \ The only thing you "
+      - |-
+        fill out is that you arrested someone and GDE told you to. Doesn't have to be a rule. If he says jail them, jail them.§0
+        §0
+        §0(4) If I am unable to find proof then I will start punishing the Officers through fining them money, possible jail sentence, or fi
+      - |-
+        (5) Warnings: Personally I think 3 is more than enough. I'm good with 1 warning. 1-3 is fair. Use your own discretion.§0
+        §0
+        §0You don't have to give them 3.§0
+        §0
+        §0(6) Don't act like an idiot in the office.
+      - "(7) Don't go into areas your not supposed to go.§0\n§0\n§0(8) Do not allow\
+        \ non members of the Police service into the station.§0\n§0\n§0(9) If your\
+        \ recommending someone for hire, I need their app dropped in my "
+      - |-
+        mailbox and I need a quick note with your blessing in my mailbox.§0
+        §0
+        §0If the application has the questions missing and just the answers then its as good as garbage and I wont read it.§0
+        §0
+        §0I don't need everyone in the server to work for us.
+      - |-
+        I need people that play a lot, are respectable, on at different times, and can enforce rules respectfully. §0
+        §0
+        §0Its a real role. §0
+        §0
+        §0Thanks for all your hard work thus far.§0
+        §0
+        §0-Chief
+      generation: 1
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 29
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Python§7 ▪ «6»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        DAMAGE_UNDEAD: 5
+  '13':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
     meta:
@@ -52,7 +211,7 @@ armor_contents:
         RED: 0
         BLUE: 0
         GREEN: 0
-  leggings:
+  '14':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_LEGGINGS
     meta:

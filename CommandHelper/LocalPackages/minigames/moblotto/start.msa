@@ -33,6 +33,9 @@ moblottostart:/moblottostartpart2 $type $amt $x $y $z $world = >>>
     @plrs = all_players(@world)
 
     foreach(@plr in @plrs){
+        if(pinfo(@plr)[5] <= 0.0){
+            continue()
+        }
         export(@plr.'activeInMobLottery',true)
         try(
         bind(player_death,array(id: @plr.'moblottodeath'),associative_array('player':@plr),@e,@plr){

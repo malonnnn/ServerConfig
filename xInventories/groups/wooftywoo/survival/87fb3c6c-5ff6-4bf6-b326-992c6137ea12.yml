@@ -5,4 +5,12 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.0
+exhaustion: 0.15
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_TORCH_ON
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARPET
+    damage: 15

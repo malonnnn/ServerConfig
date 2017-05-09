@@ -2,11 +2,11 @@ inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_HOE
-    damage: 29
+    damage: 21
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Python§7 ▪ «6»
+      display-name: §7Gauss §c-§7§7 «16»
       ItemFlags: !!set
         HIDE_PLACED_ON: null
         HIDE_ENCHANTS: null
@@ -15,27 +15,29 @@ inventory:
         HIDE_ATTRIBUTES: null
         HIDE_DESTROYS: null
       Unbreakable: true
-      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      display-name: Bullet Proof Vest (Officer)
-      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
-      color:
-        ==: Color
-        RED: 0
-        BLUE: 255
-        GREEN: 8
+    type: GOLD_INGOT
+    amount: 64
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
     meta:
       ==: ItemMeta
       meta-type: BOOK
-      display-name: Complaint
+      display-name: Message Book
+      pages:
+      - ' '
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -43,5 +45,5 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 3.9030073
+saturation: 0.0
+exhaustion: 3.6180255

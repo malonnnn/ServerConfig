@@ -4,6 +4,11 @@ flame:/flame $plr = >>>
     @vic = $plr
     @vic = player(@vic)
 
+    if(has_permission(@vic,'is.criminal')){
+        tmsg(@plr,color(red).'Sorry, they are in jail!')
+        die()
+    }
+
     assign(@cooldown, 10)
     
     assign(@lastUsedFlame, import(@plr."lastUsedFlame"))

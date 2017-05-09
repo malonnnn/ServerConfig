@@ -1,11 +1,11 @@
-health: 23.16666603088379
+health: 10.424304962158203
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.262
+exhaustion: 0.4259987
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -40,8 +40,26 @@ inventory:
       - §eFires metal slugs that penetrate
       - §eall targets within 40 blocks.
       - §eDeals 200% damage to Zombies.
+      Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 37
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Hunting§7 ۔ «1»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NzwoBURjFj0y6Q1LiNaxtJ0rKnwWz1jXz4au59+rOh2LrWSw9As/iTZhJls7u/Dr9Th1QUDM6Lb3mDK2BZ+FEZ6uy5yHakYjn9UFo6lLeMPm8DqASQMXxeDh1uaBMox8gLNCE9Jc1b48aapFxByvP6/k1uncuCsEicwJlNNudtqlC83cx04bQ3ZIlz0nPuCMZsrLYE6VVhPM9eS3sbOH+eP6sgTdMqU5M2QAAAA==
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 2
-    duration: 199457
+    duration: 198367

@@ -1,10 +1,33 @@
-health: 20.0
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.2350082
-inventory: {}
+exhaustion: 0.19026487
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Mephisto's §cSword
+      enchants:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cAstral §fBlast§f «×»
+      Unbreakable: true
 armor_contents: {}
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 196031
