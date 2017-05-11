@@ -5,10 +5,11 @@ bind(world_changed, null, null, @event,
     @to = @event['to']
     @from = @event['from']
     @class = pgroup()[0]
-    
-    runas(~console,"/fly ".@player." off")
-    runas(~console,"/effect ".@player." invisibility 0")
-    runas(~console,"/sudo ".@player." c:/fixskin")
+
+    set_timeout(3000,closure(    
+        runas(~console,"/effect ".@player." invisibility 0")
+        runas(~console,"/sudo ".@player." c:/fixskin")
+    ))
 
     if(@to == 'greenfield' && @class == 'mortal'){
         runas(~console,'/effect '.@player." clear")
