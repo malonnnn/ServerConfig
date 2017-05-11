@@ -16,26 +16,11 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
         set_block_at(@loc,0)
     ))
     foreach(@plr in @plrs){
-        sudo('/heal '.@plr)
-        sudo('/warp moblotterystart '.@plr)
-    }
-
-<<<
-
-moblottostart:/moblottostartpart2 $type $amt $x $y $z $world = >>>
-
-    @type = $type
-    @amt = $amt
-    @x = $x
-    @y = $y
-    @z = $z
-    @world = $world
-    @plrs = all_players(@world)
-
-    foreach(@plr in @plrs){
         if(pinfo(@plr)[5] <= 0.0){
             continue()
         }
+        sudo('/heal '.@plr)
+        sudo('/warp moblotterystart '.@plr)
         export(@plr.'activeInMobLottery',true)
         try(
         bind(player_death,array(id: @plr.'moblottodeath'),associative_array('player':@plr),@e,@plr){
@@ -57,6 +42,18 @@ moblottostart:/moblottostartpart2 $type $amt $x $y $z $world = >>>
             unbind(@plr.'moblottoworldchanged')
         },)
     }
+
+<<<
+
+moblottostart:/moblottostartpart2 $type $amt $x $y $z $world = >>>
+
+    @type = $type
+    @amt = $amt
+    @x = $x
+    @y = $y
+    @z = $z
+    @world = $world
+    @plrs = all_players(@world)
 
     runas(~console,'/mm mob killall')
     for(@i = 0,@i < @amt, @i++){
