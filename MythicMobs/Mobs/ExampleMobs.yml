@@ -27,6 +27,31 @@ WitherLotto:
     ThreatTable: true
   Skills:
   - skill{s=LottoReset;} ~onTimer:100
+SpiderLotto:
+  Type: SPIDER
+  Display: '&2Spider Lotto'
+  Health: 9999
+  Damage: 1
+  Equipment:
+    - stone_button:4
+  Options:
+    MovementSpeed: 0.4
+    AttackSpeed: 5.0
+    Collidable: false
+    NoDamageTicks: 0
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    FollowRange: 50
+    Angry: true
+  Modules:
+    ThreatTable: true
+  Skills:
+      #  - shoot{type=ARROW,velocity=5,pav=false} @nearestPlayer{r=50} ~onSpawn 1
+      #  - shoot{type=ARROW,velocity=5,pav=false} @nearestPlayer{r=50} ~onAttack 1
+  - skill{s=LottoReset;} ~onTimer:100
+  - potion{type=INVISIBILITY;duration=99999;level=1} @self ~onSpawn
 SkeleLotto:
   Type: SKELETON
   Display: '&2Skele Lotto'

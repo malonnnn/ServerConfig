@@ -63,8 +63,8 @@ bind(player_join,null,null,@event){
         }
     }
 
-    if(has_permission(@plr,'quarantine.onjoin')){
-        runas(~console,'/runalias /quarantine '.@plr)
+    if(has_permission(@plr,'arrest.onjoin')){
+        runas(~console,'/runalias /arrest '.@plr)
     }
 
     set_timeout(5000, closure(
