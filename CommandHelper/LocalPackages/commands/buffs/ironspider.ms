@@ -14,20 +14,9 @@
              'op': 'false', 
              'speech': "With great power comes great... ooo look at this cool suit!", 
              'powers': array( 
-                 "/buff", 
                  "/carryplayer", 
-                 "/dismountplayer", 
-                 "/jump 0-7", 
-                 "/run 0-4",  
-                 "/web", 
-                 "/websling" 
+                 "/dismountplayer"
              ), 
              'buffs': array( 
-                 "/effect ". @plr ." 5 9999 5 true", 
-                 "/effect ". @plr ." 10 9999 1 true", 
-                 "/effect ". @plr ." 21 9999 9 true", 
-                 "/give ". @plr ." minecraft:web 64", 
-                 "/shot give ". @plr ." webshot",
-                 "/shot give ". @plr ." ironmanshomingmissile"
              ) 
          ) 
