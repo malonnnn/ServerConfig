@@ -4,6 +4,7 @@ lottoreset:/lottoreset = >>>
 
     @activeAmt = 0
     @plrName = ''
+    @numPlayers = import('mobLotteryNumPlayers')
     foreach(@plr in @plrs){
         if(import(@plr.'activeInMobLottery') ==  true){
             @activeAmt++
@@ -16,6 +17,12 @@ lottoreset:/lottoreset = >>>
         }
         broadcast(color(green).@plrName.' wins Mob Lottery!')
         runas(~console,'/mm mob killall')
+        if(@numPlayers > 1){
+            @numPlayers--
+            @payAmt = 50 * @numPlayers
+            acc_add(@plrName,@payAmt)
+            broadcast(@plrName.color(red).' won $'.color(green).@payAmt.color(red).' in Mob Lottery!')
+        }
     }
     
 
