@@ -1,44 +1,134 @@
 inventory:
-  '0':
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4R§8e§4d H§8oo§4d's Grappling Hook
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
-  '1':
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
+  '3':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 5
-    amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Gr§8e§2en Lant§8e§2rn Ring
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ▪ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §ePython §l/§e Knife§e ▪ «×»
+      lore:
+      - §eRevolver with high power.
+      - §eLeft click to melee enemies
+      - §ewith the tactical knife.
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_COMPARATOR
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      blockMaterial: REDSTONE_COMPARATOR
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK_CHARGE
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4R§8e§4d H§8oo§4d's Glide Wings
       enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-health: 37.0
+        DURABILITY: 3
+        MENDING: 1
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.2200012
+saturation: 8.0
+exhaustion: 2.619023
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4R§8e§4d H§8oo§4d's Glide Wings
+      enchants:
+        DURABILITY: 3
+        MENDING: 1
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 199654
+    type: FAST_DIGGING
+    level: 3
+    duration: 197966
   '1':
-    type: INCREASE_DAMAGE
-    level: 15
-    duration: 199654
+    type: JUMP
+    level: 3
+    duration: 197909
   '2':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 196685
+  '3':
     type: HEALTH_BOOST
-    level: 9
-    duration: 199654
+    level: 4
+    duration: 196685
+  '4':
+    type: SPEED
+    level: 3
+    duration: 197935
