@@ -19,7 +19,7 @@
                   "/cast forcefield",
                   "/cast telekinisis",
                   "/hover on",
-                  "/hover off,
+                  "/hover off",
                   "/msg <playername>"                 
               ),  
               'buffs': array(  
