@@ -15,6 +15,6 @@
                 "/dismountplayer"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:cyan_carpet 2 16:10 name:&9K&bi&1ta&9na&b's_&bBla&1ded_Fa&9ns"                
+                "/give ". @plr ." minecraft:carpet 2 9 16:10 name:&9K&bi&1ta&9na&b's_&bBla&1ded_Fa&9ns"                
             )
 )
