@@ -3,7 +3,7 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
     @player = $plr
     @loc = array($x,$y,$z,$world)
     @plrs = all_players(@loc[3])
-
+    @numPlayers = array_size(@plrs)
     foreach(@plr in @plrs){
         if(import(@plr.'activeInMobLottery') ==  true){
             tmsg(@player,color(red).@plr.' is still alive in Mob Lotto!')
@@ -17,6 +17,7 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
     ))
     foreach(@plr in @plrs){
         if(pinfo(@plr)[5] <= 0.0){
+            @numPlayers--
             continue()
         }
         sudo('/heal '.@plr)
@@ -42,6 +43,7 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
             unbind(@plr.'moblottoworldchanged')
         },)
     }
+    export('mobLotteryNumPlayers',@numPlayers)
 
 <<<
 
