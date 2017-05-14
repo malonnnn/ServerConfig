@@ -23,7 +23,6 @@
                   "/msg <playername>"                 
               ),  
               'buffs': array(  
-                  "/shot give ". @plr ." psychicblast"                 
               )  
           )  
  

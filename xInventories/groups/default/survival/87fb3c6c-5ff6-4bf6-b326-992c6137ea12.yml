@@ -5,14 +5,34 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.8090241
+exhaustion: 2.3680098
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
+      meta-type: POTION
+      display-name: §2Ra's §eal §2Ghul §e§lD§a§lN§4§lA
+      lore:
+      - rasalghul
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
 ender_chest: {}

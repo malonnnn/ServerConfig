@@ -1,79 +1,55 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 93
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 8
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: RED_NETHER_BRICK
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: NETHER_BRICK_STAIRS
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 21
+    type: BOOK_AND_QUILL
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «16»
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
-  '6':
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '8':
     ==: org.bukkit.inventory.ItemStack
-    type: OBSIDIAN
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-    amount: 60
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 46
+    type: WRITTEN_BOOK
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        ARROW_DAMAGE: 1
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARMOR_STAND
-    amount: 2
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      display-name: Bullet Proof Vest (Officer)
-      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
-      color:
-        ==: Color
-        RED: 0
-        BLUE: 255
-        GREEN: 8
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: MAGMA
+      meta-type: BOOK_SIGNED
+      title: NEW EDITION!
+      author: ImUnicornRainbow
+      pages:
+      - |2
+         New Updates!!!§0
+        §0
+        §0/arrest is now different.§0
+        §0
+        §0The new command is /arrest (player) (reason)§0
+        §0If you do not put the reason it will say Unknown Command!§0
+        §0
+      - |-
+        There is also /warn (player) (reason) that will appear in chat to the public to see.  Once they are warned the player will have to visit /warp rules to read the rules.§0
+        §0
+        §0Every time a player is warned or arrest, it goes inside the CRIMINAL DATABASE.
+      - |-
+        An officer can do /backroundcheck (player) to see their warnings and arrests with the time and date, to see their criminal record.§0
+        §0
+        §0An officer can also do /checkfingerprints (player) and everytime a player gets arrested or warned their IP gets logge
+      - |-
+        d.  §0
+        §0you can use /checkfingerprints to find people's alts :o§0
+        §0It only works if both alts have been entered in the criminal database.
+      - Now Sergeants can do /officerhistory (player) to find the warnings and arrests given by an officer.
+      - |-
+        HAVE A NICE DAY!!!§0
+        §0THANK YOU FOR READING THIS NOTICE!
+      generation: 0
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.24632654
+saturation: 3.0
+exhaustion: 2.981006
 armor_contents: {}
 ender_chest:
   '0':

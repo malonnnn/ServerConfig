@@ -1,43 +1,147 @@
 inventory:
-  '0':
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-      Unbreakable: true
+      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      enchants:
+        DAMAGE_ALL: 20
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      enchants:
+        DAMAGE_ALL: 20
   '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: creeper
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
+      enchants:
+        DAMAGE_ALL: 20
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      enchants:
+        DAMAGE_ALL: 20
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: creeper
+  '6':
     ==: org.bukkit.inventory.ItemStack
     type: LEASH
     amount: 2
-health: 60.0
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
+      enchants:
+        DAMAGE_ALL: 20
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bD§3a§br§3k §bR§3e§bp§3u§bl§3s§be§3r
+      enchants:
+        DAMAGE_ALL: 20
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.33500576
-armor_contents: {}
+saturation: 5.0
+exhaustion: 1.5339997
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_BLOCK
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 2
-    duration: 198873
+    type: FAST_DIGGING
+    level: 10
+    duration: 197564
   '1':
-    type: INCREASE_DAMAGE
-    level: 6
-    duration: 198873
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 197437
   '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 198873
+    type: JUMP
+    level: 5
+    duration: 197528
+  '3':
+    type: SPEED
+    level: 255
+    duration: 197497

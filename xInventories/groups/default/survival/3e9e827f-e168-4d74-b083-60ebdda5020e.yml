@@ -1,5 +1,5 @@
 inventory:
-  '36':
+  '0':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -9,30 +9,6 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
-      Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
 health: 60.0
 hunger: 20
 exp: 0.0
@@ -40,28 +16,22 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.95001
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+exhaustion: 3.1400013
+armor_contents: {}
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 197490
-  '1':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 197490
+    level: 5
+    duration: 196772
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 196772
   '2':
     type: HEALTH_BOOST
     level: 9
-    duration: 197490
+    duration: 196772
+  '3':
+    type: SPEED
+    level: 10
+    duration: 198570
