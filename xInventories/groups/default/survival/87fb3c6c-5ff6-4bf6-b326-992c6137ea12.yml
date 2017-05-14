@@ -5,7 +5,7 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.3680098
+exhaustion: 3.9650285
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -35,4 +35,26 @@ inventory:
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: SEA_LANTERN
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4Fl§ea§4sh§8(WallyW§8) §e§lD§a§lN§4§lA
+      lore:
+      - flashwallywest
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 ender_chest: {}

@@ -5,8 +5,8 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 11.6
-exhaustion: 3.7870033
+saturation: 0.0
+exhaustion: 0.4510032
 ender_chest:
   '7':
     ==: org.bukkit.inventory.ItemStack
@@ -99,17 +99,14 @@ ender_chest:
       generation: 1
   '11':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
+    type: DIAMOND_CHESTPLATE
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        DURABILITY: 3
-      repair-cost: 31
+        PROTECTION_EXPLOSIONS: 4
+      repair-cost: 1
   '13':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
@@ -138,20 +135,6 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: COOKED_BEEF
     amount: 64
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        DAMAGE_ALL: 5
-        DURABILITY: 3
-        ARROW_DAMAGE: 5
-        ARROW_KNOCKBACK: 2
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-      repair-cost: 63
   '18':
     ==: org.bukkit.inventory.ItemStack
     type: WOOD
@@ -212,7 +195,28 @@ ender_chest:
       repair-cost: 3
   '5':
     ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+      repair-cost: 1
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FIRE: 4
+      repair-cost: 1
+  '12':
+    ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_BOOTS
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -220,18 +224,10 @@ ender_chest:
         PROTECTION_FALL: 4
         FROST_WALKER: 2
       repair-cost: 3
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-      repair-cost: 1
-  '8':
+  '15':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
+    damage: 5
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -243,26 +239,25 @@ ender_chest:
         ARROW_FIRE: 1
         ARROW_INFINITE: 1
       repair-cost: 63
-  '12':
+  '20':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
+    type: DIAMOND_SWORD
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       enchants:
-        PROTECTION_EXPLOSIONS: 4
-      repair-cost: 1
-  '15':
+        BINDING_CURSE: 1
+        DAMAGE_ARTHROPODS: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        DURABILITY: 3
+      repair-cost: 31
+  '22':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_FIRE: 4
-      repair-cost: 1
-  '19':
+    type: FEATHER
+    amount: 2
+  '23':
     ==: org.bukkit.inventory.ItemStack
-    type: SPECTRAL_ARROW
-    amount: 64
+    type: BONE
 armor_contents: {}
