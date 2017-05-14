@@ -1,31 +1,107 @@
-inventory: {}
-health: 60.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+      Unbreakable: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bWa§3ter §3Sh§bot§b «×»
+      Unbreakable: true
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bKnife
+      enchants:
+        KNOCKBACK: 2
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 47
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bSword
+      enchants:
+        KNOCKBACK: 2
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 19
+exp: 0.44444442
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.1670003
+exhaustion: 0.35002816
 armor_contents: {}
 potion_effect:
   '0':
     type: REGENERATION
-    level: 4
-    duration: 198963
+    level: 3
+    duration: 154041
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 198963
+    type: JUMP
+    level: 5
+    duration: 154596
   '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 198963
-  '3':
     type: INCREASE_DAMAGE
-    level: 12
-    duration: 198963
+    level: 20
+    duration: 154041
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 154041
   '4':
     type: HEALTH_BOOST
-    level: 9
-    duration: 198963
+    level: 19
+    duration: 154041
+  '5':
+    type: SPEED
+    level: 10
+    duration: 163307
+  '6':
+    type: NIGHT_VISION
+    level: 1
+    duration: 154041

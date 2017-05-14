@@ -5,7 +5,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
+      display-name: §fWeb-Shot§f «×»
       Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
@@ -13,95 +13,46 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
+      display-name: §bWa§3ter §3Sh§bot§b «×»
       Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eType 95§e ▪ «×»
-      lore:
-      - §eSemi-automatic with three round burst fire.
-      - §eGhast Tears are required for reloads.
-      Unbreakable: true
+      display-name: §3R§9i§3p§9t§3i§9d§3e
+      enchants:
+        KNOCKBACK: 2
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: LEATHER_HELMET
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eOlympia§e ▪ «×»
-      lore:
-      - §eDouble-barreled shotgun.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
-      Unbreakable: true
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-      Unbreakable: true
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eGauss Shotgun§e ▪ «×»
-      lore:
-      - §eAdvanced pump-action shotgun.
-      - §eFires metal slugs that penetrate
-      - §eall targets within 40 blocks.
-      - §eDeals 200% damage to Zombies.
-      Unbreakable: true
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-      Unbreakable: true
-health: 40.0
-hunger: 20
+      meta-type: LEATHER_ARMOR
+      display-name: §3P§9e§3r§9c§3y§9§3'§3s §9Water §3Helmet
+      enchants:
+        OXYGEN: 50
+        WATER_WORKER: 1
+        DEPTH_STRIDER: 3
+health: 20.0
+hunger: 10
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.2156866
+exhaustion: 0.4229945
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 195770
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 195770
-  '2':
     type: INCREASE_DAMAGE
-    level: 3
-    duration: 195770
-  '3':
+    level: 12
+    duration: 197325
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 197325
+  '2':
     type: HEALTH_BOOST
     level: 4
-    duration: 195770
+    duration: 197325
