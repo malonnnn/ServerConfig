@@ -1,62 +1,71 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    amount: 2
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §1B§9l§7u§8e §1R§9a§7n§8g§1e§9r's §1Daggers
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
+      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9H§by§9dr§1o §9B§bo§9w§9 «×»
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
       Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 2
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: �7Normal Arrow
-health: 40.0
+      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+      Unbreakable: true
+health: 42.83333206176758
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.724014
+exhaustion: 1.6340055
 armor_contents: {}
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 20
-    duration: 192420
+    type: WATER_BREATHING
+    level: 1
+    duration: 196305
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 191375
-  '2':
-    type: JUMP
-    level: 10
-    duration: 192278
-  '3':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 191375
-  '4':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 191375
-  '5':
+    level: 6
+    duration: 196305
+  '2':
     type: SPEED
+    level: 8
+    duration: 195758
+  '3':
+    type: DAMAGE_RESISTANCE
     level: 2
-    duration: 192051
+    duration: 196305
+  '4':
+    type: JUMP
+    level: 20
+    duration: 195396
+  '5':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 196305
+  '6':
+    type: FAST_DIGGING
+    level: 30
+    duration: 195891
+  '7':
+    type: NIGHT_VISION
+    level: 1
+    duration: 196305
+  '8':
+    type: INVISIBILITY
+    level: 1
+    duration: 196048
