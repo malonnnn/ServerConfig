@@ -22,7 +22,9 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/confuse <player>",
-                "/haste 0-2"
+                "/haste 0-2",
+                "/invis",
+                "/vis"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
