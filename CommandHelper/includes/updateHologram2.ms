@@ -17,7 +17,8 @@ proc(_updateHologram2, @class, @isOp, @npcID, @holoLoc,
             set_block_at(@x,@y - 1,@z,'35:5',@world)
         }
     }else{
-        runas(~console,"/npc despawn")
+        runas(~console,"/template apply remove")
+        runas(~console,"/npc moveto --x @x --y @y --z @z")
         set_block_at(@x,@y - 1,@z,'35:5',@world)
     }
     
