@@ -18,7 +18,6 @@
                  "/dismountplayer",
                  "/websling",
                  "/web"
-                 
              ), 
              'buffs': array( 
                  "/shot give ". @plr ." webshot",
