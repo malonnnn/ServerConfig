@@ -1,32 +1,33 @@
-health: 40.0
-hunger: 9
+health: 60.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5149064
+exhaustion: 1.312295
 inventory:
-  '28':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: WEB
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      display-name: §fWeb-Shot§f «×»
 potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 181849
+    duration: 199173
   '1':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 181849
+    level: 5
+    duration: 199173
   '2':
     type: HEALTH_BOOST
-    level: 4
-    duration: 181849
+    level: 9
+    duration: 199173
