@@ -15,8 +15,13 @@
              'speech': "With great power comes great... ooo look at this cool suit!", 
              'powers': array( 
                  "/carryplayer", 
-                 "/dismountplayer"
+                 "/dismountplayer",
+                 "/websling",
+                 "/web"
              ), 
              'buffs': array( 
+                 "/shot give ". @plr ." webshot",
+                 "/shot give ". @plr ." quantumlaser",
+                 "/shot give ". @plr ." ironmanshomingmissile"
              ) 
          ) 
