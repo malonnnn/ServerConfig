@@ -10,11 +10,18 @@ inventory:
       - ' '
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
+    type: GOLD_HOE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «1»
+      display-name: §eFlame Thrower§e «×»
+      lore:
+      - §eFlame Thrower
+      - §eCook bacon!.
+      Unbreakable: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_NETHER_BRICK
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -22,5 +29,5 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.9830107
+saturation: 5.0
+exhaustion: 0.0

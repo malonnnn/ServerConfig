@@ -1,80 +1,13 @@
 inventory: {}
 health: 20.0
 hunger: 20
-exp: 0.71428573
+exp: 0.0
 exp-level: 0
-remainingAir: 251
+remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.3890996
+saturation: 11.6
+exhaustion: 3.7870033
 ender_chest:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_LEGGINGS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Leggings
-      enchants:
-        PROTECTION_PROJECTILE: 4
-      repair-cost: 1
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Chestplate
-      enchants:
-        PROTECTION_FIRE: 4
-      repair-cost: 1
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Boots
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-      repair-cost: 3
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: ANVIL
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HELMET
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Crown
-      enchants:
-        PROTECTION_EXPLOSIONS: 4
-      repair-cost: 1
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Sword
-      enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        SWEEPING: 3
-        DURABILITY: 3
-      repair-cost: 63
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DAMAGE_ALL: 5
   '7':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
@@ -82,14 +15,6 @@ ender_chest:
       ==: ItemMeta
       meta-type: BOOK
       display-name: Complaint
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        PROTECTION_PROJECTILE: 4
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: END_CRYSTAL
@@ -174,29 +99,17 @@ ender_chest:
       generation: 1
   '11':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 29
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Python§7 ▪ «6»
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        DAMAGE_UNDEAD: 5
+      enchants:
+        BINDING_CURSE: 1
+        DAMAGE_ARTHROPODS: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        DURABILITY: 3
+      repair-cost: 31
   '13':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
@@ -221,3 +134,135 @@ ender_chest:
         RED: 25
         BLUE: 25
         GREEN: 25
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+        ARROW_DAMAGE: 5
+        ARROW_KNOCKBACK: 2
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+      repair-cost: 63
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 25
+        BLUE: 25
+        GREEN: 25
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 50
+        BLUE: 50
+        GREEN: 50
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 50
+        BLUE: 50
+        GREEN: 50
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 50
+        BLUE: 50
+        GREEN: 50
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        FROST_WALKER: 2
+      repair-cost: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FALL: 4
+        FROST_WALKER: 2
+      repair-cost: 3
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+      repair-cost: 1
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DURABILITY: 3
+        ARROW_DAMAGE: 5
+        ARROW_KNOCKBACK: 2
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+      repair-cost: 63
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+      repair-cost: 1
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_FIRE: 4
+      repair-cost: 1
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPECTRAL_ARROW
+    amount: 64
+armor_contents: {}

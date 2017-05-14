@@ -1,6 +1,6 @@
 # !---------------------------------------------------------!
-# ! File automatically updated at 05.05.2017 13:13:40
-# ! to plugin version v7.3.9
+# ! File automatically updated at 14.05.2017 14:24:13
+# ! to plugin version v7.3.14
 # !---------------------------------------------------------!
 # ! Unfortunatelly due to how Bukkit handles YAML
 # ! configurations, all comments (#) were wiped. 
@@ -289,6 +289,8 @@ MySQL:
     User: ''
     Password: ''
     Connector_Advanced: jdbc:mysql://{host}:{port}/{database}?autoReconnect=true
+    Table: ChatControl_data
+  Assume_Shared: false
 Listener_Priority:
   Formatter: NORMAL
   Checker: NORMAL
