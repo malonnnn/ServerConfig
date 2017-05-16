@@ -1,33 +1,41 @@
-health: 60.0
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.312295
+exhaustion: 3.4890468
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '1':
+  '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
+      Unbreakable: true
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 199173
+    duration: 160626
   '1':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 199173
+    level: 10
+    duration: 160626
   '2':
     type: HEALTH_BOOST
-    level: 9
-    duration: 199173
+    level: 4
+    duration: 160626

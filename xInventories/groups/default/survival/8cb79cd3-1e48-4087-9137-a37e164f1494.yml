@@ -1,81 +1,167 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6S§3t§5ar's §5Wa§en§5d
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: SHEARS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6S§3t§5ar's §5Scissors
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Re§cd §4En§cerg§4y §cBe§4am§4 «×»
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWh§7i§fte §fEn§7er§fgy §fBea§7m§7 «×»
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6Ora§0ng§6e §6Ene§0rg§6y §6Bea§0m§0 «×»
+      display-name: §eOlympia§e ▪ «×»
+      lore:
+      - §eDouble-barreled shotgun.
+      - §eDeadly at close range.
+      - §eIneffective at longer ranges.
+      - §eFires incendiary ammo.
+      Unbreakable: true
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: REDSTONE_COMPARATOR
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §5Ind§dig§5o §5Ener§dg§5y §5Be§dam§d «×»
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      blockMaterial: REDSTONE_COMPARATOR
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: FIREWORK_CHARGE
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: LEVER
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-health: 20.0
-hunger: 20
+      display-name: §7Pistol§7 «× | ×»
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eType 95§e ▪ «×»
+      lore:
+      - §eSemi-automatic with three round burst fire.
+      - §eGhast Tears are required for reloads.
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §ePython §l/§e Knife§e ▪ «×»
+      lore:
+      - §eRevolver with high power.
+      - §eLeft click to melee enemies
+      - §ewith the tactical knife.
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eGauss Shotgun§e ▪ «×»
+      lore:
+      - §eAdvanced pump-action shotgun.
+      - §eFires metal slugs that penetrate
+      - §eall targets within 40 blocks.
+      - §eDeals 200% damage to Zombies.
+health: 6.0
+hunger: 16
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.18701299
+exhaustion: 2.4450064
 armor_contents: {}
-ender_chest: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §rsheep Spawner
+      internal: H4sIAAAAAAAAAHWP3Q7BQBCFjy2NbuIvuPccLv1cEkHiUoaO2qgt2xXqCT2WbUtcmWRy5kwmX85IQKI5ipP9aaqtstmaIoHOjB5zJrPLiqXiFL5Ad8nXmzIcLmLK2CxJR4y2gFxd6K7HyU1bVCWCwk7IUh1ChWidlea9oYMdpkfmCwQajl9esUN5A4FaMaHnofKAK6fZR5+5lqj+D3VOdts0R7D5JigDVXO80j88XgFahV0klt0/FKfSISsSfvnzn5we/A2r6GjzY9dvpQuoQCwBAAA=
+      blockMaterial: MOB_SPAWNER
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    amount: 4
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §rIron Golem Spawner
+      internal: H4sIAAAAAAAAAIWPzW7CMBCEBwcisMRP1SJx7HP0yM+xFaKVOKINLK5VxwbHtIQn5LHqJFQcu5I1Hmv386wEJAZT47ZfCxt0KD9ICTy80vmNyWdl/ai5QCrwuOLjSXveLQ2V7FdkFWMkIN8P9GNn7mQD2hK92s4pUBdC7zDJteWtp314+dbGkGK/Uc5wDoF+/Khp58hMngU69Q1PCVpnxIpa3vRSacMc35m5yzZFhWD/F6VJ1q7w2t7xuPYwrO3SBY6LkSlkRLYk0mb5/wInSNes1WeopuL5BbhzuOM+AQAA
+      blockMaterial: MOB_SPAWNER
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 41
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+      repair-cost: 7
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 190948

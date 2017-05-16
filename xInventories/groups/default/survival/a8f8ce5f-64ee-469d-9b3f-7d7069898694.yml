@@ -1,56 +1,85 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
+    type: STEP
+    damage: 5
     amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
-      enchants:
-        DAMAGE_ALL: 20
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bD§3a§br§3k §bR§3e§bp§3u§bl§3s§be§3r
-      enchants:
-        DAMAGE_ALL: 20
+    type: STONE
+    damage: 3
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_SWORD
-    amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
-      enchants:
-        DAMAGE_ALL: 20
-potion_effect:
-  '0':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199580
-  '1':
-    type: INCREASE_DAMAGE
-    level: 15
-    duration: 199580
-  '2':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 199580
+    type: DIRT
+    amount: 3
   '3':
-    type: SPEED
-    level: 50
-    duration: 196843
-health: 25.0
+    ==: org.bukkit.inventory.ItemStack
+    type: SAND
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SANDSTONE
+    amount: 9
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+    amount: 2
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 8
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 39.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.33333337
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.7610197
+saturation: 9.0
+exhaustion: 0.1244936
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 180292
+  '1':
+    type: JUMP
+    level: 5
+    duration: 198371
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 180292
+  '3':
+    type: SPEED
+    level: 100
+    duration: 199750
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 180292
