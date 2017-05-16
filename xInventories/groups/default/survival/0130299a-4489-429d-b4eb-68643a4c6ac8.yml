@@ -1,58 +1,50 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-      Unbreakable: true
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bWa§3ter §3Sh§bot§b «×»
-      Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §3R§9i§3p§9t§3i§9d§3e
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        KNOCKBACK: 2
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_HELMET
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      display-name: §3P§9e§3r§9c§3y§9§3'§3s §9Water §3Helmet
-      enchants:
-        OXYGEN: 50
-        WATER_WORKER: 1
-        DEPTH_STRIDER: 3
-health: 20.0
-hunger: 10
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 60.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.4229945
+exhaustion: 2.3730257
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 12
-    duration: 197325
-  '1':
-    type: WATER_BREATHING
-    level: 1
-    duration: 197325
-  '2':
-    type: HEALTH_BOOST
+    type: REGENERATION
     level: 4
-    duration: 197325
+    duration: 199117
+  '1':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199117
+  '2':
+    type: SPEED
+    level: 8
+    duration: 199240
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 199117
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 199117
