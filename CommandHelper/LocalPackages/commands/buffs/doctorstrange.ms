@@ -18,8 +18,6 @@
                 "/haste 0-1",
                 "/hover on",
                 "/hover off",
-                "/travelnether",
-                "/travelend",
                 "/cast forcefield",
                 "/cast telekinisis"
             ),
