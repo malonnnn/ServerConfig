@@ -1,11 +1,11 @@
-health: 50.0
+health: 60.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.36363646
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 9.145995
+saturation: 19.0
+exhaustion: 2.6024947
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -13,13 +13,98 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Dark §0Magic §5Blast§5 «×»
+      display-name: §6Ora§0ng§6e §6Ene§0rg§6y §6Bea§0m§0 «×»
+      Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 1
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 14
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6L§0a§6rfleeze's Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+    damage: 4
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 251
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_DAMAGE: 1
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Ora§0ng§6e §6Ene§0rg§6y §6Bea§0m§0 «×»
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 1
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 2
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SWORD
+    damage: 27
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 2
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Ora§0ng§6e §6Ene§0rg§6y §6Bea§0m§0 «×»
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 1
+    amount: 64
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 9
-    duration: 197580
+    duration: 185147
   '1':
-    type: JUMP
+    type: FAST_DIGGING
     level: 10
-    duration: 198836
+    duration: 192206
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 185147
+  '3':
+    type: SPEED
+    level: 3
+    duration: 192406
+  '4':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 185147

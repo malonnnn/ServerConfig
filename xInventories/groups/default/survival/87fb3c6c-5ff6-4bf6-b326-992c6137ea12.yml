@@ -5,56 +5,47 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9650285
+exhaustion: 2.4180038
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §2Ra's §eal §2Ghul §e§lD§a§lN§4§lA
-      lore:
-      - rasalghul
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_PLATE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §4Fl§ea§4sh§8(WallyW§8) §e§lD§a§lN§4§lA
-      lore:
-      - flashwallywest
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 58
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+      Unbreakable: true
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Ul§8tr§4o§7n's §4Petawatt Laser§4 «×»
+      Unbreakable: true
 ender_chest: {}

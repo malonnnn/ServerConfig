@@ -1,55 +1,12 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: NEW EDITION!
-      author: ImUnicornRainbow
-      pages:
-      - |2
-         New Updates!!!§0
-        §0
-        §0/arrest is now different.§0
-        §0
-        §0The new command is /arrest (player) (reason)§0
-        §0If you do not put the reason it will say Unknown Command!§0
-        §0
-      - |-
-        There is also /warn (player) (reason) that will appear in chat to the public to see.  Once they are warned the player will have to visit /warp rules to read the rules.§0
-        §0
-        §0Every time a player is warned or arrest, it goes inside the CRIMINAL DATABASE.
-      - |-
-        An officer can do /backroundcheck (player) to see their warnings and arrests with the time and date, to see their criminal record.§0
-        §0
-        §0An officer can also do /checkfingerprints (player) and everytime a player gets arrested or warned their IP gets logge
-      - |-
-        d.  §0
-        §0you can use /checkfingerprints to find people's alts :o§0
-        §0It only works if both alts have been entered in the criminal database.
-      - Now Sergeants can do /officerhistory (player) to find the warnings and arrests given by an officer.
-      - |-
-        HAVE A NICE DAY!!!§0
-        §0THANK YOU FOR READING THIS NOTICE!
-      generation: 0
+inventory: {}
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 3.0
-exhaustion: 2.981006
+saturation: 0.0
+exhaustion: 0.8220257
 armor_contents: {}
 ender_chest:
   '0':
@@ -386,9 +343,62 @@ ender_chest:
       ==: ItemMeta
       meta-type: BOOK
       pages:
-      - |
+      - |-
         GradeBook§0
         §0Friday May12 §0
         §0nightghost (F)§0
         §0xDc (A+)§0
         §0Polo (B-)§0
+        §0Phantom_jeff(A+)
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: NEW EDITION!
+      author: ImUnicornRainbow
+      pages:
+      - |2
+         New Updates!!!§0
+        §0
+        §0/arrest is now different.§0
+        §0
+        §0The new command is /arrest (player) (reason)§0
+        §0If you do not put the reason it will say Unknown Command!§0
+        §0
+      - |-
+        There is also /warn (player) (reason) that will appear in chat to the public to see.  Once they are warned the player will have to visit /warp rules to read the rules.§0
+        §0
+        §0Every time a player is warned or arrest, it goes inside the CRIMINAL DATABASE.
+      - |-
+        An officer can do /backroundcheck (player) to see their warnings and arrests with the time and date, to see their criminal record.§0
+        §0
+        §0An officer can also do /checkfingerprints (player) and everytime a player gets arrested or warned their IP gets logge
+      - |-
+        d.  §0
+        §0you can use /checkfingerprints to find people's alts :o§0
+        §0It only works if both alts have been entered in the criminal database.
+      - Now Sergeants can do /officerhistory (player) to find the warnings and arrests given by an officer.
+      - |-
+        HAVE A NICE DAY!!!§0
+        §0THANK YOU FOR READING THIS NOTICE!
+      generation: 0
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
