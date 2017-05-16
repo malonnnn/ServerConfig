@@ -9,20 +9,71 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
-  '0':
-    type: SPEED
-    level: 3
-    duration: 198732
   '1':
-    type: JUMP
-    level: 5
-    duration: 199049
-health: 20.0
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Re§cd §4En§cerg§4y §cBe§4am§4 «×»
+      Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 14
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4R§0e§4d L§ca§4nt§0e§4rn Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.2919953
+exhaustion: 1.515401
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 1
+    duration: 102980
+  '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 102980
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 102980
+  '3':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 102980
+  '4':
+    type: SPEED
+    level: 1
+    duration: 197068
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 102980
+  '6':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 102980
+  '7':
+    type: JUMP
+    level: 1
+    duration: 197115
+  '8':
+    type: NIGHT_VISION
+    level: 1
+    duration: 102980

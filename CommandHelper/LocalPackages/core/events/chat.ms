@@ -216,21 +216,14 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     @cooldown = 0
     if(has_permission(@pname,'change.chat')){
-        if(reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
+        @numb = rand(0,2)
+        console(@numb)
+        if(@numb == 1 || reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
             assign(@msg,'Uh oh! I\'m a goober!')
             modify_event(message, @msg)
             @cooldown = 10
         }
 
-        if(
-            to_lower(@msg) == 'o' || 
-            to_lower(@msg) == 'y' || 
-            reg_match('(?i)(o|0)+[. ,-_]*y+',@msg)
-        ){
-            assign(@msg,'Uh oh! I\'m a goober!')
-            modify_event(message, @msg)
-            @cooldown = 10
-        }
     }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
