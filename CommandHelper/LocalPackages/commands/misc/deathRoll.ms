@@ -6,7 +6,7 @@ register_command(deathroll,
 		
 		usage: '/deathroll <player>',
 		
-		permission: 'deathroll',
+		permission: 'ch.alias.deathroll',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

@@ -6,7 +6,7 @@ register_command(onduty,
 		
 		usage: '/onduty',
 		
-		permission: 'onduty',
+		permission: 'ch.alias.onduty',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	
