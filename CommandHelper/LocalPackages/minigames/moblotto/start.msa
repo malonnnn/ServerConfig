@@ -20,27 +20,31 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
             @numPlayers--
             continue()
         }
+        set_pmode(@plr,'SURVIVAL')
         sudo('/heal '.@plr)
         sudo('/warp moblotterystart '.@plr)
         export(@plr.'activeInMobLottery',true)
         try(
         bind(player_death,array(id: @plr.'moblottodeath'),associative_array('player':@plr),@e,@plr){
             export(@plr.'activeInMobLottery',false)
-            unbind()
             unbind(@plr.'moblottoworldchanged')
             unbind(@plr.'moblottoquit')
+            set_pmode(@plr,'CREATIVE')
+            unbind()
         }
         bind(world_changed,array(id: @plr.'moblottoworldchanged'),associative_array('player':@plr),@e,@plr){
             export(@plr.'activeInMobLottery',false)
-            unbind()
             unbind(@plr.'moblottodeath')
             unbind(@plr.'moblottoquit')
+            set_pmode(@plr,'CREATIVE')
+            unbind()
         }
         bind(player_quit,array(id: @plr.'moblottoquit'),associative_array('player':@plr),@e,@plr){
             export(@plr.'activeInMobLottery',false)
-            unbind()
             unbind(@plr.'moblottodeath')
             unbind(@plr.'moblottoworldchanged')
+            set_pmode(@plr,'CREATIVE')
+            unbind()
         },)
     }
     export('mobLotteryNumPlayers',@numPlayers)

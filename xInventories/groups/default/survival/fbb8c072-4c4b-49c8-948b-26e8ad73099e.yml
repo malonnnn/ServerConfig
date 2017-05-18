@@ -1,34 +1,144 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STEP
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SMOOTH_BRICK
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Golf Manual
+      author: KristofferAndre
+      pages:
+      - "Villager Golf Instruction Manual§0\n§0__________________§0\n§0\n§0Hello and\
+        \ welcome to villager golf. §0\n§0\n§0Here is a short introduction on the\
+        \ game, covering everything from gear needed to how to play it properly. "
+      - |
+        Gear needed:§0
+        §0------------------§0
+        §0The first thing you need is to get the proper gear. §0
+        §0Get a club with power 1-6, and a villager killing sword.§0
+        §0-------------------§0
+        §0
+        §0
+      - |-
+        How to play the game:§0
+        §0-------------------§0
+        §0This game is much like normal golf. You start at hole 1 and count up. So the next hole would be 2 ect.§0
+        §0-------------------Go to the start of the hole and press the stone pressure plate to spawn a villager.
+      - "How to play the game:§0\n§0-------------------After spawning a villager you\
+        \ hit it once with a club of your choise! that will make him pop up of the\
+        \ ground.§0\n§0-------------------You can now hit the villager with a power\
+        \ club of your choise freely. "
+      - "How to play the game:§0\n§0-------------------Every hole has a \"par\". Par\
+        \ is a required number of shots on each hole.§0\n§0-------------------you\
+        \ can go over par by as many shots as you want, but at the expence of your\
+        \ score. "
+      - "How to play the game:§0\n§0-------------------The winner is the player who\
+        \ has the least number of shots on each hole combined. -------------------In\
+        \ case you are wondering: §0\n§0-------------------This game don't use handicap,\
+        \ as golf normally have. "
+      - |-
+        How to play the game:§0
+        §0-------------------All holes also have a speed boost so you can cover the big distances in a shorter amount of time.
+      - |
+        -------------------Enjoy the game§0
+        §0-------------------§0
+        §0
+      generation: 0
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STEP
-    damage: 7
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
+    type: IRON_SWORD
     damage: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Villager kill
+      enchants:
+        DAMAGE_ALL: 20
+      repair-cost: 2
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_STAIRS
-  '5':
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '6'
+      enchants:
+        KNOCKBACK: 47
+      repair-cost: 2
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-health: 19.0
-hunger: 6
-exp: 0.45454547
-exp-level: 2
+    type: IRON_BOOTS
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.914018
-armor_contents: {}
+exhaustion: 1.9176857
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 140611
+  '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 140611
+  '2':
+    type: NIGHT_VISION
+    level: 1
+    duration: 140611
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 140611
+  '4':
+    type: SPEED
+    level: 100
+    duration: 191316
+  '5':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 140611
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 140611

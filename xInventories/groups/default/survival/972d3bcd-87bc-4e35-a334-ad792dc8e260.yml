@@ -5,6 +5,38 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.9129686
-inventory: {}
+exhaustion: 3.2369993
+inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: �7Normal Arrow
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 58
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 24
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
 armor_contents: {}
