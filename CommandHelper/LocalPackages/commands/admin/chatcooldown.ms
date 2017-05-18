@@ -6,7 +6,7 @@ register_command(addchatcooldown,
         
         usage: '/addchatcooldown <player>',
         
-        permission: 'addchatcooldown',
+        permission: 'ch.alias.addchatcooldown',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -60,7 +60,7 @@ register_command(remchatcooldown,
         
         usage: '/remchatcooldown <player>',
         
-        permission: 'remchatcooldown',
+        permission: 'ch.alias.remchatcooldown',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         

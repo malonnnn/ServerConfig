@@ -6,7 +6,7 @@ register_command(annoy,
         
         usage: '/annoy <player> <loop delay in milleseconds>',
         
-        permission: 'annoy',
+        permission: 'ch.alias.annoy',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -95,7 +95,7 @@ register_command(stopannoy,
         
         usage: '/stopannoy',
         
-        permission: 'annoy',
+        permission: 'ch.alias.annoy',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
     
