@@ -6,7 +6,7 @@ register_command(chatsounds,
         
         usage: '/chatsounds <on/off>',
         
-        permission: 'chatsounds',
+        permission: 'ch.alias.chatsounds',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
