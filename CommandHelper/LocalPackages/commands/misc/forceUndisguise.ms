@@ -6,7 +6,7 @@ register_command(forceundisguise,
         
         usage: '/forceundisguise <player>',
         
-        permission: 'forceundisguise',
+        permission: 'ch.alias.forceundisguise',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         

@@ -6,7 +6,7 @@ register_command(listheroes,
         
         usage: '/listheroes [page number]',
         
-        permission: 'listheroes',
+        permission: 'ch.alias.listheroes',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
     
