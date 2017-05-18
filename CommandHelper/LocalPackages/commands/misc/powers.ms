@@ -17,7 +17,7 @@ register_command(powers,
 				
 				try {
 					include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
-				} catch (IncludeException @ErrorInfo) {
+				} catch (IOException @ErrorInfo) {
 					# Ignore file doesn't exist message and kill the script
 					tmsg(@plr, 'There\'s no power\'s associated with your current Character Class')
 					die()
