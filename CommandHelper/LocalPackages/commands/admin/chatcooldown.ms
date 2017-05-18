@@ -6,7 +6,7 @@ register_command(addchatcooldown,
 		
 		usage: '/addchatcooldown <player>',
 		
-		permission: 'ch.alias.ch.alias.addchatcooldown',
+		permission: 'ch.alias.addchatcooldown',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
