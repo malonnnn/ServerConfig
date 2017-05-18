@@ -6,7 +6,7 @@ register_command(coinflip,
         
         usage: '/coinflip',
         
-        permission: 'coinflip',
+        permission: 'ch.alias.coinflip',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command. It\'s a shame..',
     

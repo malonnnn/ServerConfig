@@ -6,7 +6,7 @@ register_command(normalsize,
         
         usage: '/normalsize',
         
-        permission: 'normalsize',
+        permission: 'ch.alias.normalsize',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',	
     

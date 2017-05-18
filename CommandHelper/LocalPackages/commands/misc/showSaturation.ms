@@ -6,7 +6,7 @@ register_command(hungerlevel,
         
         usage: '/hungerlevel',
         
-        permission: 'hungerlevel',
+        permission: 'ch.alias.hungerlevel',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',	
     

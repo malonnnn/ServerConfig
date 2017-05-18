@@ -6,7 +6,7 @@ register_command(marry,
         
         usage: '/marry <player>',
         
-        permission: 'marry',
+        permission: 'ch.alias.marry',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -90,7 +90,7 @@ register_command(divorce,
         
         usage: '/divorce <player1> <player2>',
         
-        permission: 'divorce',
+        permission: 'ch.alias.divorce',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         

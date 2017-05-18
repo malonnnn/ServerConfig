@@ -6,7 +6,7 @@ register_command(officekill,
         
         usage: '/officekill <player>',
         
-        permission: 'officekill',
+        permission: 'ch.alias.officekill',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
