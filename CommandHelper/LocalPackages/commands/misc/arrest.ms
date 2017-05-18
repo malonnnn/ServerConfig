@@ -6,7 +6,7 @@ register_command(arrest,
 		
 		usage: '/arrest <player> <reason>',
 		
-		permission: 'arrest',
+		permission: 'ch.alias.arrest',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -87,7 +87,7 @@ register_command(release,
 		
 		usage: '/release <player>',
 		
-		permission: 'release',
+		permission: 'ch.alias.release',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -138,7 +138,7 @@ register_command(warn,
 		
 		usage: '/warn <player> <reason>',
 		
-		permission: 'warn',
+		permission: 'ch.alias.warn',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -205,7 +205,7 @@ register_command(checkfingerprints,
 		
 		usage: '/checkfingerprints <player>',
 		
-		permission: 'checkfingerprints',
+		permission: 'ch.alias.checkfingerprints',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -260,7 +260,7 @@ register_command(backgroundcheck,
 		
 		usage: '/backgroundcheck <player>',
 		
-		permission: 'backgroundcheck',
+		permission: 'ch.alias.backgroundcheck',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -324,7 +324,7 @@ register_command(officerhistory,
 		
 		usage: '/officerhistory <player>',
 		
-		permission: 'officerhistory',
+		permission: 'ch.alias.officerhistory',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

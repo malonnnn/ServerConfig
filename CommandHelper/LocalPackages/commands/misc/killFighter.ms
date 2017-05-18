@@ -6,7 +6,7 @@ register_command(killfighter,
 		
 		usage: '/killfighter <player>',
 		
-		permission: 'killfighter',
+		permission: 'ch.alias.killfighter',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

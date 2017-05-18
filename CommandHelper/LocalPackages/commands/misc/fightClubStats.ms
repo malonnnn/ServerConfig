@@ -6,7 +6,7 @@ register_command(fightclubstats,
 		
 		usage: '/fightclubstats [player]',
 		
-		permission: 'fightclubstats',
+		permission: 'ch.alias.fightclubstats',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

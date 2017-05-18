@@ -6,7 +6,7 @@ register_command(fightclubbet,
 		
 		usage: '/fightclubbet <amount> <player>',
 		
-		permission: 'fightclubbet',
+		permission: 'ch.alias.fightclubbet',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -109,7 +109,7 @@ register_command(officialfight,
 		
 		usage: '/officialfight',
 		
-		permission: 'officialfight',
+		permission: 'ch.alias.officialfight',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	
@@ -237,7 +237,7 @@ register_command(setwins,
 		
 		usage: '/setwins <wins> <player>',
 		
-		permission: 'setwins',
+		permission: 'ch.alias.setwins',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -282,7 +282,7 @@ register_command(setlosses,
 		
 		usage: '/setlosses <losses> <player>',
 		
-		permission: 'setlosses',
+		permission: 'ch.alias.setlosses',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -327,7 +327,7 @@ register_command(resetfightstats,
 		
 		usage: '/resetfightstats <player>',
 		
-		permission: 'resetfightstats',
+		permission: 'ch.alias.resetfightstats',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

@@ -7,7 +7,7 @@ register_command(cp,
 		
 		usage: '/cp',
 		
-		permission: 'cp',
+		permission: 'ch.alias.cp',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	
@@ -43,7 +43,7 @@ register_command(gc,
 		
 		usage: '/gc',
 		
-		permission: 'gc',
+		permission: 'ch.alias.gc',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	

@@ -6,7 +6,7 @@ register_command(powers,
 		
 		usage: '/powers',
 		
-		permission: 'powers',
+		permission: 'ch.alias.powers',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	
@@ -17,7 +17,7 @@ register_command(powers,
 				
 				try {
 					include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
-				} finally {
+				} catch (IncludeException @ErrorInfo) {
 					# Ignore file doesn't exist message and kill the script
 					tmsg(@plr, 'There\'s no power\'s associated with your current Character Class')
 					die()
