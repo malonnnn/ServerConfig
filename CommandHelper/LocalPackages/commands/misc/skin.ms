@@ -6,7 +6,7 @@ register_command(skin,
 		
 		usage: '/skin <number>',
 		
-		permission: 'skin',
+		permission: 'ch.alias.skin',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

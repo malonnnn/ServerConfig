@@ -6,7 +6,7 @@ register_command(hiresecretary,
 		
 		usage: '/hiresecretary <player>',
 		
-		permission: 'hiresecretary',
+		permission: 'ch.alias.hiresecretary',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
@@ -64,7 +64,7 @@ register_command(firesecretary,
 		
 		usage: '/firesecretary <player>',
 		
-		permission: 'firesecretary',
+		permission: 'ch.alias.firesecretary',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		

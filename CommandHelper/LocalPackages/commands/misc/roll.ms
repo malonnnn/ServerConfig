@@ -6,7 +6,7 @@ register_command(roll,
 		
 		usage: '/roll',
 		
-		permission: 'roll',
+		permission: 'ch.alias.roll',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 		
