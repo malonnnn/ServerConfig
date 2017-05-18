@@ -6,7 +6,7 @@ register_command(buff,
         
         usage: '/buff',
         
-        permission: 'buff.command',
+        permission: 'buff',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     

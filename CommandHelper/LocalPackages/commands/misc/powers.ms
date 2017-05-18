@@ -6,7 +6,7 @@ register_command(powers,
         
         usage: '/powers',
         
-        permission: 'powers.command',
+        permission: 'powers',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
