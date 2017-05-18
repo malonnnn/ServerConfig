@@ -6,7 +6,7 @@ register_command(fixskin,
         
         usage: '/fixskin [player]',
         
-        permission: 'fixskin',
+        permission: 'ch.alias.fixskin',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         

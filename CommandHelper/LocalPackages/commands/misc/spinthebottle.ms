@@ -6,7 +6,7 @@ register_command(spinthebottle,
         
         usage: '/spinthebottle',
         
-        permission: 'spinthebottle',
+        permission: 'ch.alias.spinthebottle',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
