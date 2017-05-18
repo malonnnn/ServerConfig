@@ -4,15 +4,21 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 3.866002
-inventory: {}
-potion_effect:
+saturation: 0.0
+exhaustion: 0.5980134
+inventory:
   '0':
-    type: JUMP
-    level: 3
-    duration: 195841
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: �7Normal Arrow
   '1':
-    type: SPEED
-    level: 2
-    duration: 195565
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: �fArrow of �2Luck
+      potion-type: minecraft:luck

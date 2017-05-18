@@ -6,7 +6,6 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -18,7 +17,6 @@ inventory:
       - §eFully automatic with high power.
       - §eEffective at medium range.
       - §eControls are inverted.
-      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -29,7 +27,6 @@ inventory:
       lore:
       - §eSemi-automatic with three round burst fire.
       - §eGhast Tears are required for reloads.
-      Unbreakable: true
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -54,7 +51,6 @@ inventory:
       - §eRevolver with high power.
       - §eLeft click to melee enemies
       - §ewith the tactical knife.
-      Unbreakable: true
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: REDSTONE_COMPARATOR
@@ -69,8 +65,15 @@ inventory:
       blockMaterial: REDSTONE_COMPARATOR
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: COMMAND
-    amount: 5
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
   '7':
     ==: org.bukkit.inventory.ItemStack
     type: FIREWORK_CHARGE
@@ -80,11 +83,6 @@ inventory:
       display-name: §eFrag Grenade§e
       lore:
       - §eExplodes three seconds after launch.
-      Unbreakable: true
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_RABBIT
-    amount: 5
   '5':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -97,27 +95,16 @@ inventory:
       - §eFires metal slugs that penetrate
       - §eall targets within 40 blocks.
       - §eDeals 200% damage to Zombies.
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eC4§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to place.
-      - §eLeft click to detonate.
 health: 20.0
 hunger: 20
-exp: 0.2857143
+exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 9.0
-exhaustion: 3.4082253
+saturation: 3.0
+exhaustion: 0.28300425
 potion_effect:
   '0':
     type: NIGHT_VISION
     level: 1
-    duration: 185284
+    duration: 198747
