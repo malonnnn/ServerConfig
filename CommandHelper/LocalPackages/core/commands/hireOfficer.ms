@@ -6,7 +6,7 @@ register_command(hireofficer,
         
         usage: '/hireofficer <player>',
         
-        permission: 'hireofficer',
+        permission: 'ch.alias.hireofficer',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -60,7 +60,7 @@ register_command(fireofficer,
         
         usage: '/fireofficer <player>',
         
-        permission: 'fireofficer',
+        permission: 'ch.alias.fireofficer',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         

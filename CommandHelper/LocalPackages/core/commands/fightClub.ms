@@ -6,7 +6,7 @@ register_command(fightclub,
         
         usage: '/fightclub',
         
-        permission: 'fightclub',
+        permission: 'ch.alias.fightclub',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
@@ -153,7 +153,7 @@ register_command(fightclubreset,
         
         usage: '/fightclubreset',
         
-        permission: 'fightclubreset',
+        permission: 'ch.alias.fightclubreset',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
