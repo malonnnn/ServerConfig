@@ -1,10 +1,36 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4Fl§ea§4sh§8(JG§8) §e§lD§a§lN§4§lA
+      lore:
+      - flashjaygarrick
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 4
 armor_contents: {}
 health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+hunger: 9
+exp: 0.33333337
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 3.7018933
+saturation: 6.0
+exhaustion: 1.2392708

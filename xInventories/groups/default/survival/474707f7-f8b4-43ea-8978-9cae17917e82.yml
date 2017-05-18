@@ -1,14 +1,8 @@
 inventory:
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    amount: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -16,6 +10,13 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -23,34 +24,47 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §5Beerus §dBall§d «×»
-      Unbreakable: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Beerus §dBall§d «×»
 armor_contents: {}
-health: 20.0
-hunger: 15
+health: 25.0
+hunger: 19
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.586006
+saturation: 18.0
+exhaustion: 2.3390179
 potion_effect:
   '0':
     type: WATER_BREATHING
     level: 1
-    duration: 198753
+    duration: 199582
   '1':
     type: SPEED
     level: 10
-    duration: 199065
+    duration: 199708
   '2':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 198753
+    duration: 199582
   '3':
     type: HEALTH_BOOST
     level: 19
-    duration: 198753
+    duration: 199582
   '4':
     type: JUMP
     level: 10
-    duration: 199026
+    duration: 199669
