@@ -6,7 +6,7 @@ register_command(buff,
 		
 		usage: '/buff',
 		
-		permission: 'buff',
+		permission: 'ch.alias.buff',
 		
 		noPermMsg: 'Sorry you don\'t have permission to use this command.',
 	
@@ -17,7 +17,7 @@ register_command(buff,
 				
 				try {
 					include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
-				} finally {
+				} catch (IncludeException @ErrorInfo) {
 					# Ignore file doesn't exist message and kill the script
 					tmsg(@plr, 'There\'s no buffs\'s associated with your current Character Class')
 					die()
