@@ -34,37 +34,43 @@ register_command(fixskin,
                 
                 }
                 
-                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 
-                if (array_size(@args) == 1) {
+                try {
                 
-                    try {
-                        @plr = player(@args[0])
-                        @class = pgroup(@player)[0]
-                        
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-                        _changeSkin(@plr,@hero['sig'],@hero['val'])
-                        
-                    } catch (PlayerOfflineException @ErrorInfo) {				
-                        msg(@player,'Player: '.@plr.' is Offline')
-                        die()
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+                
+                    if (array_size(@args) == 1) {
+
+                        try {
+                            @plr = player(@args[0])
+                            @class = pgroup(@player)[0]
+
+                            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                            _changeSkin(@plr,@hero['sig'],@hero['val'])
+
+                        } catch (PlayerOfflineException @ErrorInfo) {				
+                            msg(@player,'Player: '.@plr.' is Offline')
+                            die()
+                        }
+
+                    } else {
+
+                        try {
+                            @plr = player()
+                            @class = pgroup()[0]
+
+                            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                            _changeSkin(@plr,@hero['sig'],@hero['val'])
+
+                        } catch (PlayerOfflineException @ErrorInfo) {				
+                            msg(@player,'Player: '.@plr.' is Offline')
+                            die()
+                        }				
+
                     }
-                    
-                } else {
-                
-                    try {
-                        @plr = player()
-                        @class = pgroup()[0]
-                        
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-                        _changeSkin(@plr,@hero['sig'],@hero['val'])
-                        
-                    } catch (PlayerOfflineException @ErrorInfo) {				
-                        msg(@player,'Player: '.@plr.' is Offline')
-                        die()
-                    }				
-                
-                }				
+                } catch (IOException @ErrorInfo) {
+                    # Do nothing
+                }
                 
                 
         
