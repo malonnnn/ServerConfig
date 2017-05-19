@@ -58,7 +58,8 @@ regions:
         priority: 1
     sergeants:
         members:
-            unique-ids: [c8b88131-52d4-4af0-9593-ddcdb3d56058, ca7e8de8-30f0-43c5-9701-982c10ea9459]
+            unique-ids: [c8b88131-52d4-4af0-9593-ddcdb3d56058, ca7e8de8-30f0-43c5-9701-982c10ea9459,
+                e6de8cf0-af45-44e4-882f-d98446f4b31b]
         flags: {}
         owners: {}
         type: global
@@ -76,7 +77,8 @@ regions:
             unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e, 0130299a-4489-429d-b4eb-68643a4c6ac8,
                 c8b88131-52d4-4af0-9593-ddcdb3d56058, ca7e8de8-30f0-43c5-9701-982c10ea9459,
                 a8185de3-b053-4aca-9eb6-d98728e476ad, 8cb79cd3-1e48-4087-9137-a37e164f1494,
-                28556dea-667d-409f-b2ff-fb4177a20ff2, 869b4227-b51e-452e-adbd-48759a6848dd]
+                28556dea-667d-409f-b2ff-fb4177a20ff2, 869b4227-b51e-452e-adbd-48759a6848dd,
+                9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b]
         flags: {}
         owners: {}
         type: global
@@ -107,6 +109,16 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    doortotrainingroom:
+        parent: police
+        min: {x: -7.0, y: 64.0, z: 19.0}
+        max: {x: -4.0, y: 66.0, z: 20.0}
+        members: {}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
+            interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     sergeant-door-2:
         parent: restricteddoors
         min: {x: 6.0, y: 75.0, z: 32.0}
@@ -173,8 +185,8 @@ regions:
         flags:
             vine-growth: deny
             build: allow
-            game-mode: CREATIVE
             blocked-cmds: [/thru]
+            game-mode: CREATIVE
             build-group: MEMBERS
             interact: allow
             pvp: allow
