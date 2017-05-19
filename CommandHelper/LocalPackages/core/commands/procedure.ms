@@ -4,9 +4,9 @@ register_command(procedure,
     
         description: 'Displays procedure information for server staff',
         
-        usage: '/procedure <procedure>',
+        usage: '/procedure <hero/feature/bugs>',
         
-        permission: 'ch.alias.procedure',
+        permission: 'ch.alias.proc',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -29,7 +29,7 @@ register_command(procedure,
                 if (array_size(@args) != 1) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /procedure <procedure>');
+                    msg(''.color(RED).'Usage: /proc <procedure>');
                     die(); # No need to go further					
                 
                 }	

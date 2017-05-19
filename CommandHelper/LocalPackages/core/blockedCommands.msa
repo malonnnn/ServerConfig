@@ -15,3 +15,32 @@ bannedcommand:/ignore = >>>
 <<<
 bannedcommand:/ignore $ = >>>
 <<<
+
+bannedcommand:/mail send $plr $ = >>>
+
+    @player = $plr
+    @plr = to_lower(@player)
+    @message = $ 
+    if(
+        @plr == 'g' ||
+        @plr == 'go' ||
+        @plr == 'god' ||
+        @plr == 'god_' ||
+        @plr == 'god_d' ||
+        @plr == 'god_do' ||
+        @plr == 'god_dos' ||
+        @plr == 'god_dose' ||
+        @plr == 'god_dosen' ||
+        @plr == 'god_doesnt' ||
+        @plr == 'god_doesnt_' ||
+        @plr == 'god_doesnt_e' ||
+        @plr == 'god_doesnt_ex' ||
+        @plr == 'god_doesnt_exi' ||
+        @plr == 'god_doesnt_exis' ||
+        @plr == 'god_doesnt_exist' 
+    ){
+        die()
+    }
+
+    run('/mail send '.@player.' '.@message)
+<<<
