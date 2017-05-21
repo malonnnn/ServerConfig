@@ -19,7 +19,7 @@ register_command(buff,
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
                     
                     foreach(@power in @hero['buffs']){
-                        sudo(@power)
+                        runas(~console,@power)
                     }
                     
                     tmsg(@plr,@hero['speech'])

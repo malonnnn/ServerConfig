@@ -1,50 +1,32 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 60.0
+      meta-type: POTION
+      display-name: §6Ninjago §4N§cy§ea §e§lD§a§lN§4§lA
+      lore:
+      - ninjagonya
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.3730257
-potion_effect:
-  '0':
-    type: REGENERATION
-    level: 4
-    duration: 199117
-  '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 199117
-  '2':
-    type: SPEED
-    level: 8
-    duration: 199240
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 199117
-  '4':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 199117
+exhaustion: 0.3920107
+armor_contents: {}
