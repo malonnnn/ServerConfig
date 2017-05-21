@@ -21,15 +21,6 @@ bind(world_changed, null, null, @event,
     if(@to == 'alpha'){
         runas(~console,'/effect '.@player.' clear')
     }
-
-    if(@to != 'policeoffice'){
-        if(has_permission(@player,'is.onduty') && !has_permission(@player,'police.chief')){
-            set_timeout(120000,closure(
-                include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
-                _mortal(@player)
-            ))
-        }
-    }
     
     if(@from == 'fightclub'){
         export(@player.'fightClub','')
