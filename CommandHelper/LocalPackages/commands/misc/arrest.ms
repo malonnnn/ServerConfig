@@ -228,29 +228,27 @@ register_command(checkfingerprints,
     
         executor: closure(@alias, @sender, @args) {
         
-                if (array_size(@args) != 1) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /checkfingerprints <player>');
-                    die(); # No need to go further					
-                
-                }
+			if (array_size(@args) != 1) {
+			
+				msg(''.color(RED).color(BOLD).'Improper Usage!');
+				msg(''.color(RED).'Usage: /checkfingerprints <player>');
+				die(); # No need to go further					
+			
+			}
 
-                try {
-                    @plr = player(@args[0])
-                    @cop = player()
-                    @ip = pinfo(@plr)[3]
-                    @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-                    @result = query(@profile, 'SELECT DISTINCT PERPNAME,IP FROM `criminals` WHERE IP=?',@ip)
-                    foreach(@row in @result){
-                        tmsg(@cop,@row['PERPNAME'])
-                    }
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
-                    die()
-                }
-                
-                            
+			try {
+				@plr = player(@args[0])
+				@cop = player()
+				@ip = pinfo(@plr)[3]
+				@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+				@result = query(@profile, 'SELECT DISTINCT PERPNAME,IP FROM `criminals` WHERE IP=?',@ip)
+				foreach(@row in @result){
+					tmsg(@cop,@row['PERPNAME'])
+				}
+			} catch (PlayerOfflineException @ErrorInfo) {				
+				msg(@player,'Player: '.@plr.' is Offline')
+				die()
+			}                          
         
         }
     )
@@ -284,37 +282,38 @@ register_command(backgroundcheck,
     
         executor: closure(@alias, @sender, @args) {
         
-                if (array_size(@args) != 1) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /backgroundcheck <player>');
-                    die(); # No need to go further					
-                
-                }	
+			if (array_size(@args) != 1) {
+			
+				msg(''.color(RED).color(BOLD).'Improper Usage!');
+				msg(''.color(RED).'Usage: /backgroundcheck <player>');
+				die(); # No need to go further					
+			
+			}	
 
-                try {
-                    @plr = player(@args[0])
-                    @cop = player()
-                    @uuid = puuid(@plr)
-                    @ip = pinfo(@plr)[3]
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
-                    die()
-                }
-
-                @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-                @result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPUUID=?',@uuid)
-                @numOffenses = array_size(@result)
-                foreach(@row in @result){
-                    tmsg(@cop,
-                        color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
-                        color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
-                        color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
-                        color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
-                        color(green).@row['DATE'])
-                    tmsg(@cop,'-----------------------------------------')
-                }
-                tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')			
+			try {
+				@plr = player(@args[0])
+				@cop = player()
+				@uuid = puuid(@plr)
+				@ip = pinfo(@plr)[3]
+				
+				@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+				@result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPUUID=?',@uuid)
+				@numOffenses = array_size(@result)
+				foreach(@row in @result){
+					tmsg(@cop,
+						color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
+						color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
+						color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
+						color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
+						color(green).@row['DATE'])
+					tmsg(@cop,'-----------------------------------------')
+				}
+				tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
+				
+			} catch (PlayerOfflineException @ErrorInfo) {			
+				msg(@player,'Player: '.@plr.' is Offline')
+				die()
+			}					
         
         }
     )
@@ -348,37 +347,37 @@ register_command(officerhistory,
     
         executor: closure(@alias, @sender, @args) {
         
-                if (array_size(@args) != 1) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /officerhistory <player>');
-                    die(); # No need to go further					
-                
-                }				
+			if (array_size(@args) != 1) {
+			
+				msg(''.color(RED).color(BOLD).'Improper Usage!');
+				msg(''.color(RED).'Usage: /officerhistory <player>');
+				die(); # No need to go further					
+			
+			}				
 
-                try {
-                    @plr = player(@args[0])
-                    @cop = player()
-                    @uuid = puuid(@plr)
-                    @ip = pinfo(@plr)[3]
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
-                    die()
-                }			
-                
-                @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-                @result = query(@profile, 'SELECT * FROM `criminals` WHERE OFFUUID=?',@uuid)
-                @numOffenses = array_size(@result)
-                foreach(@row in @result){
-                    tmsg(@cop,
-                        color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
-                        color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
-                        color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
-                        color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
-                        color(green).@row['DATE'])
-                    tmsg(@cop,'-----------------------------------------')
-                }
-                tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
+			try {
+				@plr = player(@args[0])
+				@cop = player()
+				@uuid = puuid(@plr)
+				@ip = pinfo(@plr)[3]
+				
+				@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+				@result = query(@profile, 'SELECT * FROM `criminals` WHERE OFFUUID=?',@uuid)
+				@numOffenses = array_size(@result)
+				foreach(@row in @result){
+					tmsg(@cop,
+						color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
+						color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
+						color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
+						color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
+						color(green).@row['DATE'])
+					tmsg(@cop,'-----------------------------------------')
+				}
+				tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
+			} catch (PlayerOfflineException @ErrorInfo) {				
+				msg(@player,'Player: '.@plr.' is Offline')
+				die()
+			}
         
         }
     )
