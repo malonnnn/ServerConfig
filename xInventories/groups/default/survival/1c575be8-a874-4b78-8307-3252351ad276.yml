@@ -1,18 +1,11 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
-      Unbreakable: true
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BARDING
+    type: WEB
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 74
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -20,18 +13,19 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 100.0
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: -20
-saturation: 0.0
-exhaustion: 2.894998
+fireTicks: 0
+saturation: 3.0
+exhaustion: 3.3129919
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 74
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -42,33 +36,21 @@ armor_contents:
 potion_effect:
   '0':
     type: REGENERATION
-    level: 1
-    duration: 196395
-  '1':
-    type: DAMAGE_RESISTANCE
     level: 3
-    duration: 196395
+    duration: 194443
+  '1':
+    type: JUMP
+    level: 5
+    duration: 194728
   '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 196395
-  '3':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 196395
-  '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 196395
-  '5':
+    level: 10
+    duration: 194443
+  '3':
     type: HEALTH_BOOST
-    level: 19
-    duration: 196395
-  '6':
+    level: 4
+    duration: 194443
+  '4':
     type: SPEED
     level: 10
-    duration: 196940
-  '7':
-    type: NIGHT_VISION
-    level: 1
-    duration: 196395
+    duration: 199953

@@ -114,8 +114,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
-            interact: deny, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
+            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -185,12 +185,12 @@ regions:
         flags:
             vine-growth: deny
             build: allow
-            blocked-cmds: [/thru]
             game-mode: CREATIVE
+            blocked-cmds: [/thru]
             build-group: MEMBERS
             interact: allow
-            pvp: allow
             game-mode-group: MEMBERS
+            pvp: allow
         owners: {}
         type: global
         priority: 0
