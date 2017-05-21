@@ -1,4 +1,48 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 11
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLE_WALL
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMdtVKQLooUckqulopOT8nvwgon5JYlB2flFOaqqQD06Lhn5aWmZxapKlUG6uDYY4Rgy6yOVDpCpdk98Tc1KJ4X+dQdG1MmSkMfLmZeanJRYlpJVbFmel5ULMMURzKwAAAyP8Ix9QAAAA=
+      blockMaterial: SIGN
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PLATE
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_TRAPDOOR
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -6,5 +50,5 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 0.12500158
+saturation: 0.0
+exhaustion: 2.699999
