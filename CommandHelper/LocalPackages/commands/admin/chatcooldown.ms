@@ -37,7 +37,7 @@ register_command(addchatcooldown,
                 }
                 
                 try {
-                    @plr player(@args[0])
+                    @plr = player(@args[0])
                     @player = player()
                     
                     sudo("/pex user ".@plr." add chat.cooldown")
@@ -93,7 +93,7 @@ register_command(remchatcooldown,
                 }				
                 
                 try {
-                    @plr player(@args[0])
+                    @plr = player(@args[0])
                     @player = player()
                     
                     sudo("/pex user ".@plr." remove chat.cooldown")
