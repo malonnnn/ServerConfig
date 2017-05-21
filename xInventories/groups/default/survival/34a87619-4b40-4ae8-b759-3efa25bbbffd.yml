@@ -1,44 +1,185 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GRILLED_PORK
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: RAILS
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      Unbreakable: true
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
+    type: ROTTEN_FLESH
+    amount: 4
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_CLAY
-    damage: 9
-armor_contents: {}
-health: 60.0
-hunger: 20
-exp: 0.09090913
-exp-level: 2
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      Unbreakable: true
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 2
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    amount: 2
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 150
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 3
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 3
+    amount: 49
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 38
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 5
+    amount: 3
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 4
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 14
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_ORE
+    amount: 10
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 3
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 7
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 23
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_ORE
+    amount: 9
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PICKAXE
+    damage: 6
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+    damage: 40
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 10
+exp: 0.043478202
+exp-level: 8
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.7498567
+exhaustion: 2.2280204
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 12
-    duration: 166408
-  '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 166408
-  '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 166408
-  '3':
-    type: SPEED
-    level: 8
-    duration: 193471
-  '4':
     type: REGENERATION
-    level: 4
-    duration: 166408
+    level: 3
+    duration: 188301
+  '1':
+    type: FAST_DIGGING
+    level: 40
+    duration: 188059
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 188301
+  '3':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 188301
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 188301
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 188301
+  '6':
+    type: NIGHT_VISION
+    level: 1
+    duration: 188301

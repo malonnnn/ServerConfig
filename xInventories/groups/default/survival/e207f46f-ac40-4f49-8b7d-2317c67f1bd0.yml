@@ -1,10 +1,76 @@
-health: 20.0
+health: 70.53333282470703
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.9599996
+exp-level: 9
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 0.9880021
-inventory: {}
+saturation: 9.0
+exhaustion: 7.0881653
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 84
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 11
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: �fArrow of �5Harming
+      potion-type: minecraft:strong_harming
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: �fArrow of �2Long Poison
+      potion-type: minecraft:long_poison
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 10
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: �fArrow of �8Slowness
+      potion-type: minecraft:long_slowness
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 34
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 2
 armor_contents: {}
+potion_effect:
+  '0':
+    type: FAST_DIGGING
+    level: 1
+    duration: 170737
+  '1':
+    type: JUMP
+    level: 3
+    duration: 152297
+  '2':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 193286
+  '3':
+    type: HEALTH_BOOST
+    level: 17
+    duration: 193286
+  '4':
+    type: SPEED
+    level: 2
+    duration: 152250

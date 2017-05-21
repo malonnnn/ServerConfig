@@ -9,13 +9,7 @@ inventory:
       Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
     type: COAL
-    amount: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -23,28 +17,184 @@ inventory:
       enchants:
         DAMAGE_ALL: 155
         FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Beer
+      potion-type: minecraft:strong_leaping
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Vodka
+      potion-type: minecraft:strong_regeneration
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Wine
+      potion-type: minecraft:strength
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: liqueur
+      potion-type: minecraft:long_weakness
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Shampaign
+      potion-type: minecraft:fire_resistance
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR
+    amount: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-      Unbreakable: true
-  '4':
+      display-name: cocaine
+  '8':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
     amount: 64
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Beer
+      potion-type: minecraft:strong_leaping
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Vodka
+      potion-type: minecraft:strong_regeneration
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Wine
+      potion-type: minecraft:strength
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: liqueur
+      potion-type: minecraft:long_weakness
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Shampaign
+      potion-type: minecraft:fire_resistance
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Beer
+      potion-type: minecraft:strong_leaping
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Vodka
+      potion-type: minecraft:strong_regeneration
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Wine
+      potion-type: minecraft:strength
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: liqueur
+      potion-type: minecraft:long_weakness
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Shampaign
+      potion-type: minecraft:fire_resistance
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Weed
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Wine
+      potion-type: minecraft:strength
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: liqueur
+      potion-type: minecraft:long_weakness
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Shampaign
+      potion-type: minecraft:fire_resistance
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 11
 armor_contents: {}
-health: 80.0
+health: 22.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.95789456
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.834909
+exhaustion: 1.6135788
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -67,12 +217,12 @@ potion_effect:
   '0':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 175777
+    duration: 199777
   '1':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 175777
-  '2':
     type: INCREASE_DAMAGE
     level: 16
-    duration: 175777
+    duration: 199777
+  '2':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 199777
