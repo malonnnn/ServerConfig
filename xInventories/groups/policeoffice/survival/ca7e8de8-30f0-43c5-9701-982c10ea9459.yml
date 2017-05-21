@@ -1,26 +1,7 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '2':
-    ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_SWORD
-    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -33,37 +14,75 @@ inventory:
         SWEEPING: 3
         DURABILITY: 3
       repair-cost: 63
-  '3':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: ENDER_PEARL
+    amount: 6
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BOOTS
+    damage: 21
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '4':
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+      repair-cost: 3
+  '37':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: GOLD_LEGGINGS
+    damage: 61
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '5':
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Leggings
+      enchants:
+        PROTECTION_PROJECTILE: 4
+      repair-cost: 1
+  '38':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: LEATHER_CHESTPLATE
+    damage: 23
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '6':
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
+  '39':
     ==: org.bukkit.inventory.ItemStack
-    type: BEDROCK
-  '7':
+    type: GOLD_HELMET
+    damage: 61
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Crown
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+      repair-cost: 1
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 16
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
     meta:
@@ -78,9 +97,57 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 1.2860054
-armor_contents: {}
+saturation: 0.0
+exhaustion: 3.7066584
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HELMET
+    damage: 61
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Crown
+      enchants:
+        PROTECTION_EXPLOSIONS: 4
+      repair-cost: 1
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 23
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_LEGGINGS
+    damage: 61
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Leggings
+      enchants:
+        PROTECTION_PROJECTILE: 4
+      repair-cost: 1
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BOOTS
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sergeant Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+      repair-cost: 3
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -529,4 +596,42 @@ ender_chest:
       - "§l§nCommands§0\n§0\n§01. /onduty§0\n§02. /arrest §0\n§03. /release §0\n§\
         04. /addchatcooldown §0\n§05. /remchatcooldown §0\n§06. /fireofficer§0\n§\
         0 "
+      generation: 0
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: rape
+      author: dibs1205
+      pages:
+      - ' Grim765Reaper has been sexually harrassing me in my butthole and i just
+        spent 100 dollars cleaning my butt and now i have his yellow ass semen in
+        it i want to see him in court and he has been telling me to kiss the wall'
+      generation: 0
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: rape
+      author: dibs1205
+      pages:
+      - ' someone( whos name i will scramble rgaimerpre) has been raping me repeatedly
+        and i want to take him to court cus im pressing charges against ur precint
+        if i dont get justice u pay me 2,000 or he gets suspended for a week...'
+      generation: 0
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Issue
+      author: Grim765Reaper
+      pages:
+      - |2
+         Complaint was False.§0
       generation: 0

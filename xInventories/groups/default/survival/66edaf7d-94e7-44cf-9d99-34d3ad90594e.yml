@@ -1,4 +1,48 @@
-inventory: {}
+inventory:
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEEDS
+    amount: 3
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 57
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 2
+    amount: 21
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bKa-me-ha-me-ha§b «×»
+      Unbreakable: true
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: TNT
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 7
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BED
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 20
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      Unbreakable: true
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -21,27 +65,31 @@ ender_chest:
         MENDING: 1
       repair-cost: 255
 health: 60.0
-hunger: 20
+hunger: 15
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.15404426
+exhaustion: 1.4010047
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 4
-    duration: 190874
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 186911
   '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 190874
-  '2':
     type: INCREASE_DAMAGE
     level: 12
-    duration: 190874
+    duration: 186911
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 186911
   '3':
     type: HEALTH_BOOST
     level: 9
-    duration: 190874
+    duration: 186911
+  '4':
+    type: REGENERATION
+    level: 4
+    duration: 186911
