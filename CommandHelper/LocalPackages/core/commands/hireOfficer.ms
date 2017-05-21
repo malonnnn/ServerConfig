@@ -26,26 +26,26 @@ register_command(hireofficer,
     
         executor: closure(@alias, @sender, @args) {
         
-			if (array_size(@args) != 1) {
-			
-				msg(''.color(RED).color(BOLD).'Improper Usage!');
-				msg(''.color(RED).'Usage: /hireofficer <player>');
-				die(); # No need to go further					
-			
-			}
-			
-			try {
-			
-				@player = player(@args[0])
-				sudo("/pex user ".@player." add ch.alias.onduty")
-				sudo("/pex user ".@player." add is.officer")
-				tmsg(player(),color(red)."You have hired ".@player." as on Officer for the Police Force!")
-				tmsg(@player,color(red)."You have been hired as an Officer for the Police Force!")	
-				
-			} catch (PlayerOfflineException @ErrorInfo) {				
-				msg(@player,'Player: '.@plr.' is Offline')
-				die()
-			}	 
+            if (array_size(@args) != 1) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /hireofficer <player>');
+                die(); # No need to go further					
+            
+            }
+            
+            try {
+            
+                @player = player(@args[0])
+                sudo("/pex user ".@player." add ch.alias.onduty")
+                sudo("/pex user ".@player." add is.officer")
+                tmsg(player(),color(red)."You have hired ".@player." as on Officer for the Police Force!")
+                tmsg(@player,color(red)."You have been hired as an Officer for the Police Force!")	
+                
+            } catch (PlayerOfflineException @ErrorInfo) {				
+                msg(@player,'Player: '.@plr.' is Offline')
+                die()
+            }	 
         
         }
     )
@@ -79,30 +79,30 @@ register_command(fireofficer,
     
         executor: closure(@alias, @sender, @args) {
         
-			if (array_size(@args) != 1) {
-			
-				msg(''.color(RED).color(BOLD).'Improper Usage!');
-				msg(''.color(RED).'Usage: /fireofficer <player>');
-				die(); # No need to go further					
-			
-			}
-			
-			try {
-			
-				@player = player(@args[0])
-				if(has_permission(@player,"is.officer")){
-					sudo("/pex user ".@player." remove ch.alias.onduty")
-					sudo("/pex user ".@player." remove is.officer")
-					sudo("/pex user ".@player." group set mortal")
-					sudo("/minecraft:clear ".@player)
-					tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
-					tmsg(@player,color(red)."You have been fired from the Police Force :(")
-				}
-				
-			} catch (PlayerOfflineException @ErrorInfo) {				
-				msg(@player,'Player: '.@plr.' is Offline')
-				die()
-			}	 
+            if (array_size(@args) != 1) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /fireofficer <player>');
+                die(); # No need to go further					
+            
+            }
+            
+            try {
+            
+                @player = player(@args[0])
+                if(has_permission(@player,"is.officer")){
+                    sudo("/pex user ".@player." remove ch.alias.onduty")
+                    sudo("/pex user ".@player." remove is.officer")
+                    sudo("/pex user ".@player." group set mortal")
+                    sudo("/minecraft:clear ".@player)
+                    tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
+                    tmsg(@player,color(red)."You have been fired from the Police Force :(")
+                }
+                
+            } catch (PlayerOfflineException @ErrorInfo) {				
+                msg(@player,'Player: '.@plr.' is Offline')
+                die()
+            }	 
         
         }
     )
