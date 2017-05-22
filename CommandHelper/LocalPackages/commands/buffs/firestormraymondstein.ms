@@ -33,6 +33,7 @@
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." flamethrower",
+                "/shot give ". @plr ." nuclearblast",
                 "/effect ". @plr ." 10 9999 4 true"              
             )
 )
