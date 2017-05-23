@@ -25,6 +25,7 @@ register_command('tournamentjoin',
             
             @tournamentName = @args[0]
             @tournamentURL = @tournamentName.'_omnivs'
+            @puuid = puuid(@plr,true)
 
             # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
@@ -38,10 +39,11 @@ register_command('tournamentjoin',
                  // so we have to set this manually to application/json here, since we're sending
                  // json data. Other data types may have different MIME types.
                  'Content-Type': 'application/json'
-                ),   params: json_encode(array(
+                ),   params: array(
                  'api_key': @challongeKey,
-                 'name': @plr,
-                )),
+                 'participant[name]': @plr,
+                 'participant[misc]': @puuid,
+                ),
                 success: closure(@response){
                 if(@response['responseCode'] != 200){
                     tmsg(@plr,color(red).'Error!')
@@ -52,7 +54,6 @@ register_command('tournamentjoin',
                     die()
                 }
                 @confirmation = json_decode(@response['body'])
-                @puuid = puuid(@plr,true)
                 store_value(@puuid.@tournamentName.'participantID',@confirmation['participant']['id'])
                 tmsg(@plr,color(red).'You have checked into the '.@tournamentName.' tournament!')
             }));

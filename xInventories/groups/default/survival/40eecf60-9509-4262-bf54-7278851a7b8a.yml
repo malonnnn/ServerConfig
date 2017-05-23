@@ -1,8 +1,12 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 7
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -21,115 +25,50 @@ inventory:
       Unbreakable: true
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: TORCH
-  '17':
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eType 95§e ▪ «×»
-      lore:
-      - §eSemi-automatic with three round burst fire.
-      - §eGhast Tears are required for reloads.
-      Unbreakable: true
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-      Unbreakable: true
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
+      display-name: §bKa-me-ha-me-ha§b «×»
       Unbreakable: true
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eOlympia§e ▪ «×»
-      lore:
-      - §eDouble-barreled shotgun.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
-      Unbreakable: true
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_COMPARATOR
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §ePutty§e «0»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to throw.
-      - §eLeft click to detonate.
-      Unbreakable: true
-      blockMaterial: REDSTONE_COMPARATOR
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eGauss Shotgun§e ▪ «×»
-      lore:
-      - §eAdvanced pump-action shotgun.
-      - §eFires metal slugs that penetrate
-      - §eall targets within 40 blocks.
-      - §eDeals 200% damage to Zombies.
-      Unbreakable: true
-health: 99.0
+    type: TORCH
+    amount: 3
+health: 100.0
 hunger: 20
-exp: 1.0967255E-7
+exp: 0.7200001
 exp-level: 9
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.7187233
+saturation: 15.0
+exhaustion: 2.1084154
 potion_effect:
   '0':
     type: WATER_BREATHING
     level: 1
-    duration: 173518
+    duration: 118643
   '1':
     type: INCREASE_DAMAGE
     level: 100
-    duration: 173518
+    duration: 118643
   '2':
     type: FAST_DIGGING
     level: 127
-    duration: 174609
+    duration: 119734
   '3':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 173518
+    duration: 118643
   '4':
     type: HEALTH_BOOST
     level: 19
-    duration: 173518
+    duration: 118643
   '5':
     type: SPEED
     level: 8
-    duration: 173717
+    duration: 195230
   '6':
     type: REGENERATION
     level: 1
-    duration: 173518
+    duration: 118643

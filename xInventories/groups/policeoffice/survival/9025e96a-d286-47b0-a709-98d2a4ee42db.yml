@@ -1,13 +1,258 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Officer's Sword
+      enchants:
+        BINDING_CURSE: 1
+        DAMAGE_ALL: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        LOOT_BONUS_MOBS: 3
+        DURABILITY: 3
+        LUCK: 3
+        MENDING: 1
+      repair-cost: 255
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 57
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 33
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Boots Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Leggings Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Chestplate Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Police Officer Baton Stick
+      enchants:
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        BINDING_CURSE: 1
+        DAMAGE_UNDEAD: 5
+        FIRE_ASPECT: 2
+        ARROW_INFINITE: 1
+      repair-cost: 63
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARPET
+    damage: 3
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+    damage: 40
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+      repair-cost: 1
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 114
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Chestplate Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 511
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
-armor_contents: {}
+fireTicks: -20
+saturation: 0.0
+exhaustion: 0.39432904
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Chestplate Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 28
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Leggings Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 33
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Boots Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 1023
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
