@@ -33,6 +33,7 @@ register_command('tournamentmatchwinner',
             @tournamentName = get_value(@puuid.'tournamentOwned')
             @tournamentURL = @tournamentName.'_omnivs'
             @remainingMatches = ''
+            @winnerID = get_value(puuid(@matchWinner,true).@tournamentName.'participantID')
 
             # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
@@ -55,54 +56,44 @@ register_command('tournamentmatchwinner',
                         }
                         die()
                     }
+
                     @remainingMatches = json_decode(@response['body'])
-                    @player1Wins = true
-                    @matchID = 0
-                    @winnerID = get_value(puuid(@matchWinner,true).@tournamentName.'participantID')
-                    @score = '1-0'
-                    foreach(@match in @remainingMatches){
-                        if(@match['match']['player1_id'] != @winnerID && @match['match']['player2_id'] != @winnerID){
-                            continue()
-                        }
-                        @matchID = @match['match']['id']
-                        if(@match['match']['player1_id'] == @winnerID){
-                            @score = '1-0'
-                            break()
-                        }else if(@match['match']['player2_id'] == @winnerID){
-                            @score = '0-1'
-                            @player1Wins = false
-                            break()
-                        }
+                    @player1Wins = ''
+                    @matchID = ''
+                    @score = ''
+                    
+                    @matchID = @remainingMatches[0]['match']['id']
+                    msg(@remainingMatches[0]['match']['player1_id'].' - '.@winnerID)
+                    if(@remainingMatches[0]['match']['player1_id'] == @winnerID){
+                        @score = '1-0'
+                        @player1Wins = true
+                    }else if(@remainingMatches[0]['match']['player2_id'] == @winnerID){
+                        @score = '0-1'
+                        @player1Wins = false
+                    }else{
+                        msg(color(RED).'Sorry, we can\'t find that player D: Are you sure they are up next? Find out with '.color(WHITE).'/tournamentwhosup '.@tournamentName.color(RED).' and if they actually up, do '.color(WHITE).'/tournamentleave '.@tournamentName.' '.@matchWinner)
+                        die() 
                     }
+
                     @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'/matches/'.@matchID.'.json'
                     http_request(@url, array(
                         method: 'POST',
                         params: array(
                          'api_key': @challongeKey,
                          '_method': 'put',
-                         'scores_csv': @score,
-                         'winner_id': @winnerID,
+                         'match[scores_csv]': @score,
+                         'match[winner_id]': @winnerID,
                         ),
                         success: closure(@response2){
                             if(@response2['responseCode'] != 200){
-                                    tmsg(@plr,color(red).'Error!')
-                                    msg(@response2)
-                                    msg(@url)
-                                    msg(@winnerID.' - '.@score)
+                                tmsg(@plr,color(red).'Error!')
                                 @error = json_decode(@response2['body'])
                                 foreach(@error in @error['errors']){
                                     tmsg(@plr,color(red).@error)
                                 }
                                 die()
                             }
-                            @confirmation = json_decode(@response2['body'])
-                            @finalMatch = true
-                            foreach(@match in @remainingMatches){
-                                if(@match['state'] == 'open'){
-                                    @finalMatch = false
-                                }
-                            }
-                            if(@finalMatch){
+                            if(array_size(@remainingMatches) <= 1){
                                 @url = 'https://api.challonge.com/v1/tournaments/'.@tournamentURL.'/finalize.json'
                                 http_request(@url, array(
                                     method: 'POST',
@@ -116,21 +107,15 @@ register_command('tournamentmatchwinner',
                                     )),
                                     success: closure(@response3){
                                         if(@response3['responseCode'] != 200){
-                                            tmsg(@plr,color(red).'Error!')
-                                            @error = json_decode(@response3['body'])
-                                            foreach(@error in @error['errors']){
-                                                tmsg(@plr,color(red).@error)
-                                            }
                                             die()
                                         }
                                         broadcast(color(RED).@matchWinner.color(RED).' is the winner of the '.color(WHITE).@tournamentName.color(RED).' tournament! Please visit '.color(GREEN).'http://challonge.com/'.@tournamentURL.color(RED).' to see the full standings!')
-                                        store_value(@puuid.'tournamentOwned','')
-                                        store_value(@tournamentName.'tournamentID','')
-                                        store_value(@tournamentName.'tournamentOwner','')
+                                        #store_value(@puuid.'tournamentOwned','')
+                                        #store_value(@tournamentName.'tournamentID','')
+                                        #store_value(@tournamentName.'tournamentOwner','')
                                     }
                                 ))
                             }
-                            tmsg(@plr,color(red).'You have checked into the '.@tournamentName.' tournament!')
                         }
                     ))
                 }

@@ -1,42 +1,67 @@
-health: 20.0
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.2369993
+exhaustion: 0.8299999
 inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+      Unbreakable: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
     damage: 4
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
+      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
       enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-  '2':
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: �7Normal Arrow
-  '3':
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
     ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
-    amount: 58
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+potion_effect:
   '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 24
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-armor_contents: {}
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199129
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 199129
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 199129

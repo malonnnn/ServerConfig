@@ -44,12 +44,12 @@ register_command('tournamentcreate',
                  // so we have to set this manually to application/json here, since we're sending
                  // json data. Other data types may have different MIME types.
                  'Content-Type': 'application/json'
-                ),   params: json_encode(array(
+                ),   params: array(
                  'api_key': @challongeKey,
-                 'name': @tournamentName,
-                 'url': @tournamentName.'_omnivs',
-                 'tournament_type': 'double elimination',
-                )),
+                 'tournament[name]': @tournamentName,
+                 'tournament[url]': @tournamentName.'_omnivs',
+                 'tournament[tournament_type]': 'double elimination',
+                ),
                 success: closure(@response){
                 if(@response['responseCode'] != 200){
                     tmsg(@plr,color(red).'Error!')
@@ -66,7 +66,7 @@ register_command('tournamentcreate',
                 @tournamentInfo = json_decode(@response['body'])
                 store_value(@puuid.'tournamentOwned',@tournamentName)
                 store_value(@tournamentName.'tournamentOwner',@puuid)
-                broadcast(color(RED).'[TEST ONLY] Tournament '.@tournamentName.' is now taking signups! /tournamentjoin '.@tournamentName)
+                broadcast(color(RED).'Tournament '.@tournamentName.' is now taking signups! /tournamentjoin '.@tournamentName)
                 export(@plr."lastUsedTournamentCreate", time() / 1000)
             }));
         }

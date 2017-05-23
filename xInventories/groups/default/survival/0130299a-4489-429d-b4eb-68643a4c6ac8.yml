@@ -1,32 +1,111 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §6Ninjago §4N§cy§ea §e§lD§a§lN§4§lA
+      meta-type: UNSPECIFIC
+      display-name: §6Throwing Star§6 «× | ×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      enchants:
+        DAMAGE_ALL: 20
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bD§3a§br§3k §bR§3e§bp§3u§bl§3s§be§3r
+      enchants:
+        DAMAGE_ALL: 20
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
+      enchants:
+        DAMAGE_ALL: 20
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Throwing Star§6 «× | ×»
+      Unbreakable: true
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Ice Beam§9 «×»
+      Unbreakable: true
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
       lore:
-      - ninjagonya
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 20.0
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+      Unbreakable: true
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_COMPARATOR
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      Unbreakable: true
+      blockMaterial: REDSTONE_COMPARATOR
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Ice Beam§9 «×»
+      Unbreakable: true
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.3920107
+exhaustion: 0.2730031
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 195336
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 195336
+  '2':
+    type: SPEED
+    level: 5
+    duration: 195384
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 195336
