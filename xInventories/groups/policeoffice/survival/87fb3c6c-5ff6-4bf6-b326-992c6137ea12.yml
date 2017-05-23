@@ -1,9 +1,26 @@
-inventory: {}
+inventory:
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 11
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAC3NQQrCMBAF0D8qtNTizn1v4MYDiMWlurAXGJIgoUmmJBPE2yvi/sHrgA67cxAzX5J6fU/8JPRGkvXqJV2dEmHDVYVadGMtKvHG0YFOhGaRl8vOokUzSoycLPaHXBMHz2U4zD6E5DgPxxYrb9H/0e9bo39UY1wpo9SkAL7Tdsps5nvVpSoBH7lQCf+fAAAA
+      blockMaterial: COMMAND_CHAIN
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
 health: 20.0
 hunger: 20
 exp: 0.076923005
 exp-level: 3
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
 exhaustion: 0.0

@@ -1,7 +1,26 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '7':
+    ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_SWORD
+    damage: 5
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -14,14 +33,10 @@ inventory:
         SWEEPING: 3
         DURABILITY: 3
       repair-cost: 63
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 6
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_BOOTS
-    damage: 21
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -33,7 +48,7 @@ inventory:
   '37':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_LEGGINGS
-    damage: 61
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -44,7 +59,7 @@ inventory:
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 23
+    damage: 27
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -58,7 +73,7 @@ inventory:
   '39':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_HELMET
-    damage: 61
+    damage: 65
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -66,23 +81,41 @@ inventory:
       enchants:
         PROTECTION_EXPLOSIONS: 4
       repair-cost: 1
-  '28':
+  '40':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
-  '29':
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Sergeant Shield
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        MENDING: 1
+      repair-cost: 7
+      blockMaterial: SHIELD
+  '4':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
-  '30':
+    type: MAP
+    damage: 696
+  '5':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
-  '2':
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «9»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '9':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
     meta:
@@ -91,6 +124,60 @@ inventory:
       display-name: Message Book
       pages:
       - ' '
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK_STAIRS
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARPET
+    damage: 14
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -98,12 +185,12 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.7066584
+exhaustion: 1.3540459
 armor_contents:
   helmet:
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_HELMET
-    damage: 61
+    damage: 65
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -114,7 +201,7 @@ armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 23
+    damage: 27
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -128,7 +215,7 @@ armor_contents:
   leggings:
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_LEGGINGS
-    damage: 61
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -139,7 +226,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_BOOTS
-    damage: 21
+    damage: 25
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -635,3 +722,36 @@ ender_chest:
       - |2
          Complaint was False.§0
       generation: 0
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Police Application
+      pages:
+      - Police Officer Application
+      - 1. How long have you played on this server?
+      - 2. Why should we choose you?
+      - 3. If you received a complaint about yourself, would you submit it?
+      - 4. Did you answer the previous questions honestly?
+      - 5. Should a player receive warnings, and if so how many?
+      - 6. Do you feel an Officer should provide proof of an Offence?
+      - 7. If you answered yes to the previous question are you comfortable taking screenshots and uploading them online?
+      - 8. Will you follow the direction of a Sergeant and follow the rules of the server?
+      - 9. Will you advise your Supervisor if another Officer is behaving poorly?
+      - 10. Do you wish to be considered for the position of Sergeant?
+      - 11. If so, why? (it's a serious position)
+      - 12. Are you familiar with Chain of Command? What is it and how does it work?
+      - 13. Do you share an account with a sibling? If so, who? (this wont neccassarily disqualify you)
+      - 14. What other Player names have you used?
+      - 15. If your sibling or friend plays here and they break a rule how will you handle it? Honest answer.
+      - 16. Do you know any of the current Officer's? Would they recommend you? If so, who is it?
+      - 17. What times do you normally play?
+      - 18. What days do you normally play?
+      - 19. How long do you normally play?
+      - 20. What timezone are you in? If your aware. (We need coverage for different times)
+      - 21. How much money would you consider to be fair for your choosen position? Honestly. (it's a paid position)
+      - THANK YOUThank you for taking the time to complete an Application for the Position of Police Officer / Police §0Sergeant.Your§0 completed Application can be Submitted at the front Desk.
+      - A Sergeant will review the Application and arrange an Interview with §0you.If§0 you are successful you will be recommended as a new hire to the Police Chief.
+      - You will then complete a second interview with the Chief to determine your eligibility for §0Hire.Thank§0 you for choosing to help to make the server a more enjoyable §0place.Good§0 Luck!

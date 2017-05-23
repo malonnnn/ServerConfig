@@ -20,14 +20,22 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 20.0
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: MUTTON
+    amount: 2
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: SULPHUR
+    amount: 2
+health: 15.0
 hunger: 20
-exp: 0.0
+exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 1.0
-exhaustion: 1.1099964
+saturation: 0.0
+exhaustion: 1.1329957
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -45,18 +53,14 @@ ender_chest:
     type: GOLD_BLOCK
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 5
-    duration: 191520
-  '1':
     type: JUMP
     level: 5
-    duration: 191693
-  '2':
+    duration: 185693
+  '1':
     type: FAST_DIGGING
     level: 20
-    duration: 191776
-  '3':
+    duration: 185776
+  '2':
     type: SPEED
     level: 8
-    duration: 191738
+    duration: 185738
