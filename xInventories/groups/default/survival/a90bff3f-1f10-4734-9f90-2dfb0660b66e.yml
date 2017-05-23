@@ -1,90 +1,55 @@
 inventory:
-  '18':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §bG§1o§6ku §e§lD§a§lN§4§lA
-      lore:
-      - goku
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §eG§1o§6han §e§lD§a§lN§4§lA
-      lore:
-      - gohan
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 60.0
-hunger: 18
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.9260002
-armor_contents: {}
+saturation: 4.0
+exhaustion: 3.3009815
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 195054
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199556
   '1':
     type: FAST_DIGGING
-    level: 5
-    duration: 195282
+    level: 30
+    duration: 199395
   '2':
     type: JUMP
-    level: 40
-    duration: 195320
-  '3':
-    type: INCREASE_DAMAGE
     level: 5
-    duration: 195054
-  '4':
+    duration: 199433
+  '3':
     type: HEALTH_BOOST
     level: 9
-    duration: 195054
-  '5':
+    duration: 199556
+  '4':
     type: SPEED
-    level: 5
-    duration: 195217
+    level: 50
+    duration: 199475
+  '5':
+    type: REGENERATION
+    level: 4
+    duration: 199556

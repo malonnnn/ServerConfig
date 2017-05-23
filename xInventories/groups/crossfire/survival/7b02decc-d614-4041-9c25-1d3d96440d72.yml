@@ -1,9 +1,52 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Carbine §c-§7§7 «8 ◀▷ 1»
+      Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «3»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+      Unbreakable: true
+health: 27.16666603088379
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 1.5500021
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 2
+    duration: 198993
