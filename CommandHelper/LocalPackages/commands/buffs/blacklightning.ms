@@ -21,6 +21,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-6",
+                "/lightning",
                 "/haste 0-3"
             ),
             'buffs': array(
