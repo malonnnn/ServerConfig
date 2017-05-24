@@ -24,8 +24,7 @@
                 "/effect ". @plr ." 12 9999 1 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
-               
+                "/effect ". @plr ." 21 9999 19 true", 
                 "/give ". @plr ." minecraft:stick 16 8:30 4:30 name:&4B&4u&4f&4f&4y_&4Stick"                
             )
         )
