@@ -1,15 +1,10 @@
 register_command(marry, 
 
     array(
-    
         description: 'Marry another Player',
-        
         usage: '/marry <player>',
-        
         permission: 'ch.alias.marry',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -25,13 +20,11 @@ register_command(marry,
         },
     
         executor: closure(@alias, @sender, @args) {
-        
                 if (array_size(@args) != 1) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
                     msg(''.color(RED).'Usage: /marry <player>');
                     die(); # No need to go further					
-                
                 }
                 
                 try {
@@ -87,13 +80,9 @@ register_command(divorce,
     array(
     
         description: 'Grant two Players a Divorce',
-        
         usage: '/divorce <player1> <player2>',
-        
         permission: 'ch.alias.divorce',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -109,20 +98,14 @@ register_command(divorce,
         },
     
         executor: closure(@alias, @sender, @args) {
-        
                 if (array_size(@args) != 2) {
-                
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
                     msg(''.color(RED).'Usage: /divorce <player1> <player2>');
                     die(); # No need to go further					
-                
                 }
-                
                 try {
-                
                     @plr1 = player(@args[0])
                     @plr2 = player(@args[1])					
-                    
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg(@player,'Player: '.@plr.' is Offline')
                     die()
@@ -136,7 +119,6 @@ register_command(divorce,
                 
                 tmsg(@plr1,color(red).'You are now officially single!')
                 tmsg(@plr2,color(red).'You are now officially single!')
-        
         }
     )
 )
