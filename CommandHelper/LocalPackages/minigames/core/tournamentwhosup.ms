@@ -16,7 +16,6 @@ register_command('tournamentwhosup',
                 tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can leave another tournament!'))
                 die()
             )
-            export(@plr."lastUsedTournamentMatch", time() / 1000)
             @arraySize = array_size(@args)
             if (@arraySize != 1 && @arraySize != 2) {
                 msg(color(RED).color(BOLD).'Improper Usage!');
@@ -33,7 +32,7 @@ register_command('tournamentwhosup',
                 }
             }
 
-            @tournamentName = @args[0]
+            @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
             @player1ID = 0
             @player2ID = 0
@@ -69,6 +68,7 @@ register_command('tournamentwhosup',
                         @player1ID = @matches[@matchNumber]['match']['player1_id']
                         @player2ID = @matches[@matchNumber]['match']['player2_id']
                     }else{
+                        export(@plr."lastUsedTournamentMatch", time() / 1000)
                         msg(color(RED).'Sorry, we can\'t predict the future!')
                         die()
                     }
@@ -114,6 +114,7 @@ register_command('tournamentwhosup',
                                     }
                                     @player2 = json_decode(@response3['body'])
                                     @player2Name = @player2['participant']['name']
+                                    export(@plr."lastUsedTournamentMatch", time() / 1000)
                                     msg(color(RED).'That match will be '.@player1Name.' vs. '.@player2Name)
                                 }
                             ))

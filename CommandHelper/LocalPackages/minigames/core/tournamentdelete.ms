@@ -24,7 +24,7 @@ register_command('tournamentdelete',
                 die(); # No need to go further					
             }
 
-            @tournamentName = @args[0]
+            @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
             @puuid = puuid(@plr,true)
             if(get_value(@puuid.'tournamentOwned') != @tournamentName){
@@ -50,18 +50,12 @@ register_command('tournamentdelete',
                 ),
                 success: closure(@response){
                     if(@response['responseCode'] != 200){
-                        tmsg(@plr,color(red).'Error!')
-                        msg(@plr,@response)
-                        msg(@url)
                         @error = json_decode(@response['body'])
                         foreach(@error in @error['errors']){
                             if(@error == 'URL has already been taken'){
                                 tmsg(@plr,color(red).'Name has already been taken')
-                            }else{
-                                tmsg(@plr,color(red).@error)
                             }
                         }
-                        die()
                     }
                     @puuid = puuid(@plr,true)
                     store_value(@puuid.'tournamentOwned','')

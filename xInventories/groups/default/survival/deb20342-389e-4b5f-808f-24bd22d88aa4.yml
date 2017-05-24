@@ -7,31 +7,9 @@ inventory:
       meta-type: UNSPECIFIC
       display-name: §4Kryptonian Laser Vision§4 «×»
       Unbreakable: true
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
-      Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-  '3':
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 70
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -124,47 +102,41 @@ ender_chest:
   '14':
     ==: org.bukkit.inventory.ItemStack
     type: DRAGON_EGG
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 100.0
+armor_contents: {}
+health: 90.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 0.62700266
+saturation: 0.0
+exhaustion: 0.44800237
 potion_effect:
   '0':
-    type: WATER_BREATHING
+    type: REGENERATION
     level: 1
-    duration: 193091
+    duration: 198659
   '1':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 193091
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198659
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 193091
+    duration: 198659
   '3':
-    type: NIGHT_VISION
-    level: 1
-    duration: 193091
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 198659
   '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198659
+  '5':
     type: HEALTH_BOOST
     level: 19
-    duration: 193091
-  '5':
-    type: REGENERATION
+    duration: 198659
+  '6':
+    type: NIGHT_VISION
     level: 1
-    duration: 193091
+    duration: 198659
