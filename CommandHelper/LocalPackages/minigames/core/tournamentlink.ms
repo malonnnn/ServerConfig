@@ -15,7 +15,7 @@ register_command('tournamentlink',
                 die(); # No need to go further					
             }
 
-            @tournamentName = @args[0]
+            @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
 
             msg(color(RED).'https://challonge.com/'.@tournamentURL)

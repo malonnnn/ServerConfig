@@ -37,9 +37,6 @@ register_command(annoy,
                 try {
                     @them = player(@args[0])
                     @me = player()
-                    @vicUUID = puuid(@plr)
-                    @ip = pinfo(@plr)[3]
-                    
                     @delay = @args[1]
                 
 
@@ -48,7 +45,6 @@ register_command(annoy,
                     try(
                         clear_task(@id)
                     ,
-                        continue()
                     )
                     # Teleport me to them immediately
                     @ploc = ploc(@them)
@@ -79,8 +75,7 @@ register_command(annoy,
                     # save the loops unique ID to a global register so we can cancel it at any arbitrary time
                     export('annoying',@id)	
                 } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
-                    die()
+                    msg('Player: '.@them.' is Offline')
                 }
                 
                     

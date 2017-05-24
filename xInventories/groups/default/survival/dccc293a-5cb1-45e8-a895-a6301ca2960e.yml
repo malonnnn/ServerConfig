@@ -2,7 +2,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 173
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -12,179 +11,110 @@ inventory:
         DEPTH_STRIDER: 30
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: DIAMOND_PICKAXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
+      enchants:
+        LOOT_BONUS_MOBS: 3
+        DIG_SPEED: 5
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bDi§cmen§9sional §bBe§3a§9m§9 «×»
-      Unbreakable: true
+    type: CARROT_ITEM
+    amount: 64
   '11':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 134
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+    type: POTATO_ITEM
+    amount: 64
   '12':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
-      Unbreakable: true
+    type: BREAD
+    amount: 64
   '13':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bDi§cmen§9sional §bBe§3a§9m§9 «×»
-      Unbreakable: true
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    damage: 5
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 5
+    amount: 64
   '14':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 80
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      meta-type: POTION
+      display-name: §6One §fPunch §4Man §e§lD§a§lN§4§lA
+      lore:
+      - onepunchman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
   '15':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLE_WALL
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne §e§lD§a§lN§4§lA
+      lore:
+      - warmachine
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
   '16':
     ==: org.bukkit.inventory.ItemStack
-    type: RABBIT_FOOT
-    amount: 2
+    type: RAW_CHICKEN
+    amount: 64
   '17':
     ==: org.bukkit.inventory.ItemStack
-    type: BANNER
-    damage: 9
+    type: RAW_BEEF
+    amount: 64
   '18':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 173
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 170
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Omega Beam§0 «×»
-      Unbreakable: true
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 142
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eT§4h§9o§fr's §eGod Blast§e «×»
-      Unbreakable: true
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
-      Unbreakable: true
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bDi§cmen§9sional §bBe§3a§9m§9 «×»
-      Unbreakable: true
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
-      Unbreakable: true
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
+    type: PORK
+    amount: 64
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 173
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -194,34 +124,34 @@ armor_contents:
         DEPTH_STRIDER: 30
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.33333337
+exp-level: 1
 remainingAir: 300
-fireTicks: 99
-saturation: 0.0
-exhaustion: 2.634374
+fireTicks: -20
+saturation: 17.0
+exhaustion: 0.62239426
 potion_effect:
   '0':
     type: FAST_DIGGING
     level: 127
-    duration: 157466
+    duration: 176872
   '1':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 198914
+    duration: 192700
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 198914
+    duration: 192700
   '3':
     type: JUMP
-    level: 10
-    duration: 186205
+    level: 20
+    duration: 176788
   '4':
     type: WATER_BREATHING
     level: 1
-    duration: 198914
+    duration: 192700
   '5':
     type: SPEED
-    level: 50
-    duration: 163574
+    level: 10
+    duration: 176870
