@@ -16,14 +16,13 @@ register_command('tournamentjoin',
                 tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can leave another tournament!'))
                 die()
             )
-            export(@plr."lastUsedTournamentJoin", time() / 1000)
             if (array_size(@args) != 1) {
                 msg(''.color(RED).color(BOLD).'Improper Usage!');
                 msg(''.color(RED).'Usage: /tournamentjoin <tournamentName>');
                 die(); # No need to go further					
             }
             
-            @tournamentName = @args[0]
+            @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
             @puuid = puuid(@plr,true)
 
@@ -53,9 +52,10 @@ register_command('tournamentjoin',
                     }
                     die()
                 }
+                export(@plr."lastUsedTournamentJoin", time() / 1000)
                 @confirmation = json_decode(@response['body'])
                 store_value(@puuid.@tournamentName.'participantID',@confirmation['participant']['id'])
-                tmsg(@plr,color(red).'You have checked into the '.@tournamentName.' tournament!')
+                broadcast(@plr.color(RED).' has checked into the '.@tournamentName.' tournament!'.color(WHITE).' /tournamentjoin '.@tournamentName)
             }));
         }
     )
