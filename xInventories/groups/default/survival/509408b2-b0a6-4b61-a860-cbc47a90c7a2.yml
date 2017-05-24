@@ -1,15 +1,18 @@
 inventory:
-  '9':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: INK_SACK
+    damage: 4
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
+      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 13
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -17,45 +20,10 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 5
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 6
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: SAPLING
-    amount: 10
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: APPLE
-    amount: 2
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: LOG
-    amount: 32
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
-    amount: 3
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: RABBIT_HIDE
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-    amount: 13
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: RABBIT
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 13
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -63,36 +31,24 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 100.0
+health: 60.0
 hunger: 20
-exp: 0.8461538
-exp-level: 3
+exp: 0.7777778
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 1.7389868
+saturation: 19.0
+exhaustion: 3.9599507
 potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 165864
+    duration: 192867
   '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 165864
-  '2':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 165864
-  '3':
-    type: WATER_BREATHING
-    level: 1
-    duration: 165864
-  '4':
+    level: 10
+    duration: 192867
+  '2':
     type: HEALTH_BOOST
-    level: 19
-    duration: 165864
-  '5':
-    type: NIGHT_VISION
-    level: 1
-    duration: 165864
+    level: 9
+    duration: 192867
