@@ -1,64 +1,152 @@
 inventory:
-  '10':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LAVA_BUCKET
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREBALL
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: LAVA_BUCKET
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: FLINT_AND_STEEL
+    type: SKULL_ITEM
     damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAEWTya6bWBiESdQt3Vz1Y/TOujJgMLDIwpjBh+lgZtgBB8xsBhsDz9QP2U422db/lapU0v+JYZ/YP3b9bBpzvOdlk31g3wHC/iU5JkvwPP1CSYy+qCxJv9iYQV80heIMP+A5zbGf2Ofb1Gfjo8ymH9jHI1sezzGbPjEM+/aB/bDLWxf/Ur7/94R4ddPqNNvFy6kg2QVVC0Dr3hoy9nI95JrLCFPRSVLATgsw+/PsRktGzkQEaUbvPdne702EzwG/rsfpLpYa5U/wVPsvj181W5Ouja22KEvtOxyyoStOOyJSJz6bH6NyLnt/cUTLSOaNT/krHCpba7fuAURVnQERVXvgD/tElwa9fuelDqKAxB2hZA8bseOKkLP22Wam4ZGDXWda8KSxl/reN9Uk0/21iFQnlWfBmPX9+YUS4Xm+H/zUCIqGvbfZwBiemx9LfpGY2LBnTeaGrIf06xWzkDCpOi97tVVN5uYr1iio/UG6sO2U3iyZRcGhOQfuZmuCTovXK+6LGYAuYw0WaaoHNkysOpb3fj8S7ijDtObyR/zOhGReN13BLJtmMseMEJfAXvFbPCbDKZio6/0UDbw1mjc33wdracOVTaBLz7qg8ZzqQpkLCqUvpHzHX41BnEBs0KkzobY+BaLCTQKzPHGr7K0wwkdR3I09xWU30A/7XYXL6rl8oA70ga4e3EVI9pc+XM4rA0kzfy045/bmFbCl0uusJLIJEVaepzx2jRo/2KXVEU+dQ+A/djsvJfqQsBR8Xch2JzfkbfNdIOWxMDvBipBYlvGjTNeCDdG9eloraM45MHHBXflzRNfRvVR4VkyN9r2lNhKv0czUjXALREmkdT/6tTNe3vtWqQkpr6l0PAQ/P7C/vbh5Zt+CbFXw2Cea9GAVSXAqYSXi0LnSxiauhpPS0Akn0PFrQkZ9IntKdAZHUAHaIL1Sl6MqkpUiEqwmbHUqdFBtOFYd+u5L3/jWcGoKlK8yvShz1DZT5NJF4rslLBU9DIwm7fgiaa3iN0M2XdJKOAqUxm29BfnNGvnXEnbWinz33cFqsotFpK23gapnQGNotku971P59kygupfxxcJT4T5rhz+s1hJ90npV2kotOtPPKLjOSPYodPHWyGYXKEStsSmV7kSl7rt01Lpk5Jxo6LsHo/31OKiAwg2PWnCAglK96cpwblS41US4WY2+3bZI1gm9QrXuA8o4K1we4D8x7AP7y4jbDPvU4ikb+7hDMYb9DyKrpGaNBAAA
+      skull-owner: Laserpanda
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+      Unbreakable: true
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eGauss Shotgun§e ▪ «×»
+      lore:
+      - §eAdvanced pump-action shotgun.
+      - §eFires metal slugs that penetrate
+      - §eall targets within 40 blocks.
+      - §eDeals 200% damage to Zombies.
+      Unbreakable: true
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eOlympia§e ▪ «×»
+      lore:
+      - §eDouble-barreled shotgun.
+      - §eDeadly at close range.
+      - §eIneffective at longer ranges.
+      - §eFires incendiary ammo.
+      Unbreakable: true
   '14':
     ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §ePython §l/§e Knife§e ▪ «×»
+      lore:
+      - §eRevolver with high power.
+      - §eLeft click to melee enemies
+      - §ewith the tactical knife.
+      Unbreakable: true
   '15':
     ==: org.bukkit.inventory.ItemStack
-    type: DIRT
+    type: FIREWORK_CHARGE
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
+      Unbreakable: true
   '16':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+      Unbreakable: true
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eType 95§e ▪ «×»
+      lore:
+      - §eSemi-automatic with three round burst fire.
+      - §eGhast Tears are required for reloads.
+      Unbreakable: true
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_COMPARATOR
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      Unbreakable: true
+      blockMaterial: REDSTONE_COMPARATOR
 armor_contents: {}
 health: 60.0
-hunger: 20
+hunger: 18
 exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.4
-exhaustion: 0.74389577
+saturation: 0.0
+exhaustion: 0.23421134
 potion_effect:
   '0':
     type: REGENERATION
     level: 4
-    duration: 158916
+    duration: 170192
   '1':
-    type: FAST_DIGGING
-    level: 30
-    duration: 194079
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 170192
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 158916
+    duration: 170192
   '3':
     type: JUMP
     level: 10
-    duration: 159834
+    duration: 170250
   '4':
     type: INCREASE_DAMAGE
     level: 12
-    duration: 158916
+    duration: 170192
   '5':
     type: HEALTH_BOOST
     level: 9
-    duration: 158916
+    duration: 170192
   '6':
     type: SPEED
     level: 8
-    duration: 159102
+    duration: 170378
