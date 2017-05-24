@@ -7,7 +7,7 @@ killnear:/killnear $radius = >>>
     foreach(@plr in @plrs){
         if(!has_permission(@plr,'is.officer')){
             pkill(@plr)
-            broadcast(@plr.color(red).' was standing too cloose to the BioScan door!')
+            broadcast(@plr.color(red).' was vaporized. Poof!')
         }
     }
 
