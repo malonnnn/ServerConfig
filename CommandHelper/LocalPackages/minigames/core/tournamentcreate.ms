@@ -4,7 +4,7 @@ register_command('tournamentcreate',
     
         description: 'Create a tournament',
         usage: '/tournamentcreate <tournamentName>',
-        permission: 'tournament.starcreate',
+        permission: 'tournament.create',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
 
         executor: closure(@alias, @sender, @args) {
@@ -24,7 +24,7 @@ register_command('tournamentcreate',
                 die(); # No need to go further					
             }
 
-            @tournamentName = @args[0]
+            @tournamentName = to_lower(@args[0])
 
             # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
@@ -33,7 +33,7 @@ register_command('tournamentcreate',
             @puuid = puuid(@plr,true)
             @prevTourn = get_value(@puuid.'tournamentOwned')
             if(@prevTourn != null && @prevTourn != ''){
-                msg(color(RED).'Sorry, you are already running a different tournament! Please first do /tournamentcancel '.@prevTourn)
+                msg(color(RED).'Sorry, you are already running a different tournament! Please first do /tournamentdelete '.@prevTourn)
                 die()
             }
             tmsg(@plr,color(red).'Creating tournament...')
@@ -66,7 +66,7 @@ register_command('tournamentcreate',
                 @tournamentInfo = json_decode(@response['body'])
                 store_value(@puuid.'tournamentOwned',@tournamentName)
                 store_value(@tournamentName.'tournamentOwner',@puuid)
-                broadcast(color(RED).'Tournament '.@tournamentName.' is now taking signups! /tournamentjoin '.@tournamentName)
+                broadcast(color(RED).'Tournament '.@tournamentName.' is now taking signups!'.color(WHITE).' /tournamentjoin '.@tournamentName)
                 export(@plr."lastUsedTournamentCreate", time() / 1000)
             }));
         }
