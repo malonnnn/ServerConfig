@@ -25,7 +25,6 @@
                 "/fly",
                 "/transmute <number>",
                 "/thru (phases through objects)",
-                "nuke",
                 "Shoots nuclear blasts with bare hand"
             ),
             'buffs': array(
