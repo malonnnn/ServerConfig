@@ -1,120 +1,33 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BRICK
+    type: COMMAND
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAIVT31PaQBC+1M7oWNu/wclzsAkhQO6pCh0Jg4CAaGAY50iWcHjJ0dxFCwz+7b0AHe30wafNft9+m739cYrQKfp2xXjw9DORVK4GJNLQWcCTkErKkxuQmoY+k0xydIJOa5mQPG6TGJD2Q0PHS/4CKYSKOq7xOCZJePT1u8jimCfnJI15+iikAs9fz1/NC0eZjZc8U0GnDLA1NZSTsQRScvC7kAoqJCQB9OBXRlXqHG7zKyKgy4iEvXudkmdVa+705/zlMo1F/t3jkuRF47HlFmcT4zKvwJOg2PGGhlhnQOQc0scp51LoRo1nicyFkkR4E1KxZGSFNwFnPMWuY7tu1dlut8Y/WgZRRJPoI7llu7ZdLv8nD+Yg5DJ/ykcJHNN9+7t4yhh7p6iTmESA7YO2n9OdF9VKvPFCPA1gFgQlqwCuWymUqiWnQMCsFirTKrFIMXSsadnopnwJqaQg8EbCb5mlkPdpSFgGGFZNc/QwN8OHJgtWXln5g77JOt5iWfGS4Wpa88perPjGZbm1ct/FOpLcO8y3m/NRcptN46HZsnsMGj0riO+eO3W/NFr0FqN732nXWXyzbrKbdZv56+F8NIjMtsL99V2xM4jWflFxA8Uqrn3dUzG3xdFgSP14RNvF3sJf+HT2YLnbiWrTdmI01Kb9nbZqm0LqVOSrFfaZmjcumrbrVG2jywXgzRUPV3hszgzLmhmm2pYGkBCPS+7MKB6QFsxkCyI8tst53MzI7cTo0Wh+wJ3Smz6PVhu3z1ndYdvtCfpEQ3R2OI7dnR2hs34WBCDEbpoIIU1dVosI2cnkMpOosdHVOFKiq3foyiZity5YD/ZZxMX+wpTZpdHVS/V8gipkbDnYKWGzMjnXtxr6MkhJ8LTPqyH0B6E8rLLuAwAA
+      blockMaterial: COMMAND
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
+    type: COMMAND
     meta:
       ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkmGSyksG4l2SAcspVxmV5jh1pnaUNDCU/mIsnRxFl/Od5KjAqjwcjiPQnz2X1UruAKPmMErKxzGSsvRHIutNatyHa0ouamhqjCYZZbMYkwFdRldeT+0/PYMysDvw9jzmwoADwo8JScxcvjlk49o1iCW+aKcsL1wfEAixN11jS/JVLxhG8ul327s3eT+c1fDKV2J3PQbetmPhUzQzowE30Z6KY/feeqLMK5nmhIUzPUP6SKRz1RSb4MCSTv6QZvAqxHpcjPoznMYH3WS4sUlOvH2KDCIueROjHdJ4kYEMm+rTHeX9/AH2ZnCPBgBAAA=
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAIVTW2/aMBR21kmtumrPe0R5Dl0uJECkSmuhhSDu0EtAVWUSEwJ2zGKnLI3ob58DbGLaQx+ik+875zu2z+UcgHPw9QZTb3Ub8ZCnYxhI4MKjkR/ykEYdxCUJfIYJp+AMnNcSxinpQoKA9EMCp2u6QTHyheu0RgmBkX/y7TtLCKFRAcaExi+MC7LwXnhXL01hMid6DVk4w8jWZooACY5QDA+4j2IWMo4iDw3RzyQUqXO6S28gQ30MOdrDRgxfxV1zMFrQzXVMWP5/nZ/ocCTQNAt9W8YI8gWKX2aUciYrNZpEPA/kMLAzP2RrDFM78yimsa1ut1vlHxVGQRBGwUdCS1MrZf0/tbdAjK/zO3+g1zW1Wrb+6tkqwfhIUocEBsg2DuJR7u5tRNHszBHVgZZmGmWvaOq+VSzpVb9YNbRSsVLSVd8ytFmpWlL6MV2jmIeI2RlHv3gSo7xCDxAnyEZpS508LVT/qYW91LEEHo9U3HOW67ITPaSzmmM5RPib11Y7rR7Fmhw+mtg1WotJNEhm5EFtG0OMmkPNI/evLumk7hKHvcc73F06qUsGeq9xt5oQ1+iMg81kGaSd+gS7bwO1Nx4uXNIi7vj2rdO4N7uNW61XHwqfa3bIfak3DlT30UmdSKvOB1dX22dRru2z0hSz9affonyCqYcsHyZ/hEXHbV01qmbFUPqUITu7oX5qTw1Tmyua+NS5SICgLyitMlf0A9VGc95GgWAtVQTOldw+K8MwWBzzR9Fi7OypnpOVPbmL3bGakTM5ud2egU+hDy4Oe7JbuRNwMUo8DzG2azcAQBJL1oaM9xK+TjhoZrLoVwxl8UBZ2IjtBsqWvX0WdrlfNmF2aWRRAjlvsQiZaqZtVmyt/FyQtxL4Mo6ht9rnlQD4DWWu9cr5AwAA
+      blockMaterial: COMMAND
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBhGf01MkPgYbkmA4VKWKpoO6YBtuc5uKINchtpQqMBT+YiydHnynS85MoAMT8d2FOKz/y5rwSW4xwU86yzXTWRulIIzphhWbis5MjWlcGykM8PYlKUmg7yeLrwfan59BGng0zD2/CoDwJ0EDzETI4dfPnsqTSu1SD1xmrG1cnhURYCbi43P8Zy/YQt36759sXaz8881B5aYIkNeRc/7Me9idYcOgm8P2qmLbr6bTf5SVdSNJtrtNdLhKUj2P1lIjMD9QiR8ranbzsTNDBq2C1nw6nxU2UJrEvqNv1Dh65FOk3eNumQmTVaXqeas9fAH+BKZSRgBAAA=
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkm4DS2LLoxoOqQMQoEWdlyGwDBg00Lr9Kl8RGfp4ixOvu8kRwVQ4WU/LJx/nb/bnlMFHnEDr6jR3bVpWRqqzZVm03WplZbTai5ya5daSLeNSgVVjk70PPf08gzKTH/m5UwvKgA8KPCUlXyh8EuFrxfHTm+OPq8FdmRP9joPMTut8JSJ6h07eJR8++bshPvPRXN5QDy3/K6YoqUaM31nxZxuY6Me02vOPuzA9Lucpbc8CUTAopuMHXrFGLBUkORzCFjckzHuw4QM5E6Y5HfJjPBQjMTjnHgpylnMCq/o8GS4bbTZyPfwB6Bk/MsYAQAA
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBhGf01MKvEx3JIMw00WLsRLO6SMllJkZkdhCExnakOhCk/lI8rS5ZdzTvIZAAbcbQ+DUh/dV90qsYBrUsF94ImiLOzCRDXGpvPg1Oa+qHzT8SzXdgNfWIFlgDFHJ9H1rTjfwqIXP/3QibMBAFcLuMkKNQj4FWOEeN6gKo9UORJv3ukWqXciTz45ZuP+mXhEz3z15K3H4J/r9sWnq5gdNfy4GfY6Q2s7UWKVWKXeXfgyamNZThRnkmnmxmmouN5NTBJMcdJSvEFMxiPFbKIybJiO7XiKJJ2qlr+Eii4zzeXbgaav3wwnirdRUOfocX4Pf+z7wBsYAQAA
+    type: WOOL
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBiFf01MkPgYbkkGClQWLoxUOqQU5c7suMyUwlAbCg30qXxEx527c3K+LzkygAxPYTdx/jl8syOnEtzjGp51WulGxZBSWtpa0XW9VF4MVirMsFRUsoJqlimDLKQzHcYjvTyCNNJ5nAZ6kQHgToKHpOAThR+6uIhkDaozl1cLNkWPQsR93J7X+JQs5Ts2cS/27Zu5W6x/rDEWqcHzlduQ09dU9gnarQJOt4Fa9fGV2JuZOPGcax9d3grGiTUv2iA/jVXiJJ2Xup1vH1SSBr3nBP2+xaofYXWf4puniWzXjR+R3o8Otz/fC12LZehVvIdfV+c97hgBAAA=
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: STEP
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: STEP
-    damage: 3
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2OTW6DMBgFv1aqRFGP0S0SAQP1IouqqYhRbEpCSOJdgo34sWlEICqcqkcsyy6fZkZ6JoAJL7tmUOqr+y4qJQ14JAJekYsLJII3S0ghLOQEhYVx4Fq5i20/R6LwHGyCOUdX2fWVvD2D0cuffujkzQSABwOesrMaJPzKMbL5sbTFMVL5SPx5pztbxaS+BqTNxssH8Yme+frd34z4n+v154OnTm5U8jYZLjqzN+5WyfV2kev9nU5ZFYdk4quyZpNouCaI66ihdeKxA0VsFanTgXos5JrrT4fXe486kaZpVtJ677IwQSzdzt1pilOCSLvARbJczu/hD32v82gYAQAA
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Py06DQBhGf01MkPgYbkmGa52FC5XaDukM2lIus+MyyGWoTQsGeC4fUJYuv5xzFp8KoMLDoR2k/Lh8l7UUCtySAh6d3DB0bGSanZZYswq00lLslFqJ7QyLJ73QHVMFdYnO4tLX4noPSi/GfriIqwoANwrchakcBPyKyUM8rlARezKfiLPs4ICkT5rzipzCKXsjDukWvn1xdhP+59p9GtkyMb2Knz6HrAvRztxLsd3reXf8SYLXis2t5UdE5y6XrCFjEqwnGoWSb94l6xLEZt7S+Tj6AWv8oGhotDYTg1g8Yi1zqUEbr2Lul843dOJBO9Law2WMnpcH8Ad3FMn6HAEAAA==
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2PvW6DMBhFv1aqRFEfoyuSwQTCkKFqqsYoxiUxELLxY0qIoRGBKOa5+oBl7Hh1zhmuDqDDy/48SvnV/1QnKTR4JCW8Li0nr4RVGXjpFoZtl67hFSU2qgIj28kcC9mlDvocXUQ/nMT1GbRB3IexF1cdAB40eIozOQr4FcpHx0ONyoMvC0WcefM9kow0F5d0scrfiUPamW/enK3y/rmLIUsWMsV+fezCMW9jtMU7KTY7s2ijG7UiRBNq0XWEaUtNOgWS8aBJeagoJ4qtz4olkRl8hlY6fZtBEynGQ5NxglhCVZDQibZ+PXc1Tcg94B+YdKZXhavV/AD+AOk79oYcAQAA
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2Oy06DQBhGf01MKvEx3JIMw00WLsRLO6SMllJkZkdhCExnakOhCk/lI8rS5ZdzTvIZAAbcbQ+DUh/dV90qsYBrUsF94ImiLOzCRDXGpvPg1Oa+qHzT8SzXdgNfWIFlgDFHJ9H1rTjfwqIXP/3QibMBAFcLuMkKNQj4FWOEeN6gKo9UORJv3ukWqXciTz45ZuP+mXhEz3z15K3H4J/r9sWnq5gdNfy4GfY6Q2s7UWKVWKXeXfgyamNZThRnkmnmxmmouN5NTBJMcdJSvEFMxiPFbKIybJiO7XiKJJ2qlr+Eii4zzeXbgaav3wwnirdRUOfocX4Pf+z7wBsYAQAA
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2OzW6CQBhFvzZpYkkfo1uSGWFAFi6a0tYhglX5cWYnw1CEGWsUqvBUfcSy7PLec09yDQADnrZNp9Tn+bs8KDmBe1rAs10WON+72CyFOzNt5BBzhgpi2pLYhOQesRA2wBilkzy3B3l5hEkrb213lhcDAO4m8JDuVSfhV/YB4rsKFbtAiZ46Y463SK1ofXLpMe3zV+pQPfLFi7PsvX9b0u4zopgVVPy47nKdoqW1UXKxwUInP5FfVOEgruHwNax8gaO4aljNMNcbtYrDPvoIbzxOrLBWmmk6RH5zZVk4Zdl7w30x9qnmdVBH07cb18mUHrFXrufz8T38AbVDYsAYAQAA
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_CLAY
-    damage: 3
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE2OwU6DQBiEf01MkPgYXkkWFhCORlK7pIC0C2X3RmGxwG5tWjDSp/IR3aOHmeTLzCRjApjwtBtnKT8uX10vhQH3pIVnFDQo6DpshZ42120aK2hrbLVI2BjbTef6oQmmHp3FZerF9RGMSfxM80VcTQC4M+ChrOUs4FcsMeLVEbVVLJuF+JrpDsmMDOcXciqXwxvxidL5+tXfLOG/rjfVe08yHB/5KZ8PqkQbvJVivbUbVXwntHASVbjsthrTgffJsJJpVHhMaVGCOC2HJCKY0QTxiDjZPh6ZUyCuYslprNIbw9l7vvAo1ZzjhH72XWWH+j38Abe1HYcYAQAA
+    type: END_BRICKS
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      internal: H4sIAAAAAAAAAE1OSU+DQBj9NDFB4s/wSsKuHF2QDikglLLMjWUIy0xtWqgOv8kf6fTm5b28LXkygAwPu2mh9PP01Q2USHCLWnhsNFNv69ZQBHSK2Zm2UpmOpmi6ZuutURnkmcggi9GRnOaBnO9BmsnPvJzIWQaAGwnusoouBH4J91Vc9Gpb+LThyBY63ak0QuPxCR0yXr8hGzGRb17sLXf+da25yi1aGn6PD/FSs0zdGgklm0Rr2P4SrK4V6MkYeLFarhmN3l8ZHmkfee53mMccs5DhFOlRul+jPByCdeLhdeP5fSkYe+61Q8PxYxL+0BWaI57DH/qNseEUAQAA
+    type: STONE_PLATE
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -122,9 +35,9 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.498
+exhaustion: 0.26699263
 potion_effect:
   '0':
     type: SPEED
     level: 0
-    duration: 337
+    duration: 315

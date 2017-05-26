@@ -55,7 +55,7 @@ regions:
         max: {x: -14.0, y: 82.0, z: 40.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
+            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -74,6 +74,15 @@ regions:
         owners: {}
         type: global
         priority: 1
+    chiefs-closet:
+        min: {x: 4.0, y: 75.0, z: 13.0}
+        max: {x: 14.0, y: 78.0, z: 18.0}
+        members: {}
+        flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
+            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 3
     sergeants:
         members:
             unique-ids: [ca7e8de8-30f0-43c5-9701-982c10ea9459, e6de8cf0-af45-44e4-882f-d98446f4b31b]
@@ -93,9 +102,9 @@ regions:
         members:
             unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e, 0130299a-4489-429d-b4eb-68643a4c6ac8,
                 ca7e8de8-30f0-43c5-9701-982c10ea9459, a8185de3-b053-4aca-9eb6-d98728e476ad,
-                8cb79cd3-1e48-4087-9137-a37e164f1494, 28556dea-667d-409f-b2ff-fb4177a20ff2,
-                869b4227-b51e-452e-adbd-48759a6848dd, 9025e96a-d286-47b0-a709-98d2a4ee42db,
-                e6de8cf0-af45-44e4-882f-d98446f4b31b]
+                8cb79cd3-1e48-4087-9137-a37e164f1494, 869b4227-b51e-452e-adbd-48759a6848dd,
+                9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b,
+                55c64563-61a4-4031-a4f6-0c0f65c03af5]
         flags: {}
         owners: {}
         type: global
@@ -118,14 +127,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    chiefs-closet-door:
-        min: {x: 5.0, y: 75.0, z: 12.0}
-        max: {x: 13.0, y: 77.0, z: 18.0}
-        members: {}
-        flags: {deny-message: This is the Chiefs Closet!, entry: deny, interact: deny}
-        owners: {}
-        type: cuboid
-        priority: 2
     doortotrainingroom:
         parent: police
         min: {x: -7.0, y: 64.0, z: 19.0}
@@ -145,15 +146,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 0
-    emergencycase:
-        parent: police
-        min: {x: -9.0, y: 76.0, z: 38.0}
-        max: {x: -9.0, y: 76.0, z: 38.0}
-        members: {}
-        flags: {block-break: allow, block-break-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     sergeant-door-1:
         parent: restricteddoors
         min: {x: -7.0, y: 75.0, z: 18.0}
@@ -190,10 +182,10 @@ regions:
         priority: 0
     vault:
         parent: sergeants
-        min: {x: -11.0, y: 74.0, z: 29.0}
+        min: {x: -13.0, y: 74.0, z: 28.0}
         max: {x: -11.0, y: 77.0, z: 30.0}
         members: {}
-        flags: {deny-message: Restricted Area, entry: deny}
+        flags: {deny-message: Restricted Area, entry: deny, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -202,12 +194,12 @@ regions:
         flags:
             vine-growth: deny
             build: deny
-            game-mode: SURVIVAL
             blocked-cmds: [/thru]
+            game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
-            game-mode-group: NON_MEMBERS
             pvp: allow
+            game-mode-group: NON_MEMBERS
         owners: {}
         type: global
         priority: 0

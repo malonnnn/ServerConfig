@@ -18,7 +18,7 @@ register_command(onduty,
     
             @keyPreviousGroup = 'police.'.@playersUUID.'.pgroup'; # Unique AFK key to store the previous
             export(@keyPreviousGroup, @playersGroup); # Store the previous group in the register				
-            
+            set_pmode(@player,'SURVIVAL')
             if(has_permission(@player,"is.sergeant")){
             
                 set_timeout(3000,closure(

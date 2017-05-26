@@ -22,13 +22,5 @@ bind(world_changed, null, null, @event,
         runas(~console,'/effect '.@player.' clear')
     }
     
-    if(@from == 'fightclub'){
-        export(@player.'fightClub','')
-        @winner = import(@player.'fcvs')
-        if(@winner != '' && @winner != null){
-            include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
-            _fightClubReset(@winner,@player)
-        }
-    }
 
 )
