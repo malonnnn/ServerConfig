@@ -1340,6 +1340,75 @@ automatashop:
           wand|virusheart: 3000
           wand|defenderheart: 100
 
+backflip:
+    icon: diamond_axe:134
+    icon_disabled: diamond_hoe:134
+    icon_url: http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2
+    alias: tesseract
+    category: utility
+    tags: nojail
+    worth: 500
+    earns_sp: 2
+    upgrade_required_path: student
+    upgrade_required_casts: 40
+    actions:
+        cast:
+        - class: ChangeContext
+          target_caster: true
+          ignore_result: true
+          actions:
+          - class: FallProtectionAction
+        - class: ChangeContext
+          source_yaw_offset: 180
+          actions:
+          - class: Retarget
+            actions:
+            - class: Teleport
+    effects:
+        teleport:
+        - class: EffectSingle
+          sound: magic.teleport
+          location: target
+          particle_override: particleNucleus
+          color_override: colorOrbital
+          source_location: eyes
+          effectlib:
+             class: AtomEffect
+             particleNucleus: dragon_breath
+             particleOrbital: redstone
+             iterations: 8
+             offset: 0,-1,0
+        precast:
+         - class: EffectSingle
+           sound: magic.teleport
+           location: origin
+           particle_override: particleNucleus
+           color_override: colorOrbital
+           source_location: eyes
+           effectlib:
+               class: AtomEffect
+               updateLocations: false
+               particleNucleus: dragon_breath
+               particleOrbital: redstone
+               iterations: 8
+               offset: 0,-1,0
+         - class: EffectSingle
+           color_override: color
+           effectlib:
+               class: LineEffect
+               particle: redstone
+               updateLocations: false
+    parameters:
+        target: block
+        allow_max_range: true
+        allow_passthrough: false
+        range: 12
+        cooldown: 10000
+        prevent_passthrough: nopassthrough
+        bypass_confusion: true
+        vertical_range: 8
+    costs:
+        mana: 20
 backup:
     icon: diamond_axe:101
     icon_disabled: diamond_hoe:101
@@ -1975,6 +2044,65 @@ boom|2:
     costs:
         mana: 75
 
+boomerang:
+    icon: gold_sword
+    actions:
+        cast:
+        - class: ArmorStandProjectile
+          velocity_transform:
+            x:
+              class: dSin
+              a: 10
+              b: 0.31416
+              c: 0
+            y: 0
+            z:
+              class: dSin
+              a: 5
+              b: 0.62832
+              c: 0
+          actions:
+          - class: Damage
+    effects:
+        projectile:
+        -   class: EffectSingle
+            effectlib:
+                class: SphereEffect
+                particle: flame
+                particles: 4
+                radius: 0.2
+                duration: 30000
+        tick:
+        - particle: redstone
+          color: FF0000
+          location: target
+    parameters:
+        target_type: LivingEntity
+        range: 100
+        armor_stand_invisible: false
+        lifetime: 10000
+        hitbox_size: 0.2
+        damage: 1
+        entity_damage: 2
+        cooldown: 0
+        right_arm_item: diamond_sword
+        # This won't do anything with teleport: false
+        # But it doesn't seem to do anything either way? Whhuutttt?
+        location_offset: 0,30,0
+        # Turns off teleporting the entity every tick
+        teleport: true
+        # Turns off re-orienting, we don't want this since we're animating the armor
+        orient: false
+        # This is supposed to account for gravity, maybe not working
+        apply_velocity: false
+        velocity_offset: 0,0.05,0
+        armor_stand_gravity: false
+        right_arm_transform:
+            x: "6.28*sin(0.2*t)"
+            y: 0
+            z: 0
+    costs:
+      mana: 30
 boomstown:
    icon: diamond_axe:196
    icon_disabled: diamond_hoe:196
@@ -3245,6 +3373,8 @@ cure:
         bypass_pvp: true
         bypass_friendly_fire: true
         only_friendly: true
+        cancel_on_damage: 0.5
+        cancel_on_cast_other: true
         remove_effects:
         - confusion
         - poison
@@ -3288,8 +3418,6 @@ cure|4:
           - class: Feed
     parameters:
         feed: 1
-        cancel_on_damage: 0.5
-        cancel_on_cast_other: true
         delay: 500
         repeat: 10
 
@@ -3372,6 +3500,49 @@ curse|2:
         effect_confusion: 2
         effect_slow: 3
 
+dash:
+    icon: diamond_axe:178
+    icon_disabled: diamond_hoe:178
+    icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+    category: combat
+    worth: 100
+    earns_sp: 8
+    actions:
+        cast:
+        - class: Repeat
+          actions:
+          - class: ConeOfEffect
+            actions:
+            - class: Damage
+          - class: ChangeContext
+            target_caster: true
+            actions:
+            - class: Velocity
+          - class: Delay
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shimmer_crack
+           sound_volume: 1
+           particle: sweep_attack
+    parameters:
+        target: none
+        target_type: Damageable
+        range: 3
+        hitbox: false
+        fov: 0.4
+        velocity: 0.2
+        source_pitch_min: 0
+        source_pitch_max: 0
+        damage: 2
+        target_breakables: 1
+        cooldown: 5000
+        magic_damage: false
+        instant_block_effects: true
+        repeat: 10
+        delay: 100
+    costs:
+        mana: 40
 day:
     icon: diamond_axe:84
     icon_disabled: diamond_hoe:84
@@ -4007,6 +4178,32 @@ entangle:
     costs:
         mana: 70
 
+evade:
+  icon: diamond_axe:201
+  icon_disabled: diamond_hoe:201
+  icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+  hidden: true
+  category: specialty
+  actions:
+    cast:
+    - class: Repeat
+      actions:
+      - class: ChangeContext
+        actions:
+        - class: Teleport
+  parameters:
+    target: self
+    target_offset: rand(-5,5) 0 rand(-5,5)
+    vertical_range: 5
+    stop_on_success: true
+    repeat: 10
+    unsafe: water,stationary_water,lava,stationary_lava
+    passthrough: transparent_no_water
+    prevent_passthrough: "!transparent_no_water"
+    require_build: true
+    cooldown: 2000
+  costs:
+    mana: 10
 extinguish:
     icon: diamond_axe:232
     icon_disabled: diamond_hoe:232
@@ -4236,7 +4433,7 @@ fire|3:
     costs:
         mana: 60
 
-fire|3:
+fire|4:
     parameters:
         radius: 2
         cooldown: 4000
@@ -4499,7 +4696,7 @@ fling:
         bypass_confusion: true
         cooldown: 5000
     costs:
-        mana: 60
+        mana: 50
 
 fling|2:
     upgrade_required_path: apprentice
@@ -4509,7 +4706,7 @@ fling|2:
         max_speed: 3
         cooldown: 2000
     costs:
-        mana: 75
+        mana: 60
 
 fling|3:
     upgrade_required_path: master
@@ -4519,7 +4716,7 @@ fling|3:
         max_speed: 4
         cooldown: 1000
     costs:
-        mana: 90
+        mana: 75
 
 fling|4:
     parameters:
@@ -12108,6 +12305,48 @@ supertorch:
         mana: 50
         torch: 1
 
+sweep:
+    icon: diamond_axe:178
+    icon_disabled: diamond_hoe:178
+    icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+    category: combat
+    worth: 100
+    earns_sp: 8
+    actions:
+        cast:
+        cast:
+        - class: Repeat
+          actions:
+          - class: ConeOfEffect
+            actions:
+            - class: Damage
+          - class: ChangeContext
+            target_caster: true
+            actions:
+            - class: Orient
+          - class: Delay
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shimmer_crack
+           sound_volume: 1
+           particle: sweep_attack
+    parameters:
+        allow_max_range: true
+        target: none
+        target_type: Damageable
+        range: 3
+        fov: 0.4
+        damage: 2
+        target_breakables: 1
+        cooldown: 5000
+        magic_damage: false
+        instant_block_effects: true
+        yaw_offset: 20
+        repeat: 9
+        delay: 5
+    costs:
+        mana: 50
 tag:
     icon: diamond_axe:29
     icon_disabled: diamond_hoe:29
@@ -12300,6 +12539,35 @@ testspellshop:
         auto_upgrade: true
         use_sp: true
 
+throwsword:
+    icon: diamond_sword
+    actions:
+        cast:
+        - class: ArmorStandProjectile
+          actions:
+          - class: Damage
+    effects:
+        projectile:
+        -   class: EffectSingle
+            effectlib:
+                class: SphereEffect
+                particle: flame
+                particles: 4
+                radius: 0.2
+                duration: 30000
+    parameters:
+      velocity: 10
+      held_item: gold_sword:1
+      location_offset: 0,4,0
+      armor_stand_invisible: true
+      armor_stand_marker: true
+      orient_right_arm: true
+      attach_duration: 5000
+      gravity: 0.05
+      cooldown: 10000
+      damage: 10
+    costs:
+      mana: 30
 time:
     icon: diamond_axe:86
     icon_disabled: diamond_hoe:86
@@ -13510,7 +13778,7 @@ wound:
         magic_damage: false
         instant_block_effects: true
     costs:
-        mana: 100
+        mana: 50
 
 wound|2:
   upgrade_required_path: master

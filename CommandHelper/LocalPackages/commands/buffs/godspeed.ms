@@ -19,7 +19,6 @@
                 "/run 0-9",
                 "/haste 0-6",
                 "/jump 0-3",
-                "/thru (phases through walls)",
                 "/tppos <X, Y, Z Coordinates>",
                 "Access to all warps in the speedforce"
             ),

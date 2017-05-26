@@ -1,10 +1,49 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+    amount: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEEDS
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 5
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+health: 13.0
+hunger: 16
+exp: 0.8181818
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 1.0
-exhaustion: 1.5540104
+saturation: 0.0
+exhaustion: 2.5620115
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 193087
+  '1':
+    type: FAST_DIGGING
+    level: 3
+    duration: 193388
+  '2':
+    type: JUMP
+    level: 1
+    duration: 193312
+  '3':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 193087

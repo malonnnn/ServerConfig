@@ -5,107 +5,49 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6Throwing Star§6 «× | ×»
+      display-name: §4Kryptonian Laser Vision§4 «×»
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DAMAGE_ALL: 20
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    damage: 11
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bD§3a§br§3k §bR§3e§bp§3u§bl§3s§be§3r
-      enchants:
-        DAMAGE_ALL: 20
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
-      enchants:
-        DAMAGE_ALL: 20
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6Throwing Star§6 «× | ×»
-      Unbreakable: true
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-      Unbreakable: true
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-      Unbreakable: true
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_COMPARATOR
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §ePutty§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to throw.
-      - §eLeft click to detonate.
-      Unbreakable: true
-      blockMaterial: REDSTONE_COMPARATOR
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-      Unbreakable: true
-health: 60.0
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.2730031
+exhaustion: 0.35506296
 armor_contents: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 5
-    duration: 195336
+    type: WATER_BREATHING
+    level: 1
+    duration: 195600
   '1':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 195336
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 195600
   '2':
-    type: SPEED
-    level: 5
-    duration: 195384
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 195600
   '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 195600
+  '4':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 195600
+  '5':
     type: REGENERATION
     level: 1
-    duration: 195336
+    duration: 195600
