@@ -45,7 +45,7 @@ register_command(chatsounds,
                 }
                 export(@plr.'lastchatsounds', time() / 1000)
                 
-                @onoff = player(@args[0])
+                @onoff = @args[0]
                 export(@plr.'chatsounds',@onoff)
 
                 if(@onoff == 'off'){
