@@ -43,6 +43,13 @@ register_command(arrest,
                     @reason = ''
                     @argsLength = array_size(@args)
                     
+                    if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
+                        die();
+                    
+                    }
+                    
                     for (@i = 1, @i < @argsLength, @i++){
                     
                         @reason = @reason.@args[@i]
@@ -117,6 +124,13 @@ register_command(release,
                 
                 }
                 
+                if(has_permission(player(), 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers to release have been revoked.');
+                        die();
+                    
+                    }
+                
                 try {
                     @plr = player(@args[0])
                     sudo("/pex user ".@plr." group set mortal")
@@ -175,6 +189,13 @@ register_command(warn,
                     
                     @reason = ''
                     @argsLength = array_size(@args)
+                    
+                    if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers to warn have been revoked.');
+                        die();
+                    
+                    }
                     
                     for (@i = 1, @i < @argsLength, @i++){
                     
@@ -239,6 +260,15 @@ register_command(checkfingerprints,
             try {
                 @plr = player(@args[0])
                 @cop = player()
+                
+                if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
+                        die();
+                    
+                }
+                
+                
                 @ip = pinfo(@plr)[3]
                 @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                 @result = query(@profile, 'SELECT DISTINCT PERPNAME,IP FROM `criminals` WHERE IP=?',@ip)
@@ -295,6 +325,13 @@ register_command(backgroundcheck,
                 @cop = player()
                 @uuid = puuid(@plr)
                 @ip = pinfo(@plr)[3]
+                
+                if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
+                        die();
+                    
+                }
                 
                 @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                 @result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPUUID=?',@uuid)
@@ -360,6 +397,13 @@ register_command(officerhistory,
                 @cop = player()
                 @uuid = puuid(@plr)
                 @ip = pinfo(@plr)[3]
+                
+                if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
+                        die();
+                    
+                }
                 
                 @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                 @result = query(@profile, 'SELECT * FROM `criminals` WHERE OFFUUID=?',@uuid)
