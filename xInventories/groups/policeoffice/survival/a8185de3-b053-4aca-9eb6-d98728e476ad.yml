@@ -5,25 +5,8 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.2292271
+exhaustion: 1.4832793
 inventory:
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 21
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «16»
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: WRITTEN_BOOK
@@ -121,7 +104,13 @@ inventory:
       generation: 0
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HELMET
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
   '11':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
@@ -187,8 +176,21 @@ inventory:
       - ' '
   '18':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_LEGGINGS
-    damage: 6
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «5»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '30':
     ==: org.bukkit.inventory.ItemStack
     type: YELLOW_FLOWER
@@ -201,7 +203,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_BOOTS
-    damage: 17
+    damage: 18
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -217,7 +219,7 @@ inventory:
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 17
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -231,16 +233,186 @@ inventory:
   '39':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+      repair-cost: 1
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
     damage: 11
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Officer Duties R3
+      author: Chief of Police
+      pages:
+      - |-
+        §l§nDuties of an Officer§0
+        §0
+        §01. Follow chain of command. Go to Sergeants with issues before the Chief§0
+        §0
+        §02. Listen to the Sergeants, Follow their direction
+      - |-
+        3. Check the Front Desk for anything thats been dropped off such as an Application or Complaint§0
+        §0
+        §04. Place the mail into the drop box of one of the sergeants.§0
+        §0
+        §05. Notify the Sergeants of a complaint if they're online
+      - |-
+        6. Enfore the server rules that are in effect. Found at the front of the Police Station§0
+        §0
+        §07. Know the rules§0
+        §0
+        §08. Do not enforce rules that do not exist. Doing so may subject you to punishment
+      - "9. If you arrest a player and it requires proof, fill out an arrest report\
+        \ and drop it off in the evidence locker.§0\n§0\n§0\n§0 "
+      - 10. Not everything requires proof such as spamming. Use your discretion. If someone complains they were jailed unfairly and I can't find proof to back you up then you will be subject to discipline.
+      - |-
+        11. Follow the same rules that the players are expected to follow§0
+        §0
+        §012. Warn players and utilize chat cooldowns where appropriate. Educate the players about the rules and show them where they can find them. Some people are new
+      - |-
+        §l§nAuthorities§0
+        §0
+        §01. You may enforce rules, issue warnings, apply chat cooldown timers, arrest, and release players§0
+        §0
+        §02. You may take statements about something that happened in the past
+      - |-
+        3. If something happened in the past and it involves griefing then drop it off in the Chiefs box to be investigated§0
+        §0
+        §04. You may punish a player for past behavior if it was (a) recent, and (b) sufficient proof exists
+      - 5. You may make decisions without Sergeant approval if they are not online if under normal circumstances you would require their approval. Explain later.
+      generation: 0
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Police Officer Baton Stick
+      enchants:
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        BINDING_CURSE: 1
+        DAMAGE_UNDEAD: 5
+        FIRE_ASPECT: 2
+        ARROW_INFINITE: 1
+      repair-cost: 63
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HELMET
+    damage: 1
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_LEGGINGS
+    damage: 7
 armor_contents:
   helmet:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
-    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 17
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -258,7 +430,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_BOOTS
-    damage: 17
+    damage: 18
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR

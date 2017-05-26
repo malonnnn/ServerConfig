@@ -17,8 +17,8 @@
                 "/jump 0-7",
                 "/run 0-5",
                 "/haste 0-4",
-                "/web",
-                "/websling"
+                "Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can stop climbing but continue to press crouch to stick to the wall in place and look around.",
+                "With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! Note: technically, you're sitting on an invisible chicken (lol), so if you wonder why you can't move it's because you have to press crouch button to get off the chicken first xD"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 6 true",
