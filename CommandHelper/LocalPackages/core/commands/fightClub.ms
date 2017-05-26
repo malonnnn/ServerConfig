@@ -115,17 +115,26 @@ register_command(fightclub,
                                 runas(~console,'/pex user '.@player.' add essentials.protect.pvp fightclub')
                                 runas(~console,'/pex user '.@plr.' add essentials.protect.pvp fightclub')
 
-                                @p1 = bind(player_death,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
+                                @b1p1 = bind(player_death,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
                                     _fightClubReset(@winner,@loser)
+                                    unbind()
                                 }
-                                @p2 = bind(player_death,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
+                                @b1p2 = bind(player_death,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
                                     _fightClubReset(@winner,@loser)
+                                    unbind()
                                 }
-
-                                export(@plr.'fightClubDeath',@p2)
-                                export(@player.'fightClubDeath',@p1)
+                                @b2p1 = bind(world_changed,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
+                                    include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+                                    _fightClubReset(@winner,@loser)
+                                    unbind()
+                                }
+                                @b2p2 = bind(world_changed,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
+                                    include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+                                    _fightClubReset(@winner,@loser)
+                                    unbind()
+                                }
                             ))
                         }
                     }
@@ -145,30 +154,3 @@ register_command(fightclub,
     )
 )
 
-register_command(fightclubreset, 
-
-    array(
-    
-        description: 'Resets Fight Club',
-        
-        usage: '/fightclubreset',
-        
-        permission: 'ch.alias.fightclubreset',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {		
-                
-                @plrs = all_players('fightclub')
-
-                foreach(@player in @plrs){
-                    export(@player.'fightClubDeath','')
-                    export(@player.'fcvs','')
-                    export(@player.'fightClub','')
-                    tmsg('God_Doesnt_Exist',@player.' was reset')
-                    runas(~console,'/pex user '.@player.' remove essentials.protect.pvp fightclub')
-                }			
-        
-        }
-    )
-)

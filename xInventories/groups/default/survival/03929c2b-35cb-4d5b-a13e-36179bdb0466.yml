@@ -7,11 +7,6 @@ inventory:
       meta-type: UNSPECIFIC
       display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
       Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: INK_SACK
@@ -26,6 +21,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 18
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -33,10 +29,114 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 62
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_CHICKEN
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 192
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: FLINT
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 9
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+    amount: 10
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 31
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: WORKBENCH
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 21
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_STEP
+    damage: 3
+    amount: 2
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHEARS
+    damage: 8
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    amount: 31
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_MUTTON
+    amount: 64
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BLOCK
+    amount: 3
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_FISH
+    damage: 1
+    amount: 4
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_CHICKEN
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:slowness
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 18
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -44,24 +144,32 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
-  '0':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 195140
-  '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 195140
-  '2':
-    type: REGENERATION
-    level: 1
-    duration: 195140
 health: 60.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.45454547
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.6230273
+saturation: 0.20000029
+exhaustion: 2.2569525
+potion_effect:
+  '0':
+    type: FAST_DIGGING
+    level: 10
+    duration: 182837
+  '1':
+    type: REGENERATION
+    level: 1
+    duration: 173146
+  '2':
+    type: JUMP
+    level: 5
+    duration: 191038
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 173146
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 173146

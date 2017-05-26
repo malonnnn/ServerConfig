@@ -101,6 +101,18 @@ inventory:
       Unbreakable: true
   '18':
     ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK_CHARGE
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: YELLOW_FLOWER
+  '2':
+    ==: org.bukkit.inventory.ItemStack
     type: REDSTONE_COMPARATOR
     meta:
       ==: ItemMeta
@@ -112,41 +124,128 @@ inventory:
       - §eLeft click to detonate.
       Unbreakable: true
       blockMaterial: REDSTONE_COMPARATOR
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_COMPARATOR
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §ePutty§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+      blockMaterial: REDSTONE_COMPARATOR
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eType 95§e ▪ «×»
+      lore:
+      - §eSemi-automatic with three round burst fire.
+      - §eGhast Tears are required for reloads.
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §ePython §l/§e Knife§e ▪ «×»
+      lore:
+      - §eRevolver with high power.
+      - §eLeft click to melee enemies
+      - §ewith the tactical knife.
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+      Unbreakable: true
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eGauss Shotgun§e ▪ «×»
+      lore:
+      - §eAdvanced pump-action shotgun.
+      - §eFires metal slugs that penetrate
+      - §eall targets within 40 blocks.
+      - §eDeals 200% damage to Zombies.
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eOlympia§e ▪ «×»
+      lore:
+      - §eDouble-barreled shotgun.
+      - §eDeadly at close range.
+      - §eIneffective at longer ranges.
+      - §eFires incendiary ammo.
 armor_contents: {}
 health: 60.0
-hunger: 18
+hunger: 20
 exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.23421134
+saturation: 20.0
+exhaustion: 2.9966094
 potion_effect:
   '0':
     type: REGENERATION
     level: 4
-    duration: 170192
+    duration: 96707
   '1':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 170192
+    duration: 96707
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 170192
+    duration: 96707
   '3':
     type: JUMP
     level: 10
-    duration: 170250
+    duration: 96765
   '4':
     type: INCREASE_DAMAGE
     level: 12
-    duration: 170192
+    duration: 96707
   '5':
     type: HEALTH_BOOST
     level: 9
-    duration: 170192
+    duration: 96707
   '6':
     type: SPEED
     level: 8
-    duration: 170378
+    duration: 96893
