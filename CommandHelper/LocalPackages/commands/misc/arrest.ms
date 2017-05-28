@@ -80,7 +80,7 @@ register_command(arrest,
                         sudo("/warp quarantine ".@plr)
                     ))			
                 } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                    msg(@player,'Player is Offline')
                     die()
                 }				
                 
@@ -139,7 +139,7 @@ register_command(release,
                     sudo("/warp city ".@plr)
                     sudo("/tptoggle ".@plr." on")	
                 } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                    msg(@player,'Player is Offline')
                     die()
                 }
                 
@@ -215,7 +215,7 @@ register_command(warn,
                                    @plr,@uuid,@reason,'WARN',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
                     )			
                 } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                    msg(@player,'Player is Offline')
                     die()
                 }				
                 
@@ -280,7 +280,7 @@ register_command(checkfingerprints,
                     tmsg(@cop,@row['PERPNAME'])
                 }
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg(@player,'Player is Offline')
                 die()
             }                          
         
@@ -351,11 +351,14 @@ register_command(backgroundcheck,
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
                 
-            } catch (PlayerOfflineException @ErrorInfo) {			
-                msg(@player,'Player: '.@plr.' is Offline')
-                msg(@player,'Checking Offline Records')
-                
-                if(has_permission(@cop, 'is.suspended')) {
+            } catch (PlayerOfflineException @ErrorInfo) {
+				
+				@player = player()
+				
+                msg(@player,'Player: '.@args[0].' is Offline')
+				msg(@player,'Checking Offline Records')
+				
+				if(has_permission(@player, 'is.suspended')) {
                     
                         msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
                         die();
@@ -375,8 +378,8 @@ register_command(backgroundcheck,
                     tmsg(@cop,'-----------------------------------------')
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
-                tmsg(@cop,'**OFFLINE RECORD**')
-                
+				tmsg(@cop,'**OFFLINE RECORD**')
+				
                 die()
             }					
         
@@ -447,7 +450,7 @@ register_command(officerhistory,
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')				
+                msg(@player,'Player is Offline')				
                 die()
             }
         
