@@ -1,8 +1,8 @@
 eat:/eat = >>> 
  
      @plr = player()
-     @plrs = all_players(@world)
      @world = pworld(@plr)
+     @plrs = all_players(@world)
       
      foreach(@player in @plrs){ 
          if(@player != @plr){ 
