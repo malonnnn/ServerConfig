@@ -353,6 +353,30 @@ register_command(backgroundcheck,
                 
             } catch (PlayerOfflineException @ErrorInfo) {			
                 msg(@player,'Player: '.@plr.' is Offline')
+				msg(@player,'Checking Offline Records')
+				
+				if(has_permission(@cop, 'is.suspended')) {
+                    
+                        msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
+                        die();
+                    
+                }
+                
+                @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+                @result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPNAME=?',@args[0])
+                @numOffenses = array_size(@result)
+                foreach(@row in @result){
+                    tmsg(@cop,
+                        color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
+                        color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
+                        color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
+                        color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
+                        color(green).@row['DATE'])
+                    tmsg(@cop,'-----------------------------------------')
+                }
+                tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
+				tmsg(@cop,'**OFFLINE RECORD**')
+				
                 die()
             }					
         
@@ -423,7 +447,7 @@ register_command(officerhistory,
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg(@player,'Player: '.@plr.' is Offline')				
                 die()
             }
         
