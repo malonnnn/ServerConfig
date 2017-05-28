@@ -1,13 +1,8 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
+    type: STAINED_CLAY
+    damage: 7
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
@@ -22,6 +17,22 @@ inventory:
         RED: 0
         BLUE: 0
         GREEN: 0
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLE_WALL
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAG2PSwuCQBSFL0EQLvwNctdCz9XsCiXaRKCtImJyRhs0B8ZrD8T/3gQWBa7Ohcv3HY4D4IC7KnSShyUpesY8G8Ewlg9awLhBm4YjOzRI9kSG6yD0eOUtxU1VUmB79D8fbDtw3gveFV10TRbOVZn1gjOY9ICpNu86aUhVPeRACXCvqpSJ4SmxSmVlp5vC5ld31oVARqaWPia60MYKBDf5ydgdX2W0j3bhNgiD/x6AFxGLsHMqAQAA
+      blockMaterial: SIGN
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
@@ -44,4 +55,4 @@ exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.156045
+exhaustion: 3.6140566
