@@ -283,8 +283,9 @@ register_command(sendbook,
             if(array_contains(@allowedBooks, @itemInHand)){
             
                 @itemMeta =  get_itemmeta(@slotHighlighted); # Grab the meta data
-                msg(@itemMeta)			
-                pgive_item(@playerToSendTo @itemInHand, 1, @itemMeta); # Create the copy and give it to the player
+				tmsg(@playerThatRanCmd, 'You have sent '.@playerToSendTo.' a copy of the book you are holding')
+                pgive_item(@playerToSendTo, @itemInHand, 1, @itemMeta); # Create the copy and give it to the player
+				tmsg(@playerToSendTo, 'You have been given a book from '.@playerThatRanCmd)
                 
                 die(); # All done				
             
