@@ -38,7 +38,7 @@ register_command(hiresergeant,
             
                 @player = player(@args[0])
                 sudo("/pex user ".@player." add is.sergeant")
-				sudo("/pex user ".@player." remove is.officer")					
+                sudo("/pex user ".@player." remove is.officer")					
                 sudo("/pex user ".@player." add ch.alias.onduty")
                 tmsg(player(),color(red)."You have hired ".@player. " as a Sergeant for the Police Force!")
                 tmsg(@player,color(red)."You have been hired as a Sergeant for the Police Force!")
@@ -94,8 +94,8 @@ register_command(firesergeant,
                 if(has_permission(@player,"is.officer")){
                     sudo("/pex user ".@player." remove is.sergeant")
                     sudo("/pex user ".@player." remove ch.alias.onduty")
-					sudo("/pex user ".@player." remove is.suspended")
-					sudo("/pex user ".@player." remove is.officer")										
+                    sudo("/pex user ".@player." remove is.suspended")
+                    sudo("/pex user ".@player." remove is.officer")										
                     sudo("/pex user ".@player." group set mortal")
                     tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
                     tmsg(@player,color(red)."You have been fired from the Police Force :(")

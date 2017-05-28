@@ -93,7 +93,7 @@ register_command(fireofficer,
                 if(has_permission(@player,"is.officer")){
                     sudo("/pex user ".@player." remove ch.alias.onduty")
                     sudo("/pex user ".@player." remove is.officer")
-					sudo("/pex user ".@player." remove is.suspended")					
+                    sudo("/pex user ".@player." remove is.suspended")					
                     sudo("/pex user ".@player." group set mortal")
                     sudo("/minecraft:clear ".@player)
                     tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
