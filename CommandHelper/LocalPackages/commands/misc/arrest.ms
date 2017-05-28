@@ -369,16 +369,16 @@ register_command(backgroundcheck,
                 @result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPNAME=?',@args[0])
                 @numOffenses = array_size(@result)
                 foreach(@row in @result){
-                    tmsg(@cop,
+                    tmsg(@player,
                         color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
                         color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
                         color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
                         color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
                         color(green).@row['DATE'])
-                    tmsg(@cop,'-----------------------------------------')
+                    tmsg(@player,'-----------------------------------------')
                 }
-                tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
-				tmsg(@cop,'**OFFLINE RECORD**')
+                tmsg(@player,'A total of '.@numOffenses.' warnings and offenses.')
+				tmsg(@player,'**OFFLINE RECORD**')
 				
                 die()
             }					
