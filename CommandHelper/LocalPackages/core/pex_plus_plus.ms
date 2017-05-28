@@ -123,7 +123,7 @@ register_command(group_worldperm_add,
                 if (array_size(@args) != 2) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /group_worldperm_add <player> <permission>');
+                    msg(''.color(RED).'Usage: /group_worldperm_add <group> <permission>');
                     die(); # No need to go further						
                 
                 }
@@ -151,7 +151,7 @@ register_command(group_worldperm_remove,
                 if (array_size(@args) != 2) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /group_worldperm_remove <player> <permission>');
+                    msg(''.color(RED).'Usage: /group_worldperm_remove <group> <permission>');
                     die(); # No need to go further						
                 
                 }
@@ -179,7 +179,7 @@ register_command(group_globalperm_add,
                 if (array_size(@args) != 2) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /group_globalperm_add <player> <permission>');
+                    msg(''.color(RED).'Usage: /group_globalperm_add <group> <permission>');
                     die(); # No need to go further						
                 
                 }
@@ -205,7 +205,7 @@ register_command(group_globalperm_remove,
                 if (array_size(@args) != 2) {
                 
                     msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /group_globalperm_remove <player> <permission>');
+                    msg(''.color(RED).'Usage: /group_globalperm_remove <group> <permission>');
                     die(); # No need to go further						
                 
                 }
