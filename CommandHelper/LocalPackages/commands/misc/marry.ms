@@ -15,14 +15,14 @@ register_command('imasinglelady',
             }
             @plr = player()
             @puuid = puuid(@plr,true)
-            @spouse = import(@puuid.'spouseUUID')
+            @spouse = get_value(@puuid.'spouseUUID')
 
             if(@spouse != null && @spouse != ''){
                 msg('Sorry, you are already taken!')
                 die()
             }
 
-            export(@puuid.'gender','g')
+            store_value(@puuid.'gender','g')
             broadcast(@plr.color(RED).' is letting everyone know she\'s a single and ready to ____!'.color(WHITE).' /claimwaifu '.@plr)
         
         }
@@ -70,10 +70,10 @@ register_command('claimwaifu',
 
             @plrUUID = puuid(@plrName,true)
             @waifuUUID = puuid(@waifuName,true)
-            @husbandoUUID = import(@waifuUUID.'spouseUUID')
-            @husbandoName = import(@waifuUUID.'spouseName')
-            @waifuGender = import(@waifuUUID.'gender')
-            @plrGender = import(@plrUUID.'gender')
+            @husbandoUUID = get_value(@waifuUUID.'spouseUUID')
+            @husbandoName = get_value(@waifuUUID.'spouseName')
+            @waifuGender = get_value(@waifuUUID.'gender')
+            @plrGender = get_value(@plrUUID.'gender')
 
             if(@husbandoUUID != null && @husbandoUUID != ''){
                 msg(color(RED).'Sorry, '.color(WHITE).@waifuName.color(RED).'is already claimed by '.color(WHITE).@husbandoName.color(RED).' Please do '.color(WHITE).'/waifuchallenge '.@husbandoName.color(RED).'to challenge '.color(WHITE).@husbandoName.color(RED).' for the ownership of '.color(WHITE).@waifuName.color(RED).'!')
@@ -89,13 +89,13 @@ register_command('claimwaifu',
                 msg(color(RED).'Sorry, you are registered as a girl!')
                 die()
             }
-            if(import(@plrUUID.@waifuUUID.'isMarried')){
+            if(get_value(@plrUUID.@waifuUUID.'isMarried')){
                 msg(color(RED).'Sorry, you already are married to her!')
                 die()
             }
-            export(@plrUUID.@waifuUUID.'isMarried',true)
-            export(@waifuUUID.'spouseUUID',@plrUUID)
-            export(@waifuUUID.'spouseName',@plrName)
+            store_value(@plrUUID.@waifuUUID.'isMarried',true)
+            store_value(@waifuUUID.'spouseUUID',@plrUUID)
+            store_value(@waifuUUID.'spouseName',@plrName)
             broadcast(@plrName.color(RED).' has just claimed '.color(WHITE).@waifuName.color(RED).' as his waifu!')
         
         }
@@ -137,7 +137,7 @@ register_command('waifuchallenge',
             }else{
                 @waifuName = player()
                 @waifuUUID = puuid(@waifuName,true)
-                @husbandoUUID = import(@waifuUUID.'spouseUUID')
+                @husbandoUUID = get_value(@waifuUUID.'spouseUUID')
                 @husbandoName = ''
 
                 @plrs = all_players()
@@ -156,41 +156,41 @@ register_command('waifuchallenge',
                     die()
                 }
 
-                if(import(@waifuUUID.'gender') != 'g'){
+                if(get_value(@waifuUUID.'gender') != 'g'){
                     msg('Sorry, you must be a girl to use this command!')
                     die()
                 }
 
-                if(import(@husbandoUUID.'gender') == 'g'){
+                if(get_value(@husbandoUUID.'gender') == 'g'){
                     msg('Sorry, your husbando must be a boy to use this command!')
                     die()
                 }
 
-                @time = import(@waifuUUID.'lastChallengeTime')
+                @time = get_value(@waifuUUID.'lastChallengeTime')
                 if(@time != null && (time() - @time) < 86400000){
                     msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last tried to escape!')
                     die()
                 }
 
-                if(import(@waifuName.'inActiveChallenge')){
+                if(get_value(@waifuName.'inActiveChallenge')){
                     msg(color(RED).'You are already in a waifu challenge!')
                     die()
                 }
-                if(import(@husbandoName.'inActiveChallenge')){
+                if(get_value(@husbandoName.'inActiveChallenge')){
                     msg(color(RED).'They are already in a waifu challenge!')
                     die()
                 }
 
-                export(@waifuName.'inActiveChallenge',true)
-                export(@husbandoName.'inActiveChallenge',true)
+                store_value(@waifuName.'inActiveChallenge',true)
+                store_value(@husbandoName.'inActiveChallenge',true)
 
                 runas(~console,'/warp husbando1 '.@husbandoName)
-                runas(~console,'/warp husbando2 '.@plrName)
+                runas(~console,'/warp husbando2 '.@waifuName)
 
                 bind(player_death,array(id: @husbandoName.'waifuChallengeDeath'),associative_array('player':@husbandoName),@e,@winner = @waifuName, @loser = @husbandoName, @waifu = @waifuName){
                     include('/home/minecraft/server/plugins/CommandHelper/includes/waifuWinner.ms')
                     unbind()
-                    unbind(@loser.'waifuChallengeDeath')
+                    unbind(@winner.'waifuChallengeDeath')
                     unbind(@winner.'waifuChallengeWorldChanged')
                     unbind(@loser.'waifuChallengeWorldChanged')
                     unbind(@winner.'waifuChallengeDisconnect')
@@ -212,7 +212,7 @@ register_command('waifuchallenge',
                     unbind(@winner.'waifuChallengeDeath')
                     unbind(@loser.'waifuChallengeDeath')
                     unbind()
-                    unbind(@loser.'waifuChallengeWorldChanged')
+                    unbind(@winner.'waifuChallengeWorldChanged')
                     unbind(@winner.'waifuChallengeDisconnect')
                     unbind(@loser.'waifuChallengeDisconnect')
                     _waifuWinner(@winner,@loser, @waifu, true, true)
@@ -234,7 +234,7 @@ register_command('waifuchallenge',
                     unbind(@winner.'waifuChallengeWorldChanged')
                     unbind(@loser.'waifuChallengeWorldChanged')
                     unbind()
-                    unbind(@loser.'waifuChallengeDisconnect')
+                    unbind(@winner.'waifuChallengeDisconnect')
                     _waifuWinner(@winner,@loser, @waifu, true, true)
                 }
                 bind(player_quit,array(id: @waifuName.'waifuChallengeDisconnect'),associative_array('player':@waifuName),@e,@loser = @waifuName, @winner = @husbandoName, @waifu = @waifuName){
@@ -276,9 +276,9 @@ register_command('waifuchallenge',
             @waifuUUID = puuid(@waifuName,true)
             @husbandoUUID = puuid(@husbandoName,true)
 
-            @plrGender = import(@plrUUID.'gender')
-            @waifuGender = import(@waifuUUID.'gender')
-            @husbandoGender = import(@husbandoUUID.'gender')
+            @plrGender = get_value(@plrUUID.'gender')
+            @waifuGender = get_value(@waifuUUID.'gender')
+            @husbandoGender = get_value(@husbandoUUID.'gender')
 
             if(@plrGender == 'g'){
                 msg(color(RED).'Sorry, you are a girl! You cannot claim waifus!')
@@ -293,33 +293,33 @@ register_command('waifuchallenge',
                 die()
             }
 
-            @time = import(@plrUUID.@waifuUUID.'lastChallengeTime')
+            @time = get_value(@plrUUID.@waifuUUID.'lastChallengeTime')
             if(@time != null && (time() - @time) < 86400000){
                 msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last challenged them!')
                 die()
             }
-            if(import(@plrName.'inActiveChallenge')){
+            if(get_value(@plrName.'inActiveChallenge')){
                 msg(color(RED).'You are already in a waifu challenge!')
                 die()
             }
-            if(import(@husbandoName.'inActiveChallenge')){
+            if(get_value(@husbandoName.'inActiveChallenge')){
                 msg(color(RED).'They are already in a waifu challenge!')
                 die()
             }
 
-            if(import(@husbandoUUID.@waifuUUID.'isMarried') != true){
-                msg(import(@husbandoUUID.@waifuUUID.'isMarried'))
+            if(get_value(@husbandoUUID.@waifuUUID.'isMarried') != true){
+                msg(get_value(@husbandoUUID.@waifuUUID.'isMarried'))
                 msg(color(RED).'Sorry, he is not married to her!')
                 die()
             }
-            export(@plrName.'inActiveChallenge',true)
-            export(@husbandoName.'inActiveChallenge',true)
+            store_value(@plrName.'inActiveChallenge',true)
+            store_value(@husbandoName.'inActiveChallenge',true)
             runas(~console,'/warp husbando1 '.@husbandoName)
             runas(~console,'/warp husbando2 '.@plrName)
             bind(player_death,array(id: @husbandoName.'waifuChallengeDeath'),associative_array('player':@husbandoName),@e,@winner = @plrName, @loser = @husbandoName, @waifu = @waifuName){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/waifuWinner.ms')
                 unbind()
-                unbind(@loser.'waifuChallengeDeath')
+                unbind(@winner.'waifuChallengeDeath')
                 unbind(@winner.'waifuChallengeWorldChanged')
                 unbind(@loser.'waifuChallengeWorldChanged')
                 unbind(@winner.'waifuChallengeDisconnect')
@@ -341,7 +341,7 @@ register_command('waifuchallenge',
                 unbind(@winner.'waifuChallengeDeath')
                 unbind(@loser.'waifuChallengeDeath')
                 unbind()
-                unbind(@loser.'waifuChallengeWorldChanged')
+                unbind(@winner.'waifuChallengeWorldChanged')
                 unbind(@winner.'waifuChallengeDisconnect')
                 unbind(@loser.'waifuChallengeDisconnect')
                 _waifuWinner(@winner,@loser, @waifu, true, false)
@@ -363,7 +363,7 @@ register_command('waifuchallenge',
                 unbind(@winner.'waifuChallengeWorldChanged')
                 unbind(@loser.'waifuChallengeWorldChanged')
                 unbind()
-                unbind(@loser.'waifuChallengeDisconnect')
+                unbind(@winner.'waifuChallengeDisconnect')
                 _waifuWinner(@winner,@loser, @waifu, true, false)
             }
             bind(player_quit,array(id: @plrName.'waifuChallengeDisconnect'),associative_array('player':@plrName),@e,@loser = @plrName, @winner = @husbandoName, @waifu = @waifuName){

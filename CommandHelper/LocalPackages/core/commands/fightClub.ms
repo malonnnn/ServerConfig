@@ -115,25 +115,65 @@ register_command(fightclub,
                                 runas(~console,'/pex user '.@player.' add essentials.protect.pvp fightclub')
                                 runas(~console,'/pex user '.@plr.' add essentials.protect.pvp fightclub')
 
-                                @b1p1 = bind(player_death,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
+                                bind(player_death,array(id: @player.'fightClubDeath'),associative_array('player':@player),@e,@winner = @plr, @loser = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
-                                    _fightClubReset(@winner,@loser)
                                     unbind()
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@loser.'fightClubWorldChanged')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@loser.'fightClubDisconnect')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
                                 }
-                                @b1p2 = bind(player_death,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
+                                bind(player_death,array(id: @plr.'fightClubDeath'),associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
-                                    _fightClubReset(@winner,@loser)
                                     unbind()
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@loser.'fightClubWorldChanged')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    unbind(@loser.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
                                 }
-                                @b2p1 = bind(world_changed,null,associative_array('player':@player),@e,@winner = @plr, @loser = @player){
+                                bind(world_changed,array(id: @player.'fightClubWorldChanged'),associative_array('player':@player),@e,@winner = @plr, @loser = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
-                                    _fightClubReset(@winner,@loser)
                                     unbind()
+                                    unbind(@lower.'fightClubDeath')
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@loser.'fightClubDisconnect')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
                                 }
-                                @b2p2 = bind(world_changed,null,associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
+                                bind(world_changed,array(id: @plr.'fightClubWorldChanged'),associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
                                     include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
-                                    _fightClubReset(@winner,@loser)
                                     unbind()
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@loser.'fightClubDeath')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@loser.'fightClubDisconnect')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
+                                }
+                                bind(player_quit,array(id: @player.'fightClubDisconnect'),associative_array('player':@player),@e,@winner = @plr, @loser = @player){
+                                    include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+                                    unbind()
+                                    unbind(@loser.'fightClubDeath')
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@loser.'fightClubWorldChanged')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
+                                }
+                                bind(player_quit,array(id: @plr.'fightClubDisconnect'),associative_array('player':@plr),@e,@loser = @plr, @winner = @player){
+                                    include('/home/minecraft/server/plugins/CommandHelper/includes/fightClubReset.ms')
+                                    unbind()
+                                    unbind(@winner.'fightClubDeath')
+                                    unbind(@loser.'fightClubDeath')
+                                    unbind(@winner.'fightClubWorldChanged')
+                                    unbind(@loser.'fightClubWorldChanged')
+                                    unbind(@winner.'fightClubDisconnect')
+                                    _fightClubReset(@winner,@loser)
                                 }
                             ))
                         }

@@ -1,13 +1,22 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE_STAIRS
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 health: 20.0
 hunger: 20
 exp: 0.076923005
@@ -15,4 +24,4 @@ exp-level: 3
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.8300157
+exhaustion: 2.40202
