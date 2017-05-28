@@ -352,13 +352,13 @@ register_command(backgroundcheck,
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
                 
             } catch (PlayerOfflineException @ErrorInfo) {
-				
-				@player = player()
-				
+                
+                @player = player()
+                
                 msg(@player,'Player: '.@args[0].' is Offline')
-				msg(@player,'Checking Offline Records')
-				
-				if(has_permission(@player, 'is.suspended')) {
+                msg(@player,'Checking Offline Records')
+                
+                if(has_permission(@player, 'is.suspended')) {
                     
                         msg(''.color(RED).color(BOLD).'You are currently suspended! You may not access the Police Database');
                         die();
@@ -378,8 +378,8 @@ register_command(backgroundcheck,
                     tmsg(@cop,'-----------------------------------------')
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')
-				tmsg(@cop,'**OFFLINE RECORD**')
-				
+                tmsg(@cop,'**OFFLINE RECORD**')
+                
                 die()
             }					
         
