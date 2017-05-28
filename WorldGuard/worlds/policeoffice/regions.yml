@@ -10,6 +10,76 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    officehall:
+        min: {x: -42.0, y: 80.0, z: 25.0}
+        max: {x: -11.0, y: 82.0, z: 34.0}
+        members: {}
+        flags: {build: deny, game-mode: SURVIVAL, interact: allow, pvp: allow}
+        owners: {}
+        type: cuboid
+        priority: 2
+    offices:
+        parent: police
+        min: {x: -42.0, y: 80.0, z: 18.0}
+        max: {x: -14.0, y: 82.0, z: 40.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
+            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
+        owners: {}
+        type: cuboid
+        priority: 1
+    chiefs-closet:
+        min: {x: 7.0, y: 80.0, z: 59.0}
+        max: {x: 13.0, y: 82.0, z: 66.0}
+        members: {}
+        flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
+            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 3
+    chiefsdesk:
+        min: {x: 14.0, y: 80.0, z: 53.0}
+        max: {x: 14.0, y: 80.0, z: 55.0}
+        members: {}
+        flags: {interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 0
+    sergeant-room-4:
+        parent: sergeants
+        min: {x: 7.0, y: 80.0, z: 35.0}
+        max: {x: 16.0, y: 82.0, z: 44.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 3
+    application-booth:
+        min: {x: -7.0, y: 75.0, z: 63.0}
+        max: {x: -3.0, y: 78.0, z: 64.0}
+        members: {}
+        flags: {pvp: deny}
+        owners: {}
+        type: cuboid
+        priority: 3
+    chiefs-door:
+        parent: restricteddoors
+        min: {x: 7.0, y: 80.0, z: 55.0}
+        max: {x: 8.0, y: 82.0, z: 55.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    vault:
+        parent: sergeants
+        min: {x: -13.0, y: 74.0, z: 28.0}
+        max: {x: -11.0, y: 77.0, z: 30.0}
+        members: {}
+        flags: {deny-message: Restricted Area, entry: deny, interact: deny, interact-group: NON_MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     sergeant-room2:
         parent: sergeants
         min: {x: 8.0, y: 75.0, z: 27.0}
@@ -49,24 +119,15 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
-    offices:
-        parent: police
-        min: {x: -42.0, y: 80.0, z: 18.0}
-        max: {x: -14.0, y: 82.0, z: 40.0}
+    sergeant-room3:
+        parent: sergeants
+        min: {x: 0.0, y: 75.0, z: 19.0}
+        max: {x: 8.0, y: 78.0, z: 25.0}
         members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
-        priority: 1
-    officehall:
-        min: {x: -42.0, y: 80.0, z: 25.0}
-        max: {x: -11.0, y: 82.0, z: 34.0}
-        members: {}
-        flags: {build: deny, game-mode: SURVIVAL, interact: allow, pvp: allow}
-        owners: {}
-        type: cuboid
-        priority: 2
+        priority: 3
     pistons:
         members: {}
         flags: {block-break: allow, block-place-group: MEMBERS, pistons: allow, block-place: allow,
@@ -74,37 +135,20 @@ regions:
         owners: {}
         type: global
         priority: 1
-    chiefs-closet:
-        min: {x: 4.0, y: 75.0, z: 13.0}
-        max: {x: 14.0, y: 78.0, z: 18.0}
-        members: {}
-        flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 3
     sergeants:
         members:
-            unique-ids: [ca7e8de8-30f0-43c5-9701-982c10ea9459, e6de8cf0-af45-44e4-882f-d98446f4b31b]
+            unique-ids: [ca7e8de8-30f0-43c5-9701-982c10ea9459, e6de8cf0-af45-44e4-882f-d98446f4b31b,
+                9025e96a-d286-47b0-a709-98d2a4ee42db]
         flags: {}
         owners: {}
         type: global
         priority: 3
-    chiefsdesk:
-        min: {x: 2.0, y: 75.0, z: 21.0}
-        max: {x: 4.0, y: 75.0, z: 21.0}
-        members: {}
-        flags: {interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 0
     police:
         members:
-            unique-ids: [66edaf7d-94e7-44cf-9d99-34d3ad90594e, 0130299a-4489-429d-b4eb-68643a4c6ac8,
-                ca7e8de8-30f0-43c5-9701-982c10ea9459, a8185de3-b053-4aca-9eb6-d98728e476ad,
-                8cb79cd3-1e48-4087-9137-a37e164f1494, 869b4227-b51e-452e-adbd-48759a6848dd,
+            unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, ca7e8de8-30f0-43c5-9701-982c10ea9459,
+                a8185de3-b053-4aca-9eb6-d98728e476ad, 8cb79cd3-1e48-4087-9137-a37e164f1494,
                 9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b,
-                55c64563-61a4-4031-a4f6-0c0f65c03af5]
+                869b4227-b51e-452e-adbd-48759a6848dd]
         flags: {}
         owners: {}
         type: global
@@ -137,6 +181,24 @@ regions:
         owners: {}
         type: cuboid
         priority: 1
+    sergeant-door-4:
+        parent: restricteddoors
+        min: {x: 13.0, y: 80.0, z: 33.0}
+        max: {x: 13.0, y: 82.0, z: 34.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    sergeant-door-3:
+        parent: restricteddoors
+        min: {x: 6.0, y: 75.0, z: 27.0}
+        max: {x: 6.0, y: 77.0, z: 28.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     sergeant-door-2:
         parent: restricteddoors
         min: {x: 6.0, y: 75.0, z: 32.0}
@@ -171,35 +233,18 @@ regions:
         owners: {}
         type: global
         priority: 1
-    chiefs-door:
-        parent: restricteddoors
-        min: {x: 6.0, y: 75.0, z: 27.0}
-        max: {x: 6.0, y: 76.0, z: 28.0}
-        members: {}
-        flags: {}
-        owners: {}
-        type: cuboid
-        priority: 0
-    vault:
-        parent: sergeants
-        min: {x: -13.0, y: 74.0, z: 28.0}
-        max: {x: -11.0, y: 77.0, z: 30.0}
-        members: {}
-        flags: {deny-message: Restricted Area, entry: deny, interact: deny, interact-group: NON_MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     __global__:
         members: {}
         flags:
+            creeper-explosion: deny
             vine-growth: deny
             build: deny
-            blocked-cmds: [/thru]
             game-mode: SURVIVAL
+            blocked-cmds: [/thru]
             build-group: NON_MEMBERS
             interact: allow
-            pvp: allow
             game-mode-group: NON_MEMBERS
+            pvp: allow
         owners: {}
         type: global
         priority: 0

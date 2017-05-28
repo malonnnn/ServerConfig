@@ -18,13 +18,7 @@ inventory:
       internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
+    type: CHEST
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: BOWL
@@ -39,9 +33,6 @@ inventory:
     ==: org.bukkit.inventory.ItemStack
     type: DIRT
     amount: 17
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: CHEST
   '14':
     ==: org.bukkit.inventory.ItemStack
     type: WATER_BUCKET
@@ -57,37 +48,7 @@ inventory:
     type: SNOW
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
-      pages:
-      - ' '
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Sword
-      enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        SWEEPING: 3
-        DURABILITY: 3
-      repair-cost: 63
+    type: CACTUS
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: ITEM_FRAME
@@ -100,14 +61,14 @@ inventory:
   '18':
     ==: org.bukkit.inventory.ItemStack
     type: LEAVES
-health: 5.0
+health: 4.0
 hunger: 12
 exp: 0.85714287
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4405158
+exhaustion: 3.577527
 armor_contents: {}
 ender_chest:
   '0':
@@ -278,151 +239,6 @@ ender_chest:
         04. /addchatcooldown §0\n§05. /remchatcooldown §0\n§06. /fireofficer§0\n§\
         0 "
       generation: 0
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      lore:
-      - Duties & Authorities of an SDF Sergeant
-      title: Sergeant Duties R1
-      author: Server Defence Force
-      pages:
-      - |-
-        §l§nDuties of a Sergeant§0
-        §0
-        §01. Assistant to the Chief§0
-        §0
-        §02. Management of Evidence. (Organize reports, Statements, Applications, etc.)§0
-        §0
-        §03. Management of Officer's
-      - |-
-        4. Check the front desk for complaints, applications, or anything else thats been dropped off.§0
-        §0
-        §05. If a complaint has been received, determine if it can be handled.
-      - |-
-        6. Advise the Chief of any serious complaints§0
-        §0
-        §07. Enforce server rules§0
-        §0
-        §08. Ensure Officer's are complying with rules and enforcement methods§0
-        §0
-        §09. Submit an arrest report upon an arrest.
-      - |-
-        10. Review arrest reports of other Officer's and ensure they are including enough details and providing adequate proof (ie. screenshot URL's)§0
-        §0
-        §011. If there is a lack of proof then release the detanee and address the issue.
-      - |-
-        12. Educate Officer's on proper Office Procedures§0
-        §0
-        §013. Know the server rules. Suggest new ones if you feel some should be added§0
-        §0
-        §014. Organize the Vault and store documentation in an organized manner
-      - |-
-        15. Develop, Implement, and Enforce rules governing the Officer's§0
-        §0
-        §016. Receive, and Review Applications for Employment.§0
-        §0
-        §017. Arrange and conduct interviews for new Applicants.
-      - |-
-        18. Provide new Officer's with a tour and give them instruction on how to do their job.§0
-        §0
-        §019. Provide the Chief with the Application and your Recommendation for a new Hire if an Applicant is successful during his/her interview.
-      - |-
-        20. Attend meetings with the Chief to discuss Policing matters.§0
-        §0
-        §0§l§nAuthorities§0
-        §0
-        §01. You may Enforce ONLY rules that are in force (Found at the front of the Police Station)
-      - "2. You may create rules governing the other Officer's.§0\n§0\n§03. You may\
-        \ punish an Officer for misconduct. Punishment can include Jailing or suggesting\
-        \ a fine which the Chief will take care of.§0\n§0 "
-      - "4. You have the Power to Fire Officer's for misconduct.§0\n§0\n§05. You have\
-        \ the Power to conduct your own version of an Interview and ask questions\
-        \ you feel are relevant.§0\n§0 "
-      - |-
-        6. You have the Power to over-ride the decision of another "Officer"§0
-        §0
-        §07. You have access to Restricted Areas including the Vault§0
-        §0
-        §08. You have access to your own Office which you can build in. Comes with a Mailbox
-      - "§l§nCommands§0\n§0\n§01. /onduty§0\n§02. /arrest §0\n§03. /release §0\n§\
-        04. /addchattimer §0\n§05. /removechattimer §0\n§06. /fireofficer§0\n§0 "
-      generation: 0
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: herpaderp
-      author: Grim765Man
-      pages:
-      - |2-
-         HerpaDerp1000 griefing according to God_Doesnt_Exist §0
-        §0
-        §0Proof: §0http://imgur.com/a/42fVa
-      generation: 0
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Discipline Report May 5, 2017
-      author: SDF Chief
-      pages:
-      - "§l§nDiscipline Report§0\n§0\n§0§lDate: §0May 9th, 2016§0\n§0\n§0§lRE: §0Excessive\
-        \ Spamming, Delibrately breaking the rules, Lack of Enforcement from SDF§\
-        0\n§0\n§0\n§0\n§0 "
-      - |-
-        §l§nSubjects§0
-        §0
-        §0(1) LostInGalaxeh_§0
-        §0(2) Camull§0
-        §0(3) Razara_Cheshire§0
-        §0(4) Duke_Pig§0
-        §0(5) nightghost2§0
-        §0(6) Grim765Reaper§0
-        §0(7) HerpaDerp10000
-      - "§l§nPunishments§0\n§0\n§0(1) LostInGalaxeh_ Jail Sentence for Spamming and\
-        \ Knowingly breaking the rules§0\n§0\n§0(2) Camull Jail Sentence for Spamming\
-        \ and Knowingly breaking the rules§0\n§0 "
-      - |-
-        (3) Razara_Cheshire Jail Sentence for Spamming and Purposely breaking the rules§0
-        §0
-        §0(4) Duke_Pig Chat Timer and Warning for Spamming
-      - |-
-        (5) nightghost2 $100 fine and additional training for lack of enforcement. Did warn players, but should have taken further action.§0
-        §0
-        §0(6) Grim765Reaper Termination for lack of enforcement or noticing rules being broken
-      - (7) HerpaDerp10000 $1,000 fine for failure to take action during an obvious disregard of rules
-      - |-
-        §l§nProof§0
-        §0
-        §1§nClick Here
-      generation: 0
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: From sarg herpa
-      author: HerpaDerp10000
-      pages:
-      - |-
-        Please do not make any edits to my department of the training course. §0
-        §0
-        §0
-        §0-from ur fellow sarg§0
-        §0
-        §0p.s the parkour was a nice addition but pls dont edit without perms
-      generation: 0
   '26':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
@@ -437,84 +253,3 @@ ender_chest:
         §0xDc (A+)§0
         §0Polo (B-)§0
         §0Phantom_jeff(A+)
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Srg.Herpa
-      author: HerpaDerp10000
-      pages:
-      - |-
-        I deeply apologize chief for my lack of attention today i should have noticed when evryone was spamming. but sadly i didnt i hope you can find it in your heart to forgive me. §0
-        §0
-        §0-Sergeant Herpa
-      generation: 0
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Discipline Report May 5, 2017
-      author: SDF Chief
-      pages:
-      - "§l§nDiscipline Report§0\n§0\n§0§lDate: §0May 9th, 2016§0\n§0\n§0§lRE: §0Excessive\
-        \ Spamming, Delibrately breaking the rules, Lack of Enforcement from SDF§\
-        0\n§0\n§0\n§0\n§0 "
-      - |-
-        §l§nSubjects§0
-        §0
-        §0(1) LostInGalaxeh_§0
-        §0(2) Camull§0
-        §0(3) Razara_Cheshire§0
-        §0(4) Duke_Pig§0
-        §0(5) nightghost2§0
-        §0(6) Grim765Reaper§0
-        §0(7) HerpaDerp10000
-      - "§l§nPunishments§0\n§0\n§0(1) LostInGalaxeh_ Jail Sentence for Spamming and\
-        \ Knowingly breaking the rules§0\n§0\n§0(2) Camull Jail Sentence for Spamming\
-        \ and Knowingly breaking the rules§0\n§0 "
-      - |-
-        (3) Razara_Cheshire Jail Sentence for Spamming and Purposely breaking the rules§0
-        §0
-        §0(4) Duke_Pig Chat Timer and Warning for Spamming
-      - |-
-        (5) nightghost2 $100 fine and additional training for lack of enforcement. Did warn players, but should have taken further action.§0
-        §0
-        §0(6) Grim765Reaper Termination for lack of enforcement or noticing rules being broken
-      - (7) HerpaDerp10000 $1,000 fine for failure to take action during an obvious disregard of rules
-      - |-
-        §l§nProof§0
-        §0
-        §1§nClick Here
-      generation: 0
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Fire Notice
-      author: HerpaDerp10000
-      pages:
-      - ' EmmettGaming was fired for making his own calls and jailing people for no
-        reason he had more than one chance but failed to fix his behavior then he
-        confronted me about the situation and harassed me calling me names killing
-        me and talking about my mother '
-      - he was just upset because of him being fired
-      generation: 0
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: promo
-      author: xDcGamer_MCU
-      pages:
-      - xsprkz my lord I am requesting a promotion the moment you find space for a new sarge ik you will take this to thought but please consider me I am commited, and will make sure future officers are nothing but stunning.
-      generation: 0
