@@ -19,7 +19,7 @@ bind('player_chat', null, null, @e,
     
     foreach(@player in all_players()){
     
-        if(import(@player.'chatsounds') == 'on'){
+        if(import(@player.'chatsounds') != 'off' ){
         
             array_push(@allPlayersToPlaySoundTo, @player); # Add player to list of players to play sound to
         
