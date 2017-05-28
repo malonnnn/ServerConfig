@@ -1,9 +1,58 @@
-health: 20.0
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.221067
-inventory: {}
+exhaustion: 2.7056975
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 4
+    amount: 10
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 189508
+  '1':
+    type: JUMP
+    level: 1
+    duration: 196472
+  '2':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 189508
+  '3':
+    type: SPEED
+    level: 1
+    duration: 196431
+  '4':
+    type: REGENERATION
+    level: 1
+    duration: 189508

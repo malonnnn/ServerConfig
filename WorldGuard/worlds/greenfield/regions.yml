@@ -26,30 +26,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    babypickle101house:
-        parent: city
-        members: {}
-        flags: {}
-        owners:
-            unique-ids: [0a3f089a-dd4c-4066-8454-140837c14110]
-        type: poly2d
-        priority: 10
-        max-y: 71
-        min-y: 69
-        points:
-        - {x: 287, z: -1311}
-        - {x: 287, z: -1315}
-        - {x: 297, z: -1315}
-        - {x: 297, z: -1313}
-        - {x: 294, z: -1313}
-        - {x: 294, z: -1311}
-        - {x: 297, z: -1311}
-        - {x: 297, z: -1306}
-        - {x: 293, z: -1306}
-        - {x: 293, z: -1309}
-        - {x: 296, z: -1309}
-        - {x: 296, z: -1311}
-        - {x: 287, z: -1311}
     modapplications:
         parent: bookchest
         min: {x: -13.0, y: 78.0, z: 240.0}
@@ -101,7 +77,7 @@ regions:
         members: {}
         flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
         owners:
-            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c, c3a4e4d3-b04a-48e7-ad9f-60cc59699af3]
+            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c]
         type: cuboid
         priority: 2
     br0kens0ulsapt:
@@ -192,8 +168,8 @@ regions:
         max: {x: -1687.0, y: 255.0, z: 160.0}
         members: {}
         flags:
-            invincible: allow
             blocked-cmds: [/gmsp, /intangible, /thru]
+            invincible: allow
             item-pickup: allow
             invincible-group: MEMBERS
             pvp: deny

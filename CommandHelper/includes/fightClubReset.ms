@@ -4,8 +4,6 @@ proc(_fightClubReset,@p1,@p2){
     runas(~console,'/pex user '.@p2.' remove essentials.protect.pvp fightclub')
     export(@p1.'fightClub','')
     export(@p2.'fightClub','')
-    unbind(import(@p1.'fightClubDeath'))
-    unbind(import(@p2.'fightClubDeath'))
     export(@p1.'fightClubDeath','')
     export(@p2.'fightClubDeath','')
     export(@p1.'fcvs','')
