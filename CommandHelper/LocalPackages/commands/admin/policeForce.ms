@@ -19,6 +19,17 @@ register_command(onduty,
             @keyPreviousGroup = 'police.'.@playersUUID.'.pgroup'; # Unique AFK key to store the previous
             export(@keyPreviousGroup, @playersGroup); # Store the previous group in the register				
             set_pmode(@player,'SURVIVAL')
+			
+			if(@playersUUID == 'cb871f86-94e5-4bf3-a78e-42f73c2215c4'){
+            
+                set_timeout(3000,closure(
+                    sudo("/pex user " . @player . " group set policechief")
+                    tmsg(@player,color(red)."You are now on duty!")
+                ))
+                
+				die()
+            }			
+			
             if(has_permission(@player,"is.sergeant")){
             
                 set_timeout(3000,closure(
@@ -34,8 +45,42 @@ register_command(onduty,
                 
             }else{
                 tmsg(@player,color(red)."You are not part of the Police Force!")
-            }              
-        
+				die()
+            }
+			
+			if (pworld(@player) != 'policeoffice') {
+			
+				tmsg(@player, color(RED).'You will be placed Off Duty Automatically in 2 Minutes')
+			
+				set_timeout(120000,closure(    
+					runas(@player,"/offduty")
+				))
+			
+			} else {
+
+				bind(world_changed, null, array(player: @player), @event,				
+
+					if(@event['to'] != 'policeoffice') {
+					
+						if(!has_permission(@event[player], 'ch.alias.offduty')){
+							
+							unbind()
+							die()
+						
+						}
+					
+						tmsg(@event[player], color(RED).'You will be placed Off Duty Automatically in 2 Minutes')
+					
+						set_timeout(120000,closure(    
+							runas(player(@event[player]),"/offduty")
+						))
+						
+						unbind()
+					
+					}				
+
+				)
+			}
         }
     )
 )
@@ -226,3 +271,48 @@ register_command(reinstateofficer,
         }
     )
 )
+
+set_timeout(3000, closure(
+
+	@allPlayers = all_players()
+	
+	foreach(@player in @allPlayers){
+	
+		if(has_permission(@player, 'ch.alias.offduty') && !pisop(@player)){
+		
+			if (pworld(@player) != 'policeoffice') {
+			
+				tmsg(@player, color(RED).'You will be placed Off Duty Automatically in 2 Minutes')
+				set_timeout(120000,closure(    
+					runas(@player,"/offduty")
+				))
+			
+			} else {
+
+				bind(world_changed, null, array(player: @player), @event,				
+
+					if(@event['to'] != 'policeoffice') {
+					
+						if(!has_permission(@event[player], 'ch.alias.offduty')){
+							
+							unbind()
+							die()
+						
+						}
+					
+						tmsg(@event[player], color(RED).'You will be placed Off Duty Automatically in 2 Minutes')
+					
+						set_timeout(120000,closure(    
+							runas(player(@event[player]),"/offduty")
+						))
+						
+						unbind()
+					
+					}				
+
+				)
+			}
+		}
+	}
+
+))
