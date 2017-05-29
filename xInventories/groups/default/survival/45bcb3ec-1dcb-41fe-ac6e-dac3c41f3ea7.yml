@@ -1,11 +1,11 @@
-health: 20.0
-hunger: 20
-exp: 0.71428573
-exp-level: 0
+health: 16.0
+hunger: 16
+exp: 1.0884327E-7
+exp-level: 8
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.474
+exhaustion: 1.4849993
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -20,29 +20,26 @@ inventory:
       Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BEDROCK
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Omega Beam§0 «×»
+      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    damage: 28
+    type: MONSTER_EGG
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: John Cena
-      enchants:
-        DAMAGE_ALL: 5
-        KNOCKBACK: 5
-        FIRE_ASPECT: 2
-        LOOT_BONUS_MOBS: 3
-        SWEEPING: 3
-      repair-cost: 7
+      meta-type: SPAWN_EGG
+      id: llama
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BARDING
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne's §7Cannon§7 «×»
+      display-name: §7Pistol§7 «× | ×»
       Unbreakable: true
   '4':
     ==: org.bukkit.inventory.ItemStack
@@ -58,32 +55,6 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-      Unbreakable: true
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-      Unbreakable: true
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK_CHARGE
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK_EFFECT
-      display-name: §eFrag Grenade§e
-      lore:
-      - §eExplodes three seconds after launch.
-      Unbreakable: true
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
       display-name: §eOlympia§e ▪ «×»
       lore:
       - §eDouble-barreled shotgun.
@@ -91,9 +62,37 @@ inventory:
       - §eIneffective at longer ranges.
       - §eFires incendiary ammo.
       Unbreakable: true
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eV§fe§1ge§fta's §eFinal Flash§e «×»
+      Unbreakable: true
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne's §7Cannon§7 «×»
+      Unbreakable: true
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bKa-me-ha-me-ha§b «×»
+      Unbreakable: true
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: CHEST
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_invisibility
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -121,50 +120,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-      Unbreakable: true
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
-      Unbreakable: true
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
-      Unbreakable: true
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-      Unbreakable: true
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
+      display-name: §6Throwing Star§6 «× | ×»
       Unbreakable: true
   '18':
     ==: org.bukkit.inventory.ItemStack
@@ -202,21 +158,13 @@ inventory:
       - §eLeft click to melee enemies
       - §ewith the tactical knife.
       Unbreakable: true
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
   '24':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne's §4Destruction Laser§4 «×»
+      display-name: §eKi§6Blast§6 «×»
       Unbreakable: true
   '25':
     ==: org.bukkit.inventory.ItemStack
@@ -224,7 +172,8 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
+      display-name: §7§lW§4§la§7§lr M§4§la§7§lch§9§li§7§lne's §4Destruction Laser§4 «×»
+      Unbreakable: true
   '26':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -246,12 +195,19 @@ inventory:
       Unbreakable: true
   '29':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_SWORD
+    damage: 28
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eV§fe§1ge§fta's §eFinal Flash§e «×»
-      Unbreakable: true
+      display-name: John Cena
+      enchants:
+        DAMAGE_ALL: 5
+        KNOCKBACK: 5
+        FIRE_ASPECT: 2
+        LOOT_BONUS_MOBS: 3
+        SWEEPING: 3
+      repair-cost: 7
   '30':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -262,11 +218,14 @@ inventory:
       Unbreakable: true
   '31':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: FIREWORK_CHARGE
+    amount: 31
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
+      meta-type: FIREWORK_EFFECT
+      display-name: §eFrag Grenade§e
+      lore:
+      - §eExplodes three seconds after launch.
       Unbreakable: true
   '32':
     ==: org.bukkit.inventory.ItemStack
@@ -276,9 +235,6 @@ inventory:
       meta-type: UNSPECIFIC
       display-name: §bWa§3ter §3Sh§bot§b «×»
       Unbreakable: true
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
   '35':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -290,14 +246,6 @@ inventory:
       - §eBolt-action rifle with high accuracy.
       - §eEquipped with a night vision scope.
       - §eDeals double damage on headshots.
-      Unbreakable: true
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
       Unbreakable: true
   '27':
     ==: org.bukkit.inventory.ItemStack

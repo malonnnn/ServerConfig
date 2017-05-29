@@ -57,10 +57,10 @@ register_command(fightclub,
                             export('fightClubFighter2',@plr)
                             export(@player.'fcvs',@plr)
                             export(@plr.'fcvs',@player)
-                            @plrWins = get_value(@plr.'fightClubWins')
-                            @plrLosses = get_value(@plr.'fightClubLosses')
-                            @playerWins = get_value(@player.'fightClubWins')
-                            @playerLosses = get_value(@player.'fightClubLosses')
+                            @plrWins = get_value('fightclub.'.@plr.'fightClubWins')
+                            @plrLosses = get_value('fightclub.'.@plr.'fightClubLosses')
+                            @playerWins = get_value('fightclub.'.@player.'fightClubWins')
+                            @playerLosses = get_value('fightclub.'.@player.'fightClubLosses')
                             @otherRegisteredPlayers = true
                             @playerBetPercent = 100
                             

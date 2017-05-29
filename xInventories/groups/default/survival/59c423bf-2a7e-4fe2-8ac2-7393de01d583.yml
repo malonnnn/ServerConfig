@@ -1,136 +1,55 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-      Unbreakable: true
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-      Unbreakable: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-      Unbreakable: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_COMPARATOR
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §ePutty§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to throw.
-      - §eLeft click to detonate.
-      Unbreakable: true
-      blockMaterial: REDSTONE_COMPARATOR
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK_CHARGE
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK_EFFECT
-      display-name: §eFrag Grenade§e
-      lore:
-      - §eExplodes three seconds after launch.
-      Unbreakable: true
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 10
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4R§8e§4d H§8oo§4d's Grappling Hook
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eC4§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to place.
-      - §eLeft click to detonate.
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4R§8e§4d H§8oo§4d's Glide Wings
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DURABILITY: 3
-        MENDING: 1
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 armor_contents:
-  chestplate:
+  boots:
     ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4R§8e§4d H§8oo§4d's Glide Wings
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DURABILITY: 3
-        MENDING: 1
-health: 30.0
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4579992
+exhaustion: 2.959426
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 2
-    duration: 199129
+    type: REGENERATION
+    level: 1
+    duration: 167501
   '1':
     type: FAST_DIGGING
     level: 3
-    duration: 199190
+    duration: 167579
   '2':
     type: JUMP
-    level: 3
-    duration: 199277
+    level: 5
+    duration: 167622
   '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 167501
+  '4':
     type: HEALTH_BOOST
     level: 4
-    duration: 199129
-  '4':
+    duration: 167501
+  '5':
     type: SPEED
-    level: 3
-    duration: 199155
+    level: 50
+    duration: 197885
