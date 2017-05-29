@@ -130,10 +130,10 @@ register_command(officialfight,
                 if(@winner != null && @winner != '' && @loser != null && @loser != ''){
                     @plrs = all_players()
 
-                    @winnerWins = get_value(@winner.'fightClubWins')
-                    @winnerLosses = get_value(@winner.'fightClubLosses')
-                    @loserWins = get_value(@loser.'fightClubWins')
-                    @loserLosses = get_value(@loser.'fightClubLosses')
+                    @winnerWins = get_value('fightclub.'.@winner.'fightClubWins')
+                    @winnerLosses = get_value('fightclub.'.@winner.'fightClubLosses')
+                    @loserWins = get_value('fightclub.'.@loser.'fightClubWins')
+                    @loserLosses = get_value('fightclub.'.@loser.'fightClubLosses')
                     @winnerMultiplier = 1
                     @loserMultiplier = 1
 
@@ -216,8 +216,8 @@ register_command(officialfight,
                     export('fightClubLastLoser','')
                     acc_add(@winner,100)
                     acc_add(@loser,50)
-                    store_value(@winner.'fightClubWins',@winnerWins)
-                    store_value(@loser.'fightClubLosses',@loserLosses)
+                    store_value('fightclub.'.@winner.'fightClubWins',@winnerWins)
+                    store_value('fightclub.'.@loser.'fightClubLosses',@loserLosses)
                     broadcast(color(dark_red).'Official Fight!'.color(green).' $100 '.color(red).'for '.color(white).@winner.color(red).' and '.color(green).'$50 '.color(red).'for '.color(white).@loser)
                 }else{
                     tmsg(@ref,color(red).'The previous fight was either already paid out or hasn\'t started yet!')
@@ -268,7 +268,7 @@ register_command(setwins,
                 @num = @args[0]
                 @person = @args[1]
 
-                store_value(@person.'fightClubWins',@num)
+                store_value('fightclub.'.@person.'fightClubWins',@num)
         
         }
     )
@@ -313,7 +313,7 @@ register_command(setlosses,
                 @num = @args[0]
                 @person = @args[1]
 
-                store_value(@person.'fightClubLosses',@num)
+                store_value('fightclub.'.@person.'fightClubLosses',@num)
         
         }
     )
@@ -356,8 +356,8 @@ register_command(resetfightstats,
                 }
                 
                 @plr = player(@args[0])
-                store_value(@plr.'fightClubWins',0)
-                store_value(@plr.'fightClubLosses',0)
+                store_value('fightclub.'.@plr.'fightClubWins',0)
+                store_value('fightclub.'.@plr.'fightClubLosses',0)
 
                 tmsg(player(),@plr.color(red).'\'s Fight Club stats were reset!')
         

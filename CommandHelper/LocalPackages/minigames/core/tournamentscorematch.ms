@@ -29,10 +29,10 @@ register_command('tournamentmatchwinner',
                 msg(color(RED).'Sorry, that player is not online D:')
                 die()
             }
-            @tournamentName = get_value(@puuid.'tournamentOwned')
+            @tournamentName = get_value('tournament.'.@puuid.'tournamentOwned')
             @tournamentURL = @tournamentName.'_omnivs'
             @remainingMatches = ''
-            @winnerID = get_value(puuid(@matchWinner,true).@tournamentName.'participantID')
+            @winnerID = get_value('tournament.'.puuid(@matchWinner,true).@tournamentName.'participantID')
 
             # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
@@ -127,9 +127,9 @@ register_command('tournamentmatchwinner',
                                                 }else{
                                                     export(@plr."lastUsedTournamentMatchWinner", time() / 1000)
                                                     broadcast(color(RED).@matchWinner.color(RED).' is the winner of the '.color(WHITE).@tournamentName.color(RED).' tournament! Please visit '.color(GREEN).'http://challonge.com/'.@tournamentURL.color(RED).' to see the full standings!')
-                                                    store_value(@puuid.'tournamentOwned','')
-                                                    store_value(@tournamentName.'tournamentID','')
-                                                    store_value(@tournamentName.'tournamentOwner','')
+                                                    store_value('tournament.'.@puuid.'tournamentOwned','')
+                                                    store_value('tournament.'.@tournamentName.'tournamentID','')
+                                                    store_value('tournament.'.@tournamentName.'tournamentOwner','')
                                                 }
                                             }
                                         ))

@@ -15,16 +15,52 @@ register_command('imasinglelady',
             }
             @plr = player()
             @puuid = puuid(@plr,true)
-            @spouse = get_value(@puuid.'spouseUUID')
+            @spouse = get_value('waifus.'.@puuid.'spouseUUID')
 
             if(@spouse != null && @spouse != ''){
                 msg('Sorry, you are already taken!')
                 die()
             }
 
-            store_value(@puuid.'gender','g')
-            broadcast(@plr.color(RED).' is letting everyone know she\'s a single and ready to ____!'.color(WHITE).' /claimwaifu '.@plr)
+            store_value('waifus.'.@puuid.'gender','g')
+            broadcast(@plr.color(RED).' is letting everyone know she\'s single and ready to ____!'.color(WHITE).' /claimwaifu '.@plr)
         
+        }
+    )
+)
+
+
+register_command('setwaifu', 
+
+    array(
+        description: 'Marry a waifu!',
+        usage: '/setwaifu <waifuName> <waifuUUID> <husbandoName> <husbandoUUID>',
+        permission: 'poopy',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        tabcompleter: closure(@alias, @sender, @args) {
+            try{
+                if(array_size(@args) == 0) {
+                    return(all_players());
+                }
+                @search = @args[array_size(@args) - 1];
+                    return(array_filter(all_players(), closure(@index, @player) {
+                    return(equals_ic(@search, substr(@player, 0, length(@search))));
+                }));
+            } catch (RangeException @ErrorInfo) {
+                # Ignore
+            }
+        },
+    
+        executor: closure(@alias, @sender, @args) {
+            @plrName = player()
+            @plrUUID = puuid(@plrName,true)
+            @waifuName = @args[0]
+            @waifuUUID = @args[1]
+            @husbandoName = @args[2]
+            @husbandoUUID = @args[3]
+            store_value('waifus.'.@plrUUID.@waifuUUID.'isMarried',true)
+            store_value('waifus.'.@waifuUUID.'spouseUUID',@plrUUID)
+            store_value('waifus.'.@waifuUUID.'spouseName',@plrName)
         }
     )
 )
@@ -70,15 +106,10 @@ register_command('claimwaifu',
 
             @plrUUID = puuid(@plrName,true)
             @waifuUUID = puuid(@waifuName,true)
-            @husbandoUUID = get_value(@waifuUUID.'spouseUUID')
-            @husbandoName = get_value(@waifuUUID.'spouseName')
-            @waifuGender = get_value(@waifuUUID.'gender')
-            @plrGender = get_value(@plrUUID.'gender')
-
-            if(@husbandoUUID != null && @husbandoUUID != ''){
-                msg(color(RED).'Sorry, '.color(WHITE).@waifuName.color(RED).'is already claimed by '.color(WHITE).@husbandoName.color(RED).' Please do '.color(WHITE).'/waifuchallenge '.@husbandoName.color(RED).'to challenge '.color(WHITE).@husbandoName.color(RED).' for the ownership of '.color(WHITE).@waifuName.color(RED).'!')
-                die()
-            }
+            @husbandoUUID = get_value('waifus.'.@waifuUUID.'spouseUUID')
+            @husbandoName = get_value('waifus.'.@waifuUUID.'spouseName')
+            @waifuGender = get_value('waifus.'.@waifuUUID.'gender')
+            @plrGender = get_value('waifus.'.@plrUUID.'gender')
 
             if(@waifuGender != 'g'){
                 msg(color(RED).'Sorry, that player is not a girl D: They must first do '.color(WHITE).'/iamasinglelady '.color(RED).'before they can be taken!')
@@ -89,13 +120,21 @@ register_command('claimwaifu',
                 msg(color(RED).'Sorry, you are registered as a girl!')
                 die()
             }
-            if(get_value(@plrUUID.@waifuUUID.'isMarried')){
+            if(get_value('waifus.'.@plrUUID.@waifuUUID.'isMarried')){
                 msg(color(RED).'Sorry, you already are married to her!')
                 die()
             }
-            store_value(@plrUUID.@waifuUUID.'isMarried',true)
-            store_value(@waifuUUID.'spouseUUID',@plrUUID)
-            store_value(@waifuUUID.'spouseName',@plrName)
+
+            @lastPlayed = plast_played(@husbandoUUID)
+            # If has been more than 48 hours
+            if(@lastPlayed > (time() - 172800000)){
+            }else if(@husbandoUUID != null && @husbandoUUID != ''){
+                msg(color(RED).'Sorry, '.color(WHITE).@waifuName.color(RED).'is already claimed by '.color(WHITE).@husbandoName.color(RED).' Please do '.color(WHITE).'/waifuchallenge '.@husbandoName.color(RED).'to challenge '.color(WHITE).@husbandoName.color(RED).' for the ownership of '.color(WHITE).@waifuName.color(RED).'!')
+                die()
+            }
+            store_value('waifus.'.@plrUUID.@waifuUUID.'isMarried',true)
+            store_value('waifus.'.@waifuUUID.'spouseUUID',@plrUUID)
+            store_value('waifus.'.@waifuUUID.'spouseName',@plrName)
             broadcast(@plrName.color(RED).' has just claimed '.color(WHITE).@waifuName.color(RED).' as his waifu!')
         
         }
@@ -137,7 +176,7 @@ register_command('waifuchallenge',
             }else{
                 @waifuName = player()
                 @waifuUUID = puuid(@waifuName,true)
-                @husbandoUUID = get_value(@waifuUUID.'spouseUUID')
+                @husbandoUUID = get_value('waifus.'.@waifuUUID.'spouseUUID')
                 @husbandoName = ''
 
                 @plrs = all_players()
@@ -156,33 +195,33 @@ register_command('waifuchallenge',
                     die()
                 }
 
-                if(get_value(@waifuUUID.'gender') != 'g'){
+                if(get_value('waifus.'.@waifuUUID.'gender') != 'g'){
                     msg('Sorry, you must be a girl to use this command!')
                     die()
                 }
 
-                if(get_value(@husbandoUUID.'gender') == 'g'){
+                if(get_value('waifus.'.@husbandoUUID.'gender') == 'g'){
                     msg('Sorry, your husbando must be a boy to use this command!')
                     die()
                 }
 
-                @time = get_value(@waifuUUID.'lastChallengeTime')
+                @time = get_value('waifus.'.@waifuUUID.'lastChallengeTime')
                 if(@time != null && (time() - @time) < 86400000){
                     msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last tried to escape!')
                     die()
                 }
 
-                if(get_value(@waifuName.'inActiveChallenge')){
+                if(get_value('waifus.'.@waifuName.'inActiveChallenge')){
                     msg(color(RED).'You are already in a waifu challenge!')
                     die()
                 }
-                if(get_value(@husbandoName.'inActiveChallenge')){
+                if(get_value('waifus.'.@husbandoName.'inActiveChallenge')){
                     msg(color(RED).'They are already in a waifu challenge!')
                     die()
                 }
 
-                store_value(@waifuName.'inActiveChallenge',true)
-                store_value(@husbandoName.'inActiveChallenge',true)
+                store_value('waifus.'.@waifuName.'inActiveChallenge',true)
+                store_value('waifus.'.@husbandoName.'inActiveChallenge',true)
 
                 runas(~console,'/warp husbando1 '.@husbandoName)
                 runas(~console,'/warp husbando2 '.@waifuName)
@@ -276,9 +315,9 @@ register_command('waifuchallenge',
             @waifuUUID = puuid(@waifuName,true)
             @husbandoUUID = puuid(@husbandoName,true)
 
-            @plrGender = get_value(@plrUUID.'gender')
-            @waifuGender = get_value(@waifuUUID.'gender')
-            @husbandoGender = get_value(@husbandoUUID.'gender')
+            @plrGender = get_value('waifus.'.@plrUUID.'gender')
+            @waifuGender = get_value('waifus.'.@waifuUUID.'gender')
+            @husbandoGender = get_value('waifus.'.@husbandoUUID.'gender')
 
             if(@plrGender == 'g'){
                 msg(color(RED).'Sorry, you are a girl! You cannot claim waifus!')
@@ -293,27 +332,27 @@ register_command('waifuchallenge',
                 die()
             }
 
-            @time = get_value(@plrUUID.@waifuUUID.'lastChallengeTime')
+            @time = get_value('waifus.'.@plrUUID.@waifuUUID.'lastChallengeTime')
             if(@time != null && (time() - @time) < 86400000){
                 msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last challenged them!')
                 die()
             }
-            if(get_value(@plrName.'inActiveChallenge')){
+            if(get_value('waifus.'.@plrName.'inActiveChallenge')){
                 msg(color(RED).'You are already in a waifu challenge!')
                 die()
             }
-            if(get_value(@husbandoName.'inActiveChallenge')){
+            if(get_value('waifus.'.@husbandoName.'inActiveChallenge')){
                 msg(color(RED).'They are already in a waifu challenge!')
                 die()
             }
 
-            if(get_value(@husbandoUUID.@waifuUUID.'isMarried') != true){
-                msg(get_value(@husbandoUUID.@waifuUUID.'isMarried'))
+            if(get_value('waifus.'.@husbandoUUID.@waifuUUID.'isMarried') != true){
+                msg(get_value('waifus.'.@husbandoUUID.@waifuUUID.'isMarried'))
                 msg(color(RED).'Sorry, he is not married to her!')
                 die()
             }
-            store_value(@plrName.'inActiveChallenge',true)
-            store_value(@husbandoName.'inActiveChallenge',true)
+            store_value('waifus.'.@plrName.'inActiveChallenge',true)
+            store_value('waifus.'.@husbandoName.'inActiveChallenge',true)
             runas(~console,'/warp husbando1 '.@husbandoName)
             runas(~console,'/warp husbando2 '.@plrName)
             bind(player_death,array(id: @husbandoName.'waifuChallengeDeath'),associative_array('player':@husbandoName),@e,@winner = @plrName, @loser = @husbandoName, @waifu = @waifuName){

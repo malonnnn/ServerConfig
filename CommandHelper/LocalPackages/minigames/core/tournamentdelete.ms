@@ -27,7 +27,7 @@ register_command('tournamentdelete',
             @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
             @puuid = puuid(@plr,true)
-            if(get_value(@puuid.'tournamentOwned') != @tournamentName){
+            if(get_value('tournament.'.@puuid.'tournamentOwned') != @tournamentName){
                 msg(color(RED).'Sorry, only the tournament owner can do that!')
                 die()
             }
@@ -58,8 +58,8 @@ register_command('tournamentdelete',
                         }
                     }
                     @puuid = puuid(@plr,true)
-                    store_value(@puuid.'tournamentOwned','')
-                    store_value(@tournamentName.'tournamentOwner','')
+                    store_value('tournament.'.@puuid.'tournamentOwned','')
+                    store_value('tournament.'.@tournamentName.'tournamentOwner','')
                     msg(color(RED).'The tournament '.@tournamentName.' has been deleted!')
                     export(@plr."lastUsedTournamentDelete", time() / 1000)
                 }
