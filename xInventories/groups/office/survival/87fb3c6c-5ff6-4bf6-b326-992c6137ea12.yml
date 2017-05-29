@@ -1,7 +1,16 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Freezeray
+      author: mythguy1226
+      pages:
+      - |
+        can you accept my pr for freezeray as well as my prs for adding it to icemans powers?§0
+      generation: 0
 health: 20.0
 hunger: 20
 exp: 0.076923005
