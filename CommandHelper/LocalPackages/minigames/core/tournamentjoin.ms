@@ -54,7 +54,7 @@ register_command('tournamentjoin',
                 }
                 export(@plr."lastUsedTournamentJoin", time() / 1000)
                 @confirmation = json_decode(@response['body'])
-                store_value(@puuid.@tournamentName.'participantID',@confirmation['participant']['id'])
+                store_value('tournament.'.@puuid.@tournamentName.'participantID',@confirmation['participant']['id'])
                 broadcast(@plr.color(RED).' has checked into the '.@tournamentName.' tournament!'.color(WHITE).' /tournamentjoin '.@tournamentName)
             }));
         }

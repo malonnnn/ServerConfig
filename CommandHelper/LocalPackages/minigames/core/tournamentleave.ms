@@ -33,13 +33,13 @@ register_command('tournamentleave',
             @puuid = puuid(@plr,true)
             @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
-            @participantID = get_value(@puuid.@tournamentName.'participantID')
+            @participantID = get_value('tournament.'.@puuid.@tournamentName.'participantID')
 
             # @challongeKey gets initialized behind the scenes when doing this include
             include('/home/minecraft/server/plugins/CommandHelper/includes/challongeKey.ms')
 
             # If the 2nd argument is the name of one of the players in the match, they will be removed
-            @tournamentOwner = get_value(@tournamentName.'tournamentOwner')
+            @tournamentOwner = get_value('tournament.'.@tournamentName.'tournamentOwner')
             if(@puuid != @tournamentOwner){
                 msg(color(RED).'Sorry, it doesn\'t look like you\'re the owner of that tournamnet!')
                 die()
@@ -117,7 +117,7 @@ register_command('tournamentleave',
                             @person = json_decode(@response5['body'])['participant']
                             @puuid = @person['misc']
                             tmsg(@plr,@personLeaving.color(RED).' has been removed!')
-                            store_value(@puuid.@tournamentName.'participantID','')
+                            store_value('tournament.'.@puuid.@tournamentName.'participantID','')
                             export(@plr."lastUsedTournamentLeave", time() / 1000)
                         }
                         

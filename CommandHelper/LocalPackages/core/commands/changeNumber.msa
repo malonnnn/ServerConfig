@@ -14,15 +14,15 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
     @npcID = $npcid
     @holoLoc = array($holox,$holoy,$holoz,@ptrStart['world'])
 
-    @number[1] = associative_array('num':get_value(@machineID.'1'))
+    @number[1] = associative_array('num':get_value('heromachine.'.@machineID.'1'))
     if(@number[1]['num'] == null){
         @number[1]['num'] = 0
     }
-    @number[2] = associative_array('num':get_value(@machineID.'2'))
+    @number[2] = associative_array('num':get_value('heromachine.'.@machineID.'2'))
     if(@number[2]['num'] == null){
         @number[2]['num'] = 0
     }
-    @number[3] = associative_array('num':get_value(@machineID.'3'))
+    @number[3] = associative_array('num':get_value('heromachine.'.@machineID.'3'))
     if(@number[3]['num'] == null){
         @number[3]['num'] = 0
     }
@@ -114,9 +114,9 @@ if(@facingDir == 'north'){
     for(@i = 1, @i <= 3, @i++){
         sudo('/minecraft:setblock '.@ptr[@i]['x'].' '.@ptr[@i]['y'].' '.@ptr[@i]['z'].' minecraft:skull '.@skullDir.' replace '.@number[@i]['meta'])
     }
-    store_value(@machineID.'1',@number[1]['num'])
-    store_value(@machineID.'2',@number[2]['num'])
-    store_value(@machineID.'3',@number[3]['num'])
+    store_value('heromachine.'.@machineID.'1',@number[1]['num'])
+    store_value('heromachine.'.@machineID.'2',@number[2]['num'])
+    store_value('heromachine.'.@machineID.'3',@number[3]['num'])
     
     @stdout = ''
     @hero = ""

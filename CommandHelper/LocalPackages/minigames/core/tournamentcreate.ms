@@ -31,7 +31,7 @@ register_command('tournamentcreate',
 
             @url = 'https://api.challonge.com/v1/tournaments.json'
             @puuid = puuid(@plr,true)
-            @prevTourn = get_value(@puuid.'tournamentOwned')
+            @prevTourn = get_value('tournament.'.@puuid.'tournamentOwned')
             if(@prevTourn != null && @prevTourn != ''){
                 msg(color(RED).'Sorry, you are already running a different tournament! Please first do /tournamentdelete '.@prevTourn)
                 die()
@@ -64,8 +64,8 @@ register_command('tournamentcreate',
                     die()
                 }
                 @tournamentInfo = json_decode(@response['body'])
-                store_value(@puuid.'tournamentOwned',@tournamentName)
-                store_value(@tournamentName.'tournamentOwner',@puuid)
+                store_value('tournament.'.@puuid.'tournamentOwned',@tournamentName)
+                store_value('tournament.'.@tournamentName.'tournamentOwner',@puuid)
                 broadcast(color(RED).'Tournament '.@tournamentName.' is now taking signups!'.color(WHITE).' /tournamentjoin '.@tournamentName)
                 export(@plr."lastUsedTournamentCreate", time() / 1000)
             }));
