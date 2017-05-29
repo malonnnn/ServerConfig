@@ -10,6 +10,16 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    offices:
+        parent: police
+        min: {x: -42.0, y: 80.0, z: 18.0}
+        max: {x: -14.0, y: 82.0, z: 40.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
+            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
+        owners: {}
+        type: cuboid
+        priority: 1
     officehall:
         min: {x: -42.0, y: 80.0, z: 25.0}
         max: {x: -11.0, y: 82.0, z: 34.0}
@@ -18,22 +28,12 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    offices:
-        parent: police
-        min: {x: -42.0, y: 80.0, z: 18.0}
-        max: {x: -14.0, y: 82.0, z: 40.0}
-        members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
-        owners: {}
-        type: cuboid
-        priority: 1
     chiefs-closet:
         min: {x: 7.0, y: 80.0, z: 59.0}
         max: {x: 13.0, y: 82.0, z: 66.0}
         members: {}
         flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
+            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 3
@@ -101,7 +101,7 @@ regions:
         priority: 1
     sergeant-room1:
         parent: sergeants
-        min: {x: -12.0, y: 75.0, z: 11.0}
+        min: {x: -12.0, y: 75.0, z: 7.0}
         max: {x: -6.0, y: 79.0, z: 17.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
@@ -122,7 +122,7 @@ regions:
     sergeant-room3:
         parent: sergeants
         min: {x: 0.0, y: 75.0, z: 19.0}
-        max: {x: 8.0, y: 78.0, z: 25.0}
+        max: {x: 12.0, y: 78.0, z: 25.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
         owners: {}
@@ -146,8 +146,8 @@ regions:
     police:
         members:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, ca7e8de8-30f0-43c5-9701-982c10ea9459,
-                a8185de3-b053-4aca-9eb6-d98728e476ad, 8cb79cd3-1e48-4087-9137-a37e164f1494,
-                9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b]
+                9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b,
+                f621586e-8ef8-448d-9264-86b61375052e]
         flags: {}
         owners: {}
         type: global
@@ -175,8 +175,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
-            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
+            interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -238,12 +238,12 @@ regions:
             creeper-explosion: deny
             vine-growth: deny
             build: deny
-            game-mode: SURVIVAL
             blocked-cmds: [/thru]
+            game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
-            game-mode-group: NON_MEMBERS
             pvp: allow
+            game-mode-group: NON_MEMBERS
         owners: {}
         type: global
         priority: 0

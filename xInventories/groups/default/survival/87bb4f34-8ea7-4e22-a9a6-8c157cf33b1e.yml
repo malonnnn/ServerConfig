@@ -1,7 +1,18 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '36':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 41
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -9,52 +20,40 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
-health: 100.0
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.5000004
-armor_contents: {}
+exhaustion: 0.8239821
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 41
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 189485
-  '1':
-    type: INCREASE_DAMAGE
+    type: FAST_DIGGING
     level: 20
-    duration: 189485
+    duration: 194181
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 193929
   '2':
     type: JUMP
-    level: 60
-    duration: 189722
+    level: 20
+    duration: 194127
   '3':
-    type: NIGHT_VISION
-    level: 1
-    duration: 189485
-  '4':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 189485
-  '5':
     type: SPEED
-    level: 100
-    duration: 189754
-  '6':
-    type: REGENERATION
-    level: 1
-    duration: 189485
-  '7':
-    type: INVISIBILITY
-    level: 1
-    duration: 189421
+    level: 50
+    duration: 194079

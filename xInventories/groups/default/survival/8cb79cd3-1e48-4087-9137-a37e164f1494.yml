@@ -1,38 +1,12 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6Baseball Bat
-      enchants:
-        DAMAGE_ALL: 2
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Crow Bar
-      enchants:
-        DAMAGE_ALL: 2
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
+inventory: {}
 health: 20.0
-hunger: 19
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.5337449
+saturation: 5.0
+exhaustion: 1.22
 armor_contents: {}
 ender_chest:
   '0':
@@ -47,7 +21,7 @@ ender_chest:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: MOB_SPAWNER
-    amount: 4
+    amount: 24
     meta:
       ==: ItemMeta
       meta-type: TILE_ENTITY
@@ -69,6 +43,54 @@ ender_chest:
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Diamonds Shulker Box
+      internal: H4sIAAAAAAAAAJ3LzQqCQBQG0E9TG6cIgjbtfI5WobZo08ZeYNDJBucH9Ar19gW1aBfcsz8SkNiUNrTDyZOh51X1ArKaJwruopzGrjbKBd9NRXOf7aDHogyPHOmZtJskgHWEpLGBIBCbDltnvG5HdaND95kR0irMno4xslo51ev3+qaIk2JOWnBSwkkpJ2WctOQkwUk5J0lOWv1L+98EvAAcM/UBwgIAAA==
+      blockMaterial: BLACK_SHULKER_BOX
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 27
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 3
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 30
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
     damage: 41
     meta:
       ==: ItemMeta
@@ -79,9 +101,10 @@ ender_chest:
         DURABILITY: 3
         MENDING: 1
       repair-cost: 15
-  '4':
+  '11':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_PICKAXE
+    damage: 21
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -90,3 +113,98 @@ ender_chest:
         SILK_TOUCH: 1
         DURABILITY: 3
       repair-cost: 7
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 382
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 450
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DIG_SPEED: 5
+        SILK_TOUCH: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 15
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 3
+    amount: 61
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 64
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIODE
+    amount: 64
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_STICKY_BASE
+    amount: 64
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_BASE
+    amount: 64
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_TORCH_ON
+    amount: 64
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+    amount: 64
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: MELON_BLOCK
+    amount: 64
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 64
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL_BLOCK
+    amount: 64
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    amount: 64

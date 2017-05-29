@@ -25,7 +25,7 @@ register_command('tournamentstart',
             @tournamentName = to_lower(@args[0])
             @tournamentURL = @tournamentName.'_omnivs'
 
-            if(get_value(@tournamentName.'tournamentOwner') != puuid(@plr,true)){
+            if(get_value('tournament.'.@tournamentName.'tournamentOwner') != puuid(@plr,true)){
                 tmsg(@plr,color(red).'Sorry, you don\'t appear to be the owner of that tournament!')
                 die()
             }

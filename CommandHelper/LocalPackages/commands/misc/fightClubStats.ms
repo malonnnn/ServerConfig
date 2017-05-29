@@ -38,8 +38,8 @@ register_command(fightclubstats,
                 
                     @plr = player(@args[0])
                     
-                    @wins = get_value(@plr.'fightClubWins')
-                    @losses = get_value(@plr.'fightClubLosses')
+                    @wins = get_value('fightclub.'.@plr.'fightClubWins')
+                    @losses = get_value('fightclub.'.@plr.'fightClubLosses')
 
                     if(@wins == null || @wins == ''){
                         @wins = 0
@@ -62,8 +62,8 @@ register_command(fightclubstats,
                 } else {
                 
                     @plr = player()
-                    @wins = get_value(@plr.'fightClubWins')
-                    @losses = get_value(@plr.'fightClubLosses')
+                    @wins = get_value('fightclub.'.@plr.'fightClubWins')
+                    @losses = get_value('fightclub.'.@plr.'fightClubLosses')
 
                     if(@wins == null || @wins == ''){
                         @wins = 0

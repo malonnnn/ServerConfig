@@ -1,15 +1,39 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_TORCH_ON
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: FFFFUUU
+      author: xSp4rkz
+      pages:
+      - |-
+        Just testing my /sendbook <plr> command. That is all.§0
+        §0
+        §0Carry on Soldier
+      generation: 0
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: HAY_BLOCK
+    type: GLOWSTONE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFhqK5WAtJFiUpW0dVKJUCmkpVSTKmBgXEKLUil2lgdmC1KtVBHGDO4IzsiKT8nRcmqpKg0VUcpOT8nvwioNiWxKDs+vSg1NU8Jrj/cP8jHBauBRgxe5BgYHBoU5hnm6INuJlNmCgNfbmZeanJRYlqJVXFmeh7UIsMBDT4GBgCIuhX12gEAAA==
+      blockMaterial: SIGN
 health: 20.0
 hunger: 20
 exp: 0.39393947
 exp-level: 13
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 1.2660146
+saturation: 0.0
+exhaustion: 1.2310147

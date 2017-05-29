@@ -2,7 +2,37 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 1
+    amount: 11
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 13
+    amount: 14
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 88
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -14,7 +44,6 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -23,35 +52,35 @@ armor_contents:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
 health: 20.0
-hunger: 20
-exp: 0.31578958
-exp-level: 6
+hunger: 19
+exp: 0.37037045
+exp-level: 10
 remainingAir: 300
 fireTicks: -20
-saturation: 9.0
-exhaustion: 0.02264452
+saturation: 0.0
+exhaustion: 0.82103306
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 190038
+    type: FAST_DIGGING
+    level: 127
+    duration: 172019
   '1':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 190038
+    duration: 192418
   '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 190038
+    duration: 192418
   '3':
-    type: FAST_DIGGING
-    level: 127
-    duration: 190166
-  '4':
     type: JUMP
     level: 20
-    duration: 190231
+    duration: 192116
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 192418
   '5':
     type: SPEED
     level: 10
-    duration: 190364
+    duration: 172217
