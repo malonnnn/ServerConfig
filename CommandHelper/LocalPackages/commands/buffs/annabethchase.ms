@@ -19,5 +19,6 @@
                 "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&bA&6nn&ba&6beth_Ch&ba&6s&be's_&bKnife",
                 "/give ". @plr ." minecraft:bow 1 19:2 51:1 name:&bA&6nn&ba&6beth_Ch&ba&6s&be's_&bBow",
                 "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&bA&6nn&ba&6beth_Ch&ba&6s&be's_&bSword"
+                "/give ". @plr ." minecraft:arrow 1 name:&bA&6nn&ba&6beth_Ch&ba&6s&be's_&bArrow"
             )
         )
