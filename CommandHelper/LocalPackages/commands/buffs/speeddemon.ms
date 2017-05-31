@@ -12,10 +12,10 @@
              'val': 'eyJ0aW1lc3RhbXAiOjE0OTYxODczNzg1NjEsInByb2ZpbGVJZCI6ImY2MjE1ODZlOGVmODQ0OGQ5MjY0ODZiNjEzNzUwNTJlIiwicHJvZmlsZU5hbWUiOiJteXRoZ3V5MTIyNiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWI5NWI4NDZjNmM4NjhkZDVhMmM2NzVlYTI0MGZiNWU2YzI4MjU3NTY0YTFjZjk5NzMwZTk1YjEwNTY4MDdmIn19fQ==',  
              'trail': '', 
              'op': 'false', 
-             'speech': "Run Fast!", 
+             'speech': "Up High Down Low.. Too Slow!", 
              'powers': array( 
                  "/buff", 
-                 "/run 0-9", 
+                 "/run 0-9" 
              ), 
              'buffs': array(                  
              ) 
