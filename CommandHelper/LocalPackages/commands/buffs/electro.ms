@@ -15,7 +15,7 @@
                  "/buff", 
                  "/fly",
                  "/run 0-2",
-                 "/tppos <x> <y> <z>,
+                 "/tppos <x> <y> <z>",
                  "When you punch a player empty handed, your victim gets electrocuted" 
              ), 
              'buffs': array( 
