@@ -10,13 +10,13 @@ bind(projectile_launch, null, associative_array(type: 'ARROW', shootertype: 'PLA
             set_timeout(50, closure(
                 @bindID = bind(projectile_hit, null, associative_array(type: 'ARROW'), @e, 
                 @arrowName) {
-                    if(@arrowName == '§fArrow of §4Ka-Ba-Boom')
+                    if(@arrowName == color(white).'Arrow of '.color(dark_red).'Ka-Ba-Boom')
                     {
                         explosion(@e['location'], 3, true)
                         entity_remove(@e['id'])
                         unbind()
                         die()
-                    }else if(@arrowName == '§fArrow of §7Smoke')
+                    }else if(@arrowName == color(white).'Arrow of '.color(gray).'Smoke')
                     {
                         @loc = @e['location']
                         @xStart = @loc['x'] - 1
