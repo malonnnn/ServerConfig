@@ -5,43 +5,72 @@ exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.6260026
+exhaustion: 0.8760866
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §cArrow §6Gun§6 «× | ×»
-      Unbreakable: true
+    damage: 2
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BONE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 7
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_BUTTON
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: GLASS_BOTTLE
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_AXE
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: TIPPED_ARROW
+    amount: 62
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      pages:
-      - |-
-        ID: 382 054 899§0
-        §0PW: 1008
+      meta-type: POTION
+      display-name: §fArrow of §7Smoke
+      potion-type: minecraft:luck
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §fArrow of §4Ka-Ba-Boom
+      potion-type: minecraft:luck
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §cS§9u§ep§9e§9rg§cirl §e§lD§a§lN§4§lA
+      lore:
+      - supergirl
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §cS§9u§ep§9e§9rg§cirl §e§lD§a§lN§4§lA
+      lore:
+      - supergirl
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 ender_chest: {}

@@ -74,6 +74,28 @@ SkeleLotto:
       #  - shoot{type=ARROW,velocity=5,pav=false} @nearestPlayer{r=50} ~onAttack 1
   - skill{s=LottoReset;} ~onTimer:100
   - potion{type=INVISIBILITY;duration=99999;level=1} @self ~onSpawn
+JailSkele:
+  Type: SKELETON
+  Display: '&4Jail Skele'
+  Health: 9999
+  Damage: -1
+  Equipment:
+    - stone_button:4
+  Options:
+    MovementSpeed: 0.35
+    AttackSpeed: 5.0
+    Collidable: false
+    NoDamageTicks: 9999999999999999
+    PreventMobKillDrops: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    FollowRange: 50
+  Modules:
+    ThreatTable: true
+  Skills:
+  - skill{s=HealAndNext} @Target ~onAttack
+  - potion{type=HEAL;duration=10;level=10} @self ~onAttack
 SuperWither:
   Type: WITHER
   Display: '&2Super Wither'
