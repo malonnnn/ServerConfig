@@ -1,19 +1,28 @@
 inventory:
-  '0':
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '1':
+    type: WOOD
+    damage: 2
+    amount: 5
+  '0':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
+      display-name: §4Kryptonian Laser Vision§4 «×»
       Unbreakable: true
-  '2':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
+    type: IRON_BOOTS
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -99,25 +108,60 @@ ender_chest:
   '14':
     ==: org.bukkit.inventory.ItemStack
     type: DRAGON_EGG
-armor_contents: {}
-health: 60.0
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.0640216
+saturation: 13.0
+exhaustion: 0.5149973
 potion_effect:
   '0':
     type: REGENERATION
     level: 1
-    duration: 198843
+    duration: 190620
   '1':
-    type: INCREASE_DAMAGE
-    level: 5
-    duration: 198843
+    type: FAST_DIGGING
+    level: 127
+    duration: 190795
   '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 190620
+  '3':
+    type: JUMP
+    level: 30
+    duration: 196800
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 190620
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 190620
+  '6':
     type: HEALTH_BOOST
-    level: 9
-    duration: 198843
+    level: 19
+    duration: 190620
+  '7':
+    type: SPEED
+    level: 10
+    duration: 196534
+  '8':
+    type: NIGHT_VISION
+    level: 1
+    duration: 190620

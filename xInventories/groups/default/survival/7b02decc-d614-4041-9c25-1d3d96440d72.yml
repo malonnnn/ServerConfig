@@ -2,17 +2,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 85
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -24,7 +13,6 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 85
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -39,25 +27,29 @@ exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.08495389
+exhaustion: 2.0910127
 potion_effect:
   '0':
     type: REGENERATION
     level: 3
-    duration: 181492
+    duration: 198703
   '1':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 198703
+  '2':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 181492
-  '2':
+    duration: 198703
+  '3':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 181492
-  '3':
+    duration: 198703
+  '4':
     type: WATER_BREATHING
     level: 1
-    duration: 181492
-  '4':
+    duration: 198703
+  '5':
     type: HEALTH_BOOST
     level: 19
-    duration: 181492
+    duration: 198703
