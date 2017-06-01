@@ -1,7 +1,7 @@
 jailtrespasscheck:/jailtrespasscheck $x $y $z $radius $world = >>>
     
     @location = array(x: $x, y: $y, z: $z, world: $world);
-    @theshold = @location[y] + 1;
+    @threshold = @location[y] + 1;
     @radius = $radius
     
     set_timeout(2000, closure(
