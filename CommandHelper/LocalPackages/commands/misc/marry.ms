@@ -124,13 +124,17 @@ register_command('claimwaifu',
                 msg(color(RED).'Sorry, you already are married to her!')
                 die()
             }
-
-            @lastPlayed = plast_played(@husbandoUUID)
             # If has been more than 48 hours
-            if(@lastPlayed > (time() - 172800000)){
-            }else if(@husbandoUUID != null && @husbandoUUID != ''){
-                msg(color(RED).'Sorry, '.color(WHITE).@waifuName.color(RED).'is already claimed by '.color(WHITE).@husbandoName.color(RED).' Please do '.color(WHITE).'/waifuchallenge '.@husbandoName.color(RED).'to challenge '.color(WHITE).@husbandoName.color(RED).' for the ownership of '.color(WHITE).@waifuName.color(RED).'!')
-                die()
+
+            if(@husbandoUUID != null && @husbandoUUID != ''){
+                @lastPlayed = plast_played(@husbandoUUID)
+                @twoDaysAgo = time() - 172800000
+                if(@lastPlayed < @twoDaysAgo){
+                    
+                }else{
+                    msg(color(RED).'Sorry, '.color(WHITE).@waifuName.color(RED).'is already claimed by '.color(WHITE).@husbandoName.color(RED).' Please do '.color(WHITE).'/waifuchallenge '.@husbandoName.color(RED).'to challenge '.color(WHITE).@husbandoName.color(RED).' for the ownership of '.color(WHITE).@waifuName.color(RED).'!')
+                    die()
+                }
             }
             store_value('waifus.'.@plrUUID.@waifuUUID.'isMarried',true)
             store_value('waifus.'.@waifuUUID.'spouseUUID',@plrUUID)
@@ -211,17 +215,17 @@ register_command('waifuchallenge',
                     die()
                 }
 
-                if(get_value('waifus.'.@waifuName.'inActiveChallenge')){
+                if(import(@waifuName.'inActiveChallenge')){
                     msg(color(RED).'You are already in a waifu challenge!')
                     die()
                 }
-                if(get_value('waifus.'.@husbandoName.'inActiveChallenge')){
+                if(import(@husbandoName.'inActiveChallenge')){
                     msg(color(RED).'They are already in a waifu challenge!')
                     die()
                 }
 
-                store_value('waifus.'.@waifuName.'inActiveChallenge',true)
-                store_value('waifus.'.@husbandoName.'inActiveChallenge',true)
+                export(@waifuName.'inActiveChallenge',true)
+                export(@husbandoName.'inActiveChallenge',true)
 
                 runas(~console,'/warp husbando1 '.@husbandoName)
                 runas(~console,'/warp husbando2 '.@waifuName)
@@ -234,7 +238,7 @@ register_command('waifuchallenge',
                     unbind(@loser.'waifuChallengeWorldChanged')
                     unbind(@winner.'waifuChallengeDisconnect')
                     unbind(@loser.'waifuChallengeDisconnect')
-                    _waifuWinner(@winner,@loser, @waifu, itrue, true)
+                    _waifuWinner(@winner,@loser, @waifu, true, true)
                 }
                 bind(player_death,array(id: @waifuName.'waifuChallengeDeath'),associative_array('player':@waifuName),@e,@loser = @waifuName, @winner = @husbandoName, @waifu = @waifuName){
                     include('/home/minecraft/server/plugins/CommandHelper/includes/waifuWinner.ms')
@@ -337,11 +341,11 @@ register_command('waifuchallenge',
                 msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last challenged them!')
                 die()
             }
-            if(get_value('waifus.'.@plrName.'inActiveChallenge')){
+            if(import(@plrName.'inActiveChallenge')){
                 msg(color(RED).'You are already in a waifu challenge!')
                 die()
             }
-            if(get_value('waifus.'.@husbandoName.'inActiveChallenge')){
+            if(import(@husbandoName.'inActiveChallenge')){
                 msg(color(RED).'They are already in a waifu challenge!')
                 die()
             }
@@ -351,8 +355,8 @@ register_command('waifuchallenge',
                 msg(color(RED).'Sorry, he is not married to her!')
                 die()
             }
-            store_value('waifus.'.@plrName.'inActiveChallenge',true)
-            store_value('waifus.'.@husbandoName.'inActiveChallenge',true)
+            export(@plrName.'inActiveChallenge',true)
+            export(@husbandoName.'inActiveChallenge',true)
             runas(~console,'/warp husbando1 '.@husbandoName)
             runas(~console,'/warp husbando2 '.@plrName)
             bind(player_death,array(id: @husbandoName.'waifuChallengeDeath'),associative_array('player':@husbandoName),@e,@winner = @plrName, @loser = @husbandoName, @waifu = @waifuName){

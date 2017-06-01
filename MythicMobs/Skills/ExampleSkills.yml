@@ -34,3 +34,10 @@ AngrySludgePoison:
   Skills:
   - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
   - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
+HealAndNext:
+  Skills:
+  - potion{type=SATURATION;duration=20;level=1}
+  - potion{type=HEAL;duration=10;level=10}
+  - threat{amount=-10000}
+  - delay 5
+  - threat{amount=10000} @r[r=50]

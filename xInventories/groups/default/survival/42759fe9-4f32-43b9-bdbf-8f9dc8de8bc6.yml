@@ -1,74 +1,106 @@
-health: 100.0
-hunger: 20
+health: 40.0
+hunger: 12
 exp: 0.0
-exp-level: 0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.3025014
+exhaustion: 1.1865801
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Damage Attack
-      enchants:
-        DAMAGE_ALL: 10
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STICK
+    type: IRON_BOOTS
+    damage: 7
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Knockback Attack
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        KNOCKBACK: 10
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STICK
+    type: IRON_BOOTS
+    damage: 18
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Damage & Knockback  Attack
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DAMAGE_ALL: 5
-        KNOCKBACK: 5
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 16
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHITE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52Bgykxh4C7OKM3JTi2KT8qvYGAAAEbg3dwoAAAA
+      blockMaterial: WHITE_SHULKER_BOX
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4En§cerg§4y §cBe§4am§4 «×»
+      Unbreakable: true
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 4
-    duration: 198384
+    type: SLOW_DIGGING
+    level: 2
+    duration: 4572
   '1':
-    type: FAST_DIGGING
-    level: 10
-    duration: 199124
-  '2':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 198384
-  '3':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 198384
-  '4':
-    type: JUMP
-    level: 3
-    duration: 198899
-  '5':
     type: INCREASE_DAMAGE
-    level: 7
-    duration: 198384
-  '6':
-    type: WATER_BREATHING
-    level: 1
-    duration: 198384
-  '7':
+    level: 10
+    duration: 195758
+  '2':
+    type: JUMP
+    level: 5
+    duration: 195865
+  '3':
     type: HEALTH_BOOST
-    level: 19
-    duration: 198384
-  '8':
+    level: 4
+    duration: 195758
+  '4':
     type: SPEED
-    level: 2
-    duration: 199036
+    level: 255
+    duration: 195923
+  '5':
+    type: REGENERATION
+    level: 3
+    duration: 195758

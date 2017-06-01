@@ -33,7 +33,7 @@ regions:
         max: {x: 13.0, y: 82.0, z: 66.0}
         members: {}
         flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 3
@@ -51,14 +51,6 @@ regions:
         max: {x: 16.0, y: 82.0, z: 44.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 3
-    application-booth:
-        min: {x: -7.0, y: 75.0, z: 63.0}
-        max: {x: -3.0, y: 78.0, z: 64.0}
-        members: {}
-        flags: {pvp: deny}
         owners: {}
         type: cuboid
         priority: 3
@@ -147,7 +139,8 @@ regions:
         members:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, ca7e8de8-30f0-43c5-9701-982c10ea9459,
                 9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b,
-                f621586e-8ef8-448d-9264-86b61375052e]
+                f621586e-8ef8-448d-9264-86b61375052e, a8185de3-b053-4aca-9eb6-d98728e476ad,
+                5da26092-c807-4c9b-8d08-9523f74ddc97, 8cb79cd3-1e48-4087-9137-a37e164f1494]
         flags: {}
         owners: {}
         type: global
@@ -175,8 +168,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
-            interact: deny, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
+            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -238,8 +231,8 @@ regions:
             creeper-explosion: deny
             vine-growth: deny
             build: deny
-            blocked-cmds: [/thru]
             game-mode: SURVIVAL
+            blocked-cmds: [/thru]
             build-group: NON_MEMBERS
             interact: allow
             pvp: allow

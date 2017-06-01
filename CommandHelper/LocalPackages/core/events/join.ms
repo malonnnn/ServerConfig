@@ -57,14 +57,14 @@ bind(player_join,null,null,@event){
         }
     }
 
-    if(@plr == "God_Doesnt_Exist" || @plr == "xSp4kz"){
+    if(@plr == "God_Doesnt_Exist" || @plr == "xSp4rkz"){
         foreach(@player in @plrs){
             play_named_sound(ploc(), array('sound': 'xyz.theone', 'volume': 10000), @player)
         }
     }
 
     if(has_permission(@plr,'arrest.onjoin')){
-        runas(~console,'/runalias /arrest '.@plr)
+        runas(~console,'/arrest '.@plr.' Joining Auto-Arrest Bot v2.1b')
     }
 
     set_timeout(5000, closure(

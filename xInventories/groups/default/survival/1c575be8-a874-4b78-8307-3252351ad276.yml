@@ -1,11 +1,16 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bFreeze-Ray§b «×»
+      Unbreakable: true
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 74
+    damage: 14
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -13,19 +18,23 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 40.0
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 1
+health: 33.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 1.6131912
+saturation: 0.0
+exhaustion: 0.24909703
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 74
+    damage: 14
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -35,22 +44,26 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 3
-    duration: 191977
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 192470
   '1':
     type: JUMP
     level: 5
-    duration: 192262
+    duration: 192394
   '2':
-    type: INCREASE_DAMAGE
+    type: FAST_DIGGING
     level: 10
-    duration: 191977
+    duration: 192444
   '3':
     type: HEALTH_BOOST
     level: 4
-    duration: 191977
+    duration: 192470
   '4':
     type: SPEED
-    level: 10
-    duration: 199934
+    level: 255
+    duration: 198255
+  '5':
+    type: REGENERATION
+    level: 3
+    duration: 192470

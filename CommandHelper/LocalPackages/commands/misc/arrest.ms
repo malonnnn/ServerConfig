@@ -1,15 +1,10 @@
 register_command(arrest, 
 
     array(
-    
         description: 'Arrests a player and Jails them',
-        
         usage: '/arrest <player> <reason>',
-        
         permission: 'ch.alias.arrest',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -73,11 +68,17 @@ register_command(arrest,
                                              'VALUES(?,?,?,?,?,?,?,?)',
                                              @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
                     )
-
+                    bind(entity_damage,array(id: @plr.'criminalPoisonFeeding'),associative_array('id': @vicUUID,'cause': 'POISON'), @e, @player = @plr){
+                        set_peffect(@player, 23, 2)
+                        cancel()
+                    }
                     set_timeout(3000,closure(
                         sudo("/pex user ".@plr." group set criminal")
                         sudo("/tptoggle ".@plr." off")
                         sudo("/warp quarantine ".@plr)
+                    ))			
+                    set_timeout(5000,closure(
+                        set_pmode(@plr,'SURVIVAL')
                     ))			
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg(@player,'Player is Offline')
@@ -138,6 +139,7 @@ register_command(release,
                     sudo("/pex user ".@plr." group set mortal")
                     sudo("/warp city ".@plr)
                     sudo("/tptoggle ".@plr." on")	
+                    unbind(@plr.'criminalPoisonFeeding')
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg(@player,'Player is Offline')
                     die()
@@ -150,15 +152,10 @@ register_command(release,
 register_command(warn, 
 
     array(
-    
         description: 'Warns a player for Behavior and records Infraction',
-        
         usage: '/warn <player> <reason>',
-        
         permission: 'ch.alias.warn',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -228,15 +225,10 @@ register_command(warn,
 register_command(checkfingerprints, 
 
     array(
-    
         description: 'Checks for Information on a Player',
-        
         usage: '/checkfingerprints <player>',
-        
         permission: 'ch.alias.checkfingerprints',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -291,15 +283,10 @@ register_command(checkfingerprints,
 register_command(backgroundcheck, 
 
     array(
-    
         description: 'Checks for Information on a Player',
-        
         usage: '/backgroundcheck <player>',
-        
         permission: 'ch.alias.backgroundcheck',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
@@ -390,15 +377,10 @@ register_command(backgroundcheck,
 register_command(officerhistory, 
 
     array(
-    
         description: 'Checks the Arrest and Warning History of an Officer',
-        
         usage: '/officerhistory <player>',
-        
         permission: 'ch.alias.officerhistory',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         tabcompleter: closure(@alias, @sender, @args) {
             try{
                 if(array_size(@args) == 0) {
