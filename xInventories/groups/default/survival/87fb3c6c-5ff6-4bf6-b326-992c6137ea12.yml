@@ -4,73 +4,22 @@ exp: 0.5454546
 exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.8760866
+saturation: 5.0
+exhaustion: 0.73599994
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 2
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 62
+    type: FLINT_AND_STEEL
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §fArrow of §7Smoke
-      potion-type: minecraft:luck
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §fArrow of §4Ka-Ba-Boom
-      potion-type: minecraft:luck
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §cS§9u§ep§9e§9rg§cirl §e§lD§a§lN§4§lA
+      meta-type: UNSPECIFIC
+      display-name: §6Minigun§6 «60»
       lore:
-      - supergirl
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §cS§9u§ep§9e§9rg§cirl §e§lD§a§lN§4§lA
-      lore:
-      - supergirl
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      - §5Machine Gun
+      - §eFast Firing
+      - §eHigh Ammo
+      - §eHigh Damage
+      - §eMedium Accuracy
+      - §eBurst Fire
+      Unbreakable: true
 ender_chest: {}

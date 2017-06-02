@@ -1,5 +1,5 @@
 inventory:
-  '0':
+  '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
@@ -7,12 +7,12 @@ inventory:
       meta-type: UNSPECIFIC
       display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
       Unbreakable: true
-  '1':
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
     amount: 64
-  '2':
+  '3':
     ==: org.bukkit.inventory.ItemStack
     type: COAL
     meta:
@@ -22,30 +22,77 @@ inventory:
       enchants:
         DAMAGE_ALL: 155
         FIRE_ASPECT: 2
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: BLAZE_ROD
+    type: EMERALD_BLOCK
+    amount: 64
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-health: 21.333335876464844
-hunger: 20
-exp: 0.058823682
-exp-level: 5
+    type: EMERALD_BLOCK
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 60.0
+hunger: 14
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.379097
-armor_contents: {}
+exhaustion: 1.7890233
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 16
-    duration: 163356
+    type: REGENERATION
+    level: 1
+    duration: 193365
   '1':
+    type: JUMP
+    level: 5
+    duration: 195464
+  '2':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 193365
+  '3':
     type: HEALTH_BOOST
-    level: 14
-    duration: 163356
+    level: 9
+    duration: 193365
+  '4':
+    type: SPEED
+    level: 8
+    duration: 195288
