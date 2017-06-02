@@ -1,27 +1,49 @@
-splegggun:
+Minigun:
     Item_Information:
-        Item_Name: "&cSplegg &6Gun"
-        Item_Type: 417
+        Item_Name: "&6Minigun"
+        Item_Type: 259
+        Item_Lore: "&5Machine Gun|&eFast Firing|&eHigh Ammo|&eHigh Damage|&eMedium Accuracy|&eBurst Fire"
+        Sounds_Acquired: NOTE_PLING-2-2-0,NOTE_PLING-2-2-5
+        Hidden_From_List: false
     Shooting:
-        Dual_Wield: true
+        Disable: false
+        Right_Click_To_Shoot: true
         Cancel_Left_Click_Block_Damage: true
         Cancel_Right_Click_Interactions: true
-        Delay_Between_Shots: 2
+        Delay_Between_Shots: 100
         Recoil_Amount: 1
-        Projectile_Amount: 1
+        Projectile_Amount: 30
         Projectile_Type: egg
-        Projectile_Speed: 40
-        Projectile_Damage: 1
-        Bullet_Spread: 1
+        Projectile_Speed: 45
+        Projectile_Damage: 8
+        Bullet_Spread: 5
+        Reset_Fall_Distance: true
+        Sounds_Shoot: GHAST_SCREAM2-2-2-0,CAT_HISS-2-2-0,FALL_BIG-2-2-0
+    Custom_Death_Message:
+        Normal: "&e<victim> was Disassembled by <shooter>'s Minigun"
+    Sneak:
+        Enable: true
+        No_Recoil: true
+        Bullet_Spread: 3
+    Burstfire:
+        Enable: true
+        Shots_Per_Burst: 20
+        Delay_Between_Shots_In_Burst: 1
     Reload:
-        Enable: false
-        Dual_Wield:
-            Single_Reload_Duration: 25
+        Enable: true
+        Reload_Amount: 120
+        Reload_Bullets_Individually: false
+        Reload_Duration: 120
+        Sounds_Out_Of_Ammo: FIRE_IGNITE-2-0-0
+        Sounds_Reloading: IRONGOLEM_HIT-2-0-0,NOTE_PLING-2-2-5,NOTE_PLING-2-2-10,FIRE_IGNITE-2-0-50,
     Abilities:
         Reset_Hit_Cooldown: true
-        Knockback: 4
-    Particles:
+        No_Vertical_Recoil: true
+    Scope:
         Enable: true
-        Particle_Backstab: BLOCK_BREAK-55
-    Hit_Events:
-        Enable: true
+        Night_Vision: false
+        Zoom_Amount: 5
+        Zoom_Bullet_Spread: 3
+        Zoom_Before_Shooting: false
+        Sounds_Toggle_Zoom: PISTON_EXTEND-2-0-0,PISTON_RETRACT-2-0-4
+
