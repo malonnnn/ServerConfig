@@ -1,51 +1,11 @@
 inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-      Unbreakable: true
-  '2':
+    type: SAND
+    amount: 11
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 64
+    type: SEEDS
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -56,14 +16,14 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 60.0
+health: 100.0
 hunger: 14
-exp: 0.0
+exp: 0.8095239
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.7890233
+saturation: 14.0
+exhaustion: 3.9470506
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -78,21 +38,25 @@ armor_contents:
 potion_effect:
   '0':
     type: REGENERATION
-    level: 1
-    duration: 193365
+    level: 3
+    duration: 184538
   '1':
-    type: JUMP
-    level: 5
-    duration: 195464
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 184538
   '2':
-    type: INCREASE_DAMAGE
-    level: 15
-    duration: 193365
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 184538
   '3':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 193365
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 184538
   '4':
-    type: SPEED
-    level: 8
-    duration: 195288
+    type: WATER_BREATHING
+    level: 1
+    duration: 184538
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 184538
