@@ -5,66 +5,66 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.03201
+exhaustion: 3.795998
 inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    damage: 5
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4D§0ea§4dP§0oo§4l's Katana
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DAMAGE_ALL: 10
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
+    type: STAINED_GLASS
     damage: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4D§0ea§4dP§0oo§4l's Katana
-      enchants:
-        DAMAGE_ALL: 10
-  '4':
+    amount: 10
+armor_contents:
+  boots:
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-      Unbreakable: true
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
     type: REGENERATION
-    level: 4
-    duration: 192942
+    level: 1
+    duration: 199062
   '1':
     type: FAST_DIGGING
-    level: 3
-    duration: 193302
+    level: 40
+    duration: 198940
   '2':
     type: JUMP
-    level: 10
-    duration: 193258
+    level: 5
+    duration: 198989
   '3':
     type: INCREASE_DAMAGE
-    level: 2
-    duration: 192942
+    level: 10
+    duration: 199062
   '4':
     type: HEALTH_BOOST
     level: 4
-    duration: 192942
+    duration: 199062
   '5':
     type: SPEED
-    level: 3
-    duration: 193371
+    level: 100
+    duration: 198862
