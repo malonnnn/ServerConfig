@@ -15,51 +15,80 @@ inventory:
         GREEN: 0
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Officer Commands
-      author: Masterable
-      pages:
-      - |
-        Officer Commands§0
-        §0
-        §0Warn-§0
-        §0/warn player reason§0
-        §0
-        §0AddChatCoolDown-§0
-        §0/addchatcooldown Player§0
-        §0
-        §0RemoveChatCoolDown§0
-        §0/removechatcooldown Player§0
-      - |-
-        Arrest§0
-        §0/arrest Player Reason (Must Have Proof)§0
-        §0
-        §0Release§0
-        §0/release Player§0
-        §0
-        §0BackgroundCheck§0
-        §0/backgroundcheck Player§0
-        §0
-        §0CheckFingerPrints§0
-        §0/checkfingerprints§0
-        §0Player
-      generation: 0
+    type: WOOD_AXE
   '1':
     ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Officer)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 255
+        GREEN: 8
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '4':
+    ==: org.bukkit.inventory.ItemStack
     type: SIGN
-    amount: 4
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMdtVKQLooUckqulopOT8nvwgon5JYlB2flFOaqqQD06Lhn5aWmZxapKlUG6uDYY4RgyayOVDpoMTMosTs0lJ0LUyZKQx8uZl5qclFiWklVsWZ6XlQcwxRHMnAAACNAP/Q0AAAAA==
+      blockMaterial: SIGN
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_PLATE
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: STRING
+    type: COBBLE_WALL
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLE_WALL
+    type: STEP
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: The King
+      author: xEmRe_PvPx
+      pages:
+      - ' There once was a king who lived in a house. '
+      generation: 0
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
@@ -82,4 +111,4 @@ exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.0687675
+exhaustion: 0.79062206
