@@ -37,14 +37,18 @@ register_command(arrest,
                     
                     @reason = ''
                     @argsLength = array_size(@args)
+					
+					if(@cop[0] != '#') {
                     
-                    if(has_permission(@cop, 'is.suspended')) {
-                    
-                        msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
-                        die();
-                    
-                    }
-                    
+						if(has_permission(@cop, 'is.suspended')) {
+						
+							msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
+							die();
+						
+						}
+					
+					}
+					
                     for (@i = 1, @i < @argsLength, @i++){
                     
                         @reason = @reason.@args[@i].' '
@@ -59,27 +63,27 @@ register_command(arrest,
                     sudo('/sudo '.@plr.' c:/ch join global')
                     include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                     _mortal(@plr)
-                    
-                    if (@cop[0] == '#') {
-                        broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).'The Server'.color(red).' FOR '.color(yellow).@reason)
-                    } else {
-                        broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).@cop.color(red).' FOR '.color(yellow).@reason)					
-                    }
+					
+					if (@cop[0] == '#') {
+						broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).'The Server'.color(red).' FOR '.color(yellow).@reason)
+					} else {
+						broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).@cop.color(red).' FOR '.color(yellow).@reason)					
+					}
 
                     @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                     
                     @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
-                    if (@cop[0] == '#') {
-                        @result = query(@profile,'INSERT INTO `criminals` '.
-                                                 'VALUES(?,?,?,?,?,?,?,?)',
-                                                 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
-                        )
-                    } else {
-                        @result = query(@profile,'INSERT INTO `criminals` '.
-                                                 'VALUES(?,?,?,?,?,?,?,?)',
-                                                 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
-                        )
-                    }
+					if (@cop[0] == '#') {
+						@result = query(@profile,'INSERT INTO `criminals` '.
+												 'VALUES(?,?,?,?,?,?,?,?)',
+												 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
+						)
+					} else {
+						@result = query(@profile,'INSERT INTO `criminals` '.
+												 'VALUES(?,?,?,?,?,?,?,?)',
+												 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+						)
+					}
                     bind(entity_damage,array(id: @plr.'criminalPoisonFeeding'),associative_array('id': @vicUUID,'cause': 'POISON'), @e, @player = @plr){
                         set_peffect(@player, 23, 2)
                         cancel()
