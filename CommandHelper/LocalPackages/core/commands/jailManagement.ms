@@ -19,13 +19,14 @@ register_command(jail_spawnskelly,
                 
                     @player = player(@args[0]); # Create a player object
                     @playerLocation = ploc(@player); # Players location
+                    @playerY = @playerLocation[y] + 1;
                     
                     @skeletonsInArea = entities_in_radius(@playerLocation, 5, array(SKELETON)); # Number of Skeletons in area
                     
                     if (array_size(@skeletonsInArea) == 0) { # No Skellys in the area
                     
                         runas('~console', '/mm mobs spawn JailSkele 1 '.@playerLocation[world].','.@playerLocation[x].
-                            ','.@playerLocation[y].','.@playerLocation[z]); # Spawn the jail Skelly					
+                            ','.@playerY.','.@playerLocation[z]); # Spawn the jail Skelly					
                     
                     }
                     
