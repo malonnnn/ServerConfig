@@ -1,8 +1,8 @@
 register_command(jail_spawnskelly, 
 
     array(
-    
-        permission: 'ch.alias.jailskelly',
+	
+		permission: 'ch.alias.jailskelly',
     
         executor: closure(@alias, @sender, @args) {
         
@@ -18,17 +18,16 @@ register_command(jail_spawnskelly,
                 try {
                 
                     @player = player(@args[0]); # Create a player object
-                    @playerLocation = ploc(@player); # Players location
-                    @playerY = @playerLocation[y] + 1;
-                    
-                    @skeletonsInArea = entities_in_radius(@playerLocation, 5, array(SKELETON)); # Number of Skeletons in area
-                    
-                    if (array_size(@skeletonsInArea) == 0) { # No Skellys in the area
-                    
-                        runas('~console', '/mm mobs spawn JailSkele 1 '.@playerLocation[world].','.@playerLocation[x].
-                            ','.@playerY.','.@playerLocation[z]); # Spawn the jail Skelly					
-                    
-                    }
+					@playerLocation = ploc(@player); # Players location
+					
+					@skeletonsInArea = entities_in_radius(@playerLocation, 50, array(SKELETON)); # Number of Skeletons in area
+					
+					if (array_size(@skeletonsInArea) == 0) { # No Skellys in the area
+					
+						runas('~console', '/mm mobs spawn JailSkele 1 '.@playerLocation[world].','.@playerLocation[x].
+							','.@playerLocation[y].','.@playerLocation[z]); # Spawn the jail Skelly					
+					
+					}
                     
                     die(); # Done
                     
@@ -48,8 +47,8 @@ register_command(jail_spawnskelly,
 register_command(jail_hunger_tp, 
 
     array(
-    
-        permission: 'ch.alias.hungertp',
+	
+		permission: 'ch.alias.hungertp',
     
         executor: closure(@alias, @sender, @args) {
         
@@ -65,20 +64,20 @@ register_command(jail_hunger_tp,
                 try {
                 
                     @player = player(@args[0]); # Create a player object
-                    @teleportDestination = array(world: pworld(@player), x: @args[1], y: @args[2], z: @args[3], pitch: @args[4], yaw: @args[5]); # Teleport destination
-                    
-                    if (phunger(@player) <= 7) {
-                    
-                        set_ploc(@player, @teleportDestination); # Teleport Player
-                        tmsg(@player, color(GREEN).'Entered Safe Zone - Skeleton Free Area');
-                        die()
-                    
-                    } else { 
-                    
-                        tmsg(@player, color(RED).'You are not Hungry Enough!');
-                        die()
-                    
-                    }
+					@teleportDestination = array(world: pworld(@player), x: @args[1], y: @args[2], z: @args[3], pitch: @args[4], yaw: @args[5]); # Teleport destination
+					
+					if (phunger(@player) <= 7) {
+					
+						set_ploc(@player, @teleportDestination); # Teleport Player
+						tmsg(@player, color(GREEN).'Entered Safe Zone - Skeleton Free Area');
+						die()
+					
+					} else { 
+					
+						tmsg(@player, color(RED).'You are not Hungry Enough!');
+						die()
+					
+					}
                     
                 } catch (PlayerOfflineException @ErrorInfo) {
                 

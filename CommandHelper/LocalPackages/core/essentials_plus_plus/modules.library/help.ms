@@ -1,3 +1,8 @@
+# --------------------------------------------------------------------------
+# Replaces the /help menu supplied by the essentials plugin with a customized
+# more pleasing menu
+# --------------------------------------------------------------------------
+
 proc(_help, @playerThatRanCmd, @command,		
 
     @args = parse_args(@command); # Parse the arguements

@@ -1,3 +1,8 @@
+# --------------------------------------------------------------------------
+# Allows an OP to /deop themselves and remember their previous status
+# allowing them to /reop themselves. Used to test features without OP
+# --------------------------------------------------------------------------
+
 proc(_deop, @playerThatRanCmd, @command,		
 
     @args = parse_args(@command); # Parse the arguements
