@@ -100,9 +100,7 @@ register_command(arrest,
                         sudo("/warp quarantine ".@plr)						
                     ))			
                     set_timeout(3000,closure(
-                        set_pmode(@plr,'SURVIVAL')
-						set_phunger(@plr, 20)
-						set_psaturation(@plr, 2)						
+                        set_pmode(@plr,'SURVIVAL')						
                     ))			
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg('Player is Offline')
