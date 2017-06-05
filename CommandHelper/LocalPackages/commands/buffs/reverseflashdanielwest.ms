@@ -23,8 +23,7 @@
                 "/jump 0-3",
                 "/haste 0-4",
                 "/thru (phases through walls)",
-                "/vibrate",
-                "/stopvibrating",
+                "/ma",
                 "/lightning"
             ),
             'buffs': array(
