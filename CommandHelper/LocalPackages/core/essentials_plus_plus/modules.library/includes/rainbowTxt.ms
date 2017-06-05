@@ -1,4 +1,8 @@
-# Takes a string of text and returns it with random color codes to be used with colorize()
+# --------------------------------------------------------------------------
+# Take a string and randomly add color codes to each letter that can be used
+# with a colorize() function
+# --------------------------------------------------------------------------
+
 proc(_rainbowText, @textToColorize, 
 
     @tempText = string(@textToColorize);
