@@ -1,4 +1,9 @@
+# --------------------------------------------------------------------------
+# Announce when a player uses a warp in colorful letters
+# --------------------------------------------------------------------------
+
 include('includes/rainbowTxt.ms');
+include('includes/broadcastReplace.ms');
 
 register_command(warp_announce, 
 
@@ -27,8 +32,8 @@ register_command(warp_announce,
                 @targetPlayer = player(@args[0]); # Grab the players name to announce
                 @warpName = @args[1]; # Grab the name of the warp
                 
-                broadcast(colorize(_rainbowText(@targetPlayer).' is heading to: '._rainbowText(@warpName))); # Announce
-                broadcast(colorize('&a&o/warp '.@warpName.' to join them')); # Announce			
+                _broadcast(_rainbowText(@targetPlayer).' is heading to: '._rainbowText(@warpName)); # Announce
+                _broadcast('&a&o/warp '.@warpName.' to join them'); # Announce			
                 runas(@targetPlayer, '/warp '.@warpName); # Warp the player
                 die(); # Done
             

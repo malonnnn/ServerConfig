@@ -133,7 +133,7 @@ proc(_warp, @playerName, @command,
     return(false); # Tell the function to go ahead
 )
 
-bind(player_command, null, array(prefix: array('/warp', '/setwarp', '/delwarp')), @Event,
+bind(player_command, null, array(array(prefix: '/warp', prefix: '/setwarp', prefix: '/delwarp')), @Event,
     
     if (@Event[prefix] == "/setwarp") {
     
