@@ -1,4 +1,7 @@
-# Uberslaps a player
+# --------------------------------------------------------------------------
+# Slaps a player around multiple times and plays a smacking sound
+# --------------------------------------------------------------------------
+
 proc(_uberSlap, @player, @target,
     
     @playerThatRanCmd = player(@player);
