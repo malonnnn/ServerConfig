@@ -1,3 +1,7 @@
+# --------------------------------------------------------------------------
+# A /getpos replacement with a more pleasing look
+# --------------------------------------------------------------------------
+
 proc(_getpos, @playerName, @command,
 
     @args = parse_args(@command); # Parse the arguements

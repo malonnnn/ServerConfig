@@ -1,4 +1,12 @@
-include('includes/afkFunctions.ms');
+# --------------------------------------------------------------------------
+# Complete /afk replacement with added features such as
+# Visual indicators in /list menu and tabbed players menu.
+# Ability to set an away msg with /afk <awayMsg>
+# Visual and Audio notification to players that attempt to chat with an
+# afk player
+# --------------------------------------------------------------------------
+
+include('includes/afkFunctions.ms'); # Include functions that allow us to set or remove afk for a player
 
 # AFK Hook
 proc(_afk, @playerThatRanCmd, @command,
