@@ -302,6 +302,93 @@ register_command(checkfingerprints,
     )
 )
 
+register_command(removerecord, 
+
+    array(
+        description: 'Removes a players record',
+        usage: '/removerecord <player> <date> <time>',
+        permission: 'ch.alias.removerecord',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        tabcompleter: closure(@alias, @sender, @args) {
+            try{
+                if(array_size(@args) == 0) {
+                    return(all_players());
+                }
+                @search = @args[array_size(@args) - 1];
+                    return(array_filter(all_players(), closure(@index, @player) {
+                    return(equals_ic(@search, substr(@player, 0, length(@search))));
+                }));
+            } catch (RangeException @ErrorInfo) {
+                # Ignore
+            }
+        },
+    
+        executor: closure(@alias, @sender, @args) {
+        
+            if (array_size(@args) != 3) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /removerecord <player> <date> <time>');
+                die(); # No need to go further					
+            
+            }
+            
+			@plr = @args[0]
+			@date = @args[1].' '.@args[2]
+			@cop = player()                
+			
+			@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+			query(@profile, 'DELETE FROM `criminals` WHERE PERPNAME=? AND DATE=?',@plr, @date)
+			
+			tmsg(@cop, 'Record deleted.');          			
+        
+        }
+    )
+)
+
+register_command(removeallrecords, 
+
+    array(
+        description: 'Removes all criminal records for a player',
+        usage: '/removeallrecords <uuid>',
+        permission: 'ch.alias.removeallrecords',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        tabcompleter: closure(@alias, @sender, @args) {
+            try{
+                if(array_size(@args) == 0) {
+                    return(all_players());
+                }
+                @search = @args[array_size(@args) - 1];
+                    return(array_filter(all_players(), closure(@index, @player) {
+                    return(equals_ic(@search, substr(@player, 0, length(@search))));
+                }));
+            } catch (RangeException @ErrorInfo) {
+                # Ignore
+            }
+        },
+    
+        executor: closure(@alias, @sender, @args) {
+        
+            if (array_size(@args) != 1) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /removeallrecords <uuid>');
+                die(); # No need to go further					
+            
+            }
+            
+			@uuid = @args[0]			
+			@cop = player()                
+			
+			@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+			query(@profile, 'DELETE FROM `criminals` WHERE PERPUUID=?',@uuid)
+			
+			tmsg(@cop, 'All Records Deleted for UUID: '.@uuid);          			
+        
+        }
+    )
+)
+
 register_command(backgroundcheck, 
 
     array(
@@ -359,6 +446,7 @@ register_command(backgroundcheck,
                     tmsg(@cop,'-----------------------------------------')
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
+				
                 
             } catch (PlayerOfflineException @ErrorInfo) {
                 
