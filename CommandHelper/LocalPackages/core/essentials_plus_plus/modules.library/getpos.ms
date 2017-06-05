@@ -33,11 +33,11 @@ proc(_getpos, @playerName, @command,
 
 bind(player_command, null, array(prefix: '/getpos'), @Event,
 
-	if (has_permission(@Event[player], 'essentials.getpos')) {
-	
-		_getpos(@Event[player], @Event[command]); # Puff Puff Pass			
-		cancel() # Over-ride the pre-existing getpos code (eesentials)		
-		
-	}
-	
+    if (has_permission(@Event[player], 'essentials.getpos')) {
+    
+        _getpos(@Event[player], @Event[command]); # Puff Puff Pass			
+        cancel() # Over-ride the pre-existing getpos code (eesentials)		
+        
+    }
+    
 )

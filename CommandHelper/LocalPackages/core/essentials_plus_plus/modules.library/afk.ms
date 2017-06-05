@@ -11,56 +11,56 @@ include('includes/afkFunctions.ms'); # Include functions that allow us to set or
 # AFK Hook
 proc(_afk, @playerThatRanCmd, @command,
 
-	@args = parse_args(@command); # Parse the arguements
-	@message = ''; # Start a blank message
-	@numberOfArguements = array_size(@args); # Store the size for optimization when used in the loop (So it's not re-evaluated each time)
+    @args = parse_args(@command); # Parse the arguements
+    @message = ''; # Start a blank message
+    @numberOfArguements = array_size(@args); # Store the size for optimization when used in the loop (So it's not re-evaluated each time)
 
-	if (@numberOfArguements > 1) {
-	
-		for(@i = 1, @i < @numberOfArguements, @i++) {
-		
-			@message = @message.' '.@args[@i]; # Add the string to the message (lets re-construct what msg the player sent)
-		
-		}
-	
-		@message = trim(@message); # Clean up the white space			
-	
-	} else {
-	
-		@message = null; # No message to construct			
-	
-	}
-		
-	@playersUUID = puuid(@playerThatRanCmd); # Store the players UUID which we use to identify them with variables stored in the register
-	
-	@keyAFKStatus = 'epp.'.@playersUUID.'.afk'; # Unique AFK key to store the status of AFK		
-	@keyAFKMsg = 'epp.'.@playersUUID.'.afkmsg'; # Unique AFK key to store the msg of the AFK player	
-	@isPlayerAFK = import(@keyAFKStatus, false); # Check the status, default to false if none found
-	
-	if(@isPlayerAFK == true){
-	
-		# Remove AFK
-		export(@keyAFKMsg, null); # Clear the player's away message if it was supplied
-		_remafk(@playerThatRanCmd, false); 			
-	
-	} else {
-	
-		# Change status to AFK
-		export(@keyAFKMsg, @message); # Save the players away message
-		
-		if (@message != null) {
-		
-			tmsg(@playerThatRanCmd, color(GRAY).color(ITALIC).'Away Message Set to: '.@message)
-		
-		} else {
-		
-			tmsg (@playerThatRanCmd, color(GRAY).color(ITALIC).'*HINT* You can set an away msg by doing /afk <msg>')
+    if (@numberOfArguements > 1) {
+    
+        for(@i = 1, @i < @numberOfArguements, @i++) {
+        
+            @message = @message.' '.@args[@i]; # Add the string to the message (lets re-construct what msg the player sent)
+        
+        }
+    
+        @message = trim(@message); # Clean up the white space			
+    
+    } else {
+    
+        @message = null; # No message to construct			
+    
+    }
+        
+    @playersUUID = puuid(@playerThatRanCmd); # Store the players UUID which we use to identify them with variables stored in the register
+    
+    @keyAFKStatus = 'epp.'.@playersUUID.'.afk'; # Unique AFK key to store the status of AFK		
+    @keyAFKMsg = 'epp.'.@playersUUID.'.afkmsg'; # Unique AFK key to store the msg of the AFK player	
+    @isPlayerAFK = import(@keyAFKStatus, false); # Check the status, default to false if none found
+    
+    if(@isPlayerAFK == true){
+    
+        # Remove AFK
+        export(@keyAFKMsg, null); # Clear the player's away message if it was supplied
+        _remafk(@playerThatRanCmd, false); 			
+    
+    } else {
+    
+        # Change status to AFK
+        export(@keyAFKMsg, @message); # Save the players away message
+        
+        if (@message != null) {
+        
+            tmsg(@playerThatRanCmd, color(GRAY).color(ITALIC).'Away Message Set to: '.@message)
+        
+        } else {
+        
+            tmsg (@playerThatRanCmd, color(GRAY).color(ITALIC).'*HINT* You can set an away msg by doing /afk <msg>')
 
-		}			
-		
-		_setafk(@playerThatRanCmd, false);
-		
-	}	
+        }			
+        
+        _setafk(@playerThatRanCmd, false);
+        
+    }	
 )
 
 bind(player_chat, null, null, @Event, 
@@ -135,12 +135,12 @@ bind(player_quit, null, null, @Event,
 
 bind(player_command, null, array(prefix: '/afk'), @Event,
     
-	if (has_permission(@Event[player], 'essentials.afk')) {
-	
-		_afk(@Event[player], @Event[command]) # Pass to new function
-		cancel() # Over-ride the pre-existing afk code (eesentials)
-		
-	}  
+    if (has_permission(@Event[player], 'essentials.afk')) {
+    
+        _afk(@Event[player], @Event[command]) # Pass to new function
+        cancel() # Over-ride the pre-existing afk code (eesentials)
+        
+    }  
     
 )
 
