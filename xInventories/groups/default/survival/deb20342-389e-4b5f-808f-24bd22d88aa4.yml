@@ -1,17 +1,27 @@
 inventory:
-  '0':
+  '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '1':
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
     amount: 64
-  '2':
+  '3':
     ==: org.bukkit.inventory.ItemStack
     type: COAL
     meta:
@@ -107,24 +117,36 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: DRAGON_EGG
 armor_contents: {}
-health: 80.0
+health: 100.0
 hunger: 20
-exp: 0.10526315
-exp-level: 6
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.671136
+exhaustion: 3.5624573
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 193883
+    type: REGENERATION
+    level: 3
+    duration: 190875
   '1':
-    type: INCREASE_DAMAGE
-    level: 16
-    duration: 193883
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 190875
   '2':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 190875
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 190875
+  '4':
     type: HEALTH_BOOST
-    level: 14
-    duration: 193883
+    level: 19
+    duration: 190875
+  '5':
+    type: NIGHT_VISION
+    level: 1
+    duration: 190875

@@ -4,48 +4,36 @@ inventory:
     type: WOOD_AXE
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: COMMAND
-    amount: 64
+    type: SMOOTH_BRICK
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_PLATE
+    type: STEP
+    damage: 5
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: GRAVEL
+    type: SMOOTH_STAIRS
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
+    type: TRIPWIRE_HOOK
+    amount: 3
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      lore:
-      - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh0K5WAtJFiUpW0dVKJUCmkpVSSL5CemqJgn9piVJtrA5MVKkWqsmYwQ1ZU1J+ToqSVUlRaaqOUnJ+Tn4RUG1KYlF2fFFqihJcd3CIY1CYK1bzjBg8SDcv0j9UwTc0OATdRKbMFAa+3My81OSixLQSq+LM9DyoNYYM3NUIlQwMALTU6A0XAQAA
-      blockMaterial: SIGN
+    type: STRING
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
+    type: COMMAND
     meta:
       ==: ItemMeta
       meta-type: TILE_ENTITY
       lore:
       - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0Y3KqVgHRRopJVdLVSUn5OipJVSVFpqo5Scn5OfhFQbUpiUXZ8UWqKkg5Mt66Cf5CCrlJtrA6yeUyZKQx8uZl5qclFiWklVsWZ6XlQSwxRbGZgAAAZ9F1ougAAAA==
-      blockMaterial: SIGN
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: CARPET
+      internal: H4sIAAAAAAAAAC2NQQrCMBQFX1RoqcUzxDO4ForFTUFd2J24CGkooU1+SH4Qb28VtzMMUwEVdqeZ9HT2bPndq1Gg1uQHy5b8xbAQ2KjMhBJVmxOTuypnIBqBItDLRDMsqmjJOeUH7FWMJrFswiMeD0/ZZResH6X1TLJTdpYlVnZA/Q9+7zXqe9bapNRS9gxguW77qPR0yxzyl3wA4lyaFqsAAAA=
+      blockMaterial: COMMAND
 health: 20.0
-hunger: 15
+hunger: 20
 exp: 0.6666667
 exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.165013
+saturation: 20.0
+exhaustion: 1.2610458
