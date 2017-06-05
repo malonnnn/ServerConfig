@@ -7,9 +7,9 @@ proc('_broadcast', @msg,
     @players = all_players(); # All players
 
     foreach(@player in @players) {
-	
+    
         tmsg(@player, colorize(@msg));
-		
+        
     }
 
 )

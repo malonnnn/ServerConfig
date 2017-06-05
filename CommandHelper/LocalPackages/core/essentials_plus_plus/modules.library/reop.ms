@@ -97,6 +97,6 @@ register_command(reop,
 
 bind(player_command, null, array(prefix: '/deop'), @Event, 
     
-	_deop(@Event[player], @Event[command]); # Puff puff pass
+    _deop(@Event[player], @Event[command]); # Puff puff pass
     
 )
