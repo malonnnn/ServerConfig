@@ -21,7 +21,7 @@ register_command(jail_spawnskelly,
                     @playerLocation = ploc(@player); # Players location
                     @playerY = @playerLocation[y] + 1;
                     
-                    @skeletonsInArea = entities_in_radius(@playerLocation, 5, array(SKELETON)); # Number of Skeletons in area
+                    @skeletonsInArea = entities_in_radius(@playerLocation, 50, array(SKELETON)); # Number of Skeletons in area
                     
                     if (array_size(@skeletonsInArea) == 0) { # No Skellys in the area
                     
