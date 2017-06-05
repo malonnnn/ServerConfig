@@ -1,3 +1,9 @@
+# --------------------------------------------------------------------------
+# AFK functions to be able to set a players AFK status
+# --------------------------------------------------------------------------
+
+include('broadcastReplace.ms');
+
 # Sets a player to AFK
 proc(_setafk, @playerName, @silent,	
 
@@ -22,7 +28,7 @@ proc(_setafk, @playerName, @silent,
     
     if (@silent == false) {		
     
-        broadcast(colorize('&c&o* '.@player.' is now AFK')) # Tell everyone that the player is now AFK
+        _broadcast('&c&o* '.@player.' is now AFK') # Tell everyone that the player is now AFK
         
         @id = bind(player_move, null, array(threshold: 2, player: @player), @Event, 
         
@@ -33,7 +39,7 @@ proc(_setafk, @playerName, @silent,
             set_display_name(@Event[player], @Event[player]); # Change the /list name back to the original name (remove AFK status)
             set_list_name(@Event[player], null); # Reset the scoreboard to show the players original name (remove AFK status)			
             
-            broadcast(colorize('&a&o* '.@Event[player].' is no longer AFK')) # Tell everyone that the player is back!
+            _broadcast('&a&o* '.@Event[player].' is no longer AFK') # Tell everyone that the player is back!
             
             @keyAFKPlayers = 'epp.afkplayers'; # Unique AFK key to store a list of currently AFK players
             @afkPlayers = import(@keyAFKPlayers, null); # Import a list of currently AFK players, if it doesn't exist then set it to null
@@ -110,7 +116,7 @@ proc(_remafk, @playerName, @silent,
     
     if (@silent == false) {
     
-        broadcast(colorize('&a&o* '.@player.' is no longer AFK')) # Tell everyone that the player is back!
+        _broadcast('&a&o* '.@player.' is no longer AFK') # Tell everyone that the player is back!
         
     }
     
