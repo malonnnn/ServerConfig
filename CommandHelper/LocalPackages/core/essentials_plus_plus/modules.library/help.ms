@@ -106,7 +106,7 @@ proc(_help, @playerThatRanCmd, @command,
 
 bind(player_command, null, array(prefix: '/help'), @Event, 
     
-	_help(@Event[player], @Event[command]); # Puff puff pass
-	cancel();
+    _help(@Event[player], @Event[command]); # Puff puff pass
+    cancel();
     
 )
