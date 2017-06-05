@@ -94,12 +94,12 @@ register_command(arrest,
                         set_peffect(@player, 23, 2)
                         cancel()
                     }
-                    set_timeout(2000,closure(
+                    set_timeout(3000,closure(
                         sudo("/pex user ".@plr." group set criminal")
                         sudo("/tptoggle ".@plr." off")
                         sudo("/warp quarantine ".@plr)						
                     ))			
-                    set_timeout(3000,closure(
+                    set_timeout(5000,closure(
                         set_pmode(@plr,'SURVIVAL')						
                     ))			
                 } catch (PlayerOfflineException @ErrorInfo) {				
