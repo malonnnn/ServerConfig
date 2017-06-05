@@ -1,3 +1,7 @@
+# --------------------------------------------------------------------------
+# Generates a URL using the players UUID to retrieve the skin Sigature and Value
+# --------------------------------------------------------------------------
+
 register_command(signature, 
 
     array(
