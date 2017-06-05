@@ -12,7 +12,7 @@ proc(_mortal,@plr,
         sudo("/god ".@plr." off")
         sudo("/undisguiseplayer ".@plr)
         sudo("/undisguiseplayer ".@plr)
-        sudo("/undisguise")
+        runas(~console,'/undisguiseplayer '.@plr)
     ))
 
 )

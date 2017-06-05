@@ -1,4 +1,28 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Homing Missile§6 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8Blaster Rifle§8 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eFlame Thrower§e «×»
+      lore:
+      - §eFlame Thrower
+      - §eCook bacon!.
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -20,17 +44,21 @@ ender_chest:
         LURE: 3
         MENDING: 1
       repair-cost: 255
-health: 17.0
+health: 32.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9319248
+exhaustion: 1.4870137
 armor_contents: {}
 potion_effect:
   '0':
-    type: SPEED
-    level: 100
-    duration: 193886
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198953
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 198953
