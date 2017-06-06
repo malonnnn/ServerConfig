@@ -38,6 +38,13 @@ HealAndNext:
   Skills:
   - potion{type=SATURATION;duration=20;level=1}
   - potion{type=HEAL;duration=10;level=10}
+  - command{c="playsound xyz.haha block <target.name> ~ ~ ~ 100"}
+  - actionmessage{m="<mob.name>&f has Fed You! Ha Ha!"} @Target
   - threat{amount=-10000}
   - delay 5
-  - threat{amount=10000} @r[r=50]
+  - threat{amount=10000} @r[r=50,team=jail]
+ChangeTarget:
+  Skills:
+  - threat{amount=-10000}
+  - delay 5
+  - threat{amount=10000} @r[r=50,team=jail]
