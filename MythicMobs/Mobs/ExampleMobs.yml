@@ -95,6 +95,7 @@ JailSkele:
     ThreatTable: true
   Skills:
   - skill{s=HealAndNext} @Target ~onAttack
+  - skill{s=ChangeTarget} @Target ~onTimer:200
   - potion{type=POISON;duration=10;level=10} @self ~onAttack
 SuperWither:
   Type: WITHER
