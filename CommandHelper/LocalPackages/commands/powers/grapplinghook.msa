@@ -1,15 +1,6 @@
 grapplinghook:/grapplinghook = >>>
   
     assign(@cooldown, 7)
-  
-    @pworld = pworld()
-    if(
-        @pworld != '1_9' &&
-        @pworld != 'greenfield' &&
-        @pworld != 'citybreak'
-    ){
-        die()
-    }
 
     assign(@lastgrapplinghook, import('lastgrapplinghook'))
     if(@lastgrapplinghook + @cooldown > time() / 1000,
