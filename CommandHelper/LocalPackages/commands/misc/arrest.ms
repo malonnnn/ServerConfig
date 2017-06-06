@@ -49,7 +49,7 @@ register_command(arrest,
                     
                     }
                     
-                    if(has_permission(@plr, 'ch.alias.onduty')){
+                    if(has_permission(@plr, 'ch.alias.onduty') && !pisop(@plr)){
                     
                         sudo("/pex user ".@plr." add is.suspended");
                     
