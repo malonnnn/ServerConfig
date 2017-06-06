@@ -95,9 +95,9 @@ register_command(arrest,
                         cancel()
                     }
                     set_timeout(3000,closure(
-                        sudo("/pex user ".@plr." group set criminal")
-                        sudo("/tptoggle ".@plr." off")
-                        sudo("/warp quarantine ".@plr)						
+                        runas("~console", "/pex user ".@plr." group set criminal")
+                        runas("~console", /tptoggle ".@plr." off")
+                        runas("~console", /warp quarantine ".@plr)						
                     ))			
                     set_timeout(5000,closure(
                         set_pmode(@plr,'SURVIVAL')						
@@ -158,9 +158,9 @@ register_command(release,
                 
                 try {
                     @plr = player(@args[0])
-                    sudo("/pex user ".@plr." group set mortal")
-                    sudo("/warp city ".@plr)
-                    sudo("/tptoggle ".@plr." on")	
+                    runas("~console", /pex user ".@plr." group set mortal")
+                    runas("~console", /warp city ".@plr)
+                    runas("~console", /tptoggle ".@plr." on")	
                     unbind(@plr.'criminalPoisonFeeding')
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg('Player is Offline')
