@@ -14,8 +14,7 @@
              'powers': array( 
                  "/buff", 
                  "/fly",
-                 "/run 0-2",
-                 "/tppos <x> <y> <z>"
+                 "/run 0-2"
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 21 9999 9 true",  
