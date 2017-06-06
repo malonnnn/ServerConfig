@@ -15,16 +15,12 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
-                "/haste 0-4",
-                "/thru (phases through walls)",
-                "/ma",
-                "/lightning"
+                "/haste 0-4"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
