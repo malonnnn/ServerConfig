@@ -1,6 +1,6 @@
 grapplinghook:/grapplinghook = >>>
   
-    assign(@cooldown, 1)
+    assign(@cooldown, 7)
   
     @pworld = pworld()
     if(
@@ -12,10 +12,10 @@ grapplinghook:/grapplinghook = >>>
     }
 
     assign(@lastgrapplinghook, import('lastgrapplinghook'))
-    if(@lastgrapplinghook + @cooldown > time() / 7000,
+    if(@lastgrapplinghook + @cooldown > time() / 1000,
         die()
     )
-    export('lastgrapplinghook', time() / 7000)
+    export('lastgrapplinghook', time() / 1000)
   
     @multiplier = 0.5
     @arrow = shoot_projectile(player(), 'ARROW')
