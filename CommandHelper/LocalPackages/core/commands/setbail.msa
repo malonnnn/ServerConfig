@@ -1,0 +1,20 @@
+register_command(setbail, 
+
+    array(
+    
+        description: 'Set\'s a bail amount on a player.',
+        
+        usage: '/setbail <player> <amount>',
+        
+        permission: 'ch.alias.setbail',
+        
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        
+        tabcompleter: closure(@alias, @sender, @args) {
+
+        store_value([namespace] key, value)
+        
+        tmsg(player, You Have Set A Bail On @plr!)
+        
+       
+        
