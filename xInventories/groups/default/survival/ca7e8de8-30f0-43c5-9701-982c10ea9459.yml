@@ -1,12 +1,34 @@
-inventory: {}
-health: 16.833332061767578
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4H§fa§0r§4l§fe§0y §4Q§fu§0i§4n§fn §e§lD§a§lN§4§lA
+      lore:
+      - harleyquinn
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.9835873
+saturation: 5.0
+exhaustion: 2.2830005
 armor_contents: {}
 ender_chest:
   '0':
