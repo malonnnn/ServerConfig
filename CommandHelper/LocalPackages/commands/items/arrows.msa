@@ -104,12 +104,12 @@ arrowluck:/arrow luck = >>>
     'Maybe I should visit the casino...'))
 <<<
 arrowsmoke:/arrow smoke = >>>
-    sudo(/give player() "minecraft:tipped_arrow 1 0 {Potion:minecraft:luck,display:{Name:".color(white)."Arrow of ".color(gray)."Smoke}}")
+    sudo(/give player() "minecraft:arrow 1 0 {display:{Name:".color(white)."Arrow of ".color(gray)."Smoke}}")
     tmsg(player(),concat(color(dark_gray),
     "I'll smoke 'em out!"))
 <<<
 arrowbomb:/arrow bomb = >>>
-    sudo(/give player() "minecraft:tipped_arrow 1 0 {Potion:minecraft:luck,display:{Name:".color(white)."Arrow of ".color(dark_red)."Ka-Ba-Boom}}")
+    sudo(/give player() "minecraft:arrow 1 0 {display:{Name:".color(white)."Arrow of ".color(dark_red)."Ka-Ba-Boom}}")
     tmsg(player(),concat(color(dark_red),
     "EXPLOOOOSSSSIIOONNNNSSSS!!!!"))
 <<<
