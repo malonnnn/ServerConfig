@@ -10,29 +10,19 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    arenacenter:
-        parent: arenajail
-        min: {x: -165.0, y: 92.0, z: 28.0}
-        max: {x: -137.0, y: 97.0, z: 56.0}
+    jail:
+        min: {x: -172.0, y: 88.0, z: 20.0}
+        max: {x: -132.0, y: 105.0, z: 61.0}
         members: {}
-        flags: {game-mode: SURVIVAL, greeting-group: NON_MEMBERS, greeting: Welcome to Jail,
-            game-mode-group: NON_MEMBERS}
+        flags: {build: deny, interact: allow, pvp: allow}
         owners: {}
         type: cuboid
-        priority: 0
-    arenajail:
-        min: {x: -170.0, y: 93.0, z: 23.0}
-        max: {x: -132.0, y: 97.0, z: 61.0}
-        members: {}
-        flags: {invincible: deny}
-        owners: {}
-        type: cuboid
-        priority: 0
+        priority: 1
     cell:
         min: {x: -41.0, y: 96.0, z: 28.0}
         max: {x: -35.0, y: 99.0, z: 34.0}
         members: {}
-        flags: {use: allow, invincible: deny, feed-amount: 0, feed-delay: 0, pvp: deny}
+        flags: {invincible: deny, use: allow, feed-delay: 0, feed-amount: 0, pvp: deny}
         owners: {}
         type: cuboid
         priority: 0
