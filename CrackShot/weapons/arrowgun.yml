@@ -1,21 +1,24 @@
 arrowgun:
     Item_Information:
         Item_Name: "&cArrow &6Gun"
-        Item_Type: 261
+        Item_Type: 417
     Shooting:
-        Dual_Wield: true
+        Projectile_Flames: true
         Cancel_Left_Click_Block_Damage: false
         Cancel_Right_Click_Interactions: false
-        Delay_Between_Shots: 2
-        Recoil_Amount: 1
+        Right_Click_To_Shoot: true
+        Delay_Between_Shots: 0
+        Recoil_Amount: 0
         Projectile_Amount: 1
         Projectile_Type: arrow
-        Projectile_Speed: 40
+        Projectile_Speed: 15
         Projectile_Damage: 0
         Bullet_Spread: 1
     Reload:
-        Enable: false
-    Abilities:
-        Reset_Hit_Cooldown: true
+        Enable: true
     Hit_Events:
         Enable: true
+    Ammo:
+        Enable: true
+        Ammo_Item_ID: 262
+        Take_Ammo_Per_Shot: true

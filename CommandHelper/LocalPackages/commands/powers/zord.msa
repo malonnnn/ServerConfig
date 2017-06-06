@@ -12,10 +12,13 @@ unzord:/unzord = >>>
     @class = pgroup()[0]
 
     set_pflight(@player,false)
-    set_pflying(@player,false)
     
+    try{
     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-    
+    }catch(Exception @e){
+        sudo('/undisguise')
+        die()
+    }
     @sig = @hero['sig']
     @val = @hero['val']
     _changeSkin(@player,@sig,@val)
