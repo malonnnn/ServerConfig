@@ -1,0 +1,50 @@
+timestop:/timestop $plr  = >>>
+    
+    @player = player()
+    @victim = $plr
+    
+    if(is_null(get_value(@player."usedConfuse"))){
+        store_value(@player."usedConfuse", 0)
+    }
+    
+    assign(@cooldown, 30)
+    
+    assign(@lastConfuse, get_value(@player."usedConfuse"))
+    if(@lastConfuse + @cooldown > time() / 1000,
+        die(color(red)."You must cool down before you can manipulate time again!")
+    )
+    store_value(@player."usedConfuse", time() / 1000)
+    
+    
+    if(ponline(@victim)){
+        store_value(@victim."isConfused", "true")
+        broadcast(color(blue) . @player . color(gray) . " is manipulating time and paused " . color(blue) . @victim . color(gray) . "!")
+    
+        set_timeout(10000, closure(
+    
+            broadcast(color(blue) . @victim . color(gray) . " is no longer paused.")
+            store_value(@victim."isConfused", "false")
+    
+        ))
+    }
+    
+
+    runas(~console,"/effect " . @victim . " 2 9999 254 true")
+    @eventID = set_interval(100,closure(
+        @ploc = ploc()
+        @ploc['x'] = @ploc['x'] + 0.1
+        set_ploc(@ploc)
+        set_timeout(50,closure(
+            @ploc['x'] = @ploc['x'] - 0.1
+            set_ploc(@ploc)
+        ))
+        
+    ))
+    set_timeout(10000,closure(
+        clear_task(@eventID)
+        runas(~console,"/effect " . @victim . " 2 0")
+    ))
+
+    export(@victim."isVibrating",@eventID)
+
+<<<
