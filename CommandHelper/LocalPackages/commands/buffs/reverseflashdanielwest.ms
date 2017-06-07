@@ -20,7 +20,10 @@
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
-                "/haste 0-4"
+                "/haste 0-4",
+                "/lightning",
+                "/ma",
+                "/thru"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
