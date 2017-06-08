@@ -30,14 +30,20 @@ register_command(onduty,
                 die()
             }			
             
-            if(has_permission(@player,"is.sergeant")){
+            if(has_permission(@player,"is.staffsergeant")){
             
+                set_timeout(3000,closure(
+                    sudo("/pex user " . @player . " group set staffsergeant")
+                    tmsg(@player,color(red)."You are now on duty!")
+                ))
+                
+            }else if(has_permission(@player,'is.sergeant')){
                 set_timeout(3000,closure(
                     sudo("/pex user " . @player . " group set sergeant")
                     tmsg(@player,color(red)."You are now on duty!")
                 ))
-                
-            }else if(has_permission(@player,'is.officer')){
+				
+			}else if(has_permission(@player,'is.officer')){
                 set_timeout(3000,closure(
                     sudo("/pex user " . @player . " group set officer")
                     tmsg(@player,color(red)."You are now on duty!")
