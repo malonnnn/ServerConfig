@@ -39,11 +39,12 @@ register_command(hireofficer,
                 @player = player(@args[0])
                 sudo("/pex user ".@player." add ch.alias.onduty")
                 sudo("/pex user ".@player." add is.officer")
+				runas('~console', '/rg addmember -w policeoffice police '.@player)
                 tmsg(player(),color(red)."You have hired ".@player." as on Officer for the Police Force!")
                 tmsg(@player,color(red)."You have been hired as an Officer for the Police Force!")	
                 
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg('Player is Offline')
                 die()
             }	 
         
@@ -95,13 +96,15 @@ register_command(fireofficer,
                     sudo("/pex user ".@player." remove is.officer")
                     sudo("/pex user ".@player." remove is.suspended")					
                     sudo("/pex user ".@player." group set mortal")
+					runas('~console', '/rg removemember -w policeoffice police '.@player)
+					runas('~console', '/rg removemember -w policeoffice sergeants '.@player)
                     sudo("/minecraft:clear ".@player)
                     tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
                     tmsg(@player,color(red)."You have been fired from the Police Force :(")
                 }
                 
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg('Player is Offline')
                 die()
             }	 
         
