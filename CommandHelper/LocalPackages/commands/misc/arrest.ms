@@ -37,24 +37,24 @@ register_command(arrest,
                     
                     @reason = ''
                     @argsLength = array_size(@args)
+					
+					if(@cop[0] != '#') {
                     
-                    if(@cop[0] != '#') {
-                    
-                        if(has_permission(@cop, 'is.suspended')) {
-                        
-                            msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
-                            die();
-                        
-                        }
-                    
-                    }
-                    
-                    if(has_permission(@plr, 'ch.alias.onduty') && !pisop(@plr)){
-                    
-                        sudo("/pex user ".@plr." add is.suspended");
-                    
-                    }
-                    
+						if(has_permission(@cop, 'is.suspended')) {
+						
+							msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
+							die();
+						
+						}
+					
+					}
+					
+					if(has_permission(@plr, 'ch.alias.onduty') && !pisop(@plr)){
+					
+						runas("~console", "/pex user ".@plr." add is.suspended");
+					
+					}
+					
                     for (@i = 1, @i < @argsLength, @i++){
                     
                         @reason = @reason.@args[@i].' '
@@ -65,42 +65,42 @@ register_command(arrest,
                     
                     @date = simple_date('hh:mm aaa z',time(),'CST')
 
-                    sudo('/sudo '.@plr.' c:/ch leave local')
-                    sudo('/sudo '.@plr.' c:/ch join global')
+                    runas('~console', '/sudo '.@plr.' c:/ch leave local')
+                    runas('~console', '/sudo '.@plr.' c:/ch join global')
                     include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                     _mortal(@plr)
-                    
-                    if (@cop[0] == '#') {
-                        broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).'The Server'.color(red).' FOR '.color(yellow).@reason)
-                    } else {
-                        broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).@cop.color(red).' FOR '.color(yellow).@reason)					
-                    }
+					
+					if (@cop[0] == '#') {
+						broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).'The Server'.color(red).' FOR '.color(yellow).@reason)
+					} else {
+						broadcast(@plr.color(red).' HAS BEEN ARRESTED BY '.color(white).@cop.color(red).' FOR '.color(yellow).@reason)					
+					}
 
                     @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                     
                     @date = simple_date('yyyy-MM-dd HH:mm:ss', time())
-                    if (@cop[0] == '#') {
-                        @result = query(@profile,'INSERT INTO `criminals` '.
-                                                 'VALUES(?,?,?,?,?,?,?,?)',
-                                                 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
-                        )
-                    } else {
-                        @result = query(@profile,'INSERT INTO `criminals` '.
-                                                 'VALUES(?,?,?,?,?,?,?,?)',
-                                                 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
-                        )
-                    }
+					if (@cop[0] == '#') {
+						@result = query(@profile,'INSERT INTO `criminals` '.
+												 'VALUES(?,?,?,?,?,?,?,?)',
+												 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,'server-command-block',simple_date('yyyy-MM-dd HH:mm:ss', time())
+						)
+					} else {
+						@result = query(@profile,'INSERT INTO `criminals` '.
+												 'VALUES(?,?,?,?,?,?,?,?)',
+												 @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
+						)
+					}
                     bind(entity_damage,array(id: @plr.'criminalPoisonFeeding'),associative_array('id': @vicUUID,'cause': 'POISON'), @e, @player = @plr){
                         set_peffect(@player, 23, 2)
                         cancel()
                     }
                     set_timeout(3000,closure(
-                        sudo("/pex user ".@plr." group set criminal")
-                        sudo("/tptoggle ".@plr." off")
-                        sudo("/warp quarantine ".@plr)						
+                        runas("~console", "/pex user ".@plr." group set criminal")
+                        runas("~console", "/tptoggle ".@plr." off")
+                        runas("~console", "/warp quarantine ".@plr)						
                     ))			
                     set_timeout(5000,closure(
-                        set_pmode(@plr,'SURVIVAL')						
+                        set_pmode(@plr,'SURVIVAL')					
                     ))			
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg('Player is Offline')
@@ -158,9 +158,9 @@ register_command(release,
                 
                 try {
                     @plr = player(@args[0])
-                    sudo("/pex user ".@plr." group set mortal")
-                    sudo("/warp city ".@plr)
-                    sudo("/tptoggle ".@plr." on")	
+                    runas("~console", "/pex user ".@plr." group set mortal")
+                    runas("~console", "/warp city ".@plr)
+                    runas("~console", "/tptoggle ".@plr." on")	
                     unbind(@plr.'criminalPoisonFeeding')
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg('Player is Offline')
@@ -333,14 +333,14 @@ register_command(removerecord,
             
             }
             
-            @plr = @args[0]
-            @date = @args[1].' '.@args[2]
-            @cop = player()                
-            
-            @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-            query(@profile, 'DELETE FROM `criminals` WHERE PERPNAME=? AND DATE=?',@plr, @date)
-            
-            tmsg(@cop, 'Record deleted.');          			
+			@plr = @args[0]
+			@date = @args[1].' '.@args[2]
+			@cop = player()                
+			
+			@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+			query(@profile, 'DELETE FROM `criminals` WHERE PERPNAME=? AND DATE=?',@plr, @date)
+			
+			tmsg(@cop, 'Record deleted.');          			
         
         }
     )
@@ -377,13 +377,13 @@ register_command(removeallrecords,
             
             }
             
-            @uuid = @args[0]			
-            @cop = player()                
-            
-            @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
-            query(@profile, 'DELETE FROM `criminals` WHERE PERPUUID=?',@uuid)
-            
-            tmsg(@cop, 'All Records Deleted for UUID: '.@uuid);          			
+			@uuid = @args[0]			
+			@cop = player()                
+			
+			@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+			query(@profile, 'DELETE FROM `criminals` WHERE PERPUUID=?',@uuid)
+			
+			tmsg(@cop, 'All Records Deleted for UUID: '.@uuid);          			
         
         }
     )
@@ -446,7 +446,7 @@ register_command(backgroundcheck,
                     tmsg(@cop,'-----------------------------------------')
                 }
                 tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
-                
+				
                 
             } catch (PlayerOfflineException @ErrorInfo) {
                 
@@ -480,6 +480,37 @@ register_command(backgroundcheck,
                 die()
             }					
         
+        }
+    )
+)
+
+register_command(criminalrecord, 
+
+    array(
+        description: 'Returns your Criminal Records',
+        usage: '/criminalrecord',
+    
+        executor: closure() {            
+            
+			@plr = player()
+			@cop = player()
+			@uuid = puuid(@plr)
+			@ip = pinfo(@plr)[3]
+			
+			@profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
+			@result = query(@profile, 'SELECT * FROM `criminals` WHERE PERPUUID=?',@uuid)
+			@numOffenses = array_size(@result)
+			foreach(@row in @result){
+				tmsg(@cop,
+					color(dark_red).'Offense Type: '.@row['TYPE'].color(yellow).' | '.
+					color(red).'Perp Name: '.@row['PERPNAME'].color(yellow).' | '.
+					color(gold).'Reason: '.@row['REASON'].color(yellow).' | '.
+					color(aqua).'Officer: '.color(dark_aqua).@row['AO'].color(yellow).' | '.
+					color(green).@row['DATE'])
+				tmsg(@cop,'-----------------------------------------')
+			}
+			tmsg(@cop,'A total of '.@numOffenses.' warnings and offenses.')	
+			
         }
     )
 )
