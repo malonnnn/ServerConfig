@@ -2,13 +2,13 @@ proc(_CleanupJailTeam,
 
 	@teamName = 'jail'; # Team name
 	@scoreboardName = 'jail' # Scoreboard name
-	@world = 'survival'
+	@world = 'overvoid' # Jail world name
 	
-	@teams = get_teams();
+	@teams = get_teams(); 
 	
 	foreach(@team in @teams) {
 	
-		if (@team[name] == @teamName) {
+		if (@team[name] == @teamName) { # Found team
 		
 			foreach(@player in @team[players]) {
 			
@@ -28,7 +28,7 @@ proc(_AddPlayerToJailTeam, @playerToAdd,
 
 	@teamName = 'jail'; # Team name
 	@scoreboardName = 'jail' # Scoreboard name
-	@world = 'survival'
+	@world = 'overvoid' # Jail world name
 	
 	@teams = get_teams();
 	 
@@ -36,15 +36,15 @@ proc(_AddPlayerToJailTeam, @playerToAdd,
 	
 		if (@team[name] == @teamName) {
 
-			_CleanupJailTeam(); # Cleanup
+			_CleanupJailTeam(); # Cleanup (Remove players no longer in the overvoid world)
 			
 			if(pworld(@playerToAdd) != @world) { 
 				
 				die(); # Don't add the player. Wrong world
 			
-			} # Don't add the player to the team since he's not in the correct world
+			}
 			
-			if(!array_contains(@team[players], @playerToAdd)) {
+			if(!array_contains(@team[players], @playerToAdd)) { # Player isn't on team
 			
 				team_add_player(@teamName, @playerToAdd); # Add the player to the jail team
 				set_pmode(@playerToAdd, SURVIVAL); # Ensure player is in survival mode
@@ -68,22 +68,22 @@ proc(_RemovePlayerFromJailTeam, @playerToRemove,
 
 	@teamName = 'jail'; # Team name
 	@scoreboardName = 'jail' # Scoreboard name
-	@world = 'survival'
+	@world = 'overvoid' # Jail world name
 	
 	@teams = get_teams();
 	 
 	foreach(@team in @teams) {
 	
-		if (@team[name] == @teamName) {		
+		if (@team[name] == @teamName) {	# Team exists
 			
-			if(array_contains(@team[players], @playerToRemove)) {
+			if(array_contains(@team[players], @playerToRemove)) { # Found player on team
 			
 				team_remove_player(@teamName, @playerToRemove); # Remove the player from the jail team
 				die(); # Done
 			
 			}
 			
-			_CleanupJailTeam(); # Cleanup
+			_CleanupJailTeam(); # Cleanup (Remove players no longer in the overvoid world)
 			
 			die(); # No need to check any further
 		
@@ -116,6 +116,7 @@ register_command(jail_spawnskelly,
                 
                     @player = player(@args[0]); # Create a player object
 					@playerLocation = ploc(@player); # Players location
+					@playerLocation[y] += 1; # Increase the Y position 1 block above so we don't spawn the skelly into a block
 					
 					@skeletonsInArea = entities_in_radius(@playerLocation, 50, array(SKELETON)); # Number of Skeletons in area
 					
@@ -165,7 +166,7 @@ register_command(jail_hunger_tp,
 					
 						set_ploc(@player, @teleportDestination); # Teleport Player
 						tmsg(@player, color(GREEN).'Entered Safe Zone - Skeleton Free Area');
-						_RemovePlayerFromJailTeam(@player);
+						_RemovePlayerFromJailTeam(@player); # Remove the player from he jail team so they aren't targeted by the skelly
 						die()
 					
 					} else { 
@@ -192,7 +193,7 @@ register_command(jail_enter,
 
     array(
 	
-		permission: 'is.criminal',
+		permission: 'ch.alias.jailenter',
     
         executor: closure(@alias, @sender, @args) {
     
@@ -210,7 +211,7 @@ register_command(jail_enter,
 										
 					set_ploc(@player, @teleportDestination); # Teleport Player
 					tmsg(@player, color(RED).'Welcome to Jail');
-					_AddPlayerToJailTeam(@player);
+					_AddPlayerToJailTeam(@player); # Add the player to the jail team so the skelly targets them
 					die();					
                     
                 } catch (PlayerOfflineException @ErrorInfo) {
