@@ -1,12 +1,12 @@
-register_command(hiresergeant, 
+register_command(hirestaffsergeant, 
 
     array(
     
-        description: 'Hire\'s a Player as a Server Police Sergeant',
+        description: 'Hire\'s a Player as a Server Police Staff Sergeant',
         
-        usage: '/hiresergeant <player>',
+        usage: '/hirestaffsergeant <player>',
         
-        permission: 'ch.alias.hiresergeant',
+        permission: 'ch.alias.hirestaffsergeant',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -29,7 +29,7 @@ register_command(hiresergeant,
             if (array_size(@args) != 1) {
             
                 msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /hiresergeant <player>');
+                msg(''.color(RED).'Usage: /hirestaffsergeant <player>');
                 die(); # No need to go further					
             
             }
@@ -37,13 +37,14 @@ register_command(hiresergeant,
             try {
             
                 @player = player(@args[0])
-                sudo("/pex user ".@player." add is.sergeant")
-                sudo("/pex user ".@player." remove is.officer")					
+                sudo("/pex user ".@player." add is.staffsergeant")
+                sudo("/pex user ".@player." remove is.sergeant")
+                sudo("/pex user ".@player." remove is.officer")				
                 sudo("/pex user ".@player." add ch.alias.onduty")
 				runas('~console', '/rg addmember -w policeoffice police '.@player)
 				runas('~console', '/rg addmember -w policeoffice sergeants '.@player)
-                tmsg(player(),color(red)."You have hired ".@player. " as a Sergeant for the Police Force!")
-                tmsg(@player,color(red)."You have been hired as a Sergeant for the Police Force!")
+                tmsg(player(),color(red)."You have hired ".@player. " as a Staff Sergeant for the Police Force!")
+                tmsg(@player,color(red)."You have been hired as a Staff Sergeant for the Police Force!")
                 
             } catch (PlayerOfflineException @ErrorInfo) {				
                 msg('Player is Offline')
@@ -54,15 +55,15 @@ register_command(hiresergeant,
     )
 )
 
-register_command(firesergeant, 
+register_command(firestaffsergeant, 
 
     array(
     
         description: 'Fire\'s a Player as a Server Police Sergeant',
         
-        usage: '/firesergeant <player>',
+        usage: '/firestaffsergeant <player>',
         
-        permission: 'ch.alias.firesergeant',
+        permission: 'ch.alias.firestaffsergeant',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
@@ -95,6 +96,7 @@ register_command(firesergeant,
                 @player = player(@args[0])
                 if(has_permission(@player,"is.officer")){
                     sudo("/pex user ".@player." remove is.sergeant")
+                    sudo("/pex user ".@player." remove is.staffsergeant")
                     sudo("/pex user ".@player." remove ch.alias.onduty")
                     sudo("/pex user ".@player." remove is.suspended")
                     sudo("/pex user ".@player." remove is.officer")
