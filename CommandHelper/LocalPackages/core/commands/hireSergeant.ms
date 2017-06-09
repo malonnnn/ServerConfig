@@ -40,11 +40,13 @@ register_command(hiresergeant,
                 sudo("/pex user ".@player." add is.sergeant")
                 sudo("/pex user ".@player." remove is.officer")					
                 sudo("/pex user ".@player." add ch.alias.onduty")
+                runas('~console', '/rg addmember -w policeoffice police '.@player)
+                runas('~console', '/rg addmember -w policeoffice sergeants '.@player)
                 tmsg(player(),color(red)."You have hired ".@player. " as a Sergeant for the Police Force!")
                 tmsg(@player,color(red)."You have been hired as a Sergeant for the Police Force!")
                 
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg('Player is Offline')
                 die()
             }
         
@@ -95,14 +97,16 @@ register_command(firesergeant,
                     sudo("/pex user ".@player." remove is.sergeant")
                     sudo("/pex user ".@player." remove ch.alias.onduty")
                     sudo("/pex user ".@player." remove is.suspended")
-                    sudo("/pex user ".@player." remove is.officer")										
+                    sudo("/pex user ".@player." remove is.officer")
+                    runas('~console', '/rg removemember -w policeoffice police '.@player)
+                    runas('~console', '/rg removemember -w policeoffice sergeants '.@player)					
                     sudo("/pex user ".@player." group set mortal")
                     tmsg(player(),color(red)."You have fired ". @player ." from the Police Force.")
                     tmsg(@player,color(red)."You have been fired from the Police Force :(")
                 }
                 
             } catch (PlayerOfflineException @ErrorInfo) {				
-                msg(@player,'Player: '.@plr.' is Offline')
+                msg('Player is Offline')
                 die()
             } 
         

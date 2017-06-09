@@ -108,6 +108,9 @@ bind('player_chat', null, null, @e,
         
     }else if(@msg == "gtg"){        
         @soundToPlay = 'xyz.gtg';
+    
+    }else if(@msg == "why you little!" || @msg == "why you lil!"){        
+        @soundToPlay = 'xyz.whyyoulittle';
         
     }else if(@msg == "hi" || @msg == "hello" || @msg == "wb" || @msg == 'hey'){
         
