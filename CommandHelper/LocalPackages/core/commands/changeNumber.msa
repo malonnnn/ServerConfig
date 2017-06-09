@@ -26,6 +26,7 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
     if(@number[3]['num'] == null){
         @number[3]['num'] = 0
     }
+    @beforeNum = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']
 
 if(@facingDir == 'north'){
         @skullDir = '2'
@@ -111,9 +112,8 @@ if(@facingDir == 'north'){
     @number[2]['meta'] = _getNumBlockMeta(@number[2]['num'])
     @number[3]['meta'] = _getNumBlockMeta(@number[3]['num'])
 
-    for(@i = 1, @i <= 3, @i++){
-        sudo('/minecraft:setblock '.@ptr[@i]['x'].' '.@ptr[@i]['y'].' '.@ptr[@i]['z'].' minecraft:skull '.@skullDir.' replace '.@number[@i]['meta'])
-    }
+    sudo('/minecraft:setblock '.@ptr[@numPos]['x'].' '.@ptr[@numPos]['y'].' '.@ptr[@numPos]['z'].' minecraft:skull '.@skullDir.' destroy '.@number[@numPos]['meta'])
+
     store_value('heromachine.'.@machineID.'1',@number[1]['num'])
     store_value('heromachine.'.@machineID.'2',@number[2]['num'])
     store_value('heromachine.'.@machineID.'3',@number[3]['num'])
@@ -122,7 +122,7 @@ if(@facingDir == 'north'){
     @hero = ""
     include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram2.ms')
 
-    @num = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']    
+    @num = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']
 
     shell_adv('/home/minecraft/getHeroClassByID.sh '. @num,
     array(subshell: true,
