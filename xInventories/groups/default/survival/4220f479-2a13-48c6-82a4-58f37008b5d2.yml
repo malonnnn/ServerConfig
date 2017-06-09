@@ -1,4 +1,103 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4War Beam§4 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4War Axe
+      enchants:
+        DAMAGE_ALL: 30
+        FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4War Axe
+      enchants:
+        DAMAGE_ALL: 30
+        FIRE_ASPECT: 2
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Ma§dg§5ic §5Bla§dst§d «×»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §4§lAr§0§le§4§ls's §4Shield
+      internal: H4sIAAAAAAAAAHXNTQqDMBAF4KfpT5qCh7J0X7AXSGOwaaMDcQra0zeCi1jIbN4MH49RgEJVezLv68CO57vuBIoJcWLOa36XlChdi0PzdNa3J8ibZrZhGNViEsf1huiCFthfyFOIdMbWPokVqZXM2Zp5UGLI1zYkenpla73J0t8zgV2tRxu3CvgBqTSDVzIBAAA=
+      blockMaterial: SHIELD
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 39
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 36
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Leggings
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    damage: 45
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Chestplate
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 36
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Helmet
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -267,12 +366,81 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: TORCH
     amount: 37
-armor_contents: {}
-health: 20.0
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_HELMET
+    damage: 36
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Helmet
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+    damage: 45
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Chestplate
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+    damage: 36
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Leggings
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 39
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+health: 80.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.745007
+exhaustion: 2.0999982
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 191316
+  '1':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 191316
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 191316
