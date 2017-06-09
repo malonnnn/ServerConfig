@@ -1,0 +1,27 @@
+register_command(touchkill, 
+
+    array(
+    
+        description: 'Power',
+        
+        permission: 'ch.alias.touchkill',
+        
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+    
+        executor: closure() {        
+            
+            @plrs = players_in_radius(ploc(),2)
+    
+            foreach(@plr in @plrs){
+                if(@plr != player()){
+                    broadcast(player()." touched @plr and they died. R.I.P.")
+                    pkill(@plr)
+                    die()
+                }
+            }
+
+            tmsg(player(),"You are not close enough to that person.")
+                
+        }
+    )
+)
