@@ -1,11 +1,18 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bEl§3ec§btr§3oc§bute§b «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ANVIL
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -20,11 +27,12 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.8035994
+exhaustion: 1.0364887
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -36,24 +44,24 @@ potion_effect:
   '0':
     type: FAST_DIGGING
     level: 10
-    duration: 186598
+    duration: 186503
   '1':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 185787
+    duration: 186218
   '2':
     type: REGENERATION
     level: 3
-    duration: 185787
+    duration: 186218
   '3':
     type: JUMP
     level: 5
-    duration: 186745
+    duration: 186456
   '4':
     type: SPEED
-    level: 50
-    duration: 189136
+    level: 10
+    duration: 195535
   '5':
     type: HEALTH_BOOST
     level: 4
-    duration: 185787
+    duration: 186218
