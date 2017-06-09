@@ -1,10 +1,60 @@
 health: 20.0
 hunger: 20
-exp: 0.5294117
-exp-level: 5
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 0.9640045
-inventory: {}
+saturation: 0.0
+exhaustion: 0.91000915
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §fWhite Canary §e§lD§a§lN§4§lA
+      lore:
+      - whitecanary
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §fWhite Canary §e§lD§a§lN§4§lA
+      lore:
+      - whitecanary
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 ender_chest: {}
