@@ -1,0 +1,38 @@
+register_command(castmrasid, 
+
+    array(
+    
+        description: 'Power',
+        
+        permission: 'ch.alias.mrasid',
+        
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+    
+        executor: closure() {        
+            
+            @plr = player()
+            @ploc = ploc(@plr)
+            @plrs = players_in_radius(@ploc,5)
+
+            foreach(@player in @plrs){
+                @handItem = pinv(@player,null)
+                if(@handItem != null && @player != @plr){
+                    @drop = drop_item(@player,@handItem,true)
+                    @x = rand(0,10)
+                    @z = rand(0,10)
+                    @xsign = '-'
+                    @zsign = '-'
+                    if(rand(0,2) == 1){
+                        @xsign = ''
+                    }
+                    if(rand(0,2) == 1){
+                        @zsign = ''
+                    }
+                    set_entity_velocity(@drop, array(@xsign.'0.'.@x, 1.0, @zsign.'0.'.@z))
+                    set_pinv(@player,array(null: array(type: null)))
+                }
+            }
+                
+        }
+    )
+)
