@@ -48,7 +48,9 @@ Commands:
   - '&c/bending choose [Element] &eChoose an element.'
   - '&c/bending bind [Ability] # &eBind an ability.'
   Who:
-    Description: This command will tell you what element all players that are online are (If you don't specify a player) or give you information about the player that you specify.
+    Description: This command will tell you what element all players that are online
+      are (If you don't specify a player) or give you information about the player
+      that you specify.
     NoPlayersOnline: There is no one online.
     DatabaseOverload: The database appears to be overloaded. Please try again later.
     PlayerOffline: '{target} is currently offline. A lookup is currently being done
@@ -56,9 +58,14 @@ Commands:
   Version:
     Description: Displays the installed version of ProjectKorra.
   Toggle:
-    Description: This command will toggle a player's own Bending on or off. If toggled off, all abilities should stop working until it is toggled back on. Logging off will automatically toggle your Bending back on. If you run the command /bending toggle all, Bending will be turned off for all players and cannot be turned back on until the command is run again.
+    Description: This command will toggle a player's own Bending on or off. If toggled
+      off, all abilities should stop working until it is toggled back on. Logging
+      off will automatically toggle your Bending back on. If you run the command /bending
+      toggle all, Bending will be turned off for all players and cannot be turned
+      back on until the command is run again.
     ToggledOn: You have turned your bending back on.
-    ToggledOff: Your bending has been toggled off. You will not be able to use most abilities until you toggle it back.
+    ToggledOff: Your bending has been toggled off. You will not be able to use most
+      abilities until you toggle it back.
     ToggleOnSingleElement: You have toggled on your {element}.
     ToggleOffSingleElement: You have toggled off your {element}.
     WrongElement: You do not have that element.
@@ -74,7 +81,9 @@ Commands:
       PlayerNotFound: Target is not found.
       WrongElement: '{target} doesn''t have that element.'
   Remove:
-    Description: This command will remove the element of the targeted [Player]. The player will be able to re-pick their element after this command is run on them, assuming their Bending was not permaremoved.
+    Description: This command will remove the element of the targeted [Player]. The
+      player will be able to re-pick their element after this command is run on them,
+      assuming their Bending was not permaremoved.
     Other:
       RemovedAllElements: Your bending has been removed by {sender}.
       RemovedAllElementsConfirm: You've removed {target}'s bending.
@@ -89,7 +98,9 @@ Commands:
     Description: This command will reload the Bending config file.
     SuccessfullyReloaded: Bending Config reloaded!
   Preset:
-    Description: This command manages Presets, which are saved bindings. Use /bending preset list to view your existing presets, use /bending [create|delete] [name] to manage your presets, and use /bending bind [name] to bind an existing preset.
+    Description: This command manages Presets, which are saved bindings. Use /bending
+      preset list to view your existing presets, use /bending [create|delete] [name]
+      to manage your presets, and use /bending bind [name] to bind an existing preset.
     NoPresets: You do not have any presets.
     NoPresetName: You don't have a preset with that name.
     Created: Created a new preset named '{name}'.
@@ -98,7 +109,8 @@ Commands:
     RemovedConfirm: You have permanently removed {target}'s bending.
     SuccesfullyBound: Your binds have been set to match the {name} preset.
     SuccesfullyCopied: Your binds have been set to match {target}'s binds.
-    FailedToBindAll: Some abilities were not bound because you cannot bend the required element.
+    FailedToBindAll: Some abilities were not bound because you cannot bend the required
+      element.
     AlreadyExists: A preset with that name already exists.
     BendingPermanentlyRemoved: Your bending was permanently removed.
     PlayerNotFound: Player not found.
@@ -106,29 +118,41 @@ Commands:
     CantEditBinds: You can't edit your binds right now!
     Other:
       BendingPermanentlyRemoved: That player's bending was permanently removed.
-      SuccesfullyBoundConfirm: The bound slots of {target} have been set to match the {name} preset.
+      SuccesfullyBoundConfirm: The bound slots of {target} have been set to match
+        the {name} preset.
     External:
       NoPresetName: No external preset found with that name.
   PermaRemove:
-    Description: This command will permanently remove the Bending of the targeted <Player>. Once removed, a player may only receive Bending again if this command is run on them again. This command is typically reserved for administrators.
+    Description: This command will permanently remove the Bending of the targeted
+      <Player>. Once removed, a player may only receive Bending again if this command
+      is run on them again. This command is typically reserved for administrators.
     PlayerOffline: That player is not online.
     Restored: Your bending has been restored.
     RestoredConfirm: You have restored the bending of {target}.
     Removed: Your bending has been permanently removed.
     RemovedConfirm: You have removed the bending of {target}.
   Invincible:
-    Description: This command will make you impervious to all Bending damage. Once you use this command, you will stay invincible until you log off or use this command again.
-    ToggledOn: You are now invincible to all bending damage and effects. Use this command again to disable this.
+    Description: This command will make you impervious to all Bending damage. Once
+      you use this command, you will stay invincible until you log off or use this
+      command again.
+    ToggledOn: You are now invincible to all bending damage and effects. Use this
+      command again to disable this.
     ToggledOff: You are no longer invincible to all bending damage and effects.
   Import:
-    Description: This command will import your old bendingPlayers.yml from the Bending plugin. It will generate a convert.yml file to convert the data to be used with this plugin. You can delete the file once the complete message is displayed. This command should only be used ONCE.
+    Description: This command will import your old bendingPlayers.yml from the Bending
+      plugin. It will generate a convert.yml file to convert the data to be used with
+      this plugin. You can delete the file once the complete message is displayed.
+      This command should only be used ONCE.
     Disabled: Import has been disabled in the config!
     PreparingData: Preparing Data for import.
     ImportStarted: Import of data started. Do NOT stop / reload your server.
-    DebugWarning: Console will print out all of the players that are imported if debug mode is enabled as they import.
-    DataQueuedUp: All data has been queued up, please allow up to 5 minutes for the data to complete, then reboot your server.
+    DebugWarning: Console will print out all of the players that are imported if debug
+      mode is enabled as they import.
+    DataQueuedUp: All data has been queued up, please allow up to 5 minutes for the
+      data to complete, then reboot your server.
   Help:
-    Description: This command provides information on how to use other commands in ProjectKorra.
+    Description: This command provides information on how to use other commands in
+      ProjectKorra.
     Required: Required
     Optional: Optional
     ProperUsage: 'Proper Usage: {command1} or {command2}'
@@ -140,7 +164,13 @@ Commands:
       Water: |-
         Water is the element of change. Waterbending focuses on using your opponents own force against them. Using redirection and various dodging tactics, you can be made practically untouchable by an opponent. Waterbending provides agility, along with strong offensive skills while in or near water.
         Waterbenders can chain their abilities into combos, type /b help WaterCombos for more information.
-      Earth: Earth is the element of substance. Earthbenders share many of the same fundamental techniques as Waterbenders, but their domain is quite different and more readily accessible. Earthbenders dominate the ground and subterranean, having abilities to pull columns of rock straight up from the earth or drill their way through the mountain. They can also launch themselves through the air using pillars of rock, and will not hurt themselves assuming they land on something they can bend. The more skilled Earthbenders can even bend metal.
+      Earth: Earth is the element of substance. Earthbenders share many of the same
+        fundamental techniques as Waterbenders, but their domain is quite different
+        and more readily accessible. Earthbenders dominate the ground and subterranean,
+        having abilities to pull columns of rock straight up from the earth or drill
+        their way through the mountain. They can also launch themselves through the
+        air using pillars of rock, and will not hurt themselves assuming they land
+        on something they can bend. The more skilled Earthbenders can even bend metal.
       Fire: |-
         Fire is the element of power. Firebenders focus on destruction and incineration. Their abilities are pretty straight forward: set things on fire. They do have a bit of utility however, being able to make themselves un-ignitable, extinguish large areas, cook food in their hands, extinguish large areas, small bursts of flight, and then comes the abilities to shoot fire from your hands.
         Firebenders can chain their abilities into combos, type /b help FireCombos for more information.
@@ -150,7 +180,10 @@ Commands:
     InvalidTopic: That isn't a valid help topic. Use /bending help for more information.
     Usage: 'Usage: '
   Display:
-    Description: This command will show you all of the elements you have bound if you do not specify an element. If you do specify an element (Air, Water, Earth, Fire, or Chi), it will show you all of the available abilities of that element installed on the server.
+    Description: This command will show you all of the elements you have bound if
+      you do not specify an element. If you do specify an element (Air, Water, Earth,
+      Fire, or Chi), it will show you all of the available abilities of that element
+      installed on the server.
     NoCombosAvailable: There are no {element} combos available.
     NoPassivesAvailable: There are no {element} passives available.
     NoAbilitiesAvailable: There are no {element} abilities on this server!
@@ -165,21 +198,27 @@ Commands:
       Debug File Created as debug.txt in the ProjectKorra plugin folder.
       Put contents on pastie.org and create a bug report  on the ProjectKorra forum if you need to.
   Copy:
-    Description: This command will allow the user to copy the binds of another player either for himself or assign them to <Player> if specified.
+    Description: This command will allow the user to copy the binds of another player
+      either for himself or assign them to <Player> if specified.
     PlayerNotFound: Couldn't find player.
     SuccessfullyCopied: Your binds have been set to match {target}'s!
-    FailedToBindAll: Not all moves have been bound because you do not have the permission to.
+    FailedToBindAll: Not all moves have been bound because you do not have the permission
+      to.
     Other:
       SuccessfullyCopied: '{target1}''s binds have been set to match {target2}''s.'
   Clear:
-    Description: This command will clear the bound ability from the slot you specify (if you specify one). If you choose not to specify a slot, all of your abilities will be cleared.
+    Description: This command will clear the bound ability from the slot you specify
+      (if you specify one). If you choose not to specify a slot, all of your abilities
+      will be cleared.
     CantEditBinds: You can't edit your binds right now!
     Cleared: Your bound abilities have been cleared.
     WrongNumber: The slot must be an integer between 1 and 9.
     ClearedSlot: 'You have cleared slot #{slot}.'
     AlreadyEmpty: That slot was is already empty.
   Choose:
-    Description: This command will allow the user to choose a player either for himself or <Player> if specified. This command can only be used once per player unless they have permission to rechoose their element.
+    Description: This command will allow the user to choose a player either for himself
+      or <Player> if specified. This command can only be used once per player unless
+      they have permission to rechoose their element.
     InvalidElement: That is not a valid element.
     PlayerNotFound: Could not find player.
     SuccessfullyChosenCFW: You are now a {element}.
@@ -205,7 +244,9 @@ Commands:
     NoElementAE: You are not an {element}!
     NoSubElement: You don't have access to {subelement}!
   Add:
-    Description: This command will allow the user to add an element to the targeted <Player>, or themselves if the target is not specified. This command is typically reserved for server administrators.
+    Description: This command will allow the user to add an element to the targeted
+      <Player>, or themselves if the target is not specified. This command is typically
+      reserved for server administrators.
     SuccessfullyAddedCFW: You are now also a {element}.
     SuccessfullyAddedAE: You are now also an {element}.
     PlayerNotFound: That player could not be found.
@@ -223,10 +264,19 @@ DeathMessages:
 Abilities:
   Avatar:
     AvatarState:
-      Description: The signature ability of the Avatar, this is a toggle. Left click to activate to become nearly unstoppable. While in the Avatar State, the user takes severely reduced damage from all sources, regenerates health rapidly, and is granted extreme speed. Nearly all abilities are incredibly amplified in this state. Additionally, AirShield and FireJet become toggle-able abilities and last until you deactivate them or the Avatar State. Left click again with the Avatar State selected to deactivate it.
+      Description: The signature ability of the Avatar, this is a toggle. Left click
+        to activate to become nearly unstoppable. While in the Avatar State, the user
+        takes severely reduced damage from all sources, regenerates health rapidly,
+        and is granted extreme speed. Nearly all abilities are incredibly amplified
+        in this state. Additionally, AirShield and FireJet become toggle-able abilities
+        and last until you deactivate them or the Avatar State. Left click again with
+        the Avatar State selected to deactivate it.
   Air:
     AirBlast:
-      Description: AirBlast is the most fundamental bending technique of an airbender. It allows the bender to be extremely agile and possess great mobility, but also has many utility options, such as cooling lava, opening doors and flicking levers.
+      Description: AirBlast is the most fundamental bending technique of an airbender.
+        It allows the bender to be extremely agile and possess great mobility, but
+        also has many utility options, such as cooling lava, opening doors and flicking
+        levers.
       Instructions: |2-
 
         (Push) Left click while aiming at an entity to push them back.
@@ -235,10 +285,17 @@ Abilities:
       HorizontalVelocityDeath: '{victim} experienced kinetic damage by {attacker}''s
         {ability}'
     AirBubble:
-      Description: To use, the bender must hold down sneak. All water around the user in a small bubble will vanish, replacing itself once the user either gets too far away or selects a different ability.
-      Instructions: Hold sneak when in range of water to push the water back and create an air bubble.
+      Description: To use, the bender must hold down sneak. All water around the user
+        in a small bubble will vanish, replacing itself once the user either gets
+        too far away or selects a different ability.
+      Instructions: Hold sneak when in range of water to push the water back and create
+        an air bubble.
     AirBurst:
-      Description: AirBurst is one of the most powerful abilities in the airbender's arsenal. It allows the bender to create space between them and whoever is close to them. AirBurst is extremely useful when you're surrounded by mobs, of if you're low in health and need to escape. It can also be useful for confusing your target also.
+      Description: AirBurst is one of the most powerful abilities in the airbender's
+        arsenal. It allows the bender to create space between them and whoever is
+        close to them. AirBurst is extremely useful when you're surrounded by mobs,
+        of if you're low in health and need to escape. It can also be useful for confusing
+        your target also.
       Instructions: |2-
 
         (Sphere) Hold sneak until particles appear and then release shift to create air that expands outwards, pushing entities back. If you fall from great height while you are on this slot, the burst will automatically activate.
@@ -247,19 +304,34 @@ Abilities:
       HorizontalVelocityDeath: '{victim} experienced kinetic damage by {attacker}''s
         {ability}'
     AirScooter:
-      Description: AirScooter is a fast means of transportation. It can be used to escape from enemies or confuse them by using air scooter around them.
-      Instructions: Sprint, jump, and left click while in the air to activate air scooter. You will then move forward in the direction you're looking.
+      Description: AirScooter is a fast means of transportation. It can be used to
+        escape from enemies or confuse them by using air scooter around them.
+      Instructions: Sprint, jump, and left click while in the air to activate air
+        scooter. You will then move forward in the direction you're looking.
     Tornado:
-      Description: Tornado is one of the most powerful and advanced abilities that an Airbender knows. If the tornado meets a player or mob, it will push them around. Tornado can also be used to push back projectiles and used for mobility. Use a tornado directly under you to propel yourself upwards.
+      Description: Tornado is one of the most powerful and advanced abilities that
+        an Airbender knows. If the tornado meets a player or mob, it will push them
+        around. Tornado can also be used to push back projectiles and used for mobility.
+        Use a tornado directly under you to propel yourself upwards.
       Instructions: Hold sneak and a tornado will form gradually wherever you look.
     AirShield:
-      Description: Air Shield is one of the most powerful defensive techniques in existence. This ability is mainly used when you are low health and need protection. It's also useful when you're surrounded by mobs.
-      Instructions: Hold sneak and a shield of air will form around you, blocking projectiles and pushing entities back.
+      Description: Air Shield is one of the most powerful defensive techniques in
+        existence. This ability is mainly used when you are low health and need protection.
+        It's also useful when you're surrounded by mobs.
+      Instructions: Hold sneak and a shield of air will form around you, blocking
+        projectiles and pushing entities back.
     AirSpout:
-      Description: This ability gives the airbender limited sustained levitation. It allows an airbender to gain a height advantage to escape from mobs, players or just to dodge from attacks. This ability is also useful for building as it allows you to reach great heights.
-      Instructions: Left click to activate a spout beneath you and hold spacebar to go higher. If you wish to go lower, simply hold sneak. To disable this ability, left click once again.
+      Description: This ability gives the airbender limited sustained levitation.
+        It allows an airbender to gain a height advantage to escape from mobs, players
+        or just to dodge from attacks. This ability is also useful for building as
+        it allows you to reach great heights.
+      Instructions: Left click to activate a spout beneath you and hold spacebar to
+        go higher. If you wish to go lower, simply hold sneak. To disable this ability,
+        left click once again.
     AirSuction:
-      Description: AirSuction is a basic ability that allows you to manipulation an entity's movement. It can be used to bring someone back to you when they're running away, or even to get yourself to great heights.
+      Description: AirSuction is a basic ability that allows you to manipulation an
+        entity's movement. It can be used to bring someone back to you when they're
+        running away, or even to get yourself to great heights.
       Instructions: |2-
 
         (Pull) Left click while aiming at a target to pull them towards you.
@@ -267,40 +339,61 @@ Abilities:
       HorizontalVelocityDeath: '{victim} experienced kinetic damage by {attacker}''s
         {ability}'
     AirSwipe:
-      Description: AirSwipe is the most commonly used damage ability in an airbender's arsenal. An arc of air will flow from you towards the direction you're facing, cutting and pushing back anything in its path. This ability will extinguish fires, cool lava, and cut things like grass, mushrooms, and flowers.
+      Description: AirSwipe is the most commonly used damage ability in an airbender's
+        arsenal. An arc of air will flow from you towards the direction you're facing,
+        cutting and pushing back anything in its path. This ability will extinguish
+        fires, cool lava, and cut things like grass, mushrooms, and flowers.
       Instructions: |2-
 
         (Uncharged) Simply left click to send an air swipe out that will damage targets that it comes into contact with.
         (Charged) Hold sneak until particles appear, then release sneak to send a more powerful air swipe out that damages entity's that it comes into contact with.
       DeathMessage: '{victim} was struck by {attacker}''s {ability}'
     Flight:
-      Description: Flight is one of the most advanced airbending abilities there is. It's used to escape from players or mobs or to confuse your enemy by flying around them, making you extremely hard to hit.
+      Description: Flight is one of the most advanced airbending abilities there is.
+        It's used to escape from players or mobs or to confuse your enemy by flying
+        around them, making you extremely hard to hit.
       Instructions: |2-
 
         (Fly) Jump in the air and hold sneak to fly in the direction that you're looking.
         (Hover) While flying with this ability, left click to hover in the air. Left click again to disable hovering
     Suffocate:
-      Description: This ability is one of the most dangerous abilities an Airbender possesses. Although it is difficult to perform, it's extremely deadly once the ability starts, making it difficult for enemies to escape.
-      Instructions: Hold sneak while looking at a target to begin suffocating them. If the target goes out of range, you get damaged, or you release sneak, the ability will cancel.
+      Description: This ability is one of the most dangerous abilities an Airbender
+        possesses. Although it is difficult to perform, it's extremely deadly once
+        the ability starts, making it difficult for enemies to escape.
+      Instructions: Hold sneak while looking at a target to begin suffocating them.
+        If the target goes out of range, you get damaged, or you release sneak, the
+        ability will cancel.
       DeathMessage: '{victim} was asphyxiated by {attacker}''s {ability}'
     Combo:
       Twister:
-        Description: Create a cyclone of air that travels along the ground grabbing nearby entities.
+        Description: Create a cyclone of air that travels along the ground grabbing
+          nearby entities.
       AirStream:
-        Description: Control a large stream of air that grabs onto enemies allowing you to direct them temporarily.
+        Description: Control a large stream of air that grabs onto enemies allowing
+          you to direct them temporarily.
       AirSweep:
-        Description: Sweep the air in front of you hitting multiple enemies, causing moderate damage and a large knockback. The radius and direction of AirSweep is controlled by moving your mouse in a sweeping motion. For example, if you want to AirSweep upward, then move your mouse upward right after you left click AirBurst
+        Description: Sweep the air in front of you hitting multiple enemies, causing
+          moderate damage and a large knockback. The radius and direction of AirSweep
+          is controlled by moving your mouse in a sweeping motion. For example, if
+          you want to AirSweep upward, then move your mouse upward right after you
+          left click AirBurst
         DeathMessage: '{victim} was swept away by {attacker}''s {ability}'
     Passive:
       AirAgility:
-        Description: AirAgility is a passive ability which enables airbenders to run faster and jump higher.
+        Description: AirAgility is a passive ability which enables airbenders to run
+          faster and jump higher.
       AirSaturation:
-        Description: AirSaturation is a passive ability which causes airbenders' hunger to deplete at a slower rate.
+        Description: AirSaturation is a passive ability which causes airbenders' hunger
+          to deplete at a slower rate.
       GracefulDescent:
-        Description: GracefulDescent is a passive ability which allows airbenders to make a gentle landing, negating all fall damage on any surface.
+        Description: GracefulDescent is a passive ability which allows airbenders
+          to make a gentle landing, negating all fall damage on any surface.
   Water:
     Bloodbending:
-      Description: Bloodbending is one of the most unique bending abilities that existed and it has immense power, which is why it was made illegal in the Avatar universe. People who are capable of bloodbending are immune to your technique, and you are immune to theirs.
+      Description: Bloodbending is one of the most unique bending abilities that existed
+        and it has immense power, which is why it was made illegal in the Avatar universe.
+        People who are capable of bloodbending are immune to your technique, and you
+        are immune to theirs.
       Instructions: |2-
 
         (Control) Hold sneak while looking at an entity to bloodbend them. You will then be controlling the entity, making them move wherever you look.
@@ -309,31 +402,51 @@ Abilities:
       HorizontalVelocityDeath: '{victim} experienced kinetic damage by {attacker}''s
         {ability}'
     HealingWaters:
-      Description: HealingWaters is an advanced waterbender skill that allows the player to heal themselves or others from the damage they've taken. If healing another player, you must continue to look at them to channel the ability.
-      Instructions: Hold sneak to begin healing yourself or right click while sneaking to begin healing another player. You or the player must be in water and damaged for this ability to work, or you need to have water bottles in your inventory.
+      Description: HealingWaters is an advanced waterbender skill that allows the
+        player to heal themselves or others from the damage they've taken. If healing
+        another player, you must continue to look at them to channel the ability.
+      Instructions: Hold sneak to begin healing yourself or right click while sneaking
+        to begin healing another player. You or the player must be in water and damaged
+        for this ability to work, or you need to have water bottles in your inventory.
     IceBlast:
-      Description: IceBlast is a powerful ability that deals damage to entities it comes into contact with. Because IceBlast's travel time is pretty quick, it's increddibly useful for finishing off low health targets.
-      Instructions: Tap sneak while looking at an ice block and then click in a direction to send an ice blast in that direction.
+      Description: IceBlast is a powerful ability that deals damage to entities it
+        comes into contact with. Because IceBlast's travel time is pretty quick, it's
+        increddibly useful for finishing off low health targets.
+      Instructions: Tap sneak while looking at an ice block and then click in a direction
+        to send an ice blast in that direction.
       DeathMessage: '{victim} was shattered by {attacker}''s {ability}'
     IceSpike:
-      Description: This ability offers a powerful ice utility for Waterbenders. It can be used to fire an ice blast or raise an ice spike. If the ice blast or ice spike comes into contact with another entity, it will give them slowness and deal some damage to them..
+      Description: This ability offers a powerful ice utility for Waterbenders. It
+        can be used to fire an ice blast or raise an ice spike. If the ice blast or
+        ice spike comes into contact with another entity, it will give them slowness
+        and deal some damage to them..
       Instructions: |2-
 
         (Blast) Tap sneak on a water source and then left click in a direction to fire an ice blast in a direction. Additionally, you can left click to manipulate the ice blast while it's in the air to change the direction of the blast.
         (Spike) While in range of ice, tap sneak to raise ice pillars from the ice. If a player is caught in these ice pillars they will be propelled into the air. You cannot be looking at ice or water or this feature will not activate. Alternatively, you can left click an ice block to raise a single pilar of ice.
       DeathMessage: '{victim} was impaled by {attacker}''s {ability}'
     OctopusForm:
-      Description: OctopusForm is one of the most advanced abilities in a waterbender's aresenal. It has the possibility of doing high damage to anyone it comes into contact with.
-      Instructions: Left click a water source and then hold sneak to form a set of water tentacles. This ability will channel as long as you are holding sneak. Additionally, if you left click this ability will whip targets you're facing dealing damage and knockback, if they're in range.
+      Description: OctopusForm is one of the most advanced abilities in a waterbender's
+        aresenal. It has the possibility of doing high damage to anyone it comes into
+        contact with.
+      Instructions: Left click a water source and then hold sneak to form a set of
+        water tentacles. This ability will channel as long as you are holding sneak.
+        Additionally, if you left click this ability will whip targets you're facing
+        dealing damage and knockback, if they're in range.
       DeathMessage: '{victim} was slapped by {attacker}''s {ability}'
     PhaseChange:
-      Description: PhaseChange is one of the most useful utility moves that a waterbender possess. This ability is better used when fighting, allowing you to create a platform on water that you can fight on and being territorial by manipulating your environment. It's also useful for travelling across seas.
+      Description: PhaseChange is one of the most useful utility moves that a waterbender
+        possess. This ability is better used when fighting, allowing you to create
+        a platform on water that you can fight on and being territorial by manipulating
+        your environment. It's also useful for travelling across seas.
       Instructions: |2-
 
         (Melt) To melt ice, hold sneak while looking at an ice block.
         (Freeze) To freeze water and turn it into ice, simply left click at water. This ice will stay so long as you are in range, otherwise it will revert back to water. This only freezes the top layer of ice.
     Surge:
-      Description: Surge offers great utility and is one of the most important defence abilities for waterbender's. It can be used to push entities back, used to push yourself in a direction, trap entities and protect yourself with a shield.
+      Description: Surge offers great utility and is one of the most important defence
+        abilities for waterbender's. It can be used to push entities back, used to
+        push yourself in a direction, trap entities and protect yourself with a shield.
       Instructions: |2-
 
         (Shield) Left click on a water source and then hold sneak while looking up to create a water shield that will move wherever you look. Additionally, you can left click to turn this shield into ice. If you let go of sneak at any point, this ability will cancel.
@@ -348,7 +461,10 @@ Abilities:
         (Wave) Left click a water source and hold sneak to form a torrent around you. Then, release sneak to send a wave of water expanding outwards every direction that will push entities back.
       DeathMessage: '{victim} was taken down by {attacker}''s {ability}'
     WaterArms:
-      Description: One of the most diverse moves in a Waterbender's arsenal, this move creates tendrils of water from the players arms to emulate their actual arms. It has the potential to do a variety of things that can either do mass amounts of damage, or used for mobility.
+      Description: One of the most diverse moves in a Waterbender's arsenal, this
+        move creates tendrils of water from the players arms to emulate their actual
+        arms. It has the potential to do a variety of things that can either do mass
+        amounts of damage, or used for mobility.
       Instructions: |-
         To activate this ability, tap sneak at a water source. Additionally, to de-activate this ability, hold sneak and left click.
         (Pull) Left click at a target and your arms will expand outwards, pulling entities towards you if they're in range.
@@ -365,59 +481,110 @@ Abilities:
       Spear:
         DeathMessage: '{victim} was speared to death by {attacker}''s {ability}'
     WaterBubble:
-      Description: WaterBubble is a basic waterbending ability that allows the bender to create air pockets under water. This is increddibly useful for building under water.
-      Instructions: Hold sneak when in range of water to push the water back and create a water bubble.
+      Description: WaterBubble is a basic waterbending ability that allows the bender
+        to create air pockets under water. This is increddibly useful for building
+        under water.
+      Instructions: Hold sneak when in range of water to push the water back and create
+        a water bubble.
     WaterManipulation:
-      Description: WaterManipulation is a fundamental ability for waterbenders. Although it is a basic move, it allows for fast damage due to its rapid fire nature, which is incredibly useful when wanting to finish off low health targets.
-      Instructions: Tap sneak on a water source and left click to send a water manipulation to the point that you clicked. Additionally, you can left click again to change the direction of this move. This includes other players' WaterManipulations.
+      Description: WaterManipulation is a fundamental ability for waterbenders. Although
+        it is a basic move, it allows for fast damage due to its rapid fire nature,
+        which is incredibly useful when wanting to finish off low health targets.
+      Instructions: Tap sneak on a water source and left click to send a water manipulation
+        to the point that you clicked. Additionally, you can left click again to change
+        the direction of this move. This includes other players' WaterManipulations.
       DeathMessage: '{victim} was taken down by {attacker}''s {ability}'
     WaterSpout:
-      Description: This ability provides a Waterbender with a means of transportation. It's the most useful mobility move that a waterbender possesses and is great for chasing down targets or escaping.
+      Description: This ability provides a Waterbender with a means of transportation.
+        It's the most useful mobility move that a waterbender possesses and is great
+        for chasing down targets or escaping.
       Instructions: |2-
 
         (Spout) Left click to activate a spout beneath you and hold spacebar to go higher. If you wish to go lower, simply hold sneak. To disable this ability, left click once again.
         (Wave) Left click a water source and hold sneak until water has formed around you. Then, release sneak to ride a water wave that transports you in the direction you're looking. To cancel this water wave, left click with WaterSpout.
     Combo:
       IceBullet:
-        Description: Using a large cavern of ice, you can punch ice shards at your opponent causing moderate damage. To rapid fire, you must alternate between Left clicking and right clicking with IceBlast.
+        Description: Using a large cavern of ice, you can punch ice shards at your
+          opponent causing moderate damage. To rapid fire, you must alternate between
+          Left clicking and right clicking with IceBlast.
         DeathMessage: '{victim}''s heart was frozen by {attacker}''s {ability}'
       IceWave:
-        Description: PhaseChange your WaterWave into an IceWave that freezes and damages enemies.
+        Description: PhaseChange your WaterWave into an IceWave that freezes and damages
+          enemies.
         DeathMessage: '{victim} was frozen solid by {attacker}''s {ability}'
     Passive:
       FastSwim:
-        Description: FastSwim is a passive ability for waterbenders allowing them to travel quickly through the water. Simple hold shift while underwater to propel yourself forward.
+        Description: FastSwim is a passive ability for waterbenders allowing them
+          to travel quickly through the water. Simple hold shift while underwater
+          to propel yourself forward.
       Hydrosink:
-        Description: Hydrosink is a passive ability for waterbenders enabling them to softly land on any waterbendable surface, cancelling all damage.
+        Description: Hydrosink is a passive ability for waterbenders enabling them
+          to softly land on any waterbendable surface, cancelling all damage.
   Earth:
     Catapult:
-      Description: Catapult is an advanced earthbending ability that allows you to forcefully push yourself using earth, reaching great heights. This technique is best used when travelling, but it can also be used to quickly escape a battle.
-      Instructions: Hold sneak until you see particles and hear a sound and then release to be propelled in the direction you're looking. Additionally, you can left-click to be propelled with less power.
+      Description: Catapult is an advanced earthbending ability that allows you to
+        forcefully push yourself using earth, reaching great heights. This technique
+        is best used when travelling, but it can also be used to quickly escape a
+        battle.
+      Instructions: Hold sneak until you see particles and hear a sound and then release
+        to be propelled in the direction you're looking. Additionally, you can left-click
+        to be propelled with less power.
     Collapse:
-      Description: This ability is a basic earthbending ability that allows the earthbender great utility. It allows them to control earth blocks by compressing earth. Players and mobs can be trapped and killed if earth is collapsed and they're stuck inside it, meaning this move is deadly when in cave systems.
-      Instructions: Left click an earthbendable block. If there's space under that block, it will be collapsed. Alternatively, you can tap sneak to collapse multiple blocks at a time.
+      Description: This ability is a basic earthbending ability that allows the earthbender
+        great utility. It allows them to control earth blocks by compressing earth.
+        Players and mobs can be trapped and killed if earth is collapsed and they're
+        stuck inside it, meaning this move is deadly when in cave systems.
+      Instructions: Left click an earthbendable block. If there's space under that
+        block, it will be collapsed. Alternatively, you can tap sneak to collapse
+        multiple blocks at a time.
       DeathMessage: '{victim} was suffocated by {attacker}''s {ability}'
     EarthArmor:
-      Description: This ability encases the Earthbender in armor, giving them protection. It is a fundamental earthbending technique that's used to survive longer in battles.
-      Instructions: Tap sneak while looking at an earthbendable block to bring those blocks towards you, forming earth armor. This ability will give you extra hearts and will be removed once those extra hearts are gone. You can disable this ability by holding sneak and left clicking with EarthArmor.
+      Description: This ability encases the Earthbender in armor, giving them protection.
+        It is a fundamental earthbending technique that's used to survive longer in
+        battles.
+      Instructions: Tap sneak while looking at an earthbendable block to bring those
+        blocks towards you, forming earth armor. This ability will give you extra
+        hearts and will be removed once those extra hearts are gone. You can disable
+        this ability by holding sneak and left clicking with EarthArmor.
     EarthBlast:
-      Description: EarthBlast is a basic yet fundamental earthbending ability. It allows you to deal rapid fire damage to your target to finish low health targets off or deal burst damage to them. Although it can be used at long range, it's potential is greater in close ranged comat.
-      Instructions: Tap sneak at an earthbendable block and then left click in a direction to send an earthblast. Additionally, you can left click again to change the direction of the earthblast. You can also redirect other earthbender's earth blast by left clicking. If the earth blast hits an entity it will deal damage and knockback.
+      Description: EarthBlast is a basic yet fundamental earthbending ability. It
+        allows you to deal rapid fire damage to your target to finish low health targets
+        off or deal burst damage to them. Although it can be used at long range, it's
+        potential is greater in close ranged comat.
+      Instructions: Tap sneak at an earthbendable block and then left click in a direction
+        to send an earthblast. Additionally, you can left click again to change the
+        direction of the earthblast. You can also redirect other earthbender's earth
+        blast by left clicking. If the earth blast hits an entity it will deal damage
+        and knockback.
       DeathMessage: '{victim} was broken apart by {attacker}''s {ability}'
     EarthGrab:
-      Description: EarthGrab is one of the best defence abilities in an earthbender's aresenal. It allows you to trap someone who is running away so that you can catch up to someone, or quickly create a dome to protect yourself from incomming attacks. Although this ability is basic, it requires fast reactions to reach its full potential.
+      Description: EarthGrab is one of the best defence abilities in an earthbender's
+        aresenal. It allows you to trap someone who is running away so that you can
+        catch up to someone, or quickly create a dome to protect yourself from incomming
+        attacks. Although this ability is basic, it requires fast reactions to reach
+        its full potential.
       Instructions: |2-
 
         (Grab) To grab an entity, hold sneak and left click in the direction of the target. Earth will expand out and create an earth dome around the target, trapping them.
         (Dome) To encase yourself in an earth dome, simply left click at an earthbendable block under you.
     EarthTunnel:
-      Description: Earth Tunnel is a completely utility ability for earthbenders. It allows you to dig a hole that lowers players down while you continue the ability, create fast escape routes or just great for making your own cave systems.
-      Instructions: Hold sneak while looking at an earthbendable block to tunnel the blocks away. If you release sneak or look at a block that isn't earthbendable, the ability will cancel.
+      Description: Earth Tunnel is a completely utility ability for earthbenders.
+        It allows you to dig a hole that lowers players down while you continue the
+        ability, create fast escape routes or just great for making your own cave
+        systems.
+      Instructions: Hold sneak while looking at an earthbendable block to tunnel the
+        blocks away. If you release sneak or look at a block that isn't earthbendable,
+        the ability will cancel.
     Extraction:
-      Description: This ability allows metalbenders to extract the minerals from ore blocks. This ability is extremely useful for gathering materials as it has a chance to extract double or tripple the ores.
-      Instructions: Tap sneak while looking at an earthbendable ore to extract the ore.
+      Description: This ability allows metalbenders to extract the minerals from ore
+        blocks. This ability is extremely useful for gathering materials as it has
+        a chance to extract double or tripple the ores.
+      Instructions: Tap sneak while looking at an earthbendable ore to extract the
+        ore.
     LavaFlow:
-      Description: LavaFlow is an extremely advanced, and dangerous ability. It allows the earthbender to create pools of lava around them, or to solidify existing lava. This ability can be deadly when comboed with EarthGrab.
+      Description: LavaFlow is an extremely advanced, and dangerous ability. It allows
+        the earthbender to create pools of lava around them, or to solidify existing
+        lava. This ability can be deadly when comboed with EarthGrab.
       Instructions: |2-
 
         (Flow) Hold sneak and lava will begin expanding outwards. Once the lava has stopped expanding, you can release sneak. Additionally, if you tap sneak the lava you created will revert back to the earthbendable block.
@@ -425,70 +592,125 @@ Abilities:
         (Solidify) Left click on lava to solidify it, turning it to stone.
       DeathMessage: '{victim} was caught in by {attacker}''s {ability}'
     EarthSmash:
-      Description: EarthSmash is an advanced earthbending technique that has lots of utility. It can be comboed with abilities such as Shockwave, but also be used for mobility and to produce high damage. EarthSmash is great for escaping when at low health.
+      Description: EarthSmash is an advanced earthbending technique that has lots
+        of utility. It can be comboed with abilities such as Shockwave, but also be
+        used for mobility and to produce high damage. EarthSmash is great for escaping
+        when at low health.
       Instructions: |2-
 
         (Smash) Hold sneak until particles appear, then release sneak while looking at an earthbendable block which will raise an earth boulder. Then, hold sneak while looking at this boulder to control it. Left click to send the bounder in the direction you're facing, damanging entities and knocking them back.
         (Ride) After you have created an earth boulder, hold sneak and right click on the boulder to ride it. You will now ride the boulder in whatever direction you look. Additionally, you can ride the boulder by going on top of it and holding sneak. If you come into contact with an entity while riding the boulder, it will drag them along with you. If you left go of sneak, the ability will cancel.
       DeathMessage: '{victim} was crushed by {attacker}''s {ability}'
     MetalClips:
-      Description: MetalClips is an advanced metalbending ability that allows you to take control of a fight. It gives the metalbender the ability to control an entity, create space between them and a player and even added utility.
+      Description: MetalClips is an advanced metalbending ability that allows you
+        to take control of a fight. It gives the metalbender the ability to control
+        an entity, create space between them and a player and even added utility.
       Instructions: |2-
 
         (Clips) This ability requires iron ingots in your inventory. Left click to throw an ingot at an entity, dealing damage to them. This ingot will form into armor, wrapping itself around the entity. Once enough armor pieces are around the entity, you can then control them. To control them, hold sneak while looking at them and then they will be moved in the direction you look. Additionally, you can release sneak to throw them in the direction you're looking.
         (Magnet) Hold sneak with this ability to pull iron ingots towards you.
       DeathMessage: '{victim} was too slow for {attacker}''s {ability}'
     RaiseEarth:
-      Description: RaiseEarth is a basic yet useful utility move. It has the potential to allow the earthbender to create great escape routes by raising earth underneath them to propell themselves upwards. It also offers synergy with other moves, such as shockwave. RaiseEarth is often used to block incoming abilities.
+      Description: RaiseEarth is a basic yet useful utility move. It has the potential
+        to allow the earthbender to create great escape routes by raising earth underneath
+        them to propell themselves upwards. It also offers synergy with other moves,
+        such as shockwave. RaiseEarth is often used to block incoming abilities.
       Instructions: |2-
 
         (Pillar) To raise a pillar of earth, left click on an earthbendable block.
         (Wall) To raise a wall of earth, tap sneak on an earthbendable block.
     Shockwave:
-      Description: Shockwave is one of the most powerful earthbending abilitis. It allows the earthbender to deal mass damage to everyone around them and knock them back. It's extremely useful when fighting more than one target or if you're surrounded by mobs.
-      Instructions: Hold sneak until you see particles and then release sneak to send a wave of earth outwards, damaging and knocking entities back that it collides with. Additionally, instead of releasing sneak you can send a cone of earth forwards by left clicking. If you are on the Shockwave slot and you fall from a great height, your Shockwave will automatically activate.
+      Description: Shockwave is one of the most powerful earthbending abilitis. It
+        allows the earthbender to deal mass damage to everyone around them and knock
+        them back. It's extremely useful when fighting more than one target or if
+        you're surrounded by mobs.
+      Instructions: Hold sneak until you see particles and then release sneak to send
+        a wave of earth outwards, damaging and knocking entities back that it collides
+        with. Additionally, instead of releasing sneak you can send a cone of earth
+        forwards by left clicking. If you are on the Shockwave slot and you fall from
+        a great height, your Shockwave will automatically activate.
       DeathMessage: '{victim} was blown away by {attacker}''s {ability}'
     SandSpout:
-      Description: SandSpout is a core move for travelling, evasion, and mobility for sandbenders. It's extremely useful to gain a height advantage.
+      Description: SandSpout is a core move for travelling, evasion, and mobility
+        for sandbenders. It's extremely useful to gain a height advantage.
     Sandspout:
-      Instructions: This ability will only work while you are on a sand block. Simply left click to create a sand spout underneath you. Then, hold spacebar to raise yourself upwards or hold sneak to go downwards. Left click again to disable this ability.
+      Instructions: This ability will only work while you are on a sand block. Simply
+        left click to create a sand spout underneath you. Then, hold spacebar to raise
+        yourself upwards or hold sneak to go downwards. Left click again to disable
+        this ability.
     Tremorsense:
-      Description: This is a pure utility ability for earthbenders. If you are in an area of low-light and are standing on top of an earthbendable block, this ability will automatically turn that block into glowstone, visible *only by you*. If you lose contact with a bendable block, the light will go out as you have lost contact with the earth and cannot 'see' until you can touch earth again. Additionally, if you click with this ability selected, smoke will appear above nearby earth with pockets of air beneath them.
+      Description: This is a pure utility ability for earthbenders. If you are in
+        an area of low-light and are standing on top of an earthbendable block, this
+        ability will automatically turn that block into glowstone, visible *only by
+        you*. If you lose contact with a bendable block, the light will go out as
+        you have lost contact with the earth and cannot 'see' until you can touch
+        earth again. Additionally, if you click with this ability selected, smoke
+        will appear above nearby earth with pockets of air beneath them.
       Instructions: Simply left click while on an earthbendable block.
     Passive:
       DensityShift:
-        Description: DensityShift is a passive ability which allows earthbenders to make a firm landing negating all fall damage on any earthbendable surface.
+        Description: DensityShift is a passive ability which allows earthbenders to
+          make a firm landing negating all fall damage on any earthbendable surface.
       FerroControl:
-        Description: FerroControl is a passive ability which allows metalbenders to simply open and close iron doors by sneaking.
+        Description: FerroControl is a passive ability which allows metalbenders to
+          simply open and close iron doors by sneaking.
   Fire:
     Blaze:
-      Description: Blaze is a basic firebending technique that can be extremely deadly if used right. It's useful to stop people from chasing you or to create space between you and other players..
-      Instructions: Left click to send an arc of fire in the direction you're facing that will burn entities in its path. Additionally, you can tap sneak to send a blaze all around you.
+      Description: Blaze is a basic firebending technique that can be extremely deadly
+        if used right. It's useful to stop people from chasing you or to create space
+        between you and other players..
+      Instructions: Left click to send an arc of fire in the direction you're facing
+        that will burn entities in its path. Additionally, you can tap sneak to send
+        a blaze all around you.
       DeathMessage: '{victim} was burned alive by {attacker}''s {ability}'
     Combustion:
-      Description: Combustion is a special firebending technique that's extremely deadly. It allows you to create a powerful blast to deal immense damage to players at long range.
-      Instructions: Tap sneak to send a combustion out in the direction you're looking. It will explode on impact, or you can left click to manually expload it. This deals damage to players who are in radius of the blast.
+      Description: Combustion is a special firebending technique that's extremely
+        deadly. It allows you to create a powerful blast to deal immense damage to
+        players at long range.
+      Instructions: Tap sneak to send a combustion out in the direction you're looking.
+        It will explode on impact, or you can left click to manually expload it. This
+        deals damage to players who are in radius of the blast.
       DeathMessage: '{victim} was shot down by {attacker}''s {ability}'
     FireBlast:
-      Description: FireBlast is the most fundamental bending technique of a firebender. It allows the firebender to create mass amounts of fire blasts to constantly keep damaging an entity. It's great for rapid fire successions to deal immense damage.
+      Description: FireBlast is the most fundamental bending technique of a firebender.
+        It allows the firebender to create mass amounts of fire blasts to constantly
+        keep damaging an entity. It's great for rapid fire successions to deal immense
+        damage.
       Instructions: |2-
 
         (Ball) Left click to send out a ball of fire that will deal damage and knockback entities it hits. Additionally, this ability can refuel furnace power if the blast connects with a furnace.
         (Blast) Hold sneak until you see particles and then release sneak to send out a powerful fire blast outwards. This deals damage and knocks back anyone it hits, while exploding on impact.
       DeathMessage: '{victim} was burnt by {attacker}''s {ability}'
     FireBurst:
-      Description: FireBurst is a very powerful firebending ability. FireBurst is an advanced firebending technique that has a large range and the potential to deal immense damage. It's incredibly useful when surrounded by lots of mobs, to damage them all at once.
-      Instructions: Hold sneak until you see particles and then release sneak to send out a sphere of fire expanding outwards, damaging anything it hits. Additionally, you can left click instead of releasing sneak to send the fire burst into one direction only.
+      Description: FireBurst is a very powerful firebending ability. FireBurst is
+        an advanced firebending technique that has a large range and the potential
+        to deal immense damage. It's incredibly useful when surrounded by lots of
+        mobs, to damage them all at once.
+      Instructions: Hold sneak until you see particles and then release sneak to send
+        out a sphere of fire expanding outwards, damaging anything it hits. Additionally,
+        you can left click instead of releasing sneak to send the fire burst into
+        one direction only.
       DeathMessage: '{victim} was blown apart by {attacker}''s {ability}'
     FireJet:
-      Description: FireJet is a fundamental utility move for firebenders. It allows the firebender to blast fire behind them to propel them forward, which can prevent them from taking fall damage or to escape from deadly situations.
-      Instructions: Left click to propel yourself in the direction you're looking. Additionally, left click while flying to cancel the jet.
+      Description: FireJet is a fundamental utility move for firebenders. It allows
+        the firebender to blast fire behind them to propel them forward, which can
+        prevent them from taking fall damage or to escape from deadly situations.
+      Instructions: Left click to propel yourself in the direction you're looking.
+        Additionally, left click while flying to cancel the jet.
     FireShield:
-      Description: FireShield is a basic defensive ability that allows a firebender to block projectiles or other bending abilities. It's useful while fighting off skeletons, or while trying to block bending abilities at low health.
-      Instructions: Hold sneak to create a fire shield around you that will block projectiles and other bending abilities. Additionally, left click to create a temporary fire shield. If entities step inside this fire shield, they will be ignited.
+      Description: FireShield is a basic defensive ability that allows a firebender
+        to block projectiles or other bending abilities. It's useful while fighting
+        off skeletons, or while trying to block bending abilities at low health.
+      Instructions: Hold sneak to create a fire shield around you that will block
+        projectiles and other bending abilities. Additionally, left click to create
+        a temporary fire shield. If entities step inside this fire shield, they will
+        be ignited.
       DeathMessage: '{victim} scorched theirself on {attacker}''s {ability}'
     HeatControl:
-      Description: HeatControl is a fundamental firebending technique that allows the firebender to control and manipulate heat. This ability is extremely useful for ensuring that you're protected from your own fire and fire from that of other firebenders. It's also offers utility by melting ice or cooking food.
+      Description: HeatControl is a fundamental firebending technique that allows
+        the firebender to control and manipulate heat. This ability is extremely useful
+        for ensuring that you're protected from your own fire and fire from that of
+        other firebenders. It's also offers utility by melting ice or cooking food.
       Instructions: |2-
 
         (Melt) To melt ice, simply left click while looking at ice.
@@ -496,45 +718,60 @@ Abilities:
         (Extinguish) To extinguish nearby fire or yourself, simply tap sneak.
         (Cook) To cook food, place the raw food on your HeatControl slot and hold sneak. The food will then begin to cook.
     Illumination:
-      Description: Illumination is a basic firebending technique that allows firebenders to manipulate their fire to create a light source. This ability will automatically activate when you're in low light.
+      Description: Illumination is a basic firebending technique that allows firebenders
+        to manipulate their fire to create a light source. This ability will automatically
+        activate when you're in low light.
       Instructions: Left click to enable. Additionally, left click to disable.
     Lightning:
-      Description: Lightning is an advanced firebending technique. It allows you to create lightning and manipulate it towards a target to deal immense damage.
+      Description: Lightning is an advanced firebending technique. It allows you to
+        create lightning and manipulate it towards a target to deal immense damage.
       Instructions: |2-
 
         (Lightning) Hold sneak to create lightning until particles appear, then release sneak to send lightning in the direction you're looking. This deals damage to entities that it hits and has a chance to stun them for a short duration.
         (Redirection) When someone has fired a lightning strike at you, you can hold sneak to absorb this lightning and then release sneak to fire it back.
       DeathMessage: '{victim} was electrocuted by {attacker}''s {ability}'
     WallOfFire:
-      Description: WallOfFire is an advanced firebending technique that can be used aggressively or defensively. It's incredibly useful when trying to block off opponents from chasing you or to back them into corners.
-      Instructions: Left click to create a fire wall at the location you clicked. This fire wall will damage entities that run into it and deal knockback.
+      Description: WallOfFire is an advanced firebending technique that can be used
+        aggressively or defensively. It's incredibly useful when trying to block off
+        opponents from chasing you or to back them into corners.
+      Instructions: Left click to create a fire wall at the location you clicked.
+        This fire wall will damage entities that run into it and deal knockback.
       DeathMessage: '{victim} ran into {attacker}''s {ability}'
     Combo:
       FireKick:
-        Description: A short ranged arc of fire launches from the player's feet dealing moderate damage to enemies.
+        Description: A short ranged arc of fire launches from the player's feet dealing
+          moderate damage to enemies.
         DeathMessage: '{victim} was kicked to the floor with flames by {attacker}''s
           {ability}'
       FireSpin:
-        Description: A circular array of fire that causes damage and massive knockback to nearby enemies.
+        Description: A circular array of fire that causes damage and massive knockback
+          to nearby enemies.
         DeathMessage: '{victim} was caught in {attacker}''s {ability} inferno'
       JetBlaze:
         Description: Damages and burns all enemies in the proximity of your FireJet.
         DeathMessage: '{victim} was blasted away by {attacker}''s {ability}'
       JetBlast:
-        Description: Create an explosive blast that propels your FireJet at higher speeds.
+        Description: Create an explosive blast that propels your FireJet at higher
+          speeds.
       FireWheel:
-        Description: A high-speed wheel of fire that travels along the ground for long distances dealing high damage.
+        Description: A high-speed wheel of fire that travels along the ground for
+          long distances dealing high damage.
         DeathMessage: '{victim} was incinerated by {attacker}''s {ability}'
   Chi:
     WarriorStance:
-      Description: WariorStance is an advanced chiblocker technique that gives the chiblocker increased damage but makes them a tad more vulnerable. This ability is useful when finishing off weak targets.
-      Instructions: Left click to activate the warrior stance mode. Additionally, left click to disable it.
+      Description: WariorStance is an advanced chiblocker technique that gives the
+        chiblocker increased damage but makes them a tad more vulnerable. This ability
+        is useful when finishing off weak targets.
+      Instructions: Left click to activate the warrior stance mode. Additionally,
+        left click to disable it.
     QuickStrike:
-      Description: QuickStrike enables a chiblocker to quickly strike an enemy, potentially blocking their chi.
+      Description: QuickStrike enables a chiblocker to quickly strike an enemy, potentially
+        blocking their chi.
       Instructions: Left click on a player to quick strike them.
       DeathMessage: '{victim} was struck down by {attacker}''s {ability}'
     SwiftKick:
-      Description: SwiftKick allows a chiblocker to swiftly kick an enemy, potentially blocking their chi.
+      Description: SwiftKick allows a chiblocker to swiftly kick an enemy, potentially
+        blocking their chi.
       Instructions: Jump and left click on a player to swift kick them.
       DeathMessage: '{victim} was kicked to the floor by {attacker}''s {ability}'
     Combo:
@@ -542,8 +779,11 @@ Abilities:
         Description: Immobilizes the opponent for several seconds.
     Passive:
       ChiAgility:
-        Description: ChiAgility is a passive ability which enables chiblockers to run faster and jump higher.
+        Description: ChiAgility is a passive ability which enables chiblockers to
+          run faster and jump higher.
       ChiSaturation:
-        Description: ChiSaturation is a passive ability which causes chiblockers' hunger to deplete at a slower rate.
+        Description: ChiSaturation is a passive ability which causes chiblockers'
+          hunger to deplete at a slower rate.
       Acrobatics:
-        Description: Acrobatics is a passive ability which negates all fall damage based on a percent chance.
+        Description: Acrobatics is a passive ability which negates all fall damage
+          based on a percent chance.

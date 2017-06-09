@@ -1,27 +1,78 @@
-inventory: {}
-health: 60.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 44.33333206176758
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.9419986
-armor_contents: {}
+exhaustion: 0.16100025
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: JUMP
+    type: WATER_BREATHING
     level: 1
-    duration: 197408
+    duration: 199568
   '1':
-    type: INCREASE_DAMAGE
-    level: 4
-    duration: 185399
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199568
   '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 185399
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 199568
   '3':
+    type: JUMP
+    level: 60
+    duration: 199284
+  '4':
+    type: FAST_DIGGING
+    level: 127
+    duration: 199339
+  '5':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199568
+  '6':
+    type: NIGHT_VISION
+    level: 1
+    duration: 199568
+  '7':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199568
+  '8':
     type: SPEED
-    level: 2
-    duration: 197337
+    level: 50
+    duration: 199305
+  '9':
+    type: REGENERATION
+    level: 1
+    duration: 199568
