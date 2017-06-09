@@ -23,7 +23,8 @@
                 "/haste 0-4",
                 "/lightning",
                 "/ma",
-                "/thru"
+                "/thru",
+                "/modifyspeed (player)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
