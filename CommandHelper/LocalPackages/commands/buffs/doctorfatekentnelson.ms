@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NzE3MzA1NDU3MDksInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzY0MmRmZjc3MTgyNWI0OWZlNjNlZDYzNjUxYmM0Zjc1YjY4ZWUzNWI2YjlhNDUxODAxN2FlZTU3NzZlODgifX19',
             'trail': '',
             'op': false',
-            'speech': "I am Kent Nelson, a.k.a. Doctor Fate.",
+            'speech': "Lord Of Order, Weilder of the Helmet Of Nabu",
             'powers': array(
                 "/buff",
                 "/fly",
