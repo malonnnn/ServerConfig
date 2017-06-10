@@ -14,7 +14,12 @@
                 "/jump 0-3",
                 "/run 0-1",
                 "/haste 0-1",
-                "/fly"
+                "/fly",
+                "/cast emoksemocebadlofdnilb",
+                "/cast erifnrubnordlaucelbbub",
+                "/cast dlocdniwwolb",
+                "/cast etaercsnoisulli",
+                "/cast tekcajtiarts"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true",
