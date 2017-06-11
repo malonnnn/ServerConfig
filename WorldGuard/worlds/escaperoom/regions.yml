@@ -435,7 +435,7 @@ regions:
         priority: 1
     room5-stonedoor:
         parent: room5
-        min: {x: -55.0, y: 85.0, z: 43.0}
+        min: {x: -56.0, y: 85.0, z: 43.0}
         max: {x: -51.0, y: 86.0, z: 43.0}
         members: {}
         flags: {block-break: allow, interact: allow, block-place-group: MEMBERS, pistons: allow,
@@ -472,7 +472,7 @@ regions:
         min: {x: 60.0, y: 113.0, z: 13.0}
         max: {x: 75.0, y: 117.0, z: 36.0}
         members: {}
-        flags: {use: allow, greeting: 'Escape Room #14', item-pickup: allow, interact: allow}
+        flags: {use: allow, item-pickup: allow, greeting: 'Escape Room #14', interact: allow}
         owners: {}
         type: cuboid
         priority: 1
@@ -548,8 +548,8 @@ regions:
             block-place: allow
             pistons-group: MEMBERS
             build: deny
-            blocked-cmds: [/thru]
             game-mode: SURVIVAL
+            blocked-cmds: [/thru]
             block-break: allow
             passthrough: allow
             block-place-group: MEMBERS

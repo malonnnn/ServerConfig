@@ -1,84 +1,141 @@
-inventory: {}
-armor_contents: {}
-health: 48.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bWa§3ter §3Sh§bot§b «×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 4
+    amount: 5
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §7B§ea§0t§7m§8a§7n §e§lD§a§lN§4§lA
+      lore:
+      - batman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5126326
-ender_chest:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: NETHERRACK
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: NETHERRACK
-    amount: 29
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
-    amount: 62
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 55
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: TORCH
-    amount: 4
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: FLINT_AND_STEEL
-    damage: 1
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 109
+exhaustion: 0.6451777
+ender_chest: {}
 potion_effect:
   '0':
     type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 195160
-  '1':
-    type: INCREASE_DAMAGE
     level: 5
-    duration: 195160
+    duration: 183928
+  '1':
+    type: JUMP
+    level: 5
+    duration: 196161
   '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 195160
+    type: SPEED
+    level: 2
+    duration: 195847
