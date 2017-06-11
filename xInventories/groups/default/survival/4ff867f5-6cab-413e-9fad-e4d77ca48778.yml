@@ -4,11 +4,18 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.84008926
+saturation: 4.0
+exhaustion: 2.0900013
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: EMERALD_BLOCK
-    amount: 10
+    type: IRON_SWORD
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0G§1a§am§1o§0r§aa's Sword
+      enchants:
+        DAMAGE_ALL: 5
+        KNOCKBACK: 5
 armor_contents: {}
