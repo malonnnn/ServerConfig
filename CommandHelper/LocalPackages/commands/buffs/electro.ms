@@ -14,7 +14,8 @@
              'powers': array( 
                  "/buff", 
                  "/fly",
-                 "/run 0-2"
+                 "/run 0-2",
+                 "/cast electrictp"
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 21 9999 9 true",  
