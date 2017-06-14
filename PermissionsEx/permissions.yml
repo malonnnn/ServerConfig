@@ -6,7 +6,7 @@ groups:
       prefix: '&6S&4pee&6d &6D&1emo&6n'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.run0
         - ch.alias.run1
@@ -25,7 +25,7 @@ groups:
       prefix: '&c3-D &aMa&an(C&H)'
       suffix: '&a'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -51,7 +51,7 @@ groups:
       prefix: '&c3-D &aMa&an(DG)'
       suffix: '&a'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -79,7 +79,7 @@ groups:
       prefix: '&9&lA&8-&bB&1o&bmb'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.abomb
@@ -114,7 +114,7 @@ groups:
       prefix: '&l&2Abo&amin&8at&2ion'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -142,7 +142,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
@@ -207,7 +207,7 @@ groups:
       prefix: '&8Ag&0ent &8Ve&0nom'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -239,7 +239,7 @@ groups:
       prefix: '&AAlexa &CBliss'
       suffix: '&A'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.alexabliss
         - ch.alias.jump0
@@ -255,20 +255,32 @@ groups:
   alpha:
     options:
       suffix: '&f&o&l'
+  anarchyspectator:
+    inheritance:
+    - default
+    options:
+      prefix: '&7AnarchySpec'
+      suffix: '&7'
+    worlds:
+      anarchy:
+        permissions:
+        - commands.anarchyplay
   anarchy:
     inheritance:
     - default
     options:
-      prefix: '&4Anarchy'
+      prefix: '&4AnarchyPlayer'
       suffix: '&4'
-    permissions:
-    - chatformat.anarchy
-    - essentials.warp
-    - essentials.warps.anarchyspawn
-    - multiverse.access.anarchy
-    - multiverse.access.anarchy_nether
-    - multiverse.access.anarchy_the_end
-    - essentials.build.*
+    worlds:
+      anarchy:
+        permissions:
+        - chatformat.anarchy
+        - essentials.warp
+        - essentials.warps.anarchyspawn
+        - multiverse.access.anarchy
+        - multiverse.access.anarchy_nether
+        - multiverse.access.anarchy_the_end
+        - essentials.build.*
   annabethchase:
     inheritance:
     - commonherotraits
@@ -276,7 +288,7 @@ groups:
       prefix: '&bA&6nn&ba&6beth Ch&ba&6s&be'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.annabethchase
         - ch.alias.dismountplayer
@@ -288,7 +300,7 @@ groups:
       prefix: '&4A&0n&4t-M&0a&4n'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.grow
         - ch.alias.normalsize
@@ -320,7 +332,7 @@ groups:
       prefix: '&dAphrodite'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.aphrodite
         - essentials.fly
@@ -354,7 +366,7 @@ groups:
       prefix: '&3A&9p&3o&9ca&3lypse'
       suffix: '&3'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
@@ -431,7 +443,7 @@ groups:
       prefix: '&eA&fp&eo&fll&eo'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.apollo
@@ -490,7 +502,7 @@ groups:
       prefix: '&9A&1q&4ual&1a§9d&8(K&8)'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.aqualadkaldurahm
         - ch.alias.dismountplayer
@@ -513,7 +525,7 @@ groups:
       prefix: '&eA&6qua&2man'
       suffix: '&3'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.aquaman
         - ch.alias.dismountplayer
@@ -537,7 +549,7 @@ groups:
       prefix: '&4&lAr&0&le&4&ls'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.ares
@@ -575,7 +587,7 @@ groups:
       prefix: '&4Ar&cse&4na&cl'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -613,7 +625,7 @@ groups:
       prefix: '&9A&2r&9t&2e&9m&2i&9s'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.artemis
         - ch.alias.carryplayer
@@ -663,7 +675,7 @@ groups:
       suffix: '&2'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.arrowspectral
         - ch.alias.greenarrow
@@ -703,7 +715,7 @@ groups:
       prefix: '&fA&es&bh &fP&er&bi&fm&ee'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.ashprime
         - ch.alias.jump0
@@ -729,7 +741,7 @@ groups:
       prefix: '&fA&9then&fa'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.athena
         - essentials.fly
@@ -755,7 +767,7 @@ groups:
       prefix: '&4A&7t&8o&4m'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - libsdisguises.undisguise
         - -essentials.protect.damage.fall
@@ -788,7 +800,7 @@ groups:
       prefix: '&6Bar&edock'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -818,7 +830,7 @@ groups:
       suffix: '&2'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump4
         - ch.alias.jump3
@@ -838,7 +850,7 @@ groups:
       prefix: '&7B&ea&0t&7gi&8r&7l'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.batgirl
         - ch.alias.jump0
@@ -856,7 +868,7 @@ groups:
       prefix: '&7B&ea&0t&7m&8a&7n'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.batman
         - ch.alias.jump0
@@ -876,7 +888,7 @@ groups:
       prefix: '&7B&ea&0t&7m&8a&7n(&8B&ba&8ts&7u&8it&7)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.batmanbatsuit
         - ch.alias.carryplayer
@@ -895,7 +907,7 @@ groups:
       suffix: '&2'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - libsdisguises.undisguise
         - ch.alias.beastboy
@@ -973,7 +985,7 @@ groups:
       prefix: '&5B&6e&5e&9r&8u&9s'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.beerus
         - ch.alias.carryplayer
@@ -1020,7 +1032,7 @@ groups:
       prefix: '&8Bl&ea&8ck &8Ad&ea&8m'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -1067,13 +1079,13 @@ groups:
       prefix: '&8B&7l&0a&8ck &8B&0o&7l&8t'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.yell
         - -essentials.protect.damage.fall
         - essentials.gamemode
         - essentials.gamemode.creative
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - ch.alias.blackbolt
         - essentials.msg
         - ch.alias.mindlock
@@ -1124,7 +1136,7 @@ groups:
       prefix: '&0Black Canary'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.blackcanary
         - ch.alias.push
@@ -1156,7 +1168,7 @@ groups:
         - ch.alias.run0
         - ch.alias.run1
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
@@ -1190,7 +1202,7 @@ groups:
       prefix: '&0Bl&ba&7ck&8 &8La&7nt&0er&bn&8(&bD&0S&8R&bR&8)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
         - ch.alias.transmute
@@ -1234,7 +1246,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
         - essentials.fly
@@ -1272,7 +1284,7 @@ groups:
       prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&8(&fM&7M&8)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - ch.alias.mindlock
@@ -1367,7 +1379,7 @@ groups:
       prefix: '&0Bl&ba&7ck&8 &8La&7nt&0er&bn&8(&bS&0G&8)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
         - ch.alias.carryplayer
@@ -1398,7 +1410,7 @@ groups:
       prefix: '&0B&8l&7a&fc&0k &7L&fa&0nte&8r&7n&8(&0S&8M&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - powers.nofalldamage
@@ -1448,7 +1460,7 @@ groups:
       prefix: '&8Bl&ba&8ck L&fi&8ghtn&ei&8ng'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.blacklightning
@@ -1480,7 +1492,7 @@ groups:
       prefix: '&0Black Panther'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.blackpanther
         - ch.alias.jump0
@@ -1512,7 +1524,7 @@ groups:
         - powers.onepunch
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - kill.immune
         - -essentials.protect.entitytarget.bypass
@@ -1552,7 +1564,7 @@ groups:
       prefix: '&8Bl&0a&8ck Sp&fi&8derm&0a&8n'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.websling
         - powers.wallclimb
@@ -1587,7 +1599,7 @@ groups:
       prefix: '&5B&0lac&5k &5W&0ido&5w'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.blackwidow
         - ch.alias.jump0
@@ -1608,7 +1620,7 @@ groups:
       prefix: '&bBl&5a&bst'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.carryplayer
@@ -1661,7 +1673,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - essentials.speed.fly
@@ -1699,7 +1711,7 @@ groups:
       prefix: '&1B&9l&bu&9e &1L&9a&bn&9ter&1n&f&8(&9S&8W)'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.bluelanternsaintwalker
         - ch.alias.carryplayer
@@ -1727,7 +1739,7 @@ groups:
       prefix: '&1B&9l&7u&8e &1R&9a&7n&8g&1e&9r'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.unzord
         - ch.alias.zord
@@ -1756,7 +1768,7 @@ groups:
       prefix: '&2B&3o&2b&3a &8Fett'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.bobafett
         - ch.alias.carryplayer
@@ -1770,7 +1782,7 @@ groups:
       prefix: '&dB&9oro&ds'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -1817,7 +1829,7 @@ groups:
       prefix: '&2B&5r&0a&2i&5n&0i&2a&5c'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - essentials.fly
@@ -1855,7 +1867,7 @@ groups:
       prefix: '&7C&6a&7ble'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.bodyslide
         - ch.alias.cable
@@ -1881,7 +1893,7 @@ groups:
       prefix: '&4C&9apt&fain &4A&9mer&4ica&8(&4S&9R&8)'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.captainamerica
         - ch.alias.jump0
@@ -1907,7 +1919,7 @@ groups:
       prefix: '&bC&4a&bptai&4n &bAt&4om'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.carryplayer
@@ -1928,7 +1940,7 @@ groups:
       prefix: '&9C&3a&9p&3t&9a&3i&9n &3C&9o&3l&9d'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.captaincold
   captainuniversepeterparker:
@@ -1944,7 +1956,7 @@ groups:
       prefix: '&4C&0a&4rn&0a&4ge'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallclimb
         - ch.alias.websling
@@ -1979,7 +1991,7 @@ groups:
       prefix: '&8C&0a&8twom&0a&8n'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallclimb
         - ch.alias.catwoman
@@ -1999,7 +2011,7 @@ groups:
       prefix: '&eChe&6et&eah'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -2013,7 +2025,7 @@ groups:
       prefix: '&2Ch&8es&7hi&4re'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.cheshire
         - ch.alias.jump0
@@ -2041,7 +2053,7 @@ groups:
       prefix: '&f&lChristianic God'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.watertowine
   clayface:
@@ -2051,7 +2063,7 @@ groups:
       prefix: '&6Clayface'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.clayface
         - ch.alias.jump0
@@ -2123,7 +2135,7 @@ groups:
       suffix: '&c'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - essentials.fly
@@ -2183,7 +2195,7 @@ groups:
       greenfield:
         permissions:
         - essentials.build.interact.*
-      survival:
+      survival112:
         permissions:
         - essentials.warp
         - essentials.warps.city
@@ -2201,7 +2213,7 @@ groups:
       prefix: '&7C&by&8b&4o&7r&8g'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.cyborg
         - ch.alias.carryplayer
@@ -2237,7 +2249,7 @@ groups:
       suffix: '&2'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
         - -essentials.protect.damage.fall
@@ -2260,7 +2272,7 @@ groups:
       prefix: '&4D&care&4d&cevil'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.daredevil
         - ch.alias.jump0
@@ -2272,7 +2284,7 @@ groups:
       prefix: '&9D&8a&9rk&7s&1e&7id'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -2327,7 +2339,7 @@ groups:
       prefix: '&4D&0a&4r&0t&4h M&0au&4l'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.darthmaul
         - ch.alias.forcepush
@@ -2355,7 +2367,7 @@ groups:
       prefix: '&8D&4a&8rth &4R&8ev&4a&8n'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.darthrevan
         - ch.alias.forcepush
@@ -2383,7 +2395,7 @@ groups:
       prefix: '&0Darth Sidious'
       suffix: '&0'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.darthsidious
         - ch.alias.forcepush
@@ -2411,7 +2423,7 @@ groups:
       prefix: '&8D&0a&8r&0t&8h V&0ade&8r'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.darthvader
         - ch.alias.forcepush
@@ -2445,7 +2457,7 @@ groups:
       prefix: '&4D&0ea&4dp&0oo&4l'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.tpradius
         - ch.alias.bodyslide
@@ -2469,7 +2481,7 @@ groups:
       prefix: '&fDe&cad&8sh&co&8t'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.deadshot
         - ch.alias.jump0
@@ -2485,7 +2497,7 @@ groups:
       prefix: '&0D&8e&fa&0th&f&8(D&8C&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.onepunch
         - essentials.tp
@@ -2497,7 +2509,7 @@ groups:
       prefix: '&8Death&6stroke'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.deathstroke
         - ch.alias.jump0
@@ -2514,6 +2526,8 @@ groups:
         - ch.alias.haste2
   default:
     permissions:
+    - chatcontrol.channel.global.autojoin
+    - chatcontrol.channel.global
     - multiverse.bypass.gamemode.*
     - ch.alias.vis
     - essentials.build.drop.*
@@ -2579,7 +2593,7 @@ groups:
       prefix: '&4D&0e&4l&cs&0i&cn &8R&7o&8w&7e'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.delsinrowe
         - ch.alias.jump0
@@ -2605,7 +2619,7 @@ groups:
       prefix: '&aD&2e&am&2e&at&2e&ar'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.demeter
         - essentials.fly
@@ -2634,7 +2648,7 @@ groups:
       prefix: '&5D&4e&5sp&5e&4ro'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
@@ -2669,7 +2683,7 @@ groups:
       prefix: '&aDi&2on&ay&2sus'
       suffix: '&a'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dionysus
         - ch.alias.carryplayer
@@ -2704,7 +2718,7 @@ groups:
       prefix: '&2D&ao&2ct&ao&2r &aD&2o&ao&2m'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.kill
         - essentials.tppos
@@ -2715,7 +2729,7 @@ groups:
       prefix: '&6D&9o&6ct&9o&6r F&9a&6te&8(KN)'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.doctorfatekentnelson
         - ch.alias.run0
@@ -2738,7 +2752,7 @@ groups:
       prefix: '&bD&3o&bct&3o&br &bM&3a&bnhatt&3a&bn'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.kill
         - essentials.tp
@@ -2748,7 +2762,7 @@ groups:
         - essentials.gamemode.creative
         - essentials.skull
         - essentials.skull.*
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
   doctorstrange:
     inheritance:
     - commonherotraits
@@ -2756,7 +2770,7 @@ groups:
       prefix: '&cD&9octo&cr &9S&ctrang&9e'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -2781,7 +2795,7 @@ groups:
       prefix: '&7D&foo&7msd&4a&7y'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.doomsday
@@ -2816,7 +2830,7 @@ groups:
       prefix: '&eD&6o&cr&4m&7a&8m&8m&0u'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.disguise
         - ch.alias.intangible
@@ -2834,7 +2848,7 @@ groups:
       prefix: '&fDovahkiin'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dovahkiin
         - ch.alias.jump0
@@ -2850,7 +2864,7 @@ groups:
       prefix: '&5Dum&dbl&5edo&dre'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - magic.cast
         - magic.wand.use
@@ -2866,7 +2880,7 @@ groups:
       prefix: '&4E&0l&4e&0k&4t&0r&4a'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -2882,7 +2896,7 @@ groups:
       prefix: '&fE&7m&fm&7a &fF&7r&fo&7s&ft'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - ch.alias.mindlock
@@ -2909,7 +2923,7 @@ groups:
       prefix: '&0End&de&0rman'
       suffix: '&0'
     worlds:
-      survival:
+      survival112:
         permissions:
         - worldedit.navigation.jumpto.command
   fakeadmin:
@@ -2921,7 +2935,7 @@ groups:
     options:
       prefix: '&4Jason Grace'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -2939,7 +2953,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -2960,7 +2974,7 @@ groups:
       prefix: '&dH&5ar&dk'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -2978,7 +2992,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -2996,7 +3010,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3017,7 +3031,7 @@ groups:
       prefix: '&eS&4u&ep&4e&er &4T&eu&4r&ed'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3038,7 +3052,7 @@ groups:
       prefix: '&2D&4r&2a&4x'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3056,7 +3070,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3074,7 +3088,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3092,7 +3106,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3112,7 +3126,7 @@ groups:
     options:
       prefix: '&CSamurai X'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3130,7 +3144,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3148,7 +3162,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3166,7 +3180,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3184,7 +3198,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3205,7 +3219,7 @@ groups:
       prefix: '&4A&7l&4p&7h&4a &4A&7r&4a&7c&4h&7n&4i&7d'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3223,7 +3237,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3244,7 +3258,7 @@ groups:
       prefix: '&bS&fo&3n&fi&9c &3B&fo&9o&fm'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3264,7 +3278,7 @@ groups:
     options:
       prefix: MALON'S MOM
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3282,7 +3296,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3300,7 +3314,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3321,7 +3335,7 @@ groups:
       prefix: '&4Fl&ea&4sh'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3339,7 +3353,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3359,7 +3373,7 @@ groups:
     options:
       prefix: '&4S&bp&4i&bd&4e&br&fB&7o&fy'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3377,7 +3391,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3398,7 +3412,7 @@ groups:
       prefix: night
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3418,7 +3432,7 @@ groups:
     options:
       prefix: '&4M&6r.&4F&6l&4a&6m&4e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3436,7 +3450,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3454,7 +3468,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3472,7 +3486,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3490,7 +3504,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3511,7 +3525,7 @@ groups:
       prefix: '&5Queen_&dOf_&cThe_&5Server'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3529,7 +3543,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3547,10 +3561,10 @@ groups:
     inheritance:
     - commonherotraits
     options:
-      prefix: '&0The Mas&dqueraded Gir&0l'
-      suffix: '&d'
+      prefix: '&4Harley &cThe &0Pir&fa&0te'
+      suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3571,7 +3585,7 @@ groups:
       prefix: '&9One &1Above &0All'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3591,7 +3605,7 @@ groups:
     options:
       prefix: RedBirdie
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3611,7 +3625,7 @@ groups:
     options:
       prefix: dickman
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3631,7 +3645,7 @@ groups:
     options:
       prefix: Joker
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3649,7 +3663,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3669,7 +3683,7 @@ groups:
     options:
       prefix: '&4Better than septer101'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3687,7 +3701,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3708,7 +3722,7 @@ groups:
       prefix: '&4M&co&6b &eT&aa&2l&9k&1e&5r&8(&7W&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -3729,7 +3743,7 @@ groups:
       prefix: '&8F&7a&8n&7g'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.vis
         - ch.alias.invis
@@ -3758,7 +3772,7 @@ groups:
       prefix: '&fFinn &9The &1Human'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.finnthehuman
         - ch.alias.jump0
@@ -3774,7 +3788,7 @@ groups:
       prefix: '&eF&4i&ere&8f&el&8y'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.firefly
         - essentials.speed.fly
@@ -3796,7 +3810,7 @@ groups:
       prefix: '&cFi&ere&cst&eor&cm&6&8(&cR&eS&8)'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.firestormraymondstein
         - worldedit.navigation.thru.command
@@ -3833,7 +3847,7 @@ groups:
       prefix: '&1F&bi&fv&9e&9s'
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -3863,7 +3877,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - essentials.lightning
         - powers.wallrun
@@ -3913,7 +3927,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - worldedit.navigation.thru.command
@@ -3961,7 +3975,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - essentials.tppos
@@ -4005,7 +4019,7 @@ groups:
         - ch.alias.powers
         - ch.alias.speedforceheal
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.thrudestabilize
         - powers.wallrun
@@ -4061,7 +4075,7 @@ groups:
         - ch.alias.run0
         - ch.alias.run1
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.darkflash
         - powers.wallrun
@@ -4105,7 +4119,7 @@ groups:
     worlds:
       greenfield:
         permissions: []
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -4157,7 +4171,7 @@ groups:
       prefix: '&8Gen&7e&8ral Z&7o&8d'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - powers.wallrun
@@ -4205,7 +4219,7 @@ groups:
       prefix: '&8G&6e&7n&eo&8s'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.genos
         - ch.alias.dismountplayer
@@ -4232,7 +4246,7 @@ groups:
       prefix: '&8Gh&0o&8st R&7i&8der&8(&6J&cB&8)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.flame
         - powers.wallrun
@@ -4253,7 +4267,7 @@ groups:
         - ch.alias.haste5
   ghostriderjohnnyblze:
     worlds:
-      survival:
+      survival112:
         permissions: []
   godfallsuperman:
     inheritance:
@@ -4262,7 +4276,7 @@ groups:
       prefix: '&4Go&7d&4f&7all &cS&8u&cper&8m&ca&8n'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -4309,7 +4323,7 @@ groups:
         - ch.alias.run0
         - ch.alias.run1
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.speedforceteleport
         - powers.wallrun
@@ -4346,7 +4360,7 @@ groups:
       prefix: '&eG&1o&6han'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -4392,7 +4406,7 @@ groups:
       prefix: '&bG&1o&6ku'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -4439,7 +4453,7 @@ groups:
       prefix: '&5Gol&eden Frieza'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -4485,7 +4499,7 @@ groups:
       prefix: '&6Golden &eNinja'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -4524,7 +4538,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.gorillagrodd
@@ -4563,7 +4577,7 @@ groups:
       prefix: '&bG&8o&bt&8h&ba&8m &bM&8a&bn'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.nofalldamage
         - powers.wallrun
@@ -4612,7 +4626,7 @@ groups:
       suffix: '&2'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.arrowspectral
         - ch.alias.greenarrow
@@ -4652,7 +4666,7 @@ groups:
       prefix: '&2Gr&5ee&2n G&5o&2blin'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.greengoblin
         - essentials.speed.fly
@@ -4665,7 +4679,7 @@ groups:
       prefix: '&2Gr&8e&2en Lant&8e&2rn&8(AS)'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.greenlanternalanscott
         - essentials.fly
@@ -4693,7 +4707,7 @@ groups:
       prefix: '&2Gr&8e&2en Lant&8e&2rn&8(HJ)'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.greenlanternhaljordan
         - ch.alias.carryplayer
@@ -4721,7 +4735,7 @@ groups:
       prefix: '&9Gr&de&9nin&dj&9a'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -4749,7 +4763,7 @@ groups:
       prefix: '&2G&ar&6o&ao&2t'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.groot
         - ch.alias.carryplayer
@@ -4772,7 +4786,7 @@ groups:
       prefix: '&4Hades'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.fireballPunch
         - ch.alias.hades
@@ -4797,7 +4811,7 @@ groups:
         - ch.alias.haste3
         - ch.alias.haste4
         - ch.alias.haste5
-      survival_nether:
+      survival112_nether:
         permissions:
         - essentials.warp
         - essentials.warp.*
@@ -4808,7 +4822,7 @@ groups:
       prefix: '&4H&fa&0r&4l&fe&0y &4Q&fu&0i&4n&fn'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.run0
         - ch.alias.run1
@@ -4824,7 +4838,7 @@ groups:
       prefix: '&4Har&6ry &4Pot&6ter'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - magic.cast
         - magic.wand.use
@@ -4840,7 +4854,7 @@ groups:
       prefix: '&8H&0a&8w&0k&8e&0y&8e'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.arrowspectral
         - ch.alias.hawkeye
@@ -4881,7 +4895,7 @@ groups:
       prefix: '&cHa&4wk&egi&6rl'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hawkgirl
         - -essentials.protect.damage.fall
@@ -4899,7 +4913,7 @@ groups:
       prefix: '&4H&0e&cph&0a&4est&cus'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hephaestus
         - essentials.fly
@@ -4936,7 +4950,7 @@ groups:
       prefix: '&bH&3er&ba'
       suffix: '&3'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hera
         - essentials.fly
@@ -4964,7 +4978,7 @@ groups:
       prefix: '&6Herc&9ules'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hercules
         - ch.alias.carryplayer
@@ -4994,7 +5008,7 @@ groups:
       prefix: '&eH&6e&er&6m&ee&6s'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hermes
         - essentials.fly
@@ -5035,7 +5049,7 @@ groups:
       prefix: '&6Hes&4tia'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hestia
         - essentials.fly
@@ -5068,7 +5082,7 @@ groups:
       prefix: '&6Hi&4pp&fol&6yta&8(&6D&4C&8)'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5094,7 +5108,7 @@ groups:
       prefix: '&eHoward &6the &fDuck'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.howardtheduck
   howl:
@@ -5104,7 +5118,7 @@ groups:
       prefix: '&4H&co&7wl'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - ch.alias.jump0
@@ -5133,7 +5147,7 @@ groups:
       prefix: '&2&lH&a&lU&2&lLK'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.break.bedrock
         - essentials.break
@@ -5170,7 +5184,7 @@ groups:
       prefix: '&4H&cy&4b&cri&4d'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.websling
@@ -5209,7 +5223,7 @@ groups:
       prefix: '&bIce&1man'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.run0
         - ch.alias.run1
@@ -5223,7 +5237,7 @@ groups:
       prefix: '&6Ichi&0go &fKuro&0saki'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.hoveroff
@@ -5255,10 +5269,10 @@ groups:
       suffix: '&a'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.gamemode
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
         - essentials.tp
         - libsdisguises.disguise
@@ -5344,7 +5358,7 @@ groups:
         - ch.alias.speedforceteleport
         - essentials.warps.*
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5383,7 +5397,7 @@ groups:
       prefix: '&5I&dnd&5ig&do &5T&dr&5i&dbe&8(&5I&dO&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5419,7 +5433,7 @@ groups:
         - ch.alias.speedforceteleport
         - essentials.warps.*
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5449,7 +5463,7 @@ groups:
       prefix: '&5I&4n&af&ei&9n&6i&5t&4y &7Si&fl&7ver &7Su&fr&7fer'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.healing
         - libsdisguises.disguise
@@ -5532,7 +5546,7 @@ groups:
       prefix: '&5I&4n&af&e&ki&9n&6i&5t&4y &5T&9h&ea&8n&9o&6s'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.dismountplayer
@@ -5579,7 +5593,7 @@ groups:
       prefix: '&9Inv&bi&9s&1ible &9W&bo&9m&0a&9n'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - essentials.speed.fly
@@ -5603,7 +5617,7 @@ groups:
       prefix: '&eI&fro&en &fFi&es&ft'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.immunity.poison
         - ch.alias.carryplayer
@@ -5631,7 +5645,7 @@ groups:
       prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4L&6III'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.hulkbuster
         - ch.alias.ironmanmkxliii
@@ -5660,7 +5674,7 @@ groups:
       prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4L&6V&4I'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.carryplayer
@@ -5686,7 +5700,7 @@ groups:
       prefix: '&6I&4r&bo&4n M&6an &4MK &6X&4V'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.vis
         - ch.alias.invis
@@ -5721,7 +5735,7 @@ groups:
       prefix: '&4I&er&4o&en &4Sp&bi&eder'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5736,7 +5750,7 @@ groups:
       prefix: '&6Jack &8Joyce'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stoptime
   jailed:
@@ -5757,7 +5771,7 @@ groups:
       prefix: '&eJe&1an &eGr&de&1y'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - ch.alias.hoveron
@@ -5781,7 +5795,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.vibrate
         - ch.alias.stopvibrating
@@ -5824,7 +5838,7 @@ groups:
       prefix: '&dJ&8i&5n&0x'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jinx
         - essentials.speed.fly
@@ -5848,7 +5862,7 @@ groups:
       prefix: '&fJohn Cena'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.johncena
         - ch.alias.jump0
@@ -5863,7 +5877,7 @@ groups:
       prefix: '&fJ&0o&4h&fn &4D&fo&4e'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.cat
         - ch.alias.run0
@@ -5878,7 +5892,7 @@ groups:
       prefix: '&fJo&2k&5er'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.joker
   kenkaneki:
@@ -5888,7 +5902,7 @@ groups:
       prefix: '&7K&8e&7n &8K&0a&8n&7e&8k&7i'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.run0
         - ch.alias.run1
@@ -5924,7 +5938,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.thru.destabilize
         - powers.wallrun
@@ -5965,7 +5979,7 @@ groups:
       prefix: '&2Killer &aCroc'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -5993,7 +6007,7 @@ groups:
       prefix: '&9K&1i&9l&8ler &9F&1r&9o&8st&8(&bCS&8)'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -6004,7 +6018,7 @@ groups:
       prefix: '&fKi&5n&fgp&5i&fn'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.kingpin
         - ch.alias.carryplayer
@@ -6022,7 +6036,7 @@ groups:
       prefix: '&fK&4i&6r&7a'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.deathnote
   kirito:
@@ -6032,7 +6046,7 @@ groups:
       prefix: '&0K&8i&7r&0i&8t&7o'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -6059,7 +6073,7 @@ groups:
       prefix: '&9K&bi&1ta&9na'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -6070,7 +6084,7 @@ groups:
       prefix: '&2L&aa&2sh&ae&2r'
       suffix: '&a'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.lasher
         - -essentials.protect.damage.fall
@@ -6105,7 +6119,7 @@ groups:
       prefix: '&4Le&fbr&con &cJa&fm&4es&8(&4M&fH&8)'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.lebronjamesmiamiheat
         - ch.alias.jump0
@@ -6122,7 +6136,7 @@ groups:
       prefix: '&2L&9e&2x Luth&9o&2r'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.lexluthor
   loki:
@@ -6132,7 +6146,7 @@ groups:
       prefix: '&6L&2o&8k&bi'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - libsdisguises.disguise
         - libsdisguises.undisguise
@@ -6189,7 +6203,7 @@ groups:
       prefix: '&fL&du&fc&dy'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.projectileinvulnerability
         - ch.alias.lucy
@@ -6203,7 +6217,7 @@ groups:
       prefix: '&eL&7u&eke &9C&7a&9ge'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -6232,7 +6246,7 @@ groups:
       prefix: '&8L&0u&8ke &0S&8ky&0w&8a&al&8ker'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.forcepush
         - -essentials.protect.damage.fall
@@ -6258,7 +6272,7 @@ groups:
       prefix: '&4M&5a&4g&5n&4e&5t&4o'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.magneto
@@ -6279,7 +6293,7 @@ groups:
       prefix: '&6M&4a&6ndr&4a&6kk'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.carryplayer
@@ -6312,7 +6326,7 @@ groups:
       prefix: '&2M&4a&2rt&9i&2an &9Man&2hunter'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - ch.alias.mindlock
@@ -6406,7 +6420,7 @@ groups:
       prefix: '&3M&fa&6u&9i'
       suffix: '&3'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -libsdisguises.disguise.player.*
         - libsdisguises.disguise
@@ -6471,7 +6485,7 @@ groups:
       prefix: '&4M&ce&4p&ch&4i&cs&4t&co'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.confuse
         - ch.alias.forcechoke
@@ -6484,7 +6498,7 @@ groups:
       prefix: '&dMew'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
@@ -6513,7 +6527,7 @@ groups:
       prefix: '&fM&de&fwt&dw&fo'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
@@ -6542,7 +6556,7 @@ groups:
       prefix: '&2M&fi&2ss M&4a&2rt&9i&2an'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.mindlock
         - essentials.msg
@@ -6689,10 +6703,8 @@ groups:
     - multiverse.access.techcombatknockbackgame
     - multiverse.access.escaperoom
     - multiverse.access.parksideprisonescape
-    - chatcontrol.channel.global
     - chatcontrol.channel.local
     - chatcontrol.commands.channels.switch
-    - chatcontrol.commands.channels.join
     - chatcontrol.commands.channels.leave
     - chatcontrol.commands.channels.list
     - chatcontrol.commands.channels
@@ -6717,7 +6729,6 @@ groups:
     - chatcontrol.notify.outofrange
     - chatcontrol.channel.*.join
     - chatcontrol.channel.*.leave
-    - chatcontrol.channel.global.autojoin
     - -essentials.warps.alpha
     - -essentials.warps.thealpha
     - essentials.powertool
@@ -6866,9 +6877,9 @@ groups:
     - trail.all
     - trail.rain
     - ch.alias.run0
-    - multiverse.access.survival
-    - multiverse.access.survival_nether
-    - multiverse.access.survival_the_end
+    - multiverse.access.survival112
+    - multiverse.access.survival112_nether
+    - multiverse.access.survival112_the_end
     - essentials.hat
     - trail.allow
     - -essentials.warps.arena
@@ -6940,9 +6951,9 @@ groups:
     - griefprevention.transferclaim
     - whatisit.use
     - -multiverse.access.anarchy
-    - multiverse.access.survival
-    - multiverse.access.survival_nether
-    - multiverse.access.survival_the_end
+    - multiverse.access.survival112
+    - multiverse.access.survival112_nether
+    - multiverse.access.survival112_the_end
     - multiverse.access.wooftywoo
     - multiverse.access.wooftywoo_nether
     - multiverse.access.wooftywoo_the_end
@@ -7255,7 +7266,7 @@ groups:
       straightlineparkour:
         permissions:
         - essentials.build.interact.*
-      survival:
+      survival112:
         permissions:
         - essentials.protect.pvp
         - command.roll
@@ -7304,6 +7315,10 @@ groups:
       overvoid:
         permissions:
         - essentials.build.interact.*
+      kingoftheladder:
+        permissions:
+        - essentials.protect.pvp
+        - essentials.build.interact.*
   mosquitogirl:
     inheritance:
     - commonherotraits
@@ -7311,7 +7326,7 @@ groups:
       prefix: '&dM&co&ds&cq&du&ci&dt&co &dG&ci&dr&cl'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.swarm
         - ch.alias.bloodregen
@@ -7325,10 +7340,10 @@ groups:
       suffix: '&6'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.gamemode
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
         - essentials.tp.*
         - essentials.tp
@@ -7402,7 +7417,7 @@ groups:
       prefix: '&1M&Cr&7. &CS&1h&ci&ff&ct&1y'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - worldedit.navigation.thru.command
         - ch.alias.mrshiftytp
@@ -7427,7 +7442,7 @@ groups:
       prefix: '&cM&es&8. &eM&8a&crv&8e&el&8(CD)'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -7471,7 +7486,7 @@ groups:
       prefix: '&1Mystique'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - libsdisguises.disguise
         - libsdisguises.undisguise
@@ -7533,7 +7548,7 @@ groups:
       prefix: '&8N&7a&dp&8o&7l&8e&7o&dn'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.guarddogs
         - ch.alias.run1
@@ -7545,7 +7560,7 @@ groups:
       prefix: '&eN&6aruto'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.rasengan
         - -essentials.protect.damage.fall
@@ -7576,7 +7591,7 @@ groups:
       prefix: '&8N&7e&0kr&8o&0n'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
         - essentials.tp
@@ -7603,7 +7618,7 @@ groups:
       prefix: '&8Nick Fury'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.nickfury
         - ch.alias.jump0
@@ -7622,7 +7637,7 @@ groups:
       prefix: '&1Ni&4g&1htcr&4a&1wle&4r'
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -7647,7 +7662,7 @@ groups:
       prefix: '&1N&0igh&1tw&0in&1g'
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.nightwing
         - ch.alias.jump0
@@ -7669,7 +7684,7 @@ groups:
       suffix: '&8'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7690,7 +7705,7 @@ groups:
       suffix: '&b'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7712,7 +7727,7 @@ groups:
       suffix: '&1'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7732,7 +7747,7 @@ groups:
       suffix: '&8'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7751,7 +7766,7 @@ groups:
       prefix: '&6Ninjago &4N&cy&ea'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7767,7 +7782,7 @@ groups:
       suffix: '&b'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.spinjutsu
         - ch.alias.jump0
@@ -7786,7 +7801,7 @@ groups:
       prefix: '&8N&ci&8te O&7w&8l'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.niteowl
         - ch.alias.haste0
@@ -7798,7 +7813,7 @@ groups:
       prefix: '&1N&eo&4v&9a&e&8(&4S&8A)'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.nofalldamage
         - powers.wallrun
@@ -7844,7 +7859,7 @@ groups:
     - serverdefenceforce
     options:
       prefix: '&3&mS&f&mD&3&mF&3 O&fffic&3e&fr'
-      suffix: '&b&o'
+      suffix: '&b&l'
     permissions:
     - ch.alias.offduty
     - ch.alias.checkfingerprints
@@ -7881,7 +7896,7 @@ groups:
       prefix: '&6One &fPunch &4Man'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.onepunch
         - ch.alias.onepunchman
@@ -7925,7 +7940,7 @@ groups:
       prefix: '&5O&4nsl&5au&4g&5ht'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -7948,7 +7963,7 @@ groups:
       prefix: '&1O&4pti&1mu&4s &1P&4rim&1e'
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -7979,7 +7994,7 @@ groups:
       prefix: '&6Or&0a&6nge L&0a&6ntern&8(L)'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.orangelanternlarfleeze
         - ch.alias.carryplayer
@@ -8007,7 +8022,7 @@ groups:
       prefix: '&7Ow&bl&8m&0a&8n'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.owlman
         - ch.alias.jump0
@@ -8027,7 +8042,7 @@ groups:
       prefix: '&eParallax &6Entity'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stopmindcontrol
         - ch.alias.mindcontrol
@@ -8099,7 +8114,7 @@ groups:
       prefix: '&3P&9e&3r&9c&3y &9J&3a&9c&3k&9s&3o&9n'
       suffix: '&3'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -8125,7 +8140,7 @@ groups:
       prefix: '&2Pi&5cc&folo'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.run0
         - ch.alias.run1
@@ -8163,7 +8178,7 @@ groups:
       prefix: '&eP&ci&ek&0a&echu'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.pikachu
         - ch.alias.jump0
@@ -8178,7 +8193,7 @@ groups:
       prefix: '&aP&2o&ai&2s&ao&2n &aI&2vy'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump4
         - ch.alias.jump3
@@ -8196,7 +8211,7 @@ groups:
   policechief:
     options:
       prefix: '&6&mS&e&mD&6&mF&6 C&ehi&6e&ef'
-      suffix: '&e&l&o'
+      suffix: '&b&l'
     permissions:
     - perworldinventory.bypass.*
     - -change.chat
@@ -8212,7 +8227,7 @@ groups:
       prefix: '&3P&9o&3s&9e&3i&9d&3o&9n'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -8241,7 +8256,7 @@ groups:
       prefix: '&fPo&cw&1e&fr G&ci&1r&fl'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -8291,7 +8306,7 @@ groups:
       prefix: '&8P&9r&8e &9V&8iz&9s&8la'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -8302,7 +8317,7 @@ groups:
       prefix: '&4P&fr&7in&fce&8ss &fMo&8no&fn&4o&7ke'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.princessmononoke
         - ch.alias.jump0
@@ -8316,7 +8331,7 @@ groups:
       prefix: '&7Pr&fo&7fess&fo&7r &fX'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - ch.alias.mindlock
@@ -8334,7 +8349,7 @@ groups:
       prefix: '&5Psy&8loc&0k&9e'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.unconfuse
         - ch.alias.stopmindcontrol
@@ -8362,7 +8377,7 @@ groups:
       prefix: '&bQ&1u&9i&7c&3k&7s&8i&7l&8v&7e&8r'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.dismountplayer
@@ -8395,7 +8410,7 @@ groups:
       prefix: '&2Ra''s &eal &2Ghul'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.jump1
@@ -8417,7 +8432,7 @@ groups:
       prefix: '&5R&0a&5v&0e&5n'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - essentials.speed.fly
@@ -8443,7 +8458,7 @@ groups:
       prefix: '&4R&8e&4d H&8oo&4d'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.redhood
         - ch.alias.jump0
@@ -8463,7 +8478,7 @@ groups:
       prefix: '&4Red &lH&c&lU&4&lLK'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -8498,7 +8513,7 @@ groups:
       prefix: '&4R&0e&4d L&ca&4nt&0e&4rn&8(A)'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.redlanternatrocitus
         - ch.alias.carryplayer
@@ -8526,7 +8541,7 @@ groups:
       prefix: '&4R&0e&4d L&ca&4nt&0e&4rn&c&8(&4B&8)'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - essentials.fly
@@ -8537,7 +8552,7 @@ groups:
       prefix: '&4R&0e&4d L&3a&cn&4te&0rn&8(&3D&4S&8)'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.redlanterndexstarr
         - essentials.fly
@@ -8566,7 +8581,7 @@ groups:
       prefix: '&4R&0e&4d L&ca&4nt&0e&4rn&c&8(&4S&8)'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - powers.wallrun
@@ -8611,7 +8626,7 @@ groups:
       prefix: '&4R&ce&7d &4R&ca&7n&8g&4e&cr'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - worldedit.navigation.thru.command
         - -essentials.protect.damage.fall
@@ -8640,7 +8655,7 @@ groups:
       prefix: '&4R&0e&4d R&6o&4b&0i&4n'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.redrobin
         - ch.alias.jump0
@@ -8659,7 +8674,7 @@ groups:
       prefix: '&4Red She-&4&lH&c&lU&4&4&lLK'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.redshehulk
@@ -8702,7 +8717,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - worldedit.navigation.thru.command
@@ -8751,7 +8766,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
@@ -8800,7 +8815,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.speedforceteleport
@@ -8838,7 +8853,7 @@ groups:
       prefix: '&6R. M&9i&6k&9a'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -8852,7 +8867,7 @@ groups:
       prefix: '&cR&eo&cbi&2n'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.robin
         - ch.alias.jump0
@@ -8871,7 +8886,7 @@ groups:
       prefix: '&cR&eo&2bi&cn&0&8(&cD&2W&8)'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.robindamianwayne
         - ch.alias.jump0
@@ -8905,7 +8920,7 @@ groups:
       prefix: '&4R&7o&8b&0o&4c&7o&8p'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.carryplayer
@@ -8932,7 +8947,7 @@ groups:
       prefix: '&8R&7o&6ck&8&7e&8t &6Ra&8c&7c&6oo&8n'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.rocketraccoon
         - ch.alias.run0
@@ -8954,7 +8969,7 @@ groups:
         - ch.alias.run0
         - ch.alias.run1
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - ch.alias.speedforceteleport
         - powers.wallrun
@@ -9000,7 +9015,7 @@ groups:
       prefix: '&4Sc&1ar&4l&0e&4t &4Sp&0i&4d&1e&4r&f(BR)'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallclimb
         - ch.alias.websling
@@ -9033,7 +9048,7 @@ groups:
       prefix: '&eS&3e&en&3t&er&3y'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.nofalldamage
         - -essentials.protect.damage.fall
@@ -9078,7 +9093,7 @@ groups:
     - serverdefenceforce
     options:
       prefix: '&4&mS&c&mD&4&mF&4 S&cerge&4a&cnt'
-      suffix: '&c&l&o'
+      suffix: '&b&l'
     permissions:
     - essentials.sendbook
     - essentials.copybook
@@ -9115,7 +9130,7 @@ groups:
       prefix: '&fS&ch&ea&fz&ca&em'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -9162,7 +9177,7 @@ groups:
       prefix: '&2She-&lH&a&lU&2&lLK'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.shehulk
@@ -9195,7 +9210,7 @@ groups:
       prefix: '&7Si&fl&7ver &7Su&fr&7fer'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.healing
         - libsdisguises.disguise
@@ -9278,7 +9293,7 @@ groups:
       prefix: '&2Sk&6aa&2r'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.skaar
@@ -9321,7 +9336,7 @@ groups:
       suffix: '&9'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -9349,7 +9364,7 @@ groups:
       prefix: '&2S&0p&7e&ac&7&0t&7r&2e'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.onepunch
         - essentials.fly
@@ -9359,7 +9374,7 @@ groups:
         - ch.alias.vis
         - essentials.gamemode
         - essentials.gamemode.creative
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
   speedy:
     inheritance:
     - commonherotraits
@@ -9367,7 +9382,7 @@ groups:
       prefix: '&4Sp&eee&4dy'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.arrowspectral
         - ch.alias.speedy
@@ -9408,7 +9423,7 @@ groups:
       prefix: '&4Sp&fi&4d&0e&4r-m&0a&4n 2099'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.websling
         - powers.wallclimb
@@ -9441,7 +9456,7 @@ groups:
       prefix: '&4Sp&fi&4d&0e&4rm&0a&4n&8(MM)'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.websling
         - powers.wallclimb
@@ -9477,7 +9492,7 @@ groups:
       prefix: '&4Sp&fi&4d&0e&4rm&0a&4n&8(PP)'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallclimb
         - ch.alias.websling
@@ -9510,7 +9525,7 @@ groups:
       prefix: '&5S&0p&fid&0e&fr-&5W&f&8o&fm&ba&fn&0&8(&fG&7S&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallclimb
         - ch.alias.websling
@@ -9544,7 +9559,7 @@ groups:
       prefix: '&6Squ&7irr&6el &7Gi&6rl'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.squirrelgirl
         - ch.alias.jump0
@@ -9563,11 +9578,11 @@ groups:
       suffix: '&6'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.mutate
         - essentials.tp.*
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
         - essentials.gamemode
         - essentials.warps.*
@@ -9580,7 +9595,7 @@ groups:
       prefix: '&dS&5t&4a&drf&5i&4r&de'
       suffix: '&5'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.starfire
         - ch.alias.carryplayer
@@ -9607,7 +9622,7 @@ groups:
       prefix: '&cSt&9ar&7-&cLo&9rd'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.starlord
         - ch.alias.jump0
@@ -9630,7 +9645,7 @@ groups:
       prefix: '&dSta&5r&7 &dS&5a&dpp&5hir&de&7&8(&dC&5F&8)'
       suffix: '&d'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.starsapphirecarolferris
         - essentials.fly
@@ -9658,7 +9673,7 @@ groups:
       prefix: '&fSte&7el'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.jump0
@@ -9682,7 +9697,7 @@ groups:
       prefix: '&eS&1te&eph&1e&en &1C&furr&1y'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.stephencurry
         - ch.alias.jump0
@@ -9702,7 +9717,7 @@ groups:
       prefix: '&8Storm'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.storm
         - essentials.weather
@@ -9744,7 +9759,7 @@ groups:
       prefix: '&cS&9u&ep&9erb&coy&8(&4Kal&9E&el&8)'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - -essentials.protect.damage.fall
@@ -9789,7 +9804,7 @@ groups:
       prefix: '&4S&0u&8p&0er&1bo&0y&8(KonEl)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - -essentials.protect.damage.fall
@@ -9830,7 +9845,7 @@ groups:
       prefix: '&cS&9u&ep&9e&9rg&cirl'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - powers.wallrun
@@ -9876,7 +9891,7 @@ groups:
       suffix: '&9'
     permissions: []
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.break
         - essentials.break.bedrock
@@ -9927,7 +9942,7 @@ groups:
       prefix: '&eSuperman Prime One Million'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - weakto.kryptonite
         - essentials.fly
@@ -9938,7 +9953,7 @@ groups:
       prefix: '&8T&7er&7m&8i&7n&4a&8t&7o&8r(&4T&8-8&700&8)'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.jump0
         - ch.alias.carryplayer
@@ -9962,7 +9977,7 @@ groups:
       prefix: '&eT&8e&6r&8r&7a'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
@@ -9984,7 +9999,7 @@ groups:
       prefix: '&7&5Th&ea&9n&eo&9s'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.dismountplayer
@@ -10031,7 +10046,7 @@ groups:
       prefix: '&7T&1h&7e &0Do&7ct&0or &8(&f1st&8)'
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.sonicscrewdriver
         - essentials.msg
@@ -10049,7 +10064,7 @@ groups:
       prefix: §6The §7D§co§ec§7t§7§5o§6r§8(§f4th§8)
       suffix: '&1'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.msg
         - essentials.warps.*
@@ -10066,7 +10081,7 @@ groups:
       prefix: '&fThe &eHum&6an &cTor&4ch'
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.flame
         - ch.alias.thehumantorch
@@ -10091,7 +10106,7 @@ groups:
       prefix: '&7The Invisible Boy'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.theinvisibleboy
         - ch.alias.invis
@@ -10109,7 +10124,7 @@ groups:
       prefix: '&eT&4h&9o&fr'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.carryplayer
@@ -10154,7 +10169,7 @@ groups:
       prefix: §2T§fi§dk§ci
       suffix: '&c'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -libsdisguises.disguise.player.*
         - libsdisguises.disguise.enderdragon.-setinvisible
@@ -10178,7 +10193,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - kill.immune
         - ch.alias.wither
@@ -10212,7 +10227,7 @@ groups:
       prefix: '&0T&eoo&0th&8le&0ss'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -10241,7 +10256,7 @@ groups:
       prefix: '&cT&4rig&8on'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - ch.alias.carryplayer
@@ -10283,7 +10298,7 @@ groups:
       prefix: '&4U&2l&4t&2r&4a &4B&0o&2y'
       suffix: '&2'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.nofalldamage
         - powers.wallrun
@@ -10328,7 +10343,7 @@ groups:
       prefix: '&4U&4l&4t&4r&4a&1man&3(E3)'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - -essentials.protect.damage.fall
@@ -10372,7 +10387,7 @@ groups:
       prefix: '&7Ul&8tr&4o&7n'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.carryplayer
@@ -10408,7 +10423,7 @@ groups:
       prefix: '&4U&9n&0d&fy&0n&fe'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.undyne
   vegeta:
@@ -10418,7 +10433,7 @@ groups:
       prefix: '&eV&fe&1ge&fta'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - powers.wallrun
@@ -10464,7 +10479,7 @@ groups:
       prefix: '&0V&8e&fn&8o&0m'
       suffix: '&8'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.websling
         - powers.wallclimb
@@ -10499,7 +10514,7 @@ groups:
       prefix: '&eV&ci&eb&ce'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.back
         - ch.alias.carryplayer
@@ -10520,7 +10535,7 @@ groups:
       prefix: '&4V&ei&4c&et&4i&en&4i'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.invis
         - ch.alias.vis
@@ -10534,7 +10549,7 @@ groups:
       prefix: '&3Ol&civ&ber'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - ch.alias.stopmindcontrol
@@ -10616,7 +10631,7 @@ groups:
       prefix: '&6Vi&ex&6e&en'
       suffix: '&6'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - ch.alias.jump0
@@ -10646,7 +10661,7 @@ groups:
       prefix: '&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.warmachine
         - ch.alias.carryplayer
@@ -10674,7 +10689,7 @@ groups:
       prefix: '&0W&ea&0s&ep'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - essentials.fly
@@ -10685,7 +10700,7 @@ groups:
       prefix: '&fWhite Canary'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.whitecanary
         - ch.alias.jump0
@@ -10703,7 +10718,7 @@ groups:
       prefix: '&fWh&7it&fe &fLan&7te&frn&8&8(&fK&7R&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.whitelanternkylerayner
         - ch.alias.carryplayer
@@ -10731,7 +10746,7 @@ groups:
       prefix: '&fWh&7it&fe &fLan&7te&frn&8&8(&fT&7U&8)'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -10764,7 +10779,7 @@ groups:
       prefix: '&fWh&7it&0e &7Ma&frti&7a&0n'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -10785,7 +10800,7 @@ groups:
       prefix: '&8Wint&7er &4Sol&cdier'
       suffix: '&7'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.wintersoldier
         - ch.alias.jump0
@@ -10811,7 +10826,7 @@ groups:
       prefix: '&eW&0o&elv&9er&eine'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -10834,7 +10849,7 @@ groups:
       prefix: '&eW&4on&ed&4er &9Gi&8rl'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.dismountplayer
@@ -10869,7 +10884,7 @@ groups:
       prefix: '&cW&4o&cn&4d&ce&4r &0M&8a&7n'
       suffix: '&4'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.carryplayer
@@ -10914,7 +10929,7 @@ groups:
       prefix: '&4W&fon&eder &4W&fom&9an'
       suffix: '&9'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - ch.alias.dismountplayer
@@ -10952,7 +10967,7 @@ groups:
       prefix: '&4W&fon&eder &4W&fom&9an&8(&bGM&8)'
       suffix: '&b'
     worlds:
-      survival:
+      survival112:
         permissions:
         - -essentials.protect.damage.fall
         - essentials.fly
@@ -10997,7 +11012,7 @@ groups:
       prefix: '&fX&0-&f2&03'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
@@ -11020,7 +11035,7 @@ groups:
       prefix: '&eYe&ell&6o&ew &eL&6a&ent&fe&ern&8(&eB&8)'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.yellowlanternbatman
         - ch.alias.carryplayer
@@ -11062,7 +11077,7 @@ groups:
       prefix: '&eYe&ell&6o&ew &eL&6a&ent&fe&ern&8(&cS&8)'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.yellowlanternsinestro
         - ch.alias.carryplayer
@@ -11090,7 +11105,7 @@ groups:
       prefix: '&2Y&ao&2d&aa'
       suffix: '&a'
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.forcespeed
         - ch.alias.jump0
@@ -11109,7 +11124,7 @@ groups:
       prefix: '&fZ&0a&ft&0a&fn&0n&fa'
       suffix: '&f'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - ch.alias.zatanna
@@ -11131,7 +11146,7 @@ groups:
       prefix: '&fZ&eeu&fs'
       suffix: '&e'
     worlds:
-      survival:
+      survival112:
         permissions:
         - essentials.fly
         - essentials.lightning
@@ -11178,7 +11193,7 @@ groups:
         - ch.alias.run0
         - ch.alias.powers
         - essentials.back
-      survival:
+      survival112:
         permissions:
         - powers.wallrun
         - worldedit.navigation.thru.command
@@ -11215,7 +11230,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11236,7 +11251,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11254,7 +11269,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11275,7 +11290,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11293,7 +11308,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11311,7 +11326,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11329,7 +11344,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11347,7 +11362,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11365,7 +11380,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11383,7 +11398,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11401,7 +11416,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11419,7 +11434,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11437,7 +11452,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11455,7 +11470,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11473,7 +11488,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11491,7 +11506,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11509,7 +11524,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11538,7 +11553,7 @@ groups:
     - ch.alias.suspendofficer
     - ch.alias.reinstateofficer
     options:
-      suffix: '&a&l&o'
+      suffix: '&b&l'
       prefix: '&2&mS&a&mD&2&mF&2 S&ata&2f&af&2 S&aerge&2a&ant'
     inheritance:
     - mortal
@@ -11550,7 +11565,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11568,7 +11583,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11586,7 +11601,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11604,7 +11619,7 @@ groups:
     inheritance:
     - commonherotraits
     worlds:
-      survival:
+      survival112:
         permissions:
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
@@ -11618,6 +11633,15 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  fanficf24d80bbec984d059282914ec5f6f1a0:
+    inheritance:
+    - commonherotraits
+  fanfic05bf0af3a0a64e9ebb7da29d7d43ea85:
+    inheritance:
+    - commonherotraits
+  fanficc6cb4b81f1e7446db966e4ed7b45909d:
+    inheritance:
+    - commonherotraits
 schema-version: 1
 users:
   001b0b15-2f00-4ce1-acff-577e465cb175:
@@ -11665,7 +11689,7 @@ users:
       name: freshlybaked1
   0130299a-4489-429d-b4eb-68643a4c6ac8:
     group:
-    - sergeant
+    - bluelanternsaintwalker
     options:
       name: xDcGamer_MCU
     permissions:
@@ -11957,9 +11981,9 @@ users:
       name: Tonao
   07403436-1c7f-4e91-9dd4-58fbe8846992:
     group:
-    - genos
+    - firestormraymondstein
     options:
-      name: MCBawler
+      name: KageSmash
   07496d58-6a47-4ad1-82b9-7226420114d4:
     group:
     - spiderman2099
@@ -12292,7 +12316,7 @@ users:
       name: GS501
   108b7046-ddfb-40c1-a3a3-612b055d466b:
     group:
-    - infinitysilversurfer
+    - beerus
     options:
       name: gugumarques
     worlds:
@@ -12533,7 +12557,7 @@ users:
       name: Brooker_
   176808de-428a-47f2-acb0-bd5ca1a1b6e0:
     group:
-    - starlord
+    - dannyphantom
     options:
       name: EleyondTheElf
     permissions:
@@ -12677,6 +12701,9 @@ users:
     options:
       name: lowdog360
     permissions: []
+    worlds:
+      greenfield:
+        permissions: []
   1ad48845-59ef-45cd-809f-796fd3d3d9be:
     group:
     - carnage
@@ -12706,7 +12733,7 @@ users:
         permissions: []
   1b7d4e07-4245-42d5-9a18-51ec929a1dfd:
     group:
-    - blackracerwilliewalker
+    - mortal
     options:
       name: BlackCat109
     worlds:
@@ -12742,7 +12769,7 @@ users:
       name: C00lCreeper426
   1c575be8-a874-4b78-8307-3252351ad276:
     group:
-    - hermes
+    - ashprime
     options:
       name: Leedler268
     worlds:
@@ -12787,12 +12814,13 @@ users:
       name: TXNUKEDUDE
   1e58b18c-3a81-4928-8431-687016fb40fc:
     group:
-    - godspeed
+    - vision
     options:
       name: B1uDirt
     worlds:
       greenfield:
         permissions: []
+    permissions: []
   1e5c53a3-47d6-45c1-9cc1-7c80a3ed8554:
     group:
     - mortal
@@ -13106,14 +13134,14 @@ users:
         - ch.alias.officekill
   25067289-fa55-4f45-9b63-9fc5949b4696:
     group:
-    - novasamalexander
+    - greenlanternhaljordan
     options:
       name: cornsnake469
   25096e3b-3798-41e6-b1a6-1f257ebe6471:
     group:
     - savitar
     options:
-      name: xXPvPDarkYTXx
+      name: Darkkoward
     permissions: []
     worlds:
       greenfield:
@@ -13229,11 +13257,12 @@ users:
       name: ii_Indra
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
-    - missmartian
+    - mortal
     options:
       name: BasicallyHark
       prefix: ''
     permissions:
+    - change.chat
     - arrest.onjoin
     - -ch.alias.gc
     - tournament.create
@@ -13325,9 +13354,10 @@ users:
       name: DavidTheGam
   2b549653-2bbd-44cb-a4b0-34776c836869:
     group:
-    - superman
+    - yoda
     options:
       name: Turtleyrad
+    permissions: []
   2b684873-2571-4707-8347-ec87f6181199:
     options:
       name: spartawill2004
@@ -13364,7 +13394,7 @@ users:
       name: TALENTEDLIME555
   2c2de5e0-bf4e-4def-a7bb-507648fb9d66:
     group:
-    - batman
+    - infinitysilversurfer
     options:
       name: VipeGamingYT
     permissions:
@@ -13684,7 +13714,7 @@ users:
     permissions: []
   34b177be-e3f5-4795-8007-bdb9b9a7f41e:
     group:
-    - gothamman
+    - thehumantorch
     options:
       name: DrHERO1
   35084263-5c22-4ec2-9f68-9e10ebccc0bf:
@@ -13880,7 +13910,7 @@ users:
       name: daxakapewbropie
   3be4c2e1-b94f-4644-be50-6b06448019fd:
     group:
-    - reverseflashedwardclariss
+    - reverseflashdanielwest
     options:
       name: B1LLYJ0EFRACTURE
     permissions: []
@@ -14044,7 +14074,7 @@ users:
         permissions: []
   3fec1fdc-e7f0-4314-97b8-cc08fbc92485:
     group:
-    - mortal
+    - blacklanterneobardthawne
     options:
       name: Wolfyninja10
   40100ba7-7710-4f18-bb95-67d47d8243ea:
@@ -14070,6 +14100,7 @@ users:
     options:
       name: Polo_RalphAdam
     permissions:
+    - multiverse.access.policeoffice
     - is.secretary
     - essentials.warps.office
     - essentials.warps.officeadmin
@@ -14354,7 +14385,7 @@ users:
       name: Blaziken1234567
   474707f7-f8b4-43ea-8978-9cae17917e82:
     group:
-    - lukecage
+    - beerus
     options:
       name: ThatCraftLife
     permissions:
@@ -14593,6 +14624,10 @@ users:
     - onepunchman
     options:
       name: AminBZ
+    permissions: []
+    worlds:
+      greenfield:
+        permissions: []
   4d001b1d-e94f-42f3-903e-15215f38d8e8:
     group:
     - msmarvelcaroldanvers
@@ -14672,7 +14707,7 @@ users:
       name: SnapCat101
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
-    - officer
+    - supergirl
     options:
       name: Taiyou_
     permissions:
@@ -15038,7 +15073,7 @@ users:
       name: Leanest_Cuisine
   5a157201-96e2-4c9d-ba9e-376a0b61289d:
     group:
-    - redhood
+    - apocalypse
     options:
       name: ig89
     worlds:
@@ -15336,12 +15371,13 @@ users:
       name: chubster42
   63374b1b-c97d-46f8-ab60-a705224af30a:
     group:
-    - flashwallywest
+    - niteowl
     options:
       name: gypsydanger14
     worlds:
       greenfield:
         permissions: []
+    permissions: []
   636cb1eb-0664-4727-b1a6-c69c24ea6b22:
     group:
     - poisonivy
@@ -15455,7 +15491,7 @@ users:
       name: Technoninja8
   663fa87e-be4c-45d5-bdde-587fa94e8f97:
     group:
-    - bluelanternbarryallen
+    - flashbarryallen
     options:
       name: JustKas
   6674891c-bb63-4c22-b61d-80113c920bbf:
@@ -15596,7 +15632,7 @@ users:
     group:
     - beerus
     options:
-      name: _GodSpeedCW_
+      name: __SkillAuraMC__
     worlds:
       garbageworld:
         permissions: []
@@ -15817,7 +15853,7 @@ users:
       name: Nccoolboy
   6eb8be96-d890-4518-b746-f4e58230eb05:
     group:
-    - antman
+    - boros
     options:
       name: NowFeelPain
   6ee13018-2482-4a1f-983d-76e2d18499bc:
@@ -15996,7 +16032,7 @@ users:
       name: SpaceSmash
   748c7d68-79e5-4194-9bc8-e446d948ee8a:
     group:
-    - flashbarryallen
+    - ironmanmkxliii
     options:
       name: alex363
     permissions: []
@@ -16005,7 +16041,7 @@ users:
         permissions: []
   749cb576-020a-4350-852c-99e8185874f9:
     group:
-    - mortal
+    - sentry
     options:
       name: dibs1205
     permissions:
@@ -16153,7 +16189,7 @@ users:
       name: Jessie_Belle15
   784e92b0-479e-4759-8877-d475f5c13e00:
     group:
-    - kidflashwallywest
+    - blackflash
     options:
       name: Anthonythefox
     permissions: []
@@ -16221,7 +16257,7 @@ users:
       name: Gokugaming2002
   79bde3af-7aae-489c-a44d-ceba16cc7b02:
     group:
-    - fanfic79bde3af7aae489ca44dceba16cc7b02
+    - spiderwomangwenstacy
     options:
       name: WildheartRazara
     permissions: []
@@ -16400,7 +16436,7 @@ users:
     options:
       name: _TreyCode_
     worlds:
-      survival:
+      survival112:
         permissions: []
       greenfield:
         permissions: []
@@ -16724,7 +16760,7 @@ users:
       name: Le_Rilax
   85aa44f4-9f3b-45dc-9ea5-9bf2b00d9152:
     group:
-    - howl
+    - trigon
     options:
       name: Mr_R3Z
     worlds:
@@ -16780,7 +16816,8 @@ users:
     options:
       name: Grim765Man
     permissions:
-    - chat.cooldown
+    - is.officer
+    - ch.alias.onduty
     worlds:
       fightclub:
         permissions: []
@@ -16842,12 +16879,15 @@ users:
       name: katesawesome
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - zion
+    - anarchy
     options:
       name: God_Doesnt_Exist
       prefix: ''
       suffix: '&a&l&o'
     permissions:
+    - -powers.onepunch
+    - -powers.projectileinvulnerability
+    - powers.onepunch
     - is.suspended
     - -powers.fireballpunch
     - -is.suspended
@@ -16884,14 +16924,13 @@ users:
     - essentials.kill.exempt
     - powers.ow
     - icu.exempt
-    - multiverse.access.anarchy
     worlds:
       fightclub:
         permissions:
         - -essentials.protect.pvp
       greenfield:
         permissions: []
-      survival:
+      survival112:
         permissions: []
   8804c5af-7861-4d3b-ae26-750b4cf93f25:
     group:
@@ -17042,7 +17081,7 @@ users:
         permissions: []
   8cb964f5-d345-4a65-8811-cb3b0c11b51b:
     group:
-    - goku
+    - naruto
     options:
       name: Vengeance007
     permissions: []
@@ -17185,7 +17224,7 @@ users:
       name: BlueTroubleGamer
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
-    - mortal
+    - atom
     options:
       name: X_Tony_X
     permissions:
@@ -17652,7 +17691,7 @@ users:
       name: NightlyTrooper
   9e706bf6-6fc2-4a2a-bdda-4ef531d05908:
     group:
-    - ironfist
+    - novasamalexander
     options:
       name: MichaelKieu
     permissions:
@@ -17956,7 +17995,7 @@ users:
       name: Operation_Gaming
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
-    - blackracerwilliewalker
+    - mewtwo
     options:
       name: MrFlameYT
     permissions:
@@ -17969,7 +18008,7 @@ users:
         permissions: []
   a8f8ce5f-64ee-469d-9b3f-7d7069898694:
     group:
-    - flashbarryallen
+    - spidermanpeterparker
     options:
       name: KazutoKirigia
     permissions:
@@ -17986,7 +18025,7 @@ users:
       name: Gulithor
   a90bff3f-1f10-4734-9f90-2dfb0660b66e:
     group:
-    - impulsebartallen
+    - flashwallywest
     options:
       name: SonicRush
     permissions: []
@@ -18347,7 +18386,7 @@ users:
         permissions: []
   b1df1d7f-7fe4-4e85-8a1f-6645d5676239:
     group:
-    - joker
+    - bluelanternbarryallen
     options:
       name: DarthMathias
   b206dcfb-2046-446b-9fdc-61608797caad:
@@ -18824,7 +18863,6 @@ users:
     options:
       name: v_frankenstein
     permissions:
-    - multiverse.access.policeoffice
     - multiverse.access.underworld
     worlds:
       greenfield:
@@ -18843,7 +18881,7 @@ users:
       name: 22mistymint
   bf559559-e3c6-4445-bc99-2f2d8a137688:
     group:
-    - robindamianwayne
+    - arsenal
     options:
       name: Enderray1_
     worlds:
@@ -18873,7 +18911,7 @@ users:
         - ch.alias.officekill
   bfefc47e-8f1a-43d6-a940-0cce7d1fee31:
     group:
-    - superman
+    - infinitysilversurfer
     options:
       name: StrangeScotty
   blahblahsillysheep:
@@ -19144,7 +19182,7 @@ users:
       name: brorsand123
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     group:
-    - thefourthdoctor
+    - spidermanmilesmorales
     options:
       name: LordOfGallifrey
     permissions: []
@@ -19299,7 +19337,7 @@ users:
       name: Zejtko12
   ca7e8de8-30f0-43c5-9701-982c10ea9459:
     group:
-    - sergeant
+    - firestormraymondstein
     options:
       name: HerpaDerp10000
     permissions:
@@ -19893,7 +19931,7 @@ users:
       name: TBNRattata
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     group:
-    - xtwothree
+    - missmartian
     options:
       name: TaterBalls
       prefix: ''
@@ -19917,7 +19955,7 @@ users:
       office:
         permissions:
         - ch.alias.officekill
-      survival:
+      survival112:
         permissions: []
   dbd07556-ccdd-4fc6-a60a-91cb3b360079:
     group:
@@ -20171,7 +20209,7 @@ users:
       name: KurtNightcrawler
   e17d8de4-9fa8-474a-a6c1-54d28c9a5591:
     group:
-    - blackracerwilliewalker
+    - blackflash
     options:
       name: nevsfam
     permissions: []
@@ -20684,7 +20722,7 @@ users:
       name: footballkilla84
   eca9177a-9ef2-4e69-b1fc-804d9d848303:
     group:
-    - mrshifty
+    - mrmxyzptlk
     options:
       name: mrshiftyy
     permissions: []
@@ -20829,7 +20867,7 @@ users:
       name: CaPiTaInE_FuSiOn
   ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
     group:
-    - darkseid
+    - blacklanternmartianmanhunter
     options:
       name: superiorxman
     permissions:
@@ -20868,7 +20906,7 @@ users:
         permissions: []
   effe9adf-c5d6-4a61-8143-204338715b3d:
     group:
-    - impulsebartallen
+    - nightcrawler
     options:
       name: GAMINGwithKEYSER
   emmetgaming:
@@ -20962,14 +21000,13 @@ users:
     permissions: []
   f24d80bb-ec98-4d05-9282-914ec5f6f1a0:
     group:
-    - infinitysilversurfer
+    - darkseid
     options:
       name: Wowcraftman
     worlds:
       greenfield:
         permissions: []
     permissions:
-    - multiverse.access.policeoffice
     - chat.cooldown
   f25683fe-9192-488c-8f13-abc63ec5fb4c:
     group:
@@ -21056,7 +21093,7 @@ users:
     group:
     - mortal
     options:
-      name: Talencee
+      name: SydeeWindyee
   f56713b1-d391-4726-b814-0f3f2ec815c4:
     group:
     - ghostriderjohnnyblaze
@@ -21098,7 +21135,7 @@ users:
         - essentials.fly
         - essentials.build.*
         - essentials.gamemode
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
       fightclub:
         permissions: []
@@ -21369,7 +21406,7 @@ users:
     worlds:
       info:
         permissions:
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
         - essentials.gamemode
         - essentials.build.*
@@ -21380,7 +21417,7 @@ users:
         - essentials.build.*
         - ch.alias.firesecretary
         - ch.alias.hiresecretary
-        - essentials.gamemode.survival
+        - essentials.gamemode.survival112
         - essentials.gamemode.creative
         - essentials.gamemode
       greenfield:
@@ -21405,7 +21442,7 @@ users:
       name: Gummiefruitrollz
   fc407fff-19fa-4001-a919-4ed757d3fbb3:
     group:
-    - mortal
+    - firestormraymondstein
     options:
       name: De_Archer
     permissions:
@@ -21572,7 +21609,7 @@ users:
       name: PandaCakes28
   flash:
     worlds:
-      survival:
+      survival112:
         permissions: []
   funcaptainrex:
     group:
@@ -21590,7 +21627,7 @@ users:
     - quarantine
   kidflash:
     worlds:
-      survival:
+      survival112:
         permissions: []
   lostingalaxeh_:
     permissions:
@@ -21610,7 +21647,7 @@ users:
     - chat.cooldown
   reverseflash:
     worlds:
-      survival:
+      survival112:
         permissions: []
   sparkz:
     group: []
@@ -21628,7 +21665,7 @@ users:
     - quarantine
   zoom:
     worlds:
-      survival:
+      survival112:
         permissions: []
   ~console:
     group:
@@ -21672,7 +21709,7 @@ users:
     - ch.alias.onduty
   965ab7af-16e7-4dd0-b16c-f26d4300d23f:
     group:
-    - vision
+    - superman
     options:
       name: Nitely
     worlds:
@@ -21772,7 +21809,7 @@ users:
       name: paddy_wack
   9068e658-a14f-43a3-ad65-04dbac12a5e0:
     group:
-    - reverseflasheobardthawne
+    - nightwing
     options:
       name: Viibe_
     worlds:
@@ -21832,7 +21869,7 @@ users:
     group:
     - doctorstrange
     options:
-      name: Dec4survival
+      name: Dec4survival112
   e8c76eca-2c7b-4603-8256-8e58bc13e236:
     group:
     - venom
@@ -21913,7 +21950,7 @@ users:
       name: SchwiftyBlu
   ff0fec80-b8d2-4d10-8951-3061c6e7181d:
     group:
-    - onepunchman
+    - savitar
     options:
       name: Ultimate_Gamer00
     worlds:
@@ -21951,7 +21988,7 @@ users:
     options:
       name: SPORTYBOYS
     group:
-    - onepunchman
+    - apollo
   f623605a-7c45-409a-8d9a-abd04d0b15e8:
     group:
     - greenlanternhaljordan
@@ -22257,7 +22294,7 @@ users:
       name: DarkLight08
   7f59b853-1f8d-4439-b166-35a6b76267c1:
     group:
-    - enderman
+    - brainiac
     options:
       name: takeit2damax
     worlds:
@@ -22531,7 +22568,7 @@ users:
       name: mafia1724
   edeb3d07-68e4-4118-bebe-397dc15fe368:
     group:
-    - superman
+    - blackspiderman
     options:
       name: luckyducky007
     worlds:
@@ -22962,7 +22999,7 @@ users:
       name: disbosss
   2e177dae-4191-459b-bc49-f5d5d5ad4e95:
     group:
-    - gohan
+    - shazam
     worlds:
       greenfield:
         permissions: []
@@ -23138,7 +23175,7 @@ users:
         permissions: []
     permissions: []
     group:
-    - zoom
+    - savitar
     options:
       name: cryaonatic
   40f1bd93-0e56-4d6b-b13e-9e02f64af657:
@@ -23285,7 +23322,7 @@ users:
       name: autokai144844
   05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85:
     group:
-    - martianmanhunter
+    - kirito
     worlds:
       greenfield:
         permissions: []
@@ -23645,12 +23682,12 @@ users:
       name: torch13awesome
   41041f74-cc86-4fae-97b5-449f224e709d:
     group:
-    - flashbarryallen
+    - darkseid
     options:
       name: HomedogSwaggyG
   01e263b5-c4c5-43eb-a2ba-e9ee5a81a54e:
     group:
-    - flashjaygarrick
+    - gorillagrodd
     options:
       name: coolroy123aa
   2fbf06b5-b905-447d-96c5-802b0580f62a:
@@ -23673,7 +23710,7 @@ users:
       name: Cpt_Macco
   0c32417a-17a4-4918-9eba-0cddcc29864f:
     group:
-    - wonderwoman
+    - mortal
     options:
       name: Auris_Bunny
     worlds:
@@ -23790,7 +23827,7 @@ users:
       name: Gamingplaz
   494f73a1-daa3-4785-9df9-66ae21dc65ed:
     group:
-    - robindamianwayne
+    - batman
     options:
       name: ImFusionYT
   fade6f5f-7b87-40a4-9d05-53054e8ae38c:
@@ -23813,7 +23850,7 @@ users:
         permissions: []
   3ad4d425-1eac-4c67-98a8-ed9a63973059:
     group:
-    - godspeed
+    - deathstroke
     worlds:
       greenfield:
         permissions: []
@@ -23888,7 +23925,7 @@ users:
       name: EnderDino__
   e6a44df7-9efe-4e76-be68-4a4f1acda557:
     group:
-    - enderman
+    - loki
     options:
       name: Blaziken45
     permissions: []
@@ -23913,7 +23950,7 @@ users:
       name: BrodsterTV
   aa323969-2ccc-49c2-90ee-fbf60fa82ee6:
     group:
-    - raven
+    - spiderwomangwenstacy
     worlds:
       greenfield:
         permissions: []
@@ -23938,6 +23975,7 @@ users:
         permissions: []
     options:
       name: WizardWoof
+    permissions: []
   3d168409-bb3b-4886-a9ec-323bd4005b54:
     group:
     - thanos
@@ -23953,7 +23991,7 @@ users:
       name: NepGear3811
   d0b35aee-f6af-44ff-84ed-6342e8370492:
     group:
-    - ironspider
+    - martianmanhunter
     worlds:
       greenfield:
         permissions: []
@@ -23966,6 +24004,296 @@ users:
     - flashbarryallen
     options:
       name: Bowl_of_Noodles
+  0b3cdc85-b1e9-41ab-9b29-01c5ab0571d5:
+    group:
+    - blackflash
+    options:
+      name: Akselfs
+  003d62f4-cd76-4710-b6fb-13261d6b6c59:
+    group:
+    - onepunchman
+    options:
+      name: pokejets8
+  6fed9a3a-e5c7-4da3-87ef-25ab920cd7a7:
+    group:
+    - hulk
+    worlds:
+      greenfield:
+        permissions: []
+    permissions: []
+    options:
+      name: DaCreeper06
+  dffa9869-dc8d-4c1a-8055-3623ad136739:
+    group:
+    - supermanprimeonemillion
+    options:
+      name: Diamond_Legion1
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+  39b7a794-4625-404d-8a0f-91110bac5883:
+    group:
+    - reverseflashedwardclariss
+    options:
+      name: USATF
+  2b15aa8f-5a0d-4b11-9924-45bfde0404e1:
+    group:
+    - infinitysilversurfer
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+    options:
+      name: doom_and_boom
+  9e39944b-392d-44bf-996b-0e39e3de6c15:
+    group:
+    - onepunchman
+    options:
+      name: HiMyNameIsChase
+    worlds:
+      greenfield:
+        permissions: []
+  dfec80dd-f187-409d-8116-eee32c941809:
+    group:
+    - spidermanpeterparker
+    options:
+      name: Topher_The_Weak
+  04182ef3-1d5c-4801-9fda-9259ffcad65b:
+    group:
+    - kidflashwallywest
+    options:
+      name: lomparto
+  9a22c3bc-df5b-42af-b27b-2fcd79edfe00:
+    group:
+    - nightcrawler
+    options:
+      name: _xCrazy_James
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+  8112d605-fa2d-4fab-bfa2-03eb9a939ff0:
+    group:
+    - deadpool
+    options:
+      name: orang3dirt
+  b9d1252a-2168-4dc0-bae1-5eb06bc09ff7:
+    group:
+    - kidflashwallywest
+    options:
+      name: endercat3003
+    worlds:
+      greenfield:
+        permissions: []
+  c5bcf997-b997-43a6-86af-a2214f31bf21:
+    group:
+    - deadpool
+    options:
+      name: craftingflame23
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+  14a9055e-a99c-473e-b519-cef335f915e7:
+    group:
+    - greenarrow
+    worlds:
+      greenfield:
+        permissions: []
+    options:
+      name: _Roxen_
+    permissions:
+    - multiverse.access.policeoffice
+  8fa5aa81-b07d-48a9-a3ce-bdb7257d2bde:
+    group:
+    - blackpanther
+    worlds:
+      greenfield:
+        permissions: []
+    options:
+      name: Sanine_99
+  aab9bc82-b52b-4dea-9175-3a79604088bf:
+    group:
+    - batgirl
+    options:
+      name: LSP4life
+  0cbb1912-cce5-428f-a246-c40362e7b3b0:
+    group:
+    - cosmicarmorsuperman
+    options:
+      name: SkyGraft007
+  5dbf795f-6d7f-4b5f-bb44-2f79ee0547fe:
+    group:
+    - nickfury
+    options:
+      name: pee19
+  57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
+    permissions:
+    - is.officer
+    - ch.alias.onduty
+    group:
+    - officer
+    options:
+      name: Night_MCU
+  647c8c25-fa7a-4539-b6f9-fe684bd6b840:
+    group:
+    - shazam
+    options:
+      name: Iandorf
+  f7498712-c00e-4f44-92fe-f73a8fdff5d6:
+    group:
+    - whitelanternkylerayner
+    options:
+      name: BenSt2006
+  a3b11492-5509-49a8-9cfb-df4431e7d648:
+    group:
+    - captainamericasteverogers
+    options:
+      name: The_Flash_2046
+  03fa29ae-b305-423f-9c4d-78870968d9f6:
+    group:
+    - goku
+    options:
+      name: J0RR3L
+  439bab1e-20cc-4056-ae4c-fa5177c93015:
+    worlds:
+      greenfield:
+        permissions: []
+    options:
+      name: KawaiiWonder
+  da59be6b-6549-43b3-ae10-69b96ca02ad3:
+    group:
+    - ironfist
+    options:
+      name: roarkus1
+  af1b31bd-580c-4bd2-8720-21c1c2fc36e0:
+    group:
+    - wonderwoman
+    worlds:
+      greenfield:
+        permissions: []
+    options:
+      name: Sweetmint69
+  79cd1603-e9a4-4681-96dc-6e4a86deca13:
+    group:
+    - wonderwoman
+    options:
+      name: Balint_32
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+  9f17d478-c8a5-4503-bfb6-bff4c271e6dc:
+    group:
+    - batman
+    worlds:
+      greenfield:
+        permissions: []
+    permissions: []
+    options:
+      name: Titaniclover06
+  61b7ea91-1777-48f6-bece-31d9e171c14d:
+    group:
+    - blacklanterneobardthawne
+    options:
+      name: skeldestroyer
+  db97b7b5-179a-45c3-bd95-48632a64d285:
+    group:
+    - darthvader
+    options:
+      name: Lokao1
+  391d3003-1575-4d63-86c3-90825365deed:
+    group:
+    - onslaught
+    options:
+      name: Shadeblack_
+  4697589d-ef4e-43e6-b68a-88bb0dc8bef9:
+    group:
+    - darthsidious
+    options:
+      name: wizardturdlet
+  6f228551-aff3-4d3d-b169-e5da6fa7f973:
+    group:
+    - antman
+    options:
+      name: unwisesteye
+  abc746e4-e1db-46be-8712-b07396b4427a:
+    group:
+    - antman
+    options:
+      name: DragonMan151
+  76a96763-0f4e-4366-9b01-9c3c9fd04468:
+    group:
+    - hulk
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+    options:
+      name: thebatmobil05
+  c1265a02-0a96-4ed1-975c-73617ff76d84:
+    group:
+    - zoom
+    options:
+      name: syfy101
+  c5ba3c77-97b4-4df2-83b5-7f3672f48fac:
+    group:
+    - alice
+    options:
+      name: Milkxandxcookies
+  8d7dcb74-0c3c-4ffd-a59b-05d111a9f55a:
+    group:
+    - fives
+    worlds:
+      greenfield:
+        permissions: []
+    permissions: []
+    options:
+      name: LittleAndy08
+  ea81e7d5-0577-45b6-b363-e22ba4d996a9:
+    group:
+    - aphrodite
+    options:
+      name: Shinigami123
+  66e9b716-5a9a-43f0-aa26-616bfa435850:
+    group:
+    - kidflashwallywest
+    options:
+      name: Mimaru
+    worlds:
+      greenfield:
+        permissions: []
+    permissions:
+    - multiverse.access.policeoffice
+  d577f172-c006-49eb-afe3-9cafe4117b92:
+    group:
+    - nightwing
+    worlds:
+      greenfield:
+        permissions: []
+    options:
+      name: PrinceRiku
+    permissions: []
+  4909491f-3d93-414e-9a92-cb0a7dd30b9f:
+    group:
+    - martianmanhunter
+    options:
+      name: cab0cab
+    worlds:
+      greenfield:
+        permissions: []
+  1fa2186c-3757-4963-8d88-52cf144ca747:
+    group:
+    - greenlanternhaljordan
+    options:
+      name: Swamp___Thing
 worlds:
   checkers:
     inheritance:
@@ -23990,7 +24318,7 @@ worlds:
     - greenfield
   greenfield:
     inheritance:
-    - survival
+    - survival112
   hallofjustice:
     inheritance:
     - greenfield
@@ -24033,12 +24361,18 @@ worlds:
   sprintparkour:
     inheritance:
     - godlyparkour
-  survival_nether:
+  survival112_nether:
     inheritance:
-    - survival
-  survival_the_end:
+    - survival112
+  survival112_the_end:
     inheritance:
-    - survival
+    - survival112
+  anarchy_nether:
+    inheritance:
+    - anarchy
+  anarchy_the_end:
+    inheritance:
+    - anarchy
   titanstower:
     inheritance:
     - greenfield

@@ -1,23 +1,249 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_SWORD
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_SPADE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_PICKAXE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_AXE
-health: 14.0
-hunger: 20
+    type: SULPHUR
+    amount: 16
+health: 18.666664123535156
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.4830055
+exhaustion: 1.5793946
 armor_contents: {}
-ender_chest: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPECTRAL_ARROW
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: NEW EDITION!
+      author: ImUnicornRainbow
+      pages:
+      - |2
+         New Updates!!!§0
+        §0
+        §0/arrest is now different.§0
+        §0
+        §0The new command is /arrest (player) (reason)§0
+        §0If you do not put the reason it will say Unknown Command!§0
+        §0
+      - |-
+        There is also /warn (player) (reason) that will appear in chat to the public to see.  Once they are warned the player will have to visit /warp rules to read the rules.§0
+        §0
+        §0Every time a player is warned or arrest, it goes inside the CRIMINAL DATABASE.
+      - |-
+        An officer can do /backroundcheck (player) to see their warnings and arrests with the time and date, to see their criminal record.§0
+        §0
+        §0An officer can also do /checkfingerprints (player) and everytime a player gets arrested or warned their IP gets logge
+      - |-
+        d.  §0
+        §0you can use /checkfingerprints to find people's alts :o§0
+        §0It only works if both alts have been entered in the criminal database.
+      - Now Sergeants can do /officerhistory (player) to find the warnings and arrests
+        given by an officer.
+      - |-
+        HAVE A NICE DAY!!!§0
+        §0THANK YOU FOR READING THIS NOTICE!
+      generation: 0
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: New Changes
+      author: xSp4rkz
+      pages:
+      - |
+        New Changes§0
+        §0============§0
+        §0
+        §0So the following changes are now in effect:§0
+        §0
+        §0(1) When you use the /onduty command while in the Police Office you will stay on duty for the entire time you are at the Office§0
+      - |-
+        (2) If you use the /onduty command while anywhere else it will give you 2 minutes on duty before converting you back to a mortal.§0
+        §0
+        §0Why?: Because we gave you the power to be able to enforce rules, but would still like you to play as a regular player
+      - "and enjoy the super heros made available to you. §0\n§0\n§0You can stay on\
+        \ duty in the office, but anywhere else its just used to enforce rules.§0\n\
+        §0\n§0(3) There is now a private staff lounge and deck area where private\
+        \ staff meetings can be held and "
+      - |-
+        private one on one conversations. §0
+        §0
+        §0Currently only Sergeants have access to it, but can invite other Officers in for a chat. Its so if Sergeants are meeting, other officers dont try to eavesdrop.
+      - |-
+        (4) There is now a mail room attached to the locker room. You've obviously discovered it. Check your mailbox regularily. I will leave notices in your mail.§0
+        §0
+        §0(5) Every day I will reset the pressure plates found in front of your mailbox
+      - |-
+        The pressure plates will pay you your daily wage. Do not take from another Officer. I will know.§0
+        §0
+        §0If you have noticed someone has taken your pay then advise me immediately and I will investigate.§0
+        §0
+        §0Thanks for all your hard work!
+      generation: 1
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      lore:
+      - Duties & Authorities of an SDF Sergeant
+      title: Sergeant Duties R2
+      author: Server Defence Force
+      pages:
+      - |-
+        §l§nDuties of a Sergeant§0
+        §0
+        §01. Assistant to the Chief§0
+        §0
+        §02. Management of Evidence. (Organize reports, Statements, Applications, etc.)§0
+        §0
+        §03. Management of Officer's
+      - |-
+        4. Check the front desk for complaints, applications, or anything else thats been dropped off.§0
+        §0
+        §05. If a complaint has been received, determine if it can be handled.
+      - |-
+        6. Advise the Chief of any serious complaints§0
+        §0
+        §07. Enforce server rules§0
+        §0
+        §08. Ensure Officer's are complying with rules and enforcement methods§0
+        §0
+        §09. Submit an arrest report upon an arrest.
+      - |-
+        10. Review arrest reports of other Officer's and ensure they are including enough details and providing adequate proof (ie. screenshot URL's)§0
+        §0
+        §011. If there is a lack of proof then release the detanee and address the issue.
+      - |-
+        12. Educate Officer's on proper Office Procedures§0
+        §0
+        §013. Know the server rules. Suggest new ones if you feel some should be added§0
+        §0
+        §014. Organize the Vault and store documentation in an organized manner
+      - |-
+        15. Develop, Implement, and Enforce rules governing the Officer's§0
+        §0
+        §016. Receive, and Review Applications for Employment.§0
+        §0
+        §017. Arrange and conduct interviews for new Applicants.
+      - |-
+        18. Provide new Officer's with a tour and give them instruction on how to do their job.§0
+        §0
+        §019. Provide the Chief with the Application and your Recommendation for a new Hire if an Applicant is successful during his/her interview.
+      - |-
+        20. Attend meetings with the Chief to discuss Policing matters.§0
+        §0
+        §0§l§nAuthorities§0
+        §0
+        §01. You may Enforce ONLY rules that are in force (Found at the front of the Police Station)
+      - "2. You may create rules governing the other Officer's.§0\n§0\n§03. You may\
+        \ punish an Officer for misconduct. Punishment can include Jailing or suggesting\
+        \ a fine which the Chief will take care of.§0\n§0 "
+      - "4. You have the Power to Fire Officer's for misconduct.§0\n§0\n§05. You have\
+        \ the Power to conduct your own version of an Interview and ask questions\
+        \ you feel are relevant.§0\n§0 "
+      - |-
+        6. You have the Power to over-ride the decision of another "Officer"§0
+        §0
+        §07. You have access to Restricted Areas including the Vault§0
+        §0
+        §08. You have access to your own Office which you can build in. Comes with a Mailbox
+      - "§l§nCommands§0\n§0\n§01. /onduty§0\n§02. /arrest §0\n§03. /release §0\n§\
+        04. /addchatcooldown §0\n§05. /remchatcooldown §0\n§06. /fireofficer§0\n§\
+        0 "
+      generation: 0
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: FIND THE I!
+      author: WWE_AlexaBliss
+      pages:
+      - |-
+        FIND THE I:§0
+        §0
+        §0!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!i!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      generation: 0
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Hark's Temper
+      author: WWE_AlexaBliss
+      pages:
+      - |2-
+         X_FoodMeatHark_X's temper:§0
+        §0
+        §0Yesterday, X_FoodMeatHark_X had a meltdown in the middle of the street and literally stopped traffic. One bystander by the name of Rairakuu stated "She started throwing a temper tantrum and distracted me from my
+      - crossword puzzle". Nobody knows why X_FoodMeatHark_X lost her marbles, but
+        the case should be further investigated.
+      generation: 0
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Skyequakejohnson
+      author: Skyequakejohnson
+      pages:
+      - Please sign your name to indicate your interest in becoming a Police Cadet.
+        Drop it off in the drop box
+      generation: 0
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      pages:
+      - |-
+        GradeBook§0
+        §0Friday May12 §0
+        §0nightghost (F)§0
+        §0xDc (A+)§0
+        §0Polo (B-)§0
+        §0Phantom_jeff(A+)
