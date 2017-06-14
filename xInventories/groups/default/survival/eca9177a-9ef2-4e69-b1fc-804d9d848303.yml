@@ -1,47 +1,5 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §2B§3o§2b§3a §8Fett §e§lD§a§lN§4§lA
-      lore:
-      - bobafett
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+inventory: {}
+armor_contents: {}
 health: 100.0
 hunger: 20
 exp: 0.0
@@ -49,29 +7,53 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.29302073
+exhaustion: 2.4620013
+ender_chest:
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: MrShiftyy
+      author: WhatAreThose05
+      pages:
+      - |-
+        Identification Card:§0
+        §0Mrshiftyy§0
+        §0Is a member.§0
+        §0Can Enter Base.
+      generation: 0
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 184938
+    type: JUMP
+    level: 60
+    duration: 197595
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 184938
-  '2':
     type: INCREASE_DAMAGE
-    level: 150
-    duration: 184938
-  '3':
-    type: REGENERATION
-    level: 1
-    duration: 184938
-  '4':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 184938
-  '5':
+    level: 20
+    duration: 197255
+  '2':
     type: HEALTH_BOOST
     level: 19
-    duration: 184938
+    duration: 197255
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 197255
+  '4':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 197255
+  '5':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 197255
+  '6':
+    type: REGENERATION
+    level: 1
+    duration: 197255
+  '7':
+    type: NIGHT_VISION
+    level: 1
+    duration: 197255
