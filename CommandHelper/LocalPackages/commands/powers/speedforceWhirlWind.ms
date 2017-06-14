@@ -14,7 +14,7 @@ register_command(whirlwind,
             assign(@cooldown, 30)
             
             assign(@lastUsedMindControl, import(@player."lastUsedWhirlWind"))
-            if(@lastUsedMindControl + @cooldown > time() / 1000,
+            if(!has_permission(@player,'whirlwind.bypass') && @lastUsedMindControl + @cooldown > time() / 1000,
                 die(color(red)."You must cool down before you can use whirl wind again!")
             )
             export(@player."lastUsedWhirlWind", time() / 1000)

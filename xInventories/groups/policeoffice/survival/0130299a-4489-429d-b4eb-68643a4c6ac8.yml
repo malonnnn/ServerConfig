@@ -1,21 +1,14 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: RED_ROSE
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
   '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    amount: 2
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: FLOWER_POT_ITEM
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: SPRUCE_FENCE_GATE
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-  '5':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
     meta:
@@ -32,4 +25,4 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.4387188
+exhaustion: 2.8419802
