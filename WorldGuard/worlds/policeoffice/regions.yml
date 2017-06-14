@@ -10,15 +10,16 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    builders:
-        min: {x: -73.0, y: 56.0, z: -87.0}
-        max: {x: 67.0, y: 118.0, z: 140.0}
+    offices:
+        parent: police
+        min: {x: -42.0, y: 80.0, z: 18.0}
+        max: {x: -14.0, y: 82.0, z: 40.0}
         members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: OWNERS, game-mode-group: OWNERS}
-        owners:
-            unique-ids: [e6de8cf0-af45-44e4-882f-d98446f4b31b]
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
+            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
+        owners: {}
         type: cuboid
-        priority: 4
+        priority: 1
     officehall:
         min: {x: -42.0, y: 80.0, z: 25.0}
         max: {x: -11.0, y: 82.0, z: 34.0}
@@ -27,16 +28,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
-    offices:
-        parent: police
-        min: {x: -42.0, y: 80.0, z: 18.0}
-        max: {x: -14.0, y: 82.0, z: 40.0}
-        members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     chiefs-closet:
         min: {x: 7.0, y: 80.0, z: 59.0}
         max: {x: 13.0, y: 82.0, z: 66.0}
@@ -160,8 +151,9 @@ regions:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, ca7e8de8-30f0-43c5-9701-982c10ea9459,
                 f621586e-8ef8-448d-9264-86b61375052e, 5da26092-c807-4c9b-8d08-9523f74ddc97,
                 a8185de3-b053-4aca-9eb6-d98728e476ad, e6de8cf0-af45-44e4-882f-d98446f4b31b,
-                4ff867f5-6cab-413e-9fad-e4d77ca48778]
-        flags: {}
+                4ff867f5-6cab-413e-9fad-e4d77ca48778, 57b29f1f-dc6b-4d30-80ac-cf64c4df3428,
+                869b4227-b51e-452e-adbd-48759a6848dd]
+        flags: {invincible: allow, invincible-group: MEMBERS}
         owners: {}
         type: global
         priority: 2
@@ -255,10 +247,10 @@ regions:
             blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /tpask, /tp2p, /tpaall,
                 /tpdeny, /tpacancel, /tpaccept, /tphere, /thru, /tp, /tptoggle, /tpo,
                 /tpahere, /tpl, /tpyes, /tpall, /tps]
-            build-group: OWNERS
+            build-group: NON_MEMBERS
             interact: allow
+            game-mode-group: NON_MEMBERS
             pvp: allow
-            game-mode-group: OWNERS
         owners: {}
         type: global
         priority: 0
