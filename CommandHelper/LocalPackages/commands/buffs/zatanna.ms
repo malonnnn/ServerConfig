@@ -19,7 +19,8 @@
                 "/cast erifnrubnordlaucelbbub",
                 "/cast dlocdniwwolb",
                 "/cast etaercsnoisulli",
-                "/cast tekcajtiarts"
+                "/cast tekcajtiarts",
+                "/mrasid"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true",
