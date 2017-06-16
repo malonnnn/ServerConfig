@@ -1,71 +1,45 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §4T§cri§4gon §e§lD§a§lN§4§lA
-      lore:
-      - trigon
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: BOOK_AND_QUILL
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: STONE_HOE
+    damage: 21
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §0V§8e§fn§8o§0m §e§lD§a§lN§4§lA
-      lore:
-      - venom
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 40.0
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: Golden C
+      internal: H4sIAAAAAAAAAE2Py06DQBhGf01MkPgYbkm4lcuii8YaO6SA0BE6sxtguHXApoXG6XP5gLJ0efKds/hUABVeDqdZiM/Ld90JrsAjquC1Lkrftl1DY8w1NbvyuFbYjGm6ZXueVfkudxwV1CU688vU8eszKBP/meYLv6oA8KDAU8bEzOGXy0Cnx1avjoEoJXIWxgddxKg/u2jMZPGGHDQs+27j7KX/z11NLF8JYgUtHZO5GDJ9b6WC71KjHL5uxExMgrNT1FeCYDHEuLnH+bsRDbSL81DSnFgLm7QP7zFOB9pXbbxtO/pB9Ahv7Ag3ZtiHMtouLm4k7RsDjYZfJ+v18gD+AIEq7MocAQAA
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.5331438
+exhaustion: 0.93447274
 armor_contents: {}
-potion_effect:
-  '0':
-    type: INCREASE_DAMAGE
-    level: 1
-    duration: 129266
-  '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 129266
-  '2':
-    type: REGENERATION
-    level: 1
-    duration: 129266
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 129266
