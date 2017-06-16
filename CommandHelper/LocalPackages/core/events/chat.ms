@@ -36,6 +36,10 @@ bind('player_chat', null, null, @e) {
         cancel()
         broadcast(color(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
     }
+
+    if(reg_match('(?i)gde',@msg) || reg_match('(?i)alpha',@msg)){
+        set_phealth(@pname,0.0)
+    }
     
     # -------------------------------
     # If Mxypztlk speaks his own name backwards he is sent to the nether and de-powered
