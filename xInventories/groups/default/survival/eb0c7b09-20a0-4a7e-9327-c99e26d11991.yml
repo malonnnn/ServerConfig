@@ -1,20 +1,19 @@
 health: 40.0
-hunger: 17
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.33510017
+exhaustion: 2.472012
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 4
-    amount: 5
+    type: STONE_SWORD
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -22,10 +21,50 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_SPADE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PICKAXE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: How to Claim Land
+      author: BigScary
+      pages:
+      - |-
+        Click: §3§nbit.ly/mcgpuser§0
+        §0
+        §0Claim land to protect your stuff!  Click the link above to learn land claims in 3 minutes or less.  :)§0
+        §0
+        §0Our claim tools are gold spade and stick.
+      - |-
+        Useful Commands:§0
+        §0
+        §0/Trust /UnTrust /TrustList§0
+        §0/ClaimsList§0
+        §0/AbandonClaim§0
+        §0
+        §0/Claim /ExtendClaim§0
+        §0/IgnorePlayer§0
+        §0
+        §0/SubdivideClaims§0
+        §0/AccessTrust§0
+        §0/ContainerTrust§0
+        §0/PermissionTrust
+      generation: 0
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -35,18 +74,14 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 199495
-  '1':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 199495
-  '2':
-    type: SPEED
-    level: 8
-    duration: 199327
-  '3':
+    duration: 192445
+  '1':
     type: HEALTH_BOOST
     level: 4
-    duration: 199495
+    duration: 192445
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 192445

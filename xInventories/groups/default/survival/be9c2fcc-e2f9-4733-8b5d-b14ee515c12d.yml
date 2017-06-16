@@ -1,10 +1,221 @@
-inventory: {}
-health: 20.0
-hunger: 20
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
+    amount: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 3
+    amount: 35
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: FEATHER
+    amount: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLASS_BOTTLE
+    amount: 45
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 26
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 116
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 11
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: FERMENTED_SPIDER_EYE
+    amount: 19
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_STALK
+    amount: 3
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+    amount: 3
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 8
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 64
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 8
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    damage: 28
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:harming
+health: 24.933332443237305
+hunger: 13
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.6520896
+exhaustion: 2.4998071
 armor_contents: {}
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 172229
+  '1':
+    type: INCREASE_DAMAGE
+    level: 16
+    duration: 172229
+  '2':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 172229

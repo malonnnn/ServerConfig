@@ -9,11 +9,6 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 4
-    amount: 5
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -25,30 +20,59 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 4
-    amount: 5
-health: 40.0
+health: 26.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 1.0331472E-7
+exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.657004
-ender_chest: {}
+exhaustion: 1.1270142
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: EM SCARED OF EM
+      author: zeldar8989
+      pages:
+      - 'thank you for not lettin ch kill me '
+      generation: 0
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: fag
+      author: ch_23
+      pages:
+      - |2
+         your a motherfucking faget§0
+      generation: 0
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: .\
+      author: ch_23
+      pages:
+      - ' Biach!!!'
+      generation: 0
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 197712
+    level: 5
+    duration: 199440
   '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 197712
-  '2':
-    type: REGENERATION
+    type: WATER_BREATHING
     level: 1
-    duration: 197712
+    duration: 199440
+  '2':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 199440
