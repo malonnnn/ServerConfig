@@ -1,12 +1,12 @@
 inventory: {}
 health: 20.0
 hunger: 20
-exp: 0.076923005
-exp-level: 3
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 15.0
-exhaustion: 0.7334186
+saturation: 0.0
+exhaustion: 3.6810038
 armor_contents: {}
 ender_chest:
   '0':
@@ -26,16 +26,7 @@ ender_chest:
         §0
         §0Built base.  Can enter base.  Member/Leader.
       generation: 0
-potion_effect:
-  '0':
-    type: DAMAGE_RESISTANCE
-    level: 0
-    duration: 5546
   '1':
-    type: FIRE_RESISTANCE
-    level: 0
-    duration: 5546
-  '2':
-    type: ABSORPTION
-    level: 3
-    duration: 1946
+    ==: org.bukkit.inventory.ItemStack
+    type: PRISMARINE_CRYSTALS
+    amount: 2

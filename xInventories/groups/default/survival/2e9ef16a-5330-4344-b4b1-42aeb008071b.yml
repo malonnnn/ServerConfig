@@ -1,86 +1,76 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
-    amount: 64
+    type: STONE_SWORD
+    damage: 12
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-      Unbreakable: true
+    type: STONE_SPADE
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
+    type: STONE_PICKAXE
+    damage: 1
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
+    type: STONE
+    damage: 5
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: WRITTEN_BOOK
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-health: 80.0
-hunger: 20
-exp: 0.6153847
-exp-level: 3
+      meta-type: BOOK_SIGNED
+      title: How to Claim Land
+      author: BigScary
+      pages:
+      - |-
+        Click: §3§nbit.ly/mcgpuser§0
+        §0
+        §0Claim land to protect your stuff!  Click the link above to learn land claims in 3 minutes or less.  :)§0
+        §0
+        §0Our claim tools are gold spade and stick.
+      - |-
+        Useful Commands:§0
+        §0
+        §0/Trust /UnTrust /TrustList§0
+        §0/ClaimsList§0
+        §0/AbandonClaim§0
+        §0
+        §0/Claim /ExtendClaim§0
+        §0/IgnorePlayer§0
+        §0
+        §0/SubdivideClaims§0
+        §0/AccessTrust§0
+        §0/ContainerTrust§0
+        §0/PermissionTrust
+      generation: 0
+health: 60.0
+hunger: 13
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.2691858
-armor_contents:
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
+exhaustion: 3.1447055
+armor_contents: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 16
-    duration: 126193
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 186396
   '1':
-    type: FAST_DIGGING
-    level: 20
-    duration: 181678
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 186396
   '2':
+    type: INCREASE_DAMAGE
+    level: 12
+    duration: 186396
+  '3':
+    type: REGENERATION
+    level: 4
+    duration: 186396
+  '4':
     type: HEALTH_BOOST
-    level: 14
-    duration: 126193
+    level: 9
+    duration: 186396
