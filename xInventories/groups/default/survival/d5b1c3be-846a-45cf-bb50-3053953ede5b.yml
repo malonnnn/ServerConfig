@@ -5,11 +5,59 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.1620061
+exhaustion: 0.9530003
 inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 7
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -21,6 +69,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 4
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -30,18 +79,26 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
+    type: SPEED
+    level: 255
+    duration: 195913
+  '1':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 198825
-  '1':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 198825
+    duration: 195493
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 198825
+    type: JUMP
+    level: 5
+    duration: 196008
   '3':
     type: REGENERATION
-    level: 4
-    duration: 198825
+    level: 1
+    duration: 195493
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 195493
+  '5':
+    type: FAST_DIGGING
+    level: 10
+    duration: 196082

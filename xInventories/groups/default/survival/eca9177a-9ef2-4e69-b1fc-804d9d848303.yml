@@ -1,13 +1,36 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4H§0e§cph§0a§4est§cus's §6Hammer
+      enchants:
+        DAMAGE_ALL: 30
+        FIRE_ASPECT: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4H§0e§cph§0a§4est§cus's §6Sword
+      enchants:
+        DAMAGE_ALL: 10
+        FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: FLINT_AND_STEEL
 armor_contents: {}
-health: 20.0
+health: 37.166664123535156
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.6632042
+exhaustion: 0.55100346
 ender_chest:
   '13':
     ==: org.bukkit.inventory.ItemStack
@@ -26,14 +49,22 @@ ender_chest:
       generation: 0
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 3
-    duration: 171324
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199604
   '1':
-    type: SPEED
-    level: 2
-    duration: 171164
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 199604
   '2':
-    type: JUMP
-    level: 3
-    duration: 171368
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 199604
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 199604
+  '4':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 199604
