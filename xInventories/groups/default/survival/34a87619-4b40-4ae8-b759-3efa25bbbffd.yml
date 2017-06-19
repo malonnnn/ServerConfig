@@ -1,25 +1,23 @@
 inventory:
-  '36':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: BOW
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §8H§0a§8w§0k§8e§0y§8e's §8Bow
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
+        ARROW_INFINITE: 1
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: TIPPED_ARROW
+    amount: 2
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      meta-type: POTION
+      display-name: Arrow of §2Luck
+      potion-type: minecraft:luck
+armor_contents: {}
 health: 40.0
 hunger: 20
 exp: 0.0
@@ -27,17 +25,21 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.22802417
+exhaustion: 1.0020142
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 195979
+    level: 1
+    duration: 199433
   '1':
     type: REGENERATION
     level: 1
-    duration: 195979
+    duration: 199433
   '2':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 199433
+  '3':
     type: HEALTH_BOOST
     level: 4
-    duration: 195979
+    duration: 199433

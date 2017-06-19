@@ -1,51 +1,64 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_SWORD
+    type: STONE_AXE
+    damage: 8
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_SPADE
+    type: STONE_SWORD
+    damage: 15
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_PICKAXE
+    type: COOKED_BEEF
+    amount: 4
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_AXE
-  '4':
+    type: DOUBLE_PLANT
+    damage: 1
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: How to Claim Land
-      author: BigScary
-      pages:
-      - |-
-        Click: §3§nbit.ly/mcgpuser§0
-        §0
-        §0Claim land to protect your stuff!  Click the link above to learn land claims in 3 minutes or less.  :)§0
-        §0
-        §0Our claim tools are gold spade and stick.
-      - |-
-        Useful Commands:§0
-        §0
-        §0/Trust /UnTrust /TrustList§0
-        §0/ClaimsList§0
-        §0/AbandonClaim§0
-        §0
-        §0/Claim /ExtendClaim§0
-        §0/IgnorePlayer§0
-        §0
-        §0/SubdivideClaims§0
-        §0/AccessTrust§0
-        §0/ContainerTrust§0
-        §0/PermissionTrust
-      generation: 0
-health: 10.0
-hunger: 6
+    type: LEATHER
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_BEEF
+    amount: 3
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    amount: 3
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_CHICKEN
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: SAPLING
+    damage: 1
+    amount: 5
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+    damage: 1
+    amount: 6
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR_CANE
+    amount: 10
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+    amount: 6
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: YELLOW_FLOWER
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: FEATHER
+    amount: 2
+health: 20.0
+hunger: 20
 exp: 0.0
-exp-level: 0
-remainingAir: 197
+exp-level: 3
+remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.2814614
+saturation: 6.8
+exhaustion: 2.1364534
