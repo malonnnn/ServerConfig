@@ -1,228 +1,233 @@
-proc(_CleanupJailTeam,
+# ==========================================================================
+# Procedures
+# ==========================================================================
 
-    @teamName = 'jail'; # Team name
-    @scoreboardName = 'jail' # Scoreboard name
-    @world = 'overvoid' # Jail world name
-    
-    @teams = get_teams(); 
-    
-    foreach(@team in @teams) {
-    
-        if (@team[name] == @teamName) { # Found team
-        
-            foreach(@player in @team[players]) {
-            
-                if(pworld(@player) != @world) {
-                
-                    team_remove_player(@teamName, @player); # Cleanup - Remove players from the team if they aren't in the jail world
-                    
-                }
-            
-            }
-        }
-    }
+proc(_changeTarget,
+	
+	@lastKnownTarget = import('jail.lastKnownTarget'); # Grab the last known target	
+	
+	if (@lastKnownTarget == null || !ponline(@lastKnownTarget)) {
+	
+		die(); # No need to change targets
+	
+	}
+	
+	set_pmode(@lastKnownTarget, CREATIVE); # Change game mode to change target
+	set_timeout(1500, closure(set_pmode(@lastKnownTarget, SURVIVAL);)) # Change game mode to change target	
 
 )
 
-proc(_AddPlayerToJailTeam, @playerToAdd, 
+proc(_addTargetChanger,
 
-    @teamName = 'jail'; # Team name
-    @scoreboardName = 'jail' # Scoreboard name
-    @world = 'overvoid' # Jail world name
-    
-    @teams = get_teams();
-     
-    foreach(@team in @teams) {
-    
-        if (@team[name] == @teamName) {
-
-            _CleanupJailTeam(); # Cleanup (Remove players no longer in the overvoid world)
-            
-            if(pworld(@playerToAdd) != @world) { 
-                
-                die(); # Don't add the player. Wrong world
-            
-            }
-            
-            if(!array_contains(@team[players], @playerToAdd)) { # Player isn't on team
-            
-                team_add_player(@teamName, @playerToAdd); # Add the player to the jail team
-                set_pmode(@playerToAdd, SURVIVAL); # Ensure player is in survival mode
-                die(); # Done
-            
-            }
-            
-            die(); # No need to check any further
-        
-        }
-    
-    }
-    
-    # Team doesn't exist
-    create_team(@teamName); # Create the team
-    team_add_player(@teamName, @playerToAdd); # Add the player to the team
+	@timerID = set_interval(15000, closure(_changeTarget())); # Add an automatic target changer every 15 seconds
+	export('jail.targetchanger', @timerID); # Track the ID so another function can cancel it
 
 )
 
-proc(_RemovePlayerFromJailTeam, @playerToRemove, 
+proc(_remTargetChanger,
 
-    @teamName = 'jail'; # Team name
-    @scoreboardName = 'jail' # Scoreboard name
-    @world = 'overvoid' # Jail world name
-    
-    @teams = get_teams();
-     
-    foreach(@team in @teams) {
-    
-        if (@team[name] == @teamName) {	# Team exists
-            
-            if(array_contains(@team[players], @playerToRemove)) { # Found player on team
-            
-                team_remove_player(@teamName, @playerToRemove); # Remove the player from the jail team
-                die(); # Done
-            
-            }
-            
-            _CleanupJailTeam(); # Cleanup (Remove players no longer in the overvoid world)
-            
-            die(); # No need to check any further
-        
-        }
-    
-    }
-    
-    # Team doesn't exist
+	@timerID = import('jail.targetchanger'); # Import the interval ID so it can be cancelled
+	
+	if (@timerID != null) {
+	
+		clear_task(@timerID); # Remove the timer
+	
+	}
 
 )
 
-register_command(jail_spawnskelly, 
+proc(_addBinds,
+
+	@binds = array(); # Store the ID's for the binds we are going to setup
+
+	@bindID = bind(world_changed, null, array(from: 'overvoid'), @Event,
+
+		@allPlayers = all_players('overvoid'); # Grab a list of all players in the jail world
+		@criminalsPresent = false; # Assume there is no more criminals
+		
+		foreach (@player in @allPlayers) { # look for criminals
+		
+			if (has_permission(@player, 'is.criminal')) {
+			
+				@criminalsPresent = true; # Found a criminal
+				break(); # Break the loop
+			
+			}
+		
+		}
+		
+		if (@criminalsPresent == false) {
+		
+			# Despawn the zombie
+			_remBinds(); # Remove the binds
+			_remTargetChanger(); # Remove the target changer
+		
+		}
+
+	)
+	
+	array_push(@binds, @bindID); # Store the bind ID
+	
+	@binds = array(); # Store the ID's for the binds we are going to setup
+
+	@bindID = bind(target_player, null, array(mobtype: ZOMBIE), @Event,
+
+		@player = @Event[player]
+
+		if (pworld(@player) != 'overvoid') {
+		
+			die(); # Do nothing (wrong world)
+		
+		}
+
+		if(!has_permission(@player, 'is.criminal')) {
+			
+			modify_event(player, null); # Find someone else
+			
+		}	
+		
+		export('jail.lastKnownTarget', @player); # Store the name of the targetted player
+
+	)
+	
+	array_push(@binds, @bindID); # Store the bind ID
+
+	@bindID = bind(entity_damage_player, null, array(damager: ZOMBIE), @Event,
+
+		@world = @Event[location][world]
+		
+		if (@world == 'overvoid'){
+		
+			@player = @Event[player]	
+			
+			if (phunger(@player) > 7) {
+			
+				set_peffect(@player, 23, 2, 1, false, true); # Feed the player
+				set_peffect(@player, 24, 2, 1, false, true); # Make the player glow
+				play_sound(ploc(@player), array(sound: BURP, volume: 100)) # Play a burping sound
+				msg(@player, colorize('&4You have been fed by &2&lBaby Zombie &4HA HA!'))
+				msg(@player, colorize('&7&oCurrent Hunger Level: '.psaturation(@player)))			
+				
+			} else {		
+				
+				set_peffect(@player, 24, 2, 1, false, true); # Make the player glow
+				set_pvelocity(@player, rand(-5, 5), rand(), rand(-5, 5)) # Throw the player
+				play_sound(ploc(@player), array(sound: HURT_FLESH, volume: 100)) # Play a smacking sound
+				msg(@player, colorize('&4You have been spanked by &2&lBaby Zombie &4HA HA!'))
+				
+			}
+			
+			_changeTarget(); # Change the target
+			cancel(); # Cancel the damage
+		
+		}
+
+	)
+	
+	array_push(@binds, @bindID); # Store the bind ID
+	export('jail.binds', @binds); # Store the list of bind id's so another function can retrieve them and the binds can be un-binded
+
+)
+
+proc(_remBinds,
+
+	@binds = import('jail.binds'); # Import the bind id's if they exist
+	
+	if(is_array(@binds) != true) { die(); } # No binds 
+	
+	foreach (@bindID in @binds) {
+		
+		unbind(@bindID); # Un-bind function
+	
+	}
+
+)
+
+# ==========================================================================
+# Commands
+# ==========================================================================
+
+register_command(spawn_jailzombie,
 
     array(
     
-        permission: 'ch.alias.jailskelly',
+        permission: 'ch.alias.spawnjailzombie',
     
-        executor: closure(@alias, @sender, @args) {
-        
-            @arguements = ''; # String of arguements
-    
-            if (array_size(@args) == 0) {       
-                
-                msg('Usage: jail_spawnskelly <playerThatTriggeredCommand>');
-                die(); # Done
-            
-            } else {
-                
-                try {
-                
-                    @player = player(@args[0]); # Create a player object
-                    @playerLocation = ploc(@player); # Players location
-                    @playerLocation[y] += 1; # Increase the Y position 1 block above so we don't spawn the skelly into a block
-                    
-                    @skeletonsInArea = entities_in_radius(@playerLocation, 50, array(SKELETON)); # Number of Skeletons in area
-                    
-                    if (array_size(@skeletonsInArea) == 0) { # No Skellys in the area
-                    
-                        runas('~console', '/mm mobs spawn JailSkele 1 '.@playerLocation[world].','.@playerLocation[x].
-                            ','.@playerLocation[y].','.@playerLocation[z]); # Spawn the jail Skelly					
-                    
-                    }
-                    
-                    die(); # Done
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {
-                
-                    msg('The target player appears to be Offline');
-                    die(); # Done
-                
-                }
-            
-            }	
+        executor: closure() {              
+			
+			@playerLocation = ploc(); # Players location
+			@playerLocation[y] += 1; # Increase the Y position 1 block above so we don't spawn the zombie into a block
+			
+			@zombiesInArea = entities_in_radius(@playerLocation, 50, array(ZOMBIE)); # Number of Zombies in area
+			
+			if (array_size(@zombiesInArea) == 0) { # No Zombies in the area
+			
+				sudo('/summon zombie ~ ~1 ~ 
+				{IsVillager:0,
+				IsBaby:1,
+				HandItems:[{id:"minecraft:wooden_sword",
+				Count:1b,
+				tag:{Unbreakable:1,ench:[{id:71,lvl:10}]}},{}],
+				HandDropChances:[0.0F,0.085F],
+				Attributes:[{Name:generic.maxHealth,Base:9999},
+				{Name:generic.movementSpeed,Base:0.32},
+				{Name:generic.attackDamage,Base:0},
+				{Name:generic.followRange,Base:50}]}')
+				
+				_addBinds(); # Add binds to manage damage events (only active when mob is spawned)
+				_addTargetChanger(); # Add a timer that will change targets every 15 seconds
+			
+			}
         
         }
     )
 )
 
-register_command(jail_hunger_tp, 
+register_command(kill_jailzombie, 
 
     array(
+	
+		permission: 'ch.alias.killjailzombie',
     
-        permission: 'ch.alias.hungertp',
-    
-        executor: closure(@alias, @sender, @args) {
-    
-            if (array_size(@args) != 6) {       
-                
-                msg('Usage: jail_hunger_tp <playerThatTriggeredCommand> <x> <y> <z> <pitch> <yaw>');
-                die(); # Done
-            
-            } else {
-                
-                try {
-                
-                    @player = player(@args[0]); # Create a player object
-                    @teleportDestination = array(world: pworld(@player), x: @args[1], y: @args[2], z: @args[3], pitch: @args[4], yaw: @args[5]); # Teleport destination
-                    
-                    if (phunger(@player) <= 7) {
-                    
-                        set_ploc(@player, @teleportDestination); # Teleport Player
-                        tmsg(@player, color(GREEN).'Entered Safe Zone - Skeleton Free Area');
-                        _RemovePlayerFromJailTeam(@player); # Remove the player from he jail team so they aren't targeted by the skelly
-                        die()
-                    
-                    } else { 
-                    
-                        tmsg(@player, color(RED).'You are not Hungry Enough!');
-                        die()
-                    
-                    }
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {
-                
-                    msg('The target player appears to be Offline');
-                    die(); # Done
-                
-                }
-            
-            }	
-        
+        executor: closure() {
+		
+			@playerLocation = ploc(); # Players location				
+			
+			@zombiesInArea = entities_in_radius(@playerLocation, 50, array(ZOMBIE)); # Number of Zombies in area
+			
+			if (array_size(@zombiesInArea) != 0) { # Zombies in the area
+			
+				foreach (@zombie in @zombiesInArea){
+
+					entity_remove(entity_id(@zombie)); # Remove Zombie					
+				
+				}					
+			
+			}
+			
+			_remBinds(); # Remove binds
+			_remTargetChanger(); # Remove the target changer
+			
         }
     )
 )
 
-register_command(jail_enter, 
+# Used to reset binds if reloadaliases is used
 
-    array(
-    
-        permission: 'ch.alias.jailenter',
-    
-        executor: closure(@alias, @sender, @args) {
-    
-            if (array_size(@args) != 6) {       
-                
-                msg('Usage: jail_enter <playerThatTriggeredCommand> <x> <y> <z> <pitch> <yaw>');
-                die(); # Done
-            
-            } else {
-                
-                try {
-                
-                    @player = player(@args[0]); # Create a player object
-                    @teleportDestination = array(world: pworld(@player), x: @args[1], y: @args[2], z: @args[3], pitch: @args[4], yaw: @args[5]); # Teleport destination
-                                        
-                    set_ploc(@player, @teleportDestination); # Teleport Player
-                    tmsg(@player, color(RED).'Welcome to Jail');
-                    _AddPlayerToJailTeam(@player); # Add the player to the jail team so the skelly targets them
-                    die();					
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {
-                
-                    msg('The target player appears to be Offline');
-                    die(); # Done
-                
-                }
-            
-            }	
-        
-        }
-    )
-)
+set_timeout(1500, closure(
+
+	@allEntities = all_entities(); # Check all entities for zombies
+	
+	foreach (@ent in @allEntities) {
+		
+		if (entity_type(@ent) == ZOMBIE) {
+		
+			_addBinds() # Setup binds 
+			_addTargetChanger() # Setup target changer
+			break(); # Done
+		
+		}
+	
+	}
+
+))
