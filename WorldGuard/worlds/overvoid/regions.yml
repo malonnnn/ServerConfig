@@ -10,27 +10,11 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    safezone:
-        min: {x: -165.0, y: 92.0, z: 28.0}
-        max: {x: -137.0, y: 97.0, z: 56.0}
-        members: {}
-        flags: {build: deny, feed-amount: 0, interact: allow, pvp: deny}
-        owners: {}
-        type: cuboid
-        priority: 2
     spawn:
         min: {x: -175.0, y: 89.0, z: 34.0}
         max: {x: -171.0, y: 97.0, z: 46.0}
         members: {}
         flags: {feed-amount: 20, interact: allow, pvp: deny, heal-amount: 20}
-        owners: {}
-        type: cuboid
-        priority: 1
-    jail:
-        min: {x: -172.0, y: 88.0, z: 20.0}
-        max: {x: -132.0, y: 105.0, z: 61.0}
-        members: {}
-        flags: {build: deny, feed-amount: 1, interact: allow, pvp: allow, heal-amount: 1}
         owners: {}
         type: cuboid
         priority: 1
@@ -46,7 +30,7 @@ regions:
         min: {x: -41.0, y: 96.0, z: 28.0}
         max: {x: -35.0, y: 99.0, z: 34.0}
         members: {}
-        flags: {invincible: deny, use: allow, feed-amount: 0, feed-delay: 0, pvp: deny}
+        flags: {use: allow, invincible: deny, feed-amount: 0, feed-delay: 0, pvp: deny}
         owners: {}
         type: cuboid
         priority: 0
