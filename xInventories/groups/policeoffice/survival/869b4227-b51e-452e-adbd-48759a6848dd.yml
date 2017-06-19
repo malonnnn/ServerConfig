@@ -1,36 +1,31 @@
 health: 20.0
 hunger: 20
-exp: 0.7777778
-exp-level: 1
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 7.0
-exhaustion: 0.93504196
+saturation: 0.0
+exhaustion: 0.5920136
 inventory:
-  '0':
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    amount: 2
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    damage: 11
-    amount: 9
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: BEDROCK
+    type: ANVIL
     amount: 64
-  '5':
+  '4':
     ==: org.bukkit.inventory.ItemStack
-    type: LIME_SHULKER_BOX
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        ARROW_FIRE: 1
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: GRAY_SHULKER_BOX
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRAY_SHULKER_BOX
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 16
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        FIRE_ASPECT: 2
+      repair-cost: 1
 armor_contents: {}

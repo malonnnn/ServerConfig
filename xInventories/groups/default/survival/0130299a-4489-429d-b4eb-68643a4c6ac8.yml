@@ -1,45 +1,52 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 21
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «16»
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
-  '3':
+      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: SKULL
-      display-name: Golden C
-      internal: H4sIAAAAAAAAAE2Py06DQBhGf01MkPgYbkm4lcuii8YaO6SA0BE6sxtguHXApoXG6XP5gLJ0efKds/hUABVeDqdZiM/Ld90JrsAjquC1Lkrftl1DY8w1NbvyuFbYjGm6ZXueVfkudxwV1CU688vU8eszKBP/meYLv6oA8KDAU8bEzOGXy0Cnx1avjoEoJXIWxgddxKg/u2jMZPGGHDQs+27j7KX/z11NLF8JYgUtHZO5GDJ9b6WC71KjHL5uxExMgrNT1FeCYDHEuLnH+bsRDbSL81DSnFgLm7QP7zFOB9pXbbxtO/pB9Ahv7Ag3ZtiHMtouLm4k7RsDjYZfJ+v18gD+AIEq7MocAQAA
-health: 20.0
+      meta-type: UNSPECIFIC
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.93447274
+exhaustion: 0.06473303
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 6
+    duration: 194261
+  '1':
+    type: NIGHT_VISION
+    level: 1
+    duration: 194261
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 194261
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 194261
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 194261

@@ -10,16 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    offices:
-        parent: police
-        min: {x: -42.0, y: 80.0, z: 18.0}
-        max: {x: -14.0, y: 82.0, z: 40.0}
-        members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     officehall:
         min: {x: -42.0, y: 80.0, z: 25.0}
         max: {x: -11.0, y: 82.0, z: 34.0}
@@ -28,12 +18,22 @@ regions:
         owners: {}
         type: cuboid
         priority: 2
+    offices:
+        parent: police
+        min: {x: -42.0, y: 80.0, z: 18.0}
+        max: {x: -14.0, y: 82.0, z: 40.0}
+        members: {}
+        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
+            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
+        owners: {}
+        type: cuboid
+        priority: 1
     chiefs-closet:
         min: {x: 7.0, y: 80.0, z: 59.0}
         max: {x: 13.0, y: 82.0, z: 66.0}
         members: {}
         flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 3
@@ -69,7 +69,7 @@ regions:
         members:
             unique-ids: [5da26092-c807-4c9b-8d08-9523f74ddc97, e6de8cf0-af45-44e4-882f-d98446f4b31b]
         flags: {deny-message: Construction Area - No Access, build: allow, game-mode: CREATIVE,
-            build-group: MEMBERS, deny-message-group: NON_MEMBERS, interact: allow,
+            build-group: MEMBERS, interact: allow, deny-message-group: NON_MEMBERS,
             interact-group: MEMBERS, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
@@ -150,7 +150,7 @@ regions:
     sergeants:
         members:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, e6de8cf0-af45-44e4-882f-d98446f4b31b,
-                9025e96a-d286-47b0-a709-98d2a4ee42db]
+                9025e96a-d286-47b0-a709-98d2a4ee42db, 4ff867f5-6cab-413e-9fad-e4d77ca48778]
         flags: {}
         owners: {}
         type: global
@@ -158,10 +158,10 @@ regions:
     police:
         members:
             unique-ids: [0130299a-4489-429d-b4eb-68643a4c6ac8, f621586e-8ef8-448d-9264-86b61375052e,
-                5da26092-c807-4c9b-8d08-9523f74ddc97, a8185de3-b053-4aca-9eb6-d98728e476ad,
-                4ff867f5-6cab-413e-9fad-e4d77ca48778, 57b29f1f-dc6b-4d30-80ac-cf64c4df3428,
-                869b4227-b51e-452e-adbd-48759a6848dd, 9025e96a-d286-47b0-a709-98d2a4ee42db,
-                e6de8cf0-af45-44e4-882f-d98446f4b31b, ca7e8de8-30f0-43c5-9701-982c10ea9459]
+                a8185de3-b053-4aca-9eb6-d98728e476ad, 4ff867f5-6cab-413e-9fad-e4d77ca48778,
+                57b29f1f-dc6b-4d30-80ac-cf64c4df3428, 869b4227-b51e-452e-adbd-48759a6848dd,
+                9025e96a-d286-47b0-a709-98d2a4ee42db, e6de8cf0-af45-44e4-882f-d98446f4b31b,
+                ca7e8de8-30f0-43c5-9701-982c10ea9459, b03318bc-895d-4d3f-8710-c991a38980b5]
         flags: {invincible: allow, invincible-group: MEMBERS}
         owners: {}
         type: global
@@ -189,8 +189,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
-            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
+            interact: deny, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -258,8 +258,8 @@ regions:
             game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
-            pvp: allow
             game-mode-group: NON_MEMBERS
+            pvp: allow
         owners: {}
         type: global
         priority: 0

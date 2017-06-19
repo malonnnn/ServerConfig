@@ -1,12 +1,43 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHITE_SHULKER_BOX
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHITE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElMZ2AAAIvj76AWAAAA
+      blockMaterial: WHITE_SHULKER_BOX
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHITE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAL3Nyw7BQACF4TOtouNa98ubWLosrNnLhDEa7YzUiHh7gognOOuT/3wSkGjOM7c/r6xP/WOrTIxo7XV+lQCmAqVN5jyqCNIDunlq9b5QRz+7XtTd7rQxAtHC3awXEqFXRiL+Pb2nzBXyUyd/9emWnXUBBCgvVa6MfmFfSxCtgGiFRKtEtCKiVSZaFaJVJVox0ZJEq0a06kSrQbSaRKtFtNpEKyFaHaLVJVo9otUnWgOiNSRaI6I1JloThgU8ASEXSZ6HCwAA
+      blockMaterial: WHITE_SHULKER_BOX
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    amount: 37
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: shulker
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
+fireTicks: -20
+saturation: 0.0
+exhaustion: 1.8286222
 armor_contents: {}
 ender_chest:
   '0':
