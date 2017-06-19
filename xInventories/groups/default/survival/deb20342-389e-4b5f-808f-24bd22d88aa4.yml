@@ -1,154 +1,69 @@
 inventory:
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-ender_chest:
+      display-name: §fWeb-Shot§f «×»
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
+    type: WEB
     amount: 64
-  '1':
+  '38':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
-    amount: 53
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 25
+    type: ELYTRA
+    damage: 8
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
+      display-name: §cHy§4br§cid's §4Glide Wings
       enchants:
-        LOOT_BONUS_MOBS: 3
-        DIG_SPEED: 5
         DURABILITY: 3
         MENDING: 1
-      repair-cost: 15
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        LOOT_BONUS_MOBS: 3
-        DIG_SPEED: 5
-        DURABILITY: 3
-        MENDING: 1
-      repair-cost: 15
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        LOOT_BONUS_MOBS: 3
-        DIG_SPEED: 5
-        DURABILITY: 3
-        MENDING: 1
-      repair-cost: 15
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 60
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: DRAGON_EGG
+ender_chest: {}
 armor_contents:
-  boots:
+  chestplate:
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: ELYTRA
+    damage: 8
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §cHy§4br§cid's §4Glide Wings
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 100.0
+        DURABILITY: 3
+        MENDING: 1
+health: 80.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.6110392
+exhaustion: 1.723004
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 175351
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 175351
-  '2':
-    type: INCREASE_DAMAGE
+    type: FAST_DIGGING
     level: 20
-    duration: 175351
+    duration: 197922
+  '1':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 196999
+  '2':
+    type: REGENERATION
+    level: 3
+    duration: 196999
   '3':
-    type: FIRE_RESISTANCE
+    type: INVISIBILITY
     level: 1
-    duration: 175351
+    duration: 197565
   '4':
     type: HEALTH_BOOST
-    level: 19
-    duration: 175351
+    level: 14
+    duration: 196999
   '5':
-    type: REGENERATION
-    level: 1
-    duration: 175351
+    type: JUMP
+    level: 50
+    duration: 198643
