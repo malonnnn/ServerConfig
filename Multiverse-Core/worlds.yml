@@ -10,7 +10,7 @@ worlds:
     respawnWorld: moblottery
     allowWeather: 'false'
     difficulty: HARD
-    spawning: &id010
+    spawning: &id019
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -22,7 +22,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id011
+    entryfee: &id020
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -41,7 +41,7 @@ worlds:
       yaw: -269.28955
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id012 []
+    worldBlacklist: &id021 []
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -4571,8 +4571,8 @@ worlds:
     respawnWorld: colosseumlobby
     allowWeather: 'false'
     difficulty: HARD
-    spawning: *id010
-    entryfee: *id011
+    spawning: *id019
+    entryfee: *id020
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -4588,7 +4588,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id012
+    worldBlacklist: *id021
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -5240,7 +5240,7 @@ worlds:
         exceptions: []
       monsters:
         ==: MVSpawnSubSettings
-        spawn: 'false'
+        spawn: 'true'
         spawnrate: '-1'
         exceptions: []
     entryfee:

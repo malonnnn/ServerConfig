@@ -1,0 +1,233 @@
+# ==========================================================================
+# Procedures
+# ==========================================================================
+
+proc(_changeTarget,
+    
+    @lastKnownTarget = import('jail.lastKnownTarget'); # Grab the last known target	
+    
+    if (@lastKnownTarget == null || !ponline(@lastKnownTarget)) {
+    
+        die(); # No need to change targets
+    
+    }
+    
+    set_pmode(@lastKnownTarget, CREATIVE); # Change game mode to change target
+    set_timeout(1500, closure(set_pmode(@lastKnownTarget, SURVIVAL);)) # Change game mode to change target	
+
+)
+
+proc(_addTargetChanger,
+
+    @timerID = set_interval(15000, closure(_changeTarget())); # Add an automatic target changer every 15 seconds
+    export('jail.targetchanger', @timerID); # Track the ID so another function can cancel it
+
+)
+
+proc(_remTargetChanger,
+
+    @timerID = import('jail.targetchanger'); # Import the interval ID so it can be cancelled
+    
+    if (@timerID != null) {
+    
+        clear_task(@timerID); # Remove the timer
+    
+    }
+
+)
+
+proc(_addBinds,
+
+    @binds = array(); # Store the ID's for the binds we are going to setup
+
+    @bindID = bind(world_changed, null, array(from: 'overvoid'), @Event,
+
+        @allPlayers = all_players('overvoid'); # Grab a list of all players in the jail world
+        @criminalsPresent = false; # Assume there is no more criminals
+        
+        foreach (@player in @allPlayers) { # look for criminals
+        
+            if (has_permission(@player, 'is.criminal')) {
+            
+                @criminalsPresent = true; # Found a criminal
+                break(); # Break the loop
+            
+            }
+        
+        }
+        
+        if (@criminalsPresent == false) {
+        
+            # Despawn the zombie
+            _remBinds(); # Remove the binds
+            _remTargetChanger(); # Remove the target changer
+        
+        }
+
+    )
+    
+    array_push(@binds, @bindID); # Store the bind ID
+    
+    @binds = array(); # Store the ID's for the binds we are going to setup
+
+    @bindID = bind(target_player, null, array(mobtype: ZOMBIE), @Event,
+
+        @player = @Event[player]
+
+        if (pworld(@player) != 'overvoid') {
+        
+            die(); # Do nothing (wrong world)
+        
+        }
+
+        if(!has_permission(@player, 'is.criminal')) {
+            
+            modify_event(player, null); # Find someone else
+            
+        }	
+        
+        export('jail.lastKnownTarget', @player); # Store the name of the targetted player
+
+    )
+    
+    array_push(@binds, @bindID); # Store the bind ID
+
+    @bindID = bind(entity_damage_player, null, array(damager: ZOMBIE), @Event,
+
+        @world = @Event[location][world]
+        
+        if (@world == 'overvoid'){
+        
+            @player = @Event[player]	
+            
+            if (phunger(@player) > 7) {
+            
+                set_peffect(@player, 23, 2, 1, false, true); # Feed the player
+                set_peffect(@player, 24, 2, 1, false, true); # Make the player glow
+                play_sound(ploc(@player), array(sound: BURP, volume: 100)) # Play a burping sound
+                msg(@player, colorize('&4You have been fed by &2&lBaby Zombie &4HA HA!'))
+                msg(@player, colorize('&7&oCurrent Hunger Level: '.psaturation(@player)))			
+                
+            } else {		
+                
+                set_peffect(@player, 24, 2, 1, false, true); # Make the player glow
+                set_pvelocity(@player, rand(-5, 5), rand(), rand(-5, 5)) # Throw the player
+                play_sound(ploc(@player), array(sound: HURT_FLESH, volume: 100)) # Play a smacking sound
+                msg(@player, colorize('&4You have been spanked by &2&lBaby Zombie &4HA HA!'))
+                
+            }
+            
+            _changeTarget(); # Change the target
+            cancel(); # Cancel the damage
+        
+        }
+
+    )
+    
+    array_push(@binds, @bindID); # Store the bind ID
+    export('jail.binds', @binds); # Store the list of bind id's so another function can retrieve them and the binds can be un-binded
+
+)
+
+proc(_remBinds,
+
+    @binds = import('jail.binds'); # Import the bind id's if they exist
+    
+    if(is_array(@binds) != true) { die(); } # No binds 
+    
+    foreach (@bindID in @binds) {
+        
+        unbind(@bindID); # Un-bind function
+    
+    }
+
+)
+
+# ==========================================================================
+# Commands
+# ==========================================================================
+
+register_command(spawn_jailzombie,
+
+    array(
+    
+        permission: 'ch.alias.spawnjailzombie',
+    
+        executor: closure() {              
+            
+            @playerLocation = ploc(); # Players location
+            @playerLocation[y] += 1; # Increase the Y position 1 block above so we don't spawn the zombie into a block
+            
+            @zombiesInArea = entities_in_radius(@playerLocation, 50, array(ZOMBIE)); # Number of Zombies in area
+            
+            if (array_size(@zombiesInArea) == 0) { # No Zombies in the area
+            
+                sudo('/summon zombie ~ ~1 ~ 
+                {IsVillager:0,
+                IsBaby:1,
+                HandItems:[{id:"minecraft:wooden_sword",
+                Count:1b,
+                tag:{Unbreakable:1,ench:[{id:71,lvl:10}]}},{}],
+                HandDropChances:[0.0F,0.085F],
+                Attributes:[{Name:generic.maxHealth,Base:9999},
+                {Name:generic.movementSpeed,Base:0.32},
+                {Name:generic.attackDamage,Base:0},
+                {Name:generic.followRange,Base:50}]}')
+                
+                _addBinds(); # Add binds to manage damage events (only active when mob is spawned)
+                _addTargetChanger(); # Add a timer that will change targets every 15 seconds
+            
+            }
+        
+        }
+    )
+)
+
+register_command(kill_jailzombie, 
+
+    array(
+    
+        permission: 'ch.alias.killjailzombie',
+    
+        executor: closure() {
+        
+            @playerLocation = ploc(); # Players location				
+            
+            @zombiesInArea = entities_in_radius(@playerLocation, 50, array(ZOMBIE)); # Number of Zombies in area
+            
+            if (array_size(@zombiesInArea) != 0) { # Zombies in the area
+            
+                foreach (@zombie in @zombiesInArea){
+
+                    entity_remove(entity_id(@zombie)); # Remove Zombie					
+                
+                }					
+            
+            }
+            
+            _remBinds(); # Remove binds
+            _remTargetChanger(); # Remove the target changer
+            
+        }
+    )
+)
+
+# Used to reset binds if reloadaliases is used
+
+set_timeout(1500, closure(
+
+    @allEntities = all_entities(); # Check all entities for zombies
+    
+    foreach (@ent in @allEntities) {
+        
+        if (entity_type(@ent) == ZOMBIE) {
+        
+            _addBinds() # Setup binds 
+            _addTargetChanger() # Setup target changer
+            break(); # Done
+        
+        }
+    
+    }
+
+))
