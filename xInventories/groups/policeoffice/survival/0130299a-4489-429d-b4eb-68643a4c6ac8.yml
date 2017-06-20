@@ -1,22 +1,99 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
+    type: WRITTEN_BOOK
     meta:
       ==: ItemMeta
-      meta-type: BOOK
-      display-name: Message Book
+      meta-type: BOOK_SIGNED
+      lore:
+      - Duties & Authorities of an SDF Sergeant
+      title: Sergeant Duties R2
+      author: Server Defence Force
       pages:
-      - ' '
+      - |-
+        §l§nDuties of a Sergeant§0
+        §0
+        §01. Assistant to the Chief§0
+        §0
+        §02. Management of Evidence. (Organize reports, Statements, Applications, etc.)§0
+        §0
+        §03. Management of Officer's
+      - |-
+        4. Check the front desk for complaints, applications, or anything else thats been dropped off.§0
+        §0
+        §05. If a complaint has been received, determine if it can be handled.
+      - |-
+        6. Advise the Chief of any serious complaints§0
+        §0
+        §07. Enforce server rules§0
+        §0
+        §08. Ensure Officer's are complying with rules and enforcement methods§0
+        §0
+        §09. Submit an arrest report upon an arrest.
+      - |-
+        10. Review arrest reports of other Officer's and ensure they are including enough details and providing adequate proof (ie. screenshot URL's)§0
+        §0
+        §011. If there is a lack of proof then release the detanee and address the issue.
+      - |-
+        12. Educate Officer's on proper Office Procedures§0
+        §0
+        §013. Know the server rules. Suggest new ones if you feel some should be added§0
+        §0
+        §014. Organize the Vault and store documentation in an organized manner
+      - |-
+        15. Develop, Implement, and Enforce rules governing the Officer's§0
+        §0
+        §016. Receive, and Review Applications for Employment.§0
+        §0
+        §017. Arrange and conduct interviews for new Applicants.
+      - |-
+        18. Provide new Officer's with a tour and give them instruction on how to do their job.§0
+        §0
+        §019. Provide the Chief with the Application and your Recommendation for a new Hire if an Applicant is successful during his/her interview.
+      - |-
+        20. Attend meetings with the Chief to discuss Policing matters.§0
+        §0
+        §0§l§nAuthorities§0
+        §0
+        §01. You may Enforce ONLY rules that are in force (Found at the front of the Police Station)
+      - "2. You may create rules governing the other Officer's.§0\n§0\n§03. You may\
+        \ punish an Officer for misconduct. Punishment can include Jailing or suggesting\
+        \ a fine which the Chief will take care of.§0\n§0 "
+      - "4. You have the Power to Fire Officer's for misconduct.§0\n§0\n§05. You have\
+        \ the Power to conduct your own version of an Interview and ask questions\
+        \ you feel are relevant.§0\n§0 "
+      - |-
+        6. You have the Power to over-ride the decision of another "Officer"§0
+        §0
+        §07. You have access to Restricted Areas including the Vault§0
+        §0
+        §08. You have access to your own Office which you can build in. Comes with a Mailbox
+      - "§l§nCommands§0\n§0\n§01. /onduty§0\n§02. /arrest §0\n§03. /release §0\n§\
+        04. /addchatcooldown §0\n§05. /remchatcooldown §0\n§06. /fireofficer§0\n§\
+        0 "
+      generation: 0
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEASH
+    type: WATER_BUCKET
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: BONE
+    type: BOOKSHELF
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOKSHELF
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PLATE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 15
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -25,4 +102,4 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.8100119
+exhaustion: 2.2060308

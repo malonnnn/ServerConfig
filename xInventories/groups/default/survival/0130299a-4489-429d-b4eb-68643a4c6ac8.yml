@@ -5,21 +5,107 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
+      display-name: §6Throwing Star§6 «× | ×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
+      meta-type: POTION
+      display-name: §5Dum§dbl§5edo§dre §e§lD§a§lN§4§lA
+      lore:
+      - dumbledore
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+      display-name: §7Pistol§7 «× | ×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4Fl§ea§4sh§8(BarryA§8) §e§lD§a§lN§4§lA
+      lore:
+      - flashbarryallen
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §3I§1c§be §bSp§3i§1ke§1 «×»
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bKa-me-ha-me-ha§b «×»
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bPlasma Blast§b «×»
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
 health: 60.0
 hunger: 20
 exp: 0.0
@@ -27,26 +113,26 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.06473303
+exhaustion: 3.3980126
 armor_contents: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 6
-    duration: 194261
+    type: SPEED
+    level: 5
+    duration: 190386
   '1':
-    type: NIGHT_VISION
-    level: 1
-    duration: 194261
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 189066
   '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 194261
+    type: JUMP
+    level: 10
+    duration: 190419
   '3':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 194261
+    type: REGENERATION
+    level: 1
+    duration: 189066
   '4':
     type: HEALTH_BOOST
     level: 9
-    duration: 194261
+    duration: 189066
