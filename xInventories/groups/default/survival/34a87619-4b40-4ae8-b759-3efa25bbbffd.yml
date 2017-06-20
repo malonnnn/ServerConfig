@@ -1,45 +1,32 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
+    type: IRON_FENCE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §8H§0a§8w§0k§8e§0y§8e's §8Bow
+      display-name: §eW§0o§elv§9er§eine's Claws
       enchants:
-        ARROW_INFINITE: 1
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: Arrow of §2Luck
-      potion-type: minecraft:luck
+        DAMAGE_ALL: 10
 armor_contents: {}
-health: 40.0
+health: 18.333332061767578
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.0020142
+exhaustion: 0.9769997
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
-    level: 1
-    duration: 199433
+    level: 2
+    duration: 199938
   '1':
     type: REGENERATION
-    level: 1
-    duration: 199433
+    level: 4
+    duration: 199938
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 199433
-  '3':
     type: HEALTH_BOOST
     level: 4
-    duration: 199433
+    duration: 199938
