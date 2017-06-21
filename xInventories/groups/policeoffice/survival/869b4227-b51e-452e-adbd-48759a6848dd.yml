@@ -1,150 +1,57 @@
 health: 20.0
 hunger: 20
-exp: 0.88888896
-exp-level: 1
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9870615
+exhaustion: 3.5454383
 inventory:
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BRICK_STAIRS
-    amount: 64
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        ARROW_FIRE: 1
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    damage: 1
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        FIRE_ASPECT: 2
-      repair-cost: 1
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 25
-  '3':
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Officer)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 255
+        GREEN: 8
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 40
+    type: POTION
     meta:
       ==: ItemMeta
       meta-type: POTION
-      potion-type: minecraft:long_poison
+      potion-type: minecraft:long_invisibility
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_invisibility
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLASS_BOTTLE
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
+    type: STONE_HOE
+    damage: 21
     meta:
       ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      lore:
-      - Duties & Authorities of an SDF Sergeant
-      title: Sergeant Duties R2
-      author: Server Defence Force
-      pages:
-      - |-
-        §l§nDuties of a Sergeant§r
-
-        1. Assistant to the Chief
-
-        2. Management of Evidence. (Organize reports, Statements, Applications, etc.)
-
-        3. Management of Officer's
-      - |-
-        4. Check the front desk for complaints, applications, or anything else thats been dropped off.
-
-        5. If a complaint has been received, determine if it can be handled.
-      - |-
-        6. Advise the Chief of any serious complaints
-
-        7. Enforce server rules
-
-        8. Ensure Officer's are complying with rules and enforcement methods
-
-        9. Submit an arrest report upon an arrest.
-      - |-
-        10. Review arrest reports of other Officer's and ensure they are including enough details and providing adequate proof (ie. screenshot URL's)
-
-        11. If there is a lack of proof then release the detanee and address the issue.
-      - |-
-        12. Educate Officer's on proper Office Procedures
-
-        13. Know the server rules. Suggest new ones if you feel some should be added
-
-        14. Organize the Vault and store documentation in an organized manner
-      - |-
-        15. Develop, Implement, and Enforce rules governing the Officer's
-
-        16. Receive, and Review Applications for Employment.
-
-        17. Arrange and conduct interviews for new Applicants.
-      - |-
-        18. Provide new Officer's with a tour and give them instruction on how to do their job.
-
-        19. Provide the Chief with the Application and your Recommendation for a new Hire if an Applicant is successful during his/her interview.
-      - |-
-        20. Attend meetings with the Chief to discuss Policing matters.
-
-        §0§l§nAuthorities§r
-
-        1. You may Enforce ONLY rules that are in force (Found at the front of the Police Station)
-      - "2. You may create rules governing the other Officer's.\n\n3. You may punish\
-        \ an Officer for misconduct. Punishment can include Jailing or suggesting\
-        \ a fine which the Chief will take care of.\n "
-      - "4. You have the Power to Fire Officer's for misconduct.\n\n5. You have the\
-        \ Power to conduct your own version of an Interview and ask questions you\
-        \ feel are relevant.\n "
-      - |-
-        6. You have the Power to over-ride the decision of another "Officer"
-
-        7. You have access to Restricted Areas including the Vault
-
-        8. You have access to your own Office which you can build in. Comes with a Mailbox
-      - "§l§nCommands§r\n\n1. /onduty\n2. /arrest \n3. /release \n4. /addchatcooldown\
-        \ \n5. /remchatcooldown \n6. /fireofficer\n "
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEASH
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: STEP
-    damage: 3
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS_PANE
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: BONE
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 15
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: LIME_SHULKER_BOX
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElMZ2AAAIvj76AWAAAA
-      blockMaterial: LIME_SHULKER_BOX
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «4»
+      ItemFlags: !!set
+        HIDE_PLACED_ON: null
+        HIDE_ENCHANTS: null
+        HIDE_UNBREAKABLE: null
+        HIDE_POTION_EFFECTS: null
+        HIDE_ATTRIBUTES: null
+        HIDE_DESTROYS: null
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
 armor_contents: {}
