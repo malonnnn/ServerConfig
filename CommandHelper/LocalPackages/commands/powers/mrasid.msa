@@ -1,15 +1,5 @@
-register_command(castmrasid, 
-
-    array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.mrasid',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
-            
+mrasid:/cast mrasid = >>>
+            msg('pewp') 
             @plr = player()
             @ploc = ploc(@plr)
             @plrs = players_in_radius(@ploc,5)
@@ -30,9 +20,7 @@ register_command(castmrasid,
                     }
                     set_entity_velocity(@drop, array(@xsign.'0.'.@x, 1.0, @zsign.'0.'.@z))
                     set_pinv(@player,array(null: array(type: null)))
+                    msg(color(RED).'You disarmed '.@player)
                 }
             }
-                
-        }
-    )
-)
+<<<        
