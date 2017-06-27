@@ -1,18 +1,74 @@
-health: 20.0
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.108
+exhaustion: 3.3101997
 inventory:
-  '0':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SAPLING
-    damage: 1
-    amount: 2
-armor_contents: {}
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 35
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Beerus §dBall§d «×»
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 35
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -173,20 +229,36 @@ potion_effect:
   '0':
     type: SPEED
     level: 10
-    duration: 196752
+    duration: 179601
   '1':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 196147
+    level: 20
+    duration: 178865
   '2':
+    type: JUMP
+    level: 5
+    duration: 179552
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 178865
+  '4':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 178865
+  '5':
+    type: NIGHT_VISION
+    level: 1
+    duration: 178865
+  '6':
     type: WATER_BREATHING
     level: 1
-    duration: 196147
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 4
-    duration: 196147
-  '4':
+    duration: 178865
+  '7':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 178865
+  '8':
     type: FAST_DIGGING
-    level: 5
-    duration: 196803
+    level: 127
+    duration: 179502

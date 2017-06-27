@@ -1,46 +1,34 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-health: 60.0
+      display-name: §9Ice Beam§9 «×»
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.0010188
+exhaustion: 1.0550007
 armor_contents: {}
 potion_effect:
   '0':
-    type: SPEED
-    level: 5
-    duration: 195788
-  '1':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 195242
-  '2':
-    type: JUMP
-    level: 5
-    duration: 195380
-  '3':
-    type: REGENERATION
+    level: 20
+    duration: 197253
+  '1':
+    type: WATER_BREATHING
     level: 1
-    duration: 195242
-  '4':
+    duration: 197253
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 197253
+  '3':
     type: HEALTH_BOOST
-    level: 9
-    duration: 195242
-  '5':
-    type: FAST_DIGGING
-    level: 5
-    duration: 195673
+    level: 19
+    duration: 197253

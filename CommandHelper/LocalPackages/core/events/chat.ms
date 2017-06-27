@@ -219,16 +219,6 @@ bind('player_chat', null, null, @e) {
     # Chat replacements for fun
     # -------------------------------
     @cooldown = 0
-    if(has_permission(@pname,'change.chat')){
-        @numb = rand(0,2)
-        console(@numb)
-        if(@numb == 1 || reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
-            assign(@msg,'Uh oh! I\'m a goober!')
-            modify_event(message, @msg)
-            @cooldown = 10
-        }
-
-    }
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
     #assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
@@ -293,6 +283,16 @@ bind('player_chat', null, null, @e) {
 #        @cooldown = @size / 2
 #    }
     
+    if(has_permission(@pname,'change.chat')){
+        @numb = rand(0,2)
+        console(@numb)
+        if(@numb == 1 || reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
+            assign(@msg,'Uh oh! I\'m a goober!')
+            modify_event(message, @msg)
+            @cooldown = 10
+        }
+
+    }
     @lastmessage = import(@pname.'lastmessage')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
