@@ -1,40 +1,39 @@
 inventory:
-  '0':
+  '21':
     ==: org.bukkit.inventory.ItemStack
-    type: GLASS_BOTTLE
-  '1':
+    type: IRON_SWORD
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cD§ea§2mi§can§e'§cs §2Sw§eor§cd
+      enchants:
+        DAMAGE_ALL: 10
+        FIRE_ASPECT: 2
+  '27':
     ==: org.bukkit.inventory.ItemStack
-    type: GLASS_BOTTLE
-potion_effect:
-  '0':
-    type: CONFUSION
-    level: 1
-    duration: 196365
-  '1':
-    type: BLINDNESS
-    level: 1
-    duration: 196365
-  '2':
-    type: SLOW
-    level: 3
-    duration: 196365
-  '3':
-    type: WEAKNESS
-    level: 3
-    duration: 196365
-  '4':
-    type: HUNGER
-    level: 3
-    duration: 196365
-  '5':
-    type: POISON
-    level: 3
-    duration: 196365
-health: 0.9999990463256836
-hunger: 20
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cD§ea§2mi§can§e'§cs §2Sw§eor§cd
+      enchants:
+        DAMAGE_ALL: 10
+        FIRE_ASPECT: 2
+health: 1.8333320617675781
+hunger: 6
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9369464
+exhaustion: 1.4924078
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 189899
+  '1':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 189899

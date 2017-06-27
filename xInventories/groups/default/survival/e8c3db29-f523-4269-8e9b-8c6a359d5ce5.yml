@@ -1,162 +1,52 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
-      Unbreakable: true
-  '1':
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
-      Unbreakable: true
-ender_chest:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §4Fl§ea§4sh§8(BartA§8) §e§lD§a§lN§4§lA
-      lore:
-      - flashbartallen
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §eV§ci§eb§ce §e§lD§a§lN§4§lA
-      lore:
-      - vibe
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §eV§ci§eb§ce §e§lD§a§lN§4§lA
-      lore:
-      - vibe
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §0B§8l§0a§8ck §0F§8l§4a§0s§8h §e§lD§a§lN§4§lA
-      lore:
-      - blackflash
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §eT§4h§9o§fr §e§lD§a§lN§4§lA
-      lore:
-      - thor
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 65.0
-hunger: 20
-exp: 0.7777778
-exp-level: 1
+    type: COAL
+    amount: 27
+ender_chest: {}
+health: 32.0
+hunger: 8
+exp: 0.71428573
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.646988
-armor_contents: {}
+exhaustion: 1.743602
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 100
-    duration: 199124
+    type: SPEED
+    level: 255
+    duration: 199325
   '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 199124
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 144670
   '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 199124
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199124
-  '4':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 199124
-  '5':
     type: REGENERATION
     level: 1
-    duration: 199124
+    duration: 144670
+  '3':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 144670
