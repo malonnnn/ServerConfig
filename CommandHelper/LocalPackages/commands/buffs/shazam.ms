@@ -23,6 +23,7 @@
                 "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 19 true",
+                "/effect ". @plr ." 10 9999 2 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
                 "/shot give ". @plr ." yellowlightning"                
             )
