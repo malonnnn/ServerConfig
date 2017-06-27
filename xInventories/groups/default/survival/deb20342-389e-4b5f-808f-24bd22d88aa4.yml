@@ -1,69 +1,82 @@
 inventory:
   '2':
     ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-  '0':
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '3':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 8
+    type: COAL
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §cHy§4br§cid's §4Glide Wings
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
       enchants:
-        DURABILITY: 3
-        MENDING: 1
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 armor_contents:
-  chestplate:
+  boots:
     ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 8
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §cHy§4br§cid's §4Glide Wings
+      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
       enchants:
-        DURABILITY: 3
-        MENDING: 1
-health: 80.0
-hunger: 20
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 62.33333969116211
+hunger: 19
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.723004
+exhaustion: 2.071
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 20
-    duration: 197922
-  '1':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 196999
-  '2':
+    level: 20
+    duration: 199755
+  '1':
     type: REGENERATION
     level: 3
-    duration: 196999
-  '3':
+    duration: 199755
+  '2':
     type: INVISIBILITY
     level: 1
-    duration: 197565
+    duration: 199820
+  '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 199755
   '4':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 196999
+    type: WATER_BREATHING
+    level: 1
+    duration: 199755
   '5':
-    type: JUMP
-    level: 50
-    duration: 198643
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199755
+  '6':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199755

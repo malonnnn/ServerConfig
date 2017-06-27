@@ -1,12 +1,29 @@
 inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHERRACK
+    amount: 64
   '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD_BLOCK
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 135
+  '4':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
     amount: 64
-  '2':
+  '5':
     ==: org.bukkit.inventory.ItemStack
     type: COAL
+    amount: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -14,46 +31,48 @@ inventory:
       enchants:
         DAMAGE_ALL: 155
         FIRE_ASPECT: 2
-  '4':
+  '6':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '3':
+    type: BLAZE_ROD
+    amount: 8
+  '7':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '0':
+    type: NETHERRACK
+    amount: 64
+  '8':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-health: 70.80000305175781
-hunger: 20
-exp: 0.0
-exp-level: 0
+    type: EMERALD_BLOCK
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHERRACK
+    amount: 64
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHERRACK
+    amount: 51
+health: 11.33333683013916
+hunger: 13
+exp: 0.9473686
+exp-level: 6
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.8060188
+exhaustion: 0.7440142
 armor_contents: {}
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
     level: 16
-    duration: 184386
+    duration: 193904
   '1':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 184386
+    duration: 193904
   '2':
     type: HEALTH_BOOST
     level: 14
-    duration: 184386
+    duration: 193904
