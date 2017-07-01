@@ -1,19 +1,40 @@
 health: 20.0
 hunger: 20
-exp: 0.068627626
-exp-level: 28
+exp: 0.42857128
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
-saturation: 17.0
-exhaustion: 0.9470693
+saturation: 20.0
+exhaustion: 3.5460134
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: RAW_FISH
-    amount: 5
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh0KlWAtJFiUpW0dVKJUCmkpVScWJJaVFiSWZ+nqJSbawOTFipFqrLGKuuknyF4tRUhcr80iKsuowYLJF1JeXnpChZlRSVpsKV6meU5qWnFuWklqXmoBvBlJnCwJebmZeaXJSYVmJVnJmeBzXXkEEFi2tCi1NRjWBgAAANaoYzCAEAAA==
+      blockMaterial: SIGN
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAG2OvQqDQBCEl0AgWPgMy9YW/qSyDOQNbEJIserFXNRTvDVExHePhWnkqhkYvpnxADzwL01X1FcjWqaMqxMcM/WVM8QzrTowpfeZZLWUknCtLHIumITYamNpeQT/kJaNTSBysO+x7bWpUBvsGy6UE40hcM12WCqWF+bTnjroEvz1iSoGfkpqdWW2qghCR9WtG7EdraAVHj67EwA/WaNuTBIBAAA=
+      blockMaterial: SIGN
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: RAW_FISH
-    damage: 1
-    amount: 4
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFhMKxWAtJFiUpW0dVKJUCmkpVSSUZqnkJlfmmRQkZqYk5JhlJtrA5MTqkWqtWYkNbSvPTUIqxajRiMsGgtTiwpLUosyczPU0gpyi8o1kHXy5SZwsCXm5mXmlyUmFZiVZyZngc10JBBG4uBbplFxSVgx6CaxMAAAMTXdXcSAQAA
+      blockMaterial: SIGN
 armor_contents: {}

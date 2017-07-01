@@ -1,46 +1,46 @@
 bind(player_join,null,null,@event){
-    
+	
     @class = pgroup()[0]
     @plr = player()
-    try(
+	try(
         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
     ,
         @hero = associative_array('class':'')
     )
-    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+	include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
-    
+	
     
     @plrs = all_players()
-    
-    # -------------------------------
+	
+	# -------------------------------
     # If joining player is jailed, undisguise and clear inventory
     # -------------------------------
-    if(@hero['class'] == 'jailed')
-    {
-        sudo("/undisguise ".@plr)
-        sudo("/minecraft:clear ".@plr)
-        die()
-    }
-    
-    # -------------------------------
+	if(@hero['class'] == 'jailed')
+	{
+		sudo("/undisguise ".@plr)
+		sudo("/minecraft:clear ".@plr)
+		die()
+	}
+	
+	# -------------------------------
     # reset confusion
     # -------------------------------
     export(@plr."isConfused","false")
-    
-    # -------------------------------
+	
+	# -------------------------------
     # reset speedEffects
     # -------------------------------
     export(@plr."speedEffects","false")
 
-    # -------------------------------
+	# -------------------------------
     # If joining player is mortal, undisguise
     # -------------------------------
-    if(@hero['class'] == 'mortal'){
+	if(@hero['class'] == 'mortal'){
         runas(~console,"/undisguiseplayer ".@plr)
-        die()
+		die()
     }
-    
+	
     # -------------------------------
     # Turn joining player into mortal if the hero they logged out as is taken
     # -------------------------------
@@ -65,6 +65,7 @@ bind(player_join,null,null,@event){
 
     if(has_permission(@plr,'arrest.onjoin')){
         runas(~console,'/arrest '.@plr.' Joining Auto-Arrest Bot v2.1b')
+        runas(~console,'/pex user '.@plr.' remove arrest.onjoin')
     }
 
     set_timeout(5000, closure(
