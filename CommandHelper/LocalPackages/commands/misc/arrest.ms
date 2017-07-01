@@ -90,10 +90,6 @@ register_command(arrest,
                                                  @plr,@vicUUID,@reason,'ARREST',@ip,@cop,puuid(@cop),simple_date('yyyy-MM-dd HH:mm:ss', time())
                         )
                     }
-                    bind(entity_damage,array(id: @plr.'criminalPoisonFeeding'),associative_array('id': @vicUUID,'cause': 'POISON'), @e, @player = @plr){
-                        set_peffect(@player, 23, 2)
-                        cancel()
-                    }
                     set_timeout(3000,closure(
                         runas("~console", "/pex user ".@plr." group set criminal")
                         runas("~console", "/tptoggle ".@plr." off")
@@ -161,7 +157,6 @@ register_command(release,
                     runas("~console", "/pex user ".@plr." group set mortal")
                     runas("~console", "/warp city ".@plr)
                     runas("~console", "/tptoggle ".@plr." on")	
-                    unbind(@plr.'criminalPoisonFeeding')
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg('Player is Offline')
                     die()
@@ -238,7 +233,10 @@ register_command(warn,
                     die()
                 }				
                 
-                
+                runas(~console,'/sudo '.@plr.' c:/warp police')
+                runas(~console,'/warp warncop '.@cop)
+                runas(~console,'/warp warnperp '.@plr)
+
         
         }
     )

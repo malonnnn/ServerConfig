@@ -37,7 +37,7 @@ bind('player_chat', null, null, @e) {
         broadcast(color(dark_red) . color(random) . "k" . color(gray) . @pname. color(gray) ." said the secret password for superheroes!")
     }
 
-    if(reg_match('(?i)gde',@msg) || reg_match('(?i)alpha',@msg) || reg_match('(?i)owner melon',@msg)){
+    if(!has_permission(@pname,'is.criminal') && (reg_match('(?i)gde',@msg) || reg_match('(?i)alpha',@msg) || reg_match('(?i)owner melon',@msg))){
         pkill(@pname)
     }
     
@@ -67,7 +67,7 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
-    # replace all messages by time wraith with screams
+     replace all messages by time wraith with screams
     # -------------------------------
     if(@pgroup[0] == 'timewraith'){
         @phrase = rand(1, 8)
@@ -277,21 +277,59 @@ bind('player_chat', null, null, @e) {
     }else if(has_permission('chat.cooldown')){
         @cooldown = 5
     }
-#    }else{
-#        @plrz = all_players()
-#        @size = array_size(@plrz)
-#        @cooldown = @size / 2
-#    }
     
     if(has_permission(@pname,'change.chat')){
         @numb = rand(0,2)
         console(@numb)
         if(@numb == 1 || reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
-            assign(@msg,'Uh oh! I\'m a goober!')
+            @numba = rand(0,21)
+            if(@numba == 0){
+                assign(@msg,'God isn\'t real!')
+            }else if(@numba == 1){
+                assign(@msg,'I don\'t believe in God')
+            }else if(@numba == 2){
+                assign(@msg,'How can God be real? It doesn\'t make any sense.')
+            }else if(@numba == 3){
+                assign(@msg,'IF GOD IS REAL, SMITE ME! RIGHT NOW!')
+            }else if(@numba == 4){
+                assign(@msg,'I don\'t even think Jesus was real')
+            }else if(@numba == 5){
+                assign(@msg,'I\'m an athiest, is anyone else not believe in god too?')
+            }else if(@numba == 6){
+                assign(@msg,'Only insecure people believe in god')
+            }else if(@numba == 7){
+                assign(@msg,'There is no proof of god, its all fake')
+            }else if(@numba == 8){
+                assign(@msg,'fuck God, he\'s a total dick')
+            }else if(@numba == 9){
+                assign(@msg,'Who killed more people in the bible, god or satan? God did, by like millions')
+            }else if(@numba == 10){
+                assign(@msg,'According to the bible, satan is better than god')
+            }else if(@numba == 11){
+                assign(@msg,'if you believe in god, it\'s because you are weak minded')
+            }else if(@numba == 12){
+                assign(@msg,'god made man in his image? then god is a monkey cuz thats where humans evolved from')
+            }else if(@numba == 13){
+                assign(@msg,'heaven isnt real, hell isnt real, god isnt real, the only thing thats real is my misery. fuck god')
+            }else if(@numba == 14){
+                assign(@msg,'u know what? priests molest children, did you know that?')
+            }else if(@numba == 15){
+                assign(@msg,'Even the POPE says evolution is real')
+            }else if(@numba == 16){
+                assign(@msg,'god is a lie that you tell kids to make them believe life is worth living. protip: its not')
+            }else if(@numba == 17){
+                assign(@msg,'jesus turned water into wine because he was a fucking alcoholic')
+            }else if(@numba == 18){
+                assign(@msg,'god literally raped a woman (mary). she did not consent, that is RAPE')
+            }else if(@numba == 19){
+                assign(@msg,'and another thing, why the fuck did god give us free will if he punishes us for using us wrong? CUZ HE\'S A DICK')
+            }else if(@numba == 20){
+                assign(@msg,'"Oh, hello, I\'m talking to a fucking BURNING BUSH THIS MUST BE GOD IM NOT ON DRUGS THIS IS TOTALLY HAPPENING! ffs..."')
+
+            }
             modify_event(message, @msg)
             @cooldown = 10
         }
-
     }
     @lastmessage = import(@pname.'lastmessage')
     @time = time()
