@@ -222,43 +222,43 @@ sing:/sing $song $person = >>>
 "Albuquerque"
 )
 
-    @person = $person
-    @songName = $song
-    @songSize = array_size(@albu)
-    export('songline',0)
-    @taskID = set_interval(50,closure(
-        if(@person == "everyone"){
-            @index = import('songline')
-            broadcast(color(light_purple).color(bold).@albu[@index])
-            @index = @index + 1
-            if(@index > @songSize - 1){
-                @index = 0
-                console('reset')
-            }
-            export('songline',@index)
-        }else if(ponline(@person)){
-            @index = import('songline')
-            tmsg(@person,color(light_purple).color(bold).@albu[@index])
-            @index = @index + 1
-            if(@index > @songSize - 1){
-                @index = 0
-                console('reset')
-            }
-            export('songline',@index)
-        }else{
-            tmsg(player(),"error")
-            clear_task()
-            die()
-        }
+	@person = $person
+	@songName = $song
+	@songSize = array_size(@albu)
+	export('songline',0)
+	@taskID = set_interval(50,closure(
+		if(@person == "everyone"){
+			@index = import('songline')
+			broadcast(color(light_purple).color(bold).@albu[@index])
+			@index = @index + 1
+			if(@index > @songSize - 1){
+				@index = 0
+				console('reset')
+			}
+			export('songline',@index)
+		}else if(ponline(@person)){
+			@index = import('songline')
+			tmsg(@person,color(light_purple).color(bold).@albu[@index])
+			@index = @index + 1
+			if(@index > @songSize - 1){
+				@index = 0
+				console('reset')
+			}
+			export('songline',@index)
+		}else{
+			tmsg(player(),"error")
+			clear_task()
+			die()
+		}
     ))
 
-    export('songtask',@taskID)
+	export('songtask',@taskID)
 
 <<<
 
 stopsong:/stopsong = >>>
 
-    @taskID = import('songtask')
-    clear_task(@taskID)
+	@taskID = import('songtask')
+	clear_task(@taskID)
 
 <<<
