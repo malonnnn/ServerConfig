@@ -9,7 +9,7 @@ startvampirez:/startvampirez = >>>
     export(@player."startedVampirez", time() / 1000)
     
     broadcast("§cVampirez §6has started!")
-    set_timeout(600000,closure(
+	set_timeout(600000,closure(
         broadcast("§cVampirez §6has ended!")
     ))
 

@@ -29,9 +29,9 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
 
     if(has_permission(@attacker,'powers.onepunch')){
         console(@vicName)
-        if(@vicName != ''){
-            set_peffect(@vicName,11,1,0)
-        }
+		if(@vicName != ''){
+			set_peffect(@vicName,11,1,0)
+		}
         modify_event('amount', 9999)
     }
 }
