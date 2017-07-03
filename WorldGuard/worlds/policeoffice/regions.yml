@@ -16,7 +16,7 @@ regions:
         max: {x: -14.0, y: 82.0, z: 40.0}
         members: {}
         flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, game-mode-group: MEMBERS, pvp: allow}
+            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -33,7 +33,7 @@ regions:
         max: {x: 13.0, y: 82.0, z: 66.0}
         members: {}
         flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 3
@@ -69,7 +69,7 @@ regions:
         members:
             unique-ids: [5da26092-c807-4c9b-8d08-9523f74ddc97, e6de8cf0-af45-44e4-882f-d98446f4b31b]
         flags: {deny-message: Construction Area - No Access, build: allow, game-mode: CREATIVE,
-            build-group: MEMBERS, deny-message-group: NON_MEMBERS, interact: allow,
+            build-group: MEMBERS, interact: allow, deny-message-group: NON_MEMBERS,
             interact-group: MEMBERS, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
@@ -150,18 +150,18 @@ regions:
     sergeants:
         members:
             unique-ids: [e6de8cf0-af45-44e4-882f-d98446f4b31b, f621586e-8ef8-448d-9264-86b61375052e,
-                ca7e8de8-30f0-43c5-9701-982c10ea9459]
+                ca7e8de8-30f0-43c5-9701-982c10ea9459, 57b29f1f-dc6b-4d30-80ac-cf64c4df3428]
         flags: {}
         owners: {}
         type: global
         priority: 3
     police:
         members:
-            unique-ids: [a8185de3-b053-4aca-9eb6-d98728e476ad, 57b29f1f-dc6b-4d30-80ac-cf64c4df3428,
-                869b4227-b51e-452e-adbd-48759a6848dd, e6de8cf0-af45-44e4-882f-d98446f4b31b,
-                b03318bc-895d-4d3f-8710-c991a38980b5, f621586e-8ef8-448d-9264-86b61375052e,
-                0130299a-4489-429d-b4eb-68643a4c6ac8, be9c2fcc-e2f9-4733-8b5d-b14ee515c12d,
-                ca7e8de8-30f0-43c5-9701-982c10ea9459, 9025e96a-d286-47b0-a709-98d2a4ee42db]
+            unique-ids: [a8185de3-b053-4aca-9eb6-d98728e476ad, 869b4227-b51e-452e-adbd-48759a6848dd,
+                e6de8cf0-af45-44e4-882f-d98446f4b31b, b03318bc-895d-4d3f-8710-c991a38980b5,
+                f621586e-8ef8-448d-9264-86b61375052e, 0130299a-4489-429d-b4eb-68643a4c6ac8,
+                ca7e8de8-30f0-43c5-9701-982c10ea9459, 9025e96a-d286-47b0-a709-98d2a4ee42db,
+                57b29f1f-dc6b-4d30-80ac-cf64c4df3428, d7757e01-cf3f-4305-9590-c688214bff78]
         flags: {invincible: allow, invincible-group: MEMBERS}
         owners: {}
         type: global
@@ -252,14 +252,14 @@ regions:
             creeper-explosion: deny
             vine-growth: deny
             build: deny
-            game-mode: SURVIVAL
             blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /tpask, /tp2p, /tpaall,
                 /tpdeny, /tpacancel, /tpaccept, /tphere, /thru, /tp, /tptoggle, /tpo,
                 /tpahere, /tpl, /tpyes, /tpall, /tps]
+            game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
-            game-mode-group: NON_MEMBERS
             pvp: allow
+            game-mode-group: NON_MEMBERS
         owners: {}
         type: global
         priority: 0
