@@ -10,10 +10,10 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0Njk5OTQwMjM4MzQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2YzYjk4MTZiZGU1MmRkYjNmOWQ5NzgxYTMyYzg3MzNmZDMzMmQ0YTZhN2FlYjU4YjA3ODE2MjNkNzY0NWVkZiJ9fX0=',
             'altskins': array(
                 array(
-                    'sig': 'EpQPct0QR+i5wFSWAASrR+jSQSKVOyXpsgR7YUfqTfGH2J8j7rJDAqEFhbcUQOiZ1NJ73oOghqP98Fu0J3XBB+og042rTvxWUo9Eal0OANHTsOUHLxhUMsSf/UvFbtBSXtTIqyeSYqXVDmD/4ghej+gj2g5YyTKSJcwjrO7qLnhFwzWL3re18CE6BuhCfH9/Q7XzMHuBOs+h0YtAkT3LEr9ODAkiXDcvS70Nqfvfc4kVVUcxQ2FzQg7DCuCpIztqA3mNs9qj7PJe5FDo+MRpKVNsebTWf8V/pyic92yx+mWBH3G/n0OZSyOTkKYM5hHbiWYiTiqGkmnCMYmzXU/FPhu8TCfwex0F095E7/mRvkUElgzHYZUnCvIM3JgB0trXig8lnE2+lwwBAru6Ns1nPIGX6yYhrg+F4USm9Z/O2hmhvYTLjWtuMJOCE/Jgnloz0D6zPtcbLlkA2IPwKGqrX75YJCzD+XIHI4G+iuFQBPDvzxu7+nltunIKzBYLhUz4410PP8H3D+eSgZKDNqOe5CbP98I1P/YZ+4pY2Z3pPLukke88cWNACPMuc+oUObr0nrMvZJqWhDdR/wXtJxZQGjqvQYfqKKL/AYyb++YHQyJSAQy9JNz5veT+FpsFAtOT3cB7ogC1mvsOiPwHyfz6yKlE5VcsmnZOVv7csd2Zr6k='
+                    'sig': 'EpQPct0QR+i5wFSWAASrR+jSQSKVOyXpsgR7YUfqTfGH2J8j7rJDAqEFhbcUQOiZ1NJ73oOghqP98Fu0J3XBB+og042rTvxWUo9Eal0OANHTsOUHLxhUMsSf/UvFbtBSXtTIqyeSYqXVDmD/4ghej+gj2g5YyTKSJcwjrO7qLnhFwzWL3re18CE6BuhCfH9/Q7XzMHuBOs+h0YtAkT3LEr9ODAkiXDcvS70Nqfvfc4kVVUcxQ2FzQg7DCuCpIztqA3mNs9qj7PJe5FDo+MRpKVNsebTWf8V/pyic92yx+mWBH3G/n0OZSyOTkKYM5hHbiWYiTiqGkmnCMYmzXU/FPhu8TCfwex0F095E7/mRvkUElgzHYZUnCvIM3JgB0trXig8lnE2+lwwBAru6Ns1nPIGX6yYhrg+F4USm9Z/O2hmhvYTLjWtuMJOCE/Jgnloz0D6zPtcbLlkA2IPwKGqrX75YJCzD+XIHI4G+iuFQBPDvzxu7+nltunIKzBYLhUz4410PP8H3D+eSgZKDNqOe5CbP98I1P/YZ+4pY2Z3pPLukke88cWNACPMuc+oUObr0nrMvZJqWhDdR/wXtJxZQGjqvQYfqKKL/AYyb++YHQyJSAQy9JNz5veT+FpsFAtOT3cB7ogC1mvsOiPwHyfz6yKlE5VcsmnZOVv7csd2Zr6k=',
                     'val': 'eyJ0aW1lc3RhbXAiOjE0ODY1MjEyMDg0NTAsInByb2ZpbGVJZCI6IjdmZTg4N2Q0MzMzODRmZjdiNWEyZTFiMzQ5OWIwOWU1IiwicHJvZmlsZU5hbWUiOiJGb3h5U2hhZG93cyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg3ZTQ1ZGQyZDYxNjMzMDkxMjY2YmYxYmZlNTQxZWFjZTM4NDU3OGNiZmQ4ZWU4ODFjYzNlYTIxYjdkNzdiIn19fQ=='
-                 )
-              ),
+                )
+            ),
             'trail': '',
             'op': 'false',
             'speech': "I am Wally West, unleash the speedforce inside of me!",
