@@ -65,7 +65,9 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
             }
             if(!@isOneDead){
                 foreach(@player in @plrs){
-                    pkill(@player)
+                    if(!has_permission(@player,'dont.kill.in.machine')){
+                        pkill(@player)
+                    }
                 }
                 _broadcast(@names." had their DNA mixed together, mutated, then died.")
                 die()

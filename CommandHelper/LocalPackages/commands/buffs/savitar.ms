@@ -23,7 +23,6 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
                 "/run 0-9",
                 "/haste 0-8",
                 "/jump 0-3",
@@ -39,6 +38,6 @@
                 "/effect ". @plr ." 10 9999 4 true",
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"                
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
             )
         )
