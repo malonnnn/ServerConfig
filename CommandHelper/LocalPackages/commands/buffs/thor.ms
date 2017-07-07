@@ -25,6 +25,6 @@
                 "/effect ". @plr ." 21 9999 14 true",
                 "/shot give ". @plr ." godblast",
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:150 name:&eT&4h&9o&fr's_&7Hammer",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots"                
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
             )
         )
