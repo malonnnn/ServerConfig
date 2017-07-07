@@ -22,7 +22,7 @@
             'buffs': array(
                 "/effect ". @plr ." 11 9999 5 true",
                 "/shot give ". @plr ." nekronlaser",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&8N&7e&0kr&8o&0n's&7_&8Sc&7y&0th&8e"
             )
         )

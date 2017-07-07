@@ -27,16 +27,17 @@ regions:
         type: cuboid
         priority: 3
     cell:
-        min: {x: -103.0, y: 95.0, z: 41.0}
-        max: {x: -98.0, y: 98.0, z: 50.0}
+        min: {x: -41.0, y: 95.0, z: 28.0}
+        max: {x: -35.0, y: 100.0, z: 34.0}
         members: {}
-        flags: {use: allow, invincible: deny, feed-delay: 0, feed-amount: 0, pvp: deny}
+        flags: {invincible: deny, use: allow, feed-amount: 0, feed-delay: 0, pvp: deny}
         owners: {}
         type: cuboid
-        priority: 0
+        priority: 10
     __global__:
         members: {}
-        flags: {item-drop: deny, game-mode: SURVIVAL, interact: allow, tnt: allow}
+        flags: {item-drop: deny, game-mode: SURVIVAL, feed-amount: 1, feed-delay: 1,
+            interact: allow, tnt: allow}
         owners: {}
         type: global
         priority: 0

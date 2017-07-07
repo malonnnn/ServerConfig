@@ -4,7 +4,7 @@ register_command(whirlwind,
     
         description: 'Power',
         
-        permission: 'ch.alias.whirlwind',
+        permission: 'ch.alias.speedforcewhirlwind',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     

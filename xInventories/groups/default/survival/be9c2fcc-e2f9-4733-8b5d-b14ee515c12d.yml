@@ -1,46 +1,266 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: STONE_HOE
+    damage: 21
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6Ora§0ng§6e §6Ene§0rg§6y §6Bea§0m§0 «×»
+      display-name: §7Gauss §c-§7§7 «3»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 1
-    amount: 60
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 14
+    type: STONE_HOE
+    damage: 29
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6L§0a§6rfleeze's Ring
+      display-name: §7Python§7 ▪ «4»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    damage: 44
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+    amount: 2
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: SOUL_SAND
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPUR_SLAB
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPUR_STAIRS
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 48
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Officer)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 255
+        GREEN: 8
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: JACK_O_LANTERN
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: ORANGE_SHULKER_BOX
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «11»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Officer)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMlWYmFhcfwDgEbwWihOcCq32TB7JfdH7yBlfe1sXBtxIApLAfevBkFpJjmIs7sW6GCj+ZkyHkFYBAhKcvlomAvGFfPCOk7rkiHPHnEEUZ5w62VwKoE8fbMguGhJi8Jso9zrRtCVpElZw5z7Rp2wbS5kNNi2IYyQvkHhe/9+F529tXt+s/+rGPecVvVlrzvO9KDAy+0rp+SMAEAAA==
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 255
+        GREEN: 8
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Boots Officer
       enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-health: 60.0
-hunger: 16
-exp: 0.0
-exp-level: 0
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Leggings Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Chestplate Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+health: 17.88666534423828
+hunger: 20
+exp: 0.38461548
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 15.0
-exhaustion: 3.545024
-armor_contents: {}
-potion_effect:
-  '0':
-    type: REGENERATION
-    level: 1
-    duration: 187764
-  '1':
-    type: INCREASE_DAMAGE
-    level: 15
-    duration: 187764
-  '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 187764
+saturation: 0.0
+exhaustion: 0.60383606
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'Bullet Proof Helmet Officer '
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Chestplate Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Leggings Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 32
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bullet Proof Boots Officer
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DAMAGE_UNDEAD: 5
+        LOOT_BONUS_BLOCKS: 3
+        ARROW_INFINITE: 1
+        LUCK: 3
+      repair-cost: 255

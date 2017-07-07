@@ -3,8 +3,51 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+fireTicks: -20
+saturation: 0.0
+exhaustion: 3.5011325
+inventory:
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 16
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 47
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 29
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Python§7 ▪ «6»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 armor_contents: {}

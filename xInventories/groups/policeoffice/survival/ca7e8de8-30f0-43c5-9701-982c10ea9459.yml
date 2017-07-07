@@ -1,13 +1,71 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 2
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_SHULKER_BOX
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Cocaine
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DOUBLE_PLANT
+    damage: 3
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Weed
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
-armor_contents: {}
+fireTicks: -20
+saturation: 0.0
+exhaustion: 3.5000153
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Bullet Proof Vest (Sergeant)
+      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
+      color:
+        ==: Color
+        RED: 0
+        BLUE: 0
+        GREEN: 0
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
