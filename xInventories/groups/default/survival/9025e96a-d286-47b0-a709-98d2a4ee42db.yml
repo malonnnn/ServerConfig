@@ -1,55 +1,46 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 16
+    type: FISHING_ROD
+    damage: 30
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §3Maui's §1Fishing §4Rod
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
+        DAMAGE_ALL: 15
+armor_contents: {}
+health: 80.0
 hunger: 20
 exp: 0.0
 exp-level: 0
-remainingAir: 115
+remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.7369668
+exhaustion: 1.1490101
 ender_chest: {}
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 3
-    duration: 189868
+    type: JUMP
+    level: 60
+    duration: 195786
   '1':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 189868
+    level: 20
+    duration: 191008
   '2':
+    type: SPEED
+    level: 2
+    duration: 190645
+  '3':
     type: HEALTH_BOOST
-    level: 4
-    duration: 189868
+    level: 14
+    duration: 191008
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 191008
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 191008

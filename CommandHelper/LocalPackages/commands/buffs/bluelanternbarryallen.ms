@@ -30,7 +30,7 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4S&ep&4e&ce&ed&8s&0t&9e&1r_&4Boots",
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts",
                 "/shot give ". @plr ." blueenergybeam",
                 "/give ". @plr ." 95:11 64",
                 "/give ". @plr ." minecraft:dye:4 1 20:2 16:155 name:&fB&bl&9u&1e_&bLa&fnt&9er&1n's_Ring"
