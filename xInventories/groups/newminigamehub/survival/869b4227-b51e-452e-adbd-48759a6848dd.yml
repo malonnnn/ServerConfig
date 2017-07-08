@@ -5,7 +5,7 @@ exp-level: 6
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.7089913
+exhaustion: 3.1809912
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -26,13 +26,13 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Gauss §c-§7§7 «6»
-      ItemFlags: !!set
-        HIDE_PLACED_ON: null
-        HIDE_ENCHANTS: null
-        HIDE_UNBREAKABLE: null
-        HIDE_POTION_EFFECTS: null
-        HIDE_ATTRIBUTES: null
-        HIDE_DESTROYS: null
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
       Unbreakable: true
       internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
   '4':
@@ -81,4 +81,4 @@ potion_effect:
   '0':
     type: SPEED
     level: 0
-    duration: 270
+    duration: 296

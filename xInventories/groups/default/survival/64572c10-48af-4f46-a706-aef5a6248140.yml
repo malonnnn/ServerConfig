@@ -1,57 +1,48 @@
 inventory:
-  '36':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 4
+    type: IRON_FENCE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §0Black Panther's Claws
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 38.0
+        DAMAGE_ALL: 10
+armor_contents: {}
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.6140149
+exhaustion: 2.7480028
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 197468
-  '1':
-    type: FAST_DIGGING
-    level: 10
-    duration: 198169
-  '2':
     type: JUMP
     level: 5
-    duration: 197988
-  '3':
+    duration: 199752
+  '1':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 197468
+    level: 15
+    duration: 199483
+  '2':
+    type: SPEED
+    level: 3
+    duration: 199713
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 199483
   '4':
     type: HEALTH_BOOST
     level: 4
-    duration: 197468
+    duration: 199483
   '5':
-    type: SPEED
-    level: 50
-    duration: 197886
+    type: FAST_DIGGING
+    level: 5
+    duration: 199795
+  '6':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 199483
