@@ -62,7 +62,8 @@ register_command(mindcontrol,
             runas(~console,"/icu control @player @vic")
             broadcast("@player is now mindcontrolling @vic")
             
-            @vicGroup = pgroup(@vic)[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @vicGroup = _getheroclass(@vic)
             
             include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vicGroup . '.ms')
             _changeSkin(player(),@hero['sig'],@hero['val'])
@@ -96,8 +97,9 @@ register_command(stopmindcontrol,
             export(@player."lastUsedStopMindControl", time() / 1000)
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             
-            @pgroup = pgroup()[0]
+            @pgroup = _getheroclass(@player)
             
             runas(~console,'/icu stop '.@player)
             broadcast("@player has stopped mindcontrolling")

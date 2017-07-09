@@ -1,7 +1,8 @@
 bind('player_chat', null, null, @e) {
     
-    @pgroup = pgroup()
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @pname = player()
+    @pgroup = _getheroclass(@pname)
     @pworld = pworld()
     @puuid = puuid()
     assign(@msg, @e[message])
@@ -204,7 +205,7 @@ bind('player_chat', null, null, @e) {
 
         
         foreach(@player in @players){
-            if(pgroup(@player)[0] == "rocketraccoon"){
+            if(_getheroclass(@player) == "rocketraccoon"){
                 set_timeout(500,closure(
                     tmsg(@player,color(red)."Groot says: ".@rocketMsg)
                 ))

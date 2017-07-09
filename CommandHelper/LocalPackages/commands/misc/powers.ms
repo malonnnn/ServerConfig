@@ -12,8 +12,9 @@ register_command(powers,
     
         executor: closure() {
         
-                @class = pgroup()[0]
                 @plr = player()
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @class = _getheroclass(@plr)
                 
                 try {
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')

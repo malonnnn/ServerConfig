@@ -1,52 +1,53 @@
 bind(player_join,null,null,@event){
-	
-    @class = pgroup()[0]
+    
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @plr = player()
-	try(
+    @class = _getheroclass(@plr)
+    try(
         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
     ,
         @hero = associative_array('class':'')
     )
-	include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+    include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     include('/home/minecraft/server/plugins/CommandHelper/includes/changeTrail.ms')
-	
+    
     
     @plrs = all_players()
-	
-	# -------------------------------
+    
+    # -------------------------------
     # If joining player is jailed, undisguise and clear inventory
     # -------------------------------
-	if(@hero['class'] == 'jailed')
-	{
-		sudo("/undisguise ".@plr)
-		sudo("/minecraft:clear ".@plr)
-		die()
-	}
-	
-	# -------------------------------
+    if(@hero['class'] == 'jailed')
+    {
+        sudo("/undisguise ".@plr)
+        sudo("/minecraft:clear ".@plr)
+        die()
+    }
+    
+    # -------------------------------
     # reset confusion
     # -------------------------------
     export(@plr."isConfused","false")
-	
-	# -------------------------------
+    
+    # -------------------------------
     # reset speedEffects
     # -------------------------------
     export(@plr."speedEffects","false")
 
-	# -------------------------------
+    # -------------------------------
     # If joining player is mortal, undisguise
     # -------------------------------
-	if(@hero['class'] == 'mortal'){
+    if(@hero['class'] == 'mortal'){
         runas(~console,"/undisguiseplayer ".@plr)
-		die()
+        die()
     }
-	
+    
     # -------------------------------
     # Turn joining player into mortal if the hero they logged out as is taken
     # -------------------------------
     foreach(@player in @plrs)
     {
-        @otherPlayerGroup = pgroup(@player)
+        @otherPlayerGroup = _getheroclass(@player)
         if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
             sudo('/pex user '.@plr.' group set mortal')
             call_alias('/mortal')

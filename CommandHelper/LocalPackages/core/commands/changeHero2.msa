@@ -150,7 +150,8 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         @plrs = all_players()
         foreach(@player in @plrs)
         {
-            @otherPlayerGroup = pgroup(@player)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @otherPlayerGroup = _getheroclass(@player)
             if(@otherPlayerGroup[0] == @hero['class'] && @plrr != @player){
                 _broadcast(
                     concat(color(white),@plrr)

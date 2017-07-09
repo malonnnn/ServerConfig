@@ -35,7 +35,8 @@ register_command(unzord,
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
             @player = player()
-            @class = pgroup()[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @class = _getheroclass(@player)
 
             set_pflight(@player,false)
             set_pflying(@player,false)

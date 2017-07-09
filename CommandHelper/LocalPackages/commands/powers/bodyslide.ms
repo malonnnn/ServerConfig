@@ -11,7 +11,8 @@ register_command(bodyslide,
         executor: closure() {
         
             @player = player()
-            @class = pgroup()[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @class = _getheroclass(@player)
             
             @allPlayers = all_players()
 
@@ -19,7 +20,7 @@ register_command(bodyslide,
                 tmsg(@player,color(red).'Locating Cable...')
                 set_timeout(2000,closure(
                     foreach(@plr in @allPlayers){
-                        if(pgroup(@plr)[0] == 'cable'){
+                        if(_getheroclass(@plr) == 'cable'){
                             tmsg(@player,color(red).'Cable Found! Locking on..')
                             set_timeout(1000,closure(
                                 tmsg(@player,color(red).'Lock on successful! Teleporting...')
@@ -37,7 +38,7 @@ register_command(bodyslide,
                 tmsg(@player,color(red).'Locating Deadpool...')
                 set_timeout(2000,closure(
                     foreach(@plr in @allPlayers){
-                        if(pgroup(@plr)[0] == 'deadpool'){
+                        if(_getheroclass(@plr) == 'deadpool'){
                             tmsg(@player,color(red).'Deadpool Found! Locking on..')
                             set_timeout(1000,closure(
                                 tmsg(@player,color(red).'Lock on successful! Teleporting...')

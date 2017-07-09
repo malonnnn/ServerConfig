@@ -1,29 +1,10 @@
-register_command(hireofficer, 
+register_command('hireofficer', 
 
     array(
-    
         description: 'Hire\'s a Player as a Server Police Officer',
-        
         usage: '/hireofficer <player>',
-        
-        permission: 'ch.alias.hireofficer',
-        
+        permission: 'hire.officer',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
@@ -37,8 +18,8 @@ register_command(hireofficer,
             try {
             
                 @player = player(@args[0])
-                sudo("/pex user ".@player." add ch.alias.onduty")
                 sudo("/pex user ".@player." add is.officer")
+                sudo("/pex user ".@player." group add officer")
                 runas('~console', '/rg addmember -w policeoffice police '.@player)
                 tmsg(player(),color(red)."You have hired ".@player." as on Officer for the Police Force!")
                 tmsg(@player,color(red)."You have been hired as an Officer for the Police Force!")	
@@ -52,32 +33,13 @@ register_command(hireofficer,
     )
 )
 
-register_command(fireofficer, 
+register_command('fireofficer', 
 
     array(
-    
         description: 'Fire\'s a Player as a Server Police Officer',
-        
         usage: '/fireofficer <player>',
-        
-        permission: 'ch.alias.fireofficer',
-        
+        permission: 'fire.officer',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
@@ -92,10 +54,8 @@ register_command(fireofficer,
             
                 @player = player(@args[0])
                 if(has_permission(@player,"is.officer")){
-                    sudo("/pex user ".@player." remove ch.alias.onduty")
                     sudo("/pex user ".@player." remove is.officer")
-                    sudo("/pex user ".@player." remove is.suspended")					
-                    sudo("/pex user ".@player." group set mortal")
+                    sudo("/pex user ".@player." group remove officer")
                     runas('~console', '/rg removemember -w policeoffice police '.@player)
                     runas('~console', '/rg removemember -w policeoffice sergeants '.@player)
                     sudo("/minecraft:clear ".@player)

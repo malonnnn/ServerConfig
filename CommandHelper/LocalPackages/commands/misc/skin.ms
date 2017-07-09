@@ -3,29 +3,9 @@ register_command(skin,
     array(
     
         description: 'Change your Hero Skin to an Alternate Skin',
-        
         usage: '/skin <number>',
-        
         permission: 'ch.alias.skin',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(array('1', '2'));
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(array('1', '2'), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-
-            } catch (RangeException @ErrorInfo) {
-
-                # Ignore
-
-            }
-        },
     
         executor: closure(@alias, @sender, @args) {
         
@@ -39,10 +19,11 @@ register_command(skin,
                 
                 try {
                 
-                    @player = player()
-                    @class = pgroup()[0]
-                    
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')    
+                    @player = player()
+                    @class = _getheroclass(@player)
+                    
                 
                     @skinNum = @args[0]
 
