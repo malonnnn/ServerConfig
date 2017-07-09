@@ -1,172 +1,31 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eOlympia§e ▪ «×»
-      lore:
-      - §eDouble-barreled shotgun.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eGauss Shotgun§e ▪ «×»
-      lore:
-      - §eAdvanced pump-action shotgun.
-      - §eFires metal slugs that penetrate
-      - §eall targets within 40 blocks.
-      - §eDeals 200% damage to Zombies.
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eType 95§e ▪ «×»
-      lore:
-      - §eSemi-automatic with three round burst fire.
-      - §eGhast Tears are required for reloads.
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Omega Beam§0 «×»
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: RAW_BEEF
-    amount: 7
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: FEATHER
-    amount: 4
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: RAW_CHICKEN
-    amount: 5
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER
-    amount: 8
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
+    type: EGG
     amount: 2
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: BONE
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 3
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 2
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 44
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 44
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 57.08342742919922
+armor_contents: {}
+health: 32.0
 hunger: 20
-exp: 0.76470584
-exp-level: 5
+exp: 0.0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.935481
+exhaustion: 0.09744787
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 133252
-  '1':
     type: WATER_BREATHING
     level: 1
-    duration: 133252
+    duration: 198977
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198977
   '2':
-    type: NIGHT_VISION
-    level: -1
-    duration: 2222
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 198977
   '3':
-    type: SPEED
-    level: -5
-    duration: 2222
-  '4':
     type: HEALTH_BOOST
     level: 19
-    duration: 133252
-  '5':
-    type: JUMP
-    level: 3
-    duration: 197897
+    duration: 198977
