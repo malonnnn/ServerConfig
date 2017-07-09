@@ -3689,8 +3689,8 @@ defender:
            particle: block_crack
     spell_parameters: "loud true transparent air,$birth,$heart"
     cast:
-        "convert brush stained_glass|1 radius 3 undo 5000": 100
-        "none": 1000
+        "defender_attack indestructible $birth,$heart": 100
+        "none": 500
     death_cast:
         "defender_death destructible $birth,$heart": 100
     parameters:
@@ -3704,9 +3704,7 @@ defender:
         yradius: 12
         birth_range: 6
         live_range: 6
-        target_min_range: 0
-        target_max_range: 0
-        delay: 1000
+        delay: 200
         target_mode: hunt
         targets: automaton
         target_min_range: 0
@@ -3722,6 +3720,7 @@ defender:
         message_type: good
         undo: 7000
         reflect_chance: 0.25
+        heart_material: lapis_block
     costs:
         xp: 50
         sp: 20
@@ -3756,6 +3755,42 @@ defender_death:
         target: self
         radius: 7
         check_destructible: true
+
+defender_attack:
+    name: Defender Attack
+    icon: diamond_axe:112
+    icon_disabled: diamond_hoe:112
+    category: engineering
+    actions:
+        cast:
+        - class: Sphere
+          actions:
+          - class: ModifyBlock
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_stone_break
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: block_crack
+             particleCount: 3
+             lengthGrow: 0.1
+             radiusGrow: 0.003
+             updateLocations: false
+             updateDirections: false
+    parameters:
+        target: block
+        allow_max_range: false
+        range: 24
+        check_destructible: true
+        radius: 3
+        transparent: transparent_to_construction
+        destructible: destructible,destructible2,destructible3
+        undo: 5000
+        brush: stained_glass|9
+        bypass_backfire: true
+
 disarm:
     icon: diamond_axe:43
     icon_disabled: diamond_hoe:43
@@ -6474,8 +6509,8 @@ hunter:
         "pull": 60,70,80
         "curse": 60,100,150
         "poison": 100,100,150
-        "blob brush stained_glass:15 radius 2 undo 5000": 20,40,80
-        "shell brush stained_glass:15 radius 3 undo 7000": 20,40,80
+        "blob brush stained_glass:15 radius 2 undo 5000 indestructible $birth,$heart": 20,40,80
+        "shell brush stained_glass:15 radius 3 undo 7000 indestructible $birth,$heart": 20,40,80
         "homing|2": 20,50,90
         "missile|2": 100,150,200
         "none": 300,200,50
@@ -10181,6 +10216,38 @@ sandblast|2:
     parameters:
       radius: 2
 
+
+birth_hunter:
+  icon: diamond_axe:17
+  actions:
+    cast:
+    - class: Command
+  parameters:
+    command: cast hunter material quartz_block seed_radius 2
+
+birth_defender:
+  icon: diamond_axe:17
+  actions:
+    cast:
+    - class: Command
+  parameters:
+    command: cast defender material pumpkin seed_radius 2
+
+birth_worm:
+  icon: diamond_axe:17
+  actions:
+    cast:
+    - class: Command
+  parameters:
+    command: cast worm material melon_block seed_radius 2
+
+birth_virus:
+  icon: diamond_axe:17
+  actions:
+    cast:
+    - class: Command
+  parameters:
+    command: cast virus material huge_mushroom_1 seed_radius 2
 secure:
     icon: diamond_axe:183
     icon_disabled: diamond_hoe:183
@@ -13290,13 +13357,15 @@ virus:
         "petrify|3": 30,50,70
         "shuriken|3": 30,50,70
         "kill": 5,20,30
-        "shell|2": 15,40,50
-        "blob|2": 5,20,30
+        "shell|2 indestructible $birth,$heart": 15,40,50
+        "blob|2 indestructible $birth,$heart": 5,20,30
+        "railgun indestructible $birth,$heart": 20,40,80
         "poison": 5,20,30
         "none": 100,80,50
     death_cast:
-        neutron: 100,200,300
-        fury: 20,50,100
+        neutron: 50,80,100
+        fury: 20,150,120
+        meteor: 60,50,90
     parameters:
         allow_max_range: false
         transparent: transparent_to_construction
@@ -13312,7 +13381,6 @@ virus:
         - sp:75
         restricted: restricted_animate
         message_type: evil
-        concurrent: false
         targets: any
         target_mode: hunt
         concurrent: true
@@ -13865,7 +13933,8 @@ worm:
         "homing|3": 20,30,50
         "missile|3": 100,150,250
         "petrify|2": 30,50,70
-        "shell stained_glass:15 radius 3 undo 7000": 20,40,80
+        "shell stained_glass:15 radius 3 undo 7000 indestructible $birth,$heart": 20,40,80
+        "railgun indestructible $birth,$heart": 20,40,80
         "none": 20,10,5
     parameters:
         allow_max_range: false
