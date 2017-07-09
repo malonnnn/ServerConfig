@@ -23,7 +23,7 @@ register_command(blackring,
         },
     
         executor: closure(@alias, @sender, @args) {
-        
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             if (array_size(@args) != 1) {
             
                 msg(''.color(RED).color(BOLD).'Improper Usage!');
@@ -35,7 +35,7 @@ register_command(blackring,
             @vic = @args[0]
 
             if(ponline(@vic)){
-                @class = pgroup(@vic)[0]
+                @class = _getheroclass(@vic)
                 @vicWorld = pworld(@vic)
                 
                 if(

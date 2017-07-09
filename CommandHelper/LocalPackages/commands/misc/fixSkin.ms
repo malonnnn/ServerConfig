@@ -40,7 +40,8 @@ register_command(fixskin,
             
                 try {
                     @plr = player(@args[0])
-                    @class = pgroup(@player)[0]
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    @class = _getheroclass(@player)
                     
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
                     _changeSkin(@plr,@hero['sig'],@hero['val'])
@@ -62,7 +63,8 @@ register_command(fixskin,
             
                 try {
                     @plr = player()
-                    @class = pgroup()[0]
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    @class = _getheroclass(@plr)
                     
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
                     _changeSkin(@plr,@hero['sig'],@hero['val'])

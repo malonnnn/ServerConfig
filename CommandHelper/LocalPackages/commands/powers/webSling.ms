@@ -12,15 +12,6 @@ register_command(websling,
             
             assign(@cooldown, 1)
   
-            @pworld = pworld()
-            if(
-                @pworld != '1_9' &&
-                @pworld != 'greenfield' &&
-                @pworld != 'citybreak'
-            ){
-                die()
-            }
-
             assign(@lastshot, import('lastwebshot'))
             if(@lastshot + @cooldown > time() / 1000,
                 die()
@@ -28,7 +19,7 @@ register_command(websling,
             export('lastwebshot', time() / 1000)
           
             @multiplier = 0.5
-            @arrow = shoot_projectile(player(), 'ARROW')
+            @arrow = shoot_projectile(player(), 'SNOWBALL')
             @velocity = entity_velocity(@arrow)
             
             # spawn pig
