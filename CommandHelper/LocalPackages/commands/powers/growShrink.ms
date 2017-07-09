@@ -31,7 +31,8 @@ register_command(shrink,
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
             @player = player()
-            @class = pgroup()[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @class = _getheroclass(@player)
 
             include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
             

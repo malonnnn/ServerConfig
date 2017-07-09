@@ -31,7 +31,8 @@ register_command(untransform,
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
             @plr = player()
-            @class = pgroup()[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @class = _getheroclass(@plr)
             
             try(
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
