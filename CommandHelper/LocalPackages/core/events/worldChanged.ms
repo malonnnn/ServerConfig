@@ -1,10 +1,11 @@
 bind(world_changed, null, null, @event,
 
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @player = player()
 
     @to = @event['to']
     @from = @event['from']
-    @class = pgroup()[0]
+    @class = _getheroclass(@player)
 
     set_timeout(3000,closure(    
         runas(~console,"/effect ".@player." invisibility 0")

@@ -1,7 +1,8 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
-        @class = pgroup(@player)[0]
+        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+        @class = _getheroclass(@player)
         try(
         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms'),
         ,continue())

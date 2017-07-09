@@ -8,7 +8,8 @@ fanficname:/fanficname $ = >>>
         die()
     }
 
-    @group = pgroup(@player)[0]
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @group = _getheroclass(@player)
 
     runas(~console,'/pex group '.@group.' prefix "'.@name.'"')
 

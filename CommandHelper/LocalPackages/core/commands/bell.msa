@@ -5,8 +5,8 @@ secbell:/secbell $plr = >>>
     @players = all_players()
 
     foreach(@player in @players){
-
-        if(has_permission(@player,'is.secretary')){
+        
+        if(has_permission(@player,'is.secretary') || has_permission(@player,'is.headsecretary')){
             @eventID = set_interval(50,closure(
                 runas(~console,'/playsound entity.experience_orb.pickup master '.@player.' ~ ~ ~ 1.0 1.0 1.0')
                 runas(~console,'/playsound entity.experience_orb.pickup master '.@activator.' ~ ~ ~ 1.0 1.0 1.0')
@@ -32,7 +32,7 @@ dnabell:/dnabell $plr = >>>
 
     foreach(@player in @players){
 
-        if(has_permission(@player,'is.engineer')){
+        if(has_permission(@player,'is.engineer') || has_permission(@player,'is.headengineer')){
             @eventID = set_interval(50,closure(
                 runas(~console,'/playsound entity.experience_orb.pickup master '.@player.' ~ ~ ~ 1.0 1.0 1.0')
                 runas(~console,'/playsound entity.experience_orb.pickup master '.@activator.' ~ ~ ~ 1.0 1.0 1.0')

@@ -60,7 +60,8 @@ register_command(vis,
         executor: closure() {        
             
             @player = player()
-            @class = pgroup()[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @class = _getheroclass(@player)
             sudo("/effect ". @player ." 14 0")
             try(
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
@@ -105,7 +106,8 @@ register_command(shadowhide,
                     @lightLevel = get_light_at(@ploc)
                     if(@lightLevel > 4){
                         tmsg(@player,color(red)."You are no longer hidden, it is too bright")
-                        @class = pgroup(@player)[0]
+                        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                        @class = _getheroclass(@player)
                         sudo("/effect ". @player ." 14 0")
                         include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
                         include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')

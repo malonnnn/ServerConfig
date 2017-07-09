@@ -1,0 +1,19 @@
+# Prefixes can be configured like so
+#
+# identifier:
+#   prefix1:
+#     permission: "prefix.1"
+#     priority: 1
+#     prefix: "&r[&cPrefix 1&r] "
+#   prefix2:
+#     permission: "prefix.2"
+#     priority: 100
+#     prefix: "&r[&bPrefix 2&r] "
+#
+# The permission is the permission required for the prefix to display. If the player has no permissions for any of the prefixes within a identifier,
+# a prefix will not be shown.
+#
+# The priority of the prefix determines which prefix will be shown if the player has more than one permission within the same identifier.
+# For example if a player both the permissions, prefix.1 and prefix.2, prefix 2 will be shown because it has a priority higher than prefix 1.
+#
+# Prefixes can be inserted in the chat by placing the {identifier} in the chat format. Identifier being the group of the prefixes as shown above.
