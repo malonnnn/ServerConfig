@@ -155,7 +155,9 @@ regions:
         type: global
         priority: 3
     police:
-        members: {}
+        members:
+            unique-ids: [869b4227-b51e-452e-adbd-48759a6848dd, b03318bc-895d-4d3f-8710-c991a38980b5,
+                4ff867f5-6cab-413e-9fad-e4d77ca48778]
         flags: {invincible: allow, invincible-group: MEMBERS}
         owners: {}
         type: global
@@ -246,10 +248,10 @@ regions:
             creeper-explosion: deny
             vine-growth: deny
             build: deny
-            game-mode: SURVIVAL
             blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /tpask, /tp2p, /tpaall,
                 /tpdeny, /tpacancel, /tpaccept, /tphere, /thru, /tp, /tptoggle, /tpo,
                 /tpahere, /tpl, /tpyes, /tpall, /tps]
+            game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
             game-mode-group: NON_MEMBERS
