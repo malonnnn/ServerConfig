@@ -1,0 +1,10 @@
+test:/test $plr = >>>
+
+        
+    @player = $plr
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @class = _getheroclass(@player)
+
+    broadcast(@class)
+
+<<<
