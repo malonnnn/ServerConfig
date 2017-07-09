@@ -1840,6 +1840,14 @@ spells:
       name: Backflip
       descripttion: Quickly move backwards to evade your foes
       fail: "a:There's nowhere to go!"
+    birth_hunter:
+      name: Create Hunter
+    birth_defender:
+      name: Create Defender
+    birth_worm:
+      name: Create Worm
+    birth_virus:
+      name: Create Virus
 wand:
     default_name: Wand
     upgrade_default_description: Will upgrade your wand.
@@ -1902,8 +1910,8 @@ wand:
     super_powered: "&3Superpowered"
     super_protected: "&3Invulnerability"
     spell_aura: "&bAura: &6$spell"
-    costs_description: Costs $description
-    active_costs_description: Costs $description Per Second
+    costs_description: Consumes $description
+    active_costs_description: Consumes $description Per Second
     range_description: "&9Range: &6$range &9meters"
     owner_description: "&2&o$name's Wand"
     bound_description: "&3&oBound to $name"
@@ -2351,3 +2359,6 @@ wands:
     extinguisher:
         name: Extinguisher
         description: Puts out fires
+    science:
+        name: For Science!
+        description: For testing automata
