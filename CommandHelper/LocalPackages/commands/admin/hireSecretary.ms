@@ -21,11 +21,11 @@ register_command(hiresecretary,
                     @player = player(@args[0])
                     runas(~console,"/pex user ".@player." add is.secretary")
                     runas(~console,"/pex user ".@player." group add secretary")
-                    tmsg(player(),color(red)."You have hired ".@player. " as secretary!")
+                    tmsg(@sender,color(red)."You have hired ".@player. " as secretary!")
                     tmsg(@player,color(red)."You have been hired as secretary")
                     
                 } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
+                    msg(@sender,'Player: '.@player.' is Offline')
                     die()
                 }		
                 

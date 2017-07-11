@@ -1,4 +1,4 @@
-register_command(hungerlevel, 
+register_command(saturation, 
 
     array(
     
