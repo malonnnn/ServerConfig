@@ -1,20 +1,15 @@
 register_command(roll, 
 
     array(
-    
         description: 'Roll the Dice. Play the Lottery',
-        
         usage: '/roll',
-        
         permission: 'ch.alias.roll',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
         executor: closure() {
                 
                 try {
                 
-                    @player = player()
+                    @plr = player()
                     
                     assign(@lottocooldown, 60)
                 
