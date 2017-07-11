@@ -23,18 +23,12 @@ proc(_mindControlStop, @player,
     set_pmode(@vic,@vicOrigGamemode)
 
     @pHero = import(@player.'mindControlPlayerOrigHero')
-    @sig = import(@player.'mindControlSig')
-    @val = import(@player.'mindControlVal')
-    if(@sig == '' || @val == ''){
+    try{
+        include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pHero . '.ms')
+        _changeSkin(@player,@hero['sig'],@hero['val'])
+    }catch(Exception @e){
         runas(~console,'/undisguiseplayer '.@player)
-    }else{
-        try{
-            include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pHero . '.ms')
-            _changeSkin(@player,@sig,@val)
-        }catch(Exception @e){
-            runas(~console,'/undisguiseplayer '.@player)
-        }
     }
 
     tmsg(@vic,color(RED).'You are no longer being mind controlled by '.@player)
