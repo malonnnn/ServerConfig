@@ -1,34 +1,52 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_SWORD
+    damage: 3
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-health: 100.0
-hunger: 20
+      display-name: §8L§0u§8ke §0S§8ky§0w§8a§al§8ker's §aLightsaber
+      enchants:
+        DAMAGE_ALL: 100
+        FIRE_ASPECT: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8L§0u§8ke §0S§8ky§0w§8a§al§8ker's §aLightsaber
+      enchants:
+        DAMAGE_ALL: 100
+        FIRE_ASPECT: 2
+health: 47.533321380615234
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.0550007
+exhaustion: 0.70100695
 armor_contents: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 197253
+    type: SPEED
+    level: 5
+    duration: 191834
   '1':
-    type: WATER_BREATHING
+    type: FAST_DIGGING
     level: 1
-    duration: 197253
+    duration: 192068
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 197253
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 191774
   '3':
+    type: JUMP
+    level: 5
+    duration: 197483
+  '4':
     type: HEALTH_BOOST
     level: 19
-    duration: 197253
+    duration: 191774

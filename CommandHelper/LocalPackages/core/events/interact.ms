@@ -10,28 +10,28 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
             die()
         )
         export(@player.'lastwebshot', time() / 1000)
-      
-        set_entity_rider(null, puuid(player(),true))
-        @multiplier = 0.5
-        @arrow = shoot_projectile(player(), 'ARROW')
+        @puuid = puuid(@player, true)
+        set_entity_rider(null, @puuid)
+        @multiplier = 0.75
+        @arrow = shoot_projectile(@player, 'SNOWBALL')
         @velocity = entity_velocity(@arrow)
         
         # spawn pig
-        @ploc = ploc()
+        @ploc = ploc(@player)
         @ploc['y']  = @ploc['y'] + 1
         @pig = spawn_entity("CHICKEN", 1, @ploc)[0]
         
-#        try(set_mob_effect(@pig, 14, 1, 9999, true, false),
-#            tmsg(player(), "Sorry, you can't use websling in here")
-#            entity_remove(@arrow)
-#            die()
-#        )
+        try(set_mob_effect(@pig, 14, 1, 9999, true, false),
+            tmsg(player(), "Sorry, you can't use websling in here")
+            entity_remove(@arrow)
+            die()
+        )
         
         # set pig invisible
         set_mob_effect(@pig, 11, 254, 9999, true, false)
         
         # sit player on pig
-        set_entity_rider(@pig, puuid(player(),true))
+        set_entity_rider(@pig, @puuid)
         
         set_leashholder(@pig,@arrow)
         
@@ -47,10 +47,9 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         #    });
         #    unbind()
         #}
-        bind(vehicle_leave, null, null, @event) {
-            if(@event['player'] == 'Jiren_The_Gray'){
-                broadcast(@event)
-                entity_remove(@event['vehicle'])
+        bind(entity_dismount, null, null, @event, @puuidd = puuid(@player)) {
+            if(@event['id'] == @puuidd){
+                entity_remove(@event['mountid'])
                 unbind()
             }
         }
