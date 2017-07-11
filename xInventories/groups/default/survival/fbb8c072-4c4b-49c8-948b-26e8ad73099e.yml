@@ -8,29 +8,42 @@ inventory:
       display-name: §4W§fon§eder §4G§fi§9r§fl's §eLasso
       enchants:
         DAMAGE_ALL: 10
-  '1':
+  '8':
     ==: org.bukkit.inventory.ItemStack
-    type: ACACIA_DOOR_ITEM
+    type: SIGN
+    amount: 2
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 3
 health: 80.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.13270625
+saturation: 11.0
+exhaustion: 3.3247027
 armor_contents: {}
 ender_chest: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 8
-    duration: 176709
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 161071
   '1':
+    type: FAST_DIGGING
+    level: 30
+    duration: 169741
+  '2':
     type: REGENERATION
     level: 2
-    duration: 176709
-  '2':
+    duration: 161071
+  '3':
+    type: INCREASE_DAMAGE
+    level: 8
+    duration: 161071
+  '4':
     type: HEALTH_BOOST
     level: 14
-    duration: 176709
+    duration: 161071

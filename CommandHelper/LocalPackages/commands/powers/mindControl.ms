@@ -1,27 +1,9 @@
 register_command(mindcontrol, 
 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.mindcontrol',
-        
+        description: 'Mind Controls a person',
+        permission: 'powers.mindcontrol',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
@@ -32,10 +14,28 @@ register_command(mindcontrol,
             
             }
             
-            @player = player()
+            @player = @sender
     
+            @vic = @args[0]
+            @vic = player(@vic)
+
+            export(@player.'mindControlVictim',@vic)
+
+            if(has_permission(@vic,"is.criminal")){
+                tmsg(@player,color(red)."Sorry, that player cannot be controlled.")
+                die()
+            }
+
+            if(import(@vic.'beingMindControlled') == true){
+                msg(color(RED).'Sorry, that person is already being mind controlled')
+                die()
+            }
+            if(import(@vic.'mindControlling') == true){
+                msg(color(RED).'Sorry, that person is already mind controlling someone')
+                die()
+            }
+
             assign(@cooldown, 60)
-            
             assign(@lastUsedMindControl, import(@player."lastUsedMindControl"))
             if(@lastUsedMindControl + @cooldown > time() / 1000,
                 assign(@timeleft, subtract(add(@lastUsedMindControl, @cooldown), divide(time(),1000)))
@@ -44,48 +44,78 @@ register_command(mindcontrol,
             )
             export(@player."lastUsedMindControl", time() / 1000)
             
-            include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-
-            @vic = @args[0]
-            @vic = player(@vic)
             
-            if(!ponline(@player)){
-                broadcast(color(red) . "Sorry, but " . color(blue) . @vic . color(red) . " is not found.")
-                die()
-            }
-
-            if(has_permission(@vic,"is.virus")){
-                tmsg(@player,color(red)."Sorry, that player is a virus, you can't mind control a virus")
-                die()
-            }
-            
-            runas(~console,"/icu control @player @vic")
             broadcast("@player is now mindcontrolling @vic")
+
+            export(@player.'mindControlling',true)
+            export(@vic.'beingMindControlled',true)
             
+            export(@player.'mindControlPlayerOrigLocation',ploc(@player))
+            export(@player.'mindControlVicOrigGameMode',pmode(@vic))
+            
+            set_ploc(@player,ploc(@vic))
+
+            set_pmode(@vic,'SPECTATOR')
+
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-            @vicGroup = _getheroclass(@vic)
+            export(@player.'mindControlPlayerOrigHero',_getheroclass(@player))
+            @vHero = _getheroclass(@vic)
+
+            @sig = ''
+            @val = ''
             
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vicGroup . '.ms')
-            _changeSkin(player(),@hero['sig'],@hero['val'])
+            try{
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vHero . '.ms')
+                export(@player.'mindControlSig', @hero['sig'])
+                export(@player.'mindControlVal', @hero['val'])
+                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+                _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
+            }catch(Exception @e){
+                runas(~console,'/disguiseplayer '.@player.' player '.@vic)
+            }
+
+            @mindControlTimer = set_timeout(30000,closure(
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                _mindControlStop(@player)
+            ))
+
+            export(@player.'mindControlTimer',@mindControlTimer)
             
+            bind(player_chat,associative_array('id': @player.'mindControlChatForward'),associative_array('player': @player),@event, @playerr = @player, @vicc = @vic){
+                cancel()
+                console('chat forwarded from '.@playerr. ' to '.@vicc)
+                chatas(@vicc,@event['message'])
+                try{
+                    unbind(@vicc.'mindControlForward')
+                }catch(Exception @e){
+                    
+                }
+            }
+            bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player){
+                runas(~console,'/tempban '.@vicc.' 60s 1 Minute Ban For Quitting During Mind Control')
+                runas(~console,'/pex user '.@vicc.' group set mortal')
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                _mindControlStop(@playerr)
+            }
+
+            bind(player_quit,associative_array('id': @player.'mindControlPlrLeave'),associative_array('player': @player),@event, @playerr = @player){
+                include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                _mindControlStop(@playerr)
+            }
         }
     )
 )
 
+
 register_command(stopmindcontrol, 
 
     array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.stopmindcontrol',
-        
+        description: 'Stops mind control',
+        permission: 'powers.stopmindcontrol',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        executor: closure(@alias, @sender, @args) {        
             
-            @player = player()
-
+            @player = @sender
             assign(@cooldown, 30)
             
             assign(@lastUsedStopMindControl, import(@player."lastUsedStopMindControl"))
@@ -96,17 +126,13 @@ register_command(stopmindcontrol,
             )
             export(@player."lastUsedStopMindControl", time() / 1000)
 
-            include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            if(import(@player.'mindControlling') != true){
+                msg(color(RED).'Sorry, you are not currently mind controlling anyone')
+                die()
+            }
+
             
-            @pgroup = _getheroclass(@player)
             
-            runas(~console,'/icu stop '.@player)
-            broadcast("@player has stopped mindcontrolling")
-            
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pgroup . '.ms')
-            _changeSkin(player(),@hero['sig'],@hero['val'])
-                
         }
     )
 )

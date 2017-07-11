@@ -2,7 +2,6 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 16
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -10,11 +9,173 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 1
+    amount: 35
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 9
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 5
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG_2
+    damage: 1
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 2
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 53
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: PRISMARINE_CRYSTALS
+    amount: 4
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 30
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    damage: 215
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEEDS
+    amount: 7
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 16
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 569
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 9
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 42
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER
+    amount: 6
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE_GATE
+    amount: 18
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 1
+    amount: 64
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_BEEF
+    amount: 3
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6One §fPunch §4Man §e§lD§a§lN§4§lA
+      lore:
+      - onepunchman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 6
+    amount: 64
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEETROOT
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 5
+    amount: 64
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 62
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 3
+    amount: 18
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 16
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -24,34 +185,34 @@ armor_contents:
         DEPTH_STRIDER: 30
 health: 100.0
 hunger: 20
-exp: 0.33333337
-exp-level: 1
+exp: 0.6666665
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
-saturation: 3.0
-exhaustion: 3.3110178
+saturation: 20.0
+exhaustion: 2.6560013
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 149552
-  '1':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 149552
-  '2':
-    type: REGENERATION
-    level: 3
-    duration: 149552
-  '3':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 149552
-  '4':
+    duration: 190799
+  '1':
     type: WATER_BREATHING
     level: 1
-    duration: 149552
+    duration: 190799
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 190799
+  '3':
+    type: REGENERATION
+    level: 3
+    duration: 190799
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 190799
   '5':
-    type: FAST_DIGGING
-    level: 10
-    duration: 157295
+    type: HEALTH_BOOST
+    level: 19
+    duration: 190799
