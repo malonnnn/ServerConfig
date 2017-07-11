@@ -2,7 +2,7 @@ register_command(mindcontrol,
 
     array(
         description: 'Mind Controls a person',
-        permission: 'powers.mindcontrol',
+        permission: 'ch.alias.mindcontrol',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -60,14 +60,9 @@ register_command(mindcontrol,
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             export(@player.'mindControlPlayerOrigHero',_getheroclass(@player))
             @vHero = _getheroclass(@vic)
-
-            @sig = ''
-            @val = ''
             
             try{
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vHero . '.ms')
-                export(@player.'mindControlSig', @hero['sig'])
-                export(@player.'mindControlVal', @hero['val'])
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
             }catch(Exception @e){
@@ -91,7 +86,7 @@ register_command(mindcontrol,
                     
                 }
             }
-            bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player){
+            bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player, @vicc = @vic){
                 runas(~console,'/tempban '.@vicc.' 60s 1 Minute Ban For Quitting During Mind Control')
                 runas(~console,'/pex user '.@vicc.' group set mortal')
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
@@ -111,7 +106,7 @@ register_command(stopmindcontrol,
 
     array(
         description: 'Stops mind control',
-        permission: 'powers.stopmindcontrol',
+        permission: 'ch.alias.stopmindcontrol',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {        
             

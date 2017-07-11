@@ -1,10 +1,32 @@
-inventory: {}
-health: 16.0
-hunger: 14
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k §e§lD§a§lN§4§lA
+      lore:
+      - mrmxyzptlk
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+health: 5.8333330154418945
+hunger: 15
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9709167
+exhaustion: 2.674717
 armor_contents: {}
