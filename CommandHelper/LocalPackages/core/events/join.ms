@@ -48,7 +48,7 @@ bind(player_join,null,null,@event){
     foreach(@player in @plrs)
     {
         @otherPlayerGroup = _getheroclass(@player)
-        if(@otherPlayerGroup[0] == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
+        if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
             sudo('/pex user '.@plr.' group set mortal')
             call_alias('/mortal')
             set_timeout(1500, closure(
