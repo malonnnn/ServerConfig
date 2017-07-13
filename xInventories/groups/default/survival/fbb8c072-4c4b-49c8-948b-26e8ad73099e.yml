@@ -1,49 +1,57 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4W§fon§eder §4G§fi§9r§fl's §eLasso
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        DAMAGE_ALL: 10
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 2
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    amount: 3
-health: 80.0
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 89.30000305175781
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 11.0
-exhaustion: 3.3247027
+saturation: 0.0
+exhaustion: 0.34800053
 armor_contents: {}
 ender_chest: {}
 potion_effect:
   '0':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 198627
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198627
+  '2':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 161071
-  '1':
-    type: FAST_DIGGING
-    level: 30
-    duration: 169741
-  '2':
-    type: REGENERATION
-    level: 2
-    duration: 161071
+    duration: 198627
   '3':
-    type: INCREASE_DAMAGE
-    level: 8
-    duration: 161071
+    type: REGENERATION
+    level: 1
+    duration: 198627
   '4':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 198627
+  '5':
+    type: NIGHT_VISION
+    level: 1
+    duration: 198627
+  '6':
     type: HEALTH_BOOST
-    level: 14
-    duration: 161071
+    level: 19
+    duration: 198627

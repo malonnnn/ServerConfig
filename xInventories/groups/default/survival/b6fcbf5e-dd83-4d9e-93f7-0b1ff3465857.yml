@@ -1,14 +1,63 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
-  '1':
+    type: GOLD_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 2
+  '5':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 23
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    amount: 4
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 8
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 8
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 7
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 13
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -19,37 +68,30 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 64
 armor_contents: {}
-health: 100.0
+health: 60.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.21600792
+exp-level: 24
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.4570167
+exhaustion: 0.52802277
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 175782
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 175782
-  '2':
     type: REGENERATION
     level: 1
-    duration: 175782
-  '3':
+    duration: 197736
+  '1':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 175782
-  '4':
-    type: NIGHT_VISION
-    level: 1
-    duration: 175782
-  '5':
+    level: 10
+    duration: 197736
+  '2':
     type: HEALTH_BOOST
-    level: 19
-    duration: 175782
+    level: 9
+    duration: 197736
