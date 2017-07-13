@@ -17,7 +17,6 @@ plot:
 buy:
   aliases:
   - buy
-  - b
   usage: /plot buy
   description: Buy the plot you are standing on
   confirmation: false
@@ -59,7 +58,7 @@ update:
   - update
   - updateplugin
   usage: /plot update
-  description: Update PlotSquared
+  description: Update the plugin
   confirmation: false
 setup:
   aliases:
@@ -131,7 +130,7 @@ visit:
   - goto
   - home
   - h
-  usage: /plot visit [player|alias|world|id] [#]
+  usage: /plot visit [<player>|<alias>|<world>|<id>] [#]
   description: Visit someones plot
   confirmation: false
 set:
@@ -145,7 +144,7 @@ clear:
   aliases:
   - clear
   - reset
-  usage: /plot clear [id]
+  usage: /plot clear
   description: Clear a plot
   confirmation: true
 delete:
@@ -153,6 +152,7 @@ delete:
   - delete
   - dispose
   - del
+  - reset
   usage: /plot delete
   description: Delete a plot
   confirmation: true
@@ -166,7 +166,6 @@ trust:
 add:
   aliases:
   - add
-  - a
   usage: /plot add <player>
   description: Allow a user to build while you are online
   confirmation: false
@@ -178,26 +177,17 @@ deny:
   usage: /plot deny <player>
   description: Deny a user from a plot
   confirmation: false
-untrust:
-  aliases:
-  - untrust
-  - ut
-  usage: /plot untrust <player>
-  description: Remove a trusted user from a plot
-  confirmation: false
 remove:
   aliases:
   - remove
   - r
+  - untrust
+  - ut
+  - undeny
+  - unban
+  - ud
   usage: /plot remove <player>
   description: Remove a player from a plot
-  confirmation: false
-undeny:
-  aliases:
-  - undeny
-  - ud
-  usage: /plot undeny <player>
-  description: Remove a denied user from a plot
   confirmation: false
 info:
   aliases:
@@ -205,6 +195,13 @@ info:
   - i
   usage: /plot info <id>
   description: Display plot info
+  confirmation: false
+near:
+  aliases:
+  - near
+  - n
+  usage: /plot near
+  description: Display nearby players
   confirmation: false
 list:
   aliases:
@@ -267,7 +264,7 @@ debugpaste:
   - debugpaste
   - dp
   usage: /plot debugpaste
-  description: Upload settings.yml & latest.log to HasteBin
+  description: Upload settings.yml, worlds.yml, commands.yml and latest.log to www.hastebin.com
   confirmation: false
 unlink:
   aliases:
@@ -288,7 +285,7 @@ rate:
   aliases:
   - rate
   - rt
-  usage: /plot rate [#|next]
+  usage: /plot rate [#|next|purge]
   description: Rate the plot
   confirmation: false
 debugclaimtest:
@@ -315,7 +312,7 @@ database:
   aliases:
   - database
   - convert
-  usage: /plots database [area] <sqlite|mysql|import>
+  usage: /plot database [area] <sqlite|mysql|import>
   description: Convert/Backup Storage
   confirmation: false
 swap:
@@ -423,8 +420,9 @@ middle:
   aliases:
   - middle
   - center
+  - centre
   usage: /plot middle
-  description: Teleports you to the center of the current plot
+  description: Teleports you to the center of the plot
   confirmation: false
 grant:
   aliases:
@@ -470,6 +468,7 @@ setalias:
   - rename
   - setname
   - seta
+  - nameplot
   usage: /plot alias <alias>
   description: Set the plot name
   confirmation: false
@@ -487,6 +486,12 @@ cluster:
   - clusters
   usage: ''
   description: Manage a plot cluster
+  confirmation: false
+debugimportworlds:
+  aliases:
+  - debugimportworlds
+  usage: ''
+  description: Import worlds by player name
   confirmation: false
 toggle:
   aliases:
@@ -516,17 +521,17 @@ toggle:
     usage: ''
     description: Toggle admin chat spying
     confirmation: false
-  chat:
-    aliases:
-    - chat
-    usage: ''
-    description: Toggle plot chat
-    confirmation: false
   clear-confirmation:
     aliases:
     - clear-confirmation
     usage: ''
     description: Toggle autoclear confirmation
+    confirmation: false
+  chat:
+    aliases:
+    - chat
+    usage: ''
+    description: Toggle plot chat
     confirmation: false
 help:
   aliases:
@@ -536,29 +541,16 @@ help:
   usage: help [category|#]
   description: Get this help menu
   confirmation: false
-weanywhere:
-  aliases:
-  - weanywhere
-  - wea
-  usage: /plot weanywhere
-  description: Force bypass of WorldEdit
-  confirmation: false
 uuidconvert:
   aliases:
   - uuidconvert
   usage: /plot uuidconvert <lower|offline|online>
   description: Debug UUID conversion
   confirmation: false
-near:
+weanywhere:
   aliases:
-  - near
-  - n
-  usage: /plot near
-  description: Display nearby players
-  confirmation: false
-debugimportworlds:
-  aliases:
-  - debugimportworlds
-  usage: ''
-  description: Import worlds by player name
+  - weanywhere
+  - wea
+  usage: /plot weanywhere
+  description: Force bypass of WorldEdit
   confirmation: false

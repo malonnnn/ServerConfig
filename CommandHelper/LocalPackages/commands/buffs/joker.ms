@@ -9,10 +9,7 @@
             'op': 'false',
             'speech': "I'm the Joker!",
             'powers': array(
-                "/buff",
-                "/jump 0-1",
-                "/run 0-2",
-                "/haste 0-1"
+                "/buff"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:stick 1 16:2 name:&6Baseball_Bat",

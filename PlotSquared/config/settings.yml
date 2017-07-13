@@ -40,7 +40,7 @@ enabled-components:
   # Send anonymous usage statistics. Bukkit only setting.
   metrics: true
   # Expiry will clear old or simplistic plots
-  plot-expiry: true
+  plot-expiry: false
   # Processes chunks (trimming, or entity/tile limits) 
   chunk-processor: false
   # Kill mobs or vehicles on roads
@@ -108,7 +108,7 @@ done:
   # Restrict building when a plot is done
   restrict-building: false
   # The limit being how many plots a player can claim
-  counts-towards-limit: false
+  counts-towards-limit: true
 
 web:
   # The web interface for schematics
@@ -124,7 +124,7 @@ web:
 # Configure the paths that will be used
 paths:
   schematics: "schematics"
-  bo3: "BO3"
+  bo3: "bo3"
   scripts: "scripts"
   templates: "templates"
   translations: "translations"
@@ -152,7 +152,7 @@ auto-clear:
   task1:
     threshold: 1
     required-plots: -1
-    confirmation: false
+    confirmation: true
     days: 7
     worlds: 
     - "*"

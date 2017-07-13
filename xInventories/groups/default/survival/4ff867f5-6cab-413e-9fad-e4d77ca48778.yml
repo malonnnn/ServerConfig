@@ -1,10 +1,56 @@
-health: 20.0
-hunger: 20
+health: 100.0
+hunger: 6
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+saturation: 0.0
+exhaustion: 0.33001587
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRAVEL
+    amount: 64
 armor_contents: {}
+potion_effect:
+  '0':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 149895
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 149895
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 149895
+  '3':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 149895
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 149895
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 149895
