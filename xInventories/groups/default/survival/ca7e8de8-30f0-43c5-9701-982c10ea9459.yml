@@ -2,15 +2,57 @@ inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: DIRT
-health: 17.0
-hunger: 15
-exp: 0.0
-exp-level: 0
+    amount: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DARK_OAK_FENCE_GATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPIDER_EYE
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 8
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 6.0
+hunger: 9
+exp: 0.5555555
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.67271435
-armor_contents: {}
+exhaustion: 3.4260163
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 8
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack

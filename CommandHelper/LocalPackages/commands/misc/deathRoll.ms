@@ -1,28 +1,9 @@
 register_command(deathroll, 
-
     array(
-    
         description: '',
-        
         usage: '/deathroll <player>',
-        
         permission: 'ch.alias.deathroll',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
     
         executor: closure(@alias, @sender, @args) {
         
@@ -37,8 +18,8 @@ register_command(deathroll,
                 try {
                     @player = player(@args[0])
                     
-                    if(acc_balance(@player) >= 1000){
-                    acc_subtract(@player,1000)
+                    if(acc_balance(@player) >= 300){
+                    acc_subtract(@player,300)
                     }else{
                         tmsg(@player, "You need $1000 to use this machine!")
                         die()
@@ -47,41 +28,41 @@ register_command(deathroll,
                     #@player = player()
                     assign(@plrs, all_players())
                     assign(@plr, array_rand(@plrs))
-                    broadcast("§4§kk§9"@player"§7used §4DeathRoll§7! Who will §4§lDIE§7? Will it be §f"@plrs[@plr[0]]"§7?")
+                    broadcast(color(DARK_RED).color(RANDOM)."k".color(BLUE).@player.color(GRAY)." used ".color(RED)."DeathRoll".color(GRAY)."! Who will ".color(DARK_RED).color(BOLD)."DIE".color(GRAY)."? Will it be ".color(WHITE).@plrs[@plr[0]].color(GRAY)."?")
                     
                     set_timeout(2000, closure(
                     assign(@plr, array_rand(@plrs))
-                    broadcast("§4§kk§7or §f"@plrs[@plr[0]]"§7?")
+                        broadcast(color(DARK_RED).color(RANDOM)."k".color(GRAY)." or ".color(WHITE).@plrs[@plr[0]].color(GRAY)."?")
                     ))
                     
                     set_timeout(4000, closure(
-                    broadcast("§4§kk§7No! It")
+                        broadcast(color(DARK_RED).color(RANDOM)."k".color(GRAY)." No! It")
                     ))
                     
                     set_timeout(5000, closure(
-                    broadcast("§4§kk§7Will")
+                        broadcast(color(DARK_RED).color(RANDOM)."k".color(GRAY)." Will")
                     ))
                     
                     set_timeout(6000, closure(
-                    broadcast("§4§kk§7Be")
+                        broadcast(color(DARK_RED).color(RANDOM)."k".color(GRAY)." Be")
                     ))
                     
                     set_timeout(7000, closure(
-                    broadcast("§4§kk§7...")
+                        broadcast(color(DARK_RED).color(RANDOM)."k".color(GRAY)." ...")
                     ))
                     
                     set_timeout(10000, closure(
                     assign(@plr, array_rand(@plrs))
                     @name = @plrs[@plr[0]]
                     if(rand(1,3) == 1){
-                        broadcast("§2§kk§7JK! §f@name §7wins 27 levels of xp!")
-                        runas(~console,/xp 1000 @name)
+                        broadcast(color(DARK_GREEN).color(RANDOM)."k".color(GRAY)."JK! ".color(WHITE).@name.color(GRAY)." wins ".color(GREEN)."$300")
+                        runas(~console,'/eco give '.@name.' 300')
                         die()
                     }
                     @mode = pmode(@name)
-                    broadcast("§4§kk§4" @name)
+                    broadcast(color(DARK_RED).color(RANDOM)."k".color(DARK_RED)." ".@name)
                         set_timeout(500, closure(
-                        runas(~console,/kill @name)
+                            pkill(@name)
                         ))
                     ))	
                     
@@ -91,6 +72,57 @@ register_command(deathroll,
                 }				
                 
                     
+        
+        }
+    )
+)
+register_command(slaproll, 
+    array(
+        description: '',
+        usage: '/slaproll',
+        permission: 'command.uberslaproll',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+    
+        executor: closure(@alias, @sender, @args) {
+    
+            if (array_size(@args) != 0) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /slaproll');
+                die(); # No need to go further					
+            
+            }
+            
+            assign(@plrs, all_players())
+            assign(@plr, array_rand(@plrs))
+            broadcast(
+                color(DARK_RED).color(BOLD).color(RANDOM)."k".
+                color(GREEN).color(BOLD)." RANDOM UBERSLAP COMING IN 3..."
+
+            )
+            
+            set_timeout(1000, closure(
+                broadcast(
+                    color(DARK_RED).color(BOLD).color(RANDOM)."k".
+                    color(GREEN).color(BOLD)." 2..."
+
+                )
+            ))
+            
+            set_timeout(2000, closure(
+                broadcast(
+                    color(DARK_RED).color(BOLD).color(RANDOM)."k".
+                    color(GREEN).color(BOLD)." 1..."
+
+                )
+            ))
+            
+            
+            set_timeout(3000, closure(
+            assign(@plr, array_rand(@plrs))
+            @name = @plrs[@plr[0]]
+            sudo("/uberslap ".@name)
+            ))
         
         }
     )

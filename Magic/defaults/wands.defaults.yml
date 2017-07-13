@@ -1338,6 +1338,59 @@ knight_upgrade:
 potion_sp100:
   icon: potion
   consume_spell: addsp
+purger:
+  inherit: base_wand
+  protection_physical: 0.350000012665987
+  icon: wood_hoe:3
+  protection: 0.029999999329447746
+  protection_explosions: 0.05000000074505806
+  protection_falling: 0.20000000298023224
+  path: apprentice
+  spell_levels:
+    missile: 3
+    blink: 3
+    fling: 3
+    blast: 2
+  mana: 200.0
+  mana_regeneration: 40.0
+  effect_color: e7af8f15e46d,a2d692205c9e,375aa4521cf2
+  mana_max: 200.0
+  spells:
+  - blink
+  - fling
+  - disintegrate
+  - missile
+  - blast
+  - collapse
+  - boom
+  - grenade
+  - heal
+  - boon
+  - cure
+  - rubberize
+  - harden
+  - smite
+  - fireball
+  - shell
+  - blob
+  - breach
+  - bubble
+  - push
+  - pull
+  - peek
+  - recall
+  - reflect
+  - frost
+  - lava
+  - stream
+  - sandblast
+  - counterspell
+  - platform
+  - wound
+  - walls
+  hotbar_count: 2
+  protection_fire: 0.05000000074505806
+  active_spell: blast
 # Quests integration
 questscompass:
   active_spell: quests

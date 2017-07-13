@@ -1,0 +1,52 @@
+generator:
+  plugin: PlotSquared
+plot:
+  height: 64
+  floor:
+  - '2:0'
+  biome: FOREST
+  size: 50
+  bedrock: true
+  create_signs: true
+  filling:
+  - '1:0'
+  auto_merge: false
+event:
+  spawn:
+    breeding: false
+    egg: false
+    custom: true
+  pvp: false
+  pve: false
+economy:
+  use: false
+  prices:
+    claim: 100.0
+    sell: 75.0
+    merge: 100.0
+home:
+  allow-nonmembers: false
+  default: side
+wall:
+  height: 64
+  filling: '1:0'
+  block: '44:0'
+  block_claimed: '44:1'
+road:
+  block: '155:0'
+  height: 64
+  width: 12
+world:
+  border: false
+  gamemode: creative
+  max_height: 256
+schematic:
+  file: 'null'
+  on_claim: false
+  specify_on_claim: false
+limits:
+  max-members: 128
+chat:
+  enabled: false
+flags: {}
+natural_mob_spawning: false

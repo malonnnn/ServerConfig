@@ -38,6 +38,14 @@ register_command(kill,
                 tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
                 die()
             }
+            assign(@cooldown, 10)
+            assign(@lastUsedKill, import(@player."lastUsedKill"))
+            if(@lastUsedKill + @cooldown > time() / 1000,
+                assign(@timeleft, subtract(add(@lastUsedKill, @cooldown), divide(time(),1000)))
+                tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use mind control again!'))
+                die()
+            )
+            export(@player."lastUsedKill", time() / 1000)
             broadcast(@plr." exploded the body of ".@vic)
             pkill(@vic)
             die()
