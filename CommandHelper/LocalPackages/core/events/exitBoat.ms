@@ -4,7 +4,8 @@ bind(vehicle_leave,null,associative_array('vehicletype':'BOAT'),@event){
         die()
     }
     @player = @event['player']
-    if(pworld(@player) == 'formuladrift'){
+    @pworld = pworld(@player)
+    if(@pworld == 'formuladrift' || @pworld == 'boatrace'){
         @minecartID = @event['vehicle']
 
         set_timeout(500,closure(

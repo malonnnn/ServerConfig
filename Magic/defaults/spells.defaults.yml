@@ -1375,8 +1375,7 @@ automatashop:
         -  class: ItemShop
     parameters:
         quiet: true
-        confirm: true
-        confirm_filler: stained_glass:14
+        auto_close: false
         sell: true
         items:
           wand|hunterheart: 500
@@ -3708,12 +3707,14 @@ defender:
            particle: block_crack
         tick:
         - sound: entity_endermen_scream
-    spell_parameters: "loud true transparent air,$birth,$heart"
+        hurt:
+        - sound: entity_endermen_hurt,0.3,2
+    spell_parameters: "loud true transparent air,$birth,stained_glass"
     cast:
-        "defender_attack indestructible $birth,$heart": 100
+        "defender_attack indestructible $birth": 200
         "none": 500
     death_cast:
-        "defender_death destructible $birth,$heart": 100
+        "defender_death destructible $birth": 100
     parameters:
         allow_max_range: false
         transparent: transparent_to_construction
@@ -3727,6 +3728,7 @@ defender:
         live_range: 6
         delay: 200
         target_mode: hunt
+        backup_target_mode: directed
         targets: automaton
         target_min_range: 0
         target_max_range: 128
@@ -3743,6 +3745,29 @@ defender:
         reflect_chance: 0.25
         heart_material: lapis_block
         command_block_allowed: false
+        max_blocks: 200
+        min_blocks: 100
+        materials:
+        - quartz_block
+        - quartz_block:1
+        - quartz_block:2
+        - mossy_cobblestone
+        - bricks
+        - wool
+        - wool:1
+        - wool:2
+        - wool:3
+        - wool:4
+        - wool:5
+        - wool:6
+        - wool:7
+        - wool:8
+        - wool:9
+        - wool:10
+        - wool:11
+        - wool:12
+        - wool:13
+        - wool:14
     costs:
         xp: 50
         sp: 20
@@ -3771,7 +3796,7 @@ defender_death:
     parameters:
         brush: air
         falling: true
-        radius: 2
+        radius: 3
         undo: 10000
         undo_speed: 1
         target: self
@@ -3804,12 +3829,12 @@ defender_attack:
     parameters:
         target: block
         allow_max_range: false
-        range: 8
+        range: 5
         check_destructible: true
-        radius: 3
+        radius: 2
         transparent: transparent_to_construction
         destructible: destructible,destructible2,destructible3
-        undo: 3000
+        undo: 5000
         brush: stained_glass|9
         bypass_backfire: true
 
@@ -6383,7 +6408,7 @@ homing:
            color_override: color
            effectlib:
              class: SphereEffect
-             iterations: 40
+             iterations: 200
              particle: redstone
              radius: 0.1
              particles: 10
@@ -6511,6 +6536,8 @@ hunter:
            particle: block_crack
         tick:
         - sound: entity_endermen_scream
+        hurt:
+        - sound: entity_endermen_hurt,0.3,2
     levels:
         1: 100
         3: 40
@@ -6518,26 +6545,30 @@ hunter:
     move: 2,2,2
     radius: 5,6,7
     yradius: 5,6,7
+    max_blocks: 200,300,400
+    min_blocks: 20,25,30
     birth_range: 3,4,5
     live_range: 3,4,5
     delay: 1200,800,500
     drop_xp: 50,75,100
-    spell_parameters: "loud true transparent air,$birth,$heart range 48"
+    spell_parameters: "loud true transparent air,$birth range 32"
     death_cast:
-        "hunter_death speed 0^1 destructible $birth,$heart": 500,300,50
-        "hunter_death speed 0^5 destructible $birth,$heart": 300,200,100
-        "hunter_death speed 1^0 destructible $birth,$heart": 250,200,150
-        "hunter_death speed 1^5 destructible $birth,$heart": 100,100,200
+        "hunter_death speed 0^1 destructible $birth": 500,300,50
+        "hunter_death speed 0^5 destructible $birth": 300,200,100
+        "hunter_death speed 1^0 destructible $birth": 250,200,150
+        "hunter_death speed 1^5 destructible $birth": 100,100,200
     cast:
         "shrink": 30,40,50
-        "pull": 60,70,80
-        "curse": 60,100,150
-        "poison": 100,100,150
-        "blob brush stained_glass:15 radius 2 undo 5000 indestructible $birth,$heart": 20,40,80
-        "shell brush stained_glass:15 radius 3 undo 7000 indestructible $birth,$heart": 20,40,80
-        "homing|2": 20,50,90
+        "pull": 100,120,150
+        "curse": 20,50,70
+        "blind": 60,40,10
+        "poison": 40,50,30
+        "blob brush stained_glass:15 radius 2 undo 5000 indestructible $birth": 20,40,50
+        "shell brush stained_glass:15 radius 3 undo 7000 indestructible $birth": 30,20,10
+        "homing|2": 20,50,150
         "missile|2": 100,150,200
-        "none": 300,200,50
+        "petrify": 50,100,150
+        "none": 100,75,25
     parameters:
         allow_max_range: false
         transparent: transparent_to_construction
@@ -6554,15 +6585,35 @@ hunter:
         concurrent: true
         drops:
         - hunterheart
-        - sp:40
+        - sp:50
         restricted: restricted_animate
         message_type: evil
         undo: 5000
-        reflect_chance: 0.85
         command_block_allowed: false
+        materials:
+        - stained_clay
+        - stained_clay:1
+        - stained_clay:2
+        - stained_clay:3
+        - stained_clay:4
+        - stained_clay:5
+        - stained_clay:6
+        - stained_clay:7
+        - stained_clay:8
+        - stained_clay:9
+        - stained_clay:10
+        - stained_clay:11
+        - stained_clay:12
+        - stained_clay:13
+        - stained_clay:14
+        - clay
+        - packed_ice
+        - red_sandstone
+        - red_sandstone:1
+        - red_sandstone:2
     costs:
         xp: 200
-        sp: 80
+        sp: 100
 
 hunter_death:
     name: Hunter Death
@@ -10249,7 +10300,7 @@ birth_hunter:
     cast:
     - class: Command
   parameters:
-    command: cast hunter material quartz_block seed_radius 2
+    command: cast hunter seed_radius 2
 
 birth_defender:
   icon: diamond_axe:17
@@ -10257,7 +10308,7 @@ birth_defender:
     cast:
     - class: Command
   parameters:
-    command: cast defender material pumpkin seed_radius 2
+    command: cast defender seed_radius 2
 
 birth_worm:
   icon: diamond_axe:17
@@ -10265,7 +10316,7 @@ birth_worm:
     cast:
     - class: Command
   parameters:
-    command: cast worm material melon_block seed_radius 2
+    command: cast worm seed_radius 2
 
 birth_virus:
   icon: diamond_axe:17
@@ -10273,7 +10324,7 @@ birth_virus:
     cast:
     - class: Command
   parameters:
-    command: cast virus material huge_mushroom_1 seed_radius 2
+    command: cast virus seed_radius 2
 secure:
     icon: diamond_axe:183
     icon_disabled: diamond_hoe:183
@@ -13364,18 +13415,22 @@ virus:
            particle: block_crack
         tick:
         - sound: entity_enderdragon_growl
+        hurt:
+        - sound: entity_enderdragon_hurt,0.3,2
     levels:
         1: 100
         3: 40
         5: 20
     radius: 10,12,16
     yradius: 10,12,16
+    max_blocks: 8000,9000,10000
+    min_blocks: 7200,8100,9000
     birth_range: 12,16,18
     live_range: 20,24,28
     move: 8,10,16
     delay: 3500,3000,2500
     drop_xp: 100,150,200
-    spell_parameters: "loud true transparent air,$birth,$heart range 64"
+    spell_parameters: "loud true transparent air,$birth range 48"
     cast:
         neutron: 5,10,20
         fury: 20,50,100
@@ -13383,17 +13438,15 @@ virus:
         "missile|4": 10,20,40
         "torture|3": 10,20,40
         "petrify|3": 30,50,70
-        "shuriken|3": 30,50,70
+        "shuriken|3": 70,30,20
         "kill": 5,20,30
-        "shell|2 indestructible $birth,$heart": 15,40,50
-        "blob|2 indestructible $birth,$heart": 5,20,30
-        "railgun indestructible $birth,$heart": 20,40,80
-        "poison": 5,20,30
-        "none": 100,80,50
+        "shell|2 indestructible $birth": 30,10,5
+        "blob|2 indestructible $birth": 5,20,30
+        "railgun indestructible $birth": 20,40,80
+        "poison": 30,20,5
+        "none": 40,30,20
     death_cast:
-        neutron: 50,80,100
-        fury: 20,150,120
-        meteor: 60,50,90
+        virus_death: 50,80,100
     parameters:
         allow_max_range: false
         transparent: transparent_to_construction
@@ -13406,7 +13459,7 @@ virus:
         delay: 3000
         drops:
         - virusheart
-        - sp:75
+        - sp:200
         restricted: restricted_animate
         message_type: evil
         targets: any
@@ -13418,13 +13471,162 @@ virus:
         diagonal_live_rules: 0,1
         undo: 10000
         undo_speed: 20
-        reflect_chance: 0.95
-        max_blocks: 5000
         command_block_allowed: false
+        materials:
+        - stained_clay:15
+        - prismarine
+        - coal_block
+        - bone_block
+        - magma
+        - soul_sand
     costs:
         xp: 400
-        sp: 150
+        sp: 400
 
+virus_death:
+    icon: diamond_axe:162
+    icon_disabled: diamond_hoe:162
+    icon_url: http://textures.minecraft.net/texture/c64f6eeb78485e49b219f40a9d6a8131c539fef932f1cbb5f379adfebdd8c31
+    category: combat
+    actions:
+        cast:
+        - class: AreaOfEffect
+          actions:
+          - class: Asynchronous
+            actions:
+            - class: CustomProjectile
+              target: other
+              actions:
+              - class: AreaOfEffectCloud
+                radius: 4
+              - class: AreaOfEffect
+                radius: 4
+                actions:
+                - class: Velocity
+                - class: Damage
+              -  class: Sphere
+                 radius: 3
+                 actions:
+                 -  class: ModifyBlock
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.zap_crack
+           location: origin
+           color_override: color
+           effectlib:
+             class: SphereEffect
+             duration: 100
+             particle: smoke_normal
+             radius: 0.5
+             offset: 0,0.5,0
+        tick:
+        - particle: fireworks_spark
+          location: target
+          particle_count: 3
+          particle_offset_x: 0.1
+          particle_offset_y: 0.1
+          particle_offset_z: 0.1
+        - particle: smoke_large
+          location: target
+          particle_count: 1
+          particle_offset_x: .7
+          particle_offset_y: .7
+          particle_offset_z: .7
+        projectile:
+        -  class: EffectSingle
+           location: origin
+           effectlib:
+             class: SphereEffect
+             particle: lava
+             iterations: 100
+             particles: 15
+             radius: 0.5
+        hit:
+        - class: EffectSingle
+          location: target
+          color: FE2E2E
+          firework: ball_large
+        - class: EffectSingle
+          sound: entity_generic_explode
+          sound_volume: 2
+          location: both
+        - class: EffectSingle
+          target_offset: 0,0.5,0
+          location: target
+          color: FE2E2E
+          firework: burst
+          particle: explosion_huge
+        target:
+        -  class: EffectSingle
+           sound: entity_firework_launch
+           sound_volume: 0.5
+           location: source
+           particle: fireworks_spark
+           particle_count: 30
+           particle_offset_x: 2
+           particle_offset_y: 2
+           particle_offset_z: 2
+           effectlib:
+             class: LineEffect
+             length: 3
+             duration: 5000
+             particle: fireworks_spark
+             particles: 5
+             particleCount: 5
+             particleOffsetX: 0.5
+             particleOffsetY: 0.5
+             particleOffsetZ: 0.5
+    parameters:
+        target: self
+        target_self: false
+        range: 64
+        velocity: 8
+        radius: 24
+        tick_size: 0.2
+        target_count: 3
+        target_type: Player
+        player_damage: 4
+        entity_damage: 8
+        target_breakables: 1
+        cooldown: 30000
+        lifetime: 10000
+        target_self_timeout: 2000
+        track_speed: 10
+        use_target_location: false
+        velocity_transform:
+            orient: false
+            x: rand(-3,3) * cos(t)
+            y: rand(3,10)
+            z: rand(-3,3) * sin(t)
+        plan:
+        - time: 2000
+          track_target: true
+          velocity_transform: ""
+          velocity: 30
+          effects: target
+        - time: 3000
+          track_speed: 0.1
+        color: "882222"
+        particle: fireworks_spark
+        duration: 10000
+        potion_effects:
+        - type: slow
+          duration: 10000
+        - type: confusion
+          duration: 5000
+        - type: harm
+        item_speed: 0.5
+        living_entity_speed: 0.5
+        y_offset: 1
+        player_damage: 3
+        entity_damage: 3
+        speed: 0.9
+        falling: true
+        brush: air
+        direction: 0,0.75,0
+        destructible: destructible,destructible2,destructible3
+        undo_speed: 2
 volley:
     icon: diamond_axe:31
     icon_disabled: diamond_hoe:31
@@ -13939,6 +14141,8 @@ worm:
            particle: block_crack
         tick:
         - sound: entity_slime_attack
+        hurt:
+        - sound: entity_slime_hurt,0.3,2
     levels:
         1: 100
         3: 40
@@ -13946,17 +14150,20 @@ worm:
     move: 4,5,6
     radius: 6,8,10
     yradius: 6,8,10
+    max_blocks: 2000,3500,5000
+    min_blocks: 1500,2500,3500
     birth_range: 6,8,10
     live_range: 16,20,28
     delay: 1800,1500,1200
     drop_xp: 75,100,125
-    spell_parameters: "loud true transparent air,$birth,$heart range 48"
+    spell_parameters: "loud true transparent air,$birth range 48"
     death_cast:
-        "worm_death radius 10 destructible $birth,$heart bypass_undo_queue true": 100,100,100
-        "worm_death radius 12 destructible $birth,$heart bypass_undo_queue true": 20,50,200
+        "worm_death radius 10 destructible $birth bypass_undo_queue true": 100,100,100
+        "worm_death radius 12 destructible $birth bypass_undo_queue true": 20,50,200
     cast:
         "blob brush stained_glass:15 radius 3 undo 5000": 20,80,90
         "curse": 80,90,100
+        "blind": 60,100,150
         "shrink": 30,50,70
         "push": 20,40,60
         "fury": 30,50,70
@@ -13964,8 +14171,8 @@ worm:
         "homing|3": 20,30,50
         "missile|3": 100,150,250
         "petrify|2": 30,50,70
-        "shell stained_glass:15 radius 3 undo 7000 indestructible $birth,$heart": 20,40,80
-        "railgun indestructible $birth,$heart": 20,40,80
+        "shell stained_glass:15 radius 3 undo 7000 indestructible $birth": 20,40,80
+        "railgun indestructible $birth": 20,40,80
         "none": 20,10,5
     parameters:
         allow_max_range: false
@@ -13986,18 +14193,21 @@ worm:
         concurrent: true
         drops:
         - wormheart
-        - sp:50
+        - sp:100
         move: 4
         restricted: restricted_animate
         message_type: evil
         undo: 8000
         undo_speed: 10
-        reflect_chance: 0.9
-        max_blocks: 3000
         command_block_allowed: false
+        materials:
+        - melon_block
+        - huge_mushroom_1
+        - huge_mushroom_2
+        - nether_wart_block
     costs:
         xp: 250
-        sp: 100
+        sp: 200
 
 worm_death:
     name: Worm Death

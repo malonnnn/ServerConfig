@@ -12,8 +12,26 @@ inventory:
       display-name: §fWeb-Shot§f «×»
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    damage: 1
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4Sp§fi§4d§0e§4rm§0a§4n§8(PP) §e§lD§a§lN§4§lA
+      lore:
+      - spidermanpeterparker
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 health: 60.0
 hunger: 20
 exp: 0.0
@@ -21,25 +39,29 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.81999964
+exhaustion: 3.8776042
 potion_effect:
   '0':
     type: SPEED
-    level: 3
-    duration: 168674
+    level: 5
+    duration: 195461
   '1':
     type: REGENERATION
     level: 1
-    duration: 168596
+    duration: 195224
   '2':
     type: INCREASE_DAMAGE
     level: 5
-    duration: 168596
+    duration: 195224
   '3':
     type: JUMP
     level: 10
-    duration: 168634
+    duration: 195389
   '4':
     type: HEALTH_BOOST
     level: 9
-    duration: 168596
+    duration: 195224
+  '5':
+    type: NIGHT_VISION
+    level: 1
+    duration: 195224
