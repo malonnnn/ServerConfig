@@ -1,19 +1,66 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GLOWSTONE_DUST
-    amount: 2
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '7':
+    ==: org.bukkit.inventory.ItemStack
     type: DIAMOND
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Iphone 6+ Diamond Edition
-  '36':
+    amount: 64
+  '8':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 3
+    damage: 60
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -21,49 +68,70 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 2
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 64
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 46
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_LAMP_OFF
+    amount: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: MOB_SPAWNER
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §rpig Spawner
+      internal: H4sIAAAAAAAAAG2P3Q7BQBCFj201bOIvuPccLv1cEkHiUgajNtot2xXqCT2WbUvcmGRyZiaTb85IQKI5ipL9eaqtstmaQoHOjB5zJrPLiqHiFIFAd8nXmzJ8WESUsVmSDhltAbm60F2Pk5u28CXqRTshSzUIdUAjVpr3ho52eFEhBBqOXu6wA3kDgWpRoeeh8oALp9lHn7mWoP4PFCe7bZoj2Hzvl3b8HK/0D49XHa2iXSSW3TcUpdIhKxJB+fFflx6CDavwZPNVl2/FgXX2KAEAAA==
+      blockMaterial: MOB_SPAWNER
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_STAR
+    amount: 4
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BED
 ender_chest: {}
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
-hunger: 6
-exp: 0.45161295
-exp-level: 11
+armor_contents: {}
+health: 60.33333969116211
+hunger: 19
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.8562967
+exhaustion: 2.7460003
 potion_effect:
   '0':
-    type: SPEED
-    level: 3
-    duration: 153451
+    type: WATER_BREATHING
+    level: 1
+    duration: 199765
   '1':
-    type: FAST_DIGGING
-    level: 10
-    duration: 143370
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199765
   '2':
     type: REGENERATION
-    level: 1
-    duration: 142866
+    level: 3
+    duration: 199765
   '3':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 142866
+    level: 20
+    duration: 199765
   '4':
-    type: JUMP
-    level: 5
-    duration: 186272
+    type: NIGHT_VISION
+    level: 1
+    duration: 199765
   '5':
     type: HEALTH_BOOST
-    level: 4
-    duration: 142866
+    level: 19
+    duration: 199765

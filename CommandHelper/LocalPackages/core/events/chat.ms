@@ -25,7 +25,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if message is 565, display a link to a picture of the "superhero warehouse"
     # -------------------------------
-    if(@msg == '565' && @pgroup[0] != "quarantine")
+    if(@msg == '565' && @pgroup != "quarantine")
     {
         set_timeout(1000, closure(
             tmsg(@pname, color(dark_red) . color(random) . "k" . color(gray) . "Retrieving classified image for your viewing...")
@@ -44,7 +44,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     if(string_position(to_lower(@msg), 'kltpzyxm') != -1)
     {
-        if(@pgroup[0] == 'mrmxyzptlk')
+        if(@pgroup == 'mrmxyzptlk')
         {
             set_timeout(1000, closure(
                 call_alias('/mortal')
@@ -58,7 +58,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by black bold with "..." because he is unable to speak
     # -------------------------------
-    if(@pgroup[0] == 'blackbolt')
+    if(@pgroup == 'blackbolt')
     {
         assign(@msg,"...")
         modify_event(message, @msg)
@@ -67,7 +67,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
      replace all messages by time wraith with screams
     # -------------------------------
-    if(@pgroup[0] == 'timewraith'){
+    if(@pgroup == 'timewraith'){
         @phrase = rand(1, 8)
         
         if(@phrase == 1){
@@ -113,7 +113,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by pikachu with "Pika Pika Pikachu!" because he is unable to speak
     # -------------------------------
-    if(@pgroup[0] == 'pikachu')
+    if(@pgroup == 'pikachu')
     {
         @phrase = rand(1, 8)
         
@@ -139,7 +139,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by Greninja with Greninja stuff
     # -------------------------------
-    if(@pgroup[0] == 'victini')
+    if(@pgroup == 'victini')
     {
         @phrase = rand(1, 3)
         
@@ -155,7 +155,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by Greninja with Greninja stuff
     # -------------------------------
-    if(@pgroup[0] == 'greninja')
+    if(@pgroup == 'greninja')
     {
         @phrase = rand(1, 3)
         
@@ -171,7 +171,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by mew with "mew"
     # -------------------------------
-    if(@pgroup[0] == 'mew')
+    if(@pgroup == 'mew')
     {
         @phrase = rand(1, 4)
         
@@ -189,7 +189,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # replace all messages by groot bold with "I am groot." because he is unable to speak
     # -------------------------------
-    if(@pgroup[0] == 'groot')
+    if(@pgroup == 'groot')
     {
         @players = all_players()
         @rocketMsg = @msg

@@ -1576,7 +1576,7 @@ blast:
             - class: Velocity
           - class: Sphere
             actions:
-            - class: ModifyBlock
+            - class: BreakBlock
     effects:
         cast:
         -  class: EffectSingle
@@ -1615,14 +1615,15 @@ blast:
         living_entity_speed: 0.7
         direction: 0,0.8,0
         falling: true
-        brush: air
         radius: 1
+        durability_max_distance: 3
         damage_max_distance: 2
         undo: 15000
         cooldown: 5000
         destructible: solid
         destructible_override: true
-        destructible_durability: 10
+        destructible_durability: 50
+        break_durability: 10
         select_self: false
         physics_blocks: true
         undo_speed: 0.5
@@ -1634,8 +1635,10 @@ blast|2:
     upgrade_required_path: apprentice
     upgrade_required_casts: 50
     parameters:
-        destructible_durability: 50
+        destructible_durability: 200
+        break_durability: 50
         radius: 2
+        durability_max_distance: 4
         damage_max_distance: 3
         speed: 1.2
         damage: 8
@@ -1645,15 +1648,18 @@ blast|3:
     upgrade_required_path: master
     upgrade_required_casts: 50
     parameters:
-        destructible_durability: 100
+        destructible_durability: 500
+        break_durability: 100
         radius: 2
         undo: 20000
         damage: 10
 
 blast|4:
     parameters:
-        destructible_durability: 1000
+        break_durability: 1000
+        destructible_durability: 5000
         radius: 3
+        durability_max_distance: 5
         damage_max_distance: 4
         undo: 30000
         damage: 12
@@ -1786,6 +1792,7 @@ blink:
     earns_sp: 2
     upgrade_required_path: student
     upgrade_required_casts: 40
+    cast_on_no_target: false
     actions:
         cast:
         - class: ChangeContext
@@ -11635,7 +11642,7 @@ sticky:
             - class: Damage
           - class: Sphere
             actions:
-            - class: ModifyBlock
+            - class: BreakBlock
     effects:
         cast:
         -  class: EffectSingle
@@ -11676,23 +11683,25 @@ sticky:
         allow_max_range: true
         velocity: 20
         gravity: 0.05
-        range: 48
+        range: 120
         target_type: Damageable
-        player_damage: 4
-        entity_damage: 8
+        player_damage: 6
+        entity_damage: 10
         target_breakables: 0
         cooldown: 10000
         target_self_timeout: 2000
         attach_duration: 5000
         radius: 1.5
         speed: 1.2
-        destructible: destructible
-        destructible_override: true
         falling: true
         direction: 0,0.5,0
-        brush: air
         undo: 15000
         physics_blocks: true
+        destructible_durability: 200
+        break_durability: 50
+        radius: 2
+        durability_max_distance: 4
+        damage_max_distance: 3
     costs:
         mana: 80
 
@@ -11702,15 +11711,19 @@ sticky|2:
   parameters:
       velocity: 25
       radius: 2
-      player_damage: 6
-      entity_damage: 10
+      player_damage: 8
+      entity_damage: 12
+      destructible_durability: 500
+      break_durability: 100
 
 sticky|3:
   parameters:
       velocity: 30
       radius: 2.5
-      player_damage: 8
-      entity_damage: 12
+      player_damage: 10
+      entity_damage: 15
+      break_durability: 1000
+      destructible_durability: 5000
 
 stream:
     icon: diamond_axe:140
@@ -13424,7 +13437,7 @@ virus:
     radius: 10,12,16
     yradius: 10,12,16
     max_blocks: 8000,9000,10000
-    min_blocks: 7200,8100,9000
+    min_blocks: 6500,7000,7000
     birth_range: 12,16,18
     live_range: 20,24,28
     move: 8,10,16
@@ -13454,7 +13467,7 @@ virus:
         range: 32
         cooldown: 120000
         name: Virus
-        target_max_range: 12
+        target_max_range: 128
         target_min_range: 0
         delay: 3000
         drops:
@@ -14151,7 +14164,7 @@ worm:
     radius: 6,8,10
     yradius: 6,8,10
     max_blocks: 2000,3500,5000
-    min_blocks: 1500,2500,3500
+    min_blocks: 1000,2000,3000
     birth_range: 6,8,10
     live_range: 16,20,28
     delay: 1800,1500,1200
