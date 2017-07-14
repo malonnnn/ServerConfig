@@ -26,6 +26,8 @@
                 "/jump 0-9",
                 "/run 0-9",
                 "/confuse <player>",
+                "/hover on",
+                "/hover off",
                 "/haste 0-9"
             ),
             'buffs': array(
