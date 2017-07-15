@@ -1,137 +1,14 @@
 inventory:
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 9
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BLAZE_ROD
-    amount: 4
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: GLASS_BOTTLE
-    amount: 4
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    amount: 14
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:invisibility
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: Arrow of §0Weakness
-      potion-type: minecraft:long_weakness
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 10
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: Arrow of §fHarming
-      potion-type: minecraft:strong_harming
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -139,14 +16,15 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 60.0
-hunger: 10
-exp: 0.65714276
-exp-level: 14
+armor_contents: {}
+health: 100.0
+hunger: 17
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 10.0
-exhaustion: 3.2584977
+saturation: 0.0
+exhaustion: 2.2360005
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -215,30 +93,30 @@ ender_chest:
     type: SAPLING
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 187737
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 197175
   '1':
-    type: SPEED
-    level: 8
-    duration: 188511
+    type: WATER_BREATHING
+    level: 1
+    duration: 197175
   '2':
-    type: REGENERATION
-    level: 4
-    duration: 187737
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 197175
   '3':
-    type: JUMP
-    level: 5
-    duration: 187510
+    type: REGENERATION
+    level: 1
+    duration: 197175
   '4':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 187737
+    level: 20
+    duration: 197175
   '5':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 187737
+    type: NIGHT_VISION
+    level: 1
+    duration: 197175
   '6':
-    type: WEAKNESS
-    level: 0
-    duration: 441
+    type: HEALTH_BOOST
+    level: 19
+    duration: 197175
