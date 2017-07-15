@@ -10,16 +10,6 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
-    offices:
-        parent: police
-        min: {x: -42.0, y: 80.0, z: 18.0}
-        max: {x: -14.0, y: 82.0, z: 40.0}
-        members: {}
-        flags: {build: allow, game-mode: CREATIVE, build-group: MEMBERS, interact: allow,
-            interact-group: MEMBERS, pvp: allow, game-mode-group: MEMBERS}
-        owners: {}
-        type: cuboid
-        priority: 1
     officehall:
         min: {x: -42.0, y: 80.0, z: 25.0}
         max: {x: -11.0, y: 82.0, z: 34.0}
@@ -33,7 +23,7 @@ regions:
         max: {x: 13.0, y: 82.0, z: 66.0}
         members: {}
         flags: {deny-message: Restricted Area, entry: deny, build: deny, build-group: NON_MEMBERS,
-            deny-message-group: NON_MEMBERS, interact: deny, interact-group: NON_MEMBERS}
+            interact: deny, deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 3
@@ -69,7 +59,7 @@ regions:
         members:
             unique-ids: [5da26092-c807-4c9b-8d08-9523f74ddc97, e6de8cf0-af45-44e4-882f-d98446f4b31b]
         flags: {deny-message: Construction Area - No Access, build: allow, game-mode: CREATIVE,
-            build-group: MEMBERS, deny-message-group: NON_MEMBERS, interact: allow,
+            build-group: MEMBERS, interact: allow, deny-message-group: NON_MEMBERS,
             interact-group: MEMBERS, game-mode-group: MEMBERS}
         owners: {}
         type: cuboid
@@ -187,8 +177,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
-            interact: deny, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
+            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -256,8 +246,8 @@ regions:
             game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
-            pvp: allow
             game-mode-group: NON_MEMBERS
+            pvp: allow
         owners: {}
         type: global
         priority: 0

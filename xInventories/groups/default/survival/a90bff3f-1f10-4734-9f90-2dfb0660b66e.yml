@@ -1,54 +1,54 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §4Sc§1ar§4l§0e§4t §4Sp§0i§4d§1e§4r§f(BR) §e§lD§a§lN§4§lA
-      lore:
-      - scarletspiderbenreilly
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: WEB
+    amount: 64
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §eW§0o§elv§9er§eine §e§lD§a§lN§4§lA
-      lore:
-      - wolverine
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 20.0
-hunger: 20
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+health: 56.0
+hunger: 12
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.7241064
+saturation: 10.0
+exhaustion: 3.566507
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INVISIBILITY
+    level: 1
+    duration: 198978
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 196179
+  '2':
+    type: NIGHT_VISION
+    level: 1
+    duration: 196179
+  '3':
+    type: SPEED
+    level: 5
+    duration: 196101
+  '4':
+    type: FAST_DIGGING
+    level: 5
+    duration: 196135
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 196179
+  '6':
+    type: JUMP
+    level: 40
+    duration: 196071
+  '7':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 196179
