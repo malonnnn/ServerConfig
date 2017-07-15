@@ -10,7 +10,7 @@
             'op': 'false',
             'speech': "No One Ever Leaves a Star!",
             'powers': array(
-                "/buff",
+                "/buff"
             ),
             'buffs': array(
                 "/shot give ". @plr ." pistol"
