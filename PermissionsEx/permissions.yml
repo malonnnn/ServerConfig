@@ -1,4 +1,18 @@
 groups:
+  sandman:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&eSa&6nd&2ma&7n'
+      suffix: '&e'
+    worlds:
+      survival112:
+        permissions:
+        - ch.alias.grow
+        - ch.alias.normalsize
+        - Magic.commands.cast
+        - Magic.cast.sandwall
+        - essentials.fly
   scorpion:
     inheritance:
     - commonherotraits
@@ -12041,7 +12055,8 @@ groups:
         - ch.alias.run0
   op:
     permissions:
-    - magic.*
+    - -chat.cooldown
+    - -change.chat
     - -is.suspended
     - -ch.alias.websling
     - -powers.wallclimb
@@ -12056,7 +12071,6 @@ groups:
     - -is.married
     - -powers.lightningsticks
     - -quarantine.onjoin
-    - -change.chat
     - -mortal.machine
     - -machine.mortal
     - -chatcontrol.channel.*.bypass.world
@@ -12242,11 +12256,10 @@ users:
       name: Sophia1807
   391762eb-24f6-4d95-84d6-bfac682d575a:
     group:
-    - vulture
+    - 391762eb24f64d9584d6bfac682d575a
     options:
       name: Jiren_The_Gray
     permissions:
-    - magic.*
     - powers.onepunch
   57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
     group:
@@ -13478,7 +13491,7 @@ users:
       name: Bamboo_zaza
   6be7369f-33f7-4bb8-9c1c-235e93a1bd53:
     group:
-    - flashwallywest
+    - spidermanpeterparker
     options:
       name: SweetConnor
   a9dd3297-c39d-49f4-9441-8908a652e89f:
