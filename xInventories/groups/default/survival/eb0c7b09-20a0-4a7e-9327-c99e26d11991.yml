@@ -1,87 +1,76 @@
-health: 40.0
-hunger: 20
+health: 100.0
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: -20
+fireTicks: 37
 saturation: 0.0
-exhaustion: 2.472012
+exhaustion: 3.9500036
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_SWORD
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 1
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_SPADE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_PICKAXE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_AXE
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: How to Claim Land
-      author: BigScary
-      pages:
-      - |-
-        Click: §3§nbit.ly/mcgpuser§0
-        §0
-        §0Claim land to protect your stuff!  Click the link above to learn land claims in 3 minutes or less.  :)§0
-        §0
-        §0Our claim tools are gold spade and stick.
-      - |-
-        Useful Commands:§0
-        §0
-        §0/Trust /UnTrust /TrustList§0
-        §0/ClaimsList§0
-        §0/AbandonClaim§0
-        §0
-        §0/Claim /ExtendClaim§0
-        §0/IgnorePlayer§0
-        §0
-        §0/SubdivideClaims§0
-        §0/AccessTrust§0
-        §0/ContainerTrust§0
-        §0/PermissionTrust
-      generation: 0
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 192445
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 195942
   '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 192445
+    type: WATER_BREATHING
+    level: 1
+    duration: 195942
   '2':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 195942
+  '3':
     type: REGENERATION
     level: 1
-    duration: 192445
+    duration: 195942
+  '4':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 195942
+  '5':
+    type: NIGHT_VISION
+    level: 1
+    duration: 195942
+  '6':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 195942
