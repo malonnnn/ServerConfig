@@ -5,26 +5,63 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
+      display-name: §bDi§cmen§9sional §bBe§3a§9m§9 «×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      meta-type: POTION
+      display-name: §0End§de§0rman §e§lD§a§lN§4§lA
+      lore:
+      - enderman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPIDER_EYE
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: NAME_TAG
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 3
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
 armor_contents: {}
-health: 100.0
+health: 8.166666030883789
 hunger: 17
-exp: 0.0
-exp-level: 0
+exp: 0.88888896
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.2360005
+saturation: 10.0
+exhaustion: 2.016136
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -93,30 +130,10 @@ ender_chest:
     type: SAPLING
 potion_effect:
   '0':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 197175
+    type: SPEED
+    level: 2
+    duration: 180826
   '1':
-    type: WATER_BREATHING
-    level: 1
-    duration: 197175
-  '2':
-    type: DAMAGE_RESISTANCE
+    type: JUMP
     level: 3
-    duration: 197175
-  '3':
-    type: REGENERATION
-    level: 1
-    duration: 197175
-  '4':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 197175
-  '5':
-    type: NIGHT_VISION
-    level: 1
-    duration: 197175
-  '6':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 197175
+    duration: 176491

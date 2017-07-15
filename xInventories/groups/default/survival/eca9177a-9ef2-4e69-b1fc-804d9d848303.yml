@@ -1,42 +1,20 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
-      enchants:
-        DAMAGE_ALL: 10
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4H§ee§4r§cm§ee§8s's §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4H§ee§4r§cm§ee§8s's §4Boots
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 25.333332061767578
-hunger: 17
+      display-name: §fWhite Lightning§f «×»
+armor_contents: {}
+health: 58.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.05000019
+exhaustion: 3.3139973
 ender_chest:
   '13':
     ==: org.bukkit.inventory.ItemStack
@@ -56,13 +34,25 @@ ender_chest:
 potion_effect:
   '0':
     type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199152
+    level: 2
+    duration: 196934
   '1':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 199152
+    type: SPEED
+    level: 10
+    duration: 197073
   '2':
+    type: FAST_DIGGING
+    level: 3
+    duration: 197366
+  '3':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 196934
+  '4':
+    type: JUMP
+    level: 10
+    duration: 197154
+  '5':
     type: HEALTH_BOOST
     level: 19
-    duration: 199152
+    duration: 196934
