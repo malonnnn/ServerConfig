@@ -11,7 +11,7 @@
             'speech': "Oh, I'm sorry, Mr. Gillis, but I just didn't think it was any good. I found it flat and trite.",
             'powers': array(
                 "/buff",
-                "/run 0-1",
+                "/run 0-1"
             ),
             'buffs': array(                
             )
