@@ -1,13 +1,42 @@
-inventory: {}
-armor_contents: {}
-health: 20.0
-hunger: 15
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
+      enchants:
+        DAMAGE_ALL: 10
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4H§ee§4r§cm§ee§8s's §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4H§ee§4r§cm§ee§8s's §4Boots
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 25.333332061767578
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.8820174
+exhaustion: 0.05000019
 ender_chest:
   '13':
     ==: org.bukkit.inventory.ItemStack
@@ -24,3 +53,16 @@ ender_chest:
         §0Is a member.§0
         §0Can Enter Base.
       generation: 0
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199152
+  '1':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 199152
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199152
