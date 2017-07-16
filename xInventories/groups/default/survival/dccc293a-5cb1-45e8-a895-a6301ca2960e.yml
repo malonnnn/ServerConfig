@@ -1,178 +1,55 @@
 inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 15
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 50
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_AXE
-    damage: 59
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        DIG_SPEED: 2
-      repair-cost: 3
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 375
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: CHEST
-    amount: 14
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
-    amount: 12
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 3
-    amount: 17
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    amount: 64
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    amount: 16
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: SPIDER_EYE
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_ORE
-    amount: 6
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENCHANTED_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: ENCHANTED
-      stored-enchants:
-        ARROW_DAMAGE: 1
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    amount: 64
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    amount: 64
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    amount: 64
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 15
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 15
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 15
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 15
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 15
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 15
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 15
-health: 60.0
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 20.0
 hunger: 20
-exp: 0.6013796
-exp-level: 26
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 9.8
-exhaustion: 1.1161315
+saturation: 4.0
+exhaustion: 0.11299969
 potion_effect:
   '0':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 139442
+    duration: 199280
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 139442
+    type: WATER_BREATHING
+    level: 1
+    duration: 199280
   '2':
-    type: SPEED
-    level: 8
-    duration: 138740
-  '3':
-    type: FAST_DIGGING
-    level: 30
-    duration: 175605
-  '4':
-    type: REGENERATION
+    type: DAMAGE_RESISTANCE
     level: 4
-    duration: 139442
+    duration: 199280
+  '3':
+    type: SPEED
+    level: 10
+    duration: 199207
+  '4':
+    type: FAST_DIGGING
+    level: 127
+    duration: 199259
   '5':
-    type: INCREASE_DAMAGE
-    level: 12
-    duration: 139442
-  '6':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 139442
+    type: JUMP
+    level: 20
+    duration: 199136

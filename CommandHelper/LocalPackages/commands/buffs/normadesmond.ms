@@ -13,6 +13,6 @@
                 "/buff"
             ),
             'buffs': array(
-                "/shot give ". @plr ." pistol"
+                #"/shot give ". @plr ." pistol"
             )
         )
