@@ -1,10 +1,52 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6I§4r§bo§4n M§6an's Machine Gun§6 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6I§4r§bo§4n M§6an's Homing Missile§6 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9Qu§5a§9nt§5u§9m L§5a§9s§5e§9r§9 «×»
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.0900121
+exhaustion: 3.3279226
 armor_contents: {}
+potion_effect:
+  '0':
+    type: WATER_BREATHING
+    level: 1
+    duration: 165860
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 165860
+  '2':
+    type: INCREASE_DAMAGE
+    level: 6
+    duration: 165860
+  '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 165860
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 165860
