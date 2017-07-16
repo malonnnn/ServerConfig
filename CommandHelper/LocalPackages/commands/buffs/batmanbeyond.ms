@@ -15,8 +15,8 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/jump 0-3",
-                "/run 0-4",
-                "/haste 0-5",
+                "/run 0-2",
+                "/haste 0-3",
                 "/fly",
                 "/flyspeed 0-10",
                 "/invis",
@@ -24,11 +24,8 @@
                 
             ),
             'buffs': array(
-                "/effect ". @plr ." 5  9999 10 true", 
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 14 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/give ". @plr ." minecraft:diamond_shovel 1 name:&aKr&2y&apt&2o&anite_&7Sp&8ea&7r"
+                "/effect ". @plr ." 5  9999 5 true", 
+                "/effect ". @plr ." 21 9999 8 true",
+                "/effect ". @plr ." 12 9999 1 true"
             )
         )
