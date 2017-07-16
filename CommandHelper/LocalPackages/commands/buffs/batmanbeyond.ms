@@ -18,14 +18,17 @@
                 "/run 0-4",
                 "/haste 0-5",
                 "/fly",
-                "/flyspeed 0-10"
+                "/flyspeed 0-10",
+                "/invis",
+                "/vis"
                 
             ),
             'buffs': array(
-                "/effect ". @plr ." 5  9999 12 true", 
+                "/effect ". @plr ." 5  9999 10 true", 
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
+                "/effect ". @plr ." 12 9999 1 true",
                 "/give ". @plr ." minecraft:diamond_shovel 1 name:&aKr&2y&apt&2o&anite_&7Sp&8ea&7r"
             )
         )
