@@ -18,8 +18,6 @@
                 "/run 0-6",
                 "/haste 0-6",
                 "/fly",
-                "/vis",
-                "/invis"
                 "/flyspeed 0-10"
             ),
             'buffs': array(
