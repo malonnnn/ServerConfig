@@ -674,7 +674,6 @@ spells:
         cast: What have you done?
         cast_broadcast: "&c&o$name &r&5was born"
         death_broadcast: "&c&o$name &r&5has been defeated"
-        no_target: You must target two blocks next to each other
         fail: You can not make a Virus out of $material
     worm:
         name: Worm
@@ -682,13 +681,18 @@ spells:
         cast: It's not a virus, it's a worm!
         cast_broadcast: "&c&o$name &r&5was born"
         death_broadcast: "&c&o$name &r&5has been defeated"
-        no_target: You must target two blocks next to each other
+        fail: You can not make a Worm out of $material
+    snake:
+        name: Snake
+        description: Create a deadly snake-like creature
+        cast: Sssssssssnake time!
+        cast_broadcast: "&c&o$name &r&5was born"
+        death_broadcast: "&c&o$name &r&5has been defeated"
         fail: You can not make a Worm out of $material
     hunter:
         no_target: You must target two blocks next to each other
         name: Hunter
         description: Create a deadly Automaton
-        no_target: You must target two blocks next to each other
         fail: You can not make a Hunter out of $material
         cast: Destroy all humans!
         cast_broadcast: "&c&o$name &r&5was born"
@@ -697,7 +701,6 @@ spells:
         name: Defender
         description: Create an Automata hunter
         cast: I will hunt for you, human
-        no_target: You must target two blocks next to each other
         fail: You can not make a Defender out of $material
         cast_broadcast: "&c&o$name &r&5was born"
         death_broadcast: "&c&o$name &r&5has been defeated"
@@ -1878,6 +1881,8 @@ spells:
       name: Create Worm
     birth_virus:
       name: Create Virus
+    birth_snake:
+      name: Create Snake
 wand:
     default_name: Wand
     upgrade_default_description: Will upgrade your wand.
@@ -2310,6 +2315,9 @@ wands:
     hunterheart:
         name: Heart of Hunter
         description: It wants to be reborn
+    snakeheart:
+        name: Heart of Snake
+        description: Sssssssssave me
     golemheart:
         name: Heart of Golem
         description: Your new best friend
