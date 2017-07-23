@@ -1,33 +1,4 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIODE
-    amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_LAMP_OFF
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 6
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: SMOOTH_STAIRS
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: THIN_GLASS
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 14
+inventory: {}
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -37,3 +8,43 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 0.0
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Genesis Labs Poll
+      pages:
+      - |-
+        Welcome To Genesis Labs! Thank You For Taking This Short Poll.§0
+        §0Remember, Your Opinion Matters! :D§0
+        §0
+        §0The Questions Will Be On The Next Pages!§0
+        §0
+        §0~_Vigilance_
+      - |-
+        [1].§0
+        §0
+        §0Is Genesis Labs Physically Appealing?
+      - |-
+        [2].§0
+        §0
+        §0Is The Hero Changing Guide Understandable?
+      - |-
+        [3].§0
+        §0
+        §0Would you like to see this as your new /warp lab?
+      - |-
+        [4].§0
+        §0
+        §0Any Thoughts And Or Suggestions?
+      - |-
+        [5].§0
+        §0
+        §0From A Scale of 1-10, 1 Being The Lowest And 10 The Highest, How High Would You Rate Genesis Labs?
+      - |-
+        Thats All! Thank You For Taking This Poll!§0
+        §0
+        §0~_Vigilance_

@@ -1,47 +1,60 @@
-inventory: {}
-armor_contents: {}
-health: 20.0
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 1.6847557
-ender_chest:
+saturation: 0.0
+exhaustion: 3.2109444
+ender_chest: {}
+potion_effect:
   '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §5I§4n§af§ei§9n§6i§5t§4y §7Si§fl§7ver §7Su§fr§7fer §e§lD§a§lN§4§lA
-      lore:
-      - infinitysilversurfer
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 189711
   '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_TORCH_ON
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 189711
   '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      color:
-        ==: Color
-        RED: 176
-        BLUE: 38
-        GREEN: 46
+    type: SPEED
+    level: 10
+    duration: 192347
+  '3':
+    type: REGENERATION
+    level: 3
+    duration: 189711
+  '4':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 189711
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 189711
+  '6':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 189711
