@@ -1,137 +1,33 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    amount: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 60
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    damage: 2
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 64
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 46
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_LAMP_OFF
-    amount: 2
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: MOB_SPAWNER
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §rpig Spawner
-      internal: H4sIAAAAAAAAAG2P3Q7BQBCFj201bOIvuPccLv1cEkHiUgajNtot2xXqCT2WbUvcmGRyZiaTb85IQKI5ipL9eaqtstmaQoHOjB5zJrPLiqHiFIFAd8nXmzJ8WESUsVmSDhltAbm60F2Pk5u28CXqRTshSzUIdUAjVpr3ho52eFEhBBqOXu6wA3kDgWpRoeeh8oALp9lHn7mWoP4PFCe7bZoj2Hzvl3b8HK/0D49XHa2iXSSW3TcUpdIhKxJB+fFflx6CDavwZPNVl2/FgXX2KAEAAA==
-      blockMaterial: MOB_SPAWNER
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: NETHER_STAR
-    amount: 4
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: BED
+      meta-type: POTION
+      display-name: §0Bl§ba§7ck§8 §8La§7nt§0er§bn§8(§bD§0S§8R§bR§8) §e§lD§a§lN§4§lA
+      lore:
+      - blacklanterndeathstormraymondrusch
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 ender_chest: {}
 armor_contents: {}
-health: 60.33333969116211
-hunger: 19
-exp: 0.0
-exp-level: 0
+health: 20.0
+hunger: 20
+exp: 0.7777778
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.7460003
-potion_effect:
-  '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 199765
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199765
-  '2':
-    type: REGENERATION
-    level: 3
-    duration: 199765
-  '3':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 199765
-  '4':
-    type: NIGHT_VISION
-    level: 1
-    duration: 199765
-  '5':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 199765
+saturation: 17.0
+exhaustion: 3.2517405
