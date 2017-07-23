@@ -3,10 +3,68 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+exhaustion: 0.9810001
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Spleef Shovel
+      enchants:
+        DIG_SPEED: 5
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cArrow §6Gun§6 «0»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Spleef Shovel
+      enchants:
+        DIG_SPEED: 5
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cArrow §6Gun§6 «0»
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -30,3 +88,8 @@ ender_chest:
         amplifier: 1
         ambient: true
         has-particles: true
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 5989
