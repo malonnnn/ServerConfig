@@ -1,4 +1,36 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of DoctorWafflez
+      internal: H4sIAAAAAAAAAE2QyY6rVhRFeU+JVK+U/EVmqERvYPAG2BfT2HT2pbszWtNjYzDNN+Uj45plcCZba28tnU8M+8T+utZT09hDn5dN9oH91FLsHzETkphOha+cZfMvdpfTX2IS7b6iPCEjiud4Jic/sc936Z4NY5k9f2EfY7aM05A9PzEM+/GB/bqWty76Tn7+O7mbmprJMbdga2V+xdrTroMSTtdO13l7nDcR4k6+tXhjcqGCglsKnoGX61HCMxCxreyU5zSoE4gftgncndVWNyCADhGWuma3ByOxJ9KXe3BNzGIfnF9u8ZTHeD7Qgy7eHfnpjo7TF2gL9+wWpuly4B4UTfTQOGnDjovujBRbysWdHeoMrqeKOHA94TfXWDz6daaBCJ741xxCRMhHTmB3Yg0BLoChlNz9niqI3hD9M06MNbAjgdtia514yMBN66gWaScpD9YH+VDKi+TLvm+V1qQti+TMRCVHRcHYUHgpIM2Fe1cJt1zIT3KxHNntcTD9W6oXqlH1Xdu45FHDjTvZdv1NYFfF6yZl9W8Ml4stzy7btl8DaTC5erAqqGZAgGAMWHfdzRLz1B2VVfE0pllzS68kYR5g6F1A5hT3U/1Mjd61d5exv2yT3XpkJ3GEZN9HIUXgce2Ulw5u58cl0p0LF5/gY4mE2JBHVCoSG/PHK+k3VVhT6QBfBNrLpgcogreb7NWpSWHws1R5UlmasmQXs1hWE9sV+a1l7lm3PAvCP6XuC8+FCUrQYUUOf6RCRxQ8ztkuXhO1o2rHnbCl56YtNkF+iXtENoXkuCdmcCWJWL1+tZ3Z0xfv2B/ycwmoWJSAZuWu7tDD2Tb6kCFSRQBul8+ic90Pll8Q5ClITPC6l/407fmbHNegr39/YH96UTNlP4Rs1cnIp5qEuRRxIJVWJVMGkN4PlCgLGItZ1U+t268xje6x4unooO20qmksxSyN1mFR5ZDvo1GlcSEt06GPKkORF3NzGYMOZ62cy0TVX6htnsjlith3S6vU5Zg2yZjRgzffvnd331yqeGyqeisKjNLqnqVLjjostd3bkUra+bvXp+pltkrh9T92iv1mQr65vrfIc8s16UEkUVCQaaA35w3VBnw7AocyW2MzYD2HrUaZMFwMmHCoNWukfPvXTAj3DYLyagCNCuGltmBaG5VZmzAtkOK1JnQX86CLeUD+xrAP7A8zajPsb9AnYz/4UZ432YZh/wE2JIascAQAAA==
+      skull-owner: DoctorWafflez
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEAVES
+    damage: 3
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: TRAP_DOOR
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: CAULDRON_ITEM
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_STAIRS
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -6,7 +38,7 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
+saturation: 5.0
 exhaustion: 0.0
 ender_chest:
   '0':
