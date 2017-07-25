@@ -5,7 +5,7 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.8110332
+exhaustion: 0.90600914
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -14,7 +14,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Carbine §c-§7§7 «8 ◀▷ 1»
+      display-name: §7Carbine §c-§7§7 «5 ◀▷ 1»
       lore:
       - §c- §7Skin §c- §7§7No skin
       - §c- §7Spread §c- §70.5
@@ -59,6 +59,15 @@ inventory:
       - §eDeals 200% damage to Zombies.
   '3':
     ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 33
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Type95 §c-§7§7 «30»
+      Unbreakable: true
+  '5':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
@@ -68,25 +77,47 @@ inventory:
       - §eFully automatic with high power.
       - §eEffective at medium range.
       - §eControls are inverted.
-  '5':
+  '6':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eFlame Thrower§e «×»
+      display-name: §eAK-47§e ▪ «×»
       lore:
-      - §eFlame Thrower
-      - §eCook bacon!.
-  '6':
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
+  '4':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_HOE
+    damage: 21
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eAK-47§e ▪ «×»
+      lore:
+      - §eFully automatic with high power.
+      - §eEffective at medium range.
+      - §eControls are inverted.
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 2
-    duration: 189167
+    duration: 194158

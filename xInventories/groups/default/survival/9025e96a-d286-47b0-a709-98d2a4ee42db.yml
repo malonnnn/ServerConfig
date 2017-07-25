@@ -1,33 +1,13 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 190
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Gre§0e§2n A§0r§2row's §8Bow
-      enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
+inventory: {}
 armor_contents: {}
-health: 40.0
-hunger: 5
-exp: 0.33333337
-exp-level: 1
+health: 20.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.086347386
+saturation: 3.0
+exhaustion: 2.1770027
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -94,16 +74,3 @@ ender_chest:
   '25':
     ==: org.bukkit.inventory.ItemStack
     type: SAPLING
-potion_effect:
-  '0':
-    type: INCREASE_DAMAGE
-    level: 1
-    duration: 169394
-  '1':
-    type: REGENERATION
-    level: 1
-    duration: 169394
-  '2':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 169394
