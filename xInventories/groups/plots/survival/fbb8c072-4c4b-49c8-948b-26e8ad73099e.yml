@@ -1,4 +1,35 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 15
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARPET
+    damage: 15
+    amount: 6
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_night_vision
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK_ITEM
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Kit-Kats!
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -6,4 +37,9 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
+exhaustion: 0.002
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 0
+    duration: 3411
