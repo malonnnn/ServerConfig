@@ -1,14 +1,20 @@
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.45454547
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 0.58000284
+saturation: 5.0
+exhaustion: 0.0
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 3
+    type: COAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
 ender_chest: {}
