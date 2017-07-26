@@ -31,6 +31,7 @@ Properties:
     CanBendWithWeapons: false
     Particles: spell
     PlaySound: true
+    Sound: ENTITY_CREEPER_HURT
   Water:
     CanBendWithWeapons: true
     IceBlocks:
@@ -63,6 +64,9 @@ Properties:
     NightFactor: 1.5
     FullMoonFactor: 1.75
     PlaySound: true
+    WaterSound: BLOCK_WATER_AMBIENT
+    IceSound: ITEM_FLINTANDSTEEL_USE
+    PlantSound: BLOCK_GRASS_STEP
   Earth:
     RevertEarthbending: true
     SafeRevert: true
@@ -97,12 +101,17 @@ Properties:
     - RED_SANDSTONE
     MetalPowerFactor: 1.5
     PlaySound: true
+    EarthSound: ENTITY_GHAST_SHOOT
+    MetalSound: ENTITY_IRONGOLEM_HURT
+    SandSound: BLOCK_SAND_BREAK
   Fire:
     CanBendWithWeapons: true
     DayFactor: 1.25
     PlaySound: true
     FireGriefing: false
     RevertTicks: 12000
+    FireSound: BLOCK_FIRE_AMBIENT
+    CombustionSound: ENTITY_FIREWORK_BLAST
   Chi:
     CanBendWithWeapons: true
   DisabledWorlds:
@@ -127,11 +136,17 @@ Abilities:
         FireResistance:
           Enabled: true
           Power: 3
+      PowerMultiplier: 2
+      Sound: BLOCK_ANVIL_LAND
       Air:
         AirBlast:
           Push:
             Entities: 4.5
             Self: 4.0
+        AirSpout:
+          Height: 26
+        AirSuction:
+          Push: 3.5
         AirSwipe:
           Cooldown: 1000
           Damage: 4.5
@@ -146,10 +161,6 @@ Abilities:
           ChargeTime: 1000
           Damage: 3
           Range: 16
-      AirSpout:
-        Height: 26
-      AirSuction:
-        Push: 3.5
       Earth:
         Catapult:
           MaxDistance: 80
@@ -166,9 +177,11 @@ Abilities:
           Range: 20
           CrushDamage: 3
         RaiseEarth:
+          Column:
+            Height: 20
+            Width: 16
           Wall:
             Height: 20
-          Column:
             Width: 16
         Collapse:
           Column:
@@ -228,6 +241,10 @@ Abilities:
             Radius: 20
         WaterManipulation:
           Damage: 5
+      AirSpout:
+        Height: 26
+      AirSuction:
+        Push: 3.5
   Air:
     Passive:
       Factor: 0.3
@@ -255,9 +272,6 @@ Abilities:
       CanOpenDoors: true
       CanPressButtons: true
       CanCoolLava: true
-    AirBubble:
-      Enabled: true
-      Radius: 7
     AirBurst:
       Enabled: true
       FallThreshold: 10
@@ -368,6 +382,9 @@ Abilities:
         Damage: 3
         Knockback: 3.5
         Cooldown: 6000
+    AirBubble:
+      Enabled: true
+      Radius: 7
   Water:
     Passive:
       FastSwim:
@@ -448,9 +465,10 @@ Abilities:
         ControlRadius: 25
       Melt:
         Cooldown: 2000
-        Delay: 50
+        Speed: 8.0
         Radius: 7
         AllowFlow: true
+        Delay: 50
     Surge:
       Enabled: true
       Wave:
@@ -554,6 +572,9 @@ Abilities:
     WaterBubble:
       Enabled: true
       Radius: 6
+      Speed: 0.5
+      ClickDuration: 2000
+      MustStartAboveWater: false
     WaterManipulation:
       Enabled: true
       Damage: 3.0
@@ -610,6 +631,8 @@ Abilities:
       Enabled: true
       Cooldown: 7000
       StageTimeMult: 2.0
+      Angle: 45
+      CancelWithAngle: false
     Collapse:
       Enabled: true
       SelectRange: 20
@@ -650,6 +673,7 @@ Abilities:
       Range: 10
       Radius: 0.25
       Revert: true
+      DropLootIfNotRevert: false
       Interval: 30
     Extraction:
       Enabled: true
@@ -804,6 +828,19 @@ Abilities:
       Speed: 0.8
       Duration: 2000
       Cooldown: 7000
+    FireManipulation:
+      Stream:
+        Cooldown: 12000
+        Range: 50
+        Damage: 2
+        Speed: 0.75
+        Particles: 50
+      Shield:
+        Cooldown: 6000
+        Range: 4
+        Damage: 1
+        MaxDuration: 5000
+        Particles: 12
     FireShield:
       Enabled: true
       Radius: 3
@@ -869,12 +906,14 @@ Abilities:
         Range: 7.0
         Damage: 3.0
         Cooldown: 6000
+        Speed: 1
       FireSpin:
         Enabled: true
         Range: 7
         Damage: 3.0
         Knockback: 3.0
         Cooldown: 5000
+        Speed: 0.3
       FireWheel:
         Enabled: true
         Range: 20.0
@@ -882,16 +921,20 @@ Abilities:
         Speed: 0.55
         Cooldown: 6000
         FireTicks: 2.5
+        Height: 2
+        Radius: 1.0
       JetBlast:
         Enabled: true
         Speed: 1.2
         Cooldown: 6000
+        Duration: 5000
       JetBlaze:
         Enabled: true
         Speed: 1.1
         Damage: 4
         Cooldown: 6000
         FireTicks: 2.5
+        Duration: 5000
   Chi:
     Passive:
       Acrobatics:

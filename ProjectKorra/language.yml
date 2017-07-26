@@ -243,21 +243,26 @@ Commands:
     NoElement: You are not a {element}!
     NoElementAE: You are not an {element}!
     NoSubElement: You don't have access to {subelement}!
+    Unbindable: '{ability} cannot be bound!'
   Add:
     Description: This command will allow the user to add an element to the targeted
       <Player>, or themselves if the target is not specified. This command is typically
       reserved for server administrators.
     SuccessfullyAddedCFW: You are now also a {element}.
     SuccessfullyAddedAE: You are now also an {element}.
+    SuccessfullyAddedAll: 'You now also have: '
     PlayerNotFound: That player could not be found.
     InvalidElement: You must specify a valid element.
     AlreadyHasElement: You already have that element!
     AlreadyHasSubElement: You already have that subelement!
+    AlreadyHasAllElements: You already have all elements!
     Other:
       SuccessfullyAddedCFW: '{target} is now also a {element}.'
       SuccessfullyAddedAE: '{target} is now also an {element}.'
+      SuccessfullyAddedAll: '{target} now also has: '
       AlreadyHasElement: '{target} already has that element!'
       AlreadyHasSubElement: '{target} already has that subelement!'
+      AlreadyHasAllElements: '{target} already has all elements!'
 DeathMessages:
   Enabled: true
   Default: '{victim} was slain by {attacker}''s {ability}'
@@ -284,12 +289,6 @@ Abilities:
       DeathMessage: '{victim} was flung by {attacker}''s {ability}'
       HorizontalVelocityDeath: '{victim} experienced kinetic damage by {attacker}''s
         {ability}'
-    AirBubble:
-      Description: To use, the bender must hold down sneak. All water around the user
-        in a small bubble will vanish, replacing itself once the user either gets
-        too far away or selects a different ability.
-      Instructions: Hold sneak when in range of water to push the water back and create
-        an air bubble.
     AirBurst:
       Description: AirBurst is one of the most powerful abilities in the airbender's
         arsenal. It allows the bender to create space between them and whoever is
@@ -388,6 +387,12 @@ Abilities:
       GracefulDescent:
         Description: GracefulDescent is a passive ability which allows airbenders
           to make a gentle landing, negating all fall damage on any surface.
+    AirBubble:
+      Description: To use, the bender must hold down sneak. All water around the user
+        in a small bubble will vanish, replacing itself once the user either gets
+        too far away or selects a different ability.
+      Instructions: Hold sneak when in range of water to push the water back and create
+        an air bubble.
   Water:
     Bloodbending:
       Description: Bloodbending is one of the most unique bending abilities that existed
@@ -706,6 +711,16 @@ Abilities:
         a temporary fire shield. If entities step inside this fire shield, they will
         be ignited.
       DeathMessage: '{victim} scorched theirself on {attacker}''s {ability}'
+    FireManipulation:
+      Description: FireManipulation is an extremely advanced and unique Firebending
+        technique that allows the bender to create fire and manipulate it to block
+        incoming attacks. You can also manipulate the fire you create to be used as
+        an offence ability.
+      Instructions: 'Stream: Hold sneak and move your cursor around to create a fire
+        where you look, blocking incoming attacks. Once you''ve created enough fire,
+        left click to send the fire stream outwards, damaging anything it comes into
+        contact with.'
+      DeathMessage: '{victim} scorched theirself on {attacker}''s {ability}'
     HeatControl:
       Description: HeatControl is a fundamental firebending technique that allows
         the firebender to control and manipulate heat. This ability is extremely useful
@@ -758,12 +773,36 @@ Abilities:
           long distances dealing high damage.
         DeathMessage: '{victim} was incinerated by {attacker}''s {ability}'
   Chi:
+    AcrobatStance:
+      Description: AcrobatStance gives a Chiblocker a higher probability of blocking
+        a Bender's Chi while granting them a Speed and Jump Boost. It also increases
+        the rate at which the hunger bar depletes.
+      Instructions: To use, simply left click to activate this stance. Left click
+        once more to deactivate it.
+    HighJump:
+      Description: HighJump gives the Chiblocker the ability to leap into the air.
+        This ability is used for mobility, and is often used to dodge incoming attacks.
+      Instructions: To use, simply left click while standing on the ground.
+    Smokescreen:
+      Description: Smokescreen, if used correctly, can serve as a defensive and offensive
+        ability for Chiblockers. When used, a smoke bomb is fired which will blind
+        anyone within a small radius of the explosion, allowing you to either get
+        away, or move in for the kill.
     WarriorStance:
       Description: WariorStance is an advanced chiblocker technique that gives the
         chiblocker increased damage but makes them a tad more vulnerable. This ability
         is useful when finishing off weak targets.
       Instructions: Left click to activate the warrior stance mode. Additionally,
         left click to disable it.
+    Paralyze:
+      Description: 'Paralyzes the target, making them unable to do anything for a
+        short period of time as they will be paralyzed where they''re stood. '
+      Instructions: Punch a player to paralyze them.
+    RapidPunch:
+      Description: This ability allows the chiblocker to punch rapidly in a short
+        period. To use, simply punch. This has a short cooldown.
+      Instructions: Punch a player to deal massive damage.
+      DeathMessage: '{victim} took all the hits against {attacker}''s {ability}'
     QuickStrike:
       Description: QuickStrike enables a chiblocker to quickly strike an enemy, potentially
         blocking their chi.
@@ -787,3 +826,8 @@ Abilities:
       Acrobatics:
         Description: Acrobatics is a passive ability which negates all fall damage
           based on a percent chance.
+Abiltiies:
+  Chi:
+    Smokescreen:
+      Instructions: Left click and a smoke bomb will be fired in the direction you're
+        looking.
