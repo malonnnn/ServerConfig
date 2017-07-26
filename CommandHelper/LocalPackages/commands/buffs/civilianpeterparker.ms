@@ -1,0 +1,28 @@
+@plr = player()
+
+
+
+@hero = associative_array(
+            'name': '§4Civilian§fPe§4ter§0P§4ar§0k§4er',
+            'class': 'civilianpeterparker',
+                     'sig': 'KpeakiLTqI1ZmndDyEK1lxMv4ev1o7qOUZUFEvIp0FtcDuXEkjsiPptOqE6d9A9WUd+2nZ+72ks/qEs4IBouv7O3SXUZwaNH/E12WkmeTiuEFwyLAWmXRoTZEoCxpCbwJ/r41XKHM5LuLY3KqgepsDkPJ+gTlwDdHAPvnP+JUrzBYqolo01D65sNmLxjGXKuzTPcO5MPjyVG8k92PogubIuPofcPojakMTUnH8U05Y8Dwo9mf70mqGrzLz/aIA6389a3VfAD+Yfv5B41Sp1Fx2sE29SE8zx5d9ZnKFkLU14NTNtetbYrbc0J8QnNtxNmVuW38B1a9SNzCpqt/EV3xKrsUUWSJAfsR5TX2FUTPz3VeYvhlj8mGJb6eOi/aOpRJYTQrV0T5f+XY9ULePvJMWcQuqE0NNedIxTIfbc4ZG/3onDKlN0/rueS5tCgHuVDPWnwTJ2P5Y9K2BnUMSmdA7NsQsjA0eQhTr7tb9Ci6sEVLiIkLMKorLJ8H5bp1BbCnbEsr0V8I8W1tNQIAUHT3GU+uOdkn+iwn3fx6fa4Lhtry4XFgJxgSZfamQ3OaAnIOKhtutWp6cwKaWHfPEa0ohYWsXCAmY9Q6GLKua7D37vfP44e5qo41zb1bbfETEecrsgATcdp4hoEBhSMDtquP00C4oOxjPTXFkDE8OFmhmk=',
+                     'val': 'eyJ0aW1lc3RhbXAiOjE0OTE1MDM2NTExODcsInByb2ZpbGVJZCI6ImJmYzllNDRkNGU3MDQ1NDQ4NjI4ZGY5Y2U5YmUxYmZlIiwicHJvZmlsZU5hbWUiOiJTaXJSaWNhcmRvIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82OTdiZDJhNWY3ZjYxMDMyNDRlMDRlNmM3YzczOWNkNmZmMzJiMmFiMTU0Yjc1YzAyZTliOTEyYmY3NzY1MjcifX19',
+            ),
+            'trail': '',
+            'op': 'false',
+            'speech': "With great power comes great responsibility.",
+            'powers': array(
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-5",
+                "/run 0-2",
+                "/haste 0-2",
+                "/web",
+                "/websling"
+            ),
+            'buffs': array(
+                "/give ". @plr ." minecraft:web 64",
+                "/shot give ". @plr ." webshot"
+            )
+        )
