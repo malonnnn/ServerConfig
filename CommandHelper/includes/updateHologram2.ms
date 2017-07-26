@@ -8,8 +8,6 @@ proc(_updateHologram2, @class, @isOp, @npcID, @holoLoc,
     runas(~console,'/npc select '.@npcID)
     console('/npc select '.@npcID)
     if(@class != "remove"){
-        #runas(~console,"/npc spawn")
-        runas(~console,"/npc despawn @npcID")
         runas(~console,"/template apply @class")
         runas(~console,"/npc moveto --x @x --y @y --z @z")
         if(@isOp == 'true'){
