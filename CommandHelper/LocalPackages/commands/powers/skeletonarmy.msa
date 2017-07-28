@@ -1,0 +1,22 @@
+skeletonarmy:/skeletonarmy = >>>
+
+    @player = player()
+
+    if(!is_null(import(@player."skeletonarmy"))){
+        @oldskellys = import(@player."skeletonarmy")
+        foreach(@uuid in @skellys){
+            try(entity_remove(@uuid),
+            continue())
+        }
+    }
+    
+    @skellyUUIDs = spawn_mob("skeleton",9)
+    export(@player."skeletonarmy",@skellysUUIDs)
+    set_timeout(1000,closure(
+        foreach(@uuid in @skellysUUIDs)
+        }
+            @num = rand(1,17)
+        }
+    ))
+
+<<<
