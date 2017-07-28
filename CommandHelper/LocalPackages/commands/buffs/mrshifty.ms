@@ -15,10 +15,15 @@
                 "/run 0-3",
                 "/haste 0-5",
                 "/thru",
-                "/mrshiftytp"
+                "/mrshiftytp", 
+                "/tp", 
+                "/invis",
+                "/vis",
+                
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
-                "/give ". @plr ." minecraft:stick 1 name:&1M&Cr&7. &CS&1h&ci&ff&ct&1y&7'&cs_&1S&ct&1i&cc&1k"                
+                "/give ". @plr ." minecraft:stick 1 name:&1M&Cr&7. &CS&1h&ci&ff&ct&1y&7'&cs_&1S&ct&1i&cc&1k"  
+                "/enchant ". @plr ." 11 9999 2 true ",
             )
         )
