@@ -1,0 +1,27 @@
+@plr = player()
+
+
+@hero = associative_array(
+            'name': '&e&lHip&3&lpoly&6&lta',
+            'class': 'hippolyta',
+            ' sig':'pkUayfkwp0a+tpBM76MpfI3bnP11vaAIYMFofrnE+/IZ6vT6PQuSwdFZ4cq+gR+tNLxprUKlAV0pBRXmi7Jvsf8n4Bp6yQ6KGPRA6DJVKuiv1kf9yZEfzmyHiu7wOw7X3hDU9xqGVGRQTwkF57oDognwL9nJDO03wCoPiIUA5f3Gv90pSz2bWk+g5ygltSJx89P8QBXRc6VwkdMoJD576iU0IcixZ1sqanUEphb9HYhBQJRzoIRcZVrlRvl07lS9cWt2RzeYt1cjs2mlukcKchhYUV1+eUzFkcLRB/Kd4hahns1ayQkelOBRVqOXrUys/R/D7/Z0YhT7/yCUdnM7t5BP/fCajond8Q6IPlhnosR59UIy99YgtbnQv11oKJDbBAhmecutAt5QaI6OYxTb9xFnPAWwOg6u4Er0LDDwTcwb0axKSZe9jHPEXXcQZ/lopPRouQRb/S79VDywNLJiuNpns0m0lnnDqORLwjLrOkv2IwL7zyfLLQCfWHYvpzX0hmU8FY9FGN8tQo+0T2MKkuxe/UuCT3PXTxsziXG+ZnsWE8i2oapMB4vtqlsZA3b1Yqn7Hr8gZv6PayzTBSuzF2jZvcsE01dtUhjLvmu4g8s5uPvCUbTgwQP5yL5TyM+WwjyI4OSDGki1dfCIL+QZh7B5NCZ+jkuxQZGuKNYIg8Q=',
+            ' val': 'eyJ0aW1lc3RhbXAiOjE0OTcxMzYzMjc4ODcsInByb2ZpbGVJZCI6ImVjYTkxNzdhOWVmMjRlNjliMWZjODA0ZDlkODQ4MzAzIiwicHJvZmlsZU5hbWUiOiJtcnNoaWZ0eXkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y2Y2U0NmRmYWYxYzlmMzJlNjhhZjgzZDQ1ZWVhZTdkYzE2NjIxMjJkMmNjYTYzNzU4YWM3OGU3ODFkMGEzNjgifX19',
+            'trail': '',
+            'op': 'false',
+            'speech': "Queen of the Amazons, Mother of Diana Prince",
+            'powers': array(
+                "/buff",
+                "/jump 0-3",
+                "/run 0-3",
+                "/haste 0-5"
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 21 9999 6 true",
+                "/effect ". @plr ." 11 9999 7 true",
+                "/effect ". @plr ." 10 9999 5 true",
+                "/give ". @plr ." 420 1 16:10 name:&4&lH&ipp&olyta's_&e&lLasso of Truth",
+                "/give ". @plr ." 420 1 16:30 name:&4&lSword&i&_&4&lO&f&lf_&eAthena"
+                
+            )
+)
