@@ -18,8 +18,8 @@ register_command(deathroll,
                 try {
                     @player = player(@args[0])
                     
-                    if(acc_balance(@player) >= 300){
-                    acc_subtract(@player,300)
+                    if(acc_balance(@player) >= 1000){
+                    acc_subtract(@player,1000)
                     }else{
                         tmsg(@player, "You need $1000 to use this machine!")
                         die()

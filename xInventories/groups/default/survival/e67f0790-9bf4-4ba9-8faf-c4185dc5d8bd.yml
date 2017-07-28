@@ -1,10 +1,37 @@
-inventory: {}
-health: 10.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4D§care§4d§cevil's §4Billy Club
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4D§care§4d§cevil's §4Billy Club
+health: 88.80000305175781
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.34049606
+exhaustion: 1.6954975
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 1
+    duration: 193851
+  '1':
+    type: BLINDNESS
+    level: 1
+    duration: 193851
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 193851

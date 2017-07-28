@@ -24,7 +24,7 @@ register_command(push,
     
         executor: closure(@alias, @sender, @args) {
         
-            if (array_size(@args) != 4) {
+            if (array_size(@args) != 1) {
             
                 msg(''.color(RED).color(BOLD).'Improper Usage!');
                 msg(''.color(RED).'Usage: /push <player>');
@@ -40,7 +40,7 @@ register_command(push,
             export(@player."lastUsedPush", time() / 1000)
             
             @player = player()
-            @vic = args[0]
+            @vic = @args[0]
 
             @ploc = ploc(@player)
             @vicLoc = ploc(@vic)

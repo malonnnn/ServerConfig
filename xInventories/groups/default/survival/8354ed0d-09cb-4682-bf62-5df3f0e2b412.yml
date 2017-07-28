@@ -1,95 +1,50 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 57
-  '9':
+    type: STAINED_GLASS
+    damage: 4
+    amount: 5
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOKSHELF
-    amount: 31
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 48
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 8
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 63
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '30':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '32':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
-health: 80.0
+    type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.4327392
-armor_contents: {}
+exhaustion: 3.6920414
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 183199
+    type: REGENERATION
+    level: 1
+    duration: 196955
   '1':
     type: INCREASE_DAMAGE
-    level: 16
-    duration: 183199
+    level: 10
+    duration: 196955
   '2':
     type: HEALTH_BOOST
-    level: 14
-    duration: 183199
+    level: 4
+    duration: 196955
