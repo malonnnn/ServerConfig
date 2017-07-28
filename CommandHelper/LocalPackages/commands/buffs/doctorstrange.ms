@@ -17,11 +17,13 @@
                 "/run 0-1",
                 "/haste 0-1",
                 "/hover on",
-                "/hover off"
+                "/hover off",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/shot give ". @plr ." magicblast"                
+                "/shot give ". @plr ." magicblast"  
+                "/shot give ". @plr ." astralblast"
+                "/shot give ". @plr ." elementalblast"
             )
         )
