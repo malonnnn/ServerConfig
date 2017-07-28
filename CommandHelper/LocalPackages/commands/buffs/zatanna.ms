@@ -20,10 +20,13 @@
                 "/cast dlocdniwwolb",
                 "/cast etaercsnoisulli",
                 "/cast tekcajtiarts",
-                "/cast mrasid"
+                "/cast mrasid",
+                "/tp"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true",
+                "/effect ". @plr ." 10 9999 7 true",
+                "/effect ". @plr ." 5 9999 9 true",
                 "/shot give ". @plr ." magicblast"                
             )
         )
