@@ -1,4 +1,26 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §8R§7h§8i§fn§8o §e§lD§a§lN§4§lA
+      lore:
+      - rhino
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -7,7 +29,7 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 1.4180001
+exhaustion: 1.435
 ender_chest:
   '13':
     ==: org.bukkit.inventory.ItemStack

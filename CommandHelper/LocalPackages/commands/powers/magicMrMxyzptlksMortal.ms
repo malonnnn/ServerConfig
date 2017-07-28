@@ -35,6 +35,10 @@ register_command(magicmrmxyzptlksmortal,
             @player = @args[0]
             @player = player(@player)
             if(ponline(@player)){
+                if(has_permission(@player,'is.criminal')){
+                    msg(color(RED).'Sorry, that player is a criminal right now, you please try again later.')
+                    die()
+                }
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
                 set_timeout(3000,closure(

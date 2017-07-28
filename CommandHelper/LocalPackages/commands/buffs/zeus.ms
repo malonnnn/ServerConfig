@@ -11,7 +11,7 @@
             'speech': "Zeus Almighty.",
             'powers': array(
                 "/buff",
-                "/lightning",
+                "When punching with an empty hand, you throw lightning",
                 "/fly",
                 "/run 0-6",
                 "/jump 0-4",
