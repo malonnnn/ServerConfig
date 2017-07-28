@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NDkwMTk4ODEsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdiYTcxODkyNGZiM2E4YmE5ZDk2NzA0OTY4OGNkYjE2NWM5NTY3Mzk0OWIzMzYzMDNjMjcxY2UyNjhiNDEifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Hey ".@plr.", thanks for typing /buff, and for choosing me! By the way, tell your mom I said \"Hello There\"! She'll know what it means.",
+            'speech': "Hey ".@plr.", thanks for typing /buff, and for choosing me! By the way, if you ever feel powerless, remember a single pubic hair can shut down an entire chain of restaurants!",
             'powers': array(
                 "/buff",
                 "/jump 0-4",
