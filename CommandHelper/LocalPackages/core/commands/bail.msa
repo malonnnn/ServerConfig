@@ -1,0 +1,22 @@
+register_command(bail, 
+
+    array(
+    
+        description: 'Bail\s a player out of jail.',
+        
+        usage: '/bail <player>',
+        
+        permission: 'ch.alias.bail',
+        
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        
+        tabcompleter: closure(@alias, @sender, @args) {
+        
+        get_value([namespace, ...,] key)
+        
+        if(true, tmsg(player, You Have Successfully Bailed @plr Out Of Jail!), [tmsg(player, You Do Not Have Enough Money To Bail @plr Out Of Jail!)])
+
+        
+        
+        
+        
