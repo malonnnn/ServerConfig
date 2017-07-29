@@ -32,6 +32,7 @@ register_command(push,
             
             }
 
+            @player = player()
             @cooldown = 5
             assign(@lastUsedPush, import(@player."lastUsedPush"))
             if(@lastUsedPush + @cooldown > time() / 1000,
@@ -39,7 +40,6 @@ register_command(push,
             )
             export(@player."lastUsedPush", time() / 1000)
             
-            @player = player()
             @vic = @args[0]
 
             @ploc = ploc(@player)

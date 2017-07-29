@@ -5,28 +5,12 @@ exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 2.5750005
+exhaustion: 0.0
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §5I§dnd§5ig§do§7 §5T§dr§5i§dbe-§5I§d1 §e§lD§a§lN§4§lA
-      lore:
-      - indigotribeindigo1
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: EGG
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
 ender_chest: {}

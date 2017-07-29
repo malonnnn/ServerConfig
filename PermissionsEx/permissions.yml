@@ -1,4 +1,15 @@
 groups:
+  rhino:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&8R&7h&8i&fn&8o'
+      suffix: '&7'
+    worlds:
+      survival112:
+        permissions:
+        - Magic.commands.cast
+        - Magic.cast.rhinodash
   lizard:
     inheritance:
     - commonherotraits
@@ -3417,7 +3428,7 @@ groups:
     inheritance:
     - commonherotraits
     options:
-      prefix: S.U.P.H. Director Grim
+      prefix: Grim
     worlds:
       survival112:
         permissions:
@@ -3475,8 +3486,8 @@ groups:
     inheritance:
     - commonherotraits
     options:
-      prefix: Lawyer&a/&bTony_MCU
-      suffix: /
+      prefix: '&rLawyer&a/&bTony_MCU'
+      suffix: '&r&f'
     worlds:
       survival112:
         permissions:
@@ -6811,7 +6822,6 @@ groups:
     options:
       default: 'true'
       prefix: '&f&lMortal'
-      suffix: '&f'
     permissions:
     - ch.alias.police
     - ch.alias.office
@@ -8016,6 +8026,7 @@ groups:
     - mortal
     options:
       prefix: '&c&lPolice&a&l/'
+      suffix: ''
     permissions:
     - multiverse.access.policeoffice
     - ch.alias.checkfingerprints
@@ -11696,7 +11707,7 @@ groups:
         - ch.alias.run1
         - ch.alias.run0
     options:
-      prefix: Lucifer
+      prefix: '&4Co-Owner&a/&fJiren_The_Grey'
   fanficc04a7d03584c4891a72cc97f76d81eb6:
     inheritance:
     - commonherotraits
@@ -11886,8 +11897,8 @@ groups:
         - ch.alias.run1
         - ch.alias.run0
     options:
-      prefix: '&eA&flp&eha'
-      suffix: '&E'
+      prefix: '&etest'
+      suffix: '&2'
   fanficec36504550d34ca2a1dcf0811ca5de71:
     inheritance:
     - commonherotraits
@@ -12058,6 +12069,7 @@ groups:
     - secretary
     options:
       prefix: '&fHead Secretary&a&l/'
+      suffix: ''
     permissions:
     - hire.secretary
     - fire.secretary
@@ -12071,6 +12083,7 @@ groups:
   secretary:
     options:
       prefix: '&fSecretary&a&l/'
+      suffix: ''
     permissions:
     - ch.alias.officeadmin
     - essentials.warps.office
@@ -12442,7 +12455,7 @@ groups:
         - ch.alias.run1
         - ch.alias.run0
     options:
-      prefix: PieceOfShit&b/&4Sham
+      prefix: '&r&4Owner&a/&4ShamBullGaming'
       suffix: '&4'
   fanfic8e78a9c4db2d44ce96d89ef43ab8ca22:
     inheritance:
@@ -12590,6 +12603,24 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  fanfic5d86939911524ffca56431c4258ab2c8:
+    inheritance:
+    - commonherotraits
+    worlds:
+      survival112:
+        permissions:
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
 schema-version: 1
 worlds:
   checkers:
@@ -12706,8 +12737,7 @@ users:
     - powers.onepunch
   57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
     group:
-    - officer
-    - mortal
+    - fanfic57b29f1fdc6b4d3080accf64c4df3428
     permissions:
     - is.secretary
     - is.officer
@@ -12721,7 +12751,7 @@ users:
     permissions: []
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
-    - blackcanary
+    - fanfic9025e96ad28647b0a70998d2a4ee42db
     options:
       name: Tony_MCU
     worlds:
@@ -12788,8 +12818,8 @@ users:
     - is.infomanager
     group:
     - officer
-    - headsecretary
     - infomanager
+    - headsecretary
     - missmartian
     options:
       name: HeyItzHark
@@ -12836,7 +12866,7 @@ users:
   f559cef3-ef94-4e1e-8bcf-1d16dcad2aa6:
     permissions: []
     options:
-      name: SydeeWindyee
+      name: ArtisticKegel
   7a2d4c6d-570f-44f7-b2b2-2bbcc9db86a5:
     group:
     - starlord
@@ -12867,9 +12897,9 @@ users:
     permissions: []
   7b02decc-d614-4041-9c25-1d3d96440d72:
     group:
-    - blackflash
+    - apocalypse
     options:
-      name: Biscuit_Panda
+      name: Crusty_Biscuits
   63967525-fb2d-4bcf-b8d3-181e8e3a2e5c:
     group:
     - mortal
@@ -12962,7 +12992,7 @@ users:
     options:
       name: Grim765Man
     group:
-    - criminal
+    - fanfic869b4227b51e452eadbd48759a6848dd
     permissions: []
   4b14621f-55d8-492a-a74f-b5b107f058d0:
     group:
@@ -13006,7 +13036,6 @@ users:
     options:
       name: Jiren_The_Grey
     permissions:
-    - powers.pointandclicklightning
     - powers.onepunch
     worlds:
       fightclub:
@@ -13237,7 +13266,7 @@ users:
       name: MCC_Baseball33
   deb20342-389e-4b5f-808f-24bd22d88aa4:
     group:
-    - martianmanhunter
+    - hulk
     options:
       name: SupaDupaBear
     permissions: []
@@ -13529,7 +13558,8 @@ users:
       name: RqndomPqrson
     group:
     - criminal
-    permissions: []
+    permissions:
+    - change.chat
   a5c92806-da45-47ab-90f9-c96a8f197c45:
     group:
     - mortal
@@ -13547,7 +13577,7 @@ users:
       name: ShadowMasterII
   ec365045-50d3-4ca2-a1dc-f0811ca5de71:
     group:
-    - criminal
+    - missmartian
     options:
       name: TheYoungPope
     permissions: []
@@ -13582,7 +13612,7 @@ users:
       name: Brettconk
   eca9177a-9ef2-4e69-b1fc-804d9d848303:
     group:
-    - darthrevan
+    - criminal
     options:
       name: Lucifer_S
     worlds:
@@ -13860,7 +13890,7 @@ users:
       name: WildheartRazara
   35e00da1-9dd2-464d-b34e-abea365bde5c:
     group:
-    - beastboy
+    - toothless
     options:
       name: Janpaul2000
   eb0c7b09-20a0-4a7e-9327-c99e26d11991:
@@ -13918,7 +13948,7 @@ users:
       name: TheVegHippie
   f8a67daa-a690-4ec3-88fa-5dab1fea6d1f:
     group:
-    - whitelanterntelosusr
+    - criminal
     options:
       name: DV132
     permissions: []
@@ -14071,11 +14101,13 @@ users:
     options:
       name: SyncronisumMC
   4220f479-2a13-48c6-82a4-58f37008b5d2:
-    permissions: []
+    permissions:
+    - is.secretary
     options:
       name: Bulldogbuilders
     group:
-    - mortal
+    - secretary
+    - boros
   991be13d-0a15-40ec-aeb3-f7c4fdb964e3:
     group:
     - bluelanternbarryallen
@@ -14153,7 +14185,7 @@ users:
       name: Zerho
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - rhino
+    - martianmanhunter
     options:
       name: _Vigilance_
     permissions:
@@ -14573,7 +14605,7 @@ users:
       name: Cristien_John
   167f56a8-55e7-4b96-ab7e-02a0dd4a5aed:
     group:
-    - redlanternsupergirl
+    - supergirl
     options:
       name: FROG__MAN
     permissions: []
@@ -14593,7 +14625,7 @@ users:
     permissions: []
   efe916ff-cae5-40b1-8878-3e55d776c2dc:
     group:
-    - blacklanternmartianmanhunter
+    - fanficefe916ffcae540b188783e55d776c2dc
     permissions: []
     options:
       name: ShamBullGaming
@@ -15364,7 +15396,7 @@ users:
     options:
       name: PurpleBenja
     group:
-    - infinitysilversurfer
+    - bluelanternbarryallen
   7124683c-d38a-4fad-bf91-15e35359518b:
     group:
     - flashbarryallen
@@ -15525,7 +15557,7 @@ users:
       name: FarrellSeattle
   1c575be8-a874-4b78-8307-3252351ad276:
     group:
-    - sandman
+    - reverseflasheobardthawne
     permissions: []
     options:
       name: Leedler268
@@ -15788,6 +15820,8 @@ users:
     permissions: []
     options:
       name: FrostyJohns
+    group:
+    - robocop
   dfdfde97-414a-47b0-b725-7bc071df3dc5:
     group:
     - nightwing
@@ -15798,14 +15832,15 @@ users:
     - gorillagrodd
   1ab7e46d-75b6-4141-b847-40c67b6c8b61:
     group:
-    - zoom
+    - deadpool
     options:
       name: radiationblast
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     group:
-    - shazam
+    - flashbartallen
     options:
       name: LoneRanger13
+    permissions: []
   19960e86-4258-45a1-9184-f9fd2130b3f3:
     group:
     - artemis
@@ -15828,17 +15863,52 @@ users:
       name: WCarr
   5d869399-1152-4ffc-a564-31c4258ab2c8:
     group:
-    - terra
+    - infinitysilversurfer
     options:
       name: cmk1031
   0130299a-4489-429d-b4eb-68643a4c6ac8:
-    permissions: []
+    permissions:
+    - is.officer
     group:
+    - officer
     - batmanbeyond
     options:
       name: xDcGamer_MCU
   002b10b9-d275-422c-ba68-255853e98caa:
     group:
-    - naruto
+    - raven
     options:
       name: Huligan73
+  533ff605-89a5-4c0c-b807-4d0fdcbbd233:
+    group:
+    - mortal
+    options:
+      name: Clov_vn
+  1adf4e83-761b-4940-b23e-e0578801d833:
+    group:
+    - onepunchman
+    options:
+      name: X_Event_Chara
+  90627d2b-b036-49b7-804d-af779fc6a615:
+    group:
+    - snoopdogg
+    options:
+      name: DarthPhoenix101
+  189096cb-6b10-47ec-891e-e63c8d69e493:
+    group:
+    - flashbartallen
+    options:
+      name: Covellite
+  b813d1f6-b432-4c9d-87a0-0e1abb45e8ac:
+    group:
+    - mortal
+    options:
+      name: ThatNobody
+  19ee3f8a-822c-448b-bec1-d3e7977803f4:
+    group:
+    - gorillagrodd
+    options:
+      name: NDRGYT
+  dcfe2c9c-01b2-427f-b85c-96ec00380cc2:
+    group:
+    - godspeed

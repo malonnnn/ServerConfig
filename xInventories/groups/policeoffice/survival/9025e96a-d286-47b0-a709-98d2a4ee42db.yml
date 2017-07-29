@@ -1,11 +1,37 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «16»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
+fireTicks: -20
+saturation: 0.0
+exhaustion: 3.1413784
 armor_contents: {}
 ender_chest: {}

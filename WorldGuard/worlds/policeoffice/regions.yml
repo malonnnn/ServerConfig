@@ -150,7 +150,7 @@ regions:
                 4ff867f5-6cab-413e-9fad-e4d77ca48778, 57b29f1f-dc6b-4d30-80ac-cf64c4df3428,
                 28556dea-667d-409f-b2ff-fb4177a20ff2, ca7e8de8-30f0-43c5-9701-982c10ea9459,
                 182fa38f-b321-44cf-ba16-fe70847459c3, 8354ed0d-09cb-4682-bf62-5df3f0e2b412,
-                d7757e01-cf3f-4305-9590-c688214bff78]
+                d7757e01-cf3f-4305-9590-c688214bff78, 0130299a-4489-429d-b4eb-68643a4c6ac8]
         flags: {invincible: allow, invincible-group: MEMBERS}
         owners: {}
         type: global
@@ -178,8 +178,8 @@ regions:
         min: {x: -7.0, y: 64.0, z: 19.0}
         max: {x: -4.0, y: 66.0, z: 20.0}
         members: {}
-        flags: {deny-message: Restricted Access (Officers Only), entry: deny, deny-message-group: NON_MEMBERS,
-            interact: deny, interact-group: NON_MEMBERS}
+        flags: {deny-message: Restricted Access (Officers Only), entry: deny, interact: deny,
+            deny-message-group: NON_MEMBERS, interact-group: NON_MEMBERS}
         owners: {}
         type: cuboid
         priority: 1
@@ -241,10 +241,10 @@ regions:
             creeper-explosion: deny
             vine-growth: deny
             build: deny
+            game-mode: SURVIVAL
             blocked-cmds: [/tpno, /tpa, /tpohere, /tppos, /tpask, /tp2p, /tpaall,
                 /tpdeny, /tpacancel, /tpaccept, /tphere, /thru, /tp, /tptoggle, /tpo,
                 /tpahere, /tpl, /tpyes, /tpall, /tps]
-            game-mode: SURVIVAL
             build-group: NON_MEMBERS
             interact: allow
             pvp: allow

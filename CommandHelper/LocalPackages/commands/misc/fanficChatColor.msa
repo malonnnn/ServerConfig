@@ -8,14 +8,9 @@ fanficchatcolor:/fanficchatcolor $color = >>>
         die()
     }
 
-    if(reg_match('(i?)&[l|o|k|m]',@name)){
-        tmsg(@player,color(red).'Sorry! Bold, italic, underline, magic, and strikethrough not allowed!')
-        die()
-    }
-
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @group = _getheroclass(@player)
 
-    runas(~console,'/pex group '.@group.' suffix '.@name)
+    runas(~console,'/pex group '.@group.' suffix "&r'.@name.'"')
 
 <<<
