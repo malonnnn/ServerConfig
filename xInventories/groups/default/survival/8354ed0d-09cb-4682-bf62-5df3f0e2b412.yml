@@ -1,5 +1,5 @@
 inventory:
-  '36':
+  '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -9,40 +9,130 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '9':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: GOLD_HOE
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: ' §e§lD§a§lN§4§lA'
-      lore:
-      - fanfic
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 100.0
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 40
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bSword
+      enchants:
+        KNOCKBACK: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5513282
+exhaustion: 3.039306
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 40
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -50,24 +140,43 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
+ender_chest:
   '0':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 194447
-  '1':
-    type: REGENERATION
-    level: 1
-    duration: 194447
-  '2':
-    type: NIGHT_VISION
-    level: 1
-    duration: 194447
-  '3':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 194447
-  '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 194447
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Genesis Labs Poll
+      pages:
+      - |-
+        Welcome To Genesis Labs! Thank You For Taking This Short Poll.§0
+        §0Remember, Your Opinion Matters! :D§0
+        §0
+        §0The Questions Will Be On The Next Pages!§0
+        §0
+        §0~_Vigilance_
+      - |-
+        [1].§0
+        §0
+        §0Is Genesis Labs Physically Appealing?
+      - |-
+        [2].§0
+        §0
+        §0Is The Hero Changing Guide Understandable?
+      - |-
+        [3].§0
+        §0
+        §0Would you like to see this as your new /warp lab?
+      - |-
+        [4].§0
+        §0
+        §0Any Thoughts And Or Suggestions?
+      - |-
+        [5].§0
+        §0
+        §0From A Scale of 1-10, 1 Being The Lowest And 10 The Highest, How High Would You Rate Genesis Labs?
+      - |-
+        Thats All! Thank You For Taking This Poll!§0
+        §0
+        §0~_Vigilance_

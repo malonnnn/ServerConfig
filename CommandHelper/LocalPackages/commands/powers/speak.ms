@@ -49,13 +49,9 @@ register_command(speak,
             @players = all_players()
             
             foreach (@player in @players){
-            
-                if (has_permission(@player, 'ch.alias.onduty')){
-                
+                if (has_permission(@player, 'is.officer')){
                     tmsg(@player, color(GRAY).color(ITALIC).'*Player Speaking*: '.@plrSpeaking)
-                
                 }
-            
             }
             
         }

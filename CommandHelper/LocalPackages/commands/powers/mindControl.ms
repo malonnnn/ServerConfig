@@ -35,6 +35,11 @@ register_command(mindcontrol,
                 die()
             }
 
+            if(!has_permission(@vic,'is.mindControllable')){
+                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                die()
+            }
+
             assign(@cooldown, 60)
             assign(@lastUsedMindControl, import(@player."lastUsedMindControl"))
             if(@lastUsedMindControl + @cooldown > time() / 1000,
@@ -80,6 +85,11 @@ register_command(mindcontrol,
                 cancel()
                 console('chat forwarded from '.@playerr. ' to '.@vicc)
                 chatas(@vicc,@event['message'])
+                foreach (@player in @players){
+                    if (has_permission(@player, 'is.officer')){
+                        tmsg(@player, color(GRAY).color(ITALIC).'*Player MindControlled*: '.@plrSpeaking)
+                    }
+                }
                 try{
                     unbind(@vicc.'mindControlForward')
                 }catch(Exception @e){

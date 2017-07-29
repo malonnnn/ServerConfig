@@ -1,22 +1,30 @@
-health: 20.0
-hunger: 20
+health: 40.0
+hunger: 13
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.0
-inventory:
+exhaustion: 2.4190009
+inventory: {}
+potion_effect:
   '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_TRAPDOOR
+    type: JUMP
+    level: 5
+    duration: 187526
   '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_STAIRS
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 188590
   '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 4
+    type: SPEED
+    level: 5
+    duration: 187466
   '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEVER
+    type: REGENERATION
+    level: 1
+    duration: 188590
+  '4':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 188590

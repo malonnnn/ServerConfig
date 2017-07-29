@@ -1,0 +1,35 @@
+@plr = player()
+
+
+@hero = associative_array(
+            'name': '§4R§0e§4v§0e§4r§0s§4e §0F§4l§0a§4s§0h§0(§4D§0W§0)',
+            'class': 'reverseflashdanielwest',
+            'sig': 'Os0cfKENhDDdNckjJd3+edS2+BdMXxMj1r89msgWLxAXeyhu/4SoKi2NQqF0SOQt+OJFU3I7yLViopG/IMfqXiwFkwuACCrH7LxMEl/XWcTsw+iZI3qlsQQymsgRHpt0TCfmTP4otcouvfSG+j5ctSBswvqe2UtxF38jaoiI6t8lcqtx16HLoWsuvJ6M6PuiiCgsHVw+9DSUcI8L7SDc3NhuNwEAzsdWBQ9BZZ0dzb28bVZfOSyEbOeHlnvWt/hxygnFmQ94zb51fZxknHrYiqj7XTyqjUN0mQ8xwxnfp59Q/DgikMuULjqK89sdAH5xFM8cLgDatGQiwFbuErR/WBQpmwUHZsNEsdFQAxScLZzwiR+DSTPCOnnwgpfcDpgSyo4UcCt7nCFN3NkXV7NZXf/tBIPFNLI+BAJ+lo3dRE6x73kH+Tkdr5s0CmCHx0gRdUi8xhl8k8cCiqa4WqPRzFRIQyKtvti8Qtgoxop0cuCtOE3FZukco8WjNX1uxVHUwfA81PgQxvDK+TKQ65OwDvhhzYTJa7UdnQ83Vrv8gRoiPYNiZxXQeewkgrATcwbfY0DxpFUcD+d8D72w3mupzkQ1C7C3TNr1yvUVtlq74R+HW56XuyQu3c/MPNUIA0/a2ed8DVuneoKrci59iY2mV/53Sc3MQ2gIQXyZGWCZov4=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE0OTcwNjAxMTU4MTksInByb2ZpbGVJZCI6IjFjNTc1YmU4YTg3NDRiNzg4MzA3MzI1MjM1MWFkMjc2IiwicHJvZmlsZU5hbWUiOiJMZWVkbGVyMjY4Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80Y2VhYTY5MzljM2UwMTZmYjY0ZTU3N2Y1NTYyNGZlZmIzOWFmYTdjNjQwYzJkYmZlOTZkMmRmYzIxMTRjZCJ9fX0',
+            'trail': '',
+            'op': 'false',
+            'speech': "I wasn't always this way.",
+            'powers': array(
+                "/buff",
+                "/back (In the speedforce)",
+                "Access to all warps in the speedforce",
+                "/speedforceteleport <playername>",
+                "/speedforcebuffs",
+                "/carryplayer",
+                "/dismountplayer",
+                "/run 0-9",
+                "/run 0-1 (In the speedforce)",
+                "/jump 0-3",
+                "/haste 0-4",
+                "Throw lightning with an empty hand",
+                "/ma",
+                "/thru"
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 10 true",
+                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 10 9999 3 true",
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
+            )
+)

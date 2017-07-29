@@ -8,8 +8,15 @@ proc(_updateHologram2, @class, @isOp, @npcID, @holoLoc,
     runas(~console,'/npc select '.@npcID)
     console('/npc select '.@npcID)
     if(@class != "remove"){
+
+        runas(~console,"/npc despawn")
+        runas(~console,"/npc spawn")
         runas(~console,"/template apply @class")
         runas(~console,"/npc moveto --x @x --y @y --z @z")
+
+        console("/npc moveto --x @x --y @y --z @z")
+        console("/template apply @class")
+
         if(@isOp == 'true'){
             set_block_at(@x,@y - 1,@z,'35:14',@world)
         }else{

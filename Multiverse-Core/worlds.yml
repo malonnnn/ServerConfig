@@ -10,7 +10,7 @@ worlds:
     respawnWorld: moblottery
     allowWeather: 'false'
     difficulty: HARD
-    spawning: &id007
+    spawning: &id031
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -22,7 +22,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id032
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -41,7 +41,7 @@ worlds:
       yaw: -269.28955
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id033 []
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -584,18 +584,18 @@ worlds:
     pvp: 'true'
     scale: '1.0'
     respawnWorld: ''
-    allowWeather: 'true'
+    allowWeather: 'false'
     difficulty: EASY
     spawning:
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
-        spawn: 'true'
+        spawn: 'false'
         spawnrate: '-1'
         exceptions: []
       monsters:
         ==: MVSpawnSubSettings
-        spawn: 'true'
+        spawn: 'false'
         spawnrate: '-1'
         exceptions: []
     entryfee:
@@ -610,11 +610,11 @@ worlds:
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 0.0
-      y: 64.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
+      x: 0.5
+      y: 59.0
+      z: 1.5
+      pitch: 0.7007774
+      yaw: -0.64209455
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
@@ -4715,8 +4715,8 @@ worlds:
     respawnWorld: colosseumlobby
     allowWeather: 'false'
     difficulty: HARD
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id031
+    entryfee: *id032
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -4732,7 +4732,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id009
+    worldBlacklist: *id033
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
