@@ -19,10 +19,10 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 21 9999 1 true",
-                "/shot give ". @plr ." webshot","/shot give ". @plr ." pistol",
-                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana",
+                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 21 9999 2 true",
+                "/shot give ". @plr ." webshot",
+                "/shot give ". @plr ." pistol",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana"
                 "/give ". @plr ." minecraft:iron_bars 1 16:10 name:&eW&0o&elv&9er&eine's_Claws""/give ". @plr ." minecraft:shield 1 durability:3 mending:1 basecolor:14188339 HALF_HORIZONTAL:10040115 HALF_HORIZONTAL_MIRROR:10040115 CROSS:3361970 STRIPE_CENTER:3361970 STRIPE_MIDDLE:3361970 FLOWER:16777215 name:&4C&9apt&fain_&4A&9mer&4ica's_&9Shield"                
             )
