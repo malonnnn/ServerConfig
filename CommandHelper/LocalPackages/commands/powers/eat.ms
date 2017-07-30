@@ -4,7 +4,7 @@ register_command(eat,
     
         description: 'Eat the world',
         
-        permission: 'ch.alias.eat',
+        permission: 'power.eat',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
