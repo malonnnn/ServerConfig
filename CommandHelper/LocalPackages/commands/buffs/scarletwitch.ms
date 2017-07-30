@@ -15,8 +15,7 @@
                 "/caste telekinisis",
                 "/cast forcefeild",
                 "/fly",
-                "/confuse",
-                "/tpradius",
+                "/confuse <player>",
                 "/cast manipulate"
             ),
             'buffs': array(
