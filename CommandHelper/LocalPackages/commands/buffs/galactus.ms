@@ -17,7 +17,8 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/carryplayer <player>",
-                "/dismountplayer"
+                "/dismountplayer",
+                "/eat <world>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 150 true",
