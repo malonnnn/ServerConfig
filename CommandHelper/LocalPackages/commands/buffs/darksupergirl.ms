@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MDEzNDY1MDQ5NjQsInByb2ZpbGVJZCI6IjI4NTU2ZGVhNjY3ZDQwOWZiMmZmZmI0MTc3YTIwZmYyIiwicHJvZmlsZU5hbWUiOiJIZXlJdHpIYXJrIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVkNjk0MjkxNTFiYzNjYmM1YTk2ODcwOTExYWVmOTQ4YjU3MWRlNGU5MWU4OGE4OWU1YzUxNDFjNmVjN2UifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Made by Dark Kryptonite!",
+            'speech': "I'm young, hot and I have the powers of a god. I want out from here. I want some fun.",
             'powers': array(
                 "/buff",
                 "/carryplayer",
