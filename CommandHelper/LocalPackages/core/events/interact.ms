@@ -12,7 +12,7 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         export(@player.'lastwebshot', time() / 1000)
         @puuid = puuid(@player, true)
         set_entity_rider(null, @puuid)
-        @multiplier = 0.75
+        @multiplier = 0.35
         @arrow = shoot_projectile(@player, 'ARROW')
         @velocity = entity_velocity(@arrow)
         

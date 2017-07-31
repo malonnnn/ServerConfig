@@ -1,52 +1,225 @@
 health: 20.0
 hunger: 20
 exp: 0.0
-exp-level: 1
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.7600415
+exhaustion: 1.5033118
 inventory:
-  '36':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 34
+    type: GOLD_HOE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: Bullet Proof Boots Officer
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
       enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Carbine §c-§7§7 «8 ◁▶ 1»
+      lore:
+      - §c- §7Skin §c- §7§7No skin
+      - §c- §7Spread §c- §70.5
+      - §c- §7Sneak Spread §c- §70.3
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6rRBIkAWJbWPKvxpwZmQcg2rbWVp2hDpLNykrWvZ27+PxPR9g6CxEVfNiToXmOYLY8MPyUzx0I2uNWNWWEp2LjSBT+QBaDliWjUeJrizeCYYOvAZNiH9ZeLm5cCOpa2Xv5+MjvvZODE5aaAsmuVA7rnKG8Hcx5ZLQ35IiI9YDqfckSdm0JMrb8GYlGW6FVo375fmzBp5a5A5x2QAAAA==
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    damage: 14
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 44
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 41
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_HOE
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Gauss §c-§7§7 «6»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 25
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bSword
+      enchants:
+        KNOCKBACK: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 3
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 42
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '37':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_LEGGINGS
-    damage: 34
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Leggings Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
+    damage: 42
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 2
+    damage: 28
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -60,321 +233,56 @@ inventory:
   '39':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
-    damage: 34
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: 'Bullet Proof Helmet Officer '
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 21
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «16»
-      ItemFlags:
-      - HIDE_ENCHANTS
-      - HIDE_ATTRIBUTES
-      - HIDE_UNBREAKABLE
-      - HIDE_DESTROYS
-      - HIDE_PLACED_ON
-      - HIDE_POTION_EFFECTS
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: VigialancevsTony
-      author: Tony_MCU
-      pages:
-      - 'I would like to sue Vigilance for spamkilling me BasicallyStar, and Sky_Dragneel '
-      generation: 0
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    damage: 21
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Gauss §c-§7§7 «5»
-      ItemFlags:
-      - HIDE_ENCHANTS
-      - HIDE_ATTRIBUTES
-      - HIDE_UNBREAKABLE
-      - HIDE_DESTROYS
-      - HIDE_PLACED_ON
-      - HIDE_POTION_EFFECTS
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAH2NQQqCQBiFXyQyam6irtG6XQiBBFmQ2Dam/KsBZ0bGMai2naVlR+gu3aSsaNnbvY/H93yAobMUVc2LBRWa5whiw4+rT/HQjaw1Yl1bSnQutoJM5QNoOWBZNhknurJ4Jxg68Bo0Jf5l4fXuwo2krpUdXU6P+NY7MzhpoS2Y5ELtucoZwt/FjEtCf0eKjNgMpD6QJGXTkihvw5uXZLgVWjXul+fPGngCDYxROtkAAAA=
+    damage: 44
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
+    type: BOOK_AND_QUILL
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: 'Bullet Proof Helmet Officer '
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Chestplate Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Leggings Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Boots Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Chestplate Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Chestplate Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 1
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Sword
-      enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        SWEEPING_EDGE: 3
-        DURABILITY: 3
-      repair-cost: 63
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Sword
-      enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        SWEEPING_EDGE: 3
-        DURABILITY: 3
-      repair-cost: 63
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Sword
-      enchants:
-        BINDING_CURSE: 1
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        FIRE_ASPECT: 2
-        SWEEPING_EDGE: 3
-        DURABILITY: 3
-      repair-cost: 63
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        ARROW_DAMAGE: 1
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        DAMAGE_UNDEAD: 1
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 5
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKIE
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Holy Donut
-      enchants:
-        PROTECTION_FIRE: 4
-      repair-cost: 1
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: END_CRYSTAL
-    amount: 2
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sergeant Badge
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: SUGAR
-    amount: 59
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Cocaine
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: DOUBLE_PLANT
-    damage: 3
-    amount: 56
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Weed
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: END_CRYSTAL
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_CHESTPLATE
-    meta:
-      ==: ItemMeta
-      meta-type: LEATHER_ARMOR
-      display-name: Bullet Proof Vest (Sergeant)
-      internal: H4sIAAAAAAAAAJWOMQrCQBREBxMliUTBwmN4h4CNYLTQHGCN32TB7JfdH7yBlfe1sXBtxIApLAfevJkEiDHLRKw+tEI5H/VJk3UJgEGAqChWy5ydYFw9A8TvuCbl8+QRBhhlDbdGPDuNEO7OLBiWNTmJkH6cG9UQ0ooMWV0ulG3YetP2QlaJZuPL8OUfFL73w3vR2U9u13/25x3zntuqNuRc35EeHHgBRPLmzzABAAA=
-      color:
-        ==: Color
-        RED: 0
-        BLUE: 0
-        GREEN: 0
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
+      meta-type: BOOK
+      display-name: Genesis Labs Poll
+      pages:
+      - |-
+        Welcome To Genesis Labs! Thank You For Taking This Short Poll.§0
+        §0Remember, Your Opinion Matters! :D§0
+        §0
+        §0The Questions Will Be On The Next Pages!§0
+        §0
+        §0~_Vigilance_
+      - |-
+        [1].§0
+        §0
+        §0Is Genesis Labs Physically Appealing?
+      - |-
+        [2].§0
+        §0
+        §0Is The Hero Changing Guide Understandable?
+      - |-
+        [3].§0
+        §0
+        §0Would you like to see this as your new /warp lab?
+      - |-
+        [4].§0
+        §0
+        §0Any Thoughts And Or Suggestions?
+      - |-
+        [5].§0
+        §0
+        §0From A Scale of 1-10, 1 Being The Lowest And 10 The Highest, How High Would You Rate Genesis Labs?
+      - |-
+        Thats All! Thank You For Taking This Poll!§0
+        §0
+        §0~_Vigilance_
 armor_contents:
   helmet:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
-    damage: 34
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: 'Bullet Proof Helmet Officer '
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
+    damage: 44
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_CHESTPLATE
-    damage: 2
+    damage: 28
     meta:
       ==: ItemMeta
       meta-type: LEATHER_ARMOR
@@ -388,36 +296,15 @@ armor_contents:
   leggings:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_LEGGINGS
-    damage: 34
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Bullet Proof Leggings Officer
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
+    damage: 42
   boots:
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 34
+    type: IRON_BOOTS
+    damage: 42
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: Bullet Proof Boots Officer
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        DAMAGE_UNDEAD: 5
-        LOOT_BONUS_BLOCKS: 3
-        ARROW_INFINITE: 1
-        LUCK: 3
-      repair-cost: 255
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
