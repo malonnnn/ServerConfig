@@ -1,4 +1,21 @@
-inventory: {}
+inventory:
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAO2UuwrCQBBFB0UQCz9i6gjRWKX0UQiCFnYqstlswpJNVtYJKCG/53cZQeIDLMRK3Grgwj2cZm4HoAPdkdI8mWYk6bRicRtaK3GkYfNcYHUNQ39dYKBViD6ZXDiogyg/cEaiTrhW2qCPITPJLlC5QAepKlfRJnddL8TS+YhhqvxLhNWwGv+qsa0TLG//7IFXoCSmJH/lBIrx5A6ZiD0zlIqM6vIAes9Sb6rLxXw2nl5rDRlCN5WZ4IZF5B9knN1YfTssVsNq/KbG47AAXACfel82PwgAAA==
+      blockMaterial: SIGN
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
 health: 20.0
 hunger: 20
 exp: 0.076923005
