@@ -1,13 +1,51 @@
 health: 20.0
-hunger: 8
+hunger: 13
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4700104
+exhaustion: 1.7350067
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
+    type: WATER_BREATHING
+    level: 1
+    duration: 197714
+  '1':
     type: SPEED
     level: 1
-    duration: 196458
+    duration: 199575
+  '2':
+    type: FAST_DIGGING
+    level: 3
+    duration: 197743
+  '3':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 197714
+  '4':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 197714

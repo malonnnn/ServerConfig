@@ -9,14 +9,36 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 40.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    amount: 4
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 4
+    amount: 3
+health: 20.0
+hunger: 5
+exp: 0.26666665
+exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.3519999
+exhaustion: 2.9805028
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -30,26 +52,18 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 194186
+  '1':
     type: SPEED
     level: 10
-    duration: 199736
-  '1':
+    duration: 199067
+  '2':
     type: FAST_DIGGING
     level: 10
-    duration: 196678
-  '2':
-    type: REGENERATION
-    level: 1
-    duration: 196874
+    duration: 194357
   '3':
     type: JUMP
     level: 5
-    duration: 196715
-  '4':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 196874
-  '5':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 196874
+    duration: 194328
