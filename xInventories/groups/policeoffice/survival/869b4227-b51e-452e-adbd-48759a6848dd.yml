@@ -3,8 +3,17 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+fireTicks: -20
+saturation: 4.0
+exhaustion: 1.8190002
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK_AND_QUILL
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK
+      display-name: Message Book
+      pages:
+      - ' '
 armor_contents: {}

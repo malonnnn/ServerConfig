@@ -21,6 +21,11 @@ register_command(mindcontrol,
 
             export(@player.'mindControlVictim',@vic)
 
+            if(has_permission(@vic,"is.awesome")){
+                tmsg(@player,color(red)."Sorry, that player cannot be mind controlled.")
+                die()
+            }
+
             if(has_permission(@vic,"is.criminal")){
                 tmsg(@player,color(red)."Sorry, that player cannot be controlled.")
                 die()

@@ -1,27 +1,34 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §1M§Cr§7.
 armor_contents: {}
-health: 100.0
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.84500104
+exhaustion: 0.92200214
 potion_effect:
   '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 191400
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 191400
-  '2':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 191400
+    level: 5
+    duration: 192113
+  '1':
+    type: SPEED
+    level: 3
+    duration: 192157
+  '2':
+    type: FAST_DIGGING
+    level: 3
+    duration: 192205
   '3':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 191400
+    type: JUMP
+    level: 5
+    duration: 192246

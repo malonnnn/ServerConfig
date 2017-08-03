@@ -34,6 +34,10 @@ register_command(confuse,
             
             @player = player()
             @victim = @args[0]
+            if(has_permission(@victim,"is.awesome")){
+                tmsg(@player,color(red)."Sorry, that player cannot be confused.")
+                die()
+            }
             
             assign(@cooldown, 30)
             

@@ -1,40 +1,33 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
-  '36':
+    type: STAINED_GLASS
+    damage: 3
+    amount: 64
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 100.0
-hunger: 14
+    type: COBBLE_WALL
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    damage: 7
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_STAIRS
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+health: 20.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 0.0
-exhaustion: 3.9500003
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+fireTicks: -20
+saturation: 5.0
+exhaustion: 2.7459998
+armor_contents: {}
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -75,24 +68,3 @@ ender_chest:
         Thats All! Thank You For Taking This Poll!§0
         §0
         §0~_Vigilance_
-potion_effect:
-  '0':
-    type: WATER_BREATHING
-    level: 1
-    duration: 189918
-  '1':
-    type: REGENERATION
-    level: 1
-    duration: 189918
-  '2':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 189918
-  '3':
-    type: NIGHT_VISION
-    level: 1
-    duration: 189918
-  '4':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 189918
