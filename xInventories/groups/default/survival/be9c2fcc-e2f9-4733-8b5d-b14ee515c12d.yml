@@ -1,172 +1,54 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_AXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+      display-name: §4H§0e§cph§0a§4est§cus's §6Hammer
+      enchants:
+        DAMAGE_ALL: 30
+        FIRE_ASPECT: 2
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4H§0e§cph§0a§4est§cus's §6Sword
+      enchants:
+        DAMAGE_ALL: 10
+        FIRE_ASPECT: 2
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    amount: 6
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 15
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 15
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 16
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 7
-    amount: 63
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 16
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
-    amount: 9
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 4
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 62
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 16
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 3
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 64
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: RAW_CHICKEN
-health: 35.666664123535156
-hunger: 14
-exp: 0.2857143
-exp-level: 0
+    type: FLINT_AND_STEEL
+health: 80.0
+hunger: 20
+exp: 0.11111115
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.541012
+saturation: 20.0
+exhaustion: 3.8140686
 armor_contents: {}
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 16
-    duration: 185561
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 191056
   '1':
     type: HEALTH_BOOST
     level: 14
-    duration: 185561
+    duration: 191056
+  '2':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 191056
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 191056
+  '4':
+    type: REGENERATION
+    level: 1
+    duration: 191056

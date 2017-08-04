@@ -1,10 +1,43 @@
 health: 20.0
 hunger: 20
-exp: 0.0
+exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
+saturation: 5.0
 exhaustion: 0.0
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 7
+    amount: 5
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+    amount: 8
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 61
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+    amount: 6
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_ORE
+    amount: 4
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 2
 ender_chest: {}
