@@ -13,8 +13,7 @@
             'powers': array(
                 "/buff",
                 "/caste telekinisis",
-                "/cast forcefeild",
-                "/fly",
+                "/cast forcefield",
                 "/confuse <player>",
                 "/cast manipulate"
             ),
