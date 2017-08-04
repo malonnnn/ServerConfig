@@ -1,43 +1,52 @@
-health: 20.0
-hunger: 20
+health: 10.0
+hunger: 17
 exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 2.2640219
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 7
-    amount: 5
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 6
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_SWORD
+    damage: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bSword
+      enchants:
+        KNOCKBACK: 2
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-    amount: 8
+    type: COOKED_BEEF
+    amount: 58
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 61
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bKnife
+      enchants:
+        KNOCKBACK: 2
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
-    amount: 6
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bA§6nn§ba§6beth Ch§ba§6s§be's §bBow
+      enchants:
+        KNOCKBACK: 2
+        ARROW_INFINITE: 1
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_ORE
-    amount: 4
-  '6':
-    ==: org.bukkit.inventory.ItemStack
     type: ROTTEN_FLESH
-    amount: 2
+    amount: 40
 ender_chest: {}
