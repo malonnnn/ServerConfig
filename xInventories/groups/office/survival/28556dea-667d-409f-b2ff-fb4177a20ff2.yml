@@ -1,27 +1,50 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '7':
-    ==: org.bukkit.inventory.ItemStack
     type: WRITTEN_BOOK
     meta:
       ==: ItemMeta
       meta-type: BOOK_SIGNED
-      title: GREEN LANTERN
-      author: Galaxy_Slayer318
+      title: Anti-Confusion
+      author: _Vigilance_
       pages:
+      - "Make is so that any Clocked-In Officer gets a little message or something\
+        \ whenever someone is talking through someone else with mind control,§0\n§\
+        0\n§0Similar to how /speak tells everone who's running the command, make it\
+        \ so officers are able to see who's "
       - |-
-        HI§0
-        §0CAN YOU EXPAND ON MULTIPLE COSTUME §0
-        §0-GREEN LANTERN
+        Talking through someone else with mind control.§0
+        §0
+        §0Exaple: Jiren Mindcontrols Myth.§0
+        §0
+        §0Non Officers see this:§0
+        §0
+        §0Myth: Hi I'm Myth!§0
+        §0
+        §0While Officers see this: Jiren~Myth: Hi I'm Myth!
       generation: 0
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 14
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 4
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -29,5 +52,5 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 16.0
-exhaustion: 0.45704174
+saturation: 1.0
+exhaustion: 2.5900004

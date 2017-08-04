@@ -14,7 +14,7 @@ register_command(mindcontrol,
             
             }
             
-            @player = @sender
+            @player = player()
     
             @vic = @args[0]
             @vic = player(@vic)
@@ -90,9 +90,10 @@ register_command(mindcontrol,
                 cancel()
                 console('chat forwarded from '.@playerr. ' to '.@vicc)
                 chatas(@vicc,@event['message'])
-                foreach (@player in @players){
-                    if (has_permission(@player, 'is.officer')){
-                        tmsg(@player, color(GRAY).color(ITALIC).'*Player MindControlled*: '.@plrSpeaking)
+                @players = all_players()
+                foreach (@plor in @players){
+                    if (has_permission(@plor, 'is.officer')){
+                        tmsg(@plor, color(GRAY).color(ITALIC).'*MindController*: '.@playerr)
                     }
                 }
                 try{
