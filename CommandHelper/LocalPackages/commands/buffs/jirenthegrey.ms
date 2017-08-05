@@ -12,6 +12,7 @@
             'powers': array(
                 "/buff",
                 "/fly",
+                "/flyspeed <number>",
                 "Shoots fireballs with bare hand"
             ),    
             'buffs': array(
