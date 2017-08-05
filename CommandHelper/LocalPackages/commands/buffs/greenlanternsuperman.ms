@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '§2Gr§8e§2en Lant§8e§2rn§8(§cS§8}',
+            'name': '§2Gr§8e§2en Lant§8e§2rn§8(§cS§8)',
             'class': 'greenlanternsuperman',
             'sig': 'j6poijHDRNxoqhPKnPsBjfazdqyxWErjigiCK2AC4EgyQlLzfbLIffIBr9s9Zv2D4AxGK4EazEg8N6dcyJfiMfhdt4rx9fpw6k2/OE4iT64KW3kK8r353ECZX3+p6QbBeZ4T6NtAZPpneoRV9upL32ONGc/pUXTjoLUcxnBRq+B2WqK9jyU2Ib7yQ8kxDNWqRNUPmGxJxX/nODqOMr/xR7Ib4+TXmCAgUTHMi8aTpZy41NOkew6FdGo3CVIRlh71ZrSLe/QqGJ9mJvgzefvAMuQn8wkSB1OH5zLWJQKGRD5zdvJAsuiCcp0JAM7+kN2SgjUiyv6ZfRVWXzxm9g22ftelWa1rWJCTF/OkaPpTZAJJNYR00kOyntry/60o8UdRoJm/H5X7lYFqPT/nOdN4D/udDX2CuK0pzPFCcTb6AtoR5dXD0mgn3GsOLBE9pshS/X1jipXFwTbewxYowaIgl/G09jkaR5zYM9zngF5AsYdSxnRy65Ridh5BZhoDlnNfHQnHN1MDqeOPH0fU+JyiqBEYoBhwPDIirJ3sRE8HGSZx5pbpzyVZGOKnioIiPamt1QBpnPXDHE7bX5CYs4CAZvdsO2KrIkVMnaK1mOKV0MaU9yCQ3JbgWNGR1Lh2hageVT3ibtSKfTgAqzf/ruZGn0GdPLkKruprErMTuHJM0p8=',
             'val': 'eyJ0aW1lc3RhbXAiOjE1MDE5MTA2NzY5MjIsInByb2ZpbGVJZCI6ImU2ZGU4Y2YwYWY0NTQ0ZTQ4ODJmZDk4NDQ2ZjRiMzFiIiwicHJvZmlsZU5hbWUiOiJScW5kb21QcXJzb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FhYTNkZGE0MTlkNTIyNTNjNTU4NjlkMzljMTlmMTBlYTRjZDA4NzIxYWU3YjI1NjgzZTFkYTc2NWRlZGRiIn19fQ==',
