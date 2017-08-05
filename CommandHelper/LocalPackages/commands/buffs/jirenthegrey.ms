@@ -11,6 +11,8 @@
             'speech': "I'll take this.",
             'powers': array(
                 "/buff",
+                "/carryplayer",
+                "/dismountplayer",
                 "/fly",
                 "/flyspeed <number>",
                 "Shoots fireballs with bare hand"
