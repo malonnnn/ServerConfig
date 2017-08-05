@@ -16,7 +16,7 @@
             'buffs': array(
                 "/effect ". @plr ." 21 9999 2 true",
                 "/effect ". @plr ." 5 9999 1 true",
-                "/give ". @plr ." minecraft:stick 20:2 1 name:§2Riddler's §5Cane",
+                "/give ". @plr ." minecraft:stick 20:2 1 name:§2Riddlers §5Cane",
                 "/give ". @plr ." minecraft:Paper 9:1 name:§5List o' Riddles"              
             )
         )
