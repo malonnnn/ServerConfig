@@ -11,7 +11,7 @@ include('modules.library/reop.ms');
 include('modules.library/signature.ms');
 include('modules.library/uberSlap.ms');
 include('modules.library/uuid.ms');
-#include('modules.library/warpAnnounce.ms');
+include('modules.library/warpAnnounce.ms');
 #include('modules.library/warps.ms');
 
 
