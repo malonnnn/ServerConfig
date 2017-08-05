@@ -1,8 +1,9 @@
 moblottostart:/moblottostart $x $y $z $world $plr = >>>
 
     @player = $plr
+    @world = 'moblottery'
     @loc = array($x,$y,$z,$world)
-    @plrs = all_players(@loc[3])
+    @plrs = all_players(@world)
     @numPlayers = array_size(@plrs)
     foreach(@plr in @plrs){
         if(import(@plr.'activeInMobLottery') ==  true){
@@ -22,6 +23,7 @@ moblottostart:/moblottostart $x $y $z $world $plr = >>>
         }
         set_pmode(@plr,'SURVIVAL')
         sudo('/heal '.@plr)
+        sudo('/minecraft:clear '.@plr)
         sudo('/warp moblotterystart '.@plr)
         export(@plr.'activeInMobLottery',true)
         try(
