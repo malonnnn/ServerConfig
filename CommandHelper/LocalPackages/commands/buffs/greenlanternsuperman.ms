@@ -29,9 +29,9 @@
                 "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." greenenergybeam",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
-                "/give ". @plr ." minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring"                
-                "/give ". @plr ." 95:5 64",
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts",              
+                "/give ". @plr ." minecraft:emerald 1 20:2 16:155 name:&2Gr&8e&2en_Lant&8e&2rn_Ring",               
+                "/give ". @plr ." 95:5 64"
            )   
         )
             
