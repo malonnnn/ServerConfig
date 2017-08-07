@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: President_Myth
-last_cast: 1501992851394
+last_cast: 1502041598481
 cooldown_expiration: 0
-last_death_location: 15.159165466613818,-266.2004062572348,28.158969546155426,spleef,141.89142,21.74998
+last_death_location: 7.045234513259743,-129.63292639173412,-0.16133446092884282,turfwars,-63.449127,-2.8500237
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -121,7 +121,7 @@ spells:
     cooldown_expiration: 1499309797406
   manipulate:
     cast_count: 0
-    last_cast: 1501994322951
+    last_cast: 1502042037321
     last_earn: 0
     cooldown_expiration: 0
   sandwall:
@@ -455,6 +455,37 @@ spells:
     last_earn: 1492367002638
     cooldown_expiration: 0
 wands:
+  wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Magic Missile§f (§3Wand§f)
+        lore:
+        - §o§aBeginner Magic Wand
+        - §3§oBound to President_Myth
+        - '§d§oMana: 50'
+        - '§d§oMana Regeneration: 5/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2QMU/CUBSFL6FgIcqAow4mEidqaGkfj8WI0QQTURPCaMijvZUXeX21vUjcXPwNxtnVwcTN8Bv8QU6WGrzTzTk393w5VYAqGAsRBSaYhCqeCcK1UNKLCBOoXSeYygAjGg8eaVoCQ4lInPQBDKit1jFJhSkJFQMUbr5el58mbGIYok9jX890AgcO73o2cxw28d2mF7i+zwS33XbQ7DDbboWZ3eU8Y8gjxzKARsgc2+MMLY4ht1yXB1bXYa7F2YTZ7Y7X8hwswsYDJqnUEQCUoAL1HlEiJ3PCgQ5kKDOzmlkFA8zR6Px0oFP62T/a7T310YDKSrpAkdLHzvL75fn9rQzlntLziI4bkI8JxnCmCUwlZDTNW9n6j7gUCmH7FjNi6R8KIuHfDWPEoAiVqxgTQX9gqy/5bf3sfi5jlTW5t8YD+AWgH2hmgwEAAA==
+    wand:
+      template: wand
+      owner: President_Myth
+      mana: 50.0
+      mana_timestamp: 1502074223795
+      effect_color: 289516226bc4,5d4cc6a8143d,76110f895988
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      version: 5
   yodaforce:
     item:
       ==: org.bukkit.inventory.ItemStack

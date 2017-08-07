@@ -1,10 +1,39 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8Gh§0o§8st R§7i§8der's §fShotgun§f ▫ «2»
+      lore:
+      - §eOnly For The Ghost Rider.
+      - §eDeadly at close range.
+      - §eIneffective at longer ranges.
+      - §eFires incendiary ammo.
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 10.0
-exhaustion: 3.2380867
+saturation: 19.0
+exhaustion: 1.0301427
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 188606
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 188606
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 188606
+  '3':
+    type: REGENERATION
+    level: 4
+    duration: 188606

@@ -1,11 +1,47 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 3.8000002
-exhaustion: 3.5097911
+saturation: 16.0
+exhaustion: 0.5408372
 armor_contents: {}
 ender_chest: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 186613
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 186613
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 186613
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 186613
+  '4':
+    type: REGENERATION
+    level: 1
+    duration: 186613
+  '5':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 186613
+  '6':
+    type: NIGHT_VISION
+    level: 1
+    duration: 186613
