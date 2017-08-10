@@ -1,20 +1,66 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
+    type: STAINED_GLASS_PANE
+    damage: 15
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
+    type: CONCRETE
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
+    type: SIGN
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: GRASS
+    type: DARK_OAK_DOOR_ITEM
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BANNER
+    damage: 12
+    meta:
+      ==: ItemMeta
+      meta-type: BANNER
+      display-name: Mirror
+      patterns:
+      - ==: Pattern
+        color: WHITE
+        pattern: gra
+      - ==: Pattern
+        color: SILVER
+        pattern: bo
+      - ==: Pattern
+        color: GRAY
+        pattern: bo
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: BANNER
+    damage: 12
+    meta:
+      ==: ItemMeta
+      meta-type: BANNER
+      patterns:
+      - ==: Pattern
+        color: LIME
+        pattern: bs
+      - ==: Pattern
+        color: BROWN
+        pattern: cs
+      - ==: Pattern
+        color: LIGHT_BLUE
+        pattern: hh
+      - ==: Pattern
+        color: GREEN
+        pattern: flo
+      - ==: Pattern
+        color: LIME
+        pattern: mc
+      - ==: Pattern
+        color: GREEN
+        pattern: mc
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 12
+    amount: 61
 health: 100.0
 hunger: 4
 exp: 0.0
@@ -25,26 +71,26 @@ saturation: 0.0
 exhaustion: 1.5470259
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
-    level: 19
-    duration: 101035
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 63599
   '1':
     type: HEALTH_BOOST
     level: 19
-    duration: 101035
+    duration: 63599
   '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 101035
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 63599
   '3':
-    type: FIRE_RESISTANCE
+    type: NIGHT_VISION
     level: 1
-    duration: 101035
+    duration: 63599
   '4':
     type: REGENERATION
     level: 1
-    duration: 101035
+    duration: 63599
   '5':
-    type: NIGHT_VISION
+    type: WATER_BREATHING
     level: 1
-    duration: 101035
+    duration: 63599
