@@ -1,17 +1,35 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    amount: 2
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §4Fl§ea§4sh§8(WallyW§8) §e§lD§a§lN§4§lA
+      lore:
+      - flashwallywest
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 health: 20.0
-hunger: 9
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 6.0
-exhaustion: 2.6276197
+saturation: 2.0
+exhaustion: 2.7300067
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -103,13 +121,3 @@ ender_chest:
   '24':
     ==: org.bukkit.inventory.ItemStack
     type: DIRT
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
