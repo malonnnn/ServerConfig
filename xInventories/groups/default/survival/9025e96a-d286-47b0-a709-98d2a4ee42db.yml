@@ -1,48 +1,72 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §4Fl§ea§4sh§8(WallyW§8) §e§lD§a§lN§4§lA
-      lore:
-      - flashwallywest
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      meta-type: UNSPECIFIC
+      display-name: Anto-Virus Blade
+      enchants:
+        KNOCKBACK: 999
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGbgCA31dPHNLy5hYMz7y8zACeL6pCYC+XyVk5kZ2Bxz80vzSoBqGTgYeOGm+CXmpjKIpKfmpRZlJusllpQkJme7JOYmpqcCjfAvSC1KLMnMz4PoYsGtmIEBAP225jmeAAAA
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gre§0e§2n A§0r§2row's §2Grappling Arrow
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gre§0e§2n A§0r§2row's §8Bow
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 6
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gre§0e§2n A§0r§2row's §8Bow
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
 armor_contents: {}
-health: 20.0
-hunger: 20
+health: 40.0
+hunger: 13
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 2.7300067
+saturation: 13.0
+exhaustion: 0.35901052
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: QUARTZ_STAIRS
     amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: ITEM_FRAME
-    amount: 42
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
-    amount: 20
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bEl§3ec§btr§3oc§bute§b «×»
   '5':
     ==: org.bukkit.inventory.ItemStack
     type: BOOK_AND_QUILL
@@ -121,3 +145,20 @@ ender_chest:
   '24':
     ==: org.bukkit.inventory.ItemStack
     type: DIRT
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 154495
+  '1':
+    type: INCREASE_DAMAGE
+    level: 1
+    duration: 154495
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 154495
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 154495

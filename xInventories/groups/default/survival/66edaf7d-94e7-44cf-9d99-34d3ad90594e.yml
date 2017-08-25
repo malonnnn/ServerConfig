@@ -1,43 +1,54 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POWERED_RAIL
-    amount: 22
+    type: MOB_SPAWNER
+    amount: 58
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §rpig Spawner
+      internal: H4sIAAAAAAAAAG2P3Q7BQBCFj201bOIvuPccLv1cEkHiUgajNtot2xXqCT2WbUvcmGRyZiaTb85IQKI5ipL9eaqtstmaQoHOjB5zJrPLiqHiFIFAd8nXmzJ8WESUsVmSDhltAbm60F2Pk5u28CXqRTshSzUIdUAjVpr3ho52eFEhBBqOXu6wA3kDgWpRoeeh8oALp9lHn7mWoP4PFCe7bZoj2Hzvl3b8HK/0D49XHa2iXSSW3TcUpdIhKxJB+fFflx6CDavwZPNVl2/FgXX2KAEAAA==
+      blockMaterial: MOB_SPAWNER
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 64
+    type: SIGN
+    amount: 15
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    amount: 29
+    type: GLOWSTONE
+    amount: 12
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 166
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SPADE
-    damage: 525
+    type: STONE_BUTTON
+    amount: 60
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: GLOWSTONE
-    amount: 52
+    type: TRAP_DOOR
+    amount: 30
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 32
+    type: FLOWER_POT_ITEM
+    amount: 59
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
+    type: GOLD_NUGGET
+    amount: 64
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: GLOWSTONE_DUST
-    amount: 16
+    type: GOLD_NUGGET
+    amount: 64
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_INGOT
     amount: 64
   '10':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_INGOT
-    amount: 64
+    type: WOOD
+    amount: 2
   '11':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_INGOT
@@ -45,7 +56,7 @@ inventory:
   '12':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_INGOT
-    amount: 64
+    amount: 63
   '13':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_INGOT
@@ -60,109 +71,103 @@ inventory:
     amount: 64
   '16':
     ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-    amount: 64
+    type: IRON_DOOR
+    amount: 59
   '17':
     ==: org.bukkit.inventory.ItemStack
-    type: GRAVEL
-    amount: 16
+    type: WOOD_DOOR
+    amount: 2
   '18':
     ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
+    type: LOG
+    damage: 2
   '19':
     ==: org.bukkit.inventory.ItemStack
-    type: BONE
+    type: LADDER
+    amount: 64
   '20':
     ==: org.bukkit.inventory.ItemStack
-    type: WORKBENCH
-    amount: 63
+    type: ARROW
+    amount: 2
   '21':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
+    type: BONE
+    amount: 4
   '22':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
+    type: IRON_BOOTS
+    damage: 21
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '23':
     ==: org.bukkit.inventory.ItemStack
-    type: FLINT
-    amount: 2
+    type: SIGN
+    amount: 16
   '24':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 10
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: NETHERRACK
-    amount: 24
-  '26':
+    type: SIGN
+    amount: 16
+  '27':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_NUGGET
     amount: 64
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 2
   '28':
     ==: org.bukkit.inventory.ItemStack
-    type: SULPHUR
-  '30':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 3
-    amount: 8
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
-    amount: 18
+    type: GOLD_NUGGET
+    amount: 64
   '32':
     ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
+    type: WOOD_STAIRS
+    amount: 33
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHEST
+    amount: 55
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_NUGGET
     amount: 64
   '35':
     ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
-    amount: 7
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
+    type: GOLD_NUGGET
     amount: 64
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: ENDER_STONE
-    amount: 7
-  '40':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 172
 ender_chest: {}
 health: 60.0
-hunger: 20
-exp: 0.46153852
-exp-level: 3
+hunger: 19
+exp: 0.5862069
+exp-level: 11
 remainingAir: 300
 fireTicks: -20
-saturation: 18.0
-exhaustion: 0.5043069
+saturation: 0.0
+exhaustion: 3.860238
 armor_contents: {}
 potion_effect:
   '0':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 162484
+    duration: 137697
   '1':
     type: HEALTH_BOOST
     level: 9
-    duration: 162484
+    duration: 137697
   '2':
     type: INCREASE_DAMAGE
     level: 12
-    duration: 162484
+    duration: 137697
   '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 137697
+  '4':
     type: FAST_DIGGING
     level: 30
-    duration: 183153
-  '4':
+    duration: 128321
+  '5':
     type: REGENERATION
     level: 4
-    duration: 162484
+    duration: 137697

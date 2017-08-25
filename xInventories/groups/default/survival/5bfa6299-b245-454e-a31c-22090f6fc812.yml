@@ -1,43 +1,59 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bPlasma Blast§b «×»
+      display-name: §bD§3a§br§3k §bR§3e§bp§3u§bl§3s§be§3r
+      enchants:
+        DAMAGE_ALL: 20
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 5
-    amount: 64
+    type: GOLD_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6E§ex§6c§ea§6l§ei§6b§eu§6r
+      enchants:
+        DAMAGE_ALL: 20
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0E§8l§7u§0c§8i§7d§0a§8t§7o§0r
+      enchants:
+        DAMAGE_ALL: 20
 ender_chest: {}
 armor_contents: {}
-health: 40.0
-hunger: 20
+health: 22.0
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: -20
+fireTicks: 0
 saturation: 0.0
-exhaustion: 1.1120033
+exhaustion: 2.531004
 potion_effect:
   '0':
-    type: INCREASE_DAMAGE
+    type: JUMP
     level: 10
-    duration: 196289
+    duration: 197927
   '1':
-    type: REGENERATION
-    level: 1
-    duration: 196289
-  '2':
     type: HEALTH_BOOST
-    level: 4
-    duration: 196289
+    level: 14
+    duration: 197038
+  '2':
+    type: SPEED
+    level: 5
+    duration: 198116
+  '3':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 197038
+  '4':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 197038
