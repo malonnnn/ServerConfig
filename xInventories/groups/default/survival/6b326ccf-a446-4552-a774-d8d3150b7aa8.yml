@@ -1,9 +1,190 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 2
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sword Of Angels
+      enchants:
+        DAMAGE_ARTHROPODS: 5
+        KNOCKBACK: 2
+        DURABILITY: 3
+        ARROW_DAMAGE: 5
+      repair-cost: 15
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: PUMPKIN_PIE
+    amount: 61
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
+      enchants:
+        DAMAGE_ALL: 10
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        FROST_WALKER: 2
+      repair-cost: 127
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 18
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 19
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 23
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Power Of Christ
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+      blockMaterial: SHIELD
+health: 80.0
+hunger: 19
+exp: 0.24000005
+exp-level: 9
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.9870415
+exhaustion: 3.0246408
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 23
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 19
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 18
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+      repair-cost: 127
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 11
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        FROST_WALKER: 2
+      repair-cost: 127
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 14
+    duration: 180096
+  '1':
+    type: INCREASE_DAMAGE
+    level: 8
+    duration: 180096
+  '2':
+    type: FAST_DIGGING
+    level: 40
+    duration: 179994
+  '3':
+    type: REGENERATION
+    level: 2
+    duration: 180096

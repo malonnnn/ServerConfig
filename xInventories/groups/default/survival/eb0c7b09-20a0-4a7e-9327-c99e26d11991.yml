@@ -1,16 +1,15 @@
 health: 100.0
-hunger: 4
-exp: 0.94736856
-exp-level: 6
+hunger: 9
+exp: 0.54545456
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.1898766
+exhaustion: 1.198319
 inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 122
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -20,71 +19,47 @@ inventory:
         DEPTH_STRIDER: 30
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: STRING
-    amount: 32
-  '2':
+    type: WOOL
+    amount: 6
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: SPIDER_EYE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: RAILS
+    type: ARROW
     amount: 2
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Anto-Virus Blade
-      enchants:
-        KNOCKBACK: 999
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGbgCA31dPHNLy5hYMz7y8zACeL6pCYC+XyVk5kZ2Bxz80vzSoBqGTgYeOGm+CXmpjKIpKfmpRZlJusllpQkJme7JOYmpqcCjfAvSC1KLMnMz4PoYsGtmIEBAP225jmeAAAA
-  '6':
+  '11':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §4Kryptonian Laser Vision§4 «×»
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 104
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        DIG_SPEED: 5
-        DURABILITY: 3
-      repair-cost: 3
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: BONE
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 2
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 3
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: FENCE
-    amount: 2
   '12':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
+    type: SAND
+    amount: 10
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 3
+    amount: 4
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 64
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    damage: 10
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 6
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 122
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -97,39 +72,106 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: BOW
     damage: 383
-  '9':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
+    type: BONE
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER
+    amount: 5
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Anti-Virus Knockback Bow
-      enchants:
-        ARROW_KNOCKBACK: 999
-        ARROW_INFINITE: 1
-      Unbreakable: true
+      meta-type: ENCHANTED
+      stored-enchants:
+        SILK_TOUCH: 1
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: OBSERVER
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPRUCE_DOOR_ITEM
+    amount: 32
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOAT
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
+    amount: 64
 potion_effect:
   '0':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 149440
+    duration: 81872
   '1':
     type: HEALTH_BOOST
     level: 19
-    duration: 149440
+    duration: 81872
   '2':
     type: INCREASE_DAMAGE
     level: 19
-    duration: 149440
+    duration: 81872
   '3':
     type: NIGHT_VISION
     level: 1
-    duration: 149440
+    duration: 81872
   '4':
     type: REGENERATION
     level: 1
-    duration: 149440
+    duration: 81872
   '5':
     type: WATER_BREATHING
     level: 1
-    duration: 149440
+    duration: 81872

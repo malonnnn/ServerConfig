@@ -1,103 +1,10 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Damage Attack
-      enchants:
-        DAMAGE_ALL: 10
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Knockback Attack
-      enchants:
-        KNOCKBACK: 10
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2G§ar§6o§ao§2t's Damage & Knockback  Attack
-      enchants:
-        DAMAGE_ALL: 5
-        KNOCKBACK: 5
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §4S§0u§8p§0er§1bo§0y§8(KonEl) §e§lD§a§lN§4§lA
-      lore:
-      - superboykonel
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §2She-§lH§a§lU§2§lLK §e§lD§a§lN§4§lA
-      lore:
-      - shehulk
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 100.0
-hunger: 6
+inventory: {}
+health: 20.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.91015965
+saturation: 8.0
+exhaustion: 2.0071902
 armor_contents: {}
-potion_effect:
-  '0':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 193321
-  '1':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 193321
-  '2':
-    type: INCREASE_DAMAGE
-    level: 7
-    duration: 193321
-  '3':
-    type: REGENERATION
-    level: 4
-    duration: 193321
-  '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 193321
