@@ -221,9 +221,10 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         sudo("/tptoggle ".@plrr." on")
         
         _changeSkin(@plrr,@hero['sig'],@hero['val'])
-        chatas(@plrr,"/trailsid none")
         if(@hero['trail'] != ''){
-            _changeTrail(@plrr, @hero['trail'])
+            chatas(@plrr,"/trailsid ".@hero['trail'])
+        }else{
+            chatas(@plrr,"/trailsid none")
         }
         
         # print chat message about successful transformation

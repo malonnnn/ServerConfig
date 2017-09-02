@@ -1,5 +1,25 @@
 inventory:
-  '27':
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '4':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -9,59 +29,39 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '36':
+  '28':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 1
+    type: GOLD_HOE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 8.633281
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 1
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+exhaustion: 2.940691
+armor_contents: {}
 potion_effect:
   '0':
     type: JUMP
     level: 5
-    duration: 174020
+    duration: 167194
   '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 173913
-  '2':
     type: SPEED
     level: 10
-    duration: 183936
+    duration: 184987
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 192130
   '3':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 173913
-  '4':
     type: FAST_DIGGING
-    level: 10
-    duration: 174070
-  '5':
-    type: REGENERATION
-    level: 1
-    duration: 173913
+    level: 20
+    duration: 175797

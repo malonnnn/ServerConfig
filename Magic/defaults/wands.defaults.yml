@@ -419,9 +419,9 @@ base_wand:
     hidden: true
     inherit: base_bound
     mode: inventory
-    drop: toggle
+    drop: cycle_hotbar
     left_click: cast
-    right_click: none
+    right_click: toggle
     swap: cycle_hotbar
     quiet: 1
     effect_bubbles: false
@@ -974,23 +974,14 @@ flashboots:
     effect_particle_offset: -1.5
 
 gamemode:
-  drop: toggle
-  quick_cast: true
+  inherit: base_wand
   icon: diamond_axe:79
-  indestructible: true
-  right_click: toggle
-  version: 2
-  spell_inventory:
-    tosurvival: 1
-    tocreative: 0
-  mode: chest 
-  keep: true
-  name: AJ Mode
-  left_click: none
+  quick_cast: true
+  mode: chest
+  name: Game Mode
   spells:
   - tocreative
   - tosurvival
-  undroppable: true
 goggles:
     mode: cast
     icon: wood_hoe:16
@@ -1016,8 +1007,8 @@ heroes:
     heroes: true
     undroppable: true
     mode: inventory
-    right_click: none
-    drop: toggle
+    right_click: toggle
+    drop: none
     left_click: cast
 
 hulkboots:
@@ -1230,9 +1221,6 @@ mirrorshield:
     mode: none
     bound: true
     keep: true
-    right_click: none
-    left_click: none
-    drop: none
     block_reflect_chance: 0.75
     block_chance: 1
     block_fov: 0.5
@@ -1521,7 +1509,7 @@ spellbook:
     mode: skills
     icon: wood_hoe:31
     indestructible: true
-    drop: toggle
+    right_click: toggle
     undroppable: true
     keep: true
     bound: true

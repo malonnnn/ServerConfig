@@ -124,6 +124,16 @@ register_command('claimwaifu',
                 msg(color(RED).'Sorry, you already are married to her!')
                 die()
             }
+            @time = get_value('waifus.'.@plrUUID.@waifuUUID.'lastChallengeTime')
+            if(@time != null && (time() - @time) < 86400000){
+                msg(color(RED).'Sorry, you have to wait 24 hours to re-claim that person!')
+                die()
+            }else{
+                @tmp = time()
+                console(@time.' - stored time')
+                console(@tmp.' - current time')
+                console((@tmp - @time).' - elapsed time')
+            }
             # If has been more than 48 hours
 
             if(@husbandoUUID != null && @husbandoUUID != ''){
@@ -209,10 +219,15 @@ register_command('waifuchallenge',
                     die()
                 }
 
-                @time = get_value('waifus.'.@waifuUUID.'lastChallengeTime')
+                @time = get_value('waifus.'.@husbandoUUID.@waifuUUID.'lastChallengeTime')
                 if(@time != null && (time() - @time) < 86400000){
                     msg(color(RED).'Sorry, it hasn\'t been 24 hours since you last tried to escape!')
                     die()
+                }else{
+                    @tmp = time()
+                    console(@time.' - stored time')
+                    console(@tmp.' - current time')
+                    console((@tmp - @time).' - elapsed time')
                 }
 
                 if(import(@waifuName.'inActiveChallenge')){

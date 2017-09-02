@@ -12,10 +12,11 @@ proc(_waifuWinner,@winner,@loser,@waifuName,@waifuSwitch, @waifuEscape){
             store_value('waifus.'.@loserUUID.@winnerUUID.'isMarried',false)
             store_value('waifus.'.@waifuUUID.'spouseUUID','')
             store_value('waifus.'.@waifuUUID.'spouseName','')
+            store_value('waifus.'.@loserUUID.@winnerUUID.'lastChallengeTime',time())
             die()
         }
         broadcast(@winner.color(RED).'\'s waifu '.color(WHITE).@loser.color(RED).' got a little rowdy, but he put her in her place! She cannot be try re-escaping for 24 hours!')
-        store_value('waifus.'.@winnerUUID.'lastChallengeTime',time())
+        store_value('waifus.'.@winnerUUID.@loserUUID.'lastChallengeTime',time())
         die()
     }
 

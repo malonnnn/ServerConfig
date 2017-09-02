@@ -40,7 +40,7 @@ register_command(arrest,
                     
                     if(@cop[0] != '#') {
                     
-                        if(has_permission(@cop, 'is.suspended')) {
+                        if(@cop != '~console' && has_permission(@cop, 'is.suspended')) {
                         
                             msg(''.color(RED).color(BOLD).'You are currently suspended! Your powers of arrest have been revoked.');
                             die();
@@ -574,6 +574,48 @@ register_command(officerhistory,
                 msg('Player is Offline')				
                 die()
             }
+        
+        }
+    )
+)
+
+register_command(arrestonjoin, 
+
+    array(
+        description: 'Checks the Arrest and Warning History of an Officer',
+        usage: '/arrestonjoin <player>',
+        permission: 'arrestplayer.onjoin',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        tabcompleter: closure(@alias, @sender, @args) {
+            try{
+                if(array_size(@args) == 0) {
+                    return(all_players());
+                }
+                @search = @args[array_size(@args) - 1];
+                    return(array_filter(all_players(), closure(@index, @player) {
+                    return(equals_ic(@search, substr(@player, 0, length(@search))));
+                }));
+            } catch (RangeException @ErrorInfo) {
+                # Ignore
+            }
+        },
+    
+        executor: closure(@alias, @sender, @args) {
+        
+            if (array_size(@args) != 1) {
+            
+                msg(''.color(RED).color(BOLD).'Improper Usage!');
+                msg(''.color(RED).'Usage: /arrestonjoin <player>');
+                die(); # No need to go further					
+            
+            }				
+
+                @vic = player(@args[0])
+                
+
+                #runas(~console,'/arrest '.@vic.' Joining Auto-Arrest Bot v2.1b')
+                sudo('/pex user '.@vic.' add arrest.onjoin')
+                msg(color(RED).@vic.' will be arrested the next time they log in.')
         
         }
     )

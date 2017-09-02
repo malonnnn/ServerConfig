@@ -1,14 +1,4 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
-      enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_PICKAXE
@@ -27,13 +17,9 @@ inventory:
     amount: 64
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: NETHER_BRICK
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
     type: MAGMA
     amount: 39
-  '8':
+  '6':
     ==: org.bukkit.inventory.ItemStack
     type: NETHER_BRICK_ITEM
     amount: 4
@@ -69,7 +55,15 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '16':
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK
+    amount: 64
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_BRICK
+    amount: 52
+  '12':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_HOE
     meta:
@@ -79,18 +73,27 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '31':
+  '29':
     ==: org.bukkit.inventory.ItemStack
-    type: NETHER_BRICK
-    amount: 52
-health: 20.0
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+health: 100.0
 hunger: 20
 exp: 0.7272728
 exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 12.0
-exhaustion: 2.8560863
+saturation: 17.0
+exhaustion: 3.4585052
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -105,10 +108,38 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 20
-    duration: 185770
+    type: JUMP
+    level: 5
+    duration: 190394
   '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 190786
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 190786
+  '3':
+    type: SPEED
+    level: 3
+    duration: 190533
+  '4':
     type: DAMAGE_RESISTANCE
     level: 5
-    duration: 192652
+    duration: 182204
+  '5':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 190786
+  '6':
+    type: FAST_DIGGING
+    level: 20
+    duration: 175322
+  '7':
+    type: REGENERATION
+    level: 3
+    duration: 190786
+  '8':
+    type: WATER_BREATHING
+    level: 1
+    duration: 190786

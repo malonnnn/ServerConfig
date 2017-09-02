@@ -1,13 +1,56 @@
 inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4En§cerg§4y §cBe§4am§4 «×»
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-health: 20.0
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 60.0
 hunger: 20
-exp: 0.71428573
+exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 3.47149
+saturation: 20.0
+exhaustion: 2.7552052
 armor_contents: {}
+potion_effect:
+  '0':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 169921
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 169921
+  '2':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 169921
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 169921
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 169921
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 169921
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 169921
