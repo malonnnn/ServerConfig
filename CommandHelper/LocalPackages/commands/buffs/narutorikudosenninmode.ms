@@ -22,7 +22,8 @@
                 "/haste 0-8",
                 "/msg <playername>",
                 "/tailedbeastballrasengan",
-                "/ultrabigballrasenshuriken"
+                "/ultrabigballrasenshuriken",
+                 "/tp"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 50 true",
