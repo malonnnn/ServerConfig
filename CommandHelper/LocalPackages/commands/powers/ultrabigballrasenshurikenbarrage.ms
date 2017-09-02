@@ -1,4 +1,4 @@
-register_command(rasengan, 
+register_command(ultrabigballrasenshurikenbarrage, 
 
     array(
     
