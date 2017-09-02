@@ -22,7 +22,7 @@
                 "/haste 0-8",
                 "/msg <playername>",
                 "/tailedbeastballrasengan",
-                "/ultrabigballrasenshuriken",
+                "/ultrabigballrasenshurikenbarrage",
                  "/tp"
             ),
             'buffs': array(
