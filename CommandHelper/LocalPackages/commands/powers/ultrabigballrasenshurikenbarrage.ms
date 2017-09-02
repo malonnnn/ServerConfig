@@ -4,7 +4,7 @@ register_command(rasengan,
     
         description: 'Power',
         
-        permission: 'ch.alias.ultrabigballrasenshuriken',
+        permission: 'ch.alias.ultrabigballrasenshurikenbarrage',
         
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
