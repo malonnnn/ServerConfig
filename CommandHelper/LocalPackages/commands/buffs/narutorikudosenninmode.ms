@@ -20,10 +20,9 @@
                 "/jump 0-8",
                 "/run 0-9",
                 "/haste 0-8",
-                "/msg <playername>",
                 "/tailedbeastballrasengan",
                 "/ultrabigballrasenshurikenbarrage",
-                 "/tp"
+                "/tp"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 50 true",
