@@ -14,20 +14,11 @@
                 "/buff",
                  "/carryplayer",
                 "/dismountplayer",
-                "/rasengan (very powerful punches for 10 seconds)",
                 "/jump 0-8",
-                "/run 0-9",
-                "/haste 0-8",
-                "/tailedbeastballrasengan",
-                "/ultrabigballrasenshurikenbarrage",
-                "/tp"
+                "/run 0-7",
+                "/haste 0-9",
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 50 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true"
+                "/effect ". @plr ." 5 9999 30 true"
             )
         )
