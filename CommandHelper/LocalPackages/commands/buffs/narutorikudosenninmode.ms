@@ -12,9 +12,7 @@
             'speech': "Here I come! Get ready!",
             'powers': array(
                 "/buff",
-                "/flyspeed <number>",
-                "/fly",
-                "/carryplayer",
+                 "/carryplayer",
                 "/dismountplayer",
                 "/rasengan (very powerful punches for 10 seconds)",
                 "/jump 0-8",
