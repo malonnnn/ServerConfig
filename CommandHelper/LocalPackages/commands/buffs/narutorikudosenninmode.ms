@@ -14,13 +14,9 @@
                 "/buff",
                  "/carryplayer",
                 "/dismountplayer",
-                "/rasengan",
-                "/tailedbeastballrasenshuriken",
- -              "/ultrabigballrasenganbarrage",
                 "/jump 0-8",
                 "/run 0-7",
-                "/haste 0-9",
-                "/tp"
+                "/haste 0-9"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 30 true"
