@@ -1,28 +1,46 @@
-health: 31.333332061767578
+health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.42800516
+exhaustion: 0.016001225
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_HOE
+    damage: 29
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Carbine §c-§7§7 «8 ◀▷ 1»
+      display-name: §7Python§7 ▫ «0»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGHgCA31dPHNLy5hAANuCxYGTpCQT2oiVIx32T42BjbH3PzSvJL9XfP3lZ3YYsnBwBKck1/CwJGbmJmXkZiXwsHAC7fCLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTWFmYHTvyC1KLEkMz8PZDbQHDyqGRgA0PJs9L0AAAA=
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_HOE
-    damage: 33
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7Type95 §c-§7§7 «30»
+      display-name: §7Bazooka §c-§7§7 «1»
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
       Unbreakable: true
+      internal: H4sIAAAAAAAAAH2NMQrCQBRERwxhk5hGsPUI1rYBQQSjaIitrOarC9ndsNkIHsBrWHqGVHogL6FRsXS6eQxvfIChsxJlxfMl5ZpnCMaGn9af4qEbWWvEprIU60zsBJnSB9BywNJ0Mop1afFOMHTgNWhK/MvC682FG0ldKXu/1IvHuV8zOEmuLZjkQh24yhjC38WMS0JvT4qM2A6kPpIkZZOCKGvDmxdkuBVaNe6X588aeAJCOFoe2QAAAA==
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -124,8 +142,3 @@ ender_chest:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-potion_effect:
-  '0':
-    type: HEALTH_BOOST
-    level: 2
-    duration: 199193

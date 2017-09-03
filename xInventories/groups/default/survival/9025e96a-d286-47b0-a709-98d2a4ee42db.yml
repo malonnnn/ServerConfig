@@ -1,4 +1,74 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §8Black §6Racer(WW) §e§lD§a§lN§4§lA
+      lore:
+      - blackracerwilliewalker
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §cFi§ere§cst§eor§cm§8(§cR§eS§8) §e§lD§a§lN§4§lA
+      lore:
+      - firestormraymondstein
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §0Bl§ba§7ck§8 §8La§7nt§0er§bn§8(§bD§0S§8R§bR§8) §e§lD§a§lN§4§lA
+      lore:
+      - blacklanterndeathstormraymondrusch
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_PLATE
+    amount: 60
 armor_contents: {}
 health: 20.0
 hunger: 20
@@ -6,102 +76,15 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
-ender_chest:
+saturation: 7.0
+exhaustion: 3.5300827
+ender_chest: {}
+potion_effect:
   '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_STAIRS
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bEl§3ec§btr§3oc§bute§b «×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_PLATE
-    amount: 63
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 2
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: CYAN_SHULKER_BOX
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52Bgykxh4C7OKM3JTi2KT8qvYGAAAEbg3dwoAAAA
-      blockMaterial: CYAN_SHULKER_BOX
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: CYAN_SHULKER_BOX
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: CYAN_SHULKER_BOX
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: CYAN_SHULKER_BOX
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: HOPPER
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: TORCH
-    amount: 35
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
+    type: JUMP
+    level: 3
+    duration: 182466
   '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOOK_AND_QUILL
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 8
-    amount: 44
+    type: SPEED
+    level: 2
+    duration: 190186

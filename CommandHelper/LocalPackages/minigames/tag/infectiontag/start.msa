@@ -1,61 +1,69 @@
-startinfectiontag:/startinfectiontag $infectionStartWarp $world = >>>
+startinfectiontag:/startinfectiontag $infectionStartWarp $infectionItWarp $world = >>>
 
     @warp = $infectionStartWarp
+    @itWarp = $infectionItWarp
     @world = $world
     
     @plrs = all_players(@world)
-
     @numPlayers = array_size(@plrs)
-    @it = rand(0,@numPlayers + 1)
 
-    if(@numPlayers <= 1){
-        broadcast(color(red).'You need at least 2 people to play Infection Tag!')
+    if(@numPlayers <= 2){
+        broadcast(color(red).'You need at least 3 people to play Infection Tag!')
         die()
     }
-
-    @counter = 0
+    @it = rand(0,@numPlayers)
+    @plrIt = @plrs[@it]
+    broadcast(@plrIt.color(red).' is it!')
     foreach(@plr in @plrs){
-        if(pinfo(@plr)[5] <= 0){
-            export(@plr.'isItInfectionTag',false)
-            continue()
-            @numPlayers--
+        if(@plr == @plrIt){
+            sudo('/warp '.@itWarp.' '.@plr)
+        }else{
+            sudo('/warp '.@warp.' '.@plr)
         }
-        sudo('/warp '.@warp.' '.@plr)
-        export(@plr.'isItInfectionTag',false)
-        sudo('/pex user '.@plr.' add essentials.protect.pvp '.@world)
         sudo('/heal '.@plr)
-        if(@counter == @it){
-            export(@plr.'isItInfectionTag',true)
-            broadcast(@plr.color(red).' is it!')
-        }
-        @counter++
+        export(puuid(@plr).'isItInfectionTag',false)
     }
-    bind(entity_damage_player,null,null,@e,@world){
-        if(!import(@e['data'].'isItInfectionTag') || import(@e['player'].'isItInfectionTag') || @e['location']['world'] != @world){
-            cancel()
-            return()
-            die() 
-        }
-        export(@e['player'].'isItInfectionTag',true)
-        @plrs = all_players(@world)
-        @numActive = 0
-        @winner = ''
-        foreach(@plr in @plrs){
-            if(!import(@plr.'isItInfectionTag')){
-                @numActive++
-                @winner = @plr
-            }
-        }
-        broadcast(@e['data'].color(red).' tagged '.@e['player'].color(red).'!')
-        if(@numActive <= 1){
-            broadcast(@winner.color(red).' is the winner of Infection Tag!')
+    export(puuid(@plrIt).'isItInfectionTag',true)
+    unbind('infectionTag')
+    bind(entity_damage_player,associative_array('id':'infectionTag'),null,@e,@world){
+        @plrr = @e['player']
+        @dmgr = @e['id']
+        console(@dmgr)
+        if(import(puuid(@plrr).'isItInfectionTag') == false && import(@dmgr.'isItInfectionTag') == true && @e['location']['world'] == @world){
+            export(puuid(@plrr).'isItInfectionTag',true)
+            @plrs = all_players(@world)
+            @numActive = 0
+            @winner = ''
             foreach(@plr in @plrs){
-                export(@plr.'isItInfectionTag',false)
-                sudo('/pex user '.@plr.' add -essentials.protect.pvp '.@world)
+                if(import(puuid(@plr).'isItInfectionTag') == false){
+                    @numActive++
+                    @winner = @plr
+                }
             }
-            unbind()
+            broadcast(@plrr.color(RED).' has been tagged and is IT!')
+            if(@numActive == 1){
+                broadcast(@winner.color(red).' is the '.color(GREEN).color(BOLD).'WINNER'.color(RED).' of Infection Tag!')
+                @plrs = all_players(@world)
+                @numPlayers = array_size(@plrs)
+                
+                if(@numPlayers <= 2){
+                    unbind('infectionTag')
+                    die()
+                }else{
+                    broadcast(@winner.color(red).' is it!')
+                    foreach(@plr in @plrs){
+                        if(@plr != @winner){
+                            export(puuid(@plr).'isItInfectionTag',false)
+                        }else{
+                                export(puuid(@plr).'isItInfectionTag',true)
+                        }
+                    }
+                }
+            }
+        }else{
+            console(@dmgr)
+            cancel()
         }
-        cancel()
     }
 
     
