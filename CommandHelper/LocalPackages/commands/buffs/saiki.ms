@@ -1,3 +1,4 @@
+
 @plr = player()
 
 
@@ -42,6 +43,18 @@
                 "/intangible",
                 
                 "/tangible",
+                
+                "/invis",
+                
+                "/vis",
+                
+                "/mindlock",
+                
+                "/disguise",
+                
+                "/undisguise",
+                
+                "/mindlock",
 
                 "Anything you attack, dies"
 
