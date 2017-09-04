@@ -38,5 +38,7 @@
                 "/effect ". @plr ." 21 9999 4 true",
                 "/effect ". @plr ." 10 9999 3 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
+                "/give ". @plr ." Minecraft:Bow 1 0 {display:{Name:"&8Speedster &6Gun",Lore:["Made by star labs owner SaltWithNoPepper HeyItzNight and MaddoxArt"]}
+                "/give ". @plr ." minecraft:tipped_arrow 1 0 {CustomPotionEffects:[{Id:2,Amplifier:4,Duration:20}]}
             )
         )
