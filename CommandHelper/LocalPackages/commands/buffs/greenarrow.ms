@@ -38,6 +38,7 @@
             'buffs': array(
                 "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&2Gre&0e&2n_A&0r&2row's_&8Bow",
                 "/give ". @plr ." minecraft:ender_pearl 5 name:&2Gre&0e&2n_A&0r&2row's_&2Grappling_Arrow",
+                "/give ". @plr ." minecraft:tipped_arrow 1 0 {CustomPotionEffects:[{Id:2,Amplifier:4,Duration:20}]}",
                 "/effect ". @plr ." 5 9999 1 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 1 true",
