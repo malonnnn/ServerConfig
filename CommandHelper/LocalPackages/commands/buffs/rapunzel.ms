@@ -16,7 +16,7 @@
                 "/regen <playername>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 16 9999 15 true",             
+                "/effect ". @plr ." 16 9999 1 true",             
                 "/give ". @plr ." minecraft:iron_shovel 1 name:&dR&5a&ep&dun&6z&5e&dl's_&8Pan"
             )
         )
