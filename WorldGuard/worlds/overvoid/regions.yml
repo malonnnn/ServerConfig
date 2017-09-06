@@ -30,14 +30,15 @@ regions:
         min: {x: -41.0, y: 95.0, z: 28.0}
         max: {x: -35.0, y: 100.0, z: 34.0}
         members: {}
-        flags: {invincible: deny, use: allow, feed-amount: 0, feed-delay: 0, pvp: deny}
+        flags: {invincible: deny, fall-damage: deny, use: allow, feed-amount: 0, feed-delay: 0,
+            pvp: deny}
         owners: {}
         type: cuboid
         priority: 10
     __global__:
         members: {}
-        flags: {item-drop: deny, game-mode: SURVIVAL, feed-amount: 1, feed-delay: 1,
-            interact: allow, tnt: allow}
+        flags: {item-drop: deny, game-mode: SURVIVAL, fall-damage: deny, invincible: allow,
+            feed-amount: 1, feed-delay: 1, interact: allow, tnt: allow}
         owners: {}
         type: global
         priority: 0

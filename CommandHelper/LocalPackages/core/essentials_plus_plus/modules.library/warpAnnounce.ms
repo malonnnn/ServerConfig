@@ -26,9 +26,14 @@ register_command(warp_announce,
                 die(); # No need to go further
             
             }
-        
-            try {
-            
+            console(@sender)
+            if(ponline(@sender)){
+                msg(color(RED).'Whoops! Sorry, that\'s not for you to play with!')
+                die()
+            }
+
+            try {          
+ 
                 @targetPlayer = player(@args[0]); # Grab the players name to announce
                 @warpName = @args[1]; # Grab the name of the warp
                 

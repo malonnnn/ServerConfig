@@ -1,22 +1,13 @@
 inventory:
-  '0':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_TORCH_ON
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHarrier Strike§e
-      lore:
-      - §eCalls in an airstrike at the
-      - §eposition of the thrown flare.
-      Unbreakable: true
-  '6':
+    type: SMOOTH_BRICK
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Bazooka §c-§7§7 «1»
+    type: REDSTONE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -24,4 +15,4 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
+exhaustion: 0.1

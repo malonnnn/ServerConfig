@@ -47,12 +47,26 @@ bind('player_chat', null, null, @e) {
         if(@pgroup == 'mrmxyzptlk')
         {
             set_timeout(1000, closure(
-                call_alias('/mortal')
+                run_cmd('/mortal')
                 set_timeout(1500, closure(
                     tmsg(@pname, 'You said your name backwards! Off to the other dimension you go!')
                 ))
             ))
         }
+    }
+
+    if(has_permission(@pname,'has.xp') && !has_permission(@pname,'soijdg.sdgij')){
+        @msgg = split(' ',@msg)
+        @finMsg = ''
+        foreach(@word in @msgg){
+            if(to_lower(@word) == 'xp'){
+                @word = 'Windows '.@word
+            }else if (@word == ';-;'){
+                @word = '(i am a crybaby)'
+            }
+            @finMsg = @finMsg.@word.' '
+        }
+        modify_event(message,@finMsg)
     }
     
     # -------------------------------
