@@ -14,7 +14,7 @@
              'powers': array( 
                  "/buff", 
                  "/jump 0-7", 
-                 "/run 0-9",
+                 "/run 0-8",
                  "/haste 0-9",
                  "/levitate"
               ), 
