@@ -14,13 +14,12 @@
              'powers': array( 
                  "/buff", 
                  "/jump 0-7", 
-                 "/run 0-6",
-                 "/haste 0-3",
-                 "/fly"
+                 "/run 0-9",
+                 "/haste 0-9",
+                 "/levitate"
               ), 
              'buffs': array( 
-                 "/effect ". @plr ." 5 9999 35 true",
-                 "/effect ". @plr ." 13 9999 1 true",
+                 "/effect ". @plr ." 5 9999 20 true",
                  "/effect ". @plr ." 21 9999 19 true",
                  "/give ". @plr ." minecraft:stick 1 5:45 name:&4C&8h&5a&8kra_&4D&8isr&5up&8tion_&4B&8l&5a&8de",
                  "/give ". @plr ." minecraft:stick 1 5:45 name:&4C&8h&5a&8kra_&4D&8isr&5up&8tion_&4B&8l&5a&8de"
