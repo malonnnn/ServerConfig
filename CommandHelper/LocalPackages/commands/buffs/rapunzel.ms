@@ -12,8 +12,8 @@
             'powers': array(
                 "/buff",
                 "/jump 0-6",
-                "/healing",
-                "/healing <playername>"
+                "/regen",
+                "/regen <playername>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 16 9999 15 true",             
