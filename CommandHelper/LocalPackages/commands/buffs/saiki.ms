@@ -9,27 +9,11 @@
             'speech': "I can hear everyones thoughts, its annoying.",
             'powers': array(
                 "/buff",
-                "/jump 0-9",
                 "/carryplayer",
                 "/dismountplayer",
-                "/run 0-9",
-                "/haste 0-9",
-                "/flyspeed <number>"
                 "/fly",
-                "/intangible",
-                "/tangible",
-                "/invis",
-                "/vis",
-                "/mindlock",
-                "/disguise",
-                "/undisguise",
-                "Anything you attack, dies"
+
             ),
-            'buffs': array(
-                "/effect ". @plr ." 11 9999 4 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
-                "/shot give ". @plr ." PyrokenesisBlast",
-                "/shot give ". @plr ." PurpleLightning"          
+            'buffs': array(       
             )
         )
