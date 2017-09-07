@@ -13,12 +13,11 @@ register_command(eat,
             @plr = player()
             @world = pworld(@plr)
             @plrs = all_players(@world)
-             
-            foreach(@player in @plrs){ 
-                if(@player != @plr){ 
-                    pkill(@player)  
-                } 
-            }  
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/livingEntities.ms')
+           
+            sudo('/minecraft:kill @e['.@types.']') 
+            msg('/minecraft:kill @e['.@types.']') 
             
             broadcast(@plr." ate ".@world." and killed everyone within it") 
                 
