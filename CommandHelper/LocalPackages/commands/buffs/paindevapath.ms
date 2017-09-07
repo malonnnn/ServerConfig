@@ -16,7 +16,9 @@
                  "/jump 0-7", 
                  "/run 0-8",
                  "/haste 0-9",
-                 "/levitate"
+                 "/levitate",
+                 "/cast almightypush",
+                 "/cast universalpull"
               ), 
              'buffs': array( 
                  "/effect ". @plr ." 5 9999 20 true",
