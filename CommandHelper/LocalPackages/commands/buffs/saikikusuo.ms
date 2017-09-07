@@ -25,7 +25,7 @@
                 "/tppos <x> <y> <z> <world>",
             ),
             'buffs': array(
-                "/effect ". @plr ." 11 9999 5 true",
+                "/effect ". @plr ." 11 9999 40 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 5 9999 40 true",
                 "/shot give ". @plr ." pyrokenensisblast",
