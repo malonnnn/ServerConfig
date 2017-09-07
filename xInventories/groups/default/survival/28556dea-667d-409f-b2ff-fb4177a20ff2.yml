@@ -1,6 +1,23 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4En§cerg§4y §cBe§4am§4 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
     type: COOKED_FISH
     damage: 1
     amount: 64
@@ -8,7 +25,7 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: Alaskan Salmon
-  '1':
+  '3':
     ==: org.bukkit.inventory.ItemStack
     type: COOKED_FISH
     damage: 1
@@ -17,12 +34,41 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: Alaskan Salmon
-health: 20.0
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 3.0
-exhaustion: 2.9730031
+saturation: 0.0
+exhaustion: 2.5159988
 armor_contents: {}
+potion_effect:
+  '0':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 181271
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 181271
+  '2':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 181271
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 181271
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 181271
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 181271
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 181271
