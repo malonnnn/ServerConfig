@@ -1,4 +1,4 @@
-@plr = player()
+5@plr = player()
 @hero = associative_array(
             'name': '§4S§4a§4i§4k§4i§2K§2u§2s§2u§2o',
             'class': 'saikikusuo',
@@ -11,8 +11,24 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/levitate"
+                "/levitate" 
+                "/jump 0-9",               
+                "/run 0-9",
+                "/haste 0-9",
+                "/flyspeed <number>",
+                "/fly",
+                "/intangible",
+                "/tangible",
+                "/disguise",
+                "/invis",
+                "/vis",  
+                "/tppos <x> <y> <z> <world>",
             ),
-            'buffs': array(       
+            'buffs': array(
+                "/effect ". @plr ." 11 9999 5 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 5 9999 40 true",
+                "/shot give ". @plr ." pyrokenensisblast",
+                "/shot give ". @plr ." purplelightning"                 
             )
         )
