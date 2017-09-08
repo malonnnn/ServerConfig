@@ -19,10 +19,9 @@
             "/buff"
             ),
             'buffs': array(
-               "/effect ". @plr ." 5 9999 1 true",
                "/give ". @plr ." minecraft:iron_sword 1 16:2 name:&3A&fl&0i&bc&fes_&3Sword",
-               "/give ". @plr ." minecraft:iron_chestplate 1 16:2 name:&3A&fl&0i&bc&fes_'s_&3Chestplate",
-               "/give ". @plr ." minecraft:iron_leggings 1 16:2 name:&3A&fl&0i&bc&fes_'s_&3Leggings",
-               "/give ". @plr ." minecraft:iron_boots 1 16:2 name:&3A&fl&0i&bc&fes_'s_&3Boots"
+               "/give ". @plr ." minecraft:iron_chestplate 1 name:&3A&fl&0i&bc&fes_'s_&3Chestplate",
+               "/give ". @plr ." minecraft:iron_leggings 1 name:&3A&fl&0i&bc&fes_'s_&3Leggings",
+               "/give ". @plr ." minecraft:iron_boots 1 name:&3A&fl&0i&bc&fes_'s_&3Boots"
             )
         )
