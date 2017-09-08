@@ -2,7 +2,6 @@ inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
-    damage: 59
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -34,7 +33,17 @@ inventory:
     type: TNT
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: ARROW
+    type: COMMAND
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAFWPT0vDQBDFZ7XQEKMXv0DYc82lt56KoZ78c2g9ich0dwxLNrthM0tbSvDT+b1MRLTO6fH48ea9FCCFq1vrVb1ybPiwwUpAprzTho13D8RCwAQjexAwbf2OAmlIIC1jx755xIZALBOYlr5p0Gk4MlkbcJcvMT9Kpj3LhZQzOYiAcvHy5/WzX71uLdH7QClvfRgMjaF+Gz6dQvmWKuO63Lh8XhTFCV0FPMj+tZ/A5T12vNqTimN7GO7m7uMzgTOjIfup+L32HLJ1VIq6rvTR8UgKuNgEVPVT5DaOs6+fW41M/yIFwBd7H7L9NAEAAA==
+      blockMaterial: COMMAND
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -43,3 +52,8 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 1.5330237
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 4084
