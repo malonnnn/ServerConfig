@@ -55,18 +55,24 @@ bind('player_chat', null, null, @e) {
         }
     }
 
-    if(has_permission(@pname,'has.xp') && !has_permission(@pname,'soijdg.sdgij')){
+    if(@pname == 'The8thHokageTrey'){
         @msgg = split(' ',@msg)
         @finMsg = ''
+        console('yes its him')
         foreach(@word in @msgg){
             if(to_lower(@word) == 'xp'){
                 @word = 'Windows '.@word
             }else if (@word == ';-;'){
                 @word = '(i am a crybaby)'
+            }else if (@word == 'xi'){
+                @word = 'Superbowl '.@word
             }
             @finMsg = @finMsg.@word.' '
         }
         modify_event(message,@finMsg)
+        @msg = @finMsg
+    }else{
+        console('its not him')
     }
     
     # -------------------------------
