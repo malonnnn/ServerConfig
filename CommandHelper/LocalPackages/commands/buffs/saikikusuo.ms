@@ -1,4 +1,4 @@
-5@plr = player()
+@plr = player()
 @hero = associative_array(
             'name': '§4S§4a§4i§4k§4i§2K§2u§2s§2u§2o',
             'class': 'saikikusuo',
