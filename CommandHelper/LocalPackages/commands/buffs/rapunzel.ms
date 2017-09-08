@@ -13,10 +13,12 @@
                 "/buff",
                 "/jump 0-6",
                 "/regen",
-                "/regen <playername>"
+                "/regen <playername>",
+                "/carryplayer <playername>",
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 16 9999 1 true",             
-                "/give ". @plr ." minecraft:iron_shovel 1 name:&dR&5a&ep&dun&6z&5e&dl's_&8Pan"
+                "/give ". @plr ." minecraft:iron_shovel 1 16:2 name:&dR&5a&ep&dun&6z&5e&dl's_&8Pan"
             )
         )
