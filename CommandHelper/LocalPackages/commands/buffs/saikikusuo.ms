@@ -11,23 +11,21 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/levitate" 
-                "/jump 0-9",               
-                "/run 0-9",
+                "/levitate",
+                "/jump 0-7",
+                "/run 0-7",
                 "/haste 0-9",
-                "/flyspeed <number>",
                 "/fly",
                 "/intangible",
                 "/tangible",
-                "/disguise",
                 "/invis",
                 "/vis",  
-                "/tppos <x> <y> <z> <world>",
+                "/tppos <x> <y> <z> <world>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 11 9999 40 true",
-                "/effect ". @plr ." 13 9999 40 true",
-                "/effect ". @plr ." 5 9999 40 true",
+                "/effect ". @plr ." 5 9999 10 true",
+                "/effect ". @plr ." 11 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true",
                 "/shot give ". @plr ." pyrokenensisblast",
                 "/shot give ". @plr ." purplelightning"                 
             )
