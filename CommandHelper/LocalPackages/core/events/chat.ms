@@ -55,6 +55,15 @@ bind('player_chat', null, null, @e) {
         }
     }
 
+    if(@pname == 'DJ_Random'){
+        if(string_position(to_lower(@msg), 'tiki') != -1){
+                @pos = string_position(to_lower(@msg), 'tiki')
+                @origWord = @msg[@pos].@msg[@pos+1].@msg[@pos+2].@msg[@pos+3]
+                @word = 'mr owner'
+                @msg = replace(@msg,@origWord,@word)
+                modify_event(message,@msg)
+        }
+    }
     if(@pname == 'The8thHokageTrey'){
         @msgg = split(' ',@msg)
         @finMsg = ''
