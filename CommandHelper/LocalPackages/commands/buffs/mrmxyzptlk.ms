@@ -18,7 +18,7 @@
                 "/fly",
                 "/magicmrmxyzptlksmortal <playername>",
                 "/disguise",
-                "/gmc",
+                "/gmc ($1/sec)",
                 "/gms",
                 "/undisguise",
                 "/disguiseviewself",
