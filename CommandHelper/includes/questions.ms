@@ -1,14 +1,11 @@
 @questions = array(
 
-'Q1',
-'Q2',
-'Q3',
-'Q4',
-'Q5',
-'Q6',
-'Q7',
-'Q8',
-'Q9',
-'Q10'
+'Who is the server owner?',
+'What kind of staff positions are available?',
+'What is the server IP (actual numbers or domain name is fine)?',
+'How are heroes made?',
+'Who fixes heroes?',
+'How much do OP heroes cost?',
+'What constitutes an OP hero?'
 
 )
