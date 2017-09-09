@@ -1574,3 +1574,51 @@ universalpull:
         cooldown: 2000
     costs:
         mana: 10
+immortalslay:
+    icon: diamond_axe:171
+    icon_disabled: diamond_hoe:171
+    icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+    category: staff
+    worth: 50000
+    actions:
+      cast:
+      - class: Kill
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: magic.electrify
+          sound_volume: 5
+          sound_pitch: -0.25
+          location: origin
+          effectlib:
+             class: AtomEffect
+             particleNucleus: spell_mob
+             colorNucleus: "FFA719"
+             particleOrbital: redstone
+             colorOrbital: "FFA719"
+             iterations: 16
+             radius: 5
+        - class: EffectSingle
+          sound: magic.zap_big
+          sound_volume: 1
+          location: origin
+          effectlib:
+             class: ConeEffect
+             iterations: 16
+             particle: spell_mob
+             color: FFA719
+             lengthGrow: 0.4
+        - class: EffectSingle
+          location: targets
+          color: "FFA719"
+          firework: ball_large
+    parameters:
+        target: other
+        target_type: Damageable
+        cooldown: 500
+        target_breakables: 5
+        bypass_backfire: true
+        bypass_pvp: false
+        range: 64
+    costs:
+        mana: 300
