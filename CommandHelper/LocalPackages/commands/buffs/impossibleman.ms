@@ -17,7 +17,7 @@
                 "/haste 0-9",
                 "/fly",      
                 "/disguise",
-                "/gmc",
+                "/gmc ($1/sec)",
                 "/gms",
                 "/undisguise",
                 "/disguiseviewself",
