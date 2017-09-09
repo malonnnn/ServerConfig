@@ -21,6 +21,14 @@ register_command(kill,
                 tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
                 die()
             }
+            
+            @bal = acc_balance(@plr)
+            if(@bal < 1000 && !has_permission(@plr,'is.op')){
+                msg(color(RED).'Sorry, you need $1000 to use this command')
+                die()
+            }
+            acc_subtract(@plr,1000)
+
             assign(@cooldown, 10)
             assign(@lastUsedKill, import(@plr."lastUsedKill"))
             if(@lastUsedKill + @cooldown > time() / 1000,

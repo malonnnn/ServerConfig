@@ -31,7 +31,7 @@ register_command(magicmrmxyzptlksmortal,
                 die(); # No need to go further					
             
             }
-            
+            @plr = player()
             @player = @args[0]
             @player = player(@player)
             if(ponline(@player)){
@@ -39,6 +39,12 @@ register_command(magicmrmxyzptlksmortal,
                     msg(color(RED).'Sorry, that player is a criminal right now, you please try again later.')
                     die()
                 }
+                @bal = acc_balance(@plr)
+                if(@bal < 1000 && !has_permission(@plr,'is.op')){
+                    msg(color(RED).'Sorry, you need $1000 to use this command')
+                    die()
+                }
+                acc_subtract(@plr,1000)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
                 set_timeout(3000,closure(
