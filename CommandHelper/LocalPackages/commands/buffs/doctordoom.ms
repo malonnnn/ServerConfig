@@ -11,7 +11,7 @@
             'speech': "Life is a game of chess.",
             'powers': array(
                 "/buff",
-                "/kill",
+                "/kill (player) [WARNING: Costs $1000]",
                 "/fly",
                 "/tppos"   
             ),
