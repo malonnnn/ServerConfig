@@ -71,15 +71,20 @@ bind('player_chat', null, null, @e) {
         foreach(@word in @msgg){
             if(to_lower(@word) == 'xp'){
                 @word = 'Windows '.@word
-            }else if (@word == ';-;'){
-                @word = '(i am a crybaby)'
-            }else if (@word == 'xi'){
+            }else if (to_lower(@word) == 'xi'){
                 @word = 'Superbowl '.@word
             }
             @finMsg = @finMsg.@word.' '
         }
         modify_event(message,@finMsg)
         @msg = @finMsg
+        if(string_position(@msg, ';-;') != -1){
+            @pos = string_position(@msg, ';-;')
+            @origWord = @msg[@pos].@msg[@pos+1].@msg[@pos+2]
+            @word = '(i am a crybaby)'
+            @msg = replace(@msg,@origWord,@word)
+            modify_event(message,@msg)
+        }
     }else{
         console('its not him')
     }
