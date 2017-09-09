@@ -1,0 +1,113 @@
+# !---------------------------------------------------------!
+# ! File automatically updated at 09.09.2017 16:37:35
+# ! to plugin version v7.5.0-BETA
+# !---------------------------------------------------------!
+# ! Unfortunatelly due to how Bukkit handles YAML
+# ! configurations, all comments (#) were wiped. 
+# ! 
+# ! For reference values and comments, open
+# ! formatting.yml in the plugin .JAR file.
+# !---------------------------------------------------------!
+
+Enabled: true
+Formatting:
+  Default: Global_Chat
+  global: Global_Chat
+  local: Local_Chat
+  Spy: Spy_Chat
+  Global: Global_Chat
+  Admin: Admin_Chat
+  Bungee: Bungee_Chat
+Range:
+  Enabled: false
+  Distance: 100.0
+  Linked_Worlds:
+    normal:
+    - world
+    - world_nether
+    skyland:
+    - skyland
+    - skyland_nether
+Formats:
+  Private_Message_Sender:
+    Everything:
+      Message: '&7✉ &2has been sent!'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '     &8~ &3Private Message &8~     '
+        - '&8&oSent {timestamp}'
+        - '&3Receiver: &f{receiver}'
+        - '&3Body: &f{message}'
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/tell {player} '
+  Private_Message_Receiver:
+    Everything:
+      Message: '&7✉ &6from {sender}: &f{message}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '     &8~ &3Private Message &8~     '
+        - '&8&oReceived {timestamp}'
+        - '&3Sender: &f{sender}'
+        - ''
+        - '&7Click for a reply.'
+      Click_Event:
+        Action: SUGGEST_COMMAND
+        Value: '/r '
+  Global_Chat:
+    Channel_Prefix:
+      Message: '&b&lG&a&l/{world}&a&l/'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    hero:
+      Message: '{pl_prefix}&a&l/'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    group:
+      Message: '&f{player}&a&l/'
+      Sender_Permission: 'chatcontrol.part.playername'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    Sent_Message:
+      Message: '&r{pl_suffix}{message}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+  Local_Chat:
+    Channel_Prefix:
+      Message: '&a&lL/&f{world}&a&l/'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    hero:
+      Message: '{pl_prefix}&a&l/'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    group:
+      Message: '&f{player}&a&l/'
+      Sender_Permission: 'chatcontrol.part.playername'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+    Sent_Message:
+      Message: '{pl_suffix}{message}'
+      Hover_Event:
+        Action: SHOW_TEXT
+        Values:
+        - '{player}'
+  Spy_Chat:
+    Everything:
+      Message: '&8SPY: [{world}&8]&f {pl_prefix}{player}:{pl_suffix} {message}'

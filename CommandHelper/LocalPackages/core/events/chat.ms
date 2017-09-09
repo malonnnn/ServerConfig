@@ -90,9 +90,9 @@ bind('player_chat', null, null, @e) {
     }
     
     # -------------------------------
-    # replace all messages by black bold with "..." because he is unable to speak
+    # replace all messages by mute characters with "..." because he is unable to speak
     # -------------------------------
-    if(@pgroup == 'blackbolt')
+    if(has_permission(@pname,'is.mute'))
     {
         assign(@msg,"...")
         modify_event(message, @msg)

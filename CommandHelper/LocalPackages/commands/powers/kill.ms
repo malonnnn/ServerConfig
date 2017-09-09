@@ -23,7 +23,7 @@ register_command(kill,
             }
             
             @bal = acc_balance(@plr)
-            if(@bal < 1000 && !has_permission(@plr,'is.op')){
+            if(@bal > 1000 && !has_permission(@plr,'is.op')){
                 msg(color(RED).'Sorry, you need $1000 to use this command')
                 die()
             }

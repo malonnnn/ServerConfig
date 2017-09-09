@@ -1,0 +1,324 @@
+>   IMPORTANT NOTICE ABOUT YOUR OLD SETTINGS
+>
+> Since 7.5.0, the settings.yml file has undergone
+> a major upgrade and most of the configuration
+> sections have been changed. Due to extensive
+> changes, automatic update is not possible.
+> 
+> Your old configuration has been safely renamed
+> to old_settings.yml. You can view it to set up
+> your brand new settings.yml file by yourself.
+> 
+# !---------------------------------------------------------!
+# ! File automatically updated at 14.05.2017 14:24:13
+# ! to plugin version v7.3.14
+# !---------------------------------------------------------!
+# ! Unfortunatelly due to how Bukkit handles YAML
+# ! configurations, all comments (#) were wiped. 
+# ! 
+# ! For reference values and comments, open
+# ! settings.yml in the plugin .JAR file.
+# !---------------------------------------------------------!
+
+Anti_Bot:
+  Cooldown:
+    Rejoin: 10
+    Chat_After_Login: 0
+    Command_After_Login: 0
+  Block_Chat_Until_Moved: false
+  Block_Commands_Until_Moved: []
+  Show_Quit_Message_Only_If_Logged: true
+  Block_Signs_With_Same_Text: true
+  Disallowed_Nicknames: []
+  Block_Book_Commands: true
+  Block_Book_Commands_Whitelist:
+  - /login
+  - /l
+Anti_Caps:
+  Enabled: false
+  Enabled_In_Commands: false
+  Commands_To_Apply: []
+  Points:
+    Warn_Set: spam
+    Amount: 4 * ({capsPercentage} / 2)
+  Ignore_Usernames: false
+  Min_Message_Length: 5
+  Min_Caps_Percentage: 50
+  Min_Caps_In_A_Row: 5
+  Whitelist: []
+Anti_Spam:
+  Similarity_Check:
+    Ignore_Special_Characters: true
+    Ignore_Duplicate_Characters: true
+    Ignore_First_Arguments_In_Commands: false
+  Commands:
+    Delay_Between_Commands: 0
+    Delay_Points:
+      Warn_Set: fastmessages
+      Amount: 3 - {delay}
+    Similar_Percentage_Block: 0
+    Similarity_Points:
+      Warn_Set: spam
+      Amount: 4 * ({similarityPercentage} / 2)
+    Whitelist_Works_Like_Blacklist: false
+    Whitelist_Similarity: []
+    Whitelist_Delay: []
+    Handle_As_Chat:
+    - me
+  Chat:
+    Delay_Between_Messages: 0
+    Delay_Points:
+      Warn_Set: fastmessages
+      Amount: 3 - {delay}
+    Similar_Percentage_Block: 0
+    Similarity_Message_Check_Count: 0
+    Similarity_Points:
+      Warn_Set: spam
+      Amount: 4 * ({similarityPercentage} / 2)
+    Whitelist_Similarity: []
+    Whitelist_Delay: []
+Chat:
+  Channels:
+    Enabled: true
+    Notify_On_Join: true
+    Cancel_Event: false
+    Console_Format: '&8[{channel}] &7{message}'
+  Formatter:
+    Enabled: true
+    Format: Example_Format
+    Global_Format: Global_Chat
+    Spy_Chat_Format: Spy_Format
+    Admin_Chat_Format: Admin_Chat
+    Bungee_Chat_Format: Bungee_Chat
+    Range:
+      Enabled: true
+      Distance: 100.0
+      Linked_Worlds:
+        survival: []
+        greenfield: []
+  Grammar:
+    Insert_Dot:
+      Enabled: false
+      Min_Message_Length: 5
+    Capitalize:
+      Enabled: false
+      Min_Message_Length: 5
+Clear:
+  Broadcast: true
+  Do_Not_Clear_For_Staff: false
+  Console_Lines_To_Clear: 300
+Mute:
+  Broadcast: false
+  Prevent:
+    Writing_Books: false
+    Placing_Signs: false
+  Silence:
+    Join_Messages: false
+    Quit_Messages: false
+    Death_Messages: false
+  Disabled_Commands_During_Mute: []
+Announcer:
+  Log_To_Console: true
+  Ignore_Self: false
+  Bungee: true
+  Sound: ENTITY_ARROW_HIT_PLAYER, 1.0, 0.1
+Admin_Chat:
+  Log_To_Console: true
+  Write_To_File: true
+Bungee_Chat:
+  Enabled_By_Default: false
+  Log_To_Console: true
+  Write_To_File: true
+Private_Messages:
+  Enabled: false
+  Bungee: false
+  Aliases:
+    Tell:
+    - msg
+    - t
+    - whisper
+    Reply:
+    - r
+  Format_Sender: Private_Message_Sender
+  Format_Receiver: Private_Message_Receiver
+Packets:
+  Enabled: false
+  Tab_Complete:
+    Disable: false
+    Disable_Only_In_Commands: true
+    Allow_When_Message_Has_Space: true
+    Allow_When_Length_Above: 0
+Rules:
+  Check_Chat: false
+  Check_Commands: false
+  Check_Packets: false
+  Signs:
+    Check: false
+    Block_On_Rule_Violation: false
+    Drop_Sign: false
+  Books:
+    Check: false
+    Replace_Title: false
+    Replace_Pages: false
+  Items:
+    Check_Anvil: false
+    Replace_Name: false
+  Chat_Ignorer:
+    Enabled: false
+    Sets: {}
+Console_Filter:
+  Enabled: false
+  Log: false
+  Filter_Console_Messages:
+  - Reached end of stream for
+  - Connection reset
+Sound_Notify:
+  Enabled: false
+  Cooldown_Seconds: 10
+  Notify_Only_When_Afk: false
+  Notify_Only_If_Prefixed_With: none
+  Sound: ENTITY_ARROW_HIT_PLAYER, 1F, 1.5F
+  Color: '&a'
+  Enabled_In_Commands:
+  - msg
+  - tell
+  - t
+  - w
+  - r
+Groups:
+  Enabled: false
+  Group_List:
+    vip:
+      Message_Delay: 0
+      Command_Delay: 0
+Points:
+  Enabled: false
+  Repeat_Last_Action: true
+  Smart_Warnings: true
+  Reset_Task:
+    Repeat_Every_Seconds: 20
+    Remove_Points_Amount:
+      global: 5
+      spam: 1
+  Warn_Sets:
+    global:
+      '5':
+      - warn &7Please obey the &2rules &7otherwise you will be &4punished&7.
+      '15':
+      - |-
+        warn &c**** &lHey &c{player} ****
+         &7-> &cThis is your &6final &cwarning!
+      '30':
+      - kick {player} &cKicked for breaking the rules
+    swear:
+      '4':
+      - warn &cYou have received first warning for swearing.
+      '6':
+      - warn &cPlease do not swear, otherwise an action will be taken!
+      '8':
+      - kick {player} &cInappropriate language (last warning)
+      '20':
+      - tempban {player} 30m autoban for swearing
+    spam:
+      '6':
+      - warn &cPlease do not act like spammer.
+      '10':
+      - warn &cPlease do not spam, otherwise you will be banned.
+      '12':
+      - kick {player} &cSpamming the chat (last warning)
+      '26':
+      - tempban {player} 10m autoban for chat spam
+    fastmessages:
+      '6':
+      - warn &cPlease slow down chat messages.
+      '10':
+      - warn &cSlow down chat, otherwise you will be banned.
+      '14':
+      - kick {player} &cSlow down chat (last warning)
+      '30':
+      - tempban {player} 10m autoban for chat spam
+Variables:
+  Custom_Enabled: false
+  Vault:
+    Multi_Prefix: true
+    Multi_Suffix: false
+Writer:
+  Save_Chat_Communication: true
+  Ignore_Players:
+  - ignoredAdmin
+  Write_Commands:
+  - me
+  - msg
+  - m
+  - tell
+  - t
+  - reply
+  - r
+  - mail
+Motd:
+  Enabled: false
+  Delay_Ticks: 2
+  Sound: ENTITY_FIREWORK_LAUNCH, 1F, 0.1F
+  Message:
+  - '&8*--------------------------------------------------*'
+  - '&fHello {player}, we kindly welcome you to &e{server_name}&f and wish you great
+    experience :)'
+  - \n
+  - '&6Version: &f{nms_version} &7/&f 31.12.2016'
+  - '&6Changelog:'
+  - ' &7- &fAdded ChatControl Pro plugin'
+  - \n
+  - '&6Help &7- &f/help &6Settings &7- &f/menu &6Web &7- &f/web'
+  - '&8*--------------------------------------------------*'
+Spy:
+  Prefix: '&8&o[&4&oSpying {player}&8&o] &7'
+  Bungee: false
+  Command_List_Works_Like_Blacklist: false
+  Command_List:
+  - /tell
+  - /msg
+  - /t
+  - /whisper
+  - /r
+  - /reply
+BungeeCords:
+  Enabled: false
+  Enabled_In:
+    Rule_Alerts: true
+    Handler_Alerts: true
+    Admin_Chat: true
+  Prefix: '&5[Bungee/{server_name}] &7'
+MySQL:
+  Enabled: false
+  Enabled_In:
+    Channels: true
+    Points: true
+  Connection:
+    Host: localhost
+    Database: minecraft
+    Port: '3306'
+    User: ''
+    Password: ''
+    Connector_Advanced: jdbc:mysql://{host}:{port}/{database}?autoReconnect=true
+    Table: ChatControl_data
+  Assume_Shared: false
+Listener_Priority:
+  Formatter: NORMAL
+  Checker: NORMAL
+Translate_Diacritical_Marks: true
+Regex_Timeout_Milis: 100
+Locale: en
+Log_Lag_Over_Milis: 100
+Verbose_Rules: true
+Silent_Startup: false
+Regex_Strip_Colors: true
+Reset_Cache_On_Quit: false
+Enforce_New_Line: false
+Server_Name: default
+Check_Updates: true
+Debug: false
+Version: 17
+Debugger:
+  Sections: []
+  Log: false
+  Save: true
