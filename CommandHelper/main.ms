@@ -1,8 +1,14 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
-        if(pmode(@player) != 'CREATIVE' || has_permission(@player,'is.op') || !has_permission(@player,'in.survival')){
-            die()
+        if(pmode(@player) != 'CREATIVE'){
+            continue()
+        }
+        if(has_permission(@player,'is.op')){
+            continue()
+        }
+        if(!has_permission(@player,'in.survival')){
+            continue()
         }
         @bal = acc_balance(@player)
         if(@bal > 5){

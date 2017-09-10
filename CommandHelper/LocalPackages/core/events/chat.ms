@@ -67,7 +67,6 @@ bind('player_chat', null, null, @e) {
     if(@pname == 'The8thHokageTrey'){
         @msgg = split(' ',@msg)
         @finMsg = ''
-        console('yes its him')
         foreach(@word in @msgg){
             if(to_lower(@word) == 'xp'){
                 @word = 'Windows '.@word
@@ -85,8 +84,6 @@ bind('player_chat', null, null, @e) {
             @msg = replace(@msg,@origWord,@word)
             modify_event(message,@msg)
         }
-    }else{
-        console('its not him')
     }
     
     # -------------------------------

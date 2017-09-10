@@ -1,0 +1,14 @@
+gmc:/gmc = >>>
+    @player = player()
+    @bal = acc_balance(@player)
+
+    if(@bal < 100){
+        msg(color(RED).'Sorry, you need at least $100 to use this command, then it\'s $1/sec after that.')
+        die()
+    }
+
+    acc_subtract(@player,100)
+    msg(color(GREEN).'$100 charged for GMC. Warning: costs $1/sec to stay in GMC.')
+
+    sudo('/gamemode creative')
+<<<
