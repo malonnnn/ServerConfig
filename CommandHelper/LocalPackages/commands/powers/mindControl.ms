@@ -80,6 +80,35 @@ register_command(mindcontrol,
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vHero . '.ms')
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
+                @markerPloc = import(@player.'mindControlPlayerOrigLocation')
+                @markerPloc['y'] += 1
+                @marker = spawn_entity('ZOMBIE',1,@markerPloc)[0]
+
+                set_timeout(1000,closure(
+                    try{
+                        set_mob_name(@marker,@player)
+                    }catch(Exception @e){
+                        msg(color(RED).'Sorry, you can\'t mind control from this location, sorry!')
+                        die()
+                    }
+                ))
+
+                export(@player.'mindControlEntityID',@marker)
+
+                bind(entity_damage,array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
+                    cancel()
+                    if(array_index_exists(@e,'damager')){
+                        damage_entity(@idd,(@e['amount']*10))
+                    }else{
+                        die()
+                    }
+                    tmsg(@playerr,'Your body is being damaged!')
+                }
+
+                bind(player_death,array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                    _mindControlStop(@playerr)
+                }
             }catch(Exception @e){
                 runas(~console,'/disguiseplayer '.@player.' player '.@vic)
             }
@@ -100,11 +129,6 @@ register_command(mindcontrol,
                     if (has_permission(@plor, 'is.officer')){
                         tmsg(@plor, color(GRAY).color(ITALIC).'*MindController*: '.@playerr)
                     }
-                }
-                try{
-                    unbind(@vicc.'mindControlForward')
-                }catch(Exception @e){
-                    
                 }
             }
             bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player, @vicc = @vic){
@@ -232,6 +256,35 @@ register_command(mindcontrolnear,
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vHero . '.ms')
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
+                @markerPloc = import(@player.'mindControlPlayerOrigLocation')
+                @markerPloc['y'] += 1
+                @marker = spawn_entity('ZOMBIE',1,@markerPloc)[0]
+
+                set_timeout(1000,closure(
+                    try{
+                        set_mob_name(@marker,@player)
+                    }catch(Exception @e){
+                        msg(color(RED).'Sorry, you can\'t mind control from this location, sorry!')
+                        die()
+                    }
+                ))
+
+                export(@player.'mindControlEntityID',@marker)
+
+                bind(entity_damage,array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
+                    cancel()
+                    if(array_index_exists(@e,'damager')){
+                        damage_entity(@idd,(@e['amount']*10))
+                    }else{
+                        die()
+                    }
+                    tmsg(@playerr,'Your body is being damaged!')
+                }
+
+                bind(player_death,array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+                    _mindControlStop(@playerr)
+                }
             }catch(Exception @e){
                 runas(~console,'/disguiseplayer '.@player.' player '.@vic)
             }
@@ -252,11 +305,6 @@ register_command(mindcontrolnear,
                     if (has_permission(@plor, 'is.officer')){
                         tmsg(@plor, color(GRAY).color(ITALIC).'*MindController*: '.@playerr)
                     }
-                }
-                try{
-                    unbind(@vicc.'mindControlForward')
-                }catch(Exception @e){
-                    
                 }
             }
             bind(player_quit, associative_array('id': @player.'mindControlVicLeave'), associative_array('player': @vic), @event, @playerr = @player, @vicc = @vic){

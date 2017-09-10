@@ -4,10 +4,17 @@ proc(_mindControlStop, @player,
     if(@mindControlTimer != null){
         clear_task(@mindControlTimer)
     }
+    @mindControlTimer = import(@player.'mindControlEntityTimer')
+    if(@mindControlTimer != null){
+        clear_task(@player.'mindControlEntityTimer')
+    }
 
     unbind(@player.'mindControlChatForward')
     unbind(@player.'mindControlPlrLeave')
     unbind(@player.'mindControlVicLeave')
+    unbind(@player.'mindControlEntityDamaged')
+    
+    entity_remove(import(@player.'mindControlEntityID'))
 
     export(@player.'mindControlling',false)
 

@@ -1,5 +1,16 @@
 test1:/test1 = >>>
+        @player = player()
+        @ploc = ploc(@player)
+        @ploc['y'] += 1
+        @marker = spawn_entity('ZOMBIE',1,@ploc)[0]
 
-    broadcast('test')
+
+        set_timeout(1000,closure(
+            set_mob_name(@marker,@player)
+        ))
+
+        set_timeout(5000,closure(
+           entity_remove(@marker)
+        ))
 
 <<<
