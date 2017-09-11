@@ -25,7 +25,7 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # if message is 565, display a link to a picture of the "superhero warehouse"
     # -------------------------------
-    if(@msg == '565' && @pgroup != "quarantine")
+    if(@msg == '565' && !has_permission(@pname,'is.criminal'))
     {
         set_timeout(1000, closure(
             tmsg(@pname, color(dark_red) . color(random) . "k" . color(gray) . "Retrieving classified image for your viewing...")
@@ -304,12 +304,11 @@ bind('player_chat', null, null, @e) {
     if(has_permission("is.criminal")){
         @cooldown = 60
     }else if(has_permission('chat.cooldown')){
-        @cooldown = 5
+        @cooldown = 0
     }
     
     if(has_permission(@pname,'change.chat')){
         @numb = rand(0,2)
-        console(@numb)
         if(@numb == 1 || reg_match('(?i)w+[. ,-_]*(o|0)+[. ,-_]*y+',@msg)){
             @numba = rand(0,21)
             if(@numba == 0){
@@ -365,6 +364,7 @@ bind('player_chat', null, null, @e) {
     modify_event(message, @msg)
 
     @lastmessage = import(@pname.'lastmessage')
+    console('testpoo')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
     {

@@ -1,0 +1,14 @@
+tp:/tp $plr = >>>
+
+    @player = player()
+    @vic = $plr
+    @vic = player(@vic)
+
+    if(!has_permission(@vic,'in.survival') || has_permission(@vic,'skdjf.sdfsdf')){
+        msg(color(RED).'Sorry, that player is in a minigame or other protected area where you can\'t TP to right now.')
+        die()
+    }
+
+    runas(~console,'/teleport '.@player.' '.@vic)
+
+<<<

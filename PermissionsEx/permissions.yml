@@ -406,7 +406,7 @@ groups:
     - permissions.user.rank.promote
     - permissions.user.promote.default
     - permissions.user.demote.default
-    - essentials.tp
+    - ch.alias.tp
     - OpenInv.editinv
     - OpenInv.editender
     worlds:
@@ -612,7 +612,7 @@ groups:
         - ch.alias.underworld
         - -essentials.protect.damage.fall
         - ch.alias.apocalypse
-        - essentials.tp
+        - ch.alias.tp
         - essentials.fly
         - essentials.speed.fly
         - essentials.speed
@@ -2442,7 +2442,7 @@ groups:
         - ch.alias.haste5
         - ch.alias.haste6
         - ch.alias.haste7
-        - essentials.tp
+        - ch.alias.tp
   dannyphantom:
     inheritance:
     - commonherotraits
@@ -2496,7 +2496,7 @@ groups:
         - ch.alias.confuse
         - ch.alias.unconfuse
         - ch.alias.speak
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.shrink
         - ch.alias.grow
         - ch.alias.apokolips
@@ -2704,7 +2704,7 @@ groups:
       survival112:
         permissions:
         - powers.onepunch
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.tphere
   deathstroke:
     inheritance:
@@ -2964,7 +2964,7 @@ groups:
       survival112:
         permissions:
         - ch.alias.kill
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.tphere
         - essentials.fly
         - essentials.gamemode
@@ -3544,7 +3544,7 @@ groups:
     inheritance:
     - commonherotraits
     options:
-      prefix: '&r&6D&7a&6u&7n&6t&7l&6e&7s&6s&a/&fxTonyDCx'
+      prefix: '&rxTonyDCx'
       suffix: '&r&f'
     worlds:
       survival112:
@@ -4629,7 +4629,7 @@ groups:
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
         - powers.wallrun
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.goku
         - essentials.fly
         - essentials.speed.fly
@@ -5492,7 +5492,7 @@ groups:
         - essentials.gamemode
         - essentials.gamemode.survival
         - ch.alias.gmc
-        - essentials.tp
+        - ch.alias.tp
         - libsdisguises.disguise
         - libsdisguises.undisguise
         - libsdisguises.disguise.player.-setinvisible
@@ -6705,7 +6705,7 @@ groups:
         - ch.alias.speak
         - ch.alias.confuse
         - ch.alias.unconfuse
-        - essentials.tp
+        - ch.alias.tp
         - -essentials.protect.damage.fall
         - ch.alias.mew
         - essentials.fly
@@ -6734,7 +6734,7 @@ groups:
         - ch.alias.speak
         - ch.alias.confuse
         - ch.alias.unconfuse
-        - essentials.tp
+        - ch.alias.tp
         - essentials.speed.fly
         - essentials.speed
         - -essentials.protect.damage.fall
@@ -6809,6 +6809,12 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - -chatcontrol.chat.format.color.reset
+    - -chatcontrol.chat.format.color.italic
+    - -chatcontrol.chat.format.color.magic
+    - -chatcontrol.chat.format.color.strikethrough
+    - -chatcontrol.chat.format.color.underline
+    - -chatcontrol.chat.format.color.bold
     - enable.tag
     - multiverse.access.lexstarklabs
     - ch.alias.police
@@ -7384,6 +7390,7 @@ groups:
         - essentials.protect.pvp
       spleef:
         permissions:
+        - -ch.alias.joinblue
         - essentials.build.interact.*
         - essentials.build.break.46
       spleeflobby:
@@ -7487,7 +7494,7 @@ groups:
         - essentials.gamemode.survival
         - ch.alias.gmc
         - ch.alias.tphere
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.empower
         - libsdisguises.disguise
         - libsdisguises.undisguise
@@ -7818,7 +7825,7 @@ groups:
       survival112:
         permissions:
         - -essentials.protect.entitytarget.bypass
-        - essentials.tp
+        - ch.alias.tp
         - ch.alias.shrink
         - ch.alias.grow
         - kill.immune
@@ -8079,22 +8086,16 @@ groups:
         - ch.alias.haste8
         - ch.alias.haste9
   spleefgod:
-    inheritance:
-    - commonherotraits
     options:
       prefix: '&4&lSpleef&e&lGod&a&l/'
       suffix: ''
   helper:
-    inheritance:
-    - mortal
     options:
       prefix: '&e&kI&4&k|&eHelper&4&k|&e&kI&a&l/'
       suffix: ''
   engineer:
-    inheritance:
-    - mortal
     options:
-      prefix: '&4&oC&7&oyb&8&oe&7&or&2&oG&7&oen&9&oe&7&ot&a&oi&7&ocs &fEngineer&a&l/'
+      prefix: '&c&lD&e&lN&a&lA &f&lEngineer&a&l/'
       suffix: ''
   omega:
     inheritance:
@@ -9767,7 +9768,7 @@ groups:
         - ch.alias.gmc
         - essentials.gamemode
         - essentials.warps.*
-        - essentials.tp
+        - ch.alias.tp
         - essentials.tppos
   starfire:
     inheritance:
@@ -13588,7 +13589,8 @@ users:
     worlds:
       fightclub:
         permissions: []
-    permissions: []
+    permissions:
+    - ch.alias.joinblue
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     permissions:
     - chat.cooldown
@@ -13599,7 +13601,7 @@ users:
     - is.infomanager
     group:
     - helper
-    - missmartian
+    - doctormanhattan
     options:
       name: iiSimqlyHqrk
     worlds:
@@ -13760,7 +13762,7 @@ users:
     permissions:
     - is.secretary
     group:
-    - starbutterfly
+    - mortal
     options:
       name: iiSimqlyStqr
     worlds:
@@ -13824,6 +13826,7 @@ users:
     options:
       name: Jiren_The_Grey
     permissions:
+    - chat.cooldown
     - powers.saikiinvis
     worlds:
       fightclub:
@@ -14074,7 +14077,7 @@ users:
       name: KillerGames2003
   0e88e52e-2945-464e-b4ba-e1e162c6786d:
     group:
-    - clayface
+    - cyborg
     options:
       name: Miner_Myles
     permissions: []
@@ -14402,7 +14405,7 @@ users:
       name: Brettconk
   eca9177a-9ef2-4e69-b1fc-804d9d848303:
     group:
-    - magneto
+    - bluelanternbarryallen
     options:
       name: mrshiftyy
     worlds:
@@ -15501,7 +15504,7 @@ users:
       name: kjawesome345
   fb598fc0-5e31-42ab-8499-8c6def68beec:
     group:
-    - starlord
+    - arsenal
     options:
       name: TheLennyFace
     permissions:
@@ -15527,7 +15530,7 @@ users:
       name: davecamerini
   40dff021-4c35-47ed-b1d9-517f64e4e972:
     group:
-    - mortal
+    - infinitysilversurfer
     options:
       name: 190snake
   071da9f3-f502-40b4-88ff-3133bfbf7e13:
@@ -17180,7 +17183,7 @@ users:
       name: Tyebick
   09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
     group:
-    - kidflashwallywest
+    - antman
     options:
       name: ItzWallyW_
     permissions: []
@@ -19746,7 +19749,7 @@ users:
       name: jaydentharpe47
   3171ad72-84a2-4519-a3f4-77ea38085dc9:
     group:
-    - spiderwomangwenstacy
+    - apocalypse
     options:
       name: Acornful
   a319373f-9221-4f36-ac61-e0cc4d69f46c:
@@ -20013,7 +20016,7 @@ users:
       name: bradenfab
   4984b457-d51b-4041-975f-280995a8e2ff:
     group:
-    - darkseid
+    - martianmanhunter
     options:
       name: Charizard543210
   6a355992-be49-422a-bb5c-52f9f6f7d8ca:
@@ -20162,7 +20165,7 @@ users:
   56684042-6bb7-4164-bdcf-c98bf73c54f7:
     permissions: []
     group:
-    - vision
+    - raven
     options:
       name: x_Frostburn_x
   4ed5be22-0896-48fc-90f6-b28711e25e75:
@@ -20224,7 +20227,7 @@ users:
       name: Clairecupit
   7e480e63-434e-418e-bb45-ffed053d2111:
     group:
-    - warmachine
+    - mephisto
     options:
       name: Luehrcy
   17b6f911-5376-4b25-94d0-02902d67e69c:
@@ -20259,3 +20262,16 @@ users:
     permissions: []
     options:
       name: TuNaNTee
+  49c1aaa6-8596-4bc2-b621-717e44d9067f:
+    group:
+    - batman
+    options:
+      name: ILoveShuffling
+  3f741f5b-f365-4819-8746-8d7c77d49505:
+    group:
+    - flashwallywest
+    options:
+      name: Golfmax1409
+  d4204482-a067-40ed-87ba-b38b6494b101:
+    group:
+    - robindamianwayne
