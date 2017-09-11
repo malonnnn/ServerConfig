@@ -39,14 +39,8 @@ register_command(confuse,
                 die()
             }
             
-            assign(@cooldown, 30)
-            
-            assign(@lastConfuse, import(@player."usedConfuse"))
-            if(@lastConfuse + @cooldown > time() / 1000,
-                die(color(red)."You must cool down before you can confuse anyone again!")
-            )
-            export(@player."usedConfuse", time() / 1000)
-            
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('confuse',30,@player)
             
             if(ponline(@victim)){
                 export(@victim."isConfused", "true")

@@ -126,19 +126,17 @@ bind('player_chat', null, null, @e) {
     if(import(@pname."isConfused") == "true"){
         @words = split(' ',@msg)
         @numWords = array_size(@words)
-        if(@numWords == 1){
+        if(@numWords > 1){
+            @newWordOrder = array_rand(@words,@numWords,false)
+            @newSentence = ''
+            foreach(@wd in @newWordOrder){
+                @newSentence = @newSentence.@wd.' '
+            }
+            @msg = @newSentence
+            modify_event(message, @newSentence)
+        }else{
             cancel()
         }
-        @newNumOfWords = @numWords
-        @newMsg = ''
-        for(@i = 0, @i < @numWords, @i++){
-            @randWord = rand(0,@newNumOfWords)
-            @newMsg = @words[@randWord] . " " . @newMsg
-            array_remove(@words, @randWord)
-            @newNumOfWords = @newNumOfWords - 1
-            @numWords = @numWords - 1
-        }
-        modify_event(message, @newMsg)
     }
     
     # -------------------------------
