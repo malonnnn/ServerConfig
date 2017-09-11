@@ -11,7 +11,7 @@ register_command(speedforcebuffs,
         executor: closure() {        
             
             runas(~console,"/effect ".player()." 5 9999 254 true")
-                
+            msg(color(RED).'You can now one-punch anyone who you bring to the speedforce using /speedforceteleport <player>')                
         }
     )
 )

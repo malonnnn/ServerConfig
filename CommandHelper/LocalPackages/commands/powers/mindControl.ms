@@ -347,6 +347,8 @@ register_command(stopmindcontrol,
                 die()
             }
 
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
+            _mindControlStop(@player)
             
             
         }
