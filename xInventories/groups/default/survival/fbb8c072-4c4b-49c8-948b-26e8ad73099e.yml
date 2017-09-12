@@ -1,4 +1,33 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:strong_healing
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §2D§aa§0n§fn§ay §0P§ah§2a§0n§at§fo§2m §e§lD§a§lN§4§lA
+      lore:
+      - dannyphantom
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -6,6 +35,6 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.4570103
+exhaustion: 3.709007
 armor_contents: {}
 ender_chest: {}

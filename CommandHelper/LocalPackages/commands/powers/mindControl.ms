@@ -88,7 +88,7 @@ register_command(mindcontrol,
             @marker = spawn_entity('ZOMBIE',1,@markerPloc)[0]
 
             set_mob_name(@marker,@player)
-            console(@player.'mindControlEntityID',@marker)
+            console(@marker)
             export(@player.'mindControlEntityID',@marker)
 
             bind(entity_damage,array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
@@ -104,6 +104,10 @@ register_command(mindcontrol,
             bind(player_death,array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
+            }
+            bind(player_command,array('id':@vic.'mindControlCommandCancel'),array('player':@vic),@e,@vicc = @vic){
+                cancel()
+                tmsg(@vicc,color(RED).'You are being mind controlled, you can\'t use any commands right now!')
             }
 
             @mindControlTimer = set_timeout(30000,closure(
@@ -257,7 +261,7 @@ register_command(mindcontrolnear,
             @marker = spawn_entity('ZOMBIE',1,@markerPloc)[0]
 
             set_mob_name(@marker,@player)
-            console(@player.'mindControlEntityID',@marker)
+            console(@marker)
             export(@player.'mindControlEntityID',@marker)
 
             bind(entity_damage,array('id':@player.'mindControlEntityDamaged'),array('id':@marker),@e,@idd = puuid(@player),@playerr = @player){
@@ -273,6 +277,10 @@ register_command(mindcontrolnear,
             bind(player_death,array('id':@player.'mindControlDeath'),array('player':@player),@e,@playerr = @player){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mindControlStop.ms')
                 _mindControlStop(@playerr)
+            }
+            bind(player_command,array('id':@vic.'mindControlCommandCancel'),array('player':@vic),@e,@vicc = @vic){
+                cancel()
+                tmsg(@vicc,color(RED).'You are being mind controlled, you can\'t use any commands right now!')
             }
 
             @mindControlTimer = set_timeout(30000,closure(

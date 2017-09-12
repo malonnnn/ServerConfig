@@ -12,3 +12,31 @@ tp:/tp $plr = >>>
     runas(~console,'/teleport '.@player.' '.@vic)
 
 <<<
+tp:/tp $plr1 $plr2 = >>>
+    @player = player()
+    @bal = acc_balance(@player)
+    @isOp = has_permission(@player,'is.op')
+    if(@bal < 100 && !@isOp){
+        msg(color(RED).'Sorry, you need $100 to use this command')
+        die()
+    }
+    if(!@isOp){
+        acc_subtract(@player,100)
+    }
+    @plr1 = $plr1
+    @plr1 = player(@plr1)
+    @plr2 = $plr2
+    @plr2 = player(@plr2)
+
+    if(!has_permission(@plr1,'in.survival') || has_permission(@plr1,'skdjf.sdfsdf')){
+        msg(color(RED).'Sorry, but '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
+        die()
+    }
+    if(!has_permission(@plr2,'in.survival') || has_permission(@plr2,'skdjf.sdfsdf')){
+        msg(color(RED).'Sorry, but '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
+        die()
+    }
+
+    runas(~console,'/teleport '.@plr1.' '.@plr2)
+
+<<<

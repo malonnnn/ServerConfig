@@ -18,6 +18,7 @@ proc(_mindControlStop, @player,
     export(@player.'mindControlling',false)
 
     @vic = import(@player.'mindControlVictim')
+    unbind(@vic.'mindControlCommandCancel')
     export(@vic.'beingMindControlled',false)
 
     set_ploc(@vic, ploc(@player))
