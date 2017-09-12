@@ -22,3 +22,5 @@
                 "/shot give ". @plr ." solarenergybeam"   
             )
         )
+
+--Powers that need to be added: https://www.youtube.com/watch?v=fOi-TMwrxMo
