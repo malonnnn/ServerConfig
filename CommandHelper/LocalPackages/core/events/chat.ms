@@ -300,7 +300,7 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
     if(has_permission("is.criminal")){
-        @cooldown = 60
+        @cooldown = 0
     }else if(has_permission('chat.cooldown')){
         @cooldown = 0
     }

@@ -1,12 +1,22 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 29.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.7940202
+saturation: 10.0
+exhaustion: 3.4040194
 armor_contents: {}
 ender_chest:
   '0':
@@ -167,3 +177,24 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: COOKED_BEEF
     amount: 64
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 1
+    duration: 199912
+  '1':
+    type: JUMP
+    level: 5
+    duration: 199859
+  '2':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 199912
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199912
+  '4':
+    type: SPEED
+    level: 3
+    duration: 199940

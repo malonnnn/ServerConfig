@@ -1,77 +1,64 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      display-name: §3I§1c§be §bSp§3i§1ke§1 «×»
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '36':
+    type: DIAMOND
+  '4':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 25
+    type: GRILLED_PORK
+    amount: 7
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: Wayne Family
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bIce Glide
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
-hunger: 20
-exp: 0.2857143
-exp-level: 0
+        DURABILITY: 3
+        MENDING: 1
+health: 26.0333309173584
+hunger: 17
+exp: 0.14876038
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.1737992
+exhaustion: 1.8939816
 armor_contents:
-  boots:
+  chestplate:
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 25
+    type: ELYTRA
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: §bIce Glide
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+        DURABILITY: 3
+        MENDING: 1
 potion_effect:
   '0':
-    type: JUMP
-    level: 5
-    duration: 194891
-  '1':
     type: HEALTH_BOOST
-    level: 4
-    duration: 193183
+    level: 9
+    duration: 196582
+  '1':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 196582
   '2':
     type: SPEED
-    level: 50
-    duration: 198560
-  '3':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 193183
-  '4':
-    type: FAST_DIGGING
-    level: 10
-    duration: 180708
-  '5':
-    type: REGENERATION
-    level: 3
-    duration: 193183
+    level: 2
+    duration: 196783
