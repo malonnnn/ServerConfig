@@ -18,8 +18,8 @@
                 "Shoots fireballs with bare hand"
             ),    
             'buffs': array(
-                "/effect ". @plr ." 5 9999 100 true",
-                "/effect ". @plr ." 11 9999 30 true",
+                "/effect ". @plr ." 5 9999 4 true",
+                "/effect ". @plr ." 11 9999 254 true",
                 "/shot give ". @plr ." kiblast
             ) 
         )       
