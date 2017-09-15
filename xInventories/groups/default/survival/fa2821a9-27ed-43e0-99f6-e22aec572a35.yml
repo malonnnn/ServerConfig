@@ -1,48 +1,65 @@
 inventory:
-  '36':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of Sans
+      internal: H4sIAAAAAAAAAB2Nya6bSABF6SgtvVj9GdlZT8yDF1mAsc0MBkMBO4rBZsZQYMw3Zdkf2K+zvOfo6O4wbIf949Vz0zhjX5RN/oF9UzPsJyFQ1OHAJ588xxGfTFYcPpOM+ZoZxycMRRUFn++w3Vc05CMq8+kH9oHyFc1jPu0wDPvrA/vhlfcu+Z98++3qiYIDEvW2AG2nrdmQKco9M1DzykuvLpVNUKR9HiEbqG5aG0YMgT1pba0ulRsNL1Ia2KXwxzuTRHJw7XsDj4aRg3FPeuYZCctsAU8WNyLNj/wN1XkFbbxNmTdH3nCRLrlr8l5vIFlSWMjZidXncK++xC0OOA95fZXh5p6kz6FqRI9zsR2BMlHOo/Iby632N4txGehojnG6XA4HwkfmAueeg3rPG9UITOtNupnXtXFJgfjmzEFbHOnVENO0XYmrrjvZePA4sLc7Q3zEjCcC2BvNsGSCnDGx/JzHDo5yJpBuHYzilZVxBIeiE+tHcof16HWHVJuPZ9uTPKcwKUS/thLw76d/mM5aO3vBVWQynhHlarVPYY6s7rgh3wGkLYRM6B/F2+SfcIU7iMnlSOusOsRqK0FVygkWJoaLyI7WjoBOxRFp0ahfnlfjhtZh0XScCFVO0eeYbzM+rPqnapKBrRt7rjtrdXCR0bYusaRVgp3Ls1Qw8yYpwT1iOkHx/MyRKOByvIKyPZ1S3P26+vXiQidUbdBCv5fveYlwdswZy3tKpS2pXlUosQ2HEK+6FnoBThDNqWbNW5YEamlwUVjpIXWycvJA1+YEVt6QLActd1N6K9xg3ctz8ko0PBT8MMIFy1Be/HA8tSVFO8861ktNIJO0FK94D2GAeN1UXvho6XdRepqpkae/PrC/g6SZc+zf/K0RCSCblHYfMBRLuzqRpuwTlmyu5nZfrSqd1E56Qyoe4CXQ4qPKqZXImJXK2rfsYW0RZcpuHVfNI5bdh0VdKYs6EWaltXGVNWr5KlNFW+K2mWKffUDgl3apbRFgtz+OajrYnoks1Bq/DdYMNO8YXEu7c98Z8L++3SZXXDJtg02tBr4IiV8Y9oF9t5I2x75PSTdh2H+HpwLR4wMAAA==
+      skull-owner: sans
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 5
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+        OXYGEN: 3
+        BINDING_CURSE: 1
+      repair-cost: 3
 armor_contents:
-  boots:
+  helmet:
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: DIAMOND_HELMET
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
-hunger: 19
-exp: 0.0
-exp-level: 0
+        OXYGEN: 3
+        BINDING_CURSE: 1
+      repair-cost: 3
+health: 20.0
+hunger: 20
+exp: 0.7380954
+exp-level: 16
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.6790041
+exhaustion: 1.4233992
 ender_chest: {}
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 195842
+    type: SPEED
+    level: 0
+    duration: 211
   '1':
-    type: FAST_DIGGING
-    level: 10
-    duration: 196099
-  '2':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 195842
-  '3':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 195842
+    level: 15
+    duration: 114497
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 114497
+  '3':
+    type: REGENERATION
+    level: 4
+    duration: 114497
