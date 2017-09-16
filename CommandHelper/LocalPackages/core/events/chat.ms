@@ -354,7 +354,7 @@ bind('player_chat', null, null, @e) {
 
             }
             modify_event(message, @msg)
-            @cooldown = 10
+            @cooldown = 0
         }
     }
     
