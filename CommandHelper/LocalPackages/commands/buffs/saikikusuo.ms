@@ -26,7 +26,6 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 13 9999 1 true",
-                "/shot give ". @plr ." pyrokenensisblast",
-                "/shot give ". @plr ." purplelightning"                 
+                "/shot give ". @plr ." pyrokenesisblast",               
             )
         )
