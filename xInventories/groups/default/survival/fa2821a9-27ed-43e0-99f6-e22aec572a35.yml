@@ -15,6 +15,7 @@ inventory:
     ==: org.bukkit.inventory.ItemStack
     type: INK_SACK
     damage: 4
+    amount: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -24,6 +25,69 @@ inventory:
         FIRE_ASPECT: 2
   '9':
     ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 2
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 4
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 5
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: 'VIP Room '
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 7
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 3
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAPER
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Room 1
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAILS
+    amount: 13
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+  '18':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
       ==: ItemMeta
@@ -32,34 +96,105 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-armor_contents: {}
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 8
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEETROOT_SEEDS
+    amount: 2
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 8
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 6
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_BEEF
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 6
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 19
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 38
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 19
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 60.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.35294127
+exp-level: 5
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.79461
+exhaustion: 3.060382
 ender_chest: {}
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 9
-    duration: 190712
+    duration: 185366
   '1':
     type: SPEED
     level: 50
-    duration: 199814
+    duration: 198895
   '2':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 190712
+    duration: 185366
   '3':
     type: FAST_DIGGING
     level: 10
-    duration: 198693
+    duration: 77225
   '4':
     type: REGENERATION
     level: 1
-    duration: 190712
+    duration: 185366
