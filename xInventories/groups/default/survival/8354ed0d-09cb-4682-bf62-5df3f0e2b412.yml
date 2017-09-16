@@ -1,5 +1,5 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -9,15 +9,25 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 29.0
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 10.0
-exhaustion: 3.4040194
-armor_contents: {}
+saturation: 0.0
+exhaustion: 3.4040072
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -176,25 +186,26 @@ ender_chest:
   '17':
     ==: org.bukkit.inventory.ItemStack
     type: COOKED_BEEF
-    amount: 64
+    amount: 62
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAD2QyY6jWBBFqVK3lJnqz+idlTJgm2GRC8yMmcz4eOoNw2MygxOwGb6pPrJdUqsXsbhXuici7geGfWB/ubdH09hDn1cNesN+qhn29zHPGYrOT59UGiefR+KAPtk8zj7RMaPpND4yNM18YB+v0B0NU4XGd+xtQsv0GND4gWHYjzfs3a2KLv7t/Pw16tvhjMebdtFjZeDv4vfh0DGzQIsH/BTiwfW7PV90CNaDkeii1AU9sxAJ7oOOubV4bFI7jUuIOEcD7pIV7nFEuCygHaFHd4XPZ4O9na72qk0lwK8lB+4le9iLEnd2Fm8cW6fHuQdCjdV34kkYwnKhAuWSZ3omA9gM+3FMd6R/7S0NrJKcmD7v7iy3yZzshp9ZAL4DJOMH4ixcxiZns1WBS2LPVnY3ZHxP+VQvVKpYzJPSlVD2i5kTrce31zUL9JFOWZ6Q+qOF6EEJNz1/8sllZno2wdedfDu70lxbEvVQi111bG0X58J9B5wEIITIXcXN5r4bgv0QTYOQcb7Dac7p0TybLtmkUTnaFQNSuUi0ikuj8BjsGx4w/DoOLb/SSlqrZI84e3eD1iT3Syv3dt+trZRohwQnbzdDmPwOrLOlFd35tj8PQ55dn0izlIZUVLWtXLrbxFpMg2rHplqVBaEWT/1E78IJx5moVa8omgjm7vdLmC2sWMWeyF06dhNlH7TrVlqnofyOLUvTp3hOKFUKG2TTpKuGSXdCLmEPi64t9WFwLWnTg8IeI5ICThpHO2rdEWm3B3edL66ATk5KOUtMReROqXdh3Y9X/uESY7fscXcrjPIkrHfu0KjJwuTwG21nVjIdimyNWcDrJ8rTKwKp3QLfsimrYOUuFBgte3q8HqUpMET+Qhfp1xv2ZxA3D/TjH7RqeBwSTXpwygRwlVWLhCGom7mls+FFqylwo9qd14SE90QONMirlFo7LawL0iQjwmzNMqqvi0H6J9hKN+g5N3PL6si7Hl+Mo1rNVapoT9g2I/RPZRL6lVVpKgSNlil3LwvTSuc1HIISz4DWpKtKvW7yXLyx1PpOqy3RZLJ0i4BT/qefUA5Gte6rlFzuiauxrzyRtvNvbp8pzmxVzDOTg2OmBCsExiMJmwcMzTUKIa63pybj2f/36Rtsjc1fTC/Fo83HoRyRr19WcytmI4xe4xOWrG5WKJJQhi2UzcqQg9byzAaG/qsn4+VrpSX4RLSJR0vWKrUj2Pz69YVhb9gfZtwi7F1Bqzpt7qPAsH8B5s/T/5AEAAA=
+      skull-owner: HeyItzSug
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 199912
-  '1':
-    type: JUMP
-    level: 5
-    duration: 199859
-  '2':
     type: HEALTH_BOOST
-    level: 4
-    duration: 199912
-  '3':
+    level: 9
+    duration: 184614
+  '1':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 199912
-  '4':
-    type: SPEED
-    level: 3
-    duration: 199940
+    duration: 184614
+  '2':
+    type: REGENERATION
+    level: 4
+    duration: 184614
