@@ -13,6 +13,19 @@
 'How do you remove your superpowers?',
 'What command lists all the other commands you can use?',
 'What command do you type to get the list of powers your character has?',
-'How do you get a list of characters that you can be?'
+'How do you get a list of characters that you can be?',
+'What is the server icon (when connecting) a picture of?',
+'How are heroe ids organized/categorized?',
+'What happens when you drink DNA?',
+'What happens if you bring 2 or more DNAs into the machine at a time?',
+'What command would you use to see if someone took something from a chest?',
+'In the lab, there is a golden pressure plate that gives you money when you step on it. How much does it give you each time?',
+'Is cursing/swearing allowed?',
+'How long does mindcontrol last?',
+'What does mindlock do?',
+'What is the max run speed?',
+'What is the max fly speed?',
+'Name 5 things you can get when using /buff (all characters included)',
+'When carrying another player, what happens when you try to /tp somewhere?'
 
 )
