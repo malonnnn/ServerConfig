@@ -26,6 +26,7 @@
 'What is the max run speed?',
 'What is the max fly speed?',
 'Name 5 things you can get when using /buff (all characters included)',
-'When carrying another player, what happens when you try to /tp somewhere?'
+'When carrying another player, what happens when you try to /tp somewhere?',
+'Which battle minigame makes a difference as to which team you join?'
 
 )
