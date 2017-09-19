@@ -33,7 +33,7 @@
 'Who is Co-Owner?',
 'How do you contact the Owner?',
 'How do you make money?',
-'What's the max number of players that can be online at the same time?',
+'What\'s the max number of players that can be online at the same time?',
 'How do you transform into a hero?',
 'What do you do if you see a hacker?'
 
