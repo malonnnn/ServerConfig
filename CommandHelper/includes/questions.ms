@@ -35,6 +35,7 @@
 'How do you make money?',
 'What\'s the max number of players that can be online at the same time?',
 'How do you transform into a hero?',
-'What do you do if you see a hacker?'
+'What do you do if you see a hacker?',
+'How do you claim land in survival?'
 
 )
