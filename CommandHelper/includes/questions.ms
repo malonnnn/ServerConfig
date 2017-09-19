@@ -27,6 +27,14 @@
 'What is the max fly speed?',
 'Name 5 things you can get when using /buff (all characters included)',
 'When carrying another player, what happens when you try to /tp somewhere?',
-'Which battle minigame makes a difference as to which team you join?'
+'Which battle minigame makes a difference as to which team you join?',
+'What is the theme of the server?',
+'How old is the server?',
+'Who is Co-Owner?',
+'How do you contact the Owner?',
+'How do you make money?',
+'What's the max number of players that can be online at the same time?',
+'How do you transform into a hero?',
+'What do you do if you see a hacker?'
 
 )
