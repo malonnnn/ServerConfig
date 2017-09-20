@@ -2,6 +2,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 8
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -9,23 +10,47 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '9':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    amount: 27
+    type: TORCH
+    amount: 12
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_CHICKEN
+    amount: 10
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 14
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 3
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 3
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_AXE
+    damage: 12
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
 ender_chest: {}
-health: 32.0
-hunger: 8
-exp: 0.71428573
-exp-level: 0
+health: 40.0
+hunger: 20
+exp: 0.27999985
+exp-level: 9
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.743602
+saturation: 13.400001
+exhaustion: 1.1940266
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 8
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -35,18 +60,26 @@ armor_contents:
         DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: SPEED
-    level: 255
-    duration: 199325
-  '1':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 144670
-  '2':
+    duration: 82000
+  '1':
     type: REGENERATION
     level: 1
-    duration: 144670
+    duration: 82000
+  '2':
+    type: SPEED
+    level: 2
+    duration: 169218
   '3':
     type: HEALTH_BOOST
     level: 4
-    duration: 144670
+    duration: 82000
+  '4':
+    type: FAST_DIGGING
+    level: 10
+    duration: 163197
+  '5':
+    type: JUMP
+    level: 3
+    duration: 163383
