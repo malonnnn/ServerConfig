@@ -1,27 +1,30 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: RAILS
+    type: WOOD
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: POWERED_MINECART
+    type: SIGN
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: LAVA_BUCKET
-  '3':
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 7
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: MINECART
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-    amount: 64
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 20.0
 hunger: 20
 exp: 0.2897195
@@ -29,4 +32,15 @@ exp-level: 28
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5560685
+exhaustion: 1.9060682
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30

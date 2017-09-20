@@ -1,4 +1,4 @@
-register_command(listheroes, 
+register_command(heroes, 
 
     array(
     
@@ -52,6 +52,7 @@ register_command(listheroes,
                                     tmsg(player(),"#". @i . ". " . @hero['name'])
                                     @i = @i + 1
                                 }
+                                msg(color(RED).'Check for more heroes using /heroes '.(@pageNum+1))
                             }
                         }
                     ))
@@ -71,6 +72,7 @@ register_command(listheroes,
                                     tmsg(player(),"#". @i . ". " . @hero['name'])
                                     @i = @i + 1
                                 }
+                                msg(color(RED).'Check for more heroes using /heroes 2')
                             }
                         }
                     ))

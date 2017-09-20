@@ -300,9 +300,9 @@ bind('player_chat', null, null, @e) {
     # chat timeout settings
     # -------------------------------
     if(has_permission("is.criminal")){
-        @cooldown = 0
+        @cooldown = 60
     }else if(has_permission('chat.cooldown')){
-        @cooldown = 0
+        @cooldown = 5
     }
     
     if(has_permission(@pname,'change.chat')){
@@ -354,7 +354,7 @@ bind('player_chat', null, null, @e) {
 
             }
             modify_event(message, @msg)
-            @cooldown = 0
+            @cooldown = 10
         }
     }
     
@@ -362,7 +362,6 @@ bind('player_chat', null, null, @e) {
     modify_event(message, @msg)
 
     @lastmessage = import(@pname.'lastmessage')
-    console('testpoo')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
     {

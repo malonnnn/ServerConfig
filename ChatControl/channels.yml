@@ -1,81 +1,29 @@
-# !-----------------------------------------------------------------------------------------!
-#                  Welcome to ChatControl's channel configuration
-#
-#   In this configuration you can setup chatting rooms on your server, also known as
-#   chat channels.
-#
-#   Chat channels can reduce spam on big servers because they sort players to individual
-#   channels instead of letting everyone to chat on the main server chat.
-#
-#   Read more:
-#   - https://github.com/kangarko/ChatControl-Pro/wiki/Channels
-#
-# !-----------------------------------------------------------------------------------------!
+# !---------------------------------------------------------!
+# ! File automatically updated at 19.09.2017 04:12:53
+# ! to plugin version v7.5.4
+# !---------------------------------------------------------!
+# ! Unfortunatelly due to how Bukkit handles YAML
+# ! configurations, all comments (#) were wiped. 
+# ! 
+# ! For reference values and comments, open
+# ! channels.yml in the plugin .JAR file.
+# !---------------------------------------------------------!
 
-# -----------------------------------------------------------------------------------------
-# Should the channel functionality be enabled?
-#
-# This overrides Chat Formatting in formatting.yml
-# -----------------------------------------------------------------------------------------
 Enabled: true
-
-# -------------------------------------------------------------------------------------------
-# What commands should trigger the channel menu (separated by a comma ,)? 
-# 
-# * THE FIRST ALIAS IS THE MAIN LABEL, PLEASE DO NOT REMOVE IT. *
-# -------------------------------------------------------------------------------------------
-Command_Aliases: [channel, ch]
-
-# -----------------------------------------------------------------------------------------
-# Send "You are in X channel." / "You have no channels" messages to players when they join?
-#
-# You can change the message in the localization (see settings.yml)
-# -----------------------------------------------------------------------------------------
+Command_Aliases:
+- channel
+- ch
 Notify_On_Join: true
-
-# -----------------------------------------------------------------------------------------
-# How many channels can the player be at once, maximum?
-#
-# You can override this and give VIP's/staff more channels, see Groups in settings.yml.
-# -----------------------------------------------------------------------------------------
 Max_Channels_Per_Player: 1
-
-# -----------------------------------------------------------------------------------------
-# Configuration of each chat channel.
-#
-# To create or remove channels, simply remove or create new sections down below.
-# -----------------------------------------------------------------------------------------
-Channels: 
-  #
-  # The default channel for all players.
-  # As you can see, you only need to set the options you need!
-  #
-  #
-  # The default global channel with bungee support.
-  #
-  global: 
-    #
-    # This format is changeable in formatting.yml
-    #
+Channels:
+  global:
     Format: Global_Chat
-    #
-    # This channel sends the messages to the Bungeecords.
-    #
     Bungee: true
-    #
-    # Channel is logged into ChatControl/logs/channels/global.yml with the following format:
-    #
     Log_Format: '{player}: {message}'
-  local: 
-    #
-    # This format is changeable in formatting.yml
-    #
+  local:
     Format: Local_Chat
-    #
-    # This channel sends the messages to the Bungeecords.
-    #
     Bungee: false
-    #
-    # Channel is logged into ChatControl/logs/channels/global.yml with the following format:
-    #
     Log_Format: '{player}: {message}'
+Compatibility:
+  Multi_Event: false
+  Single_Event_Format: '[{channels}] {player}: {message}'

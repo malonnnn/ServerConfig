@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: President_Myth
-last_cast: 1505658291340
+last_cast: 1505782030366
 cooldown_expiration: 0
-last_death_location: -518.0417250612816,-196.37350289542087,-2434.860300688427,greenfield,-5.6307297,-6.599985
+last_death_location: -3.216068929208658,125.5,-191.56994208497147,greenfield,141.96912,6.8997335
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -30,15 +30,15 @@ spells:
     last_earn: 0
     cooldown_expiration: 1499191504377
   soulgrip:
-    cast_count: 27
-    last_cast: 1505658291340
+    cast_count: 29
+    last_cast: 1505780925933
     last_earn: 0
-    cooldown_expiration: 1505658293340
+    cooldown_expiration: 1505780927933
   avadakadavra:
-    cast_count: 0
-    last_cast: 1499309757780
+    cast_count: 1
+    last_cast: 1505781375255
     last_earn: 0
-    cooldown_expiration: 1499309758280
+    cooldown_expiration: 1505781375755
   arrow:
     cast_count: 0
     last_cast: 1497320653113
@@ -61,9 +61,9 @@ spells:
     cooldown_expiration: 1504503177475
   acidshot:
     cast_count: 1
-    last_cast: 1504503580139
+    last_cast: 1505781979694
     last_earn: 0
-    cooldown_expiration: 1504503587139
+    cooldown_expiration: 1505781986694
   fling:
     cast_count: 182
     last_cast: 1496270102204
@@ -106,9 +106,9 @@ spells:
     cooldown_expiration: 1500766225503
   missile:
     cast_count: 44
-    last_cast: 1499062700065
+    last_cast: 1505781232086
     last_earn: 1492365394541
-    cooldown_expiration: 1499062701065
+    cooldown_expiration: 1505781233086
   wound|3:
     cast_count: 31
     last_cast: 1492365962434
@@ -125,9 +125,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1496270506658
   rictusempra:
-    cast_count: 5
-    last_cast: 1499309792406
-    last_earn: 1492469064351
+    cast_count: 9
+    last_cast: 1505781163877
+    last_earn: 1505781158724
     cooldown_expiration: 1499309797406
   manipulate:
     cast_count: 0
@@ -275,10 +275,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1500766061300
   soulpush:
-    cast_count: 5
-    last_cast: 1505657697965
+    cast_count: 9
+    last_cast: 1505781332409
     last_earn: 0
-    cooldown_expiration: 1505657699965
+    cooldown_expiration: 1505781334409
   emp:
     cast_count: 0
     last_cast: 1496272941589
@@ -305,10 +305,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1497320232592
   crucio:
-    cast_count: 0
-    last_cast: 1492469099952
+    cast_count: 1
+    last_cast: 1505781340314
     last_earn: 0
-    cooldown_expiration: 0
+    cooldown_expiration: 1505781370314
   harden:
     cast_count: 0
     last_cast: 1505430335240
@@ -324,6 +324,11 @@ spells:
     last_cast: 1496270916147
     last_earn: 0
     cooldown_expiration: 1496270921147
+  wound:
+    cast_count: 1
+    last_cast: 1505781353898
+    last_earn: 0
+    cooldown_expiration: 1505781358898
   walls:
     cast_count: 3
     last_cast: 1499639576010
@@ -356,7 +361,7 @@ spells:
     cooldown_expiration: 1496274386197
   expelliarmus:
     cast_count: 0
-    last_cast: 1499309740686
+    last_cast: 1505781155076
     last_earn: 0
     cooldown_expiration: 1499309750686
   emoksemocebadlofdnilb:
@@ -385,10 +390,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1499628997922
   rhinodash:
-    cast_count: 5
-    last_cast: 1504503683575
+    cast_count: 10
+    last_cast: 1505782030366
     last_earn: 0
-    cooldown_expiration: 1504503688575
+    cooldown_expiration: 1505782035366
   fire|4:
     cast_count: 1
     last_cast: 1496618944929
@@ -449,11 +454,16 @@ spells:
     last_cast: 1497320256814
     last_earn: 1492367146503
     cooldown_expiration: 1497320286814
-  electrictp:
-    cast_count: 67
-    last_cast: 1499871768544
+  apparate:
+    cast_count: 2
+    last_cast: 1505781065624
     last_earn: 0
-    cooldown_expiration: 1499871771544
+    cooldown_expiration: 1505781075624
+  electrictp:
+    cast_count: 68
+    last_cast: 1505780802837
+    last_earn: 0
+    cooldown_expiration: 1505780805837
   petrify|3:
     cast_count: 101
     last_cast: 1492367168457
@@ -480,6 +490,43 @@ spells:
     last_earn: 1492367002638
     cooldown_expiration: 0
 wands:
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6rictusempra§f (§3Wand§f)
+        lore:
+        - §3§oBound to President_Myth
+        - Knows 4 Spells
+        - §6Manifestation
+        - §6Cost Reduction X
+        - §6Cooldown Reduction X
+        - §3Invulnerability
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAFVQS0rEQBAtnY+Z+ANd6kLQpSPzSWLciAMKCo4K4jrUdCpOM0k6dirR2bnxDB7ArQsP4Bk8kCt7MijYUNA8Xr1P2QA21B8xDS2wmJIsRiawx6j1NJ/DDfWYkoa1G025DCnlYDjlsQUrKFiWFOQZxTEsaym4yI2CRiNV7QQyhL3I63Vd36O2T5Hfdhw/bB/1PKfteyOv2z90O26PjBhFEQkOhIqVhq3OPh4R9qOu8Fynsy9G5JLruo7nhDVYKknnUqUA0LBhvfIPZFqaaEpPayZYiSFOzJQaDWnRQPQ0Y0nUSZEbaKH2L7BBoAZNoQshVfWHFmwMmLUcFUxDFcpIGlN7tloH6+7u4nSocv7ePd4ePJ9THVoz6JIw54+tz6/Xl/e3JjQHiSpSPtmD6llQv40Vg5WgTMfVaVf/LK4wIdi8J3M1KQ6QGcXkNiMydVvXGWnkeeGZSsXdOHsoZJaYzju/8QB+AIT87bzOAQAA
+    wand:
+      template: harryswand
+      owner: President_Myth
+      active_spell: rictusempra
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: 0,a9ea3f1c6540,cbe5e555464d
+      version: 5
+      spell_inventory:
+        avadakadavra: 2
+        expelliarmus: 1
+        rictusempra: 0
+        crucio: 3
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -502,13 +549,14 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2QMU/CUBDHj1iwEGXAUQcTiRMYWtrHYzGQaCKJqAlhNM2jvcqLvL7aHhI3Fz+DcXZ1MHEzfAY/kJOlBG+7//9y/99dBaACxkJEgQkmoYpngnAjFPUiwgSqNwmmMsCIvOETTUtgKBGJ3gDyMqC6aj2SClMSKgYo3H6/Lb9M2MEwRJ88X890Asc277oWs2028Z2GGzi+zwS3nHbQ6DDLaoWZ3eU848hjPRlAPWS25XKGTY4hbzoOD5pdmzlNzibManfclmvjFmw/YpJKHWU0RShDrU+UyMmccKgDGcrMrGRWwQBzPB6cDXVKv0enB/3nCzSgvJIuUaT0ub/8eX35eC9Bqa/0PKJefX2hCcZopglMJWQ0zT+z+x9xJRTC3h1mxNI/EUTCvx/FiMEWlK9jTAStwVZb8tna+cNcxir75uEGD+AP6Y3PkYcBAAA=
+        internal: H4sIAAAAAAAAAD2Qv07CUBTGD6FAIcqAow4mEidqSqGljYmBRBNJRE0Iq81t76nc2NvW9gBxc9DVlQdwdfABfAYfyMlSg2c73/n3O18DoAHKikVcBZVQJiEj3AqVeBVhCs3bFDPBMSJ38kRzFXaYT2KJbpZgGEJNiiwTIVZBkSxiwzEUoUBzk7okJGbEZAJQulu/nb7k8xgE6JPrx2GcwnFgen3d9x3H4F4H0dEN7PZ0tL3OwOE9zzOtbo8Pcr4CxxUc2oFldE3bQs3GwNb6fZtrjmH1Ndvy8uaBqZsGlqG2xDQTcZTTVKAOrRFRKrwF4STmIhB5sZGXSgqos9n4fBJn9HN0djB6vkQF6hvpCllGn/tf3+vXj/cqVEcyXkQ0bP99qIIyDWMCVTIRzQvHdv9PXDOJsHePObHwTxgR8x+mCSIvQ/0mwZTRH9hmS9HbunhciETmLh9u8QB+Ae8lQDCfAQAA
     wand:
       template: wand
       owner: President_Myth
+      active_spell: missile
       mana: 50.0
-      mana_timestamp: 1502074223795
-      effect_color: 289516226bc4,5d4cc6a8143d,76110f895988
+      mana_timestamp: 1505781234564
+      effect_color: f5b40cc992db,ee902e130e8b,79d3bb5613d7
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       version: 5
   yodaforce:
@@ -574,6 +622,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1103
+  sp: 1106
 properties: {}
 classes: {}

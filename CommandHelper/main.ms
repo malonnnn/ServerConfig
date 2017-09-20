@@ -4,7 +4,7 @@ set_interval(5000,closure(
         if(pmode(@player) != 'CREATIVE'){
             continue()
         }
-        if(has_permission(@player,'is.op')){
+        if(has_permission(@player,'free.gmc')){
             continue()
         }
         if(!has_permission(@player,'in.survival')){

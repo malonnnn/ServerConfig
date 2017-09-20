@@ -6181,7 +6181,7 @@ groups:
     inheritance:
     - commonherotraits
     options:
-      prefix: '&eK&4i&ed &4F&el&4a&es&4h&8(WW)'
+      prefix: '&eK&4i&ed &4F&el&4a&es&4h&8(&4W&eW&8)'
       suffix: '&e'
     worlds:
       speedforce:
@@ -6825,6 +6825,8 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - multiverse.access.kartlobby
+    - multiverse.access.kartraces
     - worldresourcepacks.pack.survival
     - -chatcontrol.chat.format.color.reset
     - -chatcontrol.chat.format.color.italic
@@ -7484,6 +7486,12 @@ groups:
         - essentials.build.pickup.*
         - essentials.build.interact.*
         - -essentials.build.*
+      kartlobby:
+        permissions:
+        - ch.alias.kartkits
+      elytrapole:
+        permissions:
+        - essentials.build.interact.*
   mosquitogirl:
     inheritance:
     - commonherotraits
@@ -12286,7 +12294,7 @@ groups:
     inheritance:
     - op
     options:
-      prefix: '&4&l&oCo-Owner'
+      prefix: '&9&l&oOwner'
       suffix: '&b&l'
     permissions:
     - -is.mute
@@ -13499,6 +13507,24 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  fanfic5bb65383a53144d7a944904f0cb4e607:
+    inheritance:
+    - commonherotraits
+    worlds:
+      survival112:
+        permissions:
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
 schema-version: 1
 worlds:
   checkers:
@@ -13628,7 +13654,7 @@ users:
       name: HeyItzNight
   05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85:
     group:
-    - mortal
+    - kidflashwallywest
     options:
       name: Space117
     permissions: []
@@ -13683,7 +13709,7 @@ users:
     permissions: []
   f621586e-8ef8-448d-9264-86b61375052e:
     group:
-    - f621586e8ef8448d926486b61375052e
+    - mortal
     options:
       name: President_Myth
     permissions:
@@ -13704,8 +13730,8 @@ users:
     - ch.alias.joinblue
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     permissions:
-    - -ch.alias.gc
     - chat.cooldown
+    - -ch.alias.gc
     - is.helper
     - is.spleefgod
     - is.secretary
@@ -13916,7 +13942,7 @@ users:
   5bb65383-a531-44d7-a944-904f0cb4e607:
     permissions: []
     group:
-    - agentvenom
+    - hawkeye
     options:
       name: THE_PRO_BANANA
   182fa38f-b321-44cf-ba16-fe70847459c3:
@@ -14204,6 +14230,16 @@ users:
         permissions: []
       elytrapvp:
         permissions: []
+      minigames:
+        permissions: []
+      kartlobby:
+        permissions:
+        - essentials.skull.*
+        - essentials.skull
+        - essentials.build.*
+      kartraces:
+        permissions:
+        - essentials.build.*
   60b8ea61-b653-4cc5-8c7f-06db0ec25507:
     group:
     - impulsebartallen
@@ -16353,7 +16389,7 @@ users:
       name: CabosaursGaming
   6a510157-fe98-4e65-a964-24f44460f27c:
     group:
-    - blacklanterndeathstormraymondrusch
+    - mortal
     options:
       name: Bitslane
     worlds:
@@ -16365,6 +16401,7 @@ users:
         permissions:
         - essentials.build.interact.*
     permissions:
+    - free.gmc
     - multiverse.access.elevator
   c67b8c47-4d3b-4edf-b3a7-538ea784e586:
     group:
@@ -17076,7 +17113,7 @@ users:
       name: Tusconnative4533
   b922d7e0-c395-4224-9246-e41c0ef63cc9:
     group:
-    - onepunchman
+    - alice
     permissions: []
     options:
       name: mintwhip
@@ -17111,7 +17148,7 @@ users:
       name: ChimChar06
   fd3ad07c-e445-4bc0-91da-027047d9796c:
     group:
-    - darthvader
+    - infinitythanos
     options:
       name: Blueberryjesus
     worlds:
@@ -19322,7 +19359,7 @@ users:
       name: fadelessrug
   dd4a6978-9fb1-4d28-964d-c640649726a4:
     group:
-    - saikikusuo
+    - artemisyoungjustice
     options:
       name: Alex_playz7
   86cc1e50-319a-4cc8-9cf1-ad9eb40ec6c5:
@@ -19538,7 +19575,7 @@ users:
       name: Soblu
   01d941ec-5801-4a26-93ff-eedceb868ca9:
     group:
-    - mortal
+    - batman
     options:
       name: ObiSwanKenobi
   e72c4081-efce-4940-819e-94bdb23b72e6:
@@ -20257,7 +20294,7 @@ users:
       name: Jomstor
   07dd8f77-713a-4e35-8b54-8fcc2409fbb5:
     group:
-    - deadpool
+    - wonderwomangodmode
     options:
       name: Farstor
     permissions: []
@@ -20302,7 +20339,7 @@ users:
     group:
     - martianmanhunter
     options:
-      name: DeadMau53
+      name: TheMauBeast
     permissions: []
   0aec7bf7-d78c-44be-9897-2ef43cd23ae1:
     group:
@@ -20772,3 +20809,23 @@ users:
     - superboykonel
     options:
       name: Dragonboy8299
+  69ac1c3d-0c2a-40cf-924f-7ffbd16b5ba3:
+    group:
+    - apollo
+    options:
+      name: Coedey
+  046a07cb-d1c1-4650-87ec-21239a329725:
+    group:
+    - beastboy
+    options:
+      name: Aara
+  cd3772e9-5223-4f5d-844f-54f8195082ca:
+    group:
+    - beastboy
+    options:
+      name: xandermaster123
+  4411d982-76c3-49b0-b1bb-d18054100592:
+    group:
+    - kidflashwallywest
+    options:
+      name: xXAqua_BoyXx
