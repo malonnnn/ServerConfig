@@ -36,6 +36,8 @@
 'What\'s the max number of players that can be online at the same time?',
 'How do you transform into a hero?',
 'What do you do if you see a hacker?',
-'How do you claim land in survival?'
+'How do you claim land in survival?',
+'What kinds of characters are made on the server?',
+'What counts as proof for a characters powers/ablities?'
 
 )
