@@ -13,12 +13,17 @@ proc(_mindControlStop, @player,
    
     @ent = import(@player.'mindControlEntityID')
     console(@ent)
-    entity_remove(@ent)
+    try{
+        entity_remove(@ent)
+    }catch(Exception @e){
+        console('no mind control entity found to be removed')
+    }
 
     export(@player.'mindControlling',false)
 
     @vic = import(@player.'mindControlVictim')
     unbind(@vic.'mindControlCommandCancel')
+    unbind(@vic.'mindControlTeleportCancel')
     export(@vic.'beingMindControlled',false)
 
     set_ploc(@vic, ploc(@player))

@@ -6,9 +6,6 @@ register_command(mindcontrol,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
 
-            msg(color(RED).'This command is disabled until someone figures out whats wrong with it.')
-            die()
-        
             if (array_size(@args) != 1) {
             
                 msg(''.color(RED).color(BOLD).'Improper Usage!');
@@ -155,8 +152,6 @@ register_command(mindcontrolnear,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
-            msg(color(RED).'This command is disabled until someone figures out whats wrong with it.')
-            die()
             if (array_size(@args) != 1) {
             
                 msg(''.color(RED).color(BOLD).'Improper Usage!');

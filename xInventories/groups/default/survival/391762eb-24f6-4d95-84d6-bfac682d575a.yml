@@ -1,10 +1,44 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: EGG
+    amount: 16
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: skeleton
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: zombie
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAFWOTQ6CMBSEp4qBILrxAh7AG7gxEnb+LET3TduYBulr6GuQ2wvGjbOdL99MDuRYH1+kmsqx5aGWT4FCkdOWLbmzYSGQyMgEgdRTbzqjkSEvY2BqL7I1EIcMaUltK91YBTlsvel9gtVJBq7eRsVJhTG7/WORYWY1ih//nZ6juEWlTAglRccTKbCsO6maa2Qfpw+bu9eSzZ9SAB88IfXbwQAAAA==
+      blockMaterial: COMMAND_CHAIN
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
 health: 20.0
 hunger: 20
-exp: 0.2897195
+exp: 0.4661901
 exp-level: 28
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.312
+exhaustion: 0.0
 armor_contents: {}
