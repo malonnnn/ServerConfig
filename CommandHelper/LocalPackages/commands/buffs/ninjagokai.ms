@@ -15,7 +15,9 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-5",
-                "/spinjutsu (gives strength 5 for 10 seconds)"
+                "/spinjutsu (gives strength 5 for 10 seconds)",
+                "You are immunite to fire (not lava)",
+                "You can throw a fireball with your bare hand"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:golden_sword 1 20:2 name:&6The_Sword_Of_Fire"                
