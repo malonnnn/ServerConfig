@@ -11,7 +11,7 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/levitate",
+                "/float <up/down/pause/unpause/stop>",
                 "/jump 0-7",
                 "/run 0-7",
                 "/haste 0-9",

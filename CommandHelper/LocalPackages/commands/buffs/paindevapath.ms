@@ -16,7 +16,8 @@
                  "/jump 0-7", 
                  "/run 0-8",
                  "/haste 0-9",
-                 "/levitate",
+                 "/float <up/down/pause/unpause/stop>",
+                 "/haste 0-9"
                  "/cast almightypush",
                  "/cast universalpull"
               ), 

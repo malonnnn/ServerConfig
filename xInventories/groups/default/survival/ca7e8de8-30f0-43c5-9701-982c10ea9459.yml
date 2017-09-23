@@ -1,79 +1,35 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_BOOTS
+    damage: 36
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §0D§8e§fa§0th§f-D§8C §e§lD§a§lN§4§lA
-      lore:
-      - deathdc
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §8D§4a§8rth §4R§8ev§4a§8n §e§lD§a§lN§4§lA
-      lore:
-      - darthrevan
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §4D§0ea§4dp§0oo§4l §e§lD§a§lN§4§lA
-      lore:
-      - deadpool
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 20.0
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
 hunger: 20
-exp: 0.0
+exp: 0.85714287
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 3.4689991
-armor_contents: {}
+saturation: 0.0
+exhaustion: 3.66551
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 36
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -309,3 +265,20 @@ ender_chest:
         §0xDc (A+)§0
         §0Polo (B-)§0
         §0Phantom_jeff(A+)
+potion_effect:
+  '0':
+    type: SPEED
+    level: 5
+    duration: 181615
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 184573
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 184573
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 184573
