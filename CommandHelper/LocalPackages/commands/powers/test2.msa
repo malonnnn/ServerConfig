@@ -4,3 +4,11 @@ joinblue:/joinblue = >>>
 joingreen:/joingreen = >>>
     runas(~console,'/warp spleefgreen '.player())
 <<<
+joinblue:/spot1 $plr = >>>
+    @plr = $plr
+    runas(~console,'/warp spleeforange '.@plr)
+<<<
+joingreen:/spot2 $plr = >>>
+    @plr = $plr
+    runas(~console,'/warp spleefgreen '.@plr)
+<<<

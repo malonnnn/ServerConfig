@@ -36,14 +36,7 @@ Join_Message:
         &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Quit_Message:
   Enabled: false
-  Message: default
-  Conditions:
-    staff_message:
-      Permission: chatcontrol.joinmessage.staff
-      Message:
-      - '&8[&2+&8] &b{player} &7left the server'
-      - '&8[&2+&8] &9{player} &7just quit the game. Good bye!'
-      - '&8[&2+&8] &7Say goodbye to &e{player} &7for leaving!'
+  Message: "&b{player} &8[&c-&8]"
 Kick_Message:
   Enabled: false
   Message: default

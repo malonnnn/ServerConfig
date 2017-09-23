@@ -360,7 +360,6 @@ bind('player_chat', null, null, @e) {
     
     assign(@msg, reg_replace('(?i)kcocco.ml', 'kcoccoisafaggot.com', @msg))
     modify_event(message, @msg)
-
     @lastmessage = import(@pname.'lastmessage')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
