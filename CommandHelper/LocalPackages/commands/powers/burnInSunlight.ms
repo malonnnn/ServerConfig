@@ -32,6 +32,14 @@ register_command(burninsunlight,
             set_ponfire(@player,60)
         ))
         export(@player.'isBurningInSunlight',@id)
+        bind(player_quit,array('id':@player.'isBurningInSunlight'),array('player':@player),@e,@idd = @id){
+            unbind()
+            clear_task(@idd)
+        }
+        bind(player_join,null,array('player':@player),@e,@playerr = @player){
+            unbind()
+            sudo('/burninsunlight '.@playerr)
+        }
     }
     )
 )
