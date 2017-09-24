@@ -10,7 +10,8 @@ register_command(normalform,
                 try {
                 
                     @plr = player()
-                    @class = pgroup()[0]
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    @class = _getheroclass(@plr)
                     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')		
                 
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
