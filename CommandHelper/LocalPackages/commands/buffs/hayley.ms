@@ -13,8 +13,8 @@
                 "/buff",
                 "/jump 0-5",
                 "/run 0-6",
-                "/d wolf",
-                "/fixskin ..which will change you back to normal"
+                "/disguise wolf",
+                "/normalform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 8 true",
