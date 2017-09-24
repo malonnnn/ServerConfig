@@ -13,11 +13,11 @@ register_command(float,
             switch(@choice){
                 case 'up':
                     runas(~console,'/effect '.@player.' minecraft:levitation 0')
-                    runas(~console,'/effect '.@player.' minecraft:levitation 9999')
+                    runas(~console,'/effect '.@player.' minecraft:levitation 9999 1 true')
                     break()
                 case 'down':
                     runas(~console,'/effect '.@player.' minecraft:levitation 0')
-                    runas(~console,'/effect '.@player.' minecraft:levitation 9999 254')
+                    runas(~console,'/effect '.@player.' minecraft:levitation 9999 254 true')
                     break()
                 case 'pause':
                     set_pflight(@player,true)
@@ -27,6 +27,7 @@ register_command(float,
                     set_pflight(@player,false)
                     break()
                 case 'stop':
+                    set_pflight(@player,false)
                     runas(~console,'/effect '.@player.' minecraft:levitation 0')
                     break()
                 default:

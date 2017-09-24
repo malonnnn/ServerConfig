@@ -12,10 +12,10 @@
             'powers': array(
                 "/carryplayer",
                 "/dismountplayer",
-                "/float",
-                "/stopfloat",
+                "/float <up/down/pause/unpause/stop>",
                 "You burn in sunglight!"
             ),
             'buffs': array(
+                '/burninsunlight '.@plr
             )
         )

@@ -35,15 +35,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 4
-    city:
-        min: {x: -10000.0, y: 0.0, z: -10000.0}
-        max: {x: 10000.0, y: 255.0, z: 10000.0}
-        members: {}
-        flags: {creeper-explosion: deny, vehicle-place: deny, use: allow, damage-animals: allow,
-            pistons: allow, pvp: allow, ghast-fireball: deny}
-        owners: {}
-        type: cuboid
-        priority: 1
     office:
         min: {x: -15.0, y: 73.0, z: -163.0}
         max: {x: 35.0, y: 75.0, z: -135.0}
@@ -70,16 +61,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 6
-    bitshouse:
-        parent: city
-        min: {x: 1954.0, y: 0.0, z: -319.0}
-        max: {x: 1998.0, y: 255.0, z: -278.0}
-        members: {}
-        flags: {chest-access-group: NON_MEMBERS, chest-access: deny}
-        owners:
-            unique-ids: [6a510157-fe98-4e65-a964-24f44460f27c]
-        type: cuboid
-        priority: 2
     br0kens0ulsapt:
         members: {}
         flags: {use: allow}
@@ -118,7 +99,6 @@ regions:
         type: cuboid
         priority: 6
     cityspawn:
-        parent: city
         min: {x: -84.0, y: 0.0, z: -267.0}
         max: {x: 12.0, y: 255.0, z: -170.0}
         members: {}
@@ -136,15 +116,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 3
-    yeowltavern:
-        parent: city
-        min: {x: 320.0, y: 0.0, z: 470.0}
-        max: {x: 336.0, y: 255.0, z: 485.0}
-        members: {}
-        flags: {build: allow}
-        owners: {}
-        type: cuboid
-        priority: 0
     gate:
         min: {x: -3.0, y: 73.0, z: -152.0}
         max: {x: -3.0, y: 73.0, z: -152.0}
@@ -153,16 +124,6 @@ regions:
         owners: {}
         type: cuboid
         priority: 20
-    hallofworlds:
-        parent: city
-        min: {x: 377.0, y: 0.0, z: 178.0}
-        max: {x: 426.0, y: 255.0, z: 274.0}
-        members: {}
-        flags: {}
-        owners:
-            unique-ids: [8354ed0d-09cb-4682-bf62-5df3f0e2b412]
-        type: cuboid
-        priority: 2
     basements:
         min: {x: -1740.0, y: 0.0, z: 120.0}
         max: {x: -1687.0, y: 255.0, z: 160.0}
@@ -187,7 +148,7 @@ regions:
         priority: 5
     __global__:
         members: {}
-        flags: {sleep: deny, vehicle-place: deny}
+        flags: {}
         owners: {}
         type: global
         priority: 0

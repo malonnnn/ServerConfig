@@ -14,7 +14,7 @@
                 "/jump 0-3",
                 "/run 0-1",
                 "/haste 0-1",
-                "/fly",
+                "/float <up/down/pause/unpause/stop>",
                 "/cast emoksemocebadlofdnilb",
                 "/cast erifnrubnordlaucelbbub",
                 "/cast dlocdniwwolb",

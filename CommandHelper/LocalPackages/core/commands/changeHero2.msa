@@ -164,6 +164,8 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
                 die()
             }
         }
+
+        clear_task(import(@player.'isBurningInSunlight'))
         
         # 1 in 20 chance of machine going wrong
         @num = rand(1,21) 
