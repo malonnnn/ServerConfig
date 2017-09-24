@@ -12,7 +12,9 @@
             'powers': array(
                 "/buff",
                 "/jump 0-5",
-                "/run 0-6"
+                "/run 0-6",
+                "/disguise wolf",
+                "/normalform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 8 true",
