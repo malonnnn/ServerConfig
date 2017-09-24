@@ -24,6 +24,8 @@
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/effect ". @plr ." 10 9999 1 true",
-                "/give ". @plr ." 420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso"                
+                "/give ". @plr ." 420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso",
+                "/give ". @plr ." minecraft:iron_sword 1 16:20 name:&4G&fo&ed_&4K&fi&el&9l&fe&er",
+                "/give ". @plr ." minecraft:shield 1 durability:10 mending:1 basecolor:14188339 name:&4W&fon&eder&4W&fom&9an's_&4S&fh&ee&9i&4l&fd"
             )
         )
