@@ -129,6 +129,9 @@ then deny
 match \b(f+(\W|\d|_)*u+(\W|\d|_)*c+(\W|\d|_)*k+(\W|\d|_)*)
 handle as swear
 
+match \btek
+handle as swear
+
 # Blocks 'horny'
 match \b(h+(\W|\d|_)*o+(\W|\d|_)*r+(\W|\d|_)*n+(\W|\d|_)*y+(\W|\d|_)*)
 handle as swear
