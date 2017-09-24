@@ -11,7 +11,7 @@
             'speech': "",
             'powers': array(
                 "/buff",
-                "/normalsize",
+                "/normalform",
                 "/grow",
                 "/cast sandwall",
                 "/fly"

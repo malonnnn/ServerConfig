@@ -16,7 +16,7 @@
                 "/haste 0-2",
                 "/carryplayer",
                 "/dismountplayer",
-                "/normalsize",
+                "/normalform",
                 "/grow"
             ),
             'buffs': array(

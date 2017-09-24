@@ -2,6 +2,7 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
 
     # Required otherwise mobs trigger "index damager does not exist" even with the prefilter
     if(!array_index_exists(@e,'damager') || !ponline(@e['damager'])){
+        console('1')
         die()
     }
     @attacker = @e['damager']
@@ -13,18 +14,10 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
         try(
             @ploc = ploc(@vicName)
         ,
+            console('2')
             cancel()
             die()
         )
-    }
-
-    if(@vicName != ''){
-        if(sk_region_check_flag(@ploc,'invincible',@vicName) == true){
-            die()
-        }
-        if(sk_region_check_flag(@ploc,'pvp',@vicName) == false){
-            die()
-        }
     }
 
     if(has_permission(@attacker,'powers.onepunch')){

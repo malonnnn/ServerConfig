@@ -1,15 +1,10 @@
-register_command(normalsize, 
+register_command(normalform, 
 
     array(
-    
         description: 'Reset your Skin',
-        
-        usage: '/normalsize',
-        
-        permission: 'ch.alias.normalsize',
-        
+        usage: '/normalform',
+        permission: 'ch.alias.normalform',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',	
-    
         executor: closure() {
                 
                 try {
