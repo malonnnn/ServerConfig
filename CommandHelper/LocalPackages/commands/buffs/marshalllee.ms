@@ -13,6 +13,8 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/float <up/down/pause/unpause/stop>",
+                "/disguise bat",
+                "/normalform",
                 "You burn in sunglight!"
             ),
             'buffs': array(
