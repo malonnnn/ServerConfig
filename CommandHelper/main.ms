@@ -2,8 +2,10 @@ set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
         if(has_permission(@player,'free.gmc')){
+            console(@player,color(RED).@player.' does not have free GMC')
             continue()
         }
+
         if(has_permission(@player,'is.incity')){
             @loc = ploc(@player)
             @radius = 10
@@ -19,7 +21,7 @@ set_interval(5000,closure(
                                     set_block_at(@x,@y,@z,0:0)
                                     set_block_at(@x,@y,@z,@blk)
                                     acc_add(@player,100)
-                                    msg(color(GREEN).'$100 added to your account for emptying a commandblock.')
+                                    tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
                                     console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
                                 }
                             }
@@ -29,12 +31,11 @@ set_interval(5000,closure(
             }
         }
         if(pmode(@player) != 'CREATIVE'){
-            continue()
-        }
-        if(has_permission(@player,'free.gmc')){
+            console(@player,color(RED).@player.' is not in CREATIVE mode')
             continue()
         }
         if(!has_permission(@player,'in.survival')){
+            console(@player,color(RED).@player.' is not in survival world')
             continue()
         }
         @bal = acc_balance(@player)
