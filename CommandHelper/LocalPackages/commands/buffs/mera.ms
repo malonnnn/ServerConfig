@@ -15,8 +15,7 @@
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-1",
-                "/cast waterspear",
-                "/cast bubble"
+                "/cast waterspear"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
