@@ -2,7 +2,7 @@ set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
         if(has_permission(@player,'free.gmc')){
-            console(@player,color(RED).@player.' does not have free GMC')
+            console(color(RED).@player.' does not have free GMC')
             continue()
         }
 
@@ -31,11 +31,11 @@ set_interval(5000,closure(
             }
         }
         if(pmode(@player) != 'CREATIVE'){
-            console(@player,color(RED).@player.' is not in CREATIVE mode')
+            console(color(RED).@player.' is not in CREATIVE mode')
             continue()
         }
         if(!has_permission(@player,'in.survival')){
-            console(@player,color(RED).@player.' is not in survival world')
+            console(color(RED).@player.' is not in survival world')
             continue()
         }
         @bal = acc_balance(@player)
