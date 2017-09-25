@@ -18,9 +18,8 @@
                 "/cast waterspear"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 1 true",
+                "/effect ". @plr ." 5 9999 2 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/effect ". @plr ." 16 9999 1 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/shot give ". @plr ." watershot",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts" 
