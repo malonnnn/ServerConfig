@@ -5,7 +5,7 @@ set_interval(5000,closure(
             continue()
         }
         console('test')
-        if(has_permissions(@player,'is.incity')){
+        if(has_permission(@player,'is.incity')){
             @loc = ploc(@player)
             @radius = 10
             @world = pworld(@player)
