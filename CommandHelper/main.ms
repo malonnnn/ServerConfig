@@ -1,6 +1,33 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
+        if(has_permission(@player,'free.gmc')){
+            continue()
+        }
+        if(has_permissions(@player,'is.incity')){
+            @loc = ploc(@player)
+            @radius = 10
+            @world = pworld(@player)
+            @blocktypes = array('137','210','211')
+            for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
+                for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
+                    for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
+                        foreach(@blk in @blocktypes){
+                            @block = get_block_at(@x,@y,@z)
+                            if(data_values(@block) == @blk) {
+                                if(get_block_command(array(@x,@y,@z,@world)) != ""){
+                                    set_block_at(@x,@y,@z,0:0)
+                                    set_block_at(@x,@y,@z,@blk)
+                                    acc_add(@player,100)
+                                    msg(color(GREEN).'$100 added to your account for emptying a commandblock.')
+                                    console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         if(pmode(@player) != 'CREATIVE'){
             continue()
         }

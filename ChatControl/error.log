@@ -1334,3 +1334,31 @@ lpT4Report / Format 'Admin_Chat' doesn't exist in formatting.yml! Available: Pri
 	 at org.bukkit.craftbukkit.v1_12_R1.CraftServer.dispatchCommand(CraftServer.java:676)
 ----------------------------------------------------------------------------------------------
 
+
+------------------------------------[ 25.09.2017 00:46:42 ]-----------------------------------
+ChatControl 7.5.8 encountered a NullPointerException
+Running 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_144
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.0, CommandHelper v3.3.2-SNAPSHOT.3237-, CrackShot v0.99, WorldResourcepacks v1.6.13-SNAPSHOT (build #177), BetterChairs v0.9.4, WorldBorder v1.8.7, ProtocolLib v4.4.0-SNAPSHOT-b386, LibsDisguises v9.5.0-SNAPSHOT, BCC v0.5.5, AsyncWorldEdit v3.4.10, SuperTrails v9.6.7, EditableSign v3.2.0, PermissionsEx v1.23.4, Timer v0.001, Vault v1.5.6-b49, xInventories v2.3, PerPlayerBlood v2.5, WorldEdit v6.1.9-SNAPSHOT;3709-354045a, Essentials v2.0.1-b530, Parties v1.7.6, PlotSquared v17.09.23-92f94ec-1919, The Multiverse-Core Plugin, WorldGuard v6.2.2-SNAPSHOT;1709-f76259d, PreventShare v1.0.2, CrackShotPlus v1.52, MythicMobs v4.2.0-SNAPSHOT, EssentialsProtect v2.0.1-b530, EssentialsGeoIP v2.0.1-b530, EssentialsAntiBuild v2.0.1-b530, Multiverse-NetherPortals v2.5.2-SNAPSHOT-b726, GriefPrevention v16.7.1, EssentialsSpawn v2.0.1-b530, ChatControl v7.5.8, HolographicDisplays v2.2.6, Magic v6.9.18, ProjectKorra v1.8.4
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error sending channel message for ArchWarrior!
+Channel: global
+Message: okay
+Error: %error
+NullPointerException(Unknown cause)
+	 at me.kangarko.chatcontrol.null.COM2.const(SourceFile:67)
+	 at me.kangarko.chatcontrol.null.COM2.const(SourceFile:36)
+	 at me.kangarko.chatcontrol.null.COM2.native(SourceFile:32)
+	 at me.kangarko.chatcontrol.null.COm3.const(SourceFile:61)
+	 at me.kangarko.chatcontrol.null.class.sendMessage(SourceFile:187)
+	 at me.kangarko.chatcontrol.null.class.sendMessage(SourceFile:152)
+	 at me.kangarko.chatcontrol.null.Lpt2.const(SourceFile:61)
+	 at me.kangarko.chatcontrol.null.Lpt2.const(SourceFile:19)
+	 at me.kangarko.chatcontrol.null.LPT9.execute(SourceFile:26)
+	 at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:74)
+	 at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62)
+	 at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:514)
+	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:496)
+----------------------------------------------------------------------------------------------
+

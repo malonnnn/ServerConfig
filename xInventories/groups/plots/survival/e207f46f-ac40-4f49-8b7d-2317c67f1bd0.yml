@@ -1,10 +1,42 @@
-inventory: {}
-armor_contents: {}
-health: 13.0
-hunger: 6
+inventory:
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK
+      firework-effects:
+      - ==: Firework
+        flicker: false
+        trail: false
+        colors:
+        - ==: Color
+          RED: 240
+          BLUE: 240
+          GREEN: 240
+        - ==: Color
+          RED: 179
+          BLUE: 44
+          GREEN: 49
+        - ==: Color
+          RED: 37
+          BLUE: 146
+          GREEN: 49
+        fade-colors: []
+        type: BALL_LARGE
+      power: 1
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+health: 20.0
+hunger: 0
 exp: 0.20000003
 exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.6726886
+exhaustion: 1.2277101

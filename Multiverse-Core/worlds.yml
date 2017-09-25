@@ -10,7 +10,7 @@ worlds:
     respawnWorld: moblottery
     allowWeather: 'false'
     difficulty: HARD
-    spawning: &id007
+    spawning: &id034
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -22,7 +22,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id035
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -41,7 +41,7 @@ worlds:
       yaw: -269.28955
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id036 []
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -1631,6 +1631,54 @@ worlds:
     generator: CleanroomGenerator:.
     playerLimit: '-1'
     allowFlight: 'true'
+  broville:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2S&0t&2a&0r&2l&0i&2n&0g &2C&0i&2t&0y'
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'false'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: 1208.0
+      y: 69.0
+      z: 808.0
+      pitch: 0.0
+      yaw: 0.0
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-8478116200311982340'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   elytrapole:
     ==: MVWorld
     hidden: 'false'
@@ -2098,11 +2146,11 @@ worlds:
     keepSpawnInMemory: 'false'
     spawnLocation:
       ==: MVSpawnLocation
-      x: 79.0
+      x: 79.5
       y: 66.0
-      z: 138.0
-      pitch: 0.0
-      yaw: 0.0
+      z: 138.5
+      pitch: -4.200003
+      yaw: 90.9
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
@@ -4715,8 +4763,8 @@ worlds:
     respawnWorld: colosseumlobby
     allowWeather: 'false'
     difficulty: HARD
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id034
+    entryfee: *id035
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -4732,7 +4780,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id009
+    worldBlacklist: *id036
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -4789,7 +4837,7 @@ worlds:
   greenfield:
     ==: MVWorld
     hidden: 'false'
-    alias: '&8Superhero&7City'
+    alias: '&2S&0t&2a&0r &2C&0i&2t&0y'
     color: WHITE
     style: NORMAL
     pvp: 'true'
