@@ -25,9 +25,6 @@ set_interval(5000,closure(
                                     tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
                                     console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
                                 }
-                            }else{
-                                console(data_values(@block).' '.@blk)
-                                die()
                             }
                         }
                     }
