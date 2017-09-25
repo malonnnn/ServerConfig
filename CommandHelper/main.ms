@@ -7,7 +7,7 @@ set_interval(5000,closure(
             continue()
         }
 
-        if(has_permission(@player,'is.incity')){
+        if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
             @loc = ploc(@player)
             @radius = 10
             @world = pworld(@player)
@@ -17,7 +17,7 @@ set_interval(5000,closure(
                     for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
                         @block = get_block_at(@x,@y,@z,@world)
                         foreach(@blk in @blocktypes){
-                            if(data_values(@block) == @blk) {
+                            if(@block[0].@block[1].@block[2] == @blk) {
                                 if(get_block_command(@block) != ""){
                                     set_block_at(@x,@y,@z,0:0)
                                     set_block_at(@x,@y,@z,@blk)
