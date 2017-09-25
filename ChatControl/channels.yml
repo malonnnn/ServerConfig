@@ -1,6 +1,6 @@
 # !---------------------------------------------------------!
-# ! File automatically updated at 22.09.2017 16:28:00
-# ! to plugin version v7.5.7
+# ! File automatically updated at 25.09.2017 20:22:04
+# ! to plugin version v7.5.9
 # !---------------------------------------------------------!
 # ! Unfortunatelly due to how Bukkit handles YAML
 # ! configurations, all comments (#) were wiped. 
@@ -28,3 +28,7 @@ Compatibility:
   Multi_Event: false
   Single_Event_Format: '[{channels}] {player}: {message}'
   Cancel_Event: false
+  Discord:
+    Control_Incoming_Messages: true
+    Deny_Unknown_Channel: true
+    Format: '&8[&3Discord&8] &7{player}: &f{message}'
