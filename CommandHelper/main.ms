@@ -4,6 +4,7 @@ set_interval(5000,closure(
         if(has_permission(@player,'free.gmc')){
             continue()
         }
+        console('test')
         if(has_permissions(@player,'is.incity')){
             @loc = ploc(@player)
             @radius = 10
