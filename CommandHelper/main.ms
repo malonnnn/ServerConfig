@@ -3,7 +3,6 @@ set_interval(5000,closure(
     foreach(@player in @players){
         console(@player)
         if(has_permission(@player,'free.gmc')){
-            console(color(RED).@player.' does not have free GMC')
             continue()
         }
 
@@ -19,8 +18,8 @@ set_interval(5000,closure(
                         foreach(@blk in @blocktypes){
                             if(@block[0].@block[1].@block[2] == @blk) {
                                 if(get_block_command(array(@x,@y,@z,@world)) != ""){
-                                    set_block_at(@x,@y,@z,0:0)
-                                    set_block_at(@x,@y,@z,@blk)
+                                    set_block_at(@x,@y,@z,0:0,@world)
+                                    set_block_at(@x,@y,@z,@blk,@world)
                                     acc_add(@player,100)
                                     tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
                                     console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
@@ -32,11 +31,9 @@ set_interval(5000,closure(
             }
         }
         if(pmode(@player) != 'CREATIVE'){
-            console(color(RED).@player.' is not in CREATIVE mode')
             continue()
         }
         if(!has_permission(@player,'in.survival')){
-            console(color(RED).@player.' is not in survival world')
             continue()
         }
         @bal = acc_balance(@player)
@@ -48,7 +45,7 @@ set_interval(5000,closure(
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             _mortal(@player)
             set_timeout(5000,closure(
-                tmsg(@player,color(red).color(bold)."You have been returned to a mortal because you were an OP character and ran out of money,")
+                tmsg(@player,color(red).color(bold)."You have been returned to a mortal because you were an OP character and ran out of money.")
             ))
         }
     }
