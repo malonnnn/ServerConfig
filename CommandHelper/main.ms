@@ -4,7 +4,6 @@ set_interval(5000,closure(
         if(has_permission(@player,'free.gmc')){
             continue()
         }
-        console('test')
         if(has_permission(@player,'is.incity')){
             @loc = ploc(@player)
             @radius = 10
@@ -14,9 +13,9 @@ set_interval(5000,closure(
                 for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
                     for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
                         foreach(@blk in @blocktypes){
-                            @block = get_block_at(@x,@y,@z)
+                            @block = get_block_at(@x,@y,@z,@world)
                             if(data_values(@block) == @blk) {
-                                if(get_block_command(array(@x,@y,@z,@world)) != ""){
+                                if(get_block_command(@block) != ""){
                                     set_block_at(@x,@y,@z,0:0)
                                     set_block_at(@x,@y,@z,@blk)
                                     acc_add(@player,100)
