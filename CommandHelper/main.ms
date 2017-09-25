@@ -1,6 +1,7 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
+        console(@player)
         if(has_permission(@player,'free.gmc')){
             console(color(RED).@player.' does not have free GMC')
             continue()
