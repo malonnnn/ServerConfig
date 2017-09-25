@@ -8,6 +8,35 @@ inventory:
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: COMMAND
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAFWNSwrCMBRFb7TQUqsTNySWzvwg1gU8kiCxJq80L6hrdFO24sQ7uZPDOSVQYrW9s+6aIE5eLV0VKs3BOHEc9laUQkZJePy854cdrEGBsk5R2B/IW6hNgbxm7ykYIMNyR1Gap9VpUmBcfrq9C8ycQfXjvsk5qnPS2sZYcwoykQqLdiDdHZP0aWqvL70hsX9KBXwAhXxrZLkAAAA=
+      blockMaterial: COMMAND_CHAIN
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_REPEATING
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIODE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 2
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_BUTTON
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND_CHAIN
 health: 20.0
 hunger: 20
 exp: 0.7432432
