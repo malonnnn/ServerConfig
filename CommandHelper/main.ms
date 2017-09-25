@@ -1,10 +1,6 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
-        if(has_permission(@player,'free.gmc')){
-            continue()
-        }
-
         if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
             @loc = ploc(@player)
             @radius = 10
@@ -30,6 +26,9 @@ set_interval(5000,closure(
             }
         }
         if(pmode(@player) != 'CREATIVE'){
+            continue()
+        }
+        if(has_permission(@player,'free.gmc')){
             continue()
         }
         if(!has_permission(@player,'in.survival')){
