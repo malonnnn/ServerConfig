@@ -1,13 +1,26 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: COMMAND
+    type: GLASS
+    amount: 31
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        OXYGEN: 3
+      repair-cost: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SAND
 health: 20.0
 hunger: 20
-exp: 0.0
+exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.107608415
+saturation: 4.0
+exhaustion: 2.835612
 armor_contents: {}

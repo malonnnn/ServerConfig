@@ -3,10 +3,14 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
-saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+fireTicks: -20
+saturation: 0.0
+exhaustion: 1.4880196
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 12
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -30,3 +34,8 @@ ender_chest:
         amplifier: 1
         ambient: true
         has-particles: true
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 359
