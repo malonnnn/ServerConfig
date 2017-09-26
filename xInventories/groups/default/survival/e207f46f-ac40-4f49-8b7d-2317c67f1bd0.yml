@@ -4,8 +4,8 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 16.0
-exhaustion: 2.7716947
+saturation: 15.0
+exhaustion: 0.13769397
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -18,20 +18,6 @@ inventory:
       enchants:
         DAMAGE_ALL: 30
         FIRE_ASPECT: 2
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 46
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Boots
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 10
-        PROTECTION_FIRE: 10
-        PROTECTION_EXPLOSIONS: 10
-        PROTECTION_PROJECTILE: 10
-        THORNS: 10
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -39,48 +25,6 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §4§lAr§0§le§4§ls's §4War Beam§4 «×»
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_LEGGINGS
-    damage: 37
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Leggings
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 10
-        PROTECTION_FIRE: 10
-        PROTECTION_EXPLOSIONS: 10
-        PROTECTION_PROJECTILE: 10
-        THORNS: 10
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_CHESTPLATE
-    damage: 34
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Chestplate
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 10
-        PROTECTION_FIRE: 10
-        PROTECTION_EXPLOSIONS: 10
-        PROTECTION_PROJECTILE: 10
-        THORNS: 10
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_HELMET
-    damage: 31
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Helmet
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 10
-        PROTECTION_FIRE: 10
-        PROTECTION_EXPLOSIONS: 10
-        PROTECTION_PROJECTILE: 10
-        THORNS: 10
   '40':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_AXE
@@ -91,22 +35,7 @@ inventory:
       enchants:
         DAMAGE_ALL: 30
         FIRE_ASPECT: 2
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 46
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Boots
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 10
-        PROTECTION_FIRE: 10
-        PROTECTION_EXPLOSIONS: 10
-        PROTECTION_PROJECTILE: 10
-        THORNS: 10
-  helmet:
+  '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_HELMET
     damage: 31
@@ -120,7 +49,7 @@ armor_contents:
         PROTECTION_EXPLOSIONS: 10
         PROTECTION_PROJECTILE: 10
         THORNS: 10
-  chestplate:
+  '10':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_CHESTPLATE
     damage: 34
@@ -134,7 +63,7 @@ armor_contents:
         PROTECTION_EXPLOSIONS: 10
         PROTECTION_PROJECTILE: 10
         THORNS: 10
-  leggings:
+  '11':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_LEGGINGS
     damage: 37
@@ -148,28 +77,43 @@ armor_contents:
         PROTECTION_EXPLOSIONS: 10
         PROTECTION_PROJECTILE: 10
         THORNS: 10
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 46
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4§lAr§0§le§4§ls's §4W§0a§4r Boots
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 10
+        PROTECTION_FIRE: 10
+        PROTECTION_EXPLOSIONS: 10
+        PROTECTION_PROJECTILE: 10
+        THORNS: 10
+armor_contents: {}
 potion_effect:
   '0':
     type: FAST_DIGGING
     level: 30
-    duration: 196146
+    duration: 194923
   '1':
     type: SPEED
     level: 10
-    duration: 194698
+    duration: 193475
   '2':
     type: HEALTH_BOOST
     level: 14
-    duration: 194504
+    duration: 193281
   '3':
     type: JUMP
     level: 5
-    duration: 194732
+    duration: 193509
   '4':
     type: REGENERATION
     level: 1
-    duration: 194504
+    duration: 193281
   '5':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 194504
+    duration: 193281
