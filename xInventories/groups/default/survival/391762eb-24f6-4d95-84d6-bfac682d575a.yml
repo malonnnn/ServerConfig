@@ -1,24 +1,37 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GLASS
-    amount: 31
+    type: IRON_INGOT
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 370
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       enchants:
-        OXYGEN: 3
-      repair-cost: 1
-  '1':
+        DURABILITY: 2
+        ARROW_DAMAGE: 2
+  '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STICK
+    type: BONE
+    amount: 11
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: SAND
+    type: SEEDS
+    amount: 19
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WHEAT
+    amount: 10
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
 health: 20.0
 hunger: 20
-exp: 0.71428573
-exp-level: 0
+exp: 0.9333334
+exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 4.0

@@ -10,15 +10,16 @@
             'op': 'false',
             'speech': "I....am Marshall Lee!",
             'powers': array(
-                "/buff"
+                "/buff",
                 "/carryplayer",
                 "/dismountplayer",
                 "/float <up/down/pause/unpause/stop>",
                 "/disguise bat",
                 "/normalform",
-                "You burn in sunglight!"
+                "You burn in sunglight!",
+                "Mobs do not attack you!"
             ),
             'buffs': array(
-                "/minecraft:give ".@plr." spawn_egg 1 0 {EntityTag:{id:\"Skeleton\",CustomName:\"§8M§bar§4sha§bl§8l_§9Le§ce's_§fSkeleton\"}}"
+                "/minecraft:give ".@plr." spawn_egg 1 0 {EntityTag:{id:\"Skeleton\",CustomName:\"§8M§bar§4sha§bl§8l §9Le§ce's §fSkeleton\"}}"
             )
         )
