@@ -30,7 +30,7 @@ set_interval(5000,closure(
             }
         }
 
-        if(has_permission(@player,'is.burningInSunlight')){
+        if(has_permission(@player,'can.burninsun')){
             @ploc = ploc(@player)
             @x = @ploc['x']
             @y = @ploc['y']
