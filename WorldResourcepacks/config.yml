@@ -7,6 +7,30 @@ messages:
   packlisthead: 'Packs available to you:'
   nopacks: No packs found!
 packs:
+  broville:
+    url: http://mynecraft.servegame.com/broville.zip
+    hash: 1e4e28db225daabdbad18b27d31db32bdd436fa7
+    format: 3
+    restricted: false
+    permission: worldresourcepacks.pack.broville
+  greenfield:
+    url: http://mynecraft.servegame.com/greenfield.zip
+    hash: 1e4e28db225daabdbad18b27d31db32bdd436fa7
+    format: 3
+    restricted: false
+    permission: worldresourcepacks.pack.greenfield
+  metropolis:
+    url: http://mynecraft.servegame.com/metropolis.zip
+    hash: 1e4e28db225daabdbad18b27d31db32bdd436fa7
+    format: 1
+    restricted: false
+    permission: worldresourcepacks.pack.metropolis
+  gotham:
+    url: http://mynecraft.servegame.com/gotham.zip
+    hash: 1e4e28db225daabdbad18b27d31db32bdd436fa7
+    format: 1
+    restricted: false
+    permission: worldresourcepacks.pack.gotham
   survival:
     url: http://mynecraft.servegame.com/pp.zip
     hash: 1e4e28db225daabdbad18b27d31db32bdd436fa7
@@ -15,7 +39,15 @@ packs:
     permission: worldresourcepacks.pack.survival
 empty: survival
 server:
-  pack: survival
+  pack: none 
 worlds:
   survival112:
     pack: survival
+  gotham:
+    pack: gotham
+  metropolis:
+    pack: none
+  greenfield:
+    pack: greenfield
+  broville:
+    pack: broville
