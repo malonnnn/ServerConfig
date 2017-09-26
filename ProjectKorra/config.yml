@@ -104,6 +104,10 @@ Properties:
     EarthSound: ENTITY_GHAST_SHOOT
     MetalSound: ENTITY_IRONGOLEM_HURT
     SandSound: BLOCK_SAND_BREAK
+    LavaSound:
+      Sound: BLOCK_LAVA_AMBIENT
+      Volume: 1
+      Pitch: 1
   Fire:
     CanBendWithWeapons: true
     DayFactor: 1.25
@@ -112,6 +116,10 @@ Properties:
     RevertTicks: 12000
     FireSound: BLOCK_FIRE_AMBIENT
     CombustionSound: ENTITY_FIREWORK_BLAST
+    LightningSound:
+      Sound: ENTITY_CREEPER_HURT
+      Volume: 1
+      Pitch: 0
   Chi:
     CanBendWithWeapons: true
   DisabledWorlds:
@@ -137,6 +145,7 @@ Abilities:
           Enabled: true
           Power: 3
       PowerMultiplier: 2
+      PlaySound: true
       Sound: BLOCK_ANVIL_LAND
       Air:
         AirBlast:
@@ -161,6 +170,17 @@ Abilities:
           ChargeTime: 1000
           Damage: 3
           Range: 16
+        AirStream:
+          Range: 60
+          EntityHeight: 21
+          EntityDuration: 6000
+        AirSweep:
+          Damage: 6
+          Range: 21
+          Knockback: 4
+        Twister:
+          Range: 24
+          Height: 12
       Earth:
         Catapult:
           MaxDistance: 80
@@ -197,6 +217,7 @@ Abilities:
         EarthGrab:
           Cooldown: 0
           Height: 10
+          Radius: 6
         Shockwave:
           Range: 20
           Cooldown: 0
@@ -233,14 +254,74 @@ Abilities:
           Charged:
             ChargeTime: 1500
             Damage: 5
+        FireKick:
+          Damage: 5
+          Range: 9
+        FireSpin:
+          Damage: 5
+          Range: 9
+          Knockback: 3
+        FireWheel:
+          Damage: 5
+          Range: 13
+          Height: 3
+          Speed: 0.75
+          FireTicks: 4
+          Radius: 1.5
+        WallOfFire:
+          Height: 6
+          Width: 6
+          Duration: 8000
+          Damage: 2
+          FireTicks: 2
       Water:
+        OctopusForm:
+          AttackRange: 3
+          Radius: 4
+          Damage: 4
+          Knockback: 2
         Surge:
           Wall:
             Radius: 4
           Wave:
             Radius: 20
+        Torrent:
+          InitialDamage: 4
+          SuccessiveDamage: 1.5
+          MaxHits: 3
+          Push: 1.5
         WaterManipulation:
           Damage: 5
+        IceBlast:
+          Damage: 4
+          Range: 30
+        IceSpike:
+          Damage: 4
+          Range: 30
+          Push: 0.9
+          Height: 7
+          SlowPower: 3
+          SlowDuration: 90
+          Field:
+            Damage: 3
+            Radius: 8
+            Push: 1.2
+          Blast:
+            Range: 30
+            Damage: 3
+            SlowPower: 3
+            SlowDuration: 90
+        IceBullet:
+          Damage: 4
+          Range: 16
+          MaxShots: 45
+          ShootTime: 12000
+        IceWave:
+          Damage: 4
+        WaterSpout:
+          Height: 20
+          Wave:
+            FlightTime: 5000
       AirSpout:
         Height: 26
       AirSuction:
@@ -291,12 +372,14 @@ Abilities:
       MaxHeightFromGround: 7
     AirShield:
       Enabled: true
+      Cooldown: 0
       Radius: 7
       Streams: 5
       Speed: 10
       Particles: 5
     AirSpout:
       Enabled: true
+      Cooldown: 0
       Height: 16
       Interval: 100
     AirSuction:
@@ -351,12 +434,37 @@ Abilities:
       AnimationSpeed: 1.0
     Tornado:
       Enabled: true
+      Cooldown: 0
       Radius: 10
       Height: 20
       Range: 25
       Speed: 1
       NpcPushFactor: 1
       PlayerPushFactor: 1
+    Twister:
+      Enabled: true
+      Speed: 0.35
+      Range: 16
+      Height: 8
+      Radius: 3.5
+      RemoveDelay: 1500
+      Cooldown: 10000
+      DegreesPerParticle: 7
+      HeightPerParticle: 1.25
+    AirStream:
+      Enabled: true
+      Speed: 0.5
+      Range: 40
+      EntityDuration: 4000
+      EntityHeight: 14
+      Cooldown: 7000
+    AirSweep:
+      Enabled: true
+      Speed: 1.4
+      Range: 14
+      Damage: 3
+      Knockback: 3.5
+      Cooldown: 6000
     AirCombo:
       Twister:
         Enabled: true
@@ -389,6 +497,7 @@ Abilities:
     Passive:
       FastSwim:
         Enabled: true
+        Cooldown: 0
         SpeedFactor: 0.7
       Hydrosink:
         Enabled: true
@@ -571,6 +680,9 @@ Abilities:
             FullMoon: 12000
     WaterBubble:
       Enabled: true
+      Cooldown:
+        Shift: 0
+        Click: 0
       Radius: 6
       Speed: 0.5
       ClickDuration: 2000
@@ -587,6 +699,7 @@ Abilities:
       Cooldown: 1000
     WaterSpout:
       Enabled: true
+      Cooldown: 0
       Height: 16
       Interval: 50
       BlockSpiral: true
@@ -603,6 +716,22 @@ Abilities:
         FlightTime: 2500
         Speed: 1.3
         Cooldown: 6000
+    IceWave:
+      Enabled: true
+      Damage: 3
+      Cooldown: 6000
+      ThawRadius: 10
+      RevertSphere: true
+      RevertSphereTime: 30000
+    IceBullet:
+      Enabled: true
+      Damage: 2
+      Radius: 2.5
+      Range: 12
+      MaxShots: 30
+      AnimationSpeed: 1
+      ShootTime: 10000
+      Cooldown: 10000
     WaterCombo:
       IceWave:
         Enabled: true
@@ -667,8 +796,10 @@ Abilities:
       SelectRange: 20
       Height: 6
       Cooldown: 2000
+      Radius: 4
     EarthTunnel:
       Enabled: true
+      Cooldown: 0
       MaxRadius: 1
       Range: 10
       Radius: 0.25
@@ -735,9 +866,10 @@ Abilities:
       MagnetPower: 0.6
       Cooldown: 6000
       CrushCooldown: 2000
-      ShootCooldown: 0
+      MagnetCooldown: 1000
       Duration: 10000
       ThrowEnabled: true
+      ShootCooldown: 0
     RaiseEarth:
       Enabled: true
       Speed: 10
@@ -759,6 +891,12 @@ Abilities:
       Knockback: 1.1
       Range: 15
       Angle: 40
+    Tremorsense:
+      Enabled: true
+      MaxDepth: 10
+      Radius: 5
+      LightThreshold: 7
+      Cooldown: 1000
     SandSpout:
       Enabled: true
       Height: 10
@@ -766,12 +904,6 @@ Abilities:
       SpoutDamage: 1
       Spiral: false
       Interval: 100
-    Tremorsense:
-      Enabled: true
-      MaxDepth: 10
-      Radius: 5
-      LightThreshold: 7
-      Cooldown: 1000
   Fire:
     Blaze:
       Enabled: true
@@ -900,6 +1032,40 @@ Abilities:
       DamageInterval: 500
       FireTicks: 0
       MaxAngle: 50
+    FireKick:
+      Enabled: true
+      Range: 7.0
+      Damage: 3.0
+      Cooldown: 6000
+      Speed: 1
+    FireSpin:
+      Enabled: true
+      Range: 7
+      Damage: 3.0
+      Knockback: 3.0
+      Cooldown: 5000
+      Speed: 0.3
+    FireWheel:
+      Enabled: true
+      Range: 20.0
+      Damage: 4.0
+      Speed: 0.55
+      Cooldown: 6000
+      FireTicks: 2.5
+      Height: 2
+      Radius: 1.0
+    JetBlast:
+      Enabled: true
+      Speed: 1.2
+      Cooldown: 6000
+      Duration: 5000
+    JetBlaze:
+      Enabled: true
+      Speed: 1.1
+      Damage: 4
+      Cooldown: 6000
+      FireTicks: 2.5
+      Duration: 5000
     FireCombo:
       FireKick:
         Enabled: true
@@ -951,13 +1117,13 @@ Abilities:
       BlockChi:
         Chance: 25
         Duration: 1000
-    ChiCombo:
-      Immobilize:
-        Enabled: true
-        ParalyzeDuration: 3500
-        Cooldown: 15000
+    Immobilize:
+      Enabled: true
+      ParalyzeDuration: 3500
+      Cooldown: 15000
     AcrobatStance:
       Enabled: true
+      Cooldown: 0
       ChiBlockBoost: 3
       Speed: 1
       Jump: 1
@@ -972,9 +1138,10 @@ Abilities:
     RapidPunch:
       Enabled: true
       Damage: 1
-      Distance: 3
       Cooldown: 6000
       Punches: 3
+      Interval: 500
+      Distance: 3
     Smokescreen:
       Enabled: true
       Cooldown: 25000
@@ -982,6 +1149,7 @@ Abilities:
       Duration: 12
     WarriorStance:
       Enabled: true
+      Cooldown: 0
       Strength: 1
       Resistance: -1
     QuickStrike:
@@ -994,6 +1162,11 @@ Abilities:
       Damage: 2
       ChiBlockChance: 15
       Cooldown: 4000
+    ChiCombo:
+      Immobilize:
+        Enabled: true
+        ParalyzeDuration: 3500
+        Cooldown: 15000
 Storage:
   engine: sqlite
   MySQL:
