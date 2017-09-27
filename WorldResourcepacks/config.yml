@@ -8,19 +8,19 @@ messages:
   nopacks: No packs found!
 packs:
   broville:
-    url: http://mynecraft.servegame.com/broville.zip
+    url: http://mynecraft.servegame.com/broville.zip?raw=true
     hash: 96985bb0d3f89a1035706a067b8a7761b408f6d1
     format: 3
     restricted: false
     permission: worldresourcepacks.pack.broville
   greenfield:
-    url: http://mynecraft.servegame.com/greenfield.zip
+    url: http://mynecraft.servegame.com/greenfield.zip?raw=true
     hash: 77d76fdc6ad218251895f37c6dda5cdcd5ec9894
     format: 3
     restricted: false
     permission: worldresourcepacks.pack.greenfields
   gotham:
-    url: http://mynecraft.servegame.com/gotham.zip
+    url: http://mynecraft.servegame.com/gotham.zip?raw=true
     hash: 846185eaf270c3ca009e7e7e5bf4e0a58fb837e0
     format: 3
     restricted: false
@@ -28,9 +28,9 @@ packs:
   emptypack:
     url: https://github.com/Phoenix616/BungeeResourcepacks/blob/master/Empty.zip?raw=true
     hash: 3934d29cc6f7c271afdc477f6dd6b2ea90493825 
-empty: empty
+empty: emptypack
 server:
-  pack: empty
+  pack: emptypack
   send-delay: 10
 worlds:
   gotham:
