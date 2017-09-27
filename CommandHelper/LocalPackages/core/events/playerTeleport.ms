@@ -4,6 +4,7 @@ bind(player_teleport, null, null, @event,
         die()
     }
 
+    @to = @event['to']
 
     if(@event['from']['world'] != 'escapeworld' && @to['world'] == 'escaperoom'){
         @plrs = all_players('escaperoom')
