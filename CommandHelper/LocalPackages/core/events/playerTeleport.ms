@@ -1,10 +1,21 @@
 bind(player_teleport, null, null, @event,
 
+    @to = @event['to']
+
+    try{
+        get_spawn(@to['world'])
+    }catch(InvalidWorldException @e){
+        cancel()
+        msg(color(RED).'Sorry, that world does not exist')
+        @from = @event['from']
+        sudo('/mv tp '.@from['world'])
+        die()
+    }
+
     if(has_permission('escaperoom.bpass')){
         die()
     }
 
-    @to = @event['to']
 
     if(@event['from']['world'] != 'escapeworld' && @to['world'] == 'escaperoom'){
         @plrs = all_players('escaperoom')
