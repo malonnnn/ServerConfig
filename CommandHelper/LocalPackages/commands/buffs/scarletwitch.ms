@@ -15,7 +15,8 @@
                 "/caste telekinisis",
                 "/cast forcefield",
                 "/confuse <player>",
-                "/cast manipulate"
+                "/cast manipulate",
+                "/float <up/down/pause/unpause/stop>"
             ),
             'buffs': array(
                "/effect ". @plr ." 21 9999 9  true",
