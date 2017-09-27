@@ -10,7 +10,7 @@ worlds:
     respawnWorld: moblottery
     allowWeather: 'false'
     difficulty: HARD
-    spawning: &id007
+    spawning: &id022
       ==: MVSpawnSettings
       animals:
         ==: MVSpawnSubSettings
@@ -22,7 +22,7 @@ worlds:
         spawn: 'true'
         spawnrate: '-1'
         exceptions: []
-    entryfee: &id008
+    entryfee: &id023
       ==: MVEntryFee
       amount: '0.0'
       currency: '-1'
@@ -41,7 +41,7 @@ worlds:
       yaw: -269.28955
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: &id009 []
+    worldBlacklist: &id024 []
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
@@ -3792,6 +3792,54 @@ worlds:
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'false'
+  leafdecay:
+    ==: MVWorld
+    hidden: 'false'
+    alias: '&2L&ae&8a&af &2D&ae&8c&aa&2y'
+    color: WHITE
+    style: NORMAL
+    pvp: 'true'
+    scale: '1.0'
+    respawnWorld: ''
+    allowWeather: 'true'
+    difficulty: EASY
+    spawning:
+      ==: MVSpawnSettings
+      animals:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+      monsters:
+        ==: MVSpawnSubSettings
+        spawn: 'true'
+        spawnrate: '-1'
+        exceptions: []
+    entryfee:
+      ==: MVEntryFee
+      amount: '0.0'
+      currency: '-1'
+    hunger: 'true'
+    autoHeal: 'true'
+    adjustSpawn: 'true'
+    portalForm: ALL
+    gameMode: SURVIVAL
+    keepSpawnInMemory: 'true'
+    spawnLocation:
+      ==: MVSpawnLocation
+      x: -0.2300480763465986
+      y: 125.0
+      z: 14.456561419426647
+      pitch: 12.230997
+      yaw: -267.4935
+    autoLoad: 'true'
+    bedRespawn: 'true'
+    worldBlacklist: []
+    environment: NORMAL
+    seed: '-7232020420922964540'
+    generator: CleanroomGenerator:.
+    playerLimit: '-1'
+    allowFlight: 'true'
   infectiontag:
     ==: MVWorld
     hidden: 'false'
@@ -4763,8 +4811,8 @@ worlds:
     respawnWorld: colosseumlobby
     allowWeather: 'false'
     difficulty: HARD
-    spawning: *id007
-    entryfee: *id008
+    spawning: *id022
+    entryfee: *id023
     hunger: 'true'
     autoHeal: 'true'
     adjustSpawn: 'true'
@@ -4780,7 +4828,7 @@ worlds:
       yaw: 0.0
     autoLoad: 'true'
     bedRespawn: 'false'
-    worldBlacklist: *id009
+    worldBlacklist: *id024
     environment: NORMAL
     seed: '-6947373970582061031'
     generator: CleanroomGenerator:.
