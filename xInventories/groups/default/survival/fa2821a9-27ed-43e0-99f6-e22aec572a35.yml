@@ -1,24 +1,57 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SUGAR_CANE
+    amount: 50
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ITEM_FRAME
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPLE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElMZ2AAAIvj76AWAAAA
+      blockMaterial: PURPLE_SHULKER_BOX
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Ph§dant§5om_§dBla§5st§5 «×»
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.23076922
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.45931044
+saturation: 3.0
+exhaustion: 0.5763299
 ender_chest: {}
 potion_effect:
   '0':
+    type: SLOW_DIGGING
+    level: 2
+    duration: 4326
+  '1':
+    type: FAST_DIGGING
+    level: 5
+    duration: 198413
+  '2':
     type: DAMAGE_RESISTANCE
     level: 4
-    duration: 199743
-  '1':
+    duration: 191459
+  '3':
     type: WATER_BREATHING
     level: 1
-    duration: 199743
-  '2':
+    duration: 191459
+  '4':
     type: INCREASE_DAMAGE
     level: 5
-    duration: 199743
+    duration: 191459
