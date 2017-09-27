@@ -1,7 +1,9 @@
-test1:/test1 = >>>
+test1:/test1 $secs = >>>
 # -32 17
 # -25 24
 
+@secs = $secs
+@secs = @secs * 1000
 @time = time()
 
 set_interval(100,closure(
@@ -11,7 +13,7 @@ set_interval(100,closure(
 
     set_block_at(@x,@y,@z,0,'spleef')
 
-    if(time() > (@time + 10000)){
+    if(time() > (@time + @secs)){
         clear_task()
     }
 ))
