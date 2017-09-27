@@ -1,4 +1,4 @@
-bind(player_portal_travel, null, null, @event,
+bind(player_portal_travel, null, null, @event){
     @to = @event['to']
     console('fuck')
     try{
