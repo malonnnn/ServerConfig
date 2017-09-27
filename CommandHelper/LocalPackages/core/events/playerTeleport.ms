@@ -5,6 +5,7 @@ bind(player_teleport, null, null, @event,
     try{
         get_spawn(@to['world'])
     }catch(InvalidWorldException @e){
+        console('here')
         cancel()
         msg(color(RED).'Sorry, that world does not exist')
         @from = @event['from']
