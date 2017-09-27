@@ -1,0 +1,52 @@
+# default config.yml for CreativeNbtControl
+# config version 1.9
+ 
+
+#The plugin will check for the following items.
+# Material names: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+EnabledFor:
+- 'CHEST'
+- 'TRAPPED_CHEST'
+- 'FURNACE'
+- 'DROPPER'
+- 'DISPENSER'
+- 'HOPPER'
+- 'JUKEBOX'
+- 'BREWING_STAND_ITEM'
+- 'BEACON'
+- 'SIGN'
+- 'SKULL_ITEM'
+- 'MONSTER_EGG'
+- 'COMMAND'
+- 'MOB_SPAWNER'
+#For 1.8 and up
+- 'BANNER'
+#For 1.11 and up
+- 'BURNING_FURNACE'
+- 'COMMAND_CHAIN'
+- 'COMMAND_MINECART'
+- 'COMMAND_REPEATING'
+- 'BLACK_SHULKER_BOX'
+- 'BLUE_SHULKER_BOX'
+- 'BROWN_SHULKER_BOX'
+- 'CYAN_SHULKER_BOX'
+- 'GRAY_SHULKER_BOX'
+- 'GREEN_SHULKER_BOX'
+- 'LIGHT_BLUE_SHULKER_BOX'
+- 'LIME_SHULKER_BOX'
+- 'MAGENTA_SHULKER_BOX'
+- 'ORANGE_SHULKER_BOX'
+- 'PINK_SHULKER_BOX'
+- 'PURPLE_SHULKER_BOX'
+- 'RED_SHULKER_BOX'
+- 'SILVER_SHULKER_BOX'
+- 'WHITE_SHULKER_BOX'
+- 'YELLOW_SHULKER_BOX'
+
+
+#Chat messages with color and format codes support.
+#Minecraft Color and Format Codes: http://minecraft.gamepedia.com/Formatting_codes    
+ChatMessages:
+    NoPermission: '&4[System] &cYou don''t have permission!'
+    CmdHelp: '&4[System] &cAvailable commands:&6 /cnc reload'
+    CmdReload: '&2[System] &aConfig reload complete!'

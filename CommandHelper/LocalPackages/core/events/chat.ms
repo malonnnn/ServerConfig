@@ -1,5 +1,4 @@
 bind('player_chat', null, null, @e) {
-    
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @pname = player()
     @pgroup = _getheroclass(@pname)
