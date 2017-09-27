@@ -1,10 +1,41 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §2M§6e§8r§aa §e§lD§a§lN§4§lA
+      lore:
+      - mera
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+health: 40.0
 hunger: 20
 exp: 0.9333334
 exp-level: 4
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 2.835612
+saturation: 0.0
+exhaustion: 1.8596209
 armor_contents: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 178087
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 178087

@@ -12381,7 +12381,7 @@ groups:
     inheritance:
     - op
     options:
-      prefix: '&9&l&oOwner'
+      prefix: '&4&l&oCo-Owner'
       suffix: '&b&l'
     permissions:
     - -is.mute
@@ -13674,6 +13674,24 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  fanfic046a07cbd1c1465087ec21239a329725:
+    inheritance:
+    - commonherotraits
+    worlds:
+      survival112:
+        permissions:
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
 schema-version: 1
 worlds:
   checkers:
@@ -13828,7 +13846,8 @@ users:
     worlds:
       fightclub:
         permissions: []
-    permissions: []
+    permissions:
+    - ch.alias.joinblue
   3f687d03-da51-4693-8e41-c81a28e55b3e:
     group:
     - joker
@@ -13872,17 +13891,17 @@ users:
     permissions: []
   f621586e-8ef8-448d-9264-86b61375052e:
     group:
-    - mortal
+    - superman
     options:
       name: President_Myth
     permissions:
+    - ch.alias.joingreen
     - hire.op
     worlds:
       fightclub:
         permissions: []
   c23c6679-b9ff-4249-a1f1-51c4c04ad098:
     group:
-    - spleefgod
     - mortal
     options:
       name: MaddoxArt
@@ -13891,8 +13910,6 @@ users:
         permissions: []
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     permissions:
-    - chat.cooldown
-    - case.tolower
     - is.helper
     - is.secretary
     - is.headsecretary
@@ -14198,7 +14215,7 @@ users:
       name: SUPERDUDE_01
   a3ff5197-46a9-4140-a086-4ea1d0aa7d26:
     group:
-    - goku
+    - martianmanhunter
     options:
       name: Sigurd_Kinslayer
   4994fb63-a9f8-464c-a938-adfec36e72f1:
@@ -14226,7 +14243,7 @@ users:
     options:
       name: HerpaDerp10000
     group:
-    - flashbarryallen
+    - mortal
   01ba41ef-31eb-45d0-85ba-d5f2c1dba3fa:
     group:
     - darkseid
@@ -14595,7 +14612,7 @@ users:
     permissions: []
   45bf2452-589e-46a7-b72f-71aaf867d316:
     group:
-    - blackspiderman
+    - christianicgod
     options:
       name: Noahfoxy
     worlds:
@@ -14662,7 +14679,7 @@ users:
       name: RqndomPqrson
     group:
     - spleefgod
-    - mera
+    - wonderwoman
     permissions:
     - is.spleefgod
   a5c92806-da45-47ab-90f9-c96a8f197c45:
@@ -16041,7 +16058,7 @@ users:
       name: Ironmanjacob10
   b47a712e-1a49-49e8-8cec-2ee64d1e084e:
     group:
-    - mortal
+    - blackflash
     options:
       name: Joewolf
   414bfad3-0925-4ad8-8713-0867a6096b59:
@@ -20985,12 +21002,12 @@ users:
       name: Dragonboy8299
   69ac1c3d-0c2a-40cf-924f-7ffbd16b5ba3:
     group:
-    - flashwallywest
+    - martianmanhunter
     options:
       name: Coedey
   046a07cb-d1c1-4650-87ec-21239a329725:
     group:
-    - cyborg
+    - fanfic046a07cbd1c1465087ec21239a329725
     options:
       name: Aara
   cd3772e9-5223-4f5d-844f-54f8195082ca:
@@ -21395,3 +21412,18 @@ users:
   b47575ad-808d-4878-931c-ff7f691c9351:
     group:
     - beastboy
+  1db65735-de80-4fa7-8623-cb07bc4f0a9b:
+    group:
+    - bluelanternsaintwalker
+    options:
+      name: herokevin4
+  fdb2f2a5-ef68-4365-bae2-9bb3c7bfb633:
+    group:
+    - indigotribeindigo1
+    options:
+      name: Nixile
+  2cb45bbc-c88e-4c7c-be4e-d17725ed7bac:
+    group:
+    - flashbarryallen
+    options:
+      name: passie73
