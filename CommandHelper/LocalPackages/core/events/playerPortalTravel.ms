@@ -1,6 +1,6 @@
 bind(player_portal_travel, null, null, @event){
     @to = @event['to']
-    console('fuck')
+    console(@to)
     try{
         get_spawn(@to['world'])
     }catch(InvalidWorldException @e){
