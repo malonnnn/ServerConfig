@@ -6,7 +6,7 @@ test1:/test1 $secs = >>>
 @secs = @secs * 1000
 @time = time()
 
-set_interval(100,closure(
+set_interval(50,closure(
     @x = rand(-32,18)
     @y = 53
     @z = rand(-25,25)
