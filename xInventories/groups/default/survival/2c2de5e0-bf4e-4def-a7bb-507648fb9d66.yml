@@ -1,64 +1,57 @@
 inventory:
-  '0':
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
+    damage: 6
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §3I§1c§be §bSp§3i§1ke§1 «×»
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRILLED_PORK
-    amount: 7
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: PAPER
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Wayne Family
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bIce Glide
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        DURABILITY: 3
-        MENDING: 1
-health: 26.0333309173584
-hunger: 17
-exp: 0.14876038
-exp-level: 2
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 20
+exp: 0.04347826
+exp-level: 8
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.8939816
+exhaustion: 0.23441759
 armor_contents:
-  chestplate:
+  boots:
     ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
+    type: IRON_BOOTS
+    damage: 6
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bIce Glide
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        DURABILITY: 3
-        MENDING: 1
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 196582
-  '1':
-    type: INCREASE_DAMAGE
-    level: 2
-    duration: 196582
-  '2':
     type: SPEED
-    level: 2
-    duration: 196783
+    level: 10
+    duration: 196855
+  '1':
+    type: REGENERATION
+    level: 1
+    duration: 175190
+  '2':
+    type: JUMP
+    level: 5
+    duration: 168738
+  '3':
+    type: FAST_DIGGING
+    level: 10
+    duration: 194192
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 168301
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 168301

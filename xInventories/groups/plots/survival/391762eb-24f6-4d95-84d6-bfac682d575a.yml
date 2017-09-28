@@ -1,4 +1,43 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_AXE
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0Y9KqVgHRRopJVNFy6OCM/vyQzL70oMS89Vak2VgdZH1NmCgNfbmZeanJRYlqJVXFmeh7UMEMGa2TDkvNz8ouAmlISi7Ljk3JKU5Xg5kSHJxYVxKKazMAAAFW3eojSAAAA
+      blockMaterial: SIGN
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0Y9KuVgHRRopJVNFw6Lb8otSy1KDk/sbgktUipNlYHWSNTZgoDX25mXmpyUWJaiVVxZnoe1DRDBmtk05Lzc/KLgJpSEouy45NySlOV4OZEhycWFcSimszAAADUirsK0wAAAA==
+      blockMaterial: SIGN
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YtKqVgHRRopJVNFy6oKygPL8oJ6VYqTZWB1kPU2YKA19uZl5qclFiWolVcWZ6HtQgQwZrZIOS83Pyi4CaUhKLsuOTckpTleDmRIcnFhXEoprMwAAAakiC784AAAA=
+      blockMaterial: SIGN
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
 health: 20.0
 hunger: 20
 exp: 0.7432432
@@ -7,8 +46,3 @@ remainingAir: 300
 fireTicks: -20
 saturation: 5.0
 exhaustion: 1.0230001
-potion_effect:
-  '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 112306
