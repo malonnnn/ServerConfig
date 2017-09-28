@@ -16,6 +16,8 @@ register_command('anarchyspec',
 
             sudo('/pex user '.@plr.' group set anarchyspectator')
             set_pmode(@plr,'SPECTATOR')
+            set_pflight(@plr,true)
+            set_pflying(@plr,true)
 
             tmsg(@plr,color(RED).'Welcome to Anarchy Spectator Mode! Use '.color(GREEN).'/anarchyplay'.color(RED).' to go back to normal play')
 
