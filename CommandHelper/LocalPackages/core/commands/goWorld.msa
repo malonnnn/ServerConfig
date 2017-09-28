@@ -6,7 +6,7 @@ goworld:/goworld $plr = >>>
     # This function is relative to the command block that placed it
     @loc = get_command_block()
     
-    @world = 'greenfield'
+    @world = @loc['world']
 
     assign(@skull1, array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
     assign(@skull2, array('x': @loc['x'], 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
