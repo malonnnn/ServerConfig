@@ -1,30 +1,47 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_AXE
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: YELLOW_FLOWER
-    amount: 2
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
-    amount: 5
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: RED_ROSE
-    damage: 8
-    amount: 3
-  '4':
-    ==: org.bukkit.inventory.ItemStack
     type: CONCRETE
     damage: 15
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YdKuVgHRRopJVNFw6J7WiuCSxKDsnMalYqTZWB1kbU2YKA19uZl5qclFiWolVcWZ6HtQsQwZrZLOS83Pyi4CaUoAGxSfllKYqwc2JDk8sKohFNZmBAQDHnWR80QAAAA==
+      blockMaterial: SIGN
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YXKqVgHRRopJVdLVScn5OfhFQvig1RUkHpjim1MDAODk8sahAIS8xNxXMTVWqjdVBNo0pM4WBLzczLzW5KDGtxKo4Mz0PaoUhgxU2K1ISi7LjUeyJBlkRi2owAwMAXrWZlucAAAA=
+      blockMaterial: SIGN
   '5':
     ==: org.bukkit.inventory.ItemStack
     type: SIGN
-  '7':
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YDKuVgHRRopJVNFxavzyxqEAhOTUPKJ6TUZqkVBurg6yVKTOFgS83My81uSgxrcSqODM9D2qeIYM2FvMi80sVEotSFTLzUE1iYAAApEFdAcUAAAA=
+      blockMaterial: SIGN
+  '8':
     ==: org.bukkit.inventory.ItemStack
-    type: GRASS
+    type: WOOD_AXE
 health: 20.0
 hunger: 20
 exp: 0.7432432
@@ -33,3 +50,8 @@ remainingAir: 300
 fireTicks: -20
 saturation: 5.0
 exhaustion: 1.0230001
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 147461
