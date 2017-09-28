@@ -6,6 +6,11 @@
     associative_array('fortressofsolitude','Fortress of Solitdue'),
     associative_array('hallofjustice','Hall of Justice'),
     associative_array('wanyemanor','Wayne Manor'),
-    associative_array('titanstower','Titans Tower')
+    associative_array('titanstower','Titans Tower'),
+    associative_array('greenfield','Star City'),
+    associative_array('broville','Starling City'),
+    associative_array('starlabs','Star Labs'),
+    associative_array('starlabs','Star Labs'),
+    associative_array('atlantis','Atlantis')
 
 )
