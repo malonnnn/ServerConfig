@@ -10,7 +10,6 @@
     associative_array('greenfield','Star City'),
     associative_array('broville','Starling City'),
     associative_array('starlabs','Star Labs'),
-    associative_array('starlabs','Star Labs'),
     associative_array('atlantis','Atlantis')
 
 )
