@@ -35,7 +35,8 @@ register_command('anarchyleave',
             }
             
             @plr = @args[0]
-
+            
+            sudo('/pex user '.@plr.' group set mortal')
             sudo('/warp centralhub '.@plr)
         }
     )
