@@ -26,7 +26,7 @@ gogo:/gogo = >>>
         for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
             for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
                 console(@x.' '.@y.' '.@z)
-                if(@x == -269 && @y == 65 && @z == 403){
+                if(integer(@x) == -269 && integer(@y) == 65 && integer(@z) == 403){
                     @block = get_block_at(@x,@y,@z,@world)
                     @locc = array(@x,@y,@z,@world)
                     @meta = get_metadata(@locc)
