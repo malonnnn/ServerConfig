@@ -25,10 +25,12 @@ gogo:/gogo = >>>
     for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
         for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
             for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
-                @block = get_block_at(@x,@y,@z,@world)
-                @locc = array(@x,@y,@z,@world)
-                @meta = get_metadata(@locc)
+                if(@x == -269 && @y == 65 && @z == 403){
+                    @block = get_block_at(@x,@y,@z,@world)
+                    @locc = array(@x,@y,@z,@world)
+                    @meta = get_metadata(@locc)
                     console(@meta)
+                }
             }
         }
     }
