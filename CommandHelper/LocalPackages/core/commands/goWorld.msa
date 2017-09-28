@@ -16,7 +16,7 @@ goworld:/goworld $plr = >>>
     @num3 = get_value('heromachine.worldchanger2')
     
     @id = @num1.@num2.@num3
-    @id = @id - 1
+    @id = integer(@id) - 1 
 
     console(@id)
     
