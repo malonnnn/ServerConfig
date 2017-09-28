@@ -30,7 +30,8 @@ gogo:/gogo = >>>
                     @block = get_block_at(@x,@y,@z,@world)
                     @locc = array(@x,@y,@z,@world)
                     @meta = get_metadata(@locc)
-                    console(@meta)
+                    console(@bloc)
+                    die()
                 }
             }
         }
