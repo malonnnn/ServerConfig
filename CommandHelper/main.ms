@@ -13,7 +13,7 @@ set_interval(5000,closure(
                         foreach(@blk in @blocktypes){
                             if(@block[0].@block[1].@block[2] == @blk) {
                                 if(get_block_command(array(@x,@y,@z,@world)) != ""){
-                                    set_block_at(@x,@y,@z,0:0,@world)
+                                    set_block_at(@x,@y,@z,1:0,@world)
                                     @ext = integer(@block[4])
                                     try{
                                         @ext = @ext.@block[5]
