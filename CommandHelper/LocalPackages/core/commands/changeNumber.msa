@@ -107,6 +107,8 @@ if(@facingDir == 'north'){
         @number[@numPos]['num'] = 9
     }
 
+    console(@ptr)
+
     include('/home/minecraft/server/plugins/CommandHelper/includes/getNumBlockMeta.ms')
     @number[1]['meta'] = _getNumBlockMeta(@number[1]['num'])
     @number[2]['meta'] = _getNumBlockMeta(@number[2]['num'])
@@ -117,7 +119,7 @@ if(@facingDir == 'north'){
     store_value('heromachine.'.@machineID.'1',@number[1]['num'])
     store_value('heromachine.'.@machineID.'2',@number[2]['num'])
     store_value('heromachine.'.@machineID.'3',@number[3]['num'])
-    
+
     @stdout = ''
     @hero = ""
     include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram2.ms')

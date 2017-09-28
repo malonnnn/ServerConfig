@@ -7,12 +7,11 @@ goworld:/goworld $plr = >>>
     @loc = get_command_block()
     @world = @loc['world']
 
-    assign(@skull1, array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] - 1, 'world': @world))
-    assign(@skull2, array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'], 'world': @world))
-    assign(@skull3, array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world))
+    @skull1 = array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] - 1, 'world': @world)
+    @skull2 = array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'], 'world': @world)
+    @skull3 = array('x': @loc['x'] - 1, 'y': @loc['y'] + 4, 'z': @loc['z'] + 1, 'world': @world)
 
     @block1 = get_metadata(@skull1,"skullNum")
-    console(@block1)
     @num1 = @block1['CommandHelper']
     
     @block2 = get_metadata(@skull2,"skullNum")
