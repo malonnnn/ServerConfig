@@ -556,6 +556,8 @@ groups:
     worlds:
       anarchy:
         permissions:
+        - commands.anarchyspec
+        - commands.anarchyplay
         - chatformat.anarchy
         - essentials.warp
         - essentials.warps.anarchyspawn
@@ -7459,6 +7461,7 @@ groups:
         - essentials.build.interact.*
       spawn:
         permissions:
+        - commands.anarchystart
         - essentials.build.interact.*
         - essentials.interact.*
       speedforce:
@@ -7559,9 +7562,7 @@ groups:
         permissions:
         - essentials.build.interact.*
       anarchy:
-        permissions:
-        - commands.anarchyplay
-        - commands.anarchyspec
+        permissions: []
   mosquitogirl:
     inheritance:
     - commonherotraits
@@ -13832,7 +13833,7 @@ users:
         permissions: []
   391762eb-24f6-4d95-84d6-bfac682d575a:
     group:
-    - anarchy
+    - 391762eb24f64d9584d6bfac682d575a
     options:
       name: Tektronic
     permissions:
@@ -14146,7 +14147,7 @@ users:
       name: Blujay236
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - mortal
+    - anarchy
     options:
       name: Jiren_The_Grey
     permissions:
@@ -21010,7 +21011,7 @@ users:
       name: Dragonboy8299
   69ac1c3d-0c2a-40cf-924f-7ffbd16b5ba3:
     group:
-    - martianmanhunter
+    - christianicgod
     options:
       name: Coedey
   046a07cb-d1c1-4650-87ec-21239a329725:
