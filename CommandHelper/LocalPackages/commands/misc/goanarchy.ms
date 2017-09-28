@@ -8,11 +8,11 @@ register_command('anarchystart',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
-            if (array_size(@args) != 1) {
+            if (array_size(@args) != 0) {
                 return(false)	
             }
             
-            @plr = @args[0]
+            @plr = player()
 
             sudo('/pex user '.@plr.' add multiverse.access.anarchy')
             sudo('/warp anarchyspawn '.@plr)
