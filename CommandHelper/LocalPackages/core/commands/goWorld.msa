@@ -21,6 +21,8 @@ goworld:/goworld $plr = >>>
     console(@id)
     
     include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms')
+    
+    console(@worldList)
 
     if(array_index_exists(@worldList,@id)){
         @pushedOnce = import(@player.'pushedOnce')
