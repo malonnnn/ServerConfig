@@ -4,7 +4,8 @@ goworld:/goworld $plr = >>>
     @player = $plr
 
     # This function is relative to the command block that placed it
-    @loc = get_command_block()
+    # @loc = get_command_block()
+    @loc = ploc(@player)
     console(@loc)
     @world = @loc['world']
 
