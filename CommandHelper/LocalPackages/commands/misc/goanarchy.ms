@@ -1,18 +1,15 @@
-register_command('goanarchy', 
+register_command('anarchystart', 
 
     array(
     
-        description: 'Sets a player to Spectator Mode in Anarchy World',
-        usage: '/anarchyspec <plr>',
-        permission: 'commands.anarchyspec',
+        description: 'Starts Anarchy Mode',
+        usage: '/anarchystart <plr>',
+        permission: 'commands.anarchystart',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /goanarchy <plr>');
-                die(); # No need to go further					
-            
+                return(false)	
             }
             
             @plr = @args[0]
@@ -20,7 +17,26 @@ register_command('goanarchy',
             sudo('/pex user '.@plr.' add multiverse.access.anarchy')
             sudo('/warp anarchyspawn '.@plr)
             sudo('/pex user '.@plr.' remove multiverse.access.anarchy')
+        }
+    )
+)
+register_command('anarchyleave', 
 
+    array(
+    
+        description: 'Leaves Anarchy Mode',
+        usage: '/anarchyleave <plr>',
+        permission: 'commands.anarchyleave',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        executor: closure(@alias, @sender, @args) {
+        
+            if (array_size(@args) != 1) {
+                return(false)	
+            }
+            
+            @plr = @args[0]
+
+            sudo('/warp centralhub '.@plr)
         }
     )
 )

@@ -9,10 +9,7 @@ register_command('anarchyspec',
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /anarchyspec <plr>');
-                die(); # No need to go further					
-            
+                return(false)				
             }
             
             @plr = @args[0]
@@ -36,10 +33,7 @@ register_command('anarchyplay',
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 0) {
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /anarchyplay');
-                die(); # No need to go further					
-            
+                return(false)
             }
             
             @plr = player()
