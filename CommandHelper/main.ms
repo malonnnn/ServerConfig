@@ -13,7 +13,7 @@ set_interval(5000,closure(
                         foreach(@blk in @blocktypes){
                             if(@block[0].@block[1].@block[2] == @blk) {
                                 if(get_block_command(array(@x,@y,@z,@world)) != ""){
-                                    set_command_block(array(@x,@y,@z,@world)) = ""
+                                    set_block_command(array(@x,@y,@z,@world)) = ""
                                     acc_add(@player,100)
                                     tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
                                     console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
