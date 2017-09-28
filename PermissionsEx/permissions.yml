@@ -7419,6 +7419,7 @@ groups:
         - essentials.build.interact.*
       plots:
         permissions:
+        - plots.remove
         - essentials.fly
         - plots.home
         - plots.visit.owned
@@ -13736,9 +13737,6 @@ worlds:
   flyingbattlearena:
     inheritance:
     - colosseum
-  theworldroom:
-    inheritance:
-    - greenfield
   leafdecay:
     inheritance:
     - colosseum
@@ -15344,6 +15342,10 @@ users:
     options:
       name: _Vigilance_
     permissions: []
+    worlds:
+      plots:
+        permissions:
+        - essentials.build.*
   7559d3b9-2b09-413a-8c2a-4d3e8475ca98:
     group:
     - mortal
