@@ -19,12 +19,13 @@ gogo:/gogo = >>>
     @player = player()
     #if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
     @loc = ploc(@player)
-    @radius = 10
+    @radius = 2
     @world = pworld(@player)
     @blocktypes = array('137','210','211')
     for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
         for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
             for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
+                console(@x.' '.@y.' '.@z)
                 if(@x == -269 && @y == 65 && @z == 403){
                     @block = get_block_at(@x,@y,@z,@world)
                     @locc = array(@x,@y,@z,@world)
