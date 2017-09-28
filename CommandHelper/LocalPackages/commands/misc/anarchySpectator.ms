@@ -41,7 +41,6 @@ register_command('anarchyplay',
             @plr = player()
 
             set_pflight(@plr,false)
-            set_pflying(@plr,false)
             sudo('/pex user '.@plr.' group set anarchy')
             set_pmode(@plr,'SURVIVAL')
             sudo('/warp anarchyspawn '.@plr)
