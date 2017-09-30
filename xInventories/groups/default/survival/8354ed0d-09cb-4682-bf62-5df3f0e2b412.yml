@@ -1,253 +1,67 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ANVIL
-    amount: 63
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: BUCKET
+    type: WOOD
+    damage: 1
+    amount: 4
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: TRAP_DOOR
+    amount: 2
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      display-name: Sexy Hoe
-      id: shulker
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 16
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: evocation_illager
+    type: ENDER_STONE
+    amount: 5
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: TOTEM
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK
-      firework-effects:
-      - ==: Firework
-        flicker: true
-        trail: false
-        colors:
-        - ==: Color
-          RED: 179
-          BLUE: 44
-          GREEN: 49
-        - ==: Color
-          RED: 240
-          BLUE: 240
-          GREEN: 240
-        fade-colors: &id001 []
-        type: BALL_LARGE
-      power: 3
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: vex
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 51
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK
-      firework-effects:
-      - ==: Firework
-        flicker: true
-        trail: false
-        colors:
-        - ==: Color
-          RED: 30
-          BLUE: 27
-          GREEN: 27
-        - ==: Color
-          RED: 235
-          BLUE: 68
-          GREEN: 136
-        fade-colors: *id001
-        type: BALL_LARGE
-      power: 3
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: TOTEM
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 56
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: stray
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-    amount: 7
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 40
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: evocation_illager
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 59
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: vex
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK
-      firework-effects:
-      - ==: Firework
-        flicker: false
-        trail: true
-        colors:
-        - ==: Color
-          RED: 179
-          BLUE: 44
-          GREEN: 49
-        - ==: Color
-          RED: 37
-          BLUE: 146
-          GREEN: 49
-        - ==: Color
-          RED: 240
-          BLUE: 240
-          GREEN: 240
-        fade-colors: *id001
-        type: CREEPER
-      power: 3
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      id: shulker
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: TOTEM
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 18
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '40':
-    ==: org.bukkit.inventory.ItemStack
-    type: TOTEM
+    type: COBBLESTONE
+    amount: 23
 health: 60.0
-hunger: 20
-exp: 0.61403525
-exp-level: 18
+hunger: 9
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.20000029
-exhaustion: 0.36839676
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    damage: 18
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+saturation: 0.0
+exhaustion: 1.069618
+armor_contents: {}
 ender_chest: {}
 potion_effect:
   '0':
-    type: SPEED
-    level: 8
-    duration: 190965
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 179165
   '1':
     type: HEALTH_BOOST
     level: 9
-    duration: 190124
+    duration: 179165
   '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 190124
-  '3':
     type: REGENERATION
     level: 4
-    duration: 190124
+    duration: 179165
+  '3':
+    type: FAST_DIGGING
+    level: 50
+    duration: 190803
+  '4':
+    type: INVISIBILITY
+    level: 1
+    duration: 194507
+  '5':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 179165
+  '6':
+    type: SPEED
+    level: 8
+    duration: 188524
