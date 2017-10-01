@@ -20,12 +20,12 @@
                 "/fly",
                 "/transmute <number>",
                 "/thru (phases through objects)",
-                "Shoots nuclear blasts with bare hand"
-                "/invis"
-                "/vis"
-                "/intangible"
-                "/tangible"
-		"/cast lightray"
+                "Shoots nuclear blasts with bare hand",
+                "/invis",
+                "/vis",
+                "/intangible",
+                "/tangible",
+		"/cast lightray",
                 "Shoots Light Ray At People!"
             ),
             'buffs': array(
@@ -34,7 +34,7 @@
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
                 "/effect ". @plr ." 10 9999 4 true"
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts" 
-                "/give ". @plr ." minecraft:gold_helmet 1 0:6 1:6 3:3 4:2 name:&cT&6h&ee &eR&ca&6y&c'&es &7Helmet"				
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts", 
+                "/give ". @plr ." minecraft:gold_helmet 1 0:6 1:6 3:3 4:2 name:&cT&6h&ee &eR&ca&6y&c'&es &7Helmet",				
             )
 )
