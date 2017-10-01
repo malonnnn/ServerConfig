@@ -6880,6 +6880,7 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - multiverse.access.hogwarts
     - -minecraft.command.tell
     - multiverse.access.broville
     - essentials.signs.break.warp
@@ -7058,7 +7059,6 @@ groups:
     - essentials.whois
     - multiverse.access.torture
     - multiverse.access.pmc
-    - multiverse.access.hogwarts
     - multiverse.access.greenfield
     - multiverse.access.gotham
     - multiverse.access.metropolis
@@ -7452,6 +7452,8 @@ groups:
         - essentials.interact.*
       speedforce:
         permissions:
+        - power.powers
+        - ch.alias.powers
         - essentials.protect.pvp
       spleef:
         permissions:
@@ -13799,6 +13801,9 @@ worlds:
   underworld:
     inheritance:
     - ''
+  hogwarts:
+    inheritance:
+    - greenfield
 users:
   ff0fec80-b8d2-4d10-8951-3061c6e7181d:
     group:
@@ -13917,10 +13922,13 @@ users:
     - machine.mortal
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     permissions:
+    - chat.cooldown
+    - is.helper
     - is.secretary
     - is.headsecretary
     - is.infomanager
     group:
+    - helper
     - missmartian
     options:
       name: iiSimqlyHqrk
@@ -13944,7 +13952,7 @@ users:
     group:
     - scarletwitch
     options:
-      name: iiSimqlySuqar
+      name: xSuqqie
     worlds:
       fightclub:
         permissions: []
@@ -14137,7 +14145,7 @@ users:
       name: iiSimqlySteph
   41b4ef25-3a3e-4ac4-a8aa-739259469920:
     group:
-    - dannyphantom
+    - darksupergirl
     options:
       name: Blujay236
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
@@ -16459,7 +16467,7 @@ users:
       name: daniel9494rs
   1c84f042-c7f6-4e76-8629-49954715d7e1:
     group:
-    - martianmanhunter
+    - vibe
     options:
       name: Belkeldar
     permissions: []
@@ -17700,7 +17708,7 @@ users:
       name: cheatstar79
   25096e3b-3798-41e6-b1a6-1f257ebe6471:
     group:
-    - zoom
+    - flashbarryallen
     options:
       name: Darkkoward
   5da26092-c807-4c9b-8d08-9523f74ddc97:
@@ -19598,7 +19606,7 @@ users:
       name: AdoBoy
   679adfbb-83ad-438f-aaa3-8c40f217f137:
     group:
-    - aquaman
+    - reverseflashdanielwest
     options:
       name: GeneralLazer
   3e4009f3-cabf-42e2-8925-1a0e5630ae73:
@@ -19994,9 +20002,9 @@ users:
       name: Faber_Games
   c1345b3b-5c82-431a-bd31-d3784534559c:
     group:
-    - ghostriderjohnnyblaze
+    - flashbarryallen
     options:
-      name: Enttity_303
+      name: ImTheFlashBoy
   6fc36274-88ef-47a4-948c-83fe43aeb3df:
     group:
     - shazam
@@ -20567,7 +20575,7 @@ users:
     - doctormanhattan
     permissions: []
     options:
-      name: _VegetaBlue_
+      name: _FusedZamasu_
   6a40ad20-ecb1-49f8-91cd-9f871fc92e0e:
     group:
     - hestia
@@ -21302,7 +21310,7 @@ users:
       name: SilverWolf7361
   9aeca01e-33c9-45b1-ab0f-90fd1dec53b7:
     group:
-    - superman
+    - martianmanhunter
     options:
       name: ReecethekidRR
   7ea7f97e-0469-49f5-aef5-0a80ae10dd54:
@@ -21520,7 +21528,7 @@ users:
       name: salteblade
   cfd254d9-0f08-4c71-81e1-dc2d943537ca:
     group:
-    - flashbarryallen
+    - darksupergirl
     options:
       name: lg_danger_guy
     permissions: []
@@ -21555,3 +21563,8 @@ users:
     - arsenal
     options:
       name: jarnogaming
+  5d4e906e-7f31-4a5b-a717-de21576d61fb:
+    group:
+    - mewtwo
+    options:
+      name: FluffyBro

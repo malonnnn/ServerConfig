@@ -10,6 +10,7 @@
     associative_array('starcity','Star City'),
     associative_array('starlingcity','Starling City'),
     associative_array('starlabs','Star Labs'),
-    associative_array('atlantis','Atlantis')
+    associative_array('atlantis','Atlantis'),
+    associative_array('hogwarts','Hogwarts')
 
 )
