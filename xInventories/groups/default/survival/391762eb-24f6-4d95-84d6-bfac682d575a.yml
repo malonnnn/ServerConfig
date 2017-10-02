@@ -1,4 +1,51 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §5B§6e§5e§9r§8u§9s §e§lD§a§lN§4§lA
+      lore:
+      - beerus
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §2B§8e§5a§8s§2t §aB§5o§ay §e§lD§a§lN§4§lA
+      lore:
+      - beastboy
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
 health: 20.0
 hunger: 20
 exp: 0.0
