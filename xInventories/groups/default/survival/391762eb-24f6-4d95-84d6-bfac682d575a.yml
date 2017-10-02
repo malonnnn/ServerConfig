@@ -1,57 +1,32 @@
 inventory:
-  '0':
+  '10':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: EMERALD
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §5B§6e§5e§9r§8u§9s §e§lD§a§lN§4§lA
-      lore:
-      - beerus
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '1':
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§8e§2en Lant§8e§2rn Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '12':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: STAINED_GLASS
+    damage: 5
+    amount: 64
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §2B§8e§5a§8s§2t §aB§5o§ay §e§lD§a§lN§4§lA
-      lore:
-      - beastboy
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
-exhaustion: 0.7803
+saturation: 2.0
+exhaustion: 1.9743054
 armor_contents: {}
