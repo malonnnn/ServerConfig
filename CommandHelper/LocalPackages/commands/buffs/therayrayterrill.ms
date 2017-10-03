@@ -14,10 +14,21 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/jump 0-2",
-                "/run 0-2",
-                "/haste 0-2"
+                "/run 0-8",
+                "/haste 0-5",
+                "/flyspeed <number>",
+                "/fly",
+                "/gmc (costs $100 + $1/sec)",
+		"/gms",
+                "Shoots nuclear blasts with bare hand",
+                "/invis",
+                "/vis",
+		"/cast lightray",
+                "Shoots Light Ray At People!"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true"				
+                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 21 9999 9 true"
             )
 )
