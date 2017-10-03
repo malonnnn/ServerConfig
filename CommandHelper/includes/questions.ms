@@ -39,6 +39,7 @@
 'How do you claim land in survival?',
 'What kinds of characters are made on the server?',
 'What counts as proof for a characters powers/ablities?',
-'what is the link where to make heroes?'
+'what is the link where to learn to make heroes?',
+'What is the link to where the server code is stored?'
 
 )
