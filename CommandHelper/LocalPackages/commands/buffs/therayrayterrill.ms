@@ -15,7 +15,7 @@
                 "/dismountplayer",
                 "/jump 0-2",
                 "/run 0-8",
-                "/haste 0-3",
+                "/haste 0-5",
                 "/flyspeed <number>",
                 "/fly",
                 "/gmc (costs $100 + $1/sec)",
