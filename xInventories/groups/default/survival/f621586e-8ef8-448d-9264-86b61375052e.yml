@@ -1,47 +1,33 @@
-health: 100.0
-hunger: 9
-exp: 0.7777778
-exp-level: 1
+health: 20.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.2612135
+saturation: 7.0
+exhaustion: 2.5103166
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: WOOD_HOE
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4Kryptonian Laser Vision§4 «×»
+      display-name: §6Magic Missile§f (§3Wand§f)
+      lore:
+      - §o§aBeginner Magic Wand
+      - §3§oBound to President_Myth
+      - '§d§oMana: 50'
+      - '§d§oMana Regeneration: 5/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAD2QwUrDQBCGpzStadEe6kXQg2Dx1Egb001yESuKClaF0qthm8zaxW42JlOLNy8+gw/g1YN49hl8BZ9DT6YRndPw/8P8H38doA7GnMeRCSahSqac8E+o6HmMKTQuU8xkhDEFg3uaVMBQPOYHawAGNBZrQFJhRlwlAKWrz+OvNxOWUQgMKQj1VKew7TmMcfQ94Qq/HbohdrmPdoisbQvHH7uOz+1uJ2coIgMZQUswu9vzGFoeCs9yHC+yfJs5lsfGrLvr9jo9G8uwdIdpJnUMABWoQbNPlMrxjHCgIylkbtZzq2SAORqdHg50Rt9bexv9hxM0oLaQzpBn9Lr+/vH0+PJchWpf6VlM+y0oxgRjONUEpuIynhStrPxHnHOFsHqNObEMdzgRD2+GCWJUhtpFgimnX7DFl+K2eXQ7k4nKm9z8wwP4AeLQ8muDAQAA
 armor_contents: {}
 ender_chest: {}
-potion_effect:
-  '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 187500
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 187500
-  '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 187500
-  '3':
-    type: WATER_BREATHING
-    level: 1
-    duration: 187500
-  '4':
-    type: REGENERATION
-    level: 1
-    duration: 187500
-  '5':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 187500
-  '6':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 187500
