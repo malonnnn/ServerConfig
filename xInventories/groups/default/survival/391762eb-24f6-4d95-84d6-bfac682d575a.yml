@@ -1,32 +1,32 @@
 inventory:
-  '10':
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: EMERALD
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Gr§8e§2en Lant§8e§2rn Ring
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 5
-    amount: 64
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+      meta-type: POTION
+      display-name: §bQ§1u§9i§7c§3k§7s§8i§7l§8v§7e§8r §e§lD§a§lN§4§lA
+      lore:
+      - quicksilver
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.117647156
+exp-level: 5
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.1473064
+exhaustion: 1.8596209
 armor_contents: {}
