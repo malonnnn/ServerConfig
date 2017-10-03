@@ -251,78 +251,76 @@ avadakadavra:
      costs: 
          mana: 300 
 
-crucio: 
-     icon: diamond_axe:172 
-     icon_disabled: diamond_hoe:172 
-     upgrade_required_path: master 
-     upgrade_required_casts: 50 
-     icon_url: http://textures.minecraft.net/texture/df19b39e565b16cbdabe364b91e35894d1e9bac0ad3fa4b0905ec4f366627 
-     category: master 
-     worth: 3000 
-     earns_sp: 7 
-     actions: 
-         cast: 
-         - class: CustomProjectile 
-           actions: 
-           - class: AreaOfEffect 
-             actions: 
-             - class: PotionEffect 
-               duration: 1000 
-               effect_wither: 1 
-           - class: PotionEffect 
-           - class: Damage 
-     effects: 
-         cast: 
-         -  class: EffectSingle 
-            sound: magic.electrify 
-            sound_volume: .5 
-         -  class: EffectSingle 
-            effectlib: 
-              class: ConeEffect 
-              iterations: 15 
-              particle: spell_mob 
-              lengthGrow: 0.001 
-              radiusGrow: 0.001 
-         projectile: 
-         - location: origin 
-           effectlib: 
-             class: SphereEffect 
-             iterations: 15 
-             particle: drip_lava 
-             radius: 0.3 
-         tick: 
-         -  location: target 
-            particle: spell_mob 
-         hit: 
-         -  class: EffectSingle 
-            sound: entity_irongolem_death 
-            sound_volume: 1 
-            location: target 
-            color: 19070B 
-            firework: ball 
-         -  class: EffectSingle 
-            requires_entity_target: true 
-            particle: town_aura 
-            location: target 
-            effectlib: 
-              class: BleedEffect 
-              duration: 500 
-     costs: 
-         mana: 100 
-     parameters: 
-         velocity: 20 
-         gravity: 0.05 
-         range: 32 
-         target_type: Damageable 
-         target_breakables: 1 
-         target: other 
-         duration: 2000 
-         damage: 2 
-         effect_slow: 20 
-         effect_wither: 1 
-         effect_confusion: 5 
-         cooldown: 30000 
-         hitbox: true 
+crucio:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+          - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: ConeEffect
+             iterations: 15
+             particle: redstone
+             color: d60831
+             lengthGrow: 0.1
+             radiusGrow: 0.003
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: redstone
+          color: d60831
+          location: target
+        hit:
+        -  class: EffectSingle
+           location: target
+           color: FF0000
+           firework: star
+        -  class: EffectSingle
+           location: target
+           requires_entity_target: true
+           effectlib:
+             class: SmokeEffect
+             iterations: 16
+             particle: spell_mob
+             color: d60831
+        -  class: EffectSingle
+           location: target
+           requires_entity_target: true
+           effectlib:
+             class: SphereEffect
+             iterations: 45
+             period: .1
+             particle: spell_mob
+             color: d60831
+             radius: 1
+             particles: 20
+    costs:
+        mana: 50
+    parameters:
+        speed: 5
+        range: 16
+        target_type: LivingEntity
+        target_breakables: 1
+        target: other
+        duration: 4000
+        cooldown: 6000
+        hitbox: true
+        effect_poison: 5
+        damage: 2 
 
 diffindo:
     icon: diamond_axe:133
