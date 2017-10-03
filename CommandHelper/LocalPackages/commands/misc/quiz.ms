@@ -1,9 +1,9 @@
-register_command('staffquiz',
+register_command('helperquiz',
 
     array(
-        description: 'Start a staff quiz!',
-        usage: '/staffquiz',
-        permission: 'staff.quiz',
+        description: 'Start a helper quiz!',
+        usage: '/helperquiz',
+        permission: 'helper.quiz',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
 
         executor: closure(@alias, @sender, @args) {
@@ -11,21 +11,26 @@ register_command('staffquiz',
                 return(false); // this sends the player the usage text you specify in the register_command array
             }
             @player = player()
-            if(has_value('staffquiz', @player)) {
+            if(has_value('helperquiz', @player)) {
                 die(color(RED).'You already took this quiz!');
             }
-            if(has_bind(@player.'staffquiz')){
+            if(has_bind(@player.'helperquiz')){
                 die(color(RED).'You are already taking this quiz!');
             }
             
             include('/home/minecraft/server/plugins/CommandHelper/includes/questions.ms')
             
-            @randomQuestions = array_rand(@questions, 5, false);
-            msg(color(YELLOW).color(BOLD).'Staff Quiz:');
+            @randomQuestions = array_rand(@questions, 30, false);
+            msg(color(YELLOW).color(BOLD).'Helper Quiz:');
             msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
             msg(color(GREEN).@randomQuestions[0]);
+
+            bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
+                cancel()
+                msg(color(RED).'Sorry, no commands allowed while taking the test!')
+            }
             
-            bind(player_chat, array('id':@player.'staffquiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
+            bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
                 cancel();
                 msg(@e['message']);
                 @answers[] = array(@randomQuestions[0], @e['message']);
@@ -34,7 +39,8 @@ register_command('staffquiz',
                     msg(color(GREEN).@randomQuestions[0]);
                 } else {
                     unbind();
-                    store_value('staffquiz.'.@playerr,@answers);
+                    unbind(@playerr.'testNoCommands')
+                    store_value('helperquiz.'.@playerr,@answers);
                     msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                 }
             }
