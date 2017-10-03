@@ -1,16 +1,90 @@
 inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: GRASS
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_night_vision
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
+    type: FENCE
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
-  '4':
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of wood
+      internal: H4sIAAAAAAAAAONiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1lYCnPz09hYAAAyhx66iEAAAA=
+      skull-owner: wood
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of HeyItsEmmett_MCU
+      internal: H4sIAAAAAAAAAE2RyY6rVhRFeU+JVK+UQT4iM6tkWpcZlBRj09qAwbR3EoHvBS6taW34pnxkqFmm+6yts47OO0G8E3/cirEsr12T4BK9ET9VSPy12yEYJZ/wg2fR5wfL3pMPHvL8B8NCJoI8ya35O/G+lh6oGzDqfxFvA3oNY4f6d4IgfrwRv244raPv5Oe/Vj0L/PbiXIVxR6aiLAVnBA3uIlF7XZq29yS5zQUPhwEK9WnwZXacJF6948nSY3x3c/VQW7ebl95T5XJk4enh5Iujbxchjy3IZhp982ezk9yWGc0qCqGepFudK2Zb8+TIbafErLWG7gzPEYezbJ5NkZ764ST0p82lf7k1hBgvr7PUSD11pWpr3n9GT7unLQcY3Chl0X64KnwebUXWEPV5HDLO2UTezFidv32dD97r8UnPCMyaue04k2JP+yBWBSEaelq2pEoWrePl0EKrZsk8xVPyrLjXVG2qWbigEiNPbClzphZVflbycPNhfWMURkLTRCLl+oA75GT8TDdMFy2NBlpWmgyhTUmO1PbjBQVX0EhLDM7ngxaduZOMi53W5oVUa8NVUBrlc77iIjBd3BUd3s7L5y54dftT3WgKuN3copVF6rF+f5vfy2e7MNd4yOv73nm91KLacx4GxphSm3NbmsAWMO0LCYJFGIqtHafsZ6z7pBtIR2RbncG7cikmfg0HygD2EQFsF0PaZtphM29WbfJJ6ctW2s1CxVd4XBK92h81JTudjs98aBhdUXf2ru9iKsgG+4yj5FmMiXXb0n1aWIwBzigKOcbFPmhFeata48OmmMuDvcpzzYMlVrqLudn77t66l/OSHPor3dq+gPRaS3d8liTHlp50Kawc2USOkLNBkxYNFZLoJm6arzfidy8qR/TjbzRrZORT5Z2xszg4YDMXKf0Uckau0npuMfoS9motzDENHrHsaeCo7tQ8pIFvZyCHhenYpbFYZEiHHDgVnL7YhU5La36gvmcqfuK7ok2gKnvgclnsu9jEmgqCUoOKIcXrbqjYieMa3jcLZY+FijeDQMdm3WOXHDQHq7vVk7pXz+9us/JPE++n/7Fj7Jcj8I059AF5qbgSHnkSBBkJA628LN7qI1SGbM165eW6I+X6YrHrDZWxCKs/yHTHeoXrvSD/ZqwlrPRFd9IF5BIGJ3cJl7VzsphwMbBBW5xaU3xifX0RxBvxmxFViPhTQbM69GJVoWH4Rz+6BPEfknKOwnsEAAA=
+      skull-owner: HeyItsEmmett_MCU
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+    amount: 2
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: DISPENSER
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    amount: 3
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 4
+    amount: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+    amount: 2
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+    amount: 4
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: DAYLIGHT_DETECTOR
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  '17':
     ==: org.bukkit.inventory.ItemStack
     type: WOOD_PLATE
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: DISPENSER
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
 health: 20.0
 hunger: 20
 exp: 0.0

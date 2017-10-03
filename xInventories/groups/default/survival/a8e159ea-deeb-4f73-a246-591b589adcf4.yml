@@ -2,10 +2,28 @@ inventory: {}
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.33333337
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.1950032
-ender_chest: {}
+saturation: 4.0
+exhaustion: 1.6850019
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Jhon Jones
+      enchants:
+        DAMAGE_ALL: 20
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 64
