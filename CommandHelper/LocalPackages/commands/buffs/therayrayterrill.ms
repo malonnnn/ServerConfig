@@ -19,6 +19,7 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/gmc (costs $100 + $1/sec)",
+		"/gms",
                 "Shoots nuclear blasts with bare hand",
                 "/invis",
                 "/vis",
@@ -26,12 +27,8 @@
                 "Shoots Light Ray At People!"
             ),
             'buffs': array(
-                "/effect ". @plr ." 12 9999 3 true",
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 21 9999 9 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts", 
-                "/give ". @plr ." minecraft:gold_helmet 1 0:6 1:6 3:3 4:2 name:&cT&6h&ee &eR&ca&6y&c'&es &7Helmet"				
+                "/effect ". @plr ." 21 9999 9 true"
             )
 )
