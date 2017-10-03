@@ -17,7 +17,10 @@
                 "/run 0-1",
                 "/haste 0-1",
                 "/hover on",
-                "/hover off"
+                "/hover off",
+                "/tppos (x) (y) (z)",
+                "/intangible"'
+                "/tangible"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
