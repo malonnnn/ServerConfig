@@ -18,8 +18,6 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
 
     @signLoc[1] = @signLoc[1] + 1
 
-    console(get_block_at(@signLoc))
-
     @number[1] = associative_array('num':get_value('heromachine.'.@machineID.'1'))
     if(@number[1]['num'] == null){
         @number[1]['num'] = 0
@@ -126,7 +124,7 @@ if(@facingDir == 'north'){
     
     @stdout = ''
     @hero = ""
-    include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram2.ms')
+    #include('/home/minecraft/server/plugins/CommandHelper/includes/updateHologram2.ms')
 
     @num = @number[3]['num'].''.@number[2]['num'].''.@number[1]['num']
 
@@ -137,10 +135,12 @@ if(@facingDir == 'north'){
             if(@a != "empty")
             {
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
-                _updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
+                #_updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
+                set_sign_text(@signLoc,'',@hero['class'],'','')
                 
             }else{
-                _updateHologram2('remove','',@npcID,@holoLoc)
+                #_updateHologram2('remove','',@npcID,@holoLoc)
+                set_sign_text(@signLoc,'','','','')
             }
         }
     ))
