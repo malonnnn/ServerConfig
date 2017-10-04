@@ -678,7 +678,8 @@ protego:
          cooldown: 3000 
          breakable: 1 
          reflect_chance: 1 
-         bypass_confusion: true 
+         bypass_confusion: true
+         bypass_build: true
          bypass_backfire: true 
      costs: 
          mana: 40 
@@ -1985,6 +1986,7 @@ wingardiumleviosa:
         cooldown: 2000
         cancel_on_damage: 0.5
         effect_levitation: 1
+        bypass_build: true
         duration: 5000
     costs:
         mana: 40
@@ -2056,6 +2058,7 @@ periculum:
         range: 16
         ticks_flown: 2
         expected_lifespan: 1
+        bypass_build: true
         cooldown: 4000
     costs:
         mana: 10
@@ -2127,6 +2130,7 @@ reducto:
         select_self: false
         physics_blocks: true
         undo_speed: 0.5
+        bypass_build: true
         damage: 10
         break_blocks: false
     costs:
@@ -2171,6 +2175,7 @@ accio:
         push: -2
         duration: 10000
         cooldown: 2000
+        bypass_build: true
     costs:
         mana: 10
 stupefy:
@@ -2365,6 +2370,7 @@ incendio:
         cooldown: 3000
         target_breakables: 0
         destructible: burnable
+        bypass_build: true
     costs:
         mana: 35
 incarcerous:
@@ -2401,6 +2407,7 @@ incarcerous:
         undo: 5000
         breakable: 1
         cooldown: 8000
+        bypass_build: true
         instant_block_effects: true
     costs:
         mana: 70
@@ -2443,12 +2450,13 @@ confringo:
            firework: ball
     parameters:
         projectile: LargeFireball
-        fire: false
+        fire: true
         size: 1
         undo: 4000
         cooldown: 10000
         start: 1
-        break_blocks: true
+        bypass_build: true
+        break_blocks: false
         undo_speed: 1
     costs:
         mana: 40
