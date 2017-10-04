@@ -13,7 +13,7 @@ proc(_wallRun, @player,
         @wallCheck['z'] = @wallCheck['z'] - 1
         @wallBlockFront = get_block_at(@wallCheck)
         @wallCheck['z'] = @wallCheck['z'] + 2
-        @wallBlockFront = get_block_at(@wallCheck)
+        @wallBlockBack = get_block_at(@wallCheck)
         if(@footPosition[0] == "0"){
             if(
                 @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
