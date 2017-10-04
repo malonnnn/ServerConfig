@@ -18,7 +18,7 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
 
     @signLoc[1] = @signLoc[1] + 1
 
-    msg(get_block_at(@signLoc))
+    console(get_block_at(@signLoc))
 
     @number[1] = associative_array('num':get_value('heromachine.'.@machineID.'1'))
     if(@number[1]['num'] == null){
