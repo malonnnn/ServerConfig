@@ -78,8 +78,8 @@ register_command('helperquizread',
                 cancel();
                 array_remove(@answerss, 0);
                 if(array_size(@answerss) > 0) {
-                    msg('>>> '.color(YELLOW).@answerss[0][0])
-                    msg('>>> '.color(GREEN)@answerss[0][1])
+                    msg('> > > '.color(YELLOW).@answerss[0][0])
+                    msg('> > > '.color(GREEN)@answerss[0][1])
                     msg(color(RED).'Say "next" to read the next question.')
                 } else {
                     unbind();
