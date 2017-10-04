@@ -19,6 +19,7 @@
                 "/speedforcebuffs",
                 "/carryplayer",
                 "/dismountplayer",
+                “Shift and Jump While Using W To Run Up A Wall.”
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
