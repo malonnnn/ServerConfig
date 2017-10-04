@@ -10,7 +10,8 @@
             'op': 'false',
             'speech': "I will destroy you harry potter!",
             'powers': array(
-                "/buff"          
+                "/buff",
+                "/fly"
             ),
             'buffs': array(
                 "/mgive ". @plr ." voldemortswand"               
