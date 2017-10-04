@@ -2,7 +2,7 @@ register_command(wallrun,
 
     array(
         description: 'Turn Wallrun on/off',
-        permission: 'powers.wallruntoggle',
+        permission: 'powers.wallrun',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias,@sender,@args) {
 
