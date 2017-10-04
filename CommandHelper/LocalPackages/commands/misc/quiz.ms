@@ -74,12 +74,12 @@ register_command('helperquizread',
                 die()
             }
 
-            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
+            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @randomQuestions, @answerss = @answers,@playerr = @player){
                 cancel();
-                array_remove(@answers, 0);
-                if(array_size(@answers) > 0) {
-                    msg(@answers[0][0])
-                    msg(@answers[0][1])
+                array_remove(@answerss, 0);
+                if(array_size(@answerss) > 0) {
+                    msg(@answerss[0][0])
+                    msg(@answerss[0][1])
                     msg(color(RED).'Say next to read the next question.')
                 } else {
                     unbind();
