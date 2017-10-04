@@ -64,8 +64,28 @@ register_command('helperquizread',
             @target = puuid(@args[0],true)
 
             @answers = get_value('helperquiz.'.@target)
-            include('/home/minecraft/server/plugins/CommandHelper/includes/questions.ms')
-            
+
+            if(@answers != null){
+                msg(@answers[0][0])
+                msg(@answers[0][1])
+                msg(color(RED).'Say next to read the next question.')
+            }else{
+                msg(color(RED).'Sorry, that person did not take a quiz.')
+                die()
+            }
+
+            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
+                cancel();
+                array_remove(@answers, 0);
+                if(array_size(@answers) > 0) {
+                    msg(@answers[0][0])
+                    msg(@answers[0][1])
+                    msg(color(RED).'Say next to read the next question.')
+                } else {
+                    unbind();
+                    msg('No more questions.');
+                }
+            }
         }
     )
 )
