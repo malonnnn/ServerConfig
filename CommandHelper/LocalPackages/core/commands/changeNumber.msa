@@ -14,6 +14,12 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
     @npcID = $npcid
     @holoLoc = array($holox,$holoy,$holoz,@ptrStart['world'])
 
+    @signLoc = array_deep_clone(@holoLoc)
+
+    @signLoc[1]++
+
+    msg(get_block_at(@signLoc))
+
     @number[1] = associative_array('num':get_value('heromachine.'.@machineID.'1'))
     if(@number[1]['num'] == null){
         @number[1]['num'] = 0
