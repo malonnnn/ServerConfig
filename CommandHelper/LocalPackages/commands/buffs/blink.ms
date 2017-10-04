@@ -11,14 +11,11 @@
             'op': 'false',
             'speech': "Blink and you'll miss me!",
             'powers': array(
-                "/buff",
-                "/tp",
-                "/tpradius",
+                "/tppos <x> <y> <z>",
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-2"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 4 true"
             )
         )
