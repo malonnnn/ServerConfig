@@ -137,8 +137,10 @@ if(@facingDir == 'north'){
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
                 #_updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
                 @part2 = ''
-                if(length(@hero['class']) > 15){
-                    @part2 = substr(@hero['class'], (15-(length(@hero['class'])-15)))
+                @length = length(@hero['class'])
+                if(@length > 15){
+                    @start = @length - (@length - 15)
+                    @part2 = substr(@hero['class'], @start)
                 }
                 set_sign_text(@signLoc,'',@hero['class'],@part2,'')
                 
