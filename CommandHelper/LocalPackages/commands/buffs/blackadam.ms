@@ -16,6 +16,7 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-9",
+                “Shift and Jump While Using W To Run Up A Wall.”,
                 "/flyspeed <number>",
                 "/fly"
             ),
