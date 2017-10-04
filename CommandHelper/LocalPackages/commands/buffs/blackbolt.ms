@@ -27,7 +27,8 @@
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/confuse <playername>",
-                "/unconfuse"
+                "/unconfuse",
+                “Shift and Jump While Using W To Run Up A Wall.”
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
