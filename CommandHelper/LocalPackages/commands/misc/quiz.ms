@@ -74,7 +74,7 @@ register_command('helperquizread',
                 die()
             }
 
-            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @randomQuestions, @answerss = @answers,@playerr = @player){
+            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @answerss = @answers, @playerr = @player){
                 cancel();
                 array_remove(@answerss, 0);
                 if(array_size(@answerss) > 0) {
