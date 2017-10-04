@@ -136,7 +136,10 @@ if(@facingDir == 'north'){
             {
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
                 #_updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
-                set_sign_text(@signLoc,'',@hero['class'],'','')
+                @words = reg_split('(?<=\\G...)', @hero['class'])
+                array_remove(@words,3)
+                array_push(@words,'')
+                set_sign_text(@signLoc,@words)
                 
             }else{
                 #_updateHologram2('remove','',@npcID,@holoLoc)
