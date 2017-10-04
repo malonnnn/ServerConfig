@@ -10,6 +10,15 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    spawn:
+        min: {x: 77.0, y: 0.0, z: 136.0}
+        max: {x: 81.0, y: 255.0, z: 140.0}
+        members: {}
+        flags: {greeting: §2You are now in SafeZone, pvp: deny, farewell: §4You are
+                now leaving SafeZone}
+        owners: {}
+        type: cuboid
+        priority: 0
     titantower:
         min: {x: -50.0, y: 0.0, z: 63.0}
         max: {x: 5.0, y: 255.0, z: 192.0}
@@ -20,7 +29,7 @@ regions:
         priority: 0
     __global__:
         members: {}
-        flags: {build: deny, use: allow, feed-amount: 1, feed-delay: 1, interact: allow,
+        flags: {build: deny, use: allow, feed-delay: 1, feed-amount: 1, interact: allow,
             pvp: allow}
         owners: {}
         type: global

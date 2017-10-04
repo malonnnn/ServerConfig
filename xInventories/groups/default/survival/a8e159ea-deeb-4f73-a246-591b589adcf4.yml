@@ -1,47 +1,54 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
+      display-name: §7Pistol§7 «× | ×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 10
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 10
 armor_contents: {}
-health: 60.0
+health: 28.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.6120307
+exhaustion: 3.4520187
 ender_chest: {}
 potion_effect:
   '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 198634
-  '1':
-    type: JUMP
-    level: 5
-    duration: 198709
-  '2':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 198634
-  '3':
+    level: 2
+    duration: 198398
+  '1':
     type: REGENERATION
     level: 1
-    duration: 198634
-  '4':
+    duration: 198398
+  '2':
     type: HEALTH_BOOST
-    level: 9
-    duration: 198634
-  '5':
-    type: SPEED
-    level: 3
-    duration: 198746
+    level: 1
+    duration: 198398
