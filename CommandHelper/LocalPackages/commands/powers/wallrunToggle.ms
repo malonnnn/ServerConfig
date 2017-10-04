@@ -15,7 +15,7 @@ register_command(wallrun,
                     export(@player.'wallRunStatus',true)
                     msg(color(RED).'Wall running on.')
                     break()
-                case: 'off':
+                case 'off':
                     export(@player.'wallRunStatus',false)
                     msg(color(RED).'Wall running off.')
                     break()
