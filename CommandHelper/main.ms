@@ -1,29 +1,29 @@
 set_interval(5000,closure(
     @players = all_players()
     foreach(@player in @players){
-        if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
-            @loc = ploc(@player)
-            @radius = 10
-            @world = pworld(@player)
-            @blocktypes = array('137','210','211')
-            for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
-                for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
-                    for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
-                        @block = get_block_at(@x,@y,@z,@world)
-                        foreach(@blk in @blocktypes){
-                            if(@block[0].@block[1].@block[2] == @blk) {
-                                if(get_block_command(array(@x,@y,@z,@world)) != ""){
-                                    set_block_command(array(@x,@y,@z,@world),"")
-                                    acc_add(@player,100)
-                                    tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
-                                    console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+#        if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
+#            @loc = ploc(@player)
+#            @radius = 10
+#            @world = pworld(@player)
+#            @blocktypes = array('137','210','211')
+#            for(@x = @loc[0] - @radius, @x <= @loc[0] + @radius, @x++) {
+#                for(@y = @loc[1] - @radius, @y <= @loc[1] + @radius, @y++) {
+#                    for(@z = @loc[2] - @radius, @z <= @loc[2] + @radius, @z++) {
+#                        @block = get_block_at(@x,@y,@z,@world)
+#                        foreach(@blk in @blocktypes){
+#                            if(@block[0].@block[1].@block[2] == @blk) {
+#                                if(get_block_command(array(@x,@y,@z,@world)) != ""){
+#                                    set_block_command(array(@x,@y,@z,@world),"")
+#                                    acc_add(@player,100)
+#                                    tmsg(@player,color(GREEN).'$100 added to your account for emptying a commandblock.')
+#                                    console(color(GREEN).'$100 added to '.@player.'\'s account for emptying a commandblock.')
+#                                }
+#                            }
+#                        }
+#                    }
+#                }
+#            }
+#        }
 
         if(has_permission(@player,'can.burninsun')){
             @ploc = ploc(@player)
