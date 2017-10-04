@@ -1,4 +1,4 @@
-bind(server_command,null,null){
+bind(server_command,null,null,@e){
     @cb = get_command_block()
 
     if(@cb != null){
