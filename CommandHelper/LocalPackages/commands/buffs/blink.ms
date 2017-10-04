@@ -11,6 +11,7 @@
             'op': 'false',
             'speech': "Blink and you'll miss me!",
             'powers': array(
+                "/tppos <x> <y> <z>",
                 "/jump 0-2",
                 "/run 0-2",
                 "/haste 0-2"
