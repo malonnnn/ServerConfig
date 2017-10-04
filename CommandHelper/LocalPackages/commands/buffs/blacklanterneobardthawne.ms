@@ -25,6 +25,7 @@
                 "/thru (phases through walls)",
                 "/flyspeed <number>",
                 "/fly",
+                “Shift and Jump While Using W To Run Up A Wall.”,
                 "You are protected by Nekron so mobs will fear you and wont attack you"
             ),
             'buffs': array(
