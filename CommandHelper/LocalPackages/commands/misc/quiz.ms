@@ -11,7 +11,7 @@ register_command('helperquiz',
                 return(false); // this sends the player the usage text you specify in the register_command array
             }
             @player = player()
-            if(has_value('helperquiz', @player)) {
+            if(has_value('helperquiz.'.puuid(@player,true))) {
                 die(color(RED).'You already took this quiz!');
             }
             if(has_bind(@player.'helperquiz')){
@@ -40,10 +40,32 @@ register_command('helperquiz',
                 } else {
                     unbind();
                     unbind(@playerr.'testNoCommands')
-                    store_value('helperquiz.'.@playerr,@answers);
+                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
                     msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                 }
             }
+        }
+    )
+)
+
+register_command('helperquizread',
+
+    array(
+        description: 'Read a helper quiz!',
+        usage: '/helperquizread <player>',
+        permission: 'helper.quizread',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+
+        executor: closure(@alias, @sender, @args) {
+            if(array_size(@args) != 1) {
+                return(false); // this sends the player the usage text you specify in the register_command array
+            }
+            @player = player()
+            @target = puuid(@args[0],true)
+
+            @answers = get_value('helperquiz.'.@target)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/questions.ms')
+            
         }
     )
 )
