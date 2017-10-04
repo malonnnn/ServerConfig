@@ -16,7 +16,7 @@ changenumber:/changenumber $facingDir $numDir $numPos $machineID $holox $holoy $
 
     @signLoc = array_deep_clone(@holoLoc)
 
-    @signLoc[1] = @signLoc + 1
+    @signLoc[1] = @signLoc[1] + 1
 
     msg(get_block_at(@signLoc))
 
