@@ -26,6 +26,7 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
+                “Shift and Jump While Using W To Run Up A Wall.”,
                 "Anything you attack, dies"
             ),
             'buffs': array(
