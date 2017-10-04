@@ -138,7 +138,7 @@ if(@facingDir == 'north'){
                 #_updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
                 @part2 = ''
                 if(length(@hero['class']) > 15){
-                    @part2 = substr(@hero['class'], 15 - (length(@hero['class']) - 15) )
+                    @part2 = substr(@hero['class'], (15-(length(@hero['class'])-15)))
                 }
                 set_sign_text(@signLoc,'',@hero['class'],@part2,'')
                 
