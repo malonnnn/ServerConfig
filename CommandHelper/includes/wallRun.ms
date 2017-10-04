@@ -8,23 +8,17 @@ proc(_wallRun, @player,
     @facing = _facingDirection(@ploc)
         
     if(@facing == "north"){
-        assign(@wallCheck, @ploc)
+        @wallCheck = @ploc
         @footPosition = get_block_at(@ploc)
         @wallCheck['z'] = @wallCheck['z'] - 1
-        @wallBlock = get_block_at(@wallCheck)
-        if(
-            @footPosition == "0:0" && 
-            @wallBlock != "0:0" && 
-            @wallBlock != "9:0" && 
-            @wallBlock != "9:1" && 
-            @wallBlock != "9:2" && 
-            @wallBlock != "9:3" && 
-            @wallBlock != "9:4" && 
-            @wallBlock != "9:5" && 
-            @wallBlock != "9:6" && 
-            @wallBlock != "9:7"
-        ){
-            
+        @wallBlockFront = get_block_at(@wallCheck)
+        @wallCheck['z'] = @wallCheck['z'] + 2
+        @wallBlockFront = get_block_at(@wallCheck)
+        if(@footPosition[0] == "0"){
+            if(
+                @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
+                @wallBlockFront[0].@wallBlockFront[1] != "9:" 
+            ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
                 @pitch = neg(@ploc['pitch']);
@@ -32,26 +26,33 @@ proc(_wallRun, @player,
                 @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
                 @vector['y'] = @magnitude * sin(to_radians(@pitch));
                 @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                
                 set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
+                @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }
         }
     }else if(@facing == "east"){
         assign(@wallCheck, @ploc)
         @footPosition = get_block_at(@ploc)
         @wallCheck['x'] = @wallCheck['x'] + 1
-        @wallBlock = get_block_at(@wallCheck)
-        if(
-            @footPosition == "0:0" && 
-            @wallBlock != "0:0" && 
-            @wallBlock != "9:0" && 
-            @wallBlock != "9:1" && 
-            @wallBlock != "9:2" && 
-            @wallBlock != "9:3" && 
-            @wallBlock != "9:4" && 
-            @wallBlock != "9:5" && 
-            @wallBlock != "9:6" && 
-            @wallBlock != "9:7"
-        ){
+        @wallBlockFront = get_block_at(@wallCheck)
+        @wallCheck['x'] = @wallCheck['x'] - 2
+        @wallBlockBack = get_block_at(@wallCheck)
+        if(@footPosition[0] == "0"){
+            if(
+                @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
+                @wallBlockFront[0].@wallBlockFront[1] != "9:" 
+            ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
                 @pitch = neg(@ploc['pitch']);
@@ -59,26 +60,33 @@ proc(_wallRun, @player,
                 @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
                 @vector['y'] = @magnitude * sin(to_radians(@pitch));
                 @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                
                 set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
+                @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }
         }
     }else if(@facing == "south"){
         assign(@wallCheck, @ploc)
         @footPosition = get_block_at(@ploc)
         @wallCheck['z'] = @wallCheck['z'] + 1
-        @wallBlock = get_block_at(@wallCheck)
-        if(
-            @footPosition == "0:0" && 
-            @wallBlock != "0:0" && 
-            @wallBlock != "9:0" && 
-            @wallBlock != "9:1" && 
-            @wallBlock != "9:2" && 
-            @wallBlock != "9:3" && 
-            @wallBlock != "9:4" && 
-            @wallBlock != "9:5" && 
-            @wallBlock != "9:6" && 
-            @wallBlock != "9:7"
-        ){
+        @wallBlockFront = get_block_at(@wallCheck)
+        @wallCheck['z'] = @wallCheck['z'] - 2
+        @wallBlockBack = get_block_at(@wallCheck)
+        if(@footPosition[0] == "0"){
+            if(
+                @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
+                @wallBlockFront[0].@wallBlockFront[1] != "9:" 
+            ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
                 @pitch = neg(@ploc['pitch']);
@@ -86,26 +94,33 @@ proc(_wallRun, @player,
                 @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
                 @vector['y'] = @magnitude * sin(to_radians(@pitch));
                 @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                
                 set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
+                @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }
         }
     }else{
         assign(@wallCheck, @ploc)
         @footPosition = get_block_at(@ploc)
         @wallCheck['x'] = @wallCheck['x'] - 1
-        @wallBlock = get_block_at(@wallCheck)
-        if(
-            @footPosition == "0:0" && 
-            @wallBlock != "0:0" && 
-            @wallBlock != "9:0" && 
-            @wallBlock != "9:1" && 
-            @wallBlock != "9:2" && 
-            @wallBlock != "9:3" && 
-            @wallBlock != "9:4" && 
-            @wallBlock != "9:5" && 
-            @wallBlock != "9:6" && 
-            @wallBlock != "9:7"
-        ){
+        @wallBlockFront = get_block_at(@wallCheck)
+        @wallCheck['x'] = @wallCheck['x'] + 2
+        @wallBlockBack = get_block_at(@wallCheck)
+        if(@footPosition[0] == "0"){
+            if(
+                @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
+                @wallBlockFront[0].@wallBlockFront[1] != "9:" 
+            ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
                 @pitch = neg(@ploc['pitch']);
@@ -113,9 +128,20 @@ proc(_wallRun, @player,
                 @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
                 @vector['y'] = @magnitude * sin(to_radians(@pitch));
                 @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                
                 set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
+                @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }
         }
     }
-    
 )
