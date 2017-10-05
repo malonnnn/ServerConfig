@@ -1,3 +1,4 @@
+
 @plr = player()
 
 
@@ -26,6 +27,8 @@
                 "/jump 0-9",
                 "/run 0-9",
                 "/confuse <player>",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/float <up/down/pause/unpause/stop>",
                 "/haste 0-9"
             ),
