@@ -19,6 +19,8 @@
                 "/run 0-9",
                 "/haste 0-6",
                 "/jump 0-3",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/tppos <X, Y, Z Coordinates>",
                 "Access to all warps in the speedforce"
             ),
