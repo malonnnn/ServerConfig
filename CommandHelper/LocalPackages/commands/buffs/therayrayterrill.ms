@@ -19,11 +19,11 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/gmc",
-		"/gms",
+        "/gms",
                 "Shoots nuclear blasts with bare hand",
                 "/invis",
                 "/vis",
-		"/cast lightray",
+        "/cast lightray",
                 "Shoots Light Ray At People!"
             ),
             'buffs': array(
