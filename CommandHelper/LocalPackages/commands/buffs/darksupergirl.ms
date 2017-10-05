@@ -16,6 +16,8 @@
                 "/jump 0-8",
                 "/run 0-8",
                 "/haste 0-8",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
                 "/fly"
             ),
