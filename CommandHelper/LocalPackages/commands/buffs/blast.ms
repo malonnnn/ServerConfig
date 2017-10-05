@@ -17,6 +17,8 @@
                 "/run 0-9",
                 "/carryplayer",
                 "/dismountplayer",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/haste 0-9"
             ),
             'buffs': array(

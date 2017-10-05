@@ -15,6 +15,8 @@
                 "Can throw fireballs by punching with an empty hand",
                 "/run 0-5",
                 "/haste 0-5",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flame <playername>"
             ),
             'buffs': array(

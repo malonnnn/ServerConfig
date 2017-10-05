@@ -22,6 +22,8 @@
                 "/yell",
                 "/gmc",
                 "/gms",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/msg <playername>",
                 "/mindlock <playername>",
                 "/mindcontrol <playername>",

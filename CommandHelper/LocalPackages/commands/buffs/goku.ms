@@ -17,6 +17,8 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/tp",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/carryplayer <player>",
                 "/dismountplayer"
             ),

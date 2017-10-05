@@ -18,6 +18,8 @@
                 "/haste 0-9",
                 "/flyspeed <number>",
                 "/fly",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "Protected by Nekron, mobs will fear you and wont attack you"
             ),
             'buffs': array(
