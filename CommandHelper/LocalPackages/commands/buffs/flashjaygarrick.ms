@@ -18,6 +18,8 @@
                 "/speedforcebuffs",
                 "/carryplayer",
                 "/dismountplayer",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4"
