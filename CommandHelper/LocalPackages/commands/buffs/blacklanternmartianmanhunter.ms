@@ -31,7 +31,7 @@
                 "/undisguise",
                 "You are protected by Nekron so mobs will fear you and wont attack you",
                 "/mindlock <playername>",
-                "/wallrun (on/off)",
+                "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/msg <playername>"
             ),
