@@ -1,4 +1,4 @@
- @plr = player()
+@plr = player()
 
 
 @hero = associative_array(
@@ -18,6 +18,8 @@
                 "/flyspeed <number>",
                 "/thru (intangible)",
                 "/disguise",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
