@@ -18,6 +18,8 @@
                  "/haste 0-9",
                  "/float <up/down/pause/unpause/stop>",
                  "/haste 0-9"
+                 "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                  "/cast almightypush",
                  "/cast universalpull"
               ), 
