@@ -22,13 +22,14 @@
                 "/yell",
                 "/gmc",
                 "/gms",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/msg <playername>",
                 "/mindlock <playername>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
                 "/confuse <playername>",
-                "/unconfuse",
-                “Shift and Jump While Using W To Run Up A Wall.”
+                "/unconfuse"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
