@@ -20,6 +20,8 @@
                 "/jump 0-3",
                 "/carryplayer",
                 "/dismountplayer",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
                 "/haste 0-4"
             ),
