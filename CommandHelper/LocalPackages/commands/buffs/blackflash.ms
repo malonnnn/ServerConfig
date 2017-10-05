@@ -26,7 +26,8 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                “Shift and Jump While Using W To Run Up A Wall.”,
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "Anything you attack, dies"
             ),
             'buffs': array(
