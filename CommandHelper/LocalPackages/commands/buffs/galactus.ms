@@ -16,7 +16,7 @@
                 "/haste 0-9",
                 "/flyspeed <number>",
                 "/fly",
-                "/wallrun (on/off)",
+                "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/carryplayer <player>",
                 "/dismountplayer"
