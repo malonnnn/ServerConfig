@@ -36,9 +36,10 @@
                 "/arrow harming",
                 "/arrow waterbreathing",
                 "/arrow luck",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
-                "/fly",
-                “Shift and Jump While Using W To Run Up A Wall.”
+                "/fly"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
