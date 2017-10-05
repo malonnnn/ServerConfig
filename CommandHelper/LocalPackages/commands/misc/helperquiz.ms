@@ -18,7 +18,7 @@ register_command('helperquiz',
                 die(color(RED).'You are already taking this quiz!');
             }
             
-            include('/home/minecraft/server/plugins/CommandHelper/includes/questions.ms')
+            include('/home/minecraft/server/plugins/CommandHelper/includes/helperQuestions.ms')
             
             @randomQuestions = array_rand(@questions, 30, false);
             msg(color(YELLOW).color(BOLD).'Helper Quiz:');
