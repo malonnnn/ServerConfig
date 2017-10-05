@@ -1,9 +1,9 @@
 bind(player_toggle_sneak,null,null,@event){
     @player = player()
-    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-    @class = _getheroclass(@player)
     
-    if(has_permission(@player, "powers.wallclimb")){
+    if(import(@player.'wallClimbStatus') && has_permission(@player, "powers.wallclimb")){
+        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+        @class = _getheroclass(@player)
         @eventID = associative_array('id': @player.'climbwalls')
         @isSneaking = @event['sneaking']
         
