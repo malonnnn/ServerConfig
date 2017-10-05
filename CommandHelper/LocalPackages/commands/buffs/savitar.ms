@@ -23,6 +23,8 @@
                 "Access to all warps in the speedforce",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
                 "/haste 0-8",
                 "/jump 0-3",
