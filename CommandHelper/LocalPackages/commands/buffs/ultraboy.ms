@@ -1,4 +1,6 @@
 @plr = player()
+
+
 @hero = associative_array(
             'name': '§4U§2l§4t§2r§4a §4B§0o§2y',
             'class': 'ultraboy',
@@ -11,6 +13,8 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/jump 0-8",
                 "/run 0-8",
                 "/haste 0-8",
