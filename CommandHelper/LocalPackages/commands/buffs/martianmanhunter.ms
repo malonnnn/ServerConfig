@@ -21,6 +21,8 @@
                 "/intangible",
                 "/tangible",
                 "/disguise",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/speak <player> <message>",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol",
