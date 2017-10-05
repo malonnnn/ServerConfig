@@ -17,7 +17,7 @@ register_command(wind,
             @plr = @args[0]
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedWind',10000,@player)
+            _coolDown('lastUsedWind',10,@player)
 
             sudo("/push ".@plr)
             tmsg(@plr,"You have been pushed by ".@player."!")
