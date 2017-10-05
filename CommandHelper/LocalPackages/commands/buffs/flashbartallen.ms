@@ -23,7 +23,7 @@
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
                 "/thru (phases through walls)",
-                "/wallrun (on/off)",
+                "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/vibrate",
                 "/stopvibrating"
