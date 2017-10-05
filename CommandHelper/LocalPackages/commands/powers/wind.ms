@@ -6,11 +6,7 @@ register_command(wind,
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-            
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /wind <player>');
-                die(); # No need to go further					
-            
+                return(false)
             }
             
             @player = player()
