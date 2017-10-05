@@ -36,7 +36,7 @@
                 "/arrow harming",
                 "/arrow waterbreathing",
                 "/arrow luck",
-                "/wallrun (on/off)",
+                "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
                 "/fly"
