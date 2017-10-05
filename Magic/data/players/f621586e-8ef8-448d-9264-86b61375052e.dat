@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: President_Myth
-last_cast: 1507156411168
+last_cast: 1507239168682
 cooldown_expiration: 0
 last_death_location: -18.403456867487435,32.0,-13.699999988079073,fightclub,349.86523,21.034874
 fall_protection_count: 0
@@ -311,7 +311,7 @@ spells:
     cooldown_expiration: 0
   rictusempra:
     cast_count: 23
-    last_cast: 1507156276793
+    last_cast: 1507239168683
     last_earn: 1506996797023
     cooldown_expiration: 0
   sandwall:
@@ -558,12 +558,13 @@ wands:
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: AIR
       damage: 1
+      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6incendio§f (§3HarrysWand§f)
+        display-name: §6rictusempra§f (§3HarrysWand§f)
         lore:
         - §3§oBound to President_Myth
         - Knows 14 Spells
@@ -577,31 +578,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAEVSzW7TQBCeYid1AhRRDhygUKDi1KAmcYxzQY0EEkgEkKqekDCb9ThZ4d01+5OQGwd4BiSuXDnwADwDL8ATIN6AE2NHFN++mW/n++YbdwG6EK6YyiOIHMqqZA6hu2DGrO2m3NIrhQZ2Xhi0IkflsunaLSK4wLgTS8xshWUJkVAcVS50G0LJFDt+3f/9+ar8GcJODTMnJFrHZAWw9erXh72XpNcMzkQOB0Uy6I/SBHspFmkvjtO8Nx4kcS9NZkl/eH90NBogKWJRIHcZ16U2cDcZsjgeJul4PBwfJnF+lDKWDDEeHaYp68/SWTJgOAtge4nGCq0AoNWFS43fTKglraLNOoCI2Y11ImwH0KnQCO5LLwnfDKDFOG96NwK4vBJqzkwuvCxxKbRlVN8jCYO5565m7QfQ5sZvntymVmW0w3mNggDOU0zMcDTaW6rcIjmuVWFobM1oBf+DJHguoJ3f1X4FM7J5EdIMsue8pWOZWh6IZCkWL89KbZK1zldYrAltAXRgd+KcETPvcKpzUQiKpFv3QohOT588nGrr/tx5cH3y/jGG0KlLT5FZ9+3a9x+fPn790ob2RGqv3PEBNF8E4UmpHUSSCbVofpSLZxLPmES4MkdVJ3mPOcf4m5MKMad1n1O8zG3OUU9puLuP3npRSbrI/j97AH8Bju9bxZwCAAA=
-    wand:
-      template: harryswand
-      owner: President_Myth
-      active_spell: incendio
-      mana: 129.56001
-      mana_timestamp: 1507156303195
-      owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: 63a443689939,64d08aa63e45,88a1b8b62aeb
-      version: 5
-      spell_inventory:
-        ascendio: 7
-        periculum: 31
-        accio: 30
-        wingardiumleviosa: 29
-        reducto: 32
-        crucio: 34
-        protego: 3
-        incarcerous: 33
-        confringo: 5
-        incendio: 2
-        expelliarmus: 4
-        rictusempra: 0
-        sectumsempra: 6
-        stupefy: 1
+        internal: H4sIAAAAAAAAAD2QQU7CUBCGf0LB0kQWuNSFiWxrpLa1bgwkmmgiakLYSh50kBd5r/V1KmHnhjN4ALcuPIBn8CgewJWlRGf5/zP/fDMO4MBaCB3bsJlUOhdMcGbCmGW2kWvJQpNB885QJmPSPOoveWahqYQWI5aKMhYqBSr337zqFjnlwEjGaE9DrxNEIbkRTSPX96PYPfVC343Ccdg5PgmOAo+q2Homk8lEA6ihgVaP2chxztRPYjmVhekUVsWCPRxenfeTjH8OzvZ6L5dkobGWrklk/LH7+fW6en+ro95TSa6520ZZNqzBPGHYSkg9K2/a/l9xIxRh54EKYjk5FMxi8jhIieIqGrcpGcEbsHVK2du6eMplqoo/7P/hAb94ZK3sRwEAAA==
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
