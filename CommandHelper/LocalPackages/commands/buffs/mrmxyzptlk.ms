@@ -16,7 +16,7 @@
                 "/run 0-6",
                 "/haste 0-3",
                 "/fly",
-                "/magicmrmxyzptlksmortal <playername> (costs $1000)",
+                "/magicmrmxyzptlksmortal <playername>",
                 "/disguise",
                 "/gmc ($1/sec)",
                 "/gms",

@@ -11,9 +11,9 @@
             'speech': "The existence of life is a highly overrated phenonenon.",
             'powers': array(
                 "/buff",
-                "/gmc ($1/sec)",
-                "/kill ($1000)",
+                "/gmc",
                 "/gms",
+                "/kill",
                 "/tp",
                 "/fly",
                 "/skull <player>"

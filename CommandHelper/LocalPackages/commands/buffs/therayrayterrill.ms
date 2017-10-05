@@ -18,7 +18,7 @@
                 "/haste 0-5",
                 "/flyspeed <number>",
                 "/fly",
-                "/gmc (costs $100 + $1/sec)",
+                "/gmc",
 		"/gms",
                 "Shoots nuclear blasts with bare hand",
                 "/invis",

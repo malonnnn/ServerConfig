@@ -12,7 +12,7 @@
             'powers': array(
                 "/buff",
                 "/tp <playername>",
-                "/tp <playername> <playername> (costs $100)",
+                "/tp <playername> <playername>",
                 "Anything you attack, dies"
             ),
             'buffs': array(
