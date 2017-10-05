@@ -16,7 +16,8 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/haste 0-9",
-                “Shift and Jump While Using W To Run Up A Wall.”,
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
                 "/fly"
             ),
