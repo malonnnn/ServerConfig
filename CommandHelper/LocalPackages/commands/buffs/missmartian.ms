@@ -20,6 +20,8 @@
                 "/haste 0-6",
                 "/flyspeed <number>",
                 "/fly",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/intangible",
                 "/tangible",
                 "/disguise",
