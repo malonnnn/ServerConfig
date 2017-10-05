@@ -6,19 +6,6 @@ inventory:
       ==: ItemMeta
       meta-type: POTION
       potion-type: minecraft:long_night_vision
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: FENCE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: SKULL_ITEM
-    damage: 3
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: §fSkull of wood
-      internal: H4sIAAAAAAAAAONiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1lYCnPz09hYAAAyhx66iEAAAA=
-      skull-owner: wood
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: SKULL_ITEM
@@ -31,9 +18,7 @@ inventory:
       skull-owner: HeyItsEmmett_MCU
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 15
-    amount: 2
+    type: GOLD_CHESTPLATE
   '8':
     ==: org.bukkit.inventory.ItemStack
     type: SIGN
@@ -44,7 +29,7 @@ inventory:
     ==: org.bukkit.inventory.ItemStack
     type: SKULL_ITEM
     damage: 3
-    amount: 3
+    amount: 6
   '11':
     ==: org.bukkit.inventory.ItemStack
     type: GRASS
@@ -55,16 +40,14 @@ inventory:
     amount: 2
   '13':
     ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 15
-    amount: 2
+    type: LEATHER_HELMET
   '14':
     ==: org.bukkit.inventory.ItemStack
     type: STONE_BUTTON
     amount: 4
   '15':
     ==: org.bukkit.inventory.ItemStack
-    type: DAYLIGHT_DETECTOR
+    type: WORKBENCH
   '16':
     ==: org.bukkit.inventory.ItemStack
     type: BEACON
@@ -85,6 +68,67 @@ inventory:
   '32':
     ==: org.bukkit.inventory.ItemStack
     type: STONE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 15
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: DAYLIGHT_DETECTOR
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 1
+    amount: 62
 health: 20.0
 hunger: 20
 exp: 0.0
