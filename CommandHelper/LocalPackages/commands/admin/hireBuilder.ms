@@ -11,18 +11,18 @@ register_command('hirebuilder',
                 cancel()
             }
             
-            try {
-            
-                @player = player(@args[0])
-                sudo("/pex user ".@player." group add builder")
-                tmsg(player(),color(red)."You have hired ".@player." as a builder!")
-                tmsg(@player,color(red)."You have been hired as a builder!")	
-                
-            } catch (PlayerOfflineException @ErrorInfo) {				
-                msg('Player is Offline')
+            @player = player()
+            @vic = player(@args[0])
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/checkJobs.ms')
+            if(!_checkJobs(@vic)){
                 die()
-            }	 
-        
+            }
+
+            sudo("/pex user ".@vic." add is.builder")
+            sudo("/pex user ".@vic." group add builder")
+            tmsg(@player,color(red)."You have hired ".@vic." as a builder!")
+            tmsg(@vic,color(red)."You have been hired as a builder!")	
         }
     )
 )
@@ -39,19 +39,13 @@ register_command('firebuilder',
             if (array_size(@args) != 1) {		
                 cancel()
             }
-            
-            try {
-            
-                @player = player(@args[0])
-                sudo("/pex user ".@player." group remove builder")
-                tmsg(player(),color(red)."You have fired ".@player." from builder!")
-                tmsg(@player,color(red)."You have been fired from builder!")	
-                
-            } catch (PlayerOfflineException @ErrorInfo) {				
-                msg('Player is Offline')
-                die()
-            }	 
-        
+
+            @player = player()
+            @vic = player(@args[0])
+            sudo("/pex user ".@vic." remove is.builder")
+            sudo("/pex user ".@vic." group remove builder")
+            tmsg(@player,color(red)."You have fired ".@vic." from builder!")
+            tmsg(@vic,color(red)."You have been fired from builder!")	
         }
     )
 )
@@ -69,20 +63,13 @@ register_command('givewe',
                 cancel()
             }
             
-            try {
-            
-                @player = player(@args[0])
-                sudo("/pex user ".@player." add worldedit.* vigilance_ruined_plots")
-                sudo("/pex user ".@player." add essentials.skull vigilance_ruined_plots")
-                sudo("/pex user ".@player." add essentials.skull.* vigilance_ruined_plots")
-                tmsg(player(),color(red)."You have given ".@player." WorldEdit!")
-                tmsg(@player,color(red)."You have been given WorldEdit!")	
-                
-            } catch (PlayerOfflineException @ErrorInfo) {				
-                msg('Player is Offline')
-                die()
-            }	 
-        
+            @player = player()
+            @vic = player(@args[0])
+            sudo("/pex user ".@vic." add worldedit.* vigilance_ruined_plots")
+            sudo("/pex user ".@vic." add essentials.skull vigilance_ruined_plots")
+            sudo("/pex user ".@vic." add essentials.skull.* vigilance_ruined_plots")
+            tmsg(@player,color(red)."You have given ".@vic." WorldEdit!")
+            tmsg(@vic,color(red)."You have been given WorldEdit!")	
         }
     )
 )
@@ -100,20 +87,13 @@ register_command('takewe',
                 cancel()
             }
             
-            try {
-            
-                @player = player(@args[0])
-                sudo("/pex user ".@player." remove worldedit.* vigilance_ruined_plots")
-                sudo("/pex user ".@player." remove essentials.skull vigilance_ruined_plots")
-                sudo("/pex user ".@player." remove essentials.skull.* vigilance_ruined_plots")
-                tmsg(player(),color(red)."You have taken WorldEdit from ".@player)
-                tmsg(@player,color(red)."You have had WorldEdit taken from you!")	
-                
-            } catch (PlayerOfflineException @ErrorInfo) {				
-                msg('Player is Offline')
-                die()
-            }	 
-        
+            @player = player()
+            @vic = player(@args[0])
+            sudo("/pex user ".@vic." remove worldedit.* vigilance_ruined_plots")
+            sudo("/pex user ".@vic." remove essentials.skull vigilance_ruined_plots")
+            sudo("/pex user ".@vic." remove essentials.skull.* vigilance_ruined_plots")
+            tmsg(@player,color(RED)."You have taken WorldEdit from ".@vic)
+            tmsg(@vic,color(RED)."You have had WorldEdit taken from you!")	
         }
     )
 )
