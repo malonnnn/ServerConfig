@@ -11,6 +11,8 @@
             'speech': "I have spent most of my life surrounded by my enemies. I will be grateful to die among my friends.",
             'powers': array(
                 "/buff"
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
