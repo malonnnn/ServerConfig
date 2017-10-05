@@ -2,7 +2,7 @@ proc(_mortal,@plr,
 
     sudo("/sudo ".@plr." c:/trailsid none")
     sudo("/pex user ".@plr." group set mortal")
-    sudo("/warp city ". @plr)
+    sudo("/warp lab ". @plr)
     
     set_timeout(2000, closure(
         sudo("/gamemode survival ".@plr)
