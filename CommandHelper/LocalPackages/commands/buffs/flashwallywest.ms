@@ -31,6 +31,8 @@
                 "/dismountplayer",
                 "/haste 0-7",
                 "/tppos <x y z world>",
+                "/wallrun <on/off>",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/thru (phases through walls)",
                 "/thrudestabilize",
                 "/modifyspeed <playername> <number>"
