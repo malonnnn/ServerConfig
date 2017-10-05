@@ -22,15 +22,15 @@ register_command(kill,
                 die()
             }
             
-            @bal = acc_balance(@plr)
-            @isOp = has_permission(@plr,'is.op')
-            if(@bal < 1000 && !@isOp){
-                msg(color(RED).'Sorry, you need $1000 to use this command')
-                die()
-            }
-            if(!@isOp){
-                acc_subtract(@plr,1000)
-            }
+            // @bal = acc_balance(@plr)
+            // @isOp = has_permission(@plr,'is.op')
+            // if(@bal < 1000 && !@isOp){
+            //     msg(color(RED).'Sorry, you need $1000 to use this command')
+            //     die()
+            // }
+            // if(!@isOp){
+            //     acc_subtract(@plr,1000)
+            // }
 
             assign(@cooldown, 10)
             assign(@lastUsedKill, import(@plr."lastUsedKill"))
