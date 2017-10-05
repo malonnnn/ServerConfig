@@ -22,6 +22,8 @@
                 "/speedforcewhirlwind",
                 "/carryplayer <playername>",
                 "/dismountplayer",
+                "/wallrun (on/off)",
+                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/haste 0-7",
                 "/run 0-1 (In the speedforce)",
                 "/thru (phases through walls)"
