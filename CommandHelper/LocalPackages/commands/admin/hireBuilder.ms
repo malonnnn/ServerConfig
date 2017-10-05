@@ -73,6 +73,8 @@ register_command('givewe',
             
                 @player = player(@args[0])
                 sudo("/pex user ".@player." add worldedit.* vigilance_ruined_plots")
+                sudo("/pex user ".@player." add essentials.skull vigilance_ruined_plots")
+                sudo("/pex user ".@player." add essentials.skull.* vigilance_ruined_plots")
                 tmsg(player(),color(red)."You have given ".@player." WorldEdit!")
                 tmsg(@player,color(red)."You have been given WorldEdit!")	
                 
@@ -102,6 +104,8 @@ register_command('takewe',
             
                 @player = player(@args[0])
                 sudo("/pex user ".@player." remove worldedit.* vigilance_ruined_plots")
+                sudo("/pex user ".@player." remove essentials.skull vigilance_ruined_plots")
+                sudo("/pex user ".@player." remove essentials.skull.* vigilance_ruined_plots")
                 tmsg(player(),color(red)."You have taken WorldEdit from ".@player)
                 tmsg(@player,color(red)."You have had WorldEdit taken from you!")	
                 
