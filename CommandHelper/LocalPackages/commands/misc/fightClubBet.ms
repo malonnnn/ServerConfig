@@ -1,39 +1,13 @@
 register_command(fightclubbet, 
-
     array(
-    
         description: 'Places a bet on a player that is Fighting in Fight Club',
-        
         usage: '/fightclubbet <amount> <player>',
-        
         permission: 'ch.alias.fightclubbet',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        aliases: 'bet',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) != 2) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /fightclubbet <amount>  <player>');
-                    die(); # No need to go further					
-                
+                    return(false)
                 }		
                 
                 @plr = player()
@@ -76,15 +50,9 @@ register_command(fightclubbet,
                             die()
                         }
 
-                        assign(@cooldown, 10)
-                        
-                        assign(@lastUsedFightClubBet, import(@plr."lastUsedFightClubBet"))
-                        if(@lastUsedFightClubBet + @cooldown > time() / 1000,
-                            assign(@timeleft, subtract(add(@lastUsedFightClubBet, @cooldown), divide(time(),1000)))
-                            tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can change your bet!'))
-                            die()
-                        )
-                        export(@plr."lastUsedFightClubBet", time() / 1000)
+                        include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+                        cooldown(@plr.'fightClubBet',10,@plr)
+
                         export(@plr.'fightClubBetPerson',@personBetOn)
                         export(@plr.'fightClubBetAmt',@amt)
 
@@ -102,17 +70,11 @@ register_command(fightclubbet,
 )
 
 register_command(officialfight, 
-
     array(
-    
         description: 'Records a Fight Club \'Fight\' as an Offical Match. Influences Players Fighting Stats',
-        
         usage: '/officialfight',
-        
         permission: 'ch.alias.officialfight',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {
         
                 @pendingFight = import('fightClubStatus')
@@ -230,39 +192,15 @@ register_command(officialfight,
 )
 
 register_command(setwins, 
-
     array(
-    
         description: 'Sets the amount of a wins a Player Has',
-        
         usage: '/setwins <wins> <player>',
-        
         permission: 'ch.alias.setwins',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) != 2) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /setwins <amount>  <player>');
-                    die(); # No need to go further					
-                
+                    return(false)
                 }
                 
                 @num = @args[0]
@@ -275,39 +213,15 @@ register_command(setwins,
 )
 
 register_command(setlosses, 
-
     array(
-    
         description: 'Sets the amount of a losses a Player Has',
-        
         usage: '/setlosses <losses> <player>',
-        
         permission: 'ch.alias.setlosses',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) != 2) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /setwins <amount>  <player>');
-                    die(); # No need to go further					
-                
+                    return(false)
                 }
                 
                 @num = @args[0]
@@ -320,39 +234,15 @@ register_command(setlosses,
 )
 
 register_command(resetfightstats, 
-
     array(
-    
         description: 'Resets a players fight stats',
-        
         usage: '/resetfightstats <player>',
-        
         permission: 'ch.alias.resetfightstats',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) != 1) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /resetfightstats <player>');
-                    die(); # No need to go further					
-                
+                    return(false)
                 }
                 
                 @plr = player(@args[0])
