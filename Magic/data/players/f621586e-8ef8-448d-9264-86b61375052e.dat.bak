@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: President_Myth
-last_cast: 1507251576991
+last_cast: 1507258558001
 cooldown_expiration: 0
-last_death_location: 1802.1318004987547,70.0,-1137.1759693663091,survival112,355.69562,29.95233
+last_death_location: -183.67313706953902,63.0,-24.86250001192093,survival112,-51.38756,19.050014
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -66,7 +66,7 @@ spells:
     cooldown_expiration: 1500766225503
   confringo:
     cast_count: 0
-    last_cast: 1507156360791
+    last_cast: 1507256701697
     last_earn: 0
     cooldown_expiration: 0
   fireball|4:
@@ -151,7 +151,7 @@ spells:
     cooldown_expiration: 1504503152411
   crucio:
     cast_count: 9
-    last_cast: 1507156272292
+    last_cast: 1507257163788
     last_earn: 1506996937755
     cooldown_expiration: 0
   dragonball:
@@ -340,9 +340,9 @@ spells:
     last_earn: 1493768217578
     cooldown_expiration: 1494086011968
   fiendfyre:
-    cast_count: 6
-    last_cast: 1507156356594
-    last_earn: 1507156357288
+    cast_count: 14
+    last_cast: 1507257191169
+    last_earn: 1507257071699
     cooldown_expiration: 0
   backflip:
     cast_count: 7
@@ -375,10 +375,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1499309777590
   deadlights:
-    cast_count: 0
-    last_cast: 1507251576992
+    cast_count: 1
+    last_cast: 1507258558002
     last_earn: 0
-    cooldown_expiration: 1507251582992
+    cooldown_expiration: 1507258564002
   chainlightning:
     cast_count: 4
     last_cast: 1496273313786
@@ -460,9 +460,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1505781358898
   protego:
-    cast_count: 13
-    last_cast: 1507156105007
-    last_earn: 1507156105006
+    cast_count: 19
+    last_cast: 1507257030292
+    last_earn: 1507257026639
     cooldown_expiration: 0
   icbm:
     cast_count: 0
@@ -490,8 +490,8 @@ spells:
     last_earn: 1507156101957
     cooldown_expiration: 0
   avadakedavra:
-    cast_count: 0
-    last_cast: 1507156411169
+    cast_count: 1
+    last_cast: 1507257122442
     last_earn: 0
     cooldown_expiration: 0
   expelliarmus:
@@ -640,6 +640,44 @@ wands:
         forcepull: 1
         forcegrip: 2
         forcepush: 0
+  voldemortswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6confringo§f (§3VoldemortsWand§f)
+        lore:
+        - §3§oBound to President_Myth
+        - Knows 5 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAE2RwW4TMRRFXzvTMIkgSGVZFpWoWDWIJDMTZ4MaiUogEUCqumXk2M+p1bE9eF6myq6bSv2DfgBbFnwAC76AX2HPCs9UILx7vta99zwPAAYQX3ErE0gITVVyQhg2rpRonKf6XtpzVxY9DD96rLVES8VySxcJPOSCdINFXWFZQl84q7y2a9eD2HDLT/wPaE8Mw3YsSBusiZsKYOfTr9vdgxDaORdawpHKJ+OM5ThiqNgoTZkczSd5OmL5Kh9PZ9nLbIIhEpVCQYVwpfPwnEueTcVYztOVOp6tpMzHs5wxJY/VlEkuZtk8Y2kEDxr0tXY2tNkbwOOucKFtE1ic3wa98o5w7YK+G0FfabRSbT2GOYr+I2tposDdhOBLlLzxvCWMoCf8RuhW3wHow/6CyOvVhnDppA52vh60WgzJ+fnb10tX0+9nr54urt9gDP326h3ymr4dfP95d/P1Sw96C+M2lk6Oug1CAvFZ6QgSw7W96D7l0b+I99wgPFlj2KQWLzgRF5dnFaIMzT9U6Dndk7cu3dv9088bXZkAf/i3HsAf/hjMlQwCAAA=
+    wand:
+      template: voldemortswand
+      owner: President_Myth
+      active_spell: confringo
+      mana: 300.0
+      mana_timestamp: 1507257221659
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: ada53c1d94bf,7bdd617688fd,f38dac759584
+      version: 5
+      spell_inventory:
+        protego: 2
+        fiendfyre: 3
+        confringo: 4
+        avadakedavra: 0
+        crucio: 1
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -673,6 +711,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1169
+  sp: 1182
 properties: {}
 classes: {}
