@@ -1,8 +1,33 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SULPHUR
+    amount: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+    amount: 14
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 16
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFhMKhWAtJFiUpW0dVKJUCmkpVSYnlqZn56RnlifmpGemK5Um2sDkxKqRaq05hBD4vOgOzirPSU/MyM1PTEdKz6jBi0sOgrycgsVgjOdM9D18OUmcLAl5uZl5pclJhWYlWcmZ4HNciQQRWLQS6hAa6oZjAwAADjxQAbAAEAAA==
+      blockMaterial: SIGN
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_DOOR
 health: 20.0
 hunger: 20
-exp: 0.052631736
-exp-level: 6
+exp: 0.19047633
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
