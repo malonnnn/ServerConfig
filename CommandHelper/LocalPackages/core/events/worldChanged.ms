@@ -7,22 +7,15 @@ bind(world_changed, null, null, @event,
     @from = @event['from']
     @class = _getheroclass(@player)
 
-    set_pflight(@player,false)
 
     set_timeout(3000,closure(    
         runas(~console,"/effect ".@player." invisibility 0")
         runas(~console,"/sudo ".@player." c:/fixskin")
+        set_pflight(@player,false)
     ))
 
-    if(@to == 'greenfield' && @class == 'mortal'){
-        runas(~console,'/effect '.@player." clear")
-        runas(~console,'/minecraft:clear '.@player)
-    }
     if(@to == 'anarchy' && @class != 'anarchy'){
         runas(~console,'/pex user '.@player.' group set anarchy')
-    }
-    if(@to == 'alpha'){
-        runas(~console,'/effect '.@player.' clear')
     }
     
 
