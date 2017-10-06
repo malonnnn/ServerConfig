@@ -9,7 +9,8 @@ bind(world_changed, null, null, @event,
 
 
     set_timeout(3000,closure(    
-        runas(~console,"/effect ".@player." invisibility 0")
+        runas(~console,"/effect ".@player." clear")
+        runas(~console,"/minecraft:clear ".@player)
         runas(~console,"/sudo ".@player." c:/fixskin")
         set_pflight(@player,false)
     ))
