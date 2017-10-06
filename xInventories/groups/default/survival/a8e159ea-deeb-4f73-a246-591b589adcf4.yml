@@ -7,21 +7,30 @@ inventory:
       meta-type: UNSPECIFIC
       display-name: §9Ice Beam§9 «×»
 armor_contents: {}
-health: 20.0
-hunger: 20
+health: 0.726667046546936
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.395157
-ender_chest: {}
-potion_effect:
+exhaustion: 2.1020017
+ender_chest:
   '0':
-    type: JUMP
-    level: 3
-    duration: 186795
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SWORD
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Jhon Jones
+      enchants:
+        DAMAGE_ALL: 20
   '1':
-    type: SPEED
-    level: 3
-    duration: 186923
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 64
