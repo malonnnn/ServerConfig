@@ -142,11 +142,17 @@ if(@facingDir == 'north'){
                     @start = @length - (@length - 15)
                     @part2 = substr(@hero['class'], @start)
                 }
-                set_sign_text(@signLoc,'',@hero['class'],@part2,'')
+                @blk = get_block_at(@signLoc)
+                if(@blk[0].@blk[1].@blk[2] == '68:'){
+                    set_sign_text(@signLoc,'',@hero['class'],@part2,'')
+                }
                 
             }else{
                 #_updateHologram2('remove','',@npcID,@holoLoc)
-                set_sign_text(@signLoc,'','','','')
+                @blk = get_block_at(@signLoc)
+                if(@blk[0].@blk[1].@blk[2] == '68:'){
+                    set_sign_text(@signLoc,'','','','')
+                }
             }
         }
     ))
