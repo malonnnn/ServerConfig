@@ -17,33 +17,55 @@ register_command('helperquiz',
             if(has_bind(@player.'helperquiz')){
                 die(color(RED).'You are already taking this quiz!');
             }
-            
-            include('/home/minecraft/server/plugins/CommandHelper/includes/helperQuestions.ms')
-            
-            @randomQuestions = array_rand(@questions, 30, false);
-            msg(color(YELLOW).color(BOLD).'Helper Quiz:');
-            msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
-            msg(color(GREEN).@randomQuestions[0]);
+            @answers = associative_array()
+            runas(~console,'/warp class '.@p)
+            set_timeout(3000,closure( 
+                include('/home/minecraft/server/plugins/CommandHelper/includes/helperQuestions.ms')
+                
+                @randomQuestions = array_rand(@questions, 30, false);
+                msg(color(YELLOW).color(BOLD).'Helper Quiz:');
+                msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
+                msg(color(GREEN).@randomQuestions[0]);
+    
+                bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
+                    cancel()
+                    msg(color(RED).'Sorry, no commands allowed while taking the test!')
+                }
 
-            bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
-                cancel()
-                msg(color(RED).'Sorry, no commands allowed while taking the test!')
-            }
-            
-            bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
-                cancel();
-                msg(@e['message']);
-                @answers[] = array(@randomQuestions[0], @e['message']);
-                array_remove(@randomQuestions, 0);
-                if(array_size(@randomQuestions) > 0) {
-                    msg(color(GREEN).@randomQuestions[0]);
-                } else {
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers){
                     unbind();
                     unbind(@playerr.'testNoCommands')
-                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
-                    msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
+                    unbind(@playerr.'helperquiz')
+                    unbind(@playerr.'testQuit')
+                    @answerss[] = array('player','died in the middle of the test')
+                    store_value('helperquiz.'.puuid(@playerr,true),@answerss);
                 }
-            }
+                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
+                    unbind();
+                    unbind(@playerr.'testNoCommands')
+                    unbind(@playerr.'helperquiz')
+                    unbind(@playerr.'testDeath')
+                    @answerss[] = array('player','died in the middle of the test')
+                    store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                }
+                
+                bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player,@answerss = @answers){
+                    cancel();
+                    msg(@e['message']);
+                    @answerss[] = array(@randomQuestions[0], @e['message']);
+                    array_remove(@randomQuestions, 0);
+                    if(array_size(@randomQuestions) > 0) {
+                        msg(color(GREEN).@randomQuestions[0]);
+                    } else {
+                        unbind();
+                        unbind(@playerr.'testNoCommands')
+                        unbind(@playerr.'testDeath')
+                        unbind(@playerr.'testQuit')
+                        store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                        msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
+                    }
+                }
+            ))
         }
     )
 )
