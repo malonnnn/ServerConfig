@@ -8280,7 +8280,7 @@ groups:
       suffix: ''
   headbuilder:
     options:
-      prefix: '&e&kI&4&k|&f&lHeadBuilder|&e&kI&a&l/'
+      prefix: '&e&kI&4&k|&f&lHeadBuilder&4&k|&e&kI&a&l/'
       suffix: ''
     worlds:
       vigilance_ruined_plots:
@@ -8288,6 +8288,8 @@ groups:
         - essentials.build.*
         - essentials.fly
     permissions:
+    - take.we
+    - give.we
     - fire.builder
     - hire.builder
   headpolice:
@@ -8306,14 +8308,14 @@ groups:
     - hire.helper
   headcoder:
     options:
-      prefix: '&e&kI&4&k|&f&lHeadCoder|&e&kI&a&l/'
+      prefix: '&e&kI&4&k|&f&lHeadCoder&4&k|&e&kI&a&l/'
       suffix: ''
     permissions:
     - fire.coder
     - hire.coder
   builder:
     options:
-      prefix: '&e&kI&4&k|&f&lBuilder|&e&kI&a&l/'
+      prefix: '&e&kI&4&k|&f&lBuilder&4&k|&e&kI&a&l/'
       suffix: ''
     worlds:
       vigilance_ruined_plots:
@@ -8330,7 +8332,7 @@ groups:
       suffix: ''
   coder:
     options:
-      prefix: '&e&kI&4&k|&f&lCoder|&e&kI&a&l/'
+      prefix: '&e&kI&4&k|&f&lCoder&4&k|&e&kI&a&l/'
       suffix: ''
   omega:
     inheritance:
@@ -14142,6 +14144,7 @@ users:
     permissions: []
   f621586e-8ef8-448d-9264-86b61375052e:
     group:
+    - headcoder
     - mortal
     options:
       name: President_Myth
@@ -14170,10 +14173,12 @@ users:
     - machine.mortal
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
+    - headhelper
     - starbutterfly
     options:
       name: iiSimqlyHqrk
     permissions:
+    - case.tolower
     - is.headhelper
   4ff867f5-6cab-413e-9fad-e4d77ca48778:
     group:
@@ -14803,12 +14808,12 @@ users:
         permissions: []
   fa2a5955-ae99-48a9-9372-835d54d637cd:
     group:
-    - deadpool
+    - onepunchman
     options:
       name: SirPancakezz
   1c9a7d83-4990-41b2-bf90-c567cc79cdf2:
     group:
-    - doctorstrange
+    - ironmanmkxv
     options:
       name: SharrkBane
   629ed2b0-60c4-4a18-b406-59ee7542a541:
@@ -15558,9 +15563,18 @@ users:
       name: Zerho
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
-    - savitar
+    - headbuilder
+    - naruto
     options:
       name: _Vigilance_
+    permissions:
+    - is.headbuilder
+    worlds:
+      vigilance_ruined_plots:
+        permissions:
+        - essentials.skull.*
+        - essentials.skull
+        - worldedit.*
   7559d3b9-2b09-413a-8c2a-4d3e8475ca98:
     group:
     - mortal
@@ -18636,7 +18650,7 @@ users:
       name: SprinklezDaWolf
   189a7981-67c5-4e2f-a7e7-84f78e620e9e:
     group:
-    - atom
+    - blackracerwilliewalker
     options:
       name: IndirectBump6
     worlds:
@@ -20874,7 +20888,7 @@ users:
         permissions: []
   9efcf88e-d33b-431c-8fbd-9c1a04b350c7:
     group:
-    - percyjackson
+    - mephisto
     options:
       name: Mrpoops
   618db17e-d865-406f-92e3-6a319c4c5c8a:
@@ -21784,6 +21798,7 @@ users:
       name: M3GA_SLIME_BO33
   f0f266c0-4d12-4e07-8ebc-e9527e271d21:
     group:
+    - builder
     - flashbarryallen
     options:
       name: NightGamer87
@@ -21792,6 +21807,8 @@ users:
         permissions: []
       fightclub:
         permissions: []
+    permissions:
+    - is.builder
   acf1002d-544a-411d-90fd-f63c00573c62:
     group:
     - superman
@@ -21921,7 +21938,7 @@ users:
     - chat.cooldown
   dca90748-7d83-461b-889d-618fb9bd9831:
     group:
-    - mortal
+    - spidermanmilesmorales
     options:
       name: ToXic_W4st3
   03d8b376-00a0-4362-8f99-3e0cd9fc9d77:
