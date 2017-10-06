@@ -14,7 +14,7 @@
                 "/jump 0-2",
                 "/run 0-3",
                 "/wind <playername>",
-                "/fireballpunch on/off"
+                "/fireballpunch <on/off>",
                 "You can throw a fireball with your bare hand"
             ),
             'buffs': array(
