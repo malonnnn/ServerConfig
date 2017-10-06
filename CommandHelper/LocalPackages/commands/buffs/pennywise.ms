@@ -17,7 +17,7 @@
                 "/invis",
                 "/vis",
                 "/cast deadlights",
-                "/illusionplayer <amount> <mob> <player>",
+                "/pennywiseillusion <playername>",
                 "Spawns Mobs disguised as the player you specify"
             ),
             'buffs': array(
