@@ -1,236 +1,33 @@
-health: 40.0
-hunger: 17
-exp: 0.0
+health: 20.0
+hunger: 20
+exp: 0.2857143
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.2661003
+saturation: 12.0
+exhaustion: 3.6806252
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: IRON_FENCE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: §4IT's §cClaws
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+        DAMAGE_ALL: 6
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 4
-    amount: 10
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-ender_chest:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §ePython §l/§e Knife§e ▪ «×»
-      lore:
-      - §eRevolver with high power.
-      - §eLeft click to melee enemies
-      - §ewith the tactical knife.
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK_CHARGE
-    amount: 3
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK_EFFECT
-      display-name: §eFrag Grenade§e
-      lore:
-      - §eExplodes three seconds after launch.
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_COMPARATOR
-    amount: 3
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §ePutty§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to throw.
-      - §eLeft click to detonate.
-      blockMaterial: REDSTONE_COMPARATOR
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    amount: 3
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eC4§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to place.
-      - §eLeft click to detonate.
+    type: LEATHER
+    amount: 4
+armor_contents: {}
+ender_chest: {}
 potion_effect:
   '0':
-    type: JUMP
-    level: 5
-    duration: 197742
-  '1':
-    type: HEALTH_BOOST
+    type: DAMAGE_RESISTANCE
     level: 4
-    duration: 197455
-  '2':
-    type: SPEED
-    level: 100
-    duration: 197804
-  '3':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 197455
-  '4':
-    type: FAST_DIGGING
-    level: 40
-    duration: 197681
-  '5':
-    type: REGENERATION
-    level: 1
-    duration: 197455
+    duration: 198241
+  '1':
+    type: JUMP
+    level: 3
+    duration: 191046
