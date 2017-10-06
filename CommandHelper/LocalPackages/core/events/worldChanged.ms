@@ -7,6 +7,8 @@ bind(world_changed, null, null, @event,
     @from = @event['from']
     @class = _getheroclass(@player)
 
+    set_pflight(@player,false)
+
     set_timeout(3000,closure(    
         runas(~console,"/effect ".@player." invisibility 0")
         runas(~console,"/sudo ".@player." c:/fixskin")
