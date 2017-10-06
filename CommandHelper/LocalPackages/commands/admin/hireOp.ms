@@ -5,36 +5,19 @@ register_command(hireop,
         usage: '/hireop <player>',
         permission: 'hire.op',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) != 1) {
-                
-                    msg(''.color(RED).color(BOLD).'Improper Usage!');
-                    msg(''.color(RED).'Usage: /hireop <player>');
-                    die(); # No need to go further					
-                
+                    return(false)
                 }
                 
-                try {
-                
-                    @player = player(@args[0])
-                    @puuid = puuid(@player,true)
-                    runas(~console,"/pex group ".@puuid." create op")
-                    runas(~console,"/pex group ".@puuid." prefix \"&4&l&oCo-Owner\"")
-                    runas(~console,"/pex group ".@puuid." add chatcontrol.parts.playername")
-                    runas(~console,"/pex group ".@puuid." add -is.mute")
-                    runas(~console,"/pex user ".@player." group set ".@puuid)
-                    tmsg(player(),color(red)."You have hired ".@player. " as OP!")
-                    tmsg(@player,color(red)."You have been hired as OP")
-                    
-                } catch (PlayerOfflineException @ErrorInfo) {				
-                    msg(@player,'Player: '.@plr.' is Offline')
-                    die()
-                }		
-                
-                
-        
+                @player = player(@args[0])
+                @puuid = puuid(@player,true)
+                runas(~console,"/pex group ".@puuid." create op")
+                runas(~console,"/pex group ".@puuid." prefix \"&9&l&oPwner\"")
+                runas(~console,"/pex user ".@player." group set ".@puuid)
+                tmsg(player(),color(red)."You have hired ".@player. " as OP!")
+                tmsg(@player,color(red)."You have been hired as OP")
         }
     )
 )
