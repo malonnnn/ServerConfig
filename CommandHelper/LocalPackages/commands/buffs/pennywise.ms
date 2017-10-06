@@ -12,7 +12,7 @@
             'powers': array(
                 "/buff",
                 "/disguise p <player>",
-                "/disguise <mob>,
+                "/disguise <mob>",
                 "/jump 0-2",
                 "/invis",
                 "/vis",
