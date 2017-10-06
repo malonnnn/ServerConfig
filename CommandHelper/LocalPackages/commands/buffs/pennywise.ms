@@ -13,6 +13,7 @@
                 "/buff",
                 "/disguise p <player>",
                 "/disguise <mob>",
+                "/undisguise",
                 "/jump 0-2",
                 "/invis",
                 "/vis",
