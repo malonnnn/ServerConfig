@@ -1,4 +1,4 @@
-register_command(fireballpunch, 
+register_command(fireball, 
 
     array(
         description: 'Turn FireballPunch on/off',
