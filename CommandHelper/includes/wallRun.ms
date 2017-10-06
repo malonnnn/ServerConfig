@@ -14,6 +14,13 @@ proc(_wallRun, @player,
         @wallBlockFront = get_block_at(@wallCheck)
         @wallCheck['z'] = @wallCheck['z'] + 2
         @wallBlockBack = get_block_at(@wallCheck)
+        @wallCheck['z'] = @wallCheck['z'] - 1
+
+        @wallCheck['x'] = @wallCheck['x'] - 1
+        @wallBlockLeft = get_block_at(@wallCheck)
+        @wallCheck['x'] = @wallCheck['x'] + 2
+        @wallBlockRight = get_block_at(@wallCheck)
+
         if(@footPosition[0] == "0"){
             if(
                 @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
@@ -30,6 +37,30 @@ proc(_wallRun, @player,
             }else if(
                 @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
                 @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockLeft[0].@wallBlockLeft[1] != "0:" && 
+                @wallBlockLeft[0].@wallBlockLeft[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockRight[0].@wallBlockRight[1] != "0:" && 
+                @wallBlockRight[0].@wallBlockRight[1] != "9:" 
             ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
@@ -48,6 +79,11 @@ proc(_wallRun, @player,
         @wallBlockFront = get_block_at(@wallCheck)
         @wallCheck['x'] = @wallCheck['x'] - 2
         @wallBlockBack = get_block_at(@wallCheck)
+
+        @wallCheck['z'] = @wallCheck['z'] - 1
+        @wallBlockLeft = get_block_at(@wallCheck)
+        @wallCheck['z'] = @wallCheck['z'] + 2
+        @wallBlockRight = get_block_at(@wallCheck)
         if(@footPosition[0] == "0"){
             if(
                 @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
@@ -64,6 +100,30 @@ proc(_wallRun, @player,
             }else if(
                 @wallBlockBack[0].@wallBlockBack[1] != "0:" && 
                 @wallBlockBack[0].@wallBlockBack[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockLeft[0].@wallBlockLeft[1] != "0:" && 
+                @wallBlockLeft[0].@wallBlockLeft[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockRight[0].@wallBlockRight[1] != "0:" && 
+                @wallBlockRight[0].@wallBlockRight[1] != "9:" 
             ){
                 @magnitude = 1.0;
                 @yaw = @ploc['yaw'] + 90;
@@ -82,6 +142,11 @@ proc(_wallRun, @player,
         @wallBlockFront = get_block_at(@wallCheck)
         @wallCheck['z'] = @wallCheck['z'] - 2
         @wallBlockBack = get_block_at(@wallCheck)
+
+        @wallCheck['x'] = @wallCheck['x'] + 1
+        @wallBlockLeft = get_block_at(@wallCheck)
+        @wallCheck['x'] = @wallCheck['x'] - 2
+        @wallBlockRight = get_block_at(@wallCheck)
         if(@footPosition[0] == "0"){
             if(
                 @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
@@ -107,6 +172,30 @@ proc(_wallRun, @player,
                 @vector['y'] = @magnitude * sin(to_radians(@pitch));
                 @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
                 set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockLeft[0].@wallBlockLeft[1] != "0:" && 
+                @wallBlockLeft[0].@wallBlockLeft[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
+            }else if(
+                @wallBlockRight[0].@wallBlockRight[1] != "0:" && 
+                @wallBlockRight[0].@wallBlockRight[1] != "9:" 
+            ){
+                @magnitude = 1.0;
+                @yaw = @ploc['yaw'] + 90;
+                @pitch = neg(@ploc['pitch']);
+                @vector = associative_array();
+                @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                @vector['y'] = @magnitude * sin(to_radians(@pitch));
+                @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
+                set_pvelocity(@player, @vector)
             }
         }
     }else{
@@ -116,6 +205,11 @@ proc(_wallRun, @player,
         @wallBlockFront = get_block_at(@wallCheck)
         @wallCheck['x'] = @wallCheck['x'] + 2
         @wallBlockBack = get_block_at(@wallCheck)
+
+        @wallCheck['z'] = @wallCheck['z'] + 1
+        @wallBlockLeft = get_block_at(@wallCheck)
+        @wallCheck['z'] = @wallCheck['z'] - 2
+        @wallBlockRight = get_block_at(@wallCheck)
         if(@footPosition[0] == "0"){
             if(
                 @wallBlockFront[0].@wallBlockFront[1] != "0:" && 
