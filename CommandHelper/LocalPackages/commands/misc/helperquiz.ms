@@ -89,3 +89,25 @@ register_command('helperquizread',
         }
     )
 )
+
+register_command('helperquizclear',
+
+    array(
+        description: 'Clear a helper quiz!',
+        usage: '/helperquizclear <player>',
+        permission: 'helper.quizclear',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+
+        executor: closure(@alias, @sender, @args) {
+            if(array_size(@args) != 1) {
+                return(false); // this sends the player the usage text you specify in the register_command array
+            }
+            @player = player()
+            @target = puuid(@args[0],true)
+
+            clear_value('helperquiz.'.@target)
+
+            msg(color(RED).@target.' had their quiz reset.')
+        }
+    )
+)
