@@ -29,6 +29,22 @@ register_command('policequiz',
                 cancel()
                 msg(color(RED).'Sorry, no commands allowed while taking the test!')
             }
+            bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers){
+                unbind();
+                unbind(@playerr.'testNoCommands')
+                unbind(@playerr.'helperquiz')
+                unbind(@playerr.'testQuit')
+                @answerss[] = array('player','died in the middle of the test')
+                store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+            }
+            bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
+                unbind();
+                unbind(@playerr.'testNoCommands')
+                unbind(@playerr.'helperquiz')
+                unbind(@playerr.'testDeath')
+                @answerss[] = array('player','died in the middle of the test')
+                store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+            }
             
             bind(player_chat, array('id':@player.'policequiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
                 cancel();
@@ -40,6 +56,8 @@ register_command('policequiz',
                 } else {
                     unbind();
                     unbind(@playerr.'testNoCommands')
+                    unbind(@playerr.'testDeath')
+                    unbind(@playerr.'testQuit')
                     store_value('policequiz.'.puuid(@playerr,true),@answers);
                     msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                 }
