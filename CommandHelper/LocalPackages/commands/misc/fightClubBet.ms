@@ -51,7 +51,7 @@ register_command(fightclubbet,
                         }
 
                         include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                        _coolDown(@plr.'fightClubBet',10,@plr)
+                        _coolDown('fightClubBet',10,@plr)
 
                         export(@plr.'fightClubBetPerson',@personBetOn)
                         export(@plr.'fightClubBetAmt',@amt)
