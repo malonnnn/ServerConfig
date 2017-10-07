@@ -1,5 +1,9 @@
 /resetskywars $plr = >>>
 
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+    _coolDown('skywarsbutton',23,'')
+
     @players = all_players('skywars')
     if(array_size(@players) >= 0){
         assign(@cooldown, 300)
