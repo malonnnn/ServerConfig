@@ -22,8 +22,9 @@ register_command('policequiz',
             runas(~console,'/warp class '.@player)
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
             runas(~console,'/pex user '.@player.' add -*')
+            sudo('/chc leave global')
             set_timeout(3000,closure( 
-                include('/home/minecraft/server/plugins/Commandpolice/includes/policeQuestions.ms')
+                include('/home/minecraft/server/plugins/CommandHelper/includes/policeQuestions.ms')
                 
                 @randomQuestions = @questions;
                 // @randomQuestions = array_rand(@questions, 30, false);
@@ -45,6 +46,7 @@ register_command('policequiz',
                     store_value('policequiz.'.puuid(@player,true),@answers);
                     runas(~console,'/warp lab '.@player)
                     runas(~console,'/pex user '.@player.' remove -*')
+                    sudo('/chc join global')
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     unbind();
@@ -73,6 +75,7 @@ register_command('policequiz',
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                         runas(~console,'/warp lab '.@player)
                         runas(~console,'/pex user '.@player.' remove -*')
+                        sudo('/chc join global')
                     }
                 }
             ))
