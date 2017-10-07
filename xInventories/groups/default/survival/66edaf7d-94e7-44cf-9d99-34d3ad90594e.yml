@@ -1,32 +1,167 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: FEATHER
+    amount: 4
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    damage: 10
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:water
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLASS_BOTTLE
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:water
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_FISH
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_FISH
+    damage: 1
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKIE
+    amount: 59
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_CHICKEN
+    amount: 3
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    amount: 56
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      id: chicken
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Shoes
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Pants
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Shirt
+      repair-cost: 1
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Hat
+      repair-cost: 1
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
 ender_chest: {}
-health: 60.0
-hunger: 20
+health: 18.0
+hunger: 13
 exp: 0.0
-exp-level: 0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.0
-armor_contents: {}
-potion_effect:
-  '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 199455
-  '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 199455
-  '2':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 199455
-  '3':
-    type: REGENERATION
-    level: 4
-    duration: 199455
-  '4':
-    type: INCREASE_DAMAGE
-    level: 12
-    duration: 199455
+exhaustion: 0.88201517
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Hat
+      repair-cost: 1
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Shirt
+      repair-cost: 1
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Pants
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    damage: 9
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Dad's Nice Shoes
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
