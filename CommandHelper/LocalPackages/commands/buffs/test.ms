@@ -22,6 +22,6 @@
                 "/effect ". @plr ." 5 9999 2 true"
                 "/shot give ". @plr ." pistol",
                 "/shot give ". @plr ." pistol",
-                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§2Test§aSword"                
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&2Test&aSword"                
             )
 )
