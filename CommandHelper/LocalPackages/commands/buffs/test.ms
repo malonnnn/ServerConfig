@@ -11,7 +11,7 @@
             'op': 'false',
             'speech': "Testing Testing!",
             'powers': array(
-                "/buff,
+                "/buff",
                 "/jump 0-4",
                 "/run 0-3",
                 "/haste 0-2",
