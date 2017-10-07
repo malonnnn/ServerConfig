@@ -22,12 +22,13 @@ register_command('helperquiz',
             runas(~console,'/warp class '.@player)
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
             runas(~console,'/pex user '.@player.' add -*')
-            sudo('/chc leave global')
+            sudo('/ch leave global')
             set_timeout(3000,closure( 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/helperQuestions.ms')
                 
-                @randomQuestions = array_rand(@questions, 30, false);
-                msg(color(YELLOW).color(BOLD).'Helper Quiz:');
+                @randomQuestions = @questions;
+                // @randomQuestions = array_rand(@questions, 30, false);
+                msg(color(YELLOW).color(BOLD).'helper Quiz:');
                 msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
                 msg(color(GREEN).@randomQuestions[0]);
     
@@ -43,9 +44,9 @@ register_command('helperquiz',
                     unbind(@player.'testQuit')
                     @answers[] = array(@randomQuestions[0],'died at this question')
                     store_value('helperquiz.'.puuid(@player,true),@answers);
-                    runas(~console,'/warp lab '.@player)
                     runas(~console,'/pex user '.@player.' remove -*')
-                    sudo('/chc join global')
+                    runas(~console,'/ch set '.@player.' global')
+                    runas(~console,'/warp lab '.@player)
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     unbind();
@@ -54,8 +55,8 @@ register_command('helperquiz',
                     unbind(@player.'testDeath')
                     @answers[] = array(@randomQuestions[0],'quit at this question')
                     store_value('helperquiz.'.puuid(@player,true),@answers);
-                    runas(~console,'/warp lab '.@player)
                     runas(~console,'/pex user '.@player.' remove -*')
+                    runas(~console,'/warp lab '.@player)
                 }
                 
                 bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @player, @answers){
@@ -72,9 +73,9 @@ register_command('helperquiz',
                         unbind(@player.'testQuit')
                         store_value('helperquiz.'.puuid(@player,true),@answers);
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
-                        runas(~console,'/warp lab '.@player)
                         runas(~console,'/pex user '.@player.' remove -*')
-                        sudo('/chc join global')
+                        runas(~console,'/ch set '.@player.' global')
+                        runas(~console,'/warp lab '.@player)
                     }
                 }
             ))
@@ -108,12 +109,12 @@ register_command('helperquizread',
                 die()
             }
 
-            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @answerss = @answers, @playerr = @player){
+            bind(player_chat, array('id':@player.'helperquizread'), array('player': @player), @e, @answers){
                 cancel();
-                array_remove(@answerss, 0);
-                if(array_size(@answerss) > 0) {
-                    msg('> > > '.color(YELLOW).@answerss[0][0])
-                    msg('> > > '.color(GREEN)@answerss[0][1])
+                array_remove(@answers, 0);
+                if(array_size(@answers) > 0) {
+                    msg('> > > '.color(YELLOW).@answers[0][0])
+                    msg('> > > '.color(GREEN)@answers[0][1])
                     msg(color(RED).'Say "next" to read the next question.')
                 } else {
                     unbind();
