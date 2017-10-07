@@ -17,7 +17,7 @@ register_command('helperquiz',
             if(has_bind(@player.'helperquiz')){
                 die(color(RED).'You are already taking this quiz!');
             }
-            @answers = associative_array()
+            @answers = array()
             runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
             runas(~console,'/warp class '.@player)
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
