@@ -30,33 +30,33 @@ register_command('helperquiz',
                 msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
                 msg(color(GREEN).@randomQuestions[0]);
     
-                bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
+                bind(player_command,array('id':@player.'testNoCommands'),array('player': @player), @e){
                     cancel()
                     msg(color(RED).'Sorry, no commands allowed while taking the test!')
                 }
 
-                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@playerr = @player, @answers = @answers){
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     unbind();
-                    unbind(@playerr.'testNoCommands')
-                    unbind(@playerr.'helperquiz')
-                    unbind(@playerr.'testQuit')
-                    @answers[] = array('player','died in the middle of the test')
-                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
-                    runas(~console,'/warp lab '.@p)
-                    runas(~console,'/pex user '.@playerr.' remove -*')
+                    unbind(@player.'testNoCommands')
+                    unbind(@player.'helperquiz')
+                    unbind(@player.'testQuit')
+                    @answers[] = array(@randomQuestions[0],'died at this question')
+                    store_value('helperquiz.'.puuid(@player,true),@answers);
+                    runas(~console,'/warp lab '.@player)
+                    runas(~console,'/pex user '.@player.' remove -*')
                 }
-                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@playerr = @player, @answers = @answers){
+                bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     unbind();
-                    unbind(@playerr.'testNoCommands')
-                    unbind(@playerr.'helperquiz')
-                    unbind(@playerr.'testDeath')
-                    @answers[] = array('player','died in the middle of the test')
-                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
-                    runas(~console,'/warp lab '.@p)
-                    runas(~console,'/pex user '.@playerr.' remove -*')
+                    unbind(@player.'testNoCommands')
+                    unbind(@player.'helperquiz')
+                    unbind(@player.'testDeath')
+                    @answers[] = array(@randomQuestions[0],'quit at this question')
+                    store_value('helperquiz.'.puuid(@player,true),@answers);
+                    runas(~console,'/warp lab '.@player)
+                    runas(~console,'/pex user '.@player.' remove -*')
                 }
                 
-                bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions,@playerr = @player,@answers = @answers){
+                bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @player, @answers){
                     cancel();
                     msg(@e['message']);
                     @answers[] = array(@randomQuestions[0], @e['message']);
@@ -65,13 +65,13 @@ register_command('helperquiz',
                         msg(color(GREEN).@randomQuestions[0]);
                     } else {
                         unbind();
-                        unbind(@playerr.'testNoCommands')
-                        unbind(@playerr.'testDeath')
-                        unbind(@playerr.'testQuit')
-                        store_value('helperquiz.'.puuid(@playerr,true),@answers);
+                        unbind(@player.'testNoCommands')
+                        unbind(@player.'testDeath')
+                        unbind(@player.'testQuit')
+                        store_value('helperquiz.'.puuid(@player,true),@answers);
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
-                        runas(~console,'/warp lab '.@p)
-                        runas(~console,'/pex user '.@playerr.' remove -*')
+                        runas(~console,'/warp lab '.@player)
+                        runas(~console,'/pex user '.@player.' remove -*')
                     }
                 }
             ))
