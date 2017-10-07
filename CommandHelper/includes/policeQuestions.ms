@@ -11,7 +11,7 @@
 'How many warnings before you are demoted and/or fired?',
 'If another officer is breaking the rules must u tell the Chief?',
 'How many warnings equal a jail?',
-'A player is hacking and you don't have proof can u jail them?',
+'A player is hacking and you don\'t have proof can u jail them?',
 'Who is the lead Helper?',
 'Do we have a discord?',
 'Are you going to be a loyal Officer?'
