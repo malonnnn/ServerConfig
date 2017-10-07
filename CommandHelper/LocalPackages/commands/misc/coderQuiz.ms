@@ -17,6 +17,7 @@ register_command('coderquiz',
             if(has_bind(@player.'coderquiz')){
                 die(color(RED).'You are already taking this quiz!');
             }
+            broadcast(color(RED).@player.' is now taking the coder quiz '.color(WHITE).'/coderquiz')
             @answers = array()
             runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
             runas(~console,'/warp class '.@player)
@@ -38,6 +39,7 @@ register_command('coderquiz',
                 }
 
                 bind(player_death,array('id':@player.'testDeath'),array('player': @player), @e, @randomQuestions, @player, @answers){
+                    broadcast(color(RED).@player.' is now finished with the coder quiz')
                     unbind();
                     unbind(@player.'testNoCommands')
                     unbind(@player.'coderquiz')
@@ -49,6 +51,7 @@ register_command('coderquiz',
                     runas(~console,'/warp lab '.@player)
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
+                    broadcast(color(RED).@player.' is now finished with the coder quiz')
                     unbind();
                     unbind(@player.'testNoCommands')
                     unbind(@player.'coderquiz')
@@ -67,6 +70,7 @@ register_command('coderquiz',
                     if(array_size(@randomQuestions) > 0) {
                         msg(color(GREEN).@randomQuestions[0]);
                     } else {
+                        broadcast(color(RED).@player.' is now finished with the coder quiz')
                         unbind();
                         unbind(@player.'testNoCommands')
                         unbind(@player.'testDeath')
