@@ -5,6 +5,8 @@
     for(@i = 0, @i < array_size(@plrs), @i++){
         @j = @i+1
         runas('~console','/warp skywars'.@j.' '.@plrs[@i].' skywars')
-        sudo('/minecraft:clear '.@plrs[@i])
+        set_timeout(3000,closure(
+            sudo('/minecraft:clear '.@plrs[@i])
+        ))
     }
 <<<
