@@ -20,10 +20,10 @@ register_command(hirecoder,
                 die()
             }
             
-            runas(~console,"/pex user ".@player." add is.coder")
-            runas(~console,"/pex user ".@player." group add coder")
-            tmsg(player(),color(red)."You have hired ".@player. " as a Coder!")
-            tmsg(@player,color(red)."You have been hired as a Coder!")
+            runas(~console,"/pex user ".@vic." add is.coder")
+            runas(~console,"/pex user ".@vic." group add coder")
+            tmsg(@player,color(red)."You have hired ".@vic. " as a Coder!")
+            tmsg(@vic,color(red)."You have been hired as a Coder!")
         }
     )
 )
