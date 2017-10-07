@@ -28,7 +28,9 @@ register_command(illusionplayer,
             @mobUUIDs = spawn_mob(@mobType,@num)
             export(@player."illusion",@mobUUIDs)
             set_timeout(50,closure(
-                sudo('/disguiseradius 1 player '.@playerName) 
+                foreach(@uuid in @mobUUIDs){
+                    runas(~console('/disguiseplayer '.@uuid.' player '.@playerName))
+                } 
             ))
             
         }
