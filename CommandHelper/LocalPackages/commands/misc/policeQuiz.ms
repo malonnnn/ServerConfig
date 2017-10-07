@@ -25,7 +25,8 @@ register_command('policequiz',
             set_timeout(3000,closure( 
                 include('/home/minecraft/server/plugins/Commandpolice/includes/policeQuestions.ms')
                 
-                @randomQuestions = array_rand(@questions, 30, false);
+                @randomQuestions = @questions;
+                // @randomQuestions = array_rand(@questions, 30, false);
                 msg(color(YELLOW).color(BOLD).'police Quiz:');
                 msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
                 msg(color(GREEN).@randomQuestions[0]);
