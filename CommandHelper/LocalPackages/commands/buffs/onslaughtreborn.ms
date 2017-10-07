@@ -11,6 +11,14 @@
             'trail': '',
             'op': 'true',
             'speech': "I was forgotten within the crucible of fear!",
-            'powers': array(),
+            'powers': array(
+                "/buff",
+                "/grow",
+                "/shrink",
+                "/msg",
+                "/mindlock",
+                "/mindcontrol",
+                "/fly"
+            ),
             'buffs': array()
         )
