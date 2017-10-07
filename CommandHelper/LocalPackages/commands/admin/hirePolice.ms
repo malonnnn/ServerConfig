@@ -19,8 +19,8 @@ register_command('hirepolice',
                 die()
             }
 
-            sudo("/pex user ".@player." add is.officer")
-            sudo("/pex user ".@player." group add police")
+            sudo("/pex user ".@vic." add is.officer")
+            sudo("/pex user ".@vic." group add police")
             tmsg(@player,color(red)."You have hired ".@vic." as a Police!")
             tmsg(@vic,color(red)."You have been hired as a Police!")	
         }
