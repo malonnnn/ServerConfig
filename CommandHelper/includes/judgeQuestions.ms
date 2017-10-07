@@ -1,19 +1,17 @@
 @questions = array(
 
-'Who is the server owner?',
-'What kind of staff positions are available?',
-'What is the IP of the server?',
-'Who is Head Of The Police Dept?',
-'What is the name of the server?',
-'Can you abuse your powers?',
-'What is the command to warn a player?(INCLUDING ADDONS)',
-'Must you help other players no matter what?',
-'How many warnings before you are demoted and/or fired?',
-'If another officer is breaking the rules must u tell the Chief?',
-'How many warnings equal a jail?',
-'A player is hacking and you don\'t have proof can u jail them?',
-'Who is the lead Helper?',
-'Do we have a discord?',
-'Are you going to be a loyal Officer?'
+'&aWhat is a judge?',
+'&aWhat does a judge do?',
+'&aWhat are the judge's duties?'
+'&aDo you know the server's rules? If so please list them.'
+'&aWhat would happen to an officer if he wrongly arrests someone?'
+'&aWhat would happen to a person if they falsely sue someone?'
+'&aWhat would happen if you wrongly arrest an officer?'
+'&aDo you know what you must do as a judge?'
+'&aWhat does a judge do when the case is closed?'
+'&aHow many times should you review the case before the court session?'
+'&aWhat do you say if a person is not allowed to speak but does speak?'
+'&aWhat should you do with the proof witnesses before making a decision?'
+'&aIn 3 sentences, explain what you think the duties of a judge are and how they effect the server.'
 
 )
