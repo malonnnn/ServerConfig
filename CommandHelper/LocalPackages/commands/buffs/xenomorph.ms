@@ -13,8 +13,6 @@
                 "/buff",
                 "/cast acidshot",
                 "/run 0-3"
-                
-    
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 2 true",
