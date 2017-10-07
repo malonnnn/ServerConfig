@@ -18,7 +18,10 @@ register_command('helperquiz',
                 die(color(RED).'You are already taking this quiz!');
             }
             @answers = associative_array()
-            runas(~console,'/warp class '.@p)
+            runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
+            runas(~console,'/warp class '.@player)
+            runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
+            runas(~console,'/pex user '.@player.' add -*')
             set_timeout(3000,closure( 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/helperQuestions.ms')
                 
@@ -39,6 +42,8 @@ register_command('helperquiz',
                     unbind(@playerr.'testQuit')
                     @answerss[] = array('player','died in the middle of the test')
                     store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                    runas(~console,'/warp lab '.@p)
+                    runas(~console,'/pex user '.@playerr.' remove -*')
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
                     unbind();
@@ -47,6 +52,8 @@ register_command('helperquiz',
                     unbind(@playerr.'testDeath')
                     @answerss[] = array('player','died in the middle of the test')
                     store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                    runas(~console,'/warp lab '.@p)
+                    runas(~console,'/pex user '.@playerr.' remove -*')
                 }
                 
                 bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player,@answerss = @answers){
@@ -63,6 +70,8 @@ register_command('helperquiz',
                         unbind(@playerr.'testQuit')
                         store_value('helperquiz.'.puuid(@playerr,true),@answerss);
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
+                        runas(~console,'/warp lab '.@p)
+                        runas(~console,'/pex user '.@playerr.' remove -*')
                     }
                 }
             ))

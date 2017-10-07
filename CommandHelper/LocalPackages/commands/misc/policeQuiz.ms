@@ -17,51 +17,64 @@ register_command('policequiz',
             if(has_bind(@player.'policequiz')){
                 die(color(RED).'You are already taking this quiz!');
             }
-            
-            include('/home/minecraft/server/plugins/CommandHelper/includes/policeQuestions.ms')
-            
-            @randomQuestions = array_rand(@questions, 30, false);
-            msg(color(YELLOW).color(BOLD).'police Quiz:');
-            msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
-            msg(color(GREEN).@randomQuestions[0]);
+            @answers = associative_array()
+            runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
+            runas(~console,'/warp class '.@player)
+            runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
+            runas(~console,'/pex user '.@player.' add -*')
+            set_timeout(3000,closure( 
+                include('/home/minecraft/server/plugins/Commandpolice/includes/policeQuestions.ms')
+                
+                @randomQuestions = array_rand(@questions, 30, false);
+                msg(color(YELLOW).color(BOLD).'police Quiz:');
+                msg(color(YELLOW).'Please answer the following questions in chat. Other players will not see it.');
+                msg(color(GREEN).@randomQuestions[0]);
+    
+                bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
+                    cancel()
+                    msg(color(RED).'Sorry, no commands allowed while taking the test!')
+                }
 
-            bind(player_command,array('id':@player.'testNoCommands'),array('player': @player),@e){
-                cancel()
-                msg(color(RED).'Sorry, no commands allowed while taking the test!')
-            }
-            bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers){
-                unbind();
-                unbind(@playerr.'testNoCommands')
-                unbind(@playerr.'helperquiz')
-                unbind(@playerr.'testQuit')
-                @answerss[] = array('player','died in the middle of the test')
-                store_value('helperquiz.'.puuid(@playerr,true),@answerss);
-            }
-            bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
-                unbind();
-                unbind(@playerr.'testNoCommands')
-                unbind(@playerr.'helperquiz')
-                unbind(@playerr.'testDeath')
-                @answerss[] = array('player','died in the middle of the test')
-                store_value('helperquiz.'.puuid(@playerr,true),@answerss);
-            }
-            
-            bind(player_chat, array('id':@player.'policequiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player){
-                cancel();
-                msg(@e['message']);
-                @answers[] = array(@randomQuestions[0], @e['message']);
-                array_remove(@randomQuestions, 0);
-                if(array_size(@randomQuestions) > 0) {
-                    msg(color(GREEN).@randomQuestions[0]);
-                } else {
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers){
                     unbind();
                     unbind(@playerr.'testNoCommands')
-                    unbind(@playerr.'testDeath')
+                    unbind(@playerr.'policequiz')
                     unbind(@playerr.'testQuit')
-                    store_value('policequiz.'.puuid(@playerr,true),@answers);
-                    msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
+                    @answerss[] = array('player','died in the middle of the test')
+                    store_value('policequiz.'.puuid(@playerr,true),@answerss);
+                    runas(~console,'/warp lab '.@p)
+                    runas(~console,'/pex user '.@playerr.' remove -*')
                 }
-            }
+                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
+                    unbind();
+                    unbind(@playerr.'testNoCommands')
+                    unbind(@playerr.'policequiz')
+                    unbind(@playerr.'testDeath')
+                    @answerss[] = array('player','died in the middle of the test')
+                    store_value('policequiz.'.puuid(@playerr,true),@answerss);
+                    runas(~console,'/warp lab '.@p)
+                    runas(~console,'/pex user '.@playerr.' remove -*')
+                }
+                
+                bind(player_chat, array('id':@player.'policequiz'), array('player': @player), @e, @randomQuestions, @answers = array(),@playerr = @player,@answerss = @answers){
+                    cancel();
+                    msg(@e['message']);
+                    @answerss[] = array(@randomQuestions[0], @e['message']);
+                    array_remove(@randomQuestions, 0);
+                    if(array_size(@randomQuestions) > 0) {
+                        msg(color(GREEN).@randomQuestions[0]);
+                    } else {
+                        unbind();
+                        unbind(@playerr.'testNoCommands')
+                        unbind(@playerr.'testDeath')
+                        unbind(@playerr.'testQuit')
+                        store_value('policequiz.'.puuid(@playerr,true),@answerss);
+                        msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
+                        runas(~console,'/warp lab '.@p)
+                        runas(~console,'/pex user '.@playerr.' remove -*')
+                    }
+                }
+            ))
         }
     )
 )
@@ -107,6 +120,7 @@ register_command('policequizread',
         }
     )
 )
+
 register_command('policequizclear',
 
     array(
