@@ -26,6 +26,7 @@
                 "/dismountplayer",
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
+                "/whirlwind",
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
