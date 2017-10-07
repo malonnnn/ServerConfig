@@ -29,7 +29,7 @@ register_command(illusionplayer,
             export(@player."illusion",@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
-                    runas(~console('/disguiseplayer '.@uuid.' player '.@playerName))
+                    runas(~console,'/disguiseplayer '.@uuid.' player '.@playerName)
                 } 
             ))
             
