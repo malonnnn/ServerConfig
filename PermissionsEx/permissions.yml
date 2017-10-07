@@ -8426,6 +8426,8 @@ groups:
     - police.quizread
     - fire.police
     - hire.police
+    inheritance:
+    - police
   headjudge:
     options:
       prefix: '&e&kI&4&k|&eHeadJudge&4&k|&e&kI&a&l/'
@@ -8435,6 +8437,8 @@ groups:
     - judge.quizread
     - fire.judge
     - hire.judge
+    inheritance:
+    - judge
   headhelper:
     options:
       prefix: '&e&kI&4&k|&eHeadHelper&4&k|&e&kI&a&l/'
@@ -8444,6 +8448,8 @@ groups:
     - helper.quizread
     - fire.helper
     - hire.helper
+    inheritance:
+    - helper
   headcoder:
     options:
       prefix: '&e&kI&4&k|&f&lHeadCoder&4&k|&e&kI&a&l/'
@@ -8453,6 +8459,8 @@ groups:
     - coder.quizread
     - fire.coder
     - hire.coder
+    inheritance:
+    - coder
   builder:
     options:
       prefix: '&e&kI&4&k|&f&lBuilder&4&k|&e&kI&a&l/'
@@ -8463,10 +8471,12 @@ groups:
         - essentials.top
         - essentials.build.*
         - essentials.fly
+    permissions: []
   police:
     options:
       prefix: '&e&kI&4&k|&4Police&4&k|&e&kI&a&l/'
       suffix: ''
+    permissions: []
   judge:
     options:
       prefix: '&e&kI&4&k|&eJudge&4&k|&e&kI&a&l/'
@@ -14335,7 +14345,6 @@ users:
     - is.secretary
   fa2821a9-27ed-43e0-99f6-e22aec572a35:
     group:
-    - police
     - mrmxyzptlk
     permissions:
     - is.officer
@@ -17360,7 +17369,7 @@ users:
       name: PlatniumRegent
   f0ed0390-9281-47ea-9323-0585ab576ca3:
     group:
-    - gorillagrodd
+    - timewraith
     options:
       name: ShieldedMC
     permissions: []
@@ -22293,6 +22302,8 @@ users:
     - firestormraymondstein
     options:
       name: ImShook_
+    permissions:
+    - chat.cooldown
   1c0aff7e-bb4e-4696-b213-0337d2215ed5:
     group:
     - mrmxyzptlk
