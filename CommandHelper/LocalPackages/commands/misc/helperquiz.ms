@@ -35,31 +35,31 @@ register_command('helperquiz',
                     msg(color(RED).'Sorry, no commands allowed while taking the test!')
                 }
 
-                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@playerr = @player){
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@playerr = @player, @answers = @answers){
                     unbind();
                     unbind(@playerr.'testNoCommands')
                     unbind(@playerr.'helperquiz')
                     unbind(@playerr.'testQuit')
                     @answers[] = array('player','died in the middle of the test')
-                    store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
                     runas(~console,'/warp lab '.@p)
                     runas(~console,'/pex user '.@playerr.' remove -*')
                 }
-                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@playerr = @player){
+                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@playerr = @player, @answers = @answers){
                     unbind();
                     unbind(@playerr.'testNoCommands')
                     unbind(@playerr.'helperquiz')
                     unbind(@playerr.'testDeath')
-                    @answerss[] = array('player','died in the middle of the test')
-                    store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                    @answers[] = array('player','died in the middle of the test')
+                    store_value('helperquiz.'.puuid(@playerr,true),@answers);
                     runas(~console,'/warp lab '.@p)
                     runas(~console,'/pex user '.@playerr.' remove -*')
                 }
                 
-                bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions,@playerr = @player){
+                bind(player_chat, array('id':@player.'helperquiz'), array('player': @player), @e, @randomQuestions,@playerr = @player,@answers = @answers){
                     cancel();
                     msg(@e['message']);
-                    @answerss[] = array(@randomQuestions[0], @e['message']);
+                    @answers[] = array(@randomQuestions[0], @e['message']);
                     array_remove(@randomQuestions, 0);
                     if(array_size(@randomQuestions) > 0) {
                         msg(color(GREEN).@randomQuestions[0]);
@@ -68,7 +68,7 @@ register_command('helperquiz',
                         unbind(@playerr.'testNoCommands')
                         unbind(@playerr.'testDeath')
                         unbind(@playerr.'testQuit')
-                        store_value('helperquiz.'.puuid(@playerr,true),@answerss);
+                        store_value('helperquiz.'.puuid(@playerr,true),@answers);
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                         runas(~console,'/warp lab '.@p)
                         runas(~console,'/pex user '.@playerr.' remove -*')
