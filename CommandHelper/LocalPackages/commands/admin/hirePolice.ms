@@ -30,9 +30,9 @@ register_command('hirepolice',
 register_command('firepolice', 
 
     array(
-        description: 'Fire\'s a Player as a Server Police Officer',
-        usage: '/fireofficer <player>',
-        permission: 'fire.officer',
+        description: 'Fire\'s a Player as a Server Police',
+        usage: '/firepolice <player>',
+        permission: 'fire.police',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
