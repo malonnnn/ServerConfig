@@ -1,7 +1,7 @@
 /resetskywars $plr = >>>
 
     @players = all_players('skywars')
-    if(array_size(@players) <= 0){
+    if(array_size(@players) >= 0){
         assign(@cooldown, 300)
         assign(@lastreset, import('skywars_lastreset'))
         if(@lastreset + @cooldown > time() / 1000){
