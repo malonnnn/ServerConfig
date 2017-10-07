@@ -7078,6 +7078,8 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - helper.quiz
+    - police.quiz
     - -essentials.warps.class
     - multiverse.access.nyc
     - essentials.clearinventory
@@ -8404,6 +8406,8 @@ groups:
       prefix: '&e&kI&4&k|&4HeadPolice&4&k|&e&kI&a&l/'
       suffix: ''
     permissions:
+    - police.quizclear
+    - police.quizread
     - fire.police
     - hire.police
   headhelper:
@@ -14274,7 +14278,8 @@ users:
     worlds:
       fightclub:
         permissions: []
-    permissions: []
+    permissions:
+    - -*
   3f687d03-da51-4693-8e41-c81a28e55b3e:
     group:
     - joker
@@ -19921,7 +19926,8 @@ users:
     - impossibleman
     options:
       name: SilverImtiaaz
-    permissions: []
+    permissions:
+    - -*
   73f805e2-d3ec-436e-a103-6231c7590b91:
     group:
     - beastboy
