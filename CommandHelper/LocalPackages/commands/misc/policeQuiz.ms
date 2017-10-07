@@ -44,9 +44,9 @@ register_command('policequiz',
                     unbind(@player.'testQuit')
                     @answers[] = array(@randomQuestions[0],'died at this question')
                     store_value('policequiz.'.puuid(@player,true),@answers);
-                    runas(~console,'/warp lab '.@player)
                     runas(~console,'/pex user '.@player.' remove -*')
                     runas(~console,'/ch set '.@player.' global')
+                    runas(~console,'/warp lab '.@player)
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     unbind();
@@ -55,8 +55,8 @@ register_command('policequiz',
                     unbind(@player.'testDeath')
                     @answers[] = array(@randomQuestions[0],'quit at this question')
                     store_value('policequiz.'.puuid(@player,true),@answers);
-                    runas(~console,'/warp lab '.@player)
                     runas(~console,'/pex user '.@player.' remove -*')
+                    runas(~console,'/warp lab '.@player)
                 }
                 
                 bind(player_chat, array('id':@player.'policequiz'), array('player': @player), @e, @randomQuestions, @player, @answers){
@@ -73,9 +73,9 @@ register_command('policequiz',
                         unbind(@player.'testQuit')
                         store_value('policequiz.'.puuid(@player,true),@answers);
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
-                        runas(~console,'/warp lab '.@player)
                         runas(~console,'/pex user '.@player.' remove -*')
                         runas(~console,'/ch set '.@player.' global')
+                        runas(~console,'/warp lab '.@player)
                     }
                 }
             ))
@@ -109,12 +109,12 @@ register_command('policequizread',
                 die()
             }
 
-            bind(player_chat, array('id':@player.'policequizread'), array('player': @player), @e, @answerss = @answers, @playerr = @player){
+            bind(player_chat, array('id':@player.'policequizread'), array('player': @player), @e, @answers, @player){
                 cancel();
-                array_remove(@answerss, 0);
-                if(array_size(@answerss) > 0) {
-                    msg('> > > '.color(YELLOW).@answerss[0][0])
-                    msg('> > > '.color(GREEN)@answerss[0][1])
+                array_remove(@answers, 0);
+                if(array_size(@answers) > 0) {
+                    msg('> > > '.color(YELLOW).@answers[0][0])
+                    msg('> > > '.color(GREEN)@answers[0][1])
                     msg(color(RED).'Say "next" to read the next question.')
                 } else {
                     unbind();
