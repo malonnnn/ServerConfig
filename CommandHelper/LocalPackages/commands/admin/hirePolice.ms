@@ -27,7 +27,7 @@ register_command('hirepolice',
     )
 )
 
-register_command('fireofficer', 
+register_command('firepolice', 
 
     array(
         description: 'Fire\'s a Player as a Server Police Officer',
