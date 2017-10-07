@@ -97,8 +97,8 @@ register_command('helperquizread',
             @answers = get_value('helperquiz.'.@target)
 
             if(@answers != null){
-                msg('> > > '.color(YELLOW).@answerss[0][0])
-                msg('> > > '.color(GREEN)@answerss[0][1])
+                msg('> > > '.color(YELLOW).@answers[0][0])
+                msg('> > > '.color(GREEN)@answers[0][1])
                 msg(color(RED).'Say next to read the next question.')
             }else{
                 msg(color(RED).'Sorry, that person did not take a quiz.')
