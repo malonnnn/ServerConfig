@@ -33,7 +33,7 @@ register_command(firecoder,
     array(
         description: 'Fire\'s a Player as a DNA Engineer',
         usage: '/firednaengineer <player>',
-        permission: 'fire.dnaengineer',
+        permission: 'fire.coder',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
