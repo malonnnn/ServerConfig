@@ -19,11 +19,11 @@ register_command('coderquiz',
             }
             broadcast(color(RED).@player.' is now taking the coder quiz '.color(WHITE).'/coderquiz')
             @answers = array()
+            sudo('/ch leave global')
             runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
             runas(~console,'/warp class '.@player)
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
             runas(~console,'/pex user '.@player.' add -*')
-            sudo('/ch leave global')
             set_timeout(3000,closure( 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coderQuestions.ms')
                 

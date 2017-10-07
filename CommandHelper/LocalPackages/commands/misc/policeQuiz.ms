@@ -19,11 +19,11 @@ register_command('policequiz',
             }
             broadcast(color(RED).@player.' is now taking the police quiz '.color(WHITE).'/policequiz')
             @answers = array()
+            sudo('/ch leave global')
             runas(~console,'/pex user '.@player.' add multiverse.access.classroom')
             runas(~console,'/warp class '.@player)
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
             runas(~console,'/pex user '.@player.' add -*')
-            sudo('/ch leave global')
             set_timeout(3000,closure( 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/policeQuestions.ms')
                 
