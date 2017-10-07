@@ -7093,6 +7093,7 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - judge.quiz
     - coder.quiz
     - helper.quiz
     - police.quiz
@@ -8426,6 +8427,8 @@ groups:
     - police.quizread
     - fire.police
     - hire.police
+    inheritance:
+    - police
   headjudge:
     options:
       prefix: '&e&kI&4&k|&eHeadJudge&4&k|&e&kI&a&l/'
@@ -8435,6 +8438,8 @@ groups:
     - judge.quizread
     - fire.judge
     - hire.judge
+    inheritance:
+    - judge
   headhelper:
     options:
       prefix: '&e&kI&4&k|&eHeadHelper&4&k|&e&kI&a&l/'
@@ -8444,6 +8449,8 @@ groups:
     - helper.quizread
     - fire.helper
     - hire.helper
+    inheritance:
+    - helper
   headcoder:
     options:
       prefix: '&e&kI&4&k|&f&lHeadCoder&4&k|&e&kI&a&l/'
@@ -8453,6 +8460,8 @@ groups:
     - coder.quizread
     - fire.coder
     - hire.coder
+    inheritance:
+    - coder
   builder:
     options:
       prefix: '&e&kI&4&k|&f&lBuilder&4&k|&e&kI&a&l/'
@@ -8463,10 +8472,12 @@ groups:
         - essentials.top
         - essentials.build.*
         - essentials.fly
+    permissions: []
   police:
     options:
       prefix: '&e&kI&4&k|&4Police&4&k|&e&kI&a&l/'
       suffix: ''
+    permissions: []
   judge:
     options:
       prefix: '&e&kI&4&k|&eJudge&4&k|&e&kI&a&l/'
@@ -14303,13 +14314,15 @@ users:
         permissions: []
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
-    - quigonjinn
+    - coder
+    - doctormanhattan
     options:
       name: HeyItzTony
     worlds:
       fightclub:
         permissions: []
-    permissions: []
+    permissions:
+    - is.coder
   3f687d03-da51-4693-8e41-c81a28e55b3e:
     group:
     - joker
@@ -14335,6 +14348,7 @@ users:
     group:
     - mrmxyzptlk
     permissions:
+    - is.officer
     - is.secretary
     options:
       name: SaltWithNoPepper
@@ -15130,8 +15144,10 @@ users:
       prefix: ''
       name: RqndomPqrson
     group:
+    - headjudge
     - wonderwoman
-    permissions: []
+    permissions:
+    - is.headjudge
   a5c92806-da45-47ab-90f9-c96a8f197c45:
     group:
     - mortal
@@ -16244,7 +16260,7 @@ users:
     group:
     - marshalllee
     options:
-      name: Mon_L
+      name: ZacTheMerman
     permissions:
     - chat.cooldown
     - is.donator
@@ -17354,9 +17370,10 @@ users:
       name: PlatniumRegent
   f0ed0390-9281-47ea-9323-0585ab576ca3:
     group:
-    - killerfrostcaitlinsnow
+    - timewraith
     options:
       name: ShieldedMC
+    permissions: []
   77b04d49-ba11-4e79-9e22-444bc15efb20:
     group:
     - goldenfrieza
@@ -19958,8 +19975,6 @@ users:
     - impossibleman
     options:
       name: SilverImtiaaz
-    permissions:
-    - -*
   73f805e2-d3ec-436e-a103-6231c7590b91:
     group:
     - beastboy
@@ -22133,9 +22148,10 @@ users:
       name: nonomario2005
   5b622447-a914-4178-a597-debf70d763b7:
     group:
-    - martianmanhunter
+    - spidermanmilesmorales
     options:
       name: PlazMatik
+    permissions: []
   d52960b3-a219-468d-b619-5012c19b3a94:
     group:
     - deathdc
@@ -22287,6 +22303,8 @@ users:
     - firestormraymondstein
     options:
       name: ImShook_
+    permissions:
+    - chat.cooldown
   1c0aff7e-bb4e-4696-b213-0337d2215ed5:
     group:
     - mrmxyzptlk
@@ -22315,3 +22333,18 @@ users:
     - apollo
     options:
       name: ultimomarker431
+  687f3cf6-747c-4fab-82bd-c7da2714e323:
+    group:
+    - zoom
+    options:
+      name: Aladeen69
+  301ecf63-9264-4ee5-bab9-970432fccbc7:
+    group:
+    - dannyphantom
+    options:
+      name: GhostAxolotl
+  cb270c69-d258-4f4e-9425-bc372b5ba873:
+    group:
+    - mewtwo
+    options:
+      name: SpiritProjection
