@@ -1,11 +1,14 @@
 /resetskywars $plr = >>>
 
-    assign(@cooldown, 300)
-    assign(@lastreset, import('skywars_lastreset'))
-    if(@lastreset + @cooldown > time() / 1000){
-        assign(@timeleft, subtract(add(@lastreset, @cooldown), divide(time(),1000)))
-        tmsg($plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can reset §4Skywars §7again!'))
-        die()
+    @players = all_players('skywars')
+    if(array_size(@players) <= 0){
+        assign(@cooldown, 300)
+        assign(@lastreset, import('skywars_lastreset'))
+        if(@lastreset + @cooldown > time() / 1000){
+            assign(@timeleft, subtract(add(@lastreset, @cooldown), divide(time(),1000)))
+            tmsg($plr,concat('ï¿½c[ï¿½4', Error, 'ï¿½c] ï¿½7You must wait another ï¿½6', round(@timeleft), ' ï¿½7seconds before you can reset ï¿½4Skywars ï¿½7again!'))
+            die()
+        }
     }
     export('skywars_lastreset', time() / 1000)
 
