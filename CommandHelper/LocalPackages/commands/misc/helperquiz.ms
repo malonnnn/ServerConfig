@@ -35,12 +35,12 @@ register_command('helperquiz',
                     msg(color(RED).'Sorry, no commands allowed while taking the test!')
                 }
 
-                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers,@playerr = @player){
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answers = @answers,@playerr = @player){
                     unbind();
                     unbind(@playerr.'testNoCommands')
                     unbind(@playerr.'helperquiz')
                     unbind(@playerr.'testQuit')
-                    @answerss[] = array('player','died in the middle of the test')
+                    @answers[] = array('player','died in the middle of the test')
                     store_value('helperquiz.'.puuid(@playerr,true),@answerss);
                     runas(~console,'/warp lab '.@p)
                     runas(~console,'/pex user '.@playerr.' remove -*')
