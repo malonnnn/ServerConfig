@@ -15,13 +15,14 @@
                 "/run 0-3",
                 "/haste 0-2",
                 "/bodyslide",
-                "/tpradius",
+                "/tpradius"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true"
                 "/effect ". @plr ." 10 9999 4 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." pistol",
-                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§6Test_§eSword",                
-            )
-)
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§6Test_§eSword"               
+           )
+        )
+
