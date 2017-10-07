@@ -23,7 +23,7 @@ register_command('policequiz',
             runas(~console,'/pex user '.@player.' remove multiverse.access.classroom')
             runas(~console,'/pex user '.@player.' add -*')
             set_timeout(3000,closure( 
-                include('/home/minecraft/server/plugins/Commandpolice/includes/policeQuestions.ms')
+                include('/home/minecraft/server/plugins/CommandHelper/includes/policeQuestions.ms')
                 
                 @randomQuestions = @questions;
                 // @randomQuestions = array_rand(@questions, 30, false);
