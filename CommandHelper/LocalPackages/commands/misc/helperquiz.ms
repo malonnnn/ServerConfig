@@ -35,7 +35,7 @@ register_command('helperquiz',
                     msg(color(RED).'Sorry, no commands allowed while taking the test!')
                 }
 
-                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers){
+                bind(player_death,array('id':@player.'testDeath'),array('player': @player),@e,@answerss = @answers,@playerr = @player){
                     unbind();
                     unbind(@playerr.'testNoCommands')
                     unbind(@playerr.'helperquiz')
@@ -45,7 +45,7 @@ register_command('helperquiz',
                     runas(~console,'/warp lab '.@p)
                     runas(~console,'/pex user '.@playerr.' remove -*')
                 }
-                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers){
+                bind(player_quit,array('id':@player.'testQuit'),array('player': @player),@e,@answerss = @answers,@playerr = @player){
                     unbind();
                     unbind(@playerr.'testNoCommands')
                     unbind(@playerr.'helperquiz')
