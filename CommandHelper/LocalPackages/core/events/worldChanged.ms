@@ -7,7 +7,6 @@ bind(world_changed, null, null, @event,
     @from = @event['from']
     @class = _getheroclass(@player)
 
-
     set_timeout(3000,closure(
         if(has_permission('in.survival')){
             runas(~console,"/effect ".@player." clear")
