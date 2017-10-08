@@ -13,8 +13,7 @@
              'speech': "May the force be with you.", 
              'powers': array( 
                  "/buff", 
-                 "/jump 0-4",
-                 "/cast forcepull"
+                 "/jump 0-4"
              ), 
              'buffs': array( 
                  "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&7R&be&7y's_&bLightsaber"
