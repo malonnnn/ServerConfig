@@ -1023,6 +1023,7 @@ groups:
     options:
       prefix: '&2Ar&fte&2mis&8(&2YJ&8)'
       suffix: '&2'
+    permissions: []
     worlds:
       survival112:
         permissions:
@@ -1177,6 +1178,7 @@ groups:
     options:
       prefix: '&2B&0a&2r&0o&2n &0M&2o&0r&2d&0o'
       suffix: '&2'
+    permissions: []
     worlds:
       survival112:
         permissions:
@@ -1253,6 +1255,7 @@ groups:
     options:
       prefix: '&2B&8e&5a&8s&2t §aB§5o§ay'
       suffix: '&2'
+    permissions: []
     worlds:
       survival112:
         permissions:
@@ -1547,6 +1550,7 @@ groups:
     options:
       prefix: '&0B&8l&0a&8ck &0F&8l&4a&0s&8h'
       suffix: '&8'
+    permissions: []
     worlds:
       speedforce:
         permissions:
@@ -2548,8 +2552,6 @@ groups:
       lexstarklabs:
         permissions:
         - tessentials.build.interact.*
-      greenfield:
-        permissions: []
       survival112:
         permissions:
         - essentials.warp
@@ -2923,7 +2925,6 @@ groups:
         - ch.alias.haste2
   default:
     permissions:
-    - essentials.build.interact.*
     - libsdisguises.disguise.player.nooptions
     - -libsdisguises.disguise.player
     - chatcontrol.autojoin.global.write
@@ -4527,8 +4528,6 @@ groups:
       prefix: '&5G&9a&0l&5a&9c&0t&5u&9s'
       suffix: '&5'
     worlds:
-      greenfield:
-        permissions: []
       survival112:
         permissions:
         - ch.alias.carryplayer
@@ -7452,15 +7451,18 @@ groups:
     - essentials.signs.magic
     - essentials.signs.format
     worlds:
-      boatrace:
+      buildminigame:
         permissions:
-        - tessentials.build.interact.*
-      chess:
+        - essentials.build.*
+      flyminigame:
         permissions:
         - essentials.fly
-        - essentials.build.*
-      colosseum:
+      fightminigame:
         permissions:
+        - essentials.protect.damage.fall
+        - -powers.immunity.fire
+        - -powers.projectileinvulnerability
+        - crackshot.bypass.all
         - essentials.protect.pvp
         - tessentials.build.interact.*
         - -essentials.suicide
@@ -7476,9 +7478,6 @@ groups:
         - -essentials.tpahere
         - -essentials.warp
         - -essentials.warps.*
-      colosseumlobby:
-        permissions:
-        - tessentials.build.interact.*
       creative:
         permissions:
         - essentials.sethome
@@ -7512,74 +7511,21 @@ groups:
         - essentials.skull.*
         - essentials.sethome
         - essentials.build.*
-      crossfire:
-        permissions:
-        - essentials.protect.damage.fall
-        - -powers.immunity.fire
-        - -powers.projectileinvulnerability
-        - crackshot.bypass.all
-        - essentials.protect.pvp
-        - tessentials.build.interact.*
-      deathdrop:
-        permissions:
-        - tessentials.build.interact.*
       deathrun:
         permissions:
-        - tessentials.build.interact.*
         - -essentials.warps.deathrun
-      destructiblecity:
-        permissions:
-        - essentials.sethome
-        - essentials.tpaccept
-        - essentials.tpahere
-        - essentials.tpa
-      elytraeasy:
-        permissions:
-        - tessentials.build.interact.*
-      elytrahard:
-        permissions:
-        - tessentials.build.interact.*
-      elytralobby:
-        permissions:
-        - tessentials.build.interact.*
-      elytramedium:
-        permissions:
-        - tessentials.build.interact.*
-      escaperoom:
-        permissions:
-        - essentials.build.*
-      extremesumo:
-        permissions:
-        - essentials.protect.pvp
-        - tessentials.build.interact.*
       fightclub:
         permissions:
         - ch.alias.fightclub
         - ch.alias.fightclubbet
         - ch.alias.fightclubstats
-        - tessentials.build.interact.*
-      flyingbattlearena:
+      parkour:
         permissions:
-        - tessentials.build.interact.*
-      formuladrift:
-        permissions:
-        - tessentials.build.interact.*
-      freezetag:
-        permissions:
-        - tessentials.build.interact.*
-      garbageworld:
-        permissions:
-        - essentials.fly
-        - essentials.sethome.multiple
-        - essentials.sethome
-      godlyparkour:
-        permissions:
-        - tessentials.build.interact.*
         - ch.alias.gc
         - ch.alias.cp
         - -essentials.tpa
         - -essentials.tpahere
-      greenfield:
+      superherocity:
         permissions:
         - -essentials.build.interact.327
         - is.incity
@@ -7590,56 +7536,6 @@ groups:
         - -essentials.build.use.*
         - essentials.build.drop.*
         - essentials.build.pickup.*
-      hilariousrace:
-        permissions:
-        - tessentials.build.interact.*
-      hurdles:
-        permissions:
-        - tessentials.build.interact.*
-      hurdles2:
-        permissions:
-        - tessentials.build.interact.*
-      infectiontag:
-        permissions:
-        - tessentials.build.interact.*
-        - essentials.protect.pvp
-      lasertag:
-        permissions:
-        - essentials.protect.pvp
-        - tessentials.build.interact.*
-      lavahop:
-        permissions:
-        - tessentials.build.interact.*
-      megaparkour:
-        permissions:
-        - tessentials.build.interact.*
-      moblottery:
-        permissions:
-        - tessentials.build.interact.*
-      newminigamehub:
-        permissions:
-        - tessentials.build.interact.*
-      office:
-        permissions:
-        - tessentials.build.interact.*
-      parkoureasy:
-        permissions:
-        - tessentials.build.interact.*
-      parkourhard:
-        permissions:
-        - tessentials.build.interact.*
-      parkourhub:
-        permissions:
-        - tessentials.build.interact.*
-      parkourmedium:
-        permissions:
-        - tessentials.build.interact.*
-      parkourtower:
-        permissions:
-        - tessentials.build.interact.*
-      parksideprisonescape:
-        permissions:
-        - tessentials.build.interact.*
       plots:
         permissions:
         - plots.remove
@@ -7654,45 +7550,9 @@ groups:
         - plots.plot.4
         - plots.claim
         - plots.middle
-      policeoffice:
-        permissions:
-        - tessentials.build.interact.*
-        - essentials.protect.pvp
-      pvpparkour:
-        permissions:
-        - tessentials.build.interact.*
-        - essentials.protect.pvp
-      pvpparkourlobby:
-        permissions:
-        - tessentials.build.interact.*
-      shootingrange:
-        permissions:
-        - essentials.protect.pvp
-        - tessentials.build.interact.*
-      rollercoaster:
-        permissions:
-        - tessentials.build.interact.*
-      rules:
-        permissions:
-        - tessentials.build.interact.*
-      runner:
-        permissions:
-        - tessentials.build.interact.*
-      shortparkour:
-        permissions:
-        - tessentials.build.interact.*
-      skywars:
-        permissions:
-        - tessentials.build.interact.*
-        - essentials.build.*
-      skywarslobby:
-        permissions:
-        - tessentials.build.interact.*
       spawn:
         permissions:
         - commands.anarchystart
-        - tessentials.build.interact.*
-        - essentials.interact.*
       speedforce:
         permissions:
         - power.powers
@@ -7700,17 +7560,7 @@ groups:
         - essentials.protect.pvp
       spleef:
         permissions:
-        - tessentials.build.interact.*
         - essentials.build.break.46
-      spleeflobby:
-        permissions:
-        - tessentials.build.interact.*
-      splegg:
-        permissions:
-        - tessentials.build.interact.*
-      straightlineparkour:
-        permissions:
-        - tessentials.build.interact.*
       survival112:
         permissions:
         - is.empowerable
@@ -7733,73 +7583,6 @@ groups:
         - Signshop.Signs.Buy
         - essentials.sethome.bed
         - essentials.sethome.multiple.unlimited
-      techcombatknockbackgame:
-        permissions:
-        - tessentials.build.interact.*
-      turbotowers:
-        permissions:
-        - tessentials.build.interact.*
-      turfwars:
-        permissions:
-        - essentials.build.*
-        - tessentials.build.interact.*
-        - essentials.build.interact
-        - essentials.interact
-      underworld:
-        permissions: []
-      utopia:
-        permissions:
-        - tessentials.build.interact.*
-      verticalparkour:
-        permissions:
-        - tessentials.build.interact.*
-      waterprison:
-        permissions:
-        - essentials.interact
-        - tessentials.build.interact.*
-      obstaclecourse:
-        permissions:
-        - tessentials.build.interact.*
-      overvoid:
-        permissions:
-        - tessentials.build.interact.*
-      kingoftheladder:
-        permissions:
-        - essentials.protect.pvp
-        - tessentials.build.interact.*
-      whitehouse:
-        permissions:
-        - tessentials.build.interact.*
-      lexstarklabs:
-        permissions:
-        - -is.mindControllable
-        - essentials.build.drop.*
-        - essentials.build.pickup.*
-        - tessentials.build.interact.*
-        - -essentials.build.*
-      kartlobby:
-        permissions:
-        - ch.alias.kartkits
-      elytrapole:
-        permissions:
-        - tessentials.build.interact.*
-      greenfield_the_end:
-        permissions:
-        - is.incity
-      pvpminigameperms:
-        permissions:
-        - -essentials.warp
-      leafdecay:
-        permissions:
-        - tessentials.build.interact.*
-      anarchy:
-        permissions: []
-      theworldroom:
-        permissions:
-        - tessentials.build.interact.*
-      elytrapvp:
-        permissions:
-        - tessentials.build.interact.*
   mosquitogirl:
     inheritance:
     - commonherotraits
@@ -10980,22 +10763,6 @@ groups:
         - ch.alias.dismountplayer
         - -essentials.protect.damage.fall
         - essentials.fly
-  tracklayer:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&2Track Layer'
-    worlds:
-      greenfield:
-        permissions:
-        - essentials.build.break.157
-        - essentials.build.place.157
-        - essentials.build.break.66
-        - essentials.build.place.66
-        - essentials.build.break.28
-        - essentials.build.place.28
-        - essentials.build.break.27
-        - essentials.build.place.27
   trigon:
     inheritance:
     - commonherotraits
@@ -14194,82 +13961,80 @@ schema-version: 1
 worlds:
   checkers:
     inheritance:
-    - chess
+    - buildminigame
+    - flyminigame
   deathmachine:
     inheritance:
-    - godlyparkour
+    - parkour
   broville:
     inheritance:
-    - greenfield
+    - superherocity
   starlabs:
     inheritance:
-    - greenfield
+    - superherocity
   destructiblecity:
     inheritance:
-    - greenfield
+    - superherocity
   flappybirdparkour:
     inheritance:
-    - godlyparkour
-  flat:
-    inheritance:
-    - creative
+    - parkour
   flyingbattlearena:
     inheritance:
-    - colosseum
+    - fightminigame
   leafdecay:
     inheritance:
-    - colosseum
+    - fightminigame
   gotham:
     inheritance:
-    - greenfield
+    - superherocity
   greenfield:
     inheritance:
-    - survival112
+    - superherocity
   lexstarklabs:
     inheritance:
-    - survival112
+    - superherocity
   hallofjustice:
     inheritance:
-    - greenfield
+    - superherocity
   heroicparkour:
     inheritance:
-    - godlyparkour
+    - parkour
   infiniteparkour:
     inheritance:
-    - godlyparkour
+    - parkour
   infinitycity:
     inheritance:
-    - greenfield
+    - superherocity
   longparkour:
     inheritance:
-    - godlyparkour
+    - parkour
   mazerunner:
     inheritance:
-    - godlyparkour
+    - parkour
   metropolis:
     inheritance:
-    - greenfield
+    - superherocity
   minecraftparkourmode:
     inheritance:
-    - godlyparkour
+    - parkour
   moblottery:
     inheritance:
-    - colosseum
+    - fightminigame
   plots:
     inheritance:
     - creative
   quickparkour:
     inheritance:
-    - godlyparkour
+    - parkour
   skywars:
     inheritance:
-    - colosseum
+    - fightminigame
   spleef:
     inheritance:
-    - colosseum
+    - fightminigame
   sprintparkour:
     inheritance:
-    - godlyparkour
+    - parkour
   survival112_nether:
     inheritance:
     - survival112
@@ -14284,25 +14049,22 @@ worlds:
     - anarchy
   fortressofsolitude:
     inheritance:
-    - greenfield
+    - superherocity
   atlantis:
     inheritance:
-    - greenfield
+    - superherocity
   waynemanor:
     inheritance:
-    - greenfield
+    - superherocity
   titanstower:
     inheritance:
-    - greenfield
-  underworld:
-    inheritance:
-    - ''
+    - superherocity
   hogwarts:
     inheritance:
-    - greenfield
+    - superherocity
   nyc:
     inheritance:
-    - greenfield
+    - superherocity
 users:
   ff0fec80-b8d2-4d10-8951-3061c6e7181d:
     group:
@@ -14354,7 +14116,7 @@ users:
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
     - coder
-    - mortal
+    - anakinskywalker
     options:
       name: HeyItzTony
     worlds:
@@ -17093,9 +16855,6 @@ users:
         permissions:
         - essentials.gamemode.*
         - essentials.gamemode
-      elevator:
-        permissions:
-        - tessentials.build.interact.*
     permissions:
     - free.gmc
     - multiverse.access.elevator
@@ -22409,7 +22168,7 @@ users:
       name: Harkaran33
   b9461077-b1d3-473f-88a4-de48323cdf36:
     group:
-    - doctorstrange
+    - mortal
     options:
       name: justin117n
   1c1b3305-1389-4719-9814-a6538c319b6c:
@@ -22420,9 +22179,7 @@ users:
       name: tjs4life
   1b6470b8-0a5f-40ff-be8b-dde98ac6f380:
     group:
-    - mortal
-    options:
-      name: kalamari2014
+    - gohan
   9cb9e9f8-85ef-4c36-9c3a-36340e5f1fe4:
     group:
     - agentvenom
@@ -22460,10 +22217,9 @@ users:
       name: djfishie
   55536c6e-48f8-497f-8a4c-0033eb5bfd65:
     group:
-    - mortal
+    - onepunchman
     options:
       name: MrJoestar_Joseph
-    permissions: []
   1a6a967e-0fb2-45c3-998b-5423f173b496:
     group:
     - cyborg
