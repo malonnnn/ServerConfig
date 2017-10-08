@@ -14,7 +14,7 @@
 'What command do you type to get the list of powers your character has?',
 'How do you get a list of characters that you can be?',
 'What is the server icon (when connecting) a picture of?',
-'How are heroes' ids organized/categorized?',
+'How are hero ids organized/categorized?',
 'What happens when you drink DNA?',
 'What happens if you bring 2 or more DNAs into the machine at a time?',
 'What command would you use to see if someone took something from a chest?',
