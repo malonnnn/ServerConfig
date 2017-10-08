@@ -1,93 +1,35 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: SPLASH_POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:strong_healing
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: LINGERING_POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:strong_healing
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SPLASH_POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:strong_harming
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: LINGERING_POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:strong_harming
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRILLED_PORK
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_CHICKEN
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_MUTTON
-    amount: 64
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
-    amount: 14
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    amount: 64
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
-    amount: 64
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    amount: 64
+inventory: {}
 health: 20.0
 hunger: 20
-exp: 0.3684212
-exp-level: 6
+exp: 0.6896552
+exp-level: 11
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 1.0
+exhaustion: 3.2460217
 armor_contents: {}
 potion_effect:
   '0':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 197903
+  '1':
     type: WATER_BREATHING
     level: 1
-    duration: 162391
-  '1':
-    type: FAST_DIGGING
-    level: 127
-    duration: 162278
+    duration: 197903
   '2':
-    type: SPEED
-    level: 10
-    duration: 162317
+    type: FAST_DIGGING
+    level: 5
+    duration: 198005
   '3':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 162391
+    level: 5
+    duration: 197903
   '4':
+    type: SPEED
+    level: 10
+    duration: 197979
+  '5':
     type: JUMP
     level: 10
-    duration: 162364
+    duration: 197950
