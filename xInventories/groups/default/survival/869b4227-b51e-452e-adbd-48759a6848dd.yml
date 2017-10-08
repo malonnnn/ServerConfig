@@ -1,10 +1,53 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7B§ea§0t§7gi§8r§7l's §8Glide Wings
+      enchants:
+        DURABILITY: 3
+        MENDING: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7B§ea§0t§7gi§8r§7l's §8Grappling Hook
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 61
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
 armor_contents: {}
-health: 20.0
-hunger: 20
-exp: 0.0
+health: 40.0
+hunger: 19
+exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 1.0033109
+saturation: 9.0
+exhaustion: 3.235211
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 0
+    duration: 3514
+  '1':
+    type: FIRE_RESISTANCE
+    level: 0
+    duration: 3514
+  '2':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 196714
+  '3':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 196714
