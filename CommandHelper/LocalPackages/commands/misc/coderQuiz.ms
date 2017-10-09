@@ -59,6 +59,7 @@ register_command('coderquiz',
                     @answers[] = array(@randomQuestions[0],'quit at this question')
                     store_value('coderquiz.'.puuid(@player,true),@answers);
                     runas(~console,'/pex user '.@player.' remove -*')
+                    runas(~console,'/ch set '.@player.' global')
                     runas(~console,'/warp lab '.@player)
                 }
                 

@@ -1,11 +1,11 @@
-health: 20.0
-hunger: 20
+health: 100.0
+hunger: 4
 exp: 0.0
 exp-level: 0
-remainingAir: 242
+remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 1.867905
+saturation: 0.0
+exhaustion: 1.8572263
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -13,45 +13,43 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eAK-47§e ▪ «×»
-      lore:
-      - §eFully automatic with high power.
-      - §eEffective at medium range.
-      - §eControls are inverted.
+      display-name: §4Kryptonian Laser Vision§4 «×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §eOlympia§e ▪ «×»
-      lore:
-      - §eDouble-barreled shotgun.
-      - §eDeadly at close range.
-      - §eIneffective at longer ranges.
-      - §eFires incendiary ammo.
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: LEVER
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eC4§e «1»
-      lore:
-      - §eRemote explosives.
-      - §eRight click to place.
-      - §eLeft click to detonate.
+    type: BONE
+    amount: 2
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ▪ «×»
+      meta-type: POTION
+      display-name: §eJ§0e§4ss§ee §4Q§eu§0i§ec§4k §e§lD§a§lN§4§lA
       lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
+      - jessequick
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 ender_chest:
   '0':
@@ -136,3 +134,28 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: BONE
     amount: 64
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 166767
+  '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 166767
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 166767
+  '3':
+    type: WATER_BREATHING
+    level: 1
+    duration: 166767
+  '4':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 166767
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 166767
