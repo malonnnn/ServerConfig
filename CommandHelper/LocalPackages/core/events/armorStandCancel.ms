@@ -13,6 +13,13 @@ bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING|MINECART|
         if(has_permission(@e['damager'],'cancel.entityclicks')){
             cancel()
         }
+        console(@e['damager'])
+    }
+}
+bind(entity_death,null,array('type':'MINECART'),@e){
+    if(has_permission(@e['cause'],'cancel.entityclicks')){
+        console(@e['cause'])
+        cancel()
     }
 }
 bind(inventory_open,null,null,@e){
