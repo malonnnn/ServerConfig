@@ -8,7 +8,7 @@ bind(player_interact_entity,null,array('clicked':'ITEM_FRAME'),@e){
         cancel()
     }
 }
-bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING/'),@e){
+bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING|MINECART|CHEST_MINECART|TNT_MINECART|FURNACE_MINECART|HOPPER_MINECART/'),@e){
     if(array_index_exists(@e,'damager')){
         if(has_permission(@e['damager'],'cancel.entityclicks')){
             cancel()
