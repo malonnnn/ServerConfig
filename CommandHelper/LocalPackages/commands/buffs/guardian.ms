@@ -12,17 +12,11 @@
             'powers': array(
                 "/buff",
                 "/jump 0-2",
-                "/run 0-3",
-                "/haste 0-2",
-                "/grapplinghook"
+                "/run 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
-                "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:iron_chestplate",
-                "/give ". @plr ." minecraft:iron_helmet",
-                "/give ". @plr ." minecraft:iron_leggings",
-                "/give ". @plr ." minecraft:iron_boots",
-                "/give ". @plr ." minecraft:shield"
+                "/effect ". @plr ." 21 9999 4 true"
             )
         )
