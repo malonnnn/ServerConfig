@@ -16,9 +16,8 @@ bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING|MINECART|
         console(@e['damager'])
     }
 }
-bind(entity_death,null,array('type':'MINECART'),@e){
+bind(vehicle_destroy,null,null,@e){
     if(has_permission(@e['cause'],'cancel.entityclicks')){
-        console(@e['cause'])
         cancel()
     }
 }
