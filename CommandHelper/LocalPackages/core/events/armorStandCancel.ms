@@ -17,9 +17,10 @@ bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING|MINECART|
     }
 }
 bind(vehicle_destroy,null,null,@e){
-    if(has_permission(@e['cause'],'cancel.entityclicks')){
-        cancel()
+    if(!has_permission(@e['damager'],'cancel.entityclicks')){
+        die()
     }
+    cancel()
 }
 bind(inventory_open,null,null,@e){
     if(has_permission('cancel.entityclicks') && !has_permission('is.op')){
