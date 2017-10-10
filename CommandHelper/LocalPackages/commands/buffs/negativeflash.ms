@@ -40,7 +40,8 @@
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/thru (phases through walls)",
                 "/thrudestabilize",
-                "/modifyspeed <playername> <number>"),
+                "/modifyspeed <playername> <number>"
+                ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
