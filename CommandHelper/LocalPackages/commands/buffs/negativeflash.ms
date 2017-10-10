@@ -15,7 +15,7 @@
                ),
             'trail': '',
             'op': 'false',
-            'speech': "Now the negative speedforce streams trough me, i doubt if i can stay the hero, but i will stay the fastest man alive!",
+            'speech': "Now the negative speedforce streams trough me, I doubt if I can stay the hero, but I will stay the fastest man alive!",
             'powers': array(
                 "/buff",
                 "/jump 0-4",
