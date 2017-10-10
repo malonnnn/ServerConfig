@@ -1,19 +1,57 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_BLOCK
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LINGERING_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:strong_healing
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_STICKY_BASE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_BASE
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SLIME_BLOCK
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE_COMPARATOR
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIODE
 health: 20.0
 hunger: 17
-exp: 0.764706
-exp-level: 5
+exp: 0.52631587
+exp-level: 6
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 2.2296684
 armor_contents: {}
-potion_effect:
-  '0':
-    type: DAMAGE_RESISTANCE
-    level: 0
-    duration: 261
-  '1':
-    type: REGENERATION
-    level: 0
-    duration: 261
