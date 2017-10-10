@@ -1,13 +1,102 @@
-inventory: {}
-armor_contents: {}
-health: 19.799999237060547
-hunger: 17
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: TNT
+    amount: 4
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of Kehaan
+      internal: H4sIAAAAAAAAAEWQSZKjSBBFqbJu66y0PkbvZGmCYF7UQkpQABKBEHPsgEAMAk2AGM7Uh+sjNJWbWvjm+//mz/87Rb1TfzuXvq6Pz9u5rLM36rtOqH8EWgQ0YNKPWEj5D06i+Q+Ji+mPjGMIJ4tJLMbiO/W+hO7Zsyuz9gf11mVj1z+z9p2iqG9v1A+nzK/xL+X7vxiFCXlBejWdci02xCNwYWY/97IiubdRL8KpMVxzGFi9RZ4vmdlZtNfTiwvvXscVTPfYCgTK0M33flCQLfFIjkvA7JU+Xe+7dBBWHGBrCOWTI67YhhsyuCPy3Um43uHSGzzepKSwWfrxhK61H16qmmUjG/e4kWHNbZnmKHucPleXaWuzOh14h/xev8yjGz0s/w6UVEN12rr+iWmJTKtcW500Hjs5UE+z8dhEdgVlwbicC165PmJ3veVau7u5bWJt2jQLBDjM6rMZzWFiSVScZyFUu9a/rkqBlLin/ehYmY2RaCOZ1BtROVWgu/XajlVRW3cn3m0gkoQmVLqHJFdz8nkJEx3lJB1oVyQm22jTqOqHl0jUe29okPeFqerdYKBZq9cga4mOf4+IMoSoaw+GxXOH1pBIdl9XG6+UPBbDx2ED8Ph8bXjm3grBzQqAzvj6eu7HJr6ZZyQiX9sYaAxg20rauBf6yAZzNXXCwRY5zmVN2dLI2po+0VzG805lc+iHffuSQK7udxtDLlr4uZLqR9MLmr8FfKULJ3tVHdt6Pe9h5xlMKvPhY13pa8g4O2ZfWaa9u+QCNuNq3DvY8Vhua3M6r/pJRZjwLIG0vvPVJvrc5130AuLx1JXny7H3LAbTDK6Ua9KR0juGZbSepYQZJaNVdnjl6eDKZTPU42SyUg+aA2tIqVen9OXnG/WnH9d99u2/bDLoOGDqlD0VSbgprUplTCVdRh1MN6KRm7f6dTslAN8T6Bv4Uxf0KhrQrA9mtasiF1fItTlT8TgE1QG79ogVm0fAKBBQWb0cylQzXripW+zxRRJ4pVUarsf6PYZ+/bUH9TVpdjQJjdpr/JEE9YQDu7Sup4kE3nL/VGfaiUkbf9aru6jX6OB43LJvyyXT6tWtjLUTnSq314H97T00zD1p/Cptdg355Hsc2i8CfY5o/oQduUBNxEeNOltuUUdA5aM5X37aTGblzVFlL93iwoK7Eim4ttx0QnM+RhWqTWAv3sUHcY2VFJgwAgjii+kY8uHTUGx/u/vivPpT8quvpqCJthEOk0zjsPj6M534Lg74OmKNAl/tfuGkf7N7LxSY88LE4sCbItfmLRgtt/3LwsZhxW8i9zIh4AETeLQ5myNSUIGhzSDX5CIQLboOIrcu0VwU2E1ntLCdQ/onRb1Rf6C4yai/HKe/kiyjqP8B7J5i5iIFAAA=
+      skull-owner: SSundee
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_night_vision
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: BIRCH_FENCE
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BED
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        ARROW_DAMAGE: 5
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PLATE
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DARK_OAK_DOOR_ITEM
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 11
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 11
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 11
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 11
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 11
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 11
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 11
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 11
+health: 18.92888641357422
+hunger: 16
 exp: 0.14285715
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.793101
+exhaustion: 3.9171023
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -27,12 +116,3 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND
     amount: 64
-potion_effect:
-  '0':
-    type: DAMAGE_RESISTANCE
-    level: 0
-    duration: 286
-  '1':
-    type: REGENERATION
-    level: 0
-    duration: 286
