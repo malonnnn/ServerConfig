@@ -35,7 +35,7 @@
 'What do you do if you see a hacker?',
 'How do you claim land in survival?',
 'What kinds of characters are made on the server?',
-'What counts as proof for a character's powers/ablities?',
+'What counts as proof for a character\'s powers/ablities?',
 'What is the link where to learn to make heroes?',
 'What is the link to where the server code is stored?',
 'What is the Discord link?',
