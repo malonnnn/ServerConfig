@@ -9,5 +9,17 @@ exhaustion: 1.6840099
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: CHEST
+    type: BOW
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: MONSTER_EGG
+    meta:
+      ==: ItemMeta
+      meta-type: SPAWN_EGG
+      internal: H4sIAAAAAAAAAONiYOBi4HTNK8ksqQxJTOdgYMpMYRDMzcxLTS5KTCuxSi5KTS1ILWJgAAB18udrKQAAAA==
+      id: creeper
 ender_chest: {}
