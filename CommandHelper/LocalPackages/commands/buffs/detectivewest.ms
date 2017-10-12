@@ -12,14 +12,9 @@
             'op': 'false',
             'speech': "I am Detective West.",
             'powers': array(
-                "/buff",
-                "/run 0-1",
-                "/jump 0-1",
-                "/haste 0-1"
+                "/buff"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." pistol"                
             )
         )
