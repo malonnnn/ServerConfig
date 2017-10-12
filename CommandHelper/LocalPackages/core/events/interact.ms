@@ -37,16 +37,6 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         
         set_entity_velocity(@arrow, array(@velocity['x'] * @multiplier, @velocity['y'] * @multiplier, @velocity['z'] * @multiplier))
 
-        
-        #bind(projectile_hit, associative_array('id': 'webshot'.@arrow), null, @event, 
-        #@arrow, @pig, @player = player()) {
-        #
-        #    set_timeout(5000, closure(){
-        #        entity_remove(@pig)
-        #        entity_remove(@arrow)
-        #    });
-        #    unbind()
-        #}
         bind(entity_dismount, null, null, @event, @puuidd = puuid(@player)) {
             if(@event['id'] == @puuidd){
                 entity_remove(@event['mountid'])
