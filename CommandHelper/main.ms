@@ -20,6 +20,8 @@ bind(server_command,null,null,@e){
                 set_block_command(@loc,'')
                 break()
         }
+    }else{
+        console('not a commandblock')
     }
 }
 
