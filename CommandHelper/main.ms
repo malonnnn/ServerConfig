@@ -1,5 +1,10 @@
 bind(server_command,null,null,@e){
-    console(get_command_block())
+    @loc = get_command_block()
+    @world = @loc['world']
+    if(@world == 'greenfield'){
+        cancel()
+        set_block_command(@loc,'')
+    }
 }
 
 set_interval(5000,closure(
