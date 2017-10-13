@@ -13,19 +13,13 @@
                 "/buff",
                 "/carryplayer",
                 "/dismountplayer",
-                "/jump 0-4",
-                "/run 0-5",
-                "/haste 0-6",
-                "/flyspeed <number>",
-                "/fly"
+                "/jump 0-2",
+                "/run 0-2",
+                "/haste 0-2"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 18 true",
-                "/effect ". @plr ." 11 9999 5 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 21 9999 13 true",
-                "/shot give ". @plr ." greenenergybeam",
-                "/give ". @plr ." 95:5 64",
-                "/give ". @plr ." minecraft:emerald 1 20:2 16:155 name:&2Daw&8n&2Br_eak&8e&2r_Ring"                
+                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 11 9999 1 true",
+                "/effect ". @plr ." 21 9999 4 true"
             )
 )
