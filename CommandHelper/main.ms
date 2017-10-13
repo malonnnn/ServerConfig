@@ -1,9 +1,23 @@
 bind(server_command,null,null,@e){
     @loc = get_command_block()
     @world = @loc['world']
-    if(@world == 'greenfield'){
-        cancel()
-        set_block_command(@loc,'')
+    switch(@world){
+        case 'greenfield':
+        case 'metropolis':
+        case 'gotham':
+        case 'infinitycity':
+        case 'fortressofsolitude':
+        case 'hallofjustice':
+        case 'waynemanor':
+        case 'titanstower':
+        case 'broville':
+        case 'starlabs':
+        case 'atlantis':
+        case 'hogwarts':
+        case 'nyc':
+            cancel()
+            set_block_command(@loc,'')
+            break()
     }
 }
 
