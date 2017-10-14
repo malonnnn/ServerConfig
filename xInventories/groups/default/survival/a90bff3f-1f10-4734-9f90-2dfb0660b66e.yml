@@ -1,26 +1,62 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: STAINED_GLASS
+    damage: 4
+    amount: 5
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 13
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bEl§3ec§btr§3oc§bute§b «×»
-health: 60.0
-hunger: 20
-exp: 0.52380955
-exp-level: 7
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
+hunger: 10
+exp: 0.71428573
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.985439
-armor_contents: {}
+exhaustion: 0.27038765
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 13
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 potion_effect:
   '0':
     type: HEALTH_BOOST
-    level: 9
-    duration: 188850
+    level: 4
+    duration: 184406
   '1':
+    type: REGENERATION
+    level: 1
+    duration: 184406
+  '2':
+    type: FAST_DIGGING
+    level: 40
+    duration: 184337
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 184406
+  '4':
     type: SPEED
-    level: 2
-    duration: 188871
+    level: 50
+    duration: 185444
+  '5':
+    type: JUMP
+    level: 5
+    duration: 184364
