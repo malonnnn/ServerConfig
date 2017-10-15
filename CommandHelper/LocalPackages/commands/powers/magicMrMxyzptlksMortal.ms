@@ -40,7 +40,7 @@ register_command(magicmrmxyzptlksmortal,
                     die()
                 }
 
-                if(!has_permission(@player,'is.incity') && !has_permission(@player,'in.survival'){
+                if(!has_permission(@player,'is.incity') && !has_permission(@player,'in.survival')){
                     msg(color(RED).'You cannot mortal that player, they are busy in a minigame or some other protected area')
                     die()
                 }
