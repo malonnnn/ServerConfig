@@ -39,6 +39,11 @@ register_command(magicmrmxyzptlksmortal,
                     msg(color(RED).'Sorry, that player is a criminal right now, you please try again later.')
                     die()
                 }
+
+                if(!has_permission(@player,'is.incity') && !has_permission(@player,'in.survival'){
+                    msg(color(RED).'You cannot mortal that player, they are busy in a minigame or some other protected area')
+                    die()
+                }
                 // @bal = acc_balance(@plr)
                 // if(@bal < 1000 && !has_permission(@plr,'is.op')){
                 //     msg(color(RED).'Sorry, you need $1000 to use this command')
