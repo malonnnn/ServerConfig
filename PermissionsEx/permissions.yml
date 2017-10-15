@@ -7157,6 +7157,8 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - -essentials.warps.spott2
+    - -essentials.warps.spott1
     - essentials.build.interact.196
     - essentials.build.interact.194
     - essentials.build.interact.324
@@ -8282,7 +8284,7 @@ groups:
       suffix: ''
   headbuilder:
     options:
-      prefix: '&e&kI&4&k|&f&lHeadBuilder&4&k|&e&kI&a&l/'
+      prefix: '&fAr&9c&bhi&3te&fct&a&l/'
       suffix: ''
     permissions:
     - take.we
@@ -8326,7 +8328,7 @@ groups:
     - helper
   headcoder:
     options:
-      prefix: '&e&kI&4&k|&f&lHeadCoder&4&k|&e&kI&a&l/'
+      prefix: '&2He&aa&2d &eD&aN&4A &2Eng&ai&2n&aee&2r&a&l/'
       suffix: ''
     permissions:
     - coder.quizclear
@@ -8337,7 +8339,7 @@ groups:
     - coder
   builder:
     options:
-      prefix: '&e&kI&4&k|&f&lBuilder&4&k|&e&kI&a&l/'
+      prefix: '&6Co&ens&7tru&6ct&ei&7on &fW&7o&fr&7k&fe&7r&a&l/'
       suffix: ''
     worlds:
       vigilance_ruined_plots:
@@ -8361,7 +8363,7 @@ groups:
       suffix: ''
   coder:
     options:
-      prefix: '&e&kI&4&k|&f&lCoder&4&k|&e&kI&a&l/'
+      prefix: '&eD&aN&4A &2E&8n&7g&ai&2n&ae&7e&8r&a&l/'
       suffix: ''
   omega:
     inheritance:
@@ -14111,6 +14113,9 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  parkourgod:
+    options:
+      prefix: '&9&lParkour&e&lGod&a&l/'
 schema-version: 1
 worlds:
   checkers:
@@ -14243,9 +14248,10 @@ users:
     - mrmxyzptlk
     options:
       name: SaltWithNoPepper
-      last-login-time: '1508070750'
+      last-login-time: '1508104716'
       last-logout-time: '1508080630'
-    permissions: []
+    permissions:
+    - is.officer
   9112018f-7563-4cc5-9087-50070f77cc68:
     group:
     - blackbolt
@@ -14319,9 +14325,12 @@ users:
       name: chima09
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
+    - spleefgod
     - headhelper
-    - mortal
+    - starbutterfly
     permissions:
+    - is.spleefgod
+    - is.parkourgod
     - is.headhelper
     options:
       name: iiSimqlyHqrk
@@ -14331,10 +14340,11 @@ users:
     permissions:
     - is.headcoder
     group:
+    - headcoder
     - mortal
     options:
       name: President_Myth
-      last-login-time: '1508093721'
+      last-login-time: '1508104534'
       last-logout-time: '1508096956'
   ed038e46-f44d-4e18-8c76-fcaa06a4ae4a:
     group:
@@ -14362,10 +14372,10 @@ users:
       last-logout-time: '1508103347'
   679adfbb-83ad-438f-aaa3-8c40f217f137:
     group:
-    - mortal
+    - doctormanhattan
     options:
       name: GeneralLazer
-      last-login-time: '1508103219'
+      last-login-time: '1508103666'
       last-logout-time: '1508103404'
     permissions:
     - is.headpolice
@@ -14475,16 +14485,17 @@ users:
     - pennywise
     options:
       name: Bcrulez
-      last-login-time: '1508005687'
+      last-login-time: '1508108710'
       last-logout-time: '1508013742'
     permissions: []
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
-    - starbutterfly
+    - coder
+    - thorjanefoster
     options:
       name: MrFlameYT
-      last-login-time: '1508102390'
-      last-logout-time: '1508101762'
+      last-login-time: '1508108980'
+      last-logout-time: '1508108970'
     permissions:
     - is.coder
   392b8a3f-205a-4e7e-ad77-a1f20c7b54ee:
@@ -14516,7 +14527,7 @@ users:
     options:
       name: holdenwhit
       last-login-time: '1508101452'
-      last-logout-time: '1508014246'
+      last-logout-time: '1508104656'
   f9e418bf-9c4f-47af-a963-310bff20bc36:
     group:
     - infinitythanos
@@ -15438,3 +15449,19 @@ users:
     options:
       last-logout-time: '1508100807'
       name: xuxuh
+  0f2788d5-dc42-4ad2-b569-32126412bec4:
+    group:
+    - acceleratedman
+    options:
+      last-logout-time: '1508106823'
+      name: Ssmaster15
+      last-login-time: '1508106649'
+  69251f28-6974-42b6-b54b-86b63f05bae9:
+    group:
+    - goku
+  6d452dd9-b8f4-47f3-a2cf-bd9eb38ae22b:
+    group:
+    - vegeta
+  330f0c09-18b2-41f7-a4e2-179c25a7b75c:
+    group:
+    - ironmanmkxv
