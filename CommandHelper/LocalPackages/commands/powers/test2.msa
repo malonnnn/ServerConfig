@@ -4,13 +4,21 @@ joinblue:/joinblue = >>>
 joingreen:/joingreen = >>>
     runas(~console,'/warp spleefgreen '.player())
 <<<
-joinblue:/spot1 $plr = >>>
+joinblue:/spleef1 $plr = >>>
     @plr = $plr
     runas(~console,'/warp spleeforange '.@plr)
 <<<
-joingreen:/spot2 $plr = >>>
+joingreen:/spleef2 $plr = >>>
     @plr = $plr
     runas(~console,'/warp spleefgreen '.@plr)
+<<<
+joinblue:/pvp1 $plr = >>>
+    @plr = $plr
+    runas(~console,'/warp arenared '.@plr)
+<<<
+joingreen:/pvp2 $plr = >>>
+    @plr = $plr
+    runas(~console,'/warp arenagreen '.@plr)
 <<<
 
 gogo:/gogo = >>>
