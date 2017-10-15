@@ -1,11 +1,54 @@
-inventory: {}
-armor_contents: {}
-health: 7.0
-hunger: 11
-exp: 0.63636374
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 10
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 60.0
+hunger: 0
+exp: 0.72727287
 exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.9867082
+exhaustion: 0.58967054
 ender_chest: {}
+potion_effect:
+  '0':
+    type: SPEED
+    level: 255
+    duration: 183900
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 176282
+  '2':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 176282
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 176282
+  '4':
+    type: REGENERATION
+    level: 4
+    duration: 176282
