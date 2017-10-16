@@ -7542,7 +7542,6 @@ groups:
         - -powers.projectileinvulnerability
         - crackshot.bypass.all
         - essentials.protect.pvp
-        - -essentials.suicide
         - -essentials.home
         - -essentials.home.bed
         - -essentials.home.others
@@ -7553,8 +7552,6 @@ groups:
         - -essentials.tpa
         - -essentials.tpaccept
         - -essentials.tpahere
-        - -essentials.warp
-        - -essentials.warps.*
       creative:
         permissions:
         - essentials.sethome
@@ -14251,6 +14248,9 @@ worlds:
   turfwars:
     inheritance:
     - fightminigame
+  lasertag:
+    inheritance:
+    - fightminigame
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
@@ -14269,13 +14269,14 @@ users:
       last-logout-time: '1507931848'
   fa2821a9-27ed-43e0-99f6-e22aec572a35:
     group:
+    - headpolice
     - mrmxyzptlk
     options:
       name: SaltWithNoPepper
-      last-login-time: '1508110611'
+      last-login-time: '1508184710'
       last-logout-time: '1508112465'
     permissions:
-    - is.officer
+    - is.headpolice
   9112018f-7563-4cc5-9087-50070f77cc68:
     group:
     - blackbolt
@@ -14299,11 +14300,11 @@ users:
       last-logout-time: '1508010675'
   391762eb-24f6-4d95-84d6-bfac682d575a:
     group:
-    - superman
+    - 391762eb24f64d9584d6bfac682d575a
     options:
       name: Tektronic
-      last-login-time: '1508173956'
-      last-logout-time: '1508173760'
+      last-login-time: '1508184285'
+      last-logout-time: '1508184274'
     permissions: []
   5da26092-c807-4c9b-8d08-9523f74ddc97:
     group:
@@ -14313,8 +14314,8 @@ users:
     - is.headbuilder
     options:
       name: SirMastyNasty
-      last-login-time: '1508110877'
-      last-logout-time: '1508110871'
+      last-login-time: '1508188770'
+      last-logout-time: '1508188751'
     worlds:
       vigilance_ruined_plots:
         permissions:
@@ -14332,7 +14333,7 @@ users:
     permissions: []
     options:
       name: HeyItzTony
-      last-login-time: '1508155784'
+      last-login-time: '1508190300'
       last-logout-time: '1508156776'
     worlds:
       fightclub:
@@ -14349,11 +14350,8 @@ users:
       name: chima09
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
-    - spleefgod
-    - pvpgod
-    - parkourgod
     - headhelper
-    - starbutterfly
+    - missmartian
     permissions:
     - is.pvpgod
     - is.spleefgod
@@ -14361,7 +14359,7 @@ users:
     - is.headhelper
     options:
       name: iiSimqlyHqrk
-      last-login-time: '1508152525'
+      last-login-time: '1508179244'
       last-logout-time: '1508152549'
   f621586e-8ef8-448d-9264-86b61375052e:
     permissions:
@@ -14371,7 +14369,7 @@ users:
     - mortal
     options:
       name: President_Myth
-      last-login-time: '1508156918'
+      last-login-time: '1508190485'
       last-logout-time: '1508156959'
   ed038e46-f44d-4e18-8c76-fcaa06a4ae4a:
     group:
@@ -14395,8 +14393,8 @@ users:
     - chat.cooldown
     options:
       name: xGlitchySenpai
-      last-login-time: '1508114320'
-      last-logout-time: '1508115048'
+      last-login-time: '1508184607'
+      last-logout-time: '1508187207'
   679adfbb-83ad-438f-aaa3-8c40f217f137:
     group:
     - mortal
@@ -14404,16 +14402,18 @@ users:
       name: GeneralLazer
       last-login-time: '1508129025'
       last-logout-time: '1508128989'
-    permissions:
-    - is.headpolice
+    permissions: []
   869b4227-b51e-452e-adbd-48759a6848dd:
     group:
-    - mrmxyzptlk
+    - officer
+    - police
+    - spectre
     options:
       name: BusinessManGrim
-      last-login-time: '1508086911'
-      last-logout-time: '1508087237'
-    permissions: []
+      last-login-time: '1508190089'
+      last-logout-time: '1508190083'
+    permissions:
+    - is.officer
   f9877290-5a4c-4984-912f-5d555806a31f:
     group:
     - beastboy
@@ -14518,11 +14518,11 @@ users:
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
     - coder
-    - fanfica8e159eadeeb4f73a246591b589adcf4
+    - thorjanefoster
     options:
       name: MrFlameYT
-      last-login-time: '1508110523'
-      last-logout-time: '1508116282'
+      last-login-time: '1508186547'
+      last-logout-time: '1508186742'
     permissions:
     - is.coder
   392b8a3f-205a-4e7e-ad77-a1f20c7b54ee:
@@ -14654,11 +14654,11 @@ users:
       last-logout-time: '1508116569'
   be9c2fcc-e2f9-4733-8b5d-b14ee515c12d:
     group:
-    - firestormraymondstein
+    - doctormanhattan
     options:
       name: Bubbatruk
-      last-login-time: '1508020380'
-      last-logout-time: '1508022892'
+      last-login-time: '1508187153'
+      last-logout-time: '1508192436'
     permissions: []
   969a7be4-0af3-47d4-9fc0-e427d4eb81e4:
     group:
@@ -15122,8 +15122,9 @@ users:
   05bf0af3-a0a6-4e9e-bb7d-a29d7d43ea85:
     permissions: []
     options:
-      last-logout-time: '1507931813'
+      last-logout-time: '1508192231'
       name: Space117
+      last-login-time: '1508192248'
   a0b489ca-d422-4bd4-903b-2c7e9732526c:
     permissions: []
     options:
@@ -15297,12 +15298,12 @@ users:
       last-login-time: '1508005746'
   87133c81-6b55-464f-bb51-22c89bd7dfbc:
     group:
-    - impossibleman
+    - beastboy
     permissions: []
     options:
-      last-logout-time: '1508167860'
+      last-logout-time: '1508180126'
       name: tfun2009
-      last-login-time: '1508164985'
+      last-login-time: '1508180249'
   4bd22542-fc40-42de-b94c-2039b426259b:
     group:
     - savitar
@@ -15386,11 +15387,12 @@ users:
     permissions: []
   204227c2-4f81-4a2b-9723-d9c3773c3e9b:
     group:
-    - aquaman
+    - pennywise
     options:
       last-logout-time: '1508109942'
       name: _C0LE
-      last-login-time: '1508109449'
+      last-login-time: '1508189746'
+    permissions: []
   56cccfb9-064a-4155-b46b-a753284ebcd4:
     group:
     - deathstroke
@@ -15546,3 +15548,57 @@ users:
     options:
       last-logout-time: '1508168143'
       name: TheMauBeast
+  5d4e906e-7f31-4a5b-a717-de21576d61fb:
+    group:
+    - supermanprimeonemillion
+    options:
+      last-logout-time: '1508175076'
+      name: FluffyBro
+  105fe5fb-0c6a-4b1e-a669-d84faea1e018:
+    group:
+    - martianmanhunter
+    permissions: []
+    options:
+      last-logout-time: '1508180232'
+      name: tomawesomeblonde
+  b2f6ab3e-4f6a-46fb-8525-4fd2b49046d9:
+    group:
+    - impossibleman
+  65902460-aca2-47dd-a621-92729c72be44:
+    group:
+    - emmafrost
+    options:
+      last-logout-time: '1508183455'
+      name: Multidragon782
+      last-login-time: '1508182776'
+  779f4b54-a205-40c9-b813-dee8e3419ec2:
+    group:
+    - spiderman2099
+    permissions: []
+    options:
+      last-logout-time: '1508183484'
+      name: alpark1391
+  83084357-00ad-4414-a0f7-b5f38c11bd20:
+    group:
+    - infinitysilversurfer
+  7dff91dd-96e6-4b73-9dfa-17992e055694:
+    group:
+    - mortal
+    permissions: []
+    options:
+      last-logout-time: '1508187086'
+      name: TheMizukageTrey
+  cc41c2d9-5ef0-4a02-953d-cfb7c0b155be:
+    group:
+    - godfallsuperman
+    permissions: []
+    options:
+      last-logout-time: '1508189745'
+      name: darkstumper
+      last-login-time: '1508190107'
+  396a83bc-b623-4fb0-b378-b38f7101bcdf:
+    group:
+    - batman
+    options:
+      last-logout-time: '1508192354'
+      name: Superwolfx
