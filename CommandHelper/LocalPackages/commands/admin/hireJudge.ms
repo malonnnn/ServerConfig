@@ -42,6 +42,10 @@ register_command(firejudge,
             
             @player = player()
             @vic = player(@args[0])
+            if(has_permission(@vic,'donot.hire')){
+                msg(color(RED).'Sorry, that person can no longer be hired')
+                die()
+            }
             
             runas(~console,"/pex user ".@vic." remove is.judge")
             runas(~console,"/pex user ".@vic." group remove judge")

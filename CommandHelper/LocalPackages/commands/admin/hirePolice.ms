@@ -14,12 +14,17 @@ register_command('hirepolice',
             @player = player()
             @vic = player(@args[0])
            
+            if(has_permission(@vic,'donot.hire')){
+                msg(color(RED).'Sorry, that person can no longer be hired')
+                die()
+            }
+
             include('/home/minecraft/server/plugins/CommandHelper/includes/checkJobs.ms')
             if(!_checkJobs(@vic)){
                 die()
             }
 
-            sudo("/pex user ".@vic." add is.officer")
+            sudo("/pex user ".@vic." add is.police")
             sudo("/pex user ".@vic." group add police")
             tmsg(@player,color(red)."You have hired ".@vic." as a Police!")
             tmsg(@vic,color(red)."You have been hired as a Police!")	
