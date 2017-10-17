@@ -21,6 +21,11 @@ register_command(kill,
                 tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
                 die()
             }
+
+            if(!has_permission(@vic,'is.incity') && !has_permission(@vic,'in.survival')){
+                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                die()
+            
             
             // @bal = acc_balance(@plr)
             // @isOp = has_permission(@plr,'is.op')
