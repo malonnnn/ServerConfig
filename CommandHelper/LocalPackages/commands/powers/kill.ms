@@ -25,6 +25,7 @@ register_command(kill,
             if(!has_permission(@vic,'is.incity') && !has_permission(@vic,'in.survival')){
                 msg(color(RED).'Sorry, that person is in a minigame or other protected area')
                 die()
+            }
             
             
             // @bal = acc_balance(@plr)
