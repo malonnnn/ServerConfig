@@ -63,7 +63,7 @@ bind('player_chat', null, null, @e) {
                 modify_event(message,@msg)
         }
     }
-    if(@pname == 'The8thHokageTrey'){
+    if(@pname == 'TheMizukageTrey'){
         @msgg = split(' ',@msg)
         @finMsg = ''
         foreach(@word in @msgg){
@@ -71,6 +71,8 @@ bind('player_chat', null, null, @e) {
                 @word = 'Windows '.@word
             }else if (to_lower(@word) == 'xi'){
                 @word = 'Superbowl '.@word
+            }else if (to_lower(@word) == 'guruguru'){
+                @word = 'GokuGoku'
             }
             @finMsg = @finMsg.@word.' '
         }
