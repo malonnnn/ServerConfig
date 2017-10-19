@@ -1,20 +1,33 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_HOE
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6protego§f (§3HarrysWand§f)
+      lore:
+      - §3§oBound to SaltWithNoPepper
+      - Knows 14 Spells
+      - '§d§oMana: 200'
+      - '§d§oMana Regeneration: 10/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAD1Sy27TQBS9xU7iBMqjLHkVqNi0QY3z9AYRARJItCBFFQsW1s34OhnhmTHjcdLskBDfwAewQmLBB/ANfBArrh21Xs09c+aec891B6AD/hp1EkDgSOUZOoLOEq3dFFu4YdaaLNycYeY+SLc8Ne8pz8kGcA2FkyuKi5yyDFq5NY4WpgG+Qo0vdg+/+nC9OsZOKiocqhxgJx6df/zJYnXXWCZwkGI4CXsYdcMxJd1Bn467UZSOuhSGSGI4DrE/ZDFKUxIuFiYzFp6M+lEaRtEgGc/F0Wgg5qPeuD8Y9sOjySTCOfaIr489aK3IFtJoAGh04EZtNZZ6RdoZu/EgwEKQTqRhwo4HbR5MijIrFdcPPGigEPXdfQ9uraVeoE1kqTJaSVMg4/dYwlJSClex9j1oCltunzzyLjPhyvPgqtQCrSBryoKRhywnjE4tt60YDXbDjAs3Vzye+bzyK9Gq+oXPPdieKwvelK3kgUkFx1KqS6jJsoUrc0o3XLUA2rA3dc7KeenoxCQylRxJp5rXh+Ds7M3LE1O4f4+f3Z1+eU0+tCvoLWHhft/58/f7t18/mtCcKlNq9/wA6i8Af5YZB4FCqZf1X7J7KXGKiuD2gnSV5FN0DsWnWU6U8LjvOF5023VUXWru3qvPpcwVb2T/wh7AfzdwmzyZAgAA
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.5454546
-exp-level: 2
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
+exhaustion: 0.063
 ender_chest: {}
-potion_effect:
-  '0':
-    type: INCREASE_DAMAGE
-    level: 5
-    duration: 112745
-  '1':
-    type: WATER_BREATHING
-    level: 1
-    duration: 112745
