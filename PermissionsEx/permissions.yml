@@ -7549,6 +7549,9 @@ groups:
         - -essentials.spawn
       creative:
         permissions:
+        - essentials.tpahere
+        - essentials.tpaccept
+        - essentials.tpaaccept
         - essentials.sethome
         - essentials.sethome.bed
         - essentials.sethome.multiple.unlimited
@@ -7594,6 +7597,7 @@ groups:
         - ch.alias.cp
       plots:
         permissions:
+        - essentials.tpa
         - plots.remove
         - essentials.fly
         - plots.home
@@ -8281,6 +8285,10 @@ groups:
         - ch.alias.haste7
         - ch.alias.haste8
         - ch.alias.haste9
+  buildgod:
+    options:
+      prefix: '&b&lBuild&e&lGod&a&l/'
+      suffix: ''
   spleefgod:
     options:
       prefix: '&4&lSpleef&e&lGod&a&l/'
@@ -8300,6 +8308,9 @@ groups:
     - hire.builder
     inheritance:
     - builder
+    worlds:
+      vigilance_ruined_plots:
+        permissions: []
   headpolice:
     options:
       prefix: '&e&kI&4&k|&4HeadPolice&4&k|&e&kI&a&l/'
@@ -8351,6 +8362,9 @@ groups:
     worlds:
       vigilance_ruined_plots:
         permissions:
+        - essentials.protect.exemptbreak
+        - essentials.protect.exemptplacement
+        - essentials.protect.exemptusage
         - essentials.top
         - essentials.build.*
         - essentials.fly
@@ -14271,8 +14285,8 @@ users:
     - 87fb3c6c5ff64bf6b326992c6137ea12
     options:
       name: Jiren_The_Grey
-      last-login-time: '1508366050'
-      last-logout-time: '1508366048'
+      last-login-time: '1508378862'
+      last-logout-time: '1508378853'
   8155d7dc-151b-4d17-9aa9-d5b7e5a8cff0:
     group:
     - starbutterfly
@@ -14354,7 +14368,7 @@ users:
     options:
       name: HeyItzTony
       last-login-time: '1508366693'
-      last-logout-time: '1508366683'
+      last-logout-time: '1508376008'
     worlds:
       fightclub:
         permissions: []
@@ -14429,7 +14443,7 @@ users:
     options:
       name: BusinessManGrim
       last-login-time: '1508374392'
-      last-logout-time: '1508373933'
+      last-logout-time: '1508374745'
     permissions:
     - donot.hire
     - is.officer
@@ -14461,7 +14475,7 @@ users:
     options:
       name: Ryanjacobc
       last-login-time: '1508374158'
-      last-logout-time: '1508294361'
+      last-logout-time: '1508375720'
   e6de8cf0-af45-44e4-882f-d98446f4b31b:
     permissions:
     - is.headjudge
@@ -14786,12 +14800,14 @@ users:
       last-login-time: '1507665184'
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     group:
+    - buildgod
     - mortal
     options:
-      last-logout-time: '1508371610'
+      last-logout-time: '1508376469'
       name: _Vigilance_
       last-login-time: '1508373543'
     permissions:
+    - is.buildgod
     - donot.hire
     worlds:
       vigilance_ruined_plots:
@@ -15429,9 +15445,9 @@ users:
     group:
     - timewraith
     options:
-      last-logout-time: '1508374488'
+      last-logout-time: '1508374840'
       name: TexasDonut
-      last-login-time: '1508374458'
+      last-login-time: '1508374796'
   b9461077-b1d3-473f-88a4-de48323cdf36:
     group:
     - blackpanther
@@ -15629,7 +15645,7 @@ users:
     permissions:
     - chat.cooldown
     options:
-      last-logout-time: '1508373552'
+      last-logout-time: '1508375315'
       name: darkstumper
       last-login-time: '1508373598'
   396a83bc-b623-4fb0-b378-b38f7101bcdf:
