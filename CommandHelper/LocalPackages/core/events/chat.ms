@@ -276,8 +276,10 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+[ .,-_]*t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
-    assign(@msg, reg_replace('(?i)\\brood', 'rod', @msg))
-    modify_event(message, @msg)
+    if(has_permission('is.headhelper')){
+        assign(@msg, reg_replace('(?i)r+[. ,-]*(o|0)+[. ,-]*(o|0)+[. ,-]*d+', 'rod', @msg))
+        modify_event(message, @msg)
+    }
 
     
     #@temp = reg_match('[^ -~]',@msg)

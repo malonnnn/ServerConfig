@@ -4,10 +4,28 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.6415232
+saturation: 5.0
+exhaustion: 0.05
 inventory:
   '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_PLATE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: PISTON_STICKY_BASE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIODE
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND
+  '6':
     ==: org.bukkit.inventory.ItemStack
     type: COMMAND
     meta:
@@ -15,44 +33,11 @@ inventory:
       meta-type: TILE_ENTITY
       lore:
       - (+NBT)
-      internal: H4sIAAAAAAAAAFWQ0UrDMBiF/+hgY1ZvfIHSi14JG60iFITh2IWgTuq8qgNjGkdom4T0D264PYoP6RuYdhVmrk7+k+R8J0OAIZzdlooVM4kCNwu6IuAxJXOBQskHjoRAj1pUQKCv1Sc3PIcBDKe2RlU90ooDmQygP1VVRWUO1ygqbvwwCou78Ep+CCmQh/ETNUUzU2FsjV/rUqA/0Zm5iZa+S6dlD07vaY2zNWe2SQa3RsnbzwCORA5e93xLegzes2WM1/VUWYnuIHFAze25RW0Rvr8CvkZDgyQ7VOhkkASzNJ2niT/ag77a8ThmhjLedGl3vBvWSA1uXU29bYE7c6I7f1Wqd1puW/y9F+yWF38xhzobR0l0mcSubLAjcLJwecUe1n3v+YvOKfJ/9QnAL45yo9ScAQAA
+      internal: H4sIAAAAAAAAAC2OQQ6CMBBF/6gJBIkbL6A3MRLiRmUhHmDSNqZBOoROo9xeNP7le4v3C6DA5vgU09VBvU4tPwilkWC9egkXpyCsOKkgR1GlqNJfuXegAyEb5OVGZ2eVVdL3HCyyyNPu1OxzLLxF+ce/whLlLRnjYqwkBcU8wrod2XRN0iEpEbb3wbK6M0et386k7wkCPupebAioAAAA
       blockMaterial: COMMAND
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_PLATE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      lore:
-      - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh0KtWAtJFiUpW0dVKJUCmkpWSoZmZgZ6hpYVCcWpysVJtrA5MQqkWqs+YgbsaQ9CIQQuLYS5e8UGJeSn5uegGMWWmMPDlZualJhclppVYFWem50ENMmTQxWKQW2JxSWpxiUJIZm4qqlkMDAAgL8594wAAAA==
-      blockMaterial: SIGN
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: BARRIER
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 9
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: LAVA_BUCKET
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      lore:
-      - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMStVKQLooUckqGi5tr1Qbq4Oh1ohBE4tap9LMnBKFpEp0LUyZKQx8uZl5qclFiWklVsWZ6XlQcwwZNLCYE5Sfn6tgaoxqDAMDAFsMBMfRAAAA
-      blockMaterial: SIGN
+    type: LEVER
   '8':
     ==: org.bukkit.inventory.ItemStack
     type: SIGN
