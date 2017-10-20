@@ -18,6 +18,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:shield 1 durability:3 mending:1 basecolor:14188339 HALF_HORIZONTAL:10040115 HALF_HORIZONTAL_MIRROR:10040115 CROSS:3361970 STRIPE_CENTER:3361970 STRIPE_MIDDLE:3361970 FLOWER:16777215 name:&4C&9apt&fain_&4A&9mer&4ica's_&9Shield"                
+                "/give ". @plr ." minecraft:shield 1 durability:3 mending:1 basecolor:16351261 HALF_HORIZONTAL:11546150 HALF_HORIZONTAL_MIRROR:11546150 CROSS:3949738 STRIPE_CENTER:3949738 STRIPE_MIDDLE:3949738 FLOWER:16383998 name:&4C&9apt&fain_&4A&9mer&4ica's_&9Shield"                
             )
         )

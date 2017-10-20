@@ -29,7 +29,7 @@
                 "/shot give ". @plr ." warbeam",
                 "/give ". @plr ." minecraft:iron_axe 1 20:2 16:30 name:&4&lAr&0&le&4&ls's_&4War_Axe",
                 "/give ". @plr ." minecraft:iron_axe 1 0 20:2 16:30 name:&4&lAr&0&le&4&ls's_&4War_Axe",
-                "/give ". @plr ." minecraft:shield 1 basecolor:14188339 GRADIENT:15066419 GRADIENT_UP:10040115 TRIANGLE_TOP:15066419 CURLY_BORDER:1644825 TRIANGLE_TOP:1644825 MOJANG:1644825 CIRCLE_MIDDLE:1644825 BORDER:1644825 name:&4&lAr&0&le&4&ls's_&4Shield",
+                "/give ". @plr ." minecraft:shield 1 basecolor:16351261 GRADIENT:16701501 GRADIENT_UP:11546150 TRIANGLE_TOP:16701501 CURLY_BORDER:1908001 TRIANGLE_TOP:1908001 MOJANG:1908001 CIRCLE_MIDDLE:1908001 BORDER:1908001 name:&4&lAr&0&le&4&ls's_&4Shield",
                 "/give ". @plr ." minecraft:iron_helmet 1 0 0:10 1:10 3:10 4:10 7:10 name:&4&lAr&0&le&4&ls's_&4W&0a&4r_Helmet",
                 "/give ". @plr ." minecraft:iron_chestplate 1 0 0:10 1:10 3:10 4:10 7:10 name:&4&lAr&0&le&4&ls's_&4W&0a&4r_Chestplate",
                 "/give ". @plr ." minecraft:iron_leggings 1 0 0:10 1:10 3:10 4:10 7:10 name:&4&lAr&0&le&4&ls's_&4W&0a&4r_Leggings",

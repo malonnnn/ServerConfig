@@ -17,8 +17,6 @@
                 "/run 0-8",
                 "/haste 0-9",
                 "/lightning",
-                "/wallrun <on/off>",
-                "Look Up+Jump+Crouch to perform a wallrun.",
                 "/fly speed <number>",
                 "/fly"
             ),
