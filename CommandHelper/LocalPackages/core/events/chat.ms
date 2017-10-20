@@ -85,6 +85,8 @@ bind('player_chat', null, null, @e) {
             @msg = replace(@msg,@origWord,@word)
             modify_event(message,@msg)
         }
+        assign(@msg, reg_replace('(?i)g+[. ,-]*u+[. ,-]*r+[. ,-]*u+[. ,-]*g+[. ,-]*u+[. ,-]*r+[. ,-]*u+', 'rod', @msg))
+        modify_event(message, @msg)
     }
     
     # -------------------------------

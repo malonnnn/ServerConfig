@@ -8,7 +8,7 @@ bind(world_changed, null, null, @event,
     @class = _getheroclass(@player)
 
     set_timeout(3000,closure(
-        if(has_permission('in.survival')){
+        if(has_permission('is.incity')){
             runas(~console,"/effect ".@player." clear")
             runas(~console,"/minecraft:clear ".@player)
             runas(~console,"/sudo ".@player." c:/fixskin")
