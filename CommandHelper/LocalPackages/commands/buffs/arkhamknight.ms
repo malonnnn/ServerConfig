@@ -13,7 +13,10 @@
                 "/buff",
                 "/grapplinghook",
                 "/shadowhide (Allows you to become invisible in dark areas)",
-                "/cast stungrenade"
+                "/cast stungrenade",
+                "/run <1-2>",
+                "/jump <1-2>",
+                "/haste <1-2>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",
