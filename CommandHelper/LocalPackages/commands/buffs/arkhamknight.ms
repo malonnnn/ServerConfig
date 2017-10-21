@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MDg1MTI4Mjc3NTksInByb2ZpbGVJZCI6ImY2MjE1ODZlOGVmODQ0OGQ5MjY0ODZiNjEzNzUwNTJlIiwicHJvZmlsZU5hbWUiOiJQcmVzaWRlbnRfTXl0aCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTRlYjJhOTE2MzIwN2M1MzFmMzU0YjNlOTU5M2M4YWI3ODEyYTY1YmQxNmVmYjQ2OThmZmRlNTM1ZDhlODAifX19',
             'trail': '',
             'op': 'false',
-            'speech': "You always told me bruce... focus on what I want to achieve... and it'll happen. well you wanna know what I want now, huh? I want you dead!",
+            'speech': "You always told me bruce... focus on what I want to achieve... and it'll happen. Well you wanna know what I want now, huh? I want you dead!",
             'powers': array(
                 "/buff",
                 "/grapplinghook",
@@ -18,6 +18,7 @@
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." pistol",
                 "/shot give ". @plr ." pistol",
-                "/shot give ". @plr ." hunting"               
+                "/shot give ". @plr ." hunting",   
+                "/shot give ". @plr ." bazooka"
             )
 )
