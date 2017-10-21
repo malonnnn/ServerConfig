@@ -1,11 +1,4 @@
 inventory:
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -17,6 +10,33 @@ inventory:
       - §eBolt-action rifle with high accuracy.
       - §eEquipped with a night vision scope.
       - §eDeals double damage on headshots.
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eBazooka§e «×»
+      lore:
+      - §eRocket launcher.
+      - §eFire down at your
+      - §efeet to rocket-jump.
+      - §eNegates fall damage.
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 4
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_MUTTON
+    amount: 58
   '40':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
@@ -24,14 +44,14 @@ inventory:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Pistol§7 «× | ×»
-health: 4.833332061767578
-hunger: 10
-exp: 0.88888896
-exp-level: 1
+health: 40.0
+hunger: 20
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.3409085
+exhaustion: 1.3090433
 armor_contents: {}
 ender_chest:
   '13':
@@ -91,12 +111,8 @@ potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 4
-    duration: 180804
+    duration: 168550
   '1':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 178810
-  '2':
-    type: WATER_BREATHING
+    type: SPEED
     level: 1
-    duration: 178810
+    duration: 186601
