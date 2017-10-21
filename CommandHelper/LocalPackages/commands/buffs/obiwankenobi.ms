@@ -13,7 +13,9 @@
                 "/buff",
                 "/jump 0-7",
                 "/run 0-4",
-                "/haste 0-1"
+                "/haste 0-1",
+                "/forcepush",
+                "/cast forcepull"
             ),    
             
             'buffs': array(
