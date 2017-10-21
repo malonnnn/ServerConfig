@@ -1,50 +1,32 @@
-inventory:
-  '40':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 63
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_HOE
-    damage: 1
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6wingardiumleviosa§f (§3HarrysWand§f)
-      lore:
-      - §3§oBound to SaltWithNoPepper
-      - Knows 14 Spells
-      - '§d§oMana: 200'
-      - '§d§oMana Regeneration: 10/s'
-      ItemFlags:
-      - HIDE_ENCHANTS
-      - HIDE_ATTRIBUTES
-      - HIDE_UNBREAKABLE
-      - HIDE_DESTROYS
-      - HIDE_PLACED_ON
-      - HIDE_POTION_EFFECTS
-      Unbreakable: true
-      internal: H4sIAAAAAAAAAG1RPW8TQRCdcGfnbAKEUPKVQFpHcCEJbhAWIAWJBCQrorSGvTl7xe3uZXfWxh0Nv4GGjpaCH8BvoODnUDF3VlKx1c6bt++9nekD9CFdoC0yyJhMXSET9Gfo/TKs4I5bWPKwOcaK32uenbp3VNfkM9hAxXpOk1BTVcHNhbZT9IWOpqK5dgE7kBq0+OIYIIXrzXXC2lBgNDXA2uTwz7cdsW31J7qA3RLzp/ljHA7yIyoGT/bp0WA4LA8HlOdI6uAox/2DBNbn5IN2FgA6fbjRuk+0nZNl55cJZBgU2UI7Iawn0JOsWsUqGqnvJ9BBpdreveQ/mQW/Kxaeiqi4YW0n0FU+rp48kFbtHdO0qZIErmqr0CvyLgZBdsROOVt6kW0YHUkjjIs0VxLYoE9NXo3etC9S0ZB4HIMM3zf2IKRAgphLqCu2gWNN5VKqNYAebI2Yvf4QmU5coUstI+k3vRSys7PXL09c4L8Pn90ZfT6mFHoN9IYw8M/bv35//fLjexe6I+Oi5ee70J4M0nHlGDKD2s7axV+7tDhFQ3BrSraZ5B4yo/o4rokK+e5bGS/yah2NSsvdenUedW1kI9sX8QD+Aa/H54psAgAA
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLDEN_APPLE
-    damage: 1
+inventory: {}
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.9230769
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 11.6
-exhaustion: 0.1990037
+saturation: 5.0
+exhaustion: 0.063
 ender_chest: {}
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
+    type: LUCK
     level: 0
-    duration: 3094
+    duration: 711
   '1':
-    type: FIRE_RESISTANCE
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 191643
+  '2':
+    type: FAST_DIGGING
     level: 0
-    duration: 3094
+    duration: 182
+  '3':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 191643
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 191643
