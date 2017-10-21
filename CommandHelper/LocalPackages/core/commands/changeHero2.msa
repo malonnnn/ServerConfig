@@ -222,7 +222,6 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         sudo("/god ".@plrr." off")
         sudo("/tptoggle ".@plrr." on")
         
-        replace(@hero['name'],'§','&')
         _changeSkin(@plrr,@hero['sig'],@hero['val'],@hero['name'])
         if(@hero['trail'] != ''){
             chatas(@plrr,"/trailsid ".@hero['trail'])

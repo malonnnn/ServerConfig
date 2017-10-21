@@ -26,7 +26,6 @@ register_command(fixskin,
                     @class = _getheroclass(@player)
                     
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-                    replace(@hero['name'],'§','&')
                     _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
                     
                 } catch (PlayerOfflineException @ErrorInfo) {				
@@ -50,7 +49,6 @@ register_command(fixskin,
                     @class = _getheroclass(@plr)
                     
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
-                    replace(@hero['name'],'§','&')
                     _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
                     
                 } catch (PlayerOfflineException @ErrorInfo) {				

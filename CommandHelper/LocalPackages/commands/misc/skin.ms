@@ -37,7 +37,7 @@ register_command(skin,
                     if(@skinNum == "1"){
                         @sig = @hero['sig']
                         @val = @hero['val']
-                        _changeSkin(@player,@sig,@val)
+                        _changeSkin(@player,@sig,@val,@hero['name'])
                         die()
                     }
                     @skinNum = @skinNum - 2
@@ -49,7 +49,7 @@ register_command(skin,
                         tmsg(@player,"Sorry, this hero doesn't have a skin number ". @skinNum)
                         die()
                     )
-                    _changeSkin(@player,@altSig,@altVal)
+                    _changeSkin(@player,@altSig,@altVal,@hero['name'])
                     
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg(@player,'Player: '.@plr.' is Offline')

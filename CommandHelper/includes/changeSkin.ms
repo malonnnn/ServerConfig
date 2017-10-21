@@ -2,6 +2,7 @@ proc(_changeSkin, @plr, @sig, @val, @heroName,
 
     if(substr(@val,0,3) == 'eyJ'){
         
+        @heroName = replace(@heroName,'§','&')
         runas(~console,"/disguiseplayer " . @plr . " player " . @heroName . ' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
     } else {
         runas(~console,/disguiseplayer @plr @sig @val)
