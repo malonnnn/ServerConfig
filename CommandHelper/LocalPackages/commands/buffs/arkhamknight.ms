@@ -11,6 +11,8 @@
             'speech': "You always told me bruce... focus on what I want to achieve... and it'll happen. Well you wanna know what I want now, huh? I want you dead!",
             'powers': array(
                 "/buff",
+                "/invis",
+                "/vis",
                 "/grapplinghook",
                 "/cast stungrenade"
             ),
