@@ -1,30 +1,38 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
+    type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §7O§bb§7i§bW§7a§bn§7K§be§7n§bo§7b§bi's §7Lightsaber
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        DAMAGE_ALL: 100
-        FIRE_ASPECT: 2
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 armor_contents: {}
-health: 20.0
-hunger: 6
+health: 40.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.9454212
+exhaustion: 3.8741856
 ender_chest: {}
 potion_effect:
   '0':
     type: HEALTH_BOOST
-    level: 19
-    duration: 189171
+    level: 4
+    duration: 194654
   '1':
+    type: SPEED
+    level: 255
+    duration: 195788
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 194654
+  '3':
     type: INCREASE_DAMAGE
-    level: 5
-    duration: 189171
+    level: 10
+    duration: 194654
