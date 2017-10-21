@@ -14,6 +14,9 @@ bind(world_changed, null, null, @event,
             runas(~console,"/sudo ".@player." c:/fixskin")
             set_pflight(@player,false)
         }
+        if(has_permission(@player,'in.survival'){
+            set_pflight(@player,false)
+        }
     ))
 
     if(@to == 'anarchy' && @class != 'anarchy'){

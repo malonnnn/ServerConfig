@@ -1,11 +1,102 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ▪ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+health: 4.833332061767578
+hunger: 10
+exp: 0.88888896
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.56507
+exhaustion: 3.3409085
 armor_contents: {}
-ender_chest: {}
+ender_chest:
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Tablet
+      author: _Vigilance_
+      pages:
+      - |-
+        -------------------§0
+        §0
+        §2Lights On: §a§l(-)§0
+        §0
+        §2Lights Off: §a§l(-)§0
+        §0
+        §2Sentry On: §a§l(-)§0
+        §0
+        §2Sentry Off: §a§l(-)§0
+        §0
+        §2Portal On: §a§l(-)§0
+        §0
+        §2Portal Off:§a§l (-)§0
+        §0------------------
+      - |
+        §lFrequency Generator:§0
+        §0§l----------------§0
+        §6§lType A: [§e§k;;;;;;;;;;;;;;;;;;;;;;;;§6§l]§0
+        §0
+        §2§lType B: [§a§k;;;;;;;;;;;;;;;;;;;;;;;;§2§l]§0
+        §0
+        §4§lType C: [§c§k;;;;;;;;;;;;;;;;;;;;;;;;§4§l]§0
+        §0
+        §9§lType D: [§b§k;;;;;;;;;;;;;;;;;;;;;;;;§9§l]§0
+      - |-
+        §l[                    ]§0
+        §0§l[                    ]§0
+        §0§l[                    ]§0
+        §0§l[                    ]§0
+        §0§l --------------§0
+        §0
+        §0
+        §0§l[1] [2] [3] [4] [5]§0
+        §0§l[6] [7] [8] [9] [0]§0
+        §0
+        §0§l[A] [B] [C] [D] [E]§0
+        §0
+        §0§l _[ Space Bar ]_
+      - |-
+        §5§k'''''''''''''''''''''''''''''''''''''';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'''''''''''''''''''''''''''''''''''''';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;§0-------------------§0
+        §0       Decryption§0
+        §0       Device
+      generation: 0
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 180804
+  '1':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 178810
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 178810
