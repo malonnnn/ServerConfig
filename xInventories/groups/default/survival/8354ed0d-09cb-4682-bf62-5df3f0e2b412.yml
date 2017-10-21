@@ -1,11 +1,41 @@
-inventory: {}
-health: 20.0
+inventory:
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ▪ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.978053
+exhaustion: 2.56507
 armor_contents: {}
 ender_chest: {}
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 182342
