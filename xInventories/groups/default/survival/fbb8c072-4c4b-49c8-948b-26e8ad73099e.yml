@@ -1,18 +1,57 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 16
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-health: 20.0
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 21.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.69601274
+exhaustion: 1.307005
 armor_contents: {}
 ender_chest: {}
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 199952
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 199952
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199952
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199952
+  '4':
+    type: REGENERATION
+    level: 1
+    duration: 199952
+  '5':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 199952
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 199952
