@@ -15,8 +15,7 @@
                 "/cast soulpush",
                 "/cast soulgrip",
                 "/cast energytrap",
-                "/hover on",
-                "/hover off"                
+                "/float <up/down/pause/unpause/stop>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 2 true",
