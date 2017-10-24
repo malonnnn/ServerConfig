@@ -16,7 +16,7 @@
                 "/jump 0-3",
                 "/run 0-1",
                 "/haste 0-1",
-                "/hover <up/down/pause/unpause/stop>"
+                "/float <up/down/pause/unpause/stop>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
