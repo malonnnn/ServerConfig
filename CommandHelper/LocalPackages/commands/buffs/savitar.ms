@@ -28,12 +28,9 @@
                 "/run 0-9",
                 "/haste 0-8",
                 "/jump 0-3",
-                "/thru (phases through walls)",
                 "/tppos <X, Y, Z Coordinates>",
                 "/invis (makes you invisible)",
-                "/vis (makes you visible again)",
-                "/vibrate",
-                "/stopvibrating"
+                "/vis (makes you visible again)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",

@@ -20,7 +20,7 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
-                 "/run 0-1 (In speedforce)",
+                "/run 0-1 (In speedforce)",
                 "/haste 0-4",
                 "/tppos <x y z world>"
             ),

@@ -24,8 +24,7 @@
                 "/jump 0-3",
                 "/haste 0-4",
                 "Throw lightning with an empty hand",
-                "/ma",
-                "/thru"
+                "/ma"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",

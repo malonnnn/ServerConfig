@@ -1,14 +1,8 @@
-# grow into giant
 register_command(zord, 
-
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.zord',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {        
             
             @plr = player()
@@ -21,17 +15,11 @@ register_command(zord,
 )
 
 register_command(unzord, 
-
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.unzord',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {        
-            
             include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
     
             @player = player()
@@ -39,7 +27,6 @@ register_command(unzord,
             @class = _getheroclass(@player)
 
             set_pflight(@player,false)
-            set_pflying(@player,false)
             
             include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
             

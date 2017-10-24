@@ -1,10 +1,54 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §8Ag§0ent §8Ve§0nom §e§lD§a§lN§4§lA
+      lore:
+      - agentvenom
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §8A§4r§ck§8h§ba§8m §8K§7n§bi§8g§4h§7t §e§lD§a§lN§4§lA
+      lore:
+      - arkhamknight
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 health: 20.0
 hunger: 20
-exp: 0.0
+exp: 0.2857143
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 2.0071902
+saturation: 0.0
+exhaustion: 0.9422289
 armor_contents: {}
