@@ -36,6 +36,7 @@
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/effect ". @plr ." 10 9999 3 true",
-                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
+                "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts",                
+                 "/give ". @plr ." Minecraft:leather_chestplate 1 0 {display:{Name:"tachyon prototype",Lore:["Made by star labs owner SaltWithNoPepper"]},AttributeModifiers:[{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:100,Operation:0,UUIDMost:45775,UUIDLeast:305137}]}"
             )
         )
