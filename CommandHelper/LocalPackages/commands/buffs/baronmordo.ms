@@ -18,8 +18,7 @@
                  "/tangible",
                  "/mindcontrol <playername>",
                  "/stopmindcontrol",
-                 "/hover on",
-                 "/hover off",
+                 "/float <up/down/pause/unpause/stop>",
                  "/jump 0-4"
              ), 
              'buffs': array( 
