@@ -44,7 +44,7 @@ register_command(magicmrmxyzptlksmortal,
                     msg(color(RED).'You cannot mortal that player, they are busy in a minigame or some other protected area')
                     die()
                 }
-                if(!has_permission(@player,'is.op')){
+                if(has_permission(@player,'is.op')){
                     msg(color(RED).'You cannot mortal that player, they are way better than you,')
                     die()
                 }
