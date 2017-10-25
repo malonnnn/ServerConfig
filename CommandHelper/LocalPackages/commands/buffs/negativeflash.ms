@@ -30,9 +30,10 @@
                 "/modifyspeed <playername> <number>"
                 ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 10 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 5 9999 13 true",
+                "/effect ". @plr ." 10 9999 5 true",
+                "/effect ". @plr ." 21 9999 9 true",
+                "/effect ". @plr ." 11 9999 3 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
             )
 )
