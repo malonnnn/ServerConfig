@@ -1,12 +1,76 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eBazooka§e «×»
+      lore:
+      - §eRocket launcher.
+      - §eFire down at your
+      - §efeet to rocket-jump.
+      - §eNegates fall damage.
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ۔ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 62
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 63
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 30
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_STAIRS
+health: 31.0
+hunger: 17
+exp: 0.6363636
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 0.71511215
 armor_contents: {}
 ender_chest:
   '13':
@@ -62,3 +126,16 @@ ender_chest:
         §0       Decryption§0
         §0       Device
       generation: 0
+potion_effect:
+  '0':
+    type: SPEED
+    level: 2
+    duration: 182095
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 166046
+  '2':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 5257

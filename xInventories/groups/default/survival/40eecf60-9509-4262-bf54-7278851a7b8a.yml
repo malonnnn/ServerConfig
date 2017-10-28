@@ -1,118 +1,81 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bKa-me-ha-me-ha§b «×»
+    type: DIAMOND_AXE
+    damage: 47
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+    type: STRING
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §5I§4n§af§ei§9n§6i§5t§4y §7Si§fl§7ver §7Su§fr§7fer §e§lD§a§lN§4§lA
-      lore:
-      - infinitysilversurfer
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: STICK
+    amount: 3
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §5I§4n§af§ei§9n§6i§5t§4y §5T§9h§ea§8n§9o§6s §e§lD§a§lN§4§lA
-      lore:
-      - infinitythanos
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-health: 100.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+    type: SEEDS
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SADDLE
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 85
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: WATER_BUCKET
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+health: 50.0
+hunger: 1
+exp: 0.26315805
+exp-level: 6
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.3493116
-ender_chest: {}
-armor_contents:
-  boots:
+exhaustion: 3.7686386
+ender_chest:
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: SKULL_ITEM
+    damage: 3
+    amount: 14
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE2SyY6jVgBF6VYiVZc6f5FdqcRsQEovbAM2mMc8vk2LmcdkbIMZvikfGdcui7u5ukc6i/uOYe/YT6eZ2ta8XwvU5m/YdyXD/k5ohuQIPv3kMr74ZISk+BTogvvkM27HskSeEVTyjr2/oCG/jyh//MDexnwZp3v+eMcw7Nsb9sNBZR9/Nd//Tbg87KngahZh84SyPwvgvDg4vC16Pa7m+DCf1zXxcj722YqQLtOQ06xDKltnbHVXNePJ37kUUtNpBzTBL5cZbB2pHhOOscndU2s1Lj+NTfJkqN1EcwvxkUT3ZItkKWPEyNM6zjgR21BABJhp20SG6i/oVg6JcXfqiUdhgM6QHu1DlgBwuwQN8xFR8MHdgtaEMQ0t2McJpdtmhW956T8nDYht5/NBqgQJjJn27IwD5OZulD5kx5kueXCmtWi9BNPK9xeVjxpcIjcJhxf7xhLOONd0vnW1zvqISQNBs44T2bKNbPZL5nragYHlIDTs6lBmEK5ONkmFrsYpT8vDFTJj72w4R06lwNyc8UGRfK95k5E1Ad/YIILxZnX0QVHZHdQsvmGT3iS6u9aJtG/izXj07VMBYGjtRy8tFOajGO4yOJex5l3XnKCzkfd6O7YqUjcyf4l3WRLi+2ugq4DGB2HMDPoaseRtc6IJ1dNeXHqydtqnuiCm9j8SAkeGcrfX27hPZTeTy6czU1BwIRmfdCRQzqE+hZun0KtUGa7cbPPDgT3otB64CZdeYjx5/S8uc+bWLAasFmeSzvftCYSD/pxDCRXp1itwKcNyPBa0JYbXPOus4UZKsOlxGbizZVoL+WQOjCw5Ehk0JgvFCm+aUQ0fhFlmpuodSk0qz8oh3edtK+wGpJDMemt+vWF/+nE75d/+yVeViAOyTWm7SsI9MmqJBGJK6htgX9n0zXso/WFNKDgkJ1+FR2WndMqmixINxKrWKYuBtcVGXcQCKqKNk0XrtUeCk98AUUUKmlF6Vp+wax/QY6sk8JCB1MLu/Q0GdhwFZJXSfvG1y04+k539FYYAGf0DecSoukjZvRzJtJu/uGt2tmcD8c//backaCcY6GsUQELr2DY7CgQMKyIL1VbbPAoGL99ab0FdVUDMar1W5qiWke56lO5aLAjsVncPDXT1Frp7MqLAGlF2p4s+gm6LdMpbwAm8mBZFLmyVnhQK69cvDHvD/tDjLsf++i1PjzyDcRc/pt8Y9h8/Pm1xdAQAAA==
+      skull-owner: _FusedZamasu_
+armor_contents: {}
 potion_effect:
   '0':
     type: SPEED
-    level: 8
-    duration: 196717
+    level: 10
+    duration: 191891
   '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 194043
-  '2':
-    type: REGENERATION
-    level: 1
-    duration: 194043
-  '3':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 194043
-  '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 194043
-  '5':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 194043
-  '6':
     type: HEALTH_BOOST
     level: 19
-    duration: 194043
+    duration: 187546
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 187546
+  '3':
+    type: FAST_DIGGING
+    level: 20
+    duration: 187768
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 149323
+  '5':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 140271
+  '6':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 187546
+  '7':
+    type: REGENERATION
+    level: 1
+    duration: 140271

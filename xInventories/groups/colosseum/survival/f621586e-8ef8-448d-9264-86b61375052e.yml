@@ -1,20 +1,20 @@
-health: 9.44788932800293
-hunger: 11
+health: 0.627617597579956
+hunger: 14
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.3110092
+exhaustion: 1.652022
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: WOOD_SWORD
-    damage: 23
+    damage: 31
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
-    damage: 5
+    damage: 1
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -52,11 +52,11 @@ inventory:
   '8':
     ==: org.bukkit.inventory.ItemStack
     type: WOOD_SWORD
-    damage: 11
+    damage: 24
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: ARROW
-    amount: 4
+    amount: 8
   '10':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
@@ -110,33 +110,112 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_BOOTS
-    damage: 14
+    damage: 54
   '37':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_LEGGINGS
-    damage: 14
+    damage: 54
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_CHESTPLATE
-    damage: 14
+    damage: 54
   '39':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
+    damage: 54
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+  '21':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
     damage: 14
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_SWORD
+    damage: 23
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 29
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 29
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 29
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 14
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 14
+  '28':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 14
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    damage: 14
+  '30':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 29
+  '31':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_SWORD
+    damage: 16
+  '32':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_SWORD
+    damage: 29
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    damage: 30
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_SWORD
+    damage: 41
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 15
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_INFINITE: 1
 armor_contents:
   helmet:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_HELMET
-    damage: 14
+    damage: 54
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_CHESTPLATE
-    damage: 14
+    damage: 54
   leggings:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_LEGGINGS
-    damage: 14
+    damage: 54
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_BOOTS
-    damage: 14
+    damage: 54

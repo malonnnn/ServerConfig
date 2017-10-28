@@ -1,175 +1,55 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
-      Unbreakable: true
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 18
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 62
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_CHICKEN
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_PICKAXE
-    damage: 192
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: FLINT
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
-    amount: 9
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
-    amount: 10
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: STICK
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 31
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: WORKBENCH
-  '16':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 21
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 64
-  '18':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_STEP
-    damage: 3
-    amount: 2
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-  '21':
-    ==: org.bukkit.inventory.ItemStack
-    type: SHEARS
-    damage: 8
-  '25':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_INGOT
-    amount: 31
-  '26':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 64
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 64
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-    amount: 64
-  '29':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_MUTTON
-    amount: 64
-  '30':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 3
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_FISH
-    damage: 1
-    amount: 4
-  '33':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_CHICKEN
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: TIPPED_ARROW
-    amount: 5
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      potion-type: minecraft:slowness
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 18
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 60.0
-hunger: 20
-exp: 0.45454547
-exp-level: 2
+health: 40.0
+hunger: 5
+exp: 0.0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 0.20000029
-exhaustion: 2.2569525
+saturation: 0.0
+exhaustion: 1.4795971
 potion_effect:
   '0':
+    type: SPEED
+    level: 50
+    duration: 194830
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 193656
+  '2':
     type: FAST_DIGGING
     level: 10
-    duration: 182837
-  '1':
-    type: REGENERATION
-    level: 1
-    duration: 173146
-  '2':
-    type: JUMP
-    level: 5
-    duration: 191038
+    duration: 191699
   '3':
+    type: JUMP
+    level: 3
+    duration: 194166
+  '4':
     type: INCREASE_DAMAGE
     level: 10
-    duration: 173146
-  '4':
-    type: HEALTH_BOOST
-    level: 9
-    duration: 173146
+    duration: 193656
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 193656
