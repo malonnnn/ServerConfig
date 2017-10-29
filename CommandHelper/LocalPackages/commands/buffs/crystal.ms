@@ -13,12 +13,15 @@
                 "/buff",
                 "/jump 0-2",
                 "/run 0-3",
+                "/fly",
+                "/earth",
                 "/wind <playername>",
                 "/crystallightning",
                 "/fireballpunch <on/off>",
                 "You can throw a fireball with your bare hand"
             ),
             'buffs': array(
-                "/shot give ". @plr ." icebeam"              
+                "/shot give ". @plr ." icebeam",
+                "/effect ".@plr." 5 9999 5 true"
             )
         )
