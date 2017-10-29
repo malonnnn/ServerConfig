@@ -12,9 +12,12 @@ register_command(crystallightning,
             if(!has_bind(@player.'crystalLightning')){
                 console('binded!')
                 bind(entity_damage,array('id':@player.'crystalLightning'),array('cause':'LIGHTNING'),@e,@player){
+                    console('bind fired!')
                     if(@player == player()){
                         cancel()
                         unbind()
+                    }else{
+                        console(@e)
                     }
                 }
             }
