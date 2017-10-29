@@ -14,7 +14,7 @@
                 "/jump 0-2",
                 "/run 0-3",
                 "/wind <playername>",
-                "/lightning,
+                "/crystallightning",
                 "/fireballpunch <on/off>",
                 "You can throw a fireball with your bare hand"
             ),
