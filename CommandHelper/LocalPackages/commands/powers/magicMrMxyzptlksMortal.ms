@@ -1,35 +1,12 @@
 register_command(magicmrmxyzptlksmortal, 
-
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.magicmrmxyzptlksmortal',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-            
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /magicmrmxyzptlksmortal <player>');
-                die(); # No need to go further					
-            
+                return(false) 
             }
             @plr = player()
             @player = @args[0]
@@ -54,6 +31,8 @@ register_command(magicmrmxyzptlksmortal,
                 //     die()
                 // }
                 // acc_subtract(@plr,1000)
+                include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+                _coolDown('magicmxymortal',60,@plr)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
                 set_timeout(3000,closure(

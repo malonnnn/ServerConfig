@@ -8,11 +8,7 @@ register_command(kill,
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
-            
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /blackring <player>');
-                die(); # No need to go further					
-            
+                return(false) 
             }
             
             @plr = player()
@@ -38,14 +34,9 @@ register_command(kill,
             //     acc_subtract(@plr,1000)
             // }
 
-            assign(@cooldown, 10)
-            assign(@lastUsedKill, import(@plr."lastUsedKill"))
-            if(@lastUsedKill + @cooldown > time() / 1000,
-                assign(@timeleft, subtract(add(@lastUsedKill, @cooldown), divide(time(),1000)))
-                tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use mind control again!'))
-                die()
-            )
-            export(@plr."lastUsedKill", time() / 1000)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('kill',60,@plr)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             broadcast(@plr." exploded the body of ".@vic)
             pkill(@vic)
             die()
