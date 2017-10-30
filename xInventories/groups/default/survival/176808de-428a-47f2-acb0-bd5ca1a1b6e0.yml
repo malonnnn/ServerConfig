@@ -1,20 +1,60 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §eN§6aruto §e§lD§a§lN§4§lA
+      lore:
+      - naruto
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §bD§3o§bct§3o§br §bM§3a§bnhatt§3a§bn §e§lD§a§lN§4§lA
+      lore:
+      - doctormanhattan
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 health: 20.0
-hunger: 15
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: -20
-saturation: 0.0
-exhaustion: 2.5310957
+fireTicks: 1
+saturation: 2.0
+exhaustion: 0.5003121
 ender_chest: {}
 potion_effect:
   '0':
     type: SPEED
     level: 50
-    duration: 199592
-  '1':
-    type: JUMP
-    level: 3
-    duration: 198863
+    duration: 199634
