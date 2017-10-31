@@ -1,13 +1,8 @@
 register_command(bodyslide, 
-
     array(
-    
         description: 'Powerslide',
-        
         permission: 'ch.alias.bodyslide',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {
         
             @player = player()
@@ -26,13 +21,12 @@ register_command(bodyslide,
                                 tmsg(@player,color(red).'Lock on successful! Teleporting...')
                                 set_timeout(1000,closure(
                                     runas(~console,'/minecraft:tp '.@player.' '.@plr)
+                                    die()
                                 ))
                             ))
-                        }else{
-                            tmsg(@player,color(red).'Error! Cable not found!')
-                            die()
                         }
                     }
+                    tmsg(@player,color(red).'Error! Cable not found!')
                 ))
             }else{
                 tmsg(@player,color(red).'Locating Deadpool...')
@@ -44,13 +38,12 @@ register_command(bodyslide,
                                 tmsg(@player,color(red).'Lock on successful! Teleporting...')
                                 set_timeout(1000,closure(
                                     runas(~console,'/minecraft:tp '.@player.' '.@plr)
+                                    die()
                                 ))
                             ))
-                        }else{
-                            tmsg(@player,color(red).'Error! Deadpool not found!')
-                            die()
                         }
                     }
+                    tmsg(@player,color(red).'Error! Deadpool not found!')
                 ))
             }
             
