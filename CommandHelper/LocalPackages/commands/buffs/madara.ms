@@ -11,19 +11,12 @@
              'speech':"I will make a new world of only peace.",
              'powers': array(
                  "/buff",
-                 "/jump 0-6",
-                 "/run 0-7", 
-                 "/haste 0-5",
-                 "/mindcontrol <playername>",
-                 "/stopmindcontrol",
-                 "/confuse <player>"
-                 
-                 
+                 "/jump 0-2",
+                 "/run 0-2", 
+                 "/haste 0-2"
               ),
               'buffs': array(
-                  "/effect ". @plr ." 5 9999 11 true", 
-                  "/give ". @plr ." minecraft:diamond_hoe 1 16:125 19:12 name:&1M&4a&1d&4a&1r&1a&4s_&1D&4e&1a&4t&1h_&4S&1i&4c&1k&4l&1e",
-                  "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts",
-                  "/effect ". @plr ." 21 9999 9 true" 
+                  "/effect ". @plr ." 5 9999 5 true", 
+                  "/give ". @plr ." minecraft:diamond_hoe 1 16:10 name:&1M&4a&1d&4a&1r&1a&4s_&1D&4e&1a&4t&1h_&4S&1i&4c&1k&4l&1e"
               )
          )
