@@ -1,19 +1,50 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
+    type: RAW_FISH
+    damage: 2
   '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 261
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 382
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 312
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 384
+  '5':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §7Pistol§7 «× | ×»
-  '2':
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eHunting Rifle§e ▪ «×»
+      lore:
+      - §eBolt-action rifle with high accuracy.
+      - §eEquipped with a night vision scope.
+      - §eDeals double damage on headshots.
+  '8':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
@@ -25,117 +56,25 @@ inventory:
       - §eFire down at your
       - §efeet to rocket-jump.
       - §eNegates fall damage.
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eHunting Rifle§e ۔ «×»
-      lore:
-      - §eBolt-action rifle with high accuracy.
-      - §eEquipped with a night vision scope.
-      - §eDeals double damage on headshots.
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 62
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 63
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 64
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 30
-  '11':
+    type: RED_ROSE
+    damage: 5
+  '10':
     ==: org.bukkit.inventory.ItemStack
-    type: SMOOTH_STAIRS
-health: 31.0
-hunger: 17
-exp: 0.6363636
-exp-level: 2
+    type: WOOD_SWORD
+health: 40.0
+hunger: 20
+exp: 0.0769231
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.71511215
+exhaustion: 2.683159
 armor_contents: {}
-ender_chest:
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: WRITTEN_BOOK
-    meta:
-      ==: ItemMeta
-      meta-type: BOOK_SIGNED
-      title: Tablet
-      author: _Vigilance_
-      pages:
-      - |-
-        -------------------§0
-        §0
-        §2Lights On: §a§l(-)§0
-        §0
-        §2Lights Off: §a§l(-)§0
-        §0
-        §2Sentry On: §a§l(-)§0
-        §0
-        §2Sentry Off: §a§l(-)§0
-        §0
-        §2Portal On: §a§l(-)§0
-        §0
-        §2Portal Off:§a§l (-)§0
-        §0------------------
-      - |
-        §lFrequency Generator:§0
-        §0§l----------------§0
-        §6§lType A: [§e§k;;;;;;;;;;;;;;;;;;;;;;;;§6§l]§0
-        §0
-        §2§lType B: [§a§k;;;;;;;;;;;;;;;;;;;;;;;;§2§l]§0
-        §0
-        §4§lType C: [§c§k;;;;;;;;;;;;;;;;;;;;;;;;§4§l]§0
-        §0
-        §9§lType D: [§b§k;;;;;;;;;;;;;;;;;;;;;;;;§9§l]§0
-      - |-
-        §l[                    ]§0
-        §0§l[                    ]§0
-        §0§l[                    ]§0
-        §0§l[                    ]§0
-        §0§l --------------§0
-        §0
-        §0
-        §0§l[1] [2] [3] [4] [5]§0
-        §0§l[6] [7] [8] [9] [0]§0
-        §0
-        §0§l[A] [B] [C] [D] [E]§0
-        §0
-        §0§l _[ Space Bar ]_
-      - |-
-        §5§k'''''''''''''''''''''''''''''''''''''';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;'''''''''''''''''''''''''''''''''''''';;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;§0-------------------§0
-        §0       Decryption§0
-        §0       Device
-      generation: 0
+ender_chest: {}
 potion_effect:
   '0':
-    type: SPEED
-    level: 2
-    duration: 182095
-  '1':
     type: HEALTH_BOOST
     level: 4
-    duration: 166046
-  '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 5257
+    duration: 197211
