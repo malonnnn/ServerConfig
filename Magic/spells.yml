@@ -2716,3 +2716,45 @@ tsunami:
         bypass_build: true
     costs:
         mana: 150
+darkpound:
+    icon: diamond_axe:178
+    icon_disabled: diamond_hoe:178
+    icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+    category: combat
+    worth: 100
+    earns_sp: 8
+    actions:
+        cast:
+        cast:
+        - class: Velocity
+        - class: Repeat
+          actions:
+          - class: ConeOfEffect
+            actions:
+            - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: HelixEffect
+             iterations: 2
+             radius: 5
+             particle: redstone
+             color: 5400db
+    parameters:
+        allow_max_range: true
+        target: other
+        target_type: Entity
+        range: 5
+        fov: 360
+        damage: 15
+        push: 4
+        target_breakables: 1
+        cooldown: 5000
+        magic_damage: false
+        instant_block_effects: true
+        living_entity_speed: 1
+        yaw_offset: 20
+        repeat: 9
+    costs:
+        mana: 50
