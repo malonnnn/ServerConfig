@@ -11,14 +11,8 @@
             'powers': array(
                 "/buff",
                 "/ma (this is his iron attack!)",
-                "/psypush <playername>",
-                "/disarm",
-                "/jump 0-1",
-                "/run 0-1",
-                "/haste 0-1"
+                "/psypush <playername>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 4 true",
-                "/effect ". @plr ." 11 9999 2 true" 
             )
         )
