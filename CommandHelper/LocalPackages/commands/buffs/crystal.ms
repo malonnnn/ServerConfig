@@ -14,6 +14,7 @@
                 "/jump 0-2",
                 "/run 0-3",
                 "/fly",
+                "/cast tsunami",
                 "/earth",
                 "/wind <playername>",
                 "/crystallightning",
