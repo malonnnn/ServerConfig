@@ -5,12 +5,12 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.901113
+exhaustion: 3.0470533
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
     type: BOW
-    damage: 74
+    damage: 31
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -26,23 +26,23 @@ inventory:
       display-name: Spleef Shovel
       enchants:
         DIG_SPEED: 5
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §cArrow §6Gun§6 «1»
+      display-name: §cArrow §6Gun§6 «0»
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: TNT
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: TNT
-    amount: 29
+    type: ARROW
+    amount: 2
 potion_effect:
   '0':
     type: NIGHT_VISION
     level: 1
-    duration: 473
+    duration: 3573
