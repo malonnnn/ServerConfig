@@ -11,7 +11,8 @@
             'powers': array(
                 "/buff",
                 "/ma (this is his iron attack!)",
-                "/psypush <playername>"
+                "/psypush <playername>",
+                "/disarm"
             ),
             'buffs': array(
             )
