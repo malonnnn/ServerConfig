@@ -2,13 +2,13 @@
 
 
 @hero = associative_array(
-            'name': '§6St§da§3r §3Butte§5rfly',
+            'name': '§3S§et§ca§5r §5B§3u§ctt§ee§3r§cf§3l§5y',
             'class': 'starbutterfly',
-            'sig': 'nmuA51rsqyRqrEFbou6BRd/wVK9Moe4P5d5jGg2Ax9fy3urgbySsFZPpx3BhH7HBQqweeg5TepqP+aUDUPVYcVRKob1iXvucAuAPAE5AvrmI+gEUuvf7srU5Zt4chOZm1ijG+hP5f1Ke+gBkX77iXHMz3sN7xsGBOxISqbVnEsZnDomGP15q6VT4CNDSCco7lppYqnehULLir5q2UAxZYrYgFdZRRc7bPchg54pWAWOlFPpeZJ+YiVTdzoSdcPcVR6PH33PJCIKy0DhHAUoSGZe60ByfJRIy7ACPjfy+9zgogaivaZZ2L50E8u5V28NKlYgcvO1G1q1vNjdGz2ZhKuB85Av1YMAudQFLIXZv9uXsCxpMsLi42M0+TPZUPd6b4gl2jjTKWt162fYj9vTKkxn8E37lGaTXYS7709W9gRsdqxVVYGrsHeq6d8Q8o+oaJyO77anEgPJQsF0gRsI/NywFQg1FVtu+42rOH/2kZPQ4RSejgLQaD5Mgocv7eBzRKz5sPCAKJg4wisA63KXXhzKX0bvSXZRAEM0xE9bcGiNVCSEz1LAUd3MdgipWSedSCqMtZ5aWyzvNJHtPzl0TsdQDZObC7bug5vouwMRNZnUUAUMuuvLmBcV6VfhdFZYpkzlkwBupDiPXqq9gauiRSvDJgsipPpW8ds7/kPJbP98=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0ODc5MDE1ODY2OTcsInByb2ZpbGVJZCI6ImJkNmY2MjIyMGI3NTQ2OTg4YzgzZmExY2EyYWZiMmU5IiwicHJvZmlsZU5hbWUiOiJDaDFja2VuIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZhMWRiM2E5M2JkMDNmNTY3YjM5NmRhMmU0NjgyMTc5NGM0ZWQ3NWFmZWRkYmRkNGRkOTRhYzc4ZTk5YWUifX19',
+            'sig': 'ZeVEQeOd8UouZ9/mk7RGKcaGHMQZDNeZAXzVQM2X6jaSG7P2jTl/aztoIddHaVLUmiIDBayhnofYS7BJjkGC2rVWQoB18knWMsgsBaGffbVaAHrtedEnE4T55BkhvAgFCAKfirh5XYCL3EhNbGtZe8XRStaDuB+irJDCEkcwD5JxJXO0U1aFKx2CvMK6WYggo+hWTMYGAvKmTFeVCOUXl4fYHYzwT+mXcamvzMQoK2kvWc8X2N2UTq++U4ulmM6kzrxTx0ZR2uOcKKIHcvUcL943jFSnPNp8ncm0BuLR4KbtSORuNe7IoRQXcGvZSqJRWApOes0xnkxJMzVN9wZjDW5ugqYa49S1KblousN9p8/DL3bha8XyRdFi75H9TBJiYkbmqbnl4MhzgavDTsEq+XmQIfZmjsIl6YbT7Kd7KZDB9YQEroexGVWbztZt3R4excsqq2NproUBiFQmc0DFVP3ziImueSOn/Uq6/sKKrisX/YgC7z/wI/j3y8X7l7Q0EQL15KwTc0LXfYPz7lcd77sODE0gTvQiO57DyULpVHilel4kTiH/1y3DOqHw9Co9wqnl5CcbfdKg3txGFpB6M0tipAyK6tzUmwZUNAcU1eRU9VNIMUvMbyzh+dCcaLWQPw2KKPYcd8Z8nWLA5MnImd1yg4Z8Sj3kmKrO/kuUtuE=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MDk2NTA0MDUwMDksInByb2ZpbGVJZCI6ImZiYjhjMDcyNGM0YjQ5Yzg5NDhiMjZlOGFkNzMwOTllIiwicHJvZmlsZU5hbWUiOiJpaVNpbXFseVN0cXIiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mYzFmNDA5ZDlmY2NmNDJhY2FjMTc2Y2ZkYTg3NWZiZWFhYjFmMjdjOWMyNWMwNzViZjQxMjQxYTcwYWNiZDNiIn19fQ==',
             'trail': '',
             'op': 'true',
-            'speech': "Super, rainbow, narwhail BLAST!",
+            'speech': "Super, rainbow, narwhal BLAST!",
             'powers': array(
                 "/buff",
                 "/gmc",
@@ -19,8 +19,8 @@
                 "/tppos"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:stick 1 name:&6S&3t&5ar's_&5Wa&en&5d",
-                "/give ". @plr ." minecraft:shears 1 name:&6S&3t&5ar's_&5Scissors",
+                "/give ". @plr ." minecraft:stick 1 name:&3S&et&ca&5r's_&3W&ea&en&5d",
+                "/give ". @plr ." minecraft:shears 1 name:&3S&et&ca&5r's_&3Sc&eis&cso&5rs",
                 "/shot give ". @plr ." redenergybeam",
                 "/shot give ". @plr ." whiteenergybeam",
                 "/shot give ". @plr ." yellowenergybeam",
