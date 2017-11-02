@@ -1,14 +1,4 @@
 inventory:
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -19,6 +9,20 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Beerus §dBall§d «×»
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -30,24 +34,20 @@ armor_contents:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 40.0
+health: 43.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.7853317
+exhaustion: 2.364355
 potion_effect:
   '0':
     type: HEALTH_BOOST
-    level: 4
-    duration: 199349
+    level: 19
+    duration: 198063
   '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 199349
-  '2':
-    type: REGENERATION
-    level: 3
-    duration: 199349
+    type: WATER_BREATHING
+    level: 1
+    duration: 198063
