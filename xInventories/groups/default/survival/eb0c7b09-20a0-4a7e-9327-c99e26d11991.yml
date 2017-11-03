@@ -1,55 +1,16 @@
-health: 40.0
-hunger: 6
-exp: 0.14285715
-exp-level: 0
+health: 100.0
+hunger: 0
+exp: 0.6451613
+exp-level: 12
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.01004
+exhaustion: 1.0821624
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: BONE
-    amount: 57
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 300
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: TORCH
-    amount: 62
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRAVEL
-    amount: 53
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: FLINT
-    amount: 2
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 64
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 111
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -57,18 +18,11 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: SEEDS
-    amount: 2
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 37
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 111
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -162,13 +116,29 @@ ender_chest:
 potion_effect:
   '0':
     type: HEALTH_BOOST
-    level: 4
-    duration: 158942
+    level: 19
+    duration: 113682
   '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 158942
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 113682
   '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 113682
+  '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 113682
+  '4':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 113682
+  '5':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 113682
+  '6':
     type: REGENERATION
     level: 1
-    duration: 158942
+    duration: 113682
