@@ -14,7 +14,7 @@
                 "/d wolf"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 21 9999 9 true",
                 "/give ". @plr ." minecraft:iron_sword 1 16:2 name:&2Li&7n&2k's_Sw&7or&2d"               
             )
         )
