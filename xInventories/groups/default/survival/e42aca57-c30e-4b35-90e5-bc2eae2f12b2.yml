@@ -1,32 +1,42 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: STICK
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §4Fl§ea§4sh§8(BarryA§8) §e§lD§a§lN§4§lA
-      lore:
-      - flashbarryallen
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      meta-type: UNSPECIFIC
+      display-name: §6Baseball Bat
+      enchants:
+        DAMAGE_ALL: 2
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Crow Bar
+      enchants:
+        DAMAGE_ALL: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: CAKE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Cake §4Bomb§6!§6
 health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.7920325
+saturation: 10.0
+exhaustion: 1.7513152
 armor_contents: {}
