@@ -15,7 +15,7 @@
                 "/dismountplayer"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
+                "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/effect ". @plr ." 11 9999 2 true",
                 "/give ". @plr ." minecraft:iron_bars 1 16:10 name:&6S&ea&fbe&6r&et&6oo&ft&eh's_&7Claws"                
