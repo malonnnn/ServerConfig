@@ -1,13 +1,15 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BLOCK
+    type: STAINED_GLASS
+    damage: 13
   '5':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_CHESTPLATE
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
+    type: CONCRETE
+    damage: 15
   '9':
     ==: org.bukkit.inventory.ItemStack
     type: DISPENSER
@@ -51,9 +53,10 @@ inventory:
   '32':
     ==: org.bukkit.inventory.ItemStack
     type: STONE
+    amount: 2
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: DARK_OAK_DOOR_ITEM
+    type: GOLD_PLATE
   '6':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_LEGGINGS
@@ -83,9 +86,6 @@ inventory:
   '26':
     ==: org.bukkit.inventory.ItemStack
     type: SIGN
-  '28':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER_LEGGINGS
   '29':
     ==: org.bukkit.inventory.ItemStack
     type: LEATHER_BOOTS
@@ -113,10 +113,11 @@ inventory:
     amount: 62
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: STEP
+    type: LAVA_BUCKET
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
+    type: DIAMOND
+    amount: 64
   '24':
     ==: org.bukkit.inventory.ItemStack
     type: SAPLING
@@ -124,8 +125,18 @@ inventory:
     amount: 64
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 15
+    type: STAINED_GLASS
+    damage: 4
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 64
 health: 20.0
 hunger: 20
 exp: 0.0

@@ -1,13 +1,16 @@
-# !---------------------------------------------------------!
-# ! File automatically updated at 10.05.2017 13:38:06
-# ! to plugin version v7.3.13
-# !---------------------------------------------------------!
-# ! Unfortunatelly due to how Bukkit handles YAML
-# ! configurations, all comments (#) were wiped. 
-# ! 
-# ! For reference values and comments, open
-# ! messages.yml in the plugin .JAR file.
-# !---------------------------------------------------------!
+# -------------------------------------------------------------------------------------------
+# 
+#  Your file has been automatically updated at 06.11.2017 18:16:57
+#  to ChatControl 7.6.8
+# 
+#  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
+#  preserve the documentation comments in your file. We apologies.
+# 
+#  If you'd like to view the default file, you can either:
+#  a) Open the chatcontrol.jar with a WinRar or similar
+#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+# 
+# -------------------------------------------------------------------------------------------
 
 Hide_Join_Quit_Kick_Messages: false
 Join_Message:
@@ -29,14 +32,15 @@ Join_Message:
       - '&8[&2+&8] &7All say hey to &e{player} &7for joining!'
       - '&8[&2+&8] &7Watch out for &c{player} &7joining!'
     jubileum_message:
-      Condition: player.getStatistic(Java.type("org.bukkit.Statistic").LEAVE_GAME) == 99
+      Condition: player.getStatistic(Java.type("org.bukkit.Statistic").LEAVE_GAME)
+        == 99
       Message: |-
         &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         &e&l{player} &ejoined the server 100th time!
         &6~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Quit_Message:
   Enabled: false
-  Message: "&8[&c-&8] &b{player}"
+  Message: '&8[&c-&8] &b{player}'
 Kick_Message:
   Enabled: false
   Message: default
@@ -152,4 +156,4 @@ Broadcaster:
     - "This is an example of multi-line.\nUse it if the new line character \nis not\
       \ working for you."
     - This is another message, this time only on one line!
-
+  Sound: none

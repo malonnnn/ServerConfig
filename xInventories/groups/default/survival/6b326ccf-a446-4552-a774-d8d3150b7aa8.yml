@@ -1,83 +1,6 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: Sword Of Angels
-      enchants:
-        DAMAGE_ARTHROPODS: 5
-        KNOCKBACK: 2
-        DURABILITY: 3
-        ARROW_DAMAGE: 5
-      repair-cost: 15
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: FURNACE
-    amount: 6
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 32
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        FROST_WALKER: 2
-      repair-cost: 127
-  '37':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 26
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 38
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  '39':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 30
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  '5':
-    ==: org.bukkit.inventory.ItemStack
     type: LEASH
     meta:
       ==: ItemMeta
@@ -86,100 +9,40 @@ inventory:
       enchants:
         DAMAGE_ALL: 10
 health: 100.0
-hunger: 20
+hunger: 11
 exp: 0.8421053
 exp-level: 6
 remainingAir: 300
 fireTicks: -20
-saturation: 12.8
-exhaustion: 2.9890697
-armor_contents:
-  helmet:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 30
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 38
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  leggings:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 26
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        DEPTH_STRIDER: 3
-      repair-cost: 127
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-    damage: 32
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        PROTECTION_ENVIRONMENTAL: 4
-        PROTECTION_FALL: 4
-        OXYGEN: 3
-        WATER_WORKER: 1
-        THORNS: 3
-        FROST_WALKER: 2
-      repair-cost: 127
+saturation: 0.0
+exhaustion: 1.1127106
+armor_contents: {}
 potion_effect:
   '0':
-    type: NIGHT_VISION
-    level: 1
-    duration: 133416
-  '1':
     type: HEALTH_BOOST
     level: 19
-    duration: 133416
-  '2':
+    duration: 104923
+  '1':
     type: FAST_DIGGING
     level: 50
-    duration: 172982
+    duration: 144489
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 104923
   '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 104923
+  '4':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 133416
-  '4':
-    type: REGENERATION
-    level: 2
-    duration: 194415
+    duration: 104923
   '5':
     type: INCREASE_DAMAGE
     level: 19
-    duration: 133416
+    duration: 104923
   '6':
-    type: WATER_BREATHING
-    level: 1
-    duration: 133416
+    type: REGENERATION
+    level: 2
+    duration: 165922
