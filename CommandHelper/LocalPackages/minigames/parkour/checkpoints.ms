@@ -1,22 +1,20 @@
 # checkpoint system for players in parkour
 register_command(cp, 
-
     array(
-    
         description: 'Create Checkpoint',
-        
         usage: '/cp',
-        
         permission: 'ch.alias.cp',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {
                 
                 @plr = player()
-    
-                @pinfo = pinfo(@plr)
                 
+                if(pmode(@plr) == 'SPECTATOR'){
+                    msg(color(RED).'Sorry, you cannot use that in spectator mode')
+                    die()
+                }
+                @pinfo = pinfo(@plr)
+
                 @world = @pinfo[7]
                 @coords = @pinfo[1]
                 
@@ -36,17 +34,11 @@ register_command(cp,
     )
 )
 register_command(gc, 
-
     array(
-    
         description: 'Go to Saved Checkpoint',
-        
         usage: '/gc',
-        
         permission: 'ch.alias.gc',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {
                 
                 @plr = player()
