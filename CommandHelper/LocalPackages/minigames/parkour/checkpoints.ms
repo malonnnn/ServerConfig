@@ -33,11 +33,11 @@ register_command(cp,
         }
     )
 )
-register_command(gc, 
+register_command(gcp, 
     array(
         description: 'Go to Saved Checkpoint',
-        usage: '/gc',
-        permission: 'ch.alias.gc',
+        usage: '/gcp',
+        permission: 'ch.alias.gcp',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure() {
                 
