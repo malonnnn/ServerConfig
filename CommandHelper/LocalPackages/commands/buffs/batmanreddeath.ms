@@ -12,9 +12,10 @@
             'speech': "My name is Bruce Wayne. I am vengeance. I am justice. I am...BATMAN RED DEATH!",
             'powers': array(
                 "/buff",
-                "/jump 0-2",
-                "/run 0-2",
-                "/haste 0-2"
+                "/jump 0-5",
+                "/run 0-9",
+                "/haste 0-9"
+                "/run 0-9",
             ),
             'buffs': array(
             )
