@@ -11,6 +11,7 @@
             'speech': "I am the Avenging Angel",
             'powers': array(
                 "/buff",
+                "/fly",
                 "/cast feathershot"
             ),
             'buffs': array(
