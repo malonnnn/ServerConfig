@@ -1,18 +1,118 @@
 inventory:
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BLOCK
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gre§0e§2n A§0r§2row's §8Bow
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gre§0e§2n A§0r§2row's §2Grappling Arrow
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD
-    damage: 1
+    type: STAINED_GLASS
+    damage: 7
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Arrow of §8Slowness
+      potion-type: minecraft:long_slowness
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
+    amount: 64
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
+    amount: 64
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
+    amount: 20
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_fire_resistance
 ender_chest: {}
-health: 20.0
+health: 40.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.18181817
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.1420171
-armor_contents: {}
+exhaustion: 1.5724554
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_CHESTPLATE
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_LEGGINGS
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 198469
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 198469
+  '2':
+    type: INCREASE_DAMAGE
+    level: 1
+    duration: 198469
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 198469
