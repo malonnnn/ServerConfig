@@ -16,7 +16,8 @@
                 "/haste 0-1",
                 "/iron",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "/stealiron"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true"                

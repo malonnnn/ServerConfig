@@ -1,46 +1,55 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §2Gre§0e§2n A§0r§2row's §8Bow
-      enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: ENDER_PEARL
-    amount: 4
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Gre§0e§2n A§0r§2row's §2Grappling Arrow
+      display-name: §eYellow Lightning§e «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
-armor_contents: {}
-health: 34.0
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 38.5
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.5990162
+exhaustion: 0.13100052
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 199709
+    type: SPEED
+    level: 3
+    duration: 199640
   '1':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 199709
-  '2':
-    type: REGENERATION
-    level: 1
-    duration: 199709
-  '3':
     type: INCREASE_DAMAGE
-    level: 1
-    duration: 199709
+    level: 20
+    duration: 198585
+  '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 198585
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198585

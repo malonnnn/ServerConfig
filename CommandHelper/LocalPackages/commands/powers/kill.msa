@@ -1,0 +1,22 @@
+kill:/kill $plr = >>>
+
+            @plr = player()
+            @vic = player($plr)
+
+            if(has_permission(@vic, "kill.immune")){
+                tmsg(@plr, color(red). "Sorry but you can't kill them because they are better than you.")
+                die()
+            }
+
+            if(!has_permission(@vic,'is.incity') && !has_permission(@vic,'in.survival')){
+                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                die()
+            }
+            
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('kill',60,@plr)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            broadcast(@plr." exploded the body of ".@vic)
+            pkill(@vic)
+            die()
+<<<            
