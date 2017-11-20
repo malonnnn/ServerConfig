@@ -1,26 +1,68 @@
 id: e207f46f-ac40-4f49-8b7d-2317c67f1bd0
 name: ArchWarrior
-last_cast: 1499043902008
+last_cast: 1511139056385
 cooldown_expiration: 0
-last_death_location: 2492.244196575837,80.12301615887316,435.36054054401865,survival112_the_end,83.34463,76.278824
+last_death_location: -16.99411888938569,69.0,-213.09819715285255,greenfield,-144.3117,3.7677653
 fall_protection_count: 0
 fall_protection: 0
 brush:
   map_id: 192
   material: dirt
-  data: 0
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
 undo: []
 spells:
+  deadlights:
+    cast_count: 14
+    last_cast: 1511139055292
+    last_earn: 0
+    cooldown_expiration: 1511139061292
   electrictp:
     cast_count: 7
     last_cast: 1499043902008
     last_earn: 0
     cooldown_expiration: 1499043905008
+  expelliarmus:
+    cast_count: 0
+    last_cast: 1511138526436
+    last_earn: 0
+    cooldown_expiration: 1511138536436
+wands:
+  elderwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6expelliarmus§f (§3Elder Wand§f)
+        lore:
+        - §3§oBound to ArchWarrior
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1Qu07DQBDcKE6ww6MAiQYKJCKqGNnmEicNwlKQQCJQRIHSOvv2yAnbZ84X0tJQ8QF8AC0FH8A3UFLzHVQ4jmCr1czuzOy2AFpgzGnGTDA1pnlCNYKFCUO1RBtynqGC1UDF0xuqlJCqAUZKMzrcBjBgY9GGWqRYaJrmALXw6/v5upSrFkPBoI2e43PS4zaNiWMTTgZ2P/KZ7R25ftzzuRsxx4Q15BxjHcYykQoOPJ9Q33Ed4sa002X9rod90iXodZjfI9GA8QESpw4rD6gKITMAaIAFm4HWSkQzjSPJBBcl2SqpmgHmZHI+HMlC/+wf7waPZ2iAtYAukBb6fefj8+Xp7bUJzSCVs0yftKEqE4xxIjWYKRXZtHrJ+r/FJU0Rtm6xPFTEh1RrGt+Nc0RWB+sqR0X1MthCpZrdPL2fiTzFTO/9xQP4BVFv1r+FAQAA
+    wand:
+      template: elderwand
+      owner: ArchWarrior
+      mana: 600.0
+      mana_timestamp: 1511138560854
+      owner_id: e207f46f-ac40-4f49-8b7d-2317c67f1bd0
+      effect_color: 274a701041ca,5d852e8454e2,d764b9df9e40
+      version: 5
 open_wand: false
 gave_welcome_wand: false
-data: {}
+data:
+  sp: 0
 properties: {}
 classes: {}
