@@ -1,7 +1,7 @@
-register_command(throwironswords, 
+register_command(throwfeather, 
     array(
         description: 'Power',
-        permission: 'powers.throwironswords',
+        permission: 'powers.throwfeather',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure() {        
             

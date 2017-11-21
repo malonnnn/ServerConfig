@@ -12,7 +12,8 @@
             'powers': array(
                 "/buff",
                 "/fly",
-                "/cast feathershot"
+                "/cast feathershot",
+                "/throwfeather"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true"               

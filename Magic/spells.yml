@@ -2997,3 +2997,148 @@ feathershot:
         cooldown: 2000
         hitbox: true
         damage: 15
+groundpound:
+    icon: diamond_axe:178
+    icon_disabled: diamond_hoe:178
+    icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+    category: combat
+    worth: 100
+    earns_sp: 8
+    actions:
+        cast:
+        cast:
+        - class: Velocity
+        - class: Repeat
+          actions:
+          - class: ConeOfEffect
+            actions:
+            - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: HelixEffect
+             iterations: 1
+             radius: 5
+             particle: block_crack
+    parameters:
+        allow_max_range: true
+        target: other
+        target_type: Entity
+        range: 5
+        fov: 360
+        damage: 10
+        push: 2
+        target_breakables: 1
+        cooldown: 5000
+        magic_damage: false
+        instant_block_effects: true
+        living_entity_speed: 1
+        yaw_offset: 20
+        repeat: 9
+    costs:
+        mana: 50
+stonetouch:
+    icon: diamond_axe:175
+    icon_disabled: diamond_hoe:175
+    icon_url: http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188
+    category: combat
+    worth: 300
+    earns_sp: 8
+    actions:
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: PotionEffect
+        - class: FallProtection
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.zap_big
+        -  class: EffectSingle
+           sound: magic.zap
+        tick:
+        - location: target
+          particle: redstone
+          color: 4f5051
+          particle_count: 3
+          particle_offset_x: 0.01
+          particle_offset_y: 0.01
+          particle_offset_z: 0.01
+        hit:
+        - class: EffectSingle
+          location: target
+          color: 4f5051
+          firework: ball
+        - class: EffectSingle
+          sound: entity_experience_orb_pickup
+          location: target
+          requires_entity_target: true
+          effectlib:
+             class: SphereEffect
+             particle: redstone
+             color: 666666
+             iterations: 80
+    costs:
+        mana: 100
+    parameters:
+        velocity: 150
+        range: 2
+        target_type: LivingEntity
+        target_breakables: 1
+        target: other
+        duration: 6000
+        effect_slow: 40
+        effect_jump: -20
+        effect_blindness: 10
+        protection_count: 1000
+        hitbox: true
+        cooldown: 10000
+cosmicbolt:
+    icon: diamond_axe:171
+    icon_disabled: diamond_hoe:171
+    icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+    category: staff
+    worth: 50000
+    actions:
+      cast:
+      - class: Kill
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: magic.electrify
+          sound_volume: 5
+          sound_pitch: -0.25
+          location: origin
+          effectlib:
+             class: AtomEffect
+             particleNucleus: spell_mob
+             colorNucleus: "00bbff"
+             particleOrbital: redstone
+             colorOrbital: "00bbff"
+             iterations: 16
+             radius: 5
+        - class: EffectSingle
+          sound: magic.zap_big
+          sound_volume: 1
+          location: origin
+          effectlib:
+             class: ConeEffect
+             iterations: 16
+             particle: spell_mob
+             color: 00bbff
+             lengthGrow: 0.4
+        - class: EffectSingle
+          location: targets
+          color: "00bbff"
+          firework: ball_large
+    parameters:
+        target: other
+        target_type: Damageable
+        cooldown: 500
+        target_breakables: 5
+        bypass_backfire: true
+        bypass_pvp: false
+        range: 64
+    costs:
+        mana: 300
