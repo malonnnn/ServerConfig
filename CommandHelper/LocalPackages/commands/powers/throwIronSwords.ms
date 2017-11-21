@@ -14,15 +14,11 @@ register_command(throwironswords,
             @featherLocation = entity_loc(@feather)
 
             entity_remove(@feather)
-            @feath = drop_item(@featherLocation,array('type':'267'),false)
+            @feath = drop_item(@featherLocation,array('type':'267','meta':array('display': color(GREY).'Iron Feather')),false)
             set_entity_velocity(@feath,@featherVelocity)
 
             export(@player.'archAngelFeather',@feath)
             export(@player.'archAngelFeatherPos',array('x':'','y':'','z':''))
-
-            bind(){
-
-            }
 
             set_interval(50,closure(
                 @feath = import(@player.'archAngelFeather')
@@ -37,8 +33,13 @@ register_command(throwironswords,
                     @oldPos['z'] == @newPos['z']
                 ){
                     clear_task()
-                    entity_remove(@feath)
                 }else{
+                    @plrs = entities_in_radius(@newPos,2)
+                    foreach(@plr in @plrs){
+                        if(is_entity_living(@plr)){
+                            damage_entity(puuid(@plr), 10, puuid(@player));
+                        }
+                    }
                     export(@player.'archAngelFeatherPos',@newPos)
                 }
             ))
