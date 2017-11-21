@@ -1,7 +1,7 @@
 disarm:/disarm = >>>
             @plr = player()
             @ploc = ploc(@plr)
-            @plrs = players_in_radius(@ploc,5)
+            @plrs = players_in_radius(@ploc,20)
 
             foreach(@player in @plrs){
                 @handItem = pinv(@player,null)
