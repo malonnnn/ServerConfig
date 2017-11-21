@@ -16,12 +16,8 @@
                 "/run 0-2",
                 "/haste 0-1",
                 "/cast waterspear",
-                "OctopusForm: Left click a water source and then hold sneak",
-                "Surge: Tap sneak at a water source and click in a direction to fire a surge of water",
-                "WaterBubble: Hold sneak when in range of water to push the water back",
-                "WaterSpout: Left click to activate a spout beneath you and hold spacebar to go higher. If you wish to go lower, simply hold sneak. To disable this ability, left click once again.",
-                "WaterManipulation: Tap sneak on a water source and left click to send a water manipulationto the point that you clicked. Additionally, you can left click again to the point that you clicked."
-                "Torrent: Left click at a water source and hold sneak to form the torrent."
+                "/cast bubble",
+                "/cast stream"
             
             ),
             'buffs': array(
