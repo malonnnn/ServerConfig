@@ -1,7 +1,7 @@
 health: 20.0
 hunger: 20
-exp: 0.8333331
-exp-level: 16
+exp: 0.2553189
+exp-level: 17
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
@@ -9,35 +9,14 @@ exhaustion: 2.4870586
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    meta:
-      ==: ItemMeta
-      meta-type: SPAWN_EGG
-      internal: H4sIAAAAAAAAAONiYOBi4HTNK8ksqQxJTOdgYMpMYRDIzcxLTS5KTCuxqsrPTcpMZWAAADz7vV8oAAAA
-      id: zombie
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fIron Feather
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fIron Feather
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fIron Feather
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: ROTTEN_FLESH
-    amount: 2
+    type: COMMAND
 ender_chest: {}
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 0
+    duration: 287
+  '1':
+    type: REGENERATION
+    level: 0
+    duration: 287
