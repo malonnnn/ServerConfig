@@ -17,7 +17,8 @@
                 "/haste 0-1",
                 "/cast waterspear",
                 "/cast bubble",
-                "/cast stream"
+                "/cast stream",
+                "/cast waterscooter"
             
             ),
             'buffs': array(
