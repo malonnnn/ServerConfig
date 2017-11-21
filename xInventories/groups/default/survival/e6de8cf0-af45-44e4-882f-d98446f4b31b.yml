@@ -16,14 +16,18 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 40.0
-hunger: 20
-exp: 0.16216226
-exp-level: 15
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+health: 36.33333206176758
+hunger: 13
+exp: 0.85714287
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4237891
+exhaustion: 3.4711945
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -40,20 +44,24 @@ potion_effect:
   '0':
     type: SPEED
     level: 2
-    duration: 199895
+    duration: 196768
   '1':
     type: HEALTH_BOOST
     level: 4
-    duration: 189134
+    duration: 196748
   '2':
     type: WATER_BREATHING
     level: 1
-    duration: 189134
+    duration: 196748
   '3':
-    type: INCREASE_DAMAGE
-    level: 0
-    duration: 331
+    type: FAST_DIGGING
+    level: 1
+    duration: 197308
   '4':
-    type: REGENERATION
-    level: 0
-    duration: 331
+    type: JUMP
+    level: 3
+    duration: 197593
+  '5':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 196748
