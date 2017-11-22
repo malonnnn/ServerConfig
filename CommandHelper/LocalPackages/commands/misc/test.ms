@@ -15,7 +15,7 @@
                 "/run 0-3",
                 "/haste 0-2",
                 "/bodyslide",
-                "/tpradius",
+                "/tpradius"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
