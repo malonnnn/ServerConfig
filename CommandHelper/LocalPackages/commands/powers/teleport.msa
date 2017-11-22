@@ -13,11 +13,10 @@ tp:/tp $plr = >>>
         msg(color(RED).'Sorry, that player is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@vic,'is.incity')){
-        msg(color(RED).'Sorry, that player is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
-    }else if(!has_permission(@vic,'in.survival')){
-        msg(color(RED).'Sorry, that player is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
+        if(!has_permission(@vic,'in.survival')){
+            msg(color(RED).'Sorry, that player is in a minigame or other protected area where you can\'t TP to right now.')
+            die()
+        }
     }
 
     runas(~console,'/teleport '.@player.' '.@vic)
@@ -43,22 +42,20 @@ tp:/tp $plr1 $plr2 = >>>
         msg(color(RED).'Sorry, that '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@plr1,'is.incity')){
-        msg(color(RED).'Sorry, that '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
-    }else if(!has_permission(@plr1,'in.survival')){
-        msg(color(RED).'Sorry, that '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
+        if(!has_permission(@plr1,'in.survival')){
+            msg(color(RED).'Sorry, '.@plr1.' is in a minigame or other protected area where you can\'t TP to right now.')
+            die()
+        }
     }
 
     if(has_permission(@plr2,'is.op')){
         msg(color(RED).'Sorry, that '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
         die()
     }else if(!has_permission(@plr2,'is.incity')){
-        msg(color(RED).'Sorry, that '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
-    }else if(!has_permission(@plr2,'in.survival')){
-        msg(color(RED).'Sorry, that '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
-        die()
+        if(!has_permission(@plr2,'in.survival')){
+            msg(color(RED).'Sorry, '.@plr2.' is in a minigame or other protected area where you can\'t TP to right now.')
+            die()
+        }
     }
 
     runas(~console,'/teleport '.@plr1.' '.@plr2)

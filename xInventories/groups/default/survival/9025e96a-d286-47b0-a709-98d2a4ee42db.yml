@@ -1,38 +1,33 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: RED_NETHER_BRICK
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: MONSTER_EGG
-    amount: 64
+    type: POTION
     meta:
       ==: ItemMeta
-      meta-type: SPAWN_EGG
-      internal: H4sIAAAAAAAAAONiYOBi4HTNK8ksqQxJTOdgYMpMYRDMzcxLTS5KTCuxSs7ITM5OzWNgAAB4qmmVKQAAAA==
-      id: chicken
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIRT
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: GLASS
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRASS
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_SPADE
+      meta-type: POTION
+      display-name: §8B§7l§0a§8ck B§0o§7l§8t §e§lD§a§lN§4§lA
+      lore:
+      - blackbolt
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.076923005
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 3.0
-exhaustion: 1.771703
+saturation: 5.0
+exhaustion: 1.5210001
 ender_chest: {}
