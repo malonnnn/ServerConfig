@@ -1,4 +1,15 @@
 groups:
+  avalanche:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&7Av&9a&7la&8nc&9h&7e'
+      suffix: '&b'
+    worlds:
+      superherocity:
+        permissions:
+        - magic.cast.quake
+        - magic.commands.cast
   giganta:
     inheritance:
     - commonherotraits
@@ -14860,7 +14871,6 @@ users:
       name: KoenigMC
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
-    - nocheckgod
     - mortal
     permissions:
     - is.nocheckgod
@@ -15002,15 +15012,12 @@ users:
     - donot.hire
     - is.builder
     group:
-    - mortal
+    - giganta
     options:
       name: RqndomPqrson
       last-login-time: '1511465750'
       last-logout-time: '1511465736'
     worlds:
-      lexstarklabs:
-        permissions:
-        - essentials.build.*
       vigilance_ruined_plots:
         permissions:
         - essentials.skull.*
@@ -18524,6 +18531,7 @@ users:
       last-login-time: '1510455717'
   c87b6eb7-c2fe-43bb-87c7-706abf343ddd:
     group:
+    - police
     - impossibleman
     permissions:
     - is.police

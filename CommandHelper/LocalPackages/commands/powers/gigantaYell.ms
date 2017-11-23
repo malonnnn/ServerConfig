@@ -9,7 +9,7 @@ register_command(gigantayell,
             @ploc = ploc(@player)
             @plrs = players_in_radius(@ploc,100)
 
-            foeach(@plr in @plrs){
+            foreach(@plr in @plrs){
                 if(@plr != @player){
                     damage_entity(puuid(@plr),3,puuid(@player))
                     tmsg(@plr,color(RED).'You have been damaged by Giganta\'s Yell')
