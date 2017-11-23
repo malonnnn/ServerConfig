@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTE0NjU4NDM1NTgsInByb2ZpbGVJZCI6ImU2ZGU4Y2YwYWY0NTQ0ZTQ4ODJmZDk4NDQ2ZjRiMzFiIiwicHJvZmlsZU5hbWUiOiJScW5kb21QcXJzb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iN2FhNjU5Y2YyMWJjNzgyOTIzZTQ3Y2NlYWE4Mzg3ODlmYjhlZjZhNGQ0N2RiNmZkODIyZjE5Yjc3NGFhZSJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "The home is just a world filled with ants!",
+            'speech': "The earth is just a world filled with ants!",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
