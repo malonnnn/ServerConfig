@@ -1,6 +1,6 @@
 health: 20.0
 hunger: 20
-exp: 0.3292681
+exp: 0.51219493
 exp-level: 24
 remainingAir: 300
 fireTicks: -20
@@ -9,50 +9,18 @@ exhaustion: 2.7550116
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
-    meta:
-      ==: ItemMeta
-      meta-type: POTION
-      display-name: §l§c3-D §aMa§an(C&H) §e§lD§a§lN§4§lA
-      lore:
-      - 3dmanchuckandhal
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+    type: BONE
+    amount: 8
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: CARPET
-    damage: 14
+    type: ARROW
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: POTION
+    type: IRON_HELMET
+    damage: 135
     meta:
       ==: ItemMeta
-      meta-type: POTION
-      display-name: §7Av§9a§7la§8nc§9h§7e §e§lD§a§lN§4§lA
-      lore:
-      - avalanche
-      custom-effects:
-      - ==: PotionEffect
-        effect: 9
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
-      - ==: PotionEffect
-        effect: 19
-        duration: 24000
-        amplifier: 1
-        ambient: true
-        has-particles: true
+      meta-type: UNSPECIFIC
+      enchants:
+        DURABILITY: 2
 ender_chest: {}

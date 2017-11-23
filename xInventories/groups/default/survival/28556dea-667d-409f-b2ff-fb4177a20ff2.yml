@@ -1,10 +1,32 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6D§9o§6ct§9o§6r F§9a§6te§8(KN§8) §e§lD§a§lN§4§lA
+      lore:
+      - doctorfatekentnelson
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.61538464
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 0.31100413
+saturation: 0.0
+exhaustion: 1.4120107
 armor_contents: {}
