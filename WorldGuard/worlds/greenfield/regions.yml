@@ -102,9 +102,9 @@ regions:
         min: {x: -28.0, y: 0.0, z: -218.0}
         max: {x: -24.0, y: 255.0, z: -214.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, feed-delay: 1, greeting: §2You
-                are now in SafeZone!, feed-amount: 1, interact: allow, pvp: deny,
-            farewell: §4You are now leaving SafeZone!}
+        flags: {other-explosion: deny, use: allow, invincible: allow, greeting: §2You
+                are now in SafeZone!, feed-delay: 1, feed-amount: 1, interact: allow,
+            pvp: deny, farewell: §4You are now leaving SafeZone!}
         owners: {}
         type: cuboid
         priority: 2
@@ -130,8 +130,8 @@ regions:
         max: {x: -1687.0, y: 255.0, z: 160.0}
         members: {}
         flags:
-            blocked-cmds: [/gmsp, /intangible, /thru]
             invincible: allow
+            blocked-cmds: [/gmsp, /intangible, /thru]
             item-pickup: allow
             invincible-group: MEMBERS
             pvp: deny

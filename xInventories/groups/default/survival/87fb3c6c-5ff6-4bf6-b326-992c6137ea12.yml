@@ -4,7 +4,55 @@ exp: 0.3292681
 exp-level: 24
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.9450006
-inventory: {}
+saturation: 15.0
+exhaustion: 2.7550116
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §l§c3-D §aMa§an(C&H) §e§lD§a§lN§4§lA
+      lore:
+      - 3dmanchuckandhal
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: CARPET
+    damage: 14
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §7Av§9a§7la§8nc§9h§7e §e§lD§a§lN§4§lA
+      lore:
+      - avalanche
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 ender_chest: {}

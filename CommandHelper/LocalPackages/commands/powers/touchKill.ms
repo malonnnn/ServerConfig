@@ -21,10 +21,6 @@ register_command(touchkill,
                     tmsg(@player,color(red).'Sorry, they are protected from touchkill.')
                     die()
                 }
-                if(sk_region_check_flag(@ploc,'pvp',@plr) == false){
-                    tmsg(@player,color(red).'Sorry, they are protected from touchkill.')
-                    die()
-                }
 
                 if(@plr != @player){
                     include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
