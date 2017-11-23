@@ -17,7 +17,9 @@
                 "/run 0-8",
                 "/haste 0-9",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "/cast forcefield",
+                "/cast wwbracers"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
