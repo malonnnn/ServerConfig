@@ -10,9 +10,7 @@
             'op': 'false',
             'speech': "I hope you are capable of controlling these powers ".@plr.", you have Infinity in your hands",
             'powers': array(
-              "/disguise",
-              "/disguiseviewself",
-              "/undisguise",
+              "/disguise wolf",
               "/gmc",
               "/gms"
             ),
