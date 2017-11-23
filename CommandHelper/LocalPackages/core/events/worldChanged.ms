@@ -11,10 +11,10 @@ bind(world_changed, null, null, @event,
         if(has_permission('is.incity')){
             runas(~console,"/effect ".@player." clear")
             runas(~console,"/minecraft:clear ".@player)
-            runas(~console,"/sudo ".@player." c:/fixskin")
             set_pflight(@player,false)
-        }
-        if(has_permission(@player,'in.survival')){
+        }else if(!has_permission('in.survival')){
+            runas(~console,"/sudo ".@player." c:/fixskin")
+        }else{
             set_pflight(@player,false)
         }
     ))

@@ -16,7 +16,7 @@
                 "/haste 0-2",
                 "/vis",
                 "/shadowhide",
-                "/jump"
+                "/jumpto"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",

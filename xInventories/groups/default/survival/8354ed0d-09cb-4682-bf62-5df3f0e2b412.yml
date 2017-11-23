@@ -1,46 +1,322 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      display-name: Sword of Athena
+      lore:
+      - Grants You Wisdom
       enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
+        DAMAGE_ALL: 999
+        DAMAGE_UNDEAD: 999
+        DAMAGE_ARTHROPODS: 999
+        FIRE_ASPECT: 999
+        LOOT_BONUS_MOBS: 100
+        SWEEPING_EDGE: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
+    type: DIAMOND_AXE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      display-name: Battleaxe of Ares
+      lore:
+      - Smashes Everything in Sight
       enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
+        DAMAGE_ALL: 999
+        DAMAGE_UNDEAD: 999
+        DAMAGE_ARTHROPODS: 999
+        FIRE_ASPECT: 999
+        LOOT_BONUS_MOBS: 100
+        DIG_SPEED: 100
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: BOW
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: Bow of Apollo
+      lore:
+      - Shoots Rays of Light
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 20.0
+        ARROW_DAMAGE: 999
+        ARROW_KNOCKBACK: 999
+        ARROW_FIRE: 999
+        ARROW_INFINITE: 1
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: FISHING_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Rod of Poeseidon
+      lore:
+      - Catch Any Fish in The Sea
+      enchants:
+        LUCK: 999
+        LURE: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Boots of Hermes
+      lore:
+      - Feel as Light as a Feather
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Grieves of Hades
+      lore:
+      - Wade Through Seas of Lava
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Chest-plate of Hephaestus
+      lore:
+      - Grants You Infinite Protection
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Crown of Zeus
+      lore:
+      - Grants you Authority
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+health: 40.0
 hunger: 20
-exp: 0.40000007
-exp-level: 4
+exp: 0.058823474
+exp-level: 5
 remainingAir: 300
 fireTicks: -20
-saturation: 1.4000001
-exhaustion: 2.653203
-armor_contents: {}
+saturation: 0.0
+exhaustion: 1.1999998
+armor_contents:
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Crown of Zeus
+      lore:
+      - Grants you Authority
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Chest-plate of Hephaestus
+      lore:
+      - Grants You Infinite Protection
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Grieves of Hades
+      lore:
+      - Wade Through Seas of Lava
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Boots of Hermes
+      lore:
+      - Feel as Light as a Feather
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
 ender_chest: {}
 potion_effect:
   '0':
+    type: ABSORPTION
+    level: 100
+    duration: 187736
+  '1':
     type: DAMAGE_RESISTANCE
-    level: 5
-    duration: 199881
+    level: 100
+    duration: 187736
+  '2':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 187628
+  '3':
+    type: FIRE_RESISTANCE
+    level: 100
+    duration: 187736
+  '4':
+    type: REGENERATION
+    level: 100
+    duration: 187736
+  '5':
+    type: INCREASE_DAMAGE
+    level: 100
+    duration: 187736
+  '6':
+    type: WATER_BREATHING
+    level: 1
+    duration: 187736
