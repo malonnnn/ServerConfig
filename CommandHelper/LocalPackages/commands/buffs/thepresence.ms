@@ -1,4 +1,3 @@
-@plr = player()
 
 
 
@@ -10,6 +9,10 @@
             'trail': '',
             'op': 'false',
             'speech': "I hope you are capable of controlling these powers ".@plr.", you have Infinity in your hands",
-            'powers': array(),
+            'powers': array(
+              "/disguise wolf",
+              "/gmc",
+              "/gms"
+            ),
             'buffs': array()
         )
