@@ -15,13 +15,13 @@
                 "/run 0-3",
                 "/carryplayer",
                 "/dismountplayer",
-                "/haste 0-4",
+                "/haste 0-7",
                 "/flyspeed <number>",
                 "/fly",
                 "/cast forcefield"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 1 true",
+                "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 10 9999 2 true",
                 "/effect ". @plr ." 21 9999 9 true",
