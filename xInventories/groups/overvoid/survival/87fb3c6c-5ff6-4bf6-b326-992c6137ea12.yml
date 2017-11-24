@@ -6,5 +6,18 @@ remainingAir: 300
 fireTicks: -20
 saturation: 20.0
 exhaustion: 0.0103
-inventory: {}
+inventory:
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SMOOTH_BRICK
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh0K1WAtJFiUpW0dVKJUCmkpWSc35pUYlCfpqCe36KUm2sDkxcqRaqzZjBAIu24tJUhZKM1FyFzDwQjVWnEYM+Fp2leWmJmUU5lfYKIRmpeegamTJTGPhyM/NSk4sS00qsijPT86CmGWJ1R3hqUapCZX6pQlZiZk4qmg8YGABrBTsVDwEAAA==
+      blockMaterial: SIGN
 armor_contents: {}

@@ -30,9 +30,9 @@ register_command(hirejudge,
 register_command(firejudge, 
 
     array(
-        description: 'Fire\'s a Player as a Secretary',
-        usage: '/firesecretary <player>',
-        permission: 'fire.secretary',
+        description: 'Fire\'s a Player as a Judge',
+        usage: '/firejudge <player>',
+        permission: 'fire.judge',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -50,8 +50,8 @@ register_command(firejudge,
             runas(~console,"/pex user ".@vic." remove is.judge")
             runas(~console,"/pex user ".@vic." group remove judge")
             runas(~console,"/warp city ".@vic)
-            tmsg(@player,color(red)."You have fired ". @vic ." from secretary!")
-            tmsg(@vic,color(red)."You have been fired from secretary!")
+            tmsg(@player,color(red)."You have fired ". @vic ." from judge!")
+            tmsg(@vic,color(red)."You have been fired from judge!")
         }
     )
 )
