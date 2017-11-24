@@ -1,11 +1,50 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§8a§7ck §fB§0ee§7tl§8e's §fBl§0a§7d§8e
+      enchants:
+        DAMAGE_ALL: 10
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
+health: 60.0
 hunger: 20
 exp: 0.2727273
 exp-level: 2
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.1476858
-armor_contents: {}
+exhaustion: 2.037703
+armor_contents:
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: ELYTRA
 ender_chest: {}
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 191074
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 191074
+  '2':
+    type: REGENERATION
+    level: 2
+    duration: 191074
+  '3':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 191074
