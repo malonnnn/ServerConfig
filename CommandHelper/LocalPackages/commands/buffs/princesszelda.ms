@@ -10,9 +10,7 @@
             'op': 'false',
             'speech': "It seems I'm the only one with a mind of my own.",
             'powers': array(
-                "/buff",
-                "/tppos",
-                "/touchkill"
+                "/buff"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:arrow 64",
