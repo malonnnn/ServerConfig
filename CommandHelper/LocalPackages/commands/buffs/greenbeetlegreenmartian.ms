@@ -8,19 +8,17 @@
              'val': 'eyJ0aW1lc3RhbXAiOjE1MTE1NDYwNzg1ODcsInByb2ZpbGVJZCI6ImU2ZGU4Y2YwYWY0NTQ0ZTQ4ODJmZDk4NDQ2ZjRiMzFiIiwicHJvZmlsZU5hbWUiOiJScW5kb21QcXJzb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI2NzI3OWM1M2JkZTY4ZTljODk0YjIzMjhhZWJmODA4Y2IyZDNkMjgzNTVjOGFkODdmMWYyNGFlNGEwNmMifX19',
              'trail': '',
              'op': 'false',
-             'speech': "",
+             'speech': "I'm a beetle!",
              'powers': array(
                  "/buff",
                  "/carryplayer",
                  "/dismountplayer",
-                 "/jump 0-9",
-                 "/run 0-8",
+                 "/jump 0-2",
+                 "/run 0-2",
                  "/haste 0-7",
-                 "/flyspeed <number>",
                  "/fly",
                  "/intangible",
                  "/tangible",
-                 "/disguise",
                  "/speak <player> <message>",
                  "/mindcontrol <playername>",
                  "/stopmindcontrol",
@@ -28,18 +26,13 @@
                  "/vis",
                  "/disguiseviewself",
                  "/confuse <player>",
-                 "/undisguise",
                  "/mindlock <playername>",
                  "/msg <playername>"
              ),
              'buffs': array(
                  "/effect ". @plr ." 5 9999 15 true",
-                 "/effect ". @plr ." 10 9999 1 true",
                  "/effect ". @plr ." 11 9999 3 true",
-                 "/effect ". @plr ." 13 9999 1 true",
-                 "/effect ". @plr ." 16 9999 1 true",
                  "/effect ". @plr ." 21 9999 19 true",
-                 "/shot give ". @plr ." greenenergybeam",
-                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&2G&8re&aen_&8B&7ee&2tle's_&8Bl&2a&ad&7e"
+                 "/shot give ". @plr ." greenenergybeam"
              )
          )
