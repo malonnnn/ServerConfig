@@ -15,11 +15,7 @@
                 "/run 0-3",
                 "/carryplayer",
                 "/dismountplayer",
-                "/haste 0-7",
-                "/flyspeed <number>",
-                "/fly",
-                "/cast forcefield",
-                "/push [player]"
+                "/haste 0-5"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
@@ -29,6 +25,5 @@
                 "/shot give ". @plr ." blackenergybeam",
                 "/give ". @plr ." minecraft:elytra",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&0Bl&8a&7ck_&fB&0ee&7tl&8e's_&fBl&0a&7d&8e"
-                
             )
         )
