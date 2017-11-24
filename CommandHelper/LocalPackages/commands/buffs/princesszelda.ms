@@ -11,11 +11,11 @@
             'speech': "It seems I'm the only one with a mind of my own.",
             'powers': array(
                 "/buff",
-                "/tppos",
-                "/touchkill",
+                "/tppos"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 9 true",
+                "/give ". @plr ." minecraft:arrow 64",
+                "/give ". @plr ." minecraft:bow 1 name:&dPr&bin&7ces&5s_&dZ&5e&bl&dd&5a's_&bLi&7g&3h&bt_&bB&7o&bw",
                 "/give ". @plr ." minecraft:iron_sword 1 16:2 name:&dPr&bin&7ces&5s_&dZ&5e&bl&dd&5a's_&dSw&5o&3r&bd"               
             )
         )
