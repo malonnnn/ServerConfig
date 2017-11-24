@@ -11,8 +11,12 @@
             'speech': "I hope you are capable of controlling these powers ".@plr.", you have Infinity in your hands",
             'powers': array(
               "/disguise wolf",
+              "/disguise p <player>",
+              "/touchkill",
               "/gmc",
-              "/gms"
+              "/gms",
+              "/tp",
+              "/tppos <x y z world>"
             ),
             'buffs': array()
         )
