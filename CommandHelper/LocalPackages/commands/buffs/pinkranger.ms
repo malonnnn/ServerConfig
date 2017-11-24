@@ -17,6 +17,6 @@
                 "/unzord"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:iron_sword 1 20:2 name:&dP&ei&7n&dk_&dRa&8n&7g&de&er&d's_&eD&7i&8n&do_&dS&8a&7b&ee&dr"
+                "/give ". @plr ." minecraft:iron_sword 1 name:&dP&ei&7n&dk_&dRa&8n&7g&de&er&d's_&eD&7i&8n&do_&dS&8a&7b&ee&dr"
             )
         )
