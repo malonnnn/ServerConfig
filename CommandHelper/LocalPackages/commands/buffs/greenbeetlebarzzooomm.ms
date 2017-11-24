@@ -35,7 +35,7 @@
                  "/effect ". @plr ." 5 9999 15 true",
                  "/effect ". @plr ." 11 9999 3 true",
                  "/effect ". @plr ." 21 9999 19 true",
-                 "/shot give ". @plr ." greenenergybeam"
+                 "/shot give ". @plr ." greenenergybeam",
                  "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&2G&8re&aen_&8B&7ee&2tle's_&8Bl&2a&7d&ae"
              )
          )
