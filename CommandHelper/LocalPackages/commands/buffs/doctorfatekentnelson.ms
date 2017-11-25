@@ -11,7 +11,8 @@
             'speech': "I am Kent Nelson, a.k.a. Doctor Fate.",
             'powers': array(
                 "/buff",
-                "/fly"
+                "/fly",
+                "/create <itemid>"
             ),    
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
