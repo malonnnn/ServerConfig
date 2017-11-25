@@ -13,8 +13,7 @@
               "/disguise wolf",
               "/disguise p <player>",
               "/touchkill",
-              "/gmc",
-              "/gms",
+              "/create <itemid>",
               "/tp",
               "/tppos <x y z world>"
             ),
