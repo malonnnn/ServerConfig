@@ -16,7 +16,7 @@
                 "/run 0-6",
                 "/haste 0-3",
                 "/fly",
-                "/magicmrmxyzptlksmortal <playername>",
+                "/depower <playername>",
                 "/disguise",
                 "/gmc ($1/sec)",
                 "/gms",
