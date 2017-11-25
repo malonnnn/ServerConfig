@@ -1,10 +1,38 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Ma§dg§5ic §5Bla§dst§d «×»
+health: 40.0
 hunger: 20
 exp: 0.45454547
 exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 18.0
-exhaustion: 3.426009
+saturation: 0.0
+exhaustion: 2.522014
 armor_contents: {}
+potion_effect:
+  '0':
+    type: SPEED
+    level: 1
+    duration: 197622
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 197426
+  '2':
+    type: FAST_DIGGING
+    level: 1
+    duration: 197718
+  '3':
+    type: JUMP
+    level: 5
+    duration: 197540
+  '4':
+    type: INCREASE_DAMAGE
+    level: 1
+    duration: 197426
