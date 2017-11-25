@@ -11,7 +11,7 @@
             'speech': "Super, rainbow, narwhail BLAST!",
             'powers': array(
                 "/buff",
-                "/create <itemid>",
+                "/create <itemid> <qty>",
                 "/mutate <playername>",
                 "Access to all warps",
                 "/tp",
