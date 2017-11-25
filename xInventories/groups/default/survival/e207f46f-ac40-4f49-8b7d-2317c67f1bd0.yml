@@ -1,11 +1,11 @@
-health: 40.0
+health: 22.0
 hunger: 20
 exp: 0.95683444
 exp-level: 33
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.888504
+exhaustion: 0.30351257
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -13,18 +13,31 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §bPlasma Blast§b «×»
+      display-name: §6Homing Missile§6 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8Blaster Rifle§8 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eFlame Thrower§e «×»
+      lore:
+      - §eFlame Thrower
+      - §eCook bacon!.
 armor_contents: {}
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 4
-    duration: 199486
+    duration: 199762
   '1':
-    type: REGENERATION
-    level: 1
-    duration: 199486
-  '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 199486
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199762
