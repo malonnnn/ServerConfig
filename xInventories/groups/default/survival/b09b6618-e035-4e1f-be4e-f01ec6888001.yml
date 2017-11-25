@@ -1,29 +1,43 @@
-health: 20.0
-hunger: 20
-exp: 0.45454547
-exp-level: 2
+health: 23.490724563598633
+hunger: 16
+exp: 0.71428573
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 1.0
-exhaustion: 1.011
+saturation: 0.0
+exhaustion: 2.0539982
 inventory:
-  '9':
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-  '10':
+    type: ENDER_PEARL
+    amount: 5
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7B§ea§0t§7m§8a§7n's §8Grappling Hook
+  '38':
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-  '11':
+    type: ELYTRA
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7B§ea§0t§7m§8a§7n's §8Glide Wings
+      enchants:
+        DURABILITY: 3
+        MENDING: 1
+armor_contents:
+  chestplate:
     ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND
-    amount: 58
-armor_contents: {}
+    type: ELYTRA
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7B§ea§0t§7m§8a§7n's §8Glide Wings
+      enchants:
+        DURABILITY: 3
+        MENDING: 1
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -180,3 +194,24 @@ ender_chest:
       - §eRemote explosives.
       - §eRight click to place.
       - §eLeft click to detonate.
+potion_effect:
+  '0':
+    type: SPEED
+    level: 2
+    duration: 197940
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 197697
+  '2':
+    type: FAST_DIGGING
+    level: 3
+    duration: 197985
+  '3':
+    type: JUMP
+    level: 5
+    duration: 197908
+  '4':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 197697
