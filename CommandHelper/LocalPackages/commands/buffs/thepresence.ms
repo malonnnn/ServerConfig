@@ -15,7 +15,8 @@
               "/touchkill",
               "/create <itemid>",
               "/tp",
-              "/tppos <x y z world>"
+              "/tppos <x y z world>",
+              "/fly"
             ),
             'buffs': array()
         )
