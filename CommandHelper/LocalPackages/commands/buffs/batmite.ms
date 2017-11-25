@@ -22,6 +22,7 @@
                 "/undisguise",
                 "/disguiseviewself",
                 "/back",
+                "&4!&f/depower <plr>",
                 "/tppos <x> <y> <z>",
                 "/tp",
                 "Access to all warps"
