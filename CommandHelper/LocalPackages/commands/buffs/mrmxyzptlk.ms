@@ -18,7 +18,7 @@
                 "/fly",
                 "/depower <playername>",
                 "/disguise",
-                "/create <itemid>",
+                "/create <itemid> <qty>",
                 "/undisguise",
                 "/disguiseviewself",
                 "/empower <playername>",
