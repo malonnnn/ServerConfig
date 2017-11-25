@@ -12,7 +12,7 @@
             'powers': array(
                 "/buff",
                 "/fly",
-                "/create <itemid>"
+                "/create <itemid> <qty>"
             ),    
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
