@@ -25,7 +25,7 @@
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-4",
-                "/give <itemid>"
+                "/create <itemid> <qty>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
