@@ -3521,3 +3521,38 @@ redtornado:
         destructible_override: true
     costs:
         mana: 150 
+mindstone:
+    icon: paper
+    category: staff
+    hidden: true
+    actions:
+        cast:
+        - class: Command
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: LineEffect
+             iterations: 1
+             particle: redstone
+             color: ff0000
+             radius: 2
+             lengthGrow: 0.1
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: redstone
+          color: ff0000
+          location: target
+        hit:
+        -  class: EffectSingle
+           location: target
+           particle: magic_crit
+           particle_count: 10    
+    parameters:
+        commands:
+        - mindcontrol @t 
+        target_type: Player
+        target: other
+        range: 2
