@@ -18,7 +18,7 @@
                 "/haste 0-5",
                 "/flyspeed <number>",
                 "/fly",
-                "/create <itemid>",
+                "/create <itemid> <qty>",
                 "Shoots nuclear blasts with bare hand",
                 "/invis",
                 "/vis",
