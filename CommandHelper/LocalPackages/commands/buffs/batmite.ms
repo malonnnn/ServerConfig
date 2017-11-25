@@ -17,7 +17,7 @@
                 "/haste 0-2",
                 "/fly",
                 "/disguise",
-                "/create <itemid>",
+                "/create <itemid> <qty>",
                 "/undisguise",
                 "/disguiseviewself",
                 "/back",
