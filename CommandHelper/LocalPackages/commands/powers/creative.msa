@@ -1,4 +1,7 @@
-create:/create $item $qty $ = >>>
+create:/create $item $qty = >>>
+    @item = $item
+    @qty = $qty
+    
     // @player = player()
     // @bal = acc_balance(@player)
 
@@ -10,5 +13,5 @@ create:/create $item $qty $ = >>>
     // acc_subtract(@player,100)
     // msg(color(GREEN).'$100 charged for GMC. Warning: costs $1/sec to stay in GMC.')
 
-    sudo('/give '.player().' '.$item.' '.$qty)
+    sudo('/minecraft:give '.player().' '.@item.' '.@qty)
 <<<

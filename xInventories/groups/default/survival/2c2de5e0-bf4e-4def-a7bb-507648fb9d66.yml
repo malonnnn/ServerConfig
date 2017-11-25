@@ -1,10 +1,56 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §8H§0a§8w§0k§8e§0y§8e's §8Bow
+      enchants:
+        ARROW_INFINITE: 1
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: TIPPED_ARROW
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Arrow of §0Weakness
+      potion-type: minecraft:long_weakness
+health: 40.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.8823531
+exp-level: 5
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.4020711
+exhaustion: 3.488442
 armor_contents: {}
+potion_effect:
+  '0':
+    type: SPEED
+    level: 3
+    duration: 197696
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 197547
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 1
+    duration: 197547
+  '3':
+    type: FAST_DIGGING
+    level: 3
+    duration: 197846
+  '4':
+    type: JUMP
+    level: 3
+    duration: 197618
+  '5':
+    type: INCREASE_DAMAGE
+    level: 1
+    duration: 197547
+  '6':
+    type: REGENERATION
+    level: 1
+    duration: 197547
