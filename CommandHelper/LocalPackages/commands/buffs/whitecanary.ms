@@ -22,8 +22,6 @@
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:stick 1 19:3 16:3 name:&fCa&fna&fry_&fBa&fto&fn",
                 "/give ". @plr ." minecraft:iron_sword 1 19:2 name:&fWhite_Canary's_Sword",
-                "/give ". @plr ." minecraft:bow 1",
-                "/shot give ". @plr ." pistol",
-                "/give ". @plr ." minecraft:arrow 64"
+                "/shot give ". @plr ." pistol"
             )
         )
