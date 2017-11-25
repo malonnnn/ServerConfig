@@ -1,7 +1,7 @@
-register_command(magicmrmxyzptlksmortal, 
+register_command(depower, 
     array(
         description: 'Power',
-        permission: 'ch.alias.magicmrmxyzptlksmortal',
+        permission: 'powers.depower',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -32,11 +32,11 @@ register_command(magicmrmxyzptlksmortal,
                 // }
                 // acc_subtract(@plr,1000)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                _coolDown('magicmxymortal',60,@plr)
+                _coolDown('depower',60,@plr)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
                 set_timeout(3000,closure(
-                    tmsg(@player, 'Mr. Mxyzptlk has stripped you of your powers!');
+                    tmsg(@player, @plr.' has stripped you of your powers!');
                 ))
             }
             
