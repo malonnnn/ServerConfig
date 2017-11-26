@@ -15,7 +15,7 @@
                 "/jump 0-3",
                 "/fly",
                 "/cast redtornado",
-                "/cast fling",
+                "/cast whirlwind",
                 "/run 0-4",
                 "/haste 0-4"
             ),
