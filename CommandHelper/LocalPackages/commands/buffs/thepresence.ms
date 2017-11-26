@@ -1,4 +1,4 @@
-
+@plr = player()
 
 
 @hero = associative_array(
@@ -13,7 +13,7 @@
               "/disguise wolf",
               "/disguise p <player>",
               "/touchkill",
-              "/create <itemid>",
+              "/create <itemid> <qty>",
               "/tp",
               "/tppos <x y z world>",
               "/fly"
