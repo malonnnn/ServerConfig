@@ -17,11 +17,14 @@ register_command(destroyworld,
 
             foreach(@ent in @ents){
                 if(is_entity_living(@ent) && @puuid != @ent){
-                    set_entity_health(@ent,0)
+                    @plrName = get_player_from_entity_id(@ent)
+                    if(@plrName != null && !has_permission(@plrName,'immune.destroyworld')){
+                        set_entity_health(@ent,0)
+                    }
                 }
             }
             
-            broadcast(@plr." ate ".@world." and killed everyone within it") 
+            broadcast(color(DARK_RED).color(MAGIC)."!i".color(WHITE)." ".@plr." ".color(DARK_RED).color(UNDERLINE)."destroyed".color(GRAY).color(ITALICS)." ".@world.color(RED)." and its every living inhabitant.") 
                 
         }
     )
