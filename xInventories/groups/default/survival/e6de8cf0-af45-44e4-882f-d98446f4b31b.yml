@@ -1,56 +1,150 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9Ice Beam§9 «×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: ICE
-    amount: 5
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9I§1c§9e§9F§1i§9s§1t
-      enchants:
-        DAMAGE_ALL: 10
-        DAMAGE_UNDEAD: 10
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9F§1r§9o§8s§ft §9B§3o§8ot§fs
-      enchants:
-        FROST_WALKER: 3
-health: 20.0
+inventory: {}
+health: 32.0
 hunger: 20
-exp: 0.076923005
-exp-level: 3
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.2380164
-armor_contents:
-  boots:
+exhaustion: 3.7180123
+armor_contents: {}
+ender_chest:
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: DIAMOND_HELMET
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9F§1r§9o§8s§ft §9B§3o§8ot§fs
+      display-name: titanium plated helmet
       enchants:
-        FROST_WALKER: 3
-ender_chest: {}
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+        ARROW_INFINITE: 1
+      repair-cost: 255
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated shirt
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated pants
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated Boots
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated helmet
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+        ARROW_INFINITE: 1
+      repair-cost: 255
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated shirt
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated pants
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: titanium plated Boots
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        MENDING: 1
+      repair-cost: 255
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 199750
-  '1':
-    type: REGENERATION
+    type: HEALTH_BOOST
     level: 2
-    duration: 199750
+    duration: 192239
+  '1':
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 192239

@@ -1,8 +1,8 @@
 id: e207f46f-ac40-4f49-8b7d-2317c67f1bd0
 name: ArchWarrior
-last_cast: 1511227287574
+last_cast: 1511657036948
 cooldown_expiration: 0
-last_death_location: 1493.0741280271743,69.0,-108.36127431427356,survival112,145.46344,26.939465
+last_death_location: 1448.699999988079,65.0,-109.43510392531402,survival112,-355.72177,-10.199905
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -14,6 +14,21 @@ brush:
   erase: true
 undo: []
 spells:
+  crescentthrow:
+    cast_count: 0
+    last_cast: 1511656149569
+    last_earn: 0
+    cooldown_expiration: 1511656151569
+  tsunami:
+    cast_count: 0
+    last_cast: 1511656722209
+    last_earn: 0
+    cooldown_expiration: 1511656732209
+  lightray:
+    cast_count: 30
+    last_cast: 1511656634815
+    last_earn: 0
+    cooldown_expiration: 1511656639815
   deadlights:
     cast_count: 14
     last_cast: 1511227286427
@@ -24,17 +39,23 @@ spells:
     last_cast: 1499043902008
     last_earn: 0
     cooldown_expiration: 1499043905008
+  freezeray:
+    cast_count: 0
+    last_cast: 1511656805503
+    last_earn: 0
+    cooldown_expiration: 1511656815503
   expelliarmus:
     cast_count: 0
-    last_cast: 1511138526436
+    last_cast: 1511657028798
     last_earn: 0
-    cooldown_expiration: 1511138536436
+    cooldown_expiration: 1511657038798
 wands:
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: AIR
       damage: 1
+      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
@@ -51,15 +72,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1Qu07DQBDcKE6ww6MIJRRIRFQxss0lThoUSyCBRKCIAqV19q3JCdtnzhfSIiQqPoAPoKXgAyj4AkpqvoMK2xFstzO7szPbAmiBtqAp00FXmGQxVQgGxgzlEm2IRYoSVj0Zzq6olFzIJmgJTeno4QPK0mCjbH3FE8wVTTKAmv/1/XRZSFbLPmfQQcdyI9KPTBoSyyQRGZqDwGWmc2C7Yd+N7IBZOqxhFGGo/FDEQsKe4xLqWrZF7JB2e2zQc3BAegSdLnP7JBiyaIjEqsPKHcqci7Rw0wAD2p5SkgdzhWPBeMQLslVQNQ306fT0aCxy9bN7uO3dn6AGRgmdIc3V29b75/Pj60sTml4i5qkadaqAoIM2iYUCPaE8nVVvWf8/cU4ThM1rLILycJ8qRcObSYbI6mBcZCipWhorVarZ9vHtnGcJpmrnzx7AL19q9/WJAQAA
-    wand:
-      template: elderwand
-      owner: ArchWarrior
-      mana: 600.0
-      mana_timestamp: 1511138560854
-      owner_id: e207f46f-ac40-4f49-8b7d-2317c67f1bd0
-      effect_color: 274a701041ca,5d852e8454e2,d764b9df9e40
-      version: 5
+        internal: H4sIAAAAAAAAAD2PwUrDQBCG/2Jak4oeKnjRg2CvkbaGRkHEQAUFq0IpHss2O7GL3U3cTO3Vi8/gA3j14AP4AJ58Gy+eTFN0TsP/z/zzTR2ow5kLI124TDqbCiZ4NJVkl2o1nRuyWItsPLkV1qrUVuFoYURvC3CwsWhHrDTlLHQGVEbfn8c3RVy5OFISTeq0wiToJr6Ig5YfJMGRfzgOpd85aIdxN0zaY9laweoj2VylBkAVHhoRs1XjGVM/lSpRhVkvrIoDdzi86PXTnH/2Tnaip3Ny4C2kSxI5v29/fL08v73WUIt0OjN82kRZLpzBNGW4WigzKX9b/z9xJTRh844KYhXvC2YR3w8yIrkC7zojK3gJtkgpZxtnDzOVaTK8+4cH/AK2Vgu7TgEAAA==
 open_wand: false
 gave_welcome_wand: false
 data:
