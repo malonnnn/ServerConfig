@@ -12,7 +12,7 @@ register_command(askmyth,
     
         executor: closure() {
                 
-                broadcast(color(RED).' Ask Myth ')
+                broadcast(color(RED).color(BOLD).' Ask Myth ')
         
         }
     )
