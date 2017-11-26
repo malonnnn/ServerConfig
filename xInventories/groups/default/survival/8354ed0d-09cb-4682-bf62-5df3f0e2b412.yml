@@ -1,11 +1,329 @@
 inventory: {}
 health: 20.0
-hunger: 20
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 1.0
 armor_contents: {}
-ender_chest: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    damage: 8200
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Splash Potion of Levitation
+      custom-effects:
+      - ==: PotionEffect
+        effect: 25
+        duration: 1200
+        amplifier: 10
+        ambient: false
+        has-particles: false
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §rSplash Potion of §4§lDEATH
+      custom-effects:
+      - ==: PotionEffect
+        effect: 6
+        duration: 2000
+        amplifier: 125
+        ambient: false
+        has-particles: false
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Slaughterhound
+      enchants:
+        DAMAGE_ALL: 30000
+        SWEEPING_EDGE: 30000
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Walking Stick
+      lore:
+      - Hold it to make traveling a lot eaiser
+      enchants:
+        ARROW_DAMAGE: 10
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAH2OTQrCMBSEB1u0DboRvYAH8A6FLhSsLqRbIbbPEkqSkr56KG/kUdwZF4rFn+UwMx+fAGJME2anjh1TZkt1UuRaAWAQIMrzdZrZlgF7CxA/4oakz+PDJcAw0bYzvoSIMHlRtlIT5hUZcqpYansmTYb3DVHpGbuGnGRljb8hQvhnjZ7B4tozGK3qd4Pww2D2ZEpmWdSp1LKiXwJfx8AdAQFTkCABAAA=
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRUCTURE_BLOCK
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRUCTURE_VOID
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Sword of Athena
+      lore:
+      - Grants You Wisdom
+      enchants:
+        DAMAGE_ALL: 999
+        DAMAGE_UNDEAD: 999
+        DAMAGE_ARTHROPODS: 999
+        FIRE_ASPECT: 999
+        LOOT_BONUS_MOBS: 100
+        SWEEPING_EDGE: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Battleaxe of Ares
+      lore:
+      - Smashes Everything in Sight
+      enchants:
+        DAMAGE_ALL: 999
+        DAMAGE_UNDEAD: 999
+        DAMAGE_ARTHROPODS: 999
+        FIRE_ASPECT: 999
+        LOOT_BONUS_MOBS: 100
+        DIG_SPEED: 100
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Bow of Apollo
+      lore:
+      - Shoots Rays of Light
+      enchants:
+        ARROW_DAMAGE: 999
+        ARROW_KNOCKBACK: 999
+        ARROW_FIRE: 999
+        ARROW_INFINITE: 1
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: FISHING_ROD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Rod of Poeseidon
+      lore:
+      - Catch Any Fish in The Sea
+      enchants:
+        LUCK: 999
+        LURE: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Crown of Zeus
+      lore:
+      - Grants you Authority
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Chest-plate of Hephaestus
+      lore:
+      - Grants you Infinite Protection
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 1
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgYmbgCA31dPHNLy5hYLiwm5mBE8T1SU0E8rlPODEzsDnm5pfmASUZkjkYeOGm+CXmpjJIp6fmpRZlJutl5+UnZyclJmcHpRZnFpck5iWnAk3yL0gtSizJzM8DambgYGAhqIcB2TWMYRkoruGZ0csBdw2rYaq2kSWGg0RghieWlABNdknMTUzH6RKsihkYADlhmncvAQAA
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Grieves of Hades
+      lore:
+      - Wade Through Seas of Lava
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Boots of Hermes
+      lore:
+      - Feel as Light as a Feather
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 999
+        PROTECTION_FIRE: 999
+        PROTECTION_FALL: 999
+        PROTECTION_EXPLOSIONS: 999
+        PROTECTION_PROJECTILE: 999
+        OXYGEN: 4
+        WATER_WORKER: 999
+        THORNS: 999
+        DEPTH_STRIDER: 999
+        VANISHING_CURSE: 1
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      Unbreakable: true
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Ichor
+      lore:
+      - Gives You a Burst of Power!
+      custom-effects:
+      - ==: PotionEffect
+        effect: 5
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 10
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 11
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 12
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 13
+        duration: 199980
+        amplifier: 1
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 16
+        duration: 9999
+        amplifier: 1
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 22
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+      - ==: PotionEffect
+        effect: 23
+        duration: 199980
+        amplifier: 100
+        ambient: false
+        has-particles: false
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: ~Flame Weaver~
+      lore:
+      - Woven together by molten lava, this blade was brought together by many master
+        craftsmen over many years.
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgYmbgCA31dPHNLy5hYMg/wMzACeL6pCYC+YzRTcwMbI65+aV5QEmGFA4GXrgpfom5qQyC6al5qUWZyXq5iRUeqYk5JRlA/f4FqUWJJZn5eUAtDBwMLDhUMqDYHKGLYjPfmh4km0sNMGwWgZmXWFKSmJztkpibmJ6Ky3KsihkYAMcCE/UYAQAA

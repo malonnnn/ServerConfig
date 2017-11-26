@@ -3354,3 +3354,301 @@ wwbracers:
         bypass_build: true
     costs:
         mana: 150
+longpunch:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+          - class: Damage
+          - class: Velocity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: LineEffect
+             iterations: 1
+             particle: redstone
+             color: 0046b7
+             radius: 2
+             lengthGrow: 0.1
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: redstone
+          color: 0046b7
+          location: target
+        hit:
+        -  class: EffectSingle
+           location: target
+           particle: crit
+           particle_count: 10
+    costs:
+        mana: 50
+    parameters:
+        speed: 5
+        range: 8
+        target_type: LivingEntity
+        target_breakables: 1
+        target: other
+        living_entity_speed: 1
+        push: 1
+        cooldown: 1000
+        hitbox: true
+        damage: 5
+iceshield: 
+     icon: diamond_axe:23 
+     icon_disabled: diamond_hoe:23 
+     icon_url: http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc 
+     category: light 
+     worth: 100 
+     earns_sp: 5 
+     upgrade_required_path: beginner 
+     upgrade_required_casts: 25 
+     actions: 
+         cast: 
+         -  class: Disc 
+            actions: 
+            -  class: ModifyBlock 
+     effects: 
+         cast: 
+         -  class: EffectSingle 
+            sound: magic.shield_boom 
+            location: origin 
+     parameters: 
+         allow_max_range: true 
+         range: 3 
+         radius: 1.5 
+         axis: z 
+         brush: packed_ice 
+         orient: true 
+         orient_snap: 45 
+         transparent: transparent_to_construction 
+         destructible: destructible_replace 
+         check_destructible: true 
+         brushcolor: true 
+         undo: 800 
+         cooldown: 3000 
+         breakable: 3 
+         reflect_chance: 0.25 
+         bypass_confusion: true 
+         bypass_backfire: true 
+     costs: 
+         mana: 40
+redtornado:
+    icon: diamond_axe:192
+    icon_disabled: diamond_hoe:192
+    upgrade_required_path: master
+    upgrade_required_casts: 50
+    icon_url: http://textures.minecraft.net/texture/2362826553aaf78fd8b511fdedba941738ddd21c0f889e6bf2697d5a4f74f27
+    category: elemental
+    pvp_restricted: true
+    worth: 900
+    earns_sp: 11
+    actions:
+        cast:
+         - class: CustomProjectile
+           tick:
+           - class: ChangeContext
+             actions:
+             - class: Sphere
+               ignore_result: true
+               actions:
+               - class: Volume
+                 actions:
+                 - class: ModifyBlock
+                   direction: 0,1,0
+                   speed: 0.2
+           - class: AreaOfEffect
+             actions:
+              - class: Velocity
+                ignore_result: true
+              - class: Damage
+    effects:
+        projectile:
+        -  class: EffectSingle
+           sound: block_fire_extinguish
+           sound_volume: 0.2
+           sound_pitch: 0.3
+           effectlib:
+             class: TornadoEffect
+             duration: $lifetime
+             tornadoHeight: 8
+             distance: 0.8
+             cloudSize: 1
+             tornadoParticle: redstone
+             color: FF0000
+             offset: 0,-2,0
+        cast:
+        -  class: EffectSingle
+           sound: block_fire_extinguish
+           sound_volume: 1
+           sound_pitch: 0.2
+           location: origin
+    parameters:
+        target: none
+        ignore_targeting: true
+        transparent: air,destructible
+        target_type: Entity
+        radius: 2
+        target_count: 16
+        item_speed: 0.1
+        living_entity_speed: 0.2
+        push: -3
+        y_offset: 1
+        velocity: 3
+        cooldown: 1000
+        lifetime: 3000
+        interval: 4
+        damage: 3
+        brush: erase
+        falling: true
+        falling_probability: 0.8
+        undo: 15000
+        x_size: 0
+        z_size: 0
+        y_size: 2
+        destructible_override: true
+    costs:
+        mana: 150 
+acceleratetime:
+    icon: diamond_axe:11
+    icon_disabled: diamond_hoe:11
+    icon_url: http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c
+    alias: perk
+    category: utility
+    worth: 220
+    earns_sp: 6
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    quick_cast: true
+    actions:
+        cast:
+        -  class: PotionEffect
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_experience_orb_pickup
+        -  class: EffectTrail
+           particle: redstone
+           color: fff842
+           particle_data: 2
+           particle_count: 3
+        -  class: EffectSingle
+           location: target
+           effectLib:
+             class: TraceEffect
+             particle: redstone
+             color: fff842
+    parameters:
+        target: any_entity
+        range: 32
+        duration: 5000
+        target_type: Player
+        effect_speed: 10
+        bypass_friendly_fire: true
+        only_friendly: true
+        bypass_pvp: true
+        cooldown: 30000
+    costs:
+        mana: 50
+hydroshield:
+    icon: diamond_axe:22
+    icon_disabled: diamond_hoe:22
+    icon_url: http://textures.minecraft.net/texture/3dbb78853b526f9b712b4e431fb332eae0e6cd3dea9a610e9ecf54c31f7c6d
+    alias: dome
+    category: combat
+    worth: 150
+    earns_sp: 2
+    upgrade_required_path: student
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        -  class: CustomProjectile
+           actions:
+           - class: Sphere
+             actions:
+             -  class: ModifyBlock
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.shield
+        tick:
+        -  location: target
+           particle: block_crack
+        hit:
+        -  location: target
+           effectlib:
+             class: SphereEffect
+             particle: block_crack
+             radius: $radius
+             duration: 2000
+    parameters:
+        target: self
+        allow_max_range: false
+        velocity: 50
+        target_type: LivingEntity
+        range: 32
+        thickness: 1
+        radius: 4
+        type: sphere
+        transparent: transparent_to_construction
+        destructible: destructible_replace
+        check_destructible: true
+        undo: 4000
+        brush: stationary_water
+        brushcolor: true
+        cooldown: 5000
+        breakable: 4
+        reflect_chance: 0.25
+        miss_effects: hit
+        miss: actions
+    costs:
+        mana: 75
+mindstone:
+    icon: paper
+    category: staff
+    hidden: true
+    actions:
+        cast:
+        - class: Command
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: LineEffect
+             iterations: 1
+             particle: redstone
+             color: ff0000
+             radius: 2
+             lengthGrow: 0.1
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: redstone
+          color: ff0000
+          location: target
+        hit:
+        -  class: EffectSingle
+           location: target
+           particle: spell_mob
+           color: ff0000
+           particle_count: 10    
+    parameters:
+        commands:
+        - mindcontrol @t 
+        target_type: Player
+        target: other
+        range: 2
+

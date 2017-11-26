@@ -16,8 +16,7 @@
                 "/grow", 
                 "/shrink",
                 "Anything you attack, dies",
-                "/gmc",
-                "/gms",
+                "/create <itemid> <qty>",
                 "/vis",
                 "/invis"
            ),
