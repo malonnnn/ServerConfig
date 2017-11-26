@@ -1,59 +1,40 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 5
+    amount: 4
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: ROTTEN_FLESH
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: TNT
+  '1':
+    ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §bBl§3ue §bEn§9er§3gy §9Be§bam§b «×»
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
-  '7':
-    ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRILLED_PORK
-    amount: 13
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 4
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fB§bl§9u§1e §bLa§fnt§9er§1n's Ring
-      enchants:
-        DAMAGE_ALL: 155
-        FIRE_ASPECT: 2
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_SPADE
-    damage: 4
+    type: STONE
+    damage: 1
+    amount: 3
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 63
+    type: WOOD
+    damage: 1
+    amount: 5
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: STAINED_GLASS
-    damage: 11
-    amount: 64
+    type: STONE_PICKAXE
+    damage: 69
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 1
+    damage: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -65,7 +46,7 @@ armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
-    damage: 1
+    damage: 2
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -74,23 +55,27 @@ armor_contents:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
 health: 60.0
-hunger: 16
-exp: 0.85714287
-exp-level: 0
+hunger: 12
+exp: 0.0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.8255115
+exhaustion: 1.0005337
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 1
-    duration: 196523
-  '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 196523
-  '2':
     type: HEALTH_BOOST
     level: 9
-    duration: 196523
+    duration: 190869
+  '1':
+    type: FAST_DIGGING
+    level: 10
+    duration: 192327
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 190869
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 190869

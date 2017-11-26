@@ -35,7 +35,8 @@
                 "/haste 0-4",
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
-                "Throw lightning with an empty hand."
+                "Throw lightning with an empty hand.",
+                "/thru"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
