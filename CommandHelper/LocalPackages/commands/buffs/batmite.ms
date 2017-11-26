@@ -23,7 +23,9 @@
                 "/back",
                 "/depower <plr>",
                 "/tppos <x> <y> <z>",
-                "/tp",
+                "/tp <plr>",
+                "/tp <plr> <plr> (Lets you teleport someone to someone else)",
+                "/tphere <plr>",
                 "Access to all warps"
            ),
             'buffs': array(
