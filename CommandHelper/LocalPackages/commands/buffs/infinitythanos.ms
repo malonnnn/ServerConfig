@@ -29,6 +29,7 @@ if(@plr == null){@plr = player()}
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." greenenergybeam",
-                "/shot give ". @plr ." yellowenergybeam"
+                "/shot give ". @plr ." yellowenergybeam",
+                "/mgive ". @plr ." mindstone"
             )
         )
