@@ -1,21 +1,40 @@
-health: 25.733325958251953
-hunger: 17
-exp: 0.7096775
-exp-level: 12
+health: 23.910518646240234
+hunger: 15
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.3087505
+exhaustion: 3.5250134
 inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLAZE_ROD
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    amount: 62
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_PICKAXE
+    damage: 4
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 58
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 68
+    damage: 277
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 68
+    damage: 277
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -55,7 +74,7 @@ ender_chest:
     meta:
       ==: ItemMeta
       meta-type: TILE_ENTITY
-      internal: H4sIAAAAAAAAANWTv47TQBDGx3ZycQxcTggJCVEsNFDxAFSX5BISLjkQSXTlaWLPOavsn2i9F+QmouA9eDVegJ6StR0TAaGho1n5W3lmft+n2QgggtOe0PF6oCy3+RzTNjTHlmQWAUDDg8ZMaAsh+DyBx5Irig3e2tcJR6lVcpN91CbxoNnXd8p6EQQWUw/uLdTSEK5xKcgLoD3iCQ0Fppnr2YqglfBsIzBvQ2OiDYXu1oeXQ21SShhXTGphSTGBW2R6S4ZJVDnLCU3GljmcScysuy1JMkkqhMYVSoLTnRsiiV0TuqodtOFh11rDl3eWpjrht5xM6csxhYvF+GKqMwuw+uYQCzkhLPT3rwGcdGXhCDq98xAe/OxSjnmUkiLD41doLcbrC5SYkmvxbkMGLdfKTYCa6ejPhd+T+hP2IftVyGeHkEnk1uBv6brQSMWrwobvQyC2AgK/rHwOe+1VeggBRB9og9z0S6MQHLKv+TplZlyl7Nod2e4oWlChPTmgCUK7InMjKE2Lur9DBhVU77yCgj3k50+VbtXQSaVD+Jf18eDpaPBixubdy/HVGzaes8n4csC6rD/qTt8/C6AZa6ENfImi2vh9t/Y6ydlbQpUddd34Y+tr10ut7X9oubO3PFNuknsKv7oG+AGLDVU8DwQAAA==
+      internal: H4sIAAAAAAAAANWTsY7TQBCGx3ZycXxwOSEkJESx0EDFA1BdkkuIueRAJNGVp4k956yy3o3Wm4CbiIL34NV4AXpK1nZMBISGjsbyrDw73/drHAAEcNYTKloNpOEmn2HShmZoKM0CAGg40JgKZcAHl8fwKOWSIo135lXMMVUyvs0+KB070OyrjTROAJ7BxIHTuVxowhUuBDketEc8pqHAJLN3tgJoxTxbC8zb0BgrTb49deHFUOmEYsYlS5UwJJnALTK1Jc1SlDnLCXXGFjmcp5gZe1qSZClJHxrXmBKc7eyQlNgNoe3aQRsedI3RfLExNFExv+OkSy/L5M/n4eVEZQZg+c0iFuWYsKi/f/XgpJsWRtDpXfhw/+ct5ZiHCUnSPHqJxmC0usQUE7JXvF2TRsOVtBOgZjr6ceF7Ur/CPmS3Cvn8EDKJ3Gj8LV0bGsloWWi4LnhiK8Bzy85nsK+dqh6CB8F7WiPX/VIUvEP2NV+nzIzLhN3YR7Y7iuZVaI8PaILQLEnfCkqSou/vkF4F1buooGAP+flTVbdq6LiqffiX9XHgyWjwfMpm3avw+jULZ2wcXg1Yl/VH3cm7px40IyWUhi9BUIvfs2uv4py9IZTZUevGH1tfWy+UMv+hcmevPJV2kv0VfrWubE+z5UasSsePAD8AHVDWQiEEAAA=
       blockMaterial: RED_SHULKER_BOX
   '5':
     ==: org.bukkit.inventory.ItemStack
@@ -476,16 +495,41 @@ ender_chest:
       - HIDE_ATTRIBUTES
       - HIDE_UNBREAKABLE
       internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgYmbgCA31dPHNLy5hYMg/wMzACeL6pCYC+YzRTcwMbI65+aV5QEmGFA4GXrgpfom5qQyC6al5qUWZyXq5iRUeqYk5JRlA/f4FqUWJJZn5eUAtDBwMLDhUMqDYHKGLYjPfmh4km0sNMGwWgZmXWFKSmJztkpibmJ6Ky3KsihkYAMcCE/UYAQAA
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 4
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bMerman Tail
+      enchants:
+        DEPTH_STRIDER: 30
+      internal: H4sIAAAAAAAAAONiYOBkEHIsKSnKTCotSfXNT8lMy0wtKuZiYGBgZGbgCA31dPHNLy5h4Ks1YGbgBHF9UhOBfFazTjYGNsfc/NK8EvsHDGDAwcASnJNfwsCSlppawsHACzfWLzE3lUE0PTUvtSgzWS83vyw1NzWvJLggNTUFaKh/QWpRYklmfh7UDDyqGRgAxzny6rEAAAA=
+  '26':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAE2SyY6jVgBF6VYiVZc6f5FdqcRsQEovbAM2mMc8vk2LmcdkbIMZvikfGdcui7u5ukc6i/uOYe/YT6eZ2ta8XwvU5m/YdyXD/k5ohuQIPv3kMr74ZISk+BTogvvkM27HskSeEVTyjr2/oCG/jyh//MDexnwZp3v+eMcw7Nsb9sNBZR9/Nd//Tbg87KngahZh84SyPwvgvDg4vC16Pa7m+DCf1zXxcj722YqQLtOQ06xDKltnbHVXNePJ37kUUtNpBzTBL5cZbB2pHhOOscndU2s1Lj+NTfJkqN1EcwvxkUT3ZItkKWPEyNM6zjgR21BABJhp20SG6i/oVg6JcXfqiUdhgM6QHu1DlgBwuwQN8xFR8MHdgtaEMQ0t2McJpdtmhW956T8nDYht5/NBqgQJjJn27IwD5OZulD5kx5kueXCmtWi9BNPK9xeVjxpcIjcJhxf7xhLOONd0vnW1zvqISQNBs44T2bKNbPZL5nragYHlIDTs6lBmEK5ONkmFrsYpT8vDFTJj72w4R06lwNyc8UGRfK95k5E1Ad/YIILxZnX0QVHZHdQsvmGT3iS6u9aJtG/izXj07VMBYGjtRy8tFOajGO4yOJex5l3XnKCzkfd6O7YqUjcyf4l3WRLi+2ugq4DGB2HMDPoaseRtc6IJ1dNeXHqydtqnuiCm9j8SAkeGcrfX27hPZTeTy6czU1BwIRmfdCRQzqE+hZun0KtUGa7cbPPDgT3otB64CZdeYjx5/S8uc+bWLAasFmeSzvftCYSD/pxDCRXp1itwKcNyPBa0JYbXPOus4UZKsOlxGbizZVoL+WQOjCw5Ehk0JgvFCm+aUQ0fhFlmpuodSk0qz8oh3edtK+wGpJDMemt+vWF/+nE75d/+yVeViAOyTWm7SsI9MmqJBGJK6htgX9n0zXso/WFNKDgkJ1+FR2WndMqmixINxKrWKYuBtcVGXcQCKqKNk0XrtUeCk98AUUUKmlF6Vp+wax/QY6sk8JCB1MLu/Q0GdhwFZJXSfvG1y04+k539FYYAGf0DecSoukjZvRzJtJu/uGt2tmcD8c//backaCcY6GsUQELr2DY7CgQMKyIL1VbbPAoGL99ab0FdVUDMar1W5qiWke56lO5aLAjsVncPDXT1Frp7MqLAGlF2p4s+gm6LdMpbwAm8mBZFLmyVnhQK69cvDHvD/tDjLsf++i1PjzyDcRc/pt8Y9h8/Pm1xdAQAAA==
+      skull-owner: _FusedZamasu_
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 9
-    duration: 181482
+    duration: 169074
   '1':
     type: DAMAGE_RESISTANCE
     level: 2
-    duration: 181482
+    duration: 169074
   '2':
+    type: FAST_DIGGING
+    level: 20
+    duration: 176973
+  '3':
     type: INCREASE_DAMAGE
     level: 5
-    duration: 181482
+    duration: 169074
