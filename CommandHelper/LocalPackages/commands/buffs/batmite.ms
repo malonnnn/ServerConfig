@@ -24,7 +24,7 @@
                 "/depower <plr>",
                 "/tppos <x> <y> <z>",
                 "/tp <plr>",
-                "/tp <plr> <plr> (Lets you teleport someone to someone else",
+                "/tp <plr> <plr> (Lets you teleport someone to someone else)",
                 "/tphere <plr>",
                 "Access to all warps"
            ),
