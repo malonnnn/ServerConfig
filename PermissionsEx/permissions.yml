@@ -23,6 +23,7 @@ groups:
         - powers.destroyworld
         - powers.depower
         - ch.alias.create
+        - immune.destroyworld
   zacmerman:
     inheritance:
     - commonherotraits
@@ -319,6 +320,7 @@ groups:
         - powers.destroyworld
         - magic.cast.cosmicbolt
         - magic.commands.cast
+        - immune.destroyworld
   archangel:
     inheritance:
     - commonherotraits
@@ -5176,6 +5178,7 @@ groups:
         - ch.alias.haste8
         - ch.alias.haste9
         - powers.destroyworld
+        - immune.destroyworld
   gamora:
     inheritance:
     - commonherotraits
@@ -6617,6 +6620,9 @@ groups:
     worlds:
       superherocity:
         permissions:
+        - magic.wand.use
+        - magic.use.mindstone
+        - magic.cast.mindstone
         - powers.wallrun
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
