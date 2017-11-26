@@ -14,7 +14,7 @@
                 "/cast cosmicbolt",
                 "/mindlock <player>",
                 "/tp",
-                "/eat <world>",
+                "/destroyworld <world>",
                 "/grow",
                 "/normalform",
                 "/fly"
