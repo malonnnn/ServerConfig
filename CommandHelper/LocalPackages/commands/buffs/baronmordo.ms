@@ -1,5 +1,4 @@
-
-@plr = player() 
+if(@plr == null){@plr = player()} 
  
  
  

@@ -24,7 +24,7 @@ register_command(destroyworld,
                 }
             }
             
-            broadcast(color(DARK_RED).color(MAGIC)."!i".color(WHITE)." ".@plr." ".color(DARK_RED).color(UNDERLINE)."destroyed".color(GRAY).color(ITALICS)." ".@world.color(RED)." and its every living inhabitant.") 
+            broadcast(color(DARK_RED).color(OBFUSCATED)."!i".color(WHITE)." ".@plr." ".color(DARK_RED).color(UNDERLINE)."destroyed".color(GRAY).color(ITALICS)." ".@world.color(RED)." and its every living inhabitant.") 
                 
         }
     )

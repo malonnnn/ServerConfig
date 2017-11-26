@@ -35,8 +35,14 @@ register_command(depower,
                 _coolDown('depower',60,@plr)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
                 _mortal(@player)
+
+                
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @class = _getheroclass(@plr)
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+
                 set_timeout(3000,closure(
-                    tmsg(@player, @plr.' has stripped you of your powers!');
+                    broadcast(color(LIGHT_PURPLE).color(BOLD).'POOF'.color(YELLOW).color(BOLD).'! '.@hero['name'].color(RED).color(BOLD).' has stripped '.color(WHITE).@player.color(RED).color(BOLD).' of their powers!');
                 ))
             }
             
