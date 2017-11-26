@@ -1,4 +1,4 @@
-if(@plr == null){@plr = player()}
+@plr = player()
 @hero = associative_array(
             'name': '§1O§4pti§1mus §1Pr§4ime',
             'class': 'optimusprime',
