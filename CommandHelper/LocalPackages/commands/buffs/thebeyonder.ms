@@ -21,7 +21,7 @@
                 "/mindcontrol <player>",
                 "/fly",
                 "/cast cosmicbolt",
-                "/eat <world>",
+                "/destroyworld <world>",
                 "/depower <player>"
             ),
             'buffs': array(
