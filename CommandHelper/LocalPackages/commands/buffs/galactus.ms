@@ -19,7 +19,8 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/carryplayer <player>",
-                "/dismountplayer"
+                "/dismountplayer",
+                "/destroyworld <world>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 150 true",
