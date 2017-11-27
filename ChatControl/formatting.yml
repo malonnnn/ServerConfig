@@ -1,28 +1,31 @@
-# !---------------------------------------------------------!
-# ! File automatically updated at 09.09.2017 16:37:35
-# ! to plugin version v7.5.0-BETA
-# !---------------------------------------------------------!
-# ! Unfortunatelly due to how Bukkit handles YAML
-# ! configurations, all comments (#) were wiped. 
-# ! 
-# ! For reference values and comments, open
-# ! formatting.yml in the plugin .JAR file.
-# !---------------------------------------------------------!
+# -------------------------------------------------------------------------------------------
+# 
+#  Your file has been automatically updated at 27.11.2017 02:43:31
+#  to ChatControl 7.6.15
+# 
+#  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
+#  preserve the documentation comments in your file. We apologies.
+# 
+#  If you'd like to view the default file, you can either:
+#  a) Open the chatcontrol.jar with a WinRar or similar
+#  b) or, visit: https://github.com/kangarko/ChatControl-Pro/wiki
+# 
+# -------------------------------------------------------------------------------------------
 
 Enabled: true
 Formatting:
   Default: Global_Chat
-  global: Global_Chat
-  local: Local_Chat
+  Range: Local_Chat
   Spy: Spy_Chat
   Global: Global_Chat
-  Admin: Local_Chat
+  Admin: Admin_Chat
   Bungee: Global_Chat
 Range:
-  Enabled: false
+  Enabled: true
   Distance: 100.0
   Linked_Worlds:
     normal:
+    - survival112
     - world
     - world_nether
     skyland:
@@ -71,14 +74,14 @@ Formats:
         - '{player}'
     slash:
       Message: '&a&l/'
-      Sender_Permission: 'chatcontrol.part.playername'
+      Sender_Permission: chatcontrol.part.playername
       Hover_Event:
         Action: SHOW_TEXT
         Values:
         - '{player}'
     group:
       Message: '&f{player}'
-      Sender_Permission: 'chatcontrol.part.playername'
+      Sender_Permission: chatcontrol.part.playername
       Hover_Event:
         Action: SHOW_TEXT
         Values:
@@ -110,7 +113,7 @@ Formats:
         - '{player}'
     group:
       Message: '&f{player}&a&l/'
-      Sender_Permission: 'chatcontrol.part.playername'
+      Sender_Permission: chatcontrol.part.playername
       Hover_Event:
         Action: SHOW_TEXT
         Values:

@@ -16,11 +16,11 @@ Command_Aliases:
 Notify_On_Join: true
 Max_Channels_Per_Player: 1
 Channels:
-  global:
+  Global:
     Format: Global_Chat
-    Bungee: true
+    Bungee: false
     Log_Format: '{player}: {message}'
-  local:
+  Local:
     Format: Local_Chat
     Bungee: false
     Log_Format: '{player}: {message}'
@@ -29,7 +29,7 @@ Compatibility:
   Single_Event_Format: '[{channels}] {player}: {message}'
   Cancel_Event: false
   Discord:
-    Control_Incoming_Messages: true
+    Control_Incoming_Messages: false
     Deny_Unknown_Channel: true
     Format: '&8[&3Discord&8] &7{player}: &f{message}'
     Apply_Natural_Format_If_Online: false

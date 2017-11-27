@@ -53,41 +53,6 @@ bind('player_chat', null, null, @e) {
             ))
         }
     }
-
-    if(@pname == 'DJ_Random'){
-        if(string_position(to_lower(@msg), 'tiki') != -1){
-                @pos = string_position(to_lower(@msg), 'tiki')
-                @origWord = @msg[@pos].@msg[@pos+1].@msg[@pos+2].@msg[@pos+3]
-                @word = 'mr owner'
-                @msg = replace(@msg,@origWord,@word)
-                modify_event(message,@msg)
-        }
-    }
-    if(@pname == 'TheMizukageTrey'){
-        @msgg = split(' ',@msg)
-        @finMsg = ''
-        foreach(@word in @msgg){
-            if(to_lower(@word) == 'xp'){
-                @word = 'Windows '.@word
-            }else if (to_lower(@word) == 'xi'){
-                @word = 'Superbowl '.@word
-            }else if (to_lower(@word) == 'guruguru'){
-                @word = 'GokuGoku'
-            }
-            @finMsg = @finMsg.@word.' '
-        }
-        modify_event(message,@finMsg)
-        @msg = @finMsg
-        if(string_position(@msg, ';-;') != -1){
-            @pos = string_position(@msg, ';-;')
-            @origWord = @msg[@pos].@msg[@pos+1].@msg[@pos+2]
-            @word = '(i am a crybaby)'
-            @msg = replace(@msg,@origWord,@word)
-            modify_event(message,@msg)
-        }
-        assign(@msg, reg_replace('(?i)g+[. ,-]*u+[. ,-]*r+[. ,-]*u+[. ,-]*g+[. ,-]*u+[. ,-]*r+[. ,-]*u+', 'rod', @msg))
-        modify_event(message, @msg)
-    }
     
     # -------------------------------
     # replace all messages by mute characters with "..." because he is unable to speak
@@ -278,28 +243,27 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+[ .,-_]*t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
-    if(has_permission('is.headhelper')){
-       assign(@msg, reg_replace('(?i)r+[. ,-]*(o|0)+[. ,-]*(o|0)+[. ,-]*d+', 'food', @msg))
-       modify_event(message, @msg)
-    }
-
     
     #@temp = reg_match('[^ -~]',@msg)
     #if(array_size(@temp) > 0){
     #    cancel()
     #}
 
-    # -------------------------------
-    # If a player is a mod, stop the script at this point because the mods are not bound by chat timeout
-    # -------------------------------
-    if(has_permission("rank.mod") && has_permission("is.criminal") ==  false)
-    {
-        die()
-    }
-    
     if(has_permission(@pname,'case.tolower')){
         @msg = to_lower(@msg)
       modify_event(message, @msg)
+    }
+
+    @tmp = to_lower(@msg)
+    if(
+        string_position(@tmp,'jiren') >= 0 ||
+        string_position(@tmp,'tek') >= 0 ||
+        string_position(@tmp,'jerry') >= 0 ||
+        string_position(@tmp,'mythsadvisor') >= 0
+    ){
+            set_timeout(500,closure(
+        broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
+        ))
     }
      
     # -------------------------------
@@ -364,8 +328,8 @@ bind('player_chat', null, null, @e) {
         }
     }
     
-    assign(@msg, reg_replace('(?i)kcocco.ml', 'kcoccoisafaggot.com', @msg))
-    modify_event(message, @msg)
+    #assign(@msg, reg_replace('(?i)kcocco.ml', 'kcoccoisafaggot.com', @msg))
+    #modify_event(message, @msg)
     @lastmessage = import(@pname.'lastmessage')
     @time = time()
     if(@lastmessage + @cooldown > @time / 1000)
