@@ -18,7 +18,6 @@ create:/create $item $qty $color = >>>
 create:/create $item $qty = >>>
     @item = $item
     @qty = $qty
-    @color = $color
     
     // @player = player()
     // @bal = acc_balance(@player)
@@ -31,6 +30,21 @@ create:/create $item $qty = >>>
     // acc_subtract(@player,100)
     // msg(color(GREEN).'$100 charged for GMC. Warning: costs $1/sec to stay in GMC.')
     sudo('/minecraft:give '.player().' '.@item.' '.@qty)
+<<<
+create:/create $item = >>>
+    @item = $item
+    
+    // @player = player()
+    // @bal = acc_balance(@player)
+
+    // if(@bal < 100){
+    //     msg(color(RED).'Sorry, you need at least $100 to use this command, then it\'s $1/sec after that.')
+    //     die()
+    // }
+
+    // acc_subtract(@player,100)
+    // msg(color(GREEN).'$100 charged for GMC. Warning: costs $1/sec to stay in GMC.')
+    sudo('/minecraft:give '.player().' '.@item.' 1')
 <<<
 create:/pickblock = >>>
     @player = player()

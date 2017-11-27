@@ -258,6 +258,7 @@ bind('player_chat', null, null, @e) {
     if(
         string_position(@tmp,'jiren') >= 0 ||
         string_position(@tmp,'tek') >= 0 ||
+        string_position(@tmp,'malon') >= 0 ||
         string_position(@tmp,'jerry') >= 0 ||
         string_position(@tmp,'mythsadvisor') >= 0
     ){
