@@ -1,11 +1,11 @@
-health: 27.45008087158203
+health: 34.47967529296875
 hunger: 17
 exp: 0.0
-exp-level: 0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.72259986
+exhaustion: 3.7177236
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -14,20 +14,205 @@ inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: COOKED_BEEF
-    amount: 60
+    amount: 55
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_PICKAXE
-    damage: 183
+    damage: 266
   '38':
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 179
+    damage: 224
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 25
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+    amount: 2
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK_CHARGE
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK_EFFECT
+      firework-effect:
+        ==: Firework
+        flicker: false
+        trail: false
+        colors:
+        - ==: Color
+          RED: 240
+          BLUE: 240
+          GREEN: 240
+        - ==: Color
+          RED: 222
+          BLUE: 42
+          GREEN: 207
+        - ==: Color
+          RED: 235
+          BLUE: 68
+          GREEN: 136
+        - ==: Color
+          RED: 59
+          BLUE: 26
+          GREEN: 81
+        - ==: Color
+          RED: 123
+          BLUE: 190
+          GREEN: 47
+        - ==: Color
+          RED: 40
+          BLUE: 151
+          GREEN: 118
+        fade-colors: &id001 []
+        type: BALL
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    amount: 35
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK
+      firework-effects:
+      - ==: Firework
+        flicker: false
+        trail: false
+        colors:
+        - ==: Color
+          RED: 240
+          BLUE: 240
+          GREEN: 240
+        - ==: Color
+          RED: 37
+          BLUE: 146
+          GREEN: 49
+        - ==: Color
+          RED: 171
+          BLUE: 171
+          GREEN: 171
+        - ==: Color
+          RED: 195
+          BLUE: 205
+          GREEN: 84
+        - ==: Color
+          RED: 65
+          BLUE: 52
+          GREEN: 205
+        - ==: Color
+          RED: 179
+          BLUE: 44
+          GREEN: 49
+        fade-colors: *id001
+        type: BALL
+      power: 1
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 5
+    amount: 3
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    amount: 3
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 8
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 17
+    amount: 64
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    amount: 56
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+    damage: 3
+    amount: 2
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 3
+    amount: 64
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+  '20':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 7
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 8
+    amount: 64
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
+    amount: 60
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: FENCE
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: FIREWORK
+    amount: 64
+    meta:
+      ==: ItemMeta
+      meta-type: FIREWORK
+      firework-effects:
+      - ==: Firework
+        flicker: false
+        trail: false
+        colors:
+        - ==: Color
+          RED: 240
+          BLUE: 240
+          GREEN: 240
+        - ==: Color
+          RED: 37
+          BLUE: 146
+          GREEN: 49
+        - ==: Color
+          RED: 171
+          BLUE: 171
+          GREEN: 171
+        - ==: Color
+          RED: 195
+          BLUE: 205
+          GREEN: 84
+        - ==: Color
+          RED: 65
+          BLUE: 52
+          GREEN: 205
+        - ==: Color
+          RED: 179
+          BLUE: 44
+          GREEN: 49
+        fade-colors: *id001
+        type: BALL
+      power: 1
 armor_contents:
   chestplate:
     ==: org.bukkit.inventory.ItemStack
     type: ELYTRA
-    damage: 179
+    damage: 224
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -511,18 +696,18 @@ ender_chest:
       skull-owner: _FusedZamasu_
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 161629
-  '1':
     type: HEALTH_BOOST
     level: 9
-    duration: 161629
+    duration: 103999
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 103999
   '2':
     type: FAST_DIGGING
     level: 20
-    duration: 167985
+    duration: 180025
   '3':
     type: INCREASE_DAMAGE
     level: 5
-    duration: 161629
+    duration: 103999

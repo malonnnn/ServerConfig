@@ -57,3 +57,4 @@ register_command(speak,
         }
     )
 )
+
