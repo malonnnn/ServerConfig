@@ -11,6 +11,17 @@
             'trail': '',
             'op': 'true',
             'speech': "I was forgotten within the crucible of fear!",
-            'powers': array(),
-            'buffs': array()
+            'powers': array(
+                "/buff",
+                "/fly",
+                "/carryplayer",
+                "/dismountplayer",
+                "/mindcontrol <player>",
+                "/mindlock",
+                "/speak <player>",
+                "/msg <player> <message>"
+            ),
+            'buffs': array(
+                "/effect ". @plr ." 5 9999 7 true"
+            )
         )
