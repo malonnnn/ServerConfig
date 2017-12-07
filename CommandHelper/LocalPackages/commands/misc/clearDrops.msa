@@ -1,0 +1,8 @@
+cleardrops:/cleardrops $radius $player = >>>
+
+    @player = $player
+    @radius = is_number($radius)
+
+    sudo('/minecraft:kill @e[type=Item,r='.@radius.']')
+
+<<<

@@ -18,7 +18,6 @@ bind(server_command,null,null,@e){
             case 'nyc':
                 cancel()
                 set_block_command(@loc,'')
-                break()
         }
     }else{
         console('not a commandblock')

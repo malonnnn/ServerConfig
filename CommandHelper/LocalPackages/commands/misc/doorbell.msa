@@ -1,0 +1,9 @@
+doorbell:/doorbell = >>>
+
+    set_block_at(1116,61,1585,152,'survival112')
+
+    set_timeout(50,closure(
+        set_block_at(1116,61,1585,0,'survival112')
+    ))
+
+<<<

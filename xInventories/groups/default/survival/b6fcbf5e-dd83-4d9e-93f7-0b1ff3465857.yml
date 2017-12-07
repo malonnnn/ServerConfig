@@ -1,52 +1,99 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: DIAMOND_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4En§cerg§4y §cBe§4am§4 «×»
-  '27':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+        DAMAGE_ALL: 4
+        KNOCKBACK: 2
+        SWEEPING_EDGE: 2
+        DURABILITY: 2
+      repair-cost: 1
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 4
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 3
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 11
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 1
+    amount: 2
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE
+    damage: 5
+    amount: 2
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARMOR_STAND
+    amount: 5
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 39
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 34
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: LOG
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
+    amount: 47
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 49
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 3
+      repair-cost: 3
 armor_contents: {}
-health: 30.0
+health: 20.0
 hunger: 20
-exp: 0.20000003
-exp-level: 4
+exp: 0.57967263
+exp-level: 25
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.923977
-potion_effect:
-  '0':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 199785
-  '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199785
-  '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 199785
-  '3':
-    type: NIGHT_VISION
-    level: 1
-    duration: 199785
-  '4':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 199785
-  '5':
-    type: REGENERATION
-    level: 1
-    duration: 199785
+saturation: 5.0
+exhaustion: 2.2244647

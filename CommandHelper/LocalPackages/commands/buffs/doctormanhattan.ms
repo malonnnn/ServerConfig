@@ -12,7 +12,7 @@
             'powers': array(
                 "/buff",
                 "/create <itemid> <qty>",
-                "/kill",
+                "/explode",
                 "/tp",
                 "/fly",
                 "/skull <player>"
