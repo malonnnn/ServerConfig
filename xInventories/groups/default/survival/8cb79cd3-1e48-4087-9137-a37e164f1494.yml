@@ -1,11 +1,230 @@
 inventory: {}
 health: 20.0
 hunger: 20
-exp: 0.79999995
-exp-level: 4
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 19.0
-exhaustion: 2.023336
+saturation: 2.0
+exhaustion: 0.22000471
 armor_contents: {}
-ender_chest: {}
+ender_chest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAO2Wy27TQBSGj3O1U9ILAXrbZMWiq6pixYreFpUQihS2KJrYJ/bIY481M8bNk/AIWfAIbFB4MYa4qQ2Z0kQs3AUbW7L8zX9u/7E7AB3YvmDcDa9jRdX0I/EdaN4ojGQHAI4taAwZV2BDjXpwFNEYXUEm6i2jsY9CX0YJV5THFjQveRorqwN1RXwbWoPF8zIjleAakBmdqBilVmh7VCaMTG1ofCARQsvlLqExQA1aVyQiPuog7mKw8hh2i/MeUd4vRbvQZTwzy+6dpBL7+kUUfU+kvjwxRlDbNILD1dyVwNhXwWoM9lCrU+5Jo3T9X5PPkITm5BtjRGEUbawn6kDvMpWKR7n09WSCrlqMT82C9nk0pqjftaA7DHg2IEJRl6G06mBfpYIsooVP3y2o3XiOBc55lDA6oSgs2BTv/Y4X1dgpUsAoUdOiCg403nOBdp51SAW5n8UABX9gFpt5ZY5Lx94mun0Yuzgac6UYLot0ZsBbOd4t8DHP7qtqANprAt4SsDdVcJ6AwzuVO3yrOoc/q8Lh3f8Of2AWt1f8QHV7RwEXEkdERFz8UaPVsr+ez97MZ2wwFTxE3Rkq57Mz/eCCEan0vT//+uPL/JtRfieXL/XYoyTisae9xYVncLKzRHc3tf5eDhyURjnR/RWE6URFwb4zsM+fwNroVb42XlS3Nl5WsTZe5aIlzz06KPsriOLCDf42lwdrzqVjYA83NcHRiuEyzj2MRzLgn5EZ0NO7n+ItGaQsRKG/+7f2r13jhvpY+AlUhZnYWwsAAA==
+      blockMaterial: RED_SHULKER_BOX
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Easy Suit Access
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAMXUQUvDMBQH8Nem3bpOxIM6EQ/iwaMXbx43HQoiQ71L7J5tWNqM5k3ctxK/oKaNE9ZO7DzoJfAn5A/vxyMhQAibfamiyUVGgub3PO6Af0WY6hAAPAe8O6loOwBXjGEvFRlGOX+iM4mcEswfEpQpkgP+QM0yckJgVFR4mEVJ0RC4wOSzBM8tG8y5lL1FZjb7i+zY3Krctys5qOSjyvshMAhvccpFPlCaAJz3ENpjoaeSzxn4kZIqh7fT4wC8G54ibAwl18nhZTkWmLbWOU95jGaUT4sda3FQt4gS1GSKCRt7AHzjs66Ha3NnXQ/2g8eW9RgUo41QRLjSZNea7NdNJMaxyGL96w1hf70hK0VeT75EulZkxDPSKzF6FqNXx3hUippLOP+9G+1mEv1iqmUJK9DVyUxOyrlfzJtr88uYO/gACI1q8nUEAAA=
+      blockMaterial: BLACK_SHULKER_BOX
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52Bgykxh4C7OKM3JTi2KT8qvYGAAAEbg3dwoAAAA
+      blockMaterial: LIGHT_BLUE_SHULKER_BOX
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      repair-cost: 3
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        WATER_WORKER: 1
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+      repair-cost: 31
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SKULL_ITEM
+    damage: 3
+    amount: 63
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of TitaniumMan02
+      internal: H4sIAAAAAAAAAE2OyY6jVgBF6VYiVZeSv8iuVTKjh0UtmCcDBj8zvB2T4QEPMBgMfFM+MlW7bI/O1T3vBPFO/HWtp6a5DN0dNfkb8VPPiH9O+4yJOSr/YPc5+cGyOfURHyn6Iz58UfKQ3Jk8fSfev0Z9PjxRPv4i3p758pyGfHwnCOLHG/Hrioo2/iY//3XnO9pKFehV0T+jAz5FiiBucSPT0z3m/AcA7p5DdH3OGfQcHV7tltiR6mwV9OKgNjXKjv6R7dJE956UUCnXI4MZF2KejJ7ctdx76sIUd0kOqRuvICF2MBYt9cyd2FbMoEdJtGsOjHkYBMXyraAeOXeOQsycJrE4m20B5N2dLTu6yw9xe3zsKE1LgGaeJPdMLuJ9fYRcsiGnySZO03qRk15+mDy6fK4SvYfW7nS5ufMOUkJkBias97AwX/4mX0Q/H5rzup4bZI+kyvaUuI6HoMiYgT+HR4hzweJxXN3l04UfF1WlhjRBaXmxjvDBMONe/m1unED79YDbsqBcXvTKmZP7bYrTwD6ypNQl5ZLPTuI0tymAzZBu4U7EoslTWvHa9XOp+E2Bx+fmDvaFMrzot2pEoWm9Mm28M9fdIqixNQEtiPViWz1ZW26aPy0g6/NeFoIwq/Y7XG/xpI5JsQNOKA4De55bkp8tsHlWfO22E9hjswzknh34Z5JBvDyOtrf42wO/sPNQctZOtUW5GLiEsQFfintim56elKGdJ9Sj5ZbyM4xJ2mjEfTYWxlp6KxIiRhSVtm2Gh+5VrsAJD9YlXX8n05dayEpWHa6icvIB5Rpa15XC5Tr1IxeWFFo5cijNLNSl4nddohd7NHl6p95YKD+kQ/pM4mUgtUHLkq4/zOk6ocro+Bk/NP3zjfjTj5sp/3HMV4OMA6pJGa9MQh45lUxZQN7sKmJtIC/WJo96K6wJDftE9Q0o6nu9qmko2aUNlMaWYGNJLgmBUjqSvEYg++Lyy6YNbNF+paMXSjVjhrgZ4Y0rk+CGHGTc4vDrDzdUcqPKpOLXby9TfTbT/BWGFnLaEd3IpwGQvv9qpFL8+t51mea9HHSc/+dOSdBMMLDXKIDkGXNNJp5IGJZkFhrNmYZfXdEGQc1B1W8gtraIljkLW2y0edgCdhmBsoaBtVq0UUV0tDlApy1Vp21JXiDIsC0Vmw0s0gJNpbfU6e5+fhLEG/GHHeOc+BugZ9yiCVtxS9IE8R95cYvhcAQAAA==
+      skull-owner: TitaniumMan02
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    damage: 41
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        OXYGEN: 3
+        DURABILITY: 3
+      repair-cost: 7
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      repair-cost: 3
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    damage: 51
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+      repair-cost: 3
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Easy Suit Access
+      internal: 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
+      blockMaterial: BLACK_SHULKER_BOX
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: Easy Suit Access
+      internal: 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
+      blockMaterial: BLACK_SHULKER_BOX
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAO2Wy27TQBSGj3O1U9ILAXrbdMWiK1SxYkVvi0oIRQpbFE3sE3uUsY81MybNk/AIWfAIbFB4MUZxUxvs0kQs3AUbWxrNN/+5/WN3ADqwfSHInVxHmuvZJ+Y70LzRGKoOABxb0BgI0mBDjXtwFPIIXcnG+p3gkY/SPIYxaU6RBc1LSiJtdaCumW9Dq79czzNKSzKAmvKxjlAZhbbHVSzYzIbGRxYitFxyGY8AatC6YiHz0QRxF4OVxrCbnfeI8n4u2qWuoGm57N5povDEbER54snEV6elEdQ2jeCwmLuWGPk6KMZgD4w6J0+VStf/Nfkpskl58o0RoiwVbawn6kDvMlGawlT6ejxGVy/Hp2ZB+zwccTR7LegOApr2mdTcFaisOthXiWTLaOHzDwtqN55jgXMexoKPOUoLNsV7v+NZNXayFDCM9SyrggONDyTRTrOecMnuZzFASQ/MYjOtzHHu2NvYtA8jF4cj0lrgqkhnJXgrxbsZPqLpfVVLgPaagLcC7E0VnCfg8E7lDt+qzuHPqnB497/DH5jF7YIfuGnvMCCpcMhkSPKPGhXL/noxf7uYi/5M0gRNZ7hazM/MwoVgSpv3yeLbz6+L76XyO6l8rsceZyFFnvEWSa/Eyc4K3d3U+nspcJAb5dj0VzJhEpUZ+76Eff4Ero1e5dfGi+qujZdVXBuvUtGc5x4dlP0Cokm6wd/m8mDNuXRK2MNNTXBUMNyUyMNoqAL6gqIEfXP3U7ylgkRMUJrv/i3AL+Eq6KZSCwAA
+      blockMaterial: RED_SHULKER_BOX
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Flash Boots
+      enchants:
+        PROTECTION_FIRE: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        FROST_WALKER: 2
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 2047
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Flash Pants
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_EXPLOSIONS: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1023
+      color:
+        ==: Color
+        RED: 176
+        BLUE: 38
+        GREEN: 46
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Flash ChestPeice
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        FROST_WALKER: 2
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1023
+      color:
+        ==: Color
+        RED: 178
+        BLUE: 38
+        GREEN: 51
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: Flash Helmet
+      enchants:
+        PROTECTION_FALL: 4
+        PROTECTION_PROJECTILE: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        THORNS: 3
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 511
+      color:
+        ==: Color
+        RED: 178
+        BLUE: 38
+        GREEN: 51
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 199249
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 199249

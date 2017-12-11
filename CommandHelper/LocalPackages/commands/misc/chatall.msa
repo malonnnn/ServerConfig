@@ -1,0 +1,16 @@
+speakall:/speakall $ = >>>
+
+    @plrs = all_players()
+
+    @numPlrs = array_size(@plrs)
+
+    @plrs2 = array_rand(@plrs,@numPlrs,false)
+
+    @msg = $
+
+
+    foreach(@plr in @plrs2){
+        chatas(@plr,@msg)
+    }
+
+<<<
