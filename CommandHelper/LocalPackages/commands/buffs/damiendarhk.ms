@@ -15,5 +15,7 @@
                 "/touchkill"
             ),
             'buffs': array(
+                "/effect ". @plr ." 21 9999 4",
+                "/effect ". @plr ." 10 9999 1"
             )
         )
