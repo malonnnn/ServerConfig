@@ -1,10 +1,55 @@
-inventory: {}
-health: 20.0
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.38461542
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
-armor_contents: {}
+saturation: 0.0
+exhaustion: 2.0758238
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 197150
+  '1':
+    type: FAST_DIGGING
+    level: 10
+    duration: 198007
+  '2':
+    type: SPEED
+    level: 10
+    duration: 198135
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 197150
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 197150
+  '5':
+    type: JUMP
+    level: 5
+    duration: 198041

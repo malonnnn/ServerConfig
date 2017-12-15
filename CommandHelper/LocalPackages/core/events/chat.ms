@@ -273,7 +273,7 @@ bind('player_chat', null, null, @e) {
     if(has_permission("is.criminal")){
         @cooldown = 60
     }else if(has_permission('chat.cooldown')){
-        @cooldown = 5
+        @cooldown = 15
     }
     
     if(has_permission(@pname,'change.chat')){

@@ -1,12 +1,41 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
+      enchants:
+        DAMAGE_ALL: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
+      enchants:
+        DAMAGE_ALL: 20
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §4W§fon§eder§4W§fom§9an's §4S§fh§ee§9i§4l§fd
+      enchants:
+        DURABILITY: 10
+        MENDING: 1
+      blockMaterial: SHIELD
+health: 100.0
 hunger: 20
 exp: 0.0
 exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.5670558
+exhaustion: 1.4485282
 armor_contents: {}
 ender_chest:
   '0':
@@ -139,3 +168,20 @@ ender_chest:
         DEPTH_STRIDER: 3
         MENDING: 1
       repair-cost: 255
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 181728
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 181728
+  '2':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 181728
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 181728
