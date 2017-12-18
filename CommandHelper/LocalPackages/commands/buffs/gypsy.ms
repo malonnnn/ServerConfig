@@ -15,6 +15,5 @@
                 "/tppos <x y z world>"
             ),
             'buffs': array(
-            "/shot give ". @plr ." dimensionalbeam"
         )
      )
