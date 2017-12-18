@@ -7,6 +7,12 @@
             'class': 'vibe',
             'sig': 'XeP0f1FiahNTzSuEyvaE1XI7yvKlS3o/tqvnwunwMtp0pj8/yV8Z8cZYCEndz2IAavFUf9AQd22A3kUJN7aYfz99cvBt0qKXfcB39SAnEiaRi2ppz1iuM8Et/NEam5u9lqsUauhxN99YGpLcBh+OGzoIhkaMikbsAlpyIP5BmFVX362mSVtmts1e4oMYg1jUAQ1lhrRNsDJ0FqeHA3cW4U7l9VLL6gi2oqlpNeA7JjDsUuV4TR1UgudAIGP5xMbtoD5xar2NYOmQ0ZlaaRnBF9GeNtVrOKmuWC9vCbAp8/fBtdVx4eDNMxEdAxc1AroB/Lg6vJH98xm98AdQSlEsgx3d+ogSYqPnVaYXQZCHFJFSi57MFk7fbUTaVJ8fCCQF0ubtkRHtYLuqTyC0dEGKtzp+xDW+E2dJ3Z8fqwD39y/ITODq2qnJ94lfqT/KVPh49Gj95LZ8NWemrnHnJPmSAH+l5eGL4cZ/2pO+1bw6iIaaXBpxacCywFwhcIPeOBHuV/IEFYUNwSlIR80ccgJEwGsKAF2kqu22HNc38tC7s28BlSbIEhx4M4RnpeO928119KEhyyq/dGx/SE7AdHcYGCb2yZ+1YIeMrFHAQIeQsM833ksXKhElgaNwY53g/VXsr54R6n2ccq/SFOyGhK4MeGchNzPuhAY0BfbDVSBTlzo=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODE5MDEzNTEyNDYsInByb2ZpbGVJZCI6IjcxM2NhZTdhZWY2ZDRhMDY4OTIyNDc0MTQ1OWMxMmJjIiwicHJvZmlsZU5hbWUiOiJaYXJnb25fS2luZyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA1M2NkNTEyZjIxYWZiMWEyNTg4MTE5MGM0OTU3Y2NjZGMyMTYzMjEyMDM5YjVkYzRiNTgyZTZiMzNjIn19fQ==',
+            'altskins': array(
+                array(
+                    'sig': 'K2JNAi9zb+YUUhJaAPIf240T8BRSaoTVzH63BzGS+xPtlQq3VLRQseCbMM+js+Bn4T7lCseqkg7BjI9pdCc4YacW8JQqyuINzA/1d4wYkyuqIUtEPDBpWXDvxRHZ9zYoHW8czqHH7hXKjs1GTUqytC1cAgGcr6gf4X3ioPjvTEYNewV4z8+4Yq/FMwj/AJD9nReBoOAumpfyojSFhniZk0ELr9tUYpbntCcnNNtpaAGqKzQ4ETzMLPM8xZYdvKBtLOk3NUmthpYkK8XDf204IJmJCfZ/lbi3CuZWc5qS+e1BYPZAPLxQPnZRRztm7LQnmELmyfEdCKUCb3+eMi+AGpzEHbz0nYjho61w8oH9j++rAlHdkdVcU0gM2miJcp6BDyvzSAxSJsib8tNL0MiJ4fe5Z/J83SVVwap7RLNm1g3x7V+pw38PWsfHNaJa+zhjUga6X7zIdhvcw+871BzCb19wV3VwPbVQW3D/xoz7az3akJu2mk+mGHAZ2F6LvxWiqlVDL/HqAVv0K2KNnFjD4zboCyu+fZ7jBzOcFJye7mooclVRMb2gV1uuPUvTYcflsbUlG95ID6BuBtzUMjjMP3DFXvc0SXpb4q/7jGU/Vv1hyJ1HtOMqz65Q1KCbKnhCZTPVEfa9wNkVtpT4uSJBxWs4R41Y3Rp6bsHc9VvosC8=',
+                    'val': 'eyJ0aW1lc3RhbXAiOjE1MTM2MDI0OTY4NTUsInByb2ZpbGVJZCI6IjkwMjVlOTZhZDI4NjQ3YjBhNzA5OThkMmE0ZWU0MmRiIiwicHJvZmlsZU5hbWUiOiJUaGVfUmVkX0NhbmFyeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTNiMzU2YTIxNjk3Yzc3YWFlOTE1MjhhNTc5MDI4M2QyODIyNmY0MTk1ZTM5ZDA2NGNlOThkYjg3NWJmM2FhIn19fQ=='
+                )
+            ),
             'trail': '',
             'op': 'false',
             'speech': "I got some good vibes coming your way",
