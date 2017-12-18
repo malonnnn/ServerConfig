@@ -260,10 +260,11 @@ bind('player_chat', null, null, @e) {
         string_position(@tmp,'tek') >= 0 ||
         string_position(@tmp,'malon') >= 0 ||
         string_position(@tmp,'jerry') >= 0 ||
-        string_position(@tmp,'mythsadvisor') >= 0
+        string_position(@tmp,'owner') >= 0
     ){
-            set_timeout(500,closure(
-        broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
+        cancel()
+        set_timeout(500,closure(
+            broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
         ))
     }
      
