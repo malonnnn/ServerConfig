@@ -47,7 +47,7 @@ register_command(quake,
                     
                     export('length',@length)
                     
-                    if(@length > 30) {
+                    if(@length > 15) {
                         clear_task();
                     }
                     
