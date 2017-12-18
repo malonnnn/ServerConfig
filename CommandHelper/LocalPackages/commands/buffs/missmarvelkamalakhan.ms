@@ -11,7 +11,7 @@
             'speech': "EMBIGGEN!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
+                "/jump 0-2",
                 "/run 0-1",
                 "/cast embiggenpunch",
                 "/carryplayer <player>",
