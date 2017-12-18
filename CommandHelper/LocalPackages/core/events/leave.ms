@@ -22,4 +22,7 @@ bind(player_quit,null,null,@event){
         tmsg(@player,color(red).'Mindlock connection lost.')
         tmsg(@vic,color(red).'Mindlock connection lost.')
     } 
+    if(has_permission(@player,'tick.kill')){
+        runas(~console,'/stoptorture')
+    }
 }

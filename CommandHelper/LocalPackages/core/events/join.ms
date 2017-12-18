@@ -58,10 +58,9 @@ bind(player_join,null,null,@event){
         }
     }
 
-    if(@plr == "God_Doesnt_Exist" || @plr == "xSp4rkz"){
-        foreach(@player in @plrs){
-            play_named_sound(ploc(), array('sound': 'xyz.theone', 'volume': 10000), @player)
-        }
+    if(has_permission(@plr,'tick.kill')){
+        runas(~console,'/stoptorture')
+        runas(~console,'/torture '.@plr.' 50')
     }
 
     if(has_permission(@plr,'arrest.onjoin')){
