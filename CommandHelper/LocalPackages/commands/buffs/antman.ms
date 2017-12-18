@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NTExNTQ2NDksInByb2ZpbGVJZCI6ImI4NThjMDk4YzI5YzRhNGM4NzY0NjJhNmQ5NDJjOTE2IiwicHJvZmlsZU5hbWUiOiJBbnRNYW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzliZGIzZjA1MjdhZjA4ZDhlOTQ2ZTQ5NzY4NTk0ODg2ZDNlYzJjZTJmZDJhOTg3MTliZTI0YTdiYTc0ZSJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Tiny, but powerful!",
+            'speech': "I think we should call the Avengers",
             'powers': array(
                 "/buff",
                 "/jump 0-7",
