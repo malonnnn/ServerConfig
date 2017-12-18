@@ -6,7 +6,7 @@ register_command(erase,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
             
-            sudo('/break') 
+            //sudo('/break') 
         }
     )
 )

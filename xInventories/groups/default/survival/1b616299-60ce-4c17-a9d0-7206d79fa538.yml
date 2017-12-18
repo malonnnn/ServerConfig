@@ -1,34 +1,52 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
-armor_contents: {}
-health: 60.0
+    type: STAINED_GLASS
+    damage: 4
+    amount: 5
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 26.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.6580055
+exhaustion: 2.6899498
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 196922
+    type: SPEED
+    level: 50
+    duration: 199730
   '1':
     type: HEALTH_BOOST
-    level: 9
-    duration: 196922
+    level: 4
+    duration: 199855
   '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 196922
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199855
   '3':
     type: REGENERATION
-    level: 4
-    duration: 196922
-  '4':
-    type: INCREASE_DAMAGE
-    level: 12
-    duration: 196922
+    level: 1
+    duration: 199855
