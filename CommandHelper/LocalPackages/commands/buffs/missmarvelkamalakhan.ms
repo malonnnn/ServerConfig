@@ -21,6 +21,6 @@
                 "/effect ". @plr ." 5 9999 2 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:fishing_rod 1 34:10 name:&1Ar&0m_&1St&&4A&9r&em&0_&4Str&9et&ech0re&1tch",
-                "/give ". @plr ." minecraft:elytra 1 34:10 name:&Glide"
+                "/give ". @plr ." minecraft:elytra 1 34:10 name:&4Glide"
             )
 )
