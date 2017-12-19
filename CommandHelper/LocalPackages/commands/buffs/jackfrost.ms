@@ -4,8 +4,8 @@
 @hero = associative_array(
             'name': '§9J§1a§9ck §fF§9r§bo§9st',
             'class': 'jackfrost',
-            'sig': 'qvx6n40UMjcPOpMDwvrSVOo3QmWEU6rXtNU8+yxxkVnIaQxio+iRJLK4pauLnnqRzJ9Uba05bWE/WEpwVkHe0iak342cdzWAr+VZwk6Wvz1ky2M8tHH72vuQff4g3ybB8eYD6OOJsw4XBFXW7aRS2nb9P/pILITfwbarWo0TmOZ8vQid0kIdzeAx6+1QYRmKYOaxLQ2zD3eqzJCfY49f3HvoNZOXHv7etVP183jMCpQgQockWn9a2tqZF8ivGoSR5S1pNXZnyPI1EFJucC8NwxA6A5I9WyFtfZleZhAG3L+yvaSfwKUB20vIV3NTjGSJATh97N4EFrOdzuMBrIFXKAgZ0bttxlCF5+XTFzgZL3pXAa5z9wPXlYqc7c+hqfZFk5arNPCP8x5VWev5pJpu4aZlHhHj3/hVkpKuTr55wjqR/qXWYryYQSi49CWLhP7ZrqqqhOYDL4AmAM7C8ipIead6Ys3K4fTjGWdlHUk2Kz4Kiz3/cau4LrGWusxoHUCLgKAWSbCQDHn1tDqnYAuBAmmxUFGu3HMOzC7e4dfqHjS51ombx27Hx3wx1BYg0YwDl0ps7BR49Uk5sNX84CfeTSqTyKYxE1BQ8mgabn+FueWjSadRB/FY8DNRphIRKA+JNWsDWTav9ZzRMmYntoaKya1byZyE+2LJgNEuouubgy8=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE1MTM0NTk5NzU1MjEsInByb2ZpbGVJZCI6IjM5MTc2MmViMjRmNjRkOTU4NGQ2YmZhYzY4MmQ1NzVhIiwicHJvZmlsZU5hbWUiOiJNeXRoc0Fkdmlzb3IiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjNWM3NmE0YWMyMjc5YzcyNjJkY2UxZDRkOGRlZWYzM2ZkZTI4NDZhMWJhOGYyN2RhMzhlNTZkMjNjYzJmIn19fQ==',
+            'sig': 'CnjMBYOScbc3Hfkn+r1eTacBGUjs5E0dNPoiKrrdBwg0lTZ+lfbX2w0YeEOSaBp+g1xv4Kx1HePIqH5JP2zBvBwrajV/BSXtg2w7m5nweLMZDWphcvnEY5ZW+U9KTKZMJp5lJP7rqNERDngrE9f7Dq58Ffmx81SIlFDQxabgcU1QvnoMS3rFoD48LKuednBN/M1ewaAyRWrRdgvhcZNINJ5DmYWL1b3hTYfrzXgNcNL/jA03iOg6DVb2RkptxvTJolp6B9HOAwTB9+w2vdJx3lsmUNvZm80vLbMt5ROYoPmLj4tOyfxwZE0CfxKGgQveAVgEmohkpbDmRZJq1ff+GnokaoxSYdTXpkCw60Vxskzbt41kEKhppjDCg1SQgjFdGJa7LeIlw/8+Q2hR/MHVrwXicwpvpu/IMptOXTZk0relcb1Mmjsuoizy/eHP40F1L6NYDh02sHESBK7dx9IdaEdJ+miJXPPQGdi20ldJnG6nk27J/Jxdx8b84916/2rD9ILkeXJ25Q0Pabn4toLg4PrMz+UJMido2Ij0amluvwc22ozPeJrGQ9mE7zQk0H9xqBGmWz9xMQZHVu6paulOV0hT0yfJ/b1amzOtIav5tEWC4B2+SEbuti+XCX4IVLBx4IFts83jPZYQs8TWhc+OsvSsZ1KOvwbWrrMKmSDulpE=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MTM3MjE5MDU5MTUsInByb2ZpbGVJZCI6IjhjYjc5Y2QzMWU0ODQwODc5MTM3YTM3ZTE2NGYxNDk0IiwicHJvZmlsZU5hbWUiOiJCbHVlUmF2ZW5fIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS82ZjRmNTEzOGY1M2U2NjE4ZDhkMTQyYjVmMzk0MzA5YzVjMzcxY2IyNjc2YTg2ZDNlYTI2MDZkNTFhNSJ9fX0=',
             'trail': '',
             'op': 'false',
             'speech': "So cold!",
@@ -16,7 +16,7 @@
                 "/cast iceshield",
                 "/cast frost",
                 "/freezewater"
-                
+                "/fly",
             ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
