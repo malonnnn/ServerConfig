@@ -15,6 +15,6 @@
                 "/undisguise"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:book 1 name:&5M&2a&8l&5's_&5S&2p&5e&8l&2l&5b&2o&0o&5k"
+                "/give ". @plr ." minecraft:book 1 name:&5M&2a&8l&5's_&5S&2p&5e&8l&2l_&5B&2o&0o&5k"
             )
         )
