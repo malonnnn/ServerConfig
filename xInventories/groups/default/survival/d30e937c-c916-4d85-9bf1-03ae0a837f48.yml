@@ -8,21 +8,120 @@ inventory:
       display-name: §bKa-me-ha-me-ha§b «×»
   '9':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
+    type: ELYTRA
+    damage: 37
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    damage: 7
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: FISHING_ROD
+    damage: 9
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 310
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_AXE
+    damage: 8
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 129
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: CHORUS_FRUIT
+    amount: 51
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 14
+    amount: 64
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    amount: 47
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LIGHT_BLUE_GLAZED_TERRACOTTA
+    amount: 22
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BLOCK
+    amount: 17
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BEACON
+    amount: 2
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRILLED_PORK
+    amount: 64
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    amount: 7
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLASS
+    amount: 14
+  '19':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOOK
+    amount: 21
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    amount: 3
+  '25':
+    ==: org.bukkit.inventory.ItemStack
+    type: STICK
+    amount: 3
+  '29':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+  '33':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 4
+    amount: 11
+  '34':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    amount: 64
+  '35':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 4
+    amount: 64
+  '37':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+  '38':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  '39':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -30,40 +129,49 @@ armor_contents:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4S§ep§4e§ce§ed§8s§0t§9e§1r §4Boots
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 38.93333053588867
+  helmet:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+  chestplate:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+  leggings:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+health: 100.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.5555556
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.16700077
+exhaustion: 3.7923608
 potion_effect:
   '0':
-    type: REGENERATION
+    type: SPEED
     level: 1
-    duration: 199453
+    duration: 182628
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199453
-  '2':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 199453
-  '3':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 199453
-  '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 199453
-  '5':
     type: HEALTH_BOOST
     level: 19
-    duration: 199453
+    duration: 171382
+  '2':
+    type: WATER_BREATHING
+    level: 1
+    duration: 171382
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 171382
+  '4':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 171382
+  '5':
+    type: REGENERATION
+    level: 1
+    duration: 171382

@@ -40,6 +40,10 @@ register_command(mindlock,
             }
             @plr = player()
             
+            if(has_permission(@vic,'is.op')){
+                tmsg(@plr,color(red).'That player is better than you and cannot be mind locked.')
+                die()
+            }
             @isMindLocked = import(@vic.'isMindLocked')
             if(@isMindLocked){
                 tmsg(@plr,color(red).'That player is already mindlocked')
