@@ -3834,3 +3834,39 @@ liftmetal:
          duration: 5000 
      costs: 
          mana: 40
+healingfield:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: ShieldEffect
+             iterations: 15
+             particle: redstone
+             color: ffbf00
+             updateLocations: false
+             updateDirections: false
+    costs:
+        mana: 50
+    parameters:
+        range: 16
+        target_type: LivingEntity
+        target_breakables: 1
+        target: self
+        duration: 5000
+        cooldown: 10000
+        effect_regeneration: 4
+        hitbox: true
