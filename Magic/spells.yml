@@ -3834,3 +3834,97 @@ liftmetal:
          duration: 5000 
      costs: 
          mana: 40
+firebolt:
+    icon: diamond_axe:75
+    icon_disabled: diamond_hoe:75
+    icon_url: http://textures.minecraft.net/texture/7dbb7f75e74ad4218d2af7191752b5952144436ce8aa2bb6fb27168e6f28af
+    alias: inferno
+    category: demolition
+    pvp_restricted: true
+    worth: 200
+    earns_sp: 1
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: Disc
+            actions:
+            - class: Cover
+              actions:
+              - class: Burn
+              - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.burn
+           sound_volume: 1
+           location: both
+        tick:
+        -  class: EffectSingle
+           location: target
+           particle: redstone
+           color: FFAA00
+           particle_count: 2
+           particle_offset_x: 0.1
+           particle_offset_y: 0.1
+           particle_offset_z: 0.1
+        hit:
+        -  class: EffectSingle
+           location: target
+           color: FFAA00
+           firework: ball
+    parameters:
+        velocity: 80
+        target_type: LivingEntity
+        allow_max_range: true
+        range: 48
+        hitbox: true
+        fov: 0.03
+        radius: 1
+        vertical_range: 4
+        undo: 2000
+        cooldown: 0
+        target_breakables: 0
+        destructible: burnable
+        damage: 10
+        bypass_build: true
+    costs:
+        mana: 35
+healingfield:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: ShieldEffect
+             iterations: 15
+             particle: redstone
+             color: ffbf00
+             updateLocations: false
+             updateDirections: false
+    costs:
+        mana: 50
+    parameters:
+        range: 16
+        target_type: LivingEntity
+        target_breakables: 1
+        target: self
+        duration: 5000
+        cooldown: 10000
+        effect_regeneration: 4
+        hitbox: true
