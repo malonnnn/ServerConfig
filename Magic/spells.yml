@@ -3834,6 +3834,42 @@ liftmetal:
          duration: 5000 
      costs: 
          mana: 40
+healingfield:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: ShieldEffect
+             iterations: 15
+             particle: redstone
+             color: ffbf00
+             updateLocations: false
+             updateDirections: false
+    costs:
+        mana: 50
+    parameters:
+        range: 16
+        target_type: LivingEntity
+        target_breakables: 1
+        target: self
+        duration: 5000
+        cooldown: 10000
+        effect_regeneration: 4
+        hitbox: true
 firebolt:
     icon: diamond_axe:75
     icon_disabled: diamond_hoe:75
@@ -3892,39 +3928,45 @@ firebolt:
         bypass_build: true
     costs:
         mana: 35
-healingfield:
-    icon: diamond_axe:9
-    icon_disabled: diamond_hoe:9
-    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
-    category: dark
-    worth: 80
-    earns_sp: 6
-    upgrade_required_path: apprentice
-    upgrade_required_casts: 50
+phoenixforce:
+    icon: diamond_axe:178
+    icon_disabled: diamond_hoe:178
+    icon_url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+    category: combat
+    worth: 100
+    earns_sp: 8
     actions:
         cast:
-        - class: CustomProjectile
+        cast:
+        - class: Velocity
+        - class: Repeat
           actions:
-          - class: PotionEffect
-          - class: Deactivate
+          - class: ConeOfEffect
+            actions:
+            - class: Damage
     effects:
         cast:
         -  class: EffectSingle
            effectlib:
-             class: ShieldEffect
+             class: StarEffect
              iterations: 15
+             radius: 5
              particle: redstone
-             color: ffbf00
-             updateLocations: false
-             updateDirections: false
+             color: ff9000
+    parameters:
+        allow_max_range: true
+        target: other
+        target_type: Entity
+        range: 7
+        fov: 360
+        damage: 30
+        push: 0
+        target_breakables: 1
+        cooldown: 20000
+        magic_damage: false
+        instant_block_effects: true
+        living_entity_speed: 1
+        yaw_offset: 20
+        repeat: 10
     costs:
         mana: 50
-    parameters:
-        range: 16
-        target_type: LivingEntity
-        target_breakables: 1
-        target: self
-        duration: 5000
-        cooldown: 10000
-        effect_regeneration: 4
-        hitbox: true
