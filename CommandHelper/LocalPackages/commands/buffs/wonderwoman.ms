@@ -19,7 +19,8 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/cast forcefield",
-                "/cast wwbracers"
+                "/cast wwbracers",
+                "/herotransform <id>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
