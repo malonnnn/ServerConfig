@@ -20,7 +20,7 @@
                 "/fly",
                 "/cast forcefield",
                 "/cast wwbracers",
-                "/herotransform wonderwomangodmode"
+                "/herotransform <id>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
