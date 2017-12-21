@@ -243,7 +243,7 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+[ .,-_]*t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
 
-    if(@pname == 'xStqr'){
+    if(has_permission(@pname,'change.smiles')){
         assign(@msg, reg_replace('(:+|;+|=+)+[. \',-]*(\\[+|\\]+|D+|>+|<+|\\+|\\/+)', ':)', @msg))
         assign(@msg, reg_replace('(D+|>+|<+|\\+|\\/+|\\[+|\\]+)+[. \',-]*(:+|;+|=+)', ':(', @msg))
         modify_event(message, @msg)
@@ -266,6 +266,7 @@ bind('player_chat', null, null, @e) {
         string_position(@tmp,'owner') >= 0
     ){
         cancel()
+        console(@pname.' said it!')
         set_timeout(500,closure(
             broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
         ))
