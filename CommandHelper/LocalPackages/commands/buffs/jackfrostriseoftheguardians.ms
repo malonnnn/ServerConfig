@@ -14,8 +14,7 @@
                 "/carryplayer",
                 "/dismountplayer",     
                 "/cast frost",
-                "/fly",
-                
+                "/fly"      
             ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
