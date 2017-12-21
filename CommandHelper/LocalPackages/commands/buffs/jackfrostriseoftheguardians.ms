@@ -12,8 +12,7 @@
             'powers': array(
                 "/buff",
                 "/carryplayer",
-                "/dismountplayer",
-                
+                "/dismountplayer",     
                 "/cast frost",
                 "/fly",
                 
