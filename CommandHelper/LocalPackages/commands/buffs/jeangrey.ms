@@ -14,7 +14,8 @@
                 "/cast forcefield",
                 "/cast telekinisis",
                 "/float <up/down/pause/unpause/stop>"
-                "/msg <playername>"                 
+                "/msg <playername>",
+                "/herotransform phoenix"
             ),  
             'buffs': array(  
             ),
