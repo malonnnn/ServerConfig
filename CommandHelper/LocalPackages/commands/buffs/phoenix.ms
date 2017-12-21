@@ -19,7 +19,7 @@
                 "/cast phoenixforce",
                 "/jump 0-2",
                 "/fly",
-                "/herotransformation jeangrey"
+                "/herotransform jeangrey"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true"
