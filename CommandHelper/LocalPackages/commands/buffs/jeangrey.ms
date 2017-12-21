@@ -17,7 +17,10 @@
                 "/msg <playername>"                 
             ),  
             'buffs': array(  
-            )  
+            ),
+            'alts': array(
+                'phoenix'
+            )
         )  
  
  

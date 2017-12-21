@@ -27,5 +27,8 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/give ". @plr ." 420 1 16:10 name:&4W&fon&eder_&4W&fom&9an&f's_&eLasso",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&4H&ee&4r&cm&ee&8s's_&4Boots"                
+            ),
+            'alts': array(
+                'wonderwoman'
             )
         )

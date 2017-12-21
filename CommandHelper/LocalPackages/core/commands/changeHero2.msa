@@ -163,6 +163,25 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
                 )
                 die()
             }
+            if(array_index_exists(@hero,'alts')){
+                @alts = @hero['alts']
+                foreach(@alt in @alts){
+                    if(@alt == @otherPlayerGroup){
+                        @h1 = @hero['name']
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                        @h2 = @hero['name']
+                        _broadcast(
+                            concat(color(white),@plrr)
+                            concat(color(gray),"tried to turn into")
+                            @h1
+                            concat(color(gray),"but")
+                            concat(color(white),@player)
+                            concat(color(gray),"was already ".@h2."!")
+                        )
+                        die()
+                    }
+                } 
+            }
         }
 
         clear_task(import(@player.'isBurningInSunlight'))
