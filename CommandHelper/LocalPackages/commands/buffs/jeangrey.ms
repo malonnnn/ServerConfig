@@ -15,7 +15,7 @@
                 "/cast telekinisis",
                 "/float <up/down/pause/unpause/stop>"
                 "/msg <playername>",
-                "/herotransform phoenix"
+                "/herotransform <id>"
             ),  
             'buffs': array(  
             ),
