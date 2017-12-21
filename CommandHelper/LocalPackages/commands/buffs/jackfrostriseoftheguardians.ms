@@ -20,7 +20,7 @@
                 "/effect ". @plr ." 10 9999 2 true",
                 "/effect ". @plr ." 11 9999 1 true",
                 "/shot give ". @plr ." icebeam",
-                "/give ". @plr ." minecraft:stick 5 16:10 17:10 name:&9J&1a&9c&9k&1s&9S&1t&da&5f&7f",       
-                "/give ". @plr ." minecraft:iron_boots 1 9:3 name:&9F&1r&9o&8s&ft_&9W&3a&8lk&fe&1r"
+                "/give ". @plr ." minecraft:stick 5 16:10 17:10 name:&9J&1a&9c&9k&1s_&fF&1r&bo&5st's&8(&1R&9O&3T&fG&8)_&9S&1t&da&5f&7f",       
+                "/give ". @plr ." minecraft:iron_boots 1 9:3 name:&9J&1a&9c&9k&1s_&fF&1r&bo&5st's&8(&1R&9O&3T&fG&8)_&9W&3a&8lk&fe&1r"
             )
         )
