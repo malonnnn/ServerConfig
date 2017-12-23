@@ -19,8 +19,7 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
-                "/fly",
-                "/break (breaks 1 block of whatever you're looking at, including bedrock)"
+                "/fly"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",

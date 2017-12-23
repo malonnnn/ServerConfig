@@ -5,7 +5,7 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 1.1080135
+exhaustion: 2.2940147
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -22,17 +22,7 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §cArrow §6Gun§6 «0»
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 12
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
+      display-name: §cArrow §6Gun§6 «1»
   '3':
     ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_SPADE
@@ -58,9 +48,19 @@ inventory:
       enchants:
         ARROW_FIRE: 1
         ARROW_INFINITE: 1
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    damage: 22
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
 ender_chest: {}
 potion_effect:
   '0':
     type: NIGHT_VISION
     level: 1
-    duration: 969
+    duration: 3164

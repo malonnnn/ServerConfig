@@ -15,8 +15,7 @@
                 "/run 0-1",
                 "/haste 0-9",
                 "/carryplayer <player>",
-                "/dismountplayer",
-                "/break (breaks 1 block of whatever you're looking at, including bedrock)"
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",

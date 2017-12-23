@@ -11,18 +11,6 @@ inventory:
         DAMAGE_ALL: 10
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: RAW_BEEF
-    amount: 8
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: LEATHER
-    amount: 3
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: WOOD_STAIRS
-    amount: 6
-  '4':
-    ==: org.bukkit.inventory.ItemStack
     type: IRON_SWORD
     meta:
       ==: ItemMeta
@@ -30,7 +18,7 @@ inventory:
       display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
       enchants:
         DAMAGE_ALL: 20
-  '5':
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: SHIELD
     meta:
@@ -41,14 +29,34 @@ inventory:
         DURABILITY: 10
         MENDING: 1
       blockMaterial: SHIELD
-health: 56.0
-hunger: 0
-exp: 0.0
-exp-level: 3
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
+      enchants:
+        DAMAGE_ALL: 20
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §4W§fon§eder§4W§fom§9an's §4S§fh§ee§9i§4l§fd
+      enchants:
+        DURABILITY: 10
+        MENDING: 1
+      blockMaterial: SHIELD
+health: 24.0
+hunger: 19
+exp: 0.85714287
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.2306285
+exhaustion: 3.8220344
 armor_contents: {}
 ender_chest:
   '0':
@@ -185,20 +193,16 @@ potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 19
-    duration: 198697
+    duration: 199901
   '1':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 198697
-  '2':
-    type: FAST_DIGGING
-    level: 127
-    duration: 180514
-  '3':
-    type: INCREASE_DAMAGE
-    level: 20
-    duration: 198697
-  '4':
     type: REGENERATION
     level: 1
-    duration: 198697
+    duration: 199901
+  '2':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 199901
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199901

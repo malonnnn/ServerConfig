@@ -11,8 +11,6 @@
             'speech': "Its Jack Time!",
             'powers': array(
                 "/buff",
-                "/carryplayer",
-                "/dismountplayer",     
                 "/cast frost",
                 "/fly"      
             ),

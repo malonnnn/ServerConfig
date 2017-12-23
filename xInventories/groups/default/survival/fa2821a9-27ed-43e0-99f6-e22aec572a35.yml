@@ -1,31 +1,56 @@
 inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: PISTON_STICKY_BASE
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: EXPLOSIVE_MINECART
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: PISTON_BASE
-  '3':
+    type: ARROW
+  '9':
     ==: org.bukkit.inventory.ItemStack
-    type: POWERED_RAIL
-  '4':
+    type: LEATHER
+    amount: 2
+  '10':
     ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE_BLOCK
-  '5':
+    type: GOLDEN_APPLE
+    damage: 1
+  '11':
     ==: org.bukkit.inventory.ItemStack
-    type: SLIME_BLOCK
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:fire_resistance
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: RAW_BEEF
+    amount: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: NETHER_STALK
+    amount: 7
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    type: GLOWSTONE
+    amount: 20
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    type: BROWN_MUSHROOM
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    amount: 3
+  '17':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+  '18':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
 armor_contents: {}
 health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+hunger: 18
+exp: 0.6521739
+exp-level: 8
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 2.5369282
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -36,3 +61,12 @@ ender_chest:
     type: RED_ROSE
     damage: 3
     amount: 6
+potion_effect:
+  '0':
+    type: WATER_BREATHING
+    level: 1
+    duration: 194007
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 194007
