@@ -13,13 +13,14 @@
             'speech': "My name is Daisy Johnson AKA QUAKE!.",
             'powers': array(
                 "/buff",
-                "/jump 0-2",
+                "/jump 0-9",
                 "/run 0-2",
                 "/haste 0-2",
-                "/quake",
+                "/push"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",
-                "/shot give ". @plr ." pistol"             
+                "/shot give ". @plr ." pistol",
+                "/shot give ". @plr ." quake"
             )
         )
