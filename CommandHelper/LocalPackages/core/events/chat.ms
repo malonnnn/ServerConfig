@@ -260,10 +260,11 @@ bind('player_chat', null, null, @e) {
 
     @tmp = to_lower(@msg)
     if(
-        string_position(@tmp,'jiren') >= 0 ||
+        (string_position(@tmp,'jiren') >= 0 ||
         string_position(@tmp,'tek') >= 0 ||
         string_position(@tmp,'jerry') >= 0 ||
-        string_position(@tmp,'owner') >= 0
+        string_position(@tmp,'owner') >= 0) &&
+        !has_permission(@pname,'is.criminal')
     ){
         cancel()
         console(@pname.' said it!')
