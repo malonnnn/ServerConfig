@@ -1,13 +1,57 @@
-inventory: {}
+inventory:
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k §e§lD§a§lN§4§lA
+      lore:
+      - mrmxyzptlk
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §6M§5r§6. §5M§6x§5y§6z§5p§6t§5l§6k §e§lD§a§lN§4§lA
+      lore:
+      - mrmxyzptlk
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.45454547
-exp-level: 2
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.7130558
+saturation: 1.0
+exhaustion: 2.676005
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
