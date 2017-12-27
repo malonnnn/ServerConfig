@@ -1,13 +1,33 @@
-health: 20.0
+health: 100.0
 hunger: 20
-exp: 0.8666667
-exp-level: 4
+exp: 0.14285715
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 12.0
-exhaustion: 1.9162337
-inventory: {}
-armor_contents: {}
+saturation: 0.0
+exhaustion: 0.12565975
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -168,24 +188,36 @@ potion_effect:
   '0':
     type: JUMP
     level: 5
-    duration: 191411
+    duration: 197241
   '1':
     type: WATER_BREATHING
     level: 1
-    duration: 191149
+    duration: 196956
   '2':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 196956
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 196956
+  '4':
     type: SPEED
     level: 10
-    duration: 191294
-  '3':
-    type: FAST_DIGGING
-    level: 5
-    duration: 191338
-  '4':
-    type: INCREASE_DAMAGE
-    level: 5
-    duration: 191149
+    duration: 197303
   '5':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 196956
+  '6':
+    type: FAST_DIGGING
+    level: 127
+    duration: 197145
+  '7':
+    type: INCREASE_DAMAGE
+    level: 150
+    duration: 196956
+  '8':
     type: DAMAGE_RESISTANCE
-    level: 4
-    duration: 191149
+    level: 3
+    duration: 196956
