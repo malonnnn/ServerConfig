@@ -1,0 +1,143 @@
+CocoPops_CSP:
+    Shoot:
+        Trails:
+            Trail: "ParticleSmoke"
+        Damage_Increase_Based_On_Armor:
+            Helmet:
+                DIAMOND_HELMET: 2
+            Chestplate:
+                DIAMOND_CHESTPLATE: 3
+            Leggings:
+                DIAMOND_LEGGINGS: 3
+            Boots:
+                DIAMOND_BOOTS: 1
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+    Held:
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "Flame_Gun"
+
+Putty_CSP:
+    Shoot:
+        Trails:
+            Trail: "ParticleSmoke"
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+    Held:
+        Hide_Attributes: true
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "Flame_Gun"
+
+Grenade_CSP:
+    Shoot:
+        Trails:
+            Trail: "ParticleSmoke"
+    Damage:
+        Spawn_Firework:
+            Shape: "BURST"
+            Color: 204-0-0
+            Flicker: false
+    Held:
+        Hide_Attributes: true
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "Flame_Gun"
+
+Flashbang_CSP:
+    Shoot:
+        Trails:
+            Trail: "ParticleSmoke"
+    Damage:
+        Spawn_Firework:
+            Shape: "BURST"
+            Color: 255-255-255
+            Flicker: false
+    Held:
+        Hide_Attributes: true
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 5
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+    Attachment:
+        Add_Attachment_GUI_Name: "&c- &7Add Attachment &c-"
+        Detach_Attachment_GUI_Name: "&c- &7Detach Attachment &c-"
+        Attachments: "Flame_Gun"
+
+Monkey_Bomb_CSP:
+    Shoot:
+        Trails:
+            Trail: "ParticleSmoke"
+    Held:
+        Hide_Attributes: true
+    Explode:
+        Monkey_Bomb:
+            Entity_Type: "GUARDIAN"
+            Lasts_Before_Dying: 100
+            Radius: 18
+            Works_For_Mobs: true
+            Works_For_Animals: true
+            Explosion_End:
+                Exploding_Weapon_Name: "CSP_Monkey_Bomb_Explosion"
+    Skin:
+        GUI_Name: "&c- &7Skin &c-"
+        Default_Skin: "NoSkin"
+        Skins: "Blue,Pink,Red"
+
+CSP_Monkey_Bomb_Explosion:
+    Hit_Block:
+        Break_Blocks:
+            Regen_Blocks_After_Milliseconds: 10000
+            Blocks_List:
+            - "20"
+            - "95"
+            - "102"
+            - "160"
+            Explosion:
+                Radius: 6

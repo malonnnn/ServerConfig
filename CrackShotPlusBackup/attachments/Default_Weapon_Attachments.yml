@@ -1,0 +1,194 @@
+Projectile_Control:
+    Attachment_Type: "PROJECTILE_CONTROL"
+    Attachments_Which_Denies: "Homing_Projectiles,Bouncing_Projectiles"
+    Velocity_Update_Interval: 5
+    Control_Access_After: 30
+    Lose_Control_Distance: 100
+    Lose_Control_Time: 140
+    Lost_Control_Message: "&7You have lost control to projectile!"
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cProjectile Control"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Control access after &c- &71.5s"
+        - "&c- &7Lose control distance &c- &7100m"
+        - "&c- &7Lose control time &c- &77s"
+
+Homing_Projectiles:
+    Attachment_Type: "HOMING_PROJECTILES"
+    Attachments_Which_Denies: "Projectile_Control,Bouncing_Projectiles"
+    Radius_To_Nearest_Entity: 48
+    Crosshair_To_Lock: false
+    Message_To_Shooter: "&7You launched homing projectile to seek &c#VICTIM#&7!"
+    Message_To_Victim: "&7You are being chased by &c#SHOOTER# &7homing projectile!"
+    Lose_Control_Time: 100
+    Lost_Control_Message: "&7Homing Projectile lost control to its target!"
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cHoming Projectiles"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Radius to nearest entity &c- &748m"
+        - "&c- &7Crosshair to lock &c- &7FALSE"
+
+Bouncing_Projectiles:
+    Attachment_Type: "BOUNCING_PROJECTILES"
+    Attachments_Which_Denies: "Homing_Projectiles,Projectile_Control"
+    Decrese_Velocity_Per_Bounce: 0.6
+    Minium_Velocity: 0.6
+    Bounce_Amount: 3
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cBouncing Projectiles"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Decrease velocity per bounce &c- &70.6"
+        - "&c- &7Minium velocity for projectile &c- &70.6"
+        - "&c- &7Bounce amount &c- &73"
+
+StatTrak:
+    Attachment_Type: "STATTRAK"
+    Only_Player_Kill: true
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cStatTrak"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Only player kills count &c- &7TRUE"
+
+Extended_Clip:
+    Attachment_Type: "EXTENDED_CLIP"
+    Increase_Capacity_Per_Clip: 6
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cExtended Clip"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases capacity &c- &76"
+
+Lightweight:
+    Attachment_Type: "WEIGHT"
+    Decrease_Weapon_Weight: 0.01
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cWeight"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Decrease weapon weight &c- &70.01"
+
+High_Caliber_Rounds:
+    Attachment_Type: "HEADSHOT"
+    Increase_Damage: 6.0
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cHigh Caliber Rounds"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases headshot damage &c- &76.0"
+
+Backstabber:
+    Attachment_Type: "BACKSTAB"
+    Increase_Damage: 7.0
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cBackstabber"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases backstab damage &c- &77.0"
+
+Critical_Hit_Addon:
+    Attachment_Type: "CRITICAL_HIT"
+    Increase_Damage: 4.0
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cCritical Hit Addon"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases critical hit damage &c- &74.0"
+
+FMJ:
+    Attachment_Type: "HIT"
+    Increase_Damage: 2.0
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cFMJ"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases damage &c- &72.0"
+
+Rapid_Fire:
+    Attachment_Type: "RAPID_FIRE"
+    Increase_Fire_Rate: 2
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cRapid Fire"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increases fire rate &c- &72"
+
+Grip:
+    Attachment_Type: "SPREAD"
+    Decrease_Spread_While_Sprinting: 0.005
+    Decrease_Spread_While_Sneaking: 0.09
+    Decrease_Spread_While_Zooming: 0.1
+    Decrease_Spread_While_Standing_Or_Walking: 0.15
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cGrip"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Decrease spread &c-"
+        - " &c- &7While not touching ground &c- &70.0"
+        - " &c- &7While sprinting &c- &70.005"
+        - " &c- &7While sneaking &c- &70.09"
+        - " &c- &7While zooming &c- &70.1"
+        - " &c- &7While standing or walking &c- &70.15"
+
+Laser_Sight:
+    Attachment_Type: "CUSTOM_SPREAD"
+    Decrease_Y_Spread_While_Not_Touching_Ground: 0.012
+    Decrease_ZX_Spread_While_Not_Touching_Ground: 0.05
+    Decrease_Y_Spread_While_Sprinting: 0.01
+    Decrease_ZX_Spread_While_Sprinting: 0.04
+    Decrease_Y_Spread_While_Sneaking: 0.006
+    Decrease_ZX_Spread_While_Sneaking: 0.02
+    Decrease_Y_Spread_While_Zooming: 0.004
+    Decrease_ZX_Spread_While_Zooming: 0.01
+    Decrease_Y_Spread_While_Standing_Or_Walking: 0.008
+    Decrease_ZX_Spread_While_Standing_Or_Walking: 0.03
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cLaser Sight"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Decrease spread &c-"
+        - " &c- &7While not touching ground &c- &Y 0.012 ZX 0.05"
+        - " &c- &7While sprinting &c- &7Y 0.01 ZX 0.04"
+        - " &c- &7While sneaking &c- &7Y 0.006 ZX 0.006"
+        - " &c- &7While zooming &c- &7Y 0.004 ZX 0.01"
+        - " &c- &7While standing or walking &c- &7Y 0.008 ZX 0.03"
+
+Silencer:
+    Attachment_Type: "SILENCER"
+    Hide_Trails: true
+    Reduce_Sound_Volume: 0.5
+    Reduce_Damage: 3.0
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cSilencer"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Hides trails &c- &7TRUE"
+        - "&c- &7Reduced sound volume &c- &70.5"
+        - "&c- &7Reduces damage &c- &73.0"
+
+Zoom_Increase:
+    Attachment_Type: "SCOPE"
+    Increase_Zoom: 2
+    Item:
+        Item_Type: "359"
+        Item_Name: "&cZoom Increase"
+        Item_Lore:
+        - "&7Stats&c:"
+        - "&c- &7Increase zoom &c- &72"
