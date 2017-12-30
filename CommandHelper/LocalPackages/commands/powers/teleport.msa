@@ -19,6 +19,7 @@ tp:/tp $plr = >>>
         }
     }
 
+    broadcast(@player.' has teleported to '.@vic)
     runas(~console,'/teleport '.@player.' '.@vic)
 
 <<<
@@ -57,7 +58,7 @@ tp:/tp $plr1 $plr2 = >>>
             die()
         }
     }
-
+    broadcast(@player.' has teleported '.@plr1.' to '.@plr2)
     runas(~console,'/teleport '.@plr1.' '.@plr2)
 
 <<<

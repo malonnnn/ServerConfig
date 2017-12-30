@@ -1,0 +1,650 @@
+1.59
+
+    Temporary turret fix and add
+        Added way to choose what kind of particles spawn to temporary turret
+        Fixed runnable not canceling and setting projectile to wrong weapon's projectile
+    Added shooter knockback on damage
+    Added Entity_Target_List and Entity_Target_Blacklist for homing projectiles
+        Choose which entity types homing projectiles can chase or which entity types homing projectiles can't chase
+    Added explode attachment
+        Make weapon projectiles explode on impact with surface or player or both
+    Added run command for shoot, reload and damage (+ headshot, backstab, critical hit)
+        As attachment also
+        Also added attachment run command for kill also
+    Added potions affect for bullet spread, fire rate and damage (+ headshot, backstab, critical hit)
+        Supports amplifiers also
+        Basically you can make for example STRENGTH potion effect make players shots more powerfull
+        Attachment support
+    Added scope affect fire rate
+        Change fire rate while zooming
+        Attachment support
+    Added PlaceholderAPI support
+        For every action bar, title and subtitle message
+    Added way to split attachments to new lines
+        Two simple things
+            Maxium attachments per line to be changed and new line format
+        Moved update lore to its own "category" so update lore is broken for every weapon (sorry and sorry no convert this time). It is quick to fix though
+            Now instead of this
+            Update_Lore:
+            - "Some lore line"
+            Its like this
+            Note that Maxium_Attachments_Per_Line and New_Line_Format aren't must
+                Recommended to use though incase you use #ATTACHMENTS# variable in your lore
+            Update_Lore:
+                Maxium_Attachments_Per_Line: Some integer
+                New_Line_Format: "Some format"
+                Lore:
+                - "Some lore line"
+    Added changelog into CrackShotPlus jar
+        Kinda made it for me to remember what I have changed in some version, but decided to make it so you can also check it if you want to
+        Incase you don't want changelog.yml to be generated into CrackShotPlus folder then
+            Go to file.yml and add "Generate_Changelog" if it isn't there yet and put it to false
+    Changed convert command
+        Changed convert command to work simply like this /csp convert
+    Fixed entity explode bug
+        Since Break Block update(I think) this bug has existed, but just got report about it
+        Any entity explode (ex. tnt, creepers) didn't affect anything and that is now fixed
+        Luckily I got reported about this because its kinda huge bug. Thanks for reporting!
+        
+1.58
+
+    This version may contain bugs because I changed pretty many things in code especially those things which used IDs may have bugs, but at least so far I haven't found one
+    Removed IDs from CrackShotPlus
+        Made this change simple for you
+            Simply use /csp convert command
+            It converts IDs in files in selected folders to material so it will work in CrackShotPlus
+                Example usage /csp convert weapons,attachments,skins
+                Another example usage /csp convert skins
+    Added Temporary_Turrets
+    Added Projectile_Turn_Ratio for homing projectiles
+    Added Non_Increasing_Circle for energy trails
+    Added way to use newer particles
+
+1.57
+
+    Fixed break blocks second data value. Sorry
+
+    In next update 1.58 I need to make few changes
+        Item ID is getting removed
+            Configurations will need some changes because ID like 20 doesn't work anymore and it will need to be changed to GLASS for example
+        I will add option to use particle instead of effect in 1.9+ servers
+            Will make optional if someone doesn't want to use particles
+            Using particle you can use newest "trails"
+
+1.56
+
+
+    In next update (1.57) (due to Minecraft 1.13)
+        Item ID is getting removed so pretty many things in CrackShotPlus are going to break
+        Configurations will need changes
+            You can no longer use item ID like 20, you need to use it like GLASS
+    Break_Blocks
+        Blacklist works for explosions also
+        Chest content, sign letters etc. will be regenerated also
+        Decreased chance for blocks like sand, torches, rails, carpets etc. disappear (disappearing isn't still 0%, just decreased the chance)
+        Added maxium amount of blocks that can regen per update
+        Way to stall the regeneration if player is inside regeneration area
+            Recommended to add these in extra.yml or regenerate it
+            Break_Blocks_Max_Blocks_Generated_Once_Per_Update: 100
+
+            # This one has to be in brackets (")
+            # "true" or "false"
+            Break_Blocks_No_Generation_If_Player_Inside: "false"
+            
+1.55
+
+
+    Fixed trail catch
+        Now catches incase it hits block or damages player to their location
+        Tell me if this causes new bugs so I can fix
+    Added old pumpkin on zoom system (new one is used by default)
+        Incase you don't want for some reason use packets to use pumpkin on zoom you can use old way by doing this
+            Go to CrackShotPlus folder -> otherconfig -> extra.yml -> change
+            # This one has to be in brackets (")
+            # "true" or "false"
+            Use_Old_Pumpkin_On_Zoom_System: "false"
+            To this
+            # This one has to be in brackets (")
+            # "true" or "false"
+            Use_Old_Pumpkin_On_Zoom_System: "true"
+
+1.54
+
+    Fixed holograms not despawning in unloaded chunks(I think)
+    Changed Copy Weapon To Off Hand to work with packets
+        This fixes the weapon drop on death also
+
+1.53
+
+    Fixed startup in China
+    Im still investigating the pumpkin disappearing after sniper shot
+        This doesn't happen to me for some reason
+        I need weapon's configuration where pumpkin disappears after shot!
+
+1.52
+
+
+    Fixed pumpkin on zoom in 1.8 versions.
+    Added #CAMERA_RECOIL_SIDEWAYS# & #CAMERA_RECOIL_UPWARDS# variables
+    Added CAMERA_RECOIL attachment
+
+1.51
+
+
+    Added camera recoil
+    Added options to choose bar style & color for killfeed
+    Added file.yml to be able to choose which folders you want generated
+    Added Disable_Gun_Placing_To_Off_Hand into extra.yml. Can be used to fix bugs in CrackShot & offhand problems.
+    Changed Pumpkin On Zoom to work client-sided. This may cause bugs, but I need you guys to notify me about them!
+        Other people wont see pumpkin in players head anymore, only player who has it
+        If player has helmet it is now effective even if player has pumpkin head from zoom
+        Removed pumpkin changes from CrackShotPlus resource pack due to they wasn't no longer need because Pumpkin On Zoom is now client-sided.
+
+1.50
+
+    Fixed bullet drop in 1.12
+    Changed skin & attachment all inventory to 54 slots
+    Few API methods
+        getAttachmentsForWeapon(String WeaponTitle)
+        getRandomAttachmentForWeapon(String WeaponTitle, Random Random)
+        getSkinsForWeapon(String weaponName)
+        getRandomSkinForWeapon(String WeaponTitle, Random Random)
+
+1.49
+
+    Quick fix update check
+    Added Craftmoto support @TeeePeee
+        Players can now shoot even while driving and having CrackShotPlus installed
+
+1.48
+
+    Added new API method setWeaponAmmoAmount()
+    Added way to run commands when killing victim
+        Run command as console, victim or killer
+        Check this here
+
+1.47
+
+    Kill event now works for grenades also.
+        This means that killfeed works now for grenades also.
+
+1.46
+
+
+    Added new event WeaponPickupEvent
+    Added new command to take every weapon using only one command
+        You can also take all skins at the same time
+            Try /csp command to see how it works
+    Resource pack
+        @NullBlox corrected durability calculations. Fixed stone sword texture
+        You might want to update your resource pack
+    Fixed bug which was caused by CSP's CS recipe handling
+    Changed permissions to work like in CrackShot.
+        This means that some permissions are now granted by default for everyone(can be negated though)
+            Take a look into this.
+
+1.45
+
+    Fixed typo in Grenade Launcher
+    Added new folder into CrackShotPlus folder called "weaponsrecipes" just to clearify usage of it.
+        You need to let CrackShotPlus handle CrackShot weapon crafting since 1.12 because of one error in CrackShot
+    Resource pack changes
+        AK-47 now fits better in item frames
+        @NullBlox also did some nice cleanups to CrackShotPlus resource pack
+
+1.44
+
+    I have fixed recipe unregistering in CrackShotPlus, but into CrackShot I can't fix it so I made alternative way to make CrackShot weapon crafting. In 1.12 CrackShot crafting is broken so don't use it(or actually just recipe unregistering).
+        Example how to use this alternative, just add this kind of thing into any folder of CrackShotPlus and change things as you want to. If you use Weapon_Name don't use that "Item" section as you have used to.
+        test:
+            Weapon_Name: "AK-47_CSP"
+            Crafting:
+                Amount: 1
+                Shaped_Recipe: false
+                Recipe: "280,289,289"
+        Basically I added that "Weapon_Name" so you can make crafting recipes for any CrackShot weapon.
+
+1.43
+
+    Added 1.12 support
+    
+1.42
+
+    Fixed few little bugs
+    Removed delayed durability changing due to being unused and causing lot of bugs
+
+1.41
+
+
+    Improved variables performance in update lore
+    Changed variables;
+        You can now choose NUMBER, BAR or PERCENTAGE
+        In each expect NUMBER you'll have to define minium and maxium that thing can be
+            Take examples from updated default weapons
+                You can update them by deleting old ones
+
+1.40
+
+    Skins, attachments, trails & visual reloads in lore will now use Item_Name player used to add it.
+
+1.39
+
+    Fixed shooting after putting weapon to itemframe
+    Fixed ammo removing bug
+
+1.38
+
+    Recoded 1.9 & 1.10 projectile bug fix. Just install this version and it will be automatically enabled.
+    Hopefully fixed csp item list error(?)
+
+1.37
+
+    Added Custom Hit Block Sound
+    
+1.36
+
+    Added new command to get CrackShotPlus's items.
+    I added these commands quickly because I have to pack stuff.
+        /csp item list
+        /csp item get (item)
+        /csp item give (item) (player)
+    Ill be back at monday, but just to let everyone know I have lot of things happening in IRL so I have had to keep coding at second place for a while and Im really sorry for that!
+
+1.35
+
+    Added bossbar killfeed (1.9 and above)
+    Updated resource pack to hide killfeed's bossbar to make it look cooler
+        Wither's & enderdragon's bossbar works still
+    Fixed few bugs
+
+1.34
+
+    Fixed bouncing projectiles
+    Fixed attachment all command
+    Removed debug message
+
+1.33
+
+    This update fixed compatibility issue with 1.8
+    
+1.32
+
+    Added smoke grenade
+    Added Trail_Catch for projectile trails
+    Added Circle trail type for energy trails
+    Added way to choose commands yourself.
+        Take a look into /plugins/CrackShotPlus/otherconfig/commands.yml
+    Fixed bug with block regeneration
+    Fixed ammo removing permission(I had typo).
+    Attachments can now have Durability and Change_Item_Type
+        If using those don't let players use actual skins, just choose default skin using Default_Skin
+        Suggested to only let weapon have one attachment which can change durability or item type to not have any conflicts(use Attachments_Which_Denies)
+        Example where after player adds silencer to weapon its durability is changed to 1 and item type to 275;
+        Silencer:
+            Durability: 1
+            Change_Item_Type: "275"
+            Silencer:
+                Hide_Trails: true
+                Reduce_Sound_Volume: 0.5
+                Reduce_Damage: 3.0
+                Multiply_Projectile_Speed: -0.3
+            Crafting:
+                Amount: 1
+                Shaped_Recipe: true
+                Recipe: "113,113,113,113,112,113,113,113,113"
+            Item:
+                Item_Type: "359"
+                Item_Name: "&cSilencer"
+                Item_Lore:
+                - "&7Stats&c:"
+                - "&c- &7Hides trails &c- &7TRUE"
+                - "&c- &7Reduced sound volume &c- &70.5"
+                - "&c- &7Reduces damage &c- &73.0"
+                - "&c- &7Reduces projectile speed &c- &70.3"
+
+1.31
+
+    Fixed null in inventory click
+
+1.30
+
+    Added new default weapon Desert Eagle (has example of dual wielding)
+    Require Both Hands to shoot
+    Copy Weapon To Off Hand on held
+    Added;
+        Disable shooting in spectator mode
+        Fix projectile bug
+            In order to use these make sure your extra.yml has em.
+            Shooting_Cooldown_On_Change_Held_Slot:
+                Enable: false
+                Cooldown: 60
+                Message: "&7You can not shoot yet!"
+            Break_Blocks_Update_Interval: 40
+            Break_Blocks_Bypass_Regions: true
+            Disable_Shooting_While_In_Spectator_Mode: true
+            # 1.9 projectile bug in collision at close range.
+            # This bug got fixed by Spigot in 1.11, but incase you don't want to update to 1.11 put this true.
+            Fix_Projectile_Bug: false
+
+1.29
+
+    Fixed when attachment were detached or added and CSP took each attachment from slot when it should've only taken one.
+
+1.28
+
+    Attachments
+        Added "Maxium_Stack_Amount"
+            Used to stack exactly same attachment
+        Added Reload category for attachments
+        Added projectile speed changing node below Silencer category
+        Fixed attachment toggle attachments
+    Variables
+        Added minium & maxium way for static bars
+            Your attachments for weapons tells you whenever you use minium or maxium for static bars
+        Added static bar for reload duration and projectile speed
+    Resource pack
+        Changed Hunting scope skin littlebit
+
+1.27
+
+    You can now use every attachment thing in one attachment
+    No longer needed "Attachment_Type"
+    List Of Attachment Modules
+
+1.26
+
+    Rewrote some wiki.
+        Should be now more organized
+    Added disabled regions node to disable weapons in certain WorldGuard regions
+    I found a simple way to change weapon item type on skin change and keep weapon working
+        Basically what this means
+            You can now organize your skins really easily and well
+                Id recommend to check new default weapons & default resource pack after updating
+            Skins can be used in 1.8 also now, just use Change_Item_Type in skins
+
+1.25
+
+    Fixed that permissions didn't work with some plugins
+    Added way to let break blocks bypass region check
+        In order to use this go to otherconfig folder -> extra.yml -> add "Break_Blocks_Bypass_Regions: true" there.
+
+1.24
+
+    Recoded few methods to be better
+    Fixes in 1.8 R1
+
+1.23
+
+    Fixed distance bug
+
+1.22
+
+    Fixes in 1.8
+        NoSuchMethod fixed
+
+1.21
+
+    Fixed unbreakable tag adding without reason
+    
+1.19
+
+    Improved scope pumpkin
+    
+1.18
+
+    Fixed helmet dissapearing on disconnect
+    Added
+        Custom bullet spread support for shotgun weapons
+        Custom shoot sound support for melee
+            When player swings with weapon which has "Melee_Mode" true in CrackShot configurations, CrackShotPlus plays "Custom_Shoot_Sound" sound
+
+1.17
+
+    Fixed pumpkin zoom
+    Added extra check for reload complete
+    Added PlaceholderAPI support for update lore
+        This should work, but not sure since I didn't test it
+
+1.16
+
+    Fixed bug when while zooming player started reload and reload didn't work
+
+1.15
+
+    Added delay bar to show how long player needs to wait till player can use weapon again.
+    Added ammo removing
+    Added Change_Sounds for SILENCER attachment
+    Fixed scope skin changing when shot
+    Fixed one little thing with colored trails
+    Fixed other things which I don't now remember
+    config.yml stuff is now in otherconfig folder
+
+1.14
+
+    Fixed attachment toggling + few other things
+    Changed few things with NBT tags
+    Skin
+        Added Change_Trail and Change_Visual_Reload
+    Crafting recipes
+        Added crafting recipes for attachment & skin items
+        They'll work like in CrackShot
+    I will add Change_Trail, Change_Visual_Reload and crafting recipes into wiki as soon as possible.
+
+1.13
+
+    Fixed scope (Sorry, for the delay with this. I just came back home.)
+        After unscope negative speed effect didn't go off
+    Added variables #DAMAGE_MULTIPLIER# and #EXPLOSION_RADIUS#.
+    Fixed silencer reduce sound.
+
+1.12
+
+    Fixed subtitle in visual reload
+    
+1.11
+
+    Added Delayed_Shoot_Skin, Delayed_Reload_Skin and Delayed_Scope_Skin.
+    Added variables
+        Check wiki
+    Added SCOPE attachment.
+
+1.09
+
+    Attempt #2 to fix null in prepare craft.
+    Fixed null in reload complete
+    Added SILENCER, SPREAD & CUSTOM_SPREAD attachments
+    Improved update lore
+        Possibility to show stats into weapon's lore. Here is image to show what does this actually mean.
+            Interacts with CSP attachments
+        I will document this as soon as possible!
+    Update lore requires these in config.yml
+    No_Attachments_On_Lore_Update: "&7No attachments"
+    No_Skin_On_Lore_Update: "&7No skin"
+    No_Visual_Reload_On_Lore_Update: "&7No visual reload"
+    No_Trail_On_Lore_Update: "&7No trail"
+    Update_Lore_Cooldown_Milliseconds: 60000
+    Update_Lore_Static_Bar:
+        Left_Color: "&7"
+        Right_Color: "&c"
+        Symbol: "░"
+        Symbol_Amount: 10
+
+1.08
+
+    Fixed null in visual reload
+    Fixed null in prepare craft
+    Fixed few other things
+    Added shoot, reload & scope delayed durability changing, but it isn't yet tested so I wont document this yet.
+
+1.07
+
+    Fixed unbrekable in 1.10 and below, sorry.
+    Added things for homing projectiles.
+        Lose_Control_Time & Lost_Control_Message
+    Added bullet drop.
+    Added many variables for update lore.
+        Added "Update_Lore_Cooldown_Milliseconds". Add this into your config.yml otherwise you can't use update lore.
+    Added many permissions.
+    Now when crafting CrackShot weapon using crafting recipes weapons will have CrackShotPlus things implented already in workbench.
+    Fixed few other bugs.
+
+1.06
+
+    Whole recode of CrackShotPlus is finally here in stable form!
+    Resource Pack
+        Every weapon has some texture
+        Things you want to try while using default CSP weapons & default CSP resource pack:
+            Try changing skins
+            Reload using AK-47
+            Zoom using Hunting
+    Features:
+        Shoot
+            Invisible_Projectiles
+            Trails
+                Includes GUI
+            Projectile_Control
+            Homing_Projectiles
+            Bouncing_Projectiles
+            Increasing_Fire_Rate
+            Custom_Bullet_Spread
+        Scope
+            Pumpkin_On_Zoom
+            Scope_Skin
+            Second_Zoom
+        Damage
+            Damage_Hologram_Format
+            No_Knockback
+            Spawn_Firework
+            Damage_Increase_Based_On_Armor
+        Hit_Block
+            Block_Crack_Animation
+            Block_Transform
+            Break_Blocks
+            Monkey_Bomb
+        Reload
+            Reload_Skin
+            Visual_Reload
+                Includes GUI
+                Action Bar, Title & Subtitle support
+        Held
+            Weapon_Weight
+            Hide_Attributes
+            Update_Lore
+        Explode
+            Monkey_Bomb
+        Kill
+            StatTrak
+        Skin
+        Attachment
+
+1.05
+
+    Id call this version stable V2, but I have still left to do following things;
+        Rewrite wiki (70% done)
+            V1 wiki will stay if someone doesn't want to move to V2.
+        Hunting weapon (need to wait one texture for it before doing it)
+        There is also things I was going to add into V2, but im adding new features constantly so they will be in CSP sooner or later
+    If you were using using 1.04 before add these things into your config.yml:
+        No_Attachments_On_Lore_Update: "&7No attachments"
+        No_Skin_On_Lore_Update: "&7No skin"
+        No_Visual_Reload_On_Lore_Update: "&7No visual reload"
+        No_Trail_On_Lore_Update: "&7No trail"
+        No_StatTrak_On_Lore_Update: "&70"
+        Else if you were using 1.03 or version before that delete your configurations
+    There is still modules.yml temporarily.
+    Added in #5:
+        Break block's explosions are now spheres
+        Break blocks now supports terrain protection plugins such as WorldGuard
+        Update lore now supports skins, attachments, trails, visual reloads and StatTrak points.
+        Fixed bugs.
+        Something I don't remember.
+        Im aware that skins doesn't work in 1.11. Im going to fix this as soon as possible.
+
+1.04
+
+    Id call this version stable V2, but I have still left to do following things;
+        Rewrite wiki
+        Hunting weapon (need to wait one texture for it before doing it)
+        There is also things I was going to add into V2, but im adding new features constantly so they will be in CSP sooner or later
+    If you were using earlier version of V2 delete your old configurations.
+    There is still modules.yml temporarily.
+    Added in #4;
+        Events added
+            WeaponTrailEvent
+            WeaponVisualReloadEvent
+            WeaponAttachmentEvent
+        API
+            updateItemStackFeatures
+        Fixed few bugs
+        Added permissions
+            Use gun;
+                csp.use.all or csp.use.(WeaponTitle)
+            Add attachments;
+                csp.attachment.all or csp.attachment.(Attachment)
+            Add skin;
+                csp.skin.all or csp.skin.(Skin)
+            Change trail;
+                csp.trail.all or csp.trail.(Trail)
+            Change visual reload;
+                csp.visualreload.all or csp.visualreload.(VisualReload)
+
+1.03
+
+    If you were using earlier version of V2 delete your old configurations. Lot of things changed.
+    There is still modules.yml temporarily.
+    Added in #3;
+        Support for 1.11.X (1.8.X - 1.11.X are now supported)
+        Events added
+            WeaponSkinEvent
+            WeaponSkinUpdateEvent
+        API
+            getSkinItemStack
+            getAttachmentItemStack
+            changeTrail
+            removeTrail
+            changeSkin
+            removeSkin
+            addAttachment
+            removeAttachment
+            changeVisualReload
+            removeVisualReload
+        Break Blocks and regenerate them
+            Explosion support
+        Changed Action Bar Reload to Visual Reload
+            It supports; action bar, title & subtitle
+        Fog on zoom & second zoom
+        Few example weapons
+            You'll get CS configurations & updated resource pack when stable version comes out
+        Fixed many bugs
+        Added something(s) I don't now remember... :p
+
+1.02
+
+    This is V2 BETA #2 build
+        I think V2 BETA #3 is already stable
+    If you were using earlier version of V2 delete your old configurations. Lot of things changed.
+    There is still modules.yml temporarily.
+    Added in #2;
+        Support for 1.8.X - 1.10.X
+        Damage Increase Based On Armor
+        Action Bar Reload GUI
+        Kill custom sounds & title & subtitle
+        Much more attachments
+        Play as many custom sounds as wanted
+    Few example weapons
+        You'll get CS configurations & updated resource pack when stable version comes out
+    Fixed many bugs
+        Like pre reload event calling
+
+1.01
+
+    CrackShotPlus V2
+        CSP has been fully recoded
+    Commands you can see by typing /csp
+    CSP generates modules.yml where is listed each module from CSP currently.
+    This version breaks everything from 0.49 version and below
+    There is many things to add still...
+    This version works only with 1.10.
+    This version doesn't have any preconfigured weapons!
+
+Go ahead and test CSP V2 and report bugs for me. Since there isn't documentation yet, you can just ask in discussions if you need help in V2 configurationing. 

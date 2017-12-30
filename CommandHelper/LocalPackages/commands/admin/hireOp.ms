@@ -14,7 +14,7 @@ register_command(hireop,
                 @player = player(@args[0])
                 @puuid = puuid(@player,true)
                 runas(~console,"/pex group ".@puuid." create op")
-                runas(~console,"/pex group ".@puuid." prefix \"&e&l&kA&f&llph&e&la\"")
+                runas(~console,"/pex group ".@puuid." prefix \"&b&lM&3&l&ka&b&lgic Genie&a&l\"")
                 runas(~console,"/pex user ".@player." group set ".@puuid)
                 tmsg(player(),color(red)."You have hired ".@player. " as OP!")
                 tmsg(@player,color(red)."You have been hired as OP")

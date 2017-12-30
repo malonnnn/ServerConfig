@@ -8,40 +8,41 @@
 # PPB.Enabled-On-First-Join: Will enable the blood if player never played before.
 # PPB.Enabled-On-Join: Ignore if player has blood disabled and enable on join.
 PPB:
-  Default-Material: REDSTONE_WIRE
-  All-Damage-Mode: 'true'
-  Max-View-Distance: '12.0'
-  Effect-Multiplier: '2'
-  EffectX: '0'
-  EffectY: '1'
-  EffectZ: '0'
-  Messages:
-    enabled: '&aBlood effect enabled!'
-    disabled: '&cBlood effect disabled!'
-    no-permission: '&cInsufficient permissions.'
   Blood-MaterialList:
-  - PLAYER:REDSTONE_WIRE
-  - PIGZOMBIE:PURPER_BLOCK
-  - ZOMBIE:RAILS
   - CREEPER:SLIME_BLOCK
-  - ENDERMAN:PURPUR_BLOCK
-  - PIG:REDSTONE_WIRE
-  - COW:REDSTONE_WIRE
-  - SQUID:COAL_BLOCK
-  - CHICKEN:REDSTONE_WIRE
-  - SHEEP:REDSTONE_WIRE
-  Entities:
-  - SKELETON
-  - ZOMBIE
-  - CREEPER
-  - PIGZOMBIE
-  - ENDERMAN
-  - PIG
-  - COW
-  - SQUID
-  - CHICKEN
-  - SHEEP
-  Enabled-On-Join: 'false'
+  - SKELETON:WHITE_SHULKER_BOX
+  - SPIDER:LAPIS_BLOCK
+  - CAVE_SPIDER:LAPIS_BLOCK
+  - ZOMBIE:GREEN_SHULKER_BOX
+  - WITCH:REDSTONE_BLOCK
+  - STRAY:PACKED_ICE
+  - HUSK:BROWN_SHULKER_BOX
+  - VINDICATOR:REDSTONE_BLOCK
+  - ILLUSIONER:REDSTONE_BLOCK
+  - EVOKER:REDSTONE_BLOCK
+  - ZOMBIE_VILLAGER:GREEN_SHULKER_BOX
+  - VEX:PACKED_ICE
+  - PIG_ZOMBIE:MAGMA
+  - MAGMA_CUBE:MAGMA
+  - BLAZE:YELLOW_SHULKER_BOX
+  - ENDERMAN:PURPLE_GLAZED_TERRACOTTA
+  - SHULKER:PURPLE_SHULKER_BOX
+  - GUARDIAN:ORANGE_GLAZED_TERRACOTTA
+  - ELDER_GUARDIAN:GRAY_GLAZED_TERRACOTTA
+  - SLIME:SLIME_BLOCK
+  - WITHER_SKELETON:COAL_BLOCK
+  - WITHER:BLACK_SHULKER_BOX
+  - SILVERFISH:GRAY_SHULKER_BOX
+  - ENDER_DRAGON:OBSIDIAN
+  - PLAYER:REDSTONE_BLOCK
+  - IRON_GOLEM:IRON_BLOCK
+  - SKELETON_HORSE:WHITE_SHULKER_BOX
+  - ZOMBIE_HORSE:GREEN_SHULKER_BOX
+  - SNOWMAN:SNOW_BLOCK
+  Default-Material: REDSTONE_BLOCK
+  Enable-Blood-Menu: 'false'
+  All-Damage-Mode: 'true'
+  Enabled-On-Join: 'true'
   Enabled-On-First-Join: 'true'
   MySQL:
     Enabled: 'false'
@@ -50,3 +51,58 @@ PPB:
     Port: '3306'
     User: user
     Password: password
+  Max-View-Distance: '24.0'
+  Effect-Multiplier: '2.0'
+  EffectX: '0.0'
+  EffectY: '1.0'
+  EffectZ: '0.0'
+  Entities:
+  - CREEPER
+  - SKELETON
+  - SPIDER
+  - CAVE_SPIDER
+  - ZOMBIE
+  - WITCH
+  - STRAY
+  - HUSK
+  - VINDICATOR
+  - ILLUSIONER
+  - EVOKER
+  - ZOMBIE_VILLAGER
+  - VEX
+  - PIG_ZOMBIE
+  - MAGMA_CUBE
+  - BLAZE
+  - ENDERMAN
+  - SHULKER
+  - GUARDIAN
+  - ELDER_GUARDIAN
+  - SLIME
+  - WITHER_SKELETON
+  - WITHER
+  - SILVERFISH
+  - ENDER_DRAGON
+  - PLAYER
+  - IRON_GOLEM
+  - DONKEY
+  - MULE
+  - PIG
+  - SHEEP
+  - COW
+  - CHICKEN
+  - WOLF
+  - OCELOT
+  - HORSE
+  - RABBIT
+  - PARROT
+  - LLAMA
+  - POLAR_BEAR
+  - SKELETON_HORSE
+  - ZOMBIE_HORSE
+  - MUSHROOM_COW
+  - SNOWMAN
+  Messages:
+    enabled: '&aBlood effect enabled!'
+    disabled: '&cBlood effect disabled!'
+    no-permission: '&cInsufficient permissions.'
+    material-changed: '&aYou have changed your blood material.'

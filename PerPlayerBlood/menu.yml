@@ -1,0 +1,44 @@
+rows: 6
+name: "&7Blood Menu"
+close_on_toggle: false
+close_on_select: true
+permission_check: false
+
+items:
+ turn_off_item:
+  slot: 49
+  ID: 381
+  Data: 0
+  Name: "&cTurn off the blood effect"
+  Lore: 
+  - "&7Click to disable all blood particles."
+ turn_on_item:
+  slot: 49
+  ID: 368
+  Data: 0
+  Name: "&cTurn on the blood effect"
+  Lore: 
+  - "&7Click to enable blood particles."
+
+slots:
+ 10:
+  Display-Item: 57
+  ID: 57
+  Name: "&aDiamond"
+  Lore: 
+  - "&aDiamond blood!"
+  permission: blood.use.10
+ 11:
+  Display-Item: 331
+  ID: 55
+  Name: "&aRedstone wire blood"
+  Lore: 
+  - "&7Classic redstone blood!"
+  permission: blood.use.11
+ 12:
+  Display-Item: 152
+  ID: 152
+  Name: "&aRedstone block"
+  Lore: 
+  - "&7Redstone blood!"
+  permission: blood.use.12
