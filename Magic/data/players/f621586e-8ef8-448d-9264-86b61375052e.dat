@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: RqndomMyth
-last_cast: 1514751694383
+last_cast: 1514752816650
 cooldown_expiration: 0
 last_death_location: -18.430350020471828,69.0,-220.0561395283441,greenfield,113.70168,-0.547658
 fall_protection_count: 0
@@ -449,6 +449,11 @@ spells:
     last_cast: 1511469775741
     last_earn: 0
     cooldown_expiration: 1511469780741
+  freezetime:
+    cast_count: 4
+    last_cast: 1514752816650
+    last_earn: 1514752783991
+    cooldown_expiration: 0
   chainlightning:
     cast_count: 4
     last_cast: 1496273313786
@@ -490,8 +495,8 @@ spells:
     last_earn: 0
     cooldown_expiration: 1500766061300
   mindstone:
-    cast_count: 270
-    last_cast: 1514751694384
+    cast_count: 277
+    last_cast: 1514752758062
     last_earn: 0
     cooldown_expiration: 0
   emp:
@@ -615,10 +620,10 @@ spells:
     last_earn: 1492367084352
     cooldown_expiration: 0
   acceleratetime:
-    cast_count: 4
-    last_cast: 1513127310349
-    last_earn: 0
-    cooldown_expiration: 1513127340349
+    cast_count: 8
+    last_cast: 1514752809242
+    last_earn: 1514752674169
+    cooldown_expiration: 1514752839242
   apparate:
     cast_count: 2
     last_cast: 1505781065624
@@ -650,6 +655,45 @@ spells:
     last_earn: 1492367002638
     cooldown_expiration: 0
 wands:
+  timestone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EMERALD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3TimeStone§f)
+        lore:
+        - §3§oBound to RqndomMyth
+        - Knows 3 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAGWRsU7DMBRFHyQtSVSKVEYYkOgaREsbwoJaCSSQCEhUnYObvFKL2E4Tt1WZWPgGPoAVIT6AgZmBb+A7mHASgYp427N877nXtgAs0GeEhwYYElkcEYlgSsowlYKjASUx45iAdTnmoWDeXI4MqJBA0in6aYxRBNYwQbzFTGNBJT/zI5xilEIZdEY46SRvkI0O1Wz1C3vCYoClq2fv813Bc4xPQ6gPnWaj7Tpouzh07VbLDe2DptOyXWfgNPb227vtJppQzkGpoWy1xQhQJUGAESaqSL6bjPIwL6PByhSTlAquRCUL1oqslE+RS5HMtX9alU9bMFD78l9YPibUulImdDCR6ImQDqmiWJlYB6PfPz3yRCq/tg83u3cnqIOZHZ0hSeXLxuvHw/3TYxnKXSYmXHbqhaMBei8SEgxGKB/lv7P6izgnCrx+jeq9aLBDpCTBTS9GDFXUizgLXzTMXPK7tePxhMZMldz6iQfwDYlFUcb6AQAA
+    wand:
+      template: timestone
+      owner: RqndomMyth
+      active_spell: freezetime
+      spell_levels: {}
+      mana: 300.0
+      mana_timestamp: 1514752827594
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      spells:
+      - freezetime
+      - acceleratetime
+      - mindstone
+      version: 5
+      spell_inventory:
+        acceleratetime: 1
+        mindstone: 2
+        freezetime: 0
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -750,15 +794,13 @@ wands:
   mindstone:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: REDSTONE
+      type: WOOD_HOE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6mindstone§f (§3MindStone§f)
+        display-name: §bWand
         lore:
-        - §3§oBound to RqndomMyth
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - §2§oRqndomMyth's Wand
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -766,13 +808,12 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PwUrDQBCG/9K0JgE91KMeBHuN2NrGCCIWFRSsgqXnuu1O7GJ3N02mFm9efAV9AK8iPoDgG/hAnkwjOqdh/pn//8YHfDhzYaQLl0knE8EETysjM7aGXFTs3FAK/2pqpNXdex5X4GhhxNET4GBl0Q5YacpY6AQoXb/tf8a5W3E3UBL1OGw22lFIQURxFLRakQz2mmEriMJh2NjZbW+3m1TG0h2lmbIGQAUeah3mVA1nTF0rVaxy0c+lkgO33z877tqMvzcP1jsPp+TAW4zOSWT8vvbx9fz4+lJFtaPtzPBhHUW5cHoTy3C1UGZcPLz8H3EhNGH1hnJiNdoSzGJ020uIZBneZUKp4F+whUuxWzuZzlSiyfDGHx7wA/v0tvNNAQAA
+        internal: H4sIAAAAAAAAAD2PwU7CQBCGf0LBtoke8KgHE7nWCEKtFwMJJpqIJhLOuLCDbGR3SztIvHnxGXwAjxrjA3jwCXwgT7Y1OreZf+b/v/EBH85KGOnCZdLxXDDB08rIlK0hFxW7MpTAv1oYaXX/nmdVOFoY0Uk+kZeDjbwdsdKUstAxULp+6+ElcyxuR0qiPg2bjXYUUhDRNAparUgGR82wFUThOGwcHLb3200qY+2OklRZk9lW4KHWZU7UeMnUt1JNVSb6mVRy4A6HZ72+Tfl793i7+3BKDrx8dE4i5fetj6+nx9fnKqpdbZeGO/WCFC6cwdwyXC2UmRVPr/9HXAhN2LyhjFhN9gSzmNwOYiJZhncZUyL4Fyx3KXZrJ4ulijUZ3vnDA34AD3zrKFEBAAA=
     wand:
       template: mindstone
       owner: RqndomMyth
       mana: 300.0
-      mana_timestamp: 1514751704934
+      mana_timestamp: 1514752180395
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       version: 5
   yodaforce:
@@ -876,6 +917,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1412
+  sp: 1434
 properties: {}
 classes: {}

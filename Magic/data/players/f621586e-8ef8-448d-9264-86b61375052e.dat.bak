@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: RqndomMyth
-last_cast: 1514745469598
+last_cast: 1514752816650
 cooldown_expiration: 0
-last_death_location: -32.5,69.0,-216.5,greenfield,-247.5117,3.1677904
+last_death_location: -18.430350020471828,69.0,-220.0561395283441,greenfield,113.70168,-0.547658
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -449,6 +449,11 @@ spells:
     last_cast: 1511469775741
     last_earn: 0
     cooldown_expiration: 1511469780741
+  freezetime:
+    cast_count: 4
+    last_cast: 1514752816650
+    last_earn: 1514752783991
+    cooldown_expiration: 0
   chainlightning:
     cast_count: 4
     last_cast: 1496273313786
@@ -490,8 +495,8 @@ spells:
     last_earn: 0
     cooldown_expiration: 1500766061300
   mindstone:
-    cast_count: 147
-    last_cast: 1514745469598
+    cast_count: 277
+    last_cast: 1514752758062
     last_earn: 0
     cooldown_expiration: 0
   emp:
@@ -615,10 +620,10 @@ spells:
     last_earn: 1492367084352
     cooldown_expiration: 0
   acceleratetime:
-    cast_count: 4
-    last_cast: 1513127310349
-    last_earn: 0
-    cooldown_expiration: 1513127340349
+    cast_count: 8
+    last_cast: 1514752809242
+    last_earn: 1514752674169
+    cooldown_expiration: 1514752839242
   apparate:
     cast_count: 2
     last_cast: 1505781065624
@@ -650,6 +655,45 @@ spells:
     last_earn: 1492367002638
     cooldown_expiration: 0
 wands:
+  timestone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EMERALD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3TimeStone§f)
+        lore:
+        - §3§oBound to RqndomMyth
+        - Knows 3 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAGWRwS4DQRzGP7qt3Q2V1JGDhGuFate6iAYJiZJoeq6x+69O7Mxsd6dtOLl4BR7AVcQDeAIHz+A5nMxuQ4g5zfwz3/f7vhkXcGGNmQxt2JpEHDFNcDQXlGolyUZRjSUlcM8GMlSida37NmZZoPmIumlMUQS3lxDdUKZxMZvPuhGNKEpRhCWYZHv3gIVytu1OrJmIganz59bHmwHniC4PsdrzahsN36OqTz2/Wq/7YXW75tWrvnfhbWxuNdYbNXJQyiGpDaDwG48yCwKKKDEl8rMjuAzzIgXMjChJuZJGVHQxP8nJ5YikVsl14Z/W5Cv8MjDn6b+wfDmoNLVO+MVQU0uFvMcNxc3EFuxO52i/pVL9ubKz1Lw9JAtONjomluqXxdf3h7unxxJKTaGGUu+uThxtWO1IadiCcdnPf2buB3HCDHjhksx78WCNac2Cq3ZMFJqop3EWftIwc8nvVg4GQx4LU3L5Ox7wBXKgErz2AQAA
+    wand:
+      template: timestone
+      owner: RqndomMyth
+      active_spell: freezetime
+      spell_levels: {}
+      mana: 300.0
+      mana_timestamp: 1514752827594
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      spells:
+      - freezetime
+      - acceleratetime
+      - mindstone
+      version: 5
+      spell_inventory:
+        acceleratetime: 1
+        mindstone: 2
+        freezetime: 0
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -767,12 +811,12 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PQU7CUBCGf0LBtokucKkLE9nWCEKtGyJRE01EEwlrfPAGeZH3XmkHiTs3XkEP4FYTD+AZvIHxHrqx1OisJvPP/P83PuDDmQsjXbhMOp4IJnhaGZmyNeSiZOeGEvgXUyOt7tzyuARHCyMOHgAHK4u2z0pTykLHQOHy5eP7M3PL7/pKojoK67VmFFIQ0SgKGo1IBnv1sBFE4SCs7ew2t5t1KmLphpJUWQOgBA+VNnOiBjOmjpVqpDLRz6SCA7fXOzns2JS/Nlvr7btjcuAtRqckUn5de3t/vH9+KqPc1nZmeL+KvFw43YlluFooM84fXv6POBOasHpFGbEabglmMbzuxkSyCO88pkTwL9jCJd+tHE1nKtZkeOMPD/gB9iIAhk0BAAA=
+        internal: H4sIAAAAAAAAAD2PwU7CQBCGf0LBtoke8KgHE7nWCEKtFyMRE02sJhLOuLCDbGR3SztIvHnxFfQBPGqMD+Az+ECeLDU6p8n8M///jQ/4cBbCSBcuk06mggmeVkZmbA25qNiFoRT+1cxIq+N7nlTgaGHE8RPgYG3ZDlhpyljoBChdv3fxmrsVdwMlUR+HzUY7CimIaBwFrVYkg4Nm2AqicBg29vbbu+0mlbFyR2mmrAFQgYdahzlVwzlTbKUaq1z0c6nkwO33z7qxzfh7+3Cz83BKDrzl6JxExh8bn1/Pj28vVVQ72s4NH9VRlAunN7UMVwtlJsXDq/8RF0IT1m8oJ1ajHcEsRre9hEiW4V0mlAr+BVu6FLu1k9lcJZoMb/3hAT8nBb3YTQEAAA==
     wand:
       template: mindstone
       owner: RqndomMyth
       mana: 300.0
-      mana_timestamp: 1514745494495
+      mana_timestamp: 1514752180395
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       version: 5
   yodaforce:
@@ -876,6 +920,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1412
+  sp: 1434
 properties: {}
 classes: {}
