@@ -265,7 +265,6 @@ bind('player_chat', null, null, @e) {
     # -------------------------------
     # Chat replacements for fun
     # -------------------------------
-    @cooldown = 0
     #assign(@msg, reg_replace('(?i)(0|O)+[. ]*3+[. ,-_]*(0|O)+', '040', @msg))
     #assign(@msg, reg_replace('(?i)-+[. ,-_]*[.,]*-+', 'fart', @msg))
     #assign(@msg, reg_replace('(?i)l+[. ,-]*o+[. ,-]*l+', 'el oh el', @msg))
