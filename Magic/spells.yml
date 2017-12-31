@@ -4012,3 +4012,27 @@ freezetime:
         repeat: 10
     costs:
         mana: 50
+powerstonedestroyworld:
+    icon: paper
+    category: staff
+    hidden: true
+    actions:
+        cast:
+        - class: Command
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: HelixEffect
+             iterations: 2
+             particle: redstone
+             color: a100ff
+             radius: 5
+             loaction: self  
+    parameters:
+        commands:
+        - destroyworld 
+        target_type: Player
+        target: other
+        range: 2        
