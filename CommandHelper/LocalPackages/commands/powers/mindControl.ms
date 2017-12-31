@@ -17,6 +17,9 @@ register_command(mindcontrol,
             @player = player()
     
             @vic = @args[0]
+            if(@vic == '@t'){
+                die()
+            }
             @vic = player(@vic)
 
             export(@player.'mindControlVictim',@vic)

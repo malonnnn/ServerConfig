@@ -4,6 +4,7 @@ bind('player_chat', null, null, @e) {
     @pgroup = _getheroclass(@pname)
     @pworld = pworld()
     @puuid = puuid()
+    @cooldown = 0
     assign(@msg, @e[message])
 
     if(has_permission(@pname,'change.chat')){

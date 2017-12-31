@@ -1,11 +1,70 @@
-health: 20.0
+health: 100.0
 hunger: 20
 exp: 0.9999999
 exp-level: 5
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.85900915
-inventory: {}
+exhaustion: 3.3790169
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6mindstone§f (§3MindStone§f)
+      lore:
+      - §3§oBound to RqndomMyth
+      - '§d§oMana: 300'
+      - '§d§oMana Regeneration: 10/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAE2QzU7CUBCFD6FgafxJcKkLE9liBKHUjZGoiSaiiQS39UIHuZF7b2kHCDs3voI+gFtjXBufwQdyZSnRMKvJ/JzzzTiAA2sqdGDDZlLhUDChoKQOYjaabOTMVFME52akA6NaMx7YWBU9lhPy45CGw6XpHCwltDh5Biysz1OfpaKYhQqBzN174/Yz8UkVfRmg1HerlbrnUtmjvleu1bygfFh1a2XP7bqVg0Z9v16lLFYmFMXSaAA5Bxupqy/1hDSbaJZdAkAaBRSbzJHsjplaJpB9mew7SSNjwe50Lk5bJuaf3aPt5uM5WSjMS5ckYv7Y+vp+eXp7zSPfVGas+bi0ULRhtYeGYSsh9SD91tq/xZVQhM17So6SvT3BLHoP7ZAoSMiuQ4oEL9jnKuls8Ww0lqFK8Hf+8IBf6O/YQooBAAA=
 armor_contents: {}
 ender_chest: {}
+potion_effect:
+  '0':
+    type: WATER_BREATHING
+    level: 1
+    duration: 196479
+  '1':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 196479
+  '2':
+    type: REGENERATION
+    level: 1
+    duration: 196479
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 196479
+  '4':
+    type: INCREASE_DAMAGE
+    level: 100
+    duration: 196479
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 196479
