@@ -10,14 +10,7 @@
             'op': 'true',
             'speech': "I would like to learn Thirst for Vengeance.",
             'powers': array(
-                "/buff",
-                "/explode",
-                "/fly",
-                "/tp"
             ), 
             'buffs': array(
-                "/effect ". @plr ." 5 9999 15 true",
-                "/effect ". @plr ." 10 9999 4 true",
-                "/effect ". @plr ." 11 9999 4 true"
             )
         ) 
