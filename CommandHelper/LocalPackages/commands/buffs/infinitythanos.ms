@@ -30,6 +30,7 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." greenenergybeam",
                 "/shot give ". @plr ." yellowenergybeam",
-                "/mgive ". @plr ." mindstone"
+                "/mgive ". @plr ." mindstone",
+                "/mgive ". @plr ." timestone"
             )
         )
