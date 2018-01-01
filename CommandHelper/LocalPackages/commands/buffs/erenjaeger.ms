@@ -20,6 +20,8 @@
             ),
             'buffs': array(
             "/effect ". @plr ." 5 9999 2 true",
-             "/effect ". @plr ." 21 9999 4 true"
+             "/effect ". @plr ." 21 9999 4 true",
+             "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade",
+             "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade"
             )
         )
