@@ -19,9 +19,9 @@
                 "With an empty hand, right click the air and you will use your 3d maneuver gear. You can use it to swing around the city! Note: technically, you're sitting on an invisible chicken (lol), so if you wonder why you can't move it's because you have to press crouch button to get off the chicken first xD"
             ),
             'buffs': array(
-            "/effect ". @plr ." 5 9999 2 true",
-             "/effect ". @plr ." 21 9999 4 true",
-             "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade",
-             "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade"
+                "/effect ". @plr ." 5 9999 2 true",
+                "/effect ". @plr ." 21 9999 4 true",
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade",
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:§73d_maneuver_blade"
             )
         )
