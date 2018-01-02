@@ -16,7 +16,7 @@
                "/buff",
                "/grow",
                "/shrink",
-                "With an empty hand, right click the air and you will use your 3d maneuver gear. You can use it to swing around the city! Note: technically, you're sitting on an invisible chicken (lol), so if you wonder why you can't move it's because you have to press crouch button to get off the chicken first xD"
+                "With an empty hand, right click the air and you will use your 3D maneuver gear. You can use it to swing around the city!"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
