@@ -3735,7 +3735,7 @@ mercyheal:
            particle_count: 10    
     parameters:
         commands:
-        - effect @t 10 20 2 true 
+        - ~console,'/effect @t regeneration 20 2 true'
         target_type: Player
         target: other
         range: 10
@@ -3771,7 +3771,7 @@ mercybuff:
            particle_count: 10    
     parameters:
         commands:
-        - effect @t 5 20 5 true
+        - ~console,'/effect @t strength 20 5 true'
         target_type: Player
         target: other
         range: 10
