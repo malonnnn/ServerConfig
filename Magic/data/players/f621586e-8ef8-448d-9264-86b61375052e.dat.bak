@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: RqndomMyth
-last_cast: 1514752816650
+last_cast: 1514845184272
 cooldown_expiration: 0
-last_death_location: -18.430350020471828,69.0,-220.0561395283441,greenfield,113.70168,-0.547658
+last_death_location: 8.320849616040277,64.0,0.7214747561984353,lexstarklabs,308.20493,54.25026
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -450,10 +450,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1511469780741
   freezetime:
-    cast_count: 4
-    last_cast: 1514752816650
-    last_earn: 1514752783991
-    cooldown_expiration: 0
+    cast_count: 12
+    last_cast: 1514845184273
+    last_earn: 1514758082908
+    cooldown_expiration: 1514845194273
   chainlightning:
     cast_count: 4
     last_cast: 1496273313786
@@ -495,8 +495,8 @@ spells:
     last_earn: 0
     cooldown_expiration: 1500766061300
   mindstone:
-    cast_count: 277
-    last_cast: 1514752758062
+    cast_count: 287
+    last_cast: 1514841259083
     last_earn: 0
     cooldown_expiration: 0
   emp:
@@ -620,10 +620,10 @@ spells:
     last_earn: 1492367084352
     cooldown_expiration: 0
   acceleratetime:
-    cast_count: 8
-    last_cast: 1514752809242
-    last_earn: 1514752674169
-    cooldown_expiration: 1514752839242
+    cast_count: 19
+    last_cast: 1514844613493
+    last_earn: 1514844492599
+    cooldown_expiration: 1514844643493
   apparate:
     cast_count: 2
     last_cast: 1505781065624
@@ -658,16 +658,14 @@ wands:
   timestone:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: EMERALD
+      type: WOOD_HOE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6freezetime§f (§3TimeStone§f)
+        display-name: §6freezetime§f (§bWand§f)
         lore:
-        - §3§oBound to RqndomMyth
+        - §2§oRqndomMyth's Wand
         - Knows 3 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -675,8 +673,7 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAGWRwS4DQRzGP7qt3Q2V1JGDhGuFate6iAYJiZJoeq6x+69O7Mxsd6dtOLl4BR7AVcQDeAIHz+A5nMxuQ4g5zfwz3/f7vhkXcGGNmQxt2JpEHDFNcDQXlGolyUZRjSUlcM8GMlSida37NmZZoPmIumlMUQS3lxDdUKZxMZvPuhGNKEpRhCWYZHv3gIVytu1OrJmIganz59bHmwHniC4PsdrzahsN36OqTz2/Wq/7YXW75tWrvnfhbWxuNdYbNXJQyiGpDaDwG48yCwKKKDEl8rMjuAzzIgXMjChJuZJGVHQxP8nJ5YikVsl14Z/W5Cv8MjDn6b+wfDmoNLVO+MVQU0uFvMcNxc3EFuxO52i/pVL9ubKz1Lw9JAtONjomluqXxdf3h7unxxJKTaGGUu+uThxtWO1IadiCcdnPf2buB3HCDHjhksx78WCNac2Cq3ZMFJqop3EWftIwc8nvVg4GQx4LU3L5Ox7wBXKgErz2AQAA
+        internal: H4sIAAAAAAAAAGWRsU7DMBRFHyQtSVSKVEYYkOgaREsbwoJaCSSQCEhUnYObvFKL2E4Tt1WZWPgGPoAVIT6AgZmBb+A7mHASgYp427N877nXtgAs0GeEhwYYElkcEYlgSsowlYKjASUx45iAdTnmoWDeXI4MqJBA0in6aYxRBNYwQbzFTGNBJT/zI5xilEIZdEY46SRvkI0O1Wz1C3vCYoClq2fv813Bc4xPQ6gPnWaj7Tpouzh07VbLDe2DptOyXWfgNPb227vtJppQzkGpoWy1xQhQJUGAESaqSL6bjPIwL6PByhSTlAquRCUL1oqslE+RS5HMtX9alU9bMFD78l9YPibUulImdDCR6ImQDqmiWJlYB6PfPz3yRCq/tg83u3cnqIOZHZ0hSeXLxuvHw/3TYxnKXSYmXHbqhaMBei8SEgxGKB/lv7P6izgnCrx+jeq9aLBDpCTBTS9GDFXUizgLXzTMXPK7tePxhMZMldz6iQfwDYlFUcb6AQAA
     wand:
       template: timestone
       owner: RqndomMyth
@@ -702,12 +699,9 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6rictusempra§f (§3HarrysWand§f)
+        display-name: §bWand
         lore:
-        - §3§oBound to President_Myth
-        - Knows 14 Spells
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - §2§oPresident_Myth's Wand
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -715,7 +709,6 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
-        Unbreakable: true
         internal: H4sIAAAAAAAAAFVSy24TQRDssGtn7UAQ4cgrQMQpRvFrvb6gWAoSSBiQopxX45lee8TOzDIPB9+4wC/wAVw58AF8A/8DJ3rXSiT21tU1XdXV2wXoQnzJtEgg8aiqknmE7opZu3FbuGUuNVrYf2/RSYHa5/ONXyVwk3Ev15i7CssS9qzkPjiaYFkbYsU0O5XQfDHs12XupULnmaoAdvI/Z1/bJNnMzqWAoyId9MdZir0Mi6w3GmWiNx2ko16WLtL+cDI+GQ+QRLEokPucm9JYeJYOF/2TcR+zaTY5TkdCTAZcsMVgepxli+Ew5f0xijSC3TVaJ40mN60u3G4s51KvaRtjNxEkzHHUQhoi7EbQqZDWCWVQVD+KoMU4b3oPI7hzKfWSWSGDKnEtjWOEPyAJiyJwX7MOI2hzG7ZPnlCrssbjsq6iCPak5sxytCY4Qh6THDe6sDS2ZrTIDTGu3NyIaOdPtV/JrGpexNF/adcRE8lRLEFdQ22SdT5UWGyo2gHowMHMeysXwePcCFlIiqRb92JILi5en82N83+fvrg/+/wKY+jU0Btkzv+89+v3ty8/vrehPVMmaH96tL1rAvF5aTwkikm9av6VW9cSb5lCuLtEXSf5nHnP+IfzClHQuu8oXua356inNNyDlx+DrBRd5PDKHsA/S5agh58CAAA=
     wand:
       template: harryswand
@@ -794,13 +787,39 @@ wands:
   mindstone:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: REDSTONE
+      type: WOOD_HOE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6mindstone§f (§3MindStone§f)
+        display-name: §bWand
+        lore:
+        - §2§oRqndomMyth's Wand
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        internal: H4sIAAAAAAAAAD2PwU7CQBCGf0LBtoke8KgHE7nWCEKtFwMJJpqIJhLOuLCDbGR3SztIvHnxGXwAjxrjA3jwCXwgT7Y1OreZf+b/v/EBH85KGOnCZdLxXDDB08rIlK0hFxW7MpTAv1oYaXX/nmdVOFoY0Uk+kZeDjbwdsdKUstAxULp+6+ElcyxuR0qiPg2bjXYUUhDRNAparUgGR82wFUThOGwcHLb3200qY+2OklRZk9lW4KHWZU7UeMnUt1JNVSb6mVRy4A6HZ72+Tfl793i7+3BKDrx8dE4i5fetj6+nx9fnKqpdbZeGO/WCFC6cwdwyXC2UmRVPr/9HXAhN2LyhjFhN9gSzmNwOYiJZhncZUyL4Fyx3KXZrJ4ulijUZ3vnDA34AD3zrKFEBAAA=
+    wand:
+      template: mindstone
+      owner: RqndomMyth
+      mana: 300.0
+      mana_timestamp: 1514752180395
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      version: 5
+  infinitygauntlet:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_BARDING
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3InfinityGauntlet§f)
         lore:
         - §3§oBound to RqndomMyth
+        - Knows 3 Spells
         - '§d§oMana: 300'
         - '§d§oMana Regeneration: 10/s'
         ItemFlags:
@@ -811,14 +830,19 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PwU7CQBCGf0LBtoke8KgHE7nWCEKtFyMRE02sJhLOuLCDbGR3SztIvHnxFfQBPGqMD+Az+ECeLDU6p8n8M///jQ/4cBbCSBcuk06mggmeVkZmbA25qNiFoRT+1cxIq+N7nlTgaGHE8RPgYG3ZDlhpyljoBChdv3fxmrsVdwMlUR+HzUY7CimIaBwFrVYkg4Nm2AqicBg29vbbu+0mlbFyR2mmrAFQgYdahzlVwzlTbKUaq1z0c6nkwO33z7qxzfh7+3Cz83BKDrzl6JxExh8bn1/Pj28vVVQ72s4NH9VRlAunN7UMVwtlJsXDq/8RF0IT1m8oJ1ajHcEsRre9hEiW4V0mlAr+BVu6FLu1k9lcJZoMb/3hAT8nBb3YTQEAAA==
+        internal: H4sIAAAAAAAAAE2QwU7CQBCGBylYGkWDRz2YyLVGEGq9GImaaCKaSDjj0k5hY3e3tAMET158BX0Arx5MvHrxBXwV49WT2xKNc9qZzP7f/48FYIExZdI3wSQUUcgIYZXLgEtOswEbSwqRTCioqcQYrKuR9JVoz2howhLziE+wl0QYhmAFMeItEhdYAEMwyY4eAAwop89eOk6IiQggd/36+fWueZlkj/tQDZx6rek6aLsYuHaj4fr2ft1p2K7Td2q7e82dZh3zsDjBOOFKAkDBgpUM2+NygpJUPMtDmXkehhjrCClOr+XyUBJc+gkpmfYL+f82IasSVFpEMe+PCdvK5wHXFCv9bIDZ7Z4dt1VC31sHG627UzSglI7OkSX0sv728Xj//FSEYksofajD6lzRBKMTKgJTMC6H2W2X/xAXTIPXBqijc2+bETHvphMh+trqZZSanydMVbLdyslozCOhQ27+2gP4AeIctoe4AQAA
     wand:
-      template: mindstone
+      template: infinitygauntlet
       owner: RqndomMyth
+      active_spell: freezetime
       mana: 300.0
-      mana_timestamp: 1514752180395
+      mana_timestamp: 1514847334849
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       version: 5
+      spell_inventory:
+        acceleratetime: 1
+        mindstone: 2
+        freezetime: 0
   yodaforce:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -857,12 +881,9 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6avadakedavra§f (§3VoldemortsWand§f)
+        display-name: §bWand
         lore:
-        - §3§oBound to President_Myth
-        - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - §2§oPresident_Myth's Wand
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -870,7 +891,6 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
-        Unbreakable: true
         internal: H4sIAAAAAAAAAFWRvW7UQBSF77LO4rVgkZISCiQiqizy/nmdApSVQAKJBaQotbmZuZOM4plxxncdbUfDM/AAaSmgRzwCLW9CQcXYEUhMd+a7OvecmQQggegKrYwhZjJViUwwalwpyTjP9Q3acVeWPIzeeaq1JMvFesvnMdxBwbqhoq6oLINqUOIFSWw8DiAyaPHofXz9M3l6GcGolQVrQzWjqQB6xa/e969hb2deaAn7KptOFnlG45xUPp7Pczk+nGbzcZ6dZpPZcpEuphS2klIkuBCudB4eo5QqVWmeHpI8WIo0wxSlSCezAzWTJDKaLiXO+nC7IV9rZwFgJ4F7XeZC2ybUcX4beOUd05kL/FYfhkqTlWrrKeh+0MJZ5bXteNT/vyy0MzAQfiN0y3sAQ9hdMXt9umFaO6mDna+TlkUQn5y8er52Nf9+9OzB6sNLimDYXr0mrPnL/W8/Pn38fD2Awcq4jeWjfehODNFx6Rhig9qed/9y99+KN2gI9s4ovKQWT5AZxcVxRSRD8rcVeeSb5q1LN7v74nKjKxPKP/wbD+APe9T2dQ8CAAA=
     wand:
       template: voldemortswand
@@ -895,11 +915,9 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6expelliarmus§f (§3Elder Wand§f)
+        display-name: §bWand
         lore:
-        - §3§oBound to mythguy1226
-        - '§d§oMana: 600'
-        - '§d§oMana Regeneration: 50/s'
+        - §2§omythguy1226's Wand
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -907,7 +925,6 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
-        Unbreakable: true
         internal: H4sIAAAAAAAAAD1Qu07DQBDcCCfY4VGEEgokIqoE2eb8SAFKJJBAIlBEqSiii2+dnPDZxtkQpUNIfAMfgERFwQdQ0CPxD/wGFY4j2G5ndmdntgpQBW3GY6GDTqjSiBOCgZHAbImWk1mMGaypOY1H07ll224FNMVj3n74gEVpsLloByQVToirFKB0/Xn08p1LFssDKaAeurbl+C42fQz9JmO+aLZslzV9d+hah55jOjbqsI5hiAENgiRKMti3PcY90zKZFfCGI/x8xmcOQ7shPJcNWyJsITNXYPUOs4lM4txNGQyodYgyOZwSdhMhQ5mT1ZwqaaD3++cn3WRCP3vHO537M9TAWEAXyCf0tv3+9fT4+lyBSkcl05ja9SIg6KD1ooRAV1zG4+ItG/8nLrlC2BphHlQGB5yIBze9FFGsgHGVYsZpaWyhUszWTm+nMlUY0+6fPYBfI64LXYkBAAA=
     wand:
       template: elderwand
@@ -920,6 +937,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1434
+  sp: 1474
 properties: {}
 classes: {}

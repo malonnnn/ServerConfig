@@ -1,0 +1,98 @@
+quests:
+  Miner:
+    name: 'Stone Miner'
+    ask-message: '<yellow>Mine <purple>10<yellow> blocks of <purple>Stone<yellow> and gather the <purple>10 pieces of <purple>Cobblestone<yellow>.'
+    finish-message: '<yellow>Well done. Here is your reward.'
+    redo-delay: 1800
+    requirements:
+      items:
+        - name-wood_pickaxe:amount-1
+      remove-items:
+        - false
+      fail-requirement-message: '<red>You must have a <purple>Wooden Pickaxe<red> first.'
+    stages:
+      ordered:
+        1:
+          break-block-names:
+            - STONE
+          break-block-amounts:
+            - 10
+          break-block-durability:
+            - 0
+    rewards:
+      money: 1000
+      quest-points: 1
+  Hunter:
+    name: 'Mob Hunter'
+    ask-message: '<yellow>Kill an assortment of Mobs.'
+    finish-message: '<yellow>Excellent. Here is a <purple>Diamond Sword<yellow>.'
+    requirements:
+      quests:
+        - Stone Miner
+      fail-requirement-message: '<red>Complete <purple>Stone Miner<red> first.'
+    stages:
+      ordered:
+        1:
+          death-event: DeathFail
+          mobs-to-kill:
+            - Pig
+          mob-amounts:
+            - 3
+          finish-event: GoodJob
+        2:
+          death-event: DeathFail
+          mobs-to-kill:
+            - Zombie
+          mob-amounts:
+            - 2
+          finish-event: GoodJob
+        3:
+          death-event: DeathFail
+          mobs-to-kill:
+            - Skeleton
+          mob-amounts:
+            - 1
+    rewards:
+      items:
+        - name-DIAMOND_SWORD:amount-1
+      exp: 100
+      quest-points: 1
+  CatchFish:
+    name: 'Catch Fish'
+    ask-message: '<yellow>Catch some fish!'
+    finish-message: '<yellow>Good job. Here is some <green>experience<yellow>.'
+    requirements:
+      quests:
+        - Stone Miner
+      fail-requirement-message: '<red>Complete <purple>Stone Miner<red> first.'
+    stages:
+      ordered:
+        1:
+          start-event: FishingStart
+          death-event: DeathFail
+          chat-events:
+            - "RodEvent"
+          chat-event-triggers:
+            - "rod"
+          fish-to-catch: 5
+    rewards:
+      exp: 250
+  TimedQuest:
+    name: 'Timed Quest'
+    ask-message: '<yellow>Dig up <purple>10<yellow> blocks of <purple>Dirt<yellow> before time runs out!'
+    finish-message: '<yellow>You did it in time! Have an <purple>Iron Shovel<yellow> and some <green>experience<yellow>.'
+    stages:
+      ordered:
+        '1':
+          break-block-names:
+          - DIRT
+          break-block-amounts:
+          - 10
+          break-block-durability:
+          - 0
+          start-event: TimerEvent
+          finish-event: CancelTimer
+    rewards:
+      items:
+        - name-IRON_SPADE:amount-1
+      exp: 150
