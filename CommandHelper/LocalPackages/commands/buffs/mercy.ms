@@ -10,12 +10,10 @@
             'op': 'false',
             'speech': "Heroes never die!",
             'powers': array(
-                "/buff",
-                "/fly"
+                "/buff"
            ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
-                "/effect ". @plr ." 21 9999 8 true",
                 "/shot give ". @plr ." pistol",
                 "/mgive ". @plr ." mercywand"
             )
