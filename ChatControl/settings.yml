@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------
 # 
-#  Your file has been automatically updated at 24.11.2017 22:18:12
-#  to ChatControl 7.6.15
+#  Your file has been automatically updated at 02.01.2018 22:53:00
+#  to ChatControl 7.6.27
 # 
 #  Unfortunatelly, due to how Bukkit saves all .yml files, it was not possible
 #  preserve the documentation comments in your file. We apologies.
@@ -150,6 +150,7 @@ Private_Messages:
   Toast:
     Enabled: true
     Format: '&6[{sender} &8-> &6you]{dynamic_spaces}&7{message}'
+  Deny_Message_Self: false
 Ignore:
   Enabled: false
   Aliases:
@@ -265,6 +266,7 @@ Variables:
     Multi_Prefix: true
     Multi_Suffix: false
   Replace_In_Custom: true
+  Replace_Own_In_Custom: false
 Writer:
   Enabled: true
   Ignore_Players:
