@@ -79,7 +79,7 @@ register_command(characterselect,
         executor: closure(@alias, @sender, @args) {
                 @argNum = array_size(@args)
                 if (@argNum < 1) {
-                    msg(color(RED).'Please add search criteria. Example: /findhero superman')
+                    msg(color(RED).'Please add search criteria. Example: /characterselect superman')
                     return(FALSE)
                 }
 
