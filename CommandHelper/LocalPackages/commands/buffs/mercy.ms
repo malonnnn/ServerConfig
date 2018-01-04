@@ -15,6 +15,7 @@
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
                 "/shot give ". @plr ." pistol",
-                "/mgive ". @plr ." mercywand"
+                "/shot give ". @plr ." mercyhealingwand"
+                "/shot give ". @plr ." mercybuffingwand"
             )
         )
