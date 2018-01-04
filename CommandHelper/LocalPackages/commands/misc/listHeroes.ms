@@ -70,15 +70,15 @@ register_command(heroes,
 )
 
 
-register_command(findchar, 
+register_command(characterselect, 
     array(
         description: 'Searches for a character',
-        usage: '/findchar <searchterm>',
-        permission: 'command.findchar',
+        usage: '/characterselect <searchterm>',
+        permission: 'command.characterselect',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
         executor: closure(@alias, @sender, @args) {
-        
-                if (array_size(@args) < 1) {
+                @argNum = array_size(@args)
+                if (@argNum < 1) {
                     msg(color(RED).'Please add search criteria. Example: /findhero superman')
                     return(FALSE)
                 }
@@ -87,22 +87,102 @@ register_command(findchar,
                 foreach(@arg in @args){
                     @searchTerm = @searchTerm.@arg
                 }
+                @heroes = array()
+               # shell_adv('/home/minecraft/findHero.sh '.@searchTerm,
+               # array(subshell: true,
+               #     workingDir: '/home/minecraft/',
+               #     stdout: closure(@a = @stdout){
+               #         array_push(@heroes,@a)
+               #     }
+               # ))
+               
 
-                shell_adv('/home/minecraft/findHero.sh '.@searchTerm,
-                array(subshell: true,
-                    workingDir: '/home/minecraft/',
-                    stdout: closure(@a = @stdout){
-                        if(@a != "")
-                        {
-                            @returnVal = @a
-                            array @heroes = split('|',@returnVal)
-                            foreach(@her in @heroes){
-                                run_cmd('/id '.@her)
-                            }
-                        }
-                    }
-                ))
+                @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
+                @heroes = split('\n',@var)
+                foreach(@her in @heroes){
+                    runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"}}')
+                }
+                msg(color(RED).'Click a character to select it.')
        ) }
     )
 
 
+register_command(selectchar, 
+    array(
+        description: 'Selects a character',
+        usage: '/selectchar <character>',
+        permission: 'command.selectchar',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',		
+        executor: closure(@alias, @sender, @args) {
+                @argNum = array_size(@args)
+                if (@argNum != 1) {
+                    msg(color(RED).'Error: Incorrect parameters. Try: /selectchar superman')
+                    return(FALSE)
+                }
+
+                @player = @sender
+                @class = @args[0]
+                @confirmed = import(@player."confirmed")
+                if(@confirmed != TRUE){
+                    export(@player."confirmed",TRUE)
+                    msg(@class.color(RED).' selected! Please click again in 2 seconds to confirm your choice.')
+                    set_timeout(2000,closure(
+                        export(@player."confirmed",FALSE)
+                    ))
+                    die()
+                }
+               
+                if(@class == 'fanfic'){
+                    @uuid = puuid(@player,true)
+                    sudo('/pex group '.@class.@uuid.' create commonherotraits')
+                    sudo('/pex user '.@player.' group set '.@class.@uuid)
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.run0 superherocity')
+                    sudo( '/pex group '.@class.@uuid.' add ch.alias.run1 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.run2 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.haste0 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.haste1 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.haste2 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.jump0 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.jump1 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.jump2 superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.fanficlaser superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.fanficname superherocity')
+                    sudo('/pex group '.@class.@uuid.' add ch.alias.fanficchatcolor superherocity')
+                    broadcast(color(GRAY).color(ITALIC).'A shitty fanfic has entered the game!')
+                    sudo("/fly ".@player." off")
+                    sudo("/gamemode survival ".@player)
+                    sudo("/effect ".@player." clear")
+                    sudo("/minecraft:clear" @player)
+                    sudo("/god ".@player." off")
+                    sudo("/tptoggle ".@player." on")
+                    die()
+                }
+
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                }catch(Exception @d){
+                    msg(color(RED).'ERROR! '.@d)
+                    die()
+                } 
+                
+                sudo('/pex user '.@player.' group set '.@class)
+                sudo("/fly ".@player." off")
+                sudo("/gamemode survival ".@player)
+                sudo("/effect ".@player." clear")
+                sudo("/minecraft:clear" @player)
+                sudo("/god ".@player." off")
+                sudo("/tptoggle ".@player." on")
+                sudo("/warp worldpicker ".@player)
+                
+#                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
+#                _changeSkin(@player,@hero['sig'],@hero['val'],@hero['name'])
+#                if(@hero['trail'] != ''){
+#                    sudo(@player,"/trailsid ".@hero['trail'])
+#                }else{
+#                    sudo(@player,"/trailsid none")
+#                }
+                
+                broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered the game!')
+        }
+    )
+)
