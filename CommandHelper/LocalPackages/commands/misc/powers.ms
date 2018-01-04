@@ -19,9 +19,13 @@ register_command(powers,
                 try {
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
                     
+                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                    msg(color(GOLD).  '                                YOUR POWERS                    ')
+                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                     foreach(@power in @hero['powers']){
-                        tmsg(@plr,@power)
+                        tmsg(@plr,color(GOLD).@power)
                     }
+                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 } catch (IOException @ErrorInfo) {
                     # Ignore file doesn't exist message and kill the script
                     tmsg(@plr, 'There\'s no power\'s associated with your current Character Class')

@@ -76,10 +76,12 @@ register_command(characterselect,
         usage: '/characterselect <searchterm>',
         permission: 'command.characterselect',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
+        aliases: array('charsel', 'findchar','csel'),
         executor: closure(@alias, @sender, @args) {
                 @argNum = array_size(@args)
                 if (@argNum < 1) {
-                    msg(color(RED).'Please add search criteria. Example: /characterselect superman')
+                    msg(color(RED).'Please add search criteria.')
+                    msg('Example:'.color(GREEN).' /characterselect superman')
                     return(FALSE)
                 }
 
@@ -131,6 +133,38 @@ register_command(selectchar,
                     ))
                     die()
                 }
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                @plrs = all_players()
+                foreach(@playa in @plrs)
+                {
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                    @otherPlayerGroup = _getheroclass(@playa)
+                    if(@otherPlayerGroup == @hero['class'] && @player != @playa){
+                        msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                        msg(color(RED).'Sorry, '.color(WHITE).@playa.color(RED).' is already using '.@hero['name'].color(RED).'.')
+                        msg(color(RED).'Try again with:')
+                        msg(color(GREEN).'/characterselect')
+                        msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                        die()
+                    }
+                    if(array_index_exists(@hero,'alts')){
+                        @alts = @hero['alts']
+                        foreach(@alt in @alts){
+                            if(@alt == @otherPlayerGroup){
+                                @h1 = @hero['name']
+                                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                                @h2 = @hero['name']
+                                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                msg(color(RED).'Sorry, '.color(WHITE).@playa.color(RED).' is already using '.@h2.color(RED).'.')
+                                msg(color(RED).'Try again with:')
+                                msg(color(GREEN).'/characterselect')
+                                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                                die()
+                            }
+                        } 
+                    }
+                }
+                clear_task(import(@player.'isBurningInSunlight'))
                
                 if(@class == 'fanfic'){
                     @uuid = puuid(@player,true)
@@ -158,12 +192,6 @@ register_command(selectchar,
                     die()
                 }
 
-                try{
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
-                }catch(Exception @d){
-                    msg(color(RED).'ERROR! '.@d)
-                    die()
-                } 
                 
                 sudo('/pex user '.@player.' group set '.@class)
                 sudo("/fly ".@player." off")
@@ -172,7 +200,6 @@ register_command(selectchar,
                 sudo("/minecraft:clear" @player)
                 sudo("/god ".@player." off")
                 sudo("/tptoggle ".@player." on")
-                sudo("/warp worldpicker ".@player)
                 
 #                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
 #                _changeSkin(@player,@hero['sig'],@hero['val'],@hero['name'])
@@ -181,8 +208,7 @@ register_command(selectchar,
 #                }else{
 #                    sudo(@player,"/trailsid none")
 #                }
-                
-                broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered the game!')
+                sudo('/stageselect')
         }
     )
 )

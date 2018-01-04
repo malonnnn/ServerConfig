@@ -1,8 +1,8 @@
-register_command(startgame, 
+register_command(entergame, 
     array(
         description: 'Arrests a player and Jails them',
-        usage: '/startgame',
-        permission: 'command.startgame',
+        usage: '/entergame',
+        permission: 'command.entergame',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -50,8 +50,10 @@ register_command(startgame,
                     }
                 ))
 
-                set_timeout(3100,closure(
-                    //do character select
+                set_timeout(3400,closure(
+                    set_peffect(@sender,14,1,9999,true,false)
+                    sudo('/warp begingame '.@sender)
+                    sudo('/characterselect')
                 ))
         }
     )

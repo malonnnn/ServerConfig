@@ -1,3 +1,18 @@
+1.60
+
+    Fixed shooter knockback on damage
+    Added CrackShotFlagAddon.jar
+        New flags for WorldGuard regions (weapon-shoot and weapon-break-blocks)
+        Disabled_Regions module requires CrackShotFlagAddon also
+        Incase you don't want CrackShotFlagAddon.jar to be generated into plugins folder then
+            Go to file.yml and add "Generate_CrackShot_Flag_Addon" if it isn't there yet and put it to false
+    Added End_Message for Delay_Bar
+        Basically just sends the end message to chat instead of action bar, title or subtitle
+        Also changed in Delay_Bar that if there is an active delay bar task going another can't activate
+    Changed Generate_Resource_Pack
+        Now if Generate_Resource_Pack is true then CrackShotPlus default resource pack will also be suggested on player join
+        Will still generate CrackShotPlus_Resource_Pack.zip into CrackShotPlus folder
+
 1.59
 
     Temporary turret fix and add

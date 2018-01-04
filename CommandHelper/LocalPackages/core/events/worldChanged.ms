@@ -13,7 +13,8 @@ bind(world_changed, null, null, @event,
             runas(~console,"/minecraft:clear ".@player)
             set_pflight(@player,false)
 #        }else if(!has_permission('in.survival')){
-#            runas(~console,"/sudo ".@player." c:/fixskin")
+            runas(~console,"/sudo ".@player." c:/fixskin")
+            set_peffect(@sender,14,1,0)
 #        }else{
 #            set_pflight(@player,false)
 #        }
