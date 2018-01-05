@@ -4084,3 +4084,74 @@ freezetime:
         repeat: 10
     costs:
         mana: 50
+powerstoneblast:
+    icon: ink_sack:5
+    icon_disabled: ink_sack:5
+    icon_url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+    category: master
+    tags: noduel
+    worth: 5000
+    earns_sp: 13
+    upgrade_required_path: master
+    upgrade_required_casts: 50
+    actions:
+      cast:
+        - class: Delay
+        - class: PlayEffects
+          effect: launch
+          ignore_result: true
+        - class: CustomProjectile
+          actions:
+          - class: Damage
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: magic.electrify
+          sound_volume: 5
+          sound_pitch: -0.25
+          location: origin
+          effectlib:
+             class: AtomEffect
+             particleNucleus: spell_mob
+             colorNucleus: "a100ff"
+             particleOrbital: redstone
+             colorOrbital: "a100ff"
+             iterations: 16
+             radius: 5
+        launch:
+        -  class: EffectSingle
+           custom_sound: magic.zap_big
+           sound_volume: 1
+           location: origin
+        tick:
+        - location: target
+          particle: smoke_large
+          particle_count: 4
+          particle_offset_x: 0.2
+          particle_offset_y: 0.2
+          particle_offset_z: 0.2
+        projectile:
+        - class: EffectSingle
+          effectlib:
+             class: SphereEffect
+             particle: redstone
+             color: "a100ff"
+             iterations: 100
+             radius: 0.3
+        hit:
+        - class: EffectSingle
+          location: target
+          color: "a100ff"
+          firework: ball_large
+    parameters:
+        target: none
+        target_type: Damageable
+        cooldown: 30000
+        target_breakables: 5
+        bypass_backfire: true
+        damage: 60
+        hitbox_size: 1
+        velocity: 200
+        interval: 250
+    costs:
+        mana: 150
