@@ -59,10 +59,12 @@ register_command(stageselect,
                 }
 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms') 
+                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 foreach(@world in @worldList){
-                    runas(~console,'/tellraw '.@sender.' {"text":"'.@world[1].'","clickEvent":{"action":"run_command","value":"/goworld '.@world[0].'"}}')
+                    runas(~console,'/tellraw '.@sender.' {"text":"'.@world[1].'","color":"gold","clickEvent":{"action":"run_command","value":"/goworld '.@world[0].'"},"hoverEvent":{"action":"show_text","value":"'.@world[1].'"}}')
                 }
                 msg(color(RED).'Click a stage to go there.')
+                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
        ) }
     )
 
@@ -76,6 +78,12 @@ register_command(goworld,
         executor: closure(@alias, @sender, @args) {
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@sender)
+            @confirmed = import(@sender."stageConfirmed")
+            if(@confirmed != @args[0]){
+                export(@sender."stageConfirmed",@args[0])
+                msg(@args[0].color(RED).' selected! Please click again to confirm your choice.')
+                die()
+            }
             try{
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
             }catch(Exception @d){

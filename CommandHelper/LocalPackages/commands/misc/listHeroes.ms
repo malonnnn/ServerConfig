@@ -80,8 +80,12 @@ register_command(characterselect,
         executor: closure(@alias, @sender, @args) {
                 @argNum = array_size(@args)
                 if (@argNum < 1) {
-                    msg(color(RED).'Please add search criteria.')
+                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                    msg(color(RED).'Please search for a character.')
                     msg('Example:'.color(GREEN).' /characterselect superman')
+                    msg('Example:'.color(GREEN).' /charsel deadpool')
+                    msg('Example:'.color(GREEN).' /csel flash')
+                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                     return(FALSE)
                 }
 
@@ -101,10 +105,12 @@ register_command(characterselect,
 
                 @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
                 @heroes = split('\n',@var)
+                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 foreach(@her in @heroes){
-                    runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"}}')
+                    runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
                 }
                 msg(color(RED).'Click a character to select it.')
+                msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
        ) }
     )
 
@@ -124,13 +130,10 @@ register_command(selectchar,
 
                 @player = @sender
                 @class = @args[0]
-                @confirmed = import(@player."confirmed")
-                if(@confirmed != TRUE){
-                    export(@player."confirmed",TRUE)
-                    msg(@class.color(RED).' selected! Please click again in 2 seconds to confirm your choice.')
-                    set_timeout(2000,closure(
-                        export(@player."confirmed",FALSE)
-                    ))
+                @confirmed = import(@player."charConfirmed")
+                if(@confirmed != @class){
+                    export(@player."charConfirmed",@class)
+                    msg(@class.color(RED).' selected! Please click again to confirm your choice.')
                     die()
                 }
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
@@ -143,7 +146,7 @@ register_command(selectchar,
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                         msg(color(RED).'Sorry, '.color(WHITE).@playa.color(RED).' is already using '.@hero['name'].color(RED).'.')
                         msg(color(RED).'Try again with:')
-                        msg(color(GREEN).'/characterselect')
+                        msg(color(GREEN).'/charsel')
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                         die()
                     }

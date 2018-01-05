@@ -1,17 +1,26 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BARRIER
+    type: WOOD_AXE
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 10
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_AXE
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: SIGN
+    type: SEA_LANTERN
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: CONCRETE
-    damage: 15
+    type: WOOL
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: END_ROD
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_STAIRS
 health: 20.0
 hunger: 20
 exp: 0.06666661
@@ -19,5 +28,13 @@ exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
+exhaustion: 0.511
 armor_contents: {}
+location:
+  ==: org.bukkit.Location
+  world: spleeflobby
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  pitch: 12.449994
+  yaw: -343.32715
