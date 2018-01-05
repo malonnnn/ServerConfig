@@ -4312,3 +4312,48 @@ spacestonewarp:
         vertical_range: 50
     costs:
         mana: 50
+cloudreality:
+    icon: ink_sack:1
+    icon_disabled: ink_sack:1
+    icon_url: http://textures.minecraft.net/texture/4fed122b86ffaeaee36ab4a8c1c27f46fb5bddc83322c8a165d0f27aeb1830
+    category: combat
+    worth: 250
+    earns_sp: 5
+    actions:
+        cast:
+        -  class: Cylinder
+           actions:
+           -  class: ModifyBlock
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: FountainEffect
+             iterations: 30
+             particle: spell_mob
+             color: ff0000
+             location: self
+        -  class: EffectSingle
+           effectlib:
+             class: HelixEffect
+             iterations: 30
+             radius: 7
+             particle: spell_mob
+             color: 000000
+             location: self
+    parameters:
+        target_type: LivingEntity
+        target: self
+        allow_max_range: true
+        range: 32
+        radius: 7
+        thickness: 1
+        transparent: transparent_to_construction
+        undo: 6000
+        cooldown: 10000
+        brush: stained_glass:14
+        brushcolor: true
+        breakable: 3
+        destructible: destructible_replace
+    costs:
+        mana: 75
