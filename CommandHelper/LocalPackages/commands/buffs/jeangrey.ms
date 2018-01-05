@@ -12,7 +12,7 @@
             'powers': array(  
                 "/buff",
                 "/cast forcefield",
-                "/cast telekinisis",
+                "/cast telekinesis",
                 "/float <up/down/pause/unpause/stop>"
                 "/msg <playername>",
                 "/herotransform <id>"

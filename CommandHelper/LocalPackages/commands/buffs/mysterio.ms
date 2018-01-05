@@ -17,7 +17,7 @@
                  "/run 0-2",
                  "/invis",
                  "/vis",
-                 "/cast telekinisis",
+                 "/cast telekinesis",
                  "/disguise",
                  "/undisguise"
              ), 

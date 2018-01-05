@@ -78,39 +78,61 @@ register_command(characterselect,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
         aliases: array('charsel', 'findchar','csel'),
         executor: closure(@alias, @sender, @args) {
-                @argNum = array_size(@args)
-                if (@argNum < 1) {
-                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                    msg(color(RED).'Please search for a character.')
-                    msg('Example:'.color(GREEN).' /characterselect superman')
-                    msg('Example:'.color(GREEN).' /charsel deadpool')
-                    msg('Example:'.color(GREEN).' /csel flash')
-                    msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                    return(FALSE)
-                }
-
-                @searchTerm = ''
-                foreach(@arg in @args){
-                    @searchTerm = @searchTerm.@arg
-                }
-                @heroes = array()
-               # shell_adv('/home/minecraft/findHero.sh '.@searchTerm,
-               # array(subshell: true,
-               #     workingDir: '/home/minecraft/',
-               #     stdout: closure(@a = @stdout){
-               #         array_push(@heroes,@a)
-               #     }
-               # ))
-               
-
-                @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
-                @heroes = split('\n',@var)
+            @argNum = array_size(@args)
+            if (@argNum < 1) {
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-                foreach(@her in @heroes){
-                    runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
-                }
-                msg(color(RED).'Click a character to select it.')
+                msg(color(RED).'Please search for a character.')
+                msg('Example:'.color(GREEN).' /characterselect superman')
+                msg('Example:'.color(GREEN).' /charsel deadpool')
+                msg('Example:'.color(GREEN).' /csel flash')
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                return(FALSE)
+            }
+            @ploc = ploc(@sender)
+
+            @x1 = @ploc['x']
+            @y1 = @ploc['y']
+            @z1 = @ploc['z']
+
+            @x2 = -76
+            @y2 = 248
+            @z2 = 132
+
+            @x3 = pow(@x1 - @x2, 2)
+            @y3 = pow(@y1 - @y2, 2)
+            @z3 = pow(@z1 - @z2, 2)
+
+            @final = @x3 + @y3 + @z3
+
+            @final = sqrt(@final)
+            
+            if(@final > 5){
+                msg(color(RED).'Sorry, you need to be at the main menu to perform this command!')
+                die()
+            }
+
+            @searchTerm = ''
+            foreach(@arg in @args){
+                @searchTerm = @searchTerm.@arg
+            }
+            @heroes = array()
+           # shell_adv('/home/minecraft/findHero.sh '.@searchTerm,
+           # array(subshell: true,
+           #     workingDir: '/home/minecraft/',
+           #     stdout: closure(@a = @stdout){
+           #         array_push(@heroes,@a)
+           #     }
+           # ))
+           
+
+            @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
+            @heroes = split('\n',@var)
+            msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            foreach(@her in @heroes){
+                runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
+            }
+            msg(color(RED).'Click a character to select it.')
+            msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
        ) }
     )
 

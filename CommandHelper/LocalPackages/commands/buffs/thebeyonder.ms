@@ -14,7 +14,7 @@
                 "/disguise",
                 "/intangible",
                 "/tangible",
-                "/cast telekinisis",
+                "/cast telekinesis",
                 "/tp",
                 "/cast acceleratetime",
                 "/create <item>",

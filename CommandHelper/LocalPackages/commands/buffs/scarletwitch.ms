@@ -11,7 +11,7 @@
             'speech': "I cant control your fear i can only control my own",
             'powers': array(
                 "/buff",
-                "/caste telekinisis",
+                "/cast telekinesis",
                 "/cast forcefield",
                 "/confuse <player>",
                 "/cast manipulate",

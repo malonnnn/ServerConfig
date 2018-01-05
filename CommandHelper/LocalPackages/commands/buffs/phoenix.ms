@@ -14,7 +14,7 @@
                 "/tppos",
                 "/cast healingfield",
                 "/cast firebolt",
-                "/cast telekinisis",
+                "/cast telekinesis",
                 "/cast forcefield",
                 "/cast phoenixforce",
                 "/jump 0-2",
