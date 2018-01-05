@@ -6,7 +6,8 @@ register_command(entergame,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
-                if (array_size(@args) != 4) {
+                if (array_size(@args) != 0) {
+                    msg(color(RED).'Usage: /entergame')
                     return(FALSE)
                 }
 
@@ -35,10 +36,10 @@ register_command(entergame,
                     die()
                 }
 
-                @particleType = @args[0]
-                @offset = @args[1]
-                @speed = @args[2]
-                @count = @args[3]
+                @particleType = 'portal'
+                @offset = 0.5
+                @speed = 0.2
+                @count = 5000
                 export(@player.'particleIterations',0)
                 set_interval(50,closure(
                     @i = import(@player.'particleIterations')
@@ -135,6 +136,7 @@ register_command(entergame,
 
                     set_peffect(@sender,14,1,9999,true,false)
                     sudo('/warp begingame '.@sender)
+                    broadcast(@plr.color(RED).' has jacked into The Matrix!')
                     msg(color(GREEN).'Welcome to The Matrix!')
                     sudo('/characterselect')
                     set_block_at(-118, 78, 150, 35, @ploc['world'])

@@ -1,8 +1,9 @@
 proc(_mortal,@plr,
 
-    sudo("/sudo ".@plr." c:/trailsid none")
+    runas(~console,"/sudo ".@plr." c:/trailsid none")
+    sudo("/trailsid none")
     sudo("/pex user ".@plr." group set mortal")
-    sudo("/warp lab ". @plr)
+    runas(~console,"/warp arcade ". @plr)
     
     set_timeout(2000, closure(
         sudo("/undisguise")

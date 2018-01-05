@@ -1,26 +1,77 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOD_AXE
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: §0End§de§0rman §e§lD§a§lN§4§lA
+      lore:
+      - enderman
+      custom-effects:
+      - ==: PotionEffect
+        effect: 9
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
+      - ==: PotionEffect
+        effect: 19
+        duration: 24000
+        amplifier: 1
+        ambient: true
+        has-particles: true
   '4':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOL
-    damage: 10
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YtKqVgHRRopJVNFw6JF/BsSg5MSVVqTZWB1kPU2YKA19uZl5qclFiWolVcWZ6HtQgQxTTGRgAu36DXJ4AAAA=
+      blockMaterial: SIGN
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SEA_LANTERN
+    type: WOOD_AXE
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: WOOL
+    type: GOLD_PLATE
   '5':
     ==: org.bukkit.inventory.ItemStack
-    type: END_ROD
+    type: COMMAND
   '6':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_BLOCK
+    type: GLOWSTONE
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: QUARTZ_STAIRS
+    type: YELLOW_GLAZED_TERRACOTTA
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
+    damage: 1
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CONCRETE
+    damage: 5
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 5
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: MAGMA
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: QUARTZ_BLOCK
+    damage: 2
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 14
 health: 20.0
 hunger: 20
 exp: 0.06666661
@@ -28,13 +79,13 @@ exp-level: 4
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.511
+exhaustion: 0.0
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: spleeflobby
-  x: 0.5
-  y: 64.0
-  z: 0.5
-  pitch: 12.449994
-  yaw: -343.32715
+  world: spawn
+  x: 318.5
+  y: 65.0
+  z: -25.5
+  pitch: 0.45000514
+  yaw: -177.27264

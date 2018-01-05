@@ -3039,6 +3039,7 @@ groups:
     - mortal
     permissions:
     - -chatcontrol.part.playername
+    - -libsdisguises.undisguise
   cosmicarmorsuperman:
     inheritance:
     - commonherotraits
@@ -7959,6 +7960,8 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - libsdisguises.undisguise
+    - -essentials.warps.arcade
     - ch.alias.canibestaff
     - -essentials.warps.quarantine
     - ch.alias.itemname
@@ -8470,6 +8473,8 @@ groups:
         - essentials.sethome.multiple.unlimited
       survival112:
         permissions:
+        - command.selectcharacter
+        - command.exitgame
         - essentials.protect.exemptplacement
         - essentials.protect.exemptusage
         - essentials.protect.exemptbreak
@@ -8492,6 +8497,19 @@ groups:
       chess:
         permissions:
         - essentials.build.*
+      lexstarklabs:
+        permissions:
+        - command.selectchar
+        - command.characterselect
+        - command.stageselect
+        - command.entergame
+        - essentials.build.interact.174
+        - essentials.build.interact.333
+        - essentials.build.interact.448
+        - essentials.build.interact.447
+        - essentials.build.interact.446
+        - essentials.build.interact.445
+        - essentials.build.interact.444
   mosquitogirl:
     inheritance:
     - commonherotraits
@@ -15355,7 +15373,7 @@ groups:
         - ch.alias.run1
         - ch.alias.run0
     options:
-      prefix: '&rSleepy Karma'
+      prefix: '&r&cK&aa&br&em&da'
   fanfic4ca95906a8d843deab35d5ce0d9a81c2:
     inheritance:
     - commonherotraits
@@ -15918,9 +15936,6 @@ worlds:
   greenfield:
     inheritance:
     - superherocity
-  lexstarklabs:
-    inheritance:
-    - superherocity
   hallofjustice:
     inheritance:
     - superherocity
@@ -16011,12 +16026,13 @@ worlds:
 users:
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - mortal
+    - superman
     options:
       name: Jiren_The_Grey
-      last-login-time: '1515132545'
+      last-login-time: '1515169733'
       last-logout-time: '1515148984'
     permissions:
+    - command.exitgame
     - essentials.back
     - command.entergame
     - command.selectchar
@@ -16031,11 +16047,11 @@ users:
       last-logout-time: '1508544364'
   fa2821a9-27ed-43e0-99f6-e22aec572a35:
     group:
-    - thebeyonder
+    - mrmxyzptlk
     options:
       name: SnortingSalt
-      last-login-time: '1514990225'
-      last-logout-time: '1514993891'
+      last-login-time: '1515161401'
+      last-logout-time: '1515165365'
     permissions: []
   9112018f-7563-4cc5-9087-50070f77cc68:
     group:
@@ -16064,8 +16080,8 @@ users:
     - 391762eb24f64d9584d6bfac682d575a
     options:
       name: MythsAdvisor
-      last-login-time: '1515121046'
-      last-logout-time: '1515148987'
+      last-login-time: '1515172337'
+      last-logout-time: '1515172334'
     permissions:
     - -tick.kill
     - powers.onepunch
@@ -16108,8 +16124,8 @@ users:
     - donot.hire
     options:
       name: The_Red_Canary
-      last-login-time: '1515111673'
-      last-logout-time: '1515117641'
+      last-login-time: '1515157255'
+      last-logout-time: '1515157426'
     worlds:
       fightclub:
         permissions: []
@@ -16133,7 +16149,7 @@ users:
       name: chima09
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
-    - mortal
+    - starbutterfly
     permissions:
     - donot.hire
     - chat.cooldown
@@ -16143,8 +16159,8 @@ users:
     - is.spleefgod
     options:
       name: xHqrkie
-      last-login-time: '1515127094'
-      last-logout-time: '1515128276'
+      last-login-time: '1515175630'
+      last-logout-time: '1515175634'
     worlds:
       fightclub:
         permissions: []
@@ -16159,15 +16175,11 @@ users:
     - is.pvpgod
     - is.headcoder
     group:
-    - mortal
+    - infinitythanos
     options:
       name: RqndomMyth
-      last-login-time: '1514841180'
-      last-logout-time: '1514853897'
-    worlds:
-      lexstarklabs:
-        permissions:
-        - essentials.build.*
+      last-login-time: '1515168096'
+      last-logout-time: '1515168008'
   ed038e46-f44d-4e18-8c76-fcaa06a4ae4a:
     group:
     - mortal
@@ -16316,8 +16328,8 @@ users:
     - thepresence
     options:
       name: Bcrulez
-      last-login-time: '1514592828'
-      last-logout-time: '1514593280'
+      last-login-time: '1515166008'
+      last-logout-time: '1515166532'
     permissions:
     - is.secretary
   a8e159ea-deeb-4f73-a246-591b589adcf4:
@@ -16528,12 +16540,11 @@ users:
     - is.helper
   f3077e67-9cf8-4b48-b488-4a5fd899d697:
     group:
-    - builder
-    - fanficf3077e679cf84b48b4884a5fd899d697
+    - batmite
     options:
-      last-logout-time: '1515136908'
+      last-logout-time: '1515174109'
       name: Karma0001
-      last-login-time: '1515129205'
+      last-login-time: '1515174151'
     permissions:
     - is.builder
     - is.pvpgod
@@ -16634,7 +16645,7 @@ users:
     options:
       last-logout-time: '1515124811'
       name: xStqr
-      last-login-time: '1515123316'
+      last-login-time: '1515174613'
     permissions:
     - donot.hire
     - chat.cooldown
@@ -17263,11 +17274,11 @@ users:
     permissions: []
   56cccfb9-064a-4155-b46b-a753284ebcd4:
     group:
-    - mrmxyzptlk
+    - doctormanhattan
     options:
-      last-logout-time: '1514994505'
+      last-logout-time: '1515165492'
       name: jakob2980
-      last-login-time: '1514993853'
+      last-login-time: '1515163959'
     permissions:
     - donot.hire
   22a40965-827c-44b8-8f1e-f9d8d03b918e:
@@ -18126,11 +18137,11 @@ users:
       last-login-time: '1509761795'
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     group:
-    - fanficdbb47887bfbd40e6bfec3d1053ea3aff
+    - mortal
     options:
-      last-logout-time: '1515123050'
+      last-logout-time: '1515174711'
       name: MerryQuinnmas
-      last-login-time: '1515121533'
+      last-login-time: '1515174727'
     permissions:
     - donot.hire
   cf548e0d-f288-4678-9f69-d7f7aef49411:
@@ -20261,11 +20272,11 @@ users:
       last-login-time: '1511095916'
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     group:
-    - mortal
+    - batmite
     options:
-      last-logout-time: '1515132078'
+      last-logout-time: '1515165007'
       name: MqybeItzBlue_
-      last-login-time: '1515148723'
+      last-login-time: '1515162429'
     permissions:
     - is.headbuilder
     worlds:
@@ -22461,11 +22472,11 @@ users:
       last-login-time: '1513627752'
   b2fc6dc6-8b8d-4246-9b16-1f2b1e4ce363:
     group:
-    - hulk
+    - mortal
     options:
-      last-logout-time: '1513630732'
+      last-logout-time: '1515172777'
       name: backstabbers_son
-      last-login-time: '1513627493'
+      last-login-time: '1515172149'
   a211cf4c-4de4-4d7c-a7b7-8cbb54709455:
     group:
     - goku
@@ -22553,9 +22564,9 @@ users:
     group:
     - thehumantorch
     options:
-      last-logout-time: '1513631800'
+      last-logout-time: '1515172689'
       name: Miner4life18
-      last-login-time: '1513631682'
+      last-login-time: '1515172383'
   80641536-2487-42c4-b71a-3264e6bc91aa:
     group:
     - mew
@@ -23071,11 +23082,11 @@ users:
       last-login-time: '1514698840'
   2cb5d5ae-0cc3-42e9-bed8-7ae2280606a1:
     group:
-    - flashwallywest
+    - flashbarryallen
     options:
-      last-logout-time: '1515093293'
+      last-logout-time: '1515172231'
       name: Bubblz27
-      last-login-time: '1515093266'
+      last-login-time: '1515170698'
   a40abb49-d921-4689-8aca-89923b7aaeca:
     group:
     - lordvoldemort
@@ -23262,11 +23273,11 @@ users:
     permissions: []
   16eead3d-8451-45e9-bede-79b8d73f5565:
     group:
-    - thebeyonder
+    - mortal
     options:
-      last-logout-time: '1515128613'
+      last-logout-time: '1515171742'
       name: pizzaman_yolo
-      last-login-time: '1515128648'
+      last-login-time: '1515168277'
   f0febf3d-9a09-4efe-9645-816f9ca89ada:
     group:
     - mrmxyzptlk
@@ -23388,9 +23399,9 @@ users:
     group:
     - mortal
     options:
-      last-logout-time: '1515108254'
+      last-logout-time: '1515157051'
       name: noobdistroier
-      last-login-time: '1515105639'
+      last-login-time: '1515157025'
   d1a5516d-0d38-4857-98e1-8191729cd08b:
     group:
     - thor
@@ -23401,9 +23412,9 @@ users:
     group:
     - apocalypse
     options:
-      last-logout-time: '1515113114'
+      last-logout-time: '1515157053'
       name: 2Bulldog
-      last-login-time: '1515112678'
+      last-login-time: '1515156108'
     permissions: []
   45d1a052-02e2-4eaf-9067-fa2d3b678172:
     group:
@@ -23729,8 +23740,8 @@ users:
     - mortal
     options:
       name: Howling_Luna
-      last-login-time: '1514653627'
-      last-logout-time: '1514660126'
+      last-login-time: '1515171349'
+      last-logout-time: '1515171661'
   6317c70f-c7ec-463a-bd3a-a7c6f13a5af5:
     group:
     - mortal
@@ -24086,3 +24097,6 @@ users:
     options:
       last-logout-time: '1515143927'
       name: SSGSSGOKU54321
+  745b3d4c-4de1-4a19-93f0-dec68ed5a573:
+    group:
+    - flashbarryallen
