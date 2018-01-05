@@ -10,7 +10,8 @@
             'op': 'false',
             'speech': "Heroes never die!",
             'powers': array(
-                "/buff"
+                "/buff",
+                "/fly"
            ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
