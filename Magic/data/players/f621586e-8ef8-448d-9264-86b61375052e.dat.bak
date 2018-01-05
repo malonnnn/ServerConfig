@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: RqndomMyth
-last_cast: 1515174099437
+last_cast: 1515176410541
 cooldown_expiration: 0
-last_death_location: 8.320849616040277,64.0,0.7214747561984353,lexstarklabs,308.20493,54.25026
+last_death_location: -23.21173005425607,69.0,-233.1916726313983,greenfield,12.738185,9.167798
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -39,6 +39,11 @@ spells:
     last_cast: 1511715496225
     last_earn: 1511715496220
     cooldown_expiration: 0
+  powerstoneblast:
+    cast_count: 4
+    last_cast: 1515176392284
+    last_earn: 1515176392589
+    cooldown_expiration: 1515176422284
   acidshot:
     cast_count: 1
     last_cast: 1505781979694
@@ -299,6 +304,11 @@ spells:
     last_cast: 1497320653113
     last_earn: 0
     cooldown_expiration: 1497320655113
+  increaseage:
+    cast_count: 3
+    last_cast: 1515176386250
+    last_earn: 1515176307178
+    cooldown_expiration: 1515176416250
   smite:
     cast_count: 0
     last_cast: 1497320133445
@@ -450,9 +460,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1511469780741
   freezetime:
-    cast_count: 15
-    last_cast: 1515174066365
-    last_earn: 1515173986026
+    cast_count: 16
+    last_cast: 1515176366813
+    last_earn: 1515176366812
     cooldown_expiration: 0
   chainlightning:
     cast_count: 4
@@ -495,8 +505,8 @@ spells:
     last_earn: 0
     cooldown_expiration: 1500766061300
   mindstone:
-    cast_count: 287
-    last_cast: 1514841259083
+    cast_count: 290
+    last_cast: 1515176330400
     last_earn: 0
     cooldown_expiration: 0
   emp:
@@ -594,6 +604,16 @@ spells:
     last_cast: 1507760687132
     last_earn: 0
     cooldown_expiration: 1507760689132
+  powerstonedestroyworld:
+    cast_count: 7
+    last_cast: 1515176139484
+    last_earn: 0
+    cooldown_expiration: 0
+  spacestonewarp:
+    cast_count: 20
+    last_cast: 1515176410541
+    last_earn: 1515176398638
+    cooldown_expiration: 1515176413541
   rhinodash:
     cast_count: 10
     last_cast: 1505782030366
@@ -620,10 +640,10 @@ spells:
     last_earn: 1492367084352
     cooldown_expiration: 0
   acceleratetime:
-    cast_count: 24
-    last_cast: 1515174099438
-    last_earn: 1515173972796
-    cooldown_expiration: 1515174129438
+    cast_count: 25
+    last_cast: 1515175458734
+    last_earn: 1515175458733
+    cooldown_expiration: 0
   apparate:
     cast_count: 2
     last_cast: 1505781065624
@@ -826,10 +846,10 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6freezetime§f (§3InfinityGauntlet§f)
+        display-name: §6spacestonewarp§f (§3InfinityGauntlet§f)
         lore:
         - §3§oBound to RqndomMyth
-        - Knows 3 Spells
+        - Knows 7 Spells
         - '§d§oMana: 300'
         - '§d§oMana Regeneration: 10/s'
         ItemFlags:
@@ -840,17 +860,22 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAE2QwU7CQBCGB1uwNIoGDx70YCJXjCDUejESNdFENJFwxqWdwmp3t7QDBE9efAV9AK8efADv3nwTX8CT2xKNc9qZzP7f/48NYIM5ZdK3wCIUUcgIYZXLgEtOswEbSwqRLMirqcQY7OuR9JVoz2howRLziE+wl0QYhmAHMeI9EheYB1MwyY6fAEwopc9eOk6IiQggd/Nxu/6leZlkj/tQCZx6rek6WHUxcKuNhutXD+pOo+o6fae2t9/cbdbRgMUJxglXEgDyNqxk2B6XE5Sk4pkBJeZ5GGKsI6Q4vZYzoCi49BNSMu0XjP82IasilFtEMe+PCdvK5wHXFDv9bILV7Z6ftFVC39uHm62HMzShmI4ukCX0tvH++fz4+lKAQksofaijylzRArMTKgJLMC6H2W2X/xCXTIPXBqijc2+HETHvrhMh+trqVZSanydMVbLd8ulozCOhQ2792gP4AXy6CDu4AQAA
+        internal: H4sIAAAAAAAAAF2Rz27TQBDGp9hJHQMpKhIXOCBRcWpQEieOe0FE/BFIhEpUPYfx7jhd1d5115tY4cSFI2cegCtCPAB3bjwQJ8auChJ72p2d+X3fzIQAIfg1ahlA4Kgoc3QEt5TOlFZuu8K1djm5ADqm1mQhfHuhpSkWW3cWwA0UTm1oWZWU59CvShRUOaOpRlt2wC9Q49Pj3W8+9Jvr0qmC/7EoAXbe/fz0grFBi10qCQdZPB5Nk5gGCWXJYDJJ5OBoHE8GSZzGo2g2HU7HxJqUZSTcUpjcWHiIMk1nM04ejuPDWUoykqNoGomjwyxCIVEOJ1ztwe6GbKWMBoBOCHut46XSG9LO2K0HfRSCcrLcfeOS03Y8uFOamsuajiQbt2ZbG5vLhuH93y4HfQ+uKy0sYUW4ahieB3v/GGmOleNo14NeobRsg/y+5kGYWaL3V9J8erA/d86qdO1oYaTKFEPCxpYPwenpq2cLU7nfDx7fm394ST70mtBrFnbf7/749fnj1y9d6M4Lw9t7cnBJDMA/yY2DoEClz9qF3/wr8QZZ+PaKeBdKPELnUJyflESSrR6XzVguZ9dQ2tz95xdrVRY8vvtX9gD+AF7YLHBNAgAA
     wand:
       template: infinitygauntlet
       owner: RqndomMyth
-      active_spell: freezetime
-      mana: 300.0
-      mana_timestamp: 1515174107117
+      active_spell: spacestonewarp
+      mana: 207.03
+      mana_timestamp: 1515176412788
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: adbb77448026,7bed3d1353c9,f3acdad04b61
       version: 5
       spell_inventory:
         acceleratetime: 1
+        powerstonedestroyworld: 5
+        spacestonewarp: 4
+        increaseage: 3
+        powerstoneblast: 6
         mindstone: 2
         freezetime: 0
   yodaforce:
@@ -954,6 +979,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 1495
+  sp: 1534
 properties: {}
 classes: {}
