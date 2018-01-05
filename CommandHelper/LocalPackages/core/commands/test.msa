@@ -2,9 +2,8 @@ test:/test $plr = >>>
 
         
     @player = $plr
-    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-    @class = _getheroclass(@player)
+    include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
 
-    broadcast(@class)
+    _mortal(@player)
 
 <<<

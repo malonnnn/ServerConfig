@@ -311,19 +311,19 @@ bind('player_chat', null, null, @e) {
     }
 
     @tmp = to_lower(@msg)
-    if(
-        (string_position(@tmp,'jiren') >= 0 ||
-        string_position(@tmp,'tek') >= 0 ||
-        string_position(@tmp,'jerry') >= 0 ||
-        string_position(@tmp,'owner') >= 0) &&
-        !has_permission(@pname,'is.criminal')
-    ){
-        cancel()
-        console(@pname.' said it!')
-        set_timeout(500,closure(
-            broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
-        ))
-    }
+    #if(
+    #    (string_position(@tmp,'jiren') >= 0 ||
+    #    string_position(@tmp,'tek') >= 0 ||
+    #    string_position(@tmp,'jerry') >= 0 ||
+    #    string_position(@tmp,'owner') >= 0) &&
+    #    !has_permission(@pname,'is.criminal')
+    #){
+    #    cancel()
+    #    console(@pname.' said it!')
+    #    set_timeout(500,closure(
+    #        broadcast(color(RED)."If you need advice from the wise, old hermit, you can visit him using ".color(GREEN)."/warp advice")
+    #    ))
+    #}
      
     # -------------------------------
     # chat timeout settings

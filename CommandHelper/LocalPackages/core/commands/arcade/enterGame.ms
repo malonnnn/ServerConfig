@@ -135,7 +135,7 @@ register_command(entergame,
                     }
 
                     set_peffect(@sender,14,1,9999,true,false)
-                    sudo('/warp begingame '.@sender)
+                    runas(~console,'/warp begingame '.@sender)
                     broadcast(@plr.color(RED).' has jacked into The Matrix!')
                     msg(color(GREEN).'Welcome to The Matrix!')
                     sudo('/characterselect')

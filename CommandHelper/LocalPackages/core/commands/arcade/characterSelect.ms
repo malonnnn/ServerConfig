@@ -200,6 +200,7 @@ register_command(selectchar,
                 sudo("/fly ".@player." off")
                 sudo("/gamemode survival ".@player)
                 sudo("/effect ".@player." clear")
+                set_peffect(@player, 14, 1, 9999, true, false)
                 sudo("/minecraft:clear" @player)
                 sudo("/god ".@player." off")
                 sudo("/tptoggle ".@player." on")
