@@ -16,7 +16,7 @@
             ),
             'trail': '',
             'op': 'false',
-            'speech': "Miss Martain is here to save the day!",
+            'speech': "Miss Martian is here to save the day!",
             'powers': array(
                 "/buff",
                 "/carryplayer",
