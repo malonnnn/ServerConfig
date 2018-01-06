@@ -295,11 +295,11 @@ bind('player_chat', null, null, @e) {
     #assign(@msg, reg_replace('(?i)o+[. ,-]*m+[. ,-]*l+', 'omg', @msg))
     #assign(@msg, reg_replace('(?i)t+[ .,-_]*e+[ .,-_]*k+[ .,-_]*t+[ .,-_]*r+[ .,-_]*o+[ .,-_]*n+[ .,-_]*i+[ .,-_]*c+', @pname, @msg))
 
-    if(has_permission(@pname,'change.smiles')){
-        assign(@msg, reg_replace('(:+|;+|=+)+[.^ \',-]*(\\[+|\\]+|D+|>+|<+|\\+|\\/+)', ':)', @msg))
-        assign(@msg, reg_replace('(D+|>+|<+|\\+|\\/+|\\[+|\\]+)+[.^ \',-]*(:+|;+|=+)', ':(', @msg))
-        modify_event(message, @msg)
-    }
+   # if(has_permission(@pname,'change.smiles')){
+   #     assign(@msg, reg_replace('(:+|;+|=+|<+)+[.^ \',-]*(:+|\\[+|\\]+|D+|>+|:+|\\+|\\/+|\\)+)', ':)', @msg))
+   #     assign(@msg, reg_replace('(D+|>+|\\+|\\/+|\\[+|\\+|:+])+[.^ \',-]*(<+|:+|;+|=+|\\(+)', ':(', @msg))
+   #     modify_event(message, @msg)
+   # }
     #@temp = reg_match('[^ -~]',@msg)
     #if(array_size(@temp) > 0){
     #    cancel()
