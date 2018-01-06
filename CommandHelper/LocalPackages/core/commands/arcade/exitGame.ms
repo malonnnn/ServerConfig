@@ -19,8 +19,33 @@ register_command(exitgame,
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             _mortal(@plr)
 
-            broadcast(@plr.color(RED).' has unplugged from The Matrix!')
-                
+            @ploc = ploc(@plr)
+            @world = @ploc['world']
+
+            switch(@world){
+                case 'survival112':
+                case 'survival112_nether':
+                case 'survival112_the_end':
+                case 'greenfield':
+                case 'metropolis':
+                case 'gotham':
+                case 'infinitycity':
+                case 'fortressofsolitude':
+                case 'hallofjustice':
+                case 'waynemanor':
+                case 'titanstower':
+                case 'broville':
+                case 'starlabs':
+                case 'atlantis':
+                case 'hogwarts':
+                case 'nyc':
+                case 'rapunzel':
+                    runas(~console,'/warp vrexit '.@plr)
+                    broadcast(@plr.color(RED).' has unplugged from The Matrix!')
+                default:
+                    runas(~console,'/warp '.@world.'exit '.@plr)
+                    msg(color(RED).' Welcome back to the arcade!')
+            }
         }
     )
 )

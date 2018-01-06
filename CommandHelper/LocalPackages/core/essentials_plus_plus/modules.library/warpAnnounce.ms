@@ -34,12 +34,14 @@ register_command(warp_announce,
 
             try {          
  
-                @targetPlayer = player(@args[0]); # Grab the players name to announce
-                @warpName = @args[1]; # Grab the name of the warp
+                @targetPlayer = player(@args[1]); # Grab the players name to announce
+                @warpName = @args[0]; # Grab the name of the warp
                 
                 _broadcast(_rainbowText(@targetPlayer).' is heading to: '._rainbowText(@warpName)); # Announce
-                _broadcast('&a&o/warp '.@warpName.' to join them'); # Announce			
-                runas(@targetPlayer, '/warp '.@warpName); # Warp the player
+                runas(~console, '/warp '.@warpName.' '.@targetPlayer); # Warp the player
+                set_timeout(1500,closure(
+                    tmsg(@targetPlayer,color(RED).'Exit the game using '.color(GREEN).'/exitgame');
+                ))
                 die(); # Done
             
             } catch (PlayerOfflineException @ErrorInfo) {

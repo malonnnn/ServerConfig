@@ -2,7 +2,6 @@ proc(_mortal,@plr,
 
     runas(~console,"/sudo ".@plr." c:/trailsid none")
     runas(~console,"/pex user ".@plr." group set mortal")
-    runas(~console,"/warp arcade ". @plr)
     
     set_timeout(2000, closure(
         runas(~console,"/gamemode survival ".@plr)

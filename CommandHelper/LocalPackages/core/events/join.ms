@@ -49,10 +49,9 @@ bind(player_join,null,null,@event){
     {
         @otherPlayerGroup = _getheroclass(@player)
         if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
-            sudo('/pex user '.@plr.' group set mortal')
-            call_alias('/mortal')
+            sudo('/exitgame')
             set_timeout(1500, closure(
-                broadcast(color(white)  . @plr . color(gray) . " has been changed from " . @hero['name'] . color(gray) . " back into a " . color(white) . "MORTAL" . color(gray) . " because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
+                broadcast(color(white)  . @plr . color(gray) . " has been kicked from The Matrix because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))
             die()
         }

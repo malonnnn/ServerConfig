@@ -73,7 +73,7 @@ register_command(goworld,
     array(
         description: 'Goes to stage',
         usage: '/goworld',
-        permission: 'command.stageselect',
+        permission: 'command.goworld',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',		
         executor: closure(@alias, @sender, @args) {
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -95,6 +95,8 @@ register_command(goworld,
             set_timeout(2000,closure(
                 sudo('/buff')
                 msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
+                msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
+                msg(color(RED).'Select a new character using '.color(GREEN).'/mainmenu'.color(RED).' !')
             ))
         }
     )

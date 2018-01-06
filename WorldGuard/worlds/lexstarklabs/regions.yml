@@ -10,9 +10,17 @@
 # REMEMBER TO KEEP PERIODICAL BACKUPS.
 #
 regions:
+    arcade:
+        min: {x: -164.0, y: 64.0, z: 68.0}
+        max: {x: -56.0, y: 101.0, z: 171.0}
+        members: {}
+        flags: {use: allow, invincible: allow, feed-amount: 1, feed-delay: 1, pvp: deny}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
-        flags: {invincible: allow, feed-amount: 1, feed-delay: 1, pvp: deny}
+        flags: {}
         owners: {}
         type: global
         priority: 0

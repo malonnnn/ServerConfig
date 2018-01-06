@@ -25,43 +25,38 @@ register_command(depower,
                     msg(color(RED).'You cannot mortal that player, they are way better than you,')
                     die()
                 }
-                // @bal = acc_balance(@plr)
-                // if(@bal < 1000 && !has_permission(@plr,'is.op')){
-                //     msg(color(RED).'Sorry, you need $1000 to use this command')
-                //     die()
-                // }
-                // acc_subtract(@plr,1000)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                _coolDown('depower',120,@plr)
+                _coolDown('lastUsedDepower',60,@plr)
+
                 runas(~console,"/gamemode survival ".@player)
                 runas(~console,"/minecraft:clear ".@player)
                 runas(~console,"/effect ".@player." clear")
                 runas(~console,"/fly ".@player." off")
-                @theBind = bind(player_command,null,array('player':@player),@e, @vic = @player){
+                @theBind = bind(player_command,null,array('player':@player),@e, @vicc = @player){
                     cancel()
-                    tmsg(@vic,color(RED).'You have been depowered, you can\'t use any commands right now!')
+                    tmsg(@vicc,color(RED).'You have been mutated, you can\'t use any commands right now!')
+                }
+
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @vicclass = _getheroclass(@player)
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@vicclass.'.ms')
+                    @vicHero = @hero
+                }catch(Exception @e){
+                    @vicHero = array()
+                    @vicHero['name'] = @player
                 }
 
                 set_timeout(30000,closure(
                     unbind(@theBind)
-                    msg(color(RED).'Your powers are restored.')
+                    tmsg(@player,color(RED).'Your powers are restored.')
                 ))
 
-                
-                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
-                @class = _getheroclass(@player)
-                try{
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
-                    @h1 = @hero
-                }catch(Exception @e){
-                    @h1 = array()
-                    @h1['name'] = @plr
-                }
-                @class = _getheroclass(@plr)
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
-                @h2 = @hero
+                @plrclass = _getheroclass(@plr)
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+                @plrHero = @hero
                 set_timeout(3000,closure(
-                    broadcast(color(LIGHT_PURPLE).color(BOLD).'POOF'.color(YELLOW).color(BOLD).'! '.@h2['name'].color(RED).color(BOLD).' has stripped '.color(WHITE).@h1['name'].color(RED).color(BOLD).' of their powers!');
+                    broadcast(color(LIGHT_PURPLE).color(BOLD).'POOF'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(RED).color(BOLD).' has stripped '.color(WHITE).@vicHero['name'].color(RED).color(BOLD).' of their powers!');
                 ))
             }
             
