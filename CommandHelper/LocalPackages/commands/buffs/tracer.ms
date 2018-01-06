@@ -12,7 +12,8 @@
             'speech': "Cheers love the calvery's here!",
             'powers': array(
                 "/back",
-                "/run 0-5"
+                "/run 0-5",
+                "/tpradius"
             ),
             'buffs': array(
         )
