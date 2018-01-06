@@ -3091,8 +3091,8 @@ groups:
     - -essentials.tpo
     - chatcontrol.autojoin.global.write
     - chatcontrol.channel.global.join.write
-    - -essentials.tpaccept
-    - -essentials.tpa
+    - -esssentials.tpaccept
+    - -esssentials.tpa
     - -essentials.tp
     - -deluxechat.pm
     - ch.alias.hungerlevel
@@ -8373,9 +8373,9 @@ groups:
         - -essentials.spawn
       creative:
         permissions:
-        - essentials.tpahere
-        - essentials.tpaccept
-        - essentials.tpaaccept
+        - esssentials.tpahere
+        - esssentials.tpaccept
+        - esssentials.tpaaccept
         - essentials.sethome
         - essentials.sethome.bed
         - essentials.sethome.multiple.unlimited
@@ -8423,7 +8423,7 @@ groups:
         - ch.alias.cp
       plots:
         permissions:
-        - essentials.tpa
+        - esssentials.tpa
         - plots.remove
         - essentials.fly
         - plots.home
@@ -8449,6 +8449,9 @@ groups:
         - essentials.build.break.46
       superherocity:
         permissions:
+        - -essentials.warps.workshop
+        - -essentials.warps.jail
+        - essentials.home
         - command.goworld
         - command.mainmenu
         - command.stageselect
@@ -8460,8 +8463,8 @@ groups:
         - essentials.build.interact.279
         - essentials.build.interact.292
         - essentials.build.interact.276
-        - essentials.tpahere
-        - essentials.tpaccept
+        - esssentials.tpahere
+        - esssentials.tpaccept
         - essentials.build.interact.368
         - essentials.build.interact.30
         - essentials.build.interact.417
@@ -8473,7 +8476,7 @@ groups:
         - is.empowerable
         - is.incity
         - is.mindControllable
-        - essentials.tpa
+        - esssentials.tpa
         - essentials.protect.pvp
         - command.roll
         - ch.alias.buff
@@ -8491,6 +8494,9 @@ groups:
         - essentials.sethome.multiple.unlimited
       survival112:
         permissions:
+        - -essentials.warps.workshop
+        - -essentials.warps.jail
+        - essentials.home
         - command.goworld
         - command.mainmenu
         - command.selectcharacter
@@ -8535,9 +8541,11 @@ groups:
         - essentials.build.interact.445
         - essentials.build.interact.444
       jail:
+        permissions: []
+      vigilance_ruined_plots:
         permissions:
         - essentials.warps.arcade
-      vigilance_ruined_plots:
+      overvoid:
         permissions:
         - essentials.warps.arcade
   mosquitogirl:
@@ -16081,6 +16089,9 @@ users:
       name: Jiren_The_Grey
       last-login-time: '1515257016'
       last-logout-time: '1515213325'
+    worlds:
+      fightclub:
+        permissions: []
   8155d7dc-151b-4d17-9aa9-d5b7e5a8cff0:
     group:
     - starbutterfly
@@ -16123,8 +16134,8 @@ users:
     - 391762eb24f64d9584d6bfac682d575a
     options:
       name: MythsAdvisor
-      last-login-time: '1515255151'
-      last-logout-time: '1515255143'
+      last-login-time: '1515269567'
+      last-logout-time: '1515269562'
     permissions:
     - -tick.kill
     - powers.onepunch
@@ -16158,7 +16169,7 @@ users:
       name: KoenigMC
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     group:
-    - thebeyonder
+    - tracer
     permissions:
     - is.nocheckgod
     - is.parkourgod
@@ -16203,8 +16214,8 @@ users:
     - is.spleefgod
     options:
       name: xHqrkie
-      last-login-time: '1515266022'
-      last-logout-time: '1515265908'
+      last-login-time: '1515272590'
+      last-logout-time: '1515272666'
     worlds:
       fightclub:
         permissions: []
@@ -16378,7 +16389,8 @@ users:
     - is.secretary
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
-    - tracer
+    - headpolice
+    - mercy
     options:
       name: MrFlameYT
       last-login-time: '1515266229'
@@ -16511,12 +16523,13 @@ users:
       name: Homie10
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     group:
-    - thebeyonder
+    - criminal
     options:
       name: LucarioGaming200
-      last-login-time: '1514993547'
-      last-logout-time: '1514994636'
+      last-login-time: '1515268462'
+      last-logout-time: '1515268927'
     permissions:
+    - chat.cooldown
     - donot.hire
     worlds:
       infiniteparkour:
@@ -16533,7 +16546,7 @@ users:
     - thebeyonder
     options:
       name: Bubbatruk
-      last-login-time: '1514815448'
+      last-login-time: '1515272360'
       last-logout-time: '1514817273'
     permissions: []
   969a7be4-0af3-47d4-9fc0-e427d4eb81e4:
@@ -16687,7 +16700,7 @@ users:
     group:
     - doctormanhattan
     options:
-      last-logout-time: '1515264019'
+      last-logout-time: '1515269075'
       name: xStqr
       last-login-time: '1515264065'
     permissions:
@@ -17654,11 +17667,11 @@ users:
   0880eccc-feed-4a2f-9e22-d8f721f3913e:
     permissions: []
     options:
-      last-logout-time: '1515263625'
+      last-logout-time: '1515270067'
       name: ZeEnforcer
-      last-login-time: '1515265244'
+      last-login-time: '1515268938'
     group:
-    - batmite
+    - mortal
     worlds:
       fightclub:
         permissions: []
@@ -17750,11 +17763,11 @@ users:
       name: CarbonWarrior
   1ffc1b79-0d84-4cfd-9908-3b77d6b276a8:
     group:
-    - brainiac
+    - mrmxyzptlk
     options:
       last-logout-time: '1515018990'
       name: Buehl34
-      last-login-time: '1515018847'
+      last-login-time: '1515271305'
   77a889c5-b502-4ee2-aec6-1bda35a28826:
     group:
     - deadpool
@@ -18026,7 +18039,7 @@ users:
     options:
       last-logout-time: '1515111322'
       name: Mystical_Miriam
-      last-login-time: '1515111278'
+      last-login-time: '1515272820'
     permissions: []
   6be77b4a-2d4d-4043-b800-7c405d69c092:
     group:
@@ -19205,11 +19218,11 @@ users:
     permissions: []
   52b6e861-9b1b-4e74-9fe9-85e81a7e6472:
     group:
-    - mortal
+    - supergirl
     options:
-      last-logout-time: '1515186409'
+      last-logout-time: '1515272625'
       name: Christina1125
-      last-login-time: '1515186273'
+      last-login-time: '1515271783'
   a913250d-8b67-4d1e-9e77-d74405c76872:
     group:
     - mortal
@@ -24216,6 +24229,13 @@ users:
     group:
     - flashbarryallen
     options:
-      last-logout-time: '1515267272'
+      last-logout-time: '1515268911'
       name: waterpuma
       last-login-time: '1515267404'
+  df2b29b5-4cb8-4b5e-94cd-0423673d63fd:
+    worlds:
+      fightclub:
+        permissions: []
+    options:
+      last-logout-time: '1515270919'
+      name: PinkiePie729

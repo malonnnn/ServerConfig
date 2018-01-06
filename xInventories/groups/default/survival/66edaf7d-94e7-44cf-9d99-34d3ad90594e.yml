@@ -1,31 +1,19 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '1':
+    type: STAINED_GLASS
+    damage: 4
+    amount: 5
+  '36':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BLOCK
-    amount: 64
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_BLOCK
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -150,12 +138,47 @@ ender_chest:
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_INGOT
     amount: 64
-health: 20.0
-hunger: 5
+health: 40.0
+hunger: 12
 exp: 0.0
 exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.7448127
-armor_contents: {}
+exhaustion: 0.51612866
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+location:
+  ==: org.bukkit.Location
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 32.704712
+potion_effect:
+  '0':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 198742
+  '1':
+    type: REGENERATION
+    level: 1
+    duration: 198742
+  '2':
+    type: SPEED
+    level: 255
+    duration: 198964
+  '3':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 198742
