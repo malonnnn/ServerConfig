@@ -214,6 +214,7 @@ register_command(selectchar,
                     sudo("/minecraft:clear" @player)
                     sudo("/god ".@player." off")
                     sudo("/tptoggle ".@player." on")
+                    sudo('/stageselect')
                     die()
                 }
 
