@@ -9,9 +9,8 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTUxOTg0NDQzNjQsInByb2ZpbGVJZCI6IjkwMjVlOTZhZDI4NjQ3YjBhNzA5OThkMmE0ZWU0MmRiIiwicHJvZmlsZU5hbWUiOiJUaGVfUmVkX0NhbmFyeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2QyZTk4MDI3YWI5ZGU4YWE5YzU4YzNjYWY4ZGZkZTI0ZDRiYWQ3NDJiNDRhMzNlNWY4MzU3YzAxYmU5MzYifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Chears love the calverys here!",
+            'speech': "Cheers love the calvery's here!",
             'powers': array(
-                "/buff",
                 "/back",
                 "/run 0-5"
             ),
