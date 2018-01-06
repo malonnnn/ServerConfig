@@ -4312,3 +4312,38 @@ spacestonewarp:
         vertical_range: 50
     costs:
         mana: 50
+realitystoneregen:
+    icon: ink_sack:1
+    icon_disabled: ink_sack:1
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+    effects:
+        cast:
+        -  class: EffectSingle
+           effectlib:
+             class: WarpEffect
+             iterations: 30
+             particle: spell_mob
+             color: ff0000
+             location: self
+    costs:
+        mana: 50
+    parameters:
+        range: 16
+        target_type: LivingEntity
+        target_breakables: 1
+        target: self
+        duration: 5000
+        cooldown: 10000
+        effect_regeneration: 1
+        hitbox: true
