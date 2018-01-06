@@ -18,7 +18,7 @@
                 "/haste 0-5",
                 "/flyspeed <number>",
                 "/fly",
-                "/transmute <blocktype>",
+                "/transmute <blocktype> [color]",
                 "Protected by Nekron, mobs will fear you and wont attack you"
             ),
             'buffs': array(

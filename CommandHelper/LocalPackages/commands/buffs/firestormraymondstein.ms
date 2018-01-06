@@ -18,7 +18,7 @@
                 "/haste 0-6",
                 "/flyspeed <number>",
                 "/fly",
-                "/transmute <number>",
+                "/transmute <blocktype> [color]",
                 "/thru (phases through objects)",
                 "Shoots nuclear blasts with bare hand"
             ),
