@@ -5,10 +5,7 @@ bind(entity_damage_player,null,array('button': 'LEFT'),@event){
         @victim = player()
         if(has_permission(@victim,'weakto.kryptonite')){
             @inv = pinv(@attacker,null)
-            if(@inv == null){
-                die()   
-            }
-            if(@inv['meta']['display'] == '§aKr§2y§apt§2o§anite §7Sp§8ea§7r'){
+            if(is_array(@inv) && @inv['meta']['display'] == '§aKr§2y§apt§2o§anite §7Sp§8ea§7r'){
                 modify_event('amount',200)
             }
         }
