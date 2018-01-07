@@ -40,6 +40,7 @@ register_command(exitgame,
                 case 'hogwarts':
                 case 'nyc':
                 case 'rapunzel':
+                case 'speedforce':
                     runas(~console,'/warp vrexit '.@plr)
                     broadcast(@plr.color(RED).' has unplugged from The Matrix!')
                 default:
