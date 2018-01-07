@@ -22,7 +22,7 @@
                 "/run 0-9",
                 "/haste 0-4",
                 "/back (In the speedforce)",
-                "Access to all warps in the speedforce",
+                "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",

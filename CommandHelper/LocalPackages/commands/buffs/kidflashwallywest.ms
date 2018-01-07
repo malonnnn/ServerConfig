@@ -19,7 +19,7 @@
                 "/buff",
                 "/jump 0-3",
                 "/back (In the speedforce)",
-                "Access to all warps in the speedforce",
+                "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/carryplayer",

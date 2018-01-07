@@ -22,7 +22,7 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/tppos <X, Y, Z Coordinates>",
-                "Access to all warps in the speedforce"
+                "/tp <player> (In the speedforce)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",

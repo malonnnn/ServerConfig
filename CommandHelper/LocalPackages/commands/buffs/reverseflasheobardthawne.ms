@@ -19,7 +19,7 @@
             'powers': array(
                 "/buff",
                 "/back (In the speedforce)",
-                "Access to all warps in the speedforce",
+                "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/carryplayer",

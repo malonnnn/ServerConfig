@@ -20,7 +20,7 @@
                 "/buff",
                 "/carryplayer <Player>",
                 "/back (in the speedforce)",
-                "Access to all warps in the speedforce",
+                "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/wallrun <on/off>",
