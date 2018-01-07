@@ -53,7 +53,7 @@ set_interval(3000,closure(
 #        }
 
         if(has_permission(@player,'command.rewind')){
-            export(@player.'tracerReWind',ploc())
+            export(@player.'tracerReWind',ploc(@player))
         }
         if(has_permission(@player,'can.burninsun')){
             @ploc = ploc(@player)

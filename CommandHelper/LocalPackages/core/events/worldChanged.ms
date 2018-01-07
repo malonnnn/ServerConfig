@@ -14,6 +14,9 @@ bind(world_changed, null, null, @event,
             set_pflight(@player,false)
 #        }else if(!has_permission('in.survival')){
             runas(~console,"/sudo ".@player." c:/fixskin")
+        if(has_permission(@player,'essentials.fly')){
+            run_cmd('/fly')
+        }
             set_peffect(@player,14,1,0)
 #        }else{
 #            set_pflight(@player,false)

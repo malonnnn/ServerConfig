@@ -103,9 +103,6 @@ register_command(goworld,
             broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered '.@worldNiceName.'!')
             set_timeout(2000,closure(
                 sudo('/buff')
-                if(has_permission(@sender,'essentials.fly')){
-                    run_cmd('/fly')
-                }
                 msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
                 msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
                 msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')

@@ -14,6 +14,13 @@ bind(player_interact,null,array('button': 'RIGHT'),@event){
     if(@item['meta'] == null || @item['meta']['display'] == null || @item['meta']['display'] != '§4S§7onic §0S§7crewdr§8i§7ver'){
         die()
     }
+    assign(@cooldown, 10)
+    assign(@lastSonicScrewdriver, import(@player.'lastSonicScrewdriver'))
+    if(@lastSonicScrewdriver + @cooldown > time() / 1000,
+        tmsg(@player,color(red).'Sonic Screwdriver has a 10 second cooldown!')
+        die()
+    )
+    export(@player.'lastSonicScrewdriver', time() / 1000)
     
     
     try(
@@ -70,14 +77,6 @@ bind(player_interact,null,array('button': 'RIGHT'),@event){
         }
 
         if(@wasPlaced){
-            assign(@cooldown, 10)
-            assign(@lastSonicScrewdriver, import(@player.'lastSonicScrewdriver'))
-            if(@lastSonicScrewdriver + @cooldown > time() / 1000,
-                tmsg(@player,color(red).'Sonic Screwdriver has a 10 second cooldown!')
-                die()
-            )
-            export(@player.'lastSonicScrewdriver', time() / 1000)
-            
             set_timeout(5000,closure(
                 set_block_at(@blockLocation[0],@blockLocation[1],@blockLocation[2],'0:0',@blockLocation[3])
             ))
