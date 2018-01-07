@@ -11,9 +11,9 @@
             'op': 'false',
             'speech': "Cheers love the calvery's here!",
             'powers': array(
-                "/back",
+                "/rewind",
                 "/run 0-5",
-                "/tpradius"
+                "/jumpto"
             ),
             'buffs': array(
         )
