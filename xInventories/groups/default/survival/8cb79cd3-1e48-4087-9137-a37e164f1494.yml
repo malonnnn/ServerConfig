@@ -1,12 +1,15 @@
-inventory: {}
-health: 11.0
-hunger: 16
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_SPADE
+health: 20.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 0.65506035
+saturation: 5.0
+exhaustion: 3.121608
 armor_contents: {}
 ender_chest:
   '0':
@@ -219,16 +222,34 @@ ender_chest:
         RED: 178
         BLUE: 38
         GREEN: 51
+  '16':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        DAMAGE_ALL: 5
+        DAMAGE_UNDEAD: 5
+        KNOCKBACK: 2
+        FIRE_ASPECT: 2
+        LOOT_BONUS_MOBS: 3
+        SWEEPING_EDGE: 3
+        DURABILITY: 3
 location:
   ==: org.bukkit.Location
-  world: broville
-  x: 1208.5
+  world: greenfield
+  x: -23.5
   y: 69.0
-  z: 808.5
-  pitch: 0.0
-  yaw: 12.999939
+  z: 7.5
+  pitch: 10.438491
+  yaw: 178.80273
 potion_effect:
   '0':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 177104
+  '1':
     type: WATER_BREATHING
     level: 1
-    duration: 183130
+    duration: 177104

@@ -26,3 +26,27 @@ register_command(mainmenu,
         }
     )
 )
+register_command(leavemenu, 
+
+    array(
+        description: 'Unplugs from The Matrix',
+        permission: 'command.leavemenu',
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        executor: closure(@alias, @sender, @args) {        
+            
+            @plr = @args[0]
+            assign(@cooldown, 10)
+            
+            assign(@lastUsedMindLock, import(@plr."lastUsedMainMenu"))
+            if(@lastUsedMindLock + @cooldown > time() / 1000,
+                assign(@timeleft, subtract(add(@lastUsedMindLock, @cooldown), divide(time(),1000)))
+                tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can exit!'))
+                die()
+            )
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
+            _mortal(@plr)
+            runas(~console,'/warp vrexit '.@plr)
+        }
+    )
+)
