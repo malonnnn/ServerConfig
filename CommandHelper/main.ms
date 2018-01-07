@@ -25,7 +25,7 @@ bind(server_command,null,null,@e){
     }
 }
 
-set_interval(5000,closure(
+set_interval(3000,closure(
     @players = all_players()
     foreach(@player in @players){
 #        if(has_permission(@player,'is.incity') && !has_permission(@player,'important.keep')){
@@ -52,6 +52,9 @@ set_interval(5000,closure(
 #            }
 #        }
 
+        if(has_permission(@player,'command.rewind')){
+            export(@player.'tracerReWind',ploc())
+        }
         if(has_permission(@player,'can.burninsun')){
             @ploc = ploc(@player)
             @x = @ploc['x']
