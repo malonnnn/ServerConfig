@@ -6,12 +6,22 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 1.0260462
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
+      blockMaterial: SIGN
 location:
   ==: org.bukkit.Location
-  world: lexstarklabs
-  x: -77.5
-  y: 79.0
-  z: 92.5
-  pitch: 15.438381
-  yaw: 180.1499
+  world: spleef
+  x: -24.954209158107
+  y: 63.0
+  z: 7.42005550496507
+  pitch: 10.443246
+  yaw: 268.62396

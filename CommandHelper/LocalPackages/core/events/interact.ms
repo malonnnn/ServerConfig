@@ -12,8 +12,8 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         export(@player.'lastwebshot', time() / 1000)
         @puuid = puuid(@player, true)
         set_entity_rider(null, @puuid)
-        @multiplier = 0.35
-        @arrow = shoot_projectile(@player, 'ARROW')
+        @multiplier = 0.5
+        @arrow = shoot_projectile(@player, 'FIREBALL')
         @velocity = entity_velocity(@arrow)
         
         # spawn pig
@@ -24,6 +24,7 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         try(set_mob_effect(@pig, 14, 1, 9999, true, false),
             tmsg(player(), "Sorry, you can't use websling in here")
             entity_remove(@arrow)
+            entity_remove(@pig)
             die()
         )
         
@@ -32,17 +33,25 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         
         # sit player on pig
         set_entity_rider(@pig, @puuid)
-        
         set_leashholder(@pig,@arrow)
         
         set_entity_velocity(@arrow, array(@velocity['x'] * @multiplier, @velocity['y'] * @multiplier, @velocity['z'] * @multiplier))
-
-        bind(entity_dismount, null, null, @event, @puuidd = puuid(@player)) {
+        @puuidd = puuid(@player)
+        bind(entity_dismount, null, null, @event, @puuidd, @arrow) {
             if(@event['id'] == @puuidd){
                 entity_remove(@event['mountid'])
+                try{entity_remove(@arrow)}catch(Exception @e){}
                 unbind()
             }
         }
+        #bind(projectile_hit, null, array(id: @arrow), @event, @puuidd) {
+        #        set_entity_rider(null, @puuidd)
+        #}
+
+        set_timeout(5000,closure(
+            try{entity_remove(@arrow)}catch(Exception @e){}
+            try{entity_remove(@pig)}catch(Exception @e){}
+        ))
     }
 
 )

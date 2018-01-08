@@ -1,4 +1,20 @@
-inventory: {}
+inventory:
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: ACACIA_DOOR_ITEM
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
+      blockMaterial: SIGN
 health: 3.4653353691101074
 hunger: 15
 exp: 0.0
@@ -14,4 +30,4 @@ location:
   y: 79.0
   z: 95.5
   pitch: 14.622873
-  yaw: -180.70142
+  yaw: 55.099964

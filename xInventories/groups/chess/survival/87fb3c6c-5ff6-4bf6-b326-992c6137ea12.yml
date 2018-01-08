@@ -6,7 +6,23 @@ remainingAir: 300
 fireTicks: -20
 saturation: 20.0
 exhaustion: 1.3602998
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
+      blockMaterial: SIGN
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD
 location:
   ==: org.bukkit.Location
   world: lexstarklabs
@@ -14,4 +30,4 @@ location:
   y: 79.0
   z: 115.5
   pitch: 11.127748
-  yaw: -90.16423
+  yaw: -182.1432
