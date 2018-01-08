@@ -2,12 +2,12 @@ inventory: {}
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.23945016
-exp-level: 15
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.2141358
+saturation: 5.0
+exhaustion: 2.0790005
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -28,9 +28,14 @@ ender_chest:
     amount: 64
 location:
   ==: org.bukkit.Location
-  world: deathdrop
-  x: 0.5
-  y: 253.0
-  z: 3.5
-  pitch: 6.750001
-  yaw: 143.77985
+  world: greenfield
+  x: -25.5
+  y: 69.0
+  z: -215.5
+  pitch: 0.46778247
+  yaw: 89.969574
+potion_effect:
+  '0':
+    type: INVISIBILITY
+    level: 1
+    duration: 199955
