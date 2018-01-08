@@ -8,19 +8,25 @@ bind(world_changed, null, null, @event,
 #    @class = _getheroclass(@player)
 
     set_timeout(1000,closure(
-#        if(has_permission('is.incity')){
-            runas(~console,"/minecraft:effect ".@player." clear")
-            runas(~console,"/minecraft:clear ".@player)
-            set_pflight(@player,false)
-#        }else if(!has_permission('in.survival')){
+        runas(~console,"/minecraft:effect ".@player." clear")
+        runas(~console,"/minecraft:clear ".@player)
+        set_pflight(@player,false)
+        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+        @class = _getheroclass(@player)
+        if(@class == 'mortal' || substr(@class,0,6) == 'fanfic'){
+            runas(~console,'/undisguiseplayer '.@player)
+        }else{
+            msg(substr(@class,0,6))
             runas(~console,"/sudo ".@player." c:/fixskin")
+        }
         if(has_permission(@player,'essentials.fly')){
             run_cmd('/fly')
         }
-            set_peffect(@player,14,1,0)
-#        }else{
-#            set_pflight(@player,false)
-#        }
+        if(has_permission(@player,'ch.alias.buff')){
+            runas(@player,'/buff')
+        }
+        runas(~console,'/effect '.@player.' regeneration 5 10 true')
+        set_peffect(@player,14,1,0)
     ))
 
 #    if(@to == 'anarchy' && @class != 'anarchy'){
