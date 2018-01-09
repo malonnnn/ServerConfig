@@ -42,11 +42,12 @@ register_command(mutate,
 
             runas(~console,"/gamemode survival ".@vic)
             runas(~console,"/minecraft:clear ".@vic)
-            runas(~console,"/effect ".@vic." clear")
+            runas(~console,"/minecraft:effect ".@vic." clear")
             runas(~console,"/fly ".@vic." off")
+            runas(@vic,'/fixskin')
             @theBind = bind(player_command,null,array('player':@vic),@e, @vicc = @vic){
                 cancel()
-                tmsg(@vicc,color(RED).'You have been mutated, you can\'t use any commands right now!')
+                tmsg(@vicc,color(RED).'You have been temporarily mutated, you can\'t use any commands right now!')
             }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -70,7 +71,12 @@ register_command(mutate,
             ))
 
             @plrclass = _getheroclass(@plr)
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+            try{
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+            }catch(Exception @e){
+                @hero = array()
+                @hero['name'] = @plr
+            }
             @plrHero = @hero
             broadcast(color(LIGHT_PURPLE).color(BOLD).'POOF'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(GREEN).color(BOLD).' has changed '.color(WHITE).@vicHero['name'].color(GREEN).color(BOLD).' into a deformed, freaky mutant!');
 

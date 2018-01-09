@@ -41,7 +41,7 @@
                 "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/give " . @plr . " 95:4 5",
+                "/give " . @plr . " 95:4 64 name:&4Sp&eee&4df&eo&4r&ec&4e_&4C&eo&4nstr&eu&4ct_Bl&eo&4cks",
                 #"/give ". @plr ." minecraft:leather_boots 1 0 {AttributeModifiers:[{Operation:0,UUIDLeast:1,UUIDMost:1,Amount:123456789123456894321654.0,AttributeName:generic.movementSpeed,Name:speed}],display:{Name:Boots of Wally West}}",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
             )

@@ -22,7 +22,7 @@
                 "/empower <playername> (gives player strength 10)",
                 "/speak <playername>",
                 "/grow",
-                "/shrink",
+                "/normalsize",
                 "/jump 0-9",
                 "/run 0-9",
                 "/confuse <player>",

@@ -48,7 +48,7 @@ register_command('judgequiz',
                     store_value('judgequiz.'.puuid(@player,true),@answers);
                     runas(~console,'/pex user '.@player.' remove -*')
                     runas(~console,'/ch set '.@player.' global')
-                    runas(~console,'/warp lab '.@player)
+                    runas(~console,'/warp arcade '.@player)
                 }
                 bind(player_quit,array('id':@player.'testQuit'),array('player': @player), @e, @randomQuestions, @player, @answers){
                     broadcast(color(RED).@player.' is now finished with the judge quiz')
@@ -60,7 +60,7 @@ register_command('judgequiz',
                     store_value('judgequiz.'.puuid(@player,true),@answers);
                     runas(~console,'/pex user '.@player.' remove -*')
                     runas(~console,'/ch set '.@player.' global')
-                    runas(~console,'/warp lab '.@player)
+                    runas(~console,'/warp arcade '.@player)
                 }
                 
                 bind(player_chat, array('id':@player.'judgequiz'), array('player': @player), @e, @randomQuestions, @player, @answers){
@@ -80,7 +80,7 @@ register_command('judgequiz',
                         msg('Thank you for taking this quiz! Any chat messages you now send will be broadcasted as per usual.');
                         runas(~console,'/pex user '.@player.' remove -*')
                         runas(~console,'/ch set '.@player.' global')
-                        runas(~console,'/warp lab '.@player)
+                        runas(~console,'/warp arcade '.@player)
                     }
                 }
             ))

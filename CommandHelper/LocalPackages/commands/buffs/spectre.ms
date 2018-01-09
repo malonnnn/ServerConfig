@@ -14,7 +14,7 @@
                 "/buff",
                 "/fly",
                 "/grow", 
-                "/shrink",
+                "/normalsize",
                 "Anything you attack, dies",
                 "/create <itemid> <qty>",
                 "/vis",

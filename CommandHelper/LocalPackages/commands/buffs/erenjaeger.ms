@@ -13,8 +13,8 @@
             'powers': array(
                "/buff",
                "/grow",
-               "/shrink",
-                "With an empty hand, right click the air and you will use your 3D maneuver gear. You can use it to swing around the city!"
+               "/normalsize",
+               "With an empty hand, right click the air and you will use your 3D maneuver gear. You can use it to swing around the city!"
            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",

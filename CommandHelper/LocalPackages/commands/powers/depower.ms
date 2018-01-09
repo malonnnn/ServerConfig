@@ -30,11 +30,12 @@ register_command(depower,
 
                 runas(~console,"/gamemode survival ".@player)
                 runas(~console,"/minecraft:clear ".@player)
-                runas(~console,"/effect ".@player." clear")
+                runas(~console,"/minecraft:effect ".@player." clear")
                 runas(~console,"/fly ".@player." off")
+                runas(@player,'/fixskin')
                 @theBind = bind(player_command,null,array('player':@player),@e, @vicc = @player){
                     cancel()
-                    tmsg(@vicc,color(RED).'You have been mutated, you can\'t use any commands right now!')
+                    tmsg(@vicc,color(RED).'You have been temporarily stripped of your powers, you can\'t use any commands right now!')
                 }
 
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -53,7 +54,12 @@ register_command(depower,
                 ))
 
                 @plrclass = _getheroclass(@plr)
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+                }catch(Exception @e){
+                    @hero = array()
+                    @hero['name'] = @plr
+                }
                 @plrHero = @hero
                 set_timeout(3000,closure(
                     broadcast(color(LIGHT_PURPLE).color(BOLD).'POOF'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(RED).color(BOLD).' has stripped '.color(WHITE).@vicHero['name'].color(RED).color(BOLD).' of their powers!');
