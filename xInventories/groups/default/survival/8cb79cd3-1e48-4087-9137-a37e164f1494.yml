@@ -1,12 +1,40 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BREAD
+    amount: 60
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 16
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
+    damage: 1
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: ANVIL
+    amount: 56
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: ITEM_FRAME
+    amount: 56
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+    amount: 55
+  '27':
+    ==: org.bukkit.inventory.ItemStack
+    type: BUCKET
+    amount: 3
 health: 20.0
-hunger: 20
+hunger: 16
 exp: 0.0
-exp-level: 1
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.6774359
+exhaustion: 1.5306764
 armor_contents: {}
 ender_chest:
   '0':
@@ -74,9 +102,18 @@ ender_chest:
       blockMaterial: RED_SHULKER_BOX
 location:
   ==: org.bukkit.Location
-  world: spleeflobby
-  x: 0.5
-  y: 64.0
-  z: 0.5
-  pitch: 12.449994
-  yaw: 102.882416
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 333.15405
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 198522
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198522
