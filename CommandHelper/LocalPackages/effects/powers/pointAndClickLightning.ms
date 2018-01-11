@@ -10,10 +10,6 @@ bind(player_interact,null,array('button': 'LEFT'),@event){
         tmsg(@player,color(red).'Sorry, you can\'t use lightning here.')
         die()
     }
-    if(sk_region_check_flag(@ploc,'pvp',@player) == false){
-        tmsg(@player,color(red).'Sorry, you can\'t use lightning here.')
-        die()
-    }
     
     assign(@cooldown, 2)
     assign(@lastshot, import(@player.'lastlightning'))

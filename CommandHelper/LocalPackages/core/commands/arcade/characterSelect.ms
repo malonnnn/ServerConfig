@@ -151,6 +151,29 @@ register_command(selectchar,
                 }
 
                 @player = @sender
+                @ploc = ploc(@player)
+                @center = array('x': -76.5, 'y': 249, 'z': 132, 'world': @ploc['world'])
+
+                @x1 = @ploc['x']
+                @y1 = @ploc['y']
+                @z1 = @ploc['z']
+
+                @x2 = @center['x']
+                @y2 = @center['y']
+                @z2 = @center['z']
+
+                @x3 = pow(@x1 - @x2, 2)
+                @y3 = pow(@y1 - @y2, 2)
+                @z3 = pow(@z1 - @z2, 2)
+
+                @final = @x3 + @y3 + @z3
+
+                @final = sqrt(@final)
+                
+                if(@final > 5){
+                    msg(color(RED).'Sorry, you need to be at the main menu to perform this command!')
+                    die()
+                }
                 @class = @args[0]
                 @confirmed = import(@player."charConfirmed")
                 if(@confirmed != @class){

@@ -90,23 +90,23 @@ register_command(goworld,
                 @hero = array()
                 @hero['name'] = @sender
             } 
-            runas(~console,'/warp '.@args[0].' '.@sender)
 
             @worldNiceName = ''
             include('/home/minecraft/server/plugins/CommandHelper/includes/worldList.ms')
             foreach(@world in @worldList){
                 if(@world[0] == @args[0]){
+                    runas(~console,'/warp '.@args[0].' '.@sender)
                     @worldNiceName = @world[1]
+                    broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered '.@worldNiceName.'!')
+                    set_timeout(2000,closure(
+                        msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
+                        msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
+                        msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')
+                        msg(color(RED).'Select a new character using '.color(GREEN).'/mainmenu'.color(RED).' !')
+                    ))
                 }
             }
 
-            broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered '.@worldNiceName.'!')
-            set_timeout(2000,closure(
-                msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
-                msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
-                msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')
-                msg(color(RED).'Select a new character using '.color(GREEN).'/mainmenu'.color(RED).' !')
-            ))
         }
     )
 )
