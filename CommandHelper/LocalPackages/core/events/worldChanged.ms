@@ -16,7 +16,8 @@ bind(world_changed, null, null, @event,
         if(@class == 'mortal' || substr(@class,0,6) == 'fanfic'){
             runas(~console,'/undisguiseplayer '.@player)
         }else{
-            runas(~console,"/sudo ".@player." c:/fixskin")
+            @skinNum = import(@player.'skinNum')
+            runas(@player,'/skin '.@skinNum)
         }
         if(has_permission(@player,'essentials.fly')){
             run_cmd('/fly')

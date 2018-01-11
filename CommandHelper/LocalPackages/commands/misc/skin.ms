@@ -50,6 +50,7 @@ register_command(skin,
                         die()
                     )
                     _changeSkin(@player,@altSig,@altVal,@hero['name'])
+                    export(@player.'skinNum',@skinNum)
                     
                 } catch (PlayerOfflineException @ErrorInfo) {				
                     msg(@player,'Player: '.@plr.' is Offline')

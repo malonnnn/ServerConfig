@@ -213,7 +213,7 @@ register_command(selectchar,
                     }
                 }
                 clear_task(import(@player.'isBurningInSunlight'))
-               
+                export(@player.'skinNum',1)
                 if(@class == 'fanfic'){
                     @uuid = puuid(@player,true)
                     sudo('/pex group '.@class.@uuid.' create commonherotraits')
