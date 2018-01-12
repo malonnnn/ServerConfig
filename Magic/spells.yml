@@ -3667,8 +3667,8 @@ hydroshield:
         miss: actions
     costs:
         mana: 75
-mindstone:
-    icon: paper
+mindcontrol:
+    icon: ink_sac:11
     category: staff
     hidden: true
     actions:
@@ -3682,7 +3682,7 @@ mindstone:
              class: LineEffect
              iterations: 1
              particle: redstone
-             color: ff0000
+             color: ffff00
              radius: 2
              lengthGrow: 0.1
              updateLocations: false
@@ -3702,7 +3702,7 @@ mindstone:
         - mindcontrol @t 
         target_type: Player
         target: other
-        range: 2
+        range: 5
 cosmicbolt:
     icon: diamond_axe:171
     icon_disabled: diamond_hoe:171
