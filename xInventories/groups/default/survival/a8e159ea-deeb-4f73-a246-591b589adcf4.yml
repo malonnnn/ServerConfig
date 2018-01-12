@@ -2,12 +2,12 @@ inventory: {}
 armor_contents: {}
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.55555546
+exp-level: 10
 remainingAir: 300
 fireTicks: -20
-saturation: 1.0
-exhaustion: 0.5460043
+saturation: 20.0
+exhaustion: 2.9556425
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -26,6 +26,43 @@ ender_chest:
     type: STAINED_GLASS
     damage: 4
     amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BLACK_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAMXSwU7CQBQF0NtOC6UY4w4kLoyfYeIGlOjGEHVvxvJsG6Yd0nkY+VO/Rm0ZSaRABBe6aXLTzE3uyQuBEId9paPJVc4pzx9k3IJ/w5SZEIDnwLtXmjsB3HSMbpbmFBXymc8VSU6oeExIZcQO/IGe5eyEEFxVeJRHSdUQuBDqRcFzFw3ldyV7yyxs9pfZsblR+9+s5aCWz2rvhxAI72gq02KgDQPOR4jmODVTJecCfqSVLvD+dhHAu5UZ4WCopElOrxezULY1LmUmYyqnfFl0rcXJukWUkOGymGlnD2CLz74ers2tfT3EDx5H1mNQTRtRGtFGk2Nr0ls3URTHaR6bX1+I+OsL+S6yVGhbhZHM2WwE6FmAzjrAk9a8+3rnv++huX19v1qyut6ubptkpiaLra/AJ66w+5NUBAAA
+      blockMaterial: BLACK_SHULKER_BOX
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: EXP_BOTTLE
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    damage: 1
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        DAMAGE_ALL: 4
+        SWEEPING_EDGE: 3
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPLE_SHULKER_BOX
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAIWQvU7DMBSFj5MUWiN+BgQrr4CyMSFaBhaGwl45sUmtOHZkO5Q+Ud+jT8aNQpRuTN+V7U/nHnOA4+rFuLJ+tVHH/aeoFpi9RdUEDiBjyD6Mi5gj0RKXjbaq9OIrPhVuxzBbus5GxpHG3suULbe9xhKk5tv07LUcKfhatUL7pQuxf4AEZyvRiErR3V8IG0KupxDh/UnMpGBUFoNyNymVM1LZjWhbo0bzeTLZaPLBvJ9MqUXjrNyEnfPy/263Q7cb+sBzqUNrxH6O7F00Co/HQ7E6HnJB9MT6gYY1DYrYEjuiIQYineUeOC03rHYRtp2pld8U7gf4BUn4fwGqAQAA
+      blockMaterial: PURPLE_SHULKER_BOX
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_PICKAXE
 location:
   ==: org.bukkit.Location
   world: greenfield
@@ -38,4 +75,4 @@ potion_effect:
   '0':
     type: INVISIBILITY
     level: 1
-    duration: 199952
+    duration: 199957

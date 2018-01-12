@@ -1,19 +1,61 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.69565225
+inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4En§cerg§4y §cBe§4am§4 «×»
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 56.0
+hunger: 0
+exp: 0.826087
 exp-level: 8
 remainingAir: 300
 fireTicks: -20
-saturation: 15.0
-exhaustion: 0.8085734
+saturation: 0.0
+exhaustion: 0.20175765
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: infiniteparkour
-  x: 0.5
-  y: 61.0
-  z: 0.5
-  pitch: 2.3999875
-  yaw: -252.95908
+  world: greenfield
+  x: -25.5
+  y: 69.0
+  z: -215.5
+  pitch: 0.46778247
+  yaw: 3.701598
+potion_effect:
+  '0':
+    type: WATER_BREATHING
+    level: 1
+    duration: 199565
+  '1':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 199565
+  '2':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199565
+  '3':
+    type: NIGHT_VISION
+    level: 1
+    duration: 199565
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199565
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 199565

@@ -17,7 +17,9 @@ bind(world_changed, null, null, @event,
             runas(~console,'/undisguiseplayer '.@player)
         }else{
             @skinNum = import(@player.'skinNum')
-            runas(@player,'/skin '.@skinNum)
+            if(@skinNum != null){
+                runas(@player,'/skin '.@skinNum)
+            }
         }
         if(has_permission(@player,'essentials.fly')){
             run_cmd('/fly')
