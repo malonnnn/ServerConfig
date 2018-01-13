@@ -23,7 +23,8 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
-                "/haste 0-4"
+                "/haste 0-4",
+                "/cast mach5punch"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
