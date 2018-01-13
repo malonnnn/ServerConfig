@@ -1,24 +1,79 @@
-health: 20.0
-hunger: 20
+health: 21.0
+hunger: 16
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.0451504
-inventory: {}
+exhaustion: 0.49601325
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6freezetime§f (§3InfinityGauntlet§f)
+      lore:
+      - §3§oBound to xMqthy
+      - Knows 12 Spells
+      - '§d§oMana: 300'
+      - '§d§oMana Regeneration: 10/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAD2PQU7CYBSEh1CwbaIxuNSFiWxrBGmtG7WJJpqILAhr/KGv8Ef+v6V9FdkZE8/gAdy68ACewaN4AFeWGp3lm8nM92zAhrEQOjRhMqlkJpiwKXUkteTlROSaZ8QmavFCU4r6Q3fO06WBDSW0GLJUlLFQCVC5/Tp96hUtZXAoQzQjr91yfY8cnyLf6XT80Dluex3H90Ze6/DIPXDbVMXaPaWZjDWAGiw0AuZUjnKmbhzKSBamXVgVA+ZgcHXejTP+3jvZCR4vyYC1Ol2TyPh9++Pz5fnttY56oOKC+qyJUiaM/ixmmEpIPS0fXf+fuBGKsDWhgliO9wWzGN/1E6KwCquXUCr4F2zVUmYbF/NcJoo07/7hAT+WmUSTRQEAAA==
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
   world: greenfield
-  x: -25.5
+  x: -29.392033757230884
   y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 85.46957
+  z: -247.56072796995159
+  pitch: 13.885824
+  yaw: 359.9483
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199979
+  '1':
+    type: WATER_BREATHING
     level: 1
-    duration: 199696
+    duration: 199979
+  '2':
+    type: REGENERATION
+    level: 10
+    duration: 99
+  '3':
+    type: INCREASE_DAMAGE
+    level: 100
+    duration: 199979
+  '4':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199979
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199979
