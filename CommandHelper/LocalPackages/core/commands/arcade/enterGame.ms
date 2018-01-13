@@ -52,20 +52,12 @@ register_command(entergame,
                     }
                 ))
 
-                @plrs = players_in_radius(@ploc,1)
-                @tooManyPeople = FALSE
-                foreach(@plr in @plrs){
-                    if(@plr == @player || get_entity_health(puuid(@plr) == 0)){
-                        continue()
-                    }else{
-                        @tooManyPeople = TRUE
-                    }
-                    if(@tooManyPeople){
-                        pkill(@plr)
-                        broadcast(@plr.color(RED).' did not wait their turn and was vaporized.')
-                    }
+                if(import('vrInUse') == true){
+                    msg(color(RED).'Sorry, the machine is in use.')
+                    die()
                 }
 
+                export('vrInUse',true)
                 set_block_at(-118, 78, 150, 152, @ploc['world'])
                 set_block_at(-117, 86, 149, 55, @ploc['world'])
                 set_block_at(-117, 75, 148, 152, @ploc['world'])
@@ -142,6 +134,7 @@ register_command(entergame,
                     sudo('/characterselect')
                     set_block_at(-118, 78, 150, 35, @ploc['world'])
                     set_block_at(-117, 86, 149, 0, @ploc['world'])
+                    export('vrInUse',false)
                 ))
         }
     )

@@ -13,6 +13,7 @@
             'powers': array(
                 "/buff",
                 "Can throw fireballs by punching with an empty hand",
+                "/fireballpunch <on/off>",
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-3",
