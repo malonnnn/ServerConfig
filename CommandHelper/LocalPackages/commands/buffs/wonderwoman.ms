@@ -18,9 +18,13 @@
                 "/haste 0-9",
                 "/flyspeed <number>",
                 "/fly",
+                "/back (In the speedforce)",
+                "/tp <player> (In the speedforce)",
+                "/speedforceteleport <playername>",
                 "/cast forcefield",
                 "/cast wwbracers",
-                "/msg <player>",
+                "/msg <playername>",
+                "/mindlock <playername>",
                 "/herotransform <id>"
             ),
             'buffs': array(
