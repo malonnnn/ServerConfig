@@ -20,7 +20,7 @@
                 "/fly",
                 "/fly speed <number>",
                 "/mindcontrol <playername>",
-                "/stopmindcontrol"
+                "/stopmindcontrol",
                 "/cast freezeray"
             ),
             'buffs': array(
