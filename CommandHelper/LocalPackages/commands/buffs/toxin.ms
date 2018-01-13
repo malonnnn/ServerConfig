@@ -17,7 +17,7 @@
                 "/dismountplayer <player>",
                 "/wallclimb <on/off>",
                 "/websling <on/off>",
-                "/cast symbiotetendrile",
+                "/cast symbiotetendril",
                 "/cast symbiotestretch"
                 
             ),
