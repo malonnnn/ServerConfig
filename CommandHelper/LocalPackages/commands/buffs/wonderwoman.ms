@@ -25,7 +25,8 @@
                 "/cast wwbracers",
                 "/msg <playername>",
                 "/mindlock <playername>",
-                "/herotransform <id>"
+                "/herotransform <id>",
+                "/cast lassoregen"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
