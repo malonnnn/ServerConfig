@@ -1,17 +1,33 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: SIGN
+    type: BOW
     meta:
       ==: ItemMeta
-      meta-type: TILE_ENTITY
-      lore:
-      - (+NBT)
-      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
-      blockMaterial: SIGN
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: TORCH
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Spleef Shovel
+      enchants:
+        DIG_SPEED: 5
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cArrow §6Gun§6 «1»
 health: 20.0
 hunger: 20
 exp: 0.0
@@ -19,12 +35,12 @@ exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 0.8851009
+exhaustion: 2.9471009
 location:
   ==: org.bukkit.Location
   world: lexstarklabs
-  x: -77.48819953296334
-  y: 79.0
-  z: 90.7770486216578
-  pitch: 1.283319
-  yaw: 246.43643
+  x: -74.5
+  y: 89.0
+  z: 98.5
+  pitch: -2.211763
+  yaw: 13.158108
