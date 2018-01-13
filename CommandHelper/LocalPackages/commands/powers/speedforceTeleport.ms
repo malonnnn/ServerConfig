@@ -67,6 +67,16 @@ register_command(speedforceteleport,
             runas(~console, "/warp speedforce " . @plr)
             tmsg(@vic, @plr . " has brought you into the speedforce!")
             tmsg(@plr, "You brought " . @vic . "  you into the speedforce!")
+
+
+            @asdf = bind(player_command,null,array('player': @vic),@e,@vic){
+                cancel()
+                tmsg(@vic,color(RED).'Sorry, you temporarily cannot use commands.')
+            }
+            set_timeout(30000,closure(
+                unbind(@asdf)
+                tmsg(@vic,color(RED).'You can use commands again!')
+            ))
             
         }
     )
