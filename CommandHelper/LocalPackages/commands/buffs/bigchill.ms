@@ -23,7 +23,7 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 11 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true"
+                "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." icespike",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&bWings"
             )

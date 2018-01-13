@@ -1,18 +1,30 @@
 inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: SMOOTH_BRICK
-  '2':
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEHix7PNIW0zLzM4ozUFHRdTJkpDHy5mXmpyUWJaSVWxZnpeVCjDFHcxMAAAKBa8zG/AAAA
+      blockMaterial: SIGN
+  '0':
     ==: org.bukkit.inventory.ItemStack
-    type: REDSTONE
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE_BUTTON
+    type: SIGN
 health: 20.0
-hunger: 20
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.1
+saturation: 0.0
+exhaustion: 0.10000038
+location:
+  ==: org.bukkit.Location
+  world: atlantis
+  x: -112.5
+  y: 6.0
+  z: -719.5
+  pitch: 6.9087505
+  yaw: -269.89062

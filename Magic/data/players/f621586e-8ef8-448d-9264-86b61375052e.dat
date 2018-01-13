@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1515868039318
+last_cast: 1515879778245
 cooldown_expiration: 0
-last_death_location: -32.447002873436844,69.0,-223.51257935891522,greenfield,-190.0616,36.467785
+last_death_location: -33.448058792596754,70.16610926093821,-217.28951649928467,greenfield,270.58868,19.350004
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -12,7 +12,33 @@ brush:
   schematic: ''
   scale: 1.0
   erase: true
-undo: []
+undo:
+- world: greenfield
+  blocks:
+  - 2,124,-192,greenfield|171:8
+  - 0,124,-192,greenfield|35:8
+  - 1,123,-194,greenfield|171:15
+  - 0,123,-193,greenfield|31:1
+  - 1,123,-193,greenfield|171:15
+  - -1,124,-195,greenfield|19:0
+  - -2,125,-195,greenfield|148:0
+  - -2,124,-195,greenfield|19:0
+  - -1,125,-195,greenfield|148:0
+  time_to_live: 0
+  name: symbiotestretch
+  mode: NO_PHYSICS
+- world: greenfield
+  blocks:
+  - -29,68,-197,greenfield|35:7
+  - -28,68,-197,greenfield|35:7
+  - -29,68,-196,greenfield|35:7
+  - -27,68,-195,greenfield|35:7
+  - -28,68,-196,greenfield|35:7
+  - -27,68,-196,greenfield|35:7
+  - -28,68,-195,greenfield|35:7
+  time_to_live: 0
+  name: symbiotetendril
+  mode: NO_PHYSICS
 spells:
   flare:
     cast_count: 154
@@ -40,10 +66,10 @@ spells:
     last_earn: 1515196604747
     cooldown_expiration: 1515196609753
   powerstoneblast:
-    cast_count: 49
-    last_cast: 1515867778073
-    last_earn: 1515867526738
-    cooldown_expiration: 0
+    cast_count: 50
+    last_cast: 1515879771856
+    last_earn: 1515879772162
+    cooldown_expiration: 1515879801856
   soulstonetrap:
     cast_count: 12
     last_cast: 1515868039319
@@ -119,6 +145,11 @@ spells:
     last_cast: 1496274459887
     last_earn: 0
     cooldown_expiration: 1496274464887
+  symbiotestretch:
+    cast_count: 5
+    last_cast: 1515877754769
+    last_earn: 0
+    cooldown_expiration: 1515877755769
   poison|3:
     cast_count: 0
     last_cast: 1499823066297
@@ -290,10 +321,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1511472200419
   soulstoneblast:
-    cast_count: 2
-    last_cast: 1515867971555
-    last_earn: 1515867446981
-    cooldown_expiration: 1515868001555
+    cast_count: 3
+    last_cast: 1515879762789
+    last_earn: 1515879762787
+    cooldown_expiration: 1515879792789
   petrify|3:
     cast_count: 101
     last_cast: 1492367168457
@@ -640,20 +671,25 @@ spells:
     last_earn: 0
     cooldown_expiration: 1515196567700
   powerstonedestroyworld:
-    cast_count: 21
-    last_cast: 1515867934473
+    cast_count: 22
+    last_cast: 1515879778246
     last_earn: 0
     cooldown_expiration: 0
   spacestonewarp:
-    cast_count: 396
-    last_cast: 1515867871075
-    last_earn: 1515867493682
+    cast_count: 397
+    last_cast: 1515879766687
+    last_earn: 1515879766686
     cooldown_expiration: 0
   rhinodash:
     cast_count: 10
     last_cast: 1505782030366
     last_earn: 0
     cooldown_expiration: 1505782035366
+  symbiotetendril:
+    cast_count: 1
+    last_cast: 1515877593054
+    last_earn: 0
+    cooldown_expiration: 1515877598054
   fire|4:
     cast_count: 1
     last_cast: 1496618944929
@@ -881,7 +917,7 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6soulstonetrap§f (§3InfinityGauntlet§f)
+        display-name: §6powerstonedestroyworld§f (§3InfinityGauntlet§f)
         lore:
         - §3§oBound to xMqthy
         - Knows 13 Spells
@@ -895,31 +931,16 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAF1SzW4TMRCe4m26SX8pEgdaEBI9NigJSbq9oEYCCSQCh6rn4NizqYXXdr1O0nDiwjPwAFyR4AE4c0HiWXrmxHhLQKpv881ovp9xA6AByZwbmUIasHCaB4QdZXJlVFhM+NQEjSGFVTs36KF2ObwI54sUNrgIaoaj0qHWsFnaqS6DNRg8dzVICm74ibuC+BLYiuUoqALLwAsHsPL26sfXn0RZbR0pCQd5v9PuZX1sZphnzW43k83jTr/bzPrjfvvJUa/V6yDRYp6jCCNhtfWwk2PGj8dZhm0pD1uHLQaJ4xOMrAzWZuhLZQ0Vqw3YrpSOlJmhCdYvGNx1dk4TUbUkYd4u5tZrGccZbJWOC6yac+5dtMGgUdUTz8sI3GOwrozwyEu8JmUMtv8vHWteBkJr7EY+hN0nBi4EavQUeEyGwBUGt2mbpuCrWY8TjOrXGGwIbafyb5OgvRujS679qHzJtQQfkPLcI75fElE464UyUlhDtjUBtwDqsDsIwavxNODQSpUr8tGIshJIz85ePhvaMvx+9HR/8OEFJlCP0CvyHr7tff/16eOXzzWoDQpLH+bkoLo7pJCcahsgLbgy59Uf2/xH8ZqTlDtkEL0Sj3kIXLw7dYiSQf2Ni7Fcny5uqWZ3n19MlSvoeg+X8gD+AIoZCAHAAgAA
+        internal: H4sIAAAAAAAAAD1QwU7CUBBcYsFC1BBMvOjBRI7UlEpruRiJmmgieiCc66PdBy+275V2ofbmRX/BD/DqwQ/gG/wXryYmFozuabMzmZmdGkANtIzJQAedMIpDRgh1IbmQgvIxm0kKkXQoq0xiApWH/pQmuQ4bzCcxRy+NMQxhJ1YZJikpiQGmlKg8U0kYlEGLmGRn5rfUYGu5eiSigsCiGKB095kvngvflbQnAmhyx2rbroOGi9w1Oh03MLqW0zFcZ+S0j45t07aw8EbO0SfPV6FKoM6RW9yymG13WctsmWuwPi/CCCUBoAxVaPSIEjGaEfZVILgowFoBlTTQh8Or875K6evgZK/3eIkaVJena2Qpve8uPl6e3l4rUOlFqijitAmr0UEbhIpAj5iQk1V3m/8WNyxC2B5j8ZLwDxkR8+8HMWKwBtXbGBNGv8GWKitu42I6E3GEkvb/4gH8AJHH8JKYAQAA
     wand:
       template: infinitygauntlet
       owner: xMqthy
-      active_spell: soulstonetrap
-      mana: 271.0
-      mana_timestamp: 1515868041163
+      active_spell: powerstonedestroyworld
+      mana: 176.98996
+      mana_timestamp: 1515879775366
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: fe8a9b88e1dd,0,0
-      page: 0
+      effect_color: fef2f22a559a,0,0
       version: 5
-      spell_inventory:
-        powerstonedestroyworld: 5
-        spacestonewarp: 4
-        stonegrasp: 26
-        increaseage: 3
-        powerstoneblast: 6
-        soulstonetrap: 29
-        acceleratetime: 1
-        realitystoneregen: 7
-        cloudreality: 27
-        realitystoneblast: 28
-        soulstoneblast: 30
-        freezetime: 0
-        mindcontrol: 2
   yodaforce:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1018,9 +1039,75 @@ wands:
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       effect_color: 274a701041ca,5d852e8454e2,d764b9df9e40
       version: 5
-open_wand: false
+inventory:
+- ==: org.bukkit.inventory.ItemStack
+  type: IRON_BARDING
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+- ==: org.bukkit.inventory.ItemStack
+  type: IRON_BARDING
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
+- ==: org.bukkit.inventory.ItemStack
+  type: GOLD_BARDING
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §6freezetime§f (§3InfinityGauntlet§f)
+    lore:
+    - §3§oBound to xMqthy
+    - Knows 13 Spells
+    - '§d§oMana: 300'
+    - '§d§oMana Regeneration: 10/s'
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ATTRIBUTES
+    - HIDE_UNBREAKABLE
+    - HIDE_DESTROYS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    Unbreakable: true
+    internal: H4sIAAAAAAAAAD2PsU7CYBSFD6HUlkRjcNTBRNYawbaWxUiiiSaiA2HGH3oLf+z/t7QXkbC4+Aw+gKuDD+Az+C6uTpYaPeM9J+d8tw7UYSyEDi1YTCqNBRO2pY6klryciLnmmNhCLVloymA+9mY8XRrYUkKLIUtFOQuVApW7r+VqVbSUwaEM0Yz8dssLfHICigLHdYPQ6bR91wn8kd86PvGOvDZVsfFAWS4TDaAGG40ucyZHc6ZeEspIFma9sCoGrMHg6ryX5Px9cLrXfbokA/b6dE0i5/fdj8+X57dXE2ZXJQX1WROlLBj9OGFYSkg9LR/d/J+4EYqwM6GCWI4PBbMY3/dTorAK+zalTPAv2LqlzDYuZnOZKtK8/4cH/ADLiWItRQEAAA==
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+open_wand: true
 gave_welcome_wand: false
 data:
-  sp: 2404
+  sp: 2425
 properties: {}
 classes: {}

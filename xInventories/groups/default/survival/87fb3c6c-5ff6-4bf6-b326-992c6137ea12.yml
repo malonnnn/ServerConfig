@@ -6,13 +6,51 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 1.1820278
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: PURPLE_GLAZED_TERRACOTTA
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: PAINTING
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsbYBI0YtKqVgHRRopJVNFzauSi/uDgtsyhVqTZWB1kPU2YKA19uZl5qclFiWolVcWZ6HtQgQxTTGRgAYviU4Z4AAAA=
+      blockMaterial: SIGN
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: SEA_LANTERN
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS_PANE
+    damage: 3
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: ITEM_FRAME
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: STONE_BUTTON
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: waynemanor
-  x: -26.5
-  y: 64.0
-  z: 682.5
-  pitch: -2.9107697
-  yaw: -267.05084
+  world: crossfire
+  x: 21.5
+  y: 72.0
+  z: -42.5
+  pitch: 10.599951
+  yaw: -0.36549547
