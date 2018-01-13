@@ -18,7 +18,7 @@
                 "/haste 0-3"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 20 true",
+                "/effect ". @plr ." 21 9999 9 true",
                 "/effect ". @plr ." 5 9999 4 true",
                 "/give ". @plr ." minecraft:gold_ingot 1 16:10 name:&eEm&0b&4e&er_Ce&0li&eca"                
             )
