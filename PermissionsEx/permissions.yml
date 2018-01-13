@@ -1,4 +1,21 @@
 groups:
+  toxin:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&4T&co&4x&8i&0n'
+      suffix: '&c'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.wallclimb
+        - ch.alias.websling
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - -essentials.protect.damage.fall
+        - magic.commands.cast
+        - magic.cast.symbiotetendril
+        - magic.cast.symbiotestretch
   santaclaus:
     inheritance:
     - commonherotraits
@@ -3184,6 +3201,25 @@ groups:
         - ch.alias.intangible
         - ch.alias.tangible
         - essentials.speed
+  bigchill:
+    inheritance:
+    - commonherotraits
+    options:
+      prefix: '&bB&0i&bg &0C&bh&0i&bl&0l'
+      suffix: '&b'
+    worlds:
+      superherocity:
+        permissions:
+        - magic.commands.cast
+        - ch.alias.jump0
+        - ch.alias.jump1
+        - ch.alias.run0
+        - ch.alias.run1
+        - ch.alias.run2
+        - essentials.fly
+        - ch.alias.intangible
+        - ch.alias.tangible
+        - magic.cast.freezeray
   daredevil:
     inheritance:
     - commonherotraits
@@ -16218,7 +16254,7 @@ users:
     permissions: []
   391762eb-24f6-4d95-84d6-bfac682d575a:
     group:
-    - superman
+    - mortal
     options:
       name: StrikerMax
       last-login-time: '1515870691'
@@ -16314,7 +16350,7 @@ users:
     - is.pvpgod
     - is.headcoder
     group:
-    - mortal
+    - toxin
     options:
       name: xMqthy
       last-login-time: '1515875621'
@@ -16675,6 +16711,7 @@ users:
     - is.helper
   f3077e67-9cf8-4b48-b488-4a5fd899d697:
     group:
+    - builder
     - batmite
     options:
       last-logout-time: '1515864091'
@@ -17071,7 +17108,7 @@ users:
     group:
     - apocalypse
     options:
-      last-logout-time: '1515697997'
+      last-logout-time: '1515876708'
       name: Dylan88lee
       last-login-time: '1515875155'
     permissions: []
@@ -20423,7 +20460,7 @@ users:
     options:
       last-logout-time: '1515863098'
       name: MqybeItzBlue_
-      last-login-time: '1515862700'
+      last-login-time: '1515876637'
     permissions:
     - donot.hire
   356a65d1-5775-43c8-91bd-64df43ed8f7f:
@@ -24668,7 +24705,11 @@ users:
       name: BProgressive09
   90b2ba6d-43e6-4e5c-8f77-9126b6969a9c:
     group:
-    - mortal
+    - bigchill
+    options:
+      last-logout-time: '1515876213'
+      name: WingArmor
+      last-login-time: '1515876336'
   298e2018-a0c1-45c0-a00c-8d652dd7f7c5:
     group:
     - mortal
@@ -24698,3 +24739,7 @@ users:
   cca2ff81-2c4d-4e12-8e21-f23a501e0207:
     group:
     - kidflashwallywest
+    options:
+      last-logout-time: '1515876115'
+      name: bluebolt2135
+      last-login-time: '1515876195'
