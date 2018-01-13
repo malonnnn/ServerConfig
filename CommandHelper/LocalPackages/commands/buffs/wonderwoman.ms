@@ -26,7 +26,9 @@
                 "/msg <playername>",
                 "/mindlock <playername>",
                 "/herotransform <id>",
-                "/cast lassoregen"
+                "/cast lassoregen",
+                "/cast lassopull",
+                "/cast mindcontrol"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
