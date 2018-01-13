@@ -8,7 +8,7 @@ register_command(soulstonetrap,
             @vic = @args[0]
             runas(~console, "/warp soulstone " . @vic)
             tmsg(@vic, color(RED).'Your soul is currently trapped in the Soul Stone!')
-            tmsg(@sender, color(RED).'You have trapped '.@vic.' inside the Soul Gem!')
+            broadcast(@vic.color(RED).' is trapped inside the'.color(GOLD).' Soul Gem'.color(RED).'!')
 
 
             @asdf = bind(player_command,null,array('player': @vic),@e,@vic){
