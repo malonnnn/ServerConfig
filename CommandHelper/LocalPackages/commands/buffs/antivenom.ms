@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTU4ODYxMzE5MDUsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjYWNjZDcwZjQ3MjdkODk4OWUxY2Y3NDg4ZDg0NWQxYTgyNjI1Njg1NjkyZmNhZDEyZWQ4NjJkZmU1MzEyYiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "I"ll lay my hands upon you and CURE YOU ALL",
+            'speech': "Ill lay my hands upon you and CURE YOU ALL",
             'powers': array(
                 "/buff",
                 "/carryplayer",
