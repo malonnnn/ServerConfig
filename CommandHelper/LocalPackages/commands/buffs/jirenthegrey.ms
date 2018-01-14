@@ -15,7 +15,8 @@
                 "/dismountplayer",
                 "/fly",
                 "/flyspeed <number>",
-                "Shoots fireballs with bare hand"
+                "Shoots fireballs with bare hand",
+                "/fireballpunch <on/off>"
             ),    
             'buffs': array(
                 "/effect ". @plr ." 5 9999 254 true",

@@ -20,10 +20,10 @@
                 "/fly",
                 "/create <itemid> <qty>",
                 "Shoots nuclear blasts with bare hand",
+                "/fireballpunch <on/off>",
                 "/invis",
                 "/vis",
-                "/cast lightray",
-                "Shoots Light Ray At People!"
+                "/cast lightray"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",

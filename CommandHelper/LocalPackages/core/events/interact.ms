@@ -13,7 +13,7 @@ bind(player_interact, null, array(item: 0, button: 'left'), @event,
         @puuid = puuid(@player, true)
         set_entity_rider(null, @puuid)
         @multiplier = 0.5
-        @arrow = shoot_projectile(@player, 'FIREBALL')
+        @arrow = shoot_projectile(@player, 'ARROW')
         @velocity = entity_velocity(@arrow)
         
         # spawn pig
