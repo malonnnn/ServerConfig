@@ -30,8 +30,8 @@
                 "/whirlwind",
                 "/carryplayer",
                 "/dismountplayer",
-                "/invis"
-                "/vis"
+                "/invis",
+                "/vis",
                 "/run 0-9",
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
