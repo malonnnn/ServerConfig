@@ -29,7 +29,8 @@
                 "/herotransform <id>",
                 "/cast lassoregen",
                 "/cast lassopull",
-                "/cast mindcontrol"
+                "/cast mindcontrol or /mindcontrol <playername> (When near a player)",
+                "/stopmindcontrol",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
