@@ -16,7 +16,6 @@
                  "/haste 0-7",
                  "/mindcontrol <playername>",
                  "/stopmindcontrol"
-                 
               ),
               'buffs': array(
                   "/effect ". @plr ." 5 9999 18 true", 
