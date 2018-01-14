@@ -1,13 +1,55 @@
-inventory: {}
-health: 20.0
+inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0B§8l§7a§fc§0k§8 §7L§fa§0nte§8r§7n's §8Ri§fn§0g
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
 hunger: 20
 exp: 0.66666675
 exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 2.1732383
-armor_contents: {}
+saturation: 19.0
+exhaustion: 1.358262
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -84,9 +126,34 @@ ender_chest:
       blockMaterial: BLACK_SHULKER_BOX
 location:
   ==: org.bukkit.Location
-  world: overvoid
-  x: -37.5
-  y: 96.0
-  z: 38.5
-  pitch: 5.249999
-  yaw: -49.940823
+  world: broville
+  x: 1219.8500850956684
+  y: 72.79673560066871
+  z: 805.0241746895713
+  pitch: 43.499973
+  yaw: 253.89655
+potion_effect:
+  '0':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 197190
+  '1':
+    type: WATER_BREATHING
+    level: 1
+    duration: 197190
+  '2':
+    type: REGENERATION
+    level: 3
+    duration: 197190
+  '3':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 197190
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 197190
+  '5':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 197190

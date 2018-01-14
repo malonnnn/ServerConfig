@@ -16,6 +16,6 @@ proc(_distanceBetween,@locA,@locB){
 
 #    @final = sqrt(@final)
 
-    return(squrt(pow(@locA['x'] - @locB['x'], 2) + pow(@locA['y'] - @locB['y'], 2)) + pow(@locA['z'] - @locB['z'], 2))))
+    return(sqrt(pow(@locA['x'] - @locB['x'], 2) + pow(@locA['y'] - @locB['y'], 2) + pow(@locA['z'] - @locB['z'], 2)))
 
 }
