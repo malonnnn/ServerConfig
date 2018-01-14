@@ -8,7 +8,7 @@
              'val': 'eyJ0aW1lc3RhbXAiOjE1MDkzMjI1NDE3NzQsInByb2ZpbGVJZCI6IjRiZDIyNTQyZmM0MDQyZGViOTRjMjAzOWI0MjYyNTliIiwicHJvZmlsZU5hbWUiOiJzdGFybG9yZDIwMTYiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdjZWY0MWUxNWE0ZmMzOWRjYThjOWY1YTgwZWI5ZmIyNjNhNWFmNTlmZWU1NGJjNGViZDVkNjYxMzI1OWUzMCJ9fX0=',
              'trail': '',
              'op': 'false',
-             'speech':"I will make a new world of only peace.",
+             'speech': "I will make a new world of only peace.",
              'powers': array(
                  "/buff",
                  "/jump 0-6",
