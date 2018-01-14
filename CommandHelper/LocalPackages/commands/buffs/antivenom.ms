@@ -3,7 +3,7 @@
 
 
 @hero = associative_array(
-            'name': '§fA§7n§0t§7i§fv§7e§0n§7o§fm',
+            'name': '§fA§7n§0t§7i-§fv§7e§0n§7o§fm',
             'class': 'anti-venom',
             'sig': 'NZClSsjFHNCNy56+EB5st3KOiauH7Zzqa7pkA5uwKjTcDum+TIOAnuQTyGwqSpUZhWTKIsAFEFdMyXFJxT7xP7qZUTv764HYJNLo0uJCjQdKIsPjNf8C1kDsJ/l+VePAjvPiXVCWWB/vuOGZZlbRvCWDdqVJMthsVu5OUWwYLqxmr0LIilZwM0Aqvapdm66cWMKxOkuK+40Dvsj48m99tXDRxnFfcrPO9n0htyPbZOrfxfT6rgc5nRrZKNFoLA+/YyaDZ2HPIe42/yKjmV1Jzn43+WVLLxrpc4GusOTkwgZyRa/u2aJo4YaGoTJrpLsZ8CY7uQqOKyI6mqqWeR2tJpkq8+Z/KfEe4LFdTRCNEWH+rQsB94GY849vp9aT88dwU7dEWZdrSTPit9Xta7GjAVcUy2ZqCGe2IKOqSYZRR/Fydiyo0Fd1EvhkAD4sjt4ClRTKNPyK3O9RRRYf2clK94US0KqvO2sq56S5t/yzKNMGRnD9Id62xYYgRknGyG+YxIVTT/BkJ3QonhSuqaxvEOvlmb7AGKv6xBsb3wIGd+XzoCCKjcTcC1efb/BUO6yHXud+yrCoCSeXkICDC6NYIemh2bJdDPu6tncR15PPqRvGqrkGrm17gSx5lgOwCVQjfMHiksGfq3R/+ZIu3jUUVaDOhpIj1yZbbpoC2dFodZo=',
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTU4ODYxMzE5MDUsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjYWNjZDcwZjQ3MjdkODk4OWUxY2Y3NDg4ZDg0NWQxYTgyNjI1Njg1NjkyZmNhZDEyZWQ4NjJkZmU1MzEyYiJ9fX0=',
