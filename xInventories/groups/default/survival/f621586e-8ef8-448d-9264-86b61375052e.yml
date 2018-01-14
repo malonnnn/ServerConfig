@@ -1,12 +1,87 @@
-health: 20.0
-hunger: 20
+health: 97.0
+hunger: 6
 exp: 0.85714287
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 0.12876469
-inventory: {}
+saturation: 0.0
+exhaustion: 1.5238253
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6soulstonetrap§f (§3InfinityGauntlet§f)
+      lore:
+      - §3§oBound to xMqthy
+      - Knows 13 Spells
+      - '§d§oMana: 300'
+      - '§d§oMana Regeneration: 10/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAF2Sz24TMRDGp3iTbkL/USQOtCAkeiSoDfmzvSAiQAKJwKHqOTjecWrhtbfe2YRw4sIrlAdA4sSBB+AZeAgegSMnZhcCUr0X7+fRfL/57DZAG6KFdGkMMWGWW0kIO8Zp4wwtZ7J0ZJFiaPiFwwDNt+NzOlvGsCEVmTlOihythc3Cl7Yg75CCzBsQZdLJxxcAEWxV2wmZDAuSWQ6w9vrn54sfbFd3nJgUDvSge9RPBthJUCedXi9JO8fdQa+TDKaDowfD/mG/i2yJWqOiifLWB9jRqI+HidZqmB7e40/A+hxDYbwDgEYbtmu0iXFzdOTDUsCN3C+4osJMmSb45cIHm1blAraKXCqsDxcyMCdEAtr1/yzIohJuCrhqnAooC5QzZEUI2P7fdGplQaw2xaVAWLvFDlIptBg44SoOFtcEXONulpOuawPOsKJfF7ChrC/Tv4cs7V0qXXntV+Qrr5V4m8l1QHy3MgImz4xLlXc8tmXhCkALdkdEwUxLwrFPjTY8R7vCiiA+PX3+ZOwL+nX34f7o/TOMoFVJL3h2+rr37fvHD18+NaE5yjy/kEcHUK8YohPrCeJMGndWP6rNfxYvJaNc5wExGHVfEkn15iRHTAW0XuVVLH+urupS1+4+PS9NnvHt3VnhAfwG/krylrECAAA=
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: test
+      author: Karma0001
+      pages:
+      - |-
+        1.the name§0
+        §0
+        §02.what the spell does like kill or do a command§0
+        §0
+        §03,what the spell looks like§0
+        §0
+        §04.i think how far the spell goes§0
+        §0
+        §05. idk
+      generation: 0
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WRITTEN_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: BOOK_SIGNED
+      title: Coder - Magic
+      author: xHqrkie
+      pages:
+      - |-
+        1) The name§0
+        §0
+        §02) They control what the spell would do§0
+        §0
+        §03) The effects are the particles§0
+        §0
+        §04) The part of how far your spell stretches in range§0
+        §0
+        §05) What color you choose
+      generation: 0
 armor_contents: {}
 ender_chest: {}
 location:
@@ -16,9 +91,25 @@ location:
   y: 69.0
   z: -215.5
   pitch: 0.46778247
-  yaw: 89.969574
+  yaw: 194.85449
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 93897
+  '1':
+    type: WATER_BREATHING
     level: 1
-    duration: 199917
+    duration: 93897
+  '2':
+    type: INCREASE_DAMAGE
+    level: 100
+    duration: 93897
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 93897
+  '4':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 93897

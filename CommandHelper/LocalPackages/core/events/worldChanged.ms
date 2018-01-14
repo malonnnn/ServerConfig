@@ -27,7 +27,6 @@ bind(world_changed, null, null, @event,
         if(has_permission(@player,'ch.alias.buff')){
             runas(@player,'/buff')
         }
-        runas(~console,'/effect '.@player.' regeneration 5 10 true')
         set_peffect(@player,14,1,0)
     ))
 

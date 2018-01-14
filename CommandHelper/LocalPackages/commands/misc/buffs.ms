@@ -22,7 +22,8 @@ register_command(buff,
                     foreach(@power in @hero['buffs']){
                         runas(~console,@power)
                     }
-                    
+                    set_phealth(@plr,get_max_health(puuid(@plr)))
+        #runas(~console,'/effect '.@player.' regeneration 5 10 true')
                     tmsg(@plr,@hero['speech'])
                 } catch (IOException @ErrorInfo) {
                     # Ignore file doesn't exist message and kill the script
