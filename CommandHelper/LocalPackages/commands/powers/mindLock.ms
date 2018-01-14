@@ -21,7 +21,7 @@ register_command(mindlock,
                 die()
             }
             if(has_permission(@vic,"is.telepathicallyresistant")){
-                tmsg(@player,color(red)."Sorry, that player is telepathically resistant.")
+                tmsg(@plr,color(red)."Sorry, that player is telepathically resistant.")
                 die()
             }
             @isMindLocked = import(@vic.'isMindLocked')

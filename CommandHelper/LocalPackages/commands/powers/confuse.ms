@@ -38,7 +38,7 @@ register_command(confuse,
                 tmsg(@player,color(red)."Sorry, that player cannot be confused.")
                 die()
             }
-            if(has_permission(@vic,"is.telepathicallyresistant")){
+            if(has_permission(@victim,"is.telepathicallyresistant")){
                 tmsg(@player,color(red)."Sorry, that player is telepathically resistant.")
                 die()
             }
