@@ -19,6 +19,7 @@
                 "/flyspeed <number>",
                 "/fly",
                 "/back (In the speedforce)",
+                "/tppos <x y z world>",
                 "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/lightningpunch <on/off>",
