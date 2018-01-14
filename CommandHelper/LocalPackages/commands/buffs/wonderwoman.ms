@@ -31,6 +31,7 @@
                 "/cast lassoregen",
                 "/cast lassopull",
                 "/cast mindcontrol",
+                "/cast lassolock",
                 "/stopmindcontrol"
             ),
             'buffs': array(
