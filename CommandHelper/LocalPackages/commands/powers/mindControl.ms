@@ -25,8 +25,8 @@ register_command(mindcontrol,
                 die()
             }
 
-            if(has_permission(@vic,"is.awesome")){
-                tmsg(@player,color(red)."Sorry, that player cannot be mind controlled.")
+            if(has_permission(@vic,"is.telepathicallyresistant")){
+                tmsg(@player,color(red)."Sorry, that player is telepathically resistant.")
                 die()
             }
 

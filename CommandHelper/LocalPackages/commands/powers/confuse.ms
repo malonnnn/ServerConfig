@@ -38,6 +38,10 @@ register_command(confuse,
                 tmsg(@player,color(red)."Sorry, that player cannot be confused.")
                 die()
             }
+            if(has_permission(@vic,"is.telepathicallyresistant")){
+                tmsg(@player,color(red)."Sorry, that player is telepathically resistant.")
+                die()
+            }
             
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('confuse',30,@player)
