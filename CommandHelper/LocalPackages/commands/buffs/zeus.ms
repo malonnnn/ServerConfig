@@ -12,6 +12,7 @@
             'powers': array(
                 "/buff",
                 "When punching with an empty hand, you throw lightning",
+                "<point click lightning>",
                 "/fly",
                 "/run 0-6",
                 "/jump 0-4",

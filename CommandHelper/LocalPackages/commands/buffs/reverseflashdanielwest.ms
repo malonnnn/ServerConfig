@@ -24,6 +24,7 @@
                 "/jump 0-3",
                 "/haste 0-4",
                 "Throw lightning with an empty hand",
+                "/lightningpunch <on/off>",
                 "/ma"
             ),
             'buffs': array(

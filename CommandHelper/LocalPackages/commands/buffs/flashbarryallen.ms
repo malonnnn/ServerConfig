@@ -36,6 +36,7 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "Throw lightning with an empty hand.",
+                "/lightningpunch <on/off>",
                 "/thru",
                 "/cast infinitemasspunch"
             ),
