@@ -1,41 +1,17 @@
 register_command(mindlock, 
-
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.mindlock',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        
-        tabcompleter: closure(@alias, @sender, @args) {
-            try{
-                if(array_size(@args) == 0) {
-                    return(all_players());
-                }
-                @search = @args[array_size(@args) - 1];
-                    return(array_filter(all_players(), closure(@index, @player) {
-                    return(equals_ic(@search, substr(@player, 0, length(@search))));
-                }));
-            } catch (RangeException @ErrorInfo) {
-                # Ignore
-            }
-        },
-    
         executor: closure(@alias, @sender, @args) {
-        
+#            @numArgs = array_size(@args)
             if (array_size(@args) != 1) {
-            
-                msg(''.color(RED).color(BOLD).'Improper Usage!');
-                msg(''.color(RED).'Usage: /mindlock <player>');
-                die(); # No need to go further					
-            
+                return(FALSE) 
             }
             
             @vic = @args[0]
             @vic = player(@vic)
             if(!ponline(@vic)){
-                broadcast('fuck')
                 die()
             }
             @plr = player()
@@ -50,15 +26,28 @@ register_command(mindlock,
                 die()
             }
 
-            assign(@cooldown, 120)
-            
-            assign(@lastUsedMindLock, import(@plr."lastUsedMindLock"))
-            if(@lastUsedMindLock + @cooldown > time() / 1000,
-                assign(@timeleft, subtract(add(@lastUsedMindLock, @cooldown), divide(time(),1000)))
-                tmsg(@plr,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force push again!'))
-                die()
-            )
-            export(@plr."lastUsedMindLock", time() / 1000)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+            @ploc = ploc(@plr)
+            @vloc = ploc(@vic)
+            if(has_permission(@plr,'powers.mindlocknear')){
+                @plrClass = _getHeroClass(@plr)
+                @radius = 0
+                if(@plrClass == 'wonderwoman'){
+                    @radius = 20
+                }
+                if(@ploc['world'] == @vloc['world']){
+                    include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
+                    @dist = _distanceBetween(@ploc,@vloc)
+                    if(@dist > @radius){
+                        tmsg(@plr,color(RED).'Sorry, you are not close enough to that person. Please get within '.@radius.' blocks.')
+                        die()
+                    }
+                }
+            }
+
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('lastUsedMindControl',60,@plr)
             
             export(@vic.'isMindLocked',true)
             export(@vic.'mindLockedBy',@plr)

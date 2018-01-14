@@ -11,7 +11,7 @@
             'speech': "...",
             'powers': array(
                 "/buff",
-                "/mindcontrolnear <playername> - Mind controls people in 20 blocks of you. Can jump from person to person once mindcontrolling.",
+                "/mindcontrol <playername>",
                 "/stopmindcontrol"
             ),
             'buffs': array(

@@ -1,20 +1,5 @@
-test1:/test1 $secs = >>>
-# -32 17
-# -25 24
+test1:/test1 $plr $perm = >>>
 
-@secs = $secs
-@secs = @secs * 1000
-@time = time()
+    msg(has_permission($plr,$perm))
 
-set_interval(50,closure(
-    @x = rand(-32,18)
-    @y = 53
-    @z = rand(-25,25)
-
-    set_block_at(@x,@y,@z,0,'spleef')
-
-    if(time() > (@time + @secs)){
-        clear_task()
-    }
-))
 <<<
