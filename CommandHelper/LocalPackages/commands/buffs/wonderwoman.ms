@@ -30,7 +30,7 @@
                 "/cast lassoregen",
                 "/cast lassopull",
                 "/cast mindcontrol or /mindcontrol <playername> (When near a player)",
-                "/stopmindcontrol",
+                "/stopmindcontrol"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
