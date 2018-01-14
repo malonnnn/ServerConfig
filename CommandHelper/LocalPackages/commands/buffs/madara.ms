@@ -27,6 +27,5 @@
                   "/give " @plr ." minecraft:diamond_boots 1 34:3 0:4 4:4 1:4 3:4 2:4 9:2 &1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4F&1e&4e&1t"
                   "/effect ". @plr ." 10 9999 4 true",
                   "/effect ". @plr ." 21 9999 9 true"
-                  
               )
          )
