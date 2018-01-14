@@ -29,7 +29,7 @@
                 "/herotransform <id>",
                 "/cast lassoregen",
                 "/cast lassopull",
-                "/cast mindcontrol or /mindcontrol <playername> (When near a player)",
+                "/cast mindcontrol",
                 "/stopmindcontrol"
             ),
             'buffs': array(
