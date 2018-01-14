@@ -15,7 +15,7 @@
                  "/run 0-7", 
                  "/haste 0-7",
                  "/mindcontrol <playername>",
-                 "/stopmindcontrol",
+                 "/stopmindcontrol"
                  
               ),
               'buffs': array(
