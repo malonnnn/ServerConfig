@@ -17,7 +17,7 @@
                 "/run 0-1",
                 "/haste 0-5",
                 "/fly",
-                "/helptp <player>",
+                "/helatp <player>",
                 "/speak",
                 "/cast glasstouch",
                 "/cast blind",
