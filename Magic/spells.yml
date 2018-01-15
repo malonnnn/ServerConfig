@@ -5135,3 +5135,56 @@ meteorshower:
         undo_speed: 2
     costs:
         mana: 200
+superbreath:
+    icon: diamond_axe:9
+    icon_disabled: diamond_hoe:9
+    icon_url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+    category: dark
+    worth: 80
+    earns_sp: 6
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: PotionEffect
+          - class: Deactivate
+          - class: Damage
+          - class: Velocity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_irongolem_death
+           effectlib:
+             class: LineEffect
+             iterations: 1
+             particle: cloud
+             color: af0000
+             radius: 2
+             lengthGrow: 0.1
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: cloud
+          color: af0000
+          location: target
+        hit:
+        -  class: EffectSingle
+           location: target
+           particle: redstone
+           color: 000000
+           particle_count: 10
+    costs:
+        mana: 50
+    parameters:
+        speed: 5
+        range: 8
+        target_type: LivingEntity
+        target_breakables: 1
+        target: other
+        living_entity_speed: 1
+        push: 6
+        cooldown: 1000
+        hitbox: true
+        damage: 5
