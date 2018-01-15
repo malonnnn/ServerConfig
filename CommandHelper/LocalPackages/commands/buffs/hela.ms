@@ -19,6 +19,7 @@
                 "/fly",
                 "/helatp <player>",
                 "/speak",
+                "/enchant",
                 "/cast glasstouch",
                 "/cast blind",
                 "/cast forcefield",
