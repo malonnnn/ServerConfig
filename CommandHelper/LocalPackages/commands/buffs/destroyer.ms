@@ -11,6 +11,8 @@
             'speech': "I do more than live! I do what I was created for! I DESTROY!!",
             'powers': array(
                 "/buff",
+                "/carryplayer <player>",
+                "/dismountplayer <player>",
                 "/cast crystalshield",
                 "/cast crystaltrap",
                 "/cast moltenbolt",
