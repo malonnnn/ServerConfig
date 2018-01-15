@@ -20,6 +20,7 @@
                 "/tp",
                 "/explode",
                 "/speak",
+                "/enchant",
                 "/cast glasstouch",
                 "/cast blind",
                 "/cast forcefield",
