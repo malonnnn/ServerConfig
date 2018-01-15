@@ -8,15 +8,21 @@
              'val': 'eyJ0aW1lc3RhbXAiOjE1MDkzMjI1NDE3NzQsInByb2ZpbGVJZCI6IjRiZDIyNTQyZmM0MDQyZGViOTRjMjAzOWI0MjYyNTliIiwicHJvZmlsZU5hbWUiOiJzdGFybG9yZDIwMTYiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdjZWY0MWUxNWE0ZmMzOWRjYThjOWY1YTgwZWI5ZmIyNjNhNWFmNTlmZWU1NGJjNGViZDVkNjYxMzI1OWUzMCJ9fX0=',
              'trail': '',
              'op': 'false',
-             'speech':"I will make a new world of only peace.",
+             'speech': "I will make a new world of only peace.",
              'powers': array(
                  "/buff",
-                 "/jump 0-2",
-                 "/run 0-2", 
-                 "/haste 0-2"
+                 "/jump 0-6",
+                 "/run 0-8", 
+                 "/haste 0-7"
               ),
               'buffs': array(
-                  "/effect ". @plr ." 5 9999 5 true", 
-                  "/give ". @plr ." minecraft:diamond_hoe 1 16:10 name:&1M&4a&1d&4a&1r&1a&4s_&1D&4e&1a&4t&1h_&4S&1i&4c&1k&4l&1e"
+                  "/effect ". @plr ." 5 9999 18 true", 
+                  "/give ". @plr ." minecraft:diamond_sword 1 19:18 16:129 name:&1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4S&1w&4o&1r&4d",
+                  "/give ". @plr ." minecraft:diamond_helmet 1 34:3 5:3 0:4 4:4 1:4 3:4 name:&1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4H&1e&4a&1d",
+                  "/give ". @plr ." minecraft:diamond_chestplate 1 34:3 0:4 4:4 1:4 3:4 name:&1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4C&1h&4e&4s&1t",
+                  "/give ". @plr ." minecraft:diamond_leggings 1 34:3 0:4 4:4 1:4 3:4 name:&1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4L&1e&4g&1s",                  
+                  "/give ". @plr ." minecraft:diamond_boots 1 34:3 0:4 4:4 1:4 3:4 2:4 9:2 &1M&4a&1d&4a&1r&1a&4'&1s_&1S&4u&1s&4a&1n&4o&1o_&4F&1e&4e&1t",
+                  "/effect ". @plr ." 10 9999 4 true",
+                  "/effect ". @plr ." 21 9999 9 true"
               )
          )
