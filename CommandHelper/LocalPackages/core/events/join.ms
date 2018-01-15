@@ -42,18 +42,52 @@ bind(player_join,null,null,@event){
         die()
     }
     
+    @forgottenHeroes = import('forgottenHeroes')
+    if(@forgottenHeroes != null){
+        foreach(@fhero in @forgottenHeroes){
+            if(@fhero == @class){
+                sudo('/mainmenu')
+                set_timeout(3000,closure(
+                    msg(color(RED).'Sorry, that hero is currently locked. Please check back later.')
+                ))
+                die()
+            }
+        }
+    }
     # -------------------------------
     # Turn joining player into mortal if the hero they logged out as is taken
     # -------------------------------
+    @alts = ''
+    if(array_index_exists(@hero,'alts')){
+        @alts = @hero['alts']
+    }
     foreach(@player in @plrs)
     {
         @otherPlayerGroup = _getheroclass(@player)
         if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
-            sudo('/exitgame')
+            runas(@plr,'/mainmenu')
             set_timeout(1500, closure(
-                broadcast(color(white)  . @plr . color(gray) . " has been kicked from The Matrix because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
+                broadcast(color(white)  . @plr . color(gray) . " has been returned to the main menu because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))
             die()
+        }
+        if(is_array(@alts)){
+            foreach(@alt in @alts){
+                if(@alt == @otherPlayerGroup){
+                    set_timeout(1500, closure(
+                        runas(@plr,'/mainmenu')
+                        @h1 = @hero['name']
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                        @h2 = @hero['name']
+                        msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                        msg(color(RED).'Sorry, '.color(WHITE).@player.color(RED).' is already using '.@h2.color(RED).'.')
+                        msg(color(RED).'Try again with:')
+                        msg(color(GREEN).'/characterselect')
+                        msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+                    ))
+                    die()
+                }
+            }
         }
     }
 

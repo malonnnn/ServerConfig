@@ -13,7 +13,7 @@ bind(world_changed, null, null, @event,
         set_pflight(@player,false)
         include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
         @class = _getheroclass(@player)
-        if(@class == 'mortal' || substr(@class,0,6) == 'fanfic'){
+        if(@class == 'mortal' || has_permission(@player,'is.fanfic')){
             runas(~console,'/undisguiseplayer '.@player)
         }else{
             @skinNum = import(@player.'skinNum')

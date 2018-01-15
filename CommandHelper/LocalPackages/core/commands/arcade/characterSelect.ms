@@ -89,22 +89,10 @@ register_command(characterselect,
                 return(FALSE)
             }
             @ploc = ploc(@sender)
+            @ploc2 = array(x: -76, y: 248, z: 132) 
 
-            @x1 = @ploc['x']
-            @y1 = @ploc['y']
-            @z1 = @ploc['z']
-
-            @x2 = -76
-            @y2 = 248
-            @z2 = 132
-
-            @x3 = pow(@x1 - @x2, 2)
-            @y3 = pow(@y1 - @y2, 2)
-            @z3 = pow(@z1 - @z2, 2)
-
-            @final = @x3 + @y3 + @z3
-
-            @final = sqrt(@final)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
+            @final = _distanceBetween(@ploc,@ploc2)
             
             if(@final > 5){
                 msg(color(RED).'Sorry, you need to be at the main menu to perform this command!')
@@ -116,14 +104,6 @@ register_command(characterselect,
                 @searchTerm = @searchTerm.@arg
             }
             @heroes = array()
-           # shell_adv('/home/minecraft/findHero.sh '.@searchTerm,
-           # array(subshell: true,
-           #     workingDir: '/home/minecraft/',
-           #     stdout: closure(@a = @stdout){
-           #         array_push(@heroes,@a)
-           #     }
-           # ))
-           
 
             @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
             @heroes = split('\n',@var)
@@ -181,11 +161,27 @@ register_command(selectchar,
                     msg(@class.color(RED).' selected! Please click again to confirm your choice.')
                     die()
                 }
+                @forgottenHeroes = import('forgottenHeroes')
+                if(@forgottenHeroes != null){
+                    if(is_array(@forgottenHeroes)){
+                        foreach(@fhero in @forgottenHeroes){
+                            if(@fhero == @class){
+                                msg(color(RED).'Sorry, that hero is currently locked. Please check back later.')
+                                die()
+                            }
+                        }
+                    }else{
+                        if(@forgottenHeroes == @class){
+                            msg(color(RED).'Sorry, that hero is currently locked. Please check back later.')
+                            die()
+                        }
+                    }
+                }
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
                 @plrs = all_players()
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 foreach(@playa in @plrs)
                 {
-                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                     @otherPlayerGroup = _getheroclass(@playa)
                     if(@otherPlayerGroup == @hero['class'] && @player != @playa){
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
@@ -230,6 +226,7 @@ register_command(selectchar,
                     sudo('/pex group '.@class.@uuid.' add ch.alias.fanficlaser superherocity')
                     sudo('/pex group '.@class.@uuid.' add ch.alias.fanficname superherocity')
                     sudo('/pex group '.@class.@uuid.' add ch.alias.fanficchatcolor superherocity')
+                    sudo('/pex group '.@class.@uuid.' add is.fanfic superherocity')
                     broadcast(color(GRAY).color(ITALIC).'A shitty fanfic has entered the game!')
                     sudo("/fly ".@player." off")
                     sudo("/gamemode survival ".@player)

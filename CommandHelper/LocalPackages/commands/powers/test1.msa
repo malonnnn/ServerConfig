@@ -1,5 +1,6 @@
-test1:/test1 $plr $perm = >>>
+test1:/test1 $plr = >>>
 
-    msg(has_permission($plr,$perm))
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    msg(_getheroclass($plr))
 
 <<<

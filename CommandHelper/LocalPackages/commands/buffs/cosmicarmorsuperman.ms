@@ -16,11 +16,13 @@
                 "/dismountplayer",
                 "/jump 0-5",
                 "/run 0-6",
-                "/haste 0-9"
+                "/haste 0-9",
+                "/forget <player>",
+                "/create <item> <quantity> <color>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 155 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 21 9999 19 true"               
+                "/effect ". @plr ." 11 9999 4 true",
+                "/effect ". @plr ." 21 9999 19 true",
+                "/shot give ". @plr ." kryptonianlaservision",
             )
         )
