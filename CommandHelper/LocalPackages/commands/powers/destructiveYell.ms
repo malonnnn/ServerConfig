@@ -9,6 +9,10 @@ register_command(yell,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         
         executor: closure() {
+
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            @plr = player()
+            _coolDown('blackBoltYellCooldown',30,@plr)
             
             @start = ploc();
             @vector = associative_array();

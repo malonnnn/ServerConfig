@@ -13,9 +13,9 @@ register_command(forget,
             @aPlrs = players_in_radius(@ploc,5)
             if(array_size(@aPlrs) >= 2){
                 if(@aPlrs[0] == @sender){
-                    @vic = @pPlrs[1]
+                    @vic = @aPlrs[1]
                 }else{
-                    @vic = @pPlrs[0]
+                    @vic = @aPlrs[0]
                 }
             }else{
                 tmsg(@sender,color(red).'Sorry, there is no one close enough!')
