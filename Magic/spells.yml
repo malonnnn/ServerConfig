@@ -5188,3 +5188,374 @@ superbreath:
         cooldown: 1000
         hitbox: true
         damage: 5
+glasstouch:
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
+    actions:
+      cast:
+      - class: CycleBlock
+      - class: CycleEntity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_cloth_break
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: redstone
+             color: 00b70c
+             speed: 2
+             lengthGrow: 0.1
+             radiusGrow: 0.003
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectTrail
+           particle: redstone
+           color: 00b70c
+    parameters:
+        target_type: Entity
+        allow_max_range: false
+        range: 32
+        radius: 3
+        undo: 10000
+        transparent: transparent_to_construction
+        materials:
+        - - dirt
+          - glass
+        - - wood
+          - glass
+        - - stationary_water
+          - glass
+        - - lava
+          - glass
+        - - stationary_lava
+          - glass
+        - - sand
+          - sand:1
+        - - log
+          - glass
+        - - leaves
+          - glass
+        - - wool
+          - glass
+        - - wood_stairs
+          - glass
+        - - chest:2
+          - glass
+        - - workbench:2
+          - glass
+        - - soil
+          - glass
+        - - furnace:2
+          - glass
+        - - snow
+          - glass
+        - - cactus
+          - glass
+        - - stained_glass
+          - glass
+        - - monster_eggs
+          - glass
+        - - smooth_brick
+          - glass
+        - - quartz_block
+          - glass
+        - - quartz_stairs
+          - glass
+        - - stained_clay
+          - glass
+        - - stained_glass_pane
+          - glass_pane
+        - - carpet
+          - glass
+        - - hard_clay
+          - glass
+        - - white_glazed_terracotta
+          - glass
+        - - orange_glazed_terracotta
+          - glass
+        - - magenta_glazed_terracotta
+          - glass
+        - - light_blue_glazed_terracotta
+          - glass
+        - - yellow_glazed_terracotta
+          - glass
+        - - lime_glazed_terracotta
+          - glass
+        - - pink_glazed_terracotta
+          - glass
+        - - gray_glazed_terracotta
+          - glass
+        - - silver_glazed_terracotta
+          - glass
+        - - cyan_glazed_terracotta
+          - glass
+        - - purple_glazed_terracotta
+          - glass
+        - - blue_glazed_terracotta
+          - glass
+        - - brown_glazed_terracotta
+          - glass
+        - - green_glazed_terracotta
+          - glass
+        - - red_glazed_terracotta
+          - glass
+        - - black_glazed_terracotta
+          - glass
+        - - concrete
+          - glass
+        - - concrete_powder
+          - glass
+        - - stone
+          - glass
+    costs:
+        mana: 10
+helabolt:
+    icon: diamond_axe:35
+    icon_disabled: diamond_hoe:35
+    icon_url: http://textures.minecraft.net/texture/70df3afc6a6035b189f83d2cfc84ff9ffe33750273247d1e41acb5a805f54
+    alias: kaboom
+    category: combat
+    pvp_restricted: true
+    worth: 200
+    earns_sp: 3
+    upgrade_required_path: apprentice
+    upgrade_required_casts: 50
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: Explosion
+          - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_enderdragon_hurt
+           location: origin
+        -  class: EffectSingle
+           sound: entity_generic_explode
+           sound_pitch: 2
+           location: origin
+        tick:
+        - particle: redstone
+          color: 00b70c
+          location: target
+        - location: target
+          particle: smoke_normal
+          particle_count: 6
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+        hit:
+        -  class: EffectSingle
+           custom_sound: magic.shield_boom
+           sound_pitch: 2
+           location: both
+        -  class: EffectSingle
+           location: target
+           color: 00b70c
+           firework: burst
+        -  class: EffectSingle
+           target_offset: 0,0.5,0
+           location: target
+           color: 00b70c
+           firework: burst
+           particle: explosion_huge
+    parameters:
+        target: other
+        gravity: .05
+        velocity: 100
+        allow_max_range: false
+        range: 32
+        damage: 30
+        break_blocks: false
+        size: 2
+        cooldown: 7000
+        undo: 3000
+        undo_speed: 0.5
+        miss_effects: hit
+        miss: actions
+    costs:
+        mana: 50
+helaheal:
+    icon: diamond_axe:45
+    icon_disabled: diamond_hoe:45
+    icon_url: http://textures.minecraft.net/texture/6b7da98ef45cf45185d21d61f5fa3d5966a3ee52273620a6e4dfd54cf99dbc
+    category: light
+    upgrade_required_path: student
+    upgrade_required_casts: 50
+    worth: 300
+    earns_sp: 2
+    actions:
+        cast:
+        - class: Repeat
+          actions:
+          - class: Delay
+          - class: Heal
+    effects:
+        cast:
+        - class: EffectSingle
+          sound: magic.shimmer
+          effectlib:
+            class: ConeEffect
+            iterations: 5
+            lengthGrow: .12
+            particle: redstone
+            color: 00b70c
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: target
+          target_offset: 0,-2,0
+          effectlib:
+            class: WarpEffect
+            duration: $total_duration
+            period: 2
+            particle: redstone
+            color: 00b70c
+            particles: 7
+            iterations: 40
+            radius: 1
+        - class: EffectSingle
+          target_offset: 0,-1.5,0
+          effectlib:
+            class: LineEffect
+            particle: redstone
+            color: 00b70c
+            duration: 5000
+            particles: 10
+            period: 5
+        cast_self:
+        - class: EffectSingle
+          sound: magic.shimmer
+          location: target
+          target_offset: 0,-2,0
+          effectlib:
+            class: WarpEffect
+            duration: $total_duration
+            period: 2
+            particle: redstone
+            color: 00b70c
+            particles: 7
+            iterations: 40
+            radius: 1
+        cast_finish:
+        -  class: EffectSingle
+           custom_sound: magic.shimmer_quiet
+           sound_pitch: 5
+           location: origin
+           effectlib:
+             class: AnimatedBall
+             duration: 200
+             particle: redstone
+             color: 00b70c
+             size: 3
+    parameters:
+        cancel_on_damage: 0.5
+        cancel_on_cast_other: true
+        delay: 500
+        repeat: 10
+        total_duration: 5000
+        target_type: LivingEntity
+        target: any_entity
+        allow_max_range: false
+        range: 5
+        cooldown: 20000
+        bypass_pvp: true
+        bypass_friendly_fire: true
+        only_friendly: true
+        hitbox: true
+        amount: 1
+    costs:
+        mana: 50
+conjuresword:
+    icon: diamond_axe:11
+    icon_disabled: diamond_hoe:11
+    icon_url: http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c
+    alias: perk
+    category: utility
+    worth: 220
+    earns_sp: 6
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    quick_cast: true
+    actions:
+        cast:
+        -  class: Command
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_experience_orb_pickup
+        -  class: EffectTrail
+           particle: redstone
+           particle_data: 2
+           particle_count: 3
+        -  class: EffectSingle
+           location: target
+           effectLib:
+             class: TraceEffect
+             particle: redstone
+    parameters:
+        target: self
+        range: 32
+        duration: 5000
+        target_type: Player
+        bypass_friendly_fire: true
+        only_friendly: true
+        bypass_pvp: true
+        console: true
+        commands:
+        - give @p iron_sword 1
+        cooldown: 20000
+    costs:
+        mana: 50
+turnghost:
+    icon: diamond_axe:11
+    icon_disabled: diamond_hoe:11
+    icon_url: http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c
+    alias: perk
+    category: utility
+    worth: 220
+    earns_sp: 6
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    quick_cast: true
+    actions:
+        cast:
+        -  class: Command
+           command: gamemode spectator @t
+        -  class: Delay
+           delay: 5000
+        -  class: Command
+           command: gamemode survival @t
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_experience_orb_pickup
+        -  class: EffectTrail
+           particle: redstone
+           color: 00b70c
+           particle_count: 3
+        -  class: EffectSingle
+           location: target
+           effectLib:
+             class: TraceEffect
+             particle: redstone
+             color: 00b70c
+    parameters:
+        target: other
+        range: 32
+        duration: 5000
+        target_type: Player
+        bypass_friendly_fire: true
+        only_friendly: true
+        bypass_pvp: true
+        console: true
+        cooldown: 20000
+    costs:
+        mana: 50
