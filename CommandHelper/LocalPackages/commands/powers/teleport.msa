@@ -99,7 +99,7 @@ tphere:/tphere $plr = >>>
     runas(~console,'/teleport '.@vic.' '.@player)
 
 <<<
-helatp:/helatp = >>>
+helatp:/helatp $plr = >>>
     @player = player()
     // @bal = acc_balance(@player)
     // @isOp = has_permission(@player,'is.op')
@@ -135,7 +135,7 @@ helatp:/helatp = >>>
     @ploc = ploc(@player)
     @vloc = ploc(@vic)
     include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
-    @dist = _disanceBetween(@ploc,@vloc)
+    @dist = _distanceBetween(@ploc,@vloc)
 
     if(@ploc['world'] == @vloc['world']){
         if(@dist > 40){
