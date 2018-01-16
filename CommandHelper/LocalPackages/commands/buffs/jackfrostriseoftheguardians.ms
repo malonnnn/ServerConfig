@@ -12,7 +12,8 @@
             'powers': array(
                 "/buff",
                 "/cast frost",
-                "/fly"      
+                "/fly", 
+                "/sliding" 
             ),
             'buffs': array(
                 "/effect ". @plr ." 10 9999 2 true",
