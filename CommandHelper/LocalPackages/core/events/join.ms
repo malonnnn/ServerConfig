@@ -65,8 +65,8 @@ bind(player_join,null,null,@event){
     {
         @otherPlayerGroup = _getheroclass(@player)
         if(@otherPlayerGroup == @hero['class'] && @plr != @player && @hero['class'] != 'mortal'){
-            runas(@plr,'/mainmenu')
             set_timeout(1500, closure(
+                runas(@plr,'/mainmenu')
                 broadcast(color(white)  . @plr . color(gray) . " has been returned to the main menu because " . color(white) . @player . color(gray) . " was already " . @hero['name'])
             ))
             die()

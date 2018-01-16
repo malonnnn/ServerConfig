@@ -8,15 +8,6 @@ inventory:
       display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
       enchants:
         DAMAGE_ALL: 10
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
-      enchants:
-        DAMAGE_ALL: 100
   '2':
     ==: org.bukkit.inventory.ItemStack
     type: SHIELD
@@ -28,46 +19,51 @@ inventory:
         DURABILITY: 10
         MENDING: 1
       blockMaterial: SHIELD
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
+      enchants:
+        DAMAGE_ALL: 100
 health: 100.0
 hunger: 20
 exp: 0.058823682
 exp-level: 5
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.3002956
+saturation: 9.799999
+exhaustion: 3.4973533
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
   world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 0.0
+  x: 25.5
+  y: 75.0
+  z: -101.5
+  pitch: 53.06308
+  yaw: 16.813812
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 19
-    duration: 199755
+    duration: 173855
   '1':
     type: WATER_BREATHING
     level: 1
-    duration: 199755
+    duration: 173855
   '2':
     type: REGENERATION
     level: 1
-    duration: 199755
+    duration: 173855
   '3':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 199755
+    duration: 173855
   '4':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 199755
-  '5':
-    type: DAMAGE_RESISTANCE
-    level: 3
-    duration: 199755
+    duration: 173855

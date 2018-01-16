@@ -14,15 +14,19 @@ register_command(hirejudge,
             @player = player()
             @vic = player(@args[0])
             
+            if(has_permission(@vic,'donot.hire')){
+                msg(color(RED).'Sorry, that person can no longer be hired')
+                die()
+            }
             include('/home/minecraft/server/plugins/CommandHelper/includes/checkJobs.ms')
             if(!_checkJobs(@vic)){
                 die()
             }
 
-            runas(~console,"/pex user ".@vic." add is.secretary")
-            runas(~console,"/pex user ".@vic." group add secretary")
-            tmsg(@player,color(red)."You have hired ".@vic. " as secretary!")
-            tmsg(@vic,color(red)."You have been hired as secretary")
+            runas(~console,"/pex user ".@vic." add is.judge")
+            runas(~console,"/pex user ".@vic." group add judge")
+            tmsg(@player,color(red)."You have hired ".@vic. " as a judge!")
+            tmsg(@vic,color(red)."You have been hired as a judge!")
         }
     )
 )
@@ -42,10 +46,6 @@ register_command(firejudge,
             
             @player = player()
             @vic = player(@args[0])
-            if(has_permission(@vic,'donot.hire')){
-                msg(color(RED).'Sorry, that person can no longer be hired')
-                die()
-            }
             
             runas(~console,"/pex user ".@vic." remove is.judge")
             runas(~console,"/pex user ".@vic." group remove judge")

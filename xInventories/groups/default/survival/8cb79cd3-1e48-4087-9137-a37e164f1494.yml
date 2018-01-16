@@ -1,27 +1,23 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+    type: COOKED_BEEF
   '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: BAKED_POTATO
+  '9':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §0Bl§7ac§8k §0En§fer§7g§8y §fB§8ea§0m§0 «×»
-  '2':
+  '10':
     ==: org.bukkit.inventory.ItemStack
     type: STAINED_GLASS
     damage: 7
     amount: 64
-  '3':
+  '11':
     ==: org.bukkit.inventory.ItemStack
     type: COAL
     meta:
@@ -31,21 +27,24 @@ inventory:
       enchants:
         DAMAGE_ALL: 155
         FIRE_ASPECT: 2
-  '4':
+  '12':
     ==: org.bukkit.inventory.ItemStack
-    type: GOLD_SPADE
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 9
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 100.0
-hunger: 20
-exp: 0.42105272
-exp-level: 6
+hunger: 19
+exp: 1.07856025E-7
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
-saturation: 9.0
-exhaustion: 1.2320861
+saturation: 0.0
+exhaustion: 1.5172461
 armor_contents: {}
 ender_chest:
   '0':
@@ -123,34 +122,30 @@ ender_chest:
       blockMaterial: BLACK_SHULKER_BOX
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -30.285675671011056
-  y: 69.0
-  z: -232.31633504186865
-  pitch: 23.010853
-  yaw: 177.8516
+  world: gotham
+  x: 292.5
+  y: 79.0
+  z: 213.5
+  pitch: 57.69076
+  yaw: 280.77423
 potion_effect:
   '0':
     type: WATER_BREATHING
     level: 1
-    duration: 91431
+    duration: 147333
   '1':
     type: HEALTH_BOOST
     level: 19
-    duration: 91431
+    duration: 147333
   '2':
     type: REGENERATION
     level: 3
-    duration: 91431
+    duration: 147333
   '3':
     type: NIGHT_VISION
     level: 1
-    duration: 91431
+    duration: 147333
   '4':
-    type: FAST_DIGGING
-    level: 40
-    duration: 180214
-  '5':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 91431
+    duration: 147333
