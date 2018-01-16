@@ -16,8 +16,10 @@
                 "/haste 0-5"
             ),
             'buffs': array(
-                "/effect ".@plr." 5 9999 10 true"
+                "/effect ".@plr." 5 9999 10 true",
                 "/effect ".@plr." 11 9999 3 true",
-                "/effect ".@plr." 21 9999 14 true"
+                "/effect ".@plr." 21 9999 14 true",
+                "/effect ".@plr." 10 9999 3 true"
+                "/shot give ". @plr ." kaguneattack",
             )
         )
