@@ -5559,3 +5559,120 @@ turnghost:
         cooldown: 20000
     costs:
         mana: 50
+destroyerblast:
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
+    actions:
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: Disc
+          actions:
+          - class: Cover
+            actions:
+            - class: CycleBlock
+            - class: CycleEntity
+            - class: Damage
+            - class: Velocity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_enderdragon_hurt
+           location: origin
+        -  class: EffectSingle
+           sound: entity_generic_explode
+           sound_pitch: 2
+           location: origin
+        tick:
+        - particle: redstone
+          color: ff3700
+          location: target
+        - location: target
+          particle: redstone
+          color: ff3700
+          particle_count: 6
+          particle_offset_x: 0.5
+          particle_offset_y: 0.5
+          particle_offset_z: 0.5
+        hit:
+        -  class: EffectSingle
+           custom_sound: magic.shield_boom
+           sound_pitch: 2
+           location: both
+        -  class: EffectSingle
+           location: target
+           color: ff3700
+           firework: burst
+        -  class: EffectSingle
+           location: target
+           particle: flame
+           particle_count: 10 
+        -  class: EffectSingle
+           target_offset: 0,0.5,0
+           location: target
+           color: ff3700
+           firework: burst
+    parameters:
+        target_type: LivingEntity
+        target: other
+        hitbox: true
+        allow_max_range: false
+        cooldown: 5000
+        range: 32
+        bypass_build: true
+        velocity: 100
+        damage: 60
+        radius: 1
+        undo: 5000
+        transparent: transparent_to_construction
+        materials:
+        - - dirt
+          - air
+        - - grass
+          - air
+        - - stone
+          - air
+        - - stone_brick
+          - air
+        - - granite
+          - air
+        - - andesite
+          - air
+        - - diorite
+          - air
+        - - log
+          - air
+        - - planks
+          - air
+        - - obsidian
+          - air
+        - - iron
+          - air
+        - - gold
+          - air
+        - - diamond
+          - air
+        - - wool
+          - air
+        - - quartz_block
+          - air
+        - - endstone
+          - air
+        - - netherbrick
+          - air
+        - - glowstone
+          - air
+        - - soulsand
+          - air
+        - - sand
+          - air
+        - - sandstone
+          - air
+    costs:
+        mana: 10
