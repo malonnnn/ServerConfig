@@ -9,6 +9,7 @@
     associative_array('waynemanor','Wayne Manor'),
     associative_array('titanstower','Titans Tower'),
     associative_array('starcity','Star City'),
+    associative_array('worldofooo','World of Ooo'),
     associative_array('starlingcity','Starling City'),
     associative_array('starlabs','Star Labs'),
     associative_array('atlantis','Atlantis'),

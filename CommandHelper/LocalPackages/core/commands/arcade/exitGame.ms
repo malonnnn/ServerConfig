@@ -42,6 +42,7 @@ register_command(exitgame,
                 case 'rapunzel':
                 case 'speedforce':
                 case 'soulstone':
+                case 'ooo':
                     runas(~console,'/warp vrexit '.@plr)
                     broadcast(@plr.color(RED).' has unplugged from The Matrix!')
                 default:
