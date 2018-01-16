@@ -5559,3 +5559,58 @@ turnghost:
         cooldown: 20000
     costs:
         mana: 50
+solidify:
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
+    actions:
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: Disc
+          actions:
+          - class: Cover
+            actions:
+            - class: CycleBlock
+            - class: CycleEntity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_cloth_break
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: redstone
+             color: 26004f
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectTrail
+           particle: redstone
+           color: 26004f
+    parameters:
+        target_type: Entity
+        target: block
+        hitbox: true
+        cooldown: 3000
+        allow_max_range: false
+        bypass_build: true
+        range: 32
+        radius: 2
+        undo: 10000
+        transparent: transparent_to_construction
+        materials:
+        - - stationary_lava
+          - obsidian
+        - - stationary_water
+          - ice
+        - - lava
+          - obsidian
+        - - water
+          - ice
+    costs:
+        mana: 10
