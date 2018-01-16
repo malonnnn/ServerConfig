@@ -106,6 +106,7 @@ register_command(entergame,
                         msg(color(RED).'Uplink canceled, user moved. Please try again.')
                         set_block_at(-118, 78, 150, 35, @ploc['world'])
                         set_block_at(-117, 86, 149, 0, @ploc['world'])
+                        export('vrInUse',false)
                         die()
                     }
                     @center['y']++
@@ -113,6 +114,7 @@ register_command(entergame,
                     @count = array_size(@plrs)
                     @tooManyPlayers = FALSE
                     if(@count == 0){
+                        export('vrInUse',false)
                         die()
                     }else if(@count > 1){
                         foreach(@plr in @plrs){
