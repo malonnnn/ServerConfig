@@ -22,8 +22,8 @@ bind(vehicle_destroy,null,null,@e){
     }
     cancel()
 }
-bind(inventory_open,null,null,@e){
-    if(has_permission('cancel.entityclicks') && !has_permission('is.op')){
-        cancel()
-    }
-}
+#bind(inventory_open,null,null,@e){
+#    if(has_permission('cancel.entityclicks') && !has_permission('is.op')){
+#        cancel()
+#    }
+#}
