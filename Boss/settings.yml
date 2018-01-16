@@ -1,0 +1,204 @@
+# !-------------------------------------------------------------------------------------------------!
+#                       Welcome to the main configuration of BOSS
+# !-------------------------------------------------------------------------------------------------!
+#
+#    For support and documentation, please visit:
+#    - https://github.com/kangarko/Boss/wiki
+#
+# !-------------------------------------------------------------------------------------------------!
+#
+#    1) COLOR CODES are supported with the '&' character. See
+#       - http://minecraftwiki.net/wiki/Formatting_codes
+#       [!] When you use them, omit the message with " " or ' '.
+#
+#    2) TO HIDE a message, set it to 'none'.
+#
+#    3) For UNICODE CHARACTERS (smileys, symbols, ..), save the file in UTF-8 encoding. See
+#       - https://github.com/kangarko/Boss/wiki/Use-Right-Encoding
+#
+#    4) SOUND NAMES had changed as per Minecraft 1.9, compare:
+#       - 1.9 and newer: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+#       - 1.8 and older: https://goo.gl/ArzbZA
+#
+#    PS: The information above applies for all files within the Boss folder.
+#
+# !-------------------------------------------------------------------------------------------------!
+
+# -------------------------------------------------------------------------------------------
+# Settings for spawning Bosses using the Boss eggs. Get them via "/boss egg" 
+# -------------------------------------------------------------------------------------------
+Egg_Spawning: 
+
+  #
+  # How farthest away from the player to spawn when they right click a Boss egg?
+  #
+  Max_Distance: 60
+  
+  #
+  # Spawn on right clicking the air?
+  # Bosses will be spawned at the Max_Distance's blocks away from the player in the air!
+  #
+  Air_Spawn: true
+
+# -------------------------------------------------------------------------------------------
+# Spawn extra Bosses around players when they least expect them!
+#
+# This works even when you have natural monster spawning disabled on your server.
+# -------------------------------------------------------------------------------------------
+Timed_Spawning: 
+  #
+  # Turn this feature on?
+  #
+  Enabled: true
+  #
+  # Strike a lightning when the boss is spawned?
+  #
+  Lightning: true
+  #
+  # How often should the timer try to spawn Bosses? Minimum is 1 second. 
+  #
+  # Very low values such as 5 seconds *WILL* affect performance!
+  #
+  Delay: 90 seconds
+  #
+  # Settings that, when disabled or on low values, improve performance.
+  #
+  Performance:
+    #
+    # Respect spawn conditions for Bosses? You'll find them in Boss' Spawning menu.
+    #
+    Check_Conditions: true
+    #
+    # How many chunks around the player to scan? 
+    # Set to lowest possible number as this will affect your performance
+    # 1 = 9 chunks, 2 = 25 chunks, 3 = 49 chunks (a lot!)
+    #  
+    Chunk_Radius: 2
+    #
+    # Spawn Bosses in caves, buildings with roofs etc.?
+    #
+    Spawn_Underground: true
+    #
+    # Enable for more performance gain. Breaks Debug messages "spawning".
+    #
+    Async_Conditions: false
+  
+  #
+  # In which worlds should the timer function? Set to Worlds: ["*"] to all worlds.
+  #
+  Worlds:
+    - world
+    - world_nether
+    - world_the_end
+  #
+  # Which Bosses should be spawned? Set to Bosses: ["*"] for all Bosses.
+  #
+  Bosses: 
+    - "*"
+
+# -------------------------------------------------------------------------------------------
+# When a monster spawns naturally in the night, Boss can convert it to a monster!
+# -------------------------------------------------------------------------------------------
+Converting: 
+  #
+  # Should monsters naturally spawned be converted into Bosses?
+  # THIS ONLY HAPPENS WHEN THE CONDITIONS YOU SPECIFY IN BOSS' SPAWNING MENU ARE MET.
+  #
+  Enabled: true
+  #
+  # Strike a lightning when the boss is spawned naturally?
+  #
+  Lightning: true
+  #
+  # Specify in what scenarious we should not convert the monster to Boss at all.
+  # 
+  # Use the causes from the list below:
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
+  #
+  Ignore_From: [SPAWNER]
+
+# -------------------------------------------------------------------------------------------
+# How many Bosses can spawn in one place? Applies for Converting and Timed_Spawning.
+#
+# You can still spawn as many as you please with the Boss Egg ("/boss egg").
+# Remember, a chunk is approximately the area around player, it is 16*256*16 blocks.
+# -------------------------------------------------------------------------------------------
+Limits: 
+  #
+  # Applied for all bosses, e.g.: you can limit absolute all Bosses to 10 per chunk maximum.
+  #
+  Global: 
+    #
+    # The maximum amount of Bosses in a chunk.
+    #
+    Chunk: 8
+    #
+    # The maximum amount of Bosses per world.
+    #
+    World: 3000
+  #
+  # Applied for Bosses of same name.
+  #
+  Individual: 
+    #
+    # Scan for Bosses of the same kind? Requires some math, affects perfomance on big worlds.
+    #
+    Enabled: false
+    #
+    # The maximum amount of one kind of Boss in a chunk.
+    #
+    Chunk: 3
+    #
+    # The maximum amount of one kind of Boss per world.
+    #
+    World: 1000
+     
+
+# -------------------------------------------------------------------------------------------
+# Options related to Boss' skills.
+# -------------------------------------------------------------------------------------------
+Skills:
+  #
+  # If the Boss has multiple skills, should we only
+  # run the first that can be run and then stop going further for more.
+  #
+  Allow_Multiple_At_Once: false
+
+# -------------------------------------------------------------------------------------------
+# Options related to when you fight the Boss.
+# -------------------------------------------------------------------------------------------
+Fight: 
+  #
+  # Display the health of the Boss in action bar?
+  #
+  Health_Bar: true
+
+# -------------------------------------------------------------------------------------------
+# Aliases are alternative command names which trigger the same command as the main command.
+# Separate them with a comma, e.g: aliases: [boss, b]
+# * THE FIRST ALIAS IS THE MAIN LABEL, THAT MEANS AT LEAST ONE ALIAS MUST BE SPECIFIED. *
+# -------------------------------------------------------------------------------------------
+Command_Aliases: [boss, b]
+
+# -------------------------------------------------------------------------------------------
+# Should Boss check for new versions on startup and notify you in-game?
+# -------------------------------------------------------------------------------------------
+Notify_Updates: true
+
+# -------------------------------------------------------------------------------------------
+# You can change the prefix in front of chat or console messages here:
+# -------------------------------------------------------------------------------------------
+Prefix: "&8&lBOSS &8//&7"
+
+# -------------------------------------------------------------------------------------------
+# Debugging allows you to understand the plugin. It will print more messages to the console.
+# Specify sections to debug, or [*] to print all out.
+# Available: ["spawning"]
+# -------------------------------------------------------------------------------------------
+Debug: []
+
+# Internal serialization, do not touch
+Serialization: ""
+
+# Internal configuration number, do not touch :)
+Version: 3

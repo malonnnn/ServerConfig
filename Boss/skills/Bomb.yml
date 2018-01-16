@@ -1,0 +1,25 @@
+# ------------------------------------------------------------------------
+#  This is the configuration for the skill 'Bomb'
+# ------------------------------------------------------------------------
+# 
+# Documentation:
+#   Delay - The duration of the pause between the skill is run again.
+#           You can specify a range that will be choosen randomly.
+#   Message - The message to send to the player when the skill is run.
+#             If you have multiple lines, one is choosen randomly.
+#   Fuse_Time - How long should it take before the TnT explodes?
+#   Spawn_Height - How many blocks above the player to spawn the TnT?
+#   Power - The power of the explosion. Must be a whole number: 4.0
+#   Destroy_Blocks - Should the TnT not only damage players, but also destroy blocks?
+# 
+# ------------------------------------------------------------------------
+
+Spawn_Height: 7
+Fuse_Time: 3 seconds
+Destroy_Blocks: false
+Power: 4.0
+Delay: 30 seconds - 1 minute
+Message:
+- You have been &cbombed &7by the boss!
+- The {boss} has &cspawned a TnT &7at you!
+- Please do not move, there's a gift for ya!

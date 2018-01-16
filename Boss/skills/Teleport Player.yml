@@ -1,0 +1,22 @@
+# ------------------------------------------------------------------------
+#  This is the configuration for the skill 'Teleport Player'
+# ------------------------------------------------------------------------
+# 
+# Documentation:
+#   Delay - The duration of the pause between the skill is run again.
+#           You can specify a range that will be choosen randomly.
+#   Message - The message to send to the player when the skill is run.
+#             If you have multiple lines, one is choosen randomly.
+#   Radius - How many blocks around should the Boss search for players
+#            to teleport them?
+#   Max_Players_At_Once - The amount of players to teleport at once
+# 
+# ------------------------------------------------------------------------
+
+Radius: 5
+Max_Players_At_Once: 2
+Delay: 45 seconds - 2 minutes
+Message:
+- You are now facing the {boss} himself!
+- Welcome! {boss} has &cteleported you &7closer!
+- Don't run away from me! Fight like a man!

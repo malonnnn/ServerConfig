@@ -1,0 +1,21 @@
+# ------------------------------------------------------------------------
+#  This is the configuration for the skill 'Freeze Player'
+# ------------------------------------------------------------------------
+# 
+# Documentation:
+#   Delay - The duration of the pause between the skill is run again.
+#           You can specify a range that will be choosen randomly.
+#   Message - The message to send to the player when the skill is run.
+#             If you have multiple lines, one is choosen randomly.
+#   Duration - How long should the player be frozen?
+#   Cobweb - Should we spawn a cobweb at player's location? (Temporarily.)
+# 
+# ------------------------------------------------------------------------
+
+Cobweb: true
+Duration: 3 seconds
+Delay: 20 seconds - 40 seconds
+Message:
+- The Boss has put you into a meditation state. Do not move.
+- You are now stuck! The {boss} is coming at you!
+- You are playing too fast! Slow down please!
