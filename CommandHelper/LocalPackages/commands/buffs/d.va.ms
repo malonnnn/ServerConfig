@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTU1OTA2OTk0NDcsInByb2ZpbGVJZCI6IjkwMjVlOTZhZDI4NjQ3YjBhNzA5OThkMmE0ZWU0MmRiIiwicHJvZmlsZU5hbWUiOiJUaGVfUmVkX0NhbmFyeSIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7Im1ldGFkYXRhIjp7Im1vZGVsIjoic2xpbSJ9LCJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzVjMTI5OTM1NzBhM2ZmYTU1OGE2MTdlYzdiYTI1NWE0ZDg5ODY2MmNkYTFiMTc4NmRjYjgzZjhkY2RiNGQ5MiJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "D. Va 1! Bad Guy 0!",
+            'speech': "D.Va 1! Bad Guy 0!",
             'powers': array(
                 "/buff"
            ),
