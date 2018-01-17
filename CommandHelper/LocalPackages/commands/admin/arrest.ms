@@ -221,7 +221,7 @@ register_command(warn,
                     
                     @reason = trim(@reason)
                     
-                    broadcast(color(bold).@plr.color(dark_red).color(bold).' HAS BEEN WARNED BY '.color(white).@cop.color(dark_red).color(bold).' ON THE GROUNDS OF '.color(yellow).@reason.color(red).color(bold).'. Please read '.color(dark_red).'/warp rules'.color(red).' and familiarize yourself with the server rules or you may end up jailed!')
+                    broadcast(color(bold).@plr.color(dark_red).color(bold).' HAS BEEN WARNED BY '.color(white).@cop.color(dark_red).color(bold).' ON THE GROUNDS OF '.color(yellow).@reason.color(red).color(bold).'. Please read '.color(dark_red).'/rules'.color(red).' and familiarize yourself with the server rules or you may end up jailed!')
 
                     @profile = array(type: 'sqlite', file: '/home/minecraft/server/plugins/CommandHelper/policedatabase.sqlite')
                     query(@profile,'INSERT INTO `criminals` '.

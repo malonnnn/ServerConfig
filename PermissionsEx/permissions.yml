@@ -8211,6 +8211,7 @@ groups:
       default: 'true'
       prefix: '&f&lMortal&r'
     permissions:
+    - ch.alias.rules
     - multiverse.access.ooo
     - multiverse.access.soulstone
     - essentials.warps.workshop
@@ -8226,7 +8227,6 @@ groups:
     - essentials.build.interact.387
     - essentials.build.interact.386
     - essentials.build.interact.346
-    - ch.alias.askmyth
     - essentials.build.interact.427
     - essentials.build.interact.193
     - essentials.build.interact.74
@@ -8253,10 +8253,6 @@ groups:
     - essentials.build.interact.147
     - essentials.build.interact.72
     - essentials.build.interact.107
-    - judge.quiz
-    - coder.quiz
-    - helper.quiz
-    - police.quiz
     - -essentials.warps.class
     - multiverse.access.nyc
     - essentials.clearinventory
@@ -14034,6 +14030,27 @@ groups:
         - ch.alias.run2
         - ch.alias.run1
         - ch.alias.run0
+  fanficb341708c7d8f49bf93f78d76550ed02b:
+    inheritance:
+    - commonherotraits
+    worlds:
+      superherocity:
+        permissions:
+        - is.fanfic
+        - ch.alias.fanficchatcolor
+        - ch.alias.fanficname
+        - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
+    options:
+      prefix: '&r&8[&3Lawyer&8] &8[&4You&fYube&8] &bAccottix'
 schema-version: 1
 worlds:
   checkers:
@@ -14163,7 +14180,10 @@ worlds:
 users:
   ed7de61b-9df1-4e28-98b5-3a5cb65f583c:
     group:
-    - daredevil
+    - sandman
+    options:
+      last-logout-time: '1516158695'
+      name: kylo_gamer
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
     - 87fb3c6c5ff64bf6b326992c6137ea12
@@ -14174,6 +14194,10 @@ users:
   28556dea-667d-409f-b2ff-fb4177a20ff2:
     group:
     - starbutterfly
+    options:
+      last-logout-time: '1516160189'
+      name: xHqrkie
+      last-login-time: '1516160178'
   391762eb-24f6-4d95-84d6-bfac682d575a:
     group:
     - jirenthegrey
@@ -14185,19 +14209,26 @@ users:
     group:
     - batmite
     options:
-      last-logout-time: '1516149169'
+      last-logout-time: '1516158016'
       name: Karma0001
       last-login-time: '1516149409'
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     group:
-    - infinitythanos
+    - police
+    - kenkaneki
     options:
-      last-logout-time: '1516152734'
+      last-logout-time: '1516164864'
       name: MqybeItzBlue_
       last-login-time: '1516154299'
+    permissions:
+    - is.police
   695c4d78-22c5-40e4-b0d4-286ab17c02cf:
     group:
-    - doctormanhattan
+    - goku
+    options:
+      last-logout-time: '1516161147'
+      name: Sled_Gang
+      last-login-time: '1516160252'
   8909ba04-d0b4-4b6b-a395-7162626f982f:
     group:
     - ironmanmkxliii
@@ -14206,13 +14237,14 @@ users:
       name: CHUBS_YT
   a8e159ea-deeb-4f73-a246-591b589adcf4:
     group:
+    - headpolice
     - thebeyonder
     options:
       last-logout-time: '1516156654'
       name: MrFlameYT
-      last-login-time: '1516147472'
+      last-login-time: '1516161878'
     permissions:
-    - chat.cooldown
+    - is.headpolice
   e6de8cf0-af45-44e4-882f-d98446f4b31b:
     permissions:
     - is.headjudge
@@ -14232,7 +14264,8 @@ users:
   706e34e9-e166-4de1-9a0e-528bee0703b3:
     options:
       name: 64batsalex
-      last-logout-time: '1516151781'
+      last-logout-time: '1516161336'
+      last-login-time: '1516161311'
     group:
     - ultraboy
   52b6e861-9b1b-4e74-9fe9-85e81a7e6472:
@@ -14250,6 +14283,9 @@ users:
   34a87619-4b40-4ae8-b759-3efa25bbbffd:
     group:
     - speedy
+    options:
+      last-logout-time: '1516158792'
+      name: Glint73
   f621586e-8ef8-448d-9264-86b61375052e:
     group:
     - odin
@@ -14264,10 +14300,11 @@ users:
       name: TheDarknight22
   b341708c-7d8f-49bf-93f7-8d76550ed02b:
     group:
-    - spectre
+    - fanficb341708c7d8f49bf93f78d76550ed02b
     options:
-      last-logout-time: '1516156933'
+      last-logout-time: '1516165243'
       name: Accottix
+      last-login-time: '1516160770'
   dbb47887-bfbd-40e6-bfec-3d1053ea3aff:
     group:
     - yangxiaolong
@@ -14284,3 +14321,25 @@ users:
   5da26092-c807-4c9b-8d08-9523f74ddc97:
     group:
     - mortal
+    options:
+      last-logout-time: '1516158203'
+      name: MastTheWise
+  a913250d-8b67-4d1e-9e77-d74405c76872:
+    group:
+    - brainiac
+    options:
+      last-logout-time: '1516159607'
+      name: diamondvortex123
+      last-login-time: '1516158200'
+  ed038e46-f44d-4e18-8c76-fcaa06a4ae4a:
+    group:
+    - gokussb
+    options:
+      last-logout-time: '1516160493'
+      name: hb_sonic1010
+  ff5a8a65-6dae-40db-b11d-e7c4eff939d7:
+    group:
+    - mortal
+    options:
+      last-logout-time: '1516160072'
+      name: OrangePrince22
