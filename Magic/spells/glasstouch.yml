@@ -1,0 +1,128 @@
+glasstouch:
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
+    actions:
+      cast:
+      - class: CycleBlock
+      - class: CycleEntity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_cloth_break
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: redstone
+             color: 00b70c
+             speed: 2
+             lengthGrow: 0.1
+             radiusGrow: 0.003
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectTrail
+           particle: redstone
+           color: 00b70c
+    parameters:
+        target_type: Entity
+        allow_max_range: false
+        range: 32
+        radius: 3
+        undo: 10000
+        transparent: transparent_to_construction
+        materials:
+        - - dirt
+          - glass
+        - - wood
+          - glass
+        - - stationary_water
+          - glass
+        - - lava
+          - glass
+        - - stationary_lava
+          - glass
+        - - sand
+          - sand:1
+        - - log
+          - glass
+        - - leaves
+          - glass
+        - - wool
+          - glass
+        - - wood_stairs
+          - glass
+        - - chest:2
+          - glass
+        - - workbench:2
+          - glass
+        - - soil
+          - glass
+        - - furnace:2
+          - glass
+        - - snow
+          - glass
+        - - cactus
+          - glass
+        - - stained_glass
+          - glass
+        - - monster_eggs
+          - glass
+        - - smooth_brick
+          - glass
+        - - quartz_block
+          - glass
+        - - quartz_stairs
+          - glass
+        - - stained_clay
+          - glass
+        - - stained_glass_pane
+          - glass_pane
+        - - carpet
+          - glass
+        - - hard_clay
+          - glass
+        - - white_glazed_terracotta
+          - glass
+        - - orange_glazed_terracotta
+          - glass
+        - - magenta_glazed_terracotta
+          - glass
+        - - light_blue_glazed_terracotta
+          - glass
+        - - yellow_glazed_terracotta
+          - glass
+        - - lime_glazed_terracotta
+          - glass
+        - - pink_glazed_terracotta
+          - glass
+        - - gray_glazed_terracotta
+          - glass
+        - - silver_glazed_terracotta
+          - glass
+        - - cyan_glazed_terracotta
+          - glass
+        - - purple_glazed_terracotta
+          - glass
+        - - blue_glazed_terracotta
+          - glass
+        - - brown_glazed_terracotta
+          - glass
+        - - green_glazed_terracotta
+          - glass
+        - - red_glazed_terracotta
+          - glass
+        - - black_glazed_terracotta
+          - glass
+        - - concrete
+          - glass
+        - - concrete_powder
+          - glass
+        - - stone
+          - glass
+    costs:
+        mana: 10
