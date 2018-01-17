@@ -1,0 +1,41 @@
+conjuresword:
+    icon: diamond_axe:11
+    icon_disabled: diamond_hoe:11
+    icon_url: http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c
+    alias: perk
+    category: utility
+    worth: 220
+    earns_sp: 6
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    quick_cast: true
+    actions:
+        cast:
+        -  class: Command
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_experience_orb_pickup
+        -  class: EffectTrail
+           particle: redstone
+           particle_data: 2
+           particle_count: 3
+        -  class: EffectSingle
+           location: target
+           effectLib:
+             class: TraceEffect
+             particle: redstone
+    parameters:
+        target: self
+        range: 32
+        duration: 5000
+        target_type: Player
+        bypass_friendly_fire: true
+        only_friendly: true
+        bypass_pvp: true
+        console: true
+        commands:
+        - give @p iron_sword 1
+        cooldown: 20000
+    costs:
+        mana: 50
