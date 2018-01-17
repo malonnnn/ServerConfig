@@ -1,66 +1,64 @@
 inventory:
-  '36':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-ender_chest: {}
-armor_contents:
-  boots:
+    type: WEB
+    amount: 64
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 40.0
+      display-name: §fWeb-Shot§f «×»
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WEB
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §fWeb-Shot§f «×»
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+ender_chest: {}
+armor_contents: {}
+health: 60.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.45454547
+exp-level: 2
 remainingAir: 300
 fireTicks: -20
-saturation: 4.0
-exhaustion: 2.4071991
+saturation: 18.0
+exhaustion: 2.0152233
 location:
   ==: org.bukkit.Location
-  world: speedforce
-  x: -1.5
-  y: 80.0
-  z: -185.5
-  pitch: 0.1500003
-  yaw: 142.11919
+  world: titanstower
+  x: -27.5
+  y: 119.0
+  z: 136.5
+  pitch: 5.2499404
+  yaw: 135.83954
 potion_effect:
   '0':
-    type: REGENERATION
-    level: 3
-    duration: 196327
+    type: HEALTH_BOOST
+    level: 9
+    duration: 198542
   '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 196327
+    type: REGENERATION
+    level: 1
+    duration: 198542
   '2':
     type: FAST_DIGGING
-    level: 10
-    duration: 196771
+    level: 5
+    duration: 198755
   '3':
-    type: HEALTH_BOOST
-    level: 4
-    duration: 196327
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 198542
