@@ -27,5 +27,8 @@
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." kiblast"
                 "/shot give ". @plr ." finalflash",
+            ),
+            'alts': array(
+                'vegetassb'
             )
         )
