@@ -1,218 +1,24 @@
-health: 34.47967529296875
-hunger: 17
+health: 60.0
+hunger: 20
 exp: 0.0
-exp-level: 1
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.7177236
+saturation: 5.0
+exhaustion: 3.8010013
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 64
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: COOKED_BEEF
-    amount: 55
-  '2':
-    ==: org.bukkit.inventory.ItemStack
     type: DIAMOND_PICKAXE
-    damage: 266
-  '38':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 224
-  '3':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    amount: 64
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: COBBLESTONE
-    amount: 25
-  '5':
-    ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 1
-    amount: 2
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK_CHARGE
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK_EFFECT
-      firework-effect:
-        ==: Firework
-        flicker: false
-        trail: false
-        colors:
-        - ==: Color
-          RED: 240
-          BLUE: 240
-          GREEN: 240
-        - ==: Color
-          RED: 222
-          BLUE: 42
-          GREEN: 207
-        - ==: Color
-          RED: 235
-          BLUE: 68
-          GREEN: 136
-        - ==: Color
-          RED: 59
-          BLUE: 26
-          GREEN: 81
-        - ==: Color
-          RED: 123
-          BLUE: 190
-          GREEN: 47
-        - ==: Color
-          RED: 40
-          BLUE: 151
-          GREEN: 118
-        fade-colors: &id001 []
-        type: BALL
   '7':
     ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 35
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK
-      firework-effects:
-      - ==: Firework
-        flicker: false
-        trail: false
-        colors:
-        - ==: Color
-          RED: 240
-          BLUE: 240
-          GREEN: 240
-        - ==: Color
-          RED: 37
-          BLUE: 146
-          GREEN: 49
-        - ==: Color
-          RED: 171
-          BLUE: 171
-          GREEN: 171
-        - ==: Color
-          RED: 195
-          BLUE: 205
-          GREEN: 84
-        - ==: Color
-          RED: 65
-          BLUE: 52
-          GREEN: 205
-        - ==: Color
-          RED: 179
-          BLUE: 44
-          GREEN: 49
-        fade-colors: *id001
-        type: BALL
-      power: 1
+    type: COOKED_BEEF
+    amount: 64
   '8':
     ==: org.bukkit.inventory.ItemStack
-    type: STONE
-    damage: 5
-    amount: 3
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_INGOT
-    amount: 3
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 8
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 17
+    type: GOLDEN_APPLE
     amount: 64
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: COAL
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 56
-  '14':
-    ==: org.bukkit.inventory.ItemStack
-    type: RED_ROSE
-    damage: 3
-    amount: 2
-  '15':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-  '17':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 3
-    amount: 64
-  '19':
-    ==: org.bukkit.inventory.ItemStack
-    type: STEP
-  '20':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_PICKAXE
-    damage: 7
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-    damage: 8
-    amount: 64
-  '23':
-    ==: org.bukkit.inventory.ItemStack
-    type: GRASS
-    amount: 60
-  '24':
-    ==: org.bukkit.inventory.ItemStack
-    type: FENCE
-  '35':
-    ==: org.bukkit.inventory.ItemStack
-    type: FIREWORK
-    amount: 64
-    meta:
-      ==: ItemMeta
-      meta-type: FIREWORK
-      firework-effects:
-      - ==: Firework
-        flicker: false
-        trail: false
-        colors:
-        - ==: Color
-          RED: 240
-          BLUE: 240
-          GREEN: 240
-        - ==: Color
-          RED: 37
-          BLUE: 146
-          GREEN: 49
-        - ==: Color
-          RED: 171
-          BLUE: 171
-          GREEN: 171
-        - ==: Color
-          RED: 195
-          BLUE: 205
-          GREEN: 84
-        - ==: Color
-          RED: 65
-          BLUE: 52
-          GREEN: 205
-        - ==: Color
-          RED: 179
-          BLUE: 44
-          GREEN: 49
-        fade-colors: *id001
-        type: BALL
-      power: 1
-armor_contents:
-  chestplate:
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    damage: 224
+armor_contents: {}
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -694,20 +500,20 @@ ender_chest:
       meta-type: SKULL
       internal: H4sIAAAAAAAAAE2SyY6jVgBF6VYiVZc6f5FdqcRsQEovbAM2mMc8vk2LmcdkbIMZvikfGdcui7u5ukc6i/uOYe/YT6eZ2ta8XwvU5m/YdyXD/k5ohuQIPv3kMr74ZISk+BTogvvkM27HskSeEVTyjr2/oCG/jyh//MDexnwZp3v+eMcw7Nsb9sNBZR9/Nd//Tbg87KngahZh84SyPwvgvDg4vC16Pa7m+DCf1zXxcj722YqQLtOQ06xDKltnbHVXNePJ37kUUtNpBzTBL5cZbB2pHhOOscndU2s1Lj+NTfJkqN1EcwvxkUT3ZItkKWPEyNM6zjgR21BABJhp20SG6i/oVg6JcXfqiUdhgM6QHu1DlgBwuwQN8xFR8MHdgtaEMQ0t2McJpdtmhW956T8nDYht5/NBqgQJjJn27IwD5OZulD5kx5kueXCmtWi9BNPK9xeVjxpcIjcJhxf7xhLOONd0vnW1zvqISQNBs44T2bKNbPZL5nragYHlIDTs6lBmEK5ONkmFrsYpT8vDFTJj72w4R06lwNyc8UGRfK95k5E1Ad/YIILxZnX0QVHZHdQsvmGT3iS6u9aJtG/izXj07VMBYGjtRy8tFOajGO4yOJex5l3XnKCzkfd6O7YqUjcyf4l3WRLi+2ugq4DGB2HMDPoaseRtc6IJ1dNeXHqydtqnuiCm9j8SAkeGcrfX27hPZTeTy6czU1BwIRmfdCRQzqE+hZun0KtUGa7cbPPDgT3otB64CZdeYjx5/S8uc+bWLAasFmeSzvftCYSD/pxDCRXp1itwKcNyPBa0JYbXPOus4UZKsOlxGbizZVoL+WQOjCw5Ehk0JgvFCm+aUQ0fhFlmpuodSk0qz8oh3edtK+wGpJDMemt+vWF/+nE75d/+yVeViAOyTWm7SsI9MmqJBGJK6htgX9n0zXso/WFNKDgkJ1+FR2WndMqmixINxKrWKYuBtcVGXcQCKqKNk0XrtUeCk98AUUUKmlF6Vp+wax/QY6sk8JCB1MLu/Q0GdhwFZJXSfvG1y04+k539FYYAGf0DecSoukjZvRzJtJu/uGt2tmcD8c//backaCcY6GsUQELr2DY7CgQMKyIL1VbbPAoGL99ab0FdVUDMar1W5qiWke56lO5aLAjsVncPDXT1Frp7MqLAGlF2p4s+gm6LdMpbwAm8mBZFLmyVnhQK69cvDHvD/tDjLsf++i1PjzyDcRc/pt8Y9h8/Pm1xdAQAAA==
       skull-owner: _FusedZamasu_
+location:
+  ==: org.bukkit.Location
+  world: greenfield
+  x: 0.5
+  y: 31.0
+  z: 70.5
+  pitch: 18.892
+  yaw: 268.77588
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 9
-    duration: 103999
+    duration: 195615
   '1':
     type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 103999
-  '2':
-    type: FAST_DIGGING
-    level: 20
-    duration: 180025
-  '3':
-    type: INCREASE_DAMAGE
-    level: 5
-    duration: 103999
+    level: 0
+    duration: 334

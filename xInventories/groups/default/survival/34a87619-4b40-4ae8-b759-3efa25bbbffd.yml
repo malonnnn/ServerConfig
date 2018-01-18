@@ -1,23 +1,69 @@
-inventory: {}
-armor_contents: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 17.0
-exhaustion: 0.48883155
+saturation: 1.0
+exhaustion: 3.9568865
 location:
   ==: org.bukkit.Location
-  world: broville
-  x: 1208.5
-  y: 69.0
-  z: 808.5
-  pitch: 0.0
-  yaw: 89.969574
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 254.99414
 potion_effect:
   '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 199870
+    type: JUMP
+    level: 5
+    duration: 199536
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 199278
+  '2':
+    type: REGENERATION
+    level: 3
+    duration: 199278
+  '3':
+    type: SPEED
+    level: 8
+    duration: 199429
+  '4':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 199278

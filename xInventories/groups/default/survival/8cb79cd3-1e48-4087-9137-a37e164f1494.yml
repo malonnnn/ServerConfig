@@ -5,39 +5,75 @@ inventory:
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4kagune §4attack§4 «×»
-health: 80.0
-hunger: 6
+      display-name: §2Gr§aee§2n §aEn§2erg§ay §2Be§aam§a «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6freezetime§f (§3InfinityGauntlet§f)
+      lore:
+      - §3§oBound to MqybeItzBlue_
+      - Knows 13 Spells
+      - '§d§oMana: 300'
+      - '§d§oMana Regeneration: 10/s'
+      ItemFlags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+      - HIDE_UNBREAKABLE
+      - HIDE_DESTROYS
+      - HIDE_PLACED_ON
+      - HIDE_POTION_EFFECTS
+      Unbreakable: true
+      internal: H4sIAAAAAAAAAD2PzU7CUBCFD6HFlgRjcKkLE9nW2NBY2BDxJ5FEdEFYk0s74I29t6WdSnBh3PgK+gBuXfgAPoMb38aVpUZnNZkzc+Y7daAOYyl0aMFiUkkkmLAl9Uxqyau5yDVHxBbMeKkpRWO4WE1pwPcnUU4TE4YSWpw+AwY21+2EpaKMhUqAijB7Xw+Fb3k6kSFanWDqd4Ow7bjkdRzvsOM7XbftO6Ltk3vkzVyv61WxcUdpJmMNwISNZp85ldOcaRiHciYLsV5IFQPWeDw4G8YZf+/3dvuPF2TAXo8uSWT8vvPx+fL09lpDra/iIsdxC2VZMEZRzLCUkPqmjN74f3ElFGF7TgWxDA4EswhuRwlRWIV9nVAq+Bds7VLuNs8XuUwUad77wwN+AEScc/RXAQAA
+health: 100.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.9848475
+saturation: 17.0
+exhaustion: 0.8528494
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -2.5
-  y: 74.0
-  z: -101.5
-  pitch: 4.551457
-  yaw: -88.10118
+  world: infinitycity
+  x: -500.5
+  y: 34.0
+  z: 201.5
+  pitch: 5.8060536
+  yaw: 181.45093
 potion_effect:
   '0':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 186124
+    type: WATER_BREATHING
+    level: 1
+    duration: 198058
   '1':
-    type: REGENERATION
-    level: 3
-    duration: 186124
+    type: HEALTH_BOOST
+    level: 19
+    duration: 198058
   '2':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 186124
+    type: REGENERATION
+    level: 1
+    duration: 198058
   '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 198058
+  '4':
+    type: INCREASE_DAMAGE
+    level: 100
+    duration: 198058
+  '5':
     type: DAMAGE_RESISTANCE
     level: 3
-    duration: 186124
+    duration: 198058
