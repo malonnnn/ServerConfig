@@ -38,6 +38,14 @@ register_command(herotransform,
                 set_timeout(1000,closure(
                     run_cmd('/fixskin')
                 ))
+                if(has_permission(@player,'essentials.fly')){
+                    run_cmd('/fly on')
+                }
+                if(has_permission(@player,'ch.alias.buff')){
+                    runas(~console,'/minecraft:effect '.@player.' clear')
+                    runas(~console,'/minecraft:clear '.@player)
+                    runas(@player,'/buff')
+                }
 
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
                 @oldHero = @hero

@@ -1,62 +1,21 @@
 register_command(whirlwind, 
-
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.speedforcewhirlwind',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
+        executor: closure(@aliases, @sender, @args) {        
+            
+            if (array_size(@args) != 1) {
+                return(false)
+            }
             
             @player = player()
-            assign(@cooldown, 30)
-            
-            assign(@lastUsedMindControl, import(@player."lastUsedWhirlWind"))
-            if(!has_permission(@player,'whirlwind.bypass') && @lastUsedMindControl + @cooldown > time() / 1000,
-                die(color(red)."You must cool down before you can use whirl wind again!")
-            )
-            export(@player."lastUsedWhirlWind", time() / 1000)
-
-            @ploc = ploc()
-            @allPlayers = players_in_radius(@ploc,20)
-
-            foreach(@player in @allPlayers) {
-                
-                if(@player != player()){
-
-                    @vicLoc = ploc(@player)
-
-                    @x1 = @ploc['x']
-                    @y1 = @ploc['y']
-                    @z1 = @ploc['z']
-
-                    @x2 = @vicLoc['x']
-                    @y2 = @vicLoc['y']
-                    @z2 = @vicLoc['z']
-
-                    @x3 = pow(@x1 - @x2, 2)
-                    @y3 = pow(@y1 - @y2, 2)
-                    @z3 = pow(@z1 - @z2, 2)
-
-                    @final = @x3 + @y3 + @z3
-
-                    @final = sqrt(@final)
-                    
-                    @maxDist = 30
-                    @magnitude = (1 - @final / @maxDist) * 5 
-
-                    @yaw = @ploc['yaw'] + 90;
-                    @pitch = neg(@ploc['pitch']);
-                    @vector = associative_array();
-                    @vector['x'] = @magnitude * (cos(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                    @vector['y'] = @magnitude * sin(to_radians(@pitch));
-                    @vector['z'] = @magnitude * (sin(to_radians(@yaw)) * cos(to_radians(@pitch)));
-                    #broadcast(@vector)
-                    set_pvelocity(@player,@vector) 
-                }
-            }
+            @plr = @args[0]
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('lastUsedWhirlwind',10,@player) 
+            sudo('/push '.@plr.' 30 5')
+            tmsg(@plr,"You have been whirlwinded by ".@player."!")
+            tmsg(@player,"You have used whirlwind!")
                 
         }
     )

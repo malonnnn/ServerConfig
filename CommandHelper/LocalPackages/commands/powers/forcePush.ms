@@ -11,18 +11,11 @@ register_command(forcepush,
             
             @player = player()
             @plr = @args[0]
-            assign(@cooldown, 10)
-            
-            assign(@lastUsedForcePush, import(@player."lastUsedForcePush"))
-            if(@lastUsedForcePush + @cooldown > time() / 1000,
-                assign(@timeleft, subtract(add(@lastUsedForcePush, @cooldown), divide(time(),1000)))
-                tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use force push again!'))
-                die()
-            )
-            export(@player."lastUsedForcePush", time() / 1000)
-            sudo("/push ".@plr)
+            include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+            _coolDown('lastUsedForcePush',10,@player) 
+            sudo('/push '.@plr.' 30 2')
             tmsg(@plr,"You have been force pushed by ".@player."!")
-            tmsg(player(),"You have force pushed ".@plr."!")
+            tmsg(@player,"You have force pushed ".@plr."!")
                 
         }
     )

@@ -11,7 +11,7 @@
             'speech': "I always keep my promises!",
             'powers': array(
                 "/buff",
-                "/push",
+                "/psypush <player>",
                 "/touchkill"
             ),
             'buffs': array(
