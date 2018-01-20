@@ -24,7 +24,8 @@
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/run 0-9",
                 "/haste 0-4",
-                "/cast mach5punch"
+                "/cast mach5punch",
+                "/cast time"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
