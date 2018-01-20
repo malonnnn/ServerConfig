@@ -95,7 +95,7 @@ register_command(speedforceteleport,
                 }
                 @plrHero = @hero
                 set_timeout(3000,closure(
-                    broadcast(color(DARK_RED).color(BOLD).'Whoosh!'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(RED).color(BOLD).' has brought '.color(WHITE).@vicHero['name'].color(YELLOW).color(BOLD).' Into the Speedforce!');
+                    broadcast(color(RED).color(ITALIC).'Whoosh'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(YELLOW).color(BOLD).' has brought '.color(WHITE).@vicHero['name'].color(YELLOW).color(BOLD).' Into'.color(DARK_RED).color(BOLD)' Th'.color(YELLOW).color(BOLD)'e'.color(DARK_RED).color(BOLD)' Sp'.color(YELLOW).color(BOLD)'ee'.color(DARK_RED).color(BOLD)'df'.color(YELLOW).color(BOLD)'o'.color(DARK_RED).color(BOLD)'r'.color(YELLOW).color(BOLD)'c'.color(DARK_RED).color(BOLD)'e'.color(YELLOW).color(BOLD)'!');
                 ))
         }
     )
