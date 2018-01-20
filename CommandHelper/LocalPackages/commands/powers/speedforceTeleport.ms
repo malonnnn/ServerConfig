@@ -84,7 +84,7 @@ register_command(speedforceteleport,
                     @vicHero = @hero
                 }catch(Exception @e){
                     @vicHero = array()
-                    @vicHero['name'] = @player
+                    @vicHero['name'] = @plr
                 }
                 @plrclass = _getheroclass(@plr)
                 try{
