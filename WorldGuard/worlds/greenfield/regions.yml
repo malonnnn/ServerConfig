@@ -14,12 +14,20 @@ regions:
         min: {x: -28.0, y: 0.0, z: -218.0}
         max: {x: -24.0, y: 255.0, z: -214.0}
         members: {}
-        flags: {other-explosion: deny, invincible: allow, use: allow, greeting: §2You
-                are now in SafeZone!, feed-amount: 1, feed-delay: 1, interact: allow,
+        flags: {other-explosion: deny, use: allow, invincible: allow, greeting: §2You
+                are now in SafeZone!, feed-delay: 1, feed-amount: 1, interact: allow,
             pvp: deny, farewell: §4You are now leaving SafeZone!}
         owners: {}
         type: cuboid
         priority: 2
+    protectorboss:
+        min: {x: -122.0, y: 62.0, z: -75.0}
+        max: {x: -53.0, y: 62.0, z: -20.0}
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
     __global__:
         members: {}
         flags: {}

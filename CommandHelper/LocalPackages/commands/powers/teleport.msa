@@ -5,7 +5,7 @@ tp:/tp $plr = >>>
     @vic = player(@vic)
 
     if(has_permission(@player,'is.op')){
-        runas(~console,'/teleport '.@player.' '.@vic)
+        runas(~console,'/minecraft:tp '.@player.' '.@vic)
         die()
     }
 
@@ -20,7 +20,7 @@ tp:/tp $plr = >>>
     }
 
     broadcast(@player.' has teleported to '.@vic)
-    runas(~console,'/teleport '.@player.' '.@vic)
+    runas(~console,'/minecraft:tp '.@player.' '.@vic)
 
 <<<
 tp:/tp $plr1 $plr2 = >>>
@@ -59,7 +59,7 @@ tp:/tp $plr1 $plr2 = >>>
         }
     }
     broadcast(@player.' has teleported '.@plr1.' to '.@plr2)
-    runas(~console,'/teleport '.@plr1.' '.@plr2)
+    runas(~console,'/minecraft:tp '.@plr1.' '.@plr2)
 
 <<<
 tphere:/tphere $plr = >>>
@@ -96,7 +96,7 @@ tphere:/tphere $plr = >>>
         }
     }
     broadcast(@player.' has teleported '.@vic.' to '.@player)
-    runas(~console,'/teleport '.@vic.' '.@player)
+    runas(~console,'/minecraft:tp '.@vic.' '.@player)
 
 <<<
 helatp:/helatp $plr = >>>
@@ -144,6 +144,6 @@ helatp:/helatp $plr = >>>
         }
     }
     broadcast(@player.' has teleported '.@vic.' to them')
-    runas(~console,'/teleport '.@vic.' '.@player)
+    runas(~console,'/minecraft:tp '.@vic.' '.@player)
 
 <<<
