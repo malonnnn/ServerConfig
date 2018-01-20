@@ -4,14 +4,35 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.175411
+saturation: 5.0
+exhaustion: 2.6430001
 location:
   ==: org.bukkit.Location
-  world: lexstarklabs
-  x: -84.5
-  y: 79.0
-  z: 89.5
-  pitch: 8.622962
-  yaw: 201.8274
-inventory: {}
+  world: greenfield
+  x: -49.5
+  y: 78.0
+  z: -194.5
+  pitch: 16.049992
+  yaw: -265.09717
+inventory:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STEP
+    damage: 1
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL_BLOCK
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 7
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
+      blockMaterial: SIGN

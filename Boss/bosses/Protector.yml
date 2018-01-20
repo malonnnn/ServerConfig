@@ -1,0 +1,75 @@
+#  ------------------------------------------------------------------------
+#  Welcome to the individual Boss settings file.
+#  ------------------------------------------------------------------------
+#  Here you can configure the same settings as in
+#  '/boss menu' for this Boss
+# 
+#  It is recommended to use the GUI above to edit this file.
+#  We have documentation to each setting in the game.
+#  ------------------------------------------------------------------------
+
+Type: IRON_GOLEM
+Custom_Name: Protector
+Health: 300
+Dropped_Exp: '20'
+Potions:
+- INCREASE_DAMAGE 2
+- REGENERATION 1
+- SLOW 1
+Specific_Settings:
+  Glowing: false
+  Invulnerable: false
+  No_AI: false
+  Gravity: true
+  Can_Pickup_Items: true
+  Silent: true
+  Auto Target: true
+Attributes:
+  Armor Toughness: 10.0
+  Knockback Resistance: 3.0
+  Follow Range: 30.0
+  Armor: 30.0
+  Movement Speed: 0.25
+  Max Health: 100.0
+Skills:
+- Throw Player
+- Shoot Arrow
+- Shoot Fireball
+- Bomb
+- Strike Lightning
+Death:
+  Commands: '[]'
+  Reinforcements:
+    Vanilla:
+    - SILVERFISH, 5
+  Lightning: true
+Spawn:
+  Commands: '[]'
+Spawning:
+  Worlds: {}
+  Biomes: {}
+  Regions:
+    Boss: []
+    Towny: []
+    Factions: []
+    Residence: []
+    WorldGuard: []
+  Conditions:
+    Rain: false
+    Thunder: false
+    Light: 0 - 15
+    Time: 5400 - 5400
+    Height: 0 - 256
+Sounds:
+  Debug: false
+  Remapped:
+    ENTITY_ENDERDRAGON_HURT: ENTITY_ENDERDRAGON_HURT, 1.0, 0.5
+Equipment:
+  BOOTS:
+    dropChance: 0.0
+Drops:
+  0:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: SHIELD
+    dropChance: 1.0

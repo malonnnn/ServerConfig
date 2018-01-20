@@ -182,7 +182,7 @@ register_command(fightclub,
                     if(@otherRegisteredPlayers == false){
                         export(@plr.'fightClub','true')
                         tmsg(@plr,color(red).'You have registered for Fight Club!')
-                        broadcast(@plr.color(red).' wants to fight in Fight Club! '.color(gold).'/warp fightclub')
+                        broadcast(@plr.color(red).' wants to fight in Fight Club!')
                     }
                 }else{
                     tmsg(@plr,color(red),'Sorry, Fight Club is full right now!')
