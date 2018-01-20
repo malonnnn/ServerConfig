@@ -9,7 +9,7 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '1':
+  '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -23,22 +23,32 @@ health: 20.0
 hunger: 20
 exp: 0.0
 exp-level: 0
-remainingAir: 85
+remainingAir: 300
 fireTicks: -20
 saturation: 5.0
 exhaustion: 3.4429972
-armor_contents: {}
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 location:
   ==: org.bukkit.Location
   world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: -174.8999
+  x: 0.8964863438286552
+  y: 80.3576627272476
+  z: -205.98108205514256
+  pitch: 71.41778
+  yaw: 135.25404
 potion_effect:
   '0':
     type: DAMAGE_RESISTANCE
     level: 5
-    duration: 199684
+    duration: 185172
