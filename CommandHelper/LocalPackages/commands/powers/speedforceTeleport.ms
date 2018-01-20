@@ -77,7 +77,18 @@ register_command(speedforceteleport,
                 unbind(@asdf)
                 tmsg(@vic,color(RED).'You can use commands again!')
             ))
-            
+                            @plrclass = _getheroclass(@plr)
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+                }catch(Exception @e){
+                    @hero = array()
+                    @hero['name'] = @plr
+                }
+                @plrHero = @hero
+                set_timeout(3000,closure(
+                    broadcast(color(DARK_RED).color(BOLD).'Whoosh!'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(RED).color(BOLD).' has brought '.color(WHITE).@vicHero['name'].color(YELLOW).color(BOLD).' Into the Speedforce!');
+                ))
+            }
         }
     )
 )
