@@ -86,7 +86,6 @@ register_command(speedforceteleport,
                     @vicHero = array()
                     @vicHero['name'] = @player
                 }
-                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 @plrclass = _getheroclass(@plr)
                 try{
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
