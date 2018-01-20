@@ -11,14 +11,11 @@
             'speech': @plr.", I am the daughter of Ra's Al Ghul!",
             'powers': array(
                 "/buff",
-                "/jump 0-3",
-                "/run 0-3",
+                "/jump 0-2",
+                "/run 0-2",
                 "/haste 0-2"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 1 true",
-                "/effect ". @plr ." 21 9999 5 true",
-                "/effect ". @plr ." 11 9999 1 true",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&2Talia's_&8Sword",
                 "/give ". @plr ." minecraft:bow 1 49:1 name:&2Talia's_&8Bow",
                 "/shot give ". @plr ." pistol",
