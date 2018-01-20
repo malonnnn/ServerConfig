@@ -1,0 +1,573 @@
+#BlivTrails Config File
+database:                                           #mySQL is required for cross-server trails
+    # mysql: true                                   #true for mySQL, false for flatfile
+    # url: jdbc:mysql://localhost:3306/minecraft    #JDBC url, including ip/hostname, port and database name
+    # username: minecraft                           #Database Username
+    # password: minecraft1                          #Database password
+    mysql: false
+    url: jdbc:mysql://localhost:3306/minecraft
+    username: minecraft
+    password: minecraft1
+
+hooks:
+    #By default, true will attempt to hook.
+    #If the plugin is not found, will continue down the
+    #list to find an enabled/hook-enabled plugin
+    vanishnopacket: true
+    essentials: true
+    
+misc:
+    #Miscellaneous options
+    debug: false
+    #Turn on/off configuration checking
+    #May cause stutters/freezes when reloading. If your config is properly set up, you can safely disable this option
+    config-checking: true
+    #Message Printout Options
+    #Whether to keep (true) or strip (false) colours when printing trail name from config
+    trail-name-colour: true
+    
+    #GUI Item
+    enable: false
+    #This item can be given to players on join,
+    #and when right clicked (used), will open the gui
+    gui-item:
+        position: 0
+        material: REDSTONE
+        name: "&eTrail GUI"
+        lore: {}
+    #Will only give to players with permission blivtrails.gui-item
+    #MAKE ME FALSE
+    gui-give-on-join: false
+
+menu:
+    #Main Menu
+    main:
+        #size: Must be a multiple of 9
+        size: 54
+        minimise-on-select: true
+    #These extras are customisable blocks for information, or however else you can use them
+    extras:
+        #guiItem1:                      #Unique name
+        #    title: "&eInformation"     #Display name for the item
+        #    material: PAPER            #Material from Bukkit Material List (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+        #    position: 50               #Position (Restrictions relative to the menu it is placed in)
+        #    menu: MAIN                 #Menu to display in. One of the following: MAIN, OPTIONS, TYPE, LENGTH, HEIGHT, COLOUR
+        #    damage: 0                  #Damage/Meta value for the item. Most dont require any and can be kept as 0
+        #    lore:                      #Lore to appear on the item
+        #    - "&6Line One"
+        #    - "&6Line Two"
+        information-item:
+            title: "&eInformation"
+            material: BOOK
+            position: 40
+            menu: MAIN
+            damage: 0
+            lore:
+            - "&7How does this plugin work?"
+            - "&7Simply click a trail icon that"
+            - "&7you have permission to enable."
+            - "&7Click the 'options' icon to change"
+            - "&7your trail's length, type or height!"
+            - "&7Thanks for using BlivTrails!"
+        info-type-trace:
+            title: "&f&l&oInformation"
+            material: BOOK
+            position: 12
+            menu: TYPE
+            damage: 0
+            lore:
+            - "&7The 'Trace' Trail Type is the traditional"
+            - "&7trail. This trail type appears in"
+            - "&7a line following your every move."
+        info-type-random:
+            title: "&f&l&oInformation"
+            material: BOOK
+            position: 13
+            menu: TYPE
+            damage: 0
+            lore:
+            - "&7A 'Random' Trail Type spawns your trail"
+            - "&7all around your body in a 'starfield' kind"
+            - "&7of pattern."
+        info-type-dynamic:
+            title: "&f&l&oInformation"
+            material: BOOK
+            position: 14
+            menu: TYPE
+            damage: 0
+            lore:
+            - "&7The 'Dynamic' Trail Type spawns particles"
+            - "&7similarly to the 'Trace' style, but gives"
+            - "&7their speed some variability, making the"
+            - "&7trail appear to fray in all directions."
+
+    options:
+        #size: Must be a multiple of 9
+        size: 18
+        #back-button.position: Number between 0 and size - 1
+        #                   Use -1 to disable the back button
+        back-button:
+            position: 9
+            #Barrier is a great option on 1.8+
+            #material: BARRIER
+            material: PAPER
+        config:
+        #Player Config Options:
+        #enabled: If the option is available for players to change to
+            type:
+                enabled: true
+                position: 3
+                trace: true
+                random: true
+                dynamic: true
+            length:
+                enabled: true
+                position: 4
+                short: true
+                medium: true
+                long: true
+            height:
+                enabled: true
+                position: 5
+                feet: true
+                waist: true
+                halo: true
+            colour:
+                enabled: true
+                position: 13
+                size: 36
+                #Position of each colour
+                #Setting a value to -1 will disable it
+                #(Colours are sorted by damage/meta values)
+                black-pos: 1
+                red-pos: 2
+                green-pos: 3
+                brown-pos: 4
+                blue-pos: 5
+                purple-pos: 6
+                cyan-pos: 7
+                light-grey-pos: 10
+                grey-pos: 11
+                pink-pos: 12
+                lime-pos: 13
+                yellow-pos: 14 
+                light-blue-pos: 15
+                magenta-pos: 16
+                orange-pos: 21
+                white-pos: 23
+                random-pos: 22
+                back-button-pos: 31
+trails:
+    scheduler:
+        #These options are relevant to trail display times.
+        #When a player stops moving, the trail has <configurable> seconds before it stops displaying.
+        #How often to check if trails are due to stop displaying
+        check-time: 1.00
+        #How long trails last in seconds
+        trail-length: 3
+    misc:
+        #Disable the trail when not moving
+        #If this is true, trails will not expire
+        #(This option requires a reload of the server, or reload of the plugin (SAFE))
+        display-when-still: false
+        #Should a trail activate while spinning
+        #This is ignored when 'display-when-still: true'
+        display-when-spinning: false
+        #How many seconds should we wait before enabling a trail after a players join.
+        #(Note: Lower numbers have a higher chance of not loading a player's previous trail on server-change)
+        join-activation-delay: 5
+    #Global Trail Defaults
+    defaults:
+        #Global | How fast to display the trail in ticks
+        #20 Ticks = 1 Second | Default is 1 tick
+        display-speed: 1
+        #Amplification of Types/Styles
+        type:
+            #Variation in positions (Centered on Players Waist)
+            #Blocks in each direction
+            random:
+                x-variation: 1.00
+                y-variation: 1.00
+                z-variation: 1.00
+            dynamic:
+                #Change the variation in spread of a dynamic trail
+                #A lower number here is less spread.
+                spray-variation: 1.00
+        #Location of height parameters
+        height:
+            #(Y Position | Players are approximately ~1.9 blocks high)
+            feet-location: 0.10
+            waist-location: 1.00
+            halo-location: 1.99
+    #Trail Example -----------------------------------------------------------------------------------------------
+    # flame:                            #Trail Type
+        # display: true                 #Display in the menu?
+        # position: 1                   #Position in the menu
+        # options:                      #Default Options:
+            # type: "trace"             #Default Trail Type (trace, random, dynamic)
+            # length: "short"           #Default Length (short, medium, long)
+            # height: "feet"            #Default Height (feet, waist, halo)
+            # colour: "lime"            #Default colour (applicable to colourable trails only)
+            # display-speed: 1          #Display speed in Ticks per Second (20 Ticks = 1 Second)
+            # defaults:                 #Player Configurable options (OPTIONAL)
+            #   random:                 #See above for option descriptions
+            #       x-variation: 1.00
+            #       y-variation: 1.00
+            #       z-variation: 1.00
+            #   dynamic:
+            #       spray-variation: 1.00
+            #   height:
+            #       feet-location: 0.10
+            #       waist-location: 1.00
+            #       halo-location: 1.99
+        # material: FIREBALL            #Item ID to use in the menu (USE https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html)
+        # name: "&cFlame"               #Name of trail in menu
+        # lore:                         #Trail description/lore
+        # - "&aLine One"                #To disable, use {}. Example:
+        # - "&bLine Two"                #lore: {}
+        # - "&cLine Three"              #
+#---------------------------------------------------------------------------------#
+#                   Special GUI Objects                                           #
+#---------------------------------------------------------------------------------#
+    remove-trail:
+        display: true
+        position: 30
+        #Barrier is a great option on 1.8+
+        #material: BARRIER
+        material: PAPER
+        name: "&cRemove Trail"
+        lore: {}
+    options-menu:
+        display: true
+        position: 32
+        material: CHEST
+        name: "&eOptions"
+        lore: {}
+#---------------------------------------------------------------------------------#
+#                   Trails                                                        #
+#---------------------------------------------------------------------------------#
+    angry-villager:
+        display: true
+        position: 0
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: COAL
+        name: "&cLightning Cloud"
+        lore: {}
+    barrier:
+        display: true
+        position: 1
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: BEDROCK
+        name: "&cBarrier"
+        lore: {}
+    cloud:
+        display: true
+        position: 2
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: FEATHER
+        name: "&bCloud"
+        lore: {}
+    criticals:
+        display: true
+        position: 3
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: DIAMOND_SWORD
+        name: "&eCriticals"
+        lore: {}
+    criticals-magic:
+        display: true
+        position: 4
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: BREWING_STAND_ITEM
+        name: "&dCritical Magic"
+        lore: {}
+    drip-lava:
+        display: true
+        position: 5
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: LAVA_BUCKET
+        name: "&cDripping Lava"
+        lore: {}
+    drip-water:
+        display: true
+        position: 6
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: WATER_BUCKET
+        name: "&bDripping Water"
+        lore: {}
+    enchant:
+        display: true
+        position: 7
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: ENCHANTMENT_TABLE
+        name: "&aEnchantment"
+        lore: {}
+    explosion-smoke:
+        display: true
+        position: 8
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: TNT
+        name: "&cExplosive Poof"
+        lore: {}
+    firework:
+        display: true
+        position: 9
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: FIREWORK
+        name: "&eSpark"
+        lore: {}
+    flame:
+        display: true
+        position: 10
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: FIREBALL
+        name: "&cFlame"
+        lore: {}
+    happy-villager:
+        display: true
+        position: 11
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: EMERALD
+        name: "&aGreen Sparkle"
+        lore: {}
+    hearts:
+        display: true
+        position: 12
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: CAKE
+        name: "&dHearts"
+        lore: {}
+    lava:
+        display: true
+        position: 13
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: RED_ROSE
+        name: "&cLava"
+        lore: {}
+    note:
+        display: true
+        position: 14
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+            colour: "lime"
+        material: JUKEBOX
+        name: "&aNote"
+        lore: {}
+    portal:
+        display: true
+        position: 15
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: OBSIDIAN
+        name: "&5Portal"
+        lore: {}
+    redstone:
+        display: true
+        position: 16
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+            colour: "red"
+        material: REDSTONE
+        name: "&cRedstone"
+        lore: {}
+    slime:
+        display: true
+        position: 17
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: SLIME_BALL
+        name: "&aSlime"
+        lore: {}
+    smoke:
+        display: true
+        position: 18
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: FURNACE
+        name: "&7Smoke"
+        lore: {}
+    snow-shovel:
+        display: true
+        position: 19
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: DIAMOND_SPADE
+        name: "&fSnow Shovel"
+        lore: {}
+    snow-ball:
+        display: true
+        position: 20
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: SNOW_BALL
+        name: "&fSnow Ball"
+        lore: {}
+    spell:
+        display: true
+        position: 21
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+            colour: purple
+        material: POTION
+        name: "&5Spell"
+        lore: {}
+    spell-instant:
+        display: true
+        position: 22
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: ENCHANTED_BOOK
+        name: "&5Instant Spell"
+        lore: {}
+    spell-mob:
+        display: true
+        position: 23
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+            colour: red
+        material: BLAZE_ROD
+        name: "&eMob Spell"
+        lore: {}
+    spell-witch:
+        display: true
+        position: 24
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: SPIDER_EYE
+        name: "&5Witch Magic"
+        lore: {}
+    town-aura:
+        display: true
+        position: 25
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: ARMOR_STAND
+        name: "&fTown Aura"
+        lore: {}
+    water-drop:
+        display: true
+        position: 26
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: PRISMARINE_CRYSTALS
+        name: "&bWater Drop"
+        lore: {}
+    water-splash:
+        display: true
+        position: 27
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: PRISMARINE_SHARD
+        name: "&bWater Splash"
+        lore: {}
+    end-rod:
+        display: true
+        position: 28
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: END_ROD
+        name: "&5End Rod"
+        lore: {}
+    dragon-breath:
+        display: true
+        position: 29
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: DRAGONS_BREATH
+        name: "&5Dragon's Breath"
+        lore: {}
+    damage-indicator:
+        display: true
+        position: 33
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: IRON_SWORD
+        name: "&cDamage Indicator"
+        lore: {}
+    sweep-attack:
+        display: true
+        position: 34
+        options:
+            type: "trace"
+            length: "short"
+            height: "feet"
+        material: WOOD_SWORD
+        name: "&7Sweep Attack"
+        lore: {}
+    

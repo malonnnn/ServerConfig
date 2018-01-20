@@ -1,3 +1,27 @@
+1.63
+
+    Boss bars doesn't work in 1.8.X so visual reloads stopped working in 1.8 in 1.62, that is fixed now
+    Added Suggest_Resource_Pack_On_Join in basic.yml (work as "true" or "false"(string))
+
+1.62
+
+    Added option Use_One_Line_For_Attachments for update lore
+        If you don't want to split attachments to new lines then put this true
+    Changed PlayerPickupItemEvent to EntityPickupItemEvent
+        PlayerPickupItemEvent was deprecated
+    Optimized invisible projectile and block break animation packet sendings
+    Added /csp give command to give weapon with update skin instatly
+    Camera Recoil can now be used with fully automatic weapons etc.
+        Player can walk while shooting now even if Camera Recoil is used
+    Added PlaceholderAPI support for trails (change trail based on some placeholder)
+    Added Exp, Exp Level, Boss Bar & BossBar Progress support for visual reload
+
+1.61
+
+    Possible fix for nulls in WorldGuard flag addon plugin
+        I hope it worked, I haven't been able to reproduce that null
+        Also flag addon plugin doesn't no longer generate automatically if Generate_CrackShot_Flag_Addon is missing from file.yml
+
 1.60
 
     Fixed shooter knockback on damage

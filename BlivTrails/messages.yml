@@ -1,0 +1,110 @@
+#BlivTrails Messages File
+
+#Every chat colour is supported
+#Including formatting codes
+
+messages:
+    #Set prefix to "" to disable
+    prefix: ""
+    #Options Menu Titles
+    #Titles should be different for each menu to avoid conflict.
+    titles:
+        main-menu: "Trail GUI"
+        main-options: "Trail Options"
+        type: "Type Options"
+        length: "Length Options"
+        height: "Height Options"
+        colours: "Colour Options"
+    indicators:
+        have-permission: "&aHave Permission"
+        dont-have-permission: "&cNo Permission"
+        trail-selected: "&aSelected!"
+    no-permission:
+        trail: "&cYou don't have permission to use that trail!"
+        options:
+            base: "&cYou don't have permission to use the options menu!"
+            type:
+                base: "&cYou don't have permission to access the type menu!"
+                trace: "&cYou don't have permission to use the trace type!"
+                random: "&cYou don't have permission to use the random type!"
+                dynamic: "&cYou don't have permission to use the dynamic type!"
+            length:
+                base: "&cYou don't have permission access the length menu!"
+                short: "&cYou don't have permission have a short trail!"
+                medium: "&cYou don't have permission have a medium length trail!"
+                long: "&cYou don't have permission have a long trail!"
+            height:
+                base: "&cYou don't have permission to access the height menu!"
+                feet: "&cYou don't have permission to place the trail at your feet!"
+                waist: "&cYou don't have permission to place the trail at your waist!"
+                halo: "&cYou don't have permission to use the trail as a halo!"
+            colour:
+                base: "&cYou don't have permission access the colour menu!"
+                colour: "&cYou don't have permission to change to that colour!"
+                random: "&cYou don't have permission to your colour to random!"
+    error:
+        unexpected: "&cAn unexpected error has occurred"
+        trail-error: "&cYour trail has been causing issues, and was forcibly removed."
+        no-exist: "&cError! &fThe item you selected is not attached to any trail."
+        no-trail-remove: "&cYou don't have a trail to remove!"
+        no-trail: "&cSet a Trail First!"
+        player-no-trail: "&cPlayer doesn't have an active trail, or isn't online."
+        misplaced-gui-option: "&cMisplaced GUI Option! Check that every location is under the gui size, or disabled"
+        player-misplaced-gui-option: "&cThere is a problem with the trails config. Send this to a server operator"
+        option-trail-no-support: "&cYour trail doesn't support this option!"
+    generic:
+        trail-applied: "&a%trail% &aTrail Applied!"
+        trail-removed: "&aTrail &aRemoved"
+        enabled-lore: "&aENABLED"
+        force-remove-player: "&cYour trail has been forcefully removed."
+        force-remove-receive: "&aSuccessfully removed %player%'s trail."
+        force-add-trail: "&aSuccessfully added trail to &b%player%"
+    options:
+        supports-colours: "&aYour trail supports colours"
+        doesnt-support-colours: "&cYour trail doesn't support colours!"
+        supports-randomisation: "&aYour trail supports randomisation"
+        doesnt-support-randomisation: "&cYour trail doesn't support randomisation"
+        supports-dynamic: "&aYour trail can be dynamic"
+        doesnt-support-dynamic: "&cYour trail can't be dynamic"
+        doesnt-apply-to-note: "&cThis colour does not apply to notes"
+        titles:
+            back: "&l&oBack"
+            information: "&lInformation"
+            categories:
+                type: "&oType"
+                length: "&lLength"
+                height: "&lHeight"
+                colour: "&lColour"
+            type:
+                trace: "&lTrace"
+                random: "&lRandom"
+                dynamic: "&lDynamic"
+            length:
+                short: "&lShort"
+                medium: "&lMedium"
+                long: "&lLong"
+            height:
+                feet: "&lFeet"
+                waist: "&lWaist"
+                halo: "&lHalo"
+    information:
+        type:
+            trace:
+            - "&aTrace follows your exact"
+            - "&amovement path"
+            random:
+            - "&aRandom randomly dots particles"
+            - "&aaround your position"
+            dynamic:
+            - "&aDynamic is Trace, although the particles fray"
+            - "&7(May not work with some trails)"
+        length:
+            info:
+            - "&aAdjust the length of the trail"
+            - "&7(May not work well with some trails"
+        height:
+            info:
+            - "&aSets the position where the"
+            - "&atrail will apear from"
+    #Also known as colors:
+    #colours: 
