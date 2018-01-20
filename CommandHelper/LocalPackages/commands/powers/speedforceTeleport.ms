@@ -89,7 +89,6 @@ register_command(speedforceteleport,
                 set_timeout(3000,closure(
                     broadcast(color(DARK_RED).color(BOLD).'Whoosh!'.color(YELLOW).color(BOLD).'! '.@plrHero['name'].color(RED).color(BOLD).' has brought '.color(WHITE).@vicHero['name'].color(YELLOW).color(BOLD).' Into the Speedforce!');
                 ))
-            }
         }
     )
 )
