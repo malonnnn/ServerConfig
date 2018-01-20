@@ -77,7 +77,8 @@ register_command(speedforceteleport,
                 unbind(@asdf)
                 tmsg(@vic,color(RED).'You can use commands again!')
             ))
-                            @plrclass = _getheroclass(@plr)
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @plrclass = _getheroclass(@plr)
                 try{
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
                 }catch(Exception @e){
