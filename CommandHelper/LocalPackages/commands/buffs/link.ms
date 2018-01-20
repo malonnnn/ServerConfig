@@ -23,7 +23,7 @@
                 "/buff",
                 "/d wolf",
                 "/wallclimb <on/off>",
-                "/arrow weakness"
+                "/arrow bomb"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 9 true",
