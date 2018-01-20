@@ -54,12 +54,13 @@ Spawning:
     Factions: []
     Residence: []
     WorldGuard:
-          - Protectorboss 
+    - Limit: -1
+      Name: Protectorboss
   Conditions:
     Rain: false
     Thunder: false
     Light: 0 - 15
-    Time: 5400 - 5400
+    Time: '0'
     Height: 0 - 256
 Sounds:
   Debug: false
@@ -69,7 +70,7 @@ Equipment:
   BOOTS:
     dropChance: 0.0
 Drops:
-  0:
+  '0':
     item:
       ==: org.bukkit.inventory.ItemStack
       type: SHIELD
