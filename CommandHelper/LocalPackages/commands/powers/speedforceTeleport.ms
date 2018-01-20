@@ -78,6 +78,15 @@ register_command(speedforceteleport,
                 tmsg(@vic,color(RED).'You can use commands again!')
             ))
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @vicclass = _getheroclass(@player)
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@vicclass.'.ms')
+                    @vicHero = @hero
+                }catch(Exception @e){
+                    @vicHero = array()
+                    @vicHero['name'] = @player
+                }
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 @plrclass = _getheroclass(@plr)
                 try{
                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
