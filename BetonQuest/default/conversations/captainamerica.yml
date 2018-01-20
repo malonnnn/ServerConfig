@@ -1,104 +1,104 @@
- ### Get Cap's Shield Back ###
- quester: 'CaptainAmerica'
- first: 'accept'
- final_events: ''
- # You want player to move.
- stop: 'false'
- NPC_options:
- ### First Question ###
-     accept:
-         text: 'Hey %player%! Will you help me out?'
-         conditions: ''
-         events: ''
-         pointer: 'player_accepts,player_declines'
- ### More Quests ###
-     no_quests:
-       text: 'Unfortunatelly I don''t have anything else. Come back later.'
-       pointer: 'questions,bye'
-     more_quests:
-       text: 'Do you have some other quests?'
-       conditions: 'shield_paid'
-       pointer: 'no_quests'
- ### First Question NPC response ###
-     caquest_declined:
-       text: 'Oh, sorry for disturbing you.'
-           conditions: ''
-           events: ''
-           pointer: ''
-     caquest_accepted:
-       text: 'Really? Thanks!'
-         conditions: ''
-           events: ''
-           pointer: 'player_helps_npc'
- ### Quest Explanation ###
-     ca_explains_quest:
-       text: 'I seem to have left my shield in Star City can you retrieve it for me?'
-         conditions: ''
-         events: ''
-         pointer: 'player_yes,player_no'
-     ca_location_quest:
-       text: 'It is near the corddinates -30x & -45z You''ll have to fight someone for it!'
-           conditions: ''
-         events: ''
-         pointer: 'player_willdo'
- ### Shield Reward ###
-     shield_reward:
-       text: 'Thanks Soldier For Your Hard Work!'
-       conditions: ''
-           events: 'remove_shield,tag_shield_paid'
-           pointer: 'reward_text'
-     reward_text:
-       text: 'Here is your reward.'
-       conditions: ''
-         events: 'tag_shield_done,shield_reward'
-         pointer: 'bye'
- ### Has Shield/Doesnt Have Shield ###
-     does_have_shield:
-       text: 'Where? I can''t see anything in your inventory...'
-       conditions: 'has_shield'
-       pointer: 'shield_reward'
-     doesnt_have_shield:
-       text: 'Where? I can''t see anything in your inventory...'
-       conditions: '!has_shield'
-       pointer: 'now,wood_go,questions'
-     player_options: player_accepts
- ### First Question Response ###
-     player_accepts:
-       text: 'What''s up?'
-         conditions: ''
-           events: 'event_shield_start'
-         pointer: 'caquest_accepted'
-     player_declines:
-       text: 'I''m very busy, sorry.'
-           conditions: ''
-           events: ''
-           pointer: 'caquest_declined'
- ### Player has accepted the CA Quest ###
-     player_helps_npc:
-       text: 'What can I help you with?'
-         conditions: ''
-       events: ''
-         pointer: 'ca_explains_quest'
- ### Player Answer For Quest ###
-     player_yes:
-       text: 'Sure Thing! Where is it?'
-           conditions: ''
-           events: ''
-           pointer: 'ca_location_quest'
-     player_no:
-       text: 'No Sorry.'
-           conditions: ''
-           events: ''
-         pointer: ''
- ### Player Location Answer ###
-     player_willdo
-       text: 'Okay, Thanks!'
-           conditions: ''
-           events: ''
-         pointer: ''
- ### GoodBye ###
-     bye:
-       text: 'Goodbye!'
-       conditions: ''
-           events: ''
-           pointer: ''
+### Get Cap's Shield Back ###
+quester: 'CaptainAmerica'
+first: 'accept'
+final_events: ''
+# You want player to move.
+stop: 'false'
+NPC_options:
+### First Question ###
+  accept:
+    text: 'Hey %player%! Will you help me out?'
+    conditions: ''
+    events: ''
+    pointer: 'player_accepts,player_declines'
+### More Quests ###
+  no_quests:
+    text: 'Unfortunatelly I don''t have anything else. Come back later.'
+    pointer: 'questions,bye'
+  more_quests:
+    text: 'Do you have some other quests?'
+    conditions: 'shield_paid'
+    pointer: 'no_quests'
+### First Question NPC response ###
+  caquest_declined:
+    text: 'Oh, sorry for disturbing you.'
+    conditions: ''
+    events: ''
+    pointer: ''
+  caquest_accepted:
+    text: 'Really? Thanks!'
+    conditions: ''
+    events: ''
+    pointer: 'player_helps_npc'
+### Quest Explanation ###
+  ca_explains_quest:
+    text: 'I seem to have left my shield in Star City can you retrieve it for me?'
+    conditions: ''
+    events: ''
+    pointer: 'player_yes,player_no'
+  ca_location_quest:
+    text: 'It is near the corddinates -30x & -45z You''ll have to fight someone for it!'
+    conditions: ''
+    events: ''
+    pointer: 'player_willdo'
+### Shield Reward ###
+  shield_reward:
+    text: 'Thanks Soldier For Your Hard Work!'
+    conditions: ''
+    events: 'remove_shield,tag_shield_paid'
+    pointer: 'reward_text'
+  reward_text:
+    text: 'Here is your reward.'
+    conditions: ''
+    events: 'tag_shield_done,shield_reward'
+    pointer: 'bye'
+### Has Shield/Doesnt Have Shield ###
+  does_have_shield:
+    text: 'Where? I can''t see anything in your inventory...'
+    conditions: 'has_shield'
+    pointer: 'shield_reward'
+  doesnt_have_shield:
+    text: 'Where? I can''t see anything in your inventory...'
+    conditions: '!has_shield'
+    pointer: 'now,wood_go,questions'
+player_options:
+### First Question Response ###
+  player_accepts:
+    text: 'What''s up?'
+    conditions: ''
+    events: 'event_shield_start'
+    pointer: 'caquest_accepted'
+  player_declines:
+    text: 'I''m very busy, sorry.'
+    conditions: ''
+    events: ''
+    pointer: 'caquest_declined'
+### Player has accepted the CA Quest ###
+  player_helps_npc:
+    text: 'What can I help you with?'
+    conditions: ''
+    events: ''
+    pointer: 'ca_explains_quest'
+### Player Answer For Quest ###
+  player_yes:
+    text: 'Sure Thing! Where is it?'
+    conditions: ''
+    events: ''
+    pointer: 'ca_location_quest'
+  player_no:
+    text: 'No Sorry.'
+    conditions: ''
+    events: ''
+    pointer: ''
+### Player Location Answer ###
+  player_willdo
+    text: 'Okay, Thanks!'
+    conditions: ''
+    events: ''
+    pointer: ''
+### GoodBye ###
+  bye:
+    text: 'Goodbye!'
+    conditions: ''
+    events: ''
+    pointer: ''
