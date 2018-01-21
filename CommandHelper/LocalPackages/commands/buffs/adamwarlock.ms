@@ -13,6 +13,7 @@
                 "/buff",
                 "/fly",
                 "/intangible",
+                "/tangible",
                 "/cast forcefield",
                 "/cast stonetouch",
                 "/cast turnwater",
