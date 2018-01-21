@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1516511058878
+last_cast: 1516556714612
 cooldown_expiration: 0
 last_death_location: -88.0878906617808,79.0,144.5792768465345,lexstarklabs,135.90796,1.605063
 fall_protection_count: 0
@@ -45,10 +45,10 @@ spells:
     last_earn: 1516492687253
     cooldown_expiration: 1516511075976
   soulstonetrap:
-    cast_count: 26
-    last_cast: 1516511035420
-    last_earn: 1516511065474
-    cooldown_expiration: 1516511155420
+    cast_count: 27
+    last_cast: 1516556703874
+    last_earn: 1516556734003
+    cooldown_expiration: 1516556823874
   acidshot:
     cast_count: 1
     last_cast: 1516419383665
@@ -229,6 +229,11 @@ spells:
     last_cast: 1496270989498
     last_earn: 0
     cooldown_expiration: 1496270991498
+  turnwater:
+    cast_count: 1
+    last_cast: 1516556714613
+    last_earn: 0
+    cooldown_expiration: 1516556729613
   groundpound:
     cast_count: 0
     last_cast: 1511553275211
@@ -341,9 +346,9 @@ spells:
     cooldown_expiration: 1515893060235
   soulstoneblast:
     cast_count: 7
-    last_cast: 1516511037725
+    last_cast: 1516556703274
     last_earn: 1515905469694
-    cooldown_expiration: 1516511067725
+    cooldown_expiration: 1516556733274
   petrify|3:
     cast_count: 101
     last_cast: 1492367168457
@@ -1077,6 +1082,41 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
+  soulstone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: INK_SACK
+      damage: 14
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6soulstonetrap§f (§3SoulStone§f)
+        lore:
+        - §3§oBound to xMqthy
+        - Knows 2 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAF1QzU7bYBAcFBOciB8JTggOSHAkKJjYcS4VkahEJUKlIs7uxt4PPmF/n7E3oRyQuPAMPECvPfQBeAYOFQ/Ac/RUx1Vz6N52dnZmdttAG84dmcSFK5zlKQmjVdpJWoo17GLR3hku0Pw2upXrexfLFIueclTmnKZYmTOloLwJJyNDx+nXL3h4GzpYnbWR6IxLoSwHFmjz1/t55VWrRjrBngq8Qz8MuBOyCju9Xph0Bl7Q64TBODg86vtd36tiLLNSHEsU29QW2FKsPOV55PsD2g/7atAdjLteQv39bgNLUy5KbQ2AxTbW6qSRNlM2Yov7xn+hKxYaWJ1j45RKqbAFoIX1oUihxxPhkU200pVwezZz4F5efjoZ2VJ+737YHj6esoPWDDrjav3n1svr89OP7000h5mdGDneQ10unIvUCtyMtLmu374ytzinjLFxxdVndHxAIhTfXOTMSQOtzzkXJH+PmqnU3PWPtxOdZ9VdO//iAX8A4fBVl9MBAAA=
+    wand:
+      template: soulstone
+      owner: xMqthy
+      active_spell: soulstonetrap
+      mana: 227.01001
+      mana_timestamp: 1516556705870
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: fef2f22a559a,87f909b02da7,0
+      version: 5
+      spell_inventory:
+        soulstonetrap: 0
+        soulstoneblast: 1
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1110,7 +1150,7 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2706
+  sp: 2712
 properties:
   mana: 0.0
 classes: {}
