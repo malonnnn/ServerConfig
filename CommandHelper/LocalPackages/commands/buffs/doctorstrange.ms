@@ -17,7 +17,9 @@
                 "/run 0-1",
                 "/haste 0-1",
                 "/float <up/down/pause/unpause/stop>",
-                "/cast time"
+                "/cast time",
+                "/gravityshift",
+                "/gravityshiftstop"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",

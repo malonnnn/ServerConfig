@@ -6,8 +6,14 @@ register_command(gravityshift,
         permission: 'powers.gravityshift',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
+            if(has_bind(@sender.'gravityShift')){
+                sudo('/gravityshiftstop')
+            }
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('lastUsedGravityShift',5,@sender)
+
+            tmsg(@sender,color(RED).'Gravity shift active!')
+
             sudo('/float up')
             export(@sender.'activeGravityShift',TRUE)
             bind(player_move, array('id': @sender.'gravityShift'), array('player': @sender), @e,@sender){

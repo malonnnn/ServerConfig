@@ -1,4 +1,9 @@
 bind(player_death, null, null, @event,
+
+    if(@event['cause']['cause'] == 'VOID'){
+        die()
+    }
+
     @player = player()
     @world = pworld()
    
