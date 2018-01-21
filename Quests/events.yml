@@ -1,26 +1,38 @@
 events:
   ExampleEvent:
-    message: '<red>Event happened!'
+    message: <red>Event happened!
     potion-effect-types:
-      - Speed
-      - Jump
+    - Speed
+    - Jump
     potion-effect-durations:
-      - 100
-      - 25
+    - 100
+    - 25
     potion-effect-amplifiers:
-      - 3
-      - 2
+    - 3
+    - 2
   GoodJob:
-    message: "<green>Good job!"
+    message: <green>Good job!
   DeathFail:
     fail-quest: true
   FishingStart:
-    message: "<yellow>Type 'rod' in chat to get a fishing rod!"
+    message: <yellow>Type 'rod' in chat to get a fishing rod!
   RodEvent:
-    message: "<green>Here you go!"
+    message: <green>Here you go!
     items:
-      - name-fishing_rod:amount-1
+    - name-fishing_rod:amount-1
   TimerEvent:
     timer: 40
   CancelTimer:
     cancel-timer: true
+  SlayerEvents:
+    message: Kill Varon
+    explosions:
+    - greenfield -16.0 68.0 -205.0
+    - greenfield -14.0 68.0 -212.0
+    - greenfield -22.0 68.0 -204.0
+    effects:
+    - GHAST_SHRIEK
+    effect-locations:
+    - greenfield -18.0 68.0 -208.0
+    lightning-strikes:
+    - greenfield -18.0 68.0 -208.0

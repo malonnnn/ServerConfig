@@ -10,29 +10,34 @@
 
 
 
-last-created-npc-id: 0
+last-created-npc-id: 2
 npc:
-  '0':
+  '2':
     metadata:
-      player-skin-name: man
-    name: Traveler
-    uuid: 49695ad4-0a23-4ed9-acbd-de8d78fef1be
+      player-skin-use-latest: false
+      player-skin-name: notch
+    name: Quest Keeper
+    uuid: 2b3ee58c-522b-470a-8864-2a256196e0ba
     traits:
       location:
         world: greenfield
-        x: '-16.4639'
+        x: '-17.3663'
         y: '69.0'
-        z: '-206.4994'
-        yaw: '-45.322265625'
+        z: '-207.4125'
+        yaw: '143.54469299316406'
         pitch: '0.0'
       gravity:
         enabled: false
+      spawned: true
+      type: PLAYER
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
       owner:
         owner: MastTheWise
         uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
-      spawned: true
-      type: PLAYER
-    traitnames: location,gravity,owner,mounttrait,spawned,type,inventory,equipment
+    traitnames: location,gravity,owner,mounttrait,spawned,type,inventory,equipment,lookclose,poses
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
