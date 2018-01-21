@@ -3,10 +3,10 @@
 
 
 @hero = associative_array(
-            'name': '§8Black §6Racer(WW)',
+            'name': '§1B§el§4a§1c§ek §1§oR§e§oa§4§oc§1§oe§e§or§9(§eW§9)',
             'class': 'blackracerwilliewalker',
-            'sig': 'qndDgq/htoj1x28Hw7pUsA1Nw7/WF2uGMLlJb5tMQVpZbE+R8s8+ZZ2muK4SG/H9YhgE9Jpawjxny3r9ro+3drF5u9nTKluFPaazvpM9lsBRdvsaHGvlbcIFX5C19bLn+urq1czMMy2MF5FHudLiuYc6KOhP0ea4Ov2g/Otk7TShwPWB+OSNwoQIMKvKCLmvV6DKPN7GXiLA6XuZFqenofj4RdRG3o7JtxrySJVUWrNqEgtoyJ1HxyEtKrhk2UBkD8XAYXOW830qza9ieXH4W1gzz9H2nEcumi+4hqykp7PbpRQGrghkcRePT0kGBEuigRljroKq7i2h2zIzjO14ygWWJyFw5qLVPdCAnSEtAvxcRplrQ0n8M1Z4Bw+M2fKZps28ttd9BKAeB9eCxfaQt3YsDSWo6h53PxgybrtgaItH5o/kfAhw2alNzSV79HetG50jAQiY04LVFNaG/tN8NokKoxJFH0CrAjPkYOvaO+F4ENJBaLwRA1G5GmN0LjBCKKzbc7con5WuhIElmTCeDzzdWPwGp8vGiGNOvf3PFWV7gE6i20TPuFhc5iUBGOEQpnE1YbayjMQjnC4oNqf8nQOp7uKtDZdXC77EDrt4gbo7trR+eNJ4vPHnBBo0gbdyZbKsqRT5yjY8ObhXwEd8ZsdT7kwqZk2Zrbep2ODhges=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0ODE1MTUxNTA3OTYsInByb2ZpbGVJZCI6IjcxM2NhZTdhZWY2ZDRhMDY4OTIyNDc0MTQ1OWMxMmJjIiwicHJvZmlsZU5hbWUiOiJaYXJnb25fS2luZyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGVjYjIzYzgzMzM3NmE4ZWQ2ZWY5MjQ3MjFiNTRlOGI4MTc2MmVjYzYxMWE2Y2RiNjQwZGRhOTU4MjM4OGFlIn19fQ==',
+            'sig': 'VLCbC0ELZMfnDfQAHlGPsexIw8pHxMoyyd5CXOh/X2ivzrjfY5DfLAVmVMyrf8/11sfH1lJcbrtC/GGs/b75VnG52H1oDRn2UGUlWerDTXsuHd6mtvV+xDFdS/Klg8hX0ZN2Ygd428j8GWhWmWVQS45xREsvqo8QZrwlZz2zsKAVtOiKQ4qMUK/ZgL5lvGwFGUzYYuF6riIUjKAbGo9LyS709Q8HJVnDYdM46Y+kd+QJEeodz/fjtIswiGeA1s0He5B+aP4C5/JxBsqeUcj658sgewIvnRLpU66xcsxnbZUi9okQ/PPXW2MkQFQaxtNEXrjBPE8f5Zv6urQ4Fj0/BBRkyKyDo0hZh/qq+Iy2GUhGUCUsBKJgF5ZIb/SpQJXIobS8R4kQOuQ+hbqG32oiPvX/R5A0HwwvsosFDZQVymPgcjbLZh54BMXY+Jev/kf9WcA96DOx+RvuoCfFu+i5/oDuDVWpB1+97UMmMDtYOig0xz0uMRX2tYxCvYGCaKIOt2ejCoIJmHU2k+206xnKTSuhHZ1YN7UycdOjEVa/dXDZeyV2pursT2yfzbtPRH+L4trRw2KttcN6kFaa22V1zZer63sMPB0/m8Oln/fn8z/tMZkuWoB1X3O1biT3hlNxswwasVRIW6XLXGbA9ap4KAmUXEcGNdAO3vwZr7kYEtw=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MTY1NzY0MjAzOTQsInByb2ZpbGVJZCI6IjgzNTRlZDBkMDljYjQ2ODJiZjYyNWRmM2YwZTJiNDEyIiwicHJvZmlsZU5hbWUiOiJ4VmFsZW4iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2QwNDk2ZmZmN2JkNDE2M2Y1OWZiNzI3MzRhNmNkMmQ5NDY1ZmQxOTI2NThjNTUzMzU4Yjk1YTNiNDJhMzk4NiJ9fX0=',
             'trail': '',
             'op': 'false',
             'speech': '',
@@ -27,7 +27,6 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 5 true",
-                "/give ". @plr ." minecraft:golden_hoe 1 16:255 34:255 name:&6R&8a&6c&8e&6r's_&8S&6c&8y&6t&8h&6e",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"  
             )
         )
