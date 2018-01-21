@@ -31,7 +31,7 @@
                 "/tp <player> (In the speedforce)",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
-                "Anything you attack, dies",
+                "Anything you attack, dies"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 5 true",
