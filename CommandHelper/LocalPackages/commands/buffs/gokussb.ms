@@ -33,6 +33,6 @@
             ),
             'alts': array(
                 'goku',
-                'gokuk'
+                'gokukaioken'
             )
         )
