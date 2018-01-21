@@ -1,0 +1,99 @@
+turnwater:
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
+    icon_url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+    category: engineering
+    tags: noduel
+    cancellable: false
+    worth: 1500
+    earns_sp: 12
+    actions:
+      cast:
+      - class: CustomProjectile
+        actions:
+        - class: Disc
+          actions:
+          - class: Cover
+            actions:
+            - class: CycleBlock
+            - class: CycleEntity
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: block_cloth_break
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: redstone
+             color: 0037ff
+             updateLocations: false
+             updateDirections: false
+        -  class: EffectTrail
+           particle: redstone
+           color: 0037ff
+    parameters:
+        target_type: Entity
+        target: block
+        hitbox: true
+        cooldown: 15000
+        bypass_build: true
+        allow_max_range: false
+        range: 32
+        radius: 1
+        undo: 10000
+        transparent: transparent_to_construction
+        materials:
+        - - dirt
+          - water
+        - - cobblestone
+          - water
+        - - wood
+          - water
+        - - sand
+          - water
+        - - log
+          - water
+        - - leaves
+          - water
+        - - wool
+          - water
+        - - wood_stairs
+          - water
+        - - chest:2
+          - water
+        - - workbench:2
+          - water
+        - - soil
+          - water
+        - - furnace:2
+          - water
+        - - snow
+          - water
+        - - cactus
+          - water
+        - - stained_glass
+          - water
+        - - monster_eggs
+          - water
+        - - smooth_brick
+          - water
+        - - quartz_block
+          - water
+        - - quartz_stairs
+          - water
+        - - stained_clay
+          - water
+        - - hard_clay
+          - water
+        - - concrete
+          - water
+        - - concrete_powder
+          - water
+        - - stone
+          - water
+        - - grass
+          - water
+        - - diorite
+          - water
+    costs:
+        mana: 10
