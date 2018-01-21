@@ -17,7 +17,6 @@
                 "/run 0-1",
                 "/haste 0-1",
                 "/float <up/down/pause/unpause/stop>",
-                "/wallrun <on/off>",
                 "/cast time"
             ),
             'buffs': array(
