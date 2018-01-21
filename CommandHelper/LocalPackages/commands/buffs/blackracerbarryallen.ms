@@ -26,15 +26,12 @@
                 "Throw lightning with an empty hand.",
                 "/lightningpunch <on/off>",
                 "/thru",
-                "/cast infinitemasspunch",
                 "/speedforceteleport <playername>",
                 "/back (In the speedforce)",
                 "/tp <player> (In the speedforce)",
                 "/speedforcebuffs",
                 "/run 0-1 (In the speedforce)",
                 "Anything you attack, dies",
-                "/fly",
-                "/fly speed <number>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 5 true",
