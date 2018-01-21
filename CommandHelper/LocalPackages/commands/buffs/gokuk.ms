@@ -32,7 +32,7 @@
                 "/shot give ". @plr ." kiblast"
             ),
             'alts': array(
-                'goku'
+                'goku',
                 'gokussb'
             )
         )
