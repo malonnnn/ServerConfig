@@ -1,24 +1,37 @@
 health: 20.0
 hunger: 20
-exp: 0.0
-exp-level: 0
+exp: 0.61538464
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 3.844075
-inventory: {}
+saturation: 7.0
+exhaustion: 1.2015783
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6O§ed§bi§7n's §8S§7w§bo§7r§8d
+      enchants:
+        FIRE_ASPECT: 2
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 89.969574
+  world: titanstower
+  x: 79.5
+  y: 66.0
+  z: 138.5
+  pitch: -4.200003
+  yaw: 109.913574
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: WATER_BREATHING
     level: 1
-    duration: 199931
+    duration: 166848
+  '1':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 166848
