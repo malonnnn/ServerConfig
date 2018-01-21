@@ -22,6 +22,7 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/shot give ". @plr ." magicblast"                
+                "/shot give ". @plr ." magicblast",
+                "/mgive ". @plr ." timestone"
             )
         )
