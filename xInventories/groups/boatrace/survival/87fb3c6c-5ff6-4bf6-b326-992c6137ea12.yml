@@ -9,15 +9,28 @@ exhaustion: 0.14910354
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOAT
+    type: FENCE
   '3':
     ==: org.bukkit.inventory.ItemStack
-    type: BOAT
+    type: SIGN
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAONiYOBi4HPKyU/Ods0rySypDElM52BgDUmtKDFh4K5WKgEylKyUlGqhgsYMWtVKQLooUckqGi6tn1qRWZKemJuqVBurg6HHiEEPi57wjNQ8hbTMvMzijNQUdH1MmSkMfLmZeanJRYlpJVbFmel5UMMMUVzFwAAAYBtr7sEAAAA=
+      blockMaterial: SIGN
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: SANDSTONE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
 location:
   ==: org.bukkit.Location
   world: lexstarklabs
-  x: -71.5
+  x: -68.17818865611638
   y: 79.0
-  z: 101.5
-  pitch: 7.2270465
-  yaw: 359.13736
+  z: 106.4946714918517
+  pitch: 1.8627461
+  yaw: -257.26984

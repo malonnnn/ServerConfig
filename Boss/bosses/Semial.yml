@@ -1,0 +1,74 @@
+#  ------------------------------------------------------------------------
+#  Welcome to the individual Boss settings file.
+#  ------------------------------------------------------------------------
+#  Here you can configure the same settings as in
+#  '/boss menu' for this Boss
+# 
+#  It is recommended to use the GUI above to edit this file.
+#  We have documentation to each setting in the game.
+#  ------------------------------------------------------------------------
+
+Type: VEX
+Custom_Name: Semial
+Health: 450
+Dropped_Exp: '100'
+Potions:
+- REGENERATION 1
+- HEALTH_BOOST 1
+- ABSORPTION 2
+- FIRE_RESISTANCE 1
+- DAMAGE_RESISTANCE 4
+- INCREASE_DAMAGE 3
+- CONFUSION 1
+Specific_Settings:
+  Glowing: false
+  Invulnerable: false
+  No_AI: false
+  Gravity: true
+  Can_Pickup_Items: true
+  Silent: false
+  Auto Target: true
+Attributes:
+  Armor Toughness: 15.0
+  Knockback Resistance: 5.0
+  Follow Range: 30.0
+  Armor: 8.0
+  Movement Speed: 0.8
+  Max Health: 14.0
+  Attack Damage: 8.0
+Skills:
+- Throw Player
+- Shoot Arrow
+- Shoot Fireball
+- Steal Life
+- Strike Lightning
+- Enderman
+- Confuse Player
+- Freeze Player
+Death:
+  Commands: '[]'
+  Reinforcements:
+    Vanilla:
+    - SILVERFISH, 10
+  Lightning: true
+Spawn:
+  Commands: '[]'
+Spawning:
+  Worlds: {}
+  Biomes: {}
+  Regions:
+    Boss: []
+    Towny: []
+    Factions: []
+    Residence: []
+    WorldGuard: []
+  Conditions:
+    Rain: false
+    Thunder: false
+    Light: 0 - 15
+    Time: 0 - 24000
+    Height: 0 - 256
+Sounds:
+  Debug: false
+  Remapped:
+    ENTITY_ENDERDRAGON_DEATH: ENTITY_ENDERDRAGON_DEATH, 1.0, 0.5

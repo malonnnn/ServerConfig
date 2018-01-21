@@ -99,7 +99,7 @@ quests:
       items:
       - name-IRON_SPADE:amount-1
       exp: 150
-  custom2:
+  custom1:
     name: Slayer
     npc-giver-id: 2
     ask-message: Please bring me heart of the monster Varon!!
@@ -108,8 +108,7 @@ quests:
       ordered:
         '1':
           items-to-deliver:
-          - name-IRON_NUGGET:amount-1:enchantment-Protection 10:displayname-Varon
-            Heart:lore-Heart Of Varon!
+          - name-IRON_NUGGET:amount-1:displayname-Varon Heart
           npc-delivery-ids:
           - 2
           delivery-messages:

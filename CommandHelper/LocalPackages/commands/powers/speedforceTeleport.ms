@@ -41,6 +41,9 @@ register_command(speedforceteleport,
             if(@ploc['world'] != @vicLoc['world']){
                 die("Sorry, you have to be in the same world as your victim!")
             }
+            if(@plr == @vic){
+                die("Sorry, you cannot use this on yourself! Use /warp speedforce instead")
+            }
 
             @x1 = @ploc['x']
             @y1 = @ploc['y']
