@@ -4,15 +4,19 @@ register_command(illusionplayer,
         permission: 'ch.alias.illusion',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
-        
-            if (array_size(@args) != 3) {
+            @numArgs = array_size(@args)
+            if (@numArgs < 3 || @numArgs > 4) {
                 return(false)
             }
             
-            @player = player()
+            @player = @sender
             @num = @args[0]
             @mobType = @args[1]
             @playerName = @args[2]
+            @tame = ''
+            if(array_index_exists(@args,3) && @args[3] == true){
+                @tame = true
+            }
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
             _coolDown('lastUsedIllusionPlayer',1,@player)
@@ -30,6 +34,9 @@ register_command(illusionplayer,
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
                     runas(~console,'/disguiseplayer '.@uuid.' player '.@playerName)
+                    if(@tame){
+                        tame_mob(@player,@uuid) 
+                    }
                 } 
             ))
             

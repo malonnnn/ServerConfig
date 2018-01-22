@@ -3,6 +3,7 @@ register_command(multiplexillusion,
         description: 'create illusion of given player',
         permission: 'powers.multiplexillusion',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        aliases: array('splitself'),
         executor: closure(@alias, @sender, @args) {
         
             if (array_size(@args) != 1) {
