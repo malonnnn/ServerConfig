@@ -11,6 +11,7 @@
             'op': '',
             'speech': "I am Godspeed!",
             'powers': array(
+                "/splitself",
                 "/buff",
                 "/carryplayer <Player>",
                 "/back (in the speedforce)",
