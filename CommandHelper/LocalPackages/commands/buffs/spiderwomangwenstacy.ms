@@ -17,6 +17,7 @@
                 "/jump 0-7",
                 "/run 0-4",
                 "/haste 0-3",
+                "/wallclimb <on/off>
                 "Wall climb by standing next to a wall and pressing crouch and vines will appear. The vines are only visible to you, not to other people, so it looks like you're really climbing the wall! You can sto
 p climbing but continue to press crouch to stick to the wall in place and look around.",
                 "With an empty hand, right click the air and you will sling web out from your hand. You can use it to swing around the city! If you cannot move, press shift to dismount the invisible mob."
