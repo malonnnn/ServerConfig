@@ -11,13 +11,14 @@ inventory:
   '1':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_SWORD
+    damage: 9
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
       display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
       enchants:
         DAMAGE_ALL: 100
-  '2':
+  '3':
     ==: org.bukkit.inventory.ItemStack
     type: SHIELD
     meta:
@@ -29,45 +30,57 @@ inventory:
         MENDING: 1
       blockMaterial: SHIELD
 health: 100.0
-hunger: 0
-exp: 0.076923005
+hunger: 4
+exp: 0.30769223
 exp-level: 3
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.792295
+exhaustion: 3.1019635
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 0.0
+  world: titanstower
+  x: 79.5
+  y: 66.0
+  z: 138.5
+  pitch: -4.200003
+  yaw: -118.006714
 potion_effect:
   '0':
     type: HEALTH_BOOST
     level: 19
-    duration: 199717
+    duration: 187406
   '1':
     type: REGENERATION
     level: 1
-    duration: 199717
+    duration: 187406
   '2':
+    type: FAST_DIGGING
+    level: 0
+    duration: 76
+  '3':
     type: WATER_BREATHING
     level: 1
-    duration: 199717
-  '3':
+    duration: 187406
+  '4':
+    type: SPEED
+    level: 255
+    duration: 187453
+  '5':
     type: DAMAGE_RESISTANCE
     level: 3
-    duration: 199717
-  '4':
+    duration: 187406
+  '6':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 199717
-  '5':
+    duration: 187406
+  '7':
     type: FIRE_RESISTANCE
     level: 1
-    duration: 199717
+    duration: 187406
+  '8':
+    type: JUMP
+    level: 5
+    duration: 194232

@@ -24,7 +24,7 @@ npc:
         x: '-17.3659'
         y: '69.0'
         z: '-207.4122'
-        yaw: '120.62393188476562'
+        yaw: '146.88128662109375'
         pitch: '0.0'
       gravity:
         enabled: false
@@ -47,9 +47,6 @@ npc:
     uuid: e063e06f-49ae-4e1e-a889-5307548fa5b8
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       waypoints:
         provider: linear
       location:
@@ -57,12 +54,19 @@ npc:
         x: '-50.9878'
         y: '69.0625'
         z: '-289.868'
-        yaw: '179.83880615234375'
+        yaw: '-148.4381103515625'
         pitch: '0.0'
       spawned: true
       gravity:
         enabled: false
-    traitnames: type,owner,inventory,equipment,waypoints,location,spawned,gravity,mounttrait
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,owner,inventory,equipment,waypoints,location,spawned,lookclose,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -72,20 +76,24 @@ npc:
     uuid: be79a2e9-a40a-494b-9efd-ff61b69c1297
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-62.5109'
         y: '69.0'
         z: '-282.2114'
-        yaw: '-90.1612548828125'
+        yaw: '-178.18231201171875'
         pitch: '0.0'
       spawned: true
       gravity:
         enabled: false
-    traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,owner,inventory,equipment,location,spawned,lookclose,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -95,9 +103,6 @@ npc:
     uuid: e89435ea-f315-4e94-8443-82ff50ad3a0f
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-56.4071'
@@ -108,6 +113,9 @@ npc:
       spawned: true
       gravity:
         enabled: false
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
     traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
@@ -118,9 +126,6 @@ npc:
     uuid: 10db6b5f-5292-4030-a7ac-423ff2f1951a
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-59.2091'
@@ -131,6 +136,9 @@ npc:
       spawned: true
       gravity:
         enabled: false
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
     traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
@@ -141,9 +149,6 @@ npc:
     uuid: 56bd3b1e-4244-4763-9839-4006a0deb467
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-55.2287'
@@ -154,6 +159,9 @@ npc:
       spawned: true
       gravity:
         enabled: false
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
     traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
@@ -164,9 +172,6 @@ npc:
     uuid: 6a0adcb8-7a7f-4dda-9d55-4cfd11514b0c
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-56.9516'
@@ -177,6 +182,9 @@ npc:
       spawned: true
       gravity:
         enabled: false
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
     traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
@@ -187,9 +195,6 @@ npc:
     uuid: e604c991-8cff-4a46-b4c7-7fbc95d24f1d
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-58.4672'
@@ -200,6 +205,9 @@ npc:
       spawned: true
       gravity:
         enabled: false
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
     traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
@@ -210,20 +218,24 @@ npc:
     uuid: c0a40158-d7ce-4074-95ec-6f13b5c41602
     traits:
       type: PLAYER
-      owner:
-        owner: MastTheWise
-        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
       location:
         world: greenfield
         x: '-48.5591'
         y: '69.0'
         z: '-278.6368'
-        yaw: '38.38824462890625'
+        yaw: '137.3273468017578'
         pitch: '0.0'
       spawned: true
       gravity:
         enabled: false
-    traitnames: type,owner,inventory,equipment,location,spawned,gravity,mounttrait
+      owner:
+        owner: MastTheWise
+        uuid: 5da26092-c807-4c9b-8d08-9523f74ddc97
+      lookclose:
+        enabled: true
+        range: '5.0'
+        realisticlooking: false
+    traitnames: type,owner,inventory,equipment,location,spawned,lookclose,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

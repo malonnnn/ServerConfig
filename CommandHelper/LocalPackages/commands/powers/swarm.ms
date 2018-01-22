@@ -76,7 +76,8 @@ register_command(swarm,
 
                 @eventID1 = set_interval(50,closure(
                     @loc = ploc(@vic)
-                    sudo("/particle largesmoke ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
+                    #sudo("/particle largesmoke ".@loc[0]." ".@loc[1]." ".@loc[2]." 0.5 1 0.5 0.01 64")
+                    play_effect(@loc, LARGE_SMOKE, array(offsetX: 0.5, offsetY: 1.0, offsetZ: 0.5, speed: 0.01, particleCount: 64))
                 ))
                 @eventID2 = set_interval(1000,closure(
                     damage_entity(puuid(@vic),6)        
