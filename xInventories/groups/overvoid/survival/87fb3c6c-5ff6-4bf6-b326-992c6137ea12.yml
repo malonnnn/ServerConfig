@@ -3,16 +3,19 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
 exhaustion: 0.0
-inventory: {}
+inventory:
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: lexstarklabs
-  x: -74.5
-  y: 89.0
-  z: 98.5
-  pitch: -2.211763
-  yaw: 310.2422
+  world: greenfield
+  x: 19.185809874731106
+  y: 74.5
+  z: -94.90059476463941
+  pitch: -90.0
+  yaw: -5.463889

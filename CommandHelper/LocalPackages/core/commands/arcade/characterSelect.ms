@@ -108,10 +108,24 @@ register_command(characterselect,
             @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
             @heroes = split('\n',@var)
             msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            @foundAHero = true
             foreach(@her in @heroes){
-                runas(~console,'/tellraw '.@sender.' {"text":"'.@her.'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
+                try{
+                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.replace(@her,'\n','').'.ms')
+                    runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
+                }catch(IOException @e){
+                    @foundAHero = false
+                    break()
+                }
             }
-            msg(color(RED).'Click a character to select it.')
+            if(@foundAHero){
+                msg(color(RED).'Click a character to select it.')
+            }else{
+                msg(color(RED).'Sorry, we don\'t have that character yet :(')
+                msg(color(RED).'You can add it to the server by watching the following videos:')
+                msg(color(RED).'Please note, only the 1st 3 videos are required, the rest are optional.')
+                msg(color(GREEN).'http://mynecraft.servegame.com/howtomakeahero.html')
+            }
             msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
        ) }
     )
