@@ -49,3 +49,24 @@
 #        DURABILITY: 8
 #        DIG_SPEED: 8
 #
+demonspawner:
+  worth: 0
+  item:
+    type: MOB_SPAWNER
+    tags:
+      display:
+        Name: Demon Spawner
+      BlockEntityTag:
+        SpawnPotentials: []
+        SpawnCount: 2
+        MaxNearbyEntities: 5
+        SpawnRange: 8
+        Delay: 100
+        MinSpawnDelay: 200
+        MaxSpawnDelay: 500
+        RequiredPlayerRange: 12
+        EntityId: Zombie
+        SpawnData:
+          id: Zombie
+          CustomName: Demon
+          IsVillager: 1
