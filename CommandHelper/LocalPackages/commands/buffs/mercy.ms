@@ -4,11 +4,11 @@
 @hero = associative_array(
             'name': '§fM§ee§0r§fc§6y',
             'class': 'mercy',
-            'sig': 'u1EdbDFMSBR59HpgLJE5I5hOaHkUv9iBv6frlIPKoo7ZT48twFYOnlB9thIFovWyg15lxGoRjiTR2jgPARdcXuFcMvMRy7TWzXCcEl0mUxsZbiJiYgMtMqVcJzbpxMUfZnryjWy/FX3EcY5VdtTJk8pI7jZyntv9si3Ie1AP9Ww8YBzg6Z3/34Hvt56DfC6KReyQPUrQw6Q1BkHl0fH/mqTFfjADfqFdAMdhPVocynscD96JaaX6yk90Fut3I5FcGQivjxUP/FhNNr89B9Wa2FGceGHnQBRdW7JV6wjowA+ftfGH/rUW41FRNvE5MA51YAmBJHzxW1KwAAxiLh1aOmRHjdH5xJCnjebchdlFgX++17lKSF07wPzxdDhnu0sTf4lYMNvnVyfMShBgUwiA27CF78PFezLlUxVZwhxzF+py5N1h7oiYwJCyQs0nWEbmlUic2E2isOizxbyhW+7HQe2GEJl1cMMC5kjrs+zdAF1hoTwdkZt2cQkKEhCPmBbgCRA3vjf1T7AGxJbjiV757fyZEFj50Hql7Xg0x3yslK77Q7DthLW8jzb+kNa1nmVzK+sh7BTFnQg9K2RuyIV3ZT4kUbuw93b5/YMZvD1WYfo/lNEPQyZ5S7tim24pYtJODzJFgngKXRAx0iRN/bz4FPyPES36QHv++HDk7yeKQsY=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE1MTQ4NTkzMDAyMDcsInByb2ZpbGVJZCI6ImE4ZTE1OWVhZGVlYjRmNzNhMjQ2NTkxYjU4OWFkY2Y0IiwicHJvZmlsZU5hbWUiOiJNckZsYW1lWVQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJtZXRhZGF0YSI6eyJtb2RlbCI6InNsaW0ifSwidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81MjUwZGZhN2I5MzM5NTVlMjUyNmJjMTk2MWFhYjc5ZmIwYzFhZjY2ZjU0YTQyM2FjNDJlZjYyNmM1NTA5MWRkIn19fQ==',
+            'sig': 'gm2Cd0mJwTMieykMYHdn7WDTX2d7BmoL+d3dGhCjAin/YZVDxXSZwYW7ws27k+xhmW7tx+Bee4mc2y9xvH7LPqdgs7Z/HlHFSmXJz9qgL5ykjPr6OUIkQ7DE2UDprccRUroOtXQSjNGXowwlXY/9a0rY+yXKhATE7T2Avzd4ezTFw7jikqUvSS+EK15QZFQnsILJr2Qhaf7+AUrBYKsWmAM/3cHKzxsBRJ/a3DHIuLhU6lfpz3FKDuuIFSiVjvnee4Jk77SokqNffhQoIgbV3B1YxOeSonGYQTaIZOLlPJEot1+629KJ5CtNb5SOmALy0MsYcKe6/tVUGiQP9ka72Teb6OFkiapDeYBmiKyIheP3m1JOsRLjajMScOUgGmR9KCkBX/vDwIP3ZbpyhLpNtda/24W0s5ItVMhWPvYSIfGEU4D4oZ6dHVs9cUHa8YeZ+E1nbwn31YdhwvS2y6s66ar5AKSQeRAMTrYCSdEaxzrjTmRVCSX7C8ZLKn/W+UVopxXmOBBi9CdqsMUHlhJB3783WmCxogNGlDvqbYJFj0spWupyXW/a/bI1DTBbMPSIEjizgFfsDlXxHazMY45MM0uKm0klym7nRmUSNOk3BOG6WAlOQI3+u/o2TEacXFscDofH+gvzUh5sWfhx2Z3+1FoFlIaXcdDTVphH1WIK6Sw=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MTY4NDAxNDc3OTAsInByb2ZpbGVJZCI6IjhjYjc5Y2QzMWU0ODQwODc5MTM3YTM3ZTE2NGYxNDk0IiwicHJvZmlsZU5hbWUiOiJNcXliZUl0ekJsdWVfIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zMGExMTdjNmZmMzhlODU1YzRiNjVjYTgxZmJmZmJjYWRjNjc0YmVkMDRkNDlhY2RlOTEzMzE3ODU1OGNiZTMifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Heroes never die!",
+            'speech': "Heroes Never Die!",
             'powers': array(
                 "/buff",
                 "/fly"
