@@ -295,3 +295,47 @@ COm9 Report / Value '__global__' is already in the list!
 	 at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:500)
 ----------------------------------------------------------------------------------------------
 
+
+------------------------------------[ 23.01.2018 04:28:48 ]-----------------------------------
+Boss 1.5.7 encountered a IllegalArgumentException
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_151
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.2, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3303-, Boss v1.5.7, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, BetonQuest v1.10-dev#325, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.0-SNAPSHOT, BCC v0.5.5, AsyncWorldEdit v3.4.11, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EditableSign v3.2.0, EssentialsGeoIP vTeamCity, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Timer v0.001, BlivTrails v1.1.5, Vault v1.5.6-b49, xInventories v2.4, EssentialsSpawn vTeamCity, PerPlayerBlood v2.6, WorldEdit v6.1.9-SNAPSHOT;3730-2a3318b, Parties v2.1.5, ChatControl v7.6.33, HolographicDisplays v2.2.6, WorldGuard v6.2.2-SNAPSHOT;1712-3a332fd, PreventShare v1.0.2, Citizens v2.0.22-SNAPSHOT (build 1498), MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, CrackShotFlagAddon v1.0, CrackShotPlus v1.66, Magic v6.9.21-SNAPSHOT, Quests v3.2.2-b246
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error running skill 'Shoot Fireball'!
+Boss: Varon
+Error: x not finite
+IllegalArgumentException x not finite
+	 at org.bukkit.util.NumberConversions.checkFinite(NumberConversions.java:115)
+	 at org.bukkit.util.Vector.checkFinite(Vector.java:624)
+	 at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.setVelocity(CraftEntity.java:242)
+	 at me.kangarko.boss.final. .aX.execute(SourceFile:56)
+	 at me.kangarko.boss.final. .aE.protected(SourceFile:47)
+	 at me.kangarko.boss.final. .aE.run(SourceFile:36)
+	 at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:58)
+	 at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:356)
+----------------------------------------------------------------------------------------------
+
+
+------------------------------------[ 23.01.2018 04:28:48 ]-----------------------------------
+Boss 1.5.7 encountered a IllegalArgumentException
+Running Paper 1.12.2-R0.1-SNAPSHOT and Java 1.8.0_151
+Plugins: CleanroomGenerator v1.0.0, AsyncWorldEditInjector v3.4.9, CoreProtect v2.14.2, OpenInv v3.3.2, Essentials vTeamCity, CommandHelper v3.3.2-SNAPSHOT.3303-, Boss v1.5.7, CrackShot v0.98.7, BetterChairs v0.9.5, WorldBorder v1.8.7, BetonQuest v1.10-dev#325, The Multiverse-Core Plugin, ProtocolLib v4.4.0-SNAPSHOT-b390, LibsDisguises v9.5.0-SNAPSHOT, BCC v0.5.5, AsyncWorldEdit v3.4.11, SuperTrails v9.6.7, EssentialsProtect vTeamCity, EditableSign v3.2.0, EssentialsGeoIP vTeamCity, EssentialsAntiBuild vTeamCity, PermissionsEx v1.23.4, Timer v0.001, BlivTrails v1.1.5, Vault v1.5.6-b49, xInventories v2.4, EssentialsSpawn vTeamCity, PerPlayerBlood v2.6, WorldEdit v6.1.9-SNAPSHOT;3730-2a3318b, Parties v2.1.5, ChatControl v7.6.33, HolographicDisplays v2.2.6, WorldGuard v6.2.2-SNAPSHOT;1712-3a332fd, PreventShare v1.0.2, Citizens v2.0.22-SNAPSHOT (build 1498), MythicMobs v4.3.2-SNAPSHOT, GriefPrevention v16.8, CrackShotFlagAddon v1.0, CrackShotPlus v1.66, Magic v6.9.21-SNAPSHOT, Quests v3.2.2-b246
+----------------------------------------------------------------------------------------------
+
+More Information: 
+Error running skill 'Shoot Arrow'!
+Boss: Varon
+Error: x not finite
+IllegalArgumentException x not finite
+	 at org.bukkit.util.NumberConversions.checkFinite(NumberConversions.java:115)
+	 at org.bukkit.util.Vector.checkFinite(Vector.java:624)
+	 at org.bukkit.craftbukkit.v1_12_R1.entity.CraftEntity.setVelocity(CraftEntity.java:242)
+	 at me.kangarko.boss.final. .aR.execute(SourceFile:61)
+	 at me.kangarko.boss.final. .aE.protected(SourceFile:47)
+	 at me.kangarko.boss.final. .aE.run(SourceFile:36)
+	 at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:58)
+	 at org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:356)
+----------------------------------------------------------------------------------------------
+

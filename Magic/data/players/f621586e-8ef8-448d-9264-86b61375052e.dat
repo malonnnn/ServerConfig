@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1516582016335
+last_cast: 1516840438832
 cooldown_expiration: 0
-last_death_location: -8.667843607192165,73.0,-230.27985380196736,greenfield,40.358887,15.749877
+last_death_location: -45.25705522152482,69.0,-210.93728101992366,greenfield,257.8385,26.417805
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -52,10 +52,10 @@ spells:
     last_earn: 1516492687253
     cooldown_expiration: 1516511075976
   soulstonetrap:
-    cast_count: 32
-    last_cast: 1516564154606
-    last_earn: 1516563822948
-    cooldown_expiration: 0
+    cast_count: 35
+    last_cast: 1516753861696
+    last_earn: 1516753891741
+    cooldown_expiration: 1516753981696
   acidshot:
     cast_count: 1
     last_cast: 1516419383665
@@ -257,10 +257,10 @@ spells:
     last_earn: 1507761492745
     cooldown_expiration: 0
   darkpound:
-    cast_count: 29
-    last_cast: 1510711396843
+    cast_count: 30
+    last_cast: 1516755583321
     last_earn: 0
-    cooldown_expiration: 1510711401843
+    cooldown_expiration: 1516755588321
   lassoregen:
     cast_count: 9
     last_cast: 1515892949885
@@ -353,7 +353,7 @@ spells:
     cooldown_expiration: 1515893060235
   soulstoneblast:
     cast_count: 8
-    last_cast: 1516564171451
+    last_cast: 1516753700637
     last_earn: 1516563791174
     cooldown_expiration: 0
   petrify|3:
@@ -432,10 +432,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1497320576059
   demonicblast:
-    cast_count: 28
-    last_cast: 1510711510640
+    cast_count: 29
+    last_cast: 1516755644756
     last_earn: 0
-    cooldown_expiration: 1510711512640
+    cooldown_expiration: 1516755646756
   lassopull:
     cast_count: 1
     last_cast: 1515888521552
@@ -757,10 +757,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1496618948929
   soulshock:
-    cast_count: 8
-    last_cast: 1510711384753
+    cast_count: 10
+    last_cast: 1516755908824
     last_earn: 0
-    cooldown_expiration: 1510711390753
+    cooldown_expiration: 1516755914824
   fire|3:
     cast_count: 4
     last_cast: 1492222532980
@@ -787,10 +787,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1505781075624
   cosmicbolt:
-    cast_count: 67
-    last_cast: 1516582016337
+    cast_count: 69
+    last_cast: 1516840438835
     last_earn: 0
-    cooldown_expiration: 1516582016837
+    cooldown_expiration: 1516840439335
   etaercsnoisulli:
     cast_count: 7
     last_cast: 1497100625268
@@ -1092,9 +1092,8 @@ wands:
   soulstone:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: AIR
+      type: INK_SACK
       damage: 14
-      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
@@ -1112,7 +1111,19 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PMU7DQBBFfxQn2JGgCCUUkUhrRExsjBQhIkACiUARpY428YSsyO469phAR8MFKOAAtBQcgDNwICpsI5hqNH/m/zcNoAFrJXRkw2ZS8UIwwUlNtkjZaLJRMytNCer3gyXPH2qwlNDi5AWwsFG0Y5aKUhYqBiqi5feec6fyZiwjtGeB1/HDgNyQZqHb7YaRe+gFXTcMJkFn/8Df8z2qYu2OklQaDaAGB80+cyInGdPARHImc7GRSxUL9mh0cTowKX/vHG33H8/JglOMLkmk/LH1+fX69P5WR72vTKb5uI2ybFjDhWHYSkg9L59d/4+4EoqweUM5sZzuCmYxvR3GRFEVznVMieBfsMKl3G2eLTMZK9Lc+sMDfgBGcaDtSQEAAA==
+        internal: H4sIAAAAAAAAAF2QPU7DQBCFJ4oTnCj8KJRQIAEdQcHEjtOgBIEEgkARUVsTexZW2LuOPQmko+EEFByAloIDcAYORIVtRAqm27czb755dYA6GA+oAhNMpigOkQlqqZ6GKWtFJlT0g6IEqo/DCd/NTWigz3JGXhpTGMLyopMTjKtgRKiwn6xBXgas5E+PZUQpYxQDlHD35eI421W4ejKAHeFYB7brUMsl4bY6HTdo9Syn03KdsXNw2LXbtpVhNEgI8tnzdagT2BAkLGFZaNs93HO7otfujdtWgN29dhmWZpSkUqsMoVKH1YLUk2pGinUyL/+DzknLsLLQxiGmnGklgBo0B8yJHE+ZhjqQQmbG9fzPAPPm5vxkqFP+3j7aHDydkQG1XLqkbPxj4/Pr9fn9rQrVQaSnivs7RSJggjEKNYMZoVR3RezLixVXGBGs31KWjPT3kRn9+1FMFJShdh1Tgvx7VO5S9DZPJ1MZR9ldW394AD+8ncra0wEAAA==
+    wand:
+      template: soulstone
+      owner: xMqthy
+      active_spell: soulstonetrap
+      mana: 289.0
+      mana_timestamp: 1516753865538
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: fef2f22a559a,87f909b02da7,0
+      version: 5
+      spell_inventory:
+        soulstonetrap: 0
+        soulstoneblast: 1
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1146,7 +1157,7 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2734
+  sp: 2752
 properties:
   mana: 0.0
 classes: {}

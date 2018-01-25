@@ -59,7 +59,7 @@ Formats:
         Value: '/r '
   Global_Chat:
     Channel_Prefix:
-      Message: '&b&lG&a&l/{world}&a&l/'
+      Message: '&bG&a@&f{world}&a:~/'
       Hover_Event:
         Action: SHOW_TEXT
         Values:
@@ -71,7 +71,7 @@ Formats:
         Values:
         - '{player}'
     slash:
-      Message: '&a&l/'
+      Message: '&a/'
       Sender_Permission: chatcontrol.part.playername
       Hover_Event:
         Action: SHOW_TEXT
@@ -85,7 +85,7 @@ Formats:
         Values:
         - '{player}'
     slash2:
-      Message: ' &a&l>&a&l>&r&f '
+      Message: '&a$&f '
       Hover_Event:
         Action: SHOW_TEXT
         Values:
@@ -98,19 +98,19 @@ Formats:
         - '{player}'
   Local_Chat:
     Channel_Prefix:
-      Message: '&a&lL/&f{world}&a&l/'
+      Message: 'L@&f{world}&a/'
       Hover_Event:
         Action: SHOW_TEXT
         Values:
         - '{player}'
     hero:
-      Message: '{pl_prefix}&a&l/'
+      Message: '{pl_prefix}&a/'
       Hover_Event:
         Action: SHOW_TEXT
         Values:
         - '{player}'
     group:
-      Message: '&f{player}&a&l/'
+      Message: '&f{player}&a/'
       Sender_Permission: chatcontrol.part.playername
       Hover_Event:
         Action: SHOW_TEXT
