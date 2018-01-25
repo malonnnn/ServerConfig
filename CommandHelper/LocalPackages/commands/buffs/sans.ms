@@ -13,7 +13,6 @@
             'powers': array(
                 "/buff"
             ),
-            'buffs': array(
-                "/shot give ". @plr ." sansboneblaster"                
+            'buffs': array(               
             )
         )
