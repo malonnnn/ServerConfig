@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTY4NDAxNDc3OTAsInByb2ZpbGVJZCI6IjhjYjc5Y2QzMWU0ODQwODc5MTM3YTM3ZTE2NGYxNDk0IiwicHJvZmlsZU5hbWUiOiJNcXliZUl0ekJsdWVfIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zMGExMTdjNmZmMzhlODU1YzRiNjVjYTgxZmJmZmJjYWRjNjc0YmVkMDRkNDlhY2RlOTEzMzE3ODU1OGNiZTMifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Heroes Never Die!",
+            'speech': "Heroes never die!",
             'powers': array(
                 "/buff",
                 "/fly"
