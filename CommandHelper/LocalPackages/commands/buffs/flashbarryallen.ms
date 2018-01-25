@@ -40,6 +40,8 @@
                 "Throw lightning with an empty hand.",
                 "/lightningpunch <on/off>",
                 "/thru",
+                "/timeremnant"
+                "Creates a copy of you"
                 "/cast infinitemasspunch"
             ),
             'buffs': array(
