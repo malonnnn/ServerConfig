@@ -9,7 +9,17 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '30':
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
+  '22':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -19,15 +29,37 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 20.0
-hunger: 20
+hunger: 15
 exp: 0.61538464
 exp-level: 3
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.6907036
-armor_contents: {}
+exhaustion: 0.56840456
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    damage: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 location:
   ==: org.bukkit.Location
@@ -36,17 +68,13 @@ location:
   y: 69.0
   z: -215.5
   pitch: 0.46778247
-  yaw: 100.53906
+  yaw: 99.8497
 potion_effect:
   '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 180689
+    type: SPEED
+    level: 8
+    duration: 195279
   '1':
     type: DAMAGE_RESISTANCE
     level: 5
-    duration: 180105
-  '2':
-    type: SPEED
-    level: 8
-    duration: 180860
+    duration: 199070
