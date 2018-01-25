@@ -116,3 +116,43 @@ quests:
           start-event: SlayerEvents
     rewards:
       quest-points: 30
+  custom3:
+    name: A New Threat
+    npc-giver-id: 2
+    ask-message: 'There is some suspicious behavior going on down the street in the
+      tunnels, can you go check it out? (Coords: X,48 Y,63 Z,-592)'
+    finish-message: Demons?! How could they have been able to cross into our dimension?...
+      We will have to look into this!
+    gui-display: name-STONE:amount-1
+    stages:
+      ordered:
+        '1':
+          locations-to-reach:
+          - greenfield 48.0 61.0 -593.0
+          reach-location-radii:
+          - 10
+          reach-location-names:
+          - 'Tunnels (X: 48 Y: 63 Z: -592)'
+    rewards:
+      quest-points: 3
+  custom4:
+    name: Demons Among Us
+    npc-giver-id: 2
+    ask-message: We need to see what we are up against... Go and kill some demons
+      and bring me back their blood!
+    finish-message: Thank you! This is just what I needed
+    gui-display: name-REDSTONE:amount-1
+    requirements:
+      quest-points: 3
+      fail-requirement-message: You need to do more quests to be able to do this!
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - name-REDSTONE:amount-5
+          npc-delivery-ids:
+          - 2
+          delivery-messages:
+          - Ah, You have returned with the blood!
+    rewards:
+      quest-points: 1
