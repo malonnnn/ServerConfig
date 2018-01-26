@@ -25,7 +25,9 @@
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
                 "/speedforcewhirlwind",
-                "/speak <playername>"
+                "/speak <playername>",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 12 true",
