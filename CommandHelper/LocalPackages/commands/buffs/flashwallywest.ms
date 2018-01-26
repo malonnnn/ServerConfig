@@ -36,7 +36,9 @@
                 "/thru (phases through walls)",
                 "/thrudestabilize",
                 "/modifyspeed <playername> <number>",
-                "/cast infinitemasspunch"
+                "/cast infinitemasspunch",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
