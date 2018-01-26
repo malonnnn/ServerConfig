@@ -11,6 +11,7 @@
             'op': '',
             'speech': "I am Godspeed!",
             'powers': array(
+                "/thru",
                 "/splitself",
                 "/buff",
                 "/carryplayer <Player>",
