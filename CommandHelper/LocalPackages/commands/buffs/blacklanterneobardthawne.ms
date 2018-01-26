@@ -27,7 +27,9 @@
                 "/fly",
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
-                "You are protected by Nekron so mobs will fear you and wont attack you"
+                "You are protected by Nekron so mobs will fear you and wont attack you",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
