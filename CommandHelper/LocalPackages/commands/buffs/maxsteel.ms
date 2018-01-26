@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTY5OTM1NTk2NDAsInByb2ZpbGVJZCI6IjkwYjJiYTZkNDNlNjRlNWM4Zjc3OTEyNmI2OTY5YTljIiwicHJvZmlsZU5hbWUiOiJXaW5nQXJtb3IiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M1ZDJkZWU4ODQ5NDQ4YmYwNTdiOWE2ZDg0ZTBiOGFmNDBiY2I4NmI2YWZjNjg3YTQxZGU1NWY4OWIxZjcxIn19fQ==',
             'trail': '',
             'op': 'false',
-            'speech': "I am one from beyond... you can call me The Beyonder!",
+            'speech': "Go Turbo?!?",
             'powers': array(
                 "/buff",
                 "/invis",
