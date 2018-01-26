@@ -13,7 +13,7 @@
                 "/buff",
                 "/invis",
                 "/vis",
-                "/run 0-9",
+                "/run <0-8>",
                 "/fly"
             ),
             'buffs': array(
