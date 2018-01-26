@@ -25,7 +25,9 @@
                 "/haste 0-4",
                 "Throw lightning with an empty hand",
                 "/lightningpunch <on/off>",
-                "/ma"
+                "/ma",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
