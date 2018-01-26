@@ -20,7 +20,9 @@
                 "/dismountplayer",
                 "/run 0-8",
                 "/run 0-1 (In the speedforce)",
-                "/haste 0-4"
+                "/haste 0-4",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
