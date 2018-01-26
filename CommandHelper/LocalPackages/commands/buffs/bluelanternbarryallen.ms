@@ -26,7 +26,9 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/flyspeed <number>",
-                "/fly"
+                "/fly",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
