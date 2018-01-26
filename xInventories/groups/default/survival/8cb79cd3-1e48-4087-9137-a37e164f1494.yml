@@ -1,45 +1,69 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §7Pistol§7 «× | ×»
+    type: WOOL
+    damage: 15
+    amount: 64
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fM§e§0r§fc§6y§f's §eHealing Wand§e «×»
+    type: WOOL
+    damage: 15
+    amount: 64
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_HOE
+    type: WOOL
+    damage: 15
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 4
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 4
+    amount: 64
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+    amount: 8
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: CYAN_SHULKER_BOX
     meta:
       ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fM§e§0r§fc§6y§f's §3Buffing Wand§3 «×»
-health: 20.0
+      meta-type: TILE_ENTITY
+      internal: H4sIAAAAAAAAAKXUvW7bMBAH8JNsK7bSOE7SJP1YsnTrEiBAiw5F2jQBunSpd4G2aIYwxSNIGq5fo6/hsY/QOe/iR6gQVZIBsnLsrrZ+vOP/SMYAMfQ/CxxPb6XldjEkrAedr5ZmJgaA1wG0vwu00IWQp3CWcUnHmkzsB4YipTIhSgkaQOcGZ9JehxB9IRlhFAL4K4OdZfgk+d4jW4U8qaVRZC4TyljJPsbQsoTF0Kv2XaBBjRTROt861BWgrNB2Kky4pnPUU1NtqapwV/8V3QnO7m3Qg/j2hxJoOMrHoIN84eFCUdiH6AYFapP/GMFqtYI3lz9huVzC7+EDfHq4gl+Xb8HbVKdo6rhuakxmItUoPTFXKirUea1GebtcssRYItMmulfQg5qmC99IWyXoOkAgawK9AhytTZIokTfnQZ0SxU4OkmQ0yYfhzGYv5UYJsuhC+1v+DfQVojIXGblgiNZ4Y94vlj+tl5/fU2ITQ2lqmuJ6tvlYvvvXseyvVUMx8TZ2sEVYYYn6W6Cq0qETQYaj5HE3VDfBwa7waFd4vDn06/8J/cT5dITSdwkq8bwQh2vvmiam8eScbjGk6u6cOZ2lXNumF/fc6UxvOtMvnnIZQg986Ty3o9l4Sqv+Bh7zaosY2jn7A9jaThDeBgAA
+      blockMaterial: CYAN_SHULKER_BOX
+health: 32.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 17.0
-exhaustion: 0.83310664
+saturation: 14.0
+exhaustion: 3.042215
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: 3.0164511872403144
-  y: 74.5
-  z: -93.84778121126911
-  pitch: 46.40148
-  yaw: 174.94133
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 85.35034
 potion_effect:
   '0':
-    type: REGENERATION
+    type: INCREASE_DAMAGE
     level: 2
-    duration: 199955
+    duration: 174504
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 174504
+  '2':
+    type: HEALTH_BOOST
+    level: 2
+    duration: 174504
