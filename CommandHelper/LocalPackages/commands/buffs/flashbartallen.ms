@@ -23,7 +23,9 @@
                 "/run 0-1 (In the speedforce)",
                 "/haste 0-4",
                 "/wallrun <on/off>",
-                "Look Up+Jump+Crouch to perform a wallrun."
+                "Look Up+Jump+Crouch to perform a wallrun.",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
