@@ -27,7 +27,9 @@
                 "/tppos <x y z world>",
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
-                "/modifyspeed <playername> <number>"
+                "/modifyspeed <playername> <number>",
+                "/timeremnant",
+                "Creates a clone of you."
                 ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
