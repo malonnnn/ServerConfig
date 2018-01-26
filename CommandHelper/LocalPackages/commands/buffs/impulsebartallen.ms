@@ -22,7 +22,9 @@
                 "/run 0-9",
                 "/run 0-1 (In speedforce)",
                 "/haste 0-4",
-                "/tppos <x y z world>"
+                "/tppos <x y z world>",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
