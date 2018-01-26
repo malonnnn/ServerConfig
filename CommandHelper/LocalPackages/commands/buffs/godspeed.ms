@@ -23,7 +23,9 @@
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/tppos <X, Y, Z Coordinates>",
-                "/tp <player> (In the speedforce)"
+                "/tp <player> (In the speedforce)",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
