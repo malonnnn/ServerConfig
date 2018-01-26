@@ -30,7 +30,9 @@
                 "/jump 0-3",
                 "/tppos <X, Y, Z Coordinates>",
                 "/invis (makes you invisible)",
-                "/vis (makes you visible again)"
+                "/vis (makes you visible again)",
+                "/timeremnant",
+                "Creates a clone of you."
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
