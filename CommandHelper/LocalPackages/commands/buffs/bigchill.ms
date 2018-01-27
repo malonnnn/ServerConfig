@@ -14,11 +14,12 @@
                 "/buff",
                 "/intangible",
                 "/tangible",
-                "/jump 0-1",
-                "/run 0-2",
+                "/jump <0-1>",
+                "/run <0-2>",
                 "/thru (phases through walls)",
                 "/fly",
-                "/cast freezeray"
+                "/cast freezeray",
+                "/chill <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
