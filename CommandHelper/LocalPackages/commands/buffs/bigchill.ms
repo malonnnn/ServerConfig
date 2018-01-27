@@ -19,7 +19,7 @@
                 "/thru (phases through walls)",
                 "/fly",
                 "/cast freezeray",
-                "/chill <Player>"
+                "/chill <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
