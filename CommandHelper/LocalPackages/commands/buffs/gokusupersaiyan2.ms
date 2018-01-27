@@ -22,7 +22,7 @@
                 "/herotransform"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 17 true",
+                "/effect ". @plr ." 5 9999 18 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 1 true",
                 "/effect ". @plr ." 12 9999 1 true",
