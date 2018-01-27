@@ -3,7 +3,7 @@
 
 @hero = associative_array(
             'name': '§bG§1o§6ku§8(§bSSB§8)',
-            'class': 'gokussb',
+            'class': 'gokusupersaiyanblue',
             'sig': 'OkxWl4LWbPhZcKlLlob59vZ4+cPVtcjMEC8z40Tu/evDxNlv7AkHGtWrxajr0dbei2gHR/+EyFvXletcDJIp72YDC3GEeHasOLEeg7joKXCdOwsyFalLRn92zMuLCqUEDxi2nmh0aoYdeZBBKet2cn+ih604IMyrD9e7FOiLp/ucmS5vtrsGTlrwpA8bvZwauKWKOxsPG54GcQe+gp2e0EAHnPNIwPNMl0upX7pfYEviToPPDzo/+ubZyiCefIxBVLultecyOOC/8Ox+UBjpDrtRaMT0vM1OMovc7uzneq5zcyGIEduGAq6DrKB9Iyc9DxGCIg1sQYIxsvQCOAFXhhBOjjPka0PFZH0Xsh7pxxzqcO2BaLvi2gPRVml6UsFEz9kZGwC9XNBYGbqtkLXzi72WA2Vbn7TZefsLKXmpBZ6GamB25/qFRdevJUNKIONUGo22P0y6QS9GoQWjymOVVbh+aipQQjuY+X647uNeQEuidUNJ8LV+WapglSNJFUdS4GBap5arDCSQ1bqXjcLZiUtlPS7/Nvig23PeLNn+mMqki7sG2DyF3nxj0i2PVKuugaG1yIGvvXLNDopdmFtgslDb/GWN02yZxLDOKnZ9aeWjBluRzH5FP3li+X5T0M6Dr0zGw1iQmHAcGhKlQ6yiAMWa9z6977kXnWTNtbEh3ZQ=',
             'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NTM5MTIyMzQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Y5MzI2NjFhMTFkN2ExZTJhYjMzMzJkNmFhODVjNDQzZWY4MzQ3MjU1ZDZmZjNjMWI5MTQwODE3OWJkNTcxZiJ9fX0=',
             'trail': '',
@@ -33,6 +33,7 @@
             ),
             'alts': array(
                 'goku',
-                'gokukaioken'
+                'gokukaioken',
+                'gokusupersaiyan'
             )
         )
