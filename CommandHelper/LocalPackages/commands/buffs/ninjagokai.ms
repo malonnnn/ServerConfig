@@ -17,6 +17,7 @@
                 "/run 0-5",
                 "/spinjutsu (gives strength 5 for 10 seconds)",
                 "You are immunite to fire (not lava)",
+                "/fireballpunch <on/off>",
                 "You can throw a fireball with your bare hand"
             ),
             'buffs': array(
