@@ -21,7 +21,6 @@
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&8D&0a&8r&0t&8h_V&0ade&8r's_&4Lightsaber",
-                "/shot give ". @plr ." forcelightning"                
+                "/give ". @plr ." minecraft:iron_sword 1 20:2 16:100 name:&8D&0a&8r&0t&8h_V&0ade&8r's_&4Lightsaber"
             )
         )
