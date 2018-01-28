@@ -1,23 +1,69 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Re§cd §4En§cerg§4y §cBe§4am§4 «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_GLASS
+    damage: 14
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: RED_ROSE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4R§0e§4d L§ca§4nt§0e§4rn Ring
+      enchants:
+        DAMAGE_ALL: 155
+        FIRE_ASPECT: 2
 armor_contents: {}
-health: 20.0
+health: 60.0
 hunger: 20
 exp: 0.92307687
 exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 2.0
-exhaustion: 1.6246126
+saturation: 16.0
+exhaustion: 0.58166325
 location:
   ==: org.bukkit.Location
-  world: infinitycity
-  x: -500.5
-  y: 34.0
-  z: 201.5
-  pitch: 5.8060536
-  yaw: 92.00755
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: -138.70667
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: JUMP
+    level: 5
+    duration: 198400
+  '1':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 196721
+  '2':
+    type: FIRE_RESISTANCE
     level: 1
-    duration: 199648
+    duration: 196721
+  '3':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 196721
+  '4':
+    type: REGENERATION
+    level: 1
+    duration: 196721
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 196721
+  '6':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 196721
