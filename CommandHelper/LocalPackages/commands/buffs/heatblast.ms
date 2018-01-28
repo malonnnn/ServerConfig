@@ -18,4 +18,7 @@
             ),
             'buffs': array(              
             )
+             'alts': array(
+                'ben10',
+            )
         )
