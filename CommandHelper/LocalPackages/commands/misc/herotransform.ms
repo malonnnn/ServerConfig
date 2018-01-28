@@ -7,7 +7,22 @@ register_command(herotransform,
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
         executor: closure(@alias, @sender, @args) {
-        
+       
+            if(array_size(@args) != 1){
+                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+                @class = _getheroclass(@sender)
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @alts = @hero['alts']
+                msg(color(RED).'The available transformations you have are:')
+                foreach(@alt in @alts){
+                    try{
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@alt.'.ms')
+                        runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
+                    }catch(IOException @e){}
+                }
+                return(false)
+            }
+ 
             @idToBe = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @player = player()
@@ -28,7 +43,7 @@ register_command(herotransform,
                 }
             }
 
-            if(@goAhead || array_size(@args) != 1){
+            if(@goAhead){
         
                 runas(~console,'/pex user '.@player.' group set '.@idToBe)
                 set_timeout(1000,closure(
