@@ -13,7 +13,8 @@
                 "/buff",
                 "/cast freezetime",
                 "/fly",
-                "/destroyworld"                
+                "/destroyworld",
+                "/herotransform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true",
