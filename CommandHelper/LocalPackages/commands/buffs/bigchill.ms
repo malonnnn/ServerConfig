@@ -19,7 +19,8 @@
                 "/thru (phases through walls)",
                 "/fly",
                 "/cast freezeray",
-                "/chill <player>"
+                "/chill <player>",
+                "/herotransform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 5 true",
