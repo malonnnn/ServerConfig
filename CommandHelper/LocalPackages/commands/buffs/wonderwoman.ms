@@ -25,6 +25,7 @@
                 "/lightningpunch <on/off>",
                 "/cast forcefield",
                 "/cast wwbracers",
+                "/cloneself",
                 "/msg <playername>",
                 "/mindlock <playername>",
                 "/herotransform <id>",
