@@ -116,7 +116,7 @@ quests:
           start-event: SlayerEvents
     rewards:
       quest-points: 30
-  custom3:
+  custom5:
     name: A New Threat
     npc-giver-id: 2
     ask-message: 'There is some suspicious behavior going on down the street in the
@@ -135,7 +135,7 @@ quests:
           - 'Tunnels (X: 48 Y: 63 Z: -592)'
     rewards:
       quest-points: 3
-  custom4:
+  custom3:
     name: Demons Among Us
     npc-giver-id: 2
     ask-message: We need to see what we are up against... Go and kill some demons
@@ -156,73 +156,7 @@ quests:
           - Ah, You have returned with the blood!
     rewards:
       quest-points: 1
-  custom5:
-    name: Demon Slayer
-    npc-giver-id: 2
-    ask-message: Hey, There are a few areas around the city where demons have been
-      spotted go and exterminate them
-    finish-message: Hm, this is getting serious... they just keep showing up in new
-      places.. come back for your next command
-    gui-display: name-BONE:amount-1
-    requirements:
-      quest-points: 4
-      fail-requirement-message: You need to do more quests first!
-    stages:
-      ordered:
-        '1':
-          mobs-to-kill:
-          - Zombie
-          mob-amounts:
-          - 5
-          locations-to-kill:
-          - greenfield -59.0 62.0 -150.0
-          kill-location-radii:
-          - 10
-          kill-location-names:
-          - Subway (X:-59 Y:62 Z:-150)
-          locations-to-reach:
-          - greenfield -59.0 62.0 -150.0
-          reach-location-radii:
-          - 5
-          reach-location-names:
-          - Subway (X:-59 Y:62 Z:-150)
-        '2':
-          mobs-to-kill:
-          - Zombie
-          mob-amounts:
-          - 5
-          locations-to-kill:
-          - greenfield 192.0 68.0 -197.0
-          kill-location-radii:
-          - 10
-          kill-location-names:
-          - Parkinglot (X:192 Y:68 Z:-197)
-          locations-to-reach:
-          - greenfield 192.0 68.0 -197.0
-          reach-location-radii:
-          - 5
-          reach-location-names:
-          - Parkinglot (X:192 Y:68 Z:-197)
-        '3':
-          mobs-to-kill:
-          - Zombie
-          mob-amounts:
-          - 5
-          locations-to-kill:
-          - greenfield 199.0 78.0 -200.0
-          kill-location-radii:
-          - 10
-          kill-location-names:
-          - Highway (X:199 Y:78 Z:-200)
-          locations-to-reach:
-          - greenfield 199.0 78.0 -200.0
-          reach-location-radii:
-          - 5
-          reach-location-names:
-          - Highway (X:199 Y:78 Z:-200)
-    rewards:
-      quest-points: 1
-  custom2:
+  custom6:
     name: Train Station
     npc-giver-id: 2
     ask-message: There is a City Guard at the train station east of here, go and talk
@@ -243,5 +177,59 @@ quests:
           - 4
           reach-location-names:
           - Train Station (X:337 Y:69 Z:-271)
+    rewards:
+      quest-points: 1
+  custom4:
+    name: Demon Slayer
+    npc-giver-id: 2
+    ask-message: Hey, There are a few areas around the city where demons have been
+      spotted go and exterminate them
+    finish-message: Hm, this is getting serious... they just keep showing up in new
+      places.. come back for your next command
+    gui-display: name-BONE:amount-1
+    requirements:
+      quest-points: 4
+      fail-requirement-message: You need to do more quests first!
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - name-REDSTONE:amount-5
+          npc-delivery-ids:
+          - 2
+          delivery-messages:
+          - Thanks!
+          locations-to-reach:
+          - greenfield -59.0 62.0 -150.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Subway (X:-59 Y:62 Z:-150)
+        '2':
+          items-to-deliver:
+          - name-REDSTONE:amount-5
+          npc-delivery-ids:
+          - 2
+          delivery-messages:
+          - Thanks!
+          locations-to-reach:
+          - greenfield 193.0 68.0 -200.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Parkinglot (X:193 Y:68 Z:-200)
+        '3':
+          items-to-deliver:
+          - name-REDSTONE:amount-5
+          npc-delivery-ids:
+          - 2
+          delivery-messages:
+          - Thanks
+          locations-to-reach:
+          - greenfield 196.0 78.0 -200.0
+          reach-location-radii:
+          - 5
+          reach-location-names:
+          - Highway (X:196 Y:78 Z:-200)
     rewards:
       quest-points: 1
