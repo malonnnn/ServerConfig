@@ -13,5 +13,8 @@
                 "/buff",
                   ),
             'buffs': array(
+            "/shot give ". @plr ." Putty",
+            "/shot give ". @plr ." Grenade",
+            "/shot give ". @plr ." C4" 
             )
         )
