@@ -17,14 +17,8 @@
                 "/jump 0-3",
                 "/run 0-3",
                 "/haste 0-3",
-                "/flame <playername>",
-                "/flyspeed <number>",
-                "/fly"
+                "/flame <playername>"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true"                
+            'buffs': array(              
             )
         )
