@@ -7,7 +7,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTcxNjcyNTk5MDUsInByb2ZpbGVJZCI6IjkwYjJiYTZkNDNlNjRlNWM4Zjc3OTEyNmI2OTY5YTljIiwicHJvZmlsZU5hbWUiOiJXaW5nQXJtb3IiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2NmYzhhNTY4ZGFjMTcxMzA4N2NhODMwZjFkNWI5NDRhNjQzOTEzM2RjMjJkMGQwODg2NTUyZjFkMjY0MjBhMSJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "Well let's just say I'm Frankenstein's monster...",
+            'speech': "Not the right time to shape a new guy",
             'powers': array(
                 "/buff",
                 "/ma (this is his iron attack!)",
@@ -17,6 +17,7 @@
                 "/stealiron"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 4 true"                
+                "/effect ". @plr ." 21 9999 4 true"    
+                "/effect ". @plr ." 11 9999 4 true"   
             )
         )
