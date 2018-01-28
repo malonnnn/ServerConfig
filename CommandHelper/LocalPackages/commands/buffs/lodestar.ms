@@ -20,7 +20,10 @@
                 "/effect ". @plr ." 11 9999 4 true"   
             ),
             'alts': array(
-                'ben10'
+                'ben10',
+                'bigchill',
+                'alienx',
+                'heatblast'
             )
         )       
 
