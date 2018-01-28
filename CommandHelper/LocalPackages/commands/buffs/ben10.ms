@@ -15,6 +15,8 @@
             'buffs': array(
             ),
             'alts': array(
-                'heatblast'
+                'heatblast',
+                'bigchill',
+                'alienx'
             )
         )
