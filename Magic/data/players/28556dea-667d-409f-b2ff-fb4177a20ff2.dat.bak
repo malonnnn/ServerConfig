@@ -1,14 +1,14 @@
 id: 28556dea-667d-409f-b2ff-fb4177a20ff2
 name: xHqrkie
-last_cast: 1510537097372
+last_cast: 1517105449707
 cooldown_expiration: 0
-last_death_location: -135.46933957815028,220.0,85.85943696828733,survival112,179.79819,1.9007941
+last_death_location: -39.76736324032815,69.0,-226.65988378177562,greenfield,59.83839,6.7677298
 fall_protection_count: 0
 fall_protection: 0
 brush:
   map_id: 1536
   material: dirt
-  data: 0
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
@@ -19,13 +19,77 @@ spells:
     last_cast: 1510006090575
     last_earn: 0
     cooldown_expiration: 1510006100575
+  protego:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   deadlights:
     cast_count: 32
     last_cast: 1510537095074
     last_earn: 0
     cooldown_expiration: 1510537101074
+  fiendfyre:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  confringo:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  avadakedavra:
+    cast_count: 1
+    last_cast: 1517105423461
+    last_earn: 0
+    cooldown_expiration: 0
+  crucio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+wands:
+  voldemortswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6avadakedavra§f (§3VoldemortsWand§f)
+        lore:
+        - §3§oBound to xHqrkie
+        - Knows 5 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAFWQTU4bQRCFH3hsxhY/EixhESlsHREL7IQFwiJIIPGzQKyt8nQ1tDzdPfSUB9ixQcoNcgC2WXAAzpADZZWeQYmUXvWrr1TvVfWAHpJ7cipFKmyLnISxWvlcsfVBynfU9veOA5YeTu7CzHCKZcrEVDwpC87zqCpSNGNFVaA2EkuOjp6BBKv1dyLGcilkC2CB9r8vP0SzZuLEKGwPvuztDRVTfzgcqf7uzlfdnw607uvp7ufRiAY7Wg9aWKo4lMY7AO0e1hrjiXEVO/HhMfIieOEbH/liC11t2Cn9GDjqVtSZdzoY1/Ck9X9i1D3oZGGemZovAF2sj0WCmc6Fz70ycVwoezVLkF5fn34796X8/niwNX464QTdunTGVMrr5tuvH88/XzrojK2fOzncRvNSJFe5F6SWjLttrrryz+KCLGPjhuNJTPaJRCibXRXMKia/LDiQvG9eT2l614/v5qawcfkPf+MBfwDMTJkfzQEAAA==
+    wand:
+      template: voldemortswand
+      owner: xHqrkie
+      active_spell: avadakedavra
+      mana: 266.0
+      mana_timestamp: 1517105450104
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      version: 5
+      spell_inventory:
+        protego: 2
+        fiendfyre: 3
+        confringo: 4
+        avadakedavra: 0
+        crucio: 1
 open_wand: false
 gave_welcome_wand: false
-data: {}
+data:
+  sp: 0
 properties: {}
 classes: {}
