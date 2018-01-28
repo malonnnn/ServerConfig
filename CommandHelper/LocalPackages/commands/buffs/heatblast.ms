@@ -20,6 +20,6 @@
             'buffs': array(              
             )
              'alts': array(
-                'ben10',
+                'ben10'
             )
         )
