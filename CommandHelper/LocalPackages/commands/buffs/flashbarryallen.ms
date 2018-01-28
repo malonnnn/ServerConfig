@@ -42,8 +42,7 @@
                 "/lightningpunch <on/off>",
                 "/thru",
                 "/cast infinitemasspunch",
-                "/timeremnant",
-                "Creates a clone of you."
+                "/timeremnant (Creates a clone of you.)"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
