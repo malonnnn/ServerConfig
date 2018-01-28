@@ -3,15 +3,22 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
 exhaustion: 3.7606006
 location:
   ==: org.bukkit.Location
-  world: hilariousrace
-  x: 19.5
-  y: 85.0
-  z: -7.5
-  pitch: 4.649991
-  yaw: -66.43459
-inventory: {}
+  world: greenfield
+  x: -25.843466551976302
+  y: 69.0
+  z: -214.79977801068847
+  pitch: 3.2183197
+  yaw: -128.24075
+inventory:
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: STAINED_CLAY
+    damage: 4
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: BARRIER
