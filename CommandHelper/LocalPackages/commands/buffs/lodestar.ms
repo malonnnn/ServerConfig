@@ -13,7 +13,8 @@
                 "/jump <0-1>",
                 "/run <0-1>",
                 "/haste <0-1>",
-                "/stealiron"
+                "/stealiron",
+                "/herotransform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",   
