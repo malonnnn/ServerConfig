@@ -57,7 +57,10 @@ register_command(herotransform,
             }else{
                 msg(color(RED).'Sorry, the available transformations you have are:')
                 foreach(@alt in @alts){
-                    msg(@alt)
+                    try{
+                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@alt.'.ms')
+                        runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
+                    }catch(IOException @e){}
                 }
             }
 

@@ -222,3 +222,26 @@ quests:
           - Highway (X:199 Y:78 Z:-200)
     rewards:
       quest-points: 1
+  custom2:
+    name: Train Station
+    npc-giver-id: 2
+    ask-message: There is a City Guard at the train station east of here, go and talk
+      to him, he will have your next directions!
+    finish-message: Talk to City Guard
+    gui-display: name-RAILS:amount-1
+    requirements:
+      quest-points: 5
+      fail-requirement-message: You need to do more quests first!
+    stages:
+      ordered:
+        '1':
+          npc-ids-to-talk-to:
+          - 11
+          locations-to-reach:
+          - greenfield 337.0 68.0 -270.0
+          reach-location-radii:
+          - 4
+          reach-location-names:
+          - Train Station (X:337 Y:69 Z:-271)
+    rewards:
+      quest-points: 1

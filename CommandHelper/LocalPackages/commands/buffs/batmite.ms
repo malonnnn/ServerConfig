@@ -21,7 +21,6 @@
                 "/undisguise",
                 "/disguiseviewself",
                 "/back",
-                "/depower <plr>",
                 "/tppos <x> <y> <z>",
                 "/tp <plr>",
                 "/tp <plr> <plr> (Lets you teleport someone to someone else)",
