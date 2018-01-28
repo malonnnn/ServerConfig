@@ -10,7 +10,6 @@
             'speech': "Not the right time to shape a new guy",
             'powers': array(
                 "/buff",
-                "/ma (this is his iron attack!)",
                 "/jump <0-1>",
                 "/run <0-1>",
                 "/haste <0-1>",
