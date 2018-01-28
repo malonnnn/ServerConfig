@@ -31,6 +31,7 @@
             'alts': array(
                 'ben10',
                 'alienx',
-                'heatblast'
+                'heatblast',
+                'lodestar'
             )
         )
