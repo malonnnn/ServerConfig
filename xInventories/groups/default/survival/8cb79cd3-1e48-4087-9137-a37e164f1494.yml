@@ -1,19 +1,41 @@
-inventory: {}
-health: 11.0
-hunger: 15
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §ePutty§e «0»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to throw.
+      - §eLeft click to detonate.
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEVER
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eC4§e «1»
+      lore:
+      - §eRemote explosives.
+      - §eRight click to place.
+      - §eLeft click to detonate.
+health: 20.0
+hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 2.7501743
+saturation: 3.0
+exhaustion: 0.96600187
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: atlantis
-  x: -125.5
-  y: 6.0
-  z: -727.5
-  pitch: 50.558746
-  yaw: 173.94818
+  world: greenfield
+  x: -25.5
+  y: 69.0
+  z: -215.5
+  pitch: 0.46778247
+  yaw: 336.10083

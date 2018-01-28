@@ -12,7 +12,7 @@ register_command(splitself,
             @player = player()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedIllusionPlayer',10,@player)
+            _coolDown('splitSelf',10,@player)
 
             @oldMobs = import(@player.'splitSelfClones')
             if(is_array(@oldMobs)){

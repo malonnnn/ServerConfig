@@ -1,7 +1,7 @@
-register_command(cloneself, 
+register_command(timeremnant, 
     array(
         description: 'Power',
-        permission: 'powers.cloneself',
+        permission: 'powers.timeremnant',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -11,6 +11,13 @@ register_command(cloneself,
             
             @player = player()
 
+            @oldMobs = import(@player.'timeRemnant')
+            if(is_array(@oldMobs)){
+                foreach(@mob in @oldMobs){
+                    try(entity_remove(@mob),continue())
+                }
+            }
+
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@player)            
             include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
@@ -18,9 +25,10 @@ register_command(cloneself,
             @val = @hero['val']
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('cloneSelf',1,@player)
+            _coolDown('timeRemnant',1,@player)
 
             @mobUUIDs = spawn_mob('villager',1)
+            export(@player.'timeRemnant',@mobUUIDs)
             set_timeout(50,closure(
                 runas(~console,"/disguiseplayer ".@mobUUIDs[0].' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
             ))
