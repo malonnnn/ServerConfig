@@ -24,7 +24,4 @@
                 'bigchill',
                 'alienx'
             )
-             'alts': array(
-                'ben10'
-            ),
         )
