@@ -34,6 +34,7 @@
             'alts': array(
                 'goku',
                 'gokusupersaiyan',
+                'gokusupersaiyan2',
                 'gokusupersaiyanblue'
             )
         )
