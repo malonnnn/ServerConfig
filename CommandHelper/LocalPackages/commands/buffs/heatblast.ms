@@ -17,5 +17,10 @@
                 "/flame <playername>"
             ),
             'buffs': array(              
+            ),
+            'alts': array(
+                'ben10',
+                'bigchill',
+                'alienx'
             )
         )

@@ -27,5 +27,10 @@
                 "/effect ". @plr ." 21 9999 9 true",
                 "/shot give ". @plr ." icespike",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&bWings"
+            ),
+            'alts': array(
+                'ben10',
+                'alienx',
+                'heatblast'
             )
         )

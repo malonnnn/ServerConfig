@@ -8,10 +8,6 @@ register_command(herotransform,
     
         executor: closure(@alias, @sender, @args) {
         
-            if (array_size(@args) != 1) {
-                return(false) 
-            }
-            
             @idToBe = @args[0]
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @player = player()
@@ -32,7 +28,7 @@ register_command(herotransform,
                 }
             }
 
-            if(@goAhead){
+            if(@goAhead || array_size(@args) != 1){
         
                 runas(~console,'/pex user '.@player.' group set '.@idToBe)
                 set_timeout(1000,closure(

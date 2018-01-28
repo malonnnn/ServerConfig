@@ -1,69 +1,66 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: IRON_SWORD
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: §0Darth Sidious's §4Lightsaber
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '36':
+        DAMAGE_ALL: 100
+        FIRE_ASPECT: 2
+  '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      display-name: §bFo§7rce §7Lig§bhtni§7ng§7 «×»
+  '40':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §0Darth Sidious's §4Lightsaber
       enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-health: 60.0
-hunger: 20
+        DAMAGE_ALL: 100
+        FIRE_ASPECT: 2
+health: 40.0
+hunger: 13
 exp: 0.0
-exp-level: 0
+exp-level: 1
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.3650234
-armor_contents:
-  boots:
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
+exhaustion: 0.49489856
+armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: speedforce
-  x: -1.5
-  y: 80.0
-  z: -185.5
-  pitch: 0.1500003
-  yaw: -337.2511
+  world: greenfield
+  x: -17.5
+  y: 65.0
+  z: -309.5
+  pitch: 16.607397
+  yaw: 26.371948
 potion_effect:
   '0':
-    type: SPEED
+    type: JUMP
     level: 1
-    duration: 198810
+    duration: 199023
   '1':
-    type: INCREASE_DAMAGE
-    level: 10
-    duration: 196476
+    type: SPEED
+    level: 5
+    duration: 198738
   '2':
-    type: DAMAGE_RESISTANCE
-    level: 2
-    duration: 196476
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 190043
   '3':
-    type: REGENERATION
-    level: 4
-    duration: 196476
+    type: FAST_DIGGING
+    level: 1
+    duration: 198795
   '4':
     type: HEALTH_BOOST
     level: 9
-    duration: 196476
+    duration: 190043
