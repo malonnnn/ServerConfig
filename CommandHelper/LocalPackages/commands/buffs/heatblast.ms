@@ -14,7 +14,8 @@
                 "/buff",
                 "Can throw fireballs by punching with an empty hand",
                 "/fireballpunch <on/off>",
-                "/flame <playername>"
+                "/flame <playername>",
+                "/herotransform"
             ),
             'buffs': array(              
             ),
@@ -22,5 +23,8 @@
                 'ben10',
                 'bigchill',
                 'alienx'
+            )
+             'alts': array(
+                'ben10'
             )
         )
