@@ -17,6 +17,7 @@
             'alts': array(
                 'heatblast',
                 'bigchill',
-                'alienx'
+                'alienx',
+                'lodestar'
             )
         )
