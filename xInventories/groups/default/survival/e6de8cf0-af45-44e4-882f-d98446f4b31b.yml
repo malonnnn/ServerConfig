@@ -1,41 +1,31 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: LEASH
+    type: IRON_BARDING
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
-      enchants:
-        DAMAGE_ALL: 10
+      display-name: §eYel§6lo§ew §eEne§6rg§ey §eB§eea§6m§6 «×»
   '1':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_SWORD
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
-      enchants:
-        DAMAGE_ALL: 40
+    type: RAW_BEEF
+    amount: 64
   '2':
     ==: org.bukkit.inventory.ItemStack
-    type: SHIELD
-    meta:
-      ==: ItemMeta
-      meta-type: TILE_ENTITY
-      display-name: §4W§fon§eder§4W§fom§9an's §4S§fh§ee§9i§4l§fd
-      enchants:
-        DURABILITY: 10
-        MENDING: 1
-      blockMaterial: SHIELD
-health: 100.0
-hunger: 16
-exp: 0.16013435
-exp-level: 6
+    type: BREAD
+    amount: 55
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    amount: 62
+health: 40.0
+hunger: 10
+exp: 0.8115502
+exp-level: 7
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 3.5179193
+exhaustion: 3.1951792
 armor_contents: {}
 ender_chest: {}
 location:
@@ -45,29 +35,25 @@ location:
   y: 92.0
   z: -3.5
   pitch: 1.3415804
-  yaw: 359.9483
+  yaw: -144.10986
 potion_effect:
   '0':
     type: INCREASE_DAMAGE
-    level: 20
-    duration: 199852
+    level: 15
+    duration: 172224
   '1':
-    type: FIRE_RESISTANCE
-    level: 1
-    duration: 199852
-  '2':
     type: DAMAGE_RESISTANCE
     level: 3
-    duration: 199852
-  '3':
+    duration: 172224
+  '2':
     type: REGENERATION
-    level: 1
-    duration: 199852
+    level: 3
+    duration: 172224
+  '3':
+    type: ABSORPTION
+    level: 0
+    duration: 1772
   '4':
-    type: WATER_BREATHING
-    level: 1
-    duration: 199852
-  '5':
     type: HEALTH_BOOST
-    level: 19
-    duration: 199852
+    level: 4
+    duration: 172224
