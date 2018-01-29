@@ -1,7 +1,7 @@
-register_command(etimeremnants, 
+register_command(thawnetimeremnants, 
     array(
         description: 'Power',
-        permission: 'powers.etimeremnants',
+        permission: 'powers.thawnetimeremnants',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@alias, @sender, @args) {
         
@@ -12,9 +12,9 @@ register_command(etimeremnants,
             @player = player()
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('etimeremnants',10,@player)
+            _coolDown('thawnetimeremnants',10,@player)
 
-            @oldMobs = import(@player.'etimeremnantsClones')
+            @oldMobs = import(@player.'thawnetimeremnantsClones')
             if(is_array(@oldMobs)){
                 foreach(@mob in @oldMobs){
                     try(entity_remove(@mob),continue())
@@ -28,7 +28,7 @@ register_command(etimeremnants,
             @val = @hero['val']
 
             @mobUUIDs = spawn_mob('wolf:tamed',15)
-            export(@player.'etimeremnantsClones',@mobUUIDs)
+            export(@player.'thawnetimeremnantsClones',@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
                     runas(~console,"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
