@@ -14,6 +14,10 @@
                 "/jump 0-5",
                 "/run 0-2",
                 "/haste 0-2",
+                "/cast telekinesis",
+                "/cast ravenfield",
+                "/cast ravenrush",
+                "/raventp",
                 "/fly speed <number>",
                 "/fly"                
             ),
