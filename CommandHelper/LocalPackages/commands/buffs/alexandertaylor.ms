@@ -20,7 +20,7 @@
                 "/create",
                 "/lightningpunch <on/off>",
                 "/invis",
-                "/vis",
+                "/vis"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 3 true",
