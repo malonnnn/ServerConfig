@@ -11,22 +11,12 @@
             'speech': "Let's all be fair here.",
             'powers': array(
                 "/buff",
-                "/jump 0-4",
-                "/run 0-3",
-                "/haste 0-3",
-                "/carryplayer",
-                "/dismountplayer",
                 "/disguise",
                 "/create",
                 "/lightningpunch <on/off>",
                 "/invis",
                 "/vis"
             ),
-            'buffs': array(
-                "/effect ". @plr ." 5 9999 3 true",
-                "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true"             
+            'buffs': array(         
             )
 )
