@@ -27,7 +27,7 @@ register_command(etimeremnants,
             @sig = @hero['sig']
             @val = @hero['val']
 
-            @mobUUIDs = spawn_mob('wolf:tamed',5)
+            @mobUUIDs = spawn_mob('wolf:tamed',15)
             export(@player.'etimeremnantsClones',@mobUUIDs)
             set_timeout(50,closure(
                 foreach(@uuid in @mobUUIDs){
