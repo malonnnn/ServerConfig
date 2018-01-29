@@ -17,7 +17,7 @@
                 "/run 0-1",
                 "/haste 0-5",
                 "/fly",
-                "/helatp <player>",
+                "/portaltp <player>",
                 "/speak",
                 "/enchant",
                 "/cast glasstouch",
