@@ -99,6 +99,7 @@ register_command(goworld,
                     @worldNiceName = @world[1]
                     broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
+                        msg(color(RED).'Get some food with '.color(GREEN).'/food'.color(RED).' !')
                         msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
                         msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
                         msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')

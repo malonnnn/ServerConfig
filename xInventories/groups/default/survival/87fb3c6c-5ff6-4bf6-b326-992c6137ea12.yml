@@ -6,18 +6,20 @@ remainingAir: 300
 fireTicks: -20
 saturation: 5.0
 exhaustion: 0.0
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+    amount: 7
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: GRASS
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -29.217073879953155
-  y: 69.0
-  z: -213.83542320527997
-  pitch: 19.967785
-  yaw: -61.775143
-potion_effect:
-  '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 174106
+  world: waynemanor
+  x: 8.5
+  y: 56.93125001788139
+  z: 596.5
+  pitch: 19.344007
+  yaw: -163.03387
