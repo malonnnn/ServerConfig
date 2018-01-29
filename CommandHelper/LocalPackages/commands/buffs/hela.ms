@@ -27,12 +27,14 @@
                 "/cast helaheal",
                 "/cast conjuresword",
                 "/cast helabolt",
-                "/cast turnghost"
+                "/cast turnghost",
+                "/cast throwsword"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
-                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 10 9999 3 true",
                 "/shot give ". @plr ." yellowenergybeam"            
             )
         )
