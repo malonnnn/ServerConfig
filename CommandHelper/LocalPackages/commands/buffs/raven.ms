@@ -17,7 +17,7 @@
                 "/cast telekinesis",
                 "/cast ravenfield",
                 "/cast ravenrush",
-                "/raventp",
+                "/portaltp",
                 "/fly speed <number>",
                 "/fly"                
             ),
