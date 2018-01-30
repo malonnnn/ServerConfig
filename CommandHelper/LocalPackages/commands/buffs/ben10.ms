@@ -18,6 +18,7 @@
                 'heatblast',
                 'bigchill',
                 'alienx',
-                'lodestar'
+                'lodestar',
+                'goop'
             )
         )

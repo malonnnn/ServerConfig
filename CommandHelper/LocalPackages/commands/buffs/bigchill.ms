@@ -33,6 +33,7 @@
                 'ben10',
                 'alienx',
                 'heatblast',
-                'lodestar'
+                'lodestar',
+                'goop'
             )
         )

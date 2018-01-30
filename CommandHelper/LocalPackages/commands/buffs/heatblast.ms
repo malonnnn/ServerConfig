@@ -25,6 +25,7 @@
                 'ben10',
                 'bigchill',
                 'alienx',
-                'lodestar'
+                'lodestar',
+                'goop'
             )
         )
