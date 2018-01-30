@@ -23,7 +23,8 @@
                 'ben10',
                 'bigchill',
                 'alienx',
-                'heatblast'
+                'heatblast',
+                'goop'
             )
         )       
 
