@@ -18,7 +18,8 @@
                 "/herotransform"
             ),
             'buffs': array(  
-                "/shot give ". @plr ." flamethrower"
+                "/shot give ". @plr ." flamethrower",
+                "/effect ". @plr ." 21 9999 4 true"
             ),
             'alts': array(
                 'ben10',
