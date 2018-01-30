@@ -20,6 +20,7 @@
                 "/effect ". @plr ." 5 9999 20 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 11 9999 5 true",
+                "/give ". @plr ." minecraft:slime_ball 1 19:10 name:&2Slime%afist"
             ),
             'alts': array(
                 'ben10',
