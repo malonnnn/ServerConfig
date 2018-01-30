@@ -2,7 +2,7 @@
 
 
 @hero = associative_array(
-            'name': '',
+            'name': 'fanfic',
             'class': 'fanfic',
             'sig': '',
             'val': '',

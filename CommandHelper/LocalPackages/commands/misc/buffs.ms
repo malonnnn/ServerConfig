@@ -1,15 +1,9 @@
 register_command(buff, 
-
     array(
-    
         description: 'Gives Player their Superhero Powers',
-        
         usage: '/buff',
-        
         permission: 'ch.alias.buff',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
         executor: closure() {
         
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
@@ -23,6 +17,7 @@ register_command(buff,
                         runas(~console,@power)
                     }
                     set_phealth(@plr,get_max_health(puuid(@plr)))
+                    set_phunger(@plr,10)
         #runas(~console,'/effect '.@player.' regeneration 5 10 true')
                     tmsg(@plr,@hero['speech'])
                 } catch (IOException @ErrorInfo) {

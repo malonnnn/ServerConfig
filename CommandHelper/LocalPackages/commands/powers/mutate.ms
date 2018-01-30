@@ -62,7 +62,7 @@ register_command(mutate,
 
             set_timeout(30000,closure(
                 unbind(@theBind)
-                if(@vicclass == 'mortal' || has_permission(@player,'is.fanfic')){
+                if(@vicclass == 'mortal' || has_permission(@vic,'is.fanfic')){
                     runas(~console,'/undisguiseplayer '.@vic)
                 }else{
                     runas(~console,'/sudo '.@vic.' c:/fixskin')
