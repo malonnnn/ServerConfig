@@ -17,7 +17,8 @@
                 "/flame <playername>",
                 "/herotransform"
             ),
-            'buffs': array(              
+            'buffs': array(  
+                "/shot give ". @plr ." flamethrower"
             ),
             'alts': array(
                 'ben10',
