@@ -17,7 +17,8 @@
             ),
             'buffs': array( 
                 "/effect ". @plr ." 5 9999 5 true",
-                "/effect ". @plr ." 11 9999 5 true"
+                "/effect ". @plr ." 11 9999 5 true",
+                "/give ". @plr ." minecraft:slime_ball 1 19:10 name:&2Slime_&aFist"
             ),
             'alts': array(
                 'ben10',
