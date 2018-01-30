@@ -44,7 +44,7 @@ register_command(exitgame,
                 case 'soulstone':
                 case 'ooo':
                     runas(~console,'/warp vrexit '.@plr)
-                    broadcast(@plr.color(RED).' has unplugged from The Matrix!')
+                    broadcast(@plr.color(RED).' has disconnected from Infinity:One')
                 default:
                     runas(~console,'/warp '.@world.'exit '.@plr)
                     msg(color(RED).' Welcome back to the arcade!')

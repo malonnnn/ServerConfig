@@ -1,10 +1,9 @@
-register_command(heroes, 
+register_command(chars, 
     array(
         description: 'Lists the Super Heroes available on the Server',
-        usage: '/listheroes [page number]',
+        usage: '/chars [page number]',
         permission: 'ch.alias.listheroes',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-        aliases: array('chars'),	
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) > 1) {
@@ -39,7 +38,7 @@ register_command(heroes,
                                     tmsg(player(),"#". @i . ". " . @hero['name'])
                                     @i = @i + 1
                                 }
-                                msg(color(RED).'Check for more heroes using /heroes '.(@pageNum+1))
+                                msg(color(RED).'Check for more heroes using /chars '.(@pageNum+1))
                             }
                         }
                     ))
@@ -59,7 +58,7 @@ register_command(heroes,
                                     tmsg(player(),"#". @i . ". " . @hero['name'])
                                     @i = @i + 1
                                 }
-                                msg(color(RED).'Check for more heroes using /heroes 2')
+                                msg(color(RED).'Check for more heroes using /chars 2')
                             }
                         }
                     ))
@@ -83,9 +82,9 @@ register_command(characterselect,
             if (@argNum < 1) {
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 msg(color(RED).'Please search for a character.')
-                msg('Example:'.color(GREEN).' /characterselect superman')
-                msg('Example:'.color(GREEN).' /charsel deadpool')
-                msg('Example:'.color(GREEN).' /csel flash')
+                msg('Example:'.color(GREEN).' /characterselect wonderwoman')
+                msg('Example:'.color(GREEN).' /charsel captainamerica')
+                msg('Example:'.color(GREEN).' /csel greenlantern')
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 return(FALSE)
             }
