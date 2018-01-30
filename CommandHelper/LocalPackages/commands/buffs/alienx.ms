@@ -26,6 +26,7 @@
                 'ben10',
                 'bigchill',
                 'heatblast',
-                'lodestar'
+                'lodestar',
+                'goop'
             )
 )
