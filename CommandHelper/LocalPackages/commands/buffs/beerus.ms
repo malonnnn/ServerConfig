@@ -1,3 +1,4 @@
+
 @plr = player()
 
 
@@ -23,6 +24,7 @@
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/carryplayer <player>",
                 "/dismountplayer",
+                "/destroyworld",
                 "Anything you attack, dies"
             ),
             'buffs': array(
