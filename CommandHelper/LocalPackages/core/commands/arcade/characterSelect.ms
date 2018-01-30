@@ -3,7 +3,8 @@ register_command(heroes,
         description: 'Lists the Super Heroes available on the Server',
         usage: '/listheroes [page number]',
         permission: 'ch.alias.listheroes',
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',		
+        noPermMsg: 'Sorry you don\'t have permission to use this command.',
+        aliases: array('chars'),	
         executor: closure(@alias, @sender, @args) {
         
                 if (array_size(@args) > 1) {

@@ -62,9 +62,9 @@ register_command(entergame,
                 set_block_at(-117, 86, 149, 55, @ploc['world'])
                 set_block_at(-117, 75, 148, 152, @ploc['world'])
 
-                msg(color(GREEN).'VR Uplink ON, connecting to The Matrix...')
+                msg(color(GREEN).'I:O Uplink ON, connecting to Infinity:One ... ')
                 set_timeout(1500,closure(
-                    msg(color(GREEN).'Connected! Uplink ready! Beginning transfer, hold tight...')
+                    msg(color(GREEN).'Connecting ...')
                 ))
 
                 set_timeout(100,closure(
@@ -103,7 +103,7 @@ register_command(entergame,
                     @final = sqrt(@final)
                     
                     if(@final > 1){
-                        msg(color(RED).'Uplink canceled, user moved. Please try again.')
+                        msg(color(RED).'Uplink canceled, please hold still during uplink process. Please try again.')
                         set_block_at(-118, 78, 150, 35, @ploc['world'])
                         set_block_at(-117, 86, 149, 0, @ploc['world'])
                         export('vrInUse',false)
@@ -124,15 +124,14 @@ register_command(entergame,
                             }
                         }
                         if(@tooManyPlayers){
-                            broadcast(color(GREEN).'Reminder, only one person at a time in the VR Uplink. Thank you.')
+                            broadcast(color(GREEN).'Reminder, only one person at a time in the I:O Uplink. Thank you.')
                         }
                     }
 
                     set_peffect(@sender,14,1,9999,true,false)
                     runas(~console,'/minecraft:clear '.@sender)
                     runas(~console,'/warp begingame '.@sender)
-                    broadcast(@sender.color(RED).' has jacked into The Matrix!')
-                    msg(color(GREEN).'Welcome to The Matrix!')
+                    broadcast(@sender.color(RED).' is now playing Infinity:One')
                     sudo('/characterselect')
                     set_block_at(-118, 78, 150, 35, @ploc['world'])
                     set_block_at(-117, 86, 149, 0, @ploc['world'])

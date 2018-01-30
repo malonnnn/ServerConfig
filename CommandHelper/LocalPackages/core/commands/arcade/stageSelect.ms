@@ -99,11 +99,15 @@ register_command(goworld,
                     @worldNiceName = @world[1]
                     broadcast(color(BLUE).@hero['name'].color(GRAY).color(ITALIC).' has entered '.@worldNiceName.'!')
                     set_timeout(2000,closure(
-                        msg(color(RED).'Get some food with '.color(GREEN).'/food'.color(RED).' !')
                         msg(color(RED).'Check out your '.color(GREEN).'/powers'.color(RED).' !')
-                        msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
-                        msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')
                         msg(color(RED).'Select a new character using '.color(GREEN).'/mainmenu'.color(RED).' !')
+                        msg(color(RED).'Go somewhere else with '.color(GREEN).'/stageselect'.color(RED).' !')
+                        msg(color(RED).'Regain health using '.color(GREEN).'/rest'.color(RED).' !')
+                        msg(color(RED).'See your character skin with '.color(GREEN).'/dvs'.color(RED).' !')
+                        msg(color(RED).'Make your powers clickable with '.color(GREEN).'/powertool'.color(RED).' !')
+                        msg(color(RED).'Some characters have multiple skins! Try '.color(GREEN).'/skins'.color(RED).' !')
+                        msg(color(RED).'Half hunger is normal. '.color(GREEN).'Never eat, never starve.'.color(RED).' !')
+                        msg(color(RED).'Exit back to the arcade with '.color(GREEN).'/exitgame'.color(RED).' !')
                     ))
                 }
             }
