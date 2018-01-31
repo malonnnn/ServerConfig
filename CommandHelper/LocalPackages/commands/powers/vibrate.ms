@@ -1,66 +1,29 @@
-register_command(vibrate, 
-
+register_command(vibrationattack, 
     array(
-    
         description: 'Power',
-        
         permission: 'ch.alias.vibrate',
-        
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
-            
-            @player = player()
-            assign(@cooldown, 60)
-            
-            assign(@lastUsedVibrate, import(@player."lastUsedVibrate"))
-            if(@lastUsedVibrate + @cooldown > time() / 1000,
-                assign(@timeleft, subtract(add(@lastUsedVibrate, @cooldown), divide(time(),1000)))
-                tmsg(@player,concat('§c[§4', Error, '§c] §7You must wait another §6', round(@timeleft), ' §7seconds before you can use vibrate again!'))
-                die()
-            )
-            export(@plr."lastUsedVibrate", time() / 1000)
+        executor: closure(@aliases, @sender, @args) {
+            if(array_size(@args) != 1){
+                tmsg(@sender,color(RED).'Usage: /vibrationattack <player>')
+                return(false)
+            }
 
-            @player = player()
-            runas(~console,"/effect " . @player . " 11 9999 4 true")
-            @eventID = set_interval(100,closure(
-                @ploc = ploc()
-                @ploc['x'] = @ploc['x'] + 0.1
-                set_ploc(@ploc)
-                set_timeout(50,closure(
-                    @ploc['x'] = @ploc['x'] - 0.1
-                    set_ploc(@ploc)
-                ))
-                
-            ))
-            set_timeout(10000,closure(
-                clear_task(@eventID)
-                runas(~console,"/effect " . @player . " 11 0")
-            ))
+            @vic = @args[0]
+            @vic = player(@vic)
 
-            export(@player."isVibrating",@eventID)
-                
+            include('/home/minecraft/server/plugins/CommandHelper/includes/distanceBetween.ms')
+            @dist = _distanceBetween(ploc(@sender),ploc(@vic))
+
+            if(@dist < 3){
+                include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+                _coolDown('vibrationAttack',10,@sender)
+                set_peffect(@vic,20,10,5,true,false)
+                tmsg(@vic,color(RED).'A speedster has used their vibration attack on you!')
+            }else{
+                tmsg(@sender,color(RED).'Sorry, you are not close enough to that player.')
+            }
         }
     )
 )
 
-register_command(stopvibrating, 
-
-    array(
-    
-        description: 'Power',
-        
-        permission: 'ch.alias.stopvibrating',
-        
-        noPermMsg: 'Sorry you don\'t have permission to use this command.',
-    
-        executor: closure() {        
-            
-            @player = player()
-            runas(~console,"/effect " . @player . " 11 0")
-            @eventID = import(@player."isVibrating")
-            clear_task(@eventID)
-                
-        }
-    )
-)

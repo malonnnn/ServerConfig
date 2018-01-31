@@ -17,7 +17,7 @@ register_command(buff,
                         runas(~console,@power)
                     }
                     set_phealth(@plr,get_max_health(puuid(@plr)))
-                    set_phunger(@plr,10)
+                    set_phunger(@plr,17)
         #runas(~console,'/effect '.@player.' regeneration 5 10 true')
                     tmsg(@plr,@hero['speech'])
                 } catch (IOException @ErrorInfo) {
