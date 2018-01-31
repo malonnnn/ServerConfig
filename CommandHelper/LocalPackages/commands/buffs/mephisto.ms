@@ -16,7 +16,8 @@
                  "/confuse",
                  "/unconfuse",
                  "/tppos <x> <y> <z>",  
-                 "/forcechoke <playername>" 
+                 "/forcechoke <playername>",
+                 "/mephistoillusion"                
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 11 9999 2 true", 
