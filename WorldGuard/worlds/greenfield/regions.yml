@@ -14,7 +14,7 @@ regions:
         min: {x: -28.0, y: 0.0, z: -218.0}
         max: {x: -24.0, y: 255.0, z: -214.0}
         members: {}
-        flags: {other-explosion: deny, use: allow, invincible: allow, greeting: §2You
+        flags: {other-explosion: deny, invincible: allow, use: allow, greeting: §2You
                 are now in SafeZone!, feed-delay: 1, feed-amount: 1, interact: allow,
             pvp: deny, farewell: §4You are now leaving SafeZone!}
         owners: {}
@@ -22,8 +22,9 @@ regions:
         priority: 2
     __global__:
         members: {}
-        flags: {other-explosion: deny, creeper-explosion: deny, ghast-fireball: deny,
-            firework-damage: deny, enderdragon-block-damage: deny}
+        flags: {other-explosion: deny, creeper-explosion: deny, entity-painting-destroy: deny,
+            ghast-fireball: deny, entity-item-frame-destroy: deny, firework-damage: deny,
+            enderdragon-block-damage: deny}
         owners: {}
         type: global
         priority: 0

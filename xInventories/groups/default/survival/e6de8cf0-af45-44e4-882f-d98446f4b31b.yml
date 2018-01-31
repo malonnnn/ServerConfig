@@ -1,24 +1,73 @@
-inventory: {}
-health: 20.0
-hunger: 20
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEASH
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
+      enchants:
+        DAMAGE_ALL: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
+      enchants:
+        DAMAGE_ALL: 40
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §4W§fon§eder§4W§fom§9an's §4S§fh§ee§9i§4l§fd
+      enchants:
+        DURABILITY: 10
+        MENDING: 1
+      blockMaterial: SHIELD
+health: 100.0
+hunger: 10
 exp: 0.8115502
 exp-level: 7
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
-exhaustion: 3.1136832
+saturation: 19.0
+exhaustion: 3.1506839
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: waynemanor
-  x: -26.5
-  y: 64.0
-  z: 688.5
-  pitch: -2.9107697
-  yaw: 89.969574
+  world: greenfield
+  x: 25.5
+  y: 75.0
+  z: -101.5
+  pitch: 53.06308
+  yaw: -270.84988
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 199186
+  '1':
+    type: REGENERATION
     level: 1
-    duration: 199935
+    duration: 199186
+  '2':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 199186
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199186
+  '4':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199186
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 199186

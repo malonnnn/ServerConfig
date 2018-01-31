@@ -312,17 +312,18 @@ bind('player_chat', null, null, @e) {
         @msg = to_lower(@msg)
       modify_event(message, @msg)
     }
-
-    @msg = replace(@msg,'l','w')
-    @msg = replace(@msg,'L','W')
-    @msg = replace(@msg,'r','w')
-    @msg = replace(@msg,'R','W')
-    @msg = replace(@msg,'ee','yee')
-    @msg = replace(@msg,'EE','YEE')
-    @msg = replace(@msg,'er','yew')
-    @msg = replace(@msg,'ER','YEW')
-    @msg = replace(@msg,'age','yage')
-    @msg = replace(@msg,'AGE','YAGE')
+    if(!has_permission('chat.safe')){
+        @msg = replace(@msg,'l','w')
+        @msg = replace(@msg,'L','W')
+        @msg = replace(@msg,'r','w')
+        @msg = replace(@msg,'R','W')
+        @msg = replace(@msg,'ee','yee')
+        @msg = replace(@msg,'EE','YEE')
+        @msg = replace(@msg,'er','yew')
+        @msg = replace(@msg,'ER','YEW')
+        @msg = replace(@msg,'age','yage')
+        @msg = replace(@msg,'AGE','YAGE')
+    }
     modify_event(message, @msg)
     #@tmp = to_lower(@msg)
     #if(
