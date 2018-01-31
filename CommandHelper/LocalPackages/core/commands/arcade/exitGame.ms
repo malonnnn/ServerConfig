@@ -43,6 +43,7 @@ register_command(exitgame,
                 case 'speedforce':
                 case 'soulstone':
                 case 'ooo':
+                case 'ccjitters':
                     runas(~console,'/warp vrexit '.@plr)
                     broadcast(@plr.color(RED).' has disconnected from Infinity:One')
                 default:

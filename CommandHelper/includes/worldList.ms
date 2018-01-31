@@ -6,6 +6,7 @@
     associative_array('infinitycity','Central City'),
     associative_array('fortressofsolitude','Fortress of Solitude'),
     associative_array('hallofjustice','Hall of Justice'),
+    associative_array('ccjitters','CC Jitters'),
     associative_array('waynemanor','Wayne Manor'),
     associative_array('titanstower','Titans Tower'),
     associative_array('starcity','Star City'),
