@@ -30,21 +30,29 @@ inventory:
       display-name: §eFrag Grenade§e
       lore:
       - §eExplodes three seconds after launch.
-health: 20.0
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: POTION
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      display-name: Whiskey
+      potion-type: minecraft:long_night_vision
+health: 9.0
 hunger: 10
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 2.1151993
+saturation: 0.0
+exhaustion: 0.17080888
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -22.5
-  y: 69.0
-  z: -212.5
-  pitch: 53.399982
-  yaw: 162.84856
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: -55.774967

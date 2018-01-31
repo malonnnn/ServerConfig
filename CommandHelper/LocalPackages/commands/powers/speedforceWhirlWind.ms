@@ -6,6 +6,7 @@ register_command(whirlwind,
         executor: closure(@aliases, @sender, @args) {        
             
             if (array_size(@args) != 1) {
+                tmsg(@sender,color(RED).'Usage: /whirlwind <player>')
                 return(false)
             }
             

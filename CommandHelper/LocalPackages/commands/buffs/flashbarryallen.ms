@@ -27,7 +27,6 @@
                 "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/cloneself",
                 "/whirlwind",
                 "/carryplayer",
                 "/dismountplayer",
