@@ -17,7 +17,13 @@
                  "/unconfuse",
                  "/tppos <x> <y> <z>",  
                  "/forcechoke <playername>",
-                 "/mephistoillusion"                
+                 "/mephistoillusion",
+                 "/intangible",
+                 "/tangible",
+                 "/mutate <player>",
+                 "/tp",
+                 "/cast freezetime",
+                 "/cast firebolt"
              ), 
              'buffs': array( 
                  "/effect ". @plr ." 11 9999 2 true", 
