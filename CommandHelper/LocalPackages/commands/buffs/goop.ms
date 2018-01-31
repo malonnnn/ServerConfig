@@ -13,7 +13,8 @@
             'powers': array(
                 "/buff",
                 "/herotransform",
-                "/fly"
+                "/fly",
+                "/cast acidshot"
             ),
             'buffs': array( 
                 "/effect ". @plr ." 5 9999 5 true",
