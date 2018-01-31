@@ -15,7 +15,7 @@
                 "/buff",
                 "/flyspeed <number>",
                 "/fly",
-                "/explode <playername> ($1000/use)",
+                "/explode <player>",
                 "/empower (You empower a player with your Nekrotic energy",
                 "Mobs won't attack you"
             ),
