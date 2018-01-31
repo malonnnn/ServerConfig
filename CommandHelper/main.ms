@@ -19,6 +19,7 @@ bind(server_command,null,null,@e){
             case 'rapunzel':
             case 'ooo':
             case 'ccjitters':
+            case 'legionofdoom':
                 cancel()
                 set_block_command(@loc,'')
         }

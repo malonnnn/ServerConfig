@@ -13,6 +13,7 @@
     associative_array('worldofooo','World of Ooo'),
     associative_array('starlingcity','Starling City'),
     associative_array('starlabs','Star Labs'),
+    associative_array('hallofdoom','Hall of Doom'),
     associative_array('atlantis','Atlantis'),
     associative_array('hogwarts','Hogwarts'),
     associative_array('rapunzel','Rapunzel')

@@ -264,11 +264,11 @@ register_command(selectchar,
                 
 #                include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
 #                _changeSkin(@player,@hero['sig'],@hero['val'],@hero['name'])
-#                if(@hero['trail'] != ''){
-#                    sudo(@player,"/trailsid ".@hero['trail'])
-#                }else{
-#                    sudo(@player,"/trailsid none")
-#                }
+                if(@hero['trail'] != ''){
+                    sudo("/trailsid ".@hero['trail'])
+                }else{
+                    sudo("/trailsid none")
+                }
                 sudo('/stageselect')
         }
     )

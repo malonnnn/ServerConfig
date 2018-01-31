@@ -63,6 +63,11 @@ register_command(herotransform,
                 include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@idToBe.'.ms')
                 @newHero = @hero
                 broadcast(color(BLUE).@player.color(GRAY).' has performed a hero transformation from '.@oldHero['name'].color(GRAY).' to '.@newHero['name'].color(GRAY).' !')
+                if(@newHero['trail'] != ''){
+                    sudo("/trailsid ".@newHero['trail'])
+                }else{
+                    sudo("/trailsid none")
+                }
                 sudo('/powers')
 
             }else{

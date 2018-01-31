@@ -1,6 +1,9 @@
 bind('player_chat', null, null, @e) {
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @pname = player()
+    if(has_permission(@pname,'is.op')){
+        die()
+    }
     @pgroup = _getheroclass(@pname)
     @pworld = pworld()
     @puuid = puuid()
@@ -310,7 +313,18 @@ bind('player_chat', null, null, @e) {
       modify_event(message, @msg)
     }
 
-    @tmp = to_lower(@msg)
+    @msg = replace(@msg,'l','w')
+    @msg = replace(@msg,'L','W')
+    @msg = replace(@msg,'r','w')
+    @msg = replace(@msg,'R','W')
+    @msg = replace(@msg,'ee','yee')
+    @msg = replace(@msg,'EE','YEE')
+    @msg = replace(@msg,'er','yew')
+    @msg = replace(@msg,'ER','YEW')
+    @msg = replace(@msg,'age','yage')
+    @msg = replace(@msg,'AGE','YAGE')
+    modify_event(message, @msg)
+    #@tmp = to_lower(@msg)
     #if(
     #    (string_position(@tmp,'jiren') >= 0 ||
     #    string_position(@tmp,'tek') >= 0 ||
