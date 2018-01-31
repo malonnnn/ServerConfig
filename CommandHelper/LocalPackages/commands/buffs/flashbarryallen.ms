@@ -27,7 +27,7 @@
                 "/tp <player> (In the speedforce)",
                 "/speedforceteleport <playername>",
                 "/speedforcebuffs",
-                "/whirlwind",
+                "/whirlwind <player>",
                 "/carryplayer",
                 "/dismountplayer",
                 "/invis",
