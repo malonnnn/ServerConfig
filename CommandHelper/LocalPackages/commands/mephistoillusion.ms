@@ -30,7 +30,9 @@ register_command(mephistoillusion,
             @mobUUIDs = spawn_mob('villager',4)
             export(@player.'mephistoIllusion',@mobUUIDs)
             set_timeout(50,closure(
-                runas(~console,"/disguiseplayer ".@mobUUIDs[0].' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
+                foreach(@uuid in @mobUUIDs){
+                    runas(~console,"/disguiseplayer ".@uuid.' player '.@player.' setskin {"id":"87fb3c6c5ff64bf6b326992c6137ea12","name":"tektronic","properties":[{"signature":"'.@sig.'","name":"textures","value":"'.@val.'"}]}')
+                }
             ))
             
         }
