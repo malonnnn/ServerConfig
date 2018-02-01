@@ -30,8 +30,7 @@
                 "/run 0-1 (In the speedforce)",
                 "/jump 0-3",
                 "/haste 0-4",
-                "/thawnetimeremnants",
-                "Creates 15 Time Remnants of You."
+                "/thawnetimeremnants"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
