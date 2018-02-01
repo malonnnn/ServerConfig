@@ -18,6 +18,7 @@
                  "/tppos <x> <y> <z>",
                  "/mephistoillusion",
                  "/intangible",
+                 "/tkchoke <player>",
                  "/tangible",
                  "/mutate <player>",
                  "/tphere <player>",

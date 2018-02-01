@@ -29,7 +29,7 @@ register_command(tkchoke,
                 sudo(/effect @vic 20 5 6 true)
                 sudo(/effect @vic 19 5 6 true)
                 broadcast(@sender . " is now telekinetically choking " . @vic)
-            )else{
+            }else{
                 tmsg(@sender,color(red).'You are not close enough to that player.')
             }
         }
