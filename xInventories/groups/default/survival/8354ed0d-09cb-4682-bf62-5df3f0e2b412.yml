@@ -1,24 +1,52 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.07692321
-exp-level: 3
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 40.0
+hunger: 17
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 3.0096295
-armor_contents: {}
+saturation: 5.0
+exhaustion: 0.0
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 90.14427
+  world: legionofdoom
+  x: -153.5
+  y: 31.0
+  z: 509.5
+  pitch: 5.473118
+  yaw: 240.24835
 potion_effect:
   '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 199932
+    type: REGENERATION
+    level: 3
+    duration: 188753
+  '1':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 188753
+  '2':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 188753
