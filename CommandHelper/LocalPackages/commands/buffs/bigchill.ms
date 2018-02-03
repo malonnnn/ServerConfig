@@ -34,6 +34,7 @@
                 'alienx',
                 'heatblast',
                 'lodestar',
-                'goop'
+                'goop',
+                'fourarms'
             )
         )

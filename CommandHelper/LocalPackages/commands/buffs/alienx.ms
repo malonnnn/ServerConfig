@@ -27,6 +27,7 @@
                 'bigchill',
                 'heatblast',
                 'lodestar',
-                'goop'
+                'goop',
+                'fourarms'
             )
 )

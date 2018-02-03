@@ -24,7 +24,8 @@
                 'bigchill',
                 'alienx',
                 'heatblast',
-                'goop'
+                'goop',
+                'fourarms'
             )
         )       
 
