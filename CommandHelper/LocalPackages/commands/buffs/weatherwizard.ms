@@ -15,10 +15,14 @@
                 "/weather",
                 "/cast tsunami",
                 "Throw lightning with an empty hand.",
-                "/lightningpunch <on/off>"
+                "/lightningpunch <on/off>",
+                "/wind <player>",
             ),
             'buffs': array(
                 "/shot give ". @plr ." icespike",
-                "/give ". @plr ." minecraft:bone_meal 1 19:50 name:&fWindblast"
+                "/give ". @plr ." minecraft:ghast_tear 1 19:50 name:&fWindblast",
+                "/effect ". @plr ." 21 9999 9 true",
+                "/effect ". @plr ." 11 9999 2 true",
+                
             )
         )
