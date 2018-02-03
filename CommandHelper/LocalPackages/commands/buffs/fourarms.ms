@@ -11,15 +11,12 @@
             'speech': "Let's wrestle",
             'powers': array(
                 "/buff",
-                "/jump 0-6",
                 "/carryplayer <player>",
                 "/dismountplayer"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
-                "/effect ". @plr ." 11 9999 3 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 21 9999 4 true",               
+                "/effect ". @plr ." 5 9999 10 true",
+                "/effect ". @plr ." 21 9999 9 true"
             ),
             'alts': array(
                 'ben10',
