@@ -3,10 +3,39 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
-exhaustion: 0.0
-inventory: {}
+exhaustion: 0.05
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SPADE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Spleef Shovel
+      enchants:
+        DIG_SPEED: 5
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 64
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §cArrow §6Gun§6 «1»
 ender_chest:
   '22':
     ==: org.bukkit.inventory.ItemStack
@@ -23,4 +52,9 @@ location:
   y: 64.0
   z: 0.5
   pitch: 12.449994
-  yaw: 169.34216
+  yaw: -90.759056
+potion_effect:
+  '0':
+    type: NIGHT_VISION
+    level: 1
+    duration: 4877

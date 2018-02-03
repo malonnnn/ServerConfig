@@ -1,18 +1,75 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_AXE
+    damage: 15
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOL
+    damage: 2
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: SNOW_BLOCK
+    amount: 61
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: SANDSTONE_STAIRS
+    amount: 61
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_STEP
+    amount: 61
+  '8':
+    ==: org.bukkit.inventory.ItemStack
+    type: TORCH
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: STRING
+  '10':
+    ==: org.bukkit.inventory.ItemStack
+    type: SPRUCE_WOOD_STAIRS
+    amount: 8
+  '11':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_STEP
+    damage: 1
+    amount: 8
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    type: LONG_GRASS
+    amount: 3
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    type: LONG_GRASS
+    damage: 2
 health: 20.0
 hunger: 17
-exp: 0.0
+exp: 0.71428573
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 0.0
+saturation: 0.0
+exhaustion: 1.027022
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: lavahop
-  x: -17.560357467443886
-  y: 59.00133597911215
-  z: -21.57716156097217
-  pitch: -5.0861974
-  yaw: 359.9483
+  world: greenfield
+  x: -25.5
+  y: 69.0
+  z: -215.5
+  pitch: 0.46778247
+  yaw: 141.16235
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 15
+    duration: 189545
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 189545
+  '2':
+    type: REGENERATION
+    level: 4
+    duration: 189545
