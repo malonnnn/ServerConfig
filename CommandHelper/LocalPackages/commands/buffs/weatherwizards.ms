@@ -15,11 +15,14 @@
                 "/fly",
                 "/lightning",
                 "/weather",
-                "/cast tsunami"
+                "/cast tsunami",
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 21 9999 9 true"                
+                "/effect ". @plr ." 21 9999 9 true",
+                "/shot give ". @plr ." icespike",
+                "/give ". @plr ." minecraft:bone_meal 1 19:50 name:&fWindblast"
+                "
             )
         )
