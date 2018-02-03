@@ -1,23 +1,44 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 5
 armor_contents: {}
-health: 20.0
-hunger: 20
+health: 92.0
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 6.0
-exhaustion: 2.7935631
+saturation: 15.0
+exhaustion: 3.4601104
 location:
   ==: org.bukkit.Location
-  world: ccjitters
-  x: 0.5
-  y: 85.0
-  z: -15.5
-  pitch: -0.34774673
-  yaw: 90.14427
+  world: greenfield
+  x: -38.5
+  y: 111.0
+  z: -140.5
+  pitch: 14.793044
+  yaw: -44.987694
 potion_effect:
   '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 199932
+    type: INCREASE_DAMAGE
+    level: 2
+    duration: 195689
+  '1':
+    type: FAST_DIGGING
+    level: 0
+    duration: 243
+  '2':
+    type: HEALTH_BOOST
+    level: 17
+    duration: 195689

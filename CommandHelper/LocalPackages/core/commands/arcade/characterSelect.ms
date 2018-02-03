@@ -35,7 +35,8 @@ register_command(chars,
                                 @i = @startSpot
                                 foreach(@her in @heroes){
                                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
-                                    tmsg(player(),"#". @i . ". " . @hero['name'])
+                                    #tmsg(player(),"#". @i . ". " . @hero['name'])
+                                    tmsg(player(),@hero['name'])
                                     @i = @i + 1
                                 }
                                 msg(color(RED).'Check for more heroes using /chars '.(@pageNum+1))

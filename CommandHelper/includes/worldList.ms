@@ -9,6 +9,8 @@
     associative_array('ccjitters','CC Jitters'),
     associative_array('waynemanor','Wayne Manor'),
     associative_array('titanstower','Titans Tower'),
+    associative_array('helicarrier','Helicarrier'),
+    associative_array('starktower','Stark Tower'),
     associative_array('starcity','Star City'),
     associative_array('worldofooo','World of Ooo'),
     associative_array('starlingcity','Starling City'),

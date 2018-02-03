@@ -1,6 +1,6 @@
 id: 66edaf7d-94e7-44cf-9d99-34d3ad90594e
 name: LucarioGaming200
-last_cast: 1514142978652
+last_cast: 1516387899315
 cooldown_expiration: 0
 last_death_location: -3.9641126268004614,82.20000004768372,11.504799255731188,starlabs,275.23383,9.346699
 fall_protection_count: 0
@@ -158,10 +158,20 @@ spells:
     last_cast: 1491913782639
     last_earn: 1491913168707
     cooldown_expiration: 0
+  ascendio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   boon:
     cast_count: 2
     last_cast: 1491921362832
     last_earn: 1491921223007
+    cooldown_expiration: 0
+  periculum:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
     cooldown_expiration: 0
   fling:
     cast_count: 1
@@ -183,9 +193,39 @@ spells:
     last_cast: 1503580536251
     last_earn: 0
     cooldown_expiration: 1503580538251
+  wingardiumleviosa:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  reducto:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  crucio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  protego:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  incarcerous:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   spellshop:
     cast_count: 5
     last_cast: 1491931135855
+    last_earn: 0
+    cooldown_expiration: 0
+  confringo:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
   missile:
@@ -193,9 +233,29 @@ spells:
     last_cast: 1491916675359
     last_earn: 1491916675356
     cooldown_expiration: 0
+  incendio:
+    cast_count: 0
+    last_cast: 1516387849310
+    last_earn: 0
+    cooldown_expiration: 0
   wound|3:
     cast_count: 0
     last_cast: 1491909836023
+    last_earn: 0
+    cooldown_expiration: 0
+  expelliarmus:
+    cast_count: 0
+    last_cast: 1516387894273
+    last_earn: 0
+    cooldown_expiration: 1516387904273
+  rictusempra:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  sectumsempra:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
   reflect|4:
@@ -203,6 +263,11 @@ spells:
     last_cast: 1491939356508
     last_earn: 1491939356508
     cooldown_expiration: 0
+  accio:
+    cast_count: 0
+    last_cast: 1516387864917
+    last_earn: 0
+    cooldown_expiration: 1516387866917
   poison:
     cast_count: 0
     last_cast: 1491939367947
@@ -288,7 +353,59 @@ spells:
     last_cast: 1491939293869
     last_earn: 1491939293920
     cooldown_expiration: 0
+  stupefy:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
 wands:
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6accio§f (§3HarrysWand§f)
+        lore:
+        - §3§oBound to LucarioGaming200
+        - Knows 14 Spells
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1STW/TQBCdYid1wkehHAuiQMWpqdLYSZMLIgJEkVo4VD1Hw+44XeHdNevdhNyQEL+BH8CVAxJXTvwAfhAnxg6tTztv385788ZdgC7ESzQygcSTLgv0BN0LdG5VreGWXRpycPskCHTKvkKtzHzQ7ydwA4VXC5pVJRUFtFAIZVsQazT4/Bgghlv1ceaVpsqjLgE2cOv3z88s1fScKQl7oxFJzI9kb5LRUS/LRN6byMmkl2YyRTnpDxlnKcpzEn4mbGEdPBmloj8cDfoiGx7ujzIS+WE+HkhJ++OxGKdHQ5mmQ4pgc0GuUtYAQKsLW43RmTILMt66VQQJVoKMVJYJmxF0SnJKhCJorh9E/0fiM0RwZ8ljo5Mq6IIWylbI8H2WcCSD8DVrN4K2cGH95BFflc56mtdVFMF1ZThAQc6GipGHLCesyR23rRktdsOMSzfXIp75Y+1XodPNi5h7sD0fKt6Tq+V3mFRxLEFfQW2WrXwoKV9xtQHQge2p9069C55OrVS54ki69V0Myfn56xentvJ/Hz+9N/10TDF0auiEsPI/dn79+frl+7c2tKfaBuOf7UHzJRCfFdZDolGZi+YfuXkl8QY1wd05mTrJA/QexfuzkkjyuG85XvTrddRdGu72yw9BlZo3sntpD+AfLiwWd5cCAAA=
+    wand:
+      template: harryswand
+      owner: LucarioGaming200
+      active_spell: accio
+      mana: 200.0
+      mana_timestamp: 1516387873667
+      owner_id: 66edaf7d-94e7-44cf-9d99-34d3ad90594e
+      effect_color: 63c05620c451,64ecf1f82dde,88c8375d335e
+      version: 5
+      spell_inventory:
+        ascendio: 7
+        periculum: 31
+        accio: 0
+        wingardiumleviosa: 29
+        reducto: 32
+        crucio: 34
+        protego: 3
+        incarcerous: 33
+        confringo: 5
+        incendio: 2
+        expelliarmus: 4
+        rictusempra: 27
+        sectumsempra: 6
+        stupefy: 1
   harryswand2:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -366,6 +483,36 @@ wands:
         lift: 16
         fire: 34
         collapse: 9
+  elderwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6expelliarmus§f (§3Elder Wand§f)
+        lore:
+        - §3§oBound to LucarioGaming200
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 50/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1Qu07DQBDcKE6wI14KEg0IIRFRxcixnThuEJGCACmBIkodHXd74YTPZ+wzaWno6PkAWgo+gI6eD6LCcQRbrWZ2Z2a3AdAAY0FiZoKpUSYR0QgWRgzTFVpTixhT2B7llKRCXRAp4rnrODUwJInJcBfAgM1lO9NCYqaJTAAqZOvr4KXQLLdngkGr10NGeMDs0MfA9n3K7ZCFoe35zCMsdLoFbsI6co5Uz6iKVArHbuDTwOv4lDmddpf1Q97vMoaMtlnQ47Tj9X2Xu1VYe8Q0EyoGgBpY0BxonYrbXONYMcFFQTYKqmKAOZ1eDccq0z9Hp/uDp0s0wFpCIySZ/tj7/H59fn+rQ30gVR7rsxaUZYIxiZQGUxIR35V/2fi3uCYSYWeOxaGCnhCtCb2fJIisCtZNginRq2BLlXK2ef6Qi0RirA//4gH8AtwytASKAQAA
+    wand:
+      template: elderwand
+      owner: LucarioGaming200
+      mana: 600.0
+      mana_timestamp: 1516387901068
+      owner_id: 66edaf7d-94e7-44cf-9d99-34d3ad90594e
+      effect_color: 274c7314cd01,5d89f85ddedc,d76fc13842f2
+      version: 5
 open_wand: false
 gave_welcome_wand: false
 data:

@@ -45,6 +45,8 @@ register_command(exitgame,
                 case 'ooo':
                 case 'ccjitters':
                 case 'legionofdoom':
+                case 'helicarrier':
+                case 'starktower':
                     runas(~console,'/warp vrexit '.@plr)
                     broadcast(@plr.color(RED).' has disconnected from Infinity:One')
                 default:

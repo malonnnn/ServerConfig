@@ -312,7 +312,7 @@ bind('player_chat', null, null, @e) {
         @msg = to_lower(@msg)
       modify_event(message, @msg)
     }
-    if(!has_permission('chat.safe')){
+    if(has_permission('chat.babytalk')){
         @msg = replace(@msg,'l','w')
         @msg = replace(@msg,'L','W')
         @msg = replace(@msg,'r','w')
