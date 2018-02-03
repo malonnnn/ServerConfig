@@ -13,18 +13,14 @@
                 "/buff",
                 "/shrink",
                 "/normalsize",
-                "/flyspeed <number>",
                 "/fly",
                 "/carryplayer",
                 "/dismountplayer",
-                "/jump 0-6",
                 "/run 0-3",
                 "/haste 0-2",
-                "/undisguise"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 10 true",
-                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 5 9999 4 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/shot give ". @plr ." yellowenergybeam"
             )
