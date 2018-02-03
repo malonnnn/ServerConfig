@@ -11,7 +11,7 @@
             'speech': "It will rain blood today,Flash",
             'powers': array(
                 "/buff",
-                "/jump 0-4",
+                "/jump <0-2>",
                 "/fly",
                 "/lightning",
                 "/weather",
