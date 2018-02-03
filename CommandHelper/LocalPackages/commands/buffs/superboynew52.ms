@@ -16,21 +16,14 @@
                 "/jump 0-8",
                 "/run 0-8",
                 "/haste 0-8",
-                "/flyspeed <number>",
-                "/fly",
-                "/mindcontrol <playername>",
-                "/mindlock <playername>",
-                "/msg <playername>"
+                "/fly"
                
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 19 true",
                 "/effect ". @plr ." 10 9999 1 true",
-                "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 16 9999 1 true",
-                "/effect ". @plr ." 21 9999 19 true",
+                "/effect ". @plr ." 21 9999 14 true",
                 "/shot give ". @plr ." kryptonianlaservision",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
             )
