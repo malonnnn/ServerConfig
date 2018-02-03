@@ -25,6 +25,7 @@
                 'bigchill',
                 'alienx',
                 'lodestar',
-                'heatblast'
+                'heatblast',
+                'fourarms'
             )
         )
