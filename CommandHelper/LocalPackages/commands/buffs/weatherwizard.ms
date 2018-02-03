@@ -16,8 +16,7 @@
                 "/cast tsunami",
                 "Throw lightning with an empty hand.",
                 "/lightningpunch <on/off>",
-                "/wind <player>",
-                "/cast whirlwind"
+                "/wind <player>"
             ),
             'buffs': array(
                 "/shot give ". @plr ." icespike",

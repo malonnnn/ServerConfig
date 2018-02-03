@@ -1,24 +1,38 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.14285715
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: BOW
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §2Ar§fte§2mis' §fBow
+      enchants:
+        ARROW_FIRE: 1
+        ARROW_INFINITE: 1
+health: 16.00000762939453
+hunger: 17
+exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
-exhaustion: 3.0852737
+saturation: 0.0
+exhaustion: 2.822799
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 89.969574
+  world: rapunzel
+  x: -730.5
+  y: 16.0
+  z: 38.5
+  pitch: -0.34951916
+  yaw: 32.064545
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: DAMAGE_RESISTANCE
     level: 1
-    duration: 199950
+    duration: 194272
+  '1':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 194272
