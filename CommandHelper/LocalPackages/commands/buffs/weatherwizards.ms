@@ -16,6 +16,8 @@
                 "/lightning",
                 "/weather",
                 "/cast tsunami",
+                "Throw lightning with an empty hand.",
+                "/lightningpunch <on/off>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
