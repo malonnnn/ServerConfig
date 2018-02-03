@@ -19,6 +19,7 @@
                 "/effect ". @plr ." 5 9999 5 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:elytra 1 70:1 34:3 name:&7B&ea&0t&7m&8a&7n's_&8Glide_Wings",
+                "/give ". @plr ." minecraft:snowball 10 name:&8Batarang",
                 "/give ". @plr ." minecraft:ender_pearl 5 name:&7B&ea&0t&7m&8a&7n's_&8Grappling_Hook"                
             )
         )

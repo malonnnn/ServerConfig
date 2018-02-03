@@ -9,12 +9,7 @@ bind(player_interact_entity,null,array('clicked':'ITEM_FRAME'),@e){
     }
 }
 bind(entity_damage,null,array('type':'/ITEM_FRAME|ARMOR_STAND|PAINTING|MINECART|CHEST_MINECART|TNT_MINECART|FURNACE_MINECART|HOPPER_MINECART/'),@e){
-    if(array_index_exists(@e,'damager')){
-        if(has_permission(@e['damager'],'cancel.entityclicks')){
-            cancel()
-        }
-        console(@e['damager'])
-    }
+    cancel()
 }
 bind(vehicle_destroy,null,null,@e){
     if(!has_permission(@e['damager'],'cancel.entityclicks')){
