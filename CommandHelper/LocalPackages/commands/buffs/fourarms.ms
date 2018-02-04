@@ -25,6 +25,7 @@
                 'lodestar',
                 'goop',
                 'heatblast',
-                'xlr8'
+                'xlr8',
+                'diamondhead'
             )
         )
