@@ -24,6 +24,7 @@
                 'alienx',
                 'lodestar',
                 'goop',
-                'heatblast'
+                'heatblast',
+                'xlr8'
             )
         )
