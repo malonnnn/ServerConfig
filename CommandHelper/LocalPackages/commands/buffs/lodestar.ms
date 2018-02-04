@@ -25,7 +25,8 @@
                 'alienx',
                 'heatblast',
                 'goop',
-                'fourarms'
+                'fourarms',
+                'xlr8'
             )
         )       
 
