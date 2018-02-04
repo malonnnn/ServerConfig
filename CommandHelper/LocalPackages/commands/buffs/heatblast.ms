@@ -27,7 +27,6 @@
                 'alienx',
                 'lodestar',
                 'goop',
-                'fourarms',
-                'xlr8'
+                'fourarms'
             )
         )

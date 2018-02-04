@@ -2,28 +2,10 @@ bind(server_command,null,null,@e){
     @loc = get_command_block()
     if(@loc != null){
         @world = @loc['world']
-        switch(@world){
-            case 'greenfield':
-            case 'metropolis':
-            case 'gotham':
-            case 'infinitycity':
-            case 'fortressofsolitude':
-            case 'hallofjustice':
-            case 'waynemanor':
-            case 'titanstower':
-            case 'broville':
-            case 'starlabs':
-            case 'atlantis':
-            case 'hogwarts':
-            case 'nyc':
-            case 'rapunzel':
-            case 'ooo':
-            case 'ccjitters':
-            case 'legionofdoom':
-            case 'starktower':
-            case 'helicarrier':
-                cancel()
-                set_block_command(@loc,'')
+        include('/home/minecraft/server/plugins/CommandHelper/includes/isWorldExplorable.ms')
+        if(_isWorldExplorable(@world)){
+            cancel()
+            set_block_command(@loc,'')
         }
     }else{
         console('not a commandblock')

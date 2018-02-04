@@ -36,16 +36,54 @@ bind(entity_damage,null,array('type':'/ARMOR_STAND|ITEM_FRAME|PAINTING|MINECART|
     if(array_index_exists(@e,'damager')){
         if(has_permission(@e['damager'],'cancel.entityclicks') == false){
             console('dead from damage entity')
-            entity_remove(@e[''])
+            entity_remove(@e['id'])
             die()
         }
     }
 }
 bind(vehicle_destroy,null,null,@e){
-    cancel()
+    include('/home/minecraft/server/plugins/CommandHelper/includes/isWorldExplorable.ms')
+    if(_isWorldExplorable(@e['location']['world'])){
+        cancel()
+    }
     if(array_index_exists(@e, 'damager') && has_permission(@e['damager'],'cancel.entityclicks') == false){
         console('dead from vehicle destroy')
+        entity_remove(@e['vehicle'])
         die()
+    }
+}
+bind(block_dispense,null,null,@e){
+    include('/home/minecraft/server/plugins/CommandHelper/includes/isWorldExplorable.ms')
+    if(_isWorldExplorable(@e['location']['world'])){
+        cancel()
+    }
+}
+bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item: 317 ),@e){
+    try{
+        @meta = get_itemmeta(@e['player'], @e['slot'])
+        if(is_array(@meta['enchants'])){
+            foreach(@enchant in @meta['enchants']){
+                if(@enchant['etype'] == 'FROST_WALKER'){
+                    @enchant['elevel'] = 0
+                }
+            }
+        }
+        set_itemmeta(@e['player'], null, @meta)
+    }catch(Exception @e){}
+}
+bind(player_interact, null, array(button: 'right'), @e){
+    if(@e['action'] == 'right_click_air'){
+        try{
+            @meta = get_itemmeta(@e['player'], null)
+            if(is_array(@meta['enchants'])){
+                foreach(@enchant in @meta['enchants']){
+                    if(@enchant['etype'] == 'FROST_WALKER'){
+                        @enchant['elevel'] = 0
+                    }
+                }
+            }
+            set_itemmeta(@e['player'], null, @meta)
+        }catch(Exception @e){}
     }
 }
 #bind(inventory_open,null,null,@e){

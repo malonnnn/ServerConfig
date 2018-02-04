@@ -22,36 +22,13 @@ register_command(exitgame,
             @ploc = ploc(@plr)
             @world = @ploc['world']
 
-            switch(@world){
-                case 'survival112':
-                case 'survival112_nether':
-                case 'survival112_the_end':
-                case 'greenfield':
-                case 'metropolis':
-                case 'gotham':
-                case 'infinitycity':
-                case 'fortressofsolitude':
-                case 'hallofjustice':
-                case 'waynemanor':
-                case 'titanstower':
-                case 'broville':
-                case 'starlabs':
-                case 'atlantis':
-                case 'hogwarts':
-                case 'nyc':
-                case 'rapunzel':
-                case 'speedforce':
-                case 'soulstone':
-                case 'ooo':
-                case 'ccjitters':
-                case 'legionofdoom':
-                case 'helicarrier':
-                case 'starktower':
-                    runas(~console,'/warp vrexit '.@plr)
-                    broadcast(@plr.color(RED).' has disconnected from Infinity:One')
-                default:
-                    runas(~console,'/warp '.@world.'exit '.@plr)
-                    msg(color(RED).' Welcome back to the arcade!')
+            include('/home/minecraft/server/plugins/CommandHelper/includes/isWorldExplorable.ms')
+            if(_isWorldExplorable(@world)){
+                runas(~console,'/warp vrexit '.@plr)
+                broadcast(@plr.color(RED).' has disconnected from Infinity:One')
+            }else{
+                runas(~console,'/warp '.@world.'exit '.@plr)
+                msg(color(RED).' Welcome back to the arcade!')
             }
         }
     )
