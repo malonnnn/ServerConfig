@@ -27,6 +27,7 @@
                 'lodestar',
                 'heatblast',
                 'fourarms',
-                'xlr8'
+                'xlr8',
+                'diamondhead
             )
         )
