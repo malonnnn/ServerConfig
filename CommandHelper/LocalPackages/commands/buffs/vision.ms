@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODAzODUzODQ1NjAsInByb2ZpbGVJZCI6IjI3NWFhNTQxMTg5NzQ1YzRiYWRiNzk1NTNmNjU0NTE5IiwicHJvZmlsZU5hbWUiOiJmbGFtaW5nd2FycmlvcjEwIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zNmViODkyNmI2OTQwZGQ3NzI5NjBkYjZjYTkzYzJjZDQ3MjllZThiZTRiODYzMmRjNmUyNjk3ODI1Y2Y1OSJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "that was... odd.",
+            'speech': "That was... odd.",
             'powers': array(
                 "/buff",
                 "/jump 0-4",
@@ -18,6 +18,7 @@
                 "/flyspeed <number>",
                 "/thru (intangible)",
                 "/disguise",
+                "/disguise p <playername>",
                 "/wallrun <on/off>",
                 "Look Up+Jump+Crouch to perform a wallrun.",
                 "/speak <player> <message>",
