@@ -14,11 +14,11 @@
                 "/herotransform"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 2 true",
+                "/effect ". @plr ." 5 9999 5 true",
                 "/give ". @plr ." minecraft:diamond_sword 1 16:20 name:&bC&3r&by&3s&bt&3a&bl_&3S&bw&3o&br&3d",
-                "/effect ". @plr ." 11 9999 5 true",
+                "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 9 true",
-                "/effect ". @plr ." 10 9999 3 true",
+                "/effect ". @plr ." 10 9999 4 true",
                 "/shot give ". @plr ." crystalshards",
             ),
             'alts': array(
