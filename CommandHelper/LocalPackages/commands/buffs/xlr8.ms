@@ -25,6 +25,7 @@
                 'fourarms',
                 'bigchill',
                 'goop',
-                'alienx'
+                'alienx',
+                'lodestar'
             )
         )
