@@ -21,7 +21,7 @@ bind(hanging_break,null,array('type': '/ITEM_FRAME|PAINTING/'),@e){
 bind(player_interact_at_entity,null,null,@e){
     if(has_permission('cancel.entityclicks') == false){
         console('dead from player interact at entity')
-        console(@e['location'])
+        console(@e['player'])
         die()
     }
     cancel()
