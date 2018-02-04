@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTc2OTExODE5MDgsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE4YjFlMTczNWI4Y2QxZjBmNTRlMjM0MmE5OTllOTQyZjM0OWU5MTZjYTZiYWVlMDRiOWU3ZTMwNWFjMTkifX19',
             'trail': '',
             'op': 'false',
-            'speech': "
+            'speech': "Pretty fast, huh?"
             'powers': array(
                 "/buff",
                 "/run 0-6",
