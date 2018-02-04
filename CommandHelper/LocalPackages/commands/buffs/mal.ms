@@ -10,9 +10,35 @@
             'op': 'false',
             'speech': "I'm rotten to the core!",
             'powers': array(
-                "/buff"
+                "/buff",
+                "/carryplayer",
+                "/dismountplayer",
+                "/jump 0-4",
+                "/run 0-4",
+                "/haste 0-6",
+                "/cast time",
+                "/speak <player> <message>",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/invis",
+                "/vis",
+                "/disguiseviewself",
+                "/confuse <player>",
+                 "/flyspeed <number>",
+                "/fly",
+                "/msg <playername>"
+                "/disguise",
+                "/undisguise",
+                "/create <itemid> <qty>",
+                "/mutate <playername>",
+                "Access to all warps",
+                "/tp",
+                "/tppos"
             ),
             'buffs': array(
                 "/give ". @plr ." minecraft:book 1 name:&5M&2a&8l&5's_&5S&2p&5e&8l&2l_&5B&2o&0o&5k"
+                "/effect ". @plr ." 5 9999 9 true",
+                "/effect ". @plr ." 21 9999 7 true",
+                "/shot give ". @plr ." magicblast",
             )
         )
