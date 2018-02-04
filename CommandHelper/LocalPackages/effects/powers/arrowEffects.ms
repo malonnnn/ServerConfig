@@ -51,6 +51,22 @@ bind(projectile_launch, null, array(type: 'ARROW', shootertype: 'PLAYER'), @even
                     unbind()
                 }
                 break()
+            }else if(@arrowName == color(GREEN).'Kryptonite '.color(WHITE).'Arrow'){
+                bind(projectile_hit, null, array('id': @event['id']), @e){
+                    if(!is_array(@e['hit'])){
+                        @vicID = @e['hit']
+                        @vicName = player(@vicID)
+                        if(has_permission(@vicName,'weakto.kryptonite')){
+                            damage_entity(@vicID,200)
+                        }
+                    }
+                    unbind()
+                }
+                break()
+            }
+
+            if(@item['type'] == 262){
+                break()
             }
         }
     }

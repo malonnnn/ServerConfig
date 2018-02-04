@@ -1,38 +1,73 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: BOW
+    type: LEASH
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §2Ar§fte§2mis' §fBow
+      display-name: §4W§fon§eder §4W§fom§9an§f's §eLasso
       enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-health: 16.00000762939453
+        DAMAGE_ALL: 10
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4G§fo§ed §4K§fi§el§9l§fe§er
+      enchants:
+        DAMAGE_ALL: 40
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: SHIELD
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      display-name: §4W§fon§eder§4W§fom§9an's §4S§fh§ee§9i§4l§fd
+      enchants:
+        DURABILITY: 10
+        MENDING: 1
+      blockMaterial: SHIELD
+health: 100.0
 hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
 saturation: 0.0
-exhaustion: 2.822799
+exhaustion: 3.8654153
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: rapunzel
-  x: -730.5
-  y: 16.0
-  z: 38.5
-  pitch: -0.34951916
-  yaw: 32.064545
+  world: omniacademy
+  x: -17.5
+  y: 92.0
+  z: -3.5
+  pitch: 1.3415804
+  yaw: 341.4892
 potion_effect:
   '0':
-    type: DAMAGE_RESISTANCE
-    level: 1
-    duration: 194272
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 198947
   '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 198947
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198947
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 198947
+  '4':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198947
+  '5':
     type: HEALTH_BOOST
-    level: 4
-    duration: 194272
+    level: 19
+    duration: 198947

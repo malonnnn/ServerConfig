@@ -1,9 +1,20 @@
 bind(hanging_break,null,array('type': '/ITEM_FRAME|PAINTING/'),@e){
         cancel()
-        if(array_index_exists(@e,'player') && has_permission(@e['player'],'cancel.entityclicks') == false){
+        if(@e['player'] != null && has_permission(@e['player'],'cancel.entityclicks') == false){
             console('dead from hanging break')
             entity_remove(@e['id'])
             die()
+        }else if(@e['cause'] == 'PHYSICS'){
+            entity_remove(@e['id'])
+            if(@e['type'] == 'PAINTING'){
+                @num = '321'
+            }else{
+                @num = '389'
+            }
+            @item = array('type':@num, 'data':0, 'qty': 1)
+            console(@e)
+ 
+            drop_item(@e['location'],@item)
         }
 }
 bind(player_interact_at_entity,null,null,@e){

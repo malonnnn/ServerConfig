@@ -113,3 +113,8 @@ arrowbomb:/arrow bomb = >>>
     tmsg(player(),concat(color(dark_red),
     "EXPLOOOOSSSSIIOONNNNSSSS!!!!"))
 <<<
+arrowkryptonite:/arrow kryptonite = >>>
+    sudo("/give ".player()." minecraft:arrow 1 0 {display:{Name:\"".color(GREEN)."Kryptonite ".color(WHITE)."Arrow\"}}")
+    tmsg(player(),concat(color(GREEN),
+    "It's green and glowing!"))
+<<<

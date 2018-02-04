@@ -44,6 +44,7 @@
                 "/give ".@plr." minecraft:tipped_arrow 10 0 {display:{Name:\"Arrow of ".color(AQUA)."Water Breathing\"},Potion:\"minecraft:long_water_breathing\"}",
                 "/give ".@plr." minecraft:tipped_arrow 10 0 {display:{Name:\"Arrow of ".color(DARK_GREEN)."Luck\"},Potion:\"minecraft:luck\"}",
                 "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(WHITE)."Arrow of ".color(GRAY)."Smoke\"}}",
-                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(WHITE)."Arrow of ".color(DARK_RED)."Ka-Ba-Boom\"}}" 
+                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(WHITE)."Arrow of ".color(DARK_RED)."Ka-Ba-Boom\"}}", 
+                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(GREEN)."Kryptonite ".color(WHITE)."Arrow\"}}" 
             )
         )
