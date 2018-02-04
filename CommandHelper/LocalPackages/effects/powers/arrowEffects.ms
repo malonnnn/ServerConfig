@@ -74,10 +74,21 @@ bind(projectile_launch, null, array(type: 'ARROW', shootertype: 'PLAYER'), @even
                     }
                     unbind()
                 }
+            }else if(@arrowName == color(DARK_GRAY).'The Phantom Zone '.color(WHITE).'Arrow'){
+                bind(projectile_hit, null, array('id': @event['id']), @e, @shooter = @pname){
+                    if(!is_array(@e['hit'])){
+                        @vicID = @e['hit']
+                        @vicName = player(@vicID)
+                        include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
+                        _coolDown('phantomZoneArrow',120,@shooter)
+                        sudo('/phantomzonetrap '.@vicName)
+                    }
+                    unbind()
+                }
                 break()
             }
 
-            if(@item['type'] == 262){
+            if(@item['type'] == 262 || @item['type'] == 439 || @item['type'] == 440){
                 break()
             }
         }
