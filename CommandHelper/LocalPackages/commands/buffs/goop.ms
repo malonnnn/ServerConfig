@@ -26,6 +26,7 @@
                 'alienx',
                 'lodestar',
                 'heatblast',
-                'fourarms'
+                'fourarms',
+                'xlr8'
             )
         )
