@@ -21,6 +21,7 @@
                 'lodestar',
                 'goop',
                 'fourarms',
-                'xlr8'
+                'xlr8',
+                'diamondhead'
             )
         )
