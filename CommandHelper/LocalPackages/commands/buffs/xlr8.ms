@@ -26,6 +26,7 @@
                 'goop',
                 'bigchill',
                 'fourarms',
-                'lodestar'
+                'lodestar',
+                'diamondhead'
             )
         )
