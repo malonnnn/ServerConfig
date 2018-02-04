@@ -17,6 +17,9 @@
                 "/normalsize",
                 "Anything you attack, dies",
                 "/create <itemid> <qty>",
+                "/mindcontrol <playername>
+                "/intangible"
+                "/tangible"
                 "/vis",
                 "/invis"
            ),
