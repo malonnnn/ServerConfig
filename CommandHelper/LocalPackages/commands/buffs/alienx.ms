@@ -28,6 +28,7 @@
                 'heatblast',
                 'lodestar',
                 'goop',
-                'fourarms'
+                'fourarms',
+                'xlr8'
             )
 )
