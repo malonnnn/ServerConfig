@@ -11,8 +11,31 @@
             'speech': "I'm rotten to the core!",
             'powers': array(
                 "/buff"
+                "/jump 0-3",
+                "/run 0-4",
+                "/haste 0-68,
+                "/flyspeed <number>",
+                "/fly",
+                "/disguise",
+                "/speak <player> <message>",
+                "/mindcontrol <playername>",
+                "/stopmindcontrol",
+                "/invis",
+                "/vis",
+                "/confuse <player>",
+                "/disguiseviewself",
+                "/undisguise",
+                "/cast time"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:book 1 name:&5M&2a&8l&5's_&5S&2p&5e&8l&2l_&5B&2o&0o&5k"
+                "/give ". @plr ." minecraft:book 1 name:&5M&2a&8l&5's_&5S&2p&5e&8l&2l_&5B&2o&0o&5k",
+                "/shot give ". @plr ." magicblast",
+                /effect ". @plr ." 5 9999 10 true",
+                "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 11 9999 2 true",
+                "/effect ". @plr ." 12 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true",
+                "/effect ". @plr ." 16 9999 1 true",
+                "/effect ". @plr ." 21 9999 9 true"
             )
         )
