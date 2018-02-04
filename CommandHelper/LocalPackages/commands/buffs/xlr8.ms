@@ -12,7 +12,7 @@
             'powers': array(
                 "/buff",
                 "/run 0-6",
-                "/haste 0-6",
+                "/haste 0-2",
                 "/herotransform"
             ),
             'buffs': array(
