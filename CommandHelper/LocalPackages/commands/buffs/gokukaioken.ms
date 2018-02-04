@@ -16,7 +16,8 @@
                 "/haste 0-7",
                 "/flyspeed <number>",
                 "/fly",
-                "/tp",
+                "/tp <player>",
+                "/grouptp <player>",
                 "/carryplayer <player>",
                 "/dismountplayer",
                 "/herotransform"

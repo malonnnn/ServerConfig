@@ -36,10 +36,10 @@
                 "/arrow luck"
             ),
             'buffs': array(
+                "/effect ". @plr ." 5 9999 2 true",
                 "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&2Gre&0e&2n_A&0r&2row's_&8Bow",
                 "/give ". @plr ." minecraft:ender_pearl 5 name:&2Gre&0e&2n_A&0r&2row's_&2Grappling_Arrow",
-                "/effect ". @plr ." 5 9999 1 true",
-                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(gray)."Normal Arrow\"}}",
+                "/give ".@plr." minecraft:arrow 10",
                 "/give ".@plr." minecraft:spectral_arrow 10 0 {display:{Name:\"".color(yellow)."Spectral Arrow\"}}",
                 "/give ".@plr." minecraft:tipped_arrow 10 0 {display:{Name:\"Arrow of ".color(LIGHT_PURPLE)."Strong Regeneration\"},Potion:\"minecraft:strong_regeneration\"}",
                 "/give ".@plr." minecraft:tipped_arrow 10 0 {display:{Name:\"Arrow of ".color(LIGHT_PURPLE)."Long Regeneration\"},Potion:\"minecraft:long_regeneration\"}",
@@ -62,6 +62,7 @@
                 "/give ".@plr." minecraft:tipped_arrow 10 0 {display:{Name:\"Arrow of ".color(DARK_GREEN)."Luck\"},Potion:\"minecraft:luck\"}",
                 "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(WHITE)."Arrow of ".color(GRAY)."Smoke\"}}",
                 "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(WHITE)."Arrow of ".color(DARK_RED)."Ka-Ba-Boom\"}}", 
-                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(GREEN)."Kryptonite ".color(WHITE)."Arrow\"}}" 
+                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(GREEN)."Kryptonite ".color(WHITE)."Arrow\"}}", 
+                "/give ".@plr." minecraft:arrow 10 0 {display:{Name:\"".color(BLUE)."Magic ".color(WHITE)."Arrow\"}}" 
             )
         )

@@ -2,6 +2,7 @@ bind(hanging_break,null,array('type': '/ITEM_FRAME|PAINTING/'),@e){
         cancel()
         if(@e['player'] != null && has_permission(@e['player'],'cancel.entityclicks') == false){
             console('dead from hanging break')
+            console(@e['location'])
             entity_remove(@e['id'])
             die()
         }else if(@e['cause'] == 'PHYSICS'){
@@ -20,6 +21,7 @@ bind(hanging_break,null,array('type': '/ITEM_FRAME|PAINTING/'),@e){
 bind(player_interact_at_entity,null,null,@e){
     if(has_permission('cancel.entityclicks') == false){
         console('dead from player interact at entity')
+        console(@e['location'])
         die()
     }
     cancel()
@@ -27,6 +29,7 @@ bind(player_interact_at_entity,null,null,@e){
 bind(player_interact_entity,null,array('clicked':'ITEM_FRAME'),@e){
     if(has_permission('cancel.entityclicks') == false){
         console('dead from player interact')
+        console(@e['location'])
         die()
     }
     cancel()
@@ -36,6 +39,7 @@ bind(entity_damage,null,array('type':'/ARMOR_STAND|ITEM_FRAME|PAINTING|MINECART|
     if(array_index_exists(@e,'damager')){
         if(has_permission(@e['damager'],'cancel.entityclicks') == false){
             console('dead from damage entity')
+            console(@e['location'])
             entity_remove(@e['id'])
             die()
         }
@@ -49,6 +53,7 @@ bind(vehicle_destroy,null,null,@e){
     if(array_index_exists(@e, 'damager') && has_permission(@e['damager'],'cancel.entityclicks') == false){
         console('dead from vehicle destroy')
         entity_remove(@e['vehicle'])
+        console(@e['location'])
         die()
     }
 }
@@ -68,7 +73,7 @@ bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item
                 }
             }
         }
-        set_itemmeta(@e['player'], null, @meta)
+        set_itemmeta(@e['player'], @e['slot'], @meta)
     }catch(Exception @e){}
 }
 bind(player_interact, null, array(button: 'right'), @e){
