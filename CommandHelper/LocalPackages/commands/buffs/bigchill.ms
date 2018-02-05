@@ -37,6 +37,7 @@
                 'goop',
                 'fourarms',
                 'xlr8',
-                'diamondhead'
+                'diamondhead',
+                'ghostfreak'
             )
         )
