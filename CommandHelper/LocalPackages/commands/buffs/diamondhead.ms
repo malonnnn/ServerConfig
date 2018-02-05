@@ -29,6 +29,7 @@
                 'fourarms',
                 'lodestar',
                 'xlr8',
-                'bigchill'
+                'bigchill',
+                'ghostfreak'
             )
         )
