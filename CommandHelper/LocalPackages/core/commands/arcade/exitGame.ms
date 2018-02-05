@@ -22,8 +22,7 @@ register_command(exitgame,
             @ploc = ploc(@plr)
             @world = @ploc['world']
 
-            include('/home/minecraft/server/plugins/CommandHelper/includes/isWorldExplorable.ms')
-            if(_isWorldExplorable(@world)){
+            if(has_permission(@plr,'is.ingame')){
                 runas(~console,'/warp vrexit '.@plr)
                 broadcast(@plr.color(RED).' has disconnected from Infinity:One')
             }else{
