@@ -9,7 +9,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTc3OTU5ODUzMDcsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzk0MjExNDNhY2UxM2NiZWFmNDcxY2MxMDgxOGI4M2I4ZmJiNzEyMGZiZTgyMDU1ZTc0ZWYyNjQ1OTgwNjkifX19',
             'trail': '',
             'op': 'false',
-            'speech': "",
+            'speech': "You look like you've seen a ghost...freak! Hahahahaha",
             'powers': array(
                 "/buff",
                 "/intangible",
