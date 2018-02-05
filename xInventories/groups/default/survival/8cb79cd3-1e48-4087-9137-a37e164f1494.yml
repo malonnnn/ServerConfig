@@ -1,19 +1,48 @@
-inventory: {}
+inventory:
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 health: 20.0
-hunger: 20
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 13.0
-exhaustion: 2.0178444
-armor_contents: {}
+saturation: 5.0
+exhaustion: 1.342
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: chess
-  x: -17.5
-  y: 93.0
-  z: 0.5
-  pitch: 3.4499927
-  yaw: 283.6324
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 291.8485
+potion_effect:
+  '0':
+    type: FAST_DIGGING
+    level: 0
+    duration: 252
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 197535

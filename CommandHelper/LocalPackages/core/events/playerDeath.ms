@@ -16,4 +16,17 @@ bind(player_death, null, null, @event,
         set_phealth(@player,1)
         modify_event('death_message',null)
     }
+
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @deadPersonClass = _getheroclass(@player)
+    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@deadPersonClass.'.ms')
+    @dHero = @hero
+    modify_event('player',@dHero['name'].color(WHITE))
+    if(array_index_exists(@event,'killer')){
+        @alivePersonClass = _getheroclass(@event['killer'])
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@alivePersonClass.'.ms')
+        @aHero = @hero
+        modify_event('killer',@aHero['name'].color(WHITE))
+    }
+
 )
