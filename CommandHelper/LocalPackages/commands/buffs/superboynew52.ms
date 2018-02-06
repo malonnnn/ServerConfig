@@ -14,14 +14,17 @@
                 "/carryplayer",
                 "/dismountplayer",
                 "/run 0-8",
-                "/haste 0-8",
-                "/fly"
+                "/haste 0-6",
+                "/fly",
+                "/flyspeed <number>"
                
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 19 true",
+                "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 10 9999 1 true",
+                "/effect ". @plr ." 11 9999 2 true",
                 "/effect ". @plr ." 12 9999 1 true",
+                "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 14 true",
                 "/shot give ". @plr ." kryptonianlaservision",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"                
