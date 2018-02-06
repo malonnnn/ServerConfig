@@ -26,6 +26,7 @@
                 'goop',
                 'heatblast',
                 'xlr8',
-                'diamondhead'
+                'diamondhead',
+                'ghostfreak'
             )
         )
