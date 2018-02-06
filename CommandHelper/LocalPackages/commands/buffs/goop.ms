@@ -28,6 +28,7 @@
                 'heatblast',
                 'fourarms',
                 'xlr8',
-                'diamondhead'
+                'diamondhead',
+                'ghostfreak'
             )
         )
