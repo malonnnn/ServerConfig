@@ -16,7 +16,8 @@
                 "/tangible",
                 "/fly",
                 "/mindcontrol <playername>",
-                "/stopmindcontrol"
+                "/stopmindcontrol",
+                "/herotransform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 11 9999 1 true",
