@@ -27,6 +27,7 @@
                 'bigchill',
                 'fourarms',
                 'lodestar',
-                'diamondhead'
+                'diamondhead',
+                'ghostfreak'
             )
         )
