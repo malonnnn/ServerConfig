@@ -27,6 +27,8 @@ register_command(depower,
                 }
                 include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
                 _coolDown('lastUsedDepower',60,@plr)
+                
+                export(@player.'nerfOnePunch',true)
 
                 runas(~console,"/gamemode survival ".@player)
                 runas(~console,"/minecraft:clear ".@player)
@@ -50,6 +52,7 @@ register_command(depower,
 
                 set_timeout(30000,closure(
                     unbind(@theBind)
+                    export(@player.'nerfOnePunch',false)
                     tmsg(@player,color(RED).'Your powers are restored.')
                 ))
 

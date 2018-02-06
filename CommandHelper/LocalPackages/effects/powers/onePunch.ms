@@ -19,7 +19,7 @@ bind(entity_damage, null, array('cause':'ENTITY_ATTACK'), @e) {
         )
     }
 
-    if(has_permission(@attacker,'powers.onepunch')){
+    if(has_permission(@attacker,'powers.onepunch') && import(@attacker.'nerfOnePunch') != true){
         if(@vicName != ''){
             set_peffect(@vicName,11,1,0)
         }
