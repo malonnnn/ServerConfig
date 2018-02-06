@@ -14,15 +14,13 @@
                 "/buff",
                 "/intangible",
                 "/tangible",
-                "/thru (phases through walls)",
                 "/fly",
                 "/mindcontrol <playername>",
                 "/stopmindcontrol"
             ),
             'buffs': array(
-                "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 21 9999 9 true",
-                "/give ". @plr ." minecraft:iron_bars 1 16:6 name:&7Ghostfreak's_&8Claws"
+                "/effect ". @plr ." 11 9999 1 true",
+                "/effect ". @plr ." 21 9999 4 true"
             ),
             'alts': array(
                 'heatblast',
