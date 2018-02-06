@@ -24,6 +24,7 @@
                 "/shot give ". @plr ." pistol",
                 "/shot give ". @plr ." pistol",
                 "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana",
-                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana"                
+                "/give ". @plr ." minecraft:iron_sword 1 16:10 name:&4D&0ea&4dP&0oo&4l's_Katana", 
+                "/give ". @plr ." minecraft:bread 1 name:&6Chimichanga"
             )
         )
