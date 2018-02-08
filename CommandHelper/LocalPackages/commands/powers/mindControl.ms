@@ -53,7 +53,7 @@ register_command(mindcontrol,
             @ploc = ploc(@player)
             @vloc = ploc(@vic)
             if(has_permission(@player,'powers.mindcontrolnear')){
-                @plrClass = _getHeroClass(@plr)
+                @plrClass = _getHeroClass(@player)
                 @radius = 0
                 if(@plrClass == 'wonderwoman'){
                     @radius = 20
@@ -74,7 +74,7 @@ register_command(mindcontrol,
 
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-            _coolDown('lastUsedMindControl',60,@plr)
+            _coolDown('lastUsedMindControl',60,@player)
             
             broadcast("@player is now mindcontrolling @vic")
 
