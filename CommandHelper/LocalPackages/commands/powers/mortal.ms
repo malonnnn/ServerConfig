@@ -18,7 +18,6 @@ register_command(mortal,
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/mortal.ms')
             _mortal(@plr)
-            broadcast(@plr.color(RED).' has unplugged from The Matrix!')
                 
         }
     )

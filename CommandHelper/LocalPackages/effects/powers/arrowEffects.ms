@@ -11,8 +11,10 @@ bind(projectile_launch, null, array(type: 'ARROW', shootertype: 'PLAYER'), @even
             die()
         }
     }
-    _isSpecialArrow(@inv[-106],@event['id'])
-    ptake_item(@pname,@inv[@i]['type'],1)
+    if(_isSpecialArrow(@inv[-106],@event['id'])){
+        @inv[-106]['qty']--
+        set_pinv(@pname,@inv)
+    }
 
 }
 

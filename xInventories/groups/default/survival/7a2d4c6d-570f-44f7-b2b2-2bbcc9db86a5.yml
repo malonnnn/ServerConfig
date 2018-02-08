@@ -1,104 +1,35 @@
-inventory:
-  '0':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-  '2':
-    ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '6':
-    ==: org.bukkit.inventory.ItemStack
-    type: WEB
-    amount: 64
-  '8':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §fWeb-Shot§f «×»
-  '13':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §cHy§4br§cid's §4Glide Wings
-      enchants:
-        DURABILITY: 3
-        MENDING: 1
-  '10':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_CHESTPLATE
-    damage: 26
-  '4':
-    ==: org.bukkit.inventory.ItemStack
-    type: BOW
-    damage: 8
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      enchants:
-        ARROW_FIRE: 1
-        ARROW_INFINITE: 1
-  '9':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_HELMET
-    damage: 26
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_LEGGINGS
-    damage: 26
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: DIAMOND_BOOTS
-  '22':
-    ==: org.bukkit.inventory.ItemStack
-    type: ARROW
-  '31':
-    ==: org.bukkit.inventory.ItemStack
-    type: ELYTRA
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §cHy§4br§cid's §4Glide Wings
-      enchants:
-        DURABILITY: 3
-        MENDING: 1
-  '34':
-    ==: org.bukkit.inventory.ItemStack
-    type: INK_SACK
-health: 80.0
+inventory: {}
+health: 60.0
 hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 8.0
-exhaustion: 1.6858034
+saturation: 19.0
+exhaustion: 2.4573328
 armor_contents: {}
+location:
+  ==: org.bukkit.Location
+  world: elytraeasy
+  x: 0.5
+  y: 51.0
+  z: -8.5
+  pitch: 7.0500016
+  yaw: -262.5987
 potion_effect:
   '0':
-    type: JUMP
-    level: 5
-    duration: 166517
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 195765
   '1':
-    type: HEALTH_BOOST
-    level: 14
-    duration: 166195
-  '2':
-    type: SPEED
-    level: 5
-    duration: 166668
-  '3':
     type: INCREASE_DAMAGE
-    level: 10
-    duration: 166195
-  '4':
+    level: 12
+    duration: 195765
+  '2':
     type: REGENERATION
-    level: 3
-    duration: 166195
+    level: 4
+    duration: 195765
+  '3':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 195765

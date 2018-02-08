@@ -1,10 +1,11 @@
 base:
   property_holders:
-    mana: subclass
-    mana_max: subclass
-    mana_regeneration: subclass
-    mana_regeneration: subclass
-    mana_timestamp: subclass
+    mana: class
+    mana_max: class
+    mana_regeneration: class
+    mana_regeneration: class
+    mana_timestamp: class
+    spell_levels: class
     spells: class
     brushes: class
     path: subclass
@@ -12,20 +13,20 @@ base:
 caster:
   inherit: base
   locked: false
+  mana_max: 50
+  mana: 50
+  mana_regeneration: 5
+  active_spell: missile
+  spells:
+   - missile
 
 battle_mage:
   parent: caster
   locked: false
   limit_spells_to_path: true
   path: battle
-  mana_regeneration: 4
-  mana_max: 40
-  mana: 40
 
 mage:
   parent: caster
   locked: false
   path: beginner
-  mana_max: 50
-  mana: 50
-  mana_regeneration: 5

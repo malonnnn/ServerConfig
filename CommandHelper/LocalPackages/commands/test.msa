@@ -1,0 +1,35 @@
+ymlconvert:/ymlconvert $heroClass = >>>
+
+    try{
+        include('./buffs/'.$heroClass.'.ms')
+    }catch(IOException @e){
+        tmsg(player(),$heroClass.'.ms was not found')
+        die()
+    }
+
+    @yml = yml_encode(@hero,true)
+    
+    if(!is_dir('./heroes/')){
+        create_dir('./heroes/')
+    }
+    
+    if(!file_exists('./heroes/'.$heroClass.'.yml')){
+        create_file('./heroes/'.$heroClass.'.yml')
+    }
+    write_file('./heroes/'.$heroClass.'.yml',@yml,'OVERWRITE')
+    
+
+<<<
+
+fattest:/fattest = >>>
+    #No directory gets created, no error. Console prints "Dir Not Exist" every time run command
+    if(!is_dir('./test/')){
+        console('Dir Not Exist')
+        create_dir('./test/')
+    }
+    # "File could not be created." every time.
+    if(!file_exists('./test/test.yml')){
+        create_file('./test/test.yml')
+    }
+    write_file('./test/test.yml','YMLTEXT','OVERWRITE')
+<<<

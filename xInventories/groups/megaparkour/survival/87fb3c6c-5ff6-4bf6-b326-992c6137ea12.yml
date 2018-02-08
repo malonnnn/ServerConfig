@@ -6,12 +6,28 @@ remainingAir: 300
 fireTicks: -20
 saturation: 0.0
 exhaustion: 2.4519982
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: SIGN
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: COMMAND
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAGWQMUsDQRCFZ2MgIUYbS5t161TaCcJhSGdUSKxCkHF3OI/s3Rx7sySH+AP8q/4KLyHFBqebNx9vHm8EMILLR892M6ukkHaJuYKx5coVUnA1J1EK+hiFQcGg5i0FcjCE0TQ2wuUzlgQqG8JgymWJlYNfIe8DbnWGemXM5Ms05MkKB3NvsnoVHm7XZmIs+4Py4SOZ744S2km3609sdImOdCFaWCdoHrBN0TnlqF8xbDiGBHOd8l7HUPtT44VgTqlf2wXlbcrcpd/Yu/R28y/Jug8XT9jIbEc27suCbrLr7GcIvcLB+NjIodwzGC+itdQ0U46VdGBPwfkyoN28RKnjvuWrt9qh0ImlAvgDWyk6C6MBAAA=
+      blockMaterial: COMMAND
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: WOOD_PLATE
 location:
   ==: org.bukkit.Location
-  world: lexstarklabs
-  x: -107.39057738011013
-  y: 79.0
-  z: 140.04090592005235
-  pitch: 12.199792
-  yaw: -315.81427
+  world: lavahop
+  x: -1.4649152248166502
+  y: 59.0
+  z: 7.57759921539199
+  pitch: 18.74964
+  yaw: -180.6863

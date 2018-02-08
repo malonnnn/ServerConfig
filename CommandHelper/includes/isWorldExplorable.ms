@@ -19,6 +19,9 @@ proc(_isWorldExplorable,@world){
             case 'legionofdoom':
             case 'starktower':
             case 'helicarrier':
+            case 'chicago':
+            case 'dbzworld':
+            case 'pokemon':
                 return(true)
             default:
                 return(false)
