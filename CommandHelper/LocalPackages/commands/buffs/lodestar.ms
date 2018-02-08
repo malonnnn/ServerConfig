@@ -17,7 +17,7 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 21 9999 4 true",   
-                "/effect ". @plr ." 11 9999 4 true"   
+                "/effect ". @plr ." 11 9999 2 true"   
             ),
             'alts': array(
                 'ben10',

@@ -10,7 +10,7 @@ register_command(apokolips,
     
         executor: closure() {        
             
-            sudo("/mv tp survival_nether")
+            sudo("/warp apokolips")
                 
         }
     )

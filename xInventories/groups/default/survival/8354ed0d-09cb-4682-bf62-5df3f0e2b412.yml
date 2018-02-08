@@ -2,6 +2,7 @@ inventory:
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 31
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -19,7 +20,7 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '9':
+  '1':
     ==: org.bukkit.inventory.ItemStack
     type: GOLD_HOE
     meta:
@@ -29,7 +30,7 @@ inventory:
       enchants:
         DAMAGE_ALL: 255
         DURABILITY: 255
-  '10':
+  '2':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
     meta:
@@ -39,38 +40,19 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-  '11':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BOOTS
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
-      enchants:
-        PROTECTION_PROJECTILE: 30
-        DEPTH_STRIDER: 30
-  '12':
-    ==: org.bukkit.inventory.ItemStack
-    type: GOLD_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
-      enchants:
-        DAMAGE_ALL: 255
-        DURABILITY: 255
 health: 20.0
 hunger: 17
-exp: 0.71428573
-exp-level: 0
+exp: 0.33333337
+exp-level: 1
 remainingAir: 300
-fireTicks: -20
+fireTicks: 430
 saturation: 0.0
-exhaustion: 0.50789714
+exhaustion: 0.49609423
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
+    damage: 31
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
@@ -81,14 +63,18 @@ armor_contents:
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: ccjitters
-  x: 0.5
-  y: 85.0
-  z: -15.5
-  pitch: -0.34774673
-  yaw: 12.099701
+  world: ooo
+  x: -255.5
+  y: 67.0
+  z: 13.5
+  pitch: -34.191685
+  yaw: 296.70306
 potion_effect:
   '0':
     type: SPEED
-    level: 3
-    duration: 158282
+    level: 0
+    duration: 188639
+  '1':
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 198230
