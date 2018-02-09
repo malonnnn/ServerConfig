@@ -26,9 +26,7 @@
                 "/tppos <x y z world>"
             ),
             'buffs': array(
-                "/effect ". @plr ." 21 9999 4 true",
-                "/give ". @plr ." minecraft:iron_boots 1 2:150 name:&ePor&ctal &eBoo&cts",
-                "/give ". @plr ." minecraft:ender_pearl 16 name:&eShort-Distance TP",
+                "/give ". @plr ." minecraft:ender_pearl 5 name:&ePortal",
                 "/shot give ". @plr ." viberay"
             )
 )
