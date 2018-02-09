@@ -5,24 +5,28 @@ exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 0.0
-exhaustion: 1.4371966
+saturation: 5.0
+exhaustion: 0.05
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: fortressofsolitude
-  x: 415.5
-  y: 85.9870559575636
-  z: -868.5
-  pitch: 26.242085
-  yaw: -19.823975
+  world: broville
+  x: 328.5
+  y: 70.0
+  z: 1903.5
+  pitch: 7.3315825
+  yaw: 276.27457
 potion_effect:
   '0':
+    type: DAMAGE_RESISTANCE
+    level: 4
+    duration: 199776
+  '1':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 84712
-  '1':
+    duration: 199776
+  '2':
     type: WATER_BREATHING
     level: 1
-    duration: 84712
+    duration: 199776
