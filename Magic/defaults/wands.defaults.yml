@@ -445,23 +445,11 @@ base_sword:
 #
 battle:
     inherit: base_sword
+    class: battle_mage
     icon: gold_sword:1
     migrate_icon: gold_sword
     effect_color: '11FF11'
     protection_physical: 0.3
-    path: battle
-    mana_regeneration: 5
-    mana_max: 50
-    mana: 50
-    spells:
-      - missile
-      - arrow
-      - boom
-      - curse
-      - fire
-      - fireball
-      - grenade
-      - push
 
 #
 #
@@ -1836,17 +1824,11 @@ antihunger:
 # 
 wand:
     inherit: base_wand
+    class: mage
     icon: wood_hoe:1
     migrate_icon: wood_hoe
     effect_color: random
-    path: beginner
-    active_spell: missile
-    mana_max: 50
-    mana: 50
-    mana_regeneration: 5
-    spells:
-     - missile
-     
+
 wizardboots:
     icon: chainmail_boots
     indestructible: true
