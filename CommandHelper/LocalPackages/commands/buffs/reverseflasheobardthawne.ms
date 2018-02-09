@@ -10,16 +10,12 @@
             array(
             'sig':'v+qIPPiu8odYU9LV8mOgcyriJg+4WuDhtSq7Zh4+i9q1cj0Y9z3pd5szqOIKoDu1y8mrmNxUSHs6etSdobXX7btvesFTWrz5Y4kVKKmqv7O8DdjNzXSfZ9DXHvEFg8fHAnJsPpLfpVe6qJ3vzCIVaRGNpSBDaKhtRSp6QJ9uIsl/CxYHt+9e0jPMkO/OXija0OjKIO6fIJJ432tfoPtDanJ/heMj3ShVa4QgA3CyefbwtgIDUhInSpxaZcCvYmtmWMTDUK/K6HK7wbWFdppL7lZ9SKpNfkWkf6vgB5D9CKjlRJnEpCkzr9nIVTAnxL8alOWR2uT8+dmWW3xAW8eolglsWH942bfT4FDrGaYw2CaFHpkn0nDBa83H8UMMR9Mz/xnhvwzVJiHbejM1ghZlKGhqf73KdODVAXBEI9Tfph1KEWDFVHuaJSxZqEBzV3TBIfJK90W+RNOR2RLUZWW8gqaiLiUbgxq20EFAJfL0goYXfgZdH2H4KE/ds4irPZhHK86YK15GgDufoaQVSWMVKXnHujF7k2kYqxT8fGVrh5lKMYjlk2+RcCfwx+cCwAf4YG94O2DAyYj4c++YN4MZVaWQ0YNSJQGkknrunj94uqFVhOWgu/vCYIgQs1K1aCC0vnLUkmzennclWvQrDrUfZiQ7LsP8SEkNjh/Z166Mnl8=',
             'val':'eyJ0aW1lc3RhbXAiOjE0OTQ0NTA1NTYwNTUsInByb2ZpbGVJZCI6ImZiYjhjMDcyNGM0YjQ5Yzg5NDhiMjZlOGFkNzMwOTllIiwicHJvZmlsZU5hbWUiOiJDYW11bGxsIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn0sInVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjU0NjkwMWUyMTkxOWEyYWRmYjg3MzNlOTk4ZjMwZmZiNTY1NmYxZWUwMzE5NDhmNjY1Y2Q0NzdhYjNhNTM2In19fQ=='
-            ),
-            array(
-            'sig':'Pd5V/+p/5Q+dFmNA4IjxZXv7Bf5d9tAaNH0pUY+jK366UXbeVluB/fMyaxU+gmS6AsHbfEM7t60fjzSEgxj+oNAvUnMspbREHq2DzyR7nTNSOSAWwRNKWeYT/5idyxsgLa2xsb1+qd9rhVMAcH5Kbi/Hy0sN113iy2jSHC+WgtCrmK3DH1YqmPa3H/haQ103J9ys7rXwH4Kb1V4f7S30bLqNjAUM143E5c9r74ihXi0MIfLJpwMc52GQyWGDLFbm5qpLr13ld3L/tVHw6MII8OIbNGLFBKO/SrW/5fZ9xM0yatpJCFfDFkkxZ09apq9gla8jtuNAMATvwgv9hQy80HyK+AI60H1ezmOIKU9biFI7A8IpEX4+S7Xfew33ldn2ikL3L7iTW2ogOuNQDc2xydjAmS6ys7dw23xKSXSxgWwSbpQLRSuGGZ5qfg5RaA6wLVdjo/9OudH1rl4W3mWf+gLSgRFeMNtRe1j7ygQ0QNtuoST5JNXGrBq1GeT7G3cx0tHSEkwX5ygkDHQk0YBJo5EmWvZKd7K2sWGCG0uHveB0HX66+SYTJQCxmwPJuYhe0+hXDvztqpviyMHKwcMTBM6bcIj1bvFLRnz53Vxi9Yr+qvfJIoDfeAFETrRhN3hCt5VZGbEzbglIUNjPYCjarUEn5s2TqR5enpPUOeuvPaI=',
-            'val':'eyJ0aW1lc3RhbXAiOjE1MTgxMjA3ODI0MjcsInByb2ZpbGVJZCI6IjkwYjJiYTZkNDNlNjRlNWM4Zjc3OTEyNmI2OTY5YTljIiwicHJvZmlsZU5hbWUiOiJXaW5nQXJtb3IiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYxY2U3YWE1NTdmYzU0MmEwZjJkZmY3YzNhZWJlZDRiMDMzNmVlODY0MTljMzMzOWEzZWYxNGQzNzEwZTBiIn19fQ=='
             )
             ),
            
             'trail': '',
             'op': 'false',
-            'speech': "I'm am the opposite of you... I am the Reverse Flash
+            'speech': "I go fast, kinda.",
             'powers': array(
                 "/buff",
                 "/back (In the speedforce)",
@@ -42,6 +38,5 @@
                 "/effect ". @plr ." 21 9999 4 true",
                 "/effect ". @plr ." 10 9999 3 true",
                 "/give ". @plr ." minecraft:iron_boots 1 8:30 4:30 name:&9W&1a&9ter_Ru&1nn&9ing_&4B&eoo&4ts"
-                "/give ". @plr ." minecraft:coal 1 16:900 name:&6Hea&ert&4atta&cck",
             )
         )
