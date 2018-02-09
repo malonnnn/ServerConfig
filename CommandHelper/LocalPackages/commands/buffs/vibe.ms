@@ -26,7 +26,6 @@
                 "/tppos <x y z world>"
             ),
             'buffs': array(
-                "/give ". @plr ." minecraft:ender_pearl 5 name:&ePortal",
-                "/shot give ". @plr ." viberay"
+                "/give ". @plr ." minecraft:ender_pearl 5 name:&ePortal"
             )
 )
