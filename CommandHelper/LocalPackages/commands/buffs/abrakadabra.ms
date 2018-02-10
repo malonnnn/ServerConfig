@@ -15,7 +15,8 @@
                 "/buff",
                 "/cast abrawarp",
                 "/cast turnwater",
-                "/cast stungrenade"
+                "/cast stungrenade",
+                "/cast telekinesis"
                 
             ),
             'buffs': array(
