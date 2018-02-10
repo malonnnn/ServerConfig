@@ -10,9 +10,13 @@
             'op': 'false',
             'speech': "D.Va 1! Bad Guy 0!",
             'powers': array(
-                "/buff"
+                "/buff",
+                "/herotransform <id>"
            ),
             'buffs': array(
                 "/shot give ". @plr ." pistol"
-            )
-        )
+           ),
+           'alts': array(
+               'dvamech'
+           )
+)
