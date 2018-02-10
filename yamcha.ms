@@ -11,24 +11,12 @@
             'speech': "No WAY!!",
             'powers': array(
                 "/buff",
-                "/jump 0-4",
-                "/run 0-4",
-                "/haste 0-4",
-                "/flyspeed <number>",
-                "/fly",
+                "/jump <0-2>",
+                "/run <0-2>",
+                "/haste <0-2>",
                 "/carryplayer <player>",
                 "/dismountplayer"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 7 true",
-                "/effect ". @plr ." 11 9999 2 true",
-                "/effect ". @plr ." 12 9999 1 true",
-                "/effect ". @plr ." 13 9999 1 true",
-                "/effect ". @plr ." 21 9999 3 true",
-                "/shot give ". @plr ." kamehameha",
-                "/shot give ". @plr ." kiblast"
-            ),
-            'alts': array(
-                'yamcha',
             )
         )
