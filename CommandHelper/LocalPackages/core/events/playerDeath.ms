@@ -1,6 +1,7 @@
 bind(player_death, null, null, @event,
 
     if(@event['cause']['cause'] == 'VOID'){
+        console('isded')
         die()
     }
 
