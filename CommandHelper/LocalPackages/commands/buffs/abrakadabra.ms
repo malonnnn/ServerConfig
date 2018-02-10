@@ -14,7 +14,7 @@
             'powers': array(
                 "/buff",
                 "/cast abrawarp",
-                "/cast stream"
+                "/cast turnwater"
                 
             ),
             'buffs': array(
