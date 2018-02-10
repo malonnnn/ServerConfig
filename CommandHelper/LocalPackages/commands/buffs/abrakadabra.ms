@@ -13,7 +13,8 @@
             'speech': "Catch me if you can",
             'powers': array(
                 "/buff",
-                "/cast abrawarp"
+                "/cast abrawarp",
+                "/cast stream"
                 
             ),
             'buffs': array(
