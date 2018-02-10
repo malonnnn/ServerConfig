@@ -20,7 +20,7 @@
                 "/dismountplayer",
                 "/destroyworld",
                 "Anything you attack, dies"
-            ((,
+            ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 30 true",
                 "/effect ". @plr ." 10 9999 1 true",
@@ -30,5 +30,5 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." destructionbeam",
                 "/shot give ". @plr ." kiblast"
-            (
+            ((
             
