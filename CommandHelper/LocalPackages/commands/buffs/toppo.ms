@@ -30,5 +30,5 @@
                 "/effect ". @plr ." 21 9999 19 true",
                 "/shot give ". @plr ." destructionbeam",
                 "/shot give ". @plr ." kiblast"
-            )
             (
+            
