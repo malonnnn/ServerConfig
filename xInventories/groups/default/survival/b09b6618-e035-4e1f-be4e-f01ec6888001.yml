@@ -1,13 +1,40 @@
-health: 20.0
+health: 100.0
 hunger: 17
-exp: 0.0
-exp-level: 0
+exp: 0.92307687
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
 saturation: 5.0
-exhaustion: 0.3
-inventory: {}
-armor_contents: {}
+exhaustion: 2.9269118
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -166,9 +193,50 @@ ender_chest:
       - §eLeft click to detonate.
 location:
   ==: org.bukkit.Location
-  world: pokemon
-  x: -250.5
-  y: 64.0
-  z: -170.5
-  pitch: 19.500004
-  yaw: 1.9837177
+  world: metropolis
+  x: 228.5
+  y: 31.0
+  z: 238.5
+  pitch: -42.44998
+  yaw: -121.5853
+potion_effect:
+  '0':
+    type: JUMP
+    level: 5
+    duration: 199253
+  '1':
+    type: SPEED
+    level: 10
+    duration: 199070
+  '2':
+    type: INCREASE_DAMAGE
+    level: 20
+    duration: 198925
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 198925
+  '4':
+    type: FAST_DIGGING
+    level: 127
+    duration: 199137
+  '5':
+    type: DAMAGE_RESISTANCE
+    level: 3
+    duration: 198925
+  '6':
+    type: REGENERATION
+    level: 1
+    duration: 198925
+  '7':
+    type: NIGHT_VISION
+    level: 1
+    duration: 198925
+  '8':
+    type: WATER_BREATHING
+    level: 1
+    duration: 198925
+  '9':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 198925

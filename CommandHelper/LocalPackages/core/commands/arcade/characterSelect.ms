@@ -36,10 +36,12 @@ register_command(chars,
                                 foreach(@her in @heroes){
                                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
                                     #tmsg(player(),"#". @i . ". " . @hero['name'])
-                                    tmsg(player(),@hero['name'])
-                                    @i = @i + 1
+                                    #tmsg(player(),@hero['name'])
+                                    runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
+                                    #@i = @i + 1
                                 }
-                                msg(color(RED).'Check for more heroes using /chars '.(@pageNum+1))
+                                msg(color(RED).'Click a character 2 times to choose it or')
+                                msg(color(RED).'Check for more heroes using '.color(GREEN).color(BOLD).'/chars '.(@pageNum+1))
                             }
                         }
                     ))
@@ -56,10 +58,12 @@ register_command(chars,
                                 @i = 1
                                 foreach(@her in @heroes){
                                     include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
-                                    tmsg(player(),"#". @i . ". " . @hero['name'])
-                                    @i = @i + 1
+                                    #tmsg(player(),"#". @i . ". " . @hero['name'])
+                                    #@i = @i + 1
+                                    runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
                                 }
-                                msg(color(RED).'Check for more heroes using /chars 2')
+                                msg(color(RED).'Click a character 2 times to choose it or')
+                                msg(color(RED).'Check for more heroes using '.color(GREEN).color(BOLD).'/chars 2')
                             }
                         }
                     ))
@@ -83,9 +87,9 @@ register_command(characterselect,
             if (@argNum < 1) {
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 msg(color(RED).'Please search for a character.')
-                msg('Example:'.color(GREEN).' /characterselect wonderwoman')
-                msg('Example:'.color(GREEN).' /charsel captainamerica')
-                msg('Example:'.color(GREEN).' /csel greenlantern')
+                msg('Example:'.color(GREEN).' /findchar wonder woman')
+                msg('Example:'.color(GREEN).' /findchar Captain America')
+                msg('Example:'.color(GREEN).' /findchar greenlantern')
                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                 return(FALSE)
             }
@@ -201,8 +205,7 @@ register_command(selectchar,
                     if(@otherPlayerGroup == @hero['class'] && @player != @playa){
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                         msg(color(RED).'Sorry, '.color(WHITE).@playa.color(RED).' is already using '.@hero['name'].color(RED).'.')
-                        msg(color(RED).'Try again with:')
-                        msg(color(GREEN).'/charsel')
+                        msg(color(DARK_RED).'Please choose a different character.')
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                         die()
                     }
