@@ -22,7 +22,7 @@
                 "Anything you attack, dies"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 30 true)",
+                "/effect ". @plr ." 5 9999 30 true",
                 "/effect ". @plr ." 10 9999 1 true",
                 "/effect ". @plr ." 11 9999 10 true",
                 "/effect ". @plr ." 12 9999 1 true",
