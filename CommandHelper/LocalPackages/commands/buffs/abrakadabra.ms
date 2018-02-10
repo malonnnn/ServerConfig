@@ -13,9 +13,11 @@
             'speech': "Catch me if you can",
             'powers': array(
                 "/buff",
-                "/cast turnwater"
+                "/cast turnwater",
+                "/cast abrawarp"
                 
             ),
             'buffs': array(
+            "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic &fCa&crds"
             )
 )
