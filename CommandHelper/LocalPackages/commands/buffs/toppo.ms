@@ -31,5 +31,3 @@
                 "/shot give ". @plr ." destructionbeam",
                 "/shot give ". @plr ." kiblast"
             ),
-            'alts': array(
-            )
