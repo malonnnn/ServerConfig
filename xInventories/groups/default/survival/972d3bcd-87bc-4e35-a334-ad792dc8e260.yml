@@ -1,23 +1,74 @@
-health: 20.0
-hunger: 20
+health: 40.0
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 14.0
-exhaustion: 1.989319
-inventory: {}
+saturation: 2.0
+exhaustion: 2.0861
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §bWa§3ter §3Sh§bot§b «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §3R§9i§3p§9t§3i§9d§3e
+      enchants:
+        KNOCKBACK: 2
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: LEATHER_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: LEATHER_ARMOR
+      display-name: §3P§9e§3r§9c§3y§9§3'§3s §9Water §3Helmet
+      enchants:
+        OXYGEN: 50
+        WATER_WORKER: 1
+        DEPTH_STRIDER: 3
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 62
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: nyc
-  x: -655.5
-  y: 25.0
-  z: -1989.5
-  pitch: 0.0
-  yaw: 75.29425
+  world: ccjitters
+  x: 0.5
+  y: 85.0
+  z: -15.5
+  pitch: -0.34774673
+  yaw: -109.200134
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: JUMP
+    level: 5
+    duration: 195436
+  '1':
+    type: INCREASE_DAMAGE
+    level: 12
+    duration: 194170
+  '2':
+    type: SPEED
+    level: 5
+    duration: 194978
+  '3':
+    type: FAST_DIGGING
+    level: 20
+    duration: 194621
+  '4':
+    type: HEALTH_BOOST
+    level: 4
+    duration: 194170
+  '5':
+    type: WATER_BREATHING
     level: 1
-    duration: 199801
+    duration: 194170

@@ -1,14 +1,14 @@
 id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
-last_cast: 1518287426321
+last_cast: 1518291163199
 cooldown_expiration: 0
 last_death_location: -1518.0586365203042,57.0,-1292.1978469054318,survival112,-6.300524,15.729792
 fall_protection_count: 0
 fall_protection: 0
 brush:
   map_id: 450
-  material: air
-  data: 0
+  material: dirt
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
@@ -449,6 +449,11 @@ spells:
     last_cast: 1479674018253
     last_earn: 0
     cooldown_expiration: 1479674020253
+  increaseage:
+    cast_count: 0
+    last_cast: 1518291163199
+    last_earn: 0
+    cooldown_expiration: 1518291193199
   mrasid:
     cast_count: 4
     last_cast: 1498057530194
@@ -888,6 +893,35 @@ wands:
       mana: 50.0
       mana_timestamp: 1491680689877
       effect_color: e5975f3bdb0e,db7bcbc6586b,1ae18285491d
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      version: 5
+  infinitygauntlet:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_INGOT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3InfinityGauntlet§f)
+        lore:
+        - §3§oBound to Jiren_The_Grey
+        - Knows 13 Spells
+        - '§d§oMana: 600'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1PPU/CYBB+CAULicRg4qKDia6YAFpk0ZBg/IjooEwOzbW9wht539b2kLDp4G/wB7g6+AP8AU7+FmcnS43ecLncc/d8VIEqrBmZwIYtrOMJCWNFmVAZJfMRTY1MWGyUopnhBLUzlbBxr8fsHic8L8HSZKi/BlioLUZXlOZUSMdAgR5vPuoZcf7rqgDb+53Qa/uO39gLQ6ex62XNa7ecRrfb8p1mu8PUbBWxdM9JqiIDoIQK6j2RRHlT4UEUqFBlYDWDChbs4fC0P4hS+d462Og9nLCFymJ1zpTK2/r75/PT60sZ5Z6OsiCHX8jLhnU1iQS2JmXGefblf4kL0ozVEWeOlb9DIuTfXsXMQRGVy5gTkl9jC5b8tn50N1WxZiObf/aAH2zawL5YAQAA
+    wand:
+      template: infinitygauntlet
+      owner: Jiren_The_Grey
+      mana: 600.0
+      mana_timestamp: 1518293731346
       owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       version: 5
   yodaforce:

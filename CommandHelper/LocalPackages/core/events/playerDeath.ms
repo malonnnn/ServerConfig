@@ -16,4 +16,6 @@ bind(player_death, null, null, @event,
         set_phealth(@player,1)
         modify_event('death_message',null)
     }
+
+    console('The event death is: '.@event['death_message'])
 )
