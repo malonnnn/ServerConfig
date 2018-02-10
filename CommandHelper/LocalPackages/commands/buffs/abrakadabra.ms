@@ -18,6 +18,6 @@
                 
             ),
             'buffs': array(
-            "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic &fCa&crds"
+            "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic&0_&fCa&crds"
             )
 )
