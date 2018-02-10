@@ -18,7 +18,6 @@
                 
             ),
             'buffs': array(
-            "/effect ". @plr ." 21 9999 9 true",
             "/give ". @plr ." minecraft:paper 1 name:&fMa&cgic &fCa&crds"
             )
 )
