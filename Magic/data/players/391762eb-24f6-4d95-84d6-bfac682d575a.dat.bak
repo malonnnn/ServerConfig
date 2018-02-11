@@ -1,29 +1,84 @@
 id: 391762eb-24f6-4d95-84d6-bfac682d575a
 name: StrikerMax
-last_cast: 1517291813723
+last_cast: 1518311429333
 cooldown_expiration: 0
 last_death_location: -25.915536681752304,69.0,-215.59519391839927,greenfield,-172.08958,13.982083
 fall_protection_count: 0
 fall_protection: 0
 brush:
   map_id: -1
-  material: air
-  data: 0
+  material: dirt
+  data: 1
   schematic: ''
   scale: 1.0
   erase: true
 undo: []
 spells:
-  tsunami:
-    cast_count: 0
-    last_cast: 1515196835871
-    last_earn: 0
-    cooldown_expiration: 1515196845871
   waterspear:
     cast_count: 4
     last_cast: 1506464049998
     last_earn: 0
     cooldown_expiration: 1506464054998
+  powerstonedestroyworld:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  spacestonewarp:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  stonegrasp:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  increaseage:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  powerstoneblast:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  soulstonetrap:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  mindstone:
+    cast_count: 11
+    last_cast: 1514697256456
+    last_earn: 0
+    cooldown_expiration: 0
+  kill:
+    cast_count: 2
+    last_cast: 1491943151720
+    last_earn: 1491943156068
+    cooldown_expiration: 1491943181720
+  reducto:
+    cast_count: 0
+    last_cast: 1515196309627
+    last_earn: 0
+    cooldown_expiration: 1515196314627
+  tsunami:
+    cast_count: 0
+    last_cast: 1515196835871
+    last_earn: 0
+    cooldown_expiration: 1515196845871
+  acceleratetime:
+    cast_count: 1
+    last_cast: 1518311402303
+    last_earn: 1518311402301
+    cooldown_expiration: 0
+  realitystoneregen:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   spellshop:
     cast_count: 0
     last_cast: 1491943117015
@@ -39,9 +94,9 @@ spells:
     last_cast: 1515196672026
     last_earn: 0
     cooldown_expiration: 1515196678026
-  mindstone:
-    cast_count: 11
-    last_cast: 1514697256456
+  cloudreality:
+    cast_count: 0
+    last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
   quake:
@@ -49,6 +104,21 @@ spells:
     last_cast: 1515196438784
     last_earn: 0
     cooldown_expiration: 1515196443784
+  realitystoneblast:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  soulstoneblast:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  freezetime:
+    cast_count: 3
+    last_cast: 1518311429334
+    last_earn: 1518311429333
+    cooldown_expiration: 0
   cosmicbolt:
     cast_count: 2
     last_cast: 1517291813724
@@ -59,17 +129,42 @@ spells:
     last_cast: 1515193472745
     last_earn: 0
     cooldown_expiration: 1515193482745
-  kill:
-    cast_count: 2
-    last_cast: 1491943151720
-    last_earn: 1491943156068
-    cooldown_expiration: 1491943181720
-  reducto:
+  mindcontrol:
     cast_count: 0
-    last_cast: 1515196309627
+    last_cast: 0
     last_earn: 0
-    cooldown_expiration: 1515196314627
+    cooldown_expiration: 0
 wands:
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6rictusempra§f (§3HarrysWand§f)
+        lore:
+        - §3§oBound to StrikerMax
+        - Knows 14 Spells
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2PQU7CUBCGh1CwNNEFLnVhItuaWKFAYgxNNMFEdNGwJtO+QV7gvdbXqeiOmHgGD+DWhQfwDB7IlaWNzm7mn/n/bxwAB6w1amGDzaTSFTKBs0BjnrNq3EjWmgw4IRu5JDPBpyZYCjWOJJRlwd62nbFUlDGqFKCGL5vxeWFZ3s6kgM7Z8LTvexS5Xnfuu10x7LmDrvDdaI6xP/BEr9/DOuw8kslkogvbBrSgHXCRGuVMk0TIuSxEp5BqFtjT6fXlJMn45/jiMNiMyYLWdnRDmPHnwdf32+vHexOagUpyzaNOhWqDFa4SBluh1Ivyvd3/iFtUBPv3VBDL+ASZMV6GKZGoQ+suJYNcgW1dyt321UMuU0Waj/7wAH4BTkDgi1IBAAA=
+    wand:
+      template: harryswand
+      owner: StrikerMax
+      mana: 200.0
+      mana_timestamp: 1518312900668
+      owner_id: 391762eb-24f6-4d95-84d6-bfac682d575a
+      version: 5
   harryswand2:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -104,6 +199,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 17
+  sp: 32
 properties: {}
 classes: {}

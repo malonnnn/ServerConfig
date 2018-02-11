@@ -1,18 +1,64 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.8181818
-exp-level: 2
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4En§cerg§4y §cBe§4am§4 «×»
+health: 60.0
+hunger: 17
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 20.0
-exhaustion: 2.6920002
+saturation: 5.0
+exhaustion: 0.05
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: lavahop
-  x: -1.5
-  y: 59.0
-  z: 10.5
-  pitch: 0.7499971
-  yaw: -187.04001
+  world: waynemanor
+  x: -25.546182724649857
+  y: 68.5
+  z: 660.8785741376464
+  pitch: 11.311469
+  yaw: 268.5965
+potion_effect:
+  '0':
+    type: INCREASE_DAMAGE
+    level: 10
+    duration: 196541
+  '1':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 196541
+  '2':
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 196541
+  '3':
+    type: REGENERATION
+    level: 1
+    duration: 196541
+  '4':
+    type: NIGHT_VISION
+    level: 1
+    duration: 196541
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 196541
+  '6':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 196541

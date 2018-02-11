@@ -1,7 +1,7 @@
-bind(player_death, null, null, @event,
+bind(player_death, null, null, @event){
+
 
     if(@event['cause']['cause'] == 'VOID'){
-        console('isded')
         die()
     }
 
@@ -18,5 +18,22 @@ bind(player_death, null, null, @event,
         modify_event('death_message',null)
     }
 
-    console('The event death is: '.@event['death_message'])
-)
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @class = _getheroclass(@player)
+    @message = @event['death_message']
+    try{
+        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+        @message = replace(@message,@player,@hero['name'].color(DARK_RED).color(ITALIC))
+        if(@event['killer'] != null){
+            @class = _getheroclass(@event['killer'])
+            try{
+                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @message = replace(@message,@event['killer'],@hero['name'].color(DARK_RED).color(ITALIC))
+            }catch(Exception @e){
+            }
+        }
+        modify_event('death_message',@message)
+    }catch(Exception @e){
+    }
+
+}
