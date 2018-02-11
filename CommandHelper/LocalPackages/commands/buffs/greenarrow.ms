@@ -4,11 +4,11 @@
 @hero = associative_array(
             'name': '§2Gre§0e§2n A§0r§2row',
             'class': 'greenarrow',
-            'sig': 'Kwulj9SxXQE4RI26IWFHrj5DZ2GTMbgWb74TCLvZ8ICIOW+34ycJWVl70L/BJ8M09GVKkIQAcNe9+wwz9G0ijLXozYTvSm5I6pn4Wt081Att7+yzm7wZjGGqJOdjSPKpcb7hM1Zj/++N051qaHTWNwMdVBfBojHtF3jskntycUdVXEV+ZjuXa4lcrfmlG4JbEzRPjc44b/GL86mW29JiKKPMPstw1AClea8H8GalpmXCFVj4yrYP5UteiME9758uFjhQPhZrhaAeXZ259ZrpVN1/oyGlmaD/QfDxgDEBSmc+DuqusO6Ak3mxOV6uxfjzFLwFDC+tBdjTms8X+qfqI/JyFrnSm7FCc9ueOIinYIF+ydMmg1tDJP53dwQWpWiVxI/zcwzblbdFmFv7v5JASYoI80G0SI1Wn5gLTUWMaBgOYXDVrMWbPqXKmHfHe6JvqWDpzoIEQV82QVWq33nhqeQ6kyL1ZDiQvLICN+Gz50dsp0bGTp9yNlf5JoMWmvDmImbzwf5Gb0mJ1yY9Vo+J/rh+Oj36HVuJ3pW4IAxcryvo6vXedlju2Jt5jsJIR9TydBigVXXJkm5Qq0w3mc6heu6R1RYZj9C/OW83j7ldGxB20sItk+KiqBjhJsIxMdsK9NEQvtlkW2qG38UpGCbhxqBaCJcxvPv+gsvXhu1V1Eo=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE0NjQ3NTQ3Mjk0MTQsInByb2ZpbGVJZCI6Ijg3ZmIzYzZjNWZmNjRiZjZiMzI2OTkyYzYxMzdlYTEyIiwicHJvZmlsZU5hbWUiOiJUZWt0cm9uaWMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQ1YzI1MjI0NTNhNDk4OThhMzY3MmY4ZDNlOTg5M2JhMjU5NjdlZTM5MTJjNzY5MWE5MTJmNzk3NGNiOTY5MCJ9fX0=',
+            'sig': '"u8KdURww3qtE9k6B6GV774YojMACIUCc08OtDsy8j2YXzcb61otayImjiT2SdRcutjKqFTcSl+HV4AZe0GydVOCn8RRO07FR43BRPZ4h57cGIbwW3thHw7jsH+qOS3v64LqBErbOaq8UrMljuYGkaxyLghRSQhdqNKoDEmlQ71w2YC29EEHF4oF7JxbDG0RPGfpPQXiIjkBq55Jzpy/Z8JhM5c2TMSkLvNZRU9l+VtzyzEMOfIVMi2icSxZRbrXhFIC1LSq2b1zpjdQBTkusUd+Ma4f9aR2uebmbZ//yNutfQdhrkH7PXXR1Lz7IB2NvMOpqhPstD+dNXcaZ7MQonHFSjdOkKfngvS8Hr2VzOel+uSSk51lIYYi/H3NA2A7SwWwdAnPV/SteN1axzE20/zdEmr2SBXuC6gO9rdEjydisB4a2uVL7GtRgHMmVMMjA6Oejvg8F0PY4fdtPqnYWrF3NQkU7uUa6kg6XntzouxYKp/yclh+b1NAD97tNonBuxScfZ7g1dYmFbym+0cgz7fS3en2CFEm8M2EDEOJdR79YY6Ao0AuOatStI8ywn0ryUpEPiNs/QCws3eFOEYuuB0bc7tx39D+/b+lrvoHqlWclWghZQuHyL8zrTOAxpBTI2K9EYFBK1WoNj9C0RJQxpQ0XX5X9p5TNdE7hjLAAOuc=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MTgzMTI1NDYxOTMsInByb2ZpbGVJZCI6ImNmNTQ4ZTBkZjI4ODQ2Nzg5ZjY5ZDdmN2FlZjQ5NDExIiwicHJvZmlsZU5hbWUiOiJiZW5KQU1pbjE4MTAiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzg2MjM5MTQyMTI1YjE2MjM1MmVhOWQ5NzIyMmJlZGFmNWQzOWI1ODE2NTQ4YjI1OTU1MjcxODkzMjg4YWEifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Robin Hood, eat your heart out!",
+            'speech': "You have failed this city!",
             'powers': array(
                 "/buff",
                 "/jump 0-2",
@@ -37,6 +37,7 @@
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 2 true",
+                "/effect ". @plr ." 21 9999 4 true",
                 "/give ". @plr ." minecraft:bow 1 50:1 51:1 name:&2Gre&0e&2n_A&0r&2row's_&8Bow",
                 "/give ". @plr ." minecraft:ender_pearl 5 name:&2Gre&0e&2n_A&0r&2row's_&2Grappling_Arrow",
                 "/give ".@plr." minecraft:arrow 10",
