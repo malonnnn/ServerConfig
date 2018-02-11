@@ -1,23 +1,23 @@
 abraswand:
   version: 5
   spell_inventory:
-    turnwater: 0
-    abratrap: 1
-    abrawarp: 2
-    abra:bolt: 3
-  active_spell: turnwater
+    abrawarp: 6
+    abrabolt: 7
+    abratrap: 0
+    turnwater: 9
+  active_spell: abratrap
   spell_levels: {}
-  mana: 300.0
+  mana: 200.0
   mana_regeneration: 10.0
-  effect_color: adec69d28e0f,7c10275ee6a0,f3f1820c39d0
+  effect_color: 63c2e3dbb274,64ef87652dcb,88cbb7c77840
   name: AbrasWand
-  mana_max: 300.0
+  mana_max: 200.0
   page: 0
   spells:
   - turnwater
+  - abrabolt
   - abrawarp
   - abratrap
-  - abrabolt
   bound: true
   keep: true
   invulnerable: true
@@ -35,7 +35,7 @@ abraswand:
   attributes:
     GENERIC_ATTACK_SPEED: 10
   attribute_slot: mainhand
-  icon: blaze_rod
+  icon: wood_hoe:1
   path: beginner
-  creator_id: 90b2ba6d43e64e5c8f779126b6969a9c
+  creator_id: 90b2ba6d-43e6-4e5c-8f77-9126b6969a9c
   creator: WingArmor
