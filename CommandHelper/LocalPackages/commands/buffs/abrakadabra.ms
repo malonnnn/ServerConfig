@@ -12,12 +12,11 @@
             'op': 'false',
             'speech': "Catch me if you can",
             'powers': array(
-                "/buff",
-                "/cast turnwater",
-                "/cast abrawarp"
+                "/buff"
                 
             ),
             'buffs': array(
-            "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic&0_&fCa&crds"
+            "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic&0_&fCa&crds",
+            "/mgive ". @plr ." abraswand"
             )
 )
