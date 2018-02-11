@@ -19,8 +19,7 @@
             ),
             'buffs': array(
             "/effect ". @plr ." 21 9999 9 true",
-            "/effect ". @plr ." 11 9999 2 true",
             "/give ". @plr ." minecraft:paper 52 name:&fMa&cgic&0_&fCa&crds",
-            "/give ". @plr ." minecraft:iron_nugget 1 name:&1Nanotech"
+            "/mgive ". @plr ." abraswand"
             )
 )
