@@ -11,7 +11,7 @@
             'speech': "I am invincible!",
             'powers': array(
                 "/buff",
-                "/disguise player",
+                "/disguise player <player>",
                 "/undisguise"
             ),
             'buffs': array(
