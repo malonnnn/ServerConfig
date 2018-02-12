@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE0ODk4ODI3ODMyMDUsInByb2ZpbGVJZCI6IjAxMzAyOTlhNDQ4OTQyOWRiNGViNjg2NDNhNGM2YWM4IiwicHJvZmlsZU5hbWUiOiJ4RGNHYW1lciIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI3NTg2ZTIzNDMxNmUyNzgxMjRhY2M5NmJiNmMzZWU2Yjg1M2I0YTk4NjZlNDc1MzVhNjliMzM5N2I4YzYifX19',
             'trail': '',
             'op': 'false',
-            'speech': "Son of the Sea!",
+            'speech': "I'm the Son of the Sea!",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
@@ -21,8 +21,7 @@
                 "/effect ". @plr ." 5 9999 12 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
-                "/shot give ". @plr ." watershot",
-                "/give ". @plr ." minecraft:diamond_sword 1 19:2 name:&3R&9i&3p&9t&3i&9d&3e",
-                "/give ". @plr ." minecraft:leather_helmet 1 5:50 6:1 8:3 name:&3P&9e&3r&9c&3y&9&3'&3s_&9Water_&3Helmet"
+                "/mgive ". @plr ." percysdemigodpowers",
+                "/give ". @plr ." minecraft:diamond_sword 1 19:2 name:&3R&9i&3p&9t&3i&9d&3e"
             )
         )
