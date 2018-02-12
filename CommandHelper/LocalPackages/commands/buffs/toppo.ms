@@ -14,11 +14,8 @@
                 "/jump <0-9>",
                 "/run <0-9>",
                 "/haste <0-9>",
-                "/flyspeed <number>",
-                "/fly",
                 "/carryplayer <player>",
                 "/dismountplayer",
-                "/destroyworld",
                 "Anything you attack, dies"
             ),
             'buffs': array(
