@@ -71,12 +71,12 @@ proc(_isSpecialArrow,@item,@launchEventID){
                 return(true)
             }
             if(@itemName == color(DARK_GRAY).'The Phantom Zone '.color(WHITE).'Arrow'){
-                bind(projectile_hit, null, array('id': @launchEventID), @e, @shooter = @pname){
+                bind(projectile_hit, null, array('id': @launchEventID), @e){
                     if(!is_array(@e['hit'])){
                         @vicID = @e['hit']
                         @vicName = player(@vicID)
                         include('/home/minecraft/server/plugins/CommandHelper/includes/coolDown.ms')
-                        _coolDown('phantomZoneArrow',120,@shooter)
+                        _coolDown('phantomZoneArrow',120,player(@e['shooter']))
                         sudo('/phantomzonetrap '.@vicName)
                     }
                 }
