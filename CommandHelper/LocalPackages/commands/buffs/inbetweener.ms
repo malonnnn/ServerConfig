@@ -13,11 +13,11 @@
                 "/buff",
                 "/fly",
                 "/grow",
-                "/normalform",
-                "/cast cosmicbolt"
+                "/normalform"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 20 true", 
-                "/effect ". @plr ." 11 9999 4 true"
+                "/effect ". @plr ." 11 9999 4 true",
+                "/mgive ". @plr ." cosmicboltwand"
             )
 )
