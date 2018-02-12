@@ -21,6 +21,7 @@
                 "/effect ". @plr ." 5 9999 12 true",
                 "/effect ". @plr ." 13 9999 1 true",
                 "/effect ". @plr ." 21 9999 4 true",
+                "/effect ". @plr ." 16 9999 10 true"
                 "/mgive ". @plr ." percysdemigodpowers",
                 "/give ". @plr ." minecraft:diamond_sword 1 19:2 name:&3R&9i&3p&9t&3i&9d&3e"
             )
