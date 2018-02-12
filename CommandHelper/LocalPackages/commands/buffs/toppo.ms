@@ -15,8 +15,7 @@
                 "/run <0-9>",
                 "/haste <0-9>",
                 "/carryplayer <player>",
-                "/dismountplayer",
-                "Anything you attack, dies"
+                "/dismountplayer"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 30 true",
