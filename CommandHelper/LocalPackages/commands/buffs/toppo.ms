@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTgyODU5ODU5NDUsInByb2ZpbGVJZCI6IjA4ODBlY2NjZmVlZDRhMmY5ZTIyZDhmNzIxZjM5MTNlIiwicHJvZmlsZU5hbWUiOiJaZUVuZm9yY2VyIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9hYzVlNmY4ZTRjZmQyOGEyNTgxOWE1OWJkYzFjMGYzODRmNWI2MWM5OTk1OTdjZWNiNTY3ZTgxYzMxYzhkZTMifX19'
             'trail': '',
             'op': 'false',
-            'speech': "You cannot beat a destrution GOD!!",
+            'speech': "You cannot beat a destruction GOD!!",
             'powers': array(
                 "/buff",
                 "/jump <0-9>",
