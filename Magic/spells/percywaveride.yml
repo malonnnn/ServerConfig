@@ -1,0 +1,40 @@
+percywaverode:
+    icon_url: http://textures.minecraft.net/texture/4a23ccd51565d2e246675c86aef11b5412662c15ecc2e9f3ef425adc91d1
+    icon: ink_sac:10
+    icon_disabled: diamond_hoe:226
+    category: utility
+    worth: 200
+    show_undoable: false
+    quick_cast: true
+    cancel_effects: true
+    actions:
+      cast:
+      - class: MountArmorStand
+    effects:
+        cast:
+           - class: EffectSingle
+             sound: block.water.ambient
+             location: origin
+             source_location: eyes
+             effectlib:
+                 class: SphereEffect
+                 particle: drip_water
+                 radius: 1.0
+                 offset: 0,-2.5,0
+                 color: 111111
+        deactivate:
+        -  class: EffectSingle
+           sound: block.water.ambient
+           sound_pitch: 0.3
+    parameters:
+        target: self
+        start_speed: 1
+        steer_speed: 0.5
+        max_height_above_ground: 4
+        liftoff_duration: 600
+        liftoff_thrust: 0.6
+        direction_y: 0.5
+    costs:
+        mana: 2
+    active_costs:
+        mana: 1
