@@ -107,7 +107,7 @@ bind(player_join,null,null,@event){
         #if(@plr == "GalaxehPanda" || @plr == "Suannaii"){
         #    runas(~console,"/runalias /sing asdf ".@plr)
         #}
-        sudo('/speakall welcome back '.@plr)
+        #sudo('/speakall welcome back '.@plr)
     ))
 
 }
