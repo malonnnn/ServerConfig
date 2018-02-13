@@ -1,8 +1,8 @@
 id: 28556dea-667d-409f-b2ff-fb4177a20ff2
 name: Marielia
-last_cast: 1517105449707
+last_cast: 1518484605780
 cooldown_expiration: 0
-last_death_location: -132.91349719271022,220.0,85.49887254697387,survival112,331.74832,-25.249205
+last_death_location: -42.26956743704367,69.0,-231.08230198909393,greenfield,-287.41068,20.567802
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -14,6 +14,31 @@ brush:
   erase: true
 undo: []
 spells:
+  fiendfyre:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  forcepush:
+    cast_count: 4
+    last_cast: 1518484605781
+    last_earn: 1518484515043
+    cooldown_expiration: 1518484610781
+  soulstonetrap:
+    cast_count: 2
+    last_cast: 1518484530949
+    last_earn: 1518484560961
+    cooldown_expiration: 1518484650949
+  forcefield:
+    cast_count: 7
+    last_cast: 1518484595091
+    last_earn: 1518484535603
+    cooldown_expiration: 1518484598091
+  crucio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   tsunami:
     cast_count: 5
     last_cast: 1510006090575
@@ -29,27 +54,64 @@ spells:
     last_cast: 1510537095074
     last_earn: 0
     cooldown_expiration: 1510537101074
-  fiendfyre:
-    cast_count: 0
-    last_cast: 0
-    last_earn: 0
-    cooldown_expiration: 0
   confringo:
     cast_count: 0
     last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
+  turnwater:
+    cast_count: 2
+    last_cast: 1518484509841
+    last_earn: 1518484509941
+    cooldown_expiration: 1518484524841
+  soulstoneblast:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  stonetouch:
+    cast_count: 0
+    last_cast: 1518484008651
+    last_earn: 0
+    cooldown_expiration: 1518484018651
   avadakedavra:
     cast_count: 1
     last_cast: 1517105423461
     last_earn: 0
     cooldown_expiration: 0
-  crucio:
-    cast_count: 0
-    last_cast: 0
-    last_earn: 0
-    cooldown_expiration: 0
 wands:
+  turnwaterwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6turnwater§f (§3TurnWaterWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2QvU4CQRDHBznwIKIJllqYSKzAwMEdZ2Mg0UQT0YJQk+V2Vjfe7Z57A8ROCzt7H8DWwtr4DL6C72HlAtGp5nt+8y8DlMGZM8VdcAmTNGaEUKGpUXPrmVWloOcKDbgDZiTGkhXBSZhiPQlLc2BzEY5JJpgRS1KAHHv++H60O5eTY8mh5oW+H3BkjSDo8kaneSQaE0+Ihph0Wt0u85pCeC5soBAY0TjSsTZwELSjph94zajjt+pBByPREqHHOdbDMArbXZ+32z7mYX2GJpNaWZpCGbayFON4LNUMFWlzn4fS/0e2Yw2gBNU+kZGTKeFAcymknS/bWs4BdzQ6PxnojH72j3f7D2foQGmRukCW0fvO59fL09trEYr9RE8V9WorEVxwhrEmcBMm1c1Stsr/iUuWIGxfo9VCRoeMiEW3wxSRW7KrFA2jFftiy7K3eno3lWli8ff+8AB+AR3cA42tAQAA
+    wand:
+      template: turnwaterwand
+      owner: Marielia
+      mana: 200.0
+      mana_timestamp: 1518484512641
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      effect_color: 63c05620c451,64ecf1f82dde,88c8375d335e
+      version: 5
+      spell_inventory:
+        turnwater: 2
   voldemortswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -87,9 +149,33 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
+  soulstone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: 14
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6soulstonetrap§f (§3SoulStone§f)
+        lore:
+        - §3§oBound to Marielia
+        - Knows 2 Spells
+        - '§d§oMana: 300'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2PvU7DUAyFT9W0JJVgKCMMSHQNKlF/YEFUgAQShaHqXLmNA1fk3hsSh64sbMzwAEhMDDwAD8DEAzGRBIEny8c+53MLaMFZkglduMI6iUkYXmbzOBNr2EXDLg2ncMeUKo4VNeBoMnT0BDhYK9uZKM2ZkE6AGj1+Nl8Lr+pqpkJ0gr1+fxAy+YPBMPR73f3InwdR5Efz3u5wSEE3ioI6Vu44zZQ1ABrw0B6JpGqeC49tqCJViK1Cqjlwp9Oz47HN5Hv7YHN0f8oOvHJ0zpTJ+8bH1/PD20sTzZG2uZHDDqpy4UxiK3A1KXNdvbv6H3FBmrF+xQWxWuyQCC1uJglzWId3mXBK8gtWulS77ZPbXCWajWz94QE/pB5FvUsBAAA=
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 0
+  sp: 45
 properties: {}
 classes: {}

@@ -13,7 +13,8 @@
                 "/buff",
                 "/fly",
                 "/intangible",
-                "/tangible"
+                "/tangible",
+                "/magicpush <player>"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 10 true",
