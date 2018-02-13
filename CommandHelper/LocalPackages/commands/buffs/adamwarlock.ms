@@ -16,14 +16,13 @@
                 "/tangible"
             ),
             'buffs': array(
-                "/effect ". @plr ." 5 9999 20 true",
+                "/effect ". @plr ." 5 9999 10 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/give ". @plr ." minecraft:golden_hoe 1 16:5 name:&4A&6d&ea&6m_&4W&ba&er&6l&bo&ec&4k's_&4S&et&6a&ef&4f",
                 "/shot give ". @plr ." warlockblast",
                 "/mgive ". @plr ." soulstone",
                 "/mgive ". @plr ." forcefieldwand",
                 "/mgive ". @plr ." stonetouchwand",
-                "/mgive ". @plr ." turnwaterwand",
-                "/mgive ". @plr ." forcepushwand"
+                "/mgive ". @plr ." turnwaterwand"
             )
 )
