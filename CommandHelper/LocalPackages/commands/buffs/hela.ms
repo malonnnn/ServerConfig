@@ -19,22 +19,21 @@
                 "/fly",
                 "/portaltp <player>",
                 "/speak",
-                "/enchant",
-                "/cast glasstouch",
-                "/cast blind",
-                "/cast forcefield",
-                "/cast increaseage",
-                "/cast helaheal",
-                "/cast conjuresword",
-                "/cast helabolt",
-                "/cast turnghost",
-                "/cast throwsword"
+                "/enchant"
             ),
             'buffs': array(
                 "/effect ". @plr ." 5 9999 15 true",
                 "/effect ". @plr ." 11 9999 3 true",
                 "/effect ". @plr ." 21 9999 4 true",
                 "/effect ". @plr ." 10 9999 3 true",
-                "/shot give ". @plr ." yellowenergybeam"            
+                "/shot give ". @plr ." yellowenergybeam",
+                "/mgive ". @plr ." glasstouchwand",
+                "/mgive ". @plr ." blindwand",
+                "/mgive ". @plr ." forcefieldwand",
+                "/mgive ". @plr ." increaseagewand",
+                "/mgive ". @plr ." conjureswordwand",
+                "/mgive ". @plr ." helaboltwand",
+                "/mgive ". @plr ." turnghostwand",
+                "/mgive ". @plr ." throwswordwand"
             )
         )
