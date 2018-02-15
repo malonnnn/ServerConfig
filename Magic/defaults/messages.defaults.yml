@@ -157,6 +157,15 @@ categories:
     music:
         name: Music
         description: Used for playing music
+classes:
+
+  battle_mage:
+    name: "Battle Mage"
+    description: "A warrior who wields a magic sword"
+
+  mage:
+    name: "Mage"
+    description: "The ultimate spellcaster"
 item:
     duplicated: Your item has been duplicated
     destroyed: Your item has been destroyed
@@ -370,6 +379,12 @@ shops:
   prerequisite_spell_level: "&6$name"
   prerequisite_spell_progress_level: " (Progress $level/$max_level)"
   required_spells: "&r&cRequires: $spells"
+  cast_spell: "Cast $spell on you"
+  unlock_class: "$class"
+  nothing: "Nothing"
+  cost_lore: "&6Costs: &e$cost"
+  has_class: "You already have class $class"
+  at_limit: "You are at your limit of $limit"
 spell:
     category: ""
     # category: "&7&o$category"

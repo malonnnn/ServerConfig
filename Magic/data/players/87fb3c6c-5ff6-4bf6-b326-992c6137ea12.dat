@@ -2,7 +2,7 @@ id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
 last_cast: 1518486626789
 cooldown_expiration: 0
-last_death_location: -74.5963240150528,248.18459256971286,130.10623047850584,lexstarklabs,-344.79013,15.263615
+last_death_location: -26.26026412502406,69.0,-211.56465243027182,greenfield,-110.16202,51.670822
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -114,6 +114,11 @@ spells:
     last_cast: 1479697028056
     last_earn: 0
     cooldown_expiration: 1479697043056
+  ascendio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   counterspell|2:
     cast_count: 0
     last_cast: 1479697241346
@@ -154,11 +159,21 @@ spells:
     last_cast: 1518287426321
     last_earn: 0
     cooldown_expiration: 1518287429321
+  incarcerous:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   projector:
     cast_count: 0
     last_cast: 1492310520904
     last_earn: 0
     cooldown_expiration: 1492310580904
+  confringo:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   flare|2:
     cast_count: 2
     last_cast: 1479675732311
@@ -339,6 +354,11 @@ spells:
     last_cast: 1479696299760
     last_earn: 0
     cooldown_expiration: 1479696300760
+  sectumsempra:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   mindcontrol:
     cast_count: 5
     last_cast: 1515884826734
@@ -624,6 +644,11 @@ spells:
     last_cast: 1479696955268
     last_earn: 0
     cooldown_expiration: 1479696975268
+  stupefy:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   arrow|2:
     cast_count: 0
     last_cast: 1479673984969
@@ -639,6 +664,11 @@ spells:
     last_cast: 1518486626790
     last_earn: 0
     cooldown_expiration: 1518486636790
+  periculum:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   boom:
     cast_count: 2
     last_cast: 1479696424294
@@ -679,6 +709,11 @@ spells:
     last_cast: 1492310961383
     last_earn: 0
     cooldown_expiration: 1492310991383
+  wingardiumleviosa:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   platform:
     cast_count: 1
     last_cast: 1492310990163
@@ -689,6 +724,11 @@ spells:
     last_cast: 1479696517433
     last_earn: 0
     cooldown_expiration: 1479696532433
+  protego:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   blast|3:
     cast_count: 3
     last_cast: 1479696225777
@@ -709,11 +749,16 @@ spells:
     last_cast: 1479696820678
     last_earn: 0
     cooldown_expiration: 1479696825678
+  incendio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   expelliarmus:
     cast_count: 0
     last_cast: 1493516786912
     last_earn: 0
-    cooldown_expiration: 1493516796912
+    cooldown_expiration: 0
   breach:
     cast_count: 1
     last_cast: 1479696504409
@@ -724,6 +769,11 @@ spells:
     last_cast: 1498057314839
     last_earn: 0
     cooldown_expiration: 1498057321839
+  accio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   rhinodash:
     cast_count: 1
     last_cast: 1501210041786
@@ -866,17 +916,18 @@ wands:
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: AIR
       damage: 1
+      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
         display-name: §6rictusempra§f (§3HarrysWand§f)
         lore:
-        - §3§oBound to God_Doesnt_Exist
+        - §3§oBound to Jiren_The_Grey
         - Knows 14 Spells
-        - '§d§oMana: 200 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -885,17 +936,6 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1QzU7CQBAebcFSNRo86sFErpgAWuRiJIGoiT8HwrnZtlPZ0O7W3WmBmxefwQfw6sEH8Bl8IE9uS3SSmUy++b75cwFcsBdMRA44hGmWMEJwZ0yplV7DNbkQqGD/Wkb+SKIW5I+XXJMRVBWfR9C66MdBL/TC9nkce+2zwISg1/Xag0E39Dq9PrJO14KtApXmUgBAzYU9nWGS+FwUKEiqlQU7rGARmxsvFDOkTQPhsmRxptJcG2jDgm3FQ8q1WbYigQX1UOUhl1UODWgOiRQPcsJ7GfGYm6FuKbXBmU5vR/dS08/J5dHw5QZtaJTQHTJNn4df32+vH+91qA9TmQu6akFlDtiTRBI4KeNiVj1l93/EA0sRDp7QfIKHp4yIhfNJhhhZ0HjMUDFaH1x2qbjN8XPOs9TcfPy3HsAvynQuvYgBAAA=
-    wand:
-      template: harryswand
-      owner: God_Doesnt_Exist
-      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      version: 5
-      spell_inventory:
-        avadakadavra: 2
-        expelliarmus: 1
-        rictusempra: 0
-        crucio: 3
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1028,7 +1068,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1518535919668
+    mana_timestamp: 1518660101628
     mana: 50.0
     spells:
     - missile

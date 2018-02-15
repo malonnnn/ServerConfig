@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1518553663373
+last_cast: 1518658219332
 cooldown_expiration: 0
 last_death_location: -110.86997222753102,79.0,121.29958101992194,lexstarklabs,-40.14978,-1.775349
 fall_protection_count: 0
@@ -45,12 +45,12 @@ spells:
     cast_count: 12
     last_cast: 1515196604753
     last_earn: 1515196604747
-    cooldown_expiration: 1515196609753
+    cooldown_expiration: 0
   powerstoneblast:
     cast_count: 65
     last_cast: 1516511045976
     last_earn: 1516492687253
-    cooldown_expiration: 1516511075976
+    cooldown_expiration: 0
   soulstonetrap:
     cast_count: 36
     last_cast: 1518485449995
@@ -58,9 +58,9 @@ spells:
     cooldown_expiration: 1518485569995
   acidshot:
     cast_count: 1
-    last_cast: 1516419383665
+    last_cast: 1518657588500
     last_earn: 0
-    cooldown_expiration: 1516419390665
+    cooldown_expiration: 1518657595500
   reducto:
     cast_count: 3
     last_cast: 1515196570202
@@ -168,9 +168,9 @@ spells:
     cooldown_expiration: 1516037022844
   lift:
     cast_count: 13
-    last_cast: 1497320044683
+    last_cast: 1518656815295
     last_earn: 1492222456480
-    cooldown_expiration: 1497320046683
+    cooldown_expiration: 1518656817295
   force:
     cast_count: 0
     last_cast: 1501466382602
@@ -241,6 +241,11 @@ spells:
     last_cast: 1518553435055
     last_earn: 1518485762633
     cooldown_expiration: 1518553450055
+  leap:
+    cast_count: 3
+    last_cast: 1518657318280
+    last_earn: 1518657318279
+    cooldown_expiration: 0
   groundpound:
     cast_count: 0
     last_cast: 1511553275211
@@ -385,7 +390,7 @@ spells:
     cast_count: 27
     last_cast: 1516511042322
     last_earn: 1515905455207
-    cooldown_expiration: 1516511072322
+    cooldown_expiration: 0
   smite:
     cast_count: 0
     last_cast: 1497320133445
@@ -443,9 +448,9 @@ spells:
     cooldown_expiration: 1515888528552
   missile:
     cast_count: 44
-    last_cast: 1507154235321
+    last_cast: 1518657302392
     last_earn: 1492365394541
-    cooldown_expiration: 0
+    cooldown_expiration: 1518657303392
   wound|3:
     cast_count: 31
     last_cast: 1492365962434
@@ -453,9 +458,9 @@ spells:
     cooldown_expiration: 0
   rictusempra:
     cast_count: 29
-    last_cast: 1515196579306
+    last_cast: 1518658218984
     last_earn: 1507761366312
-    cooldown_expiration: 0
+    cooldown_expiration: 1518658220984
   sandwall:
     cast_count: 7
     last_cast: 1510534711471
@@ -565,7 +570,7 @@ spells:
     cast_count: 37
     last_cast: 1517873859774
     last_earn: 1515902881092
-    cooldown_expiration: 1517873869774
+    cooldown_expiration: 0
   chainlightning:
     cast_count: 4
     last_cast: 1496273313786
@@ -636,6 +641,11 @@ spells:
     last_cast: 1517950348810
     last_earn: 0
     cooldown_expiration: 1517950350810
+  blink:
+    cast_count: 1
+    last_cast: 1518656962126
+    last_earn: 0
+    cooldown_expiration: 1518656972126
   sandblast:
     cast_count: 1
     last_cast: 1496270398786
@@ -747,10 +757,10 @@ spells:
     last_earn: 1516511029318
     cooldown_expiration: 0
   rhinodash:
-    cast_count: 10
-    last_cast: 1505782030366
+    cast_count: 11
+    last_cast: 1518656823642
     last_earn: 0
-    cooldown_expiration: 1505782035366
+    cooldown_expiration: 1518656828642
   symbiotetendril:
     cast_count: 1
     last_cast: 1517951164320
@@ -785,7 +795,7 @@ spells:
     cast_count: 59
     last_cast: 1516511050724
     last_earn: 1516511050723
-    cooldown_expiration: 1516511080724
+    cooldown_expiration: 0
   apparate:
     cast_count: 2
     last_cast: 1505781065624
@@ -864,12 +874,12 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6ascendio§f (§3HarrysWand§f)
+        display-name: §6rictusempra§f (§3HarrysWand§f)
         lore:
-        - §3§oBound to RqndomMyth
+        - §3§oBound to xMqthy
         - Knows 14 Spells
-        - '§d§oMana: 200 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -878,31 +888,14 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAEVSPW8TQRCdcGfnbAKIUPIVIKKKo/jrfG5QLIEEEgaJKLVZ787ZK253L/th446G38APoKXgB6SkoOIHUTF3VsJ28+bNvDcz2wZoQ7xmWiSQeFRlwTxCe8ms3bgt3DBrjRbaHy60MGq68csE9hj3coUzV2JRQMIcRy2kaUKsmGanEuoXw+0qnHmp0HmmSoCdj79/XSJp1U1nUsBhnva6wyzFToZ51hkMMtEZ99JBJ0vnabc/Gp4Me1Swh3mO3M+4KYyF52l/3j0ZdjEbZ6OjdCDEqMcFm/fGR1k27/dT3h2iSCPYXaF10mhy02jDndrvTOoVam/sJvpvnQi7EbRKtJKHIiiKH0fQYJzXuUcR3F1LvWBWyKAKXEnjGOEPScKiCNxXrIMImtyGbclTSpXWeFxUURTBTak5sxytCY6QJyTHjc4tta0YDXJDjCs3NyKa+XPlVzKr6oqYepA9HxwdylbyQCRHawnqGmqSrPOhxHxD0Q5AC/Yn3ls5Dx6nRshc0kraVS6G5Pz8zcupcf7vsxcPJl9eYwytCnqLzPmf9y//fPv643sTmhNlgvanh9u7JhCfFcZDopjUy/qT3LqWeMcUwr0F6mqTx8x7xj+dlYiCxn1P62V+e46qS83df3URZKnoIgdX9gD+AXHF7giYAgAA
+        internal: H4sIAAAAAAAAAD2PQU7CYBCFH6FgaaILjCtdmMi2RhBq3RiJmmAiuiCsyUCn8kf+v6UdRHYmxjNwALcuPIBn8CZewJWlRGc1eW/mzTcO4MCakwls2MI6npAwnDElySJdy6VobjhB+ak7lfGiBEuToYsOYGFr1Q5EaU6FdAwUaLnz8p1F5TsDFaAWeo16y/fY9Tn03WbTD9zThtd0fW/o1Y9PWketBhex8chJqiIDoIQKqm2RRA1nwt0oUKHKTCezChbsfv/6shul8nNwttd+7rCFykq6YUrlY/fza/n6/lZGua2jmZHzGvKyYfUmkcDWpMw4f2vz/8Qtacb2PWfEanRIIjR66MXMQRGVu5gTkjXYKiWfrV5NZyrWbGT/Dw/4BT8OAjFKAQAA
     wand:
       template: harryswand
-      owner: RqndomMyth
-      active_spell: ascendio
+      owner: xMqthy
       mana: 200.0
-      mana_timestamp: 1515196824677
+      mana_timestamp: 1518658225133
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: 63b1051e8987,64dd72cdab29,88b336c15ed6
       version: 5
-      spell_inventory:
-        ascendio: 7
-        periculum: 31
-        accio: 30
-        wingardiumleviosa: 29
-        reducto: 32
-        crucio: 34
-        protego: 3
-        incarcerous: 33
-        confringo: 5
-        incendio: 2
-        expelliarmus: 4
-        rictusempra: 0
-        sectumsempra: 6
-        stupefy: 1
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -911,13 +904,12 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6avadakedavra§f (§3VoldemortsWand§f)
+        display-name: §6Magic Missile§f (§3Wand§f)
         lore:
-        - §o§aUnknown Magic Wand
-        - §3§oBound to President_Myth
-        - Knows 5 Spells
-        - '§d§oMana: 300 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - §o§aBeginner Magic Wand
+        - §3§oBound to xMqthy
+        - '§d§oMana: 50'
+        - '§d§oMana Regeneration: 5/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -926,33 +918,13 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAFWSwW4TMRCGp2S7bFYlqO0RDkhUnBq02SSbzaVqJJBAEECqCjdWrj1O3e7ai9fZkhsXnoEH4MqBB+DAE/AevAInbNOU9jie8f/P/9kxQAzBBZEsgshgVZfE4PpgU11I1NB7o7ERDKUp5itzGkCvIpIURlTYGFLVABvvf5+dvbAK/kIhGOzxLB2M8wz7OfK8PxrlrD9Ns1E/z06ywXAyTsYpduB2i7oRSgLAZgx3mxrLshCytV5Kr2y/1srgQtn+rQ50uUDJ+EqjrTu2pkpyLaTvBx3YIi1h5BwZaTUBNwMh1UsqXH8DIjtAjWix8D43x2PY+udeYotlAyEELuWh/umEbLntQ2tcoI1IjF36cM+3nC5yjtQUVJVKwyPCkGZTluaY8P0JHSTpZIyYkWSfD/kgTxM6nLIkgkCSCqH3VpUMK6VN885iDyHyThX5uDbvQFCThQsNXQj9mk3kkF0ncjP8NTRrBFcsu7AzM0aLk6XBuWLCaugmdogCiI6Pnz+Zq8b8eXhwf/bpGQbQdUcvkTTm+70fv758/vY1hHBWqaU0/wkER6UybnMhT/3fuXNl8cqF3PXYBH1MjCH0/KhGZPYBX9eXLC9V/OzO0w9LUVf2DzxYrwfwF/OBaX2pAgAA
+        internal: H4sIAAAAAAAAAD2PwU7CQBCGx1iwEL3gUQ8mEk/UtGxpl4uRRBNNRA+EM9nuzspG2i1lEL158Rl8AK8efACfwQfyZKnBOf7/5JtvmgBNcFYiUy64hGk+E4SboGZXGRZQfxrOafrswi5qjZIm0s5sAScsFiyIfaV9FXQYZ4olic99LTqxFFIyEfZDIUpuhZkYBW0ddYMej9DjqLkXhlx5/W4UejxKooDFPb/XxW3YecRiYWwGADVoQGtAVJhkSTi0ymhTls2y2nLAHY+vL4Z2QT/HZ4eDlyt0oLGOblAs6PPg6/vt9eO9DvVBapcZnbehGhec0cwSuKkw2bT6dO//xK1IEfbvsTQ28lQQCfkwyhHVNjTuciwE/YmtKdVu63K+NHmKGR1t9AB+AUKBY8tXAQAA
     wand:
       template: wand
-      owner: President_Myth
-      mana_timestamp: 1507154618955
+      owner: xMqthy
+      effect_color: 37a3170df0d1,383d3bb080fa,7cacc3a494aa
       owner_id: f621586e-8ef8-448d-9264-86b61375052e
       version: 5
-      spell_inventory:
-        protego: 2
-        fiendfyre: 3
-        confringo: 4
-        avadakedavra: 0
-        crucio: 1
-      active_spell: avadakedavra
-      spell_levels: {}
-      mana: 300.0
-      mana_regeneration: 10.0
-      effect_color: adec69d28e0f,7c10275ee6a0,f3f1820c39d0
-      name: VoldemortsWand
-      mana_max: 300.0
-      page: 0
-      spells:
-      - fiendfyre
-      - avadakedavra
-      - confringo
-      - crucio
-      - protego
   mindstone:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1127,7 +1099,12 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2785
+  sp: 2787
 properties:
   mana: 0.0
-classes: {}
+classes:
+  caster:
+    mana_timestamp: 1518658575914
+    mana: 50.0
+  mage: {}
+active_class: mage
