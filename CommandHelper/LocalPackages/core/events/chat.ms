@@ -308,9 +308,20 @@ bind('player_chat', null, null, @e) {
     #    cancel()
     #}
 
+    if(has_permission(@pname,'chat.ef')){
+        @mmm = split(' ',@msg)
+        @mod = ''
+        foreach(@word in @mmm){
+            @word = @word.'ef '
+            @mod = @mod.@word
+        }
+        @msg = @mod
+        modify_event(message, @msg)
+    }
+
     if(has_permission(@pname,'case.tolower')){
         @msg = to_lower(@msg)
-      modify_event(message, @msg)
+        modify_event(message, @msg)
     }
     if(has_permission('chat.babytalk')){
         @msg = replace(@msg,'l','w')
@@ -323,8 +334,8 @@ bind('player_chat', null, null, @e) {
         @msg = replace(@msg,'ER','YEW')
         @msg = replace(@msg,'age','yage')
         @msg = replace(@msg,'AGE','YAGE')
+        modify_event(message, @msg)
     }
-    modify_event(message, @msg)
     #@tmp = to_lower(@msg)
     #if(
     #    (string_position(@tmp,'jiren') >= 0 ||
