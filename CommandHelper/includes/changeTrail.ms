@@ -1,7 +1,9 @@
 proc(_changeTrail, @plr, @trail,
 
     if(@trail != ''){
-        if(@class == "the   humantorch"){
+        include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+        @class = _getheroclass(@plr)
+        if(@class == "thehumantorch"){
             runas(~console,"/sudo ". @plr ." c:/trailsid ".@trail." ".@plr)
         }
     }

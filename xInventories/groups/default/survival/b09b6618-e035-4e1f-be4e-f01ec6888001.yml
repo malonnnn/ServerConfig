@@ -1,13 +1,40 @@
-health: 20.0
+health: 100.0
 hunger: 17
-exp: 0.92307687
-exp-level: 3
+exp: 0.0
+exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 16.0
-exhaustion: 0.5612104
-inventory: {}
-armor_contents: {}
+saturation: 4.0
+exhaustion: 2.280599
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -166,22 +193,50 @@ ender_chest:
       - §eLeft click to detonate.
 location:
   ==: org.bukkit.Location
-  world: waynemanor
-  x: -26.5
-  y: 64.0
-  z: 688.5
-  pitch: -2.9107697
-  yaw: 17.112314
+  world: greenfield
+  x: -25.5
+  y: 69.0
+  z: -215.5
+  pitch: 0.46778247
+  yaw: 33.306404
 potion_effect:
   '0':
+    type: JUMP
+    level: 5
+    duration: 199715
+  '1':
+    type: SPEED
+    level: 10
+    duration: 199787
+  '2':
     type: INCREASE_DAMAGE
     level: 20
-    duration: 199786
-  '1':
+    duration: 199523
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 199523
+  '4':
+    type: FAST_DIGGING
+    level: 127
+    duration: 199661
+  '5':
     type: DAMAGE_RESISTANCE
-    level: 4
-    duration: 199786
-  '2':
+    level: 3
+    duration: 199523
+  '6':
+    type: REGENERATION
+    level: 1
+    duration: 199523
+  '7':
+    type: NIGHT_VISION
+    level: 1
+    duration: 199523
+  '8':
     type: WATER_BREATHING
     level: 1
-    duration: 199786
+    duration: 199523
+  '9':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 199523

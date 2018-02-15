@@ -1,3 +1,33 @@
+ymlconvertall:/ymlconvertall = >>>
+
+    @files = list_files('./buffs/')
+    @plr = player()
+    foreach(@file in @files){
+        @baseNum = string_position(@file,'.ms')
+        @base = substr(@file,0,@baseNum)
+        try{
+            include('./buffs/'.@base.'.ms')
+        }catch(IOException @e){
+            tmsg(player(),@base.'.ms was not found')
+            die()
+        }
+
+        @yml = yml_encode(@hero,true)
+        @yml = replace(@yml,@plr,'<plr>')
+        
+        if(!is_dir('./heroes/')){
+            create_dir('./heroes/')
+        }
+        
+        if(!file_exists('./heroes/'.@base.'.yml')){
+            create_file('./heroes/'.@base.'.yml')
+        }
+        write_file('./heroes/'.@base.'.yml',@yml,'OVERWRITE')
+    }
+    msg(color(RED).'DONE!')
+    
+
+<<<
 ymlconvert:/ymlconvert $heroClass = >>>
 
     try{

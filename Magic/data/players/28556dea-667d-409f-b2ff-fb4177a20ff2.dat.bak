@@ -1,6 +1,6 @@
 id: 28556dea-667d-409f-b2ff-fb4177a20ff2
 name: Marielia
-last_cast: 1518484605780
+last_cast: 1518491423299
 cooldown_expiration: 0
 last_death_location: -42.26956743704367,69.0,-231.08230198909393,greenfield,-287.41068,20.567802
 fall_protection_count: 0
@@ -14,6 +14,11 @@ brush:
   erase: true
 undo: []
 spells:
+  blind:
+    cast_count: 0
+    last_cast: 1518491036269
+    last_earn: 0
+    cooldown_expiration: 1518491046269
   fiendfyre:
     cast_count: 0
     last_cast: 0
@@ -24,16 +29,31 @@ spells:
     last_cast: 1518484605781
     last_earn: 1518484515043
     cooldown_expiration: 1518484610781
+  increaseage:
+    cast_count: 1
+    last_cast: 1518491423296
+    last_earn: 1518491423295
+    cooldown_expiration: 1518491453296
   soulstonetrap:
     cast_count: 2
     last_cast: 1518484530949
     last_earn: 1518484560961
     cooldown_expiration: 1518484650949
+  helabolt:
+    cast_count: 5
+    last_cast: 1518491024919
+    last_earn: 1518490928591
+    cooldown_expiration: 1518491031919
   forcefield:
-    cast_count: 7
-    last_cast: 1518484595091
-    last_earn: 1518484535603
-    cooldown_expiration: 1518484598091
+    cast_count: 12
+    last_cast: 1518491038320
+    last_earn: 1518490906957
+    cooldown_expiration: 1518491041320
+  conjuresword:
+    cast_count: 1
+    last_cast: 1518490911958
+    last_earn: 1518490911957
+    cooldown_expiration: 1518490931958
   crucio:
     cast_count: 0
     last_cast: 0
@@ -44,6 +64,11 @@ spells:
     last_cast: 1510006090575
     last_earn: 0
     cooldown_expiration: 1510006100575
+  turnghost:
+    cast_count: 1
+    last_cast: 1518490930491
+    last_earn: 1518490935539
+    cooldown_expiration: 1518490950491
   protego:
     cast_count: 0
     last_cast: 0
@@ -79,7 +104,165 @@ spells:
     last_cast: 1517105423461
     last_earn: 0
     cooldown_expiration: 0
+  throwsword:
+    cast_count: 0
+    last_cast: 1518491016970
+    last_earn: 0
+    cooldown_expiration: 1518491026970
+  glasstouch:
+    cast_count: 4
+    last_cast: 1518491015719
+    last_earn: 1518490948911
+    cooldown_expiration: 0
 wands:
+  forcefieldwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6forcefield§f (§3ForceFieldWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1Qv0/CYBA9QsFClAFHjTGROFEDBfpjMZBooonoQJjJtd99+sW2X20PWV0cnf0DXB38A5wd/YOcLCV627139+69awI0wVhhIkwwmeI0QiZoSZ2FJBVFYkPV9CqhDMwpZgWosA5GjAmOFZRlQGvdLljFlDPGKUAFXw74qxAtNxdKQMf2RiNHEFqO4wpr2POlFdhSWjIY9l0X7Z6UtgnbJCWFvAh1pDM4dgaB05ciHFHf7jpDsv2QhOsFdtfzAhw4vu9JL6jC1iNludJJ4aYGDWhPmDMVLJmmWqgiSZY3C6pigDmfX55Ndc4/R6f7k6cLMqCxhq4Ic/7Y+/x+fX5/q0N9EutlwuPOJqEJxizSDGaMKrkrf7Lzf+IaY4LdWyqCqvAEmTG8n6VEogqNm5Qy5I2xtUo52z5/WKo0poQP/+wB/ALv0jhTiwEAAA==
+    wand:
+      template: forcefieldwand
+      owner: Marielia
+      mana: 200.0
+      mana_timestamp: 1518491038918
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      effect_color: 63b61fdc5e12,64e29ced78b2,88ba36998f8b
+      version: 5
+  increaseagewand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6increaseage§f (§3IncreaseAgeWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1QvU4CQRAe4oEHUUyw1MJEYsUZOOB+GgOJJpqIFkhN5m5ncSN7e94t0tpY2pn4ALYWPoDPYGnrG1gbGz2O6HQz38z3MxWAChhzjJgJpiYZT1ETbIgoTAhTwgktsaKaR5SAOcBE0FRgCQyJEfbCj5/36sOnAdVFO9ZCUqpRxgAFvK9ffGWs+eVYMKjbXrfrMELLcVxmdZo+twKbc4sHnZbrot3k3DZhjTinUI9DNVUJ7DntwGlxFnapZTecDtl+SMz1ArvheQG2Hd/3uBeswOoNJalQEQAUoQy1vtaJCGaaBooJLjKwkkEFA8zR6ORwoFL9vXuw3b89JgPKi9FpFli/bL2+Pd49P5Wg1JdqFuleHfIywRhOlQZToogu85+s/0ucoSTYnFAWVIT7qDWGV8OYiK1A+TymBPXS2IIl360dXc9ELCnSO3/2AH4BYN4QSYwBAAA=
+    wand:
+      template: increaseagewand
+      owner: Marielia
+      mana: 158.99998
+      mana_timestamp: 1518491423992
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      effect_color: 63b61fdc5e12,64e29ced78b2,88ba36998f8b
+      version: 5
+  throwswordwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Throw Sword§f (§3ThrowSwordWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2Pv0oDQRDGJ+QS7wKmiKUiounkJB75o40koKBgtAipwyQ7axazu+fexGtFsBGsfQBbBR9A8A18IBu9XNDpZn4z3/dNBaACXopG+OAz6XiGTFDlqbNpklonlqhkU0MO/D46RTOFZfA0GuzK0dvP/e6nB9VFO2KlKWHUMUABnza3HzPR/HKkBNSjg1arLQjDdrsjwmbjUIbjSMpQjpv7nQ5GDSmjIqzckkuUNQBQggBqPWanxnOmvhVKqgxWMlTwwB8Oz477NuHvnaON3t0peRAsRueECb+vf3w9P7y+lKHc03ZuuFuHvHzwBjPL4GtUZpo/t/pvcYGaYO2KssRqsofMOLkexESiCMFlTA55GWyhku/WTm7mKtZkeOsvHsAv4H0XPlQBAAA=
+    wand:
+      template: throwswordwand
+      owner: Marielia
+      mana: 178.98999
+      mana_timestamp: 1518491017866
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      version: 5
+  glasstouchwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6glasstouch§f (§3GlassTouchWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1QPU/CYBA+QsFClAFHjTGBOFFDCy11MZBooonoQJjJtb0X3tj2re1VVhdHZ3+Aq4Ojg7/BH+RkKdHb7p675+OaAE3Q1hgHOuhMURIiE7SWIWYZq9xfbaGaWseUgj7FVFIosQ5ahDGOJZSlQWvTLlhGlDFGCUAFX446nwVpebmQAXQt17adgNBwnFFgDPtnwvAsIQzhDc3RCK2+EJYOuyQE+bzwVahSOHEGnouBPbSF7facIdkDy3R8yxz0XNcLPAfdvrDNKuw8UppJFRduatCA9oQ5lV7ONFWBFLIAmwVU0UCfz68vpirjn8754eTpijRobEY3hBl/HHx9vz6/v9WhPolUHvO4u02ogzYLFYMeoYxX5U/2/iVuMSLYX1IRVPqnyIz+/SwhCqrQuEsoRd4a27CUu+3Lh1wmEcV8/GcP4BdtRvLziwEAAA==
+    wand:
+      template: glasstouchwand
+      owner: Marielia
+      mana: 200.0
+      mana_timestamp: 1518491018168
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      effect_color: 63b8ad545f58,64e53216c213,88bdb6a80f51
+      version: 5
+  blindwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Blind§f (§3BlindWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2PvU7DUAyFXTUNSSQYisQCQkh0DSpRf2BBiQQSSASGqnPl9PrCFbk3IXHoysLIzAOwMvAAPAMPxESSCrz5HPv4swfggbVCIxxwmHSeIhO4SaqMWKu9bGWoACfGQlGq0AZLo8GQQmjKgq2mXbDSVDLqHKCDr/v5Tp3Xbi6UgEFwMh5PBKE/mUyFPxqeSj8JpPRlMjqeTjEYShl0YeOJilJlpo7tgQv9iLlQScUUZ0JJVZtebXUscObzq/M4K/nn8Gwver4kC9xGuiYs+XP36/vt5ePdBjvSWWU4HLSk4IA1SzMGR6My9+1zm/8nblATbN9RTayWR8iMy4dZTiS64N7mVCCvwZqUdrZ/8VipXJPhgz88gF8GrdPJTwEAAA==
+    wand:
+      template: blindwand
+      owner: Marielia
+      mana: 170.0
+      mana_timestamp: 1518491037718
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      version: 5
   turnwaterwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -91,8 +274,8 @@ wands:
         display-name: §6turnwater§f (§3TurnWaterWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -112,6 +295,35 @@ wands:
       version: 5
       spell_inventory:
         turnwater: 2
+  helaboltwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6helabolt§f (§3HelaBoltWand§f)
+        lore:
+        - §3§oBound to Marielia
+        - '§d§oMana: 200'
+        - '§d§oMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2PvU4CURCFD2HBhagFllqYSLsGN/xoQyRqglG0INRklp2VG/feu+4O0tr4CvoAthY+gM9g4eNYuSzRqSbzzZxzpg7U4SzJhC5cYZ3EJIzNOccU2FjWoGKXhlO4I0oVx4oqcDQZOhsCDrZX7VSU5kxIJ0CJXr6v0lyuuJqqEE3/uNPphkxet9sLvXbrJPICP4q8KGgf9Xrkt6LIL2PjkdNMWQOgghoaA5FUBQvhkQ1VpHJYz1HJgTuZXJ6PbCY/B/29wdOQHdRWo2umTD52P79en9/fqqgOtF0YOW2iKBfOOLYCV5My8+KxrX+LG9KMnTvOE6vZIYnQ7H6cMIdl1G4TTknWwVYqxW7j4mGhEs1G9v/iAb9oJMylTgEAAA==
+    wand:
+      template: helaboltwand
+      owner: Marielia
+      mana: 200.0
+      mana_timestamp: 1518653819762
+      owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
+      version: 5
   voldemortswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -124,8 +336,8 @@ wands:
         lore:
         - §3§oBound to xHqrkie
         - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -149,33 +361,9 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
-  soulstone:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: AIR
-      damage: 14
-      amount: 0
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6soulstonetrap§f (§3SoulStone§f)
-        lore:
-        - §3§oBound to Marielia
-        - Knows 2 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PvU7DUAyFT9W0JJVgKCMMSHQNKlF/YEFUgAQShaHqXLmNA1fk3hsSh64sbMzwAEhMDDwAD8DEAzGRBIEny8c+53MLaMFZkglduMI6iUkYXmbzOBNr2EXDLg2ncMeUKo4VNeBoMnT0BDhYK9uZKM2ZkE6AGj1+Nl8Lr+pqpkJ0gr1+fxAy+YPBMPR73f3InwdR5Efz3u5wSEE3ioI6Vu44zZQ1ABrw0B6JpGqeC49tqCJViK1Cqjlwp9Oz47HN5Hv7YHN0f8oOvHJ0zpTJ+8bH1/PD20sTzZG2uZHDDqpy4UxiK3A1KXNdvbv6H3FBmrF+xQWxWuyQCC1uJglzWId3mXBK8gtWulS77ZPbXCWajWz94QE/pB5FvUsBAAA=
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 45
+  sp: 83
 properties: {}
 classes: {}

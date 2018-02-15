@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1518485830308
+last_cast: 1518553663373
 cooldown_expiration: 0
-last_death_location: -35.68622882902339,78.0,-263.56469005199983,greenfield,-14.261353,27.617727
+last_death_location: -110.86997222753102,79.0,121.29958101992194,lexstarklabs,-40.14978,-1.775349
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -238,9 +238,9 @@ spells:
     cooldown_expiration: 1496270991498
   turnwater:
     cast_count: 5
-    last_cast: 1518485762485
+    last_cast: 1518553435055
     last_earn: 1518485762633
-    cooldown_expiration: 1518485777485
+    cooldown_expiration: 1518553450055
   groundpound:
     cast_count: 0
     last_cast: 1511553275211
@@ -363,9 +363,9 @@ spells:
     cooldown_expiration: 0
   stonetouch:
     cast_count: 1
-    last_cast: 1518485830308
+    last_cast: 1518553434053
     last_earn: 0
-    cooldown_expiration: 1518485840308
+    cooldown_expiration: 1518553444053
   avadakadavra:
     cast_count: 1
     last_cast: 1507153812882
@@ -397,10 +397,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1505430661537
   forcefield:
-    cast_count: 23
-    last_cast: 1518485790977
-    last_earn: 1518485758582
-    cooldown_expiration: 1518485793977
+    cast_count: 24
+    last_cast: 1518553432408
+    last_earn: 1518553432407
+    cooldown_expiration: 1518553435408
   fling:
     cast_count: 182
     last_cast: 1496270102204
@@ -793,9 +793,9 @@ spells:
     cooldown_expiration: 1505781075624
   cosmicbolt:
     cast_count: 73
-    last_cast: 1517873769899
+    last_cast: 1518553663374
     last_earn: 0
-    cooldown_expiration: 1517873770399
+    cooldown_expiration: 1518553673374
   etaercsnoisulli:
     cast_count: 7
     last_cast: 1497100625268
@@ -828,8 +828,8 @@ wands:
         lore:
         - §3§oBound to RqndomMyth
         - Knows 2 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -856,36 +856,6 @@ wands:
         acceleratetime: 1
         mindstone: 2
         freezetime: 0
-  forcefieldwand:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6forcefield§f (§3ForceFieldWand§f)
-        lore:
-        - §3§oBound to xMqthy
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD1QwU7CQBAdYsFClAMe9WAi8USNpWVbL0aiJpiIHghnst2dysa2W9pB9ObFm3c/wKsHP8Bv4INMTCwlOqfJvDdv3psGQAOMBU+kCSZhnEacEJqhzgSGCiO5hqp6kWAGtcfhjKZPVTBinvDzAYABzVU7IRVjTjxOASr8dSl+CrlyZ6IktEPWtXs+Q8vH0Ldc15fWSZe5ls8CZjte77jXRRO2MAxR0EToSGdwyJwgcLiUduDYHeaiJwpi6Ht2x/eF7TAhvdCTG7D5gFmudAIAVahDq0+UqWBOONRSFRmyvFFAFQPM8fjqYqhz+j443es/D9CA+mp0jTynz92v5dvLx3sNav1YzxM6a0NZJhijSBOYMVfJtPzG9v+JGx4j7NxhEVSJI07Exf0oRSxs1W9TzDitja1USm7rcjZXaYwJ7f/ZA/gFJEpeToUBAAA=
-    wand:
-      template: forcefieldwand
-      owner: xMqthy
-      mana: 200.0
-      mana_timestamp: 1518485791741
-      owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: 63bb3add1b31,64e7c750f871,88c136cd7f7d
-      version: 5
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -898,8 +868,8 @@ wands:
         lore:
         - §3§oBound to RqndomMyth
         - Knows 14 Spells
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -946,8 +916,8 @@ wands:
         - §o§aUnknown Magic Wand
         - §3§oBound to President_Myth
         - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -993,8 +963,8 @@ wands:
         display-name: §3MindStone
         lore:
         - §3§oBound to RqndomMyth
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1022,8 +992,8 @@ wands:
         lore:
         - §2§oxMqthy's Wand
         - Knows 13 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1086,36 +1056,6 @@ wands:
         forcepull: 1
         forcegrip: 2
         forcepush: 0
-  turnwaterwand:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6turnwater§f (§3TurnWaterWand§f)
-        lore:
-        - §3§oBound to xMqthy
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD1QPU8CQRAdwoEHEQsstTCRWHEG7ss1MUaiJpiIFoSaLHdzspHdPe7mRDsbO3t/gK2FP8C/oL/GysrjiE71Mm/emzdTB6iDseAqNMEklPGME0KDskQtcpSsmIpeKEygej+Y0/ShAobkip/2AQzYWMIxCYkpcRkDlPjz5/dR7lZoxiKEVuTbXY/5aDGMmOW6LLQObd+1mD/xu86B1/FsNGEdowgDGgd6phPY852g4/l2J3C9btt3MYi6EbPDENuMBSxXhY7jYRnW7jBJhVYAUIEaNHtEiZhkhAMdikjkZD2nSgaYo9HF2UCn9LN7vN177KMBtWXrEnlK71sfXy9Pb69VqPakzhSdtKAoE4zhTBOYkgs1Lb7R+F9xxSXC5g3mh4pgnxPx4HYYI4ZlqF3HmHBaBVu6FLPN83kmYomKdv7iAfwCOIVwr4QBAAA=
-    wand:
-      template: turnwaterwand
-      owner: xMqthy
-      mana: 200.0
-      mana_timestamp: 1518485763132
-      owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      effect_color: 63c05620c451,64ecf1f82dde,88c8375d335e
-      version: 5
   voldemortswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1128,8 +1068,8 @@ wands:
         lore:
         - §3§oBound to President_Myth
         - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1154,58 +1094,6 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
-  soulstone:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: AIR
-      damage: 14
-      amount: 0
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6soulstonetrap§f (§3SoulStone§f)
-        lore:
-        - §3§oBound to xMqthy
-        - Knows 2 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-  stonetouchwand:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6stonetouch§f (§3StoneTouchWand§f)
-        lore:
-        - §3§oBound to xMqthy
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PsU4CURBFL3HBhUQKLLUwkXaNIKxrYyRqgoloQahxYAd5kffesjsr2tnY2fsBthZ+gN+g/2PlskSnmsyZufdOBajAWZAJXbjCOpqRMKqJWMNi0/F0hYp2YThG6aE3l+ljEY4mQ6ddwEF12Q5FaU6EdAQU6OX7hjK5/GaoQtQnfrPRDnz2Ap4EXqsVhN5R0295gT/yGweH7f12k9ewfs9xoqwBUEQZtY5IrEapcM+GaqIyWMlQwYE7GFyc9WwiP7vH252nLjsoL0eXTIl8bH1+vT6/v5VQ6mibGjmpIy8XTn9mBa4mZab5Wxv/FlekGZu3nCVW4z0SofFdP2IO11C+jjgmWQVbquS7tfN5qiLNRnb+4gG/zDlYCU4BAAA=
-    wand:
-      template: stonetouchwand
-      owner: xMqthy
-      mana: 200.0
-      mana_timestamp: 1518485856353
-      owner_id: f621586e-8ef8-448d-9264-86b61375052e
-      version: 5
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1217,8 +1105,8 @@ wands:
         display-name: §6expelliarmus§f (§3Elder Wand§f)
         lore:
         - §3§oBound to mythguy1226
-        - '§d§oMana: 600'
-        - '§d§oMana Regeneration: 50/s'
+        - '§d§oMana: 600 §f(§b0§f)'
+        - '§d§oMana Regeneration: 50 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1239,7 +1127,7 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2780
+  sp: 2785
 properties:
   mana: 0.0
 classes: {}

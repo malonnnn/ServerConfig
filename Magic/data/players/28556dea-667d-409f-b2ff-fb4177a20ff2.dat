@@ -115,27 +115,6 @@ spells:
     last_earn: 1518490948911
     cooldown_expiration: 0
 wands:
-  turnghostwand:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6turnghost§f (§3TurnGhostWand§f)
-        lore:
-        - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
   forcefieldwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -147,8 +126,8 @@ wands:
         display-name: §6forcefield§f (§3ForceFieldWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -157,7 +136,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1Qv0/CYBA9YsFClAFHjTGROFEDBfpjMRI1wUR0IMzk2u8+/WLbr7aHrC6Ozv4Brg7+Ac6O/kFOlhK96fLe3bv3rgHQAGOJiTDBZIrTCJmgKXUWklQUiTVV1cuEMjAnmBWgwioYMSZ4NgYwoLlq56xiyhnjFKCCL/v8VQiWW3MloG17w6EjCC3HcYU16PrSCmwpLRkMeq6LdldK24QtkpJCnoc60hkcOf3A6UkRDqlnd5wB2X5IwvUCu+N5AfYd3/ekF2zA5iNludIJAFShDq0Rc6aCBdNEC1WkyPJGQVUMMGezy/OJzvnn8GRv9DQmA+or6Iow54/dz+/X5/e3GtRGsV4kfNqGskwwppFmMGNUyV35j+3/E9cYE+zcUhFUhcfIjOH9NCUSG1C/SSlDXhtbqZSzrYuHhUpjSvjgzx7AL5d1zjCHAQAA
+        internal: H4sIAAAAAAAAAD1Qv0/CYBA9QsFClAFHjTGROFEDBfpjMZBooonoQJjJtd99+sW2X20PWV0cnf0DXB38A5wd/YOcLCV627139+69awI0wVhhIkwwmeI0QiZoSZ2FJBVFYkPV9CqhDMwpZgWosA5GjAmOFZRlQGvdLljFlDPGKUAFXw74qxAtNxdKQMf2RiNHEFqO4wpr2POlFdhSWjIY9l0X7Z6UtgnbJCWFvAh1pDM4dgaB05ciHFHf7jpDsv2QhOsFdtfzAhw4vu9JL6jC1iNludJJ4aYGDWhPmDMVLJmmWqgiSZY3C6pigDmfX55Ndc4/R6f7k6cLMqCxhq4Ic/7Y+/x+fX5/q0N9EutlwuPOJqEJxizSDGaMKrkrf7Lzf+IaY4LdWyqCqvAEmTG8n6VEogqNm5Qy5I2xtUo52z5/WKo0poQP/+wB/ALv0jhTiwEAAA==
     wand:
       template: forcefieldwand
       owner: Marielia
@@ -166,27 +145,6 @@ wands:
       owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
       effect_color: 63b61fdc5e12,64e29ced78b2,88ba36998f8b
       version: 5
-  conjureswordwand:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
-      damage: 1
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6conjuresword§f (§3ConjureSwordWand§f)
-        lore:
-        - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
   increaseagewand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -198,8 +156,8 @@ wands:
         display-name: §6increaseage§f (§3IncreaseAgeWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -208,7 +166,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1QzU7CQBAeQsFC/EnwqDEmEk/UQIH+XIxETTQRPSBnMm1ncWN3t7aLXL149OwDePXgA/gMPo/xgqVE5zSZb+b7mTpAHYw5ysgEU5NIYtQEW1yGKWFGOKUVVlFzSSmYQ0w5xRwrYAiUeLq3WBiwuWwnmgvKNIoEoIQvzdvvnLG4mvAImrbX7zsRoeU4bmT12j6zApsxiwW9juui3WbMNmGdGKNQT0IVqxQOnW7gdFgU9qljt5we2X5IkesFdsvzAuw6vu8xLyjD2iOlGVcSACpQg8ZA65QHM01DFXHGc7CeQyUDzPH48myoMv1zcLw7eLogA2rL0VUeVn/sfH69Pr+/VaE6EGom9UkTijLBGMVKgymQy7viHxv/EtcoCLanlAfl4RFqjeH9KCGKylC7SShFvTK2ZCl2G+cPM54Iknr/zx7ALzJr9KyIAQAA
+        internal: H4sIAAAAAAAAAD1QvU4CQRAe4oEHUUyw1MJEYsUZOOB+GgOJJpqIFkhN5m5ncSN7e94t0tpY2pn4ALYWPoDPYGnrG1gbGz2O6HQz38z3MxWAChhzjJgJpiYZT1ETbIgoTAhTwgktsaKaR5SAOcBE0FRgCQyJEfbCj5/36sOnAdVFO9ZCUqpRxgAFvK9ffGWs+eVYMKjbXrfrMELLcVxmdZo+twKbc4sHnZbrot3k3DZhjTinUI9DNVUJ7DntwGlxFnapZTecDtl+SMz1ArvheQG2Hd/3uBeswOoNJalQEQAUoQy1vtaJCGaaBooJLjKwkkEFA8zR6ORwoFL9vXuw3b89JgPKi9FpFli/bL2+Pd49P5Wg1JdqFuleHfIywRhOlQZToogu85+s/0ucoSTYnFAWVIT7qDWGV8OYiK1A+TymBPXS2IIl360dXc9ELCnSO3/2AH4BYN4QSYwBAAA=
     wand:
       template: increaseagewand
       owner: Marielia
@@ -228,8 +186,8 @@ wands:
         display-name: §6Throw Sword§f (§3ThrowSwordWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -238,7 +196,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2Pv0oDQRDGJ+QuXgKmiKUiomlP4pE/2oiHCgpGi5A6TLKzZjG7e+5NvNbGRrD2AWwtfACfwQcSBO8u6FTD/Ga+75sGQAO8DI0IIGDSyQKZoMlzZ7M0s06skG8zQw6CITpFC4U+eBoNnkY/iQfNop2w0pQy6gSggi/bu8+5YHk1UQLa0WGv1xeEYb8/EGG3cyTDaSRlKKfdg8EAo46UURXWHsilyhoA8KEOrZjZqemSaWiFkiqHjRxVPAjG48uzoU35e+94K368IA/qxeiKMOWPzc+v16f3txrUYm2Xhk/aUFYA3mhhGQKNyszLx9b/La5RE2zcUp5YzfaRGWd3o4RIVKF+k5BDXgUrVMrd1vn9UiWaDO/8xQP4BR+7dmxQAQAA
+        internal: H4sIAAAAAAAAAD2Pv0oDQRDGJ+QS7wKmiKUiounkJB75o40koKBgtAipwyQ7axazu+fexGtFsBGsfQBbBR9A8A18IBu9XNDpZn4z3/dNBaACXopG+OAz6XiGTFDlqbNpklonlqhkU0MO/D46RTOFZfA0GuzK0dvP/e6nB9VFO2KlKWHUMUABnza3HzPR/HKkBNSjg1arLQjDdrsjwmbjUIbjSMpQjpv7nQ5GDSmjIqzckkuUNQBQggBqPWanxnOmvhVKqgxWMlTwwB8Oz477NuHvnaON3t0peRAsRueECb+vf3w9P7y+lKHc03ZuuFuHvHzwBjPL4GtUZpo/t/pvcYGaYO2KssRqsofMOLkexESiCMFlTA55GWyhku/WTm7mKtZkeOsvHsAv4H0XPlQBAAA=
     wand:
       template: throwswordwand
       owner: Marielia
@@ -257,8 +215,8 @@ wands:
         display-name: §6glasstouch§f (§3GlassTouchWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -267,7 +225,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2QMU/CYBCGj1CwEGXAUWNMIE7U0EJLXYxETTARHQgzubb3wRfbfrW9yuri6OwPcHVwdPA3+IOcLDV60+Weu/feuyZAE7Q1xoEOOlOUhMgErWWIWcYq91e/qKbWMaWgTzGVFEqsgRZhjOcTAA1am3TBMqKMMUoAKvh80PkoBMuphQyga7m27QSEhuOMAmPYPxGGZwlhCG9ojkZo9YWwdNgmIcjnha9ClcKRM/BcDOyhLWy35wzJHlim41vmoOe6XuA56PaFbVZh64HSTKoYAGrQgPaYOZVezjRVgRSygM0CVTTQ5/Ori6nK+Ltzuj9+nJAGjU3pmjDj973Pr5ent9c61MeRymM+60IZOmizUDHoEcp4Vf5j53/FDUYEu0sqDpX+MTKjfzdLiIIqNG4TSpF/jW1Uyt725X0uk4hiPvyzB/ADMvz/IYcBAAA=
+        internal: H4sIAAAAAAAAAD1QPU/CYBA+QsFClAFHjTGBOFFDCy11MZBooonoQJjJtb0X3tj2re1VVhdHZ3+Aq4Ojg7/BH+RkKdHb7p675+OaAE3Q1hgHOuhMURIiE7SWIWYZq9xfbaGaWseUgj7FVFIosQ5ahDGOJZSlQWvTLlhGlDFGCUAFX446nwVpebmQAXQt17adgNBwnFFgDPtnwvAsIQzhDc3RCK2+EJYOuyQE+bzwVahSOHEGnouBPbSF7facIdkDy3R8yxz0XNcLPAfdvrDNKuw8UppJFRduatCA9oQ5lV7ONFWBFLIAmwVU0UCfz68vpirjn8754eTpijRobEY3hBl/HHx9vz6/v9WhPolUHvO4u02ogzYLFYMeoYxX5U/2/iVuMSLYX1IRVPqnyIz+/SwhCqrQuEsoRd4a27CUu+3Lh1wmEcV8/GcP4BdtRvLziwEAAA==
     wand:
       template: glasstouchwand
       owner: Marielia
@@ -287,8 +245,8 @@ wands:
         display-name: §6Blind§f (§3BlindWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -297,7 +255,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PzUrDUBCFT2lak4IuKrhRRLArIVJDf3QjFhUUrC5K12XSO9GLuTdpMrVbNy5d+wBuXfgAPoMP5Mo0RWc1nDNz5psG0ICzIKtcuMImjUkYXhhrq1ZqLVlYzuAOKdMca6rBMWTp/ABwsLFsJ6IN50ImBSr0uptuFVnl1kQrtILjbrenmPxer6/8Tvsk8sMgivwo7Bz1+xS0oyioYu2Js1wnFkANHpoDkUyHc+FhonSkC7NRWBUH7nh8fTFMcvnZP90ZPF+xA28p3TDl8rn99f328vFeR31gkrmVsxbKcuGM4kTgGtL2oXxs/f/ELRnG5j0XxHp6SCI0fRylzKoK7y7ljGQFtkwpZ5uXs7lODVvZ+8MDfgHzzRFbSwEAAA==
+        internal: H4sIAAAAAAAAAD2PvU7DUAyFXTUNSSQYisQCQkh0DSpRf2BBiQQSSASGqnPl9PrCFbk3IXHoysLIzAOwMvAAPAMPxESSCrz5HPv4swfggbVCIxxwmHSeIhO4SaqMWKu9bGWoACfGQlGq0AZLo8GQQmjKgq2mXbDSVDLqHKCDr/v5Tp3Xbi6UgEFwMh5PBKE/mUyFPxqeSj8JpPRlMjqeTjEYShl0YeOJilJlpo7tgQv9iLlQScUUZ0JJVZtebXUscObzq/M4K/nn8Gwver4kC9xGuiYs+XP36/vt5ePdBjvSWWU4HLSk4IA1SzMGR6My9+1zm/8nblATbN9RTayWR8iMy4dZTiS64N7mVCCvwZqUdrZ/8VipXJPhgz88gF8GrdPJTwEAAA==
     wand:
       template: blindwand
       owner: Marielia
@@ -316,8 +274,8 @@ wands:
         display-name: §6turnwater§f (§3TurnWaterWand§f)
         lore:
         - §3§oBound to Marielia
-        - '§d§oMana: 200'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -358,12 +316,12 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PvU7DUAyFT9W0pBUwlBEGJCq2oBL1BxZEBUhFojBUnSun8aVX5OaGxKUrCyMzD8DCwMAD8AwsvA0TaSrwZPmzzzmuA3U4C4pDF66wSSISxvqMIwpsJCtQsYuYU7hDSjVHmipwDMV0NgAcbC7biWjDmZBJgBI9779953LF1USHaPpHnU43ZPK63V7otVvHygt8pTwVtA97PfJbSvllrD1wmmkbA6ighkZfJNXBXHhoQ610Dus5Kjlwx+PL86HN5GfvZKf/OGAHteXoiimTj+3Pr5en99cqqn1j57GcNlGUC2cUWYFrSMez4rGNf4trMoytW84T6+kBidD0bpQwh2XUbhJOSVbBlirFbuPifq4Tw7Hs/sUDfgHdxcSBTgEAAA==
+        internal: H4sIAAAAAAAAAD2PvU4CURCFD2HBhagFllqYSLsGN/xoQyRqglG0INRklp2VG/feu+4O0tr4CvoAthY+gM9g4eNYuSzRqSbzzZxzpg7U4SzJhC5cYZ3EJIzNOccU2FjWoGKXhlO4I0oVx4oqcDQZOhsCDrZX7VSU5kxIJ0CJXr6v0lyuuJqqEE3/uNPphkxet9sLvXbrJPICP4q8KGgf9Xrkt6LIL2PjkdNMWQOgghoaA5FUBQvhkQ1VpHJYz1HJgTuZXJ6PbCY/B/29wdOQHdRWo2umTD52P79en9/fqqgOtF0YOW2iKBfOOLYCV5My8+KxrX+LG9KMnTvOE6vZIYnQ7H6cMIdl1G4TTknWwVYqxW7j4mGhEs1G9v/iAb9oJMylTgEAAA==
     wand:
       template: helaboltwand
       owner: Marielia
       mana: 200.0
-      mana_timestamp: 1518491576531
+      mana_timestamp: 1518653819762
       owner_id: 28556dea-667d-409f-b2ff-fb4177a20ff2
       version: 5
   voldemortswand:
@@ -378,8 +336,8 @@ wands:
         lore:
         - §3§oBound to xHqrkie
         - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -403,30 +361,6 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
-  soulstone:
-    item:
-      ==: org.bukkit.inventory.ItemStack
-      type: AIR
-      damage: 14
-      amount: 0
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: §6soulstonetrap§f (§3SoulStone§f)
-        lore:
-        - §3§oBound to Marielia
-        - Knows 2 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_UNBREAKABLE
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
-        - HIDE_POTION_EFFECTS
-        Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PvU7DUAyFT9W0JJVgKCMMSHQNKlF/YEFUgAQShaHqXLmNA1fk3hsSh64sbMzwAEhMDDwAD8DEAzGRBIEny8c+53MLaMFZkglduMI6iUkYXmbzOBNr2EXDLg2ncMeUKo4VNeBoMnT0BDhYK9uZKM2ZkE6AGj1+Nl8Lr+pqpkJ0gr1+fxAy+YPBMPR73f3InwdR5Efz3u5wSEE3ioI6Vu44zZQ1ABrw0B6JpGqeC49tqCJViK1Cqjlwp9Oz47HN5Hv7YHN0f8oOvHJ0zpTJ+8bH1/PD20sTzZG2uZHDDqpy4UxiK3A1KXNdvbv6H3FBmrF+xQWxWuyQCC1uJglzWId3mXBK8gtWulS77ZPbXCWajWz94QE/pB5FvUsBAAA=
 open_wand: false
 gave_welcome_wand: false
 data:

@@ -1,8 +1,8 @@
 id: c6cb4b81-f1e7-446d-b966-e4ed7b45909d
 name: LordOfGallifrey
-last_cast: 1518305763777
+last_cast: 1518555793212
 cooldown_expiration: 0
-last_death_location: -8.976803838448923,87.5,6.2040918535225815,ccjitters,-278.4629,-3.4197493
+last_death_location: 785.7115982027289,80.90760101590953,306.73708600742833,hogwarts,-332.51938,33.175198
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -60,14 +60,14 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
   crucio:
-    cast_count: 71
-    last_cast: 1518253418250
-    last_earn: 1518253405761
+    cast_count: 72
+    last_cast: 1518555781763
+    last_earn: 1518555781812
     cooldown_expiration: 0
   protego:
-    cast_count: 204
-    last_cast: 1518305763777
-    last_earn: 1518305763776
+    cast_count: 221
+    last_cast: 1518555793212
+    last_earn: 1518555793210
     cooldown_expiration: 0
   incarcerous:
     cast_count: 0
@@ -81,7 +81,7 @@ spells:
     cooldown_expiration: 0
   confringo:
     cast_count: 24
-    last_cast: 1518253428547
+    last_cast: 1518507426306
     last_earn: 1518253415896
     cooldown_expiration: 0
   missile:
@@ -100,8 +100,8 @@ spells:
     last_earn: 1492079592794
     cooldown_expiration: 0
   avadakedavra:
-    cast_count: 77
-    last_cast: 1518253476748
+    cast_count: 80
+    last_cast: 1518555740064
     last_earn: 0
     cooldown_expiration: 0
   expelliarmus:
@@ -135,9 +135,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
   fiendfyre:
-    cast_count: 171
-    last_cast: 1518253431397
-    last_earn: 1518253402851
+    cast_count: 180
+    last_cast: 1518555787965
+    last_earn: 1518555788257
     cooldown_expiration: 0
   fire|3:
     cast_count: 1
@@ -180,10 +180,10 @@ spells:
     last_earn: 1492081533580
     cooldown_expiration: 0
   acceleratetime:
-    cast_count: 3
-    last_cast: 1517694407882
-    last_earn: 0
-    cooldown_expiration: 1517694437882
+    cast_count: 4
+    last_cast: 1518504565969
+    last_earn: 1518504565967
+    cooldown_expiration: 1518504595969
   lift:
     cast_count: 0
     last_cast: 0
@@ -191,9 +191,9 @@ spells:
     cooldown_expiration: 0
   freezetime:
     cast_count: 1
-    last_cast: 1517568038803
+    last_cast: 1518504574167
     last_earn: 0
-    cooldown_expiration: 1517568048803
+    cooldown_expiration: 1518504584167
   petrify|3:
     cast_count: 10
     last_cast: 1492118179724
@@ -215,6 +215,39 @@ spells:
     last_earn: 0
     cooldown_expiration: 0
 wands:
+  timestone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EMERALD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3TimeStone§f)
+        lore:
+        - §3§oBound to LordOfGallifrey
+        - Knows 2 Spells
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAE2Qv07CUBTGD1LwtlFMcNTBRNYaSWqRxUCiUROQgTA3t+2p3tjeW9oDBCcXR2cfwNWBB/AZfBMTZydvSzSe7Z4/v+/7rgVggbHgMmTACJM05oRgkkgwJyWRQU0tJGawM1BZOIoueRyLKMMlgy0ekJijl6cYx2DpJj5gcVgHI+GS96YrKMqARvH01kyepAAV/vzJvrRiyfZECK3ADXzHP23bURs7tuO4oe13XddGB8OO75x0j7thFTbnmOVCSY2tWbBTSntCzlGSypZVaPAgwBgzHaKQ02sb1f/WSkNgQrNPlAl/RjhUoYiEplp6UDGATSbX50OV0/fh2X7/8QoNMIvWAHlOq733j5ent9c61PuJmknqtdZEBsY4VgQs4ULelb+5/Sdxw7Xw7i3qqCI44kQ8uB+niDqPOUoLs+tEBaXcbV5MZyJNdKiDX3sAPyAXQWuqAQAA
+    wand:
+      template: timestone
+      owner: LordOfGallifrey
+      active_spell: freezetime
+      mana: 283.0
+      mana_timestamp: 1518504577264
+      owner_id: c6cb4b81-f1e7-446d-b966-e4ed7b45909d
+      version: 5
+      spell_inventory:
+        acceleratetime: 2
+        freezetime: 0
   voldemortswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -227,8 +260,8 @@ wands:
         lore:
         - §3§oBound to LordOfGallifrey
         - Knows 5 Spells
-        - '§d§oMana: 300'
-        - '§d§oMana Regeneration: 10/s'
+        - '§d§oMana: 300 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -237,22 +270,22 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2RsU4bQRCGh9zZnC0CEpRJESkoFY5sONvnJsJSEIkEoUDUp7ndWbLidvfYGx9yF0XKM+QB0qbIA6TgCfIq9KmydyhsN/OP/vn+2SHAEOI7tDKBhMlUJTLBduNKScZ5rh+lnruz5GHnzHl5oU6xLLXytE5gCwXrhvK6orKEzco7pmvXh9igxWN/D+2LYbstc9aGakZTAWzg173mIezsjHMtYV/MRJEW2WSkJjQfpelMjorFbDailOS8SKeL8SKQbJFSJDgXrnQe3qCUk2KapuMsSw/mhZITLOYSF4cH6kiIsTzM1NE0i2CzIV9rZwNNbwg7HW6ubUOWnV9HT+RBjyIYKE1WqrWnlj7Uwlnlte30XhRSNyjxhiQ2HkNrI4K+8CuhW/0ZwAB2l8xeFyumcyd1sPP1sB2MIbm6+vj+3NX89/W7l8svHyiGQds6I6z514vff75/+/mjD/2lcSvLx/vdBSGB+LJ0DIlBbT93f/L8acUnNAR71xQuqcVbZEZxc1kRyUB+UZFHfkzeunSzuye3K12ZEP7VfzyAf5yYZ6ALAgAA
+        internal: H4sIAAAAAAAAAD2RsW4TQRCGJ9zFOZuQSKEMBRIRVYxsfLbPDYolECAlpIhSn+Z2Z8Mqt7vH3vgid2nyAFR5gLQpeACEeAIeiIq9i8h2//6rf75/dgAwgPgKrUwgYTJViUyw07hSknGe6wdr011Z8rB77Lw8VR+xLLXytE5gGwXrhvK6orKErco7pgvXg9igxSP/G9oTw04rc9aGakZTAWzgd/j1NMzsgnMt4UDMRJEW2XioxjQfpulMDovFbDaklOS8SKeL0SKQbJNSJDgXrnQeXqOkSfY2mxQpisO5GC2EnBNmWXGoJjQdTcdCjiVFsNWQr7WzgWZzALsdbq5tQ5adX0eP5MF/EkFfabJSrT0FHQUtnFVe286Po9C6QYmXJLHx2DaMoCf8SujW3wDow96S2etixXTipA5xvh60XgzJ+fnn9yeu5r+v3r1YXn+iGPrt1TFhzT/2f/65vbm/60FvadzK8tFBt0FIID4rHUNiUNuv3Z88exzxBQ3B8wsKm9TiDTKjuDyriGQgP63IIz80b1O6t3sfvq10ZUL5l//xAP4BsR3yZQsCAAA=
     wand:
       template: voldemortswand
       owner: LordOfGallifrey
       active_spell: protego
       mana: 300.0
-      mana_timestamp: 1518305769199
+      mana_timestamp: 1518556200459
       owner_id: c6cb4b81-f1e7-446d-b966-e4ed7b45909d
-      effect_color: add1b5440884,7bfd1ab7da92,f3cc0d28f358
+      effect_color: ade38283b4ac,7c09cd7ea88b,f3e5051cd1de
       version: 5
       spell_inventory:
-        protego: 3
-        fiendfyre: 4
-        confringo: 5
-        avadakedavra: 1
-        crucio: 2
+        protego: 2
+        fiendfyre: 3
+        confringo: 4
+        avadakedavra: 0
+        crucio: 1
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -264,8 +297,8 @@ wands:
         display-name: §6expelliarmus§f (§3Elder Wand§f)
         lore:
         - §3§oBound to LordOfGallifrey
-        - '§d§oMana: 600'
-        - '§d§oMana Regeneration: 50/s'
+        - '§d§oMana: 600 §f(§b0§f)'
+        - '§d§oMana Regeneration: 50 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -286,6 +319,6 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 730
+  sp: 780
 properties: {}
 classes: {}
