@@ -1,23 +1,34 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
 armor_contents: {}
-health: 20.0
-hunger: 20
+health: 5.782402038574219
+hunger: 17
 exp: 0.7777778
 exp-level: 1
 remainingAir: 300
 fireTicks: -20
-saturation: 18.0
-exhaustion: 0.23320025
+saturation: 15.0
+exhaustion: 0.86409855
 location:
   ==: org.bukkit.Location
-  world: hogwarts
-  x: 761.5
-  y: 66.0
-  z: 347.5
-  pitch: -4.308838
-  yaw: 60.41958
+  world: waynemanor
+  x: -36.17856406282479
+  y: 104.94789528460541
+  z: 618.3851521839516
+  pitch: 24.3892
+  yaw: -115.80318
 potion_effect:
   '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 199728
+    type: DAMAGE_RESISTANCE
+    level: 2
+    duration: 193806
+  '1':
+    type: INCREASE_DAMAGE
+    level: 5
+    duration: 193806
+  '2':
+    type: HEALTH_BOOST
+    level: 9
+    duration: 193806

@@ -2,7 +2,7 @@ id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
 last_cast: 1518486626789
 cooldown_expiration: 0
-last_death_location: -25.5,69.0,-215.5,greenfield,-180.01161,0.46778247
+last_death_location: 29.213338289593764,601.5804551404609,-204.092739945586,greenfield,-88.44084,2.448321
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -913,6 +913,51 @@ wands:
       id: 0c3bf652-b21a-4721-af79-8e659670775b
       locked: 1
       undroppable: 1
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6rictusempra§f (§3HarrysWand§f)
+        lore:
+        - §3§oBound to Jiren_The_Grey
+        - Knows 14 Spells
+        - '§d§oMana: 200 §f(§b0§f)'
+        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1RPW8TQRCdcOfz+YAgQslXgLRGig0OaVAsgfgQgSKkPo335uxVbneP/bCxREFDT0dFRUvBD+A38HMoqJg9K9lipXnz5s2bmQKggHSFusoh96TaBj1BsUBr124D98xKk4Xt19KSLt8vqHxhaZ1BqlDjkYTupbAdw9JLRc6jagG28Punv19ZtqsvZQV7Tw7q2VhMxPBxXU+Gj2b8zcajyfDwcCQm++MDwv1RAv0lWSeNZtleAddcS01TSr0k7Y1dJ5CjE6QraZjQT2DQkpUiNEFxfDeBHgrR5e4kcH0l9RxtJYNqaCmNQ8ZvcwtLVRA+snYTyIQNm5L7nGqt8TSPUZrAZakFWkHWBMfIPW4njK4ty0ZGxm6Yce4mSeAKfYx+JVrVVfRYg+354Hi5NrbfYpIjRtQFxFP0nQ8t1WuOLgEMYGfqvZWz4OnYVLKWvJIiFqeQn56+enZsnP/34Omt6eeXlMIgQm8Inf918/efb19+/sggmyoTtD/a2xwoh/SkMR5yhVIvusNevWjxFhXBjTnpuMmH6D2Ks5OWqOJx3/F60W/OEVU67s7zD0G2ii+ye24P4D/EQzrqTAIAAA==
+    wand:
+      template: harryswand
+      owner: Jiren_The_Grey
+      mana: 200.0
+      mana_timestamp: 1518765667984
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      version: 5
+      spell_inventory:
+        ascendio: 7
+        periculum: 31
+        accio: 30
+        wingardiumleviosa: 29
+        reducto: 32
+        crucio: 34
+        protego: 4
+        incarcerous: 33
+        confringo: 6
+        incendio: 3
+        expelliarmus: 5
+        rictusempra: 1
+        sectumsempra: 7
+        stupefy: 2
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -923,7 +968,7 @@ wands:
         meta-type: UNSPECIFIC
         display-name: §3Wand
         lore:
-        - §o§aUnknown Magic Wand
+        - §o§aBeginner Magic Wand
         - §3§oBound to Jiren_The_Grey
         ItemFlags:
         - HIDE_ENCHANTS
@@ -1045,7 +1090,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1518719052808
+    mana_timestamp: 1518766745231
     mana: 50.0
     spells:
     - missile

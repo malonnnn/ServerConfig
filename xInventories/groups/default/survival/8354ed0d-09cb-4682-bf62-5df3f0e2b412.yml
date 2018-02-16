@@ -1,24 +1,66 @@
-inventory: {}
-health: 20.0
-hunger: 20
-exp: 0.0
-exp-level: 0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §5Beerus §dBall§d «×»
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §eKi§6Blast§6 «×»
+  '36':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
+hunger: 17
+exp: 0.38461542
+exp-level: 3
 remainingAir: 300
 fireTicks: -20
-saturation: 16.0
-exhaustion: 3.8830123
-armor_contents: {}
+saturation: 10.0
+exhaustion: 1.2044
+armor_contents:
+  boots:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: -268.50543
+  world: atlantis
+  x: -154.5
+  y: 6.0
+  z: -749.5
+  pitch: 18.158728
+  yaw: -2.930542
 potion_effect:
   '0':
-    type: INVISIBILITY
+    type: FAST_DIGGING
+    level: 127
+    duration: 192137
+  '1':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 182036
+  '2':
+    type: WATER_BREATHING
     level: 1
-    duration: 199857
+    duration: 182036
