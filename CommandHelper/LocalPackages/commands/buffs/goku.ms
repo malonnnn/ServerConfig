@@ -39,6 +39,7 @@
                 'gokusupersaiyan4',
                 'gokusupersaiyanblue',
                 'gokusupersaiyanbluekaioken',
-                'gokusupersaiyangod'
+                'gokusupersaiyangod',
+                'gokuultrainstinct'
             )
         )
