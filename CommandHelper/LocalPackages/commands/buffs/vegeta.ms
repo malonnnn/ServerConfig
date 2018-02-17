@@ -8,7 +8,7 @@
             'val': 'eyJ0aW1lc3RhbXAiOjE1MTYxNTE3NjI1NTUsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q4ZGZjNWU3ZDgyODgxOGQyMTU4MzVmOWU4YjA2YjJhZTE1NThmYmVkZTRmNGQzMTI2MTkzMDUxZWViNCJ9fX0=',
             'trail': '',
             'op': 'false',
-            'speech': "",
+            'speech': "I WILL BE THE STRONGEST SAIYAN!",
             'powers': array(
                 "/buff",
                 "/jump 0-3",
