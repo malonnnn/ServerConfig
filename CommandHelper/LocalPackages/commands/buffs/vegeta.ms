@@ -30,6 +30,7 @@
                 "/shot give ". @plr ." finalflash",
             ),
             'alts': array(
-                'vegetassb'
+                'vegetassb',
+                'vegetasupersaiyan'
             )
         )
