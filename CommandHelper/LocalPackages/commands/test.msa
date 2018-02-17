@@ -15,8 +15,8 @@ ymlconvertall:/ymlconvertall = >>>
         @yml = yml_encode(@hero,true)
         @yml = replace(@yml,@plr,'<plr>')
         
-        if(!is_dir('./heroes/')){
-            create_dir('./heroes/')
+        if(!is_dir('./chars/')){
+            create_dir('./chars/')
         }
         
         if(!file_exists('./heroes/'.@base.'.yml')){
