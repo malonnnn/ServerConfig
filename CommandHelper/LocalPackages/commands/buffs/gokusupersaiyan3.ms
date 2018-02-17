@@ -37,6 +37,7 @@
                 'gokukaioken',
                 'gokusupersaiyan',
                 'gokusupersaiyan2',
+                'gokusupersaiyan4',
                 'gokusupersaiyanblue',
                 'gokusupersaiyanbluekaioken'
             )
