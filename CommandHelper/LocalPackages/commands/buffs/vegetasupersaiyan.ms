@@ -31,6 +31,7 @@
             ),
             'alts': array(
                 'vegeta',
+                'vegetasupersaiyan2',
                 'vegetassb'
             )
         )
