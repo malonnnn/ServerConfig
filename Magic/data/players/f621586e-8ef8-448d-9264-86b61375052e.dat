@@ -1,6 +1,6 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1518659238896
+last_cast: 1518812273919
 cooldown_expiration: 0
 last_death_location: -103.28696436239079,80.0625,129.87116899004099,lexstarklabs,315.0102,22.711384
 fall_protection_count: 0
@@ -258,9 +258,9 @@ spells:
     cooldown_expiration: 1500765914523
   sectumsempra:
     cast_count: 13
-    last_cast: 1515196602445
+    last_cast: 1518812268617
     last_earn: 1507761492745
-    cooldown_expiration: 0
+    cooldown_expiration: 1518812274617
   darkpound:
     cast_count: 30
     last_cast: 1516755583321
@@ -458,9 +458,9 @@ spells:
     cooldown_expiration: 0
   rictusempra:
     cast_count: 29
-    last_cast: 1518658218984
+    last_cast: 1518812247677
     last_earn: 1507761366312
-    cooldown_expiration: 1518658220984
+    cooldown_expiration: 0
   sandwall:
     cast_count: 7
     last_cast: 1510534711471
@@ -593,7 +593,7 @@ spells:
     cooldown_expiration: 0
   stupefy:
     cast_count: 11
-    last_cast: 1515196581011
+    last_cast: 1518812252842
     last_earn: 1507761424989
     cooldown_expiration: 0
   shell|2:
@@ -682,9 +682,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1505781358898
   protego:
-    cast_count: 109
-    last_cast: 1515196591637
-    last_earn: 1515196591636
+    cast_count: 110
+    last_cast: 1518812256702
+    last_earn: 1518812256701
     cooldown_expiration: 0
   realitystoneregen:
     cast_count: 47
@@ -717,9 +717,9 @@ spells:
     last_earn: 0
     cooldown_expiration: 1496274386197
   incendio:
-    cast_count: 26
-    last_cast: 1515196588174
-    last_earn: 1515196588234
+    cast_count: 29
+    last_cast: 1518812255243
+    last_earn: 1518812162475
     cooldown_expiration: 0
   avadakedavra:
     cast_count: 21
@@ -728,7 +728,7 @@ spells:
     cooldown_expiration: 0
   expelliarmus:
     cast_count: 0
-    last_cast: 1515196593987
+    last_cast: 1518812259202
     last_earn: 0
     cooldown_expiration: 0
   emoksemocebadlofdnilb:
@@ -838,8 +838,8 @@ wands:
         lore:
         - §3§oBound to RqndomMyth
         - Knows 2 Spells
-        - '§d§oMana: 300 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 300 §f(§b0§f)'
+        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -866,6 +866,53 @@ wands:
         acceleratetime: 1
         mindstone: 2
         freezetime: 0
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6sectumsempra§f (§3HarrysWand§f)
+        lore:
+        - §3§oBound to xMqthy
+        - Knows 14 Spells
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAFVSwW7TQBCdYidx0gKiHIFSoOLUoCZxXPeCiCgSSAQOVc/RdD1OVvXuurvrpLlx6TdwReLKgQ/gG/ggTowdFQlf7Hn7Zt6bt+4B9CBcoc4iiDypskBP0FugtWu3gVtmpclC+3p65RfrCHZQeLmkmSupKGDHkfCVctxqsQWhQo1vh5c3IdyrP2deKnIeVQmwhd9O90LWaQbOZAYHeTIcjNOE+inlaT+O06x/MkzifppcJIPR8fhoPCRWpDxnlZkwhbHwMhnhBSGOTnA4OkziLI3TfJCK5OgwTVGMjuOY+B1AZ0nWSaMBoNWD+43fmdRL0t7YdQAROkE6k4YJnQC6JVkpqqJSXD8NoIVCNGd7ATxYST1Hm8lKFbSUxiHjT1jCUlYJX7P2A2gLW21anvNRaY2neV2FAWxLLdAKsqZyjDxjOWF0bnlszWixG2bcugkC3vm69ivRqqaDGdtsz1ebpBnZCv4Pf7NFx/mqpHzN1R2ALuxOvLfyovI0NZnMJUfSq5tDiM7PP5xOjfN/Xrx+PPnynkLo1tBHQud/Pvr1++vNj+9taE+UqbR/cwDNE0F4VhgPkUKpF80PcvefxCdUBA/npOskX6H3KC7PSqKM1/3M8aLfXEc9peHuvruqZKn4RvZv7QH8BcUFbc+UAgAA
+    wand:
+      template: harryswand
+      owner: xMqthy
+      active_spell: sectumsempra
+      mana: 178.42
+      mana_timestamp: 1518812274180
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: 63abeaa39a23,64d848f18c60,88ac3744e8ac
+      version: 5
+      spell_inventory:
+        ascendio: 7
+        periculum: 31
+        accio: 30
+        wingardiumleviosa: 29
+        reducto: 32
+        crucio: 34
+        protego: 4
+        incarcerous: 33
+        confringo: 5
+        incendio: 3
+        expelliarmus: 5
+        rictusempra: 1
+        sectumsempra: 7
+        stupefy: 2
   mindstone:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -876,8 +923,8 @@ wands:
         display-name: §3MindStone
         lore:
         - §3§oBound to RqndomMyth
-        - '§d§oMana: 300 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 300 §f(§b0§f)'
+        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -905,8 +952,8 @@ wands:
         lore:
         - §2§oxMqthy's Wand
         - Knows 13 Spells
-        - '§d§oMana: 300 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 300 §f(§b0§f)'
+        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -981,8 +1028,8 @@ wands:
         lore:
         - §3§oBound to President_Myth
         - Knows 5 Spells
-        - '§d§oMana: 300 §f(§b0§f)'
-        - '§d§oMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 300 §f(§b0§f)'
+        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1018,8 +1065,8 @@ wands:
         display-name: §6expelliarmus§f (§3Elder Wand§f)
         lore:
         - §3§oBound to mythguy1226
-        - '§d§oMana: 600 §f(§b0§f)'
-        - '§d§oMana Regeneration: 50 §f(§b0§f)§d/s'
+        - '§eMana: 600 §f(§b0§f)'
+        - '§eMana Regeneration: 50 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1040,12 +1087,12 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2787
+  sp: 2793
 properties:
   mana: 0.0
 classes:
   caster:
-    mana_timestamp: 1518727282337
+    mana_timestamp: 1518817761420
     mana: 50.0
   mage: {}
 active_class: mage
