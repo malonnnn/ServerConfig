@@ -2,10 +2,10 @@
 
 
 @hero = associative_array(
-            'name': '§8G§co§6ku§8(§cSS4§8)',
-            'class': 'gokusupersaiyan4',
-            'sig': 'NAfc3mmsDFpCtgPXGKGjLhfbEwYQ+i0BnmAk/LVH5vALnAK9TR9qk5rhh07Cpa/oAMgD64wXvOgaV/2wXPQBNQauOVt7SHQOwqgcUkajSkcueTLBVbuPTdQEWl0dYZOKDhkKvH/W8nXG8K9L7JlkRi46fllrCFGesUWnWZlGCgPGvxN+jTBkFB9E0p3r24zzI8OsUpz2JPvzwD+IaN+nvroDWq+SN9hazgB9LZWOP/oV6yZac8IHtDJvhS0AbaRyYu+sGhJMMR6GDWaYbT1olltdWzcv2Hx1pl0ZIUTnmb68b4AZwjOsF7ga0xOyujvdPpo2a53kbzvtPoG04xZ9JOanllGRVwquJG5ddnagmp/zA+vcXNMi/3cN1ZJi3ZA6bB5vNayzDwhQkuimm7ApxarCforMOcJN5dSJkhN91vBePb/x+l/iXhb2V4sUlfQSy4ipsl3B/gqol0gLOqKQ+X9yyABVDfg5BG+wwM+ij2f2BW3bYIslxoSx9TX5bf1rYVwvNVjAk20c6i/51SE/bWegJo4NjYzQ12JRShsGk/JHIxk7MNG3QmW/I0emcF0gJAIadg7P+8fxNeka4PjynJPPObOlepIFJ8IbIs0vDJTZhdQ4QuyDiPVjKDSuniex8/Z/+ayGG5+rNKvFXw5QnPqZ+O8kjnM0U4HYwjeVw5g=',
-            'val': 'eyJ0aW1lc3RhbXAiOjE1MTg4Mjk2NDU1OTEsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2VjNjYxNTZkOGMyYzVkYWI3MGMzYTJjMmRjYjU0YTlhZTVhZjk0NjMyZmIxOGZmMzRlZWRkODY5MWRjZDQ4MjUifX19',
+            'name': '§cG§1o§6ku§8(§cSSG§8)',
+            'class': 'gokusupersaiyangod',
+            'sig': 'GZbJGcDstRaxMsiL+F1RfCnTi+OvDIrDWTW/MYpMs4OMj4ZfgtV19VkMRRyMRQRoCtrM0qJUCeosl9PxoADKEyc+g0Ute8qNKSZIUhrzy/Lw4CFe0857se+zja5hOnzuXihzx/KfB1EMrzlhdW+acBfFWeVha6fQZbGvBQwk2ifghH1kQmsBLO6qc6OIV8RPCn/Vv2ZsselxP791e4LN2SjS+kRnQt87GSLvyEtm6K+EK4CpG89r3NfHKOKlpqHay69ApgyyKBVI6PJWBJKgUMwozjeyAi3TBskQC/Zf5Xx5ripAoWjM30fz5AG3DHB6sVBAjFPaJnbCua6ZXYBk3mYY4qQaabIAiFJ+vkAM10iAWL7UPu/Ey3A7HK9Dn6P3ErpZqszUa3yx/u0WTkbdF5jfKOIB10xsd3J93bo+kxsUk1kd9bgN4VHtDFfJsYbB8TzxAWsf3xfjHXiprL8G8/R+p1B4m37ihneZgOPdtGAuShBovdSFqxGvkPAMBMgTDT0CPHLv8LSdaQ9zNbenNpfcEDBlZHlHyvfWA6KvTuRzSEPhnmd7QhuHNVhqHginn8aIf0tggm0K2l5Kxs40p4rLHrK7Nymb/taFYSd89R3e+S+QnFAlIz0Fy6ZdZ+7QszuDdVFrGtZ7tbAG4GLVaO5HaXG5b0Ohh+i2mqRyNWI=',
+            'val': 'eyJ0aW1lc3RhbXAiOjE1MTg4MzQwMDUxODYsInByb2ZpbGVJZCI6ImYzMDc3ZTY3OWNmODRiNDhiNDg4NGE1ZmQ4OTlkNjk3IiwicHJvZmlsZU5hbWUiOiJLYXJtYTAwMDEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzFmYzI2ZjY4OTMxNTYwYWI1MWRmNjA3OTRhNTlmMzMzNjc1ODRmODkxN2M2N2MxNDcxM2NlMTU0NDZjMWZiZCJ9fX0=',
             'trail': '',
             'op': 'false',
             'speech': "I will be the strongest in the UNIVERSE!!",
@@ -38,8 +38,8 @@
                 'gokusupersaiyan',
                 'gokusupersaiyan2',
                 'gokusupersaiyan3',
+                'gokusupersaiyan4',
                 'gokusupersaiyanblue',
-                'gokusupersaiyanbluekaioken',
-                'gokusupersaiyangod'
+                'gokusupersaiyanbluekaioken'
             )
         )
