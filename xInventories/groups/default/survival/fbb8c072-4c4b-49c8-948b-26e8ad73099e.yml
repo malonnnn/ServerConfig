@@ -1,19 +1,61 @@
-inventory: {}
-health: 20.0
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §4Kryptonian Laser Vision§4 «×»
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §9W§1a§9ter Ru§1nn§9ing §4B§eoo§4ts
+      enchants:
+        PROTECTION_PROJECTILE: 30
+        DEPTH_STRIDER: 30
+health: 100.0
 hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 5.0
-exhaustion: 1.15
+saturation: 15.0
+exhaustion: 1.5010042
 armor_contents: {}
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: overvoid
-  x: -37.5
-  y: 96.0
-  z: 31.5
-  pitch: -0.30000654
-  yaw: -35.600727
+  world: broville
+  x: -174.5
+  y: 68.0
+  z: 1972.5
+  pitch: 4.601586
+  yaw: 236.38885
+potion_effect:
+  '0':
+    type: REGENERATION
+    level: 1
+    duration: 164961
+  '1':
+    type: INCREASE_DAMAGE
+    level: 19
+    duration: 164961
+  '2':
+    type: NIGHT_VISION
+    level: 1
+    duration: 164961
+  '3':
+    type: FIRE_RESISTANCE
+    level: 1
+    duration: 164961
+  '4':
+    type: HEALTH_BOOST
+    level: 19
+    duration: 164961
+  '5':
+    type: WATER_BREATHING
+    level: 1
+    duration: 164961
