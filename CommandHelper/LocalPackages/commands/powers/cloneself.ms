@@ -13,7 +13,8 @@ register_command(cloneself,
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@player)            
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+            @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+            @hero = yml_decode(@contents)
             @sig = @hero['sig']
             @val = @hero['val']
 

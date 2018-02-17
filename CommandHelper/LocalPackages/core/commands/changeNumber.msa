@@ -134,7 +134,8 @@ if(@facingDir == 'north'){
         stdout: closure(@a = @stdout){
             if(@a != "empty")
             {
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@a.'.yml')
+                @hero = yml_decode(@contents)
                 #_updateHologram2(@hero['class'],@hero['op'],@npcID,@holoLoc)
                 @part2 = ''
                 @length = length(@hero['class'])

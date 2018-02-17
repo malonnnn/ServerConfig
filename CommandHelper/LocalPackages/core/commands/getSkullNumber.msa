@@ -31,7 +31,8 @@ getskullnumber:/getskullnumber $plr = >>>
         stdout: closure(@a = @stdout){
             if(@a != "empty")
             {
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @a . '.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@a.'.yml')
+                @hero = yml_decode(@contents)
                 if(@hero['op'] == "true"){
                     #if(!has_permission(@player,"rank.mod")){
                         if(acc_balance(@player) == 0){

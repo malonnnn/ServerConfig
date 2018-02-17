@@ -17,7 +17,8 @@ register_command(powers,
                 @class = _getheroclass(@plr)
                 
                 try {
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
                     
                     msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                     msg(color(GOLD).  '                                YOUR POWERS                    ')

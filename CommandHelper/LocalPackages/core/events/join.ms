@@ -4,7 +4,8 @@ bind(player_join,null,null,@event){
     @plr = player()
     @class = _getheroclass(@plr)
     try(
-        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+        @hero = yml_decode(@contents)
     ,
         @hero = associative_array('class':'')
     )
@@ -77,7 +78,8 @@ bind(player_join,null,null,@event){
                     set_timeout(1500, closure(
                         runas(@plr,'/mainmenu')
                         @h1 = @hero['name']
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @hero = yml_decode(@contents)
                         @h2 = @hero['name']
                         msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                         msg(color(RED).'Sorry, '.color(WHITE).@player.color(RED).' is already using '.@h2.color(RED).'.')

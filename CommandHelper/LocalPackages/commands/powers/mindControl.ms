@@ -92,7 +92,8 @@ register_command(mindcontrol,
             @vHero = _getheroclass(@vic)
             
             try{
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @vHero . '.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@vHero.'.yml')
+                @hero = yml_decode(@contents)
                 include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
                 _changeSkinMindControl(@player,@hero['sig'],@hero['val'],@vic)
             }catch(Exception @e){

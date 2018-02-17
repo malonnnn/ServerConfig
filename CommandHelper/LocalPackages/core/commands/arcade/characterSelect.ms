@@ -34,9 +34,8 @@ register_command(chars,
                                 array @heroes = split('|',@returnVal)
                                 @i = @startSpot
                                 foreach(@her in @heroes){
-                                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
-                                    #tmsg(player(),"#". @i . ". " . @hero['name'])
-                                    #tmsg(player(),@hero['name'])
+                                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @her . '.yml')
+                                    @hero = yml_decode(@contents)
                                     runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
                                     #@i = @i + 1
                                 }
@@ -57,9 +56,8 @@ register_command(chars,
                                 array @heroes = split('|',@returnVal)
                                 @i = 1
                                 foreach(@her in @heroes){
-                                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @her . '.ms')
-                                    #tmsg(player(),"#". @i . ". " . @hero['name'])
-                                    #@i = @i + 1
+                                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @her . '.yml')
+                                    @hero = yml_decode(@contents)
                                     runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
                                 }
                                 msg(color(RED).'Click a character 2 times to choose it or')
@@ -110,13 +108,14 @@ register_command(characterselect,
             }
             @heroes = array()
 
-            @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .ms \\;')
+            @var = shell('find /home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/ -iname \"*'.@searchTerm.'*\" -exec basename \\{} .yml \\;')
             @heroes = split('\n',@var)
             msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
             @foundAHero = true
             foreach(@her in @heroes){
                 try{
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.replace(@her,'\n','').'.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.replace(@her,'\n','').'.yml')
+                    @hero = yml_decode(@contents)
                     runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/selectchar '.@her.'"},"hoverEvent":{"action":"show_text","value":"'.@her.'"}}')
                 }catch(IOException @e){
                     @foundAHero = false
@@ -196,7 +195,8 @@ register_command(selectchar,
                         }
                     }
                 }
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                @hero = yml_decode(@contents)
                 @plrs = all_players()
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 foreach(@playa in @plrs)
@@ -214,7 +214,8 @@ register_command(selectchar,
                         foreach(@alt in @alts){
                             if(@alt == @otherPlayerGroup){
                                 @h1 = @hero['name']
-                                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                                @hero = yml_decode(@contents)
                                 @h2 = @hero['name']
                                 msg(color(YELLOW).'-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
                                 msg(color(RED).'Sorry, '.color(WHITE).@playa.color(RED).' is already using '.@h2.color(RED).'.')

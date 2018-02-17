@@ -132,7 +132,8 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
         }
         
         # If player is trying to turn into OP hero and is not a mod, throw error
-        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+        @hero = yml_decode(@contents)
         #if(@hero['op'] == "true"){
             #if(has_permission(@plrr,"rank.mod") == false){
         #        if(acc_balance(@plrr) != 0){
@@ -168,7 +169,8 @@ changehero:/changehero2 $machineid $redwoolx $redwooly $redwoolz $redwoolworld $
                 foreach(@alt in @alts){
                     if(@alt == @otherPlayerGroup){
                         @h1 = @hero['name']
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @alt . '.ms')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @hero = yml_decode(@contents)
                         @h2 = @hero['name']
                         _broadcast(
                             concat(color(white),@plrr)

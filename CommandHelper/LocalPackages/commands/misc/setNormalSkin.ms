@@ -14,7 +14,8 @@ register_command(normalform,
                     @class = _getheroclass(@plr)
                     include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')		
                 
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
 
                     _changeSkin(@plr,@hero['sig'],@hero['val'])
                     

@@ -22,12 +22,14 @@ bind(player_death, null, null, @event){
     @class = _getheroclass(@player)
     @message = @event['death_message']
     try{
-        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+        @hero = yml_decode(@contents)
         @message = replace(@message,@player,@hero['name'].color(DARK_RED).color(ITALIC))
         if(@event['killer'] != null){
             @class = _getheroclass(@event['killer'])
             try{
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 @message = replace(@message,@event['killer'],@hero['name'].color(DARK_RED).color(ITALIC))
             }catch(Exception @e){
             }

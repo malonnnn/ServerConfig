@@ -1,39 +1,56 @@
-jump0:/jump 0 = >>>
+jump:/jump $requestedJump = >>>
+    @plr = player()
+    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+    @class = _getheroclass(@plr)
+    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+    @hero = yml_decode(@contents)
+    @maxJump = 0
+    if(array_index_exists(@hero,'jump')){
+        @maxJump = @hero['jump']
+    }else{
+        msg(color(RED).'Sorry, you don\'t have /jump');
+        return(false)
+    }
+
+    @requestedJump = $requestedJump
+    if(!is_numeric(@requestedJump)){
+        msg(color(RED).'Please enter a number, not "'.@requestedJump.'"');
+        return(false)
+    }
+
+    if(@requestedJump > @maxJump){
+        msg(color(RED).'Sorry, your max jump level is '.@maxJump);
+        return(false)
+    }
+
     sudo(/effect player() 8 0)
-<<<
-jump1:/jump 1 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 1 true)
-<<<
-jump2:/jump 2 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 3 true)
-<<<
-jump3:/jump 3 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 5 true)
-<<<
-jump4:/jump 4 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 10 true)
-<<<
-jump5:/jump 5 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 20 true)
-<<<
-jump6:/jump 6 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 30 true)
-<<<
-jump7:/jump 7 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 40 true)
-<<<
-jump8:/jump 8 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 50 true)
-<<<
-jump9:/jump 9 = >>>
-    sudo(/effect player() 8 0)
-    sudo(/effect player() 8 9999 60 true)
+    switch(@requestedJump){
+        case 1:
+            sudo(/effect player() 8 9999 1 true)
+            break()
+        case 2:
+            sudo(/effect player() 8 9999 3 true)
+            break()
+        case 3:
+            sudo(/effect player() 8 9999 5 true)
+            break()
+        case 4:
+            sudo(/effect player() 8 9999 10 true)
+            break()
+        case 5:8
+            sudo(/effect player() 8 9999 20 true)
+            break()
+        case 6:
+            sudo(/effect player() 8 9999 30 true)
+            break()
+        case 7:
+            sudo(/effect player() 8 9999 40 true)
+            break()
+        case 8:
+            sudo(/effect player() 8 9999 50 true)
+            break()
+        case 9:
+            sudo(/effect player() 8 9999 60 true)
+            break()
+    } 
 <<<

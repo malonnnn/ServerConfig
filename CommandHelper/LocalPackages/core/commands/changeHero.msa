@@ -113,7 +113,8 @@ changehero:/changehero = >>>
         }
         
         # If player is trying to turn into OP hero and is not a mod, throw error
-        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+        @hero = yml_decode(@contents)
         if(@hero['op'] == "true"){
             #if(has_permission(@plrr,"rank.mod") == false){
                 if(acc_balance(@plrr) != 0){

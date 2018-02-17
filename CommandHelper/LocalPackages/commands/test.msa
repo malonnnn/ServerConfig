@@ -19,10 +19,10 @@ ymlconvertall:/ymlconvertall = >>>
             create_dir('./chars/')
         }
         
-        if(!file_exists('./heroes/'.@base.'.yml')){
-            create_file('./heroes/'.@base.'.yml')
+        if(!file_exists('./chars/'.@base.'.yml')){
+            create_file('./chars/'.@base.'.yml')
         }
-        write_file('./heroes/'.@base.'.yml',@yml,'OVERWRITE')
+        write_file('./chars/'.@base.'.yml',@yml,'OVERWRITE')
     }
     msg(color(RED).'DONE!')
     

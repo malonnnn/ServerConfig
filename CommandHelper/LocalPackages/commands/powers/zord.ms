@@ -28,7 +28,9 @@ register_command(unzord,
 
             set_pflight(@player,false)
             
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+            @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+            @hero = yml_decode(@contents)
+
             
             @sig = @hero['sig']
             @val = @hero['val']

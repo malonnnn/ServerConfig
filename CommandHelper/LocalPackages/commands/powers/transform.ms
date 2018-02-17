@@ -35,7 +35,8 @@ register_command(untransform,
             @class = _getheroclass(@plr)
             
             try(
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 _changeSkin(@plr,@hero['sig'],@hero['val'])
             ,
                 sudo('/undisguise')

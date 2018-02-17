@@ -32,7 +32,8 @@ register_command(skin,
                         die()
                     }
                     
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @class . '.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/' . @class . '.yml')
+                    @hero = yml_decode(@contents)
                     
                     if(@skinNum == "1"){
                         @sig = @hero['sig']

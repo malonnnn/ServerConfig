@@ -8,7 +8,8 @@ register_command(skins,
             @class = _getheroclass(@sender)
 
             try{
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
             }catch(Exception @e){
                 tmsg(@sender,color(RED).'Sorry, this character doesn\'t have any extra skins :(')
                 tmsg(@sender,color(RED).'(but you can add some if you want, anyone can! Just take a hero making class, they are held every weekend, but can be held any time upon request.)')

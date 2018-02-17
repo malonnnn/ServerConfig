@@ -11,12 +11,14 @@ register_command(herotransform,
             if(array_size(@args) != 1){
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 @class = _getheroclass(@sender)
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 @alts = @hero['alts']
                 msg(color(RED).'The available transformations you have are:')
                 foreach(@alt in @alts){
                     try{
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@alt.'.ms')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @hero = yml_decode(@contents)
                         runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
                     }catch(IOException @e){}
                 }
@@ -28,7 +30,8 @@ register_command(herotransform,
             @player = player()
             @class = _getheroclass(@player)
 
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+            @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+            @hero = yml_decode(@contents)
             if(!array_index_exists(@hero,'alts')){
                 msg(color(RED).'Sorry, your character doesn\'t have any available transformations')
                 die()
@@ -58,9 +61,11 @@ register_command(herotransform,
                     runas(@player,'/buff')
                 }
 
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 @oldHero = @hero
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@idToBe.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@idToBe.'.yml')
+                @hero = yml_decode(@contents)
                 @newHero = @hero
                 broadcast(color(BLUE).@player.color(GRAY).' has performed a hero transformation from '.@oldHero['name'].color(GRAY).' to '.@newHero['name'].color(GRAY).' !')
                 if(@newHero['trail'] != ''){
@@ -74,7 +79,8 @@ register_command(herotransform,
                 msg(color(RED).'Sorry, the available transformations you have are:')
                 foreach(@alt in @alts){
                     try{
-                        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@alt.'.ms')
+                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@alt.'.yml')
+                        @hero = yml_decode(@contents)
                         runas(~console,'/tellraw '.@sender.' {"text":"'.@hero['name'].'","color":"gold","clickEvent":{"action":"run_command","value":"/herotransform '.@alt.'"},"hoverEvent":{"action":"show_text","value":"'.@alt.'"}}')
                     }catch(IOException @e){}
                 }

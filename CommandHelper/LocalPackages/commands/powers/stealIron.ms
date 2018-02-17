@@ -45,7 +45,8 @@ register_command(stealiron,
                     }
                     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                     @class = _getheroclass(@sender)
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
                     
                     tmsg(@vic,@hero['name'].color(RED).' stole the iron from your inventory!')
                 }

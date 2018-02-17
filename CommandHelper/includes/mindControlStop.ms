@@ -37,7 +37,8 @@ proc(_mindControlStop, @player,
     @pHero = import(@player.'mindControlPlayerOrigHero')
     try{
         include('/home/minecraft/server/plugins/CommandHelper/includes/changeSkin.ms')
-        include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/' . @pHero . '.ms')
+        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@pHero.'.yml')
+        @hero = yml_decode(@contents)
         _changeSkin(@player,@hero['sig'],@hero['val'])
     }catch(Exception @e){
         runas(~console,'/undisguiseplayer '.@player)

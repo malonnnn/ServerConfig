@@ -83,7 +83,8 @@ register_command(speedforceteleport,
                 include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
                 @vicclass = _getheroclass(@vic)
                 try{
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@vicclass.'.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@vicclass.'.yml')
+                    @hero = yml_decode(@contents)
                     @vicHero = @hero
                 }catch(Exception @e){
                     @vicHero = array()
@@ -91,7 +92,8 @@ register_command(speedforceteleport,
                 }
                 @plrclass = _getheroclass(@plr)
                 try{
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@plrclass.'.ms')
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@plrclass.'.yml')
+                    @hero = yml_decode(@contents)
                 }catch(Exception @e){
                     @hero = array()
                     @hero['name'] = @plr

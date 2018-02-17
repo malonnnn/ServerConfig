@@ -45,7 +45,8 @@ register_command(forget,
             @class = _getheroclass(@vic)
 
             try{
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 @vicHero = @hero
             }catch(Exception @e){
                 @vicHero = array('name': @vic)
@@ -53,7 +54,8 @@ register_command(forget,
 
             @class = _getheroclass(@sender)
             try{
-                include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                 @plrHero = @hero
             }catch(Exception @e){
                 @plrHero = array('name': @sender)

@@ -11,9 +11,11 @@ register_command(buff,
                 @class = _getheroclass(@plr)
                 
                 try {
-                    include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'. @class .'.ms')
+                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                @hero = yml_decode(@contents)
                     
                     foreach(@power in @hero['buffs']){
+                        @power = replace(@power,'<plr>',@plr)
                         runas(~console,@power)
                     }
                     set_phealth(@plr,get_max_health(puuid(@plr)))
