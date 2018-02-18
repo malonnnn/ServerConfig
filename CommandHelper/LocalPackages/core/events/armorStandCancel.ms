@@ -65,7 +65,6 @@ bind(block_dispense,null,null,@e){
 }
 bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item: 317 ),@e){
         if(@e['slotitem'] != null && array_index_exists(@e['slotitem'],'enchants')){
-            console('slotitem')
             foreach(@enchant in @e['slotitem']['enchants']){
                 if(@enchant['etype'] == 'FROST_WALKER'){
                     @enchant['elevel'] = 0
@@ -76,27 +75,18 @@ bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item
 }
 bind(player_interact, null, array(button: 'right'), @e){
     if(@e['action'] == 'right_click_air'){
-        try{
-            @meta = get_itemmeta(@e['player'], null)
-            if(@meta != null && is_array(@meta['enchants'])){
-                console('these are enchanged')
-                @item = pinv(@e['player'],null)
-                if(@item['type'] == 301 || @item['type'] == 305 || @item['type'] == 309 || @item['type'] == 313 || @item['type'] == 317){
-                    console('these are boots')
-                    foreach(@enchant in @meta['enchants']){
-                        if(@enchant['etype'] == 'FROST_WALKER'){
-                            @enchant['elevel'] = 0
-                        }
+        @meta = get_itemmeta(@e['player'], null)
+        if(@meta != null && is_array(@meta['enchants'])){
+            @item = pinv(@e['player'],null)
+            if(@item['type'] == 301 || @item['type'] == 305 || @item['type'] == 309 || @item['type'] == 313 || @item['type'] == 317){
+                foreach(@enchant in @meta['enchants']){
+                    if(@enchant['etype'] == 'FROST_WALKER'){
+                        @enchant['elevel'] = 0
                     }
-                    set_itemmeta(@e['player'], null, @meta)
-                }else{
-                    console('these are not boots')
-                    console(@item['type'])
                 }
-            }else{
-                    console('these are not enchanged')
+                set_itemmeta(@e['player'], null, @meta)
             }
-        }catch(Exception @e){console(@e)}
+        }
     }
 }
 #bind(inventory_open,null,null,@e){
