@@ -4,9 +4,21 @@ buffs:
 - /effect <plr> 21 9999 9 true
 - /effect <plr> 11 9999 2 true
 - /give <plr> minecraft:iron_bars 1 16:10 name:&4T&co&4x&8i&0n's_&4C&claw&4s
+chatcolor: '&c'
 class: toxin
 name: §4T§co§4x§8i§0n
 op: 'false'
+permissions:
+  superherocity:
+  - powers.wallclimb
+  - ch.alias.websling
+  - ch.alias.carryplayer
+  - ch.alias.dismountplayer
+  - -essentials.protect.damage.fall
+  - magic.commands.cast
+  - magic.cast.symbiotetendril
+  - magic.cast.symbiotestretch
+  - weakto.antivenom
 powers:
 - /buff
 - /carryplayer <player>

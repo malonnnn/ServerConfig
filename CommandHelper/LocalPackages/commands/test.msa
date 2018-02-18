@@ -28,38 +28,73 @@ ymlconvertall:/ymlconvertall = >>>
     
 
 <<<
-ymlconvert:/ymlconvert $heroClass = >>>
+addpermtocharyml:/addpermtocharyml $heroClass = >>>
+
+
+    @pexYML = read('/home/minecraft/server/plugins/PermissionsEx/permissions.yml')
+    @pexArray = yml_decode(@pexYML)
 
     try{
-        include('./buffs/'.$heroClass.'.ms')
-    }catch(IOException @e){
-        tmsg(player(),$heroClass.'.ms was not found')
-        die()
-    }
+        @heroYML = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.$heroClass.'.yml')
+        @heroArray = yml_decode(@heroYML)
+    }catch(Exception @e){die()}
 
-    @yml = yml_encode(@hero,true)
+    @heroArray['chatcolor'] = @pexArray['groups'][$heroClass]['options']['suffix']
+
+    if(array_index_exists(@pexArray['groups'],$heroClass) && array_index_exists(@pexArray['groups'][$heroClass],'worlds')){
+        @cityPerms = @pexArray['groups'][$heroClass]['worlds']['superherocity']['permissions']
+        
+        @heroArray['permissions'] = array()
+        foreach(@perm in @cityPerms){
+            array_push(@heroArray['permissions'],@perm)
+        }
     
-    if(!is_dir('./heroes/')){
-        create_dir('./heroes/')
     }
-    
-    if(!file_exists('./heroes/'.$heroClass.'.yml')){
-        create_file('./heroes/'.$heroClass.'.yml')
-    }
-    write_file('./heroes/'.$heroClass.'.yml',@yml,'OVERWRITE')
-    
+    console(yml_encode(@heroArray,true))
 
 <<<
+addpermtocharyml:/dryrun = >>>
 
-fattest:/fattest = >>>
-    #No directory gets created, no error. Console prints "Dir Not Exist" every time run command
-    if(!is_dir('./test/')){
-        console('Dir Not Exist')
-        create_dir('./test/')
+    @pexYML = read('/home/minecraft/server/plugins/PermissionsEx/permissions.yml')
+    @pexArray = yml_decode(@pexYML)
+
+    @files = list_files('./chars/')
+    @plr = player()
+    foreach(@file in @files){
+        @baseNum = string_position(@file,'.yml')
+        @base = substr(@file,0,@baseNum)
+        try{
+            @heroYML = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@base.'.yml')
+            @heroArray = yml_decode(@heroYML)
+        }catch(Exception @e){console('WE DIED ON '.@base.' because of '.@e); die()}
+
+        if(
+            array_index_exists(@pexArray['groups'],@base) && 
+            array_index_exists(@pexArray['groups'][@base],'worlds')
+        ){
+            array_remove(@heroArray,'permissions')
+            @heroArray['permissions'] = array()
+            foreach(@worldName: @world in @pexArray['groups'][@base]['worlds']){
+                @heroArray['permissions'][@worldName] = array()
+                if(array_index_exists(@world,'permissions')){
+                    @worldPerms = @world['permissions']
+                    foreach(@perm in @worldPerms){
+                        array_push(@heroArray['permissions'][@worldName],@perm)
+                    }
+                }
+            }
+        }else{
+            console(@base.' had no perms')
+        }
+        if(!is_dir('./chars2/')){
+            create_dir('./chars2/')
+        }
+        
+        if(!file_exists('./chars2/'.@base.'.yml')){
+            create_file('./chars2/'.@base.'.yml')
+        }
+        write_file('./chars2/'.@base.'.yml',yml_encode(@heroArray,true),'OVERWRITE')
     }
-    # "File could not be created." every time.
-    if(!file_exists('./test/test.yml')){
-        create_file('./test/test.yml')
-    }
-    write_file('./test/test.yml','YMLTEXT','OVERWRITE')
+    msg(color(RED).'DONE!')
+
 <<<

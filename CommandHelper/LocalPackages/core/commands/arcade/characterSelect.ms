@@ -257,7 +257,20 @@ register_command(selectchar,
                     die()
                 }
 
-                
+                if(array_index_exists(@hero,'eraserebuild')){
+                    msg('starting rebuild')
+                    runas(~console,'/pex group '.@hero['class'].' delete')
+                    runas(~console,'/pex group '.@hero['class'].' create commonherotraits')
+                    runas(~console,'/pex group '.@hero['class'].' suffix '.@hero['chatcolor'])
+                    @niceName = replace(@hero['name'],'§','&')
+                    runas(~console,'/pex group '.@hero['class'].' prefix "'.@niceName.'"')
+                    foreach(@worldName: @worldPerms in @hero['permissions']){
+                        foreach(@perm in @worldPerms){
+                            runas(~console,'/pex group '.@hero['class'].' add '.@perm.' '.@worldName)
+                        }
+                    }
+                    msg('finished rebuild')
+                }
                 sudo('/pex user '.@player.' group set '.@class)
                 sudo("/fly ".@player." off")
                 sudo("/gamemode survival ".@player)

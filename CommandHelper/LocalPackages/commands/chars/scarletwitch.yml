@@ -1,9 +1,18 @@
 buffs:
 - /effect <plr> 21 9999 9  true
 - /shot give <plr> scarletblast
+chatcolor: '&c'
 class: scarletwitch
 name: §4S§ccar§4let §4W§citc§4h
 op: 'false'
+permissions:
+  superherocity:
+  - magic.commands.cast
+  - Magic.cast.telekinesis
+  - Magic.cast.manipulate
+  - Magic.cast.forcefield
+  - ch.alias.confuse
+  - powers.float
 powers:
 - /buff
 - /cast telekinesis

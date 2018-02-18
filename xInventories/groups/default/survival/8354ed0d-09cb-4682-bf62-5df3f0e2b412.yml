@@ -1,18 +1,14 @@
 inventory:
   '0':
     ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
+    type: GOLD_HOE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: §5Beerus §dBall§d «×»
-  '1':
-    ==: org.bukkit.inventory.ItemStack
-    type: IRON_BARDING
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: §eKi§6Blast§6 «×»
+      display-name: §6R§8a§6c§8e§6r's §8S§6c§8y§6t§8h§6e
+      enchants:
+        DAMAGE_ALL: 255
+        DURABILITY: 255
   '36':
     ==: org.bukkit.inventory.ItemStack
     type: IRON_BOOTS
@@ -23,14 +19,14 @@ inventory:
       enchants:
         PROTECTION_PROJECTILE: 30
         DEPTH_STRIDER: 30
-health: 100.0
+health: 20.0
 hunger: 17
-exp: 0.38461542
-exp-level: 3
+exp: 0.13333343
+exp-level: 4
 remainingAir: 300
 fireTicks: -20
-saturation: 10.0
-exhaustion: 1.2044
+saturation: 16.0
+exhaustion: 1.4410036
 armor_contents:
   boots:
     ==: org.bukkit.inventory.ItemStack
@@ -45,22 +41,18 @@ armor_contents:
 ender_chest: {}
 location:
   ==: org.bukkit.Location
-  world: atlantis
-  x: -154.5
-  y: 6.0
-  z: -749.5
-  pitch: 18.158728
-  yaw: -2.930542
+  world: speedforce
+  x: -1.5
+  y: 80.0
+  z: -185.5
+  pitch: 0.1500003
+  yaw: 307.44855
 potion_effect:
   '0':
-    type: FAST_DIGGING
-    level: 127
-    duration: 192137
+    type: DAMAGE_RESISTANCE
+    level: 5
+    duration: 199142
   '1':
-    type: HEALTH_BOOST
-    level: 19
-    duration: 182036
-  '2':
-    type: WATER_BREATHING
-    level: 1
-    duration: 182036
+    type: FAST_DIGGING
+    level: 0
+    duration: 247
