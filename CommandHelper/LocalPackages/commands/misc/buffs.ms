@@ -11,22 +11,20 @@ register_command(buff,
                 @class = _getheroclass(@plr)
                 
                 try {
-                @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
-                @hero = yml_decode(@contents)
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
                     
-                    foreach(@power in @hero['buffs']){
-                        @power = replace(@power,'<plr>',@plr)
-                        runas(~console,@power)
-                    }
-                    set_phealth(@plr,get_max_health(puuid(@plr)))
-                    set_phunger(@plr,17)
-        #runas(~console,'/effect '.@player.' regeneration 5 10 true')
-                    tmsg(@plr,@hero['speech'])
                 } catch (IOException @ErrorInfo) {
-                    # Ignore file doesn't exist message and kill the script
                     tmsg(@plr, 'There\'s no buffs\'s associated with your current Character Class')
                     die()
                 }
+                foreach(@power in @hero['buffs']){
+                    @power = replace(@power,'<plr>',@plr)
+                    queue_push(closure(runas(~console,@power)),'herochargeup')
+                }
+                queue_push(closure(set_phealth(@plr,get_max_health(puuid(@plr)))),'herochargeup')
+                queue_push(closure(set_phunger(@plr,17)),'herochargeup')
+                tmsg(@plr,@hero['speech'])
         }
     )
 )
