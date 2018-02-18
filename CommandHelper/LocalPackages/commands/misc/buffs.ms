@@ -18,11 +18,13 @@ register_command(buff,
                     tmsg(@plr, 'There\'s no buffs\'s associated with your current Character Class')
                     die()
                 }
-                foreach(@power in @hero['buffs']){
-                    @power = replace(@power,'<plr>',@plr)
-                    queue_push(closure(runas(~console,@power)),'herochargeup')
+                if(array_index_exists(@hero,'buffs')){
+                    foreach(@power in @hero['buffs']){
+                        @power = replace(@power,'<plr>',@plr)
+                        queue_push(closure(runas(~console,@power)),'herochargeup')
+                    }
+                    queue_push(closure(set_phealth(@plr,get_max_health(puuid(@plr)))),'herochargeup')
                 }
-                queue_push(closure(set_phealth(@plr,get_max_health(puuid(@plr)))),'herochargeup')
                 queue_push(closure(set_phunger(@plr,17)),'herochargeup')
                 tmsg(@plr,@hero['speech'])
         }

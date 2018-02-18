@@ -259,7 +259,8 @@ register_command(selectchar,
 
                 #if(array_index_exists(@hero,'eraserebuild')){
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' delete')),'charbuildqueue')
-                    queue_push(closure(runas(~console,'/pex group '.@hero['class'].' create commonherotraits')),'charbuildqueue')
+                    queue_push(closure(runas(~console,'/pex group '.@hero['class'].' create')),'charbuildqueue')
+                    queue_push(closure(runas(~console,'/pex group '.@hero['class'].' parents set commonherotraits')),'charbuildqueue')
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' suffix '.@hero['chatcolor'])),'charbuildqueue')
                     @niceName = replace(@hero['name'],'§','&')
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' prefix "'.@niceName.'"')),'charbuildqueue')

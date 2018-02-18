@@ -993,28 +993,6 @@ groups:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
-  acceleratedman:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&4A&ec&cc&4e&el&ce&4r&ea&ct&4e&ed &cMan'
-      suffix: '&4'
-    worlds:
-      speedforce:
-        permissions:
-        - ch.alias.speedforcebuffs
-        - ch.alias.speedforceteleport
-        - ch.alias.tp
-        - ch.alias.powers
-        - essentials.back
-      superherocity:
-        permissions:
-        - powers.wallrun
-        - ch.alias.speedforceteleport
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - essentials.tppos
-        - essentials.warps.speedforce
   agentvenom:
     inheritance:
     - commonherotraits
@@ -1448,28 +1426,6 @@ groups:
       superherocity:
         permissions:
         - ch.alias.batgirl
-  batman:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&7B&ea&0t&7m&8a&7n'
-      suffix: '&8'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.batman
-  batmanbatsuit:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&7B&ea&0t&7m&8a&7n(&8B&ba&8ts&7u&8it&7)'
-      suffix: '&8'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.batmanbatsuit
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
   beerus:
     inheritance:
     - commonherotraits
@@ -1852,26 +1808,6 @@ groups:
         - essentials.fly
         - essentials.speed.fly
         - essentials.speed
-  brainiac:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&2B&5r&0a&2i&5n&0i&2a&5c'
-      suffix: '&2'
-    worlds:
-      superherocity:
-        permissions:
-        - -essentials.protect.damage.fall
-        - essentials.fly
-        - ch.alias.brainiac
-        - ch.alias.mindcontrol
-        - ch.alias.stopmindcontrol
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - ch.alias.speak
-        - ch.alias.confuse
-        - ch.alias.unconfuse
-        - ch.alias.mindlock
   cable:
     inheritance:
     - commonherotraits
@@ -2212,31 +2148,6 @@ groups:
       superherocity:
         permissions:
         - ch.alias.daredevil
-  darkseid:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&9D&8a&9rk&7s&1e&7id'
-      suffix: '&7'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - ch.alias.stopmindcontrol
-        - ch.alias.mindcontrol
-        - ch.alias.empower
-        - ch.alias.confuse
-        - ch.alias.unconfuse
-        - ch.alias.speak
-        - ch.alias.tp
-        - ch.alias.normalsize
-        - ch.alias.grow
-        - ch.alias.apokolips
-        - -essentials.protect.damage.fall
-        - ch.alias.darkseid
-        - powers.wallrun
-        - powers.float
   sans:
     inheritance:
     - commonherotraits
@@ -4533,33 +4444,6 @@ groups:
       suffix: '&7'
     worlds:
       superherocity: {}
-  kidflashwallywest:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&eK&4i&ed &4F&el&4a&es&4h&8(&4W&eW&8)'
-      suffix: '&e'
-    worlds:
-      speedforce:
-        permissions:
-        - ch.alias.speedforcebuffs
-        - ch.alias.speedforceteleport
-        - ch.alias.tp
-        - ch.alias.powers
-        - essentials.back
-      superherocity:
-        permissions:
-        - ch.alias.speedforcewhirlwind
-        - powers.thru.destabilize
-        - powers.wallrun
-        - worldedit.navigation.thru.command
-        - powers.thru.destabilize
-        - ch.alias.speedforceteleport
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - essentials.tppos
-        - essentials.warps.speedforce
-        - ch.alias.kidflashwallywest
   killercroc:
     inheritance:
     - commonherotraits
@@ -7219,22 +7103,6 @@ groups:
       superherocity:
         permissions:
         - ch.alias.stephencurry
-  abrakadabra:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&0A&8bra &fK&0a&8d&0a&8bra'
-      suffix: '&8'
-    worlds:
-      superherocity:
-        permissions:
-        - magic.commands.cast
-        - magic.cast.turnwater
-        - magic.cast.abrawarp
-        - magic.cast.abrabolt
-        - magic.cast.abratrap
-        - magic.use.abraswand
-        - magic.wand.use
   weatherwizard:
     inheritance:
     - commonherotraits
@@ -8780,27 +8648,6 @@ groups:
         - ch.alias.vis
         - ch.alias.shadowhide
         - worldedit.navigation.jumpto.command
-  superman:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&cS&9u&ep&9e&9rm&can'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.dismountplayer
-        - ch.alias.carryplayer
-        - ch.alias.superman
-        - -essentials.protect.damage.fall
-        - powers.wallrun
-        - powers.nofalldamage
-        - weakto.kryptonite
-        - magic.cast.infinitemasspunch
-        - magic.commands.cast
   blacklanternmartianmanhunter:
     inheritance:
     - commonherotraits
@@ -8961,56 +8808,6 @@ groups:
         - ch.alias.dismountplayer
         - powers.herotransform
         - ch.alias.grouptp
-  beastboy:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2B&8e&5a&8s&2t &aB&5o&ay'
-    worlds:
-      superherocity:
-        permissions:
-        - libsdisguises.disguise.*.-setinvisible
-        - libsdisguises.undisguise
-        - -libsdisguises.disguise.minecart_hopper.*
-        - -libsdisguises.disguise.item_frame.*
-        - -libsdisguises.disguise.firework.*
-        - -libsdisguises.disguise.ender_pearl.*
-        - -libsdisguises.disguise.splash_potion.*
-        - -libsdisguises.disguise.minecart_furnace.*
-        - -libsdisguises.disguise.fireball.*
-        - -libsdisguises.disguise.shulker_bullet.*
-        - -libsdisguises.disguise.minecart_command.*
-        - -libsdisguises.disguise.falling_block.*
-        - -libsdisguises.disguise.ender_crystal.*
-        - -libsdisguises.disguise.spectral_arrow.*
-        - -libsdisguises.disguise.painting.*
-        - -libsdisguises.disguise.minecart_chest.*
-        - -libsdisguises.disguise.experience_orb.*
-        - -libsdisguises.disguise.boat.*
-        - -libsdisguises.disguise.minecart.*
-        - -libsdisguises.disguise.snowball.*
-        - -libsdisguises.disguise.dropped_item.*
-        - -libsdisguises.disguise.tipped_arrow.*
-        - -libsdisguises.disguise.small_fireball.*
-        - -libsdisguises.disguise.primed_tnt.*
-        - -libsdisguises.disguise.llama_spit.*
-        - -libsdisguises.disguise.dragon_fireball.*
-        - -libsdisguises.disguise.arrow.*
-        - -libsdisguises.disguise.thrown_exp_bottle.*
-        - -libsdisguises.disguise.minecart_tnt.*
-        - -libsdisguises.disguise.armor_stand.*
-        - -libsdisguises.disguise.wither_skull.*
-        - -libsdisguises.disguise.minecart_mob_spawner.*
-        - -libsdisguises.disguise.leash_hitch.*
-        - -libsdisguises.disguise.fishing_hook.*
-        - -libsdisguises.disguise.ender_signal.*
-        - -libsdisguises.disguise.area_effect_cloud.*
-        - -libsdisguises.disguise.player.*
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.beastboy
   novasamalexander:
     inheritance:
     - commonherotraits
@@ -9074,6 +8871,209 @@ groups:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
         - powers.wallrun
+  kidflashwallywest:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&e'
+      prefix: '&eK&4i&ed &4F&el&4a&es&4h&e&8(&4W&eW&8)'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - ch.alias.kidflashwallywest
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.speedforceteleport
+        - powers.thru.destabilize
+        - worldedit.navigation.thru.command
+        - powers.wallrun
+        - ch.alias.speedforcewhirlwind
+        - powers.herotransform
+  superman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&cS&9u&ep&9e&9rm&can'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.superman
+        - -essentials.protect.damage.fall
+        - powers.wallrun
+        - powers.nofalldamage
+        - weakto.kryptonite
+        - magic.cast.infinitemasspunch
+        - magic.commands.cast
+  abrakadabra:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&0A&8bra &fK&0a&8d&0a&8bra'
+    worlds:
+      superherocity:
+        permissions:
+        - magic.wand.use
+        - magic.use.abraswand
+        - magic.cast.abratrap
+        - magic.cast.abrabolt
+        - magic.cast.abrawarp
+        - magic.cast.turnwater
+        - magic.commands.cast
+  acceleratedman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4A&ec&cc&4e&el&ce&4r&ea&ct&4e&ed &cMan'
+    worlds:
+      speedforce:
+        permissions:
+        - essentials.back
+        - ch.alias.powers
+        - ch.alias.tp
+        - ch.alias.speedforceteleport
+        - ch.alias.speedforcebuffs
+      superherocity:
+        permissions:
+        - essentials.warps.speedforce
+        - essentials.tppos
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+        - ch.alias.speedforceteleport
+        - powers.wallrun
+  beastboy:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2B&8e&5a&8s&2t &aB&5o&ay'
+    worlds:
+      superherocity:
+        permissions:
+        - libsdisguises.disguise.*.-setinvisible
+        - libsdisguises.undisguise
+        - -libsdisguises.disguise.minecart_hopper.*
+        - -libsdisguises.disguise.item_frame.*
+        - -libsdisguises.disguise.firework.*
+        - -libsdisguises.disguise.ender_pearl.*
+        - -libsdisguises.disguise.splash_potion.*
+        - -libsdisguises.disguise.minecart_furnace.*
+        - -libsdisguises.disguise.fireball.*
+        - -libsdisguises.disguise.shulker_bullet.*
+        - -libsdisguises.disguise.minecart_command.*
+        - -libsdisguises.disguise.falling_block.*
+        - -libsdisguises.disguise.ender_crystal.*
+        - -libsdisguises.disguise.spectral_arrow.*
+        - -libsdisguises.disguise.painting.*
+        - -libsdisguises.disguise.minecart_chest.*
+        - -libsdisguises.disguise.experience_orb.*
+        - -libsdisguises.disguise.boat.*
+        - -libsdisguises.disguise.minecart.*
+        - -libsdisguises.disguise.snowball.*
+        - -libsdisguises.disguise.dropped_item.*
+        - -libsdisguises.disguise.tipped_arrow.*
+        - -libsdisguises.disguise.small_fireball.*
+        - -libsdisguises.disguise.primed_tnt.*
+        - -libsdisguises.disguise.llama_spit.*
+        - -libsdisguises.disguise.dragon_fireball.*
+        - -libsdisguises.disguise.arrow.*
+        - -libsdisguises.disguise.thrown_exp_bottle.*
+        - -libsdisguises.disguise.minecart_tnt.*
+        - -libsdisguises.disguise.armor_stand.*
+        - -libsdisguises.disguise.wither_skull.*
+        - -libsdisguises.disguise.minecart_mob_spawner.*
+        - -libsdisguises.disguise.leash_hitch.*
+        - -libsdisguises.disguise.fishing_hook.*
+        - -libsdisguises.disguise.ender_signal.*
+        - -libsdisguises.disguise.area_effect_cloud.*
+        - -libsdisguises.disguise.player.*
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.beastboy
+  kidwallywest:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&7Kid Wally West'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.herotransform
+  batmanbatsuit:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&7B&ea&0t&7m&8a&7n(&8B&ba&8ts&7u&8it&7)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.batmanbatsuit
+  darkseid:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&9D&8a&9rk&7s&1e&7id'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.float
+        - powers.wallrun
+        - ch.alias.darkseid
+        - -essentials.protect.damage.fall
+        - ch.alias.apokolips
+        - ch.alias.grow
+        - ch.alias.normalsize
+        - ch.alias.tp
+        - ch.alias.speak
+        - ch.alias.unconfuse
+        - ch.alias.confuse
+        - ch.alias.empower
+        - ch.alias.mindcontrol
+        - ch.alias.stopmindcontrol
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
+  brainiac:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2B&5r&0a&2i&5n&0i&2a&5c'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.mindlock
+        - ch.alias.unconfuse
+        - ch.alias.confuse
+        - ch.alias.speak
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.stopmindcontrol
+        - ch.alias.mindcontrol
+        - ch.alias.brainiac
+        - essentials.fly
+        - -essentials.protect.damage.fall
 schema-version: 1
 worlds:
   checkers:
@@ -9233,12 +9233,11 @@ users:
       name: kylo_gamer
       last-login-time: '1516561812'
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
-    group:
-    - greenarrow
+    group: []
     options:
-      last-logout-time: '1518929021'
+      last-logout-time: '1518937980'
       name: Jiren_The_Grey
-      last-login-time: '1518929011'
+      last-login-time: '1518937217'
     permissions:
     - powers.onepunch
   28556dea-667d-409f-b2ff-fb4177a20ff2:
@@ -9601,9 +9600,9 @@ users:
     group:
     - beastboy
     options:
-      last-logout-time: '1518934639'
+      last-logout-time: '1518937199'
       name: TheLightShadow_
-      last-login-time: '1518935547'
+      last-login-time: '1518938418'
     worlds:
       fightclub:
         permissions: []
@@ -9626,8 +9625,7 @@ users:
       last-logout-time: '1516309933'
       name: GhostsGhoul
   c10d47ce-78c3-4808-a3f0-e26f8adb0b48:
-    group:
-    - batman
+    group: []
     options:
       last-logout-time: '1516312997'
       name: thefnafdude
@@ -9640,8 +9638,7 @@ users:
       name: Lohith9
       last-login-time: '1518211387'
   2d5f57e6-5c4e-46c6-9ac3-431659b079ff:
-    group:
-    - darkseid
+    group: []
     options:
       last-logout-time: '1516315942'
       name: Garniashade
@@ -9717,9 +9714,9 @@ users:
     group:
     - thanos
     options:
-      last-logout-time: '1518936909'
+      last-logout-time: '1518938900'
       name: ThanosMCU
-      last-login-time: '1518936735'
+      last-login-time: '1518938543'
     permissions: []
   91255dc0-de1f-46a5-af2c-3e10786ce016:
     group:
@@ -9824,8 +9821,7 @@ users:
       name: joaquinbridges
       last-login-time: '1516552800'
   f80b1ed0-f61d-4cca-95a2-b7ff749350b4:
-    group:
-    - darkseid
+    group: []
     options:
       last-logout-time: '1516553110'
       name: Skyth_DeSexton
@@ -9945,8 +9941,7 @@ users:
       name: TimTrident
       last-login-time: '1518132034'
   2cb5d5ae-0cc3-42e9-bed8-7ae2280606a1:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1518724078'
       name: OverdriveCoffee
@@ -9982,8 +9977,7 @@ users:
       last-login-time: '1517187996'
     permissions: []
   1858fe7f-d837-45eb-b1b7-4aeefad23350:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1516592222'
       name: MatthewDragner
@@ -10053,11 +10047,11 @@ users:
   ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
     group:
     - headbuilder
-    - blacklanternmartianmanhunter
+    - mortal
     options:
       last-logout-time: '1518936743'
       name: superiorxman
-      last-login-time: '1518934506'
+      last-login-time: '1518938166'
     permissions:
     - is.headbuilder
     worlds:
@@ -10323,8 +10317,7 @@ users:
       name: Lukester1324
       last-login-time: '1517442623'
   89e8aaba-6742-4e20-a920-5b414e903edd:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1516792582'
       name: Joshuaellis2005
@@ -10472,8 +10465,7 @@ users:
       name: aldrin524
       last-login-time: '1518913170'
   4082517f-c021-411b-b302-ccb2d61c84c1:
-    group:
-    - batman
+    group: []
     options:
       last-logout-time: '1518734326'
       name: Bruce_Wayne08
@@ -10727,8 +10719,7 @@ users:
       last-login-time: '1517323232'
     permissions: []
   c45c704a-5d3f-4c9f-9103-48d0db3a8cee:
-    group:
-    - darkseid
+    group: []
     options:
       last-logout-time: '1517497280'
       name: Bliksem1511
@@ -10812,8 +10803,7 @@ users:
       name: Mythas
       last-login-time: '1518024015'
   a65cae3b-678f-4156-abb6-2bb4137d764e:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1517179393'
       name: Dresdex
@@ -10856,8 +10846,7 @@ users:
       last-logout-time: '1517178564'
       name: jimmymist
   076fc67b-c574-4648-ad18-670293e742be:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1517187572'
       name: SuperNathan_33
@@ -11028,8 +11017,7 @@ users:
       last-logout-time: '1517335760'
       name: iVonderDeLa_JOL
   b5ce57cf-e3b4-4329-b54c-f34d3ff938e9:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1517767842'
       name: Kidflashftw1
@@ -11221,14 +11209,12 @@ users:
       name: Shadowcai
       last-login-time: '1518397380'
   a58bee82-9c7a-43b3-9ff5-9965bfae1c92:
-    group:
-    - batmanbatsuit
+    group: []
     options:
       last-logout-time: '1517528679'
       name: Diamondkid_YT
   08272c04-f3f4-4aa7-97e3-4baa839ee73b:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1517565707'
       name: Legansaj
@@ -11344,8 +11330,7 @@ users:
       last-logout-time: '1517627068'
       name: xx24seltics
   7a3d7316-9fb3-42e6-bb67-474383ba3df0:
-    group:
-    - kidflashwallywest
+    group: []
     options:
       last-logout-time: '1518388086'
       name: birdie911
@@ -11724,8 +11709,7 @@ users:
       last-logout-time: '1517976679'
       name: Wolfboyplyz
   7f2a70b5-61dd-4dbe-ad93-3b5574eb4544:
-    group:
-    - batmanbatsuit
+    group: []
     options:
       last-logout-time: '1517979503'
       name: IFEELLIKEARNOLD
@@ -11738,11 +11722,11 @@ users:
       name: Dr_Jaden
   18c480d3-2bc6-4198-b94a-274a7e117e8d:
     group:
-    - spectre
+    - brainiac
     options:
-      last-logout-time: '1518760565'
+      last-logout-time: '1518939098'
       name: TheSpectre_DC
-      last-login-time: '1518760450'
+      last-login-time: '1518938907'
   575e16ba-7021-4677-82b3-f97f15e9ef3e:
     group:
     - odin
@@ -11988,8 +11972,7 @@ users:
       last-logout-time: '1518275443'
       name: GamerRobert1990
   fb52eca0-04f6-42bd-a574-8d0440cf27dc:
-    group:
-    - batmanbatsuit
+    group: []
     options:
       last-logout-time: '1518280588'
       name: championmark
@@ -12086,11 +12069,11 @@ users:
       last-login-time: '1518306786'
   57b29f1f-dc6b-4d30-80ac-cf64c4df3428:
     group:
-    - superman
+    - kidwallywest
     options:
       last-logout-time: '1518926610'
       name: Nightur
-      last-login-time: '1518926000'
+      last-login-time: '1518938645'
     permissions: []
   6076a559-4724-4e23-af00-ec5494d39dfc:
     group:
@@ -12168,8 +12151,7 @@ users:
       name: nlgianni
       last-login-time: '1518340006'
   afe2a0ed-5faa-4f5a-9ef0-6f57b5c851dd:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1518350504'
       name: Pezba
@@ -12200,8 +12182,7 @@ users:
       last-logout-time: '1518368988'
       name: the_professeur
   d4815da6-8323-4d3b-b868-21c8baac0fbf:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1518381656'
       name: Saekwan
@@ -12260,11 +12241,11 @@ users:
       last-login-time: '1518554222'
   6f5538d0-e1fd-4b17-9422-dec9613f42a8:
     group:
-    - mortal
+    - batmanbatsuit
     options:
-      last-logout-time: '1518931300'
+      last-logout-time: '1518938910'
       name: _MysteryM_
-      last-login-time: '1518928237'
+      last-login-time: '1518938695'
   07e7aff3-ac55-4bab-8960-93c387a437a5:
     group:
     - flashwallywest
@@ -12664,8 +12645,7 @@ users:
       last-logout-time: '1518838895'
       name: TreyCoding
   b4e846b6-3cf2-43fd-a2ff-a3aa56118499:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1518840576'
       name: Metric_Celsius
@@ -12724,15 +12704,13 @@ users:
       name: batbike
       last-login-time: '1518880495'
   c832c068-1068-4422-aa4a-6a97f083ef39:
-    group:
-    - batman
+    group: []
     options:
       last-logout-time: '1518879748'
       name: NeonKronos
       last-login-time: '1518877324'
   9e76a9ad-4e82-4e71-a51d-b410347aae94:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1518881168'
       name: ElementalNinjaYt
@@ -12768,14 +12746,12 @@ users:
       last-logout-time: '1518908679'
       name: NargNarg
   2d73be2c-2b17-4379-bb19-dd80598b4b17:
-    group:
-    - batman
+    group: []
     options:
       last-logout-time: '1518911706'
       name: DiamondJacks
   d00ca08e-919d-454c-bcf6-63feba00ce6e:
-    group:
-    - acceleratedman
+    group: []
     options:
       last-logout-time: '1518911971'
       name: UpdateNeeded
