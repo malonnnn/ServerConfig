@@ -2,7 +2,7 @@ id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
 last_cast: 1518486626789
 cooldown_expiration: 0
-last_death_location: 415.5,64.0,-868.5,fortressofsolitude,-269.3665,-0.89999676
+last_death_location: -30.28717954946652,69.0,-223.03543633148877,greenfield,-69.853424,-39.667576
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -921,12 +921,12 @@ wands:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §6rictusempra§f (§3HarrysWand§f)
+        display-name: §6stupefy§f (§3HarrysWand§f)
         lore:
         - §3§oBound to Jiren_The_Grey
         - Knows 14 Spells
-        - '§eMana: 200 §f(§b0§f)'
-        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -935,12 +935,13 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1RPW8TQRCdcOfz+YAgQslXIGlNFBsc0qBYAvEhAkVIfRrvzdkrbneP/bBxR8NvoEWipeAH8Bv4MZRUzJ6VbLHSvHnz5s1MAVBAukJd5ZB7Um2DnqBYoLVrt4F7ZqXJwvYbaUmXHxZUvrS0ziBVqPFEQvdS2I5h6aUi51G1AFv4fe/vAct29aWsYP/pUT0bi4kYPqnryfDxjL/ZeDQZHh+PxORwfER4OEqgvyTrpNEs2yvghmupaUqpl6S9sesEcnSCdCUNE/oJDFqyUoQmKI7vJ9BDIbrcvQRurqSeo61kUA0tpXHI+F1uYakKwkfWbgKZsGFT8pBTrTWe5jFKE7gqtUAryJrgGHnA7YTRtWXZyMjYDTMu3CQJXKPP0a9Eq7qKHmuwPR8cL9fG9ltMcsSIuoR4ir7zoaV6zdEVgAHsTL23chY8nZpK1pJXUsTiFPLz89fPT43z//ae3Zl+eUUpDCL0ltD5X7d///n29eePDLKpMkH7k/3NgXJIzxrjIVco9aI77PXLFu9QEdyak46bfITeo/h41hJVPO57Xi/6zTmiSsfdefEpyFbxRXYv7AH8Bx2N8a5MAgAA
+        internal: H4sIAAAAAAAAAD1Ry24TQRDssGt7vYQgEokLrwC5OlJscMgFYQEiIAKHkPOqPdtrj9iZWeZh4xsXvoEP4AAHDnwA38AHcaJnrXgPo+3qmq6a6hwgh3SJuswg86SaGj1BPkdrV24Nd8xSk4WdN9KSLj7MqXhlaZXBNgovF1S4huoaes6HhqpVB1KFGp+fAqSwE38LLxU5j6oB2MKfezd/sFQ7s5AlHDw5rqYjMRaDx1U1Hjya8jEdDceDk5OhGB+NjgmPhgn0FmSdNBoAOjlcbzULqRekvbGrBDJ0gnQpDRN6CfQbslKEOiiu7yXQQSHa3t0EbiylnqEtZVA1LaRxyPgdlrBUBuEjaz+BrrBhfeUBtxprPM1ilSRwVWqBVpA1wTFyn+WE0ZXlsZHRYTfMuHRzJYFt+hz9SrSqvZHyDLbng+PAbZQHJjliRG2gbrLJlKstgD7sTry3cho8nZlSVpIjyWMvhezi4vWLM+P8v4dPb0++nFIK/Qi9JXT+960/f799/fW9C92JMkH7ZwfQfhmk57XxkCmUet4u+9pG4h0qgr0Z6ZjkIXqP4uN5Q1Tyc99zvOjX64hTWu7uy09BNoo3sn9pD+A/y61JjGACAAA=
     wand:
       template: harryswand
       owner: Jiren_The_Grey
+      active_spell: stupefy
       mana: 200.0
-      mana_timestamp: 1518810165807
+      mana_timestamp: 1518943278759
       owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
       version: 5
       spell_inventory:
@@ -950,14 +951,14 @@ wands:
         wingardiumleviosa: 29
         reducto: 32
         crucio: 34
-        protego: 4
+        protego: 3
         incarcerous: 33
-        confringo: 6
-        incendio: 3
-        expelliarmus: 5
-        rictusempra: 1
-        sectumsempra: 7
-        stupefy: 2
+        confringo: 5
+        incendio: 2
+        expelliarmus: 4
+        rictusempra: 0
+        sectumsempra: 6
+        stupefy: 1
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1090,7 +1091,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1518929021652
+    mana_timestamp: 1518944744990
     mana: 50.0
     spells:
     - missile

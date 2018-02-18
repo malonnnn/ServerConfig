@@ -976,22 +976,6 @@ groups:
         permissions:
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
-  agentvenom:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&8Ag&0ent &8Ve&0nom'
-      suffix: '&8'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - ch.alias.web
-        - powers.wallclimb
-        - ch.alias.websling
-        - -essentials.protect.damage.fall
-        - weakto.antivenom
   guardian:
     inheritance:
     - commonherotraits
@@ -1338,26 +1322,6 @@ groups:
         - essentials.speed.fly
         - essentials.speed
         - essentials.feed
-  atom:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&4A&7t&8o&4m'
-      suffix: '&4'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.grow
-        - ch.alias.shrink
-        - ch.alias.normalsize
-        - libsdisguises.undisguise
-        - -essentials.protect.damage.fall
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - ch.alias.atom
-        - essentials.fly
-        - essentials.speed.fly
-        - essentials.speed
   bumblebeeyoungjustice:
     inheritance:
     - commonherotraits
@@ -2423,29 +2387,6 @@ groups:
         - ch.alias.create
         - essentials.skull
         - essentials.skull.*
-  doctorstrange:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&cD&9octo&cr &9S&ctrang&9e'
-      suffix: '&9'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.gravityshift
-        - magic.cast.freezetime
-        - magic.cast.acceleratetime
-        - magic.use.timestone
-        - magic.wand.use
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - -essentials.enchantments.allowunsafe
-        - essentials.enchantments.*
-        - essentials.enchant
-        - powers.float
-        - magic.commands.cast
-        - magic.cast.time
-        - -essentials.protect.damage.fall
   doomsday:
     inheritance:
     - commonherotraits
@@ -2750,9 +2691,19 @@ groups:
     worlds:
       superherocity:
         permissions:
+        - is.fanfic
         - ch.alias.fanficchatcolor
         - ch.alias.fanficname
         - ch.alias.fanficlaser
+        - ch.alias.jump2
+        - ch.alias.jump1
+        - ch.alias.jump0
+        - ch.alias.haste2
+        - ch.alias.haste1
+        - ch.alias.haste0
+        - ch.alias.run2
+        - ch.alias.run1
+        - ch.alias.run0
       survival112:
         permissions:
         - ch.alias.fanficchatcolor
@@ -3597,21 +3548,6 @@ groups:
         - essentials.speed
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
-  greenlanternhaljordan:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&2Gr&8e&2en Lant&8e&2rn&8(HJ)'
-      suffix: '&2'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.greenlanternhaljordan
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - essentials.fly
-        - essentials.speed.fly
-        - essentials.speed
   greenlanternsinestro:
     inheritance:
     - commonherotraits
@@ -5708,16 +5644,6 @@ groups:
         permissions:
         - ch.alias.quake
         - ch.alias.psypush
-  nightwing:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&1N&0igh&1tw&0in&1g'
-      suffix: '&1'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.nightwing
   ninjagocole:
     inheritance:
     - commonherotraits
@@ -8572,18 +8498,6 @@ groups:
         - -essentials.protect.entitytarget.bypass
         - ch.alias.mindlock
         - essentials.msg
-  deathdc:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&7'
-      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.tphere
-        - ch.alias.tp
-        - powers.onepunch
   thepresence:
     inheritance:
     - commonherotraits
@@ -8717,20 +8631,6 @@ groups:
         - ch.alias.intangible
         - essentials.fly
         - ch.alias.magicpush
-  doctorfatekentnelson:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&6D&9o&6ct&9o&6r F&9a&6te&8(KN&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.teleport
-        - essentials.fly
-        - ch.alias.create
-        - ch.alias.doctorfatekentnelson
-        - weakto.magicarrow
   thanos:
     inheritance:
     - commonherotraits
@@ -9075,6 +8975,116 @@ groups:
         - -essentials.protect.damage.fall
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
+  deathdc:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&0D&8e&fa&0th&8(&fD&8C&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.tphere
+        - ch.alias.tp
+        - powers.onepunch
+  nightwing:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&1'
+      prefix: '&1N&0igh&1tw&0in&1g'
+    worlds:
+      superherocity:
+        permissions:
+        - ch.alias.nightwing
+  doctorstrange:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&cD&9octo&cr &9S&ctrang&9e'
+    worlds:
+      superherocity:
+        permissions:
+        - -essentials.protect.damage.fall
+        - magic.cast.time
+        - magic.commands.cast
+        - powers.float
+        - essentials.enchant
+        - essentials.enchantments.*
+        - -essentials.enchantments.allowunsafe
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - magic.wand.use
+        - magic.use.timestone
+        - magic.cast.acceleratetime
+        - magic.cast.freezetime
+        - powers.gravityshift
+  doctorfatekentnelson:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&6D&9o&6ct&9o&6r F&9a&6te&8(KN&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.teleport
+        - essentials.fly
+        - ch.alias.create
+        - ch.alias.doctorfatekentnelson
+        - weakto.magicarrow
+  greenlanternhaljordan:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2Gr&8e&2en Lant&8e&2rn&8(HJ)'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - ch.alias.greenlanternhaljordan
+  atom:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&4A&7t&8o&4m'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.atom
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - -essentials.protect.damage.fall
+        - libsdisguises.undisguise
+        - ch.alias.normalsize
+        - ch.alias.shrink
+        - ch.alias.grow
+  agentvenom:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&8'
+      prefix: '&8Ag&0ent &8Ve&0nom'
+    worlds:
+      superherocity:
+        permissions:
+        - weakto.antivenom
+        - -essentials.protect.damage.fall
+        - ch.alias.websling
+        - powers.wallclimb
+        - ch.alias.web
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
 schema-version: 1
 worlds:
   checkers:
@@ -9235,9 +9245,9 @@ users:
       last-login-time: '1516561812'
   87fb3c6c-5ff6-4bf6-b326-992c6137ea12:
     group:
-    - harrypotter
+    - fanfic87fb3c6c5ff64bf6b326992c6137ea12
     options:
-      last-logout-time: '1518937980'
+      last-logout-time: '1518946763'
       name: Jiren_The_Grey
       last-login-time: '1518941153'
     permissions:
@@ -9598,11 +9608,11 @@ users:
       last-login-time: '1516311156'
   8ca7fc56-614b-482a-91df-bf8580ba273d:
     group:
-    - beastboy
+    - mortal
     options:
-      last-logout-time: '1518937199'
+      last-logout-time: '1518945495'
       name: TheLightShadow_
-      last-login-time: '1518941588'
+      last-login-time: '1518945994'
     worlds:
       fightclub:
         permissions: []
@@ -10170,8 +10180,7 @@ users:
       last-logout-time: '1516591638'
       name: Albertox71
   96c551d1-1ad5-43a8-9350-3716beb11ec0:
-    group:
-    - nightwing
+    group: []
     options:
       last-logout-time: '1517983307'
       name: DrJoefenstein
@@ -10415,8 +10424,7 @@ users:
       name: Merganator2
       last-login-time: '1517626429'
   213c81da-a90c-4d6c-bdf2-18a116f07118:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1516973931'
       name: DoctorStrangeMCU
@@ -10563,11 +10571,12 @@ users:
       last-login-time: '1518871062'
     permissions: []
   5af79d98-79a0-4604-a6b2-52cb6dd32e5c:
-    group: []
+    group:
+    - doctorfatekentnelson
     options:
-      last-logout-time: '1518203737'
+      last-logout-time: '1518945771'
       name: TheBenism
-      last-login-time: '1518201981'
+      last-login-time: '1518944999'
   5379b43a-6889-4440-99d9-8b4c8f29909f:
     group: []
     options:
@@ -10940,8 +10949,7 @@ users:
       last-logout-time: '1517267597'
       name: Kirsling
   0658269d-9828-49dc-9a0e-1382a3543512:
-    group:
-    - greenlanternhaljordan
+    group: []
     options:
       last-logout-time: '1517271388'
       name: EpicChris07
@@ -10982,8 +10990,7 @@ users:
       name: CrazyAntXP_YT
       last-login-time: '1517387069'
   494a68ff-dcec-44ec-880f-5c70e998239b:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1518515997'
       name: NateP2007
@@ -11014,8 +11021,7 @@ users:
       name: Kidflashftw1
       last-login-time: '1517767650'
   42ecd8b0-31d5-4f38-b27e-0e240d24c04b:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1517339991'
       name: bricker1462
@@ -11051,8 +11057,7 @@ users:
       last-logout-time: '1517355817'
       name: Catz4Life_
   a1257c0f-d611-4b98-8465-10e9966dcacd:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1517360937'
       name: zDigAnChill
@@ -11098,8 +11103,7 @@ users:
       name: VipeGamingYT
       last-login-time: '1517751488'
   ec932264-e239-4f49-bcbe-e6f6b859fd9e:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1517517526'
       name: Abierules
@@ -11125,8 +11129,7 @@ users:
       last-logout-time: '1517444371'
       name: TTKezzy
   cf28666c-070b-40fd-9c3b-fc34f924766b:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1517521488'
       name: WiIldig
@@ -11217,11 +11220,11 @@ users:
       name: PepeDisapproves
   9a86a916-6aac-4e68-a842-d612771429d1:
     group:
-    - deadshot
+    - atom
     options:
-      last-logout-time: '1518901047'
+      last-logout-time: '1518946430'
       name: FruitArtzFX
-      last-login-time: '1518898995'
+      last-login-time: '1518945722'
     permissions: []
   03e5a279-ea37-4a10-9a01-f84db161f8fb:
     group: []
@@ -11381,14 +11384,12 @@ users:
       name: Builderdragon1
       last-login-time: '1518909173'
   2ec2d90a-7b77-4ac9-9d5f-e1e2f02bc6a7:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1517698803'
       name: Doctor_ll
   09594d5f-8ef4-486e-8f1d-ab5d88fc42f1:
-    group:
-    - doctorfatekentnelson
+    group: []
     options:
       last-logout-time: '1518934943'
       name: ItzWallyW_
@@ -11497,8 +11498,7 @@ users:
       last-login-time: '1518306242'
     permissions: []
   5771060f-1a52-447b-802f-4413f302ee71:
-    group:
-    - greenlanternhaljordan
+    group: []
     options:
       last-logout-time: '1517779722'
       name: WolfyAZ
@@ -11673,8 +11673,7 @@ users:
       name: killergamerbr
       last-login-time: '1518037982'
   40c83234-49c0-4062-83d2-03c612a1575f:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1517957564'
       name: ultraspeedster
@@ -11732,8 +11731,7 @@ users:
       name: ImPewt
       last-login-time: '1518395737'
   3e36ae61-810a-44bc-8041-fd70a20b92aa:
-    group:
-    - atom
+    group: []
     options:
       last-logout-time: '1518432982'
       name: kyle_rayner_dc
@@ -11881,8 +11879,7 @@ users:
       name: boogieman624
       last-login-time: '1518192549'
   630556fb-f025-4794-b2ef-d5fbdeca73ec:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1518211342'
       name: MysticCowPig
@@ -12026,8 +12023,7 @@ users:
       name: Unspeakable2018
       last-login-time: '1518369656'
   09a2ca00-a88c-4b48-a040-67310f7bac37:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1518293874'
       name: NoBoneItSilicone
@@ -12092,8 +12088,7 @@ users:
       last-logout-time: '1518315983'
       name: Unknown_Fusionz
   1bbf4b4f-9ab9-4b69-b284-0784663615b7:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1518315375'
       name: Cwbob
@@ -12135,8 +12130,7 @@ users:
       name: SpiderHolland21
       last-login-time: '1518336777'
   369d7f16-2ed2-4060-ac10-bb9ed94f1b15:
-    group:
-    - greenlanternhaljordan
+    group: []
     options:
       last-logout-time: '1518340095'
       name: nlgianni
@@ -12167,8 +12161,7 @@ users:
       last-logout-time: '1518365705'
       name: dannynotdaddy
   db9cbc06-2328-4126-a9c5-3d0abc91e656:
-    group:
-    - greenlanternhaljordan
+    group: []
     options:
       last-logout-time: '1518368988'
       name: the_professeur
@@ -12232,11 +12225,11 @@ users:
       last-login-time: '1518554222'
   6f5538d0-e1fd-4b17-9422-dec9613f42a8:
     group:
-    - batmanbatsuit
+    - greenlanternhaljordan
     options:
-      last-logout-time: '1518938910'
+      last-logout-time: '1518945487'
       name: _MysteryM_
-      last-login-time: '1518943859'
+      last-login-time: '1518945325'
   07e7aff3-ac55-4bab-8960-93c387a437a5:
     group:
     - flashwallywest
@@ -12439,21 +12432,19 @@ users:
       last-logout-time: '1518622546'
       name: Fabioped09
   39a2fcc7-3e5d-4b5e-9871-b546445a41eb:
-    group:
-    - greenlanternhaljordan
+    group: []
     options:
       last-logout-time: '1518625400'
       name: TheGreatGC
   b5224355-6e3b-4514-a833-6208f459f9c5:
     group:
-    - antman
+    - nightwing
     options:
       last-logout-time: '1518867048'
       name: jaguareyes2
-      last-login-time: '1518861632'
+      last-login-time: '1518944365'
   e19035f2-957b-4af1-a181-5b5e785c1cc5:
-    group:
-    - agentvenom
+    group: []
     options:
       last-logout-time: '1518627031'
       name: llqwyd
@@ -12622,8 +12613,7 @@ users:
       name: Xx5CentGamerxX
       last-login-time: '1518822955'
   96d3a51e-46e0-44e1-a812-a7a5107bf3ec:
-    group:
-    - doctorstrange
+    group: []
     options:
       last-logout-time: '1518835072'
       name: TitaniumMan02
@@ -12688,9 +12678,9 @@ users:
     group:
     - agentvenom
     options:
-      last-logout-time: '1518881560'
+      last-logout-time: '1518946954'
       name: batbike
-      last-login-time: '1518880495'
+      last-login-time: '1518946458'
   c832c068-1068-4422-aa4a-6a97f083ef39:
     group: []
     options:

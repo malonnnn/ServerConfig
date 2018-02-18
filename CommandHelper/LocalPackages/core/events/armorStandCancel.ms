@@ -64,43 +64,41 @@ bind(block_dispense,null,null,@e){
     }
 }
 bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item: 317 ),@e){
-    try{
-        @meta = get_itemmeta(@e['player'], @e['slot'])
-        if(@meta != null && is_array(@meta['enchants'])){
-            foreach(@enchant in @meta['enchants']){
+        if(@e['slotitem'] != null && array_index_exists(@e['slotitem'],'enchants')){
+            console('slotitem')
+            foreach(@enchant in @e['slotitem']['enchants']){
                 if(@enchant['etype'] == 'FROST_WALKER'){
                     @enchant['elevel'] = 0
                 }
             }
-            set_itemmeta(@e['player'], @e['slot'], @meta)
+            modify_event('slotitem',@e['slotitem'])
         }
-    }catch(Exception @er){console(@e)}
 }
-#bind(player_interact, null, array(button: 'right'), @e){
-#    if(@e['action'] == 'right_click_air'){
-#        try{
-#            @meta = get_itemmeta(@e['player'], null)
-#            if(@meta != null && is_array(@meta['enchants'])){
-#                console('these are enchanged')
-#                @item = pinv(@e['player'],null)
-#                if(@item['type'] == 301 || @item['type'] == 305 || @item['type'] == 309 || @item['type'] == 313 || @item['type'] == 317){
-#                    console('these are boots')
-#                    foreach(@enchant in @meta['enchants']){
-#                        if(@enchant['etype'] == 'FROST_WALKER'){
-#                            @enchant['elevel'] = 0
-#                        }
-#                    }
-#                    set_itemmeta(@e['player'], null, @meta)
-#                }else{
-#                    console('these are not boots')
-#                    console(@item['type'])
-#                }
-#            }else{
-#                    console('these are not enchanged')
-#            }
-#        }catch(Exception @e){console(@e)}
-#    }
-#}
+bind(player_interact, null, array(button: 'right'), @e){
+    if(@e['action'] == 'right_click_air'){
+        try{
+            @meta = get_itemmeta(@e['player'], null)
+            if(@meta != null && is_array(@meta['enchants'])){
+                console('these are enchanged')
+                @item = pinv(@e['player'],null)
+                if(@item['type'] == 301 || @item['type'] == 305 || @item['type'] == 309 || @item['type'] == 313 || @item['type'] == 317){
+                    console('these are boots')
+                    foreach(@enchant in @meta['enchants']){
+                        if(@enchant['etype'] == 'FROST_WALKER'){
+                            @enchant['elevel'] = 0
+                        }
+                    }
+                    set_itemmeta(@e['player'], null, @meta)
+                }else{
+                    console('these are not boots')
+                    console(@item['type'])
+                }
+            }else{
+                    console('these are not enchanged')
+            }
+        }catch(Exception @e){console(@e)}
+    }
+}
 #bind(inventory_open,null,null,@e){
 #    if(has_permission('cancel.entityclicks') && !has_permission('is.op')){
 #        cancel()

@@ -253,7 +253,7 @@ register_command(selectchar,
                     queue_push(closure(runas(~console,"/minecraft:clear" @player)),'fanficqueue')
                     queue_push(closure(runas(~console,"/god ".@player." off")),'fanficqueue')
                     queue_push(closure(runas(~console,"/tptoggle ".@player." on")),'fanficqueue')
-                    queue_push(closure(runas(~console,'/stageselect')),'fanficqueue')
+                    queue_push(closure(sudo('/stageselect')),'fanficqueue')
                     die()
                 }
 
@@ -286,7 +286,7 @@ register_command(selectchar,
                 }else{
                     sudo("/trailsid none")
                 }
-                sudo('/stageselect')
+                queue_push(closure(sudo('/stageselect')),'charbuildqueue')
         }
     )
 )
