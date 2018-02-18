@@ -231,7 +231,9 @@ register_command(selectchar,
                 export(@player.'skinNum',1)
                 if(@class == 'fanfic'){
                     @uuid = puuid(@player,true)
-                    queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' create commonherotraits')),'fanficqueue')
+                    queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' delete')),'fanficqueue')
+                    queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' create')),'fanficqueue')
+                    queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' parents set commonherotraits')),'fanficqueue')
                     queue_push(closure(runas(~console,'/pex user '.@player.' group set '.@class.@uuid)),'fanficqueue')
                     queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' add ch.alias.run0 superherocity')),'fanficqueue')
                     queue_push(closure(runas(~console,'/pex group '.@class.@uuid.' add ch.alias.run1 superherocity')),'fanficqueue')
@@ -260,6 +262,7 @@ register_command(selectchar,
                 #if(array_index_exists(@hero,'eraserebuild')){
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' delete')),'charbuildqueue')
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' create')),'charbuildqueue')
+                    queue_push(closure(runas(~console,'/pex user '.@player.' group set '.@hero['class'])),'charbuildqueue')
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' parents set commonherotraits')),'charbuildqueue')
                     queue_push(closure(runas(~console,'/pex group '.@hero['class'].' suffix '.@hero['chatcolor'])),'charbuildqueue')
                     @niceName = replace(@hero['name'],'§','&')
@@ -270,7 +273,6 @@ register_command(selectchar,
                         }
                     }
                 #}
-                queue_push(closure(runas(~console,'/pex user '.@player.' group set '.@class)),'charbuildqueue')
                 queue_push(closure(runas(~console,"/fly ".@player." off")),'charbuildqueue')
                 queue_push(closure(runas(~console,"/gamemode survival ".@player)),'charbuildqueue')
                 queue_push(closure(runas(~console,"/effect ".@player." clear")),'charbuildqueue')
