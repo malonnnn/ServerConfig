@@ -49,6 +49,12 @@ register_command(mindcontrol,
                 die()
             }
 
+            @id = get_claim_id(ploc(@vic))
+            if(@id != null){
+                msg(color(RED).'Sorry, that person is in a minigame or other protected area')
+                die()
+            }
+
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @ploc = ploc(@player)
             @vloc = ploc(@vic)

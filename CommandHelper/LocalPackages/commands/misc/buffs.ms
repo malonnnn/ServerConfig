@@ -21,11 +21,11 @@ register_command(buff,
                 if(array_index_exists(@hero,'buffs')){
                     foreach(@power in @hero['buffs']){
                         @power = replace(@power,'<plr>',@plr)
-                        queue_push(closure(runas(~console,@power)),'herochargeup')
+                        queue_push(closure(runas(~console,@power)))
                     }
-                    queue_push(closure(set_phealth(@plr,get_max_health(puuid(@plr)))),'herochargeup')
+                    queue_push(closure(set_phealth(@plr,get_max_health(puuid(@plr)))))
                 }
-                queue_push(closure(set_phunger(@plr,17)),'herochargeup')
+                queue_push(closure(set_phunger(@plr,17)))
                 tmsg(@plr,@hero['speech'])
         }
     )

@@ -7,7 +7,7 @@ register_command(speakall,
 
             @msg = ''
             foreach(@word in @args){
-                @msg = @msg.' '.@word
+                @msg = @msg.''.@word.' '
             }
 
             @plrs = all_players()
@@ -22,3 +22,4 @@ register_command(speakall,
         }
     )
 )
+
