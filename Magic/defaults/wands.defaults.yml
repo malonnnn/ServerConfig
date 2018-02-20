@@ -74,6 +74,16 @@ appearance_conduit:
     upgrade: true
     icon: wood_hoe:6
     upgrade_icon: wood_hoe:6
+
+appearance_magicka:
+    upgrade: true
+    icon: wood_hoe:9
+    upgrade_icon: wood_hoe:9
+
+appearance_moon:
+    upgrade: true
+    icon: wood_hoe:10
+    upgrade_icon: wood_hoe:10
 apprentice:
     inherit: student
     icon: wood_hoe:3
@@ -1604,6 +1614,7 @@ quickcast_normal:
     upgrade: true
     force: true
     quick_cast: normal
+
 mode_drop:
     icon: diamond_axe:210
     upgrade: true
@@ -1640,26 +1651,23 @@ mode_swap:
     left_click: cast
     swap: toggle
     quick_cast: false
+
 chestmode:
     icon: diamond_axe:205
     upgrade: true
     indestructible: false
     mode: chest
-    drop: toggle
-    swap: none
 inventorymode:
     icon: diamond_axe:214
     upgrade: true
     indestructible: false
     mode: inventory
-    drop: toggle
-    swap: cycle_hotbar
 cyclemode:
     icon: diamond_axe:215
     upgrade: true
     indestructible: false
     mode: cycle
-    drop: cycle
+
 organizer:
     icon: diamond_axe:216
     upgrade: true

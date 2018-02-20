@@ -1207,26 +1207,39 @@ anvil:
         mana: 100
 
 appearanceshop:
-    icon: wood_hoe
-    inherit: buyshop
+    icon: diamond_axe:233
+    icon_disabled: diamond_hoe:233
+    actions:
+        cast:
+        -  class: Selector
     parameters:
         auto_close: true
-        confirm: true
         confirm_filler: stained_glass:3
         require_wand: true
-        items:
-        - item: wand|appearance_beginner
-          cost: 100
-        - item: wand|appearance_student
-          cost: 1000
-        - item: wand|appearance_apprentice
+        require_template: wand
+        unlock_section: wand_appearances
+        cost_type: sp
+        options:
+        - item: appearance_beginner
+          path: beginner
+        - item: appearance_student
+          path: student
+        - item: appearance_apprentice
+          path: apprentice
+        - item: appearance_master
+          path: master
+        - item: appearance_engineer
+          path: engineer
+        - item: appearance_conduit
+          path: conduit
+        - item: appearance_moon
+          unlock: moon
+          confirm: true
+          cost: 2500
+        - item: appearance_magicka
+          unlock: magicka
+          confirm: true
           cost: 5000
-        - item: wand|appearance_master
-          cost: 10000
-        - item: wand|appearance_engineer
-          cost: 100000
-        - item: wand|appearance_conduit
-          cost: 1000000
 architectshop:
     icon: gold_axe
     category: npc
@@ -3149,53 +3162,73 @@ collapse|2:
        radius: 3
 
 colorshop:
-    icon: ink_sack
+    icon: diamond_axe:125
+    icon_disabled: diamond_hoe:125
     category: npc
     hidden: true
     actions:
         cast:
-        -  class: ItemShop
+        -  class: Selector
     parameters:
         quiet: true
         confirm_filler: stained_glass:9
         confirm: true
         require_wand: true
-        items:
-        - item: wand|redeffects
-          cost: 10
-        - item: wand|greeneffects
-          cost: 10
-        - item: wand|blueeffects
-          cost: 10
-        - item: wand|lightblueeffects
-          cost: 10
-        - item: wand|aquaeffects
-          cost: 10
-        - item: wand|whiteeffects
-          cost: 10
-        - item: wand|blackeffects
-          cost: 10
-        - item: wand|purpleeffects
-          cost: 10
-        - item: wand|yelloweffects
-          cost: 10
-        - item: wand|orangeeffects
-          cost: 10
-        - item: wand|pinkeffects
-          cost: 10
-        - item: wand|magentaeffects
-          cost: 10
-        - item: wand|grayeffects
-          cost: 10
-        - item: wand|lightgrayeffects
-          cost: 10
-        - item: wand|browneffects
-          cost: 10
-        - item: wand|darkgreeneffects
-          cost: 10
+        cost_type: sp
+        unlock_section: wand_colors
+        options:
+        - item: redeffects
+          cost: 200
+          unlock: "red"
+        - item: greeneffects
+          cost: 200
+          unlock: "green"
+        - item: blueeffects
+          cost: 200
+          unlock: "blue"
+        - item: lightblueeffects
+          cost: 200
+          unlock: "lightblue"
+        - item: aquaeffects
+          cost: 200
+          unlock: "aqua"
+        - item: whiteeffects
+          cost: 200
+          unlock: "white"
+        - item: blackeffects
+          cost: 200
+          unlock: "black"
+        - item: purpleeffects
+          cost: 200
+          unlock: "purple"
+        - item: yelloweffects
+          cost: 200
+          unlock: "yellow"
+        - item: orangeeffects
+          cost: 200
+          unlock: "orange"
+        - item: pinkeffects
+          cost: 200
+          unlock: "pink"
+        - item: magentaeffects
+          cost: 200
+          unlock: "magenta"
+        - item: grayeffects
+          cost: 200
+          unlock: "gray"
+        - item: lightgrayeffects
+          cost: 200
+          unlock: "lightgray"
+        - item: browneffects
+          cost: 200
+          unlock: "grown"
+        - item: darkgreeneffects
+          cost: 200
+          unlock: "darkgreen"
         - item: none
-        - item: wand|randomeffects
-          cost: 5
+        - item: randomeffects
+          selected: "You randomized your effect color"
+          cost: 20
 
 column:
     icon: diamond_axe:143
@@ -3263,6 +3296,29 @@ conduitshop:
         confirm_filler: stained_glass:9
         spells:
         - backup
+
+controlsmenu:
+    icon: diamond_axe:214
+    disabled_icon: diamond_hoe:214
+    category: npc
+    hidden: true
+    actions:
+        cast:
+        -  class: Selector
+    parameters:
+        require_wand: true
+        options:
+          - item: inventorymode
+          - item: chestmode
+          - item: cyclemode
+          - item: mode_drop
+          - item: mode_rightclick
+          - item: mode_swap
+          - item: none
+          - item: organizer
+            selected: "You organized your spell inventory"
+          - item: alphabetizer
+            selected: "You alphabetized your spell inventory"
 
 convert:
     icon: diamond_axe:112
@@ -4222,31 +4278,36 @@ earthquake:
         mana: 150
 
 effectshop:
-    icon: ink_sack
+    icon: diamond_axe:126
+    icon_disabled: diamond_hoe:126
     category: npc
     hidden: true
     actions:
         cast:
-        -  class: ItemShop
+        -  class: Selector
     parameters:
-        quiet: true
         confirm_filler: stained_glass:9
         confirm: true
         require_wand: true
-        items:
-        - item: wand|bubbleeffects
-          cost: 100
-        - item: wand|haloeffects
+        unlock_section: wand_effects
+        cost_type: sp
+        options:
+        - item: bubbleeffects
+          unlock: bubble
           cost: 500
-        - item: wand|rainboweffects
-          cost: 500
+        - item: haloeffects
+          unlock: halo
+          cost: 1000
+        - item: rainboweffects
+          unlock: rainbow
+          cost: 2000
         - item: none
         - item: none
         - item: none
         - item: none
         - item: none
-        - item: wand|cleareffects
-          cost: 0
+        - item: cleareffects
+          selected: "You removed all particle effects from your wand"
 
 emeraldshop:
     icon: emerald
@@ -9301,6 +9362,24 @@ portal:
     costs:
         mana: 20
 
+progressmenu:
+  icon: sulphur
+  category: npc
+  hidden: true
+  actions:
+      cast:
+      -  class: Selector
+  parameters:
+    options:
+    - cast_spell: spellshop
+    - cast_spell: upgrades
+    - placeholder: true
+    - placeholder: true
+    - placeholder: true
+    - cast_spell: appearanceshop
+    - cast_spell: colorshop
+    - cast_spell: effectshop
+    - cast_spell: controlsmenu
 projectile:
     icon: diamond_axe:197
     icon_disabled: diamond_hoe:197
@@ -11613,7 +11692,7 @@ spawnershop:
     - cavespiderspawner
 
 spellshop:
-    icon: iron_hoe
+    icon: diamond_axe:160
     category: npc
     hidden: true
     actions:

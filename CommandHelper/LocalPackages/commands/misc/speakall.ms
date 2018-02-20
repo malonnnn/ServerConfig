@@ -1,7 +1,7 @@
 register_command(speakall, 
     array(
         description: 'Power',
-        permission: 'command.rest',
+        permission: 'command.speakall',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
         executor: closure(@aliases, @sender, @args) {
 

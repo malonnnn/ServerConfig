@@ -29,7 +29,7 @@ bind(player_interact_at_entity,null,null,@e){
 bind(player_interact_entity,null,array('clicked':'ITEM_FRAME'),@e){
     if(has_permission('cancel.entityclicks') == false){
         console('dead from player interact')
-        console(@e['location'])
+        console(@e['player'])
         die()
     }
     cancel()

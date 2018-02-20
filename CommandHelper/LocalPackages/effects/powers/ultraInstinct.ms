@@ -1,4 +1,4 @@
-bind(entity_damage, null, array('type':'/player/','cause': '/ENTITY_ATTACK|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK/'), @e) {
+bind(entity_damage, null, array('type':'/PLAYER/', 'cause': '/ENTITY_ATTACK|CONTACT|PROJECTILE|LIGHTNINIG|FALLING_BLOCK/'), @e) {
    
     if(has_permission(@e['player'], "powers.ultrainstinct"))
     {

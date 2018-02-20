@@ -23,11 +23,11 @@ register_command(exitgame,
             @world = @ploc['world']
 
             if(has_permission(@plr,'is.ingame')){
-                runas(~console,'/warp vrexit '.@plr)
-                broadcast(@plr.color(RED).' has disconnected from Infinity:One')
+                queue_push(closure(runas(~console,'/warp vrexit '.@plr)))
+                queue_push(closure(broadcast(@plr.color(RED).' has disconnected from Infinity:One')))
             }else{
-                runas(~console,'/warp '.@world.'exit '.@plr)
-                msg(color(RED).' Welcome back to the arcade!')
+                queue_push(closure(runas(~console,'/warp '.@world.'exit '.@plr)))
+                queue_push(closure(msg(color(RED).' Welcome back to the arcade!')))
             }
         }
     )

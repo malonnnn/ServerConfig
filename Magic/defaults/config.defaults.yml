@@ -315,8 +315,8 @@ sp_max: 9999
 sp_default: 0
 
 # This controls what players will see when interacting with an enchantment table
-enchant_click: spellshop
-enchant_sneak_click: upgrades
+enchant_click: progressmenu
+enchant_sneak_click: spellshop
 
 # Set this to empty to prevent the enchantment table from showing players the spell shop defined above
 # enchant_block: ""
@@ -856,7 +856,10 @@ skillapi_enabled: true
 use_skillapi_mana: false
 # This resource pack will automatically be used if none is defined in your server.properties
 # Set this to "" if you have some other plugin or Bungee managing resource packs.
-resource_pack: "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-RP-6-4.zip"
+resource_pack: "https://s3-us-west-2.amazonaws.com/elmakers/Magic/Magic-RP-7.zip"
+
+# Use this to turn off all resource pack functionality
+enable_resource_pack: true
 
 # This will delay sending resource packs to players. This can mitigate issues with the vanilla
 # client timing out on connect due to RP processing on potato computers.

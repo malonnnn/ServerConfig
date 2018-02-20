@@ -52,21 +52,20 @@ register_command(herotransform,
                 @newHero = yml_decode(@contents)
         
                 #runas(~console,'/pex user '.@player.' group set '.@idToBe)
-                queue_push(closure(runas(~console,'/pex group '.@idToBe.' delete')))
-                queue_push(closure(runas(~console,'/pex group '.@idToBe.' create')))
-                queue_push(closure(runas(~console,'/pex user '.@player.' group set '.@idToBe)))
-                queue_push(closure(runas(~console,'/pex group '.@idToBe.' parents set commonherotraits')))
-                queue_push(closure(runas(~console,'/pex group '.@idToBe.' suffix '.@newHero['chatcolor'])))
+                queue_push(closure(runas(~console,'/pex group #'.@idToBe.' delete')))
+                queue_push(closure(runas(~console,'/pex group #'.@idToBe.' create')))
+                queue_push(closure(runas(~console,'/pex user '.@player.' group set #'.@idToBe)))
+                queue_push(closure(runas(~console,'/pex group #'.@idToBe.' parents set #commonherotraits')))
+                queue_push(closure(runas(~console,'/pex group #'.@idToBe.' suffix '.@newHero['chatcolor'])))
                 @niceName = replace(@newHero['name'],'§','&')
-                queue_push(closure(runas(~console,'/pex group '.@idToBe.' prefix "'.@niceName.'"')))
+                queue_push(closure(runas(~console,'/pex group #'.@idToBe.' prefix "'.@niceName.'"')))
                 foreach(@worldName: @worldPerms in @newHero['permissions']){
                     foreach(@perm in @worldPerms){
-                        queue_push(closure(runas(~console,'/pex group '.@idToBe.' add '.@perm.' '.@worldName)))
+                        queue_push(closure(runas(~console,'/pex group #'.@idToBe.' add '.@perm.' '.@worldName)))
                     }
                 }
                 queue_push(closure(runas(~console,"/fly ".@player." off")))
                 queue_push(closure(runas(~console,"/gamemode survival ".@player)))
-                queue_push(closure(runas(~console,"/effect ".@player." clear")))
                 queue_push(closure(runas(~console,"/minecraft:clear ".@player)))
                 queue_push(closure(set_peffect(@player, 14, 1, 9999, true, false)))
                 queue_push(closure(runas(~console,"/god ".@player." off")))
@@ -83,6 +82,7 @@ register_command(herotransform,
                 if(has_permission(@player,'essentials.fly')){
                     queue_push(closure(run_cmd('/fly on')))
                 }
+                queue_push(closure(runas(~console,"/minecraft:effect ".@player." clear")))
                 if(has_permission(@player,'ch.alias.buff')){
                     queue_push(closure(runas(@player,'/buff')))
                 }

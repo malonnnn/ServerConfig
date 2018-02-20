@@ -252,9 +252,11 @@ sp:
 costs:
     sp_amount: $amount SP
     xp_amount: $amount XP
+    levels_amount: $amount XP Levels
     mana_amount: $amount Mana
     mana: Mana
     xp: XP
+    levels: XP Levels
     sp: Spell Points
     hunger: Energy
     health: Health
@@ -359,14 +361,18 @@ paths:
 shops:
   no_wand: "You must be holding a wand!"
   no_template: "You may not learn with that $wand."
-  no_path: "You may not learn with that $wand."
+  no_path: "You may not learn here."
   no_required_path: "You must be at least $path!"
   no_path_exact: "You must be at $path!"
   no_path_end: "You must be ready to advance from $path!"
   insufficient: "&cCosts $cost"
   confirm_title: "Buy $item"
+  unlock_confirm_title: "Unlock $item"
   deducted: "&d&oYou bought &r&6$item &r&d&ofor &r&a$cost"
-  not_applicable: "You can't buy $item"
+  selected: "&d&oYou chose &r&6$item &r&d&ofor &r&a$cost"
+  unlocked: "&d&oYou unlocked &r&6$item &r&d&ofor &r&a$cost"
+  selected: "&d&oYou bought &r&6$item"
+  not_applicable: "You already have $item"
   cast_fail: "Sorry, please try again!"
   no_items: "There is nothing for you to buy here"
   title: "Shop ($balance)"
@@ -379,12 +385,16 @@ shops:
   prerequisite_spell_level: "&6$name"
   prerequisite_spell_progress_level: " (Progress $level/$max_level)"
   required_spells: "&r&cRequires: $spells"
-  cast_spell: "Cast $spell on you"
+  cast_spell: "$spell"
   unlock_class: "$class"
   nothing: "Nothing"
   cost_lore: "&6Costs: &e$cost"
   has_class: "You already have class $class"
   at_limit: "You are at your limit of $limit"
+  unlock_cost_lore: "&6Unlock Cost: &e$cost"
+  unlocked_lore: "&aUnlocked"
+  path_lore: "&cRequires &e$path"
+  path_end_lore: "&cRequires finished &e$path"
 spell:
     category: ""
     # category: "&7&o$category"
@@ -1644,12 +1654,13 @@ spells:
         descriptions: Shows available skills, drag a skill to the hotbar to use it
     upgrades:
         name: Spell Progress
-        descriptions: Shows available upgrades
+        description: Shows progress in upgrading your current spells
         fail: You must be holding a wand!
         upgrade_name_change: "&r&4Upgrades: &r$name"
         level_requirement: "&r&cRequires: &6$path"
         cast_requirement: "&r&cCasts: &6$current&f/&e$required"
         tags_requirement: "&r&cRequires: &6$tags"
+        confirm_title: "Change to $item"
     brushselect:
         name: Brush Selector
         descriptions: Chooses your active brush
@@ -1691,7 +1702,7 @@ spells:
     spellshop:
         name: Spell Shop
         title: "$path Spells ($balance)"
-        description: Buy spells for your current level
+        description: Learn new spells
         cost_lore: "Costs: $cost"
         no_items: There are no spells for you to buy here
         no_path: You may not learn with that $wand.
@@ -1736,10 +1747,34 @@ spells:
         not_applicable: Your wand already has $item
         confirm_title: "Get $item"
         deducted: "&d&oYou received &r&6$item"
+    progressmenu:
+        name: Magic Progress
+        title: "Magic Progress"
+        selected: ""
+        cast_fail: ""
+    appearanceshop:
+        name: Wand Appearances
+        description: Change the look of your wand
+        title: "Wand Appearance ($balance)"
+        selected: "You changed to $item"
+        not_applicable: "Your wand already looks like $item"
+    controlsmenu:
+        name: Wand Controls
+        description: Change how your wand works
+        title: Wand Controls
+        confirm_title: "Change to $item"
+        selected: "&d&oYou changed to &r&6$item"
     colorshop:
-        name: Wand Color Shop
-        title: "Wand Color ($balance)"
-        description: Colorize Your Wand
+        name: Effect Colors
+        description: Colorize your spell effects
+        title: "Effect Color ($balance)"
+        selected: "You changed to $item"
+    effectshop:
+        name: Wand Effects
+        description: Add particle effects to your wand
+        title: "Wand Effects ($balance)"
+        selected: "You changed to $item"
+        confirm_title: "$item"
     upgradeshop:
         name: Wand Upgrade Shop
         title: "Wand Upgrades ($balance)"
@@ -2047,6 +2082,7 @@ wand:
     inventory_instructions: "&r&eYour $wand now has more than one spell. Press $toggle to open/close the spell inventory. Use the hotbar buttons to select a spell."
     chest_instructions: "&r&eYour $wand now has more than one spell. Press $toggle to open/close the spell inventory, click a spell to cast."
     skills_instructions: "&r&eYour $wand now has more than one spell. Press $toggle to open/close the spell inventory, drag a spell to the hotbar to cast."
+    cycle_instructions: "&r&eYour $wand now has more than one spell. Press $cycle to cycle between spells."
     page_instructions: "&r&eYour $wand now has more than one page of spells. Click outside the spell inventory to change pages."
     bound_instructions: "&r&3Your $wand is bound to you, and is undroppable."
     spell_instructions: "&r&bSwing your $wand to cast &r&6$spell&d&o. Spells require mana, shown in the XP bar."
@@ -2403,7 +2439,6 @@ wands:
         name: Apprentice Wand Appearance
         description: Will change the appearance of your wand
     appearance_master:
-        upgrade: true
         name: Wizard Wand Appearance
         description: Will change the appearance of your wand
     appearance_engineer:
@@ -2414,6 +2449,12 @@ wands:
         description: Will change the appearance of your wand
     appearance_conduit:
         name: Conduit Wand Appearance
+        description: Will change the appearance of your wand
+    appearance_magicka:
+        name: Magicka Wand Appearance
+        description: Will change the appearance of your wand
+    appearance_moon:
+        name: Moon Wand Appearance
         description: Will change the appearance of your wand
     uberwand:
         name: "Überwand"

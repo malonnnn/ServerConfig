@@ -12,11 +12,6 @@ bind(player_death, null, null, @event){
         runas(~console,'/timer &4DeathRun split '.@player.' global')
     }
 
-    if(has_permission(@player,'powers.cantdie')){
-        set_phealth(@player,1)
-        modify_event('death_message',null)
-    }
-
     include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
     @class = _getheroclass(@player)
     @message = @event['death_message']
@@ -35,6 +30,10 @@ bind(player_death, null, null, @event){
         }
         modify_event('death_message',@message)
     }catch(Exception @e){
+    }
+    if(has_permission(@player,'powers.cantdie')){
+        set_phealth(@player,1)
+        modify_event('death_message',null)
     }
 
 }
