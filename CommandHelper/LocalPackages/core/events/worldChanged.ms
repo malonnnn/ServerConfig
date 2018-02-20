@@ -22,11 +22,11 @@ bind(world_changed, null, null, @event,
             }
         }
         if(has_permission(@player,'essentials.fly')){
-            run_cmd('/fly')
+            run_cmd('/fly on')
         }
-        if(has_permission(@player,'ch.alias.buff')){
-            runas(@player,'/buff')
-        }
+        #if(has_permission(@player,'ch.alias.buff')){
+        #    runas(@player,'/buff')
+        #}
         set_peffect(@player,14,1,0)
     ))
 
