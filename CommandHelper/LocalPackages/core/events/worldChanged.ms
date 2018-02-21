@@ -8,8 +8,8 @@ bind(world_changed, null, null, @event,
 #    @class = _getheroclass(@player)
 
     set_timeout(1000,closure(
-        runas(~console,"/minecraft:effect ".@player." clear")
-        runas(~console,"/minecraft:clear ".@player)
+#        runas(~console,"/minecraft:effect ".@player." clear")
+#        runas(~console,"/minecraft:clear ".@player)
         set_pflight(@player,false)
         include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
         @class = _getheroclass(@player)
@@ -27,7 +27,7 @@ bind(world_changed, null, null, @event,
         #if(has_permission(@player,'ch.alias.buff')){
         #    runas(@player,'/buff')
         #}
-        set_peffect(@player,14,1,0)
+#        set_peffect(@player,14,1,0)
     ))
 
 #    if(@to == 'anarchy' && @class != 'anarchy'){

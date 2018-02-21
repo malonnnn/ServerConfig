@@ -1,13 +1,20 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_BARDING
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Pistol§7 «× | ×»
 armor_contents: {}
-health: 20.0
-hunger: 20
+health: 18.0
+hunger: 17
 exp: 0.0
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
-saturation: 19.0
-exhaustion: 0.24351805
+saturation: 10.0
+exhaustion: 1.0045394
 ender_chest:
   '0':
     ==: org.bukkit.inventory.ItemStack
@@ -28,14 +35,9 @@ ender_chest:
     amount: 64
 location:
   ==: org.bukkit.Location
-  world: greenfield
-  x: -25.5
-  y: 69.0
-  z: -215.5
-  pitch: 0.46778247
-  yaw: 92.169846
-potion_effect:
-  '0':
-    type: INVISIBILITY
-    level: 1
-    duration: 199875
+  world: lexstarklabs
+  x: -76.5
+  y: 248.0
+  z: 132.5
+  pitch: 0.060022607
+  yaw: -87.64105

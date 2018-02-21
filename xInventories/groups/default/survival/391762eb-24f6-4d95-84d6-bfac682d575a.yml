@@ -1,7 +1,42 @@
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 64
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    type: FURNACE
+    meta:
+      ==: ItemMeta
+      meta-type: TILE_ENTITY
+      lore:
+      - (+NBT)
+      internal: H4sIAAAAAAAAAEWOQQrCMBREJ6GVGrDgdVxJq4uCO3OBT0xLaJIP9XfR2xsp4nLgvZkxgEHbRXbzPUuQzdKk0fTMsw3JAyV065L3cEQ9iE9vA0ApVM/Iohro8EKbQvZuoVEujikq1D2vWa4ahxslmoqNnTz/ybE0k/Map9+gZaH4JatHuVQcfABwFhEgogAAAA==
+      blockMaterial: FURNACE
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    type: COBBLESTONE
+  '3':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 64
+  '4':
+    ==: org.bukkit.inventory.ItemStack
+    type: COAL
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    type: DIRT
+  '6':
+    ==: org.bukkit.inventory.ItemStack
+    type: ARROW
+    amount: 2
+  '7':
+    ==: org.bukkit.inventory.ItemStack
+    type: BONE
 health: 20.0
 hunger: 20
-exp: 0.0
+exp: 0.85714287
 exp-level: 0
 remainingAir: 300
 fireTicks: -20
@@ -10,9 +45,9 @@ exhaustion: 0.0
 armor_contents: {}
 location:
   ==: org.bukkit.Location
-  world: overvoid
-  x: -37.5
-  y: 96.0
-  z: 38.5
-  pitch: 5.249999
-  yaw: 36.290718
+  world: gotham
+  x: 242.5
+  y: 33.0
+  z: 212.5
+  pitch: -66.69956
+  yaw: 176.85417

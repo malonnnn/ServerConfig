@@ -2,7 +2,7 @@ id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
 last_cast: 1518486626789
 cooldown_expiration: 0
-last_death_location: -758.6917132698411,15.558424459675438,52.742645450880154,rapunzel,85.97889,4.7183537
+last_death_location: -155.5262411052166,82.0,292.4993002896024,survival112,-142.94237,17.069645
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -875,6 +875,35 @@ spells:
     last_earn: 0
     cooldown_expiration: 1479674471422
 wands:
+  timestone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: EMERALD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6freezetime§f (§3TimeStone§f)
+        lore:
+        - §3§oBound to Jiren_The_Grey
+        - Knows 2 Spells
+        - '§eMana: 300 §f(§b0§f)'
+        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD2Pv07DQAzGXTUtSSQ6lBEGJDoSpLaQ0gW1UhF/RGEonSMnceiJ3l24uFRsLCy8AA/AysDCxsAT8EBMJKnAgyX7sz//7AK4YC1RxTbYTDKdIxM4LCRlrBXZUNNLRQYa58KQCq5nFJwYeqiDJVHhwHxBERY0ijJY7aFMASr4sfs8yl3L/UDE0DrsJWE38iPvIEl8bz/MU9jt+F6/34n8drdH2O5UYe2eTCa0ym1r4EBzyGxEuGAa61gkIhfdXKpYYE+nZ6Oxzvhn52hr+HhKFjhF64Iw4/fNz++Xp7fXOtSHUi8UD1olKdhgTeaawZYo1Kx8fP3/xCVKgo0byolFtIfMGN1OUqK4Cs5VSgZ5BVa4lLPN47uFSCUp3v7DA/gFFCswxlUBAAA=
+    wand:
+      template: timestone
+      owner: Jiren_The_Grey
+      mana: 300.0
+      mana_timestamp: 1519163050564
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      version: 5
   broomstick:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1045,7 +1074,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1519098862128
+    mana_timestamp: 1519235111768
     mana: 50.0
     spells:
     - missile

@@ -42,3 +42,18 @@ set_interval(5000,closure(
         }
     }
 ))
+
+#bind(entity_damage,null,array('type': '/PLAYER/'),@e){
+#    
+#    if(@e['player'] == 'Jiren_The_Grey'){
+#        console(@e)
+#    }
+#
+#}
+#bind(entity_damage_player,null,null,@e){
+#    
+#    if(@e['player'] == 'Jiren_The_Grey'){
+#        console(@e)
+#    }
+#
+#}

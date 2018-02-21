@@ -63,14 +63,79 @@ bind(block_dispense,null,null,@e){
         cancel()
     }
 }
-bind(inventory_click,null,array(item: 301, item: 305, item: 309, item: 313, item: 317 ),@e){
-        if(@e['slotitem'] != null && array_index_exists(@e['slotitem'],'enchants')){
-            foreach(@enchant in @e['slotitem']['enchants']){
-                if(@enchant['etype'] == 'FROST_WALKER'){
-                    @enchant['elevel'] = 0
+bind(inventory_click,null,null,@e){
+#        if(@e['rawslot'] >= @e['inventorysize']){
+#            #local inventory
+#            @nbt = nbt_read_inventory_item(puuid(@e['player']),@e['slot'])
+#            console(@e['player'].' - '.@e['slot'])
+#        }else{
+#            console('remote inv, dont care')
+#            die()
+#        }
+#        if(@e['player'] == 'Jiren_The_Grey'){
+#            console(@e)
+#            die()
+#        }
+#        die()
+#        if(@e['cursoritem'] != null){
+#            console('1')
+#            if(@e['player'] == 'Jiren_The_Grey' && @e['rawslot'] >= @e['inventorysize']){
+#                console('2')
+#                #local inventory
+#                #@nbt = nbt_read_inventory_item(puuid(@e['player']),@e['rawslot'])
+#                @nbt = array()
+#                if(array_index_exists(@nbt,'heroclass')){
+#                    console('3')
+#                    include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+#                    @class = _getheroclass(@e['player'])
+#                    try {
+#                        @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+#                        @hero = yml_decode(@contents)
+#                        console('4')
+#                    } catch (IOException @ErrorInfo) {
+#                        modify_event('cursoritem', null)
+#                        console('5 '.@ErrorInfo.' - '.@class)
+#                        die()
+#                    }
+#                    if(@nbt['heroclass'] != @hero['class']){
+#                        modify_event('cursoritem', null)
+#                        console('6')
+#                        die()
+#                    }
+#                }
+#            }
+#        }
+        if(@e['slotitem'] != null){
+#            console('slotitem is here')
+#            if(@e['rawslot'] >= @e['inventorysize']){
+#                #local inventory
+#                @nbt = nbt_read_inventory_item(puuid(@e['player']),@e['slot'])
+#            }else{
+#                @nbt = nbt_read_inventory_item(puuid(@e['player']),@e['rawslot'])
+#            }
+#            if(array_index_exists(@nbt,'heroclass')){
+#                include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
+#                @class = _getheroclass(@e['player'])
+#                try {
+#                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+#                    @hero = yml_decode(@contents)
+#                } catch (IOException @ErrorInfo) {
+#                    modify_event('slotitem', null)
+#                    die()
+#                }
+#                if(@nbt['heroclass'] != @hero['class']){
+#                    modify_event('slotitem', null)
+#                    die()
+#                }
+#            }
+            if(array_index_exists(@e['slotitem'],'enchants')){
+                foreach(@enchant in @e['slotitem']['enchants']){
+                    if(@enchant['etype'] == 'FROST_WALKER'){
+                        modify_event('slotitem',null)
+                        tmsg(@e['player'], color(RED).'Sorry, frost walker is not allowed, that item has been removed.')
+                    }
                 }
             }
-            modify_event('slotitem',@e['slotitem'])
         }
 }
 bind(player_interact, null, array(button: 'right'), @e){
