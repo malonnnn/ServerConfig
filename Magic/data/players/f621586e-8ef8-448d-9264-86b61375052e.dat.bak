@@ -1,8 +1,8 @@
 id: f621586e-8ef8-448d-9264-86b61375052e
 name: xMqthy
-last_cast: 1519171146907
+last_cast: 1519244576170
 cooldown_expiration: 0
-last_death_location: -15.362390010833483,-193.29016123525804,1.0034971884698471,spleef,-126.0086,-9.300014
+last_death_location: 6.053594660540133,-196.9918869510701,-32.48743879160752,spleeflobby,-173.54126,34.79996
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -55,7 +55,7 @@ spells:
     cast_count: 36
     last_cast: 1518485449995
     last_earn: 1518485480031
-    cooldown_expiration: 1518485569995
+    cooldown_expiration: 0
   acidshot:
     cast_count: 1
     last_cast: 1518657588500
@@ -237,10 +237,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1496270991498
   turnwater:
-    cast_count: 5
-    last_cast: 1518553435055
-    last_earn: 1518485762633
-    cooldown_expiration: 1518553450055
+    cast_count: 6
+    last_cast: 1519244576171
+    last_earn: 1519244412458
+    cooldown_expiration: 1519244591171
   leap:
     cast_count: 3
     last_cast: 1518657318280
@@ -358,9 +358,9 @@ spells:
     cooldown_expiration: 1515893060235
   soulstoneblast:
     cast_count: 8
-    last_cast: 1518485448208
+    last_cast: 1519244406259
     last_earn: 1516563791174
-    cooldown_expiration: 1518485478208
+    cooldown_expiration: 0
   petrify|3:
     cast_count: 101
     last_cast: 1492367168457
@@ -368,9 +368,9 @@ spells:
     cooldown_expiration: 0
   stonetouch:
     cast_count: 1
-    last_cast: 1518553434053
+    last_cast: 1519244411009
     last_earn: 0
-    cooldown_expiration: 1518553444053
+    cooldown_expiration: 0
   avadakadavra:
     cast_count: 1
     last_cast: 1507153812882
@@ -402,10 +402,10 @@ spells:
     last_earn: 0
     cooldown_expiration: 1505430661537
   forcefield:
-    cast_count: 24
-    last_cast: 1518553432408
-    last_earn: 1518553432407
-    cooldown_expiration: 1518553435408
+    cast_count: 25
+    last_cast: 1519244409001
+    last_earn: 1519244409001
+    cooldown_expiration: 0
   fling:
     cast_count: 182
     last_cast: 1496270102204
@@ -866,6 +866,38 @@ wands:
         acceleratetime: 1
         mindstone: 2
         freezetime: 0
+  forcefieldwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6forcefield§f (§3ForceFieldWand§f)
+        lore:
+        - §3§oBound to xMqthy
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAEVQwU7CQBAdQsHSKCZ61IOJxBMYKG1dL0aiJpiIHghnsuxOZWPbLe0AcuPiN/gBxpsHz8Zv8IM8WUrUOU3mzXvz5lkAFhhzHkkTTMIwDjghVH2dCPQVBnINlfQ8wgTKj70JjRclMEIe8YsugAHVVTskFWJKPIwBCvzDfF1mcjlnqCTUfM9uuczDBkOfNRyHycap7TkN5o28VvvEbbo2mrCJvo+ChkIHOoEjry2armc3heO26p6Dwm/5zJYS64wJlrFku+1iETZmmKRKRwBQsmA7jTEIhiqaYUQ6WRTB+n8G8qrATocoUaMpYU9LlUFJamVAwQBzMLi+7OmUvg/P9jvLLhpQWY1ukKf0vvf59fz09lKGcifU04jOa2tFE4x+oAnMkKtonCe29XfilocIu/eYhaHEMSfi4qEfI8oiVO5iTDitza9U8t2dq8lUxWHm/+DXHsAPryNVV6kBAAA=
+    wand:
+      template: forcefieldwand
+      owner: xMqthy
+      mana: 200.0
+      mana_timestamp: 1519244584320
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: 63c05620c451,64ecf1f82dde,88c8375d335e
+      version: 5
+      spell_inventory:
+        forcefield: 0
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1016,6 +1048,39 @@ wands:
         forcepull: 1
         forcegrip: 2
         forcepush: 0
+  turnwaterwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6turnwater§f (§3TurnWaterWand§f)
+        lore:
+        - §3§oBound to xMqthy
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAE2QzW7TUBCFT6kTnKgFKV3CAqkVqwTlx3GcDSJqkYpE6KLq2ppcj+kV9r2uPUnIjg3PwBaJLYuuK54B8TyseuOKiFmN5pyZ82naQBvemkziwxfOi4yEcSjL0qxdVz4oDbs2XKL5eX4j1xsfB6RErziuCs4ytHbuBrycDJ2eAx6ebNtYdM6VUF4Ae3Tnf//jcuprsU5wkobDwTgKuRdxGvWCIEp602EY9KJwEQ5Gk3F/PGQXx2nKSmJlM1viZThaJCqahNNhn7phwDRWUzVQI+pGkQoWk/6U+xTs4/GKy0pbA6DRxtMaNtZmxUZsudn/j9s5HgEtdGYipV4shec20al2+22n7Xnwr67enc1tJX+PXz+ffTlnD63t6D1TJbfPfv3+9vXnjyaas9wujbw5QV0+vMvMCvyctLmuX3m4i/hAOePoI7tfaPWKREh9uiyYE0d2UXBJ8sC+vVJ7O29vlrrIHf6Lf3jAPfWK2wjBAQAA
+    wand:
+      template: turnwaterwand
+      owner: xMqthy
+      active_spell: turnwater
+      mana: 200.0
+      mana_timestamp: 1519244583120
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      effect_color: 63bdc876920a,64ea5c9c1c3a,88c4b709e0a4
+      version: 5
+      spell_inventory:
+        turnwater: 2
   voldemortswand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1054,6 +1119,61 @@ wands:
         confringo: 4
         avadakedavra: 0
         crucio: 1
+  soulstone:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: AIR
+      damage: 14
+      amount: 0
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6soulstoneblast§f (§3SoulStone§f)
+        lore:
+        - §3§oBound to xMqthy
+        - Knows 2 Spells
+        - '§eMana: 300'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAF1QvU4CQRD+CAceF8EESy1MpMUIwnk2RqImmogWhJos3CAbb3ePuzmQzsZX0AewtdDW+Aw+kJXHGSmcavLNzPczDuDAmgvt27CZVBgIJpRikwQxG002CmauKULxvjvlycLGuhixnNEgDikIUFltDgMRcwGWElqcPgEWKst2wFJRzEKFQE582O9eKpRRDqSP2thtNtqeS3WPxl691fL8+lHTbdU9d+g2Dg7b++0m5bE2oyiWRgMoONjIpAdSz0iziRZ5lFcuOBKpEJD/7yzFckAJ1Q5zJIcJU9f4cixTYmc5s2D3+5dnXRPz9+7xdufhgiyUltAVpedvW59fz4+vL0UUO8okmk9qyMqG1QsMw1ZC6kn2x/JK4loowuYtpWnlaE8wi9FdLyTy8yjdhBQJ/g21ZMl2q+fTRIYqzbXzZw/4ARfK3t+kAQAA
+  stonetouchwand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6stonetouch§f (§3StoneTouchWand§f)
+        lore:
+        - §3§oBound to xMqthy
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAEWPsU7CUBSGf0LB0kRMcNTBRNYaQah1MRI1wUR0IMzkQg9yI/fe2p6CbC4OPoEP4MrgbHwGH8jJtkQ908n5//Of7ziAA2shdGDDZlLhTDChGrPRxCYZT9dSySw0RSg/9h54uizBUkKL8y5goZq1Q5aKYhYqBAriw169pHH5zlAGqE+8ZqPte+T6NPHdVssP3JOm13J9b+Q1jo7bh+0mFbExpyiWRgMoOdiKQ5rNhlLPSbOJlkU4/1SppQBUUOswR3KUMPVMICcyDXAyzYI9GFxd9EzM3/unu52nLlmoZKNrEjG/73x+vT6v3sood5RJNJ/VkZcNqz8zDFsJqaf565t/J26EImzfUfqVHB8IZjG+74dEQRGV25AiwWv4LCX31i4fEhmqlH/vFw/4Aep3QchyAQAA
+    wand:
+      template: stonetouchwand
+      owner: xMqthy
+      mana: 200.0
+      mana_timestamp: 1519244586121
+      owner_id: f621586e-8ef8-448d-9264-86b61375052e
+      version: 5
+      spell_inventory:
+        stonetouch: 1
   elderwand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1087,12 +1207,12 @@ wands:
 open_wand: false
 gave_welcome_wand: false
 data:
-  sp: 2793
+  sp: 2810
 properties:
   mana: 0.0
 classes:
   caster:
-    mana_timestamp: 1519184674636
+    mana_timestamp: 1519256737786
     mana: 50.0
   mage: {}
 active_class: mage

@@ -2,7 +2,7 @@ id: 391762eb-24f6-4d95-84d6-bfac682d575a
 name: StrikerMax
 last_cast: 1518979025580
 cooldown_expiration: 0
-last_death_location: -23.89006949780274,96.0,37.02656052734827,overvoid,-87.36448,16.143005
+last_death_location: -18.78123203368007,-230.02419458031082,-2.144732487229006,spleef,55.615967,13.817349
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -14,6 +14,16 @@ brush:
   erase: true
 undo: []
 spells:
+  ascendio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  periculum:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   increaseage:
     cast_count: 0
     last_cast: 0
@@ -44,6 +54,16 @@ spells:
     last_cast: 1515196309627
     last_earn: 0
     cooldown_expiration: 1515196314627
+  wingardiumleviosa:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  crucio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   tsunami:
     cast_count: 0
     last_cast: 1515196835871
@@ -54,12 +74,47 @@ spells:
     last_cast: 0
     last_earn: 0
     cooldown_expiration: 0
+  protego:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  incarcerous:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   spellshop:
     cast_count: 0
     last_cast: 1491943117015
     last_earn: 0
     cooldown_expiration: 0
+  confringo:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
   cloudreality:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  incendio:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  expelliarmus:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  rictusempra:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  sectumsempra:
     cast_count: 0
     last_cast: 0
     last_earn: 0
@@ -75,6 +130,11 @@ spells:
     last_earn: 0
     cooldown_expiration: 1506464054998
   powerstonedestroyworld:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
+  accio:
     cast_count: 0
     last_cast: 0
     last_earn: 0
@@ -139,6 +199,11 @@ spells:
     last_cast: 1515193472745
     last_earn: 0
     cooldown_expiration: 1515193482745
+  stupefy:
+    cast_count: 0
+    last_cast: 0
+    last_earn: 0
+    cooldown_expiration: 0
 wands:
   cosmicboltwand:
     item:
@@ -172,8 +237,9 @@ wands:
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: AIR
       damage: 1
+      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
@@ -181,8 +247,8 @@ wands:
         lore:
         - §3§oBound to StrikerMax
         - Knows 14 Spells
-        - '§eMana: 200 §f(§b0§f)'
-        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -191,14 +257,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD2PvU7DUAyFXTUNaSQYwggDEl0YgkRp0napWgkkkAgMVefK7XXpVXtvwo1DYWPhGbqwsTLwADwDD8REfgTe7GOf89kFcMHaoBYOOEwqWSMTuEs05jmtxo14o8mAO2YjV2QifLLBUqhxKKEsC/aKdspSUcqoEoAabk/evNyyvJ1KAa3z/lk3bNPMb3cWod8R/cDvdUTozxY4D3ttEXQDrMPOI5lUxjq3bUATvBHnqbOMKYqFXMhcdHOpZoEzmVxfRHHKP8eDw9HLFVnQLEY3hCl/Hnx9b18/3m2wRyrONA9bFaoD1ngdMzgKpV6W7+3+R9yiIti/p5xYzk+RGeercUIk6tC8S8ggV2CFS7nrXT5kMlGk+egPD+AXX541ZVIBAAA=
-    wand:
-      template: harryswand
-      owner: StrikerMax
-      mana: 200.0
-      mana_timestamp: 1518659542034
-      owner_id: 391762eb-24f6-4d95-84d6-bfac682d575a
-      version: 5
+        internal: H4sIAAAAAAAAAD1RPW8TQRCdcGfnfHyJUPIVIK2RMLaTNAgLkIKEobBSUVjj3TlnldvdYz/suKPhN/ADaCmokJD4DfwgKmbPSq66efNm3ts3JUAJ+RqNLKAIpJsaA0F5hs5t/Bbu2LUhB+UsOHVObooXHcg1Gnx9ApDDrfQ7D0qTD6gbgB38/Wvxide1c3Ml4eDF8fPD8YAW/cGwGveH8njUPxrKcX9RoRgfDeTocIQZ7K7IeWUNAHRKuO0bquu5MisywbpNBgV6QUYqy4TdDHoNOSViHTXXjzLooBBt72EGd9bKLNFJFXVNK2U9Mv6AJRzJKEJi7WfQFS5uR55wq3E20DJVWQbXlRHoBDkbPSOPWU5YUzlemxgddsOMSzfXMrhBF8mvQqfbiZx3sL0QPYfqkjwwyRMj+grqsqwPsaFqw9UOQA/2JoFzXsRAUytVpTiSMvVyKE5P372ZWh/+PX15f/LlhHLoJeg9oQ8/7/35++3rj+9d6E60jSa8OoD2KyCf1TZAoVGZs/agN68kPqAmuLskk5J8hiGgOJ81RJKf+5HjxbA9R9rScvfefo6q0XyR/Ut7AP8BUCYOGUQCAAA=
   harryswand2:
     item:
       ==: org.bukkit.inventory.ItemStack

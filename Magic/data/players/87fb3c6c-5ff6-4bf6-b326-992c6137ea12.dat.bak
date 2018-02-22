@@ -942,6 +942,51 @@ wands:
       id: 0c3bf652-b21a-4721-af79-8e659670775b
       locked: 1
       undroppable: 1
+  harryswand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: WOOD_HOE
+      damage: 1
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6rictusempra§f (§3HarrysWand§f)
+        lore:
+        - §3§oBound to Jiren_The_Grey
+        - Knows 14 Spells
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        Unbreakable: true
+        internal: H4sIAAAAAAAAAD1RPW8TQRCdcHfO+YAgQslXgLRGih2cpEFYgAiIQBFSn8Z7c/aK293Lfti4o+E38ANoKegQUn4DP4iK2bOSLVY7b97MeztTABSQLlFXOeSeVNugJyjmaO3KreHMLDVZ2HonLeny05zKN5ZWGaQKNb48BkhhKz5LLxU5j6oF2MA/v/cvuGVXW8oKdg8P6ulIjMXgWV2PB/tTvqaj4XhwdDQU473RAeHeMIHNBVknjQaArIBbrqWmKaVekPbGrhLI0QnSlTRM2Eyg35KVIjRBcfwwgQyF6HIPEri9lHqGtpJBNbSQxiHj91nCUhWEj6ydBHrChnXJY0611niaxShJ4LrUAq0ga4Jj5BHLCaNry20jI2M3zLh0cy2BG/Ql+pVoVVeRcg+254PjwdooD0xyxIi6gnos63xoqV5xtAHQh+2J91ZOg6cTU8la8kiKmEshPzt7++rEOP/vyfN7k6/HlEI/Qu8Jnf919+Lv928/f/SgN1EmaP9iF7qTQ3raGA+5Qqnn3VJvXkl8QEVwZ0Y6TvIpeo/i82lLVPF3P/J40a/XEbt03O3X50G2ijeyc2kP4D/FMXJzSAIAAA==
+    wand:
+      template: harryswand
+      owner: Jiren_The_Grey
+      mana: 200.0
+      mana_timestamp: 1519239247036
+      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
+      version: 5
+      spell_inventory:
+        ascendio: 7
+        periculum: 31
+        accio: 30
+        wingardiumleviosa: 29
+        reducto: 32
+        crucio: 34
+        protego: 3
+        incarcerous: 33
+        confringo: 5
+        incendio: 2
+        expelliarmus: 4
+        rictusempra: 0
+        sectumsempra: 6
+        stupefy: 1
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1074,7 +1119,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1519235111768
+    mana_timestamp: 1519242321692
     mana: 50.0
     spells:
     - missile
