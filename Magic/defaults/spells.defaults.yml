@@ -2819,7 +2819,7 @@ camera:
     parameters:
         target_type: LivingEntity
         target_npc: true
-        cooldown: 5000
+        cooldown: 1000
         allow_max_range: false
         range: 32
         bypass_pvp: true
@@ -4437,6 +4437,18 @@ entangle:
     costs:
         mana: 70
 
+equation:
+    icon: diamond_axe:9
+    icon_disabled: diamond_axe:9
+    category: staff
+    upgrade_required_casts: 50
+    actions:
+      cast:
+        - class: Message
+    parameters:
+        message: "Value: $equation"
+        equation: "rand(100, 20) - 50 * sin(10)"
+        target: self
 evade:
   icon: diamond_axe:201
   icon_disabled: diamond_hoe:201
@@ -7394,6 +7406,31 @@ lift:
     costs:
         mana: 40
 
+light:
+    icon: diamond_axe:228
+    icon_disabled: diamond_hoe:228
+    icon_url: http://textures.minecraft.net/texture/4abfe52d50f710f4103bc650b5e972d49832ea419841d9fa24e16ce617c716
+    category: engineering
+    worth: 500
+    earns_sp: 2
+    actions:
+        cast:
+        -  class: Light
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: entity_firework_large_blast
+        -  class: EffectTrail
+           particle: smoke_normal
+           particle_count: 10
+    parameters:
+        target: block
+        allow_max_range: true
+        range: 32
+        cooldown: 10000
+        async: false
+    costs:
+        mana: 200
 lightning:
     icon: diamond_axe:39
     icon_disabled: diamond_hoe:39

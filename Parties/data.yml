@@ -119,11 +119,13 @@ players:
     rank: 5
   241a56b4-ccc5-476b-af42-54c0831dca24:
     party: super
-    rank: 20
+    rank: &id043
+      party: super
+      rank: *id043
   ae0d258f-b567-4dc4-9195-7784dcab950d:
     party: super
     rank: 5
-    name:
+    name: &id044
       name: AwesomeVTO
       timestamp: 1514422155
   b03318bc-895d-4d3f-8710-c991a38980b5:
@@ -131,34 +133,34 @@ players:
     rank: 5
   eedb9648-29c4-49ad-9c0d-1546045b766c:
     party: Dill
-    rank: 20
+    rank: *id044
     name:
       name: ChampionOfSwords
       timestamp: 1512838222
   a715a752-d76d-4432-a860-49aa9d45bbee:
     party: FunStuff
-    rank: 20
+    rank: *id044
   b72b5047-7d59-4c19-b2dd-d99fc6f44b24:
     party: Titans
-    rank: 20
+    rank: *id044
   18c70f2f-c175-4f54-9800-ff7390003d7b:
     party: Titans
     rank: 5
   66edaf7d-94e7-44cf-9d99-34d3ad90594e:
     party: Testing
-    rank: 20
+    rank: *id044
     name:
       name: LucarioGaming200
       timestamp: 1513938360
   fb0ddd27-aeec-45bc-92c4-c26d5f38a7ef:
     party: jowaka
-    rank: 20
+    rank: *id044
   e84d5cec-56b1-4056-984a-02e607e30a8e:
     party: jowaka
     rank: 5
   0542fa5b-68e9-4215-9294-45d32573b540:
     party: Alliance
-    rank: 20
+    rank: *id044
     name:
       name: Prowess
       timestamp: 1512595750
@@ -170,22 +172,22 @@ players:
       timestamp: 1512946707
   d7757e01-cf3f-4305-9590-c688214bff78:
     party: fight
-    rank: 20
+    rank: *id044
     name:
       name: minecraft882001
       timestamp: 1512669955
   a8185de3-b053-4aca-9eb6-d98728e476ad:
     party: Roleplay
-    rank: 20
+    rank: *id044
   aa087f05-df98-4fa1-88fe-c6c2ea29b784:
     party: The
-    rank: 20
+    rank: *id044
     name:
       name: SilverImtiaaz
       timestamp: 1513366310
   7c3922da-c710-4046-adba-5e9a98948b27:
     party: Sussy
-    rank: 20
+    rank: *id044
     name:
       name: IdioticChips
       timestamp: 1513440693
@@ -197,13 +199,13 @@ players:
       timestamp: 1513440803
   590044cd-297e-4ac7-a109-01d20a4e6389:
     party: pugpugpug
-    rank: 20
+    rank: *id044
     name:
       name: Puggy33901
       timestamp: 1513654195
   9179e43f-3c9a-4a67-a794-24a923b2c72c:
     party: justice
-    rank: 20
+    rank: *id044
     name:
       name: joeymadness
       timestamp: 1514030839
@@ -221,7 +223,7 @@ players:
       timestamp: 1514031568
   d762bf73-a647-48ac-adbc-55dbe97130bf:
     party: Speed
-    rank: 20
+    rank: *id044
     name:
       name: PicklesRose
       timestamp: 1514331730
@@ -233,25 +235,25 @@ players:
       timestamp: 1514423325
   ca7e8de8-30f0-43c5-9701-982c10ea9459:
     party: Bored
-    rank: 20
+    rank: *id044
     name:
       name: HerpaDerp10000
       timestamp: 1515542621
   9025e96a-d286-47b0-a709-98d2a4ee42db:
     party: court
-    rank: 20
+    rank: *id044
     name:
       name: Telekinetic_Man
       timestamp: 1518903320
   8cb79cd3-1e48-4087-9137-a37e164f1494:
     party: Overwatch
-    rank: 20
+    rank: *id044
     name:
       name: TheDarkRaven_
       timestamp: 1517889020
   8354ed0d-09cb-4682-bf62-5df3f0e2b412:
     party: GodLeague
-    rank: 20
+    rank: *id044
     name:
       name: xValen
       timestamp: 1516923639
@@ -281,7 +283,7 @@ players:
       timestamp: 1517358679
   3338ef0a-4911-4934-85da-27c05754f5c3:
     party: everyone
-    rank: 20
+    rank: *id044
     name:
       name: NotAminBZ
       timestamp: 1517592692
@@ -305,13 +307,13 @@ players:
       timestamp: 1517720615
   d1ad3f3c-2a47-4921-81bb-68a9f2862c34:
     party: dark
-    rank: 20
+    rank: *id044
     name:
       name: LoneRanger13
       timestamp: 1517778088
   8ca7fc56-614b-482a-91df-bf8580ba273d:
     party: TeamTitans
-    rank: 20
+    rank: *id044
     name:
       name: TheLightShadow_
       timestamp: 1517889425
@@ -389,7 +391,7 @@ players:
       timestamp: 1518776478
   575e16ba-7021-4677-82b3-f97f15e9ef3e:
     party: FlashTeam
-    rank: 20
+    rank: *id044
     name:
       name: ronq23
       timestamp: 1518786486
@@ -413,7 +415,7 @@ players:
       timestamp: 1518891884
   fbb8c072-4c4b-49c8-948b-26e8ad73099e:
     party: ork
-    rank: 20
+    rank: *id044
     name:
       name: Eiilonwy
       timestamp: 1518901132
@@ -461,7 +463,7 @@ players:
       timestamp: 1519123596
   869b4227-b51e-452e-adbd-48759a6848dd:
     party: Hastara
-    rank: 20
+    rank: *id044
     name:
       name: Grim____
       timestamp: 1519159681
@@ -495,12 +497,18 @@ players:
       timestamp: 1519179482
       name: PinPointGold98
     party: Overwatch
+  c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
+    name:
+      name: LordOfGallifrey
+      timestamp: 1519273103
+    party: Hastara
+    rank: 5
   ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e:
     name:
-      timestamp: 1519192206
+      timestamp: 1519273301
       name: superiorxman
     rank: 5
-    party: Overwatch
+    party: Hastara
 parties:
   anti:
     leader: 34a87619-4b40-4ae8-b759-3efa25bbbffd
@@ -718,6 +726,8 @@ parties:
     - 2a63e405-eecf-480a-9fcf-1e22b996d998
     - 524eb61e-b329-4b65-8cd2-8f6d0e9b1919
     - cca2ff81-2c4d-4e12-8e21-f23a501e0207
+    - c6cb4b81-f1e7-446d-b966-e4ed7b45909d
+    - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
     desc: We are hastara
   Overwatch:
     leader: 8cb79cd3-1e48-4087-9137-a37e164f1494
@@ -730,4 +740,3 @@ parties:
     - f3077e67-9cf8-4b48-b488-4a5fd899d697
     - a96130bf-9c12-466f-a4e4-535e1d77d611
     - c35d9bf4-eadf-466e-bceb-867e801714b5
-    - ef7bcc96-3ac0-4dc6-aae7-019e5c6dda2e
