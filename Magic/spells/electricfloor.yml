@@ -1,0 +1,86 @@
+electricfloor:
+    icon: diamond_axe:160
+    icon_disabled: diamond_hoe:160
+    icon_url: http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    category: combat
+    worth: 150
+    earns_sp: 0
+    earns_cooldown: 10000
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: Repeat
+            actions:
+            - class: AreaOfEffect
+              actions:
+              - class: Damage
+              - class: PotionEffect
+              - class: Deactivate
+              - class: Delay
+                delay: 1000
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.zap_crack
+           location: origin
+           color_override: color
+           effectlib:
+             class: ConeEffect
+             iterations: 10
+             particle: redstone
+             color: 00ffff
+             lengthGrow: 0.1
+             radiusGrow: 0.003
+             updateLocations: false
+             updateDirections: false
+        tick:
+        - particle: redstone
+          color: 00ffff
+          location: target
+        hit:
+        -  class: EffectSingle
+           sound: magic.zap_crack
+           location: target
+           color_override: color
+           effectlib:
+             class: HelixEffect
+             iterations: 20
+             particle: redstone
+             color: 00ffff
+             radius: 5
+        -  class: EffectSingle
+           location: target
+           particle: fireworks_spark
+           particle_count: 20
+           particle_offset_x: 0.3
+           particle_offset_y: 0.5
+           particle_offset_z: 0.3
+           sound: magic.zap
+           sound_volume: .3
+           particle_data: 0.3
+    parameters:
+        allow_max_range: true
+        velocity: 200
+        range: 8
+        hitbox: true
+        target_type: Damageable
+        target_count: 5
+        damage: 5
+        radius: 5
+        effect_slow: 20
+        duration: 4000
+        y_radius: 2
+        repeat: 5
+        target_breakables: 1
+        cooldown: 1000
+        reorient: false
+        destructible: solid
+        bypass_build: true
+        destructible_durability: 50
+        break_durability: 2
+        undo: 10000
+    costs:
+        mana: 15
