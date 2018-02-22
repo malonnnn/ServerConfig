@@ -11,6 +11,9 @@ op: 'false'
 permissions:
   superherocity:
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - ch.alias.carryplayer
   - ch.alias.dismountplayer
   - essentials.fly
@@ -30,7 +33,8 @@ powers:
 - /haste <0-5>
 - /flyspeed <number>
 - /fly
-- /create <itemid> <qty>
+- /create <item> <quantity> <color>
+- /headdb
 - Shoots nuclear blasts with bare hand
 - /fireballpunch <on/off>
 - /invis

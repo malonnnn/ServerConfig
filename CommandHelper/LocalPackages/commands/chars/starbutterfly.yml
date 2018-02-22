@@ -18,12 +18,16 @@ permissions:
   - ch.alias.mutate
   - ch.alias.tphere
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - -esssentials.warps.*
   - ch.alias.tp
   - essentials.tppos
 powers:
 - /buff
-- /create <itemid> <qty>
+- /create <item> <quantity> <color>
+- /headdb
 - /mutate <playername>
 - Access to all warps
 - /tp

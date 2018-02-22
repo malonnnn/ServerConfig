@@ -9,6 +9,9 @@ op: 'true'
 permissions:
   superherocity:
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - ch.alias.tphere
   - ch.alias.tp
   - ch.alias.empower
@@ -66,7 +69,8 @@ powers:
 - /fly
 - /depower <playername>
 - /disguise
-- /create <itemid> <qty>
+- /create <item> <quantity> <color>
+- /headdb
 - /undisguise
 - /disguiseviewself
 - /empower <playername>

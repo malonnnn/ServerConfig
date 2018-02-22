@@ -23,6 +23,9 @@ permissions:
   - powers.destroyworld
   - powers.depower
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
 powers:
 - /buff
 - /disguise
@@ -31,7 +34,8 @@ powers:
 - /cast telekinesis
 - /tp
 - /cast acceleratetime
-- /create <item>
+- /create <item> <quantity> <color>
+- /headdb
 - /mindcontrol <player>
 - /fly
 - /cast cosmicbolt

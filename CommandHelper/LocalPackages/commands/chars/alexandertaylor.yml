@@ -13,10 +13,14 @@ permissions:
   - ch.alias.invis
   - ch.alias.vis
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
 powers:
 - /buff
 - /disguise
-- /create
+- /create <item> <quantity> <color>
+- /headdb
 - /lightningpunch <on/off>
 - /invis
 - /vis

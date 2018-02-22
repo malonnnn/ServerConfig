@@ -9,6 +9,9 @@ op: 'true'
 permissions:
   superherocity:
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - ch.alias.tphere
   - ch.alias.tp
   - libsdisguises.disguise
@@ -63,7 +66,8 @@ powers:
 - /haste <0-2>
 - /fly
 - /disguise
-- /create <itemid> <qty>
+- /create <item> <quantity> <color>
+- /headdb
 - /undisguise
 - /disguiseviewself
 - /back

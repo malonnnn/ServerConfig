@@ -22,6 +22,9 @@ permissions:
   - -essentials.enchantments.allowunsafe
   - essentials.enchant
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - ch.alias.yell
   - ch.alias.mindlock
   - essentials.fly
@@ -35,7 +38,8 @@ powers:
 - /normalform
 - /depower
 - /enchant
-- /create
+- /create <item> <quantity> <color>
+- /headdb
 - /cast odinlightning
 - /yell
 - /mindlock

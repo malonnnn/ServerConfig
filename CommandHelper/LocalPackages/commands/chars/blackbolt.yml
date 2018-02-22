@@ -17,6 +17,9 @@ permissions:
   - ch.alias.yell
   - -essentials.protect.damage.fall
   - ch.alias.create
+  - headdb.open
+  - headdb.category.*
+  - headdb.free.*
   - ch.alias.blackbolt
   - essentials.msg
   - ch.alias.mindlock
@@ -40,7 +43,8 @@ powers:
 - /jump <0-8>
 - /haste <0-8>
 - /yell
-- /create <itemid> <qty>
+- /create <item> <quantity> <color>
+- /headdb
 - /wallrun <on/off>
 - Look Up+Jump+Crouch to perform a wallrun.
 - /msg <playername>
