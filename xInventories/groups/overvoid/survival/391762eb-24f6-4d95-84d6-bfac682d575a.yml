@@ -3,10 +3,13 @@ hunger: 20
 exp: 0.0
 exp-level: 0
 remainingAir: 300
-fireTicks: 0
+fireTicks: -20
 saturation: 5.0
 exhaustion: 0.0
-inventory: {}
+inventory:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    type: ITEM_FRAME
 location:
   ==: org.bukkit.Location
   world: lexstarklabs
@@ -14,4 +17,4 @@ location:
   y: 89.0
   z: 98.5
   pitch: 19.224699
-  yaw: -87.36448
+  yaw: -263.54834

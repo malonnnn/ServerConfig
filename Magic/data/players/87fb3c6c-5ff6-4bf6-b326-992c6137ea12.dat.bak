@@ -878,13 +878,14 @@ wands:
   timestone:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: EMERALD
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: §bWand
+        display-name: §6freezetime§f (§3TimeStone§f)
         lore:
-        - §2§oJiren_The_Grey's Wand
+        - §3§oBound to Jiren_The_Grey
+        - Knows 2 Spells
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -892,6 +893,7 @@ wands:
         - HIDE_DESTROYS
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
+        Unbreakable: true
         internal: H4sIAAAAAAAAAD2Pv07DQAzGXTUtSSQ6lBEGJDoSpLaQ0gW1UhF/RGEonSMnceiJ3l24uFRsLCy8AA/AysDCxsAT8EBMJKnAgyX7sz//7AK4YC1RxTbYTDKdIxM4LCRlrBXZUNNLRQYa58KQCq5nFJwYeqiDJVHhwHxBERY0ijJY7aFMASr4sfs8yl3L/UDE0DrsJWE38iPvIEl8bz/MU9jt+F6/34n8drdH2O5UYe2eTCa0ym1r4EBzyGxEuGAa61gkIhfdXKpYYE+nZ6Oxzvhn52hr+HhKFjhF64Iw4/fNz++Xp7fXOtSHUi8UD1olKdhgTeaawZYo1Kx8fP3/xCVKgo0byolFtIfMGN1OUqK4Cs5VSgZ5BVa4lLPN47uFSCUp3v7DA/gFFCswxlUBAAA=
     wand:
       template: timestone
@@ -950,8 +952,6 @@ wands:
         lore:
         - §3§oBound to Jiren_The_Grey
         - Knows 14 Spells
-        - '§eMana: 200 §f(§b0§f)'
-        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1021,8 +1021,6 @@ wands:
         lore:
         - §2§oJiren_The_Grey's Wand
         - Knows 13 Spells
-        - '§eMana: 300 §f(§b0§f)'
-        - '§eMana Regeneration: 10 §f(§b0§f)§d/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -1115,7 +1113,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1519263050497
+    mana_timestamp: 1519276622051
     mana: 50.0
     spells:
     - missile
