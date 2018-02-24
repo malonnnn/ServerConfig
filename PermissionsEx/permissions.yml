@@ -9217,20 +9217,6 @@ groups:
         - ch.alias.stopmindcontrol
         - ch.alias.mindlock
         - essentials.msg
-  trunks:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&9'
-      prefix: '&9T&1ru&8nk&9s'
-    worlds:
-      superherocity:
-        permissions:
-        - essentials.speed
-        - essentials.speed.fly
-        - essentials.fly
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
   alice:
     inheritance:
     - commonherotraits
@@ -9300,6 +9286,20 @@ groups:
         - magic.cast.infinitemasspunch
         - magic.commands.cast
         - needsto.eat
+  trunks:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&9'
+      prefix: '&9T&1ru&8nk&9s'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.carryplayer
+        - ch.alias.dismountplayer
 schema-version: 1
 worlds:
   checkers:
@@ -9769,9 +9769,9 @@ users:
       last-login-time: '1516237362'
   0880eccc-feed-4a2f-9e22-d8f721f3913e:
     group:
-    - mortal
+    - trunks
     options:
-      last-logout-time: '1519452115'
+      last-logout-time: '1519492886'
       name: ZeEnforcer
       last-login-time: '1519491622'
     worlds:
@@ -11347,7 +11347,7 @@ users:
     group:
     - odin
     options:
-      last-logout-time: '1519489393'
+      last-logout-time: '1519492884'
       name: RoryDaPanda
       last-login-time: '1519489419'
     worlds:
