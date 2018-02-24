@@ -3019,21 +3019,6 @@ groups:
         - essentials.fly
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
-  warmachine:
-    inheritance:
-    - commonherotraits
-    options:
-      prefix: '&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne'
-      suffix: '&7'
-    worlds:
-      superherocity:
-        permissions:
-        - ch.alias.warmachine
-        - ch.alias.carryplayer
-        - ch.alias.dismountplayer
-        - essentials.fly
-        - essentials.speed.fly
-        - essentials.speed
   wasp:
     inheritance:
     - commonherotraits
@@ -7669,53 +7654,6 @@ groups:
     - op
     options:
       prefix: '&2A&er&bc&4a&dd&6e &fTechnician'
-  beastboy:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&2'
-      prefix: '&2B&8e&5a&8s&2t &aB&5o&ay'
-    worlds:
-      superherocity:
-        permissions:
-        - libsdisguises.disguise.*.-setinvisible
-        - libsdisguises.undisguise
-        - -libsdisguises.disguise.minecart_hopper.*
-        - -libsdisguises.disguise.item_frame.*
-        - -libsdisguises.disguise.firework.*
-        - -libsdisguises.disguise.ender_pearl.*
-        - -libsdisguises.disguise.splash_potion.*
-        - -libsdisguises.disguise.minecart_furnace.*
-        - -libsdisguises.disguise.fireball.*
-        - -libsdisguises.disguise.shulker_bullet.*
-        - -libsdisguises.disguise.minecart_command.*
-        - -libsdisguises.disguise.falling_block.*
-        - -libsdisguises.disguise.ender_crystal.*
-        - -libsdisguises.disguise.spectral_arrow.*
-        - -libsdisguises.disguise.painting.*
-        - -libsdisguises.disguise.minecart_chest.*
-        - -libsdisguises.disguise.experience_orb.*
-        - -libsdisguises.disguise.boat.*
-        - -libsdisguises.disguise.minecart.*
-        - -libsdisguises.disguise.snowball.*
-        - -libsdisguises.disguise.dropped_item.*
-        - -libsdisguises.disguise.tipped_arrow.*
-        - -libsdisguises.disguise.small_fireball.*
-        - -libsdisguises.disguise.primed_tnt.*
-        - -libsdisguises.disguise.llama_spit.*
-        - -libsdisguises.disguise.dragon_fireball.*
-        - -libsdisguises.disguise.arrow.*
-        - -libsdisguises.disguise.thrown_exp_bottle.*
-        - -libsdisguises.disguise.minecart_tnt.*
-        - -libsdisguises.disguise.armor_stand.*
-        - -libsdisguises.disguise.wither_skull.*
-        - -libsdisguises.disguise.minecart_mob_spawner.*
-        - -libsdisguises.disguise.leash_hitch.*
-        - -libsdisguises.disguise.fishing_hook.*
-        - -libsdisguises.disguise.ender_signal.*
-        - -libsdisguises.disguise.area_effect_cloud.*
-        - -libsdisguises.disguise.player.*
-        - ch.alias.beastboy
   acceleratedman:
     inheritance:
     - commonherotraits
@@ -8507,18 +8445,6 @@ groups:
         - ch.alias.dismountplayer
         - powers.herotransform
         - ch.alias.grouptp
-  riphunter:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&6'
-      prefix: '&8R&6i&1p &8Hu&6nt&1er'
-  iriswest:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&f'
-      prefix: '&7Iris West'
   deathdc:
     inheritance:
     - commonherotraits
@@ -8964,16 +8890,6 @@ groups:
         - magic.cast.cosmicbolt
         - magic.cast.freezetime
         - magic.commands.cast
-  thewardoctor:
-    inheritance:
-    - commonherotraits
-    options:
-      suffix: '&1'
-      prefix: '&8The &6D&co&6c&8tor&8(&4War&8)'
-    worlds:
-      superherocity:
-        permissions:
-        - powers.sonicscrewdriver
   killerfrostcaitlinsnow:
     inheritance:
     - commonherotraits
@@ -9166,6 +9082,33 @@ groups:
         - essentials.warps.speedforce
         - essentials.tppos
         - powers.wallrun
+  joewest:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&7Joe West'
+  wonderman:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&4'
+      prefix: '&cW&4o&cn&4d&ce&4r &0M&8a&7n'
+    worlds:
+      superherocity:
+        permissions:
+        - essentials.speed
+        - essentials.speed.fly
+        - essentials.fly
+        - ch.alias.dismountplayer
+        - ch.alias.carryplayer
+        - -essentials.protect.damage.fall
+  iriswest:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&f'
+      prefix: '&7Iris West'
   flashbarryallen:
     inheritance:
     - commonherotraits
@@ -9213,18 +9156,28 @@ groups:
         - essentials.fly
         - ch.alias.carryplayer
         - ch.alias.dismountplayer
-  joewest:
+  riphunter:
     inheritance:
     - commonherotraits
     options:
-      suffix: '&f'
-      prefix: '&7Joe West'
-  wonderman:
+      suffix: '&6'
+      prefix: '&8R&6i&1p &8Hu&6nt&1er'
+  thewardoctor:
     inheritance:
     - commonherotraits
     options:
-      suffix: '&4'
-      prefix: '&cW&4o&cn&4d&ce&4r &0M&8a&7n'
+      suffix: '&1'
+      prefix: '&8The &6D&co&6c&8tor&8(&4War&8)'
+    worlds:
+      superherocity:
+        permissions:
+        - powers.sonicscrewdriver
+  warmachine:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&7'
+      prefix: '&7&lW&4&la&7&lr M&4&la&7&lch&9&li&7&lne'
     worlds:
       superherocity:
         permissions:
@@ -9233,7 +9186,54 @@ groups:
         - essentials.fly
         - ch.alias.dismountplayer
         - ch.alias.carryplayer
-        - -essentials.protect.damage.fall
+        - ch.alias.warmachine
+  beastboy:
+    inheritance:
+    - commonherotraits
+    options:
+      suffix: '&2'
+      prefix: '&2B&8e&5a&8s&2t &aB&5o&ay'
+    worlds:
+      superherocity:
+        permissions:
+        - libsdisguises.disguise.*.-setinvisible
+        - libsdisguises.undisguise
+        - -libsdisguises.disguise.minecart_hopper.*
+        - -libsdisguises.disguise.item_frame.*
+        - -libsdisguises.disguise.firework.*
+        - -libsdisguises.disguise.ender_pearl.*
+        - -libsdisguises.disguise.splash_potion.*
+        - -libsdisguises.disguise.minecart_furnace.*
+        - -libsdisguises.disguise.fireball.*
+        - -libsdisguises.disguise.shulker_bullet.*
+        - -libsdisguises.disguise.minecart_command.*
+        - -libsdisguises.disguise.falling_block.*
+        - -libsdisguises.disguise.ender_crystal.*
+        - -libsdisguises.disguise.spectral_arrow.*
+        - -libsdisguises.disguise.painting.*
+        - -libsdisguises.disguise.minecart_chest.*
+        - -libsdisguises.disguise.experience_orb.*
+        - -libsdisguises.disguise.boat.*
+        - -libsdisguises.disguise.minecart.*
+        - -libsdisguises.disguise.snowball.*
+        - -libsdisguises.disguise.dropped_item.*
+        - -libsdisguises.disguise.tipped_arrow.*
+        - -libsdisguises.disguise.small_fireball.*
+        - -libsdisguises.disguise.primed_tnt.*
+        - -libsdisguises.disguise.llama_spit.*
+        - -libsdisguises.disguise.dragon_fireball.*
+        - -libsdisguises.disguise.arrow.*
+        - -libsdisguises.disguise.thrown_exp_bottle.*
+        - -libsdisguises.disguise.minecart_tnt.*
+        - -libsdisguises.disguise.armor_stand.*
+        - -libsdisguises.disguise.wither_skull.*
+        - -libsdisguises.disguise.minecart_mob_spawner.*
+        - -libsdisguises.disguise.leash_hitch.*
+        - -libsdisguises.disguise.fishing_hook.*
+        - -libsdisguises.disguise.ender_signal.*
+        - -libsdisguises.disguise.area_effect_cloud.*
+        - -libsdisguises.disguise.player.*
+        - ch.alias.beastboy
 schema-version: 1
 worlds:
   checkers:
@@ -9452,9 +9452,9 @@ users:
     group:
     - gokublacksupersaiyanrose
     options:
-      last-logout-time: '1519438438'
+      last-logout-time: '1519440501'
       name: Eiisuke
-      last-login-time: '1519439370'
+      last-login-time: '1519440800'
   8909ba04-d0b4-4b6b-a395-7162626f982f:
     group: mortal
     options:
@@ -9566,7 +9566,7 @@ users:
     options:
       last-logout-time: '1519350952'
       name: xMqsty
-      last-login-time: '1519337010'
+      last-login-time: '1519440622'
     worlds:
       superherocity:
         permissions: []
@@ -9704,7 +9704,7 @@ users:
       last-login-time: '1516237362'
   0880eccc-feed-4a2f-9e22-d8f721f3913e:
     group:
-    - trunks
+    - mortal
     options:
       last-logout-time: '1519437957'
       name: ZeEnforcer
@@ -9742,7 +9742,7 @@ users:
       last-login-time: '1519261583'
   8ca7fc56-614b-482a-91df-bf8580ba273d:
     group:
-    - joewest
+    - beastboy
     options:
       last-logout-time: '1519427638'
       name: TheLightShadow_
@@ -10438,7 +10438,7 @@ users:
       last-login-time: '1516919303'
   c6cb4b81-f1e7-446d-b966-e4ed7b45909d:
     group:
-    - flashbarryallen
+    - thewardoctor
     options:
       last-logout-time: '1519397723'
       name: LordOfGallifrey
@@ -11284,9 +11284,9 @@ users:
       last-login-time: '1518128405'
   2a63e405-eecf-480a-9fcf-1e22b996d998:
     group:
-    - wonderman
+    - warmachine
     options:
-      last-logout-time: '1519430598'
+      last-logout-time: '1519440683'
       name: RoryDaPanda
       last-login-time: '1519438583'
     worlds:
@@ -12019,7 +12019,7 @@ users:
     group:
     - flashwallywest
     options:
-      last-logout-time: '1519440107'
+      last-logout-time: '1519441165'
       name: Skele47
       last-login-time: '1519440132'
   f3b7f603-80a4-462a-ab59-1dfb9c7797fb:
@@ -12168,9 +12168,9 @@ users:
   6f5538d0-e1fd-4b17-9422-dec9613f42a8:
     group: []
     options:
-      last-logout-time: '1519431787'
+      last-logout-time: '1519441080'
       name: _MysteryM_
-      last-login-time: '1519430794'
+      last-login-time: '1519440965'
   07e7aff3-ac55-4bab-8960-93c387a437a5:
     group: mortal
     options:
