@@ -102,7 +102,14 @@ bind(player_join,null,null,@event){
         runas(~console,'/arrest '.@plr.' Joining Auto-Arrest Bot v2.1b')
         runas(~console,'/pex user '.@plr.' remove arrest.onjoin')
     }
+
     sudo('/ch set '.@plr.' global')
+    set_timeout(5000, closure(
+        if(@class == 'mortal' && has_permission(@plr,'is.ingame')){
+            sudo('/mainmenu')
+            die()
+        }
+    ))
     set_timeout(5000, closure(
         _changeSkin(@plr,@hero['sig'],@hero['val'],@hero['name'])
         _changeTrail(@plr, @hero['trail'])
