@@ -6480,6 +6480,46 @@ healing:
         only_friendly: true
         bypass_undo: true
 
+holylight:
+    icon: diamond_axe:10
+    icon_disabled: diamond_hoe:10
+    icon_url: http://textures.minecraft.net/texture/775c41bd5e4ef3cba5f9bdc5258973c95477e819cb20c163ffb378db5ae3
+    category: master
+    worth: 700
+    earns_sp: 8
+    actions:
+        cast:
+         -  class: AreaOfEffect
+            actions:
+            -  class: CheckEntity
+               allowed_entities: player
+               actions:
+               - class: Heal
+            -  class: CheckEntity
+               denied_entities: player
+               actions:
+               - class: Damage
+    effects:
+        targets:
+        -  class: EffectSingle
+           sound: entity_villager_yes
+           location: origin
+           effectlib:
+             class: HelixEffect
+             particle: heart
+             iterations: 2
+    parameters:
+        target: self
+        target_caster: true
+        target_type: LivingEntity
+        amount: 10
+        damage: 10
+        radius: 16
+        cooldown: 30000
+        bypass_friendly_fire: true
+    costs:
+        mana: 150
+
 homing:
     icon: diamond_axe:163
     icon_disabled: diamond_hoe:163
@@ -13989,6 +14029,20 @@ walls:
     costs:
         mana: 75
 
+add_protection:
+  icon: diamond_axe:110
+  icon_disabled: diamond_hoe:110
+  actions:
+    cast:
+    - class: ModifyProperties
+  parameters:
+    bypass_undo: true
+    target: self
+    modify_target: "wand"
+    modify:
+      protection: "x + 0.1"
+  costs:
+    sp: 500
 wandshop:
     icon: wooden_hoe
     category: npc

@@ -260,6 +260,8 @@ register_command(selectchar,
                 }
 
                 #if(array_index_exists(@hero,'eraserebuild')){
+                    queue_push(closure(runas(~console,'/minecraft:clear '.@player)))
+                    set_peffect(@player, 14, 1, 9999, true, false)
                     queue_push(closure(runas(~console,'/pex group #'.@hero['class'].' delete')))
                     queue_push(closure(runas(~console,'/pex group #'.@hero['class'].' create')))
                     queue_push(closure(runas(~console,'/pex user #'.@player.' group set #'.@hero['class'])))
@@ -278,8 +280,6 @@ register_command(selectchar,
                 queue_push(closure(runas(~console,"/fly ".@player." off")))
                 queue_push(closure(runas(~console,"/gamemode survival ".@player)))
                 queue_push(closure(runas(~console,"/effect ".@player." clear")))
-                set_peffect(@player, 14, 1, 9999, true, false)
-                queue_push(closure(runas(~console,"/minecraft:clear" @player)))
                 queue_push(closure(runas(~console,"/god ".@player." off")))
                 queue_push(closure(runas(~console,"/tptoggle ".@player." on")))
                 

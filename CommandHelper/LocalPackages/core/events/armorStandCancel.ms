@@ -63,6 +63,19 @@ bind(block_dispense,null,null,@e){
         cancel()
     }
 }
+
+bind(inventory_drag,null,null,@e){
+    if(@e['oldcursoritem']['type'] == '397'){
+        foreach(@slot in @e['slots']){
+            console(@slot)
+            if(@slot == 39){
+                cancel()
+                return()
+            }
+        }
+    }
+}
+
 bind(inventory_click,null,null,@e){
 #        if(@e['rawslot'] >= @e['inventorysize']){
 #            #local inventory
@@ -128,11 +141,22 @@ bind(inventory_click,null,null,@e){
 #                    die()
 #                }
 #            }
+            if(@e['slotitem']['type'] == '397' && @e['shiftclick'] == true){
+                cancel()
+            }
             if(array_index_exists(@e['slotitem'],'enchants')){
                 foreach(@enchant in @e['slotitem']['enchants']){
                     if(@enchant['etype'] == 'FROST_WALKER'){
                         modify_event('slotitem',null)
                         tmsg(@e['player'], color(RED).'Sorry, frost walker is not allowed, that item has been removed.')
+                    }
+                }
+            }
+        }else{
+            if(array_index_exists(@e,'cursoritem')){
+                if(array_index_exists(@e['cursoritem'],'type')){
+                    if(@e['cursoritem']['type'] == '397' && @e['slottype'] == 'ARMOR'){
+                        cancel()
                     }
                 }
             }
@@ -143,6 +167,9 @@ bind(player_interact, null, array(button: 'right'), @e){
         @meta = get_itemmeta(@e['player'], null)
         if(@meta != null && is_array(@meta['enchants'])){
             @item = pinv(@e['player'],null)
+            if(@item['type'] == '397'){
+                cancel()
+            }
             if(@item['type'] == 301 || @item['type'] == 305 || @item['type'] == 309 || @item['type'] == 313 || @item['type'] == 317){
                 foreach(@enchant in @meta['enchants']){
                     if(@enchant['etype'] == 'FROST_WALKER'){
