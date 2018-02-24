@@ -2,7 +2,7 @@ id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
 name: Jiren_The_Grey
 last_cast: 1518486626789
 cooldown_expiration: 0
-last_death_location: 62.834805602038045,4.0,-12.44443648775772,hallofjustice,-1.6038208,11.198747
+last_death_location: 54.763086813466295,4.0,-19.555889768479418,hallofjustice,-22.122543,3.3931115
 fall_protection_count: 0
 fall_protection: 0
 brush:
@@ -943,8 +943,9 @@ wands:
   harryswand:
     item:
       ==: org.bukkit.inventory.ItemStack
-      type: WOOD_HOE
+      type: AIR
       damage: 1
+      amount: 0
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
@@ -952,6 +953,8 @@ wands:
         lore:
         - §3§oBound to Jiren_The_Grey
         - Knows 14 Spells
+        - '§eMana: 200'
+        - '§eMana Regeneration: 10/s'
         ItemFlags:
         - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
@@ -960,29 +963,7 @@ wands:
         - HIDE_PLACED_ON
         - HIDE_POTION_EFFECTS
         Unbreakable: true
-        internal: H4sIAAAAAAAAAD1RTW/TQBCdYsd1DBTRHvkq0GuQmpS0vaBGAvEhCofSszVZj5NVvbtmPxJy48Jv4Adw5cANIfU38IM4Meuo9cHSvHnz3tuZAqCAdIm6yiH3pNoGPUExR2tXbg33zFKTha130pIuP82pfG1plUGqUOOJhO5LYSuWpZeKnEfVAmzgn98HlyzbzZeygr2jw3o6EmMxeF7X48HBlH/T0XA8OD4eivH+6JBwf5jA5oKsk0azbK+AO66lpimlXpD2xq4SyNEJ0pU0TNhMoN+SlSI0QXH9KIEeCtH1HiZwdyn1DG0lg2poIY1Dxh+whaUqCB9Zuwlkwob1yBNutdZ4msUqSeCm1AKtIGuCY+Qx2wmja8uykdHjNMy4SnMjgVv0JeaVaFU3kbIGx/PB8XJttAcmOWJEXUMZ2zofWqpXXG0A9GF74r2V0+Dp1FSylrySIvZSyM/P3748Nc7/e/ri/uTrG0qhH6H3hM7/unf59/u3nz8yyCbKBO1P9tYHyiE9a4yHXKHU8+6wt68tPqAi2JmRjpt8ht6juDhriSp+7kdeL/r1OaJKx91+9TnIVvFFdq/iAfwHi3ju/EwCAAA=
-    wand:
-      template: harryswand
-      owner: Jiren_The_Grey
-      mana: 200.0
-      mana_timestamp: 1519239247036
-      owner_id: 87fb3c6c-5ff6-4bf6-b326-992c6137ea12
-      version: 5
-      spell_inventory:
-        ascendio: 7
-        periculum: 31
-        accio: 30
-        wingardiumleviosa: 29
-        reducto: 32
-        crucio: 34
-        protego: 3
-        incarcerous: 33
-        confringo: 5
-        incendio: 2
-        expelliarmus: 4
-        rictusempra: 0
-        sectumsempra: 6
-        stupefy: 1
+        internal: H4sIAAAAAAAAAD1PsU7CUBQ9hIKliQw4OOhgIismgBZZjI0a0YgOyNy8trfyIu+1vl4kbC5+gx/g6uAH6O7kBzlZSvQONzfn3HvOuQ7gwJoLHdmwmVQ6FUxwJsKYRbaCK8lck0H9UhrS/u2E/HNDiwosJbQ4GQAW6svRZ6koY6FSoCS+Pv3NXLK49WWE5mEvDrqhG7YO4tht7Qd5C7odt9Xvd0K33e2RaHfKWHskk8lEA6ighobHbGQwYxomkYxlTjo5VbJgj8cXp8Mk45/do23vaUAWakvoikTG71sf3y/Pb69VVD2VzDQfN1GUDWs0TRi2ElJPivfW/y2uhSJs3FGeWIZ7glmE96OUKCqjdpOSEbwKtlQpdhtnDzOZKtK88xcP+AUUMsZmUgEAAA==
   wand:
     item:
       ==: org.bukkit.inventory.ItemStack
@@ -1113,7 +1094,7 @@ data:
 properties: {}
 classes:
   caster:
-    mana_timestamp: 1519452671831
+    mana_timestamp: 1519493255599
     mana: 50.0
     spells:
     - missile

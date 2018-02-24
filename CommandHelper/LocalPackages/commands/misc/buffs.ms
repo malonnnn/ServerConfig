@@ -42,7 +42,9 @@ register_command(buff,
                 queue_push(closure(set_phealth(@plr,@hero['maxHearts'])))
             }
             queue_push(closure(set_phunger(@plr,17)))
-            queue_push(closure(tmsg(@plr,@hero['speech'])))
+            if(array_index_exists(@hero,'speech')){
+                queue_push(closure(tmsg(@plr,@hero['speech'])))
+            }
         }
     )
 )
