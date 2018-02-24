@@ -2,7 +2,7 @@ register_command(herotransform,
 
     array(
         description: 'Transform into a powered up hero',
-        usage: '/herotransform <id>',
+        usage: '',
         permission: 'powers.herotransform',
         noPermMsg: 'Sorry you don\'t have permission to use this command.',
     
@@ -35,6 +35,17 @@ register_command(herotransform,
             if(!array_index_exists(@oldHero,'alts')){
                 msg(color(RED).'Sorry, your character doesn\'t have any available transformations')
                 die()
+            }
+
+            @plrs = all_players()
+            foreach(@plr in @plrs){
+                @class = _getheroclass(@plr)
+                if(@class == @idToBe){
+                    @contents = read('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.yml')
+                    @hero = yml_decode(@contents)
+                    msg(color(RED).'Sorry, but '.@plr.' is already '.@hero['name'])
+                    die()
+                }
             }
 
             @alts = @oldHero['alts']
