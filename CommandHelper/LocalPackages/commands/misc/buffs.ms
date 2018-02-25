@@ -36,10 +36,12 @@ register_command(buff,
 #                }
 #            ))
 
+            @puuid = puuid(@plr)
             if(array_index_exists(@hero,'maxHearts')){
-                @puuid = puuid(@plr)
                 queue_push(closure(set_attribute(@puuid,'maxHealth',@hero['maxHearts'])))
                 queue_push(closure(set_phealth(@plr,@hero['maxHearts'])))
+            }else{
+                queue_push(closure(set_attribute(@puuid,'maxHealth',20)))
             }
             queue_push(closure(set_phunger(@plr,17)))
             if(array_index_exists(@hero,'speech')){

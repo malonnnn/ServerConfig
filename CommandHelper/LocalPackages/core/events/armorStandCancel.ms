@@ -154,7 +154,7 @@ bind(inventory_click,null,null,@e){
             }
         }else{
             if(array_index_exists(@e,'cursoritem')){
-                if(array_index_exists(@e['cursoritem'],'type')){
+                if(array_index_exists(@e,'slottype')){
                     if(@e['cursoritem']['type'] == '397' && @e['slottype'] == 'ARMOR'){
                         cancel()
                     }
