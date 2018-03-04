@@ -1,0 +1,58 @@
+sunbeam:
+    icon: diamond_axe:75
+    icon_disabled: diamond_hoe:75
+    icon_url: http://textures.minecraft.net/texture/7dbb7f75e74ad4218d2af7191752b5952144436ce8aa2bb6fb27168e6f28af
+    alias: inferno
+    category: demolition
+    pvp_restricted: true
+    worth: 200
+    earns_sp: 1
+    upgrade_required_path: beginner
+    upgrade_required_casts: 40
+    actions:
+        cast:
+        - class: CustomProjectile
+          actions:
+          - class: Disc
+            actions:
+            - class: Cover
+              actions:
+              - class: Burn
+              - class: Damage
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.burn
+           sound_volume: 1
+           location: both
+        tick:
+        -  class: EffectSingle
+           location: target
+           particle: redstone
+           color: ffc700
+           particle_count: 2
+           particle_offset_x: 0.1
+           particle_offset_y: 0.1
+           particle_offset_z: 0.1
+        hit:
+        -  class: EffectSingle
+           location: target
+           color: ffc700
+           firework: ball
+    parameters:
+        velocity: 80
+        target_type: LivingEntity
+        allow_max_range: true
+        range: 48
+        hitbox: true
+        fov: 0.03
+        radius: 3
+        vertical_range: 4
+        undo: 2000
+        cooldown: 10000
+        target_breakables: 0
+        destructible: burnable
+        damage: 15
+        bypass_build: true
+    costs:
+        mana: 35
