@@ -3,14 +3,15 @@ buffs:
 - /effect <plr> 5 9999 15 true
 - /effect <plr> 11 9999 3 true
 - /give <plr> minecraft:golden_sword 1 16:20 name:&6E&ex&6c&ea&6l&ei&6b&eu&6r
+- /shot give <plr> excaliburbeam
 chatcolor: '&9'
 class: saberartoriapendragon
 jump: 4
 name: §eS§7a§9b§7e§1r§8(§eA§9P§8)
 op: 'false'
 permissions:
-  superherocity: [
-    ]
+  superherocity: 
+  - -essentials.protect.damage.fall
 powers:
 - /buff
 - /jump <0-5>
