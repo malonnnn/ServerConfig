@@ -1,0 +1,41 @@
+startspleef:
+    icon: ink_sack:5
+    category: staff
+    hidden: true
+    actions:
+        cast:
+        - class: Command
+        op: true
+        command: /pos1 0,0,63
+        - class: Command
+        op: true
+        command: /pos2 66,0,0
+        - class: Command
+        op: true
+        command: /replace air tnt
+        - class: Message
+        message_type: chat
+        message: "&cSpleef Will Start in 5 Seconds!"
+        - class: Delay
+        delay: 5000
+        - class: Command
+        op: true
+        command: /pos1 -1,1,64
+        - class: Command
+        op: true
+        command: /pos2 67,6,-1
+        - class: Command
+        op: true
+        command: /replace barrier air
+        - class: Message
+        message_type: chat
+        message: "&cSpleef Has Started!"
+        - class: Delay
+        delay: 5000
+        - class: Command
+        op: true
+        command: undo
+    parameters:
+        target_type: Player
+        target: other
+        range: 2 
