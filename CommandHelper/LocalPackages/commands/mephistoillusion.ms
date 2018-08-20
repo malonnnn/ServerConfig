@@ -20,7 +20,7 @@ register_command(mephistoillusion,
 
             include('/home/minecraft/server/plugins/CommandHelper/includes/getHeroClass.ms')
             @class = _getheroclass(@player)            
-            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/buffs/'.@class.'.ms')
+            include('/home/minecraft/server/plugins/CommandHelper/LocalPackages/commands/chars/'.@class.'.ms')
             @sig = @hero['sig']
             @val = @hero['val']
 
