@@ -1,0 +1,34 @@
+lifescan:
+    icon: diamond_axe:154
+    icon_disabled: diamond_hoe:154
+    icon_url: http://textures.minecraft.net/texture/c36adcbe21b520b7355936c89cd2b335ca5318e68173eaaa82e62f5fb986
+    upgrade_required_path: student
+    upgrade_required_casts: 30
+    category: utility
+    worth: 50
+    earns_sp: 5
+    actions:
+        cast:
+         -  class: Orient
+         -  class: PotionEffect
+    effects:
+        cast:
+        -  class: EffectSingle
+           sound: magic.zap
+           location: origin
+    parameters:
+        range: 64
+        fov: 3
+        close_fov: 3
+        fov_weight: 400
+        player_weight: 500
+        target: other_entity
+        target_type: LivingEntity, Player
+        cooldown: 5000
+        ignore_blocks: true
+        loud: true
+        bypass_pvp: true
+        effect_glowing: 1
+        duration: 10000
+    costs:
+        mana: 20
